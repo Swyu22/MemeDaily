@@ -12,6 +12,9 @@
 - Created Codex App cron automation `memedaily-daily-publish` for the local
   workspace at 07:15 Asia/Shanghai.
 - Pushed initial commits to `Swyu22/MemeDaily`.
+- Enabled GitHub Pages workflow publishing and confirmed the Pages workflow deploys.
+- Set Pages custom domain to `memedaily.fun`; DNS is not configured yet, so HTTPS
+  enforcement is not available.
 
 ## Verified
 - Repository remote exists and local git remote points to `https://github.com/Swyu22/MemeDaily.git`.
@@ -26,9 +29,9 @@
   version.
 
 ## Next Actions
-1. P0: Enable GitHub Pages in repo settings with GitHub Actions as the source.
-2. P1: Configure `memedaily.fun` DNS after Pages is active.
-3. P1: Watch the first Actions run and fix any remote-only CI issue.
+1. P0: Configure Aliyun DNS for `memedaily.fun`.
+2. P1: Enable HTTPS enforcement in GitHub Pages after DNS and certificate issuance.
+3. P1: Optionally upgrade GitHub Actions official actions to remove Node 20 runtime annotations.
 
 ## Key Decisions
 - Adopt Ai-Workflow-Kit as the collaboration OS, but keep the application architecture

@@ -28,6 +28,8 @@
 - Local Codex automation depends on the current Mac staying awake and logged in.
 - Evidence pages can disappear; the app must preserve compact source metadata without
   copying large excerpts or media.
+- GitHub Pages is enabled and deploying; `memedaily.fun` needs Aliyun DNS records
+  before HTTPS can be enforced.
 
 ## Docs To Update
 - [x] `.cloud.md`
@@ -39,4 +41,4 @@
 - [x] `ai/sessions/2026-06-20--project-kickoff.md`
 
 ## Last Updated
-- 2026-06-20 16:34 +0800
+- 2026-06-20 16:36 +0800
