@@ -6,7 +6,11 @@ export const metadata: Metadata = {
   title: "热梗日报",
   description: "每日中文网络热梗选题参考。",
   icons: {
-    icon: "/favicon.ico?v=2",
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-icon.png",
   },
   robots: {
     index: false,

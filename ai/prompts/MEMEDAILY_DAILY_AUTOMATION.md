@@ -91,6 +91,9 @@ De-prioritize or drop: 单纯明星八卦但无梗化表达；纯负面公共事
 - **不要具体综艺 / 选秀 / 电视节目**：以某综艺、选秀、剧综为主体的内容（赛果、选手淘汰、
   舞台名场面、嘉宾发言等）一律不发——除非梗壳已明显脱离该节目、大众能独立复用（此时按梗
   本身评估，且不点名节目）。
+- **不要生活技巧 / 实用窍门类**：纯生活技巧、科普窍门、"原来 XX 应该这样做 / 原来 XX 一直
+  做错了"这类教程/技巧贴（例如"原来牛肉应该这样切"），即便上了热搜也一律不发——它们是
+  实用资讯，不是网络热梗。除非它已经被网友玩成了固定句式 / 二创梗（此时发那个梗，而不是技巧）。
 
 Safety drop (any hit → drop, and count it in `run_report.dropped_safety`):
 政治时政、社会事件/灾难事故、明星争议、未成年人、隐私、辱骂攻击、低俗违法血腥谣言。
@@ -121,7 +124,11 @@ do not publish it — it never enters `items`, and the public page never shows a
 - `why_spread` — 为何被传播放大. **Explicitly separate verified vs inferred**, e.g.
   `"已验证：…；推测：…"`. Cover 节日/赛事/综艺/热点窗口、明星/品牌/算法/粉丝推动、
   是否易截图模仿改写二创、评论门槛是否低、能否跨平台.
-- `lifecycle` — rising (还能上车) / peak (正热) / declining (已过气); reflects 热度判断 + 时机.
+- `lifecycle` — 生命周期，按严格规则判定（不要轻易标已过气）：
+  - `declining`（已过气）：**只有当你在所有热榜 / 话题 / 公开搜索里都已搜不到该梗的相关话题**
+    （确实全网下榜、找不到了）才标记。
+  - 否则**至少标 `rising`（还能上车）**；明显仍在大热的标 `peak`（正热）。
+  - 换言之：只要还能在任一热榜 / 平台搜到相关话题，就不要标 declining；拿不准标 rising。
 - `brand_usage` — 广告营销/内容创作可借用方向: concrete and executable (可改写的标题、
   适合/不适合的品牌、互动话题、短视频结构、适配平台). Internal reference — the public page
   does not render it, but still write it well.
