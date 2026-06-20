@@ -21,7 +21,7 @@
 - [x] P0 Add skipped-day fallback workflow.
 - [x] P1 Add Codex daily automation prompt and local app automation.
 - [x] P1 Add tests for evidence, safety, meme-shell, and invalid JSON cases.
-- [ ] P2 Commit and push initial foundation.
+- [x] P2 Commit and push initial foundation.
 
 ## Risks / Dependencies
 - GitHub Pages public repo requirement means no sensitive data can enter this repo.
@@ -39,4 +39,4 @@
 - [x] `ai/sessions/2026-06-20--project-kickoff.md`
 
 ## Last Updated
-- 2026-06-20 16:30 +0800
+- 2026-06-20 16:34 +0800
