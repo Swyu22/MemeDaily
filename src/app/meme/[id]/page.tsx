@@ -25,13 +25,13 @@ export default async function MemeDetailPage({ params }: { params: Promise<{ id:
 
   return (
     <main className="page" style={{ maxWidth: 880 }}>
-      <article className="detail-card" style={{ borderRadius: 14, padding: "30px 32px" }}>
+      <article className="detail-card">
         <div className="detail-head">
           <div>
             <Link href="/" className="button" style={{ marginBottom: 18 }}>
               返回首页
             </Link>
-            <h1 style={{ fontSize: 34 }}>{item.title}</h1>
+            <h1>{item.title}</h1>
             {item.aliases.length > 0 ? (
               <p className="summary">别名 {item.aliases.join(" / ")}</p>
             ) : null}

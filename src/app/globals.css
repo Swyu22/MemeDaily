@@ -185,6 +185,11 @@ select {
   background: var(--surface);
 }
 
+.detail-card {
+  border-radius: 14px;
+  padding: 30px 32px;
+}
+
 .status-bar {
   display: flex;
   flex-wrap: wrap;
@@ -333,6 +338,10 @@ select {
 
 .card h2 {
   font-size: 18px;
+}
+
+.detail-card h1 {
+  font-size: 32px;
 }
 
 .summary {
@@ -591,19 +600,63 @@ select {
     padding-right: 16px;
   }
 
+  /* Compact 2-row header: [studio · nav] then [product brand] */
   .topbar-inner {
-    grid-template-columns: 1fr;
-    justify-items: start;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "studio nav"
+      "product product";
+    gap: 8px 12px;
   }
 
-  .studio-brand,
-  .product-brand,
-  .nav {
+  .studio-brand {
+    grid-area: studio;
     justify-self: start;
   }
 
+  .nav {
+    grid-area: nav;
+    justify-self: end;
+    width: auto;
+  }
+
   .product-brand {
+    grid-area: product;
+    justify-self: start;
     justify-content: flex-start;
+  }
+
+  .product-brand strong {
+    font-size: 16px;
+  }
+
+  /* Header height varies on mobile, so don't pin the toolbar to a fixed offset. */
+  .toolbar {
+    position: static;
+    top: auto;
+  }
+
+  /* Finger-friendly controls. */
+  .select,
+  .button,
+  .chip {
+    min-height: 40px;
+  }
+
+  .nav a {
+    padding: 8px 12px;
+  }
+
+  .day-head {
+    gap: 6px;
+  }
+
+  .day-head h1 {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: var(--space-4);
   }
 
   .card-head,
@@ -614,7 +667,33 @@ select {
     flex-direction: column;
   }
 
-  .nav {
-    width: 100%;
+  .card-head {
+    gap: var(--space-2);
+  }
+
+  .result-row {
+    gap: 8px;
+  }
+
+  .detail-card {
+    padding: 22px 18px;
+  }
+
+  .detail-card h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: var(--space-3);
+  }
+
+  .card h2 {
+    font-size: 17px;
+  }
+
+  .product-brand span {
+    font-size: 13px;
   }
 }
