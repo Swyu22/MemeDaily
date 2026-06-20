@@ -3,13 +3,10 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Trending Today",
+  title: "热梗日报",
   description: "每日中文网络热梗选题参考。",
   icons: {
-    icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "any" },
-    ],
+    icon: "/favicon.ico?v=2",
   },
   robots: {
     index: false,
