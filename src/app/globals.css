@@ -25,6 +25,13 @@
   --space-4: 18px;
   --space-5: 24px;
   --space-6: 32px;
+  --font-sans: "Space Grotesk", "Noto Sans SC", -apple-system, "PingFang SC",
+    "Microsoft YaHei", "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "Noto Sans SC", -apple-system, "PingFang SC",
+    "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", ui-monospace, "Cascadia Code",
+    Menlo, monospace;
+  --font-heading: var(--font-sans);
 }
 
 * {
@@ -39,9 +46,7 @@ body {
   margin: 0;
   background: var(--app);
   color: var(--text);
-  font-family:
-    "Space Grotesk", "Noto Sans SC", -apple-system, BlinkMacSystemFont,
-    "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: var(--font-sans);
 }
 
 a {
@@ -84,6 +89,7 @@ select {
 .product-brand {
   display: inline-flex;
   align-items: center;
+  font-family: var(--font-display);
   text-decoration: none;
 }
 
@@ -98,6 +104,7 @@ select {
 
 .studio-mark {
   display: grid;
+  position: relative;
   width: 30px;
   height: 30px;
   place-items: center;
@@ -105,7 +112,19 @@ select {
   background: var(--brand);
   color: #18181b;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.studio-mark-w {
+  display: block;
+}
+
+.studio-mark-dot {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  line-height: 1;
 }
 
 .product-brand {
@@ -179,8 +198,20 @@ select {
 
 .status-bar b,
 .mono {
-  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
 }
 
 .toolbar {

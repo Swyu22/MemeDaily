@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "MemeDaily",
   description: "Daily Chinese meme intelligence desk.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   robots: {
     index: false,
     follow: false,
@@ -14,12 +17,19 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="zh-CN">
+      <head>
+        {/* eslint-disable-next-line @next/next/no-css-tags -- Self-hosted font CSS is versioned under /public/fonts for offline/domestic access. */}
+        <link rel="stylesheet" href="/fonts/fonts.css" />
+      </head>
       <body>
         <div className="shell">
           <header className="topbar">
             <div className="topbar-inner">
               <Link className="studio-brand" href="/">
-                <span className="studio-mark">W.</span>
+                <span className="studio-mark" aria-hidden="true">
+                  <span className="studio-mark-w">W</span>
+                  <span className="studio-mark-dot">.</span>
+                </span>
                 <span>WithMedia.与众</span>
               </Link>
               <Link className="product-brand" href="/">

@@ -15,8 +15,9 @@ export async function generateStaticParams() {
   return items.map((item) => ({ id: item.id }));
 }
 
-export default function MemeDetailPage({ params }: { params: { id: string } }) {
-  const item = findItemById(params.id);
+export default async function MemeDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const item = findItemById(id);
 
   if (!item) {
     notFound();
