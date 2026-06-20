@@ -49,27 +49,12 @@ jobs:
         if: env.OAUTH != ''
         run: npm ci
 
-      - name: DEBUG token auth (temporary)
-        if: env.OAUTH != ''
-        env:
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-        run: |
-          T="$CLAUDE_CODE_OAUTH_TOKEN"
-          echo "len=${#T}"
-          echo "starts-with-sk-ant-oat01: $([[ "$T" == sk-ant-oat01-* ]] && echo yes || echo no)"
-          echo "contains-sk-ant-oat01: $([[ "$T" == *sk-ant-oat01-* ]] && echo yes || echo no)"
-          echo "first-char-code: $(printf '%d' "'${T:0:1}" 2>/dev/null || echo NA)"
-          echo "invalid-char-count: $(printf '%s' "$T" | LC_ALL=C tr -d 'A-Za-z0-9_-' | wc -c | tr -d ' ')"
-          npm i -g @anthropic-ai/claude-code >/dev/null 2>&1 || true
-          echo "--- claude -p ---"
-          claude -p "Reply with exactly: OK" 2>&1 | head -10 || true
-
       - name: Generate + validate + publish today's MemeDaily data
         if: env.OAUTH != ''
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          claude_args: "--max-turns 60"
+          claude_args: "--max-turns 80 --permission-mode bypassPermissions"
           prompt: |
             You are the MemeDaily daily publishing job running unattended in GitHub Actions.
             Read and follow ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md EXACTLY.
