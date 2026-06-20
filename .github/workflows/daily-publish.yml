@@ -54,7 +54,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          claude_args: "--max-turns 80 --permission-mode bypassPermissions"
+          claude_args: "--max-turns 40 --permission-mode bypassPermissions"
           prompt: |
             You are the MemeDaily daily publishing job running unattended in GitHub Actions.
             Read and follow ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md EXACTLY.
@@ -63,6 +63,10 @@ jobs:
             Xiaohongshu pages are anti-bot/login-walled here, so be AGGREGATOR-FIRST: rely on
             public hot-list aggregators (tophub.today, rebang.today, hot.cnxiaobai.com, etc.)
             plus media/search for evidence. Never attempt logins, cookies, or anti-bot bypass.
+
+            硬性内容规则：要「网络热梗」、不要新闻——纯新闻/事件本身（无可复用梗壳）一律不发；
+            也不要以具体综艺/选秀/电视节目为主体的内容（赛果、淘汰、舞台等），除非梗壳已脱离
+            该节目可独立复用。高效作业：回合预算有限，做一次聚焦的聚合页扫描即可，不要穷尽抓取。
 
             Produce today's data/daily/<Asia/Shanghai date>.json. Then run, in order:
               npm run validate && npm run typecheck && npm test && npm run build

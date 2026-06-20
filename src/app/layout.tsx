@@ -3,10 +3,13 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MemeDaily",
-  description: "Daily Chinese meme intelligence desk.",
+  title: "Trending Today",
+  description: "每日中文网络热梗选题参考。",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
   },
   robots: {
     index: false,
@@ -33,8 +36,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <span>WithMedia.与众</span>
               </Link>
               <Link className="product-brand" href="/">
-                <strong>Meme Daily</strong>
-                <span>选题参考</span>
+                <strong>Trending Today</strong>
+                <span>每日选题参考</span>
               </Link>
               <nav className="nav" aria-label="Primary">
                 <Link href="/">首页</Link>

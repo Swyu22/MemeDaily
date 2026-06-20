@@ -23,6 +23,9 @@ editorial richness below into the JSON fields. The daily target is up to 10 stro
   as either verified or inferred. If you cannot go online or a platform is unreachable
   today, say so plainly. If nothing qualifies, publish a valid `status: "skipped"`
   envelope. Never pad to 10 with weak or invented memes.
+- Work efficiently within a limited turn budget: do ONE focused sweep of a few key
+  aggregator surfaces, not exhaustive crawling. Optimize for hit-rate and quality over
+  coverage; do not re-fetch pages you already have.
 
 ## Focus & sources
 Primary platforms for this brief: **微博、抖音、小红书** (B站 / 知乎 / 微信 only as
@@ -62,8 +65,16 @@ Prefer candidates that: are actively spreading on 微博/抖音/小红书 now; h
 team could actually borrow; have a clear reason to spread (not just news heat); can become
 content topics, title templates, or comment-section prompts.
 
-De-prioritize or drop: 单纯明星八卦但无梗化表达；单纯社会新闻无可传播语言/情绪结构；
-纯负面公共事件；来源不明/疑似谣言/无法验证的争议内容。
+De-prioritize or drop: 单纯明星八卦但无梗化表达；纯负面公共事件；来源不明/疑似谣言/
+无法验证的争议内容。
+
+**Hard content rules (drop even if high-heat):**
+- **要梗，不要新闻**：本产品要的是「网络热梗」，不是新闻。纯新闻 / 事件本身（没有可复用的
+  语言、情绪、画面、句式或二创梗壳）一律不发，哪怕正挂在热搜顶端。判定法：若脱离这个具体
+  事件就无话可说、无法套用到别处，它就是新闻、不是梗。
+- **不要具体综艺 / 选秀 / 电视节目**：以某综艺、选秀、剧综为主体的内容（赛果、选手淘汰、
+  舞台名场面、嘉宾发言等）一律不发——除非梗壳已明显脱离该节目、大众能独立复用（此时按梗
+  本身评估，且不点名节目）。
 
 Safety drop (any hit → drop, and count it in `run_report.dropped_safety`):
 政治时政、社会事件/灾难事故、明星争议、未成年人、隐私、辱骂攻击、低俗违法血腥谣言。

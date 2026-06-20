@@ -49,3 +49,29 @@ export function sortByDecisionValue<T extends MemeItem>(items: T[]): T[] {
     return byLife || (b.score ?? 50) - (a.score ?? 50);
   });
 }
+
+// 热度值：综合分高者优先（缺分用中位数 50），同分再按生命周期。
+export function sortByHeat<T extends MemeItem>(items: T[]): T[] {
+  return [...items].sort(
+    (a, b) =>
+      (b.score ?? 50) - (a.score ?? 50) ||
+      lifecycleRank[a.lifecycle] - lifecycleRank[b.lifecycle],
+  );
+}
+
+// 新鲜值：刚起势优先，再按上榜天数（越少越新），最后按分数。
+export function sortByFreshness<T extends MemeItem>(items: T[]): T[] {
+  return [...items].sort((a, b) => {
+    const byLife = lifecycleRank[a.lifecycle] - lifecycleRank[b.lifecycle];
+    if (byLife) return byLife;
+    const byDays = (a.days_on_list ?? 1) - (b.days_on_list ?? 1);
+    return byDays || (b.score ?? 50) - (a.score ?? 50);
+  });
+}
+
+export const feedSortLabels = {
+  heat: "热度值",
+  fresh: "新鲜值",
+} as const;
+
+export type FeedSort = keyof typeof feedSortLabels;
