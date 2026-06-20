@@ -20,6 +20,7 @@ on:
 permissions:
   contents: write
   actions: write # to dispatch the Pages deploy after a GITHUB_TOKEN push
+  id-token: write # claude-code-action@v1 uses OIDC for its GitHub token setup
 
 concurrency:
   group: daily-publish
