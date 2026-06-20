@@ -1,0 +1,77 @@
+name: daily-publish
+
+# Unattended cloud replacement for the local-Mac Codex automation.
+# Runs claude-code-action with a Claude SUBSCRIPTION token (no OpenAI, no separate API
+# billing): aggregator-first public-web research -> today's data/daily JSON -> validate ->
+# push to main. Runs on GitHub's runners, so the Mac can be off.
+#
+# ONE-TIME SETUP (required before it does anything):
+#   1. On your Mac: `claude setup-token`  -> copies a long-lived subscription OAuth token.
+#   2. Repo Settings -> Secrets and variables -> Actions -> New repository secret:
+#        name  = CLAUDE_CODE_OAUTH_TOKEN
+#        value = <the token>
+# Until that secret exists, this workflow is a clean no-op (green, with a warning).
+
+on:
+  schedule:
+    - cron: "15 23 * * *" # 23:15 UTC = 07:15 Asia/Shanghai
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write # to dispatch the Pages deploy after a GITHUB_TOKEN push
+
+concurrency:
+  group: daily-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+    steps:
+      - name: Warn if token missing
+        if: env.OAUTH == ''
+        run: echo "::warning::CLAUDE_CODE_OAUTH_TOKEN not set — run 'claude setup-token' and add it as a repo secret to enable cloud publishing. Skipping this run."
+
+      - uses: actions/checkout@v4
+        if: env.OAUTH != ''
+
+      - uses: actions/setup-node@v4
+        if: env.OAUTH != ''
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install deps
+        if: env.OAUTH != ''
+        run: npm ci
+
+      - name: Generate + validate + publish today's MemeDaily data
+        if: env.OAUTH != ''
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: "--max-turns 60"
+          prompt: |
+            You are the MemeDaily daily publishing job running unattended in GitHub Actions.
+            Read and follow ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md EXACTLY.
+
+            Environment note: this runner is a non-CN datacenter IP. Direct Weibo / Douyin /
+            Xiaohongshu pages are anti-bot/login-walled here, so be AGGREGATOR-FIRST: rely on
+            public hot-list aggregators (tophub.today, rebang.today, hot.cnxiaobai.com, etc.)
+            plus media/search for evidence. Never attempt logins, cookies, or anti-bot bypass.
+
+            Produce today's data/daily/<Asia/Shanghai date>.json. Then run, in order:
+              npm run validate && npm run typecheck && npm test && npm run build
+            Only if ALL pass: stage just today's file, commit
+            "chore(data): publish MemeDaily <date>", and git push to main.
+            If nothing qualifies after sweeping aggregators, write a valid status:"skipped"
+            envelope instead. Never fabricate evidence and never pad to 10.
+
+      - name: Trigger Pages deploy
+        if: env.OAUTH != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run pages.yml --ref main

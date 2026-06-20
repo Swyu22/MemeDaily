@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write # to dispatch the Pages deploy after a GITHUB_TOKEN push
 
 jobs:
   skipped-day:
@@ -26,6 +27,8 @@ jobs:
       - run: npm run validate
 
       - name: Commit skipped day if created
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if git diff --quiet -- data/daily; then
             echo "No skipped fallback needed."
@@ -36,3 +39,5 @@ jobs:
           git add data/daily
           git commit -m "chore(data): add skipped daily fallback"
           git push
+          # GITHUB_TOKEN pushes don't trigger on:push workflows, so kick the deploy.
+          gh workflow run pages.yml --ref main
