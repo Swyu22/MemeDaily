@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 import type { DailyEnvelope, MemeItem } from "./schema";
-import { envelopeIssueSummary, hasPublishableEvidence, visibleItems } from "./rules";
+import { MemeItemSchema } from "./schema";
+import {
+  crossDayIssues,
+  envelopeIssueSummary,
+  hasPublishableEvidence,
+  visibleItems,
+} from "./rules";
 
 const baseItem: MemeItem = {
   id: "2026-06-20-banwei",
@@ -105,5 +111,70 @@ describe("MemeDaily publication rules", () => {
     expect(envelopeIssueSummary(envelope)).toContain(
       "run_report.published does not match visible item count",
     );
+  });
+
+  it("treats a partial envelope as visible like published", () => {
+    expect(visibleItems(envelopeWith(baseItem, "partial"))).toHaveLength(1);
+  });
+
+  it("flags two items that are the same meme on the same day", () => {
+    const envelope = envelopeWith(baseItem, "published");
+    envelope.items = [baseItem, { ...baseItem, id: "2026-06-20-banwei-dup" }];
+    envelope.run_report.published = 2;
+
+    expect(envelopeIssueSummary(envelope).some((issue) => issue.includes("duplicates"))).toBe(
+      true,
+    );
+  });
+});
+
+describe("MemeDaily cross-day freshness", () => {
+  function dayWith(date: string, item: MemeItem): DailyEnvelope {
+    return { ...envelopeWith(item, "published"), date };
+  }
+
+  it("flags a meme that recurs without days_on_list >= 2", () => {
+    const day1 = dayWith("2026-06-19", { ...baseItem, id: "2026-06-19-banwei" });
+    const day2 = dayWith("2026-06-20", { ...baseItem, id: "2026-06-20-banwei" });
+
+    expect(crossDayIssues([day2, day1]).length).toBeGreaterThan(0);
+  });
+
+  it("accepts a recurring meme that increments days_on_list", () => {
+    const day1 = dayWith("2026-06-19", { ...baseItem, id: "2026-06-19-banwei" });
+    const day2 = dayWith("2026-06-20", {
+      ...baseItem,
+      id: "2026-06-20-banwei",
+      days_on_list: 2,
+    });
+
+    expect(crossDayIssues([day1, day2])).toHaveLength(0);
+  });
+
+  it("does not flag distinct memes on different days", () => {
+    const day1 = dayWith("2026-06-19", { ...baseItem, id: "2026-06-19-banwei" });
+    const day2 = dayWith("2026-06-20", {
+      ...baseItem,
+      id: "2026-06-20-gongzhu",
+      title: "公主请上车",
+      aliases: [],
+    });
+
+    expect(crossDayIssues([day1, day2])).toHaveLength(0);
+  });
+});
+
+describe("MemeDaily schema gates", () => {
+  it("rejects a title longer than 48 chars", () => {
+    const result = MemeItemSchema.safeParse({ ...baseItem, title: "梗".repeat(49) });
+    expect(result.success).toBe(false);
+  });
+
+  it("accepts the optional source.title field", () => {
+    const result = MemeItemSchema.safeParse({
+      ...baseItem,
+      sources: baseItem.sources.map((source) => ({ ...source, title: "公开话题页·班味" })),
+    });
+    expect(result.success).toBe(true);
   });
 });

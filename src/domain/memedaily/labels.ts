@@ -17,6 +17,13 @@ export const lifecycleRank = {
   declining: 2,
 } as const;
 
+export const statusLabels = {
+  published: "已发布",
+  partial: "部分发布",
+  skipped: "跳过",
+  held: "暂存",
+} as const;
+
 export const platformLabels = {
   weibo: "微博",
   douyin: "抖音",
@@ -37,6 +44,8 @@ export const tierLabels = {
 export function sortByDecisionValue<T extends MemeItem>(items: T[]): T[] {
   return [...items].sort((a, b) => {
     const byLife = lifecycleRank[a.lifecycle] - lifecycleRank[b.lifecycle];
-    return byLife || (b.score ?? 0) - (a.score ?? 0);
+    // Unscored items use a neutral midpoint so absence of a score does not
+    // silently sink an otherwise valuable meme to the bottom of its bucket.
+    return byLife || (b.score ?? 50) - (a.score ?? 50);
   });
 }

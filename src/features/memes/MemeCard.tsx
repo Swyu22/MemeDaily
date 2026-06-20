@@ -25,7 +25,9 @@ export function MemeCard({ item, expanded = false }: MemeCardProps) {
             <span className="value">
               价值 <b className="mono">{item.score}</b>
             </span>
-          ) : null}
+          ) : (
+            <span className="mini">未评分</span>
+          )}
           <span className="badge" data-life={item.lifecycle}>
             {lifecycleLabels[item.lifecycle]}
           </span>

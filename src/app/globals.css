@@ -204,6 +204,17 @@ select {
   font-variant-numeric: tabular-nums;
 }
 
+.notice {
+  margin-bottom: 18px;
+  padding: 11px 14px;
+  border: 1px solid #f4dea8;
+  border-radius: 10px;
+  background: var(--amber-bg);
+  color: var(--amber-fg);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .font-sans {
   font-family: var(--font-sans);
 }
@@ -513,6 +524,11 @@ select {
   background: var(--chip);
   color: var(--muted);
   font-size: 11px;
+}
+
+.source-note {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .search-box {

@@ -4,6 +4,10 @@ on:
   push:
   pull_request:
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   governance:
     runs-on: ubuntu-latest
@@ -22,6 +26,9 @@ jobs:
 
       - name: 依赖边界（opt-in，缺规则文件则跳过）
         run: bash scripts/checks/check-import-boundaries.sh
+
+      - name: 密钥扫描（全仓 tracked）
+        run: bash scripts/checks/check-secrets.sh --all
 
       # —— 应用架构层检查 ——
       - uses: actions/setup-node@v4

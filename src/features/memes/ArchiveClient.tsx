@@ -2,13 +2,13 @@
 
 /**
  * input: prevalidated visible meme archive rows
- * output: client-side keyword/platform/type filtering for the static archive
+ * output: client-side keyword/platform/type/lifecycle filtering + sort for the archive
  * pos: feature interaction layer with no filesystem access
  */
 import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
-import { lifecycleLabels, platformLabels } from "@/domain/memedaily/labels";
-import type { MemeItem, Platform } from "@/domain/memedaily/schema";
+import { lifecycleLabels, platformLabels, sortByDecisionValue } from "@/domain/memedaily/labels";
+import type { Lifecycle, MemeItem, Platform } from "@/domain/memedaily/schema";
 
 export type ArchiveRow = MemeItem & { date: string };
 
@@ -16,10 +16,14 @@ type ArchiveClientProps = {
   rows: ArchiveRow[];
 };
 
+const LIFECYCLES: Lifecycle[] = ["rising", "peak", "declining"];
+
 export function ArchiveClient({ rows }: ArchiveClientProps) {
   const [query, setQuery] = useState("");
   const [platform, setPlatform] = useState("全部");
   const [type, setType] = useState("全部");
+  const [lifecycle, setLifecycle] = useState("全部");
+  const [sort, setSort] = useState<"value" | "date">("value");
 
   const platforms = ["全部", ...Array.from(new Set(rows.flatMap((row) => row.platform)))];
   const types = ["全部", ...Array.from(new Set(rows.map((row) => row.type)))];
@@ -27,7 +31,7 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
 
-    return rows.filter((row) => {
+    const matched = rows.filter((row) => {
       const haystack = [
         row.title,
         ...row.aliases,
@@ -42,9 +46,17 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
       if (q && !haystack.includes(q)) return false;
       if (platform !== "全部" && !row.platform.includes(platform as Platform)) return false;
       if (type !== "全部" && row.type !== type) return false;
+      if (lifecycle !== "全部" && row.lifecycle !== lifecycle) return false;
       return true;
     });
-  }, [platform, query, rows, type]);
+
+    if (sort === "date") {
+      return [...matched].sort(
+        (a, b) => b.date.localeCompare(a.date) || (b.score ?? 50) - (a.score ?? 50),
+      );
+    }
+    return sortByDecisionValue(matched);
+  }, [lifecycle, platform, query, rows, sort, type]);
 
   return (
     <>
@@ -72,6 +84,28 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
             </option>
           ))}
         </select>
+        <select
+          className="select"
+          value={lifecycle}
+          onChange={(event) => setLifecycle(event.target.value)}
+          aria-label="生命周期阶段"
+        >
+          <option value="全部">全部阶段</option>
+          {LIFECYCLES.map((value) => (
+            <option key={value} value={value}>
+              {lifecycleLabels[value]}
+            </option>
+          ))}
+        </select>
+        <select
+          className="select"
+          value={sort}
+          onChange={(event) => setSort(event.target.value as "value" | "date")}
+          aria-label="排序方式"
+        >
+          <option value="value">按价值</option>
+          <option value="date">按日期</option>
+        </select>
         <span className="mini">匹配 {filtered.length} 个梗</span>
       </div>
 
@@ -96,7 +130,9 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
                   <span className="value">
                     价值 <b className="mono">{row.score}</b>
                   </span>
-                ) : null}
+                ) : (
+                  <span className="mini">未评分</span>
+                )}
               </div>
             </a>
           ))}

@@ -1,17 +1,31 @@
+import Link from "next/link";
 import { Activity } from "lucide-react";
 import { loadAllEnvelopes } from "@/domain/memedaily/data";
-import { sortByDecisionValue } from "@/domain/memedaily/labels";
+import { sortByDecisionValue, statusLabels } from "@/domain/memedaily/labels";
 import { visibleItems } from "@/domain/memedaily/rules";
 import { MemeCard } from "@/features/memes/MemeCard";
 
+const MAX_DAYS_ON_HOME = 4;
+
 export default function TodayPage() {
-  const days = loadAllEnvelopes()
+  const all = loadAllEnvelopes();
+  const latest = all[0] ?? null;
+  const days = all
     .map((envelope) => ({
       envelope,
       items: sortByDecisionValue(visibleItems(envelope)),
     }))
     .filter((day) => day.items.length > 0);
-  const today = days[0];
+  const isFresh = latest != null && days[0]?.envelope.date === latest.date;
+  const shown = days.slice(0, MAX_DAYS_ON_HOME);
+  const hasMore = days.length > shown.length;
+
+  const staleNotice =
+    latest && visibleItems(latest).length === 0
+      ? `最近一次运行 ${latest.date} 状态为「${statusLabels[latest.status]}」，没有合格内容——下方展示的是最近一次有内容的发布。`
+      : latest && latest.status === "partial"
+        ? `${latest.date} 为部分发布（partial），可能少于每日目标。`
+        : null;
 
   return (
     <main className="page">
@@ -20,17 +34,24 @@ export default function TodayPage() {
           <Activity size={15} color="var(--green-dot)" aria-hidden="true" />
           今日运行
         </strong>
-        {today ? (
+        {latest ? (
           <>
-            <span className="mono">{today.envelope.date}</span>
+            <span className="mono">{latest.date}</span>
+            <span>状态 {statusLabels[latest.status]}</span>
             <span>
-              发布 <b>{today.items.length}</b> 条
+              发布 <b>{visibleItems(latest).length}</b> 条
             </span>
           </>
         ) : (
           <span>暂无日更数据</span>
         )}
       </section>
+
+      {staleNotice ? (
+        <div className="notice" role="status">
+          {staleNotice}
+        </div>
+      ) : null}
 
       <div className="toolbar">
         <span className="mini">默认按“还能上车”排序</span>
@@ -40,13 +61,14 @@ export default function TodayPage() {
 
       {days.length > 0 ? (
         <div className="day-list">
-          {days.map((day, dayIndex) => (
+          {shown.map((day, dayIndex) => (
             <section className="day-section" key={day.envelope.date}>
               <div className="day-head">
                 <div>
-                  <h1>{dayIndex === 0 ? "今日" : day.envelope.date}</h1>
+                  <h1>{dayIndex === 0 && isFresh ? "今日" : day.envelope.date}</h1>
                   <p className="summary">
-                    {dayIndex === 0 ? day.envelope.date : "历史发布"} · {day.items.length} 条
+                    {dayIndex === 0 && isFresh ? day.envelope.date : "历史发布"} ·{" "}
+                    {day.items.length} 条
                   </p>
                 </div>
                 <span className="mini">按可借用价值排序</span>
@@ -58,6 +80,13 @@ export default function TodayPage() {
               </div>
             </section>
           ))}
+          {hasMore ? (
+            <div className="day-head">
+              <Link className="button" href="/archive/">
+                查看更多历史 → 梗库
+              </Link>
+            </div>
+          ) : null}
         </div>
       ) : (
         <div className="empty">

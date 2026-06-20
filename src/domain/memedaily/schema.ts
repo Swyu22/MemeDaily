@@ -104,6 +104,7 @@ export const DailyEnvelopeSchema = z.object({
 });
 
 export type Platform = z.infer<typeof PlatformSchema>;
+export type Lifecycle = z.infer<typeof LifecycleSchema>;
 export type MemeItem = z.infer<typeof MemeItemSchema>;
 export type DailyEnvelope = z.infer<typeof DailyEnvelopeSchema>;
 export type EvidenceTier = z.infer<typeof EvidenceTierSchema>;

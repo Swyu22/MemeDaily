@@ -15,13 +15,19 @@ if ! bash scripts/checks/check-state-fresh.sh; then
   exit 1
 fi
 
-# 2) 文件行数：默认告警（设环境变量 STRICT=1 可改为阻断）
+# 2) 密钥扫描：硬门禁（公开仓库，命中即阻断）
+if ! bash scripts/checks/check-secrets.sh staged; then
+  echo "[pre-commit] ✗ 密钥扫描失败：移除疑似密钥并在云控制台轮换后再提交。" >&2
+  exit 1
+fi
+
+# 3) 文件行数：默认告警（设环境变量 STRICT=1 可改为阻断）
 bash scripts/checks/check-file-size.sh staged || true
 
-# 3) 关键文件头说明：默认告警
+# 4) 关键文件头说明：默认告警
 bash scripts/checks/check-key-file-header.sh || true
 
-# 4) tier 建议：仅提示
+# 5) tier 建议：仅提示
 bash scripts/checks/suggest-tier.sh cached || true
 
 echo "[pre-commit] ✓ 通过（软告警不阻断；严格模式见 .githooks/README.md）。"
