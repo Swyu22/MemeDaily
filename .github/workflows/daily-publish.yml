@@ -54,10 +54,15 @@ jobs:
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: |
-          echo "shape: $([[ "$CLAUDE_CODE_OAUTH_TOKEN" == sk-ant-oat01-* ]] && echo prefix-ok || echo prefix-UNEXPECTED) len=${#CLAUDE_CODE_OAUTH_TOKEN}"
+          T="$CLAUDE_CODE_OAUTH_TOKEN"
+          echo "len=${#T}"
+          echo "starts-with-sk-ant-oat01: $([[ "$T" == sk-ant-oat01-* ]] && echo yes || echo no)"
+          echo "contains-sk-ant-oat01: $([[ "$T" == *sk-ant-oat01-* ]] && echo yes || echo no)"
+          echo "first-char-code: $(printf '%d' "'${T:0:1}" 2>/dev/null || echo NA)"
+          echo "invalid-char-count: $(printf '%s' "$T" | LC_ALL=C tr -d 'A-Za-z0-9_-' | wc -c | tr -d ' ')"
           npm i -g @anthropic-ai/claude-code >/dev/null 2>&1 || true
-          echo "--- claude -p output ---"
-          claude -p "Reply with exactly: OK" 2>&1 | head -30 || true
+          echo "--- claude -p ---"
+          claude -p "Reply with exactly: OK" 2>&1 | head -10 || true
 
       - name: Generate + validate + publish today's MemeDaily data
         if: env.OAUTH != ''
