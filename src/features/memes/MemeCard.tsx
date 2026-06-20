@@ -1,0 +1,108 @@
+/**
+ * input: a validated MemeDaily item
+ * output: compact card with inline decision details and wrapped evidence links
+ * pos: feature UI component shared by Today and detail surfaces
+ */
+import Link from "next/link";
+import { ExternalLink, Lightbulb, TriangleAlert } from "lucide-react";
+import { lifecycleLabels, platformLabels, tierLabels } from "@/domain/memedaily/labels";
+import type { MemeItem } from "@/domain/memedaily/schema";
+
+type MemeCardProps = {
+  item: MemeItem;
+  expanded?: boolean;
+};
+
+export function MemeCard({ item, expanded = false }: MemeCardProps) {
+  return (
+    <article className="card" data-faded={item.lifecycle === "declining"}>
+      <div className="card-head">
+        <div>
+          <h2>{item.title}</h2>
+          <p className="summary">{item.summary}</p>
+        </div>
+        <div className="tag-row" style={{ marginTop: 0 }}>
+          {item.score !== undefined ? (
+            <span className="value">
+              价值 <b className="mono">{item.score}</b>
+            </span>
+          ) : null}
+          <span className="badge" data-life={item.lifecycle}>
+            {lifecycleLabels[item.lifecycle]}
+          </span>
+        </div>
+      </div>
+
+      <div className="tag-row">
+        <span className="mini">{item.platform.map((value) => platformLabels[value]).join(" · ")}</span>
+        <span className="mini">{item.type}</span>
+        <span className="mini">{item.risk.level === "safe" ? "安全" : item.risk.note}</span>
+        {item.days_on_list ? <span className="mini">连续 {item.days_on_list} 天</span> : null}
+      </div>
+
+      {expanded ? <MemeDetailFields item={item} /> : null}
+
+      <div className="tag-row">
+        <Link className="button" href={`/meme/${item.id}/`}>
+          查看档案
+        </Link>
+      </div>
+    </article>
+  );
+}
+
+export function MemeDetailFields({ item }: { item: MemeItem }) {
+  return (
+    <div className="detail-panel">
+      <Field label="来源" body={item.origin} />
+      <Field label="典型用法 / 传播场景" body={item.usage} />
+      <Field label="为什么被传播放大" body={item.why_spread} />
+      <Field label="有趣点" body={item.fun_point} />
+
+      <section className="callout brand">
+        <div className="callout-title">
+          <Lightbulb size={16} aria-hidden="true" />
+          品牌借用示范
+        </div>
+        <div className="field-body">{item.brand_usage}</div>
+      </section>
+
+      <section className="callout risk">
+        <div className="callout-title">
+          <TriangleAlert size={16} aria-hidden="true" />
+          风险提示
+        </div>
+        <div className="field-body">{item.risk.note}</div>
+      </section>
+
+      <section>
+        <div className="field-label">信源</div>
+        <div className="sources">
+          {item.sources.map((source) => (
+            <a
+              className="source-link"
+              href={source.url}
+              key={`${source.tier}-${source.url}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <span className="source-tier">{tierLabels[source.tier]}</span>
+              <span className="source-note">{source.note}</span>
+              <span className="mono">{source.captured_at.slice(5, 10)}</span>
+              <ExternalLink size={13} aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function Field({ label, body }: { label: string; body: string }) {
+  return (
+    <section>
+      <div className="field-label">{label}</div>
+      <div className="field-body">{body}</div>
+    </section>
+  );
+}

@@ -1,0 +1,43 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  governance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # —— 协作 OS 层检查（与本地 .githooks 同源 scripts/checks/*）——
+      - name: 状态新鲜度（.cloud.md）
+        run: bash scripts/checks/check-state-fresh.sh
+
+      - name: 文件行数（全仓）
+        run: bash scripts/checks/check-file-size.sh --all
+
+      - name: 关键文件头说明
+        run: bash scripts/checks/check-key-file-header.sh
+
+      - name: 依赖边界（opt-in，缺规则文件则跳过）
+        run: bash scripts/checks/check-import-boundaries.sh
+
+      # —— 应用架构层检查 ——
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: 应用层 lint / typecheck / test
+        run: |
+          if [ -f package.json ]; then
+            echo "检测到 package.json，运行应用层检查"
+            npm ci
+            npm run validate
+            npm run lint --if-present
+            npm run typecheck --if-present
+            npm test --if-present
+            npm run build --if-present
+          else
+            echo "无 package.json，跳过应用层检查（kit 为技术栈中立）"
+          fi

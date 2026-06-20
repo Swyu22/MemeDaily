@@ -1,0 +1,77 @@
+# MemeDaily Product Spec
+
+## Purpose
+MemeDaily is a daily Chinese internet meme intelligence desk for internal content,
+marketing, and communications teams. It is not a general news site and not a public
+consumer community.
+
+## Core Jobs
+- **Triage:** see what is worth noticing today in one to two minutes.
+- **Decide:** understand whether a meme can still be used, how a brand could use it,
+  and what risk to avoid.
+- **Lookup:** search prior days and open a permanent detail URL for sharing.
+
+## Data Contract Summary
+- One file per day: `data/daily/YYYY-MM-DD.json`.
+- Daily envelope includes `schema_version`, `policy_version`, `rubric_version`,
+  `date`, `generated_at`, `status`, `run_report`, and `items`.
+- Each published item requires:
+  - stable `id`
+  - `title`
+  - `platform[]`
+  - `type`
+  - `summary`
+  - `origin`
+  - `usage`
+  - `fun_point`
+  - `why_spread`
+  - `lifecycle`
+  - `brand_usage`
+  - `risk`
+  - at least two independent `sources[]`
+- Each source includes `tier`, `evidence_role`, `platform`, `url`, `captured_at`,
+  and a short `note`.
+
+## Evidence Gate
+- Publish only when an item has at least two independent reachable URLs.
+- At least one source must be `platform_public` or `aggregator`.
+- Items supported only by search results, media reports, or spillover discussion are
+  discarded.
+- Store URLs and compact notes only. Do not store media, screenshots, comment dumps,
+  private account data, or long excerpts.
+
+## Safety Gate
+Drop, do not display, any candidate involving:
+- politics or current affairs sensitivity
+- social tragedies, accidents, crimes, disasters, or public safety incidents
+- celebrity controversies, scandals, private disputes, or fan wars
+- minors as identifiable subjects
+- privacy invasion, doxxing, or ordinary people being targeted
+- harassment, attacks, slurs, discrimination, or regional insults
+- explicit, illegal, bloody, violent, harmful-rumor, or dangerous content
+
+## Meme-Shell Gate
+The candidate must have a reusable shell: phrase, template, BGM, visual setup,
+action pattern, persona, or remix structure. A high-heat one-off news event is not
+a meme for this product.
+
+## UI Requirements
+- Today desk: run status bar, filters, sorting by lifecycle, compact cards, inline
+  details, copy-away action.
+- Archive/search: keyword search, day/library view, platform/type/range filters,
+  lifecycle and value display.
+- Meme detail: permanent URL, full fields, source links, history, related memes,
+  copy link and copy-away actions.
+- Mobile source rows must wrap cleanly; no forced `white-space: nowrap` that causes
+  vertical text or clipped evidence links.
+
+## Automation Requirements
+- Daily local Codex App automation runs at 07:15 Asia/Shanghai.
+- Automation writes one complete daily file, validates it, builds the site, then
+  commits and pushes.
+- GitHub fallback creates a `skipped` envelope if the daily file is missing after
+  the expected publication window.
+- Invalid JSON must fail CI/build and leave the last successful site online.
+
+## Reference
+The fuller Chinese product rationale remains in `产品方案.md`.

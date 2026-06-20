@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# input: 暂存区改动
+# output: 状态新鲜度（硬门禁）+ 行数/关键文件头/tier（软告警）
+# pos: 提交前机械门禁，落实 CONSTITUTION §2「Hook/自动检查 > Prompt」
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+echo "[pre-commit] 运行项目检查..."
+
+# 1) 状态新鲜度：硬门禁（缺 .cloud.md 或 goal/updated 为占位符 → 阻断）
+if ! bash scripts/checks/check-state-fresh.sh; then
+  echo "[pre-commit] ✗ 状态校验失败：请填好 .cloud.md（运行 /close 回写）后再提交。" >&2
+  exit 1
+fi
+
+# 2) 文件行数：默认告警（设环境变量 STRICT=1 可改为阻断）
+bash scripts/checks/check-file-size.sh staged || true
+
+# 3) 关键文件头说明：默认告警
+bash scripts/checks/check-key-file-header.sh || true
+
+# 4) tier 建议：仅提示
+bash scripts/checks/suggest-tier.sh cached || true
+
+echo "[pre-commit] ✓ 通过（软告警不阻断；严格模式见 .githooks/README.md）。"

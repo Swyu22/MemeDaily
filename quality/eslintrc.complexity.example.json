@@ -1,0 +1,10 @@
+{
+  "//": "可选：把 CONSTITUTION §6 质量红线接到 eslint。把 rules 合并进你项目的 eslint 配置后启用（默认仅 warn，稳定后可改 error）。",
+  "rules": {
+    "max-lines": ["warn", { "max": 800, "skipBlankLines": true, "skipComments": true }],
+    "max-lines-per-function": ["warn", { "max": 30, "skipBlankLines": true, "skipComments": true }],
+    "max-depth": ["warn", 3],
+    "max-nested-callbacks": ["warn", 3],
+    "complexity": ["warn", 4]
+  }
+}

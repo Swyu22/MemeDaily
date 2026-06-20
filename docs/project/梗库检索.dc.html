@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/withmedia-design-system-260db2a7-282a-4f68-9602-b0d62af2de90/colors_and_type.css">
+<style>
+  body { margin:0; }
+  .meme-root{
+    --c-app:#FAFAFA; --c-surface:#FFFFFF;
+    --c-border:#ECECEF; --c-border-strong:#E4E4E7;
+    --c-text:#18181B; --c-text-2:#6B6B73; --c-text-3:#A1A1AA;
+    --c-chip:#F4F4F5;
+    --green-bg:#E7F8ED; --green-fg:#15803D; --green-dot:#22C55E;
+    --amber-bg:#FEF4DC; --amber-fg:#B45309; --amber-dot:#F59E0B;
+    --gray-bg:#F1F1F3; --gray-fg:#8A8A93; --gray-dot:#C4C4C9;
+  }
+  .meme-root[data-theme="dark"]{
+    --c-app:#09090B; --c-surface:#141417;
+    --c-border:#232327; --c-border-strong:#2C2C31;
+    --c-text:#F4F4F5; --c-text-2:#9B9BA3; --c-text-3:#6B6B73;
+    --c-chip:#1C1C20;
+    --green-bg:rgba(34,197,94,.14); --green-fg:#4ADE80; --green-dot:#22C55E;
+    --amber-bg:rgba(245,158,11,.15); --amber-fg:#FBBF24; --amber-dot:#F59E0B;
+    --gray-bg:rgba(255,255,255,.06); --gray-fg:#9B9BA3; --gray-dot:#52525B;
+  }
+  .meme-root, .meme-root *{ box-sizing:border-box; }
+
+  .ml-badge{ display:inline-flex; align-items:center; gap:6px; height:22px; padding:0 9px; border-radius:9999px; font-size:11.5px; font-weight:600; white-space:nowrap; line-height:1; }
+  .ml-badge .dot{ width:6px; height:6px; border-radius:50%; }
+  .ml-badge[data-life="catch"]{ background:var(--green-bg); color:var(--green-fg); }
+  .ml-badge[data-life="catch"] .dot{ background:var(--green-dot); }
+  .ml-badge[data-life="hot"]{ background:var(--amber-bg); color:var(--amber-fg); }
+  .ml-badge[data-life="hot"] .dot{ background:var(--amber-dot); }
+  .ml-badge[data-life="faded"]{ background:var(--gray-bg); color:var(--gray-fg); }
+  .ml-badge[data-life="faded"] .dot{ background:var(--gray-dot); }
+
+  .val-chip{ display:inline-flex; align-items:baseline; gap:5px; padding:2px 8px; border-radius:6px; background:var(--c-chip); border:1px solid var(--c-border); white-space:nowrap; }
+  .val-chip span{ font-size:10.5px; color:var(--c-text-3); }
+  .val-chip b{ font-family:var(--font-mono); font-size:13px; font-weight:600; color:var(--c-text); font-variant-numeric:tabular-nums; }
+
+  .icon-btn{ width:34px; height:34px; border-radius:8px; border:1px solid var(--c-border-strong); background:var(--c-surface); color:var(--c-text-2); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; transition:.15s; }
+  .icon-btn:hover{ background:var(--c-chip); color:var(--c-text); }
+
+  /* search */
+  .search{ display:flex; align-items:center; gap:11px; height:50px; padding:0 16px; background:var(--c-surface); border:1px solid var(--c-border-strong); border-radius:12px; transition:border-color .15s, box-shadow .15s; }
+  .search:focus-within{ border-color:var(--c-text); box-shadow:0 0 0 3px rgba(24,24,27,.06); }
+  .search input{ flex:1; min-width:0; border:none; outline:none; background:transparent; font-family:inherit; font-size:15px; font-weight:400; color:var(--c-text); }
+  .search input::placeholder{ color:var(--c-text-3); }
+  .clr{ width:22px; height:22px; border-radius:6px; border:none; background:var(--c-chip); color:var(--c-text-2); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; flex:none; }
+  .clr:hover{ background:var(--c-border-strong); color:var(--c-text); }
+
+  /* segmented toggle */
+  .seg{ display:inline-flex; background:var(--c-chip); border:1px solid var(--c-border-strong); border-radius:9px; padding:3px; gap:3px; }
+  .seg button{ height:28px; padding:0 14px; border:none; background:transparent; color:var(--c-text-2); font-size:13px; font-weight:500; border-radius:6px; cursor:pointer; font-family:inherit; transition:.15s; }
+  .seg button[data-active="true"]{ background:var(--c-surface); color:var(--c-text); box-shadow:var(--shadow-xs); }
+
+  /* filter / sort selects */
+  .fwrap{ height:34px; display:inline-flex; align-items:center; gap:6px; padding:0 11px; border:1px solid var(--c-border-strong); border-radius:9px; background:var(--c-surface); transition:background .15s; }
+  .fwrap:hover{ background:var(--c-chip); }
+  .fwrap .lbl{ font-size:12.5px; color:var(--c-text-3); white-space:nowrap; }
+  .fwrap select{ border:none; background:transparent; font-family:inherit; font-size:13px; font-weight:500; color:var(--c-text); cursor:pointer; outline:none; appearance:none; -webkit-appearance:none; padding-right:17px;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 24 24' fill='none' stroke='%23A1A1AA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>");
+    background-repeat:no-repeat; background-position:right center; }
+
+  /* result list */
+  .result-list{ background:var(--c-surface); border:1px solid var(--c-border); border-radius:12px; overflow:hidden; }
+  .day-head{ display:flex; align-items:center; gap:8px; padding:9px 16px; background:var(--c-chip); border-bottom:1px solid var(--c-border); font-size:11.5px; font-weight:600; color:var(--c-text-2); }
+  .day-head .ct{ font-family:var(--font-mono); color:var(--c-text-3); font-weight:500; }
+  .row{ display:flex; align-items:center; justify-content:space-between; gap:18px; padding:13px 16px; border-bottom:1px solid var(--c-border); cursor:pointer; transition:background .12s; }
+  .row:last-child{ border-bottom:none; }
+  .row:hover{ background:var(--c-chip); }
+  .row[data-faded="true"]{ opacity:.5; filter:saturate(.55); }
+  .row[data-faded="true"]:hover{ opacity:1; filter:none; }
+  .row .name{ font-size:15px; font-weight:600; letter-spacing:-0.01em; color:var(--c-text); white-space:nowrap; }
+  .row .alias{ font-size:12px; color:var(--c-text-3); white-space:nowrap; }
+  .row .meta{ font-size:12.5px; color:var(--c-text-2); margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .row .meta .typ{ color:var(--c-text); }
+  .row .date{ display:inline-flex; align-items:center; gap:5px; font-size:11.5px; color:var(--c-text-3); margin-top:4px; white-space:nowrap; }
+  .row .date svg{ width:12px; height:12px; opacity:.85; }
+  .row .date .d{ font-family:var(--font-mono); font-variant-numeric:tabular-nums; }
+  .row .right{ display:flex; flex-direction:column; align-items:flex-end; gap:6px; flex:none; }
+</style>
+</helmet>
+<div class="meme-root" data-theme="{{ themeAttr }}" style="min-height:100vh; background:var(--c-app); color:var(--c-text); font-family:var(--font-sans); font-weight:400;">
+
+  <!-- TOP BAR -->
+  <header style="position:sticky; top:0; z-index:20; background:var(--c-surface); border-bottom:1px solid var(--c-border); height:57px;">
+    <div style="max-width:1000px; margin:0 auto; height:100%; padding:0 24px; display:flex; align-items:center; justify-content:space-between; gap:16px;">
+      <div style="display:flex; align-items:center; gap:10px; white-space:nowrap;">
+        <div style="width:26px; height:26px; border-radius:7px; background:var(--brand-400); display:flex; align-items:center; justify-content:center; flex:none;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 22h6"/><path d="M12 22V11"/><path d="M9.5 11c-2 0-3.5-1.8-3.5-4 0-3.2 2.5-5 3.5-7 .6 1.2 1.2 2 2.5 3"/><path d="M14.5 11c2 0 3.5-1.8 3.5-4 0-3.2-2.5-5-3.5-7-.6 1.2-1.2 2-2.5 3"/></svg>
+        </div>
+        <div style="display:flex; align-items:center; gap:9px; font-size:14px;">
+          <strong style="font-weight:600; letter-spacing:-0.01em;">梗库</strong>
+          <span style="color:var(--c-border-strong);">·</span>
+          <span style="color:var(--c-text-2);">归档检索</span>
+          <span style="color:var(--c-border-strong);">·</span>
+          <span style="color:var(--c-text-3); font-size:12.5px;">跨天聚合</span>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:14px; white-space:nowrap;">
+        <span style="font-size:12.5px; color:var(--c-text-2);">共收录 <b style="font-family:var(--font-mono); color:var(--c-text); font-weight:600;">428</b> 个梗</span>
+        <span style="color:var(--c-border-strong);">·</span>
+        <span style="font-size:12.5px; color:var(--c-text-2);">本月新增 <b style="font-family:var(--font-mono); color:var(--green-fg); font-weight:600;">63</b></span>
+        <button class="icon-btn" onClick="{{ onToggleTheme }}" title="切换深浅">
+          <sc-if value="{{ isDark }}" hint-placeholder-val="{{ false }}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          </sc-if>
+          <sc-if value="{{ isLight }}" hint-placeholder-val="{{ true }}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </sc-if>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div style="max-width:1000px; margin:0 auto; padding:24px 24px 64px;">
+
+    <!-- SEARCH -->
+    <div class="search">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--c-text-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="text" value="{{ query }}" onInput="{{ onQuery }}" placeholder="搜梗名 / 别名 / 内容关键词，例如：打工人" />
+      <sc-if value="{{ hasQuery }}" hint-placeholder-val="{{ true }}">
+        <button class="clr" onClick="{{ onClear }}" title="清除">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </sc-if>
+    </div>
+
+    <!-- CONTROL ROW -->
+    <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:16px;">
+      <div class="seg">
+        <button data-active="{{ viewDay }}" onClick="{{ onViewDay }}">按天</button>
+        <button data-active="{{ viewLib }}" onClick="{{ onViewLib }}">梗库</button>
+      </div>
+      <div style="width:1px; height:22px; background:var(--c-border); margin:0 2px;"></div>
+      <div class="fwrap">
+        <span class="lbl">类型</span>
+        <select value="{{ type }}" onChange="{{ onType }}">
+          <sc-for list="{{ typeOptions }}" as="t" hint-placeholder-count="5"><option value="{{ t }}">{{ t }}</option></sc-for>
+        </select>
+      </div>
+      <div class="fwrap">
+        <span class="lbl">平台</span>
+        <select value="{{ platform }}" onChange="{{ onPlatform }}">
+          <sc-for list="{{ platformOptions }}" as="p" hint-placeholder-count="5"><option value="{{ p }}">{{ p }}</option></sc-for>
+        </select>
+      </div>
+      <div class="fwrap">
+        <select value="{{ range }}" onChange="{{ onRange }}">
+          <option value="近30天">近30天</option>
+          <option value="近7天">近7天</option>
+          <option value="近90天">近90天</option>
+          <option value="全部时间">全部时间</option>
+        </select>
+      </div>
+      <div style="margin-left:auto;" class="fwrap">
+        <span class="lbl">排序</span>
+        <select value="{{ sort }}" onChange="{{ onSort }}">
+          <option value="相关度">相关度</option>
+          <option value="价值分">价值分</option>
+          <option value="最近出现">最近出现</option>
+          <option value="出现次数">出现次数</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- RESULT COUNT -->
+    <div style="margin:18px 0 12px; font-size:13px; color:var(--c-text-2);">
+      匹配到 <b style="font-family:var(--font-mono); color:var(--c-text); font-weight:600;">{{ matchedCount }}</b> 个梗
+      <sc-if value="{{ hasQuery }}" hint-placeholder-val="{{ true }}"><span style="color:var(--c-text-3);"> · 关键词「{{ query }}」</span></sc-if>
+    </div>
+
+    <!-- RESULTS -->
+    <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ true }}">
+      <div class="result-list">
+        <sc-for list="{{ groups }}" as="g" hint-placeholder-count="1">
+          <sc-if value="{{ g.hasLabel }}" hint-placeholder-val="{{ false }}">
+            <div class="day-head">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              {{ g.label }} <span class="ct">· {{ g.count }} 个梗</span>
+            </div>
+          </sc-if>
+          <sc-for list="{{ g.rows }}" as="m" hint-placeholder-count="6">
+            <div class="row" data-faded="{{ m.faded }}">
+              <div style="min-width:0;">
+                <div style="display:flex; align-items:baseline; gap:8px;">
+                  <span class="name">{{ m.name }}</span>
+                  <sc-if value="{{ m.hasAlias }}" hint-placeholder-val="{{ false }}"><span class="alias">别名 {{ m.alias }}</span></sc-if>
+                </div>
+                <div class="meta"><span class="typ">{{ m.type }}</span> · {{ m.platformsText }}</div>
+                <div class="date">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                  <span class="d">{{ m.dateText }}</span>
+                </div>
+              </div>
+              <div class="right">
+                <span class="ml-badge" data-life="{{ m.lifeKey }}"><span class="dot"></span>{{ m.life }}</span>
+                <span class="val-chip"><span>价值</span><b>{{ m.value }}</b></span>
+              </div>
+            </div>
+          </sc-for>
+        </sc-for>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isEmpty }}" hint-placeholder-val="{{ false }}">
+      <div style="text-align:center; padding:64px 0; color:var(--c-text-3); font-size:13.5px;">没找到匹配的梗。换个关键词，或放宽筛选条件。</div>
+    </sc-if>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 1280, &quot;height&quot;: 900 },
+  &quot;defaultTheme&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;light&quot;, &quot;dark&quot;], &quot;default&quot;: &quot;light&quot;, &quot;tsType&quot;: &quot;'light' | 'dark'&quot; },
+  &quot;dimFaded&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot; }
+}">
+class Component extends DCLogic {
+  state = {
+    theme: this.props.defaultTheme || 'light',
+    query: '打工人',
+    view: '梗库',
+    type: '全部',
+    platform: '全部',
+    range: '近30天',
+    sort: '相关度',
+  };
+
+  memes() {
+    return [
+      { name:'班味', alias:'洗不掉的班味', type:'生活方式梗', platforms:['抖音','小红书'], life:'还能上车', value:92, dateText:'6-19 → 6-20 · 连热 2 天', lastNum:620, occ:2, kw:['打工人','职场','疲惫','加班'] },
+      { name:'公主请上车', alias:'', type:'短视频梗', platforms:['抖音'], life:'正热', value:85, dateText:'6-20 首发', lastNum:620, occ:1, kw:['打工人','句式','服务'] },
+      { name:'早C晚A', alias:'早咖啡晚酒', type:'生活方式梗', platforms:['微博','小红书'], life:'已过气', value:61, dateText:'6-08 → 6-15 · 出现 4 次', lastNum:615, occ:4, kw:['打工人','养生','咖啡','酒'] },
+      { name:'momo大军', alias:'', type:'二创梗', platforms:['小红书','B站'], life:'正热', value:88, dateText:'6-12 → 6-20 · 出现 5 次', lastNum:620, occ:5, kw:['打工人','匿名','身份'] },
+      { name:'那咋了', alias:'', type:'情绪梗', platforms:['微博','抖音'], life:'正热', value:83, dateText:'6-15 → 6-20 · 连热 3 天', lastNum:620, occ:3, kw:['打工人','松弛','情绪','反内耗'] },
+      { name:'city不city', alias:'洋盘', type:'句式梗', platforms:['抖音','小红书'], life:'还能上车', value:79, dateText:'6-17 → 6-20 · 出现 3 次', lastNum:620, occ:3, kw:['打工人','都市','时髦'] },
+      { name:'我勒个豆', alias:'', type:'口头禅梗', platforms:['B站','抖音'], life:'还能上车', value:74, dateText:'6-19 → 6-20 · 连热 1 天', lastNum:620, occ:1, kw:['打工人','感叹','震惊'] },
+      { name:'牛马', alias:'打工牛马', type:'生活方式梗', platforms:['微博','抖音'], life:'正热', value:81, dateText:'6-10 → 6-20 · 出现 7 次', lastNum:620, occ:7, kw:['打工人','职场','自嘲'] },
+      { name:'班味退散', alias:'', type:'生活方式梗', platforms:['小红书'], life:'已过气', value:55, dateText:'6-14 → 6-18 · 出现 3 次', lastNum:618, occ:3, kw:['打工人','周末','解压'] },
+      { name:'精神离职', alias:'在职离职', type:'职场梗', platforms:['微博','小红书'], life:'已过气', value:58, dateText:'6-05 → 6-13 · 出现 4 次', lastNum:613, occ:4, kw:['打工人','职场','摸鱼'] },
+      { name:'嘴替', alias:'互联网嘴替', type:'二创梗', platforms:['B站','微博'], life:'还能上车', value:77, dateText:'6-11 → 6-20 · 出现 6 次', lastNum:620, occ:6, kw:['打工人','表达','共鸣'] },
+      { name:'水灵灵地', alias:'', type:'句式梗', platforms:['抖音','小红书'], life:'正热', value:80, dateText:'6-18 → 6-20 · 连热 2 天', lastNum:620, occ:2, kw:['打工人','句式','韩综'] },
+    ];
+  }
+
+  renderVals() {
+    const dim = this.props.dimFaded !== false;
+    const isDark = this.state.theme === 'dark';
+    const { query, type, platform, sort, view } = this.state;
+    const q = query.trim();
+    const all = this.memes();
+
+    const typeOptions = ['全部', ...Array.from(new Set(all.map(m => m.type)))];
+    const platformOptions = ['全部', '微博', '抖音', '小红书', 'B站'];
+
+    let list = all.filter(m => {
+      if (q) {
+        const hay = [m.name, m.alias, m.type, ...(m.kw || [])].join(' ');
+        if (!hay.includes(q)) return false;
+      }
+      if (type !== '全部' && m.type !== type) return false;
+      if (platform !== '全部' && !m.platforms.includes(platform)) return false;
+      return true;
+    });
+
+    list = list.map((m, i) => ({ ...m, _i: i }));
+    if (sort === '价值分') list.sort((a, b) => b.value - a.value);
+    else if (sort === '最近出现') list.sort((a, b) => b.lastNum - a.lastNum || b.value - a.value);
+    else if (sort === '出现次数') list.sort((a, b) => b.occ - a.occ || b.value - a.value);
+
+    const toRow = m => ({
+      ...m,
+      lifeKey: m.life === '还能上车' ? 'catch' : m.life === '正热' ? 'hot' : 'faded',
+      faded: m.life === '已过气' && dim,
+      hasAlias: !!m.alias,
+      platformsText: m.platforms.join('/'),
+    });
+
+    let groups;
+    if (view === '按天') {
+      const fmt = n => (n / 100 | 0) + '-' + String(n % 100).padStart(2, '0');
+      const byDay = {};
+      list.slice().sort((a, b) => b.lastNum - a.lastNum).forEach(m => {
+        (byDay[m.lastNum] = byDay[m.lastNum] || []).push(m);
+      });
+      groups = Object.keys(byDay).map(Number).sort((a, b) => b - a).map(n => ({
+        hasLabel: true,
+        label: fmt(n),
+        count: byDay[n].length,
+        rows: byDay[n].map(toRow),
+      }));
+    } else {
+      groups = [{ hasLabel: false, label: '', count: list.length, rows: list.map(toRow) }];
+    }
+
+    return {
+      themeAttr: this.state.theme,
+      isDark, isLight: !isDark,
+      onToggleTheme: () => this.setState(s => ({ theme: s.theme === 'dark' ? 'light' : 'dark' })),
+      query, hasQuery: q.length > 0,
+      onQuery: (e) => this.setState({ query: e.target.value }),
+      onClear: () => this.setState({ query: '' }),
+      viewDay: view === '按天', viewLib: view === '梗库',
+      onViewDay: () => this.setState({ view: '按天' }),
+      onViewLib: () => this.setState({ view: '梗库' }),
+      type, typeOptions, onType: (e) => this.setState({ type: e.target.value }),
+      platform, platformOptions, onPlatform: (e) => this.setState({ platform: e.target.value }),
+      range: this.state.range, onRange: (e) => this.setState({ range: e.target.value }),
+      sort, onSort: (e) => this.setState({ sort: e.target.value }),
+      matchedCount: list.length,
+      hasResults: list.length > 0,
+      isEmpty: list.length === 0,
+      groups,
+    };
+  }
+}
+</script>
+</body>
+</html>

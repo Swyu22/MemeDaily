@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/withmedia-design-system-260db2a7-282a-4f68-9602-b0d62af2de90/colors_and_type.css">
+<style>
+  body { margin:0; }
+  .meme-root{
+    --c-app:#FAFAFA; --c-surface:#FFFFFF;
+    --c-border:#ECECEF; --c-border-strong:#E4E4E7;
+    --c-text:#18181B; --c-text-2:#6B6B73; --c-text-3:#A1A1AA;
+    --c-chip:#F4F4F5;
+    --green-bg:#E7F8ED; --green-fg:#15803D; --green-dot:#22C55E;
+    --amber-bg:#FEF4DC; --amber-fg:#B45309; --amber-dot:#F59E0B;
+    --gray-bg:#F1F1F3; --gray-fg:#8A8A93; --gray-dot:#C4C4C9;
+    --blue-bg:#E9F1FE; --blue-fg:#1D4ED8; --blue-accent:#3B82F6; --blue-bd:#BFD7FE;
+    --amber-bd:#F4DEA8;
+  }
+  .meme-root[data-theme="dark"]{
+    --c-app:#09090B; --c-surface:#141417;
+    --c-border:#232327; --c-border-strong:#2C2C31;
+    --c-text:#F4F4F5; --c-text-2:#9B9BA3; --c-text-3:#6B6B73;
+    --c-chip:#1C1C20;
+    --green-bg:rgba(34,197,94,.14); --green-fg:#4ADE80; --green-dot:#22C55E;
+    --amber-bg:rgba(245,158,11,.15); --amber-fg:#FBBF24; --amber-dot:#F59E0B;
+    --gray-bg:rgba(255,255,255,.06); --gray-fg:#9B9BA3; --gray-dot:#52525B;
+    --blue-bg:rgba(59,130,246,.13); --blue-fg:#7AB0FF; --blue-accent:#3B82F6; --blue-bd:rgba(59,130,246,.32);
+    --amber-bd:rgba(245,158,11,.3);
+  }
+  .meme-root, .meme-root *{ box-sizing:border-box; }
+
+  .ml-badge{ display:inline-flex; align-items:center; gap:6px; height:24px; padding:0 10px; border-radius:9999px; font-size:12px; font-weight:600; white-space:nowrap; line-height:1; }
+  .ml-badge .dot{ width:6px; height:6px; border-radius:50%; background:var(--green-dot); }
+  .ml-badge{ background:var(--green-bg); color:var(--green-fg); }
+
+  .val-chip{ display:inline-flex; align-items:baseline; gap:5px; height:24px; padding:0 9px; border-radius:7px; background:var(--c-chip); border:1px solid var(--c-border); white-space:nowrap; }
+  .val-chip span{ font-size:11px; color:var(--c-text-3); }
+  .val-chip b{ font-family:var(--font-mono); font-size:13px; font-weight:600; color:var(--c-text); font-variant-numeric:tabular-nums; }
+
+  .nt{ display:inline-flex; align-items:center; gap:5px; height:24px; padding:0 10px; border-radius:7px; background:var(--c-chip); color:var(--c-text-2); font-size:12.5px; font-weight:400; white-space:nowrap; }
+  .nt svg{ width:13px; height:13px; opacity:.85; }
+  .safe-tag{ display:inline-flex; align-items:center; gap:5px; height:24px; padding:0 10px; border-radius:7px; font-size:12.5px; font-weight:500; white-space:nowrap; background:var(--green-bg); color:var(--green-fg); }
+  .safe-tag svg{ width:13px; height:13px; }
+
+  .det-field .ov{ font-size:11px; font-weight:600; letter-spacing:.04em; color:var(--c-text-3); margin-bottom:6px; }
+  .det-field .bd{ font-size:14px; line-height:1.7; color:var(--c-text); }
+
+  .callout{ border-radius:11px; padding:15px 17px; border:1px solid transparent; }
+  .callout[data-kind="brand"]{ background:var(--blue-bg); border-color:var(--blue-bd); }
+  .callout[data-kind="risk"]{ background:var(--amber-bg); border-color:var(--amber-bd); }
+  .callout-head{ display:flex; align-items:center; gap:7px; font-size:13px; font-weight:600; margin-bottom:8px; white-space:nowrap; }
+  .callout-head svg{ width:16px; height:16px; flex:none; }
+  .callout[data-kind="brand"] .callout-head{ color:var(--blue-fg); }
+  .callout[data-kind="risk"] .callout-head{ color:var(--amber-fg); }
+  .callout-tag{ margin-left:auto; font-size:11px; font-weight:600; line-height:1; padding:3px 9px; border-radius:5px; background:var(--blue-accent); color:#fff; letter-spacing:.02em; }
+  .callout-body{ font-size:14px; line-height:1.7; color:var(--c-text); }
+
+  .src-link{ display:inline-flex; align-items:center; gap:8px; font-size:13px; color:var(--blue-fg); text-decoration:none; width:fit-content; max-width:100%; white-space:nowrap; }
+  .src-link:hover .src-text{ text-decoration:underline; }
+  .src-plat{ display:inline-flex; align-items:center; height:20px; padding:0 8px; border-radius:5px; background:var(--c-chip); color:var(--c-text-2); font-size:11.5px; font-weight:500; flex:none; }
+  .src-text{ font-weight:500; }
+  .src-date{ color:var(--c-text-3); font-family:var(--font-mono); font-size:11.5px; }
+  .src-link svg{ width:13px; height:13px; opacity:.7; flex:none; }
+
+  .tbtn{ height:36px; padding:0 15px; border-radius:8px; font-size:13px; font-weight:500; display:inline-flex; align-items:center; gap:7px; cursor:pointer; font-family:inherit; border:1px solid transparent; transition:.15s; white-space:nowrap; }
+  .tbtn svg{ width:15px; height:15px; }
+  .tbtn-outline{ background:var(--c-surface); border-color:var(--c-border-strong); color:var(--c-text); }
+  .tbtn-outline:hover{ background:var(--c-chip); }
+  .tbtn-primary{ background:var(--c-text); color:var(--c-app); font-weight:600; }
+  .tbtn-primary:hover{ opacity:.88; }
+  .tbtn[data-on="true"]{ background:var(--green-bg); color:var(--green-fg); border-color:var(--green-dot); }
+  .back-link{ display:inline-flex; align-items:center; gap:6px; color:var(--c-text-2); font-size:13.5px; text-decoration:none; height:36px; padding:0 11px 0 8px; border-radius:8px; transition:.15s; }
+  .back-link:hover{ background:var(--c-chip); color:var(--c-text); }
+  .icon-btn{ width:36px; height:36px; border-radius:8px; border:1px solid var(--c-border-strong); background:var(--c-surface); color:var(--c-text-2); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; transition:.15s; }
+  .icon-btn:hover{ background:var(--c-chip); color:var(--c-text); }
+
+  .rel{ display:inline-flex; align-items:center; gap:5px; height:30px; padding:0 12px; border-radius:8px; border:1px solid var(--c-border-strong); background:var(--c-surface); color:var(--c-text); font-size:13px; font-weight:500; text-decoration:none; transition:.15s; }
+  .rel:hover{ background:var(--c-chip); border-color:var(--c-text-3); }
+  .rel .hash{ color:var(--c-text-3); font-family:var(--font-mono); }
+</style>
+</helmet>
+<div class="meme-root" data-theme="{{ themeAttr }}" style="min-height:100vh; background:var(--c-app); color:var(--c-text); font-family:var(--font-sans); font-weight:400;">
+
+  <!-- TOP ACTION BAR -->
+  <header style="position:sticky; top:0; z-index:20; background:var(--c-surface); border-bottom:1px solid var(--c-border); height:58px;">
+    <div style="max-width:820px; margin:0 auto; height:100%; padding:0 24px; display:flex; align-items:center; justify-content:space-between; gap:14px;">
+      <a class="back-link" href="今日台.dc.html">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        返回今日台
+      </a>
+      <div style="display:flex; align-items:center; gap:9px;">
+        <button class="tbtn tbtn-outline" data-on="{{ linkCopied }}" onClick="{{ onCopyLink }}">
+          <sc-if value="{{ linkCopied }}" hint-placeholder-val="{{ false }}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            链接已复制
+          </sc-if>
+          <sc-if value="{{ linkNotCopied }}" hint-placeholder-val="{{ true }}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            复制链接
+          </sc-if>
+        </button>
+        <button class="tbtn tbtn-primary" data-on="{{ takeCopied }}" onClick="{{ onCopyTake }}">
+          <sc-if value="{{ takeCopied }}" hint-placeholder-val="{{ false }}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            已复制
+          </sc-if>
+          <sc-if value="{{ takeNotCopied }}" hint-placeholder-val="{{ true }}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            复制带走
+          </sc-if>
+        </button>
+        <button class="icon-btn" onClick="{{ onToggleTheme }}" title="切换深浅">
+          <sc-if value="{{ isDark }}" hint-placeholder-val="{{ false }}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          </sc-if>
+          <sc-if value="{{ isLight }}" hint-placeholder-val="{{ true }}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </sc-if>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div style="max-width:820px; margin:0 auto; padding:28px 24px 72px;">
+    <!-- MAIN CARD -->
+    <article style="background:var(--c-surface); border:1px solid var(--c-border); border-radius:16px; padding:32px 34px;">
+
+      <!-- TITLE AREA -->
+      <div style="display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;">
+        <h1 style="margin:0; font-size:34px; font-weight:600; letter-spacing:-0.02em; line-height:1.1; white-space:nowrap;">班味</h1>
+        <span style="font-size:14px; color:var(--c-text-3);">别名 洗不掉的班味</span>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:15px;">
+        <span class="ml-badge"><span class="dot"></span>还能上车</span>
+        <span class="val-chip"><span>价值</span><b>92</b></span>
+        <span class="nt">生活方式梗</span>
+        <span class="nt">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          抖音 · 小红书
+        </span>
+        <span class="safe-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          安全
+        </span>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:13px; font-size:12.5px; color:var(--c-text-3);">
+        <span>收录 <span style="font-family:var(--font-mono); color:var(--c-text-2);">6-19 → 6-20</span></span>
+        <span>·</span>
+        <span>连热 2 天</span>
+        <span>·</span>
+        <span style="display:inline-flex; align-items:center; gap:5px;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          永久链接 <span style="font-family:var(--font-mono); color:var(--c-text-2);">/meme/2026-06-20-banwei</span>
+        </span>
+      </div>
+
+      <!-- LEAD SUMMARY -->
+      <p style="margin:22px 0 0; font-size:18px; line-height:1.6; color:var(--c-text); font-weight:400;">形容上班久了身上那股疲惫、麻木、油腻的气质，“一身班味”。</p>
+
+      <div style="height:1px; background:var(--c-border); margin:26px 0;"></div>
+
+      <!-- FIELDS -->
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="det-field"><div class="ov">来源</div><div class="bd">起于打工人吐槽类短视频，评论区“洗不掉的班味”接龙扩散出圈，迅速成为职场自嘲的高频词。</div></div>
+        <div class="det-field"><div class="ov">典型用法 / 传播场景</div><div class="bd">配通勤、加班、黑眼圈、工位等画面自嘲“一身班味”；或做“周末满血 vs 工作日班味”的反差对比。</div></div>
+        <div class="det-field"><div class="ov">为什么被传播放大</div><div class="bd">精准命中打工人的集体疲惫感，一个词替大家说出那种说不清的状态，代入门槛极低、几乎人人可转发。</div></div>
+        <div class="det-field"><div class="ov">有趣点</div><div class="bd">妙在把抽象的疲惫具象成一种可闻可见的“味道”——自嘲里带着集体共鸣，丧而不刺，谁都能笑着认领。</div></div>
+      </div>
+
+      <!-- BRAND BORROW -->
+      <div class="callout" data-kind="brand" style="margin-top:22px;">
+        <div class="callout-head">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+          品牌借用示范
+          <span class="callout-tag">拿这个</span>
+        </div>
+        <div class="callout-body">解压 / 周末出行 / 个护洗护类可做“一键洗掉班味”系列短视频，把产品体验绑成“去班味”的解决方案。</div>
+      </div>
+
+      <!-- RISK -->
+      <div class="callout" data-kind="risk" style="margin-top:14px;">
+        <div class="callout-head">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></svg>
+          风险提示
+        </div>
+        <div class="callout-body">基调偏丧，避免与“鼓励加班 / 美化内卷”绑定，否则容易翻车招黑。</div>
+      </div>
+
+      <div style="height:1px; background:var(--c-border); margin:26px 0;"></div>
+
+      <!-- SOURCES -->
+      <div class="det-field">
+        <div class="ov">信源</div>
+        <div style="display:flex; flex-direction:column; gap:11px;">
+          <a class="src-link" href="#"><span class="src-plat">抖音</span><span class="src-text">原视频 @某打工人</span><span class="src-date">· 6-19 抓取</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/></svg></a>
+          <a class="src-link" href="#"><span class="src-plat">小红书</span><span class="src-text">话题 #班味</span><span class="src-date">· 6-20 抓取</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/></svg></a>
+        </div>
+      </div>
+
+      <div style="height:1px; background:var(--c-border); margin:26px 0;"></div>
+
+      <!-- HISTORY CHART -->
+      <div class="det-field">
+        <div class="ov">出现历史</div>
+        <div style="display:flex; align-items:flex-end; gap:28px; margin-top:4px;">
+          <div style="display:flex; align-items:flex-end; gap:18px; height:104px;">
+            <div style="display:flex; flex-direction:column; align-items:center; gap:7px;">
+              <span style="font-family:var(--font-mono); font-size:11px; color:var(--c-text-3);">68</span>
+              <div style="width:42px; height:58px; border-radius:6px 6px 2px 2px; background:var(--c-border-strong);"></div>
+              <span style="font-family:var(--font-mono); font-size:11px; color:var(--c-text-3);">6-19</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center; gap:7px;">
+              <span style="font-family:var(--font-mono); font-size:11px; color:var(--green-fg); font-weight:600;">92</span>
+              <div style="width:42px; height:88px; border-radius:6px 6px 2px 2px; background:var(--green-dot);"></div>
+              <span style="font-family:var(--font-mono); font-size:11px; color:var(--c-text-2);">6-20</span>
+            </div>
+          </div>
+          <div style="display:inline-flex; align-items:center; gap:6px; padding-bottom:30px; color:var(--green-fg); font-size:12.5px; font-weight:500;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></svg>
+            热度仍在上升
+          </div>
+        </div>
+      </div>
+
+      <div style="height:1px; background:var(--c-border); margin:26px 0;"></div>
+
+      <!-- RELATED -->
+      <div class="det-field">
+        <div class="ov">相关梗 · 同类</div>
+        <div style="display:flex; align-items:center; gap:9px; flex-wrap:wrap;">
+          <a class="rel" href="#"><span class="hash">#</span>早C晚A</a>
+          <a class="rel" href="#"><span class="hash">#</span>公司团建</a>
+          <a class="rel" href="#"><span class="hash">#</span>momo大军</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 1100, &quot;height&quot;: 1000 },
+  &quot;defaultTheme&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;light&quot;, &quot;dark&quot;], &quot;default&quot;: &quot;light&quot;, &quot;tsType&quot;: &quot;'light' | 'dark'&quot; }
+}">
+class Component extends DCLogic {
+  state = { theme: this.props.defaultTheme || 'light', linkCopied: false, takeCopied: false };
+
+  copyTo(text) { try { navigator.clipboard.writeText(text); } catch (e) {} }
+
+  copyLink() {
+    this.copyTo('https://intra.withmedia.com/meme/2026-06-20-banwei');
+    this.setState({ linkCopied: true });
+    clearTimeout(this._tl);
+    this._tl = setTimeout(() => this.setState({ linkCopied: false }), 1600);
+  }
+
+  copyTake() {
+    const text = [
+      '【班味】还能上车 · 价值92 · 生活方式梗 · 抖音/小红书 · 安全',
+      '一句话：形容上班久了身上那股疲惫、麻木、油腻的气质，“一身班味”。',
+      '品牌借用：解压/周末出行/个护洗护类可做“一键洗掉班味”系列短视频。',
+      '风险：基调偏丧，避免与“鼓励加班/美化内卷”绑定。',
+      '链接：https://intra.withmedia.com/meme/2026-06-20-banwei',
+    ].join('\n');
+    this.copyTo(text);
+    this.setState({ takeCopied: true });
+    clearTimeout(this._tt);
+    this._tt = setTimeout(() => this.setState({ takeCopied: false }), 1600);
+  }
+
+  renderVals() {
+    const isDark = this.state.theme === 'dark';
+    return {
+      themeAttr: this.state.theme,
+      isDark, isLight: !isDark,
+      onToggleTheme: () => this.setState(s => ({ theme: s.theme === 'dark' ? 'light' : 'dark' })),
+      linkCopied: this.state.linkCopied, linkNotCopied: !this.state.linkCopied,
+      takeCopied: this.state.takeCopied, takeNotCopied: !this.state.takeCopied,
+      onCopyLink: () => this.copyLink(),
+      onCopyTake: () => this.copyTake(),
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/withmedia-design-system-260db2a7-282a-4f68-9602-b0d62af2de90/colors_and_type.css">
+<style>
+  body { margin:0; }
+  .meme-root{
+    --c-app:#FAFAFA; --c-surface:#FFFFFF;
+    --c-border:#ECECEF; --c-border-strong:#E4E4E7;
+    --c-text:#18181B; --c-text-2:#6B6B73; --c-text-3:#A1A1AA;
+    --c-chip:#F4F4F5;
+    --green-bg:#E7F8ED; --green-fg:#15803D; --green-dot:#22C55E;
+    --amber-bg:#FEF4DC; --amber-fg:#B45309; --amber-dot:#F59E0B;
+    --gray-bg:#F1F1F3; --gray-fg:#8A8A93; --gray-dot:#C4C4C9;
+    --blue-bg:#E9F1FE; --blue-fg:#1D4ED8; --blue-accent:#3B82F6; --blue-bd:#BFD7FE;
+    --amber-bd:#F4DEA8;
+  }
+  .meme-root[data-theme="dark"]{
+    --c-app:#09090B; --c-surface:#141417;
+    --c-border:#232327; --c-border-strong:#2C2C31;
+    --c-text:#F4F4F5; --c-text-2:#9B9BA3; --c-text-3:#6B6B73;
+    --c-chip:#1C1C20;
+    --green-bg:rgba(34,197,94,.14); --green-fg:#4ADE80; --green-dot:#22C55E;
+    --amber-bg:rgba(245,158,11,.15); --amber-fg:#FBBF24; --amber-dot:#F59E0B;
+    --gray-bg:rgba(255,255,255,.06); --gray-fg:#9B9BA3; --gray-dot:#52525B;
+    --blue-bg:rgba(59,130,246,.13); --blue-fg:#7AB0FF; --blue-accent:#3B82F6; --blue-bd:rgba(59,130,246,.32);
+    --amber-bd:rgba(245,158,11,.3);
+  }
+  .meme-root, .meme-root *{ box-sizing:border-box; }
+
+  .ml-badge{ display:inline-flex; align-items:center; gap:6px; height:23px; padding:0 10px; border-radius:9999px; font-size:12px; font-weight:600; white-space:nowrap; line-height:1; }
+  .ml-badge .dot{ width:6px; height:6px; border-radius:50%; }
+  .ml-badge[data-life="catch"]{ background:var(--green-bg); color:var(--green-fg); }
+  .ml-badge[data-life="catch"] .dot{ background:var(--green-dot); }
+  .ml-badge[data-life="hot"]{ background:var(--amber-bg); color:var(--amber-fg); }
+  .ml-badge[data-life="hot"] .dot{ background:var(--amber-dot); }
+  .ml-badge[data-life="faded"]{ background:var(--gray-bg); color:var(--gray-fg); }
+  .ml-badge[data-life="faded"] .dot{ background:var(--gray-dot); }
+
+  .val-chip{ display:inline-flex; align-items:baseline; gap:5px; padding:3px 9px; border-radius:7px; background:var(--c-chip); border:1px solid var(--c-border); white-space:nowrap; }
+  .val-chip span{ font-size:11px; color:var(--c-text-3); }
+  .val-chip b{ font-family:var(--font-mono); font-size:14px; font-weight:600; color:var(--c-text); font-variant-numeric:tabular-nums; }
+
+  .nt{ display:inline-flex; align-items:center; gap:5px; height:24px; padding:0 9px; border-radius:6px; background:var(--c-chip); color:var(--c-text-2); font-size:12.5px; font-weight:400; white-space:nowrap; }
+  .nt svg{ width:13px; height:13px; opacity:.85; }
+  .safe-tag{ display:inline-flex; align-items:center; gap:5px; height:24px; padding:0 9px; border-radius:6px; font-size:12.5px; font-weight:500; white-space:nowrap; }
+  .safe-tag svg{ width:13px; height:13px; }
+  .safe-tag[data-safe="safe"]{ background:var(--green-bg); color:var(--green-fg); }
+  .safe-tag[data-safe="risk"]{ background:var(--amber-bg); color:var(--amber-fg); }
+
+  .meme-card{ background:var(--c-surface); border:1px solid var(--c-border); border-radius:12px; padding:17px 19px; transition:opacity .18s, border-color .15s, background .18s; }
+  .meme-card[data-faded="true"]{ opacity:.5; filter:saturate(.55); }
+  .meme-card[data-faded="true"]:hover{ opacity:1; filter:none; }
+  .meme-root[data-compact="true"] .meme-card{ padding:12px 16px; }
+
+  .pchip{ height:32px; padding:0 13px; border-radius:8px; border:1px solid var(--c-border-strong); background:var(--c-surface); color:var(--c-text-2); font-size:13px; font-weight:500; cursor:pointer; display:inline-flex; align-items:center; gap:7px; transition:.15s; font-family:inherit; }
+  .pchip:hover{ background:var(--c-chip); color:var(--c-text); }
+  .pchip .ct{ font-family:var(--font-mono); font-size:11px; color:var(--c-text-3); font-variant-numeric:tabular-nums; }
+  .pchip[data-active="true"]{ background:var(--c-text); color:var(--c-app); border-color:var(--c-text); }
+  .pchip[data-active="true"] .ct{ color:var(--c-app); opacity:.6; }
+
+  .act-btn{ height:30px; padding:0 12px; border-radius:7px; font-size:12.5px; font-weight:500; display:inline-flex; align-items:center; gap:6px; cursor:pointer; border:1px solid var(--c-border-strong); background:var(--c-surface); color:var(--c-text-2); transition:.15s; font-family:inherit; white-space:nowrap; }
+  .act-btn svg{ width:14px; height:14px; }
+  .act-btn:hover{ background:var(--c-chip); color:var(--c-text); }
+  .act-btn[data-on="true"]{ color:var(--green-fg); border-color:var(--green-dot); }
+  .act-ghost{ border-color:transparent; background:transparent; }
+  .act-ghost:hover{ background:var(--c-chip); }
+  .act-ghost .cv{ transition:transform .18s; }
+  .act-ghost[data-open="true"] .cv{ transform:rotate(180deg); }
+
+  .icon-btn{ width:34px; height:34px; border-radius:8px; border:1px solid var(--c-border-strong); background:var(--c-surface); color:var(--c-text-2); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; transition:.15s; }
+  .icon-btn:hover{ background:var(--c-chip); color:var(--c-text); }
+
+  .sortsel{ height:32px; padding:0 30px 0 12px; border-radius:8px; border:1px solid var(--c-border-strong); background:var(--c-surface); color:var(--c-text); font-size:13px; font-weight:500; font-family:inherit; cursor:pointer; outline:none;
+    appearance:none; -webkit-appearance:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23A1A1AA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>");
+    background-repeat:no-repeat; background-position:right 9px center; }
+  .det-field .ov{ font-size:11px; font-weight:600; letter-spacing:.04em; color:var(--c-text-3); margin-bottom:5px; }
+  .det-field .bd{ font-size:13px; line-height:1.65; color:var(--c-text-2); }
+
+  .callout{ border-radius:10px; padding:13px 15px; border:1px solid transparent; }
+  .callout[data-kind="brand"]{ background:var(--blue-bg); border-color:var(--blue-bd); }
+  .callout[data-kind="risk"]{ background:var(--amber-bg); border-color:var(--amber-bd); }
+  .callout-head{ display:flex; align-items:center; gap:7px; font-size:12.5px; font-weight:600; margin-bottom:7px; white-space:nowrap; }
+  .callout-head svg{ width:15px; height:15px; flex:none; }
+  .callout[data-kind="brand"] .callout-head{ color:var(--blue-fg); }
+  .callout[data-kind="risk"] .callout-head{ color:var(--amber-fg); }
+  .callout-tag{ margin-left:auto; font-size:10.5px; font-weight:600; line-height:1; padding:3px 8px; border-radius:5px; background:var(--blue-accent); color:#fff; letter-spacing:.02em; }
+  .callout-body{ font-size:13px; line-height:1.65; color:var(--c-text); }
+
+  .src-link{ display:inline-flex; align-items:center; gap:8px; font-size:12.5px; color:var(--blue-fg); text-decoration:none; width:fit-content; max-width:100%; white-space:nowrap; }
+  .src-link:hover .src-text{ text-decoration:underline; }
+  .src-plat{ display:inline-flex; align-items:center; height:19px; padding:0 7px; border-radius:5px; background:var(--c-chip); color:var(--c-text-2); font-size:11px; font-weight:500; flex:none; }
+  .src-text{ font-weight:500; }
+  .src-date{ color:var(--c-text-3); font-family:var(--font-mono); font-size:11px; }
+  .src-link svg{ width:12px; height:12px; opacity:.7; flex:none; }
+</style>
+</helmet>
+<div class="meme-root" data-theme="{{ themeAttr }}" data-compact="{{ compactAttr }}" style="min-height:100vh; background:var(--c-app); color:var(--c-text); font-family:var(--font-sans); font-weight:400;">
+
+  <!-- 1. TOP BAR -->
+  <header style="position:sticky; top:0; z-index:20; background:var(--c-surface); border-bottom:1px solid var(--c-border); height:57px;">
+    <div style="max-width:980px; margin:0 auto; height:100%; padding:0 24px; display:flex; align-items:center; justify-content:space-between;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <div style="width:26px; height:26px; border-radius:7px; background:var(--brand-400); display:flex; align-items:center; justify-content:center; flex:none;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 22h6"/><path d="M12 22V11"/><path d="M9.5 11c-2 0-3.5-1.8-3.5-4 0-3.2 2.5-5 3.5-7 .6 1.2 1.2 2 2.5 3"/><path d="M14.5 11c2 0 3.5-1.8 3.5-4 0-3.2-2.5-5-3.5-7-.6 1.2-1.2 2-2.5 3"/></svg>
+        </div>
+        <div style="display:flex; align-items:center; gap:9px; font-size:14px; white-space:nowrap;">
+          <strong style="font-weight:600; letter-spacing:-0.01em;">Meme Daily</strong>
+          <span style="color:var(--c-border-strong);">·</span>
+          <span style="color:var(--c-text-2);">选题参考台</span>
+          <span style="color:var(--c-border-strong);">·</span>
+          <span style="color:var(--c-text-3); font-size:12.5px;">公司内部</span>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:14px; white-space:nowrap;">
+        <span style="font-family:var(--font-mono); font-size:13px; color:var(--c-text-2); font-variant-numeric:tabular-nums;">2026-06-20</span>
+        <span style="font-size:12.5px; color:var(--c-text-3);">周六</span>
+        <button class="icon-btn" onClick="{{ onToggleTheme }}" title="切换深浅">
+          <sc-if value="{{ isDark }}" hint-placeholder-val="{{ false }}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          </sc-if>
+          <sc-if value="{{ isLight }}" hint-placeholder-val="{{ true }}">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </sc-if>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div style="max-width:980px; margin:0 auto; padding:20px 24px 64px;">
+
+    <!-- 2. RUN STATUS BAR -->
+    <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; background:var(--c-chip); border:1px solid var(--c-border); border-radius:9px; padding:10px 14px; font-size:12.5px; color:var(--c-text-2); margin-bottom:18px;">
+      <span style="display:inline-flex; align-items:center; gap:6px; color:var(--c-text); font-weight:600;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green-dot)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        今日运行
+      </span>
+      <span style="color:var(--c-border-strong);">|</span>
+      <span>今日发布 <b style="font-family:var(--font-mono); color:var(--c-text); font-weight:600;">7</b> 条</span>
+      <span style="color:var(--c-border-strong);">·</span>
+      <span>安全毙 <b style="font-family:var(--font-mono); color:var(--amber-fg); font-weight:600;">7</b> <span style="color:var(--c-text-3);">（政治2·明星争议3·未成年1·辱骂1）</span></span>
+      <span style="color:var(--c-border-strong);">·</span>
+      <span>低置信丢 <b style="font-family:var(--font-mono); color:var(--c-text); font-weight:600;">2</b></span>
+      <span style="margin-left:auto; display:inline-flex; align-items:center; gap:6px; color:var(--c-text-3);">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span style="font-family:var(--font-mono);">08:00</span> 推送
+      </span>
+    </div>
+
+    <!-- 3. FILTER / SORT BAR -->
+    <div style="position:sticky; top:57px; z-index:10; background:var(--c-app); padding:8px 0 14px; display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+      <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+        <sc-for list="{{ platformChips }}" as="chip" hint-placeholder-count="5">
+          <button class="pchip" data-active="{{ chip.active }}" onClick="{{ chip.onClick }}">{{ chip.name }} <span class="ct">{{ chip.count }}</span></button>
+        </sc-for>
+      </div>
+      <div style="margin-left:auto; display:flex; align-items:center; gap:10px;">
+        <span style="font-size:12.5px; color:var(--c-text-3);"><b style="font-family:var(--font-mono); color:var(--c-text-2); font-weight:600;">{{ visibleCount }}</b> 个梗</span>
+        <span style="color:var(--c-border); font-size:12px;">|</span>
+        <label style="font-size:12.5px; color:var(--c-text-3); display:flex; align-items:center; gap:7px;">
+          排序
+          <select class="sortsel" value="{{ sort }}" onChange="{{ onSort }}">
+            <option value="还能上车">还能上车</option>
+            <option value="价值分">价值分</option>
+            <option value="连续天数">连续天数</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <!-- 4. CARD LIST -->
+    <div style="display:flex; flex-direction:column; gap:11px;">
+      <sc-for list="{{ visibleMemes }}" as="m" hint-placeholder-count="5">
+        <article class="meme-card" data-faded="{{ m.faded }}">
+          <!-- header row -->
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:16px;">
+            <h3 style="margin:0; font-size:17px; font-weight:600; letter-spacing:-0.01em; line-height:1.25;">{{ m.name }}</h3>
+            <div style="display:flex; align-items:center; gap:9px; flex:none;">
+              <span class="val-chip"><span>价值</span><b>{{ m.value }}</b></span>
+              <span class="ml-badge" data-life="{{ m.lifeKey }}"><span class="dot"></span>{{ m.life }}</span>
+            </div>
+          </div>
+          <!-- summary -->
+          <p style="margin:7px 0 0; font-size:13.5px; line-height:1.5; color:var(--c-text-2);">{{ m.summary }}</p>
+          <!-- tags -->
+          <div style="display:flex; align-items:center; gap:7px; flex-wrap:wrap; margin-top:12px;">
+            <span class="nt">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              {{ m.platformsText }}
+            </span>
+            <span class="nt">{{ m.type }}</span>
+            <sc-if value="{{ m.isSafe }}" hint-placeholder-val="{{ true }}">
+              <span class="safe-tag" data-safe="safe">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                安全
+              </span>
+            </sc-if>
+            <sc-if value="{{ m.hasRisk }}" hint-placeholder-val="{{ false }}">
+              <span class="safe-tag" data-safe="risk">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></svg>
+                {{ m.risk }}
+              </span>
+            </sc-if>
+            <sc-if value="{{ m.streakText }}" hint-placeholder-val="">
+              <span class="nt">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg>
+                {{ m.streakText }}
+              </span>
+            </sc-if>
+          </div>
+          <!-- detail panel -->
+          <sc-if value="{{ m.expanded }}" hint-placeholder-val="{{ false }}">
+            <div style="margin-top:15px; padding-top:16px; border-top:1px solid var(--c-border); display:flex; flex-direction:column; gap:15px;">
+              <div style="display:flex; flex-direction:column; gap:14px;">
+                <div class="det-field"><div class="ov">来源</div><div class="bd">{{ m.detail.source }}</div></div>
+                <div class="det-field"><div class="ov">典型用法 / 传播场景</div><div class="bd">{{ m.detail.usage }}</div></div>
+                <div class="det-field"><div class="ov">为什么被传播放大</div><div class="bd">{{ m.detail.why }}</div></div>
+              </div>
+
+              <div class="callout" data-kind="brand">
+                <div class="callout-head">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+                  品牌借用示范
+                  <span class="callout-tag">拿这个</span>
+                </div>
+                <div class="callout-body">{{ m.detail.brand }}</div>
+              </div>
+
+              <div class="callout" data-kind="risk">
+                <div class="callout-head">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></svg>
+                  风险提示
+                </div>
+                <div class="callout-body">{{ m.detail.risk }}</div>
+              </div>
+
+              <div class="det-field">
+                <div class="ov">信源</div>
+                <div style="display:flex; flex-direction:column; gap:9px;">
+                  <sc-for list="{{ m.detail.sources }}" as="src" hint-placeholder-count="2">
+                    <a class="src-link" href="{{ src.url }}" target="_blank" rel="noreferrer">
+                      <span class="src-plat">{{ src.platform }}</span>
+                      <span class="src-text">{{ src.text }}</span>
+                      <span class="src-date">· {{ src.date }}</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/></svg>
+                    </a>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <!-- actions -->
+          <div style="display:flex; align-items:center; gap:8px; margin-top:14px;">
+            <button class="act-btn" data-on="{{ m.copied }}" onClick="{{ m.onCopy }}">
+              <sc-if value="{{ m.copied }}" hint-placeholder-val="{{ false }}">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                已复制
+              </sc-if>
+              <sc-if value="{{ m.notCopied }}" hint-placeholder-val="{{ true }}">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                复制带走
+              </sc-if>
+            </button>
+            <button class="act-btn act-ghost" data-open="{{ m.expanded }}" onClick="{{ m.onToggle }}">
+              {{ m.toggleText }}
+              <svg class="cv" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </div>
+        </article>
+      </sc-for>
+
+      <sc-if value="{{ isEmpty }}" hint-placeholder-val="{{ false }}">
+        <div style="text-align:center; padding:56px 0; color:var(--c-text-3); font-size:13.5px;">该平台暂无今日热梗。换个平台看看。</div>
+      </sc-if>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 1280, &quot;height&quot;: 920 },
+  &quot;defaultTheme&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;light&quot;, &quot;dark&quot;], &quot;default&quot;: &quot;light&quot;, &quot;tsType&quot;: &quot;'light' | 'dark'&quot; },
+  &quot;dimFaded&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot; },
+  &quot;compact&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot; }
+}">
+class Component extends DCLogic {
+  state = {
+    theme: this.props.defaultTheme || 'light',
+    platform: '全部',
+    sort: '还能上车',
+    expanded: { banwei: true },
+    copied: null,
+  };
+
+  memes() {
+    return [
+      { id:'banwei', name:'班味', life:'还能上车', value:92, type:'生活方式梗', platforms:['抖音','小红书'], risk:null, streak:2,
+        summary:'形容上班久了那股疲惫油腻的气质。',
+        detail:{
+          source:'起于打工人吐槽类短视频，评论区“洗不掉的班味”接龙扩散出圈。',
+          usage:'配通勤、加班、黑眼圈画面自嘲；或做“周末满血 vs 工作日班味”反差对比。',
+          why:'精准命中打工人集体疲惫感，一个词替大家说出那种状态，极易代入转发。',
+          brand:'解压 / 周末出行 / 个护洗护类可做“一键洗掉班味”系列短视频。',
+          risk:'基调偏丧，避免与“鼓励加班 / 美化内卷”绑定。',
+          sources:[ { platform:'抖音', text:'原视频 @某打工人', date:'6-19 抓取', url:'#' }, { platform:'小红书', text:'话题 #班味', date:'6-20 抓取', url:'#' } ] } },
+      { id:'gongzhu', name:'公主请上车', life:'正热', value:85, type:'短视频梗', platforms:['抖音'], risk:'低风险·注意性别语境', streak:null,
+        summary:'万物皆可“公主请XX”的句式壳。',
+        detail:{
+          source:'短视频骑士式台词演化，“公主请XX”被套成万能句式扩散。',
+          usage:'套用“公主请上车 / 请用餐 / 请签收”做轻俏旁白。',
+          why:'句式壳百搭、代入感强，任何品类都能往里套一句。',
+          brand:'出行 / 餐饮 / 配送类可做“公主请XX”服务化旁白短视频。',
+          risk:'注意性别语境，避免油腻或落入刻板印象。',
+          sources:[ { platform:'抖音', text:'原视频 @某创作者', date:'6-18 抓取', url:'#' }, { platform:'抖音', text:'话题 #公主请上车', date:'6-20 抓取', url:'#' } ] } },
+      { id:'momo', name:'momo大军', life:'正热', value:88, type:'二创梗', platforms:['小红书','B站'], risk:null, streak:null,
+        summary:'匿名同名头像的集体身份梗。',
+        detail:{
+          source:'平台默认昵称“momo”+小恐龙头像形成的匿名群体身份梗。',
+          usage:'以“momo”身份发匿名评论，或玩“momo 认亲”互动。',
+          why:'匿名安全感叠加群体归属，零门槛人人可加入。',
+          brand:'社区 / 工具类可借“momo”做匿名互动或彩蛋身份玩法。',
+          risk:'匿名身份易被滥用引战，避免蹭进争议话题。',
+          sources:[ { platform:'小红书', text:'话题 #momo', date:'6-19 抓取', url:'#' }, { platform:'B站', text:'二创合集 @某UP', date:'6-20 抓取', url:'#' } ] } },
+      { id:'ruoxiao', name:'弱小可怜又无助', life:'已过气', value:58, type:'二创梗', platforms:['B站'], risk:null, streak:null,
+        summary:'卖惨式自嘲二创，已偏烂大街。',
+        detail:{
+          source:'经典台词被反复二创的卖惨自嘲式表达。',
+          usage:'配崩溃表情做卖惨自嘲，如今已略显套路。',
+          why:'曾因情绪共鸣走红，现新鲜度透支、传播见顶。',
+          brand:'收益有限，不建议作主梗；可作“旧梗回顾”类素材点缀。',
+          risk:'已烂大街，硬蹭显得跟不上节奏。',
+          sources:[ { platform:'B站', text:'二创 @某UP', date:'6-15 抓取', url:'#' }, { platform:'微博', text:'话题 #弱小可怜又无助', date:'6-17 抓取', url:'#' } ] } },
+      { id:'city', name:'city不city', life:'还能上车', value:79, type:'句式梗', platforms:['抖音','小红书'], risk:null, streak:1,
+        summary:'中英混搭的洋盘式调侃句式。',
+        detail:{
+          source:'外国博主中文短视频带火的中英混搭说法。',
+          usage:'“这也太 city 了吧”形容时髦 / 都市感。',
+          why:'洋盘混搭有反差萌，朗朗上口、极易模仿。',
+          brand:'时尚 / 旅行 / 城市生活类可做“city不city”打卡系列。',
+          risk:'热度偏轻，避免一句话堆砌过多显刻意。',
+          sources:[ { platform:'抖音', text:'原视频 @某博主', date:'6-18 抓取', url:'#' }, { platform:'小红书', text:'话题 #city不city', date:'6-20 抓取', url:'#' } ] } },
+      { id:'nazale', name:'那咋了', life:'正热', value:83, type:'情绪梗', platforms:['微博','抖音'], risk:null, streak:3,
+        summary:'一种“摆烂式松弛”的万能回应。',
+        detail:{
+          source:'东北口语被网友提炼成的“摆烂式松弛”情绪态度梗。',
+          usage:'对压力 / 质疑回一句“那咋了”，表达松弛态度。',
+          why:'一句话化解焦虑，戳中年轻人反内耗情绪。',
+          brand:'生活方式 / 情绪向品牌可借“那咋了”做松弛感内容。',
+          risk:'注意别用于回应严肃事故或安全类语境。',
+          sources:[ { platform:'微博', text:'话题 #那咋了', date:'6-17 抓取', url:'#' }, { platform:'抖音', text:'原视频 @某博主', date:'6-20 抓取', url:'#' } ] } },
+      { id:'ledou', name:'我勒个豆', life:'还能上车', value:74, type:'口头禅梗', platforms:['B站','抖音'], risk:null, streak:1,
+        summary:'表达震惊或无语的感叹口头禅。',
+        detail:{
+          source:'谐音感叹词，经搞笑视频走红的口头禅。',
+          usage:'看到离谱内容时配字“我勒个豆”。',
+          why:'无攻击性、表达力强，适配各种“震惊”场景。',
+          brand:'测评 / 剧情 / 反转类可用作惊讶点的口播字幕。',
+          risk:'纯口头禅，基本无敏感风险。',
+          sources:[ { platform:'B站', text:'原视频 @某UP', date:'6-19 抓取', url:'#' }, { platform:'抖音', text:'话题 #我勒个豆', date:'6-20 抓取', url:'#' } ] } },
+    ];
+  }
+
+  copy(m) {
+    const txt = `【${m.name}】${m.life} · 价值${m.value}\n${m.summary}\n用法：${m.detail.usage}\n平台：${m.platforms.join('·')}｜${m.type}｜${m.risk || '安全'}`;
+    try { navigator.clipboard.writeText(txt); } catch (e) {}
+    this.setState({ copied: m.id });
+    clearTimeout(this._t);
+    this._t = setTimeout(() => this.setState({ copied: null }), 1600);
+  }
+
+  renderVals() {
+    const dim = this.props.dimFaded !== false;
+    const isDark = this.state.theme === 'dark';
+    const all = this.memes();
+    const plats = ['全部', '微博', '抖音', '小红书', 'B站'];
+    const lifeOrder = { '还能上车':0, '正热':1, '已过气':2 };
+
+    const platformChips = plats.map(p => ({
+      name: p,
+      count: p === '全部' ? all.length : all.filter(m => m.platforms.includes(p)).length,
+      active: this.state.platform === p,
+      onClick: () => this.setState({ platform: p }),
+    }));
+
+    let list = this.state.platform === '全部' ? all.slice() : all.filter(m => m.platforms.includes(this.state.platform));
+    const sort = this.state.sort;
+    list.sort((a, b) => {
+      if (sort === '价值分') return b.value - a.value;
+      if (sort === '连续天数') return (b.streak || 0) - (a.streak || 0) || b.value - a.value;
+      return (lifeOrder[a.life] - lifeOrder[b.life]) || b.value - a.value;
+    });
+
+    const visibleMemes = list.map(m => {
+      const expanded = !!this.state.expanded[m.id];
+      const copied = this.state.copied === m.id;
+      return {
+        ...m,
+        lifeKey: m.life === '还能上车' ? 'catch' : m.life === '正热' ? 'hot' : 'faded',
+        faded: m.life === '已过气' && dim,
+        platformsText: m.platforms.join(' · '),
+        isSafe: !m.risk,
+        hasRisk: !!m.risk,
+        streakText: m.streak ? `已连续 ${m.streak} 天` : '',
+        expanded,
+        copied,
+        notCopied: !copied,
+        toggleText: expanded ? '收起' : '展开详情',
+        onCopy: () => this.copy(m),
+        onToggle: () => this.setState(s => ({ expanded: { ...s.expanded, [m.id]: !s.expanded[m.id] } })),
+      };
+    });
+
+    return {
+      themeAttr: this.state.theme,
+      compactAttr: this.props.compact ? 'true' : 'false',
+      isDark, isLight: !isDark,
+      onToggleTheme: () => this.setState(s => ({ theme: s.theme === 'dark' ? 'light' : 'dark' })),
+      platformChips,
+      sort,
+      onSort: (e) => this.setState({ sort: e.target.value }),
+      visibleMemes,
+      visibleCount: visibleMemes.length,
+      isEmpty: visibleMemes.length === 0,
+    };
+  }
+}
+</script>
+</body>
+</html>

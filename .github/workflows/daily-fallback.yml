@@ -1,0 +1,38 @@
+name: daily-fallback
+
+on:
+  schedule:
+    - cron: "40 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  skipped-day:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run fallback:skipped
+      - run: npm run validate
+
+      - name: Commit skipped day if created
+        run: |
+          if git diff --quiet -- data/daily; then
+            echo "No skipped fallback needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily
+          git commit -m "chore(data): add skipped daily fallback"
+          git push

@@ -1,0 +1,10 @@
+# 依赖边界规则示例（复制为 quality/import-boundaries.txt 才会被校验，默认关闭）
+# 语法：<from_glob> ==> <禁止出现在 import 路径中的子串>
+# 由 scripts/checks/check-import-boundaries.sh 扫描（git ls-files 匹配 from_glob）。
+#
+# 各 feature 之间不得直接互相 import（应走 shared / 事件）：
+src/features/** ==> src/features/
+# UI 层不得直接依赖基础设施层：
+src/ui/** ==> src/infra/
+# 领域层不得依赖基础设施层（依赖反转）：
+src/domain/** ==> src/infra/

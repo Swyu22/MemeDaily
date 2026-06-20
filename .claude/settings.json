@@ -1,0 +1,25 @@
+{
+  "$schema_note": "随 kit 分发的项目级 Claude Code 配置。复制进新项目后自动生效。仅含 hooks；权限/环境变量放 settings.local.json。",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash scripts/print-state.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash scripts/checks/remind-close.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

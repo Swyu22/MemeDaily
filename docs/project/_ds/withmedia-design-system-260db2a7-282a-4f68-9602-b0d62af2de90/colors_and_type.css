@@ -1,0 +1,175 @@
+/* ============================================================
+   WithMedia.与众 — Design System Foundations
+   colors_and_type.css
+
+   Base tokens + semantic variables for the internal management
+   system (公司内网). Built on the shadcn/ui token model so it maps
+   1:1 to Next.js + Tailwind + shadcn/ui implementation.
+
+   Tone: 深灰/近黑 主色 + 明黄品牌强调色 + 白底。
+   克制、清晰、高效 — restrained, clear, efficient.
+   ============================================================ */
+
+/* ----- Webfonts -------------------------------------------------
+   Latin / numerals / brand: Space Grotesk — a clean geometric grotesk that
+   gives Latin and numerals a touch of design character.
+   CJK (headings + body): Noto Sans SC — clean, professional, legible.
+   Mono: JetBrains Mono for IDs / numbers / code.
+   NOTE: webfonts load from CDN for preview; production should self-host
+   into /fonts and may swap to a licensed face (PingFang SC / MiSans). (Flagged.)
+---------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* =========================================================
+     1. RAW PALETTE (primitives — never reference directly in UI)
+     ========================================================= */
+
+  /* Neutral scale — Tailwind "zinc", slightly warm to sit nicely
+     under the yellow accent. Core surface + text colors. */
+  --zinc-50:  #FAFAFA;
+  --zinc-100: #F4F4F5;
+  --zinc-200: #E4E4E7;
+  --zinc-300: #D4D4D8;
+  --zinc-400: #A1A1AA;
+  --zinc-500: #71717A;
+  --zinc-600: #52525B;
+  --zinc-700: #3F3F46;
+  --zinc-800: #27272A;
+  --zinc-900: #18181B;
+  --zinc-950: #09090B;
+
+  /* Brand yellow — the rabbit accent (明黄). Pairs with black text. */
+  --brand-50:  #FFFBEB;
+  --brand-100: #FFF3C4;
+  --brand-200: #FFE89A;
+  --brand-300: #FFDD5C;
+  --brand-400: #FFD000;  /* ← core brand yellow */
+  --brand-500: #F5C200;
+  --brand-600: #D9A400;
+  --brand-700: #A87E00;
+
+  /* Semantic primitives */
+  --green-100: #DCFCE7;  --green-500: #22C55E;  --green-600: #16A34A;  --green-700: #15803D;
+  --blue-100:  #DBEAFE;  --blue-500:  #3B82F6;  --blue-600:  #2563EB;  --blue-700:  #1D4ED8;
+  --amber-100: #FEF3C7;  --amber-500: #F59E0B;  --amber-600: #D97706;  --amber-700: #B45309;
+  --red-100:   #FEE2E2;  --red-500:   #EF4444;  --red-600:   #DC2626;  --red-700:   #B91C1C;
+
+  /* =========================================================
+     2. SEMANTIC TOKENS (shadcn/ui model — use THESE in UI)
+     ========================================================= */
+  --background:            #FFFFFF;
+  --foreground:            var(--zinc-900);
+
+  --card:                  #FFFFFF;
+  --card-foreground:       var(--zinc-900);
+  --popover:               #FFFFFF;
+  --popover-foreground:    var(--zinc-900);
+
+  /* Primary = 深灰/近黑 (default buttons, active states) */
+  --primary:               var(--zinc-900);
+  --primary-foreground:    var(--zinc-50);
+
+  /* Secondary / muted / accent = subtle neutral fills + hovers */
+  --secondary:             var(--zinc-100);
+  --secondary-foreground:  var(--zinc-900);
+  --muted:                 var(--zinc-100);
+  --muted-foreground:      var(--zinc-500);
+  --accent:                var(--zinc-100);   /* subtle hover gray */
+  --accent-foreground:     var(--zinc-900);
+
+  /* Brand = the yellow rabbit accent. Use sparingly: key CTAs,
+     active sidebar marker, logo, highlight bars. NOT a hover gray. */
+  --brand:                 var(--brand-400);
+  --brand-foreground:      var(--zinc-950);   /* black text on yellow */
+  --brand-muted:           var(--brand-100);  /* tinted background */
+
+  /* Destructive / danger */
+  --destructive:           var(--red-600);
+  --destructive-foreground:#FFFFFF;
+
+  /* Lines + focus */
+  --border:                var(--zinc-200);
+  --input:                 var(--zinc-200);
+  --ring:                  var(--zinc-900);   /* focus ring */
+
+  /* =========================================================
+     3. STATUS COLORS (badge / chip conventions)
+     约定：进行中=绿 / 流程进行中=蓝 / 暂停=黄 / 已完成=灰 / 取消·危险=红
+     ========================================================= */
+  --status-active-fg:    var(--green-700);   --status-active-bg:    var(--green-100);   --status-active-dot:   var(--green-500);
+  --status-process-fg:   var(--blue-700);    --status-process-bg:   var(--blue-100);    --status-process-dot:  var(--blue-500);
+  --status-paused-fg:    var(--amber-700);   --status-paused-bg:    var(--amber-100);   --status-paused-dot:   var(--amber-500);
+  --status-done-fg:      var(--zinc-600);    --status-done-bg:      var(--zinc-100);    --status-done-dot:     var(--zinc-400);
+  --status-canceled-fg:  var(--red-700);     --status-canceled-bg:  var(--red-100);     --status-canceled-dot: var(--red-500);
+
+  /* =========================================================
+     4. RADII — 圆角适中
+     ========================================================= */
+  --radius:     0.5rem;   /* 8px — base */
+  --radius-lg:  0.625rem; /* 10px */
+  --radius-md:  0.375rem; /* 6px */
+  --radius-sm:  0.25rem;  /* 4px */
+  --radius-xl:  0.875rem; /* 14px — large cards / modals */
+  --radius-full:9999px;
+
+  /* =========================================================
+     5. SHADOWS — soft, low-contrast elevation
+     ========================================================= */
+  --shadow-xs:  0 1px 2px 0 rgb(24 24 27 / 0.05);
+  --shadow-sm:  0 1px 3px 0 rgb(24 24 27 / 0.08), 0 1px 2px -1px rgb(24 24 27 / 0.08);
+  --shadow-md:  0 4px 8px -2px rgb(24 24 27 / 0.08), 0 2px 4px -2px rgb(24 24 27 / 0.06);
+  --shadow-lg:  0 12px 20px -4px rgb(24 24 27 / 0.10), 0 4px 8px -4px rgb(24 24 27 / 0.06);
+  --shadow-xl:  0 24px 38px -8px rgb(24 24 27 / 0.14), 0 8px 16px -8px rgb(24 24 27 / 0.08);
+  --focus-ring: 0 0 0 2px var(--background), 0 0 0 4px var(--ring);
+
+  /* =========================================================
+     6. SPACING — Tailwind 4px scale (reference)
+     ========================================================= */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --space-12: 48px; --space-16: 64px;
+
+  /* =========================================================
+     7. TYPOGRAPHY
+     ========================================================= */
+  --font-display: "Space Grotesk", "Noto Sans SC", -apple-system,
+                  "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-sans: "Space Grotesk", "Noto Sans SC", -apple-system, "PingFang SC",
+               "Microsoft YaHei", "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", ui-monospace,
+               "Cascadia Code", Menlo, monospace;
+
+  /* Type scale (px). UI base = 14px, the workhorse size. */
+  --text-xs:   12px;   --leading-xs:   16px;
+  --text-sm:   14px;   --leading-sm:   20px;   /* base UI */
+  --text-base: 16px;   --leading-base: 24px;
+  --text-lg:   18px;   --leading-lg:   28px;
+  --text-xl:   20px;   --leading-xl:   28px;
+  --text-2xl:  24px;   --leading-2xl:  32px;
+  --text-3xl:  30px;   --leading-3xl:  36px;
+  --text-4xl:  36px;   --leading-4xl:  40px;
+
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+  --weight-bold:    700;
+
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0;
+}
+
+/* ============================================================
+   8. SEMANTIC TYPE CLASSES (apply directly to elements)
+   ============================================================ */
+.ds-h1 { font-family: var(--font-display); font-size: var(--text-3xl); line-height: var(--leading-3xl); font-weight: var(--weight-bold); letter-spacing: var(--tracking-tight); color: var(--foreground); }
+.ds-h2 { font-family: var(--font-display); font-size: var(--text-2xl); line-height: var(--leading-2xl); font-weight: var(--weight-semibold); letter-spacing: var(--tracking-tight); color: var(--foreground); }
+.ds-h3 { font-family: var(--font-sans); font-size: var(--text-xl);  line-height: var(--leading-xl);  font-weight: var(--weight-semibold); color: var(--foreground); }
+.ds-h4 { font-family: var(--font-sans); font-size: var(--text-lg);  line-height: var(--leading-lg);  font-weight: var(--weight-semibold); color: var(--foreground); }
+.ds-body      { font-family: var(--font-sans); font-size: var(--text-sm);   line-height: var(--leading-sm);   font-weight: var(--weight-regular); color: var(--foreground); }
+.ds-body-lg   { font-family: var(--font-sans); font-size: var(--text-base); line-height: var(--leading-base); font-weight: var(--weight-regular); color: var(--foreground); }
+.ds-muted     { font-family: var(--font-sans); font-size: var(--text-sm);   line-height: var(--leading-sm);   color: var(--muted-foreground); }
+.ds-label     { font-family: var(--font-sans); font-size: var(--text-sm);   line-height: var(--leading-sm);   font-weight: var(--weight-medium); color: var(--foreground); }
+.ds-caption   { font-family: var(--font-sans); font-size: var(--text-xs);   line-height: var(--leading-xs);   color: var(--muted-foreground); }
+.ds-mono      { font-family: var(--font-mono); font-size: var(--text-sm);   line-height: var(--leading-sm);   font-variant-numeric: tabular-nums; }
+.ds-overline  { font-family: var(--font-sans); font-size: var(--text-xs);   line-height: var(--leading-xs);   font-weight: var(--weight-semibold); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-foreground); }
