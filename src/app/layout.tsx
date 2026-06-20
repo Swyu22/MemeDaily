@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description: "每日中文网络热梗选题参考。",
   icons: {
     icon: [
-      { url: "/icon.png", type: "image/png" },
+      { url: "/icon-t.png", type: "image/png" },
       { url: "/favicon.ico", sizes: "any" },
     ],
-    apple: "/apple-icon.png",
+    apple: "/apple-icon-t.png",
   },
   robots: {
     index: false,
