@@ -23,9 +23,13 @@ editorial richness below into the JSON fields. The daily target is up to 10 stro
   as either verified or inferred. If you cannot go online or a platform is unreachable
   today, say so plainly. If nothing qualifies, publish a valid `status: "skipped"`
   envelope. Never pad to 10 with weak or invented memes.
-- Work efficiently within a limited turn budget: do ONE focused sweep of a few key
-  aggregator surfaces, not exhaustive crawling. Optimize for hit-rate and quality over
-  coverage; do not re-fetch pages you already have.
+- Be thorough — this job has a GENEROUS budget (~$5/day of usage, ~100 turns). Cast a wide
+  net across every source category listed below, build a LARGE candidate pool (aim ~30+ raw
+  candidates) before selecting. Work in passes: (1) broad discovery sweep across sources,
+  (2) shortlist + rank by the rubric, (3) verify & enrich the top picks (sources, usage,
+  why-it-spreads). Strongly prefer memes corroborated across MULTIPLE independent sources.
+  Spend the budget on breadth and quality; the only thing to avoid is needlessly re-fetching
+  identical pages. Keep only the best ~10 — quality and "梗-ness" over filling slots.
 
 ## Focus & sources
 Primary platforms for this brief: **微博、抖音、小红书** (B站 / 知乎 / 微信 only as
@@ -37,10 +41,17 @@ cross-platform spillover evidence). Collect public-web evidence in schema-tier p
 3. `search_media` — 搜索引擎结果、媒体报道、公开网文（辅助判断传播范围与背景）。
 4. `spillover` — 公开跨平台讨论页。
 
-Always sweep multiple aggregator surfaces before declaring the day thin: rebang.today tabs
-(Weibo/Xiaohongshu/Douyin/Bilibili/Zhihu/Baidu), tophub.today platform & category pages,
-hot.cnxiaobai.com, easynews.com.cn, yunge.in, weibotop.cn, weibo-trending-hot-history,
-weibo.zhaoyizhe.com; plus search queries combining 平台 + 热榜/热搜/热梗/出圈/二创/好笑/模板.
+Cast a WIDE net across many public surfaces, then triangulate. Sweep across ALL of these
+categories before deciding the day is thin:
+- **聚合榜单**：rebang.today（微博/抖音/小红书/B站/知乎/百度/头条 各 tab）、tophub.today
+  （各平台榜 + 分类页）、hot.cnxiaobai.com、今日热榜类站点（newsnow / momoyu 等）、
+  easynews.com.cn、yunge.in、weibotop.cn、weibo-trending-hot-history、weibo.zhaoyizhe.com。
+- **平台公开页**：微博热搜榜 / 话题页 / 超话 / 公开搜索；抖音公开热点榜 / 话题 / 公开视频页 +
+  巨量算数 trendinsight.oceanengine.com 热点；小红书公开热点 / 话题 / 搜索；B站热门 / 排行榜；
+  知乎热榜；百度热搜；今日头条热榜。
+- **梗词典 / 释义**（判断"是不是梗、怎么用、出处"）：小鸡词典 jikipedia.com、萌娘百科、单词乎。
+- **搜索引擎**：百度 / 必应 查「XX 梗 什么意思 / 出处 / 二创」「今日(本周) 热梗 出圈 好笑 模板」。
+- **跨平台外溢**：知乎「如何评价 X」、豆瓣小组、公众号文章、贴吧讨论。
 
 ## Evidence grading → publish decision
 Grade each candidate, then map the grade to a decision:

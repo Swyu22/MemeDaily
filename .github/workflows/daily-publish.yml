@@ -54,7 +54,7 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          claude_args: "--max-turns 40 --permission-mode bypassPermissions"
+          claude_args: "--max-turns 100 --permission-mode bypassPermissions"
           prompt: |
             You are the MemeDaily daily publishing job running unattended in GitHub Actions.
             Read and follow ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md EXACTLY.
@@ -68,7 +68,9 @@ jobs:
             典型如「某人见义勇为/哽咽/获奖、赛事赛果/出线、某地发生某事」这类单一事件，除非已
             衍生出大众套用的固定句式/二创模板（则发那个模板本身）；拿不准按新闻丢弃，宁可少几条。
             也不要以具体综艺/选秀/电视节目为主体的内容（赛果、淘汰、舞台等），除非梗壳已脱离
-            该节目可独立复用。高效作业：回合预算有限，做一次聚焦的聚合页扫描即可，不要穷尽抓取。
+            该节目可独立复用。采集要广、要聪明：横扫多个聚合榜单 + 平台公开页 + 梗词典 + 搜索
+            引擎 + 跨平台外溢，先建一个大候选池(~30+)，再按 rubric 排序、挑出最好的 ~10 条；
+            分多轮：广撒网 → 筛选排序 → 核实增强。预算充足(~$5/天、~100 轮)，质量与广度优先。
 
             Produce today's data/daily/<Asia/Shanghai date>.json. Then run, in order:
               npm run validate && npm run typecheck && npm test && npm run build
