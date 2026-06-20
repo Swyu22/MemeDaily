@@ -53,20 +53,19 @@ export default function MemeDetailPage({ params }: { params: { id: string } }) {
           <span className="mini mono">{item.date}</span>
           <span className="mini">
             <LinkIcon size={13} aria-hidden="true" />
-            /meme/{item.id}
+            /meme/{item.id}/index.html
           </span>
         </div>
 
         <p style={{ fontSize: 18, lineHeight: 1.65, margin: "22px 0 0" }}>{item.summary}</p>
 
         <CopyButtons
-          link={`https://memedaily.fun/meme/${item.id}/`}
+          link={`http://memedaily.fun/meme/${item.id}/index.html`}
           takeText={[
             `【${item.title}】${lifecycleLabels[item.lifecycle]} · ${item.type}`,
             `一句话：${item.summary}`,
-            `品牌借用：${item.brand_usage}`,
-            `风险：${item.risk.note}`,
-            `链接：https://memedaily.fun/meme/${item.id}/`,
+            `典型用法：${item.usage}`,
+            `链接：http://memedaily.fun/meme/${item.id}/index.html`,
           ].join("\n")}
         />
 

@@ -55,6 +55,10 @@ The candidate must have a reusable shell: phrase, template, BGM, visual setup,
 action pattern, persona, or remix structure. A high-heat one-off news event is not
 a meme for this product.
 
+Avoid topics that are mainly about one specific brand, product launch, company dispute,
+or marketing claim. Brand names can appear in evidence sources, but the published card
+should stand on a generalized meme shell rather than a single company's news cycle.
+
 ## UI Requirements
 - Today desk: date-grouped feed, latest day first, compact cards, visible source rows,
   inline details, copy-away action.

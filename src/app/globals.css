@@ -68,9 +68,10 @@ select {
   align-items: center;
   justify-content: flex-start;
   gap: 16px;
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 0 24px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 10px 20px;
 }
 
 .studio-brand,
@@ -91,8 +92,8 @@ select {
 
 .studio-mark {
   display: grid;
-  width: 34px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   place-items: center;
   border-radius: 8px;
   background: var(--brand);
@@ -102,7 +103,7 @@ select {
 }
 
 .product-brand {
-  flex: 1 1 240px;
+  flex: 0 1 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;

@@ -52,8 +52,8 @@ export default function TodayPage() {
                 <span className="mini">按可借用价值排序</span>
               </div>
               <div className="stack">
-                {day.items.map((item, itemIndex) => (
-                  <MemeCard expanded={dayIndex === 0 && itemIndex === 0} item={item} key={item.id} />
+                {day.items.map((item) => (
+                  <MemeCard expanded item={item} key={item.id} />
                 ))}
               </div>
             </section>

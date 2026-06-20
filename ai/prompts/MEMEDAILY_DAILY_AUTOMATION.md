@@ -42,6 +42,8 @@ target is 10 interesting, reusable meme items.
    remixable, visually expressive, or sentence-template items over pure hard news.
    Each item needs at least two independent URLs and at least one `platform_public` or
    `aggregator` source.
+   Avoid topics framed around a single brand, product launch, company dispute, or
+   marketing claim unless the meme shell has clearly generalized beyond that brand.
 10. If fewer than 10 candidates pass after the expanded source search, publish only the
     qualified items and record why the day is short in `run_report`; if no candidate
     qualifies, create a valid `status: "skipped"` envelope.

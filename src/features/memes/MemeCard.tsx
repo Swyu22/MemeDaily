@@ -3,7 +3,7 @@
  * output: compact card with inline decision details and wrapped evidence links
  * pos: feature UI component shared by Today and detail surfaces
  */
-import { ExternalLink, Lightbulb, TriangleAlert } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { lifecycleLabels, platformLabels, tierLabels } from "@/domain/memedaily/labels";
 import type { MemeItem } from "@/domain/memedaily/schema";
 
@@ -35,14 +35,13 @@ export function MemeCard({ item, expanded = false }: MemeCardProps) {
       <div className="tag-row">
         <span className="mini">{item.platform.map((value) => platformLabels[value]).join(" · ")}</span>
         <span className="mini">{item.type}</span>
-        <span className="mini">{item.risk.level === "safe" ? "安全" : item.risk.note}</span>
         {item.days_on_list ? <span className="mini">连续 {item.days_on_list} 天</span> : null}
       </div>
 
       {expanded ? <MemeDetailFields item={item} /> : <MemeSourceList item={item} compact />}
 
       <div className="tag-row">
-        <a className="button" href={`/meme/${item.id}/`}>
+        <a className="button" href={`/meme/${item.id}/index.html`}>
           查看档案
         </a>
       </div>
@@ -57,22 +56,6 @@ export function MemeDetailFields({ item }: { item: MemeItem }) {
       <Field label="典型用法 / 传播场景" body={item.usage} />
       <Field label="为什么被传播放大" body={item.why_spread} />
       <Field label="有趣点" body={item.fun_point} />
-
-      <section className="callout brand">
-        <div className="callout-title">
-          <Lightbulb size={16} aria-hidden="true" />
-          品牌借用示范
-        </div>
-        <div className="field-body">{item.brand_usage}</div>
-      </section>
-
-      <section className="callout risk">
-        <div className="callout-title">
-          <TriangleAlert size={16} aria-hidden="true" />
-          风险提示
-        </div>
-        <div className="field-body">{item.risk.note}</div>
-      </section>
 
       <section>
         <div className="field-label">信源</div>

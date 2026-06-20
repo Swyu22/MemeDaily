@@ -78,7 +78,7 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
       {filtered.length > 0 ? (
         <div className="result-list">
           {filtered.map((row) => (
-            <a className="result-row" href={`/meme/${row.id}/`} key={row.id}>
+            <a className="result-row" href={`/meme/${row.id}/index.html`} key={row.id}>
               <div>
                 <strong>{row.title}</strong>
                 <div className="summary">{row.summary}</div>
