@@ -1,12 +1,17 @@
 import { Activity } from "lucide-react";
-import { latestEnvelope } from "@/domain/memedaily/data";
+import { loadAllEnvelopes } from "@/domain/memedaily/data";
 import { sortByDecisionValue } from "@/domain/memedaily/labels";
 import { visibleItems } from "@/domain/memedaily/rules";
 import { MemeCard } from "@/features/memes/MemeCard";
 
 export default function TodayPage() {
-  const envelope = latestEnvelope();
-  const items = envelope ? sortByDecisionValue(visibleItems(envelope)) : [];
+  const days = loadAllEnvelopes()
+    .map((envelope) => ({
+      envelope,
+      items: sortByDecisionValue(visibleItems(envelope)),
+    }))
+    .filter((day) => day.items.length > 0);
+  const today = days[0];
 
   return (
     <main className="page">
@@ -15,19 +20,11 @@ export default function TodayPage() {
           <Activity size={15} color="var(--green-dot)" aria-hidden="true" />
           今日运行
         </strong>
-        {envelope ? (
+        {today ? (
           <>
-            <span className="mono">{envelope.date}</span>
-            <span>状态 {envelope.status}</span>
+            <span className="mono">{today.envelope.date}</span>
             <span>
-              发布 <b>{items.length}</b> 条
-            </span>
-            <span>
-              证据不足丢{" "}
-              <b>{envelope.run_report.evidence_summary.dropped_insufficient_evidence}</b>
-            </span>
-            <span>
-              低置信丢 <b>{envelope.run_report.dropped_low_confidence}</b>
+              发布 <b>{today.items.length}</b> 条
             </span>
           </>
         ) : (
@@ -41,10 +38,25 @@ export default function TodayPage() {
         <span className="mini">公开网页证据</span>
       </div>
 
-      {items.length > 0 ? (
-        <div className="stack">
-          {items.map((item, index) => (
-            <MemeCard expanded={index === 0} item={item} key={item.id} />
+      {days.length > 0 ? (
+        <div className="day-list">
+          {days.map((day, dayIndex) => (
+            <section className="day-section" key={day.envelope.date}>
+              <div className="day-head">
+                <div>
+                  <h1>{dayIndex === 0 ? "今日" : day.envelope.date}</h1>
+                  <p className="summary">
+                    {dayIndex === 0 ? day.envelope.date : "历史发布"} · {day.items.length} 条
+                  </p>
+                </div>
+                <span className="mini">按可借用价值排序</span>
+              </div>
+              <div className="stack">
+                {day.items.map((item, itemIndex) => (
+                  <MemeCard expanded={dayIndex === 0 && itemIndex === 0} item={item} key={item.id} />
+                ))}
+              </div>
+            </section>
           ))}
         </div>
       ) : (

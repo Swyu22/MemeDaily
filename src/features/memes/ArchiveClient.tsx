@@ -6,7 +6,6 @@
  * pos: feature interaction layer with no filesystem access
  */
 import { useMemo, useState } from "react";
-import Link from "next/link";
 import { Search } from "lucide-react";
 import { lifecycleLabels, platformLabels } from "@/domain/memedaily/labels";
 import type { MemeItem, Platform } from "@/domain/memedaily/schema";
@@ -79,7 +78,7 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
       {filtered.length > 0 ? (
         <div className="result-list">
           {filtered.map((row) => (
-            <Link className="result-row" href={`/meme/${row.id}/`} key={row.id}>
+            <a className="result-row" href={`/meme/${row.id}/`} key={row.id}>
               <div>
                 <strong>{row.title}</strong>
                 <div className="summary">{row.summary}</div>
@@ -99,7 +98,7 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
                   </span>
                 ) : null}
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       ) : (

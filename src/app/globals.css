@@ -63,53 +63,69 @@ select {
 
 .topbar-inner {
   display: flex;
+  flex-wrap: wrap;
   min-height: 58px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 16px;
   max-width: 1040px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-.brand {
+.studio-brand,
+.product-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
 }
 
-.mark {
+.studio-brand {
+  flex: 0 0 auto;
+  gap: 8px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.studio-mark {
   display: grid;
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 26px;
   place-items: center;
   border-radius: 8px;
   background: var(--brand);
   color: #18181b;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 800;
 }
 
-.brand-copy {
+.product-brand {
+  flex: 1 1 240px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   align-items: baseline;
+  min-width: 0;
   font-size: 14px;
 }
 
-.brand-copy strong {
-  letter-spacing: -0.01em;
+.product-brand strong {
+  color: var(--text);
+  letter-spacing: 0;
 }
 
-.brand-copy span {
+.product-brand span {
   color: var(--muted);
 }
 
 .nav {
   display: flex;
+  flex: 0 0 auto;
   gap: 6px;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav a {
@@ -216,6 +232,30 @@ select {
   gap: 11px;
 }
 
+.day-list {
+  display: grid;
+  gap: 30px;
+}
+
+.day-section {
+  display: grid;
+  gap: 12px;
+}
+
+.day-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 4px;
+}
+
+.day-head h1 {
+  margin: 0;
+  font-size: 25px;
+  letter-spacing: 0;
+}
+
 .card {
   border-radius: 12px;
   padding: 18px 20px;
@@ -260,13 +300,21 @@ select {
 }
 
 .badge,
-.mini,
 .value {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   min-height: 24px;
   white-space: nowrap;
+}
+
+.mini {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 24px;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .badge {
@@ -384,6 +432,12 @@ select {
   gap: 8px;
 }
 
+.sources-compact {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-soft);
+}
+
 .source-link {
   display: flex;
   flex-wrap: wrap;
@@ -473,12 +527,14 @@ select {
   .topbar-inner,
   .card-head,
   .detail-head,
+  .day-head,
   .result-row {
     align-items: flex-start;
     flex-direction: column;
   }
 
   .nav {
+    margin-left: 0;
     width: 100%;
   }
 }

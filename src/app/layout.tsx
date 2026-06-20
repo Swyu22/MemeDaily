@@ -18,12 +18,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <div className="shell">
           <header className="topbar">
             <div className="topbar-inner">
-              <Link className="brand" href="/">
-                <span className="mark">M</span>
-                <span className="brand-copy">
-                  <strong>Meme Daily</strong>
-                  <span>选题参考台</span>
-                </span>
+              <Link className="studio-brand" href="/">
+                <span className="studio-mark">W.</span>
+                <span>WithMedia.与众</span>
+              </Link>
+              <Link className="product-brand" href="/">
+                <strong>Meme Daily</strong>
+                <span>选题参考</span>
               </Link>
               <nav className="nav" aria-label="Primary">
                 <Link href="/">今日台</Link>

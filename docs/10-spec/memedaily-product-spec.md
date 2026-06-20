@@ -56,8 +56,8 @@ action pattern, persona, or remix structure. A high-heat one-off news event is n
 a meme for this product.
 
 ## UI Requirements
-- Today desk: run status bar, filters, sorting by lifecycle, compact cards, inline
-  details, copy-away action.
+- Today desk: date-grouped feed, latest day first, compact cards, visible source rows,
+  inline details, copy-away action.
 - Archive/search: keyword search, day/library view, platform/type/range filters,
   lifecycle and value display.
 - Meme detail: permanent URL, full fields, source links, history, related memes,
@@ -69,6 +69,9 @@ a meme for this product.
 - Daily local Codex App automation runs at 07:15 Asia/Shanghai.
 - Automation writes one complete daily file, validates it, builds the site, then
   commits and pushes.
+- Automation targets 10 publishable items per day by expanding public hot-list
+  aggregators and search queries before giving up. It must never fabricate sources
+  or publish unsafe/weak-evidence items only to fill the count.
 - GitHub fallback creates a `skipped` envelope if the daily file is missing after
   the expected publication window.
 - Invalid JSON must fail CI/build and leave the last successful site online.

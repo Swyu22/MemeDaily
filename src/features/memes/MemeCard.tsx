@@ -3,7 +3,6 @@
  * output: compact card with inline decision details and wrapped evidence links
  * pos: feature UI component shared by Today and detail surfaces
  */
-import Link from "next/link";
 import { ExternalLink, Lightbulb, TriangleAlert } from "lucide-react";
 import { lifecycleLabels, platformLabels, tierLabels } from "@/domain/memedaily/labels";
 import type { MemeItem } from "@/domain/memedaily/schema";
@@ -40,12 +39,12 @@ export function MemeCard({ item, expanded = false }: MemeCardProps) {
         {item.days_on_list ? <span className="mini">连续 {item.days_on_list} 天</span> : null}
       </div>
 
-      {expanded ? <MemeDetailFields item={item} /> : null}
+      {expanded ? <MemeDetailFields item={item} /> : <MemeSourceList item={item} compact />}
 
       <div className="tag-row">
-        <Link className="button" href={`/meme/${item.id}/`}>
+        <a className="button" href={`/meme/${item.id}/`}>
           查看档案
-        </Link>
+        </a>
       </div>
     </article>
   );
@@ -77,23 +76,29 @@ export function MemeDetailFields({ item }: { item: MemeItem }) {
 
       <section>
         <div className="field-label">信源</div>
-        <div className="sources">
-          {item.sources.map((source) => (
-            <a
-              className="source-link"
-              href={source.url}
-              key={`${source.tier}-${source.url}`}
-              rel="noreferrer"
-              target="_blank"
-            >
-              <span className="source-tier">{tierLabels[source.tier]}</span>
-              <span className="source-note">{source.note}</span>
-              <span className="mono">{source.captured_at.slice(5, 10)}</span>
-              <ExternalLink size={13} aria-hidden="true" />
-            </a>
-          ))}
-        </div>
+        <MemeSourceList item={item} />
       </section>
+    </div>
+  );
+}
+
+export function MemeSourceList({ item, compact = false }: { item: MemeItem; compact?: boolean }) {
+  return (
+    <div className={compact ? "sources sources-compact" : "sources"}>
+      {item.sources.map((source) => (
+        <a
+          className="source-link"
+          href={source.url}
+          key={`${source.tier}-${source.url}`}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <span className="source-tier">{tierLabels[source.tier]}</span>
+          <span className="source-note">{source.note}</span>
+          <span className="mono">{source.captured_at.slice(5, 10)}</span>
+          <ExternalLink size={13} aria-hidden="true" />
+        </a>
+      ))}
     </div>
   );
 }
