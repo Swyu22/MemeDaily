@@ -49,6 +49,16 @@ jobs:
         if: env.OAUTH != ''
         run: npm ci
 
+      - name: DEBUG token auth (temporary)
+        if: env.OAUTH != ''
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          echo "shape: $([[ "$CLAUDE_CODE_OAUTH_TOKEN" == sk-ant-oat01-* ]] && echo prefix-ok || echo prefix-UNEXPECTED) len=${#CLAUDE_CODE_OAUTH_TOKEN}"
+          npm i -g @anthropic-ai/claude-code >/dev/null 2>&1 || true
+          echo "--- claude -p output ---"
+          claude -p "Reply with exactly: OK" 2>&1 | head -30 || true
+
       - name: Generate + validate + publish today's MemeDaily data
         if: env.OAUTH != ''
         uses: anthropics/claude-code-action@v1
