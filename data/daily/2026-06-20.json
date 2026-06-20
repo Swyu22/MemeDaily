@@ -3,30 +3,227 @@
   "policy_version": "1.0",
   "rubric_version": "1.0",
   "date": "2026-06-20",
-  "generated_at": "2026-06-20T16:16:00+08:00",
-  "status": "skipped",
+  "generated_at": "2026-06-20T17:01:43+08:00",
+  "status": "published",
   "run_report": {
-    "candidates_scanned": 0,
-    "published": 0,
+    "candidates_scanned": 12,
+    "published": 4,
     "dropped_safety": {
-      "政治时政": 0,
-      "社会事件": 0,
-      "明星争议": 0,
-      "未成年人": 0,
+      "政治时政": 2,
+      "社会事件": 3,
+      "明星争议": 1,
+      "未成年人": 1,
       "隐私": 0,
       "辱骂攻击": 0,
       "低俗违法血腥谣言": 0
     },
-    "dropped_low_confidence": 0,
-    "sources": [],
+    "dropped_low_confidence": 4,
+    "sources": ["douyin", "xiaohongshu", "bilibili", "weibo", "other"],
     "evidence_summary": {
-      "candidates_with_urls": 0,
-      "platform_public_sources": 0,
-      "aggregator_sources": 0,
-      "search_media_sources": 0,
-      "spillover_sources": 0,
-      "dropped_insufficient_evidence": 0
+      "candidates_with_urls": 9,
+      "platform_public_sources": 5,
+      "aggregator_sources": 4,
+      "search_media_sources": 4,
+      "spillover_sources": 3,
+      "dropped_insufficient_evidence": 3
     }
   },
-  "items": []
+  "items": [
+    {
+      "id": "2026-06-20-duanwu-luodiqian",
+      "title": "我的端午落地签",
+      "aliases": ["端午落地签", "我的假期落地签"],
+      "platform": ["douyin"],
+      "type": "短视频梗",
+      "summary": "把端午假期拟人成一张“落地签”，用短视频宣布自己正式进入放假、出游或整顿生活状态。",
+      "origin": "抖音热点榜和相关公开视频均出现“我的端午落地签”话题，语义来自旅行入境的落地签，被迁移到端午假期的自我状态切换。",
+      "usage": "常见写法是“我的端午落地签已生效”，搭配出行、回家、变美、干饭或临时计划画面，适合做节日前后的短视频标题。",
+      "fun_point": "把一个很正式的出入境词汇套到小长假日常上，反差轻、门槛低，每个人都能给自己的端午找一个“入境理由”。",
+      "why_spread": "端午节点明确，句式可以快速替换成城市、假期、人格或消费场景，适合短视频平台的标题模板和评论接龙。",
+      "lifecycle": "peak",
+      "brand_usage": "文旅、餐饮、商场可做“你的端午落地签已签发”式海报，引导用户晒出到店、到城、到景区的第一张照片。",
+      "risk": {
+        "level": "safe",
+        "note": "低风险节日模板，但避免暗示真实签证、证件或出入境服务。"
+      },
+      "days_on_list": 1,
+      "score": 86,
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/video/7652971226768864692",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "抖音公开视频标题带同名话题，作为用法样本。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://trendinsight.oceanengine.com/arithmetic-index/hot?source=0927hyzn3&topic_name=%E6%88%91%E7%9A%84%E7%AB%AF%E5%8D%88%E8%90%BD%E5%9C%B0%E7%AD%BE",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "巨量算数公开热点页存在同名话题入口。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://hot.cnxiaobai.com/",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "公开热榜聚合页显示抖音热点中出现同名话题。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-20-travel-photo-pose",
+      "title": "万能旅行拍照姿势",
+      "aliases": ["美美出片", "旅行拍照姿势"],
+      "platform": ["xiaohongshu", "bilibili"],
+      "type": "生活方式梗",
+      "summary": "用“万能姿势”包装旅行拍照教程，核心不是新动作，而是让用户相信照抄就能快速出片。",
+      "origin": "小红书热榜聚合结果显示“用万能旅行拍照姿势美美出片”进入前列，小红书公开搜索和 B 站同类教程补足了使用语境。",
+      "usage": "笔记和视频通常用“万能”“照抄”“出片”做标题，内容拆成背影、侧身、走路、举手、回头等低门槛姿势清单。",
+      "fun_point": "它把拍照焦虑变成了可复制动作库，用户不必会摄影，也能获得一种“我也能拍得像攻略图”的确定感。",
+      "why_spread": "暑期与端午旅行需求叠加，出片类内容天然适合收藏、转发和照抄，平台算法也偏好强教程感的短标题。",
+      "lifecycle": "rising",
+      "brand_usage": "文旅目的地、酒店、服装和相机类品牌可以发布“本店/本城 5 个万能出片姿势”，鼓励用户按模板打卡。",
+      "risk": {
+        "level": "safe",
+        "note": "低风险生活方式模板，注意不要搬运他人图片或使用未经授权的人像。"
+      },
+      "days_on_list": 1,
+      "score": 82,
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "xiaohongshu",
+          "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%94%A8%E4%B8%87%E8%83%BD%E6%97%85%E8%A1%8C%E6%8B%8D%E7%85%A7%E5%A7%BF%E5%8A%BF%E7%BE%8E%E7%BE%8E%E5%87%BA%E7%89%87&type=51",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "小红书公开搜索页存在同名关键词入口。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://tophub.today/n/L4MdA5ldxD",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "公开热榜聚合页显示该词条位于小红书热榜前列。"
+        },
+        {
+          "tier": "spillover",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1Bi421Z7Ae",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "B站存在同主题旅行拍照姿势教程，说明模板跨平台可复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-20-seagull-rain",
+      "title": "我拍到了海鸥雨",
+      "aliases": ["海鸥雨", "治愈系海鸥"],
+      "platform": ["xiaohongshu", "douyin", "other"],
+      "type": "生活方式梗",
+      "summary": "把海边、湖边成群海鸥掠过的画面命名为“海鸥雨”，从普通风景照变成一个可追拍的治愈瞬间。",
+      "origin": "小红书热榜聚合页出现“我拍到了海鸥雨”，公开搜索页和抖音搜索结果均能找到相关画面语境。",
+      "usage": "适合用于旅行、城市漫步、海边日落、动物互动等内容，标题多写成“我拍到了……”来制造幸运感和现场感。",
+      "fun_point": "“雨”这个词把鸟群运动视觉化了，普通游客也能用同一个命名给照片增加诗意和可分享性。",
+      "why_spread": "画面天然治愈，标题又像一个小型成就解锁；它不像新闻事件依赖具体人物，更容易被不同城市和景点复用。",
+      "lifecycle": "rising",
+      "brand_usage": "目的地账号可以引导用户寻找本地的“海鸥雨时刻”，配合观鸟、海边步道、日落路线做轻量打卡活动。",
+      "risk": {
+        "level": "safe",
+        "note": "低风险自然景观梗，注意提醒文明投喂和保持安全距离。"
+      },
+      "days_on_list": 1,
+      "score": 79,
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "xiaohongshu",
+          "url": "https://www.xiaohongshu.com/search_result?keyword=%E6%88%91%E6%8B%8D%E5%88%B0%E4%BA%86%E6%B5%B7%E9%B8%A5%E9%9B%A8&type=51",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "小红书公开搜索页存在同名关键词入口。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://tophub.today/n/L4MdA5ldxD",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "公开热榜聚合页显示该词条进入小红书热榜。"
+        },
+        {
+          "tier": "spillover",
+          "evidence_role": "cross_platform",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/search/%E6%B5%B7%E9%B8%A5%E4%B8%8B%E9%9B%A8%E5%9B%BE%E7%89%87",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "抖音公开搜索结果出现海鸥雨相关标签和画面语境。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.toutiao.com/article/7651473901742801418/",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "今日头条公开文章使用同名表达描述拍摄瞬间。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-20-no-local-front-row",
+      "title": "前排没有一个本地人",
+      "aliases": ["前排全是外地人", "本地人去哪了"],
+      "platform": ["weibo"],
+      "type": "句式梗",
+      "summary": "演唱会互动里问本地美食，前排却集体给出游客答案，于是“前排没有一个本地人”变成城市错位笑点。",
+      "origin": "微博话题和新浪多篇公开页面记录了汪苏泷成都演唱会火锅互动：台下推荐海底捞后，他吐槽前排不像本地观众。",
+      "usage": "可迁移成“评论区没有一个本地人”“群里没有一个懂行的”“前排没有一个正常上班的”等场景，用来吐槽身份和答案错位。",
+      "fun_point": "笑点在于期待和答案对不上：明明到了成都问火锅，前排却给出最游客化的答案，天然带地方感和社交现场感。",
+      "why_spread": "句式短、城市感强、无须理解复杂背景；演唱会 repo、地方美食和跨城粉丝三层语境叠在一起，适合微博扩散。",
+      "lifecycle": "peak",
+      "brand_usage": "本地生活品牌可轻量改写为“别让评论区没有一个本地人”，邀请真实本地用户推荐门店、路线或隐藏菜单。",
+      "risk": {
+        "level": "low",
+        "note": "娱乐互动梗，避免引导粉丝对立、地域嘲讽或借明星话题做重度营销。"
+      },
+      "days_on_list": 1,
+      "score": 76,
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "origin",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%23%E6%B1%AA%E8%8B%8F%E6%B3%B7%E6%88%90%E9%83%BD%E6%BC%94%E5%94%B1%E4%BC%9A%E5%89%8D%E6%8E%92%E6%B2%A1%E6%9C%89%E4%B8%80%E4%B8%AA%E6%9C%AC%E5%9C%B0%E4%BA%BA%23",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "微博公开搜索页可查询同名话题。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://k.sina.com.cn/article_5794125187_1595b558304001ili2.html",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "新浪公开页面记录话题标题与现场互动概述。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://ent.sina.cn/2026-06-20/detail-iniczxru1929463.d.html",
+          "captured_at": "2026-06-20T17:01:43+08:00",
+          "note": "新浪娱乐页面将该互动列为成都站出圈名场面之一。"
+        }
+      ],
+      "published": true
+    }
+  ]
 }
