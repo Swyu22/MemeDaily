@@ -34,7 +34,7 @@ export default function TodayPage() {
 
       <div className="toolbar">
         <span className="mini">默认按“还能上车”排序</span>
-        <span className="mini">最多 10 条，不凑数</span>
+        <span className="mini">每日目标 10 条</span>
         <span className="mini">公开网页证据</span>
       </div>
 
