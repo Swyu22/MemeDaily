@@ -50,6 +50,7 @@ const SourceSchema = z.object({
   evidence_role: EvidenceRoleSchema,
   platform: PlatformSchema,
   url: z.string().url(),
+  title: z.string().min(1).max(120).optional(),
   captured_at: z.string().datetime({ offset: true }),
   note: z.string().min(2).max(160),
 });

@@ -37,7 +37,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <span>选题参考</span>
               </Link>
               <nav className="nav" aria-label="Primary">
-                <Link href="/">今日台</Link>
+                <Link href="/">首页</Link>
                 <Link href="/archive/">梗库</Link>
               </nav>
             </div>

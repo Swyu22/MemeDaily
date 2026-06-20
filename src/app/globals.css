@@ -73,11 +73,10 @@ select {
 }
 
 .topbar-inner {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   min-height: 58px;
   align-items: center;
-  justify-content: flex-start;
   gap: 16px;
   width: 100%;
   max-width: none;
@@ -95,6 +94,7 @@ select {
 
 .studio-brand {
   flex: 0 0 auto;
+  justify-self: start;
   gap: 8px;
   color: var(--text);
   font-size: 13px;
@@ -131,6 +131,8 @@ select {
   flex: 0 1 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-self: center;
+  justify-content: center;
   gap: 8px;
   align-items: baseline;
   min-width: 0;
@@ -149,9 +151,9 @@ select {
 .nav {
   display: flex;
   flex: 0 0 auto;
+  justify-self: end;
   gap: 6px;
   align-items: center;
-  margin-left: auto;
 }
 
 .nav a {
@@ -573,7 +575,21 @@ select {
     padding-right: 16px;
   }
 
-  .topbar-inner,
+  .topbar-inner {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .studio-brand,
+  .product-brand,
+  .nav {
+    justify-self: start;
+  }
+
+  .product-brand {
+    justify-content: flex-start;
+  }
+
   .card-head,
   .detail-head,
   .day-head,
@@ -583,7 +599,6 @@ select {
   }
 
   .nav {
-    margin-left: 0;
     width: 100%;
   }
 }

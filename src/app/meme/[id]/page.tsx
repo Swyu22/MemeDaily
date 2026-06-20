@@ -29,7 +29,7 @@ export default async function MemeDetailPage({ params }: { params: Promise<{ id:
         <div className="detail-head">
           <div>
             <Link href="/" className="button" style={{ marginBottom: 18 }}>
-              返回今日台
+              返回首页
             </Link>
             <h1 style={{ fontSize: 34 }}>{item.title}</h1>
             {item.aliases.length > 0 ? (
@@ -61,12 +61,12 @@ export default async function MemeDetailPage({ params }: { params: Promise<{ id:
         <p style={{ fontSize: 18, lineHeight: 1.65, margin: "22px 0 0" }}>{item.summary}</p>
 
         <CopyButtons
-          link={`http://memedaily.fun/meme/${item.id}/index.html`}
+          link={`https://memedaily.fun/meme/${item.id}/index.html`}
           takeText={[
             `【${item.title}】${lifecycleLabels[item.lifecycle]} · ${item.type}`,
             `一句话：${item.summary}`,
             `典型用法：${item.usage}`,
-            `链接：http://memedaily.fun/meme/${item.id}/index.html`,
+            `链接：https://memedaily.fun/meme/${item.id}/index.html`,
           ].join("\n")}
         />
 

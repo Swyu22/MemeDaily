@@ -77,7 +77,7 @@ export function MemeSourceList({ item, compact = false }: { item: MemeItem; comp
           target="_blank"
         >
           <span className="source-tier">{tierLabels[source.tier]}</span>
-          <span className="source-note">{source.note}</span>
+          <span className="source-note">{source.title ?? source.note}</span>
           <span className="mono">{source.captured_at.slice(5, 10)}</span>
           <ExternalLink size={13} aria-hidden="true" />
         </a>
