@@ -76,6 +76,12 @@ Prefer candidates that: are actively spreading on 微博/抖音/小红书 now; h
 team could actually borrow; have a clear reason to spread (not just news heat); can become
 content topics, title templates, or comment-section prompts.
 
+**本产品最想要的类型（强烈优先，优先级高于赛事/明星/品牌相关内容）**：新的网络流行用语 /
+新句式 / 抽象表达 / 谐音梗 / 口头禅 / 大众人人能套用接龙的语言模板——任何人都能造句、能玩
+的语言 / 情绪 / 句式梗。风格示例（仅示意、不限于此）：「不讲不讲」「确诊了 XX 症候群」
+「XX 文学」「万能旅行拍照姿势」「前排没有一个本地人」「为什么不留我多唱几首歌呢」
+「粽子配致死量白糖」「夏天就要 stepstep」「父爱如山体滑坡」「Camera Ready」「我的端午落地签」。
+
 De-prioritize or drop: 单纯明星八卦但无梗化表达；纯负面公共事件；来源不明/疑似谣言/
 无法验证的争议内容。
 
@@ -94,6 +100,11 @@ De-prioritize or drop: 单纯明星八卦但无梗化表达；纯负面公共事
 - **不要生活技巧 / 实用窍门类**：纯生活技巧、科普窍门、"原来 XX 应该这样做 / 原来 XX 一直
   做错了"这类教程/技巧贴（例如"原来牛肉应该这样切"），即便上了热搜也一律不发——它们是
   实用资讯，不是网络热梗。除非它已经被网友玩成了固定句式 / 二创梗（此时发那个梗，而不是技巧）。
+- **不要品牌 / 广告植入型梗**：以某品牌、产品或商业植入为核心 / 卖点的梗（如"哈兰德怕上火
+  喝王老吉"这种把品牌塞进梗里的），一律不发——那是广告，不是大众自发的网络热梗。
+- **不要明星 / 名人个人琐事型**：围绕某明星、球星个人的发型、穿搭、私生活、花边观察的梗
+  （如"哈兰德丸子头纹丝不动"），一律不发——它们不是大众可参与的网络流行语。明星只有在已
+  衍生出大众都在套用的句式 / 二创时才考虑，且发那个句式本身、不点名捧人。
 
 Safety drop (any hit → drop, and count it in `run_report.dropped_safety`):
 政治时政、社会事件/灾难事故、明星争议、未成年人、隐私、辱骂攻击、低俗违法血腥谣言。
@@ -124,11 +135,11 @@ do not publish it — it never enters `items`, and the public page never shows a
 - `why_spread` — 为何被传播放大. **Explicitly separate verified vs inferred**, e.g.
   `"已验证：…；推测：…"`. Cover 节日/赛事/综艺/热点窗口、明星/品牌/算法/粉丝推动、
   是否易截图模仿改写二创、评论门槛是否低、能否跨平台.
-- `lifecycle` — 生命周期，按严格规则判定（不要轻易标已过气）：
-  - `declining`（已过气）：**只有当你在所有热榜 / 话题 / 公开搜索里都已搜不到该梗的相关话题**
-    （确实全网下榜、找不到了）才标记。
-  - 否则**至少标 `rising`（还能上车）**；明显仍在大热的标 `peak`（正热）。
-  - 换言之：只要还能在任一热榜 / 平台搜到相关话题，就不要标 declining；拿不准标 rising。
+- `lifecycle` — 生命周期，**唯一判定标准 = 天数**：
+  - `declining`（已过气）：**只有当这个梗第一次被收录至今已超过 10 天**才标。从最近的
+    `data/daily/*.json` 历史按梗名 / 别名查它第一次出现的日期来算。
+  - 否则一律**至少标 `rising`（还能上车）**；明显仍在大热的可标 `peak`（正热）。
+  - 代码校验会强制这条：把不满 10 天的梗标成 `declining` 会让 `npm run validate` 失败、无法提交。
 - `brand_usage` — 广告营销/内容创作可借用方向: concrete and executable (可改写的标题、
   适合/不适合的品牌、互动话题、短视频结构、适配平台). Internal reference — the public page
   does not render it, but still write it well.

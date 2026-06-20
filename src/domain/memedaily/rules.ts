@@ -30,6 +30,54 @@ function normalizeName(value: string): string {
     .join("");
 }
 
+function itemNames(item: MemeItem): string[] {
+  return Array.from(new Set([item.title, ...item.aliases].map(normalizeName).filter(Boolean)));
+}
+
+const DECLINING_MIN_DAYS = 10;
+
+function daysBetween(fromDate: string, toDate: string): number {
+  return Math.round((Date.parse(toDate) - Date.parse(fromDate)) / 86_400_000);
+}
+
+/**
+ * Lifecycle gate: a meme may be labeled `declining` (已过气) only once its topic has
+ * been on the site for >= 10 days since its FIRST appearance in data/daily history.
+ * Anything newer must be at least `rising`. First-seen is read from retained history;
+ * a meme older than the retained window can't be disproven, so it is not flagged.
+ */
+export function lifecycleIssues(envelopes: DailyEnvelope[]): string[] {
+  const issues: string[] = [];
+  const byDateAsc = [...envelopes].sort((a, b) => a.date.localeCompare(b.date));
+  const firstDate = new Map<string, string>();
+
+  for (const envelope of byDateAsc) {
+    for (const item of visibleItems(envelope)) {
+      for (const name of itemNames(item)) {
+        if (!firstDate.has(name)) firstDate.set(name, envelope.date);
+      }
+    }
+  }
+
+  for (const envelope of byDateAsc) {
+    for (const item of visibleItems(envelope)) {
+      if (item.lifecycle !== "declining") continue;
+      let firstSeen: string | undefined;
+      for (const name of itemNames(item)) {
+        const seen = firstDate.get(name);
+        if (seen && (!firstSeen || seen < firstSeen)) firstSeen = seen;
+      }
+      if (firstSeen && daysBetween(firstSeen, envelope.date) < DECLINING_MIN_DAYS) {
+        issues.push(
+          `${item.id} is 'declining' but its topic first appeared ${firstSeen} (<${DECLINING_MIN_DAYS} days before ${envelope.date}); use rising/peak`,
+        );
+      }
+    }
+  }
+
+  return issues;
+}
+
 /**
  * Cross-day freshness gate: a meme that already appeared (by normalized
  * title/alias) on an earlier day must carry days_on_list >= 2, so the daily

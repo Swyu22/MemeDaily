@@ -5,6 +5,7 @@ import {
   crossDayIssues,
   envelopeIssueSummary,
   hasPublishableEvidence,
+  lifecycleIssues,
   visibleItems,
 } from "./rules";
 
@@ -161,6 +162,35 @@ describe("MemeDaily cross-day freshness", () => {
     });
 
     expect(crossDayIssues([day1, day2])).toHaveLength(0);
+  });
+});
+
+describe("MemeDaily lifecycle 10-day rule", () => {
+  function dayWith(date: string, item: MemeItem): DailyEnvelope {
+    return { ...envelopeWith(item, "published"), date };
+  }
+
+  it("flags a declining meme younger than 10 days", () => {
+    const env = dayWith("2026-06-21", { ...baseItem, lifecycle: "declining" });
+    expect(lifecycleIssues([env]).length).toBeGreaterThan(0);
+  });
+
+  it("accepts a declining meme first seen 10+ days ago", () => {
+    const day1 = dayWith("2026-06-01", { ...baseItem, id: "2026-06-01-banwei" });
+    const day2 = dayWith("2026-06-21", {
+      ...baseItem,
+      id: "2026-06-21-banwei",
+      lifecycle: "declining",
+      days_on_list: 2,
+    });
+    expect(lifecycleIssues([day1, day2])).toHaveLength(0);
+  });
+
+  it("does not flag rising or peak", () => {
+    const rising = dayWith("2026-06-21", { ...baseItem, lifecycle: "rising" });
+    const peak = dayWith("2026-06-21", { ...baseItem, lifecycle: "peak" });
+    expect(lifecycleIssues([rising])).toHaveLength(0);
+    expect(lifecycleIssues([peak])).toHaveLength(0);
   });
 });
 

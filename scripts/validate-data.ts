@@ -4,7 +4,11 @@
  * pos: CI/local gate before static build and daily automation commit
  */
 import { dailyJsonFiles, loadEnvelope } from "../src/domain/memedaily/data";
-import { crossDayIssues, envelopeIssueSummary } from "../src/domain/memedaily/rules";
+import {
+  crossDayIssues,
+  envelopeIssueSummary,
+  lifecycleIssues,
+} from "../src/domain/memedaily/rules";
 import type { DailyEnvelope } from "../src/domain/memedaily/schema";
 
 const files = dailyJsonFiles();
@@ -49,6 +53,17 @@ if (failureCount === 0) {
     }
   } else {
     console.log("[validate-data] ok cross-day freshness");
+  }
+
+  const lifecycle = lifecycleIssues(envelopes);
+  if (lifecycle.length > 0) {
+    failureCount += lifecycle.length;
+    console.error("[validate-data] lifecycle (10-day declining) issues");
+    for (const issue of lifecycle) {
+      console.error(`  - ${issue}`);
+    }
+  } else {
+    console.log("[validate-data] ok lifecycle (10-day declining rule)");
   }
 }
 
