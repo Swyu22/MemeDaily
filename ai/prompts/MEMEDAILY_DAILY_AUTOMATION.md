@@ -43,15 +43,24 @@ cross-platform spillover evidence). Collect public-web evidence in schema-tier p
 
 Cast a WIDE net across many public surfaces, then triangulate. Sweep across ALL of these
 categories before deciding the day is thin:
-- **聚合榜单**：rebang.today（微博/抖音/小红书/B站/知乎/百度/头条 各 tab）、tophub.today
-  （各平台榜 + 分类页）、hot.cnxiaobai.com、今日热榜类站点（newsnow / momoyu 等）、
+- **聚合榜单 / 多平台热词（云端可直读，主力来源）**：tophub.today（各平台榜 + 分类页，
+  服务端渲染、内容最全）、top.baidu.com/board（百度热搜）、newrank.cn（新榜，多平台热词库）、
+  hot.cnxiaobai.com、rebang.today（各 tab，SPA 需渲染）、今日热榜类站点（newsnow / momoyu）、
   easynews.com.cn、yunge.in、weibotop.cn、weibo-trending-hot-history、weibo.zhaoyizhe.com。
-- **平台公开页**：微博热搜榜 / 话题页 / 超话 / 公开搜索；抖音公开热点榜 / 话题 / 公开视频页 +
-  巨量算数 trendinsight.oceanengine.com 热点；小红书公开热点 / 话题 / 搜索；B站热门 / 排行榜；
-  知乎热榜；百度热搜；今日头条热榜。
-- **梗词典 / 释义**（判断"是不是梗、怎么用、出处"）：小鸡词典 jikipedia.com、萌娘百科、单词乎。
+- **梗词典 / 释义（云端首选，最能帮你滤掉新闻、查出处和用法）**：墨鱼词典 moyuoo.com
+  （含「梗圈日报」每日新梗，服务端渲染、云端可直读）。注：小鸡词典 jikipedia.com、有梗鸭
+  cuiuc.com、鲸吼 jinghooo.com 从云端 IP 常连不上或被 Cloudflare 拦，**别依赖**。
+- **平台公开页（多被反爬/登录墙拦，能开则取，不强求）**：微博热搜榜 / 话题页 / 超话；抖音公开
+  热点榜 / 公开视频页 + 巨量算数 trendinsight.oceanengine.com；小红书公开热点 / 话题；B站热门 /
+  排行榜；知乎热榜；今日头条热榜。
 - **搜索引擎**：百度 / 必应 查「XX 梗 什么意思 / 出处 / 二创」「今日(本周) 热梗 出圈 好笑 模板」。
 - **跨平台外溢**：知乎「如何评价 X」、豆瓣小组、公众号文章、贴吧讨论。
+- **（仅年末 12 月）权威年度榜**：咬文嚼字「十大流行语」、国家语言资源监测中心「汉语盘点」、
+  《语言文字周报》——年底盘点用，日常忽略。
+
+**云端 IP 现实**：直读微博/抖音/小红书的平台原页基本会撞反爬或登录墙；**真正稳定可直读的主力
+是 tophub.today / top.baidu.com / newrank.cn / hot.cnxiaobai.com + 墨鱼词典 + 媒体/搜索结果**。
+优先把这些打透、交叉印证，别在打不开的页面上浪费回合预算。
 
 ## Evidence grading → publish decision
 Grade each candidate, then map the grade to a decision:
