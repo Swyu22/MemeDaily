@@ -52,7 +52,7 @@ export function TodayFeed({ days, freshDate, hasMore }: TodayFeedProps) {
             <section className="day-section" key={day.date}>
               <div className="day-head">
                 <div>
-                  <h1>{isToday ? "今日" : day.date}</h1>
+                  <h1>{isToday ? "今日热梗" : day.date}</h1>
                   <p className="summary">
                     {isToday ? day.date : "历史发布"} · {day.items.length} 条
                   </p>
