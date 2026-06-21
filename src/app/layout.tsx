@@ -5,19 +5,19 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://memedaily.fun"),
   title: "热梗日报",
-  description: "📰中文互联网每日热门话题精选",
+  description: "🔥每日中文网络热梗精选",
   openGraph: {
     type: "website",
     url: "https://memedaily.fun",
     siteName: "热梗日报",
     title: "热梗日报",
-    description: "📰中文互联网每日热门话题精选",
+    description: "🔥每日中文网络热梗精选",
     images: [{ url: "/share.png", width: 1200, height: 1200, alt: "热梗日报" }],
   },
   twitter: {
     card: "summary",
     title: "热梗日报",
-    description: "📰中文互联网每日热门话题精选",
+    description: "🔥每日中文网络热梗精选",
     images: ["/share.png"],
   },
   icons: {
