@@ -26,6 +26,13 @@ jobs:
             "https://s.weibo.com/top/summary"
             "https://www.douyin.com/hot"
             "https://www.xiaohongshu.com/explore"
+            "https://top.baidu.com/board"
+            "https://jikipedia.com/"
+            "https://moyuoo.com/"
+            "https://cuiuc.com/"
+            "https://jinghooo.com/"
+            "https://www.newrank.cn/"
+            "https://www.bilibili.com/v/hot/"
           )
           ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
           for u in "${urls[@]}"; do
