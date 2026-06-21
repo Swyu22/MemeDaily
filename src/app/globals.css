@@ -60,35 +60,7 @@ select {
 }
 
 .shell {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-}
-
-.site-footer {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  padding: 28px 24px 40px;
-  border-top: 1px solid var(--border-soft);
-  color: var(--faint);
-  font-size: 12px;
-  line-height: 1.7;
-  text-align: center;
-}
-
-.site-footer a {
-  color: var(--faint);
-  text-decoration: none;
-}
-
-.site-footer a:hover,
-.site-footer a:focus-visible {
-  color: var(--muted);
-  text-decoration: underline;
-  outline: none;
 }
 
 .topbar {
