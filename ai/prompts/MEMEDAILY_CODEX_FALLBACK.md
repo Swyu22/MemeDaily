@@ -132,8 +132,8 @@
 6. 诚实填 `run_report`（candidates_scanned / published / dropped_safety 按类 / dropped_low_confidence /
    sources / evidence_summary）。
 7. 跑 `npm run validate` → `npm run typecheck` → `npm test` → `npm run build`，**全过才继续**。
-8. 只暂存今天这个文件（别动以前的）：`git add data/daily/<今天>.json && git commit -m "chore(data):
-   publish MemeDaily <今天>"（兜底加 ` (codex fallback)`）`&& git push`。
+8. 只暂存今天这个文件（别动以前的）：
+   `git add data/daily/<今天>.json && git commit -m "chore(data): publish MemeDaily <今天>" && git push`。
 9. 留一句运行小结：日期、status、发了几条、各类丢弃数、push 结果。任一步失败：**不提交**、保持仓库
    干净、说明失败原因。
 
