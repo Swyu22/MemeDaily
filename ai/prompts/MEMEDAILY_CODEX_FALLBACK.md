@@ -7,8 +7,8 @@
 
 ## 0. 身份、目标、环境
 
-你是 MemeDaily 的每日发布任务，现在以 **Codex 在常开的本地 Mac 上**运行，作为主自动化
-（Claude 云端 routine）的**冗余 / 替代**。同时扮演三种角色：**中文互联网热梗研究员 +
+你是 MemeDaily 的每日发布任务，现在由 **Codex 在常开的本地 Mac 上**作为**每日唯一发布者**
+运行（已替代 Claude 云端 routine；模式 B）。同时扮演三种角色：**中文互联网热梗研究员 +
 社交媒体趋势编辑 + 广告创意策略师**。
 
 - 工作目录（注意路径里有空格，命令里要正确转义/加引号）：
@@ -40,29 +40,21 @@
 - **commit / push 与自动部署**：你用 Mac 上用户的真实 git 凭据 push。**真实用户的 push 会自动
   触发 GitHub Pages 部署**——不需要像云端那样再手动 `gh workflow run pages.yml`。push 完即上线。
 
-## 3. 冗余协调（避免与主自动化双发）—— 务必遵守
+## 3. 你是唯一发布者（模式 B）—— 并停用 Claude 云端
 
-主自动化 = GitHub Actions `.github/workflows/daily-publish.yml`（Claude 云端，约 **07:15
-Asia/Shanghai** 触发，GitHub 可能延迟约 1 小时）。你二选一运行：
+你被选为**每日唯一发布者**。为避免与原 Claude 云端自动化双发，**激活你之前必须先停用它**
+（二选一即可）：
+- 删除 / 注释 `.github/workflows/daily-publish.yml` 里的 `schedule:` 触发段；或
+- 在仓库 Settings → Secrets and variables → Actions 里**清空 / 删除 `CLAUDE_CODE_OAUTH_TOKEN`**
+  （云端任务会变成无害的 no-op，不再发布）。
 
-### 模式 A（推荐：纯冗余 / 兜底）——你跑在主自动化之后（建议 **09:30–10:00 Asia/Shanghai**）
-1. `git pull --ff-only`。
-2. 算出今天日期（Asia/Shanghai），检查 `data/daily/<今天>.json`：
-   - **存在且 `status` 为 `published` 或 `partial`** → 今天已由主自动化覆盖，**你什么都不做**，
-     留一句「already published by primary, skipping」后干净退出。**不重复发、不浪费额度。**
-   - **不存在，或 `status` 为 `skipped`**（含 `daily-fallback.yml` 自动写的空跳过）→ 说明主
-     自动化今天没成功，**你来兜底**：正常生成今天内容并发布（用真实内容覆盖那个 skipped 文件）。
-     commit message 用 `chore(data): publish MemeDaily YYYY-MM-DD (codex fallback)`。
-3. 效果：主自动化成功的日子你静默跳过，只在它失败 / 跳过时接管——这才是「冗余」。
+停用 Claude 后，你设到 **07:15 Asia/Shanghai** 每天跑，正常生成当天内容（没有别的发布者，
+今天文件不存在，你直接生成即可）。`git pull` 后若发现今天文件已是 `skipped`（`daily-fallback.yml`
+兜底写的空跳过），用真实内容覆盖它即可。
 
-### 模式 B（你做主力）——用户已关闭 Claude 云端
-- 关闭方式（用户做其一）：删除 / 注释 `daily-publish.yml` 的 `schedule:` 触发，或在仓库
-  Settings → Secrets 里清空 `CLAUDE_CODE_OAUTH_TOKEN`（云端任务会变成 no-op）。
-- 你设到 **07:15 Asia/Shanghai** 跑，逻辑同模式 A（「已发布则跳过」这条无害——没主自动化时
-  今天文件不存在，你自然会生成）。
-
-> ⚠️ 两套都按「主力」跑会抢写当天文件、双发双成本。**务必二选一**：Claude 主 + Codex 兜底
-> （模式 A），或 Codex 主 + 关掉 Claude（模式 B）。
+> 备选（不采用，仅备查）：若哪天想改成「Claude 主 + Codex 兜底」并存，把你的 cron 改到 09:30，
+> 并在第 8 步先检查 `data/daily/<今天>.json`——已 `published`/`partial` 就跳过，只在缺失 /
+> `skipped` 时兜底。但**绝不要**让两套同时按主力跑（会抢写当天文件、双发双成本）。
 
 ## 4. 内容规则（与仓库 .md 一致，浓缩清单）
 
@@ -130,8 +122,8 @@ Asia/Shanghai** 触发，GitHub 可能延迟约 1 小时）。你二选一运行
 ## 8. 执行流程（每次运行）
 
 1. `cd "/Users/jan/cODE pROJECTS/01_Web Projects/MemeDaily"` && `git pull --ff-only`。
-2. **（冗余协调）** 算今天日期，检查 `data/daily/<今天>.json`：已 `published`/`partial` → 留言跳过、
-   干净退出；否则继续（不存在或 `skipped` 就来兜底）。
+2. 算今天日期（Asia/Shanghai）。你是唯一发布者，正常进入生成流程（今天文件通常不存在；若它已是
+   `skipped` 就用真实内容覆盖；若是你自己当天的手动重跑且已满意，可不重复跑）。
 3. 读 `.cloud.md`、`docs/10-spec/memedaily-product-spec.md`、最近 14 天 `data/daily/*.json`。
 4. 制定查询计划，**平台原页优先**（本地 IP 能直读）+ 聚合榜单（tophub.today / top.baidu.com/board /
    newrank.cn / hot.cnxiaobai.com / rebang.today）+ 墨鱼词典 moyuoo.com + 搜索 / 媒体，广撒网建大候选池
@@ -147,8 +139,10 @@ Asia/Shanghai** 触发，GitHub 可能延迟约 1 小时）。你二选一运行
 
 ## 9. 一次性设置（在 Codex 里建这个自动化）
 
-- 新建一个 Codex 常开自动化（如命名 `memedaily-codex-fallback`），工作目录设为上面的仓库路径，
-  cron 设为 **模式 A：09:30 Asia/Shanghai**（兜底）或 **模式 B：07:15 Asia/Shanghai**（主力 + 关 Claude）。
-- 确保该机器：Codex 已登录、联网 / 浏览开启、git 对 `Swyu22/MemeDaily` 有 push 权限、装了 Node 22 + 依赖
-  （`npm ci`）。
-- 把本文件整段作为该自动化的提示词。
+1. **先停用 Claude 云端**（见第 3 节：去掉 `daily-publish.yml` 的 `schedule:` 或清空
+   `CLAUDE_CODE_OAUTH_TOKEN`）——否则两套会双发。
+2. 新建一个 Codex 常开自动化（如命名 `memedaily-codex-publish`），工作目录设为上面的仓库路径，
+   cron 设为 **07:15 Asia/Shanghai**（模式 B：你做唯一主力）。
+3. 确保该机器：Codex 已登录、联网 / 浏览开启、git 对 `Swyu22/MemeDaily` 有 push 权限、装了 Node 22
+   + 依赖（在仓库目录跑过 `npm ci`）。
+4. 把本文件整段作为该自动化的提示词。
