@@ -27,7 +27,7 @@ export default async function MemeDetailPage({ params }: { params: Promise<{ id:
     <main className="page" style={{ maxWidth: 880 }}>
       <article className="detail-card">
         <div className="detail-head">
-          <div>
+          <div className="head-main">
             <Link href="/" className="button" style={{ marginBottom: 18 }}>
               返回首页
             </Link>
@@ -36,7 +36,7 @@ export default async function MemeDetailPage({ params }: { params: Promise<{ id:
               <p className="summary">别名 {item.aliases.join(" / ")}</p>
             ) : null}
           </div>
-          <div className="tag-row" style={{ marginTop: 0 }}>
+          <div className="tag-row head-aside">
             <span className="badge" data-life={item.lifecycle}>
               {lifecycleLabels[item.lifecycle]}
             </span>

@@ -16,11 +16,11 @@ export function MemeCard({ item, expanded = false }: MemeCardProps) {
   return (
     <article className="card" data-faded={item.lifecycle === "declining"}>
       <div className="card-head">
-        <div>
+        <div className="head-main">
           <h2>{item.title}</h2>
           <p className="summary">{item.summary}</p>
         </div>
-        <div className="tag-row" style={{ marginTop: 0 }}>
+        <div className="tag-row head-aside">
           {item.score !== undefined ? (
             <span className="value">
               价值 <b className="mono">{item.score}</b>
