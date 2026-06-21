@@ -3,41 +3,34 @@
   "policy_version": "1.0",
   "rubric_version": "1.0",
   "date": "2026-06-21",
-  "generated_at": "2026-06-21T04:15:00+08:00",
+  "generated_at": "2026-06-21T07:20:00+08:00",
   "status": "published",
   "run_report": {
-    "candidates_scanned": 80,
+    "candidates_scanned": 65,
     "published": 10,
     "dropped_safety": {
-      "政治时政": 4,
-      "社会事件": 3,
-      "明星争议": 0,
-      "未成年人": 0,
-      "隐私": 0,
-      "辱骂攻击": 0,
-      "低俗违法血腥谣言": 0,
-      "品牌广告植入梗": 3,
-      "明星个人琐事梗": 3,
-      "具体综艺节目梗": 14,
-      "纯新闻无梗壳": 12,
-      "生活技巧实用窍门": 1
+      "政治时政": 3,
+      "社会事件": 5,
+      "纯新闻无梗壳": 10,
+      "具体综艺节目梗": 7,
+      "明星个人琐事梗": 9,
+      "生活技巧实用窍门": 1,
+      "品牌广告植入梗": 0
     },
-    "dropped_low_confidence": 10,
+    "dropped_low_confidence": 5,
     "sources": [
       "weibo",
-      "douyin",
       "xiaohongshu",
-      "bilibili",
       "zhihu",
       "other"
     ],
     "evidence_summary": {
-      "candidates_with_urls": 52,
-      "platform_public_sources": 9,
-      "aggregator_sources": 16,
-      "search_media_sources": 22,
-      "spillover_sources": 2,
-      "dropped_insufficient_evidence": 10
+      "candidates_with_urls": 40,
+      "platform_public_sources": 10,
+      "aggregator_sources": 15,
+      "search_media_sources": 25,
+      "spillover_sources": 3,
+      "dropped_insufficient_evidence": 5
     }
   },
   "items": [
@@ -73,7 +66,7 @@
           "evidence_role": "popularity",
           "platform": "weibo",
           "url": "https://weibotop.cn/",
-          "captured_at": "2026-06-21T04:00:00+08:00",
+          "captured_at": "2026-06-21T07:00:00+08:00",
           "note": "微博热搜今日显示马宁执法英加话题61K讨论量，相关话题多条持续在榜"
         },
         {
@@ -93,6 +86,62 @@
           "title": "没想到！世界杯刚开始，裁判马宁就意外火出圈，原因说出来太好笑",
           "captured_at": "2026-06-21T02:35:00+08:00",
           "note": "网易报道马宁出圈原因：中国队缺席形成\"没有软肋\"笑点，确认话题传播背景"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-21-wps-betrayal",
+      "title": "💻 被WPS背刺了",
+      "aliases": [
+        "被X背刺了",
+        "WPS套娃收费",
+        "软件背刺模板"
+      ],
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "WPS调整付费策略引发已付费用户权益缩水，\"被WPS背刺了\"登微博热搜698K，\"被X背刺了\"句式被网友广泛改写用于各类服务涨价、规则突变场景。",
+      "origin": "WPS被指\"套娃式收费\"：普通会员之上再套AI会员，教育版之上再套高级功能，已付费用户发现购买的权益持续缩水；微博今日\"被WPS背刺了\"话题698K讨论量，多家媒体跟进\"WPS背刺用户\"报道。",
+      "usage": "\"被X背刺了\"可套用于任何付费后被追加收费、规则突然变更损害用户利益的场景：被平台会员背刺了、被外卖平台背刺了、被某品牌终身会员背刺了；也可反向用作\"我们不背刺你\"的正向承诺。",
+      "fun_point": "\"背刺\"本是游戏/小说里的背后捅刀，移植到商业收费行为后：不是涨价，是背刺；不是取消功能，是出卖。把商业逻辑变成道德罪行，用词既准确又解气，情绪精准出口。",
+      "why_spread": "已验证：微博热搜698K，163.com/stcn.com两家媒体确认报道；推测：软件付费焦虑是全体网民的共同痛点，\"套娃收费\"愤怒共鸣广，句式改写门槛为零，任何被涨价过的人都能直接代入。",
+      "lifecycle": "rising",
+      "brand_usage": "国产办公软件竞品可借势\"我们不背刺你\"做对比承诺；免费开源工具可趁势强调自身免费立场；消费者保护类账号可用\"被背刺指南\"做用户教育；品牌应慎用以免引发反向比较。",
+      "risk": {
+        "level": "safe",
+        "note": "用户消费维权梗，方向正当；商业使用需避免过度点名竞品，留意WPS是否已回应解决问题。"
+      },
+      "days_on_list": 1,
+      "score": 88,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://weibotop.cn/",
+          "captured_at": "2026-06-21T07:00:00+08:00",
+          "note": "微博热搜今日「被WPS背刺了」698K讨论量，为当日热搜前列话题"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://m.163.com/dy/article/IJUILJDR0519DFFO.html",
+          "title": "WPS背刺用户？这不是第一次",
+          "captured_at": "2026-06-21T06:00:00+08:00",
+          "note": "网易报道WPS收费策略调整背景，梳理历次背刺事件，确认话题媒体传播路径"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.stcn.com/article/detail/1201250.html",
+          "title": "WPS被指套娃式收费，用户直呼被背刺",
+          "captured_at": "2026-06-21T06:00:00+08:00",
+          "note": "证券时报报道WPS套娃收费结构，梳理各层会员权益差异，确认话题在财经媒体有报道"
         }
       ],
       "published": true
@@ -156,6 +205,53 @@
       "published": true
     },
     {
+      "id": "2026-06-21-token-communication",
+      "title": "🔋 人与人沟通也是要消耗token的",
+      "aliases": [
+        "token消耗梗",
+        "社交token余额不足",
+        "沟通也要消耗token"
+      ],
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "把AI技术词汇\"token\"移植到人际关系，形容高成本沟通耗尽社交能量，内向者和打工人强烈共鸣。",
+      "origin": "6月20日在微博热搜出现同名话题，中华网、新浪等媒体同日发布专题文章；核心比喻：人在社交场景中和大语言模型一样有有限的\"认知-情绪\"资源，被反驳、被情绪输出、被绕圈子都会迅速消耗token配额。",
+      "usage": "可改写\"X也是要消耗token的\"——开会、写方案、处理投诉、被迫social均是token消耗型场景；评论区常见接龙：\"今天token用完了\"\"余额不足请稍后再来\"；适合职场/效率类账号做\"今日token余额\"系列内容。",
+      "fun_point": "AI时代造出的极精准比喻：沟通不是免费的，每次无效交流都在扣你的配额。高度技术感的词汇配上人人都懂的情绪共鸣——任何体验过被反驳、被绕圈子、被迫陪聊的人都会立即说\"对对对就是这个！\"",
+      "why_spread": "已验证：微博热搜6月20日出现同名话题（weibo-trending-hot-history归档），中华网2026-06-20发布专题文章；推测：AI词汇全民熟悉度上升，\"token\"已成跨圈通用词，且此比喻对打工人/内向者情绪命中精准，评论区接龙门槛极低。",
+      "lifecycle": "rising",
+      "brand_usage": "效率工具/职场SaaS可用\"减少无效沟通，省出你的token\"；心理咨询/冥想App可做\"今日token余量\"提醒功能营销；内容账号可做\"高token消耗场景清单\"互动话题。",
+      "risk": {
+        "level": "safe",
+        "note": "轻幽默AI-era语言梗，无敏感内容；使用时避免绑定具体人际矛盾或引发误解。"
+      },
+      "days_on_list": 1,
+      "score": 83,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://weibo-trending-hot-history.vercel.app/",
+          "captured_at": "2026-06-21T07:00:00+08:00",
+          "note": "微博热搜历史归档6月20日页面确认出现同名话题，是本梗传播的平台验证"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://news.china.com/socialgd/10000169/20260620/49559460.html",
+          "title": "人与人沟通也是要消耗token的 低效交流耗尽心力",
+          "captured_at": "2026-06-21T07:00:00+08:00",
+          "note": "中华网2026-06-20专题文章，将人际高成本沟通比作token消耗，为梗的媒体传播证明"
+        }
+      ],
+      "published": true
+    },
+    {
       "id": "2026-06-21-msg-syndrome",
       "title": "🧂 确诊了味精症候群",
       "aliases": [
@@ -188,7 +284,7 @@
           "evidence_role": "popularity",
           "platform": "weibo",
           "url": "https://weibotop.cn/",
-          "captured_at": "2026-06-21T04:00:00+08:00",
+          "captured_at": "2026-06-21T07:00:00+08:00",
           "note": "微博热搜今日在榜41K讨论，话题持续活跃"
         },
         {
@@ -198,6 +294,53 @@
           "url": "https://www.xiaohongshu.com/search_result/?keyword=%E5%91%B3%E7%B2%BE%E7%97%87%E5%80%99%E7%BE%A4&type=51",
           "captured_at": "2026-06-21T01:00:00+08:00",
           "note": "小红书公开搜索页确认「味精症候群」词条存在，平台内容传播有据"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-21-three-festivals-dad",
+      "title": "👨 三节同框，连老天都催你陪爸",
+      "aliases": [
+        "三节叠buff",
+        "端午夏至父亲节",
+        "连X都催你Y"
+      ],
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "情绪梗",
+      "summary": "2026年6月21日端午、夏至、父亲节三节同框，11年一遇；网友造句\"连老天都催你陪爸\"，\"三节叠buff\"成为年度最密集的节日营销窗口和情感催化剂。",
+      "origin": "2026年罕见日历巧合：农历五月初五恰逢公历6月21日夏至，同日又是父亲节（6月第三周日），三节11年一遇，上次同框是2015年；搜狐等媒体报道\"三节同框\"稀缺性，微博父亲节相关话题今日667K讨论量。",
+      "usage": "\"连老天都催你X\"模板，适合任何\"大环境都在推着你做某件事\"的场景；\"三节叠buff\"可改写为\"X叠buff\"形容任何多重幸运/压力同时叠加；也适合做\"今天是我做X最好的借口\"话题。",
+      "fun_point": "三个节日撞车，营销内容不能偷懒分三次发了——龙舟、消暑、陪爸三个主题必须硬塞进一条；\"连老天都X\"把节历巧合拟人化成上天的催促，家国情怀和孝道压力笑着包装进去了。",
+      "why_spread": "已验证：微博父亲节话题今日667K，搜狐报道11年一遇三节同框；推测：节日流量天然叠加，稀缺性制造话题热度，\"连X都催你Y\"的催促句式适合各类情感场景改写。",
+      "lifecycle": "peak",
+      "brand_usage": "节日营销账号可做三节合一内容：父亲节礼物+端午礼盒+夏日清凉三合一；\"连老天都催你\"句式适配父亲节促销、家庭服务、情感类内容；时间窗口仅限今日，明天失效。",
+      "risk": {
+        "level": "safe",
+        "note": "节日情感梗，内容安全；注意不要强迫消费绑定或将\"陪爸\"话题与商业目的过度捆绑引发反感。"
+      },
+      "days_on_list": 1,
+      "score": 80,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://weibotop.cn/",
+          "captured_at": "2026-06-21T07:00:00+08:00",
+          "note": "微博今日父亲节相关话题667K讨论量，三节同框话题活跃在榜"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://www.sohu.com/a/1038310944_121118801",
+          "title": "2026年端午、夏至、父亲节三节同框，11年一遇上一次是2015年",
+          "captured_at": "2026-06-21T06:00:00+08:00",
+          "note": "搜狐报道三节同框稀缺性：上次同日是2015年，11年难得一遇，为梗的传播提供话题背景"
         }
       ],
       "published": true
@@ -234,7 +377,7 @@
           "evidence_role": "popularity",
           "platform": "weibo",
           "url": "https://weibotop.cn/",
-          "captured_at": "2026-06-21T04:00:00+08:00",
+          "captured_at": "2026-06-21T07:00:00+08:00",
           "note": "微博热搜第20位，62K讨论量，今日持续活跃在榜"
         },
         {
@@ -280,7 +423,7 @@
           "evidence_role": "popularity",
           "platform": "weibo",
           "url": "https://weibotop.cn/",
-          "captured_at": "2026-06-21T04:00:00+08:00",
+          "captured_at": "2026-06-21T07:00:00+08:00",
           "note": "微博热搜第48位，31K讨论量，今日持续在榜"
         },
         {
@@ -334,7 +477,7 @@
           "evidence_role": "popularity",
           "platform": "weibo",
           "url": "https://weibotop.cn/",
-          "captured_at": "2026-06-21T04:00:00+08:00",
+          "captured_at": "2026-06-21T07:00:00+08:00",
           "note": "微博热搜第36位，42K讨论量，今日活跃在榜"
         },
         {
@@ -379,7 +522,7 @@
           "evidence_role": "popularity",
           "platform": "weibo",
           "url": "https://weibotop.cn/",
-          "captured_at": "2026-06-21T04:00:00+08:00",
+          "captured_at": "2026-06-21T07:00:00+08:00",
           "note": "微博热搜今日49K在榜，确认话题本日持续活跃"
         },
         {
@@ -387,166 +530,9 @@
           "evidence_role": "origin",
           "platform": "other",
           "url": "https://www.jiemian.com/lists/ent.html",
-          "title": "豆瓣评分涨至9.3, 《给阿嬷的情书》正式'出海'",
+          "title": "豆瓣评分涨至9.3, 《给阿嬷的情书》正式出海",
           "captured_at": "2026-06-21T02:35:00+08:00",
           "note": "界面新闻娱乐列表页确认影片豆瓣9.3分并已出海，与微博热搜热度互相印证"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-06-21-china-fans-home-game",
-      "title": "🏟️ 明天将是中国球迷的主场",
-      "aliases": [
-        "球迷异地主场感",
-        "中国球迷主场",
-        "X将是Y的主场"
-      ],
-      "platform": [
-        "weibo",
-        "other"
-      ],
-      "type": "热点事件梗",
-      "summary": "世界杯某场次中国球迷大量到场，网友把\"异地主场感\"写成了可迁移的句式：虽是客场，我们就是主场。",
-      "origin": "微博热搜今日52K在榜（第26位），6月20日同名话题以2.6M讨论量高居热搜；背景是世界杯中国裁判执法、大批中国球迷飞赴现场支持，\"主场感\"句式从足球延伸到多个场景。",
-      "usage": "可改写成\"明天X将是Y的主场\"——发布会、演唱会抢票、限量发售等任何\"我方来势汹汹\"的场景均可套用；也用于夸某方在他人领域取得绝对优势。",
-      "fun_point": "\"主场\"本是地理概念，但网友把它改成了心理概念：人多、声音大、情绪高，哪里都能成主场。这种\"占据感\"对任何有集体感的群体都有共鸣。",
-      "why_spread": "已验证：微博热搜两日累计2.6M+52K，热搜归档显示话题高居历史热搜；推测：世界杯赛事节点带动球迷情绪，\"主场感\"句式易替换、易截图，适合各种\"我们必胜\"的场合移植。",
-      "lifecycle": "rising",
-      "brand_usage": "运动品牌、票务平台、城市文旅账号可发\"这场X将是你的主场\"，邀用户晒现场照、应援物；也适合做\"到了Y地我们就是主场\"的在地营销话题。",
-      "risk": {
-        "level": "safe",
-        "note": "体育情绪梗，避免拉踩其他国家球迷或暗示地域优越感。"
-      },
-      "days_on_list": 2,
-      "score": 70,
-      "sources": [
-        {
-          "tier": "aggregator",
-          "evidence_role": "popularity",
-          "platform": "weibo",
-          "url": "https://weibotop.cn/",
-          "captured_at": "2026-06-21T04:00:00+08:00",
-          "note": "微博热搜第26位，52K讨论量，世界杯期间话题延续活跃"
-        },
-        {
-          "tier": "aggregator",
-          "evidence_role": "origin",
-          "platform": "weibo",
-          "url": "https://weibo-trending-hot-history.vercel.app/",
-          "captured_at": "2026-06-21T01:00:00+08:00",
-          "note": "微博热搜历史归档显示同名话题6月20日以2.6M讨论量高居热搜，两日持续在榜"
-        },
-        {
-          "tier": "search_media",
-          "evidence_role": "usage_context",
-          "platform": "other",
-          "url": "https://sports.163.com/worldcup2026/",
-          "captured_at": "2026-06-21T01:30:00+08:00",
-          "note": "网易体育世界杯专题确认大批中国球迷赴现场支持，为\"球迷主场感\"提供事实背景"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-06-21-token-communication",
-      "title": "🔋 人与人沟通也是要消耗token的",
-      "aliases": [
-        "token消耗梗",
-        "社交token余额不足",
-        "沟通也要消耗token"
-      ],
-      "platform": [
-        "weibo",
-        "other"
-      ],
-      "type": "句式梗",
-      "summary": "把AI技术词汇\"token\"移植到人际关系，形容高成本沟通耗尽社交能量，内向者和打工人强烈共鸣。",
-      "origin": "6月20日在微博热搜出现同名话题，中华网、新浪等媒体同日发布专题文章；核心比喻：人在社交场景中和大语言模型一样有有限的\"认知-情绪\"资源，被反驳、被情绪输出、被绕圈子都会迅速消耗token配额。",
-      "usage": "可改写\"X也是要消耗token的\"——开会、写方案、处理投诉、被迫social均是token消耗型场景；评论区常见接龙：\"今天token用完了\"\"余额不足请稍后再来\"；适合职场/效率类账号做\"今日token余额\"系列内容。",
-      "fun_point": "AI时代造出的极精准比喻：沟通不是免费的，每次无效交流都在扣你的配额。高度技术感的词汇配上人人都懂的情绪共鸣——任何体验过被反驳、被绕圈子、被迫陪聊的人都会立即说\"对对对就是这个！\"",
-      "why_spread": "已验证：微博热搜6月20日出现同名话题（weibo-trending-hot-history归档），中华网2026-06-20发布专题文章；推测：AI词汇全民熟悉度上升，\"token\"已成跨圈通用词，且此比喻对打工人/内向者情绪命中精准，评论区接龙门槛极低。",
-      "lifecycle": "rising",
-      "brand_usage": "效率工具/职场SaaS可用\"减少无效沟通，省出你的token\"；心理咨询/冥想App可做\"今日token余量\"提醒功能营销；内容账号可做\"高token消耗场景清单\"互动话题。",
-      "risk": {
-        "level": "safe",
-        "note": "轻幽默AI-era语言梗，无敏感内容；使用时避免绑定具体人际矛盾或引发误解。"
-      },
-      "days_on_list": 1,
-      "score": 83,
-      "sources": [
-        {
-          "tier": "aggregator",
-          "evidence_role": "popularity",
-          "platform": "weibo",
-          "url": "https://weibo-trending-hot-history.vercel.app/",
-          "captured_at": "2026-06-21T04:00:00+08:00",
-          "note": "微博热搜历史归档6月20日页面确认出现同名话题，是本梗传播的平台验证"
-        },
-        {
-          "tier": "search_media",
-          "evidence_role": "usage_context",
-          "platform": "other",
-          "url": "https://news.china.com/socialgd/10000169/20260620/49559460.html",
-          "title": "人与人沟通也是要消耗token的 低效交流耗尽心力",
-          "captured_at": "2026-06-21T04:00:00+08:00",
-          "note": "中华网2026-06-20专题文章，将人际高成本沟通比作token消耗，为梗的媒体传播证明"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-06-21-neymar-remote-work",
-      "title": "🏠 内马尔 远程办公",
-      "aliases": [
-        "内马尔世界杯居家",
-        "首位远程办公球员",
-        "X远程参赛"
-      ],
-      "platform": [
-        "weibo",
-        "other"
-      ],
-      "type": "句式梗",
-      "summary": "巴西总统卢拉在公开场合调侃伤缺世界杯的内马尔是\"史上首位被征召却在远程办公的国家队球员\"，创意说法迅速出圈成为网络造句模板。",
-      "origin": "巴西总统卢拉在贝洛奥里藏特公开活动调侃内马尔右腿肌肉伤势：\"他是世界上第一个被征召进国家队却在远程办公的球员\"；网易/懂球帝等多家中国体育媒体6月20日快速转载，\"远程办公\"形容缺席的用法在微博热搜归档出现。",
-      "usage": "可改写成\"X 远程参与\"或\"X 远程办公\"——任何名义上参与但实际缺席的情境：开会不发言的同事、名义上帮忙但没出现的朋友、买了票没去的演唱会；也适合\"人在心不在\"的所有场景。",
-      "fun_point": "把运动员受伤缺席这件遗憾事，用最现代的职场黑话\"远程办公\"一词精准翻转——没有说他懒，没有说他逃跑，就用一个大家都懂的新工作形式给他找了体面的台阶，反差喜感满分。",
-      "why_spread": "已验证：巴西总统公开发言为明确来源，网易懂球帝多篇报道（2026-06-20），微博热搜归档出现同名话题；推测：世界杯高流量窗口期，\"远程办公\"词汇对打工人极熟悉，套用门槛为零，可在任何\"名义在场实则不在\"场景迁移。",
-      "lifecycle": "rising",
-      "brand_usage": "内容账号可做\"本月最佳远程办公奖\"系列；效率工具可借梗\"别让你的存在感变成远程办公\"；体育品牌可做\"上场才算在\"的正向内容对比。",
-      "risk": {
-        "level": "safe",
-        "note": "体育幽默梗，调侃角度正向，来源于巴西总统本人发言；商用时注意不使用内马尔本人肖像。"
-      },
-      "days_on_list": 1,
-      "score": 78,
-      "sources": [
-        {
-          "tier": "aggregator",
-          "evidence_role": "popularity",
-          "platform": "weibo",
-          "url": "https://weibo-trending-hot-history.vercel.app/",
-          "captured_at": "2026-06-21T04:00:00+08:00",
-          "note": "微博热搜历史归档6月20日页面确认出现\"内马尔 远程办公\"话题，平台传播有据"
-        },
-        {
-          "tier": "search_media",
-          "evidence_role": "origin",
-          "platform": "other",
-          "url": "https://m.163.com/dy/article/KVRD7EG10549BAP0.html",
-          "title": "巴西总统调侃内马尔：他在世界杯上远程办公",
-          "captured_at": "2026-06-21T04:00:00+08:00",
-          "note": "网易/懂球帝2026-06-20报道，卢拉原话来源，确认\"远程办公\"梗的起源与媒体传播路径"
-        },
-        {
-          "tier": "search_media",
-          "evidence_role": "popularity",
-          "platform": "other",
-          "url": "https://m.163.com/dy/article/KVRT23M50549BAP0.html",
-          "title": "阿斯：巴西总统讽刺内马尔，称其为第一个远程工作的世界杯球员",
-          "captured_at": "2026-06-21T04:00:00+08:00",
-          "note": "西班牙《马卡报》转引巴西总统发言，网易中文版确认话题多源跨媒体传播"
         }
       ],
       "published": true
