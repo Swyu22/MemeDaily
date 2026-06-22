@@ -61,7 +61,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </Link>
               <Link className="product-brand" href="/">
                 <strong>Trending Today</strong>
-                <span>每日选题参考</span>
+                <span>每日热点选题参考</span>
               </Link>
               <nav className="nav" aria-label="Primary">
                 <Link href="/">首页</Link>
