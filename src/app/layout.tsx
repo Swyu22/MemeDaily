@@ -50,12 +50,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <div className="topbar-inner">
               <Link className="studio-brand" href="/">
                 {/* WithMedia monogram — same asset/style as www.withoa.cn (logo-mark.svg). */}
-                <svg className="studio-mark" width="34" height="34" viewBox="0 0 112 112" fill="none" role="img" aria-label="WithMedia">
+                <svg className="studio-mark" width="36" height="36" viewBox="0 0 112 112" fill="none" role="img" aria-label="WithMedia">
                   <rect width="112" height="112" rx="24" fill="#FFD000" />
                   <text x="54" y="56" dy="0.34em" textAnchor="middle" fontFamily="'Space Grotesk', 'Noto Sans SC', sans-serif" fontSize="56" fontWeight="700" letterSpacing="-2" fill="#18181B">W</text>
                   <circle cx="85" cy="72" r="6.5" fill="#18181B" />
                 </svg>
-                <span>WithMedia.与众</span>
+                <span>
+                  WithMedia.<span className="wm-cjk">与众</span>
+                </span>
               </Link>
               <Link className="product-brand" href="/">
                 <strong>Trending Today</strong>

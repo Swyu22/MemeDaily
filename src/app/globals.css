@@ -97,15 +97,22 @@ select {
   justify-self: start;
   gap: 10px;
   color: var(--text);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   white-space: nowrap;
 }
 
+/* CJK "与众" sized down + nudged up so its glyphs sit within the Latin cap-height and baseline
+   (top not above the English caps, bottom not below the English baseline). Tuned to Noto Sans SC. */
+.wm-cjk {
+  font-size: 0.76em;
+  vertical-align: 0.07em;
+}
+
 .studio-mark {
   flex: 0 0 auto;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
 }
 
 .product-brand {
