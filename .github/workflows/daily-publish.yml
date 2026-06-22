@@ -39,18 +39,42 @@ jobs:
       - uses: actions/checkout@v4
         if: env.OAUTH != ''
 
-      - uses: actions/setup-node@v4
+      # Cost guard: GitHub scheduled events can fire hours late (06-22 fired 2h48m late). A
+      # late scheduled run must NOT re-publish a day a manual/catch-up run already completed.
+      # Only blocks the `schedule` event, and only when today is already `published` —
+      # workflow_dispatch (manual + daily-catchup) always proceeds, and a `partial` day can
+      # still be upgraded by a later run.
+      - name: Skip redundant scheduled run (today already published)
+        id: guard
         if: env.OAUTH != ''
+        run: |
+          set -euo pipefail
+          SKIP=false
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            DATE="$(TZ=Asia/Shanghai date +%F)"
+            FILE="data/daily/${DATE}.json"
+            if [ -f "$FILE" ]; then
+              STATUS="$(node -e "try{process.stdout.write(String(JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')).status||''))}catch(e){process.stdout.write('')}" "$FILE" 2>/dev/null || echo '')"
+              if [ "$STATUS" = "published" ]; then
+                SKIP=true
+                echo "::notice::Today (${DATE}) is already published; skipping this scheduled run to avoid a duplicate publish."
+              fi
+            fi
+          fi
+          echo "skip=${SKIP}" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-node@v4
+        if: env.OAUTH != '' && steps.guard.outputs.skip != 'true'
         with:
           node-version: 22
           cache: npm
 
       - name: Install deps
-        if: env.OAUTH != ''
+        if: env.OAUTH != '' && steps.guard.outputs.skip != 'true'
         run: npm ci
 
       - name: Generate + validate + publish today's MemeDaily data
-        if: env.OAUTH != ''
+        if: env.OAUTH != '' && steps.guard.outputs.skip != 'true'
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -88,7 +112,7 @@ jobs:
             envelope instead. Never fabricate evidence and never pad to 10.
 
       - name: Trigger Pages deploy
-        if: env.OAUTH != ''
+        if: env.OAUTH != '' && steps.guard.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run pages.yml --ref main
