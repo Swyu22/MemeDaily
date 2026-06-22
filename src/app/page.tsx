@@ -22,7 +22,7 @@ export default function TodayPage() {
     latest && visibleItems(latest).length === 0
       ? `最近一次运行 ${latest.date} 状态为「${statusLabels[latest.status]}」，没有合格内容——下方展示的是最近一次有内容的发布。`
       : latest && latest.status === "partial"
-        ? `${latest.date} 为部分发布（partial），可能少于每日目标。`
+        ? `${latest.date} 为部分发布（partial）。鉴于合格内容较少，当日发布可能少于每日目标。`
         : null;
 
   return (

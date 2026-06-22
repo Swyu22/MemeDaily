@@ -1,0 +1,57 @@
+name: daily-catchup
+
+# Resilience against GitHub dropping scheduled events (as happened 2026-06-22, when the
+# primary publish + fallback + monitor were ALL dropped, so no content shipped that day).
+#
+# Runs several times through the day at off-peak minutes. If today's Asia/Shanghai envelope
+# is still MISSING (i.e. the scheduled publish never ran) and no daily-publish run is
+# currently active, it dispatches daily-publish to catch up. workflow_dispatch is processed
+# reliably (unlike the schedule event), so once any one of these checks fires, the catch-up
+# publish will actually run. Multiple spread-out times mean it survives GitHub dropping some.
+#
+# Cheap when there is nothing to do (just a file existence check). Quality is unchanged: the
+# triggered publish applies the exact same gates and may legitimately produce partial/skipped.
+
+on:
+  schedule:
+    # 01:10 / 03:10 / 05:10 UTC = 09:10 / 11:10 / 13:10 Asia/Shanghai (spread, off the hour).
+    - cron: "10 1,3,5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write # to dispatch daily-publish
+
+concurrency:
+  group: daily-catchup
+  cancel-in-progress: false
+
+jobs:
+  catchup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dispatch a catch-up publish if today is missing
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          DATE="$(TZ=Asia/Shanghai date +%F)"
+          FILE="data/daily/${DATE}.json"
+
+          if [ -f "$FILE" ]; then
+            echo "Today (${DATE}) already has an envelope; nothing to catch up."
+            exit 0
+          fi
+
+          # Don't stack a second publish if one is already running or queued.
+          ACTIVE="$(gh run list --workflow=daily-publish.yml --json status \
+            --jq '[.[] | select(.status == "in_progress" or .status == "queued")] | length')"
+          if [ "${ACTIVE:-0}" -gt 0 ]; then
+            echo "daily-publish already in progress/queued; letting it finish."
+            exit 0
+          fi
+
+          echo "Today (${DATE}) not published; dispatching catch-up daily-publish."
+          gh workflow run daily-publish.yml --ref main

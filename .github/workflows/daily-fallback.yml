@@ -2,7 +2,10 @@ name: daily-fallback
 
 on:
   schedule:
-    - cron: "40 0 * * *"
+    # 13:20 UTC = 21:20 Asia/Shanghai. Evening LAST resort: only marks today "skipped" if
+    # the primary publish AND every daily-catchup attempt failed to produce any envelope.
+    # Runs late on purpose so it can't pre-empt the daytime catch-up retries.
+    - cron: "20 13 * * *"
   workflow_dispatch:
 
 permissions:
