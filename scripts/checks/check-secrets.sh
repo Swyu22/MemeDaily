@@ -9,7 +9,7 @@ self="scripts/checks/check-secrets.sh"
 
 # High-signal, length-bounded credential patterns (avoid prose false positives):
 #  Aliyun / AWS access-key ids, GitHub tokens, OpenAI/Anthropic keys, PEM headers.
-PATTERNS='(LTAI[0-9A-Za-z]{20})|(AKIA[0-9A-Z]{16})|(gh[posu]_[0-9A-Za-z]{36})|(github_pat_[0-9A-Za-z_]{22,})|(sk-ant-[0-9A-Za-z_-]{20,})|(sk-proj-[0-9A-Za-z_-]{20,})|(sk-[A-Za-z0-9]{32,})|(-----BEGIN ([A-Z]+ )?PRIVATE KEY-----)'
+PATTERNS='(LTAI[0-9A-Za-z]{20})|(AKIA[0-9A-Z]{16})|(gh[posu]_[0-9A-Za-z]{36})|(github_pat_[0-9A-Za-z_]{22,})|(sk-ant-[0-9A-Za-z_-]{20,})|(sk-proj-[0-9A-Za-z_-]{20,})|(sk-[A-Za-z0-9]{32,})|(AIza[0-9A-Za-z_-]{35})|(xox[baprs]-[0-9A-Za-z-]{10,72})|(-----BEGIN ([A-Z]+ )?PRIVATE KEY-----)'
 
 list_files() {
   if [ "$mode" = "--all" ] || [ "$mode" = "all" ]; then
@@ -18,6 +18,12 @@ list_files() {
     git diff --cached --name-only --diff-filter=ACM
   fi
 }
+
+# Enumerate first; if git fails, fail CLOSED (don't pass with zero hits).
+if ! files="$(list_files)"; then
+  echo "[check-secrets] ✗ 无法枚举文件（git 失败）；fail-closed，请检查仓库状态。" >&2
+  exit 2
+fi
 
 hits=0
 while IFS= read -r f; do
@@ -28,13 +34,14 @@ while IFS= read -r f; do
     *.woff2 | *.png | *.ico | *.jpg | *.jpeg | *.webp) continue ;;
     node_modules/* | .next/* | out/*) continue ;;
   esac
+  # -a (--text) so a file with NUL bytes isn't silently skipped (-I would skip it).
   # Print only path + line numbers, never the matched secret content.
-  lines="$(grep -EnI "$PATTERNS" "$f" 2>/dev/null | cut -d: -f1 | tr '\n' ' ' || true)"
+  lines="$(grep -Ena "$PATTERNS" "$f" 2>/dev/null | cut -d: -f1 | tr '\n' ' ' || true)"
   if [ -n "$lines" ]; then
     echo "[check-secrets] ✗ 疑似密钥/凭证: $f（第 ${lines}行）"
     hits=$((hits + 1))
   fi
-done < <(list_files)
+done <<< "$files"
 
 if [ "$hits" -gt 0 ]; then
   echo "[check-secrets] ✗ 发现 $hits 个文件疑似含密钥。移除并在云控制台轮换后再提交。" >&2

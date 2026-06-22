@@ -2,10 +2,15 @@
  * input: a validated MemeDaily item
  * output: compact card with inline decision details and wrapped evidence links
  * pos: feature UI component shared by Today and detail surfaces
+ * note: currently always rendered with `expanded` (see TodayFeed); the compact
+ *       (non-expanded) branch + MemeSourceList `compact` mode are reserved for reuse.
  */
 import { ExternalLink } from "lucide-react";
 import { lifecycleLabels, platformLabels, tierLabels } from "@/domain/memedaily/labels";
 import type { MemeItem } from "@/domain/memedaily/schema";
+
+// basePath prefix for raw <a> internal links (Next only rewrites next/link). See next.config.mjs.
+const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 type MemeCardProps = {
   item: MemeItem;
@@ -43,7 +48,7 @@ export function MemeCard({ item, expanded = false }: MemeCardProps) {
       {expanded ? <MemeDetailFields item={item} /> : <MemeSourceList item={item} compact />}
 
       <div className="tag-row">
-        <a className="button" href={`/meme/${item.id}/index.html`}>
+        <a className="button" href={`${BP}/meme/${item.id}/index.html`}>
           查看档案
         </a>
       </div>

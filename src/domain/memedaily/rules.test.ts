@@ -127,6 +127,39 @@ describe("MemeDaily publication rules", () => {
       true,
     );
   });
+
+  it("flags a published envelope with zero items", () => {
+    const envelope = envelopeWith(baseItem, "published");
+    envelope.items = [];
+    envelope.run_report.published = 0;
+
+    expect(envelopeIssueSummary(envelope)).toContain("published envelope cannot have zero items");
+  });
+
+  it("flags an item that lacks publishable evidence", () => {
+    const weak = {
+      ...baseItem,
+      sources: baseItem.sources.map((source) => ({ ...source, tier: "search_media" as const })),
+    } satisfies MemeItem;
+    const envelope = envelopeWith(weak, "published");
+    envelope.run_report.published = 0;
+
+    expect(envelopeIssueSummary(envelope)).toContain(`${weak.id} lacks publishable evidence`);
+  });
+
+  it("hides an item flagged published:false", () => {
+    const hidden = { ...baseItem, published: false } satisfies MemeItem;
+    expect(visibleItems(envelopeWith(hidden, "published"))).toHaveLength(0);
+  });
+
+  it("flags a source captured after the envelope was generated", () => {
+    const envelope = envelopeWith(baseItem, "published");
+    envelope.generated_at = "2026-06-20T07:00:00+08:00"; // before the sources' 07:15/07:16
+
+    expect(
+      envelopeIssueSummary(envelope).some((issue) => issue.includes("after generated_at")),
+    ).toBe(true);
+  });
 });
 
 describe("MemeDaily cross-day freshness", () => {

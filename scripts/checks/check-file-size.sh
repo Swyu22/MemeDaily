@@ -22,7 +22,7 @@ over=0
 while IFS= read -r f; do
   [ -n "$f" ] || continue
   [ -f "$f" ] || continue
-  lines=$(wc -l < "$f" | tr -d ' ')
+  lines=$(awk 'END{print NR}' "$f") # counts a final line with no trailing newline
   if [ "$lines" -gt "$MAX_LINES" ]; then
     echo "[check-file-size] ⚠ ${f} = ${lines} 行 > ${MAX_LINES}，建议拆分（CONSTITUTION §6）"
     over=$((over + 1))

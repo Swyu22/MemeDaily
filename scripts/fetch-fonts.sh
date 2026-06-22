@@ -10,6 +10,7 @@ rm -rf "$OUT_DIR"
 mkdir -p "$OUT_DIR"
 
 TMP_CSS="$(mktemp)"
+trap 'rm -f "$TMP_CSS"' EXIT # clean up on any exit path, not just the happy path
 curl -L --fail --show-error --max-time 60 -H "User-Agent: $UA" "$CSS_URL" -o "$TMP_CSS"
 
 python3 - "$TMP_CSS" "$OUT_DIR" <<'PY'
@@ -43,5 +44,3 @@ banner = """/*
 (out_dir / "fonts.css").write_text(banner + css)
 print(f"downloaded {len(urls)} font files to {out_dir}")
 PY
-
-rm -f "$TMP_CSS"

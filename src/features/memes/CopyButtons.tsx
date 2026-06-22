@@ -17,9 +17,14 @@ export function CopyButtons({ link, takeText }: CopyButtonsProps) {
   const [copied, setCopied] = useState<"link" | "take" | null>(null);
 
   async function copy(value: string, kind: "link" | "take") {
-    await navigator.clipboard.writeText(value);
-    setCopied(kind);
-    window.setTimeout(() => setCopied(null), 1500);
+    if (!navigator.clipboard) return;
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(kind);
+      window.setTimeout(() => setCopied(null), 1500);
+    } catch {
+      // clipboard can reject (insecure context / permission denied); fail silently.
+    }
   }
 
   return (

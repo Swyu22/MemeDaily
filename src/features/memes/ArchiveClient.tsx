@@ -10,6 +10,9 @@ import { Search } from "lucide-react";
 import { lifecycleLabels, platformLabels, sortByDecisionValue } from "@/domain/memedaily/labels";
 import type { Lifecycle, MemeItem, Platform } from "@/domain/memedaily/schema";
 
+// basePath prefix for raw <a> internal links (Next only rewrites next/link). See next.config.mjs.
+const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export type ArchiveRow = MemeItem & { date: string };
 
 type ArchiveClientProps = {
@@ -112,7 +115,7 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
       {filtered.length > 0 ? (
         <div className="result-list">
           {filtered.map((row) => (
-            <a className="result-row" href={`/meme/${row.id}/index.html`} key={row.id}>
+            <a className="result-row" href={`${BP}/meme/${row.id}/index.html`} key={row.id}>
               <div>
                 <strong>{row.title}</strong>
                 <div className="summary">{row.summary}</div>

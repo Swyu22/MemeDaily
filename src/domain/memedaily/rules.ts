@@ -97,9 +97,7 @@ export function crossDayIssues(envelopes: DailyEnvelope[]): string[] {
 
   for (const envelope of byDateAsc) {
     for (const item of visibleItems(envelope)) {
-      const names = Array.from(
-        new Set([item.title, ...item.aliases].map(normalizeName).filter(Boolean)),
-      );
+      const names = itemNames(item);
 
       let firstSeen: string | undefined;
       for (const name of names) {
@@ -145,13 +143,23 @@ export function envelopeIssueSummary(envelope: DailyEnvelope): string[] {
     issues.push("run_report.published does not match visible item count");
   }
 
+  // Temporal invariant: evidence cannot be captured after the envelope was generated.
+  const generatedMs = Date.parse(envelope.generated_at);
+  for (const item of envelope.items) {
+    for (const source of item.sources) {
+      if (Date.parse(source.captured_at) > generatedMs) {
+        issues.push(
+          `${item.id} source captured_at ${source.captured_at} is after generated_at ${envelope.generated_at}`,
+        );
+      }
+    }
+  }
+
   // Same-day duplicates: two visible items that are the same meme (by normalized
   // title/alias) within one envelope. crossDayIssues only covers earlier days.
   const seenNames = new Map<string, string>();
   for (const item of visibleItems(envelope)) {
-    const names = Array.from(
-      new Set([item.title, ...item.aliases].map(normalizeName).filter(Boolean)),
-    );
+    const names = itemNames(item);
     for (const name of names) {
       const prior = seenNames.get(name);
       if (prior && prior !== item.id) {

@@ -31,10 +31,16 @@ export function loadEnvelope(fileName: string): DailyEnvelope {
   return DailyEnvelopeSchema.parse(raw);
 }
 
+// Memoized: every reader (latest*, allVisibleItems, findItemById) funnels through here,
+// and at static-build time the data files do not change, so one disk pass suffices.
+let envelopeCache: DailyEnvelope[] | null = null;
+
 export function loadAllEnvelopes(): DailyEnvelope[] {
-  return dailyJsonFiles()
+  if (envelopeCache) return envelopeCache;
+  envelopeCache = dailyJsonFiles()
     .map(loadEnvelope)
     .sort((a, b) => b.date.localeCompare(a.date));
+  return envelopeCache;
 }
 
 export function latestEnvelope(): DailyEnvelope | null {

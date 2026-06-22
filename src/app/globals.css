@@ -220,18 +220,6 @@ select {
   line-height: 1.5;
 }
 
-.font-sans {
-  font-family: var(--font-sans);
-}
-
-.font-display {
-  font-family: var(--font-display);
-}
-
-.font-mono {
-  font-family: var(--font-mono);
-}
-
 .toolbar {
   position: sticky;
   top: 58px;
@@ -245,7 +233,6 @@ select {
   background: var(--app);
 }
 
-.chip,
 .select,
 .button {
   min-height: 34px;
@@ -255,7 +242,6 @@ select {
   color: var(--muted);
 }
 
-.chip,
 .button {
   display: inline-flex;
   align-items: center;
@@ -270,7 +256,6 @@ select {
   font-weight: 500;
 }
 
-.chip[data-active="true"],
 .button.primary {
   border-color: var(--text);
   background: var(--text);
@@ -307,7 +292,8 @@ select {
   padding-top: 4px;
 }
 
-.day-head h1 {
+.day-head h1,
+.day-head h2 {
   margin: 0;
   font-size: 25px;
   letter-spacing: 0;
@@ -372,6 +358,7 @@ select {
 }
 
 .badge,
+.mini,
 .value {
   display: inline-flex;
   align-items: center;
@@ -381,10 +368,6 @@ select {
 }
 
 .mini {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 24px;
   white-space: normal;
   overflow-wrap: anywhere;
 }
@@ -463,39 +446,6 @@ select {
   color: var(--text);
   font-size: 14px;
   line-height: 1.75;
-}
-
-.callout {
-  padding: 14px 15px;
-  border-radius: 10px;
-  border: 1px solid transparent;
-}
-
-.callout.brand {
-  border-color: var(--blue-bd);
-  background: var(--blue-bg);
-}
-
-.callout.risk {
-  border-color: #f4dea8;
-  background: var(--amber-bg);
-}
-
-.callout-title {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 7px;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.callout.brand .callout-title {
-  color: var(--blue-fg);
-}
-
-.callout.risk .callout-title {
-  color: var(--amber-fg);
 }
 
 .sources {
@@ -650,8 +600,7 @@ select {
 
   /* Finger-friendly controls. */
   .select,
-  .button,
-  .chip {
+  .button {
     min-height: 40px;
   }
 
