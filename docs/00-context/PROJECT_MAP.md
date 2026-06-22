@@ -11,24 +11,27 @@
 ## Constraints
 - **Collection:** public web intelligence only. No login cookies, no private platform
   scraping, no media downloads, no comment archives.
-- **Automation:** current Mac runs Codex App automation at 07:15 Asia/Shanghai.
-  GitHub Actions provides checks and skipped-day fallback only.
+- **Automation:** Primary publisher is GitHub Actions `daily-publish.yml` (cloud cron
+  ~07:40 Asia/Shanghai; content ready ~08:00 as shown in the UI), with `daily-catchup`,
+  `daily-fallback`, and `daily-monitor` for resilience. The local Mac Codex run is an
+  optional manual fallback only.
 - **Hosting:** GitHub Pages + `memedaily.fun`; repo remains public on GitHub Free.
 - **Storage:** JSON files in git; no Supabase, database, or OpenAI API.
 - **Safety:** conservative drop policy for politics, social tragedies, celebrity
   controversies, minors, privacy, attacks, explicit/illegal/violent/rumor content.
 
 ## Module Map
-- `src/app/`: Next.js routes and page composition. Depends on `src/features`,
-  `src/domain`, and `src/shared`.
+- `src/app/`: Next.js routes and page composition. Depends on `src/features` and
+  `src/domain`.
 - `src/features/memes/`: UI-facing meme list/detail/search behavior. Depends on
-  `src/domain/memedaily` and `src/shared`.
+  `src/domain/memedaily`.
 - `src/domain/memedaily/`: data loading, schema-derived types, lifecycle/status
   rules, evidence thresholds. Must not depend on UI or infrastructure.
-- `src/shared/`: reusable UI atoms, formatting, and constants with no product side
-  effects.
 - `scripts/`: local and CI command-line tasks: validate data, create skipped days,
   and support automation.
+- `.github/workflows/`: CI (`ci`, `pages`) plus daily automation — `daily-publish`
+  (primary), `daily-catchup` (re-publish if missed), `daily-fallback` (skip marker),
+  `daily-monitor` (alert), `cloud-fetch-check` (cloud-IP probe).
 - `data/daily/`: one JSON envelope per date. This is the product content source of
   truth.
 - `docs/project/`: design prototype exported from Claude Design; read-only reference.

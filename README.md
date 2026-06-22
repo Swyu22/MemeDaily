@@ -10,8 +10,11 @@ publicly accessible web evidence, with conservative safety gates and permanent a
   `AGENTS.md` first, then `.cloud.md`, then the active plan.
 - **App layer:** a static web product published with GitHub Pages.
 - **Data source:** one JSON file per day under `data/daily/YYYY-MM-DD.json`.
-- **Automation model:** a local always-on Codex App automation generates and commits
-  the daily file; GitHub Actions provides build checks and a skipped-day fallback.
+- **Automation model:** GitHub Actions is the live publisher — `daily-publish.yml`
+  (`anthropics/claude-code-action` on a Claude subscription token) generates, validates,
+  commits, and pushes the daily file on a cloud cron (~07:40 Asia/Shanghai); `daily-catchup`,
+  `daily-fallback`, and `daily-monitor` add re-publish / skip / alert resilience. The local
+  Codex App run is now an optional manual fallback only.
 - **Collection policy:** public web intelligence only. No login cookies, no private
   platform scraping, no media archiving, no comment-text dumps.
 
@@ -24,6 +27,7 @@ publicly accessible web evidence, with conservative safety gates and permanent a
 | `docs/10-spec/` | Product and data-contract specs |
 | `docs/20-plan/current-iteration.md` | Active implementation checklist |
 | `docs/30-decisions/` | Architecture decision records |
+| `.github/workflows/` | CI + daily publish / catch-up / fallback / monitor automation |
 | `ai/prompts/` | Codex/agent run prompts and routines |
 | `ai/sessions/` | Session logs and handoff notes |
 | `产品方案.md` | Original Chinese product plan |
