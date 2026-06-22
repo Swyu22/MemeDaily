@@ -116,14 +116,13 @@ select {
 .product-brand {
   flex: 0 1 auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-self: center;
   justify-content: center;
-  align-items: center;
-  gap: 2px;
+  gap: 8px;
+  align-items: baseline;
   min-width: 0;
   font-size: 14px;
-  text-align: center;
 }
 
 .product-brand strong {
@@ -571,7 +570,8 @@ select {
 
   .product-brand {
     grid-area: product;
-    justify-self: center;
+    justify-self: start;
+    justify-content: flex-start;
   }
 
   .product-brand strong {
