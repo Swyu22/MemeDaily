@@ -103,28 +103,9 @@ select {
 }
 
 .studio-mark {
-  display: grid;
-  position: relative;
+  flex: 0 0 auto;
   width: 30px;
   height: 30px;
-  place-items: center;
-  border-radius: 8px;
-  background: var(--brand);
-  color: #18181b;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.studio-mark-w {
-  display: block;
-}
-
-.studio-mark-dot {
-  position: absolute;
-  top: 7px;
-  left: 20px;
-  line-height: 1;
 }
 
 .product-brand {
