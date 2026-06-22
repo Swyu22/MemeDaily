@@ -3,30 +3,30 @@
   "policy_version": "1.0",
   "rubric_version": "1.0",
   "date": "2026-06-22",
-  "generated_at": "2026-06-22T10:45:00+08:00",
+  "generated_at": "2026-06-22T14:30:00+08:00",
   "status": "published",
   "run_report": {
-    "candidates_scanned": 55,
-    "published": 9,
+    "candidates_scanned": 72,
+    "published": 10,
     "dropped_safety": {
-      "纯新闻事件无梗壳": 20,
-      "涉及具体品牌公司": 3,
-      "政治时政": 2,
-      "涉及具体人物无通用句式": 2
+      "纯新闻事件无梗壳": 22,
+      "涉及具体品牌公司": 4,
+      "政治时政": 3,
+      "涉及具体人物无通用句式": 3
     },
-    "dropped_low_confidence": 10,
+    "dropped_low_confidence": 13,
     "sources": [
       "weibo",
       "bilibili",
       "other"
     ],
     "evidence_summary": {
-      "candidates_with_urls": 40,
+      "candidates_with_urls": 47,
       "platform_public_sources": 4,
-      "aggregator_sources": 12,
-      "search_media_sources": 18,
+      "aggregator_sources": 16,
+      "search_media_sources": 21,
       "spillover_sources": 0,
-      "dropped_insufficient_evidence": 8
+      "dropped_insufficient_evidence": 10
     }
   },
   "items": [
@@ -35,7 +35,7 @@
       "title": "⛩️ 人的脚踢不过佛的脚",
       "aliases": [
         "佛得角=佛的脚",
-        "人的脚怎么踢得过佛得角",
+        "人的脚怎么踢得过佛的脚",
         "佛脚门神"
       ],
       "platform": [
@@ -502,6 +502,54 @@
           "title": "网易体育",
           "captured_at": "2026-06-22T09:45:00+08:00",
           "note": "网易体育首页报道'乌拉圭球员帮佛得角球员压腿见进攻放下腿就跑'，完整还原名场面经过"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-22-gaokao-password",
+      "title": "🔐 高考出分前偷偷改密码",
+      "aliases": [
+        "出分改密码",
+        "X之前偷偷改密码",
+        "防父母查分",
+        "改密码保命"
+      ],
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "情绪梗",
+      "summary": "高考成绩明日起陆续公布，考生们今日集体在网上分享\"出分前偷偷改密码\"的自嘲行为——在成绩到来前抢先锁住手机，防止父母比自己更早看到成绩，成为每年此时最戳人心的焦虑幽默。",
+      "origin": "2026年高考成绩将从6月23日起陆续公布（中华网2026-06-22确认），微博话题\"高考出分前偷偷改密码\"今日冲上热搜第16位（约469K讨论），与Weibo热搜榜第29位\"明天起高考成绩陆续公布\"同步在榜，验证这是今日考生集体引爆的共情梗。",
+      "usage": "\"X之前偷偷改密码\"——适用于任何\"重要结果公布前需要先保护自己\"的场景：年终考核出来前改微信密码、感情进展没想好前关闭朋友圈、月底账单出来前关掉共享账本；也可做\"防家长查X系列\"评论区接龙话题；品牌可借\"你有权先看到自己的成绩\"做情感型文案。",
+      "fun_point": "密码本来是保护隐私的，但这里改密码是为了保护自己的焦虑——在别人知道成绩之前，给自己争取一个独处的缓冲时间。这种\"大人的担忧用孩子的动作来应对\"的错位感，人人秒懂。每年出分前必然出现，是中国高考文化里最反复被共情的小动作。",
+      "why_spread": "已验证：微博热搜今日第16位（469K讨论），rebang.vip同步确认上榜，与\"明天起高考成绩陆续公布\"话题同日双上榜形成话题联动；推测：高考焦虑是全民共情、不限年龄，\"改密码\"这个动作低门槛、人人能想象，评论区接龙门槛为零，父母视角与孩子视角双向共鸣。",
+      "lifecycle": "peak",
+      "brand_usage": "心理健康/缓解焦虑类App可借\"给自己一个先知道的权利\"做文案；保险/教育类可做\"比成绩先准备好的那些事\"；银行/金融App可轻幽默蹭梗\"查余额前也可以先改密码\"；出分后可做反向逆袭文案\"改完密码，就去对答案\"。",
+      "risk": {
+        "level": "safe",
+        "note": "考试焦虑自嘲梗，方向积极；避免延伸为鼓励真正的信息隐瞒或欺骗行为。"
+      },
+      "days_on_list": 1,
+      "score": 79,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://www.rebang.vip/weibo/hot-search",
+          "captured_at": "2026-06-22T13:00:00+08:00",
+          "note": "微博热搜今日第16位（约469K讨论量），与\"明天起高考成绩陆续公布\"同日双上榜，话题联动验证"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://news.china.com/socialgd/10000169/20260622/49561162.html",
+          "title": "明日起，多地陆续公布高考分数！",
+          "captured_at": "2026-06-22T13:30:00+08:00",
+          "note": "中华网2026-06-22报道确认高考成绩明日起各省陆续公布，为\"出分前偷偷改密码\"梗的爆发时间节点提供事实背景"
         }
       ],
       "published": true
