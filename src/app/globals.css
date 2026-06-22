@@ -102,11 +102,9 @@ select {
   white-space: nowrap;
 }
 
-/* CJK "与众" sized down + nudged up so its glyphs sit within the Latin cap-height and baseline
-   (top not above the English caps, bottom not below the English baseline). Tuned to Noto Sans SC. */
+/* CJK "与众" rendered a bit smaller than the Latin wordmark (no strict flush alignment). */
 .wm-cjk {
-  font-size: 0.76em;
-  vertical-align: 0.07em;
+  font-size: 0.87em;
 }
 
 .studio-mark {
