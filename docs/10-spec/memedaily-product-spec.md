@@ -70,7 +70,9 @@ should stand on a generalized meme shell rather than a single company's news cyc
   vertical text or clipped evidence links.
 
 ## Automation Requirements
-- Daily local Codex App automation runs at 07:15 Asia/Shanghai.
+- The daily automation runs unattended in GitHub Actions (`daily-publish.yml`) on a cloud
+  cron (~07:40 Asia/Shanghai), with `daily-catchup` re-publishing if a scheduled run is
+  dropped. The local Codex App run (07:15) is an optional manual fallback only.
 - Automation writes one complete daily file, validates it, builds the site, then
   commits and pushes.
 - Automation targets 10 publishable items per day by expanding public hot-list

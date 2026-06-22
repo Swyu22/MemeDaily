@@ -23,17 +23,20 @@ structure is inherently iterative (scan every item's normalized names across day
 
 ## Decision
 Keep the gate functions as-is and record the exception here rather than refactor.
-There is no mechanical linter enforcing the per-function complexity red-lines
-(`quality/eslintrc.complexity.example.json` is intentionally dormant — see ADR rationale
-below), so the gate is documentation, and these functions are the deliberate exception.
+The per-function complexity red-lines are wired into an ADVISORY check —
+`npm run lint:complexity` (config `eslint.complexity.config.mjs`, all rules at `warn`) —
+which surfaces the hotspots without breaking CI. It is deliberately NOT part of
+`npm run lint` (`--max-warnings=0`), so these functions remain a documented, visible
+exception rather than a build-blocking gate.
 
 ## Alternatives Considered
 - **Extract inner loops into helpers** (e.g. `firstSeenByName(envelopes)`): reduces
   nesting but fragments a small, cohesive, well-tested policy across more functions for
   no behavioral gain. Deferred until a function grows materially.
-- **Wire the complexity rules into ESLint at error level:** rejected for now — running
-  the example rules over `src/**`+`scripts/**` yields ~21 warnings, and `npm run lint`
+- **Wire the complexity rules into ESLint at error level (or into `npm run lint`):**
+  rejected — the rules over `src/**`+`scripts/**` yield ~21 warnings, and `npm run lint`
   uses `--max-warnings=0`, so it would immediately break CI without a refactor sweep.
+  Resolved instead as the advisory `npm run lint:complexity` above.
 
 ## Consequences
 - Positive: the policy stays in one readable place; tests pin its behavior.
