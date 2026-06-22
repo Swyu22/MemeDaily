@@ -14,7 +14,7 @@ name: daily-publish
 
 on:
   schedule:
-    - cron: "0 0 * * *" # 00:00 UTC = 08:00 Asia/Shanghai
+    - cron: "40 23 * * *" # 23:40 UTC = 07:40 Asia/Shanghai (内容约 08:00 前就绪；避开 00:00 UTC 的调度拥堵档，UI 仍显示 08:00)
   workflow_dispatch:
 
 permissions:

@@ -6,7 +6,7 @@ name: daily-monitor
 
 on:
   schedule:
-    - cron: "0 2 * * *" # 10:00 Asia/Shanghai, after the 08:00 publish + 00:40 UTC fallback
+    - cron: "0 2 * * *" # 10:00 Asia/Shanghai, after the 07:40 publish + 00:40 UTC fallback
   workflow_dispatch:
 
 permissions:
