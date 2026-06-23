@@ -114,27 +114,35 @@ jobs:
             引擎 + 跨平台外溢，先建一个大候选池(~30+)，再按 rubric 排序、挑出最好的 ~10 条；
             分多轮：广撒网 → 筛选排序 → 核实增强。预算充足(~$5/天、~100 轮)，质量与广度优先。
 
-            Produce today's file data/daily/${{ steps.guard.outputs.date }}.json (today is
-            ${{ steps.guard.outputs.date }}, Asia/Shanghai). Use Read/Glob/Grep to inspect
-            the schema and existing files; the ONLY shell command you may run is `npm run check`.
-            When the file is written, run `npm run check` and confirm it passes (it runs
-            validate + typecheck + test + build). Do NOT run git, do NOT commit, do NOT push —
-            a separate deterministic workflow step commits and publishes your file. If nothing
-            qualifies after sweeping aggregators, write a valid status:"skipped" envelope
-            instead. Never fabricate evidence and never pad to 10.
+            CRITICAL OUTPUT REQUIREMENT: You MUST create the file
+            data/daily/${{ steps.guard.outputs.date }}.json using the Write tool (today is
+            ${{ steps.guard.outputs.date }}, Asia/Shanghai). The file MUST exist on disk before you
+            finish — do NOT just print the JSON in a chat message, and do NOT end your turn until the
+            file is written. Use Read/Glob/Grep to inspect the schema and existing files; the ONLY
+            shell command you may run is `npm run check`. After writing the file, run `npm run check`
+            and confirm it passes (validate + typecheck + test + build); if it fails, fix the file and
+            re-run until green. Do NOT run git/commit/push — a separate deterministic step publishes
+            your file. If nothing qualifies after sweeping aggregators, you STILL must Write a valid
+            status:"skipped" envelope to that exact path. Never fabricate evidence and never pad to 10.
 
       - name: Validate, commit & publish the agent's output (deterministic; agent cannot reach this)
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DATE: ${{ steps.guard.outputs.date }}
         run: |
           set -euo pipefail
+          # Fail LOUD if the agent didn't produce today's file (don't pass green-but-empty —
+          # a red run lets daily-catchup re-dispatch and daily-monitor alert).
+          if [ ! -f "data/daily/${DATE}.json" ]; then
+            echo "::error::Confined agent did not produce data/daily/${DATE}.json. Failing so daily-catchup/monitor recover."
+            exit 1
+          fi
           npm run check # re-validate the agent's file deterministically before trusting it
           if git diff --quiet -- data/daily; then
-            echo "No data change produced; nothing to publish."
+            echo "data/daily/${DATE}.json is unchanged; nothing to publish."
             exit 0
           fi
-          DATE="$(TZ=Asia/Shanghai date +%F)"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # checkout used persist-credentials:false, so set an explicit push credential here.
