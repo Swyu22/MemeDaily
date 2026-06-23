@@ -33,13 +33,15 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git diff --quiet -- data/daily; then
+          set -euo pipefail
+          # Stage first: a new skipped envelope is UNTRACKED and `git diff --quiet` would miss it.
+          git add data/daily
+          if git diff --cached --quiet; then
             echo "No skipped fallback needed."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily
           git commit -m "chore(data): add skipped daily fallback"
           # Rebase onto the current tip first: this job can race a late publish/catch-up writer.
           git pull --rebase origin main

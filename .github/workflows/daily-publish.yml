@@ -139,7 +139,10 @@ jobs:
             exit 1
           fi
           npm run check # re-validate the agent's file deterministically before trusting it
-          if git diff --quiet -- data/daily; then
+          # Stage FIRST, then check staged changes — a brand-new day's file is UNTRACKED, and
+          # `git diff --quiet` ignores untracked files (this silently dropped 06-23's first publish).
+          git add data/daily
+          if git diff --cached --quiet; then
             echo "data/daily/${DATE}.json is unchanged; nothing to publish."
             exit 0
           fi
@@ -147,7 +150,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # checkout used persist-credentials:false, so set an explicit push credential here.
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git add data/daily
           git commit -m "chore(data): publish MemeDaily ${DATE}"
           git pull --rebase origin main
           git push origin HEAD:main
