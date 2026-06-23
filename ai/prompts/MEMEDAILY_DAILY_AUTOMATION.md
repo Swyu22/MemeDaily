@@ -127,7 +127,10 @@ De-prioritize or drop: 单纯明星八卦但无梗化表达；纯负面公共事
     "哈兰德丸子头纹丝不动"），直接丢弃。
 
 Safety drop (any hit → drop, and count it in `run_report.dropped_safety`):
-政治时政、社会事件/灾难事故、明星争议、未成年人、隐私、辱骂攻击、低俗违法血腥谣言。
+政治时政（政治人物/选举/政府/官员任免/辞职就职/国家领导人/政党/外交/战争/地缘冲突/政策法案）——
+**即使已经梗化、或把通用梗壳套到政治人物或其宠物身上**（如「铁打的X、流水的Y」套到首相、领导人
+语录梗、某政要的猫狗梗），也一律丢弃、零例外；社会事件/灾难事故、明星争议、未成年人、隐私、
+辱骂攻击、低俗违法血腥谣言。
 
 **高热但不建议玩梗**: if a topic is high-heat but unsafe or inappropriate to meme, simply
 do not publish it — it never enters `items`, and the public page never shows an

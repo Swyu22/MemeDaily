@@ -19,7 +19,7 @@ name: daily-publish
 
 on:
   schedule:
-    - cron: "40 23 * * *" # 23:40 UTC = 07:40 Asia/Shanghai (内容约 08:00 前就绪；避开 00:00 UTC 的调度拥堵档，UI 仍显示 08:00)
+    - cron: "0 23 * * *" # 23:00 UTC = 07:00 Asia/Shanghai (start early to give ~40min research before 08:00; UI shows the real generated_at time). Primary reliable trigger is cron-job.org @ 07:00; this is the backup.
   workflow_dispatch:
 
 permissions:
@@ -98,7 +98,10 @@ jobs:
             public hot-list aggregators (tophub.today, rebang.today, hot.cnxiaobai.com, etc.)
             plus media/search for evidence. Never attempt logins, cookies, or anti-bot bypass.
 
-            硬性内容规则：要「网络热梗」、不要新闻——纯新闻/事件本身（无可复用梗壳）一律不发，
+            硬性内容规则：①【时事政治一律不发】任何涉及政治人物/选举/政府/官员任免/辞职就职/
+            国家领导人/政党/外交/战争/地缘冲突/政策法案的内容，**即使衍生出梗、或把梗壳套到政治
+            人物上**（如「铁打的X、流水的Y」套到首相、某领导人语录梗、某政要的猫/宠物梗），也一律
+            丢弃，安全合规优先、零例外。②要「网络热梗」、不要新闻——纯新闻/事件本身（无可复用梗壳）一律不发，
             典型如「某人见义勇为/哽咽/获奖、赛事赛果/出线、某地发生某事」这类单一事件，除非已
             衍生出大众套用的固定句式/二创模板（则发那个模板本身）；拿不准按新闻丢弃，宁可少几条。
             也不要以具体综艺/选秀/电视节目为主体的内容（赛果、淘汰、舞台等），除非梗壳已脱离

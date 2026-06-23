@@ -5,8 +5,6 @@ import { visibleItems } from "@/domain/memedaily/rules";
 import { TodayFeed } from "@/features/memes/TodayFeed";
 
 const MAX_DAYS_ON_HOME = 4;
-// 每日固定发布时间（与 daily-publish.yml 的 cron 对齐：00:00 UTC = 08:00 Asia/Shanghai）。
-const PUBLISH_TIME = "08:00";
 
 export default function TodayPage() {
   const all = loadAllEnvelopes();
@@ -36,7 +34,7 @@ export default function TodayPage() {
           <>
             <span className="mono">{latest.date}</span>
             <span>
-              发布时间 <span className="mono">{PUBLISH_TIME}</span>
+              发布时间 <span className="mono">{latest.generated_at.slice(11, 16)}</span>
             </span>
             <span>状态 {statusLabels[latest.status]}</span>
             <span>
