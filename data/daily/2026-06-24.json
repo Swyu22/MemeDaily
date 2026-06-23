@@ -3,30 +3,452 @@
   "policy_version": "1.0",
   "rubric_version": "1.0",
   "date": "2026-06-24",
-  "generated_at": "2026-06-23T16:06:56.782+00:00",
-  "status": "skipped",
+  "generated_at": "2026-06-24T09:00:00+08:00",
+  "status": "published",
   "run_report": {
-    "candidates_scanned": 0,
-    "published": 0,
+    "candidates_scanned": 45,
+    "published": 9,
     "dropped_safety": {
-      "政治时政": 0,
-      "社会事件": 0,
-      "明星争议": 0,
-      "未成年人": 0,
-      "隐私": 0,
-      "辱骂攻击": 0,
-      "低俗违法血腥谣言": 0
+      "纯新闻事件无梗壳": 16,
+      "政治时政": 3,
+      "涉及具体品牌": 2,
+      "涉及具体人物无通用句式": 4
     },
-    "dropped_low_confidence": 0,
-    "sources": [],
+    "dropped_low_confidence": 10,
+    "sources": ["weibo", "other"],
     "evidence_summary": {
-      "candidates_with_urls": 0,
-      "platform_public_sources": 0,
-      "aggregator_sources": 0,
-      "search_media_sources": 0,
+      "candidates_with_urls": 28,
+      "platform_public_sources": 1,
+      "aggregator_sources": 10,
+      "search_media_sources": 12,
       "spillover_sources": 0,
-      "dropped_insufficient_evidence": 0
+      "dropped_insufficient_evidence": 5
     }
   },
-  "items": []
+  "items": [
+    {
+      "id": "2026-06-24-pian-le-quanshijie",
+      "title": "🎭 骗了全世界",
+      "aliases": ["骗了全世界句式", "假动作破门", "障眼法梗"],
+      "platform": ["weibo", "other"],
+      "type": "句式梗",
+      "summary": "世界杯任意球「假动作」破门，解说词「他骗了全世界」引爆全网，套用于一切「障眼法」场景的金句模板。",
+      "origin": "世界杯小组赛第17分钟任意球：全场镜头聚焦最知名球员摆出主罚姿势，另一名年轻球员出手主罚破门，解说脱口「他骗了全世界」，片段迅速在各平台发酵，百度实时热搜位列前5（约752万热度）。",
+      "usage": "「他/她骗了全世界」——形容任何用障眼法、声东击西让旁观者措手不及的时刻；也可「我们都被XX骗了」表达集体被瞒；适合所有「主角原来不是你以为的那个人」场景。",
+      "fun_point": "解说词本身就是梗的引爆点：全场都在盯着「那个人」，结果破门的是另一个；极简「骗了全世界」把戏剧反转浓缩到底，网友迅速把它嫁接到日常每个「被调虎离山」的瞬间。",
+      "why_spread": "世界杯顶流流量加持，视频片段自带高光时刻；句式简短有力、可替换性强；「骗了全世界」本身带有戏剧感，跨平台跨圈层均可套用，搭配视频二创传播加速。",
+      "lifecycle": "peak",
+      "brand_usage": "体育/运动周边可借「骗了全世界的操作」展示产品隐藏功能；创意行业可用「我们骗了所有人的审美」做悬念营销；使用时不影射具体运动员形象。",
+      "risk": {
+        "level": "safe",
+        "note": "聚焦句式梗壳，不涉及具体运动员争议或赛事结果评判。"
+      },
+      "days_on_list": 1,
+      "score": 83,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜",
+          "captured_at": "2026-06-24T08:00:00+08:00",
+          "note": "百度实时热搜前5位，热度约752万，全国级传播确认"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "weibo",
+          "url": "https://tophub.today/n/KqndgxeLl9",
+          "title": "今日热榜·微博热搜",
+          "captured_at": "2026-06-24T08:05:00+08:00",
+          "note": "今日热榜微博榜第1位，热度约99万，跨平台在榜确认"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://m.sohu.com/a/1040656394_121924582",
+          "captured_at": "2026-06-24T08:10:00+08:00",
+          "note": "搜狐：任意球假动作破门片段解析及「骗了全世界」句式传播路径"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-24-gaokao-wanle-bu-facao",
+      "title": "📊 你只是高考完了，不是家里发财了",
+      "aliases": ["高考后消费劝退", "家庭版消费现实", "高考版发财梦"],
+      "platform": ["weibo", "other"],
+      "type": "句式梗",
+      "summary": "高考结束后家长以此句式回怼子女消费冲动，精准点破「考完即发财」错觉，成为今夏最火家庭互怼句式。",
+      "origin": "高考结束季，不少考生计划大肆消费犒劳自己，家长劝阻时脱口而出「你只是高考完了，不是家里发财了」，因精准描绘家庭经济现实而大量流传；百度实时热搜第17位（约636万热度）。",
+      "usage": "「你只是___完了，不是家里发财了」——替换前半段套用于任何「庆祝得太早」的场景；如「你只是过完周末了」「你只是升职了」，反向提醒消费冲动背后的现实感。",
+      "fun_point": "妙在拆解了一个隐含等式：高考=大事=可以挥霍。语气温柔但毒辣，既是现实的当头棒喝，又充满生活质感，让人边笑边点头，因为所有人都经历过这种时刻。",
+      "why_spread": "高考热点加持、双向共鸣（父母子女双方均有代入），句式可替换任何「终于完成某事」的场景，覆盖面极广；时机卡在高考放榜前，持续流量可预期。",
+      "lifecycle": "peak",
+      "brand_usage": "理财/电商平台可做「高考完了也要理性消费」反向营销；教育类可做「你只是高考完了，人生才刚开始」正向转化；使用时保持轻松调性，不说教。",
+      "risk": {
+        "level": "safe",
+        "note": "家庭消费观碰撞，轻松调侃，无攻击性，无政治敏感。"
+      },
+      "days_on_list": 1,
+      "score": 80,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜",
+          "captured_at": "2026-06-24T08:00:00+08:00",
+          "note": "百度实时热搜第17位，热度约636万，高考季话题全国级热度确认"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://news.china.com/socialgd/10000169/20260624/49565332.html",
+          "captured_at": "2026-06-24T08:15:00+08:00",
+          "note": "中国网：「高考完了不是家里发财了」走红背景与家庭消费观差异分析"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.163.com/dy/article/L0557I8805562S9F.html",
+          "captured_at": "2026-06-24T08:20:00+08:00",
+          "note": "网易：「高考完不是发财了」家庭对话场景与句式传播路径梳理"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-24-cimu-duo-bai-mi",
+      "title": "🐱 慈母多败咪",
+      "aliases": ["慈母败咪", "铲屎官溺爱", "宠猫版教育格言"],
+      "platform": ["weibo", "other"],
+      "type": "口头禅梗",
+      "summary": "「慈母多败儿」改写为「慈母多败咪」，调侃宠猫家长无底线溺爱只会让猫咪越来越「作」，铲屎官集体共鸣。",
+      "origin": "微博热门话题，猫主人分享被宠坏的猫咪行为后发现自己就是「慈母」，有人以「慈母多败咪」一语精准总结；话题在微博形成热门讨论，铲屎官强烈代入并大量转发仿写。",
+      "usage": "「慈母多败咪」——自嘲对猫过度溺爱，或调侃「你家猫那么霸道，都是你惯的」；可延伸「慈母多败[动物]」，套用任何溺爱场景；铲屎官自我审判专用句。",
+      "fun_point": "只改「儿→咪」一字，古语与宠物语境的碰撞产生强烈反差：原本庄重的教育格言变成铲屎官的自我揭露，改字极简但语义颠覆感十足，发现这个谐音的瞬间让人忍不住转发。",
+      "why_spread": "宠物经济大背景下铲屎官群体庞大，集体对号入座；谐音梗门槛极低，「败咪」二字充满画面感；可延伸「败狗」「败龟」等，话题天然具备拓展性。",
+      "lifecycle": "rising",
+      "brand_usage": "宠物食品/用品品牌天然适配：「慈母多败咪，败的都要是最好的」；宠物健康类可做「爱猫不等于惯猫」科普；使用时保持轻松溺爱调性，不批判主人行为。",
+      "risk": {
+        "level": "safe",
+        "note": "轻松宠物话题，无争议，无政治敏感。"
+      },
+      "days_on_list": 1,
+      "score": 75,
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "origin",
+          "platform": "weibo",
+          "url": "https://weibo.com/a/hot/05ba78f9d22fbd91_0.html",
+          "captured_at": "2026-06-24T08:00:00+08:00",
+          "note": "微博热门话题页，铲屎官大量分享「慈母多败咪」亲身经历并仿写讨论"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://cj.sina.com.cn/articles/view/1d5abd84806801cj2i",
+          "captured_at": "2026-06-24T08:05:00+08:00",
+          "note": "新浪财经：「慈母多败咪」宠物溺爱话题走红与铲屎官文化分析"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://k.sina.cn/article_1d5ae173703301t9ku.html",
+          "captured_at": "2026-06-24T08:10:00+08:00",
+          "note": "新浪新闻：宠猫溺爱现象与「败咪文化」传播解析"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-24-kapai-dashi-ju-pai",
+      "title": "🃏 从卡牌大师到举牌大师",
+      "aliases": ["举牌大师", "卡牌升级", "大师双修"],
+      "platform": ["weibo", "other"],
+      "type": "句式梗",
+      "summary": "世界杯主裁判频繁出牌成「卡牌大师」，又因持续举技术区警示牌升级「举牌大师」，两个称号引爆「从X到Y」角色反转句式。",
+      "origin": "2026年世界杯，一位主裁判因出牌频率极高被球迷戏称「卡牌大师」；随后一场比赛中因持续举起技术区警示牌，网友升级封号为「举牌大师」；话题百度实时热搜第28位（约531万热度）。",
+      "usage": "「从[技能A]大师到[技能B]大师」——形容某人在两个截然不同领域均有极致表现；或「从XX到举牌大师」表达意外副业强势上线；任何「本职之外还有绝活」的双料达人场景均可套用。",
+      "fun_point": "「卡牌→举牌」双关妙趣横生，赛场最高权威角色的「专业认证」被网友反向戏谑；两个「大师」头衔叠加反而产生荒诞喜感：在哪里都那么专注，确实是门绝学。",
+      "why_spread": "世界杯裁判话题自带争议流量，双关文字游戏门槛低；「从A大师到B大师」句式可套用任何「多面手」形象，职场/学校/生活均有场景；二创表情包配合加速传播。",
+      "lifecycle": "rising",
+      "brand_usage": "多功能产品可借「从XX大师到举牌大师」展示多场景能力；企业文化内容可做「从A到B，全都是大师」展示员工多技能；需回避直接描述具体争议判罚。",
+      "risk": {
+        "level": "low",
+        "note": "涉及赛事裁判话题存在争议，建议仅借助句式壳体，不描述具体争议判罚内容。"
+      },
+      "days_on_list": 1,
+      "score": 77,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜",
+          "captured_at": "2026-06-24T08:00:00+08:00",
+          "note": "百度实时热搜第28位，热度约531万，裁判话题全国级热度确认"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://sina.cn/news/detail/5313098929934928.html",
+          "captured_at": "2026-06-24T08:15:00+08:00",
+          "note": "新浪：主裁从「卡牌大师」到「举牌大师」的封号演变与梗传播路径解析"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.163.com/dy/article/KVRRF09H0556EYLE.html",
+          "captured_at": "2026-06-24T08:20:00+08:00",
+          "note": "网易：「举牌大师」话题传播路径与裁判梗在世界杯期间的扩散情况"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-24-henshao-zhan-laoyi-bian",
+      "title": "🧓 我很少站老一辈这边，但……",
+      "aliases": ["先抑后扬护老句", "代际沟通神句", "很少站老一辈这边"],
+      "platform": ["weibo", "other"],
+      "type": "句式梗",
+      "summary": "先亮明「我通常不认同长辈」再转折力挺，「先抑后扬」结构既讨好年轻人又安抚长辈，成为代际沟通新句式模板。",
+      "origin": "微博话题源自用户分享家庭矛盾后的神转折：以「你要知道，我很少站老一辈这边的，但……」开头，结尾却力挺长辈，意外打动双方；热榜约16万讨论，引发大量仿写。",
+      "usage": "「我很少站[X]这边的，但这次……」——先表达距离感再转折，增加说服力；可替换X为任意群体；也可反用「我很少不站老一辈这边的，但……」；适合所有「以为你站A结果你站B」的戏剧性表态场景。",
+      "fun_point": "「先亮立场再打自己脸」的自我矛盾结构充满喜感；明明是支持，却要先宣布不支持——这套「逆向背书」的话语策略既有说服力又有表演感，让两边都觉得你公正。",
+      "why_spread": "代际矛盾是永恒话题，双向共鸣；句式可替换X为任意群体，覆盖所有「意外的公正旁观者」叙事；结构简单易模仿，适合在任何对立立场场景下二创。",
+      "lifecycle": "rising",
+      "brand_usage": "适合公关声明「我们很少推荐同行，但这次不得不说」；品牌跨界合作可用「我们很少站[领域]这边，但这次真的不一样」；保持真诚感，避免过于套路化。",
+      "risk": {
+        "level": "safe",
+        "note": "代际沟通话题，无政治敏感，轻松幽默。"
+      },
+      "days_on_list": 1,
+      "score": 72,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://tophub.today/n/KqndgxeLl9",
+          "title": "今日热榜·微博热搜",
+          "captured_at": "2026-06-24T08:00:00+08:00",
+          "note": "今日热榜微博榜，约16万讨论，「很少站老一辈这边」仿写帖大量涌现"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://k.sina.cn/article_1d5abd84806801q7yu.html",
+          "captured_at": "2026-06-24T08:05:00+08:00",
+          "note": "新浪：「很少站老一辈这边」先抑后扬句式走红与代际沟通场景分析"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-24-meixuesheng-hao-niu",
+      "title": "🎨 突然意识到美术生好牛",
+      "aliases": ["美术生隐藏技能", "突然意识到系列", "好牛感叹句"],
+      "platform": ["weibo", "other"],
+      "type": "情绪梗",
+      "summary": "网友偶然发现美术生「随手一画」远超想象后集体发出「突然意识到美术生好牛」，触发跨圈层对被低估群体的赞叹句式。",
+      "origin": "微博话题由美术生晒出日常随手涂鸦引发非美术圈网友震惊，「突然意识到美术生好牛」在评论区大量复制传播；热榜约4万热度，美术生集体分享技能视频加速传播。",
+      "usage": "「突然意识到[群体]好牛」——发现某个被低估群体隐藏实力时表达惊叹；也可自嘲「突然意识到我好牛（不是）」；套用任何「原来你不只会这个」的反差揭秘场景。",
+      "fun_point": "「突然」二字捕捉到那个瞬间：你一直以为知道某人是谁，直到他们做了某件让你顿悟的事。美术生的日常技能在外人眼里是惊艳，这种认知落差是所有跨圈层惊喜感叹的共同底层。",
+      "why_spread": "美术生群体庞大且有强烈表达欲，集体出来「展示好牛」；句式可替换「美术生」为任意群体，厨师、程序员、体育生等均可；正向赞美内容天然传播阻力小。",
+      "lifecycle": "rising",
+      "brand_usage": "技能类/教育平台可用「突然意识到学了XX好牛」展示学习成果；雇主品牌可做「突然意识到我们团队好牛」隐藏技能展示；保持真诚惊叹感，不过度营销。",
+      "risk": {
+        "level": "safe",
+        "note": "正面赞美内容，无争议，无政治敏感。"
+      },
+      "days_on_list": 1,
+      "score": 70,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://tophub.today/n/KqndgxeLl9",
+          "title": "今日热榜·微博热搜",
+          "captured_at": "2026-06-24T08:00:00+08:00",
+          "note": "今日热榜微博榜，约4万热度，美术生技能展示帖引发跨圈层关注"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://sina.cn/news/detail/5313069087720108.html",
+          "captured_at": "2026-06-24T08:05:00+08:00",
+          "note": "新浪：「突然意识到美术生好牛」话题起源与跨圈层赞叹句式传播解析"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-23-mei-wan-mei-le",
+      "title": "🌦️ 梅完梅了",
+      "aliases": [
+        "没完没了梅雨版",
+        "梅雨梅完梅了",
+        "又是梅完梅了的一天"
+      ],
+      "platform": ["weibo", "other"],
+      "type": "句式梗",
+      "summary": "梅雨季谐音梗：「梅完梅了」与「没完没了」完全同音，借梅雨的「梅」字对南方持续暴雨发出绝妙吐槽，今日登上百度实时热搜约550万热度，上观新闻、大象新闻均以此为标题报道。",
+      "origin": "2026年6月18日起南方梅雨季全面开启，多地降雨量较历史同期偏多逾倍，不少站点破历史纪录；「梅完梅了」谐音「没完没了」被网友发现后迅速传播；百度实时热搜今日第25位（约550万热度），上观新闻（6月22日）以「梅完梅了，今天局部大到暴雨」为标题，大象新闻/搜狐（6月23日）以「南方强降雨梅完梅了！」跟进，梗已被主流媒体采纳为标题语言。",
+      "usage": "任何「没完没了、持续不断」的场景可零门槛套用：「这需求改到梅完梅了」「会议开到梅完梅了」「今天也是梅完梅了的一天」；可做雨季/湿冷天气的情绪共鸣内容，南方打工人强烈代入；评论区接龙：「梅完梅了，问题来了，雨停了吗？」",
+      "fun_point": "文字游戏妙在音意双关：发音与「没完没了」完全相同，嵌入「梅」字后自带梅雨背景，负能量能量化。越说越气、越气越「梅」，从天气吐槽无缝迁移至任何令人抓狂的持续场景，传播门槛为零。",
+      "why_spread": "已验证：百度实时热搜今日约550万热度，上观新闻（上海媒体）和大象新闻/搜狐（全国）均以「梅完梅了」为标题核心报道暴雨，确认梗已被主流媒体语言采纳；推测：梅雨覆盖南方数亿人口，谐音发现感极强，南方打工人强烈共情，且可从天气迁移至任何令人抓狂的持续场景。",
+      "lifecycle": "peak",
+      "brand_usage": "南方本地账号可借「今天也是梅完梅了的一天」做当日情绪钩子；防潮/去湿产品可做「梅完梅了？来和梅雨对战」；快递/外卖可做「梅完梅了，到货还是很快」正向反转；天气类App可借此做实时互动内容。",
+      "risk": {
+        "level": "safe",
+        "note": "纯天气谐音梗，无政治风险；使用时聚焦幽默自嘲，不过度渲染灾情（今年部分地区暴雨成灾）。"
+      },
+      "days_on_list": 2,
+      "score": 82,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜实时榜",
+          "captured_at": "2026-06-23T10:30:00+08:00",
+          "note": "百度实时热搜今日第25位词条「南方强降雨梅完梅了」约550万热度，确认谐音梗已达全国级热度"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://m.sohu.com/a/1040411986_120347736/",
+          "title": "南方强降雨梅完梅了！数说南方破纪录强降雨，未来哪里雨水将超长待机？",
+          "captured_at": "2026-06-23T10:35:00+08:00",
+          "note": "大象新闻/搜狐6月23日报道以「梅完梅了」为标题，记录南方破纪录降雨数据及梗的媒体化使用"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://sghexport.shobserver.com/html/toutiao/2026/06/22/1769348.html",
+          "title": "上海人注意了！梅完梅了，今天局部大到暴雨",
+          "captured_at": "2026-06-23T10:40:00+08:00",
+          "note": "上观新闻6月22日以「梅完梅了」为标题核心，上海本地报道记录梗被主流媒体采用的早期节点"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-23-viking-row",
+      "title": "🚣 一起划起来了",
+      "aliases": [
+        "维京划船",
+        "北欧船魂",
+        "扶手梯上划船",
+        "挪威一起划"
+      ],
+      "platform": ["weibo", "other"],
+      "type": "二创梗",
+      "summary": "挪威球迷的「维京划船」集体助威仪式蔓延至时代广场、议会大厅、购物中心扶手电梯——全体同步做划桨动作的「一起划起来了」成为本届世界杯感染力最强的集体动作梗，端午龙舟刚过点燃双重共鸣。",
+      "origin": "2026年世界杯，挪威球迷在纽约时代广场表演维京划船震撼全场（约6月18日）；随后挪威议员在议会内跨党派集体划起来；购物中心扶手电梯片段更引爆国内社媒：球迷站上扶梯做划桨动作，「电梯变龙舟」玩梗。百度实时热搜今日第22位「挪威队和球迷一起划起来了」（581万热度），163.com、HK01、stheadline多家媒体报道。",
+      "usage": "「一起划起来了」——任何群体同步行动的场景均可套用：下班前十分钟公司所有人一起划起来了；本会议室，下午三点，划起来了；评论区接龙：本机舱全员一起划；短视频可做「维京划船教学：会议室版/通勤版/健身房版」系列。",
+      "fun_point": "把一个战前威慑仪式变成人人能套用的同步行动模板：只要有扶梯和几个同伴，立刻组成维京队。电梯变划船、走廊变赛道、会议室变龙舟——动作极简，语境改写门槛为零，端午龙舟文化加成让中国用户一秒代入。",
+      "why_spread": "已验证：百度热搜今日第22位（581万热度），163.com文章记录时代广场表演及议员集体参与等多个节点，stheadline和HK01确认跨媒体覆盖；推测：端午刚过「划起来」文化共鸣高，动作梗天然适合短视频模仿，议员参与提供官方认证笑点。",
+      "lifecycle": "peak",
+      "brand_usage": "团建/企业文化账号可借「一起划起来了」做执行力文案；运动装备品牌可做「你的维京团队，现在开始划」系列；水上运动/龙舟旅游可借「你们那儿怎么划」话题互动；世界杯结束后转为「协同行动」通用模板。",
+      "risk": {
+        "level": "safe",
+        "note": "纯动作幽默集体参与梗，无政治风险，不涉及任何具体人物或争议话题。"
+      },
+      "days_on_list": 2,
+      "score": 85,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜",
+          "captured_at": "2026-06-23T08:30:00+08:00",
+          "note": "百度实时热搜今日第22位「挪威队和球迷一起划起来了」（581万热度），全国级传播确认"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://www.163.com/dy/article/L02T0U630549BAP0.html",
+          "captured_at": "2026-06-23T08:35:00+08:00",
+          "note": "163.com文章记录维京划船从时代广场到议会、购物中心扶梯多场景蔓延全过程，还原梗的扩散路径"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://www.stheadline.com/zh-hans/realtime-world/3584129",
+          "captured_at": "2026-06-23T08:40:00+08:00",
+          "note": "星岛实时报道确认维京划船在赛场、扶梯等多场景的跨媒体扩散效应，含视频印证"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-23-pressure-on-you",
+      "title": "📣 压力又给到XX了",
+      "aliases": [
+        "压力给到了",
+        "把压力传给你了",
+        "压力来了"
+      ],
+      "platform": ["weibo", "other"],
+      "type": "句式梗",
+      "summary": "「压力又给到XX了」是中文互联网经典句式，每当一方取得成绩、另一方被迫跟进时触发；2026年世界杯小组赛两名顶级球员同日双响重新激活这一模板，今日登上百度热搜约540万热度、微博热搜约28万。",
+      "origin": "句式源自体育直播解说语言，约2022-2023年扩散至全网成为经典句式梗；2026年6月23日世界杯小组赛第二轮，两位主力球员同日各入两球，球迷评论区立刻触发「压力又给到XX了」模板；百度实时热搜约540万热度（第26位）、微博热搜约28万，tophub.today今日双平台同步在榜。",
+      "usage": "「压力又给到[人/团队/单位]了」——任何「A完成目标后，B被迫跟进」的场景：卷王交作业了，压力又给到我们组了；甲方改需求了，压力又给到UI了；评论区接龙：「所以压力现在在谁？」→「压力在你那边，我这边很平静」；品牌可做「压力给到周末了，你的方案呢」实时热点互动。",
+      "fun_point": "解说腔进入日常是最强的梗迁移路径：当「压力给到XX」从赛场进入生活，所有竞争场景都被游戏化了——每个卷王的每一步都在给别人传压力，每个收到压力的人都在等下一个出手。话语权的「压力传球」是所有人都经历过的日常。",
+      "why_spread": "已验证：百度实时热搜今日第26位（约540万热度），tophub.today今日微博热搜约28万同步在榜，两大平台同日出现确认跨平台传播；推测：世界杯热度窗口提供集中触发，句式改写门槛极低（只需换XX），职场/校园/家庭等所有竞争场景均可套用，历久弥新的经典模板。",
+      "lifecycle": "peak",
+      "brand_usage": "效率类工具可做「把压力给到时间，不要给到自己」；教育/职场类可做「压力给到题目，不给到自己」；世界杯赛期品牌可做「你那边还在看？压力已经给到对手了」实时热点互动；任何竞争场景的品牌均可复用。",
+      "risk": {
+        "level": "safe",
+        "note": "通用竞争句式梗，无政治风险；不点名具体人物；不用于施压或羞辱特定个人。"
+      },
+      "days_on_list": 2,
+      "score": 79,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜实时榜",
+          "captured_at": "2026-06-23T10:30:00+08:00",
+          "note": "百度实时热搜第26位「世界杯双雄同日双响 压力给到XX了」约540万热度，触发全平台句式复活"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "weibo",
+          "url": "https://tophub.today/",
+          "title": "今日热榜·微博热搜",
+          "captured_at": "2026-06-23T10:30:00+08:00",
+          "note": "tophub.today今日微博热搜约28万讨论，与百度热搜同步，两大平台同日在榜"
+        }
+      ],
+      "published": true
+    }
+  ]
 }
