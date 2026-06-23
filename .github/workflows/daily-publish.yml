@@ -87,7 +87,7 @@ jobs:
         uses: anthropics/claude-code-action@2fee15510437d71399d9139ed60433470484a8fb # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          claude_args: '--max-turns 100 --allowedTools "WebSearch,WebFetch,Read,Glob,Grep,Write,Edit,TodoWrite,Bash(npm run check)"'
+          claude_args: '--max-turns 60 --allowedTools "WebSearch,WebFetch,Read,Glob,Grep,Write,Edit,TodoWrite,Bash(npm run validate)"'
           prompt: |
             You are the MemeDaily daily publishing job running unattended in GitHub Actions.
             Read and follow ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md EXACTLY, including its
@@ -112,17 +112,19 @@ jobs:
             生命周期：只有话题第一次收录至今超过10天才标「已过气」，否则至少「还能上车」（代码校验强制）。
             采集要广、要聪明：横扫多个聚合榜单 + 平台公开页 + 梗词典 + 搜索
             引擎 + 跨平台外溢，先建一个大候选池(~30+)，再按 rubric 排序、挑出最好的 ~10 条；
-            分多轮：广撒网 → 筛选排序 → 核实增强。预算充足(~$5/天、~100 轮)，质量与广度优先。
+            分多轮：广撒网 → 筛选排序 → 核实增强。预算充足(~$5/天、~60 轮)，质量与广度优先。
 
             CRITICAL OUTPUT REQUIREMENT: You MUST create the file
             data/daily/${{ steps.guard.outputs.date }}.json using the Write tool (today is
             ${{ steps.guard.outputs.date }}, Asia/Shanghai). The file MUST exist on disk before you
             finish — do NOT just print the JSON in a chat message, and do NOT end your turn until the
             file is written. Use Read/Glob/Grep to inspect the schema and existing files; the ONLY
-            shell command you may run is `npm run check`. After writing the file, run `npm run check`
-            and confirm it passes (validate + typecheck + test + build); if it fails, fix the file and
-            re-run until green. Do NOT run git/commit/push — a separate deterministic step publishes
-            your file. If nothing qualifies after sweeping aggregators, you STILL must Write a valid
+            shell command you may run is `npm run validate` (fast — it just checks your JSON against
+            the schema; do NOT build the app). After writing the file, run `npm run validate` once;
+            if it reports errors, fix the file and re-run — but after at most 3 attempts, Write a
+            valid status:"skipped" envelope instead of looping. A separate deterministic step runs the
+            full check (typecheck/test/build) and publishes your file, so do NOT run git/commit/push.
+            If nothing qualifies after sweeping aggregators, you STILL must Write a valid
             status:"skipped" envelope to that exact path. Never fabricate evidence and never pad to 10.
 
       - name: Validate, commit & publish the agent's output (deterministic; agent cannot reach this)
