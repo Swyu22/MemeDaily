@@ -160,6 +160,25 @@ describe("MemeDaily publication rules", () => {
       envelopeIssueSummary(envelope).some((issue) => issue.includes("after generated_at")),
     ).toBe(true);
   });
+
+  it("flags an item whose subject is politics (首相)", () => {
+    const political = { ...baseItem, summary: "铁打的拉里，流水的英国首相，网友这么调侃。" } satisfies MemeItem;
+    expect(
+      envelopeIssueSummary(envelopeWith(political, "published")).some((i) =>
+        i.includes("political term"),
+      ),
+    ).toBe(true);
+  });
+
+  it("does NOT flag a non-political meme that only mentions a parliament in passing", () => {
+    const ok = {
+      ...baseItem,
+      summary: "维京划船蔓延到议会大厅、商场扶梯，全员一起划起来了。",
+    } satisfies MemeItem;
+    expect(
+      envelopeIssueSummary(envelopeWith(ok, "published")).some((i) => i.includes("political term")),
+    ).toBe(false);
+  });
 });
 
 describe("MemeDaily cross-day freshness", () => {

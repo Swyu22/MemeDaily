@@ -6,7 +6,7 @@ name: daily-monitor
 
 on:
   schedule:
-    - cron: "30 6 * * *" # 14:30 Asia/Shanghai, after the 07:40 publish + catch-up window (09:10–13:10)
+    - cron: "30 6 * * *" # 14:30 Asia/Shanghai, after the 07:00 publish + hourly catch-up window (08:00–13:00)
   workflow_dispatch:
 
 permissions:
@@ -25,6 +25,18 @@ jobs:
         run: |
           set -euo pipefail
           DATE="$(TZ=Asia/Shanghai date +%F)"
+
+          # Cost-runaway guard: many daily-publish runs in 18h = repeated re-triggers/failures
+          # burning Claude budget (~$4/run). Alert even if today eventually published fine.
+          SINCE="$(date -u -d '18 hours ago' +%Y-%m-%dT%H:%M:%SZ)"
+          RUNS="$(gh run list --workflow=daily-publish.yml --limit 40 --json createdAt --jq "[.[] | select(.createdAt > \"$SINCE\")] | length" 2>/dev/null || echo 0)"
+          if [ "${RUNS:-0}" -gt 4 ]; then
+            RTITLE="MemeDaily 成本异常: ${DATE} (18h 内 daily-publish 运行 ${RUNS} 次)"
+            RBODY="自动监控：过去 18 小时 daily-publish 运行了 ${RUNS} 次（每次约 \$4）。可能是反复重试/失败在烧预算，请检查近期运行。"
+            REX="$(gh issue list --state open --json number,title --jq "[.[] | select(.title | contains(\"成本异常: ${DATE}\"))][0].number // empty")"
+            if [ -n "$REX" ]; then gh issue comment "$REX" --body "$RBODY"; else gh issue create --title "$RTITLE" --body "$RBODY"; fi
+          fi
+
           FILE="data/daily/${DATE}.json"
 
           if [ -f "$FILE" ]; then

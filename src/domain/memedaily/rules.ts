@@ -126,6 +126,39 @@ export function crossDayIssues(envelopes: DailyEnvelope[]): string[] {
   return issues;
 }
 
+// Code-enforced content policy: 时事政治 must never reach published items, even when memeified
+// (prompt rules leak — e.g. a "UK PM" cat meme). High-signal political role/institution terms;
+// a hit fails validation so the agent self-corrects and a bad item can never be published.
+// High-signal political-SUBJECT markers only — terms whose presence means the item is ABOUT
+// politics, not ones a non-political meme might mention in passing (e.g. "议会"/"议员" appear
+// when a gesture merely spreads to a parliament). The prompt rule is the primary defense; this
+// code gate is the backstop that fails the build on the clear cases (e.g. "英国首相").
+const POLITICS_TERMS = [
+  "首相", "总统", "总理", "国家主席", "大选", "弹劾", "政变",
+  "白宫", "克里姆林", "执政党", "在野党",
+];
+
+export function politicalContentIssues(envelope: DailyEnvelope): string[] {
+  const issues: string[] = [];
+  for (const item of visibleItems(envelope)) {
+    const haystack = [
+      item.title,
+      item.summary,
+      item.origin,
+      item.usage,
+      item.why_spread,
+      item.fun_point,
+      item.brand_usage,
+      ...item.aliases,
+    ].join(" ");
+    const hit = POLITICS_TERMS.find((term) => haystack.includes(term));
+    if (hit) {
+      issues.push(`${item.id} contains political term "${hit}" — 时事政治 must be dropped`);
+    }
+  }
+  return issues;
+}
+
 export function envelopeIssueSummary(envelope: DailyEnvelope): string[] {
   const issues: string[] = [];
 
@@ -169,6 +202,8 @@ export function envelopeIssueSummary(envelope: DailyEnvelope): string[] {
       }
     }
   }
+
+  issues.push(...politicalContentIssues(envelope));
 
   return issues;
 }
