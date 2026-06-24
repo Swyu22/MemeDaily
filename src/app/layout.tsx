@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import ServiceWorkerManager from "./ServiceWorkerManager";
 
 // 子路径前缀（见 next.config.mjs）。根域名时为 ""，github.io 子路径时为 "/MemeDaily"。
 // metadata.icons / openGraph.images 不会被 basePath 自动加前缀，需手动拼。
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="stylesheet" href={`${BP}/fonts/fonts.css`} />
       </head>
       <body>
+        <ServiceWorkerManager />
         <div className="shell">
           <header className="topbar">
             <div className="topbar-inner">
