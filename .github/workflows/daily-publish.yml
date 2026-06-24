@@ -4,13 +4,17 @@ name: daily-publish
 # Runs claude-code-action with a Claude SUBSCRIPTION token (no OpenAI, no separate API
 # billing): aggregator-first public-web research -> today's data/daily JSON.
 #
-# SECURITY MODEL (the agent reads attacker-influenceable public web pages, so it is confined):
-#   - The agent gets an explicit --allowedTools list and NO bypassPermissions, so it cannot
-#     run arbitrary shell — the only Bash it may run is `npm run check`.
-#   - The OAuth token is passed only to the action step, never placed in the job shell env.
-#   - checkout uses persist-credentials:false, so the agent cannot push with stored creds.
-#   - A separate deterministic step (which the agent cannot influence) re-validates the output
-#     and does the commit + push + Pages deploy. See ADR / audit notes.
+# SECURITY MODEL — TWO JOBS so the web-content-steered agent never holds write power:
+#   - job `agent`: permissions contents:read (+ id-token:write for the action's OIDC). It
+#     runs claude-code-action (which reads attacker-influenceable public pages) confined by
+#     an explicit --allowedTools list (NO bypassPermissions; the only Bash it may run is
+#     `npm run validate`). It produces data/daily/<date>.json and uploads ONLY that JSON as
+#     an artifact. Even a full agent compromise cannot push, dispatch workflows, or mint a
+#     write/Pages token — this job simply has none.
+#   - job `publish`: needs `agent`; permissions contents:write + actions:write. It checks out
+#     TRUSTED repo code (NOT the agent's tree), downloads only the data-JSON artifact, runs
+#     `npm run check` against repo-controlled scripts, then commits + pushes + dispatches the
+#     Pages deploy. The agent cannot influence anything in this job.
 #
 # ONE-TIME SETUP (required before it does anything):
 #   1. On your Mac: `claude setup-token`  -> copies a long-lived subscription OAuth token.
@@ -27,22 +31,31 @@ on:
         type: boolean
         default: false
 
-permissions:
-  contents: write
-  actions: write # to dispatch the Pages deploy after a GITHUB_TOKEN push
-  id-token: write # claude-code-action uses OIDC for its GitHub token setup
+permissions: {} # least-privilege by default; each job opts into exactly what it needs
 
 concurrency:
   group: daily-publish
   cancel-in-progress: false
 
 jobs:
-  publish:
+  # ── JOB 1: confined, web-content-steered agent. contents:read only — it cannot push. ──
+  agent:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # claude-code-action uses OIDC for its GitHub token setup
     env:
       # Boolean only — the token VALUE is never exposed to the job shell env.
       HAS_OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+    outputs:
+      date: ${{ steps.guard.outputs.date }}
+      skip: ${{ steps.guard.outputs.skip }}
+      has_oauth: ${{ steps.flags.outputs.has_oauth }}
     steps:
+      - name: Flags (cross-job signal; runs even when the token is absent)
+        id: flags
+        run: echo "has_oauth=${{ env.HAS_OAUTH }}" >> "$GITHUB_OUTPUT"
+
       - name: Warn if token missing
         if: env.HAS_OAUTH != 'true'
         run: echo "::warning::CLAUDE_CODE_OAUTH_TOKEN not set — run 'claude setup-token' and add it as a repo secret to enable cloud publishing. Skipping this run."
@@ -50,7 +63,7 @@ jobs:
       - uses: actions/checkout@v4
         if: env.HAS_OAUTH == 'true'
         with:
-          persist-credentials: false # the agent step must not inherit push credentials
+          persist-credentials: false # defense-in-depth; this job has no write scope anyway
 
       # "Already-published" hard lock: once today's status is `published`, skip on ANY trigger
       # (schedule / cron-job.org dispatch / catch-up) so a stray or racing double-fire can't
@@ -137,25 +150,58 @@ jobs:
             shell command you may run is `npm run validate` (fast — it just checks your JSON against
             the schema; do NOT build the app). After writing the file, run `npm run validate` once;
             if it reports errors, fix the file and re-run — but after at most 3 attempts, Write a
-            valid status:"skipped" envelope instead of looping. A separate deterministic step runs the
+            valid status:"skipped" envelope instead of looping. A separate deterministic job runs the
             full check (typecheck/test/build) and publishes your file, so do NOT run git/commit/push.
             If nothing qualifies after sweeping aggregators, you STILL must Write a valid
             status:"skipped" envelope to that exact path. Never fabricate evidence and never pad to 10.
 
-      - name: Validate, commit & publish the agent's output (deterministic; agent cannot reach this)
+      - name: Upload the agent's data file (ONLY the JSON — never code) for the publish job
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DATE: ${{ steps.guard.outputs.date }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-data
+          path: data/daily/${{ steps.guard.outputs.date }}.json
+          if-no-files-found: error # fail the agent job if it produced nothing, so catchup/monitor recover
+          retention-days: 1
+
+  # ── JOB 2: deterministic publish. Holds write/actions tokens; the agent cannot reach it. ──
+  publish:
+    needs: agent
+    if: needs.agent.outputs.has_oauth == 'true' && needs.agent.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write # to dispatch the Pages deploy after a GITHUB_TOKEN push
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      DATE: ${{ needs.agent.outputs.date }}
+    steps:
+      - uses: actions/checkout@v4 # TRUSTED repo code — NOT the agent's tree
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Download the agent's data file (only the JSON artifact)
+        uses: actions/download-artifact@v4
+        with:
+          name: daily-data
+          path: data/daily
+
+      - name: Validate, commit & publish (deterministic; agent cannot reach this)
         run: |
           set -euo pipefail
-          # Fail LOUD if the agent didn't produce today's file (don't pass green-but-empty —
-          # a red run lets daily-catchup re-dispatch and daily-monitor alert).
+          # Fail LOUD if the artifact is missing (don't pass green-but-empty — a red run lets
+          # daily-catchup re-dispatch and daily-monitor alert).
           if [ ! -f "data/daily/${DATE}.json" ]; then
-            echo "::error::Confined agent did not produce data/daily/${DATE}.json. Failing so daily-catchup/monitor recover."
+            echo "::error::Agent job produced no data/daily/${DATE}.json artifact. Failing so daily-catchup/monitor recover."
             exit 1
           fi
-          npm run check # re-validate the agent's file deterministically before trusting it
+          npm run check # re-validate against TRUSTED repo code before trusting the data
           # Stage FIRST, then check staged changes — a brand-new day's file is UNTRACKED, and
           # `git diff --quiet` ignores untracked files (this silently dropped 06-23's first publish).
           git add data/daily
@@ -165,8 +211,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # checkout used persist-credentials:false, so set an explicit push credential here.
-          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git commit -m "chore(data): publish MemeDaily ${DATE}"
           git pull --rebase origin main
           git push origin HEAD:main
