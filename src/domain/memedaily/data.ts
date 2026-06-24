@@ -10,10 +10,6 @@ import { visibleItems } from "./rules";
 
 const dataDir = path.join(process.cwd(), "data", "daily");
 
-export function dailyDataDir(): string {
-  return dataDir;
-}
-
 export function dailyJsonFiles(): string[] {
   if (!fs.existsSync(dataDir)) {
     return [];
@@ -31,7 +27,7 @@ export function loadEnvelope(fileName: string): DailyEnvelope {
   return DailyEnvelopeSchema.parse(raw);
 }
 
-// Memoized: every reader (latest*, allVisibleItems, findItemById) funnels through here,
+// Memoized: every reader (allVisibleItems, findItemById) funnels through here,
 // and at static-build time the data files do not change, so one disk pass suffices.
 let envelopeCache: DailyEnvelope[] | null = null;
 
@@ -41,14 +37,6 @@ export function loadAllEnvelopes(): DailyEnvelope[] {
     .map(loadEnvelope)
     .sort((a, b) => b.date.localeCompare(a.date));
   return envelopeCache;
-}
-
-export function latestEnvelope(): DailyEnvelope | null {
-  return loadAllEnvelopes()[0] ?? null;
-}
-
-export function latestVisibleEnvelope(): DailyEnvelope | null {
-  return loadAllEnvelopes().find((envelope) => visibleItems(envelope).length > 0) ?? null;
 }
 
 export function allVisibleItems(): Array<MemeItem & { date: string }> {

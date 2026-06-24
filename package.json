@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "validate": "tsx scripts/validate-data.ts",
-    "check": "npm run validate && npm run typecheck && npm test && npm run build",
+    "check": "npm run validate && npm run lint && npm run typecheck && npm test && npm run build",
     "fallback:skipped": "tsx scripts/create-skipped-day.ts"
   },
   "dependencies": {

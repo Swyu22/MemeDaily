@@ -15,8 +15,14 @@ function shanghaiDate(): string {
     day: "2-digit",
   }).formatToParts(new Date());
 
-  const byType = Object.fromEntries(parts.map((part) => [part.type, part.value]));
-  return `${byType.year}-${byType.month}-${byType.day}`;
+  const get = (type: string) => parts.find((part) => part.type === type)?.value;
+  const year = get("year");
+  const month = get("month");
+  const day = get("day");
+  if (!year || !month || !day) {
+    throw new Error("Intl.DateTimeFormat did not return year/month/day parts");
+  }
+  return `${year}-${month}-${day}`;
 }
 
 const targetDate = process.env.MEMEDAILY_DATE ?? shanghaiDate();

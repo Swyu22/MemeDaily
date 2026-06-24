@@ -37,6 +37,10 @@ function itemNames(item: MemeItem): string[] {
 // Merge a recurring meme so it appears once: keep the FIRST occurrence (caller passes rows
 // date-desc, so "first" = most recent). A recurrence carries the SAME id across days (its
 // title may be reworded), so dedup by id first; also by normalized title/alias as a backstop.
+// CAVEAT: unlike crossDayIssues (which only WARNS on a name collision), the name backstop here
+// silently DROPS a row — two genuinely distinct memes sharing one normalized title/alias would
+// lose one from the 梗库 archive. Accepted: id-first handles real recurrences and current data
+// has no such collision; the name match is a rare-case backstop.
 export function dedupeRecurring<T extends MemeItem>(rows: T[]): T[] {
   const seenIds = new Set<string>();
   const seenNames = new Set<string>();
@@ -166,6 +170,7 @@ export function politicalContentIssues(envelope: DailyEnvelope): string[] {
       item.why_spread,
       item.fun_point,
       item.brand_usage,
+      item.risk.note,
       ...item.aliases,
     ].join(" ");
     const hit = POLITICS_TERMS.find((term) => haystack.includes(term));

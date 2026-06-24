@@ -38,7 +38,7 @@ const SCOPE_PATH = "/MemeDaily/";
 const STATIC_PREFIX = "/MemeDaily/_next/static/";
 const FONTS_PREFIX = "/MemeDaily/fonts/";
 
-self.addEventListener("install", (event) => {
+self.addEventListener("install", () => {
   // Take over as soon as possible; we rely on network-first for HTML so there is no
   // risk of skipWaiting serving stale content — the new SW still goes to network first.
   self.skipWaiting();
@@ -87,8 +87,8 @@ async function handleNavigation(request) {
     // else let the browser show its normal offline error.
     const cached = await cache.match(request);
     if (cached) return cached;
-    const root = await cache.match(SCOPE_PATH);
-    if (root) return root;
+    // No homepage (SCOPE_PATH) fallback: serving the homepage HTML under a different
+    // deep-link URL is confusing. Let the browser show its native offline page instead.
     throw err;
   }
 }
