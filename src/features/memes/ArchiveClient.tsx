@@ -7,7 +7,12 @@
  */
 import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
-import { lifecycleLabels, platformLabels, sortByDecisionValue } from "@/domain/memedaily/labels";
+import {
+  lifecycleLabels,
+  platformLabels,
+  sortByDateThenLife,
+  sortByDecisionValue,
+} from "@/domain/memedaily/labels";
 import type { Lifecycle, MemeItem, Platform } from "@/domain/memedaily/schema";
 
 // basePath prefix for raw <a> internal links (Next only rewrites next/link). See next.config.mjs.
@@ -26,7 +31,7 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
   const [platform, setPlatform] = useState("全部");
   const [type, setType] = useState("全部");
   const [lifecycle, setLifecycle] = useState("全部");
-  const [sort, setSort] = useState<"value" | "date">("value");
+  const [sort, setSort] = useState<"value" | "date">("date");
 
   const platforms = ["全部", ...Array.from(new Set(rows.flatMap((row) => row.platform)))];
   const types = ["全部", ...Array.from(new Set(rows.map((row) => row.type)))];
@@ -54,9 +59,7 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
     });
 
     if (sort === "date") {
-      return [...matched].sort(
-        (a, b) => b.date.localeCompare(a.date) || (b.score ?? 50) - (a.score ?? 50),
-      );
+      return sortByDateThenLife(matched);
     }
     return sortByDecisionValue(matched);
   }, [lifecycle, platform, query, rows, sort, type]);
@@ -116,7 +119,7 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
         <div className="result-list">
           {filtered.map((row) => (
             <a className="result-row" href={`${BP}/meme/${row.id}/index.html`} key={row.id}>
-              <div>
+              <div className="result-main">
                 <strong>{row.title}</strong>
                 <div className="summary">{row.summary}</div>
                 <div className="tag-row">

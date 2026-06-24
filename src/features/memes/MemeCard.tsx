@@ -42,7 +42,13 @@ export function MemeCard({ item, expanded = false }: MemeCardProps) {
       <div className="tag-row">
         <span className="mini">{item.platform.map((value) => platformLabels[value]).join(" · ")}</span>
         <span className="mini">{item.type}</span>
-        {item.days_on_list ? <span className="mini">连续 {item.days_on_list} 天</span> : null}
+        {/* Only surface the streak for genuinely multi-day memes; a red "连续 1 天" on every
+            card is noise. ≥2 days = the meme actually persisted, which is what we highlight. */}
+        {(item.days_on_list ?? 0) >= 2 ? (
+          <span className="mini">
+            连续 <span className="streak-n">{item.days_on_list}</span> 天
+          </span>
+        ) : null}
       </div>
 
       {expanded ? <MemeDetailFields item={item} /> : <MemeSourceList item={item} compact />}

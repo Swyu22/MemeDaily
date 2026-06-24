@@ -3,6 +3,7 @@ import type { DailyEnvelope, MemeItem } from "./schema";
 import { MemeItemSchema } from "./schema";
 import {
   crossDayIssues,
+  dedupeRecurring,
   envelopeIssueSummary,
   hasPublishableEvidence,
   lifecycleIssues,
@@ -258,5 +259,29 @@ describe("MemeDaily schema gates", () => {
       sources: baseItem.sources.map((source) => ({ ...source, title: "公开话题页·班味" })),
     });
     expect(result.success).toBe(true);
+  });
+});
+
+describe("MemeDaily archive dedup", () => {
+  it("keeps a recurring meme once, preferring the first (most recent) row", () => {
+    const recent = { ...baseItem, id: "2026-06-21-banwei", date: "2026-06-21" };
+    const older = { ...baseItem, id: "2026-06-19-banwei", date: "2026-06-19" };
+    const out = dedupeRecurring([recent, older]); // caller passes date-desc
+    expect(out).toHaveLength(1);
+    expect(out[0]?.id).toBe("2026-06-21-banwei");
+  });
+
+  it("does not merge two genuinely different memes", () => {
+    const a = { ...baseItem, id: "2026-06-21-banwei", date: "2026-06-21" };
+    const b = { ...baseItem, id: "2026-06-21-gongzhu", title: "公主请上车", aliases: [], date: "2026-06-21" };
+    expect(dedupeRecurring([a, b])).toHaveLength(2);
+  });
+
+  it("merges a recurrence that kept its id but reworded its title", () => {
+    const recent = { ...baseItem, id: "2026-06-22-x", title: "失业还没来得及商务已追上", aliases: [], date: "2026-06-23" };
+    const older = { ...baseItem, id: "2026-06-22-x", title: "还没失业商务先到了", aliases: [], date: "2026-06-22" };
+    const out = dedupeRecurring([recent, older]);
+    expect(out).toHaveLength(1);
+    expect(out[0]?.date).toBe("2026-06-23");
   });
 });

@@ -34,6 +34,23 @@ function itemNames(item: MemeItem): string[] {
   return Array.from(new Set([item.title, ...item.aliases].map(normalizeName).filter(Boolean)));
 }
 
+// Merge a recurring meme so it appears once: keep the FIRST occurrence (caller passes rows
+// date-desc, so "first" = most recent). A recurrence carries the SAME id across days (its
+// title may be reworded), so dedup by id first; also by normalized title/alias as a backstop.
+export function dedupeRecurring<T extends MemeItem>(rows: T[]): T[] {
+  const seenIds = new Set<string>();
+  const seenNames = new Set<string>();
+  const out: T[] = [];
+  for (const row of rows) {
+    const names = itemNames(row);
+    if (seenIds.has(row.id) || names.some((name) => seenNames.has(name))) continue;
+    seenIds.add(row.id);
+    for (const name of names) seenNames.add(name);
+    out.push(row);
+  }
+  return out;
+}
+
 const DECLINING_MIN_DAYS = 10;
 
 function daysBetween(fromDate: string, toDate: string): number {

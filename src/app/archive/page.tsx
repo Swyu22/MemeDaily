@@ -1,9 +1,10 @@
 import { allVisibleItems } from "@/domain/memedaily/data";
-import { sortByDecisionValue } from "@/domain/memedaily/labels";
+import { dedupeRecurring } from "@/domain/memedaily/rules";
 import { ArchiveClient } from "@/features/memes/ArchiveClient";
 
 export default function ArchivePage() {
-  const rows = sortByDecisionValue(allVisibleItems());
+  // allVisibleItems is date-desc, so dedupeRecurring keeps each meme's most-recent occurrence.
+  const rows = dedupeRecurring(allVisibleItems());
 
   return (
     <main className="page">

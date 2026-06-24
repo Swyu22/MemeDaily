@@ -69,6 +69,24 @@ export function sortByFreshness<T extends MemeItem>(items: T[]): T[] {
   });
 }
 
+// Archive ordering: 正热(peak) before 还能上车(rising) before 已过气(declining).
+// (The home feed's `lifecycleRank` is rising-first for "freshness"; the 梗库 wants peak-first.)
+const archiveLifecycleRank = {
+  peak: 0,
+  rising: 1,
+  declining: 2,
+} as const;
+
+// 梗库主排序：日期(近→远) → 生命周期(正热>还能上车>已过气) → 热度值(score)。
+export function sortByDateThenLife<T extends MemeItem & { date: string }>(rows: T[]): T[] {
+  return [...rows].sort(
+    (a, b) =>
+      b.date.localeCompare(a.date) ||
+      archiveLifecycleRank[a.lifecycle] - archiveLifecycleRank[b.lifecycle] ||
+      (b.score ?? 50) - (a.score ?? 50),
+  );
+}
+
 export const feedSortLabels = {
   heat: "热度值",
   fresh: "新鲜值",

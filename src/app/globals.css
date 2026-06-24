@@ -19,6 +19,7 @@
   --blue-bg: #e9f1fe;
   --blue-fg: #1d4ed8;
   --blue-bd: #bfd7fe;
+  --red-fg: #dc2626;
   --space-1: 6px;
   --space-2: 10px;
   --space-3: 14px;
@@ -314,6 +315,12 @@ select {
   margin-top: 0;
 }
 
+/* `.tag-row` sets flex-wrap:wrap later in the file; this higher-specificity rule keeps the
+   home-card aside tags (价值 / 正热) on ONE row even when the title/summary is long. */
+.tag-row.head-aside {
+  flex-wrap: nowrap;
+}
+
 .card h2,
 .detail-card h1 {
   margin: 0;
@@ -410,6 +417,13 @@ select {
 
 .value b {
   color: var(--text);
+}
+
+/* 连续 N 天 — the streak number rendered one size bigger and red. */
+.streak-n {
+  color: var(--red-fg);
+  font-size: 1.15em;
+  font-weight: 700;
 }
 
 .detail-panel {
@@ -521,6 +535,18 @@ select {
   padding: 14px 16px;
   border-bottom: 1px solid var(--border-soft);
   text-decoration: none;
+}
+
+/* Long summary wraps inside its own column instead of pushing the lifecycle/value tags
+   to a second line; the right-hand tag block stays a single, non-shrinking row. */
+.result-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.result-row > .tag-row {
+  flex-shrink: 0;
+  flex-wrap: nowrap;
 }
 
 .result-row:last-child {
