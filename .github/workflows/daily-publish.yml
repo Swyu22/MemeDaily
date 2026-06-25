@@ -201,6 +201,11 @@ jobs:
             echo "::error::Agent job produced no data/daily/${DATE}.json artifact. Failing so daily-catchup/monitor recover."
             exit 1
           fi
+          # Stamp the REAL publish time (Asia/Shanghai, fixed UTC+8) into published_at, so the
+          # UI's 发布时间 is the actual push moment — never a time LATER than when a user views it.
+          # This is independent of the agent-guessed generated_at (which has no reliable clock and
+          # was often ~1-2h ahead of reality), and leaves generated_at/captured_at + their gate intact.
+          node -e 'const fs=require("fs"),p=process.argv[1],o=JSON.parse(fs.readFileSync(p,"utf8"));o.published_at=new Date(Date.now()+8*3600*1000).toISOString().replace(/\.\d+Z$/,"+08:00");fs.writeFileSync(p,JSON.stringify(o,null,2)+"\n")' "data/daily/${DATE}.json"
           npm run check # re-validate against TRUSTED repo code before trusting the data
           # Stage FIRST, then check staged changes — a brand-new day's file is UNTRACKED, and
           # `git diff --quiet` ignores untracked files (this silently dropped 06-23's first publish).

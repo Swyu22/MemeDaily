@@ -34,7 +34,7 @@ export default function TodayPage() {
           <>
             <span className="mono">{latest.date}</span>
             <span>
-              发布时间 <span className="mono">{latest.generated_at.slice(11, 16)}</span>
+              发布时间 <span className="mono">{(latest.published_at ?? latest.generated_at).slice(11, 16)}</span>
             </span>
             <span>状态 {statusLabels[latest.status]}</span>
             <span>

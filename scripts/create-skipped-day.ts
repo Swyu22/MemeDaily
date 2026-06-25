@@ -35,12 +35,15 @@ if (fs.existsSync(filePath)) {
 }
 
 const now = new Date().toISOString().replace("Z", "+00:00");
+// Real publish moment in Asia/Shanghai (fixed UTC+8, no DST) for the UI's 发布时间.
+const publishedAt = new Date(Date.now() + 8 * 3600 * 1000).toISOString().replace(/\.\d+Z$/, "+08:00");
 const envelope = DailyEnvelopeSchema.parse({
   schema_version: "1.0",
   policy_version: "1.0",
   rubric_version: "1.0",
   date: targetDate,
   generated_at: now,
+  published_at: publishedAt,
   status: "skipped",
   run_report: {
     candidates_scanned: 0,
