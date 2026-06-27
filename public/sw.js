@@ -71,6 +71,14 @@ function isHtmlNavigation(request) {
   return request.method === "GET" && accept.includes("text/html");
 }
 
+// Normalize the inline rescue's cache-buster (?_r=ts) out of the HTML cache key, so those
+// rescue navigations don't bloat the cache or get served back stale under a one-off URL.
+function htmlKey(request) {
+  const u = new URL(request.url);
+  u.searchParams.delete("_r");
+  return u.toString();
+}
+
 // NETWORK-FIRST for navigations. Never returns stale HTML to an online user.
 async function handleNavigation(request) {
   const cache = await caches.open(HTML_CACHE);
@@ -79,13 +87,13 @@ async function handleNavigation(request) {
     // the CDN's max-age=600 cannot pin us because we explicitly bypass the HTTP cache.
     const fresh = await fetch(request, { cache: "no-store" });
     if (fresh && fresh.ok && fresh.type === "basic") {
-      cache.put(request, fresh.clone()); // same-day offline fallback only
+      cache.put(htmlKey(request), fresh.clone()); // same-day offline fallback (rescue ?_r normalized out)
     }
     return fresh;
   } catch (err) {
     // Network genuinely failed (offline). Fall back to last good HTML if we have it,
     // else let the browser show its normal offline error.
-    const cached = await cache.match(request);
+    const cached = await cache.match(htmlKey(request));
     if (cached) return cached;
     // No homepage (SCOPE_PATH) fallback: serving the homepage HTML under a different
     // deep-link URL is confusing. Let the browser show its native offline page instead.
@@ -100,8 +108,8 @@ async function handleImmutableAsset(request) {
   if (cached) return cached;
   try {
     const fresh = await fetch(request);
-    if (fresh && (fresh.ok || fresh.type === "opaque")) {
-      cache.put(request, fresh.clone());
+    if (fresh && fresh.ok && fresh.type === "basic") {
+      cache.put(request, fresh.clone()); // never cache a 404/opaque (would poison the asset cache)
     }
     return fresh;
   } catch (err) {

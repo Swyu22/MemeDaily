@@ -15,11 +15,13 @@ publicly accessible web evidence, with conservative safety gates and permanent a
   commits, and pushes the daily file on a cloud cron (~07:00 Asia/Shanghai); `daily-catchup`,
   `daily-fallback`, and `daily-monitor` add re-publish / skip / alert resilience. The local
   Codex App run is now an optional manual fallback only.
-- **Client freshness:** a hand-written network-first service worker (`public/sw.js`,
-  registered by `src/app/ServiceWorkerManager.tsx` in `layout.tsx`) keeps the daily content
-  fresh on mobile (online opens always fetch fresh HTML; immutable assets are cached). It
+- **Client freshness:** an inline boot script in `layout.tsx` `<head>` (chunk-independent, so
+  it runs even when hashed CSS/JS 404) self-heals an unstyled render from a stale cached HTML —
+  if the layout-critical `/_next/static` stylesheet has no rules, it reloads once (bounded,
+  cache-busted) to fetch fresh HTML — and registers a hand-written network-first service worker
+  (`public/sw.js`: online opens always fetch fresh HTML; immutable assets cached). `sw.js`
   hardcodes the basePath scope (`/MemeDaily/`), so its prefixes must be updated together with
-  `next.config.mjs` basePath on domain re-attach.
+  `next.config.mjs` basePath on domain re-attach (the boot script derives basePath, so it does not).
 - **Collection policy:** public web intelligence only. No login cookies, no private
   platform scraping, no media archiving, no comment-text dumps.
 

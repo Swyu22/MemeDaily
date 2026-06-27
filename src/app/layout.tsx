@@ -1,11 +1,47 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
-import ServiceWorkerManager from "./ServiceWorkerManager";
 
 // 子路径前缀（见 next.config.mjs）。根域名时为 ""，github.io 子路径时为 "/MemeDaily"。
 // metadata.icons / openGraph.images 不会被 basePath 自动加前缀，需手动拼。
 const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+// Inline boot script — runs even when the hashed CSS/JS chunks 404 (the EXACT unstyled
+// scenario: a stale cached HTML references purged hashes, so the CSS 404s -> no styles, and
+// the JS chunks 404 too -> React never hydrates, so NO component code runs). Being inline in
+// <head>, this is the only code guaranteed to execute. It:
+//  (1) Self-heals an unstyled render: if the layout-critical /_next/static CSS link failed
+//      (sheet===null), reload with a unique cache-buster to fetch FRESH HTML referencing the
+//      current asset hashes. Bounded (<=2 tries / 60s) so it can ride out brief CDN edge
+//      staleness yet can never loop; the _r marker is scrubbed once a styled load succeeds.
+//  (2) Refreshes a stale bfcache restore (window.load doesn't fire on bfcache; pageshow does).
+//  (3) Registers the network-first service worker (re-armed even after iOS evicts it) — done
+//      here, not in React, so it survives a stale load's JS-chunk 404s.
+const BOOT = `(function(){
+  var BP=${JSON.stringify(BP)},RK="md-rescue-v1";
+  function broken(){try{var ls=document.querySelectorAll('link[rel="stylesheet"][href*="/_next/static/"]');if(!ls.length)return false;for(var i=0;i<ls.length;i++){var s=ls[i].sheet;if(!s||s.cssRules.length===0)return true;}return false;}catch(e){return false;}}
+  function clean(){try{sessionStorage.removeItem(RK);}catch(e){}if(location.search.indexOf("_r=")>-1){try{var c=new URL(location.href);c.searchParams.delete("_r");history.replaceState(null,"",c.pathname+(c.search||"")+c.hash);}catch(e){}}}
+  function rescue(){
+    if(!broken()){clean();return;}
+    var n=0,t=0;try{var s=JSON.parse(sessionStorage.getItem(RK)||"{}");n=s.n||0;t=s.t||0;}catch(e){}
+    var now=Date.now();if(t&&now-t>60000){n=0;t=0;}if(n>=2)return;
+    try{sessionStorage.setItem(RK,JSON.stringify({n:n+1,t:t||now}));}catch(e){}
+    try{var u=new URL(location.href);u.searchParams.set("_r",String(now));location.replace(u.toString());}catch(e){location.reload();}
+  }
+  addEventListener("load",rescue);
+  addEventListener("pageshow",function(e){
+    if(!e.persisted)return;
+    if(broken()){rescue();return;}
+    try{var nv=performance.getEntriesByType("navigation")[0];var age=nv?Date.now()-(performance.timeOrigin+nv.responseEnd):Infinity;if(age>1800000)location.reload();}catch(e){}
+  });
+  if("serviceWorker" in navigator){addEventListener("load",function(){
+    navigator.serviceWorker.register(BP+"/sw.js",{scope:BP+"/"}).then(function(r){
+      if(r.waiting&&navigator.serviceWorker.controller)r.waiting.postMessage("SKIP_WAITING");
+      r.addEventListener("updatefound",function(){var w=r.installing;if(!w)return;w.addEventListener("statechange",function(){if(w.state==="installed"&&navigator.serviceWorker.controller)w.postMessage("SKIP_WAITING");});});
+      r.update().catch(function(){});
+    }).catch(function(){});
+  });}
+})();`;
 
 export const metadata: Metadata = {
   // memedaily.fun is detached for ICP filing, so the site lives at the github.io project
@@ -46,11 +82,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="zh-CN">
       <head>
+        {/* Boot/rescue script — inline & first so it runs even if hashed CSS/JS chunks 404. */}
+        <script dangerouslySetInnerHTML={{ __html: BOOT }} />
         {/* 自托管字体 CSS（/public/fonts），按 basePath 加前缀以适配子路径托管。 */}
         <link rel="stylesheet" href={`${BP}/fonts/fonts.css`} />
       </head>
       <body>
-        <ServiceWorkerManager />
         <div className="shell">
           <header className="topbar">
             <div className="topbar-inner">
