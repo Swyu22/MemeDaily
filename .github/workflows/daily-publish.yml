@@ -219,5 +219,26 @@ jobs:
           git commit -m "chore(data): publish MemeDaily ${DATE}"
           git pull --rebase origin main
           git push origin HEAD:main
-          # GITHUB_TOKEN pushes don't trigger on:push workflows, so kick the deploy.
-          gh workflow run pages.yml --ref main
+          # GITHUB_TOKEN pushes don't trigger on:push workflows, so dispatch the Pages deploy.
+          # `--ref main` resolves main's HEAD at dispatch time; dispatching before the push has
+          # propagated to the dispatch resolver builds the PRE-push commit (this once left a day
+          # committed but the live site stuck on the previous day). So wait, dispatch, then VERIFY
+          # the created run targets our SHA — retry a few times before giving up.
+          SHA="$(git rev-parse HEAD)"
+          DEPLOYED=false
+          for attempt in 1 2 3 4; do
+            sleep 10
+            gh workflow run pages.yml --ref main || true
+            sleep 6
+            RUN_SHA="$(gh run list --workflow=pages.yml --limit 1 --json headSha --jq '.[0].headSha' 2>/dev/null || echo '')"
+            if [ "$RUN_SHA" = "$SHA" ]; then
+              echo "Pages deploy dispatched for ${SHA} (attempt ${attempt})."
+              DEPLOYED=true
+              break
+            fi
+            echo "::warning::Pages deploy targeted ${RUN_SHA:-?}, expected ${SHA}; retrying (attempt ${attempt})."
+          done
+          if [ "$DEPLOYED" != "true" ]; then
+            echo "::error::Could not dispatch a Pages deploy for ${SHA} after retries — the commit is published but the live site may lag. Re-run pages.yml manually."
+            exit 1
+          fi
