@@ -44,16 +44,15 @@ const BOOT = `(function(){
 })();`;
 
 export const metadata: Metadata = {
-  // memedaily.fun is detached for ICP filing, so the site lives at the github.io project
-  // subpath. metadataBase is the live ORIGIN (no subpath) so the BP-prefixed image paths
-  // below resolve to .../MemeDaily/share.png; openGraph.url is the full live URL. On domain
-  // re-attach, flip both back to https://memedaily.fun with basePath (see .cloud.md runbook).
-  metadataBase: new URL("https://swyu22.github.io"),
+  // 备案通过后回挂根域名 memedaily.fun (basePath=""). BP-prefixed image/icon paths (BP="")
+  // resolve against metadataBase to https://memedaily.fun/... . If ever detached again, point
+  // metadataBase + openGraph.url back at the live github.io origin (see .cloud.md runbook).
+  metadataBase: new URL("https://memedaily.fun"),
   title: "热梗日报",
   description: "🔥每日中文网络热梗精选",
   openGraph: {
     type: "website",
-    url: `https://swyu22.github.io${BP}/`,
+    url: `https://memedaily.fun${BP}/`,
     siteName: "热梗日报",
     title: "热梗日报",
     description: "🔥每日中文网络热梗精选",

@@ -34,9 +34,11 @@ const CACHE_VERSION = "memedaily-v1";
 const ASSET_CACHE = `${CACHE_VERSION}-assets`;
 const HTML_CACHE = `${CACHE_VERSION}-html`;
 
-const SCOPE_PATH = "/MemeDaily/";
-const STATIC_PREFIX = "/MemeDaily/_next/static/";
-const FONTS_PREFIX = "/MemeDaily/fonts/";
+// Derived from the SW's OWN registration scope, so detaching/re-attaching the domain (a
+// basePath change) needs NO edit here: root domain -> "/", GitHub Pages subpath -> "/MemeDaily/".
+const SCOPE_PATH = new URL(self.registration.scope).pathname;
+const STATIC_PREFIX = `${SCOPE_PATH}_next/static/`;
+const FONTS_PREFIX = `${SCOPE_PATH}fonts/`;
 
 self.addEventListener("install", () => {
   // Take over as soon as possible; we rely on network-first for HTML so there is no
