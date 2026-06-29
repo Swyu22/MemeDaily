@@ -60,10 +60,13 @@ const NewsSourceSchema = z.object({
 
 export const NewsItemSchema = z.object({
   id: z.string().regex(/^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/),
-  headline: z.string().min(4).max(48), // 新闻类标题，含一个相关 emoji 前缀
-  summary: z.string().min(6).max(140), // 新闻简述，约 100 字（平实完整，不玩梗）
+  headline: z.string().min(4).max(48), // 新闻类标题，含一个相关 emoji 前缀；不放伤亡/转移人数
+  summary: z.string().min(6).max(150), // 新闻简述，约 100–150 字（平实完整，不玩梗）
   category: NewsCategorySchema,
   heat_rank: z.number().int().min(1).max(10), // 1 = hottest; gate enforces contiguous 1..N
+  // 新闻"真实发生/披露时间"（Asia/Shanghai, offset）。用于「新鲜值」排序——越接近现在越靠前。
+  // 与 source.captured_at（抓取时刻）不同。可选以兼容旧档；排序时缺失则回退到最新 captured_at。
+  occurred_at: z.string().datetime({ offset: true }).optional(),
   // --- INTERNAL editorial reasoning (validated, NEVER rendered) ---
   // wechat_bridge / filter_pass are LEGACY (v2 drops the bridge — "只做呈现"); kept OPTIONAL so
   // old envelopes still validate and the agent may omit them. risk stays a required safety note.
@@ -130,5 +133,5 @@ export type NewsEnvelope = z.infer<typeof NewsEnvelopeSchema>;
 // must map NewsItem -> PublicNewsItem before passing it into client components.
 export type PublicNewsItem = Pick<
   NewsItem,
-  "id" | "headline" | "summary" | "category" | "heat_rank" | "sources"
+  "id" | "headline" | "summary" | "category" | "heat_rank" | "occurred_at" | "sources"
 >;

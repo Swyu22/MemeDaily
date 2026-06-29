@@ -38,8 +38,9 @@ Produce/overwrite `data/daily-news/YYYY-MM-DD.json` for Asia/Shanghai, validatin
 
 ### 关于灾害事件（**重要改动**）
 灾害是民生新闻的一部分，人人关心，**可以报道**——但务必**克制**：写**事件本身与应急响应、救援进展、
-恢复与互助**，**不渲染伤亡数字、不消费悲情、不博眼球**。`risk.level` 用 `medium` 并在 `risk.note`
-里写清克制处理方式。
+恢复与互助**，**不渲染伤亡数字、不消费悲情、不博眼球**。**标题只写"事件 + 响应"（如「某地发生X级地震，
+应急响应已启动」），具体伤亡 / 转移人数一律放进 summary，不上标题。** `risk.level` 用 `medium` 并在
+`risk.note` 里写清克制处理方式。
 
 ## 红线 — 绝对避开（代码会硬性拦截 headline/summary，触发即自纠或丢弃）
 - **政治 / 地缘 / 国际冲突** — 一个字都不碰。
@@ -68,11 +69,17 @@ distinct-URL sources with ≥1 `major_media`**. A lone aggregator never qualifie
 Reader-facing (ALL rendered):
 - `id` — `YYYY-MM-DD-slug`, lowercase ASCII `[a-z0-9-]` only, globally unique.
 - `headline` — 4–48 chars. **新闻类标题**，**必须以一个与内容相关的 emoji 开头**（让版面活泼一点，
-  例如 📚高考 / 🚄出行 / 🚀航天 / 🌏地震 / 🎋节日 / 🤖AI）。不玩梗、不标题党。
-- `summary` — **新闻简述，约 100 字**（6–140 区间），平实完整地把事说清楚，克制有温度。
+  例如 📚高考 / 🚄出行 / 🚀航天 / 🌏地震 / 🎋节日 / 🤖AI）。不玩梗、不标题党。**标题里绝不写具体
+  伤亡 / 转移 / 受灾人数**（如「13人轻伤」「225人转移」「3人遇难」）——只写事件 + 响应，人数放进
+  summary。代码会拦截标题里的「数字+人+伤亡/转移类词」，触发即自纠。
+- `summary` — **新闻简述，约 100–150 字**（6–150 区间），平实完整地把事说清楚，克制有温度；
+  伤亡 / 人数等细节放这里，不放标题。
 - `category` — one of 民生社会 / 节日节气 / 国家高光 / 科技AI / 科技向善 / 文化数字经济。
   **内部分类，读者看不到**（用于把控选题结构，别让"国家高光"占太多）。
 - `heat_rank` — integer; assign the published set a **contiguous 1..N** ranking (1 = hottest).
+- `occurred_at` — 新闻**真实发生 / 披露时间**（ISO8601 带时区，如 `2026-06-29T00:12:00+08:00`）。
+  这是「新鲜值」排序的依据（越接近现在越靠前），**与 source.captured_at 抓取时刻不同，务必按真实
+  事件时间填**。事件横跨多日的取最相关的那个时刻；预告类取披露/发布时刻。
 - `sources` — ≥1 (satisfy the evidence bar): each `{tier, outlet, url, title?, captured_at, note}`.
   **`outlet` 必填媒体名**（新华社 / 央视 / 澎湃新闻 / 第一财经 …），用于"来源媒体"展示。
 INTERNAL (not rendered):

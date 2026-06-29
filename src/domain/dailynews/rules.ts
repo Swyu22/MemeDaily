@@ -84,6 +84,31 @@ export function redLineIssues(envelope: NewsEnvelope): string[] {
   return issues;
 }
 
+// Casualty/relocation FIGURES must not appear in a headline (per user): disaster headlines should
+// lead with the event + response and keep "X人遇难 / X人轻伤 / X人转移" in the summary. We flag a
+// headline ONLY when it contains BOTH a "数字+人" count AND a casualty/relocation word — so neutral
+// counts like "3亿人观看" or "10万人打卡" never trip it. Scans the headline only.
+const HEADLINE_PEOPLE_COUNT_RE = /\d[\d,，]*\s*(?:余|多|名)?\s*人/;
+const HEADLINE_CASUALTY_WORDS = [
+  "死", "亡", "遇难", "罹难", "遇害", "伤", "失联", "被困", "遇险", "获救", "转移", "疏散", "安置",
+];
+
+export function headlineCasualtyIssues(envelope: NewsEnvelope): string[] {
+  const issues: string[] = [];
+  for (const item of visibleNews(envelope)) {
+    const headline = item.headline;
+    if (
+      HEADLINE_PEOPLE_COUNT_RE.test(headline) &&
+      HEADLINE_CASUALTY_WORDS.some((word) => headline.includes(word))
+    ) {
+      issues.push(
+        `${item.id} 标题含具体伤亡/转移人数，请移到 summary（标题只写事件+响应）: "${headline}"`,
+      );
+    }
+  }
+  return issues;
+}
+
 // Ordering invariant: visible items' heat_rank must be exactly the contiguous set 1..N
 // (no gaps, no duplicates) so "由上到下按热点" is unambiguous and the UI sorts by rank verbatim.
 export function heatRankIssues(envelope: NewsEnvelope): string[] {
@@ -141,6 +166,7 @@ export function envelopeIssueSummary(envelope: NewsEnvelope): string[] {
   }
 
   issues.push(...redLineIssues(envelope));
+  issues.push(...headlineCasualtyIssues(envelope));
   issues.push(...heatRankIssues(envelope));
 
   return issues;

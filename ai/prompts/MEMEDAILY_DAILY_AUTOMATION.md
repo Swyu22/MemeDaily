@@ -181,10 +181,10 @@ do not publish it — it never enters `items`, and the public page never shows a
   `"已验证：…；推测：…"`. Cover 节日/赛事/综艺/热点窗口、明星/品牌/算法/粉丝推动、
   是否易截图模仿改写二创、评论门槛是否低、能否跨平台.
 - `lifecycle` — 生命周期，**唯一判定标准 = 天数**：
-  - `declining`（已过气）：**只有当这个梗第一次被收录至今已超过 10 天**才标。从最近的
+  - `declining`（已过气）：**只有当这个梗第一次被收录至今已超过 5 天**才标。从最近的
     `data/daily/*.json` 历史按梗名 / 别名查它第一次出现的日期来算。
   - 否则一律**至少标 `rising`（还能上车）**；明显仍在大热的可标 `peak`（正热）。
-  - 代码校验会强制这条：把不满 10 天的梗标成 `declining` 会让 `npm run validate` 失败、无法提交。
+  - 代码校验会强制这条：把不满 5 天的梗标成 `declining` 会让 `npm run validate` 失败、无法提交。
 - `brand_usage` — 广告营销/内容创作可借用方向: concrete and executable (可改写的标题、
   适合/不适合的品牌、互动话题、短视频结构、适配平台). Internal reference — the public page
   does not render it, but still write it well.

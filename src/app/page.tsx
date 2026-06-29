@@ -1,11 +1,12 @@
 import { loadAllEnvelopes } from "@/domain/memedaily/data";
 import { statusLabels } from "@/domain/memedaily/labels";
 import { visibleItems } from "@/domain/memedaily/rules";
-import { latestVisibleNews } from "@/domain/dailynews/data";
+import { visibleNewsDays } from "@/domain/dailynews/data";
 import { statusLabels as newsStatusLabels } from "@/domain/dailynews/labels";
 import { HomeTabs } from "@/features/home/HomeTabs";
 
-const MAX_DAYS_ON_HOME = 4;
+const MAX_DAYS_ON_HOME = 5; // 热梗首页默认保留最近 5 天
+const MAX_NEWS_DAYS_ON_HOME = 5; // 日报首页默认保留最近 5 天
 
 export default function TodayPage() {
   // 热梗 feed (unchanged computation; rendered inside the 热梗 tab).
@@ -37,27 +38,27 @@ export default function TodayPage() {
   // 日报 feed (today's heat-ranked news; null until the news agent's first run). Strip the
   // internal editorial fields (wechat_bridge/filter_pass/risk) here so they never reach the
   // client bundle / serialized HTML — readers only ever get the reader-facing projection.
-  const latestNews = latestVisibleNews();
-  const news = latestNews
-    ? {
-        date: latestNews.date,
-        items: latestNews.items.map((item) => ({
-          id: item.id,
-          headline: item.headline,
-          summary: item.summary,
-          category: item.category,
-          heat_rank: item.heat_rank,
-          sources: item.sources,
-        })),
-      }
-    : null;
+  const rawNewsDays = visibleNewsDays(MAX_NEWS_DAYS_ON_HOME);
+  const newsDays = rawNewsDays.map((day) => ({
+    date: day.date,
+    items: day.items.map((item) => ({
+      id: item.id,
+      headline: item.headline,
+      summary: item.summary,
+      category: item.category,
+      heat_rank: item.heat_rank,
+      occurred_at: item.occurred_at,
+      sources: item.sources,
+    })),
+  }));
 
-  const newsStatus = latestNews
+  const freshNews = rawNewsDays[0] ?? null;
+  const newsStatus = freshNews
     ? {
-        date: latestNews.date,
-        time: (latestNews.published_at ?? latestNews.generated_at).slice(11, 16),
-        statusLabel: newsStatusLabels[latestNews.status],
-        count: latestNews.items.length,
+        date: freshNews.date,
+        time: (freshNews.published_at ?? freshNews.generated_at).slice(11, 16),
+        statusLabel: newsStatusLabels[freshNews.status],
+        count: freshNews.items.length,
       }
     : null;
 
@@ -70,7 +71,7 @@ export default function TodayPage() {
         days={shown}
         freshDate={freshDate}
         hasMore={hasMore}
-        news={news}
+        newsDays={newsDays}
       />
     </main>
   );

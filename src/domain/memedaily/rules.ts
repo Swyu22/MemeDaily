@@ -55,7 +55,7 @@ export function dedupeRecurring<T extends MemeItem>(rows: T[]): T[] {
   return out;
 }
 
-const DECLINING_MIN_DAYS = 10;
+const DECLINING_MIN_DAYS = 5;
 
 function daysBetween(fromDate: string, toDate: string): number {
   return Math.round((Date.parse(toDate) - Date.parse(fromDate)) / 86_400_000);
@@ -63,7 +63,7 @@ function daysBetween(fromDate: string, toDate: string): number {
 
 /**
  * Lifecycle gate: a meme may be labeled `declining` (已过气) only once its topic has
- * been on the site for >= 10 days since its FIRST appearance in data/daily history.
+ * been on the site for >= 5 days since its FIRST appearance in data/daily history.
  * Anything newer must be at least `rising`. First-seen is read from retained history;
  * a meme older than the retained window can't be disproven, so it is not flagged.
  */

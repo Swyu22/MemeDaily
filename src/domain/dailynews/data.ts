@@ -38,26 +38,34 @@ export function loadAllNewsEnvelopes(): NewsEnvelope[] {
   return newsEnvelopeCache;
 }
 
-// v1 shows only TODAY's 日报: the most recent envelope that has visible items.
-// Returns null when there is no news data yet (the 日报 tab renders an empty state).
-export function latestVisibleNews(): {
+type VisibleNewsDay = {
   date: string;
   generated_at: string;
   published_at?: string;
   status: NewsEnvelope["status"];
   items: NewsItem[];
-} | null {
+};
+
+// 日报默认保留最近 N 天（与热梗一致）：每个有可见项的日期取一组，newest-first，最多 limit 天。
+export function visibleNewsDays(limit: number): VisibleNewsDay[] {
+  const out: VisibleNewsDay[] = [];
   for (const envelope of loadAllNewsEnvelopes()) {
+    // loadAllNewsEnvelopes is date-desc, so we accumulate newest-first.
     const items = visibleNews(envelope);
-    if (items.length > 0) {
-      return {
-        date: envelope.date,
-        generated_at: envelope.generated_at,
-        published_at: envelope.published_at,
-        status: envelope.status,
-        items,
-      };
-    }
+    if (items.length === 0) continue;
+    out.push({
+      date: envelope.date,
+      generated_at: envelope.generated_at,
+      published_at: envelope.published_at,
+      status: envelope.status,
+      items,
+    });
+    if (out.length >= limit) break;
   }
-  return null;
+  return out;
+}
+
+// The most recent 日报 day with visible items (or null). Used for the tab-aware status bar.
+export function latestVisibleNews(): VisibleNewsDay | null {
+  return visibleNewsDays(1)[0] ?? null;
 }

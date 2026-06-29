@@ -34,15 +34,18 @@ export function sortByHeatRank<T extends { heat_rank: number }>(items: T[]): T[]
   return [...items].sort((a, b) => a.heat_rank - b.heat_rank);
 }
 
-// 新鲜值排序：离现在越近（来源捕获时间越新）越靠前——以每条最新的 source.captured_at 为时间锚，
-// 降序排列；时间相同的以热度兜底，保证结果稳定。
+// 新鲜值排序：按新闻**真实发生/披露时间**（occurred_at）离现在的远近——越接近现在越靠前。
+// occurred_at 缺失时回退到该条最新的 source.captured_at（抓取时刻）兜底；时间相同再以热度兜底，
+// 保证结果稳定。注意：这里用的是事件时间，不是抓取时间。
 export function sortNewsByFreshness<
-  T extends { heat_rank: number; sources: { captured_at: string }[] },
+  T extends { heat_rank: number; occurred_at?: string; sources: { captured_at: string }[] },
 >(items: T[]): T[] {
-  const freshness = (item: T) =>
-    item.sources.reduce((newest, source) => Math.max(newest, Date.parse(source.captured_at)), 0);
+  const eventTime = (item: T) => {
+    if (item.occurred_at) return Date.parse(item.occurred_at);
+    return item.sources.reduce((newest, source) => Math.max(newest, Date.parse(source.captured_at)), 0);
+  };
   return [...items].sort((a, b) => {
-    const diff = freshness(b) - freshness(a); // 更新（更靠近今天）的在前
+    const diff = eventTime(b) - eventTime(a); // 发生时间更新（更靠近现在）的在前
     return diff !== 0 ? diff : a.heat_rank - b.heat_rank;
   });
 }

@@ -3,6 +3,7 @@ import type { NewsEnvelope, NewsItem, NewsTier } from "./schema";
 import {
   envelopeIssueSummary,
   hasPublishableEvidence,
+  headlineCasualtyIssues,
   heatRankIssues,
   redLineIssues,
   visibleNews,
@@ -118,6 +119,18 @@ describe("redLineIssues", () => {
     const issues = redLineIssues(envelopeWith([scandal], "published"));
     expect(issues.length).toBeGreaterThan(0);
     expect(issues[0]).toContain("明星丑闻");
+  });
+});
+
+describe("headlineCasualtyIssues", () => {
+  it("flags casualty/relocation figures in a disaster headline", () => {
+    const dis = { ...baseItem, id: "2026-06-29-quake2", headline: "🌏某地地震，13人轻伤225人转移", summary: "应急响应已启动，救援力量抵达现场处置，社会秩序稳定。" };
+    expect(headlineCasualtyIssues(envelopeWith([dis], "published")).length).toBeGreaterThan(0);
+  });
+
+  it("does NOT flag a neutral people-count headline", () => {
+    const ok = { ...baseItem, id: "2026-06-29-run", headline: "🏃5000人参与城市马拉松", summary: "清晨开跑，沿途设置补给与医疗保障点位，市民有序参与。" };
+    expect(headlineCasualtyIssues(envelopeWith([ok], "published"))).toHaveLength(0);
   });
 });
 

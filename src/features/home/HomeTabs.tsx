@@ -29,6 +29,8 @@ type Tab = "memes" | "news";
 type RunStatus = { date: string; time: string; statusLabel: string; count: number };
 type FeedHead = { title: string; subtitle: string | null };
 
+type NewsDay = { date: string; items: PublicNewsItem[] };
+
 type HomeTabsProps = {
   memeStatus: RunStatus | null;
   newsStatus: RunStatus | null;
@@ -36,7 +38,7 @@ type HomeTabsProps = {
   days: { date: string; items: MemeItem[] }[];
   freshDate: string | null;
   hasMore: boolean;
-  news: { date: string; items: PublicNewsItem[] } | null;
+  newsDays: NewsDay[];
 };
 
 export function HomeTabs({
@@ -46,7 +48,7 @@ export function HomeTabs({
   days,
   freshDate,
   hasMore,
-  news,
+  newsDays,
 }: HomeTabsProps) {
   const [tab, setTab] = useState<Tab>("memes"); // 热梗 default; v1 keeps tab state client-only
   const [sort, setSort] = useState<FeedSort>("heat");
@@ -64,13 +66,14 @@ export function HomeTabs({
     };
   })();
 
-  const newsHead: FeedHead =
-    news && news.items.length > 0
-      ? {
-          title: "今日日报",
-          subtitle: `${news.date} · ${news.items.length} 条 · 按${feedSortLabels[sort]}排序`,
-        }
-      : { title: "今日日报", subtitle: null };
+  const newsHead: FeedHead = (() => {
+    const top = newsDays[0];
+    if (!top) return { title: "今日日报", subtitle: null };
+    return {
+      title: "今日日报",
+      subtitle: `${top.date} · ${top.items.length} 条 · 按${feedSortLabels[sort]}排序`,
+    };
+  })();
 
   const head = tab === "memes" ? memeHead : newsHead;
 
@@ -155,7 +158,7 @@ export function HomeTabs({
             )}
           </>
         ) : (
-          <DailyReport news={news} sort={sort} />
+          <DailyReport days={newsDays} sort={sort} />
         )}
       </div>
     </>
