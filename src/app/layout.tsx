@@ -43,25 +43,28 @@ const BOOT = `(function(){
   });}
 })();`;
 
+// 分享卡片描述：三行——首行留空，第二行热梗文案，第三行日报文案（各带 emoji 前缀）。
+const SHARE_DESC = "\n🔥每日中文网络热梗精选\n📰每日热点新闻日报，也帮你收好了";
+
 export const metadata: Metadata = {
   // 备案通过后回挂根域名 memedaily.fun (basePath=""). BP-prefixed image/icon paths (BP="")
   // resolve against metadataBase to https://memedaily.fun/... . If ever detached again, point
   // metadataBase + openGraph.url back at the live github.io origin (see .cloud.md runbook).
   metadataBase: new URL("https://memedaily.fun"),
   title: "热梗日报",
-  description: "🔥每日中文网络热梗精选",
+  description: SHARE_DESC,
   openGraph: {
     type: "website",
     url: `https://memedaily.fun${BP}/`,
     siteName: "热梗日报",
     title: "热梗日报",
-    description: "🔥每日中文网络热梗精选",
+    description: SHARE_DESC,
     images: [{ url: `${BP}/share.png`, width: 1200, height: 1200, alt: "热梗日报" }],
   },
   twitter: {
     card: "summary",
     title: "热梗日报",
-    description: "🔥每日中文网络热梗精选",
+    description: SHARE_DESC,
     images: [`${BP}/share.png`],
   },
   icons: {
