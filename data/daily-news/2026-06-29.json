@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "dailynews-v1",
+  "rubric_version": "wechat-editor-v1",
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T18:00:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 12,
+    "published": 6,
+    "dropped_safety": {
+      "geopolitics_international_conflict": 2,
+      "disaster_direct_coverage": 1,
+      "celebrity_controversy": 1
+    },
+    "dropped_low_confidence": 2,
+    "sources": [
+      "state_media",
+      "official",
+      "state_media",
+      "major_media",
+      "state_media",
+      "major_media",
+      "official",
+      "major_media",
+      "major_media",
+      "major_media",
+      "major_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 12,
+      "official_sources": 2,
+      "state_media_sources": 3,
+      "major_media_sources": 7,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 2
+    }
+  },
+  "items": [
+    {
+      "id": "2026-06-29-world-cup-round-of-32",
+      "headline": "⚽ 世界杯16强战幕启，巴西日本等强强对决今夜打响",
+      "summary": "2026世界杯16强赛今日正式开打，今夜将有巴西对日本、德国对巴拉圭、荷兰对摩洛哥三场重磅对决。",
+      "category": "国家高光",
+      "heat_rank": 1,
+      "wechat_bridge": {
+        "capability": "群聊",
+        "note": "世界杯是最天然的群聊场景：家人群、同学群、球迷群里一起守屏，分享精彩瞬间。微信群聊承载着亿级用户的世界杯看球体验，'和你一起见证'的官方角色极度自然。"
+      },
+      "filter_pass": {
+        "consensus": "世界杯是全球最大体育赛事，全民关注、无争议，中国球迷对巴西、德国、荷兰等强队热情不因国足缺席而减少，16强赛阶段热度持续攀升。",
+        "bridge_fit": "微信群聊是中国球迷看球、讨论、分享进球瞬间的主战场，官方账号可做今日赛程预告，以'和你一起见证'身份引导群聊互动，桥接极自然。",
+        "tone_fit": "赛事预告口吻克制、客观，不喧哗不煽情，仅陈述今日赛程与看点，符合'和你一起见证'的品牌底色。"
+      },
+      "risk": {
+        "level": "safe",
+        "note": "纯体育赛事报道，不涉及政治或国家间争议，无翻车风险。中国未参赛反而规避了因比赛成绩引发的舆论波动。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "url": "https://worldcup.cctv.com/2026/schedule/index.shtml",
+          "title": "2026年美加墨世界杯赛程",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "央视官方世界杯赛程页，确认6月29日三场16强对决：巴西vs日本、德国vs巴拉圭、荷兰vs摩洛哥"
+        },
+        {
+          "tier": "official",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "title": "2026 FIFA World Cup Match Schedule",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "FIFA官网赛程确认，Round of 32于6月28日正式开幕，6月29日三场大战相继登场"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-29-state-council-ai-deployment",
+      "headline": "国务院部署AI发展：加快智算集群建设，深入实施AI+行动",
+      "summary": "李强主持国务院常务会议，部署加快超大规模智算集群建设，推进AI+规模化商业应用，守牢AI安全底线。",
+      "category": "科技AI",
+      "heat_rank": 2,
+      "wechat_bridge": {
+        "capability": "元宝AI",
+        "note": "国家部署'AI+'行动与腾讯元宝AI的发展方向高度契合，官方账号可借此自然引出微信元宝AI的具体应用能力，展示'国家战略落地微信'的连接价值。"
+      },
+      "filter_pass": {
+        "consensus": "AI发展是全民热议话题，国务院顶层部署无争议，不涉及任何对立或敏感立场，属于典型的国家正向叙事，受众广泛认同。",
+        "bridge_fit": "国家'AI+'行动直接呼应元宝AI等微信自有AI产品，官方账号以'国家鼓励AI普惠应用，元宝是离你最近的那步'为角度桥接，极为自然。",
+        "tone_fit": "政策类内容天然克制，headline/summary平实陈述部署重点，无需渲染，符合微信官方账号稳重调性。"
+      },
+      "risk": {
+        "level": "safe",
+        "note": "国家AI发展战略顶层部署，正向政策内容，不涉及竞品或争议，新华社主流媒体已报道，无翻车风险。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "url": "https://www.news.cn/politics/leaders/20260629/86e9fb4d9aeb446682c45df08838eed6/c.html",
+          "title": "李强主持召开国务院常务会议-新华网",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "新华社今日报道，确认6月29日国务院常务会议听取AI发展汇报并作出新一阶段部署"
+        },
+        {
+          "tier": "major_media",
+          "url": "https://www.stcn.com/article/detail/3987380.html",
+          "title": "国常会最新部署！事关人工智能-证券时报",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "证券时报跟进报道，确认会议部署加快超大规模智算集群建设、深入实施AI+行动等要点"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-29-qingzhou-spacecraft-results",
+      "headline": "轻舟试验飞船第二批成果发布：太空医院、太空冷链在轨验证成功",
+      "summary": "白象号飞船在轨验证肌电检测、血液细胞检测等太空医疗技术，并突破微重力压缩机制冷难题，商业航天迈向实用。",
+      "category": "国家高光",
+      "heat_rank": 3,
+      "wechat_bridge": {
+        "capability": "朋友圈",
+        "note": "航天成果可视化内容（在轨太空冰箱、手持血液检测仪）天然适合朋友圈传播，'中国商业航天又有新突破'是高互动选题，官方以'见证者'身份发布效果好。"
+      },
+      "filter_pass": {
+        "consensus": "中国商业航天成果属于全民自豪型内容，无争议，太空医院概念兼具科技感与温度感，受众从航天迷到普通用户均有共鸣。",
+        "bridge_fit": "航天视觉内容（在轨实验画面、设备特写）是朋友圈的高互动素材类型，官方账号以'见证'角色分享该成果，与品牌定位高度契合。",
+        "tone_fit": "以'成果发布'为切入克制呈现，不夸大不煽情，headline/summary仅列举具体成就，调性符合微信官方底色。"
+      },
+      "risk": {
+        "level": "safe",
+        "note": "中国航天技术成果，正向内容，新华社权威媒体今日已报道，无翻车风险。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "url": "https://www.news.cn/tech/20260629/5fb9c0bcae27421eaf99e5d891bd23d3/c.html",
+          "title": "轻舟试验飞船第二批在轨试验成果发布-新华网",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "新华网科技频道今日报道，确认白象号飞船第二批在轨成果涵盖太空医院、冷链等领域"
+        },
+        {
+          "tier": "major_media",
+          "url": "https://finance.sina.com.cn/tech/discovery/2026-06-29/doc-inifapyq5378347.shtml",
+          "title": "轻舟试验飞船第二批成果发布 覆盖未来太空医院等领域-新浪科技",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "新浪科技详细报道，列举肌电检测仪、血液细胞检测仪、太空冰箱等具体成果"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-29-fusion-magnet-domestic",
+      "headline": "人造太阳关键磁体完成国产化，两套超导磁体综合性能跃升国际前列",
+      "summary": "中科院合肥等离子体所两套聚变堆关键超导磁体验收通过，核心技术100%国产化，全球最大聚变堆超导磁体由此诞生。",
+      "category": "国家高光",
+      "heat_rank": 4,
+      "wechat_bridge": {
+        "capability": "元宝AI",
+        "note": "'人造太阳'是高热度科普关键词，元宝AI可就核聚变技术做深度问答；官方账号发布该成果后引导用户去元宝AI了解更多，形成内容到工具的自然链路。"
+      },
+      "filter_pass": {
+        "consensus": "可控核聚变是终极清洁能源，国产化突破属于全民自豪、无任何争议的国家高光时刻，受众从科技从业者到普通公众均高度认同。",
+        "bridge_fit": "高科技科普内容最适合元宝AI桥接：用户看到'人造太阳'会产生好奇，元宝AI可回答'核聚变是什么、什么时候能用上'等问题，形成自然闭环。",
+        "tone_fit": "以客观事实呈现技术突破，不夸张不喧哗，headline平实描述成就，summary仅列数据，符合微信官方稳重调性。"
+      },
+      "risk": {
+        "level": "safe",
+        "note": "中科院权威官方发布，技术成果内容，不涉及任何敏感议题，安全无忧。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "url": "https://www.hf.cas.cn/zhxw/jrtt/202606/t20260627_8234313.htm",
+          "title": "聚变堆超导磁体研发取得新突破-中国科学院合肥物质科学研究院",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "中科院合肥物质科学研究院官网，确认两套磁体100%国产化并完成满参数测试，6月27日发布"
+        },
+        {
+          "tier": "major_media",
+          "url": "https://finance.sina.com.cn/stock/zqgd/2026-06-27/doc-inievvnu1424339.shtml",
+          "title": "重要突破！万亿核聚变赛道传出重磅消息-新浪财经",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "新浪财经报道，确认聚变堆超导磁体国产化重大进展及产业化意义"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-29-carbon-fiber-production-lines",
+      "headline": "中国碳纤维迎量产时刻：三条世界级产线集中投产，覆盖三大主流品类",
+      "summary": "中复神鹰连云港基地三条高性能碳纤维生产线集中投产，核心装备国产化率超95%，中国碳纤维产业规模跃升全球前三。",
+      "category": "国家高光",
+      "heat_rank": 5,
+      "wechat_bridge": {
+        "capability": "视频号创作者",
+        "note": "工业制造纪录片内容在视频号上有稳定受众，三条世界级产线画面感强，适合视频号工业/科技创作者做深度选题；官方账号可发布短评为创作者提供素材导向。"
+      },
+      "filter_pass": {
+        "consensus": "国产高端制造突破属于工业强国叙事，全民认同、无争议，碳纤维应用覆盖航空航天、新能源汽车等大众熟知领域，亲近感强。",
+        "bridge_fit": "视频号工业/制造类创作者正在崛起，投产现场画面和技术突破故事是典型的视频号优质选题，官方账号顺势为创作者指路，桥接自然。",
+        "tone_fit": "以'量产时刻'定义里程碑节点，克制不夸张，headline/summary仅呈现核心数据与意义，不喧哗。"
+      },
+      "risk": {
+        "level": "safe",
+        "note": "中国建材集团官方宣布的工业成果，正向内容，无敏感成分，中国日报等主流媒体已跟进报道，安全。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "url": "https://cn.chinadaily.com.cn/a/202606/28/WS6a410e2aa310d709c2fba848.html",
+          "title": "三条全球最大生产线投产，中国碳纤维迎来关键一跃-中国日报",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "中国日报中文网报道，确认中复神鹰三条产线集中投产及核心技术国产化情况，6月28日"
+        },
+        {
+          "tier": "major_media",
+          "url": "https://news.sina.com.cn/c/2026-06-28/doc-inieyrin5990839.shtml",
+          "title": "三条世界级产线在我国投产-新浪新闻",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "新浪新闻报道，确认产线覆盖通用、高强、高模三大碳纤维品类，投产时间6月28日"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-29-solar-thermal-jilin",
+      "headline": "东北首座光热电站投产：零下37度也能稳定发电，吉林百万镜面追光",
+      "summary": "中广核吉西10万千瓦光热电站在东北投产，我国纬度最高光热电站，19667面定日镜年发电约1.8亿千瓦时，减排二氧化碳13.9万吨。",
+      "category": "国家高光",
+      "heat_rank": 6,
+      "wechat_bridge": {
+        "capability": "元宝AI",
+        "note": "'百万镜面追光'的视觉画面极具感染力，光热发电技术对普通用户有知识门槛，元宝AI可做科普解释；官方账号发布后引导用户询问元宝AI了解光热发电原理，形成内容到工具的自然引导。"
+      },
+      "filter_pass": {
+        "consensus": "清洁能源突破属于全民支持的绿色发展叙事，东北严寒环境下的技术攻关具有人文温度，无任何争议成分。",
+        "bridge_fit": "光热发电的视觉奇观（19667面追光镜）适合元宝AI科普配合，'为什么需要那么多镜子'是普通用户的天然好奇，元宝可回答，形成内容到工具的自然引导链路。",
+        "tone_fit": "用具体数字和地域特色呈现技术成就，不煽情、不夸张，headline有温度感但克制，符合微信品牌底色。"
+      },
+      "risk": {
+        "level": "safe",
+        "note": "中广核官方项目，清洁能源正向内容，科技日报权威媒体今日已报道，无风险。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "url": "https://www.stdaily.com/web/gdxw/2026-06/29/content_538983.htm",
+          "title": "我国高纬度严寒地区光热发电技术应用取得重大突破-科技日报",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "科技日报今日报道，确认吉西光热项目投产并介绍高纬度严寒地区技术攻关情况"
+        },
+        {
+          "tier": "major_media",
+          "url": "https://www.stcn.com/article/detail/3986127.html",
+          "title": "中广核吉西10万千瓦光热电站投产发电-证券时报",
+          "captured_at": "2026-06-29T17:00:00+08:00",
+          "note": "证券时报报道，确认电站参数：年发电量1.8亿千瓦时，减排CO₂约13.9万吨"
+        }
+      ],
+      "published": true
+    }
+  ],
+  "published_at": "2026-06-29T23:38:30+08:00"
+}
