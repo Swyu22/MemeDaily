@@ -88,7 +88,7 @@ jobs:
           fi
           echo "skip=${SKIP}" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
         with:
           node-version: 22
@@ -186,7 +186,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4 # TRUSTED repo code — NOT the agent's tree
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: npm
