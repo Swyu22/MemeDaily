@@ -1,7 +1,7 @@
 /**
  * input: today's visible 日报 news (or null)
- * output: the 日报 tab body — heat-ranked news cards, fixed editorial order
- * pos: feature UI for the 日报 feed; rendered by HomeTabs
+ * output: the 日报 tab body — heat-ranked news cards (the 大标题/副标题 are lifted to HomeTabs)
+ * pos: feature UI for the 日报 feed; rendered by HomeTabs inside the tab panel
  */
 import { sortByHeatRank } from "@/domain/dailynews/labels";
 import type { PublicNewsItem } from "@/domain/dailynews/schema";
@@ -20,25 +20,11 @@ export function DailyReport({ news }: DailyReportProps) {
     );
   }
 
-  const items = sortByHeatRank(news.items);
-
   return (
-    <div className="day-list">
-      <section className="day-section">
-        <div className="day-head">
-          <div>
-            <h1>今日日报</h1>
-            <p className="summary">
-              {news.date} · {items.length} 条 · 按热度排序
-            </p>
-          </div>
-        </div>
-        <div className="stack">
-          {items.map((item) => (
-            <NewsCard item={item} key={item.id} />
-          ))}
-        </div>
-      </section>
+    <div className="stack">
+      {sortByHeatRank(news.items).map((item) => (
+        <NewsCard item={item} key={item.id} />
+      ))}
     </div>
   );
 }

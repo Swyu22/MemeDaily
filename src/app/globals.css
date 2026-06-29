@@ -695,28 +695,59 @@ select {
   text-decoration: underline;
 }
 
-/* 首页分栏：热梗 / 日报。
-   A HORIZONTAL two-tab row at the content's top-left, below the status bar and above the feed,
-   on every breakpoint. Desktop: left-aligned, auto-width buttons. Mobile: split 50/50 full-width
-   (in the media query below). margin-bottom keeps a clear gap before the content.
-   Selected tab = 品牌黄 background + black text (scoped to .tabbar so the toolbar's black
-   .button.primary elsewhere is unaffected). Unselected = white (default .button). */
+/* 首页：大标题 + 副标题（随标签切换：今日热梗 / 今日日报），位于标签上方。 */
+.feed-head {
+  margin-bottom: var(--space-3);
+}
+
+.feed-head h1 {
+  margin: 0;
+  font-size: 25px;
+  letter-spacing: 0;
+}
+
+.feed-head .summary {
+  margin-top: var(--space-1);
+}
+
+/* 首页分栏：热梗 / 日报 —— 文件夹/页签式标签。
+   水平排列；选中项底部一条品牌黄下划线 + 黑色加重字，未选中为灰。标签条的底边就是内容区的上沿，
+   标签与内容"结合"在一起、无空隙（.tab-panel 紧贴标签条，仅在内部留出阅读间距）。 */
 .tabbar {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  margin-bottom: var(--space-4);
+  gap: 4px;
+  margin: 0;
+  border-bottom: 1px solid var(--border);
 }
 
-.tabbar .button {
-  min-width: 92px;
-  justify-content: center;
+.tab {
+  min-height: 40px;
+  padding: 0 18px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px; /* 让标签下划线压在标签条的底边缝上 */
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.tabbar .button.primary {
-  border-color: var(--brand);
-  background: var(--brand);
+.tab:hover,
+.tab:focus-visible {
   color: var(--text);
+  outline: none;
+}
+
+.tab.active {
+  color: var(--text);
+  font-weight: 700;
+  border-bottom-color: var(--brand); /* 品牌黄下划线 */
+}
+
+.tab-panel {
+  padding-top: var(--space-5); /* 内部阅读间距；标签与内容之间无空隙 */
 }
 
 /* 日报 news card — labeled sections (新闻简述 / 热度 / 来源媒体 / 来源链接). */
@@ -763,14 +794,10 @@ select {
   font-size: 14px;
 }
 
-/* Mobile: the same horizontal tab row spans full width and splits 50/50 (finger-friendly).
-   Placed AFTER the base .tabbar rules above so it wins on source order. */
+/* Mobile: keep the folder tabs left-aligned (auto-width); just match the lifted heading to the
+   smaller in-feed heading size. */
 @media (max-width: 720px) {
-  .tabbar {
-    width: 100%;
-  }
-
-  .tabbar .button {
-    flex: 1 1 0;
+  .feed-head h1 {
+    font-size: 22px;
   }
 }
