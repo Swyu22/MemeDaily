@@ -1,0 +1,47 @@
+name: daily-news-fallback
+
+on:
+  schedule:
+    # 13:30 UTC = 21:30 Asia/Shanghai. Evening LAST resort for the 日报 feed: only marks today
+    # "skipped" if the primary publish AND every catch-up failed to produce any envelope.
+    # Staggered off the meme fallback's 21:20.
+    - cron: "30 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write # to dispatch the Pages deploy after a GITHUB_TOKEN push
+
+jobs:
+  skipped-day:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run fallback:skipped:news
+      - run: npm run validate:news
+
+      - name: Commit skipped 日报 day if created
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git add data/daily-news
+          if git diff --cached --quiet; then
+            echo "No skipped 日报 fallback needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(data): add skipped DailyNews fallback"
+          git pull --rebase origin main
+          git push
+          gh workflow run pages.yml --ref main

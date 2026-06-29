@@ -41,6 +41,7 @@ jobs:
             echo "检测到 package.json，运行应用层检查"
             npm ci
             npm run validate
+            npm run validate:news --if-present
             npm run lint --if-present
             npm run typecheck --if-present
             npm test --if-present

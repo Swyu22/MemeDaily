@@ -694,3 +694,16 @@ select {
 .site-footer a:hover {
   text-decoration: underline;
 }
+
+/* 首页分栏：热梗 / 日报（复用 .button + .button.primary 作为选中态） */
+.tabbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: var(--space-4);
+}
+
+.tabbar .button {
+  flex: 0 0 auto;
+  min-width: 72px;
+  justify-content: center;
+}

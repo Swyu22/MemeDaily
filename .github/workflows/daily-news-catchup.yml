@@ -1,0 +1,51 @@
+name: daily-news-catchup
+
+# Resilience for the 日报 feed against GitHub dropping scheduled events (mirrors daily-catchup).
+# If today's Asia/Shanghai 日报 envelope is still MISSING and no daily-news-publish run is active,
+# dispatch daily-news-publish to catch up. workflow_dispatch is processed reliably. Cheap when
+# there's nothing to do. Quality is unchanged: the triggered publish applies the same gates and
+# may legitimately produce partial/skipped.
+
+on:
+  schedule:
+    # Every hour at :15, 00:15–05:15 UTC = 08:15–13:15 Asia/Shanghai (staggered off the meme
+    # catchup's :00, and after the 07:30 news publish window).
+    - cron: "15 0,1,2,3,4,5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write # to dispatch daily-news-publish
+
+concurrency:
+  group: daily-news-catchup
+  cancel-in-progress: false
+
+jobs:
+  catchup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dispatch a catch-up 日报 publish if today is missing
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          DATE="$(TZ=Asia/Shanghai date +%F)"
+          FILE="data/daily-news/${DATE}.json"
+
+          if [ -f "$FILE" ]; then
+            echo "Today (${DATE}) already has a 日报 envelope; nothing to catch up."
+            exit 0
+          fi
+
+          ACTIVE="$(gh run list --workflow=daily-news-publish.yml --json status \
+            --jq '[.[] | select(.status == "in_progress" or .status == "queued")] | length')"
+          if [ "${ACTIVE:-0}" -gt 0 ]; then
+            echo "daily-news-publish already in progress/queued; letting it finish."
+            exit 0
+          fi
+
+          echo "Today (${DATE}) 日报 not published; dispatching catch-up daily-news-publish."
+          gh workflow run daily-news-publish.yml --ref main
