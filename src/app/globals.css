@@ -670,3 +670,27 @@ select {
     font-size: 13px;
   }
 }
+
+/* 备案 / 版权页脚（所有页面底部，居中） */
+.site-footer {
+  margin-top: var(--space-6);
+  padding: var(--space-4) var(--space-3) var(--space-6);
+  border-top: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  color: var(--faint);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.site-footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}

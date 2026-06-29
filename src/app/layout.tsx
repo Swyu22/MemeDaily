@@ -113,6 +113,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </div>
           </header>
           {children}
+          <footer className="site-footer">
+            <a
+              href="https://beian.miit.gov.cn/#/Integrated/index"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              粤ICP备16102279号
+            </a>
+            <span>Copyright © 2011-2026 深圳市与众文化传播有限公司 版权所有</span>
+          </footer>
         </div>
       </body>
     </html>
