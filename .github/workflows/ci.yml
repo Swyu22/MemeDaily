@@ -12,7 +12,7 @@ jobs:
   governance:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # —— 协作 OS 层检查（与本地 .githooks 同源 scripts/checks/*）——
       - name: 状态新鲜度（.cloud.md）
