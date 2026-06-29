@@ -43,8 +43,8 @@ const BOOT = `(function(){
   });}
 })();`;
 
-// 分享卡片描述：首行留空 + 一行综合文案（热点新闻 + 热梗合并表达）。
-const SHARE_DESC = "\n🔥 今日全网热点速递 | 新闻热梗两不误！";
+// 分享卡片描述：两行文案，中间空一行——🔥热点速递 +（空行）+ 📅新闻 | 热梗。
+const SHARE_DESC = "🔥 今日全网热点速递\n\n📅 新闻 | 热梗两不误！";
 
 export const metadata: Metadata = {
   // 备案通过后回挂根域名 memedaily.fun (basePath=""). BP-prefixed image/icon paths (BP="")
