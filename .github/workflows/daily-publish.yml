@@ -239,12 +239,16 @@ jobs:
             gh workflow run pages.yml --ref main || true
             sleep 6
             RUN_SHA="$(gh run list --workflow=pages.yml --limit 1 --json headSha --jq '.[0].headSha' 2>/dev/null || echo '')"
-            if [ "$RUN_SHA" = "$SHA" ]; then
-              echo "Pages deploy dispatched for ${SHA} (attempt ${attempt})."
+            # Accept if the deploy targets our commit OR a DESCENDANT of it (a concurrent push
+            # moved main forward but still includes our content); only the PRE-push parent — the
+            # race we actually guard against — is rejected. Fetch so ancestry can see RUN_SHA.
+            git fetch origin -q 2>/dev/null || true
+            if [ -n "$RUN_SHA" ] && { [ "$RUN_SHA" = "$SHA" ] || git merge-base --is-ancestor "$SHA" "$RUN_SHA" 2>/dev/null; }; then
+              echo "Pages deploy includes ${SHA} (deployed ${RUN_SHA}, attempt ${attempt})."
               DEPLOYED=true
               break
             fi
-            echo "::warning::Pages deploy targeted ${RUN_SHA:-?}, expected ${SHA}; retrying (attempt ${attempt})."
+            echo "::warning::Pages deploy targeted ${RUN_SHA:-?}, which does not include ${SHA}; retrying (attempt ${attempt})."
           done
           if [ "$DEPLOYED" != "true" ]; then
             echo "::error::Could not dispatch a Pages deploy for ${SHA} after retries — the commit is published but the live site may lag. Re-run pages.yml manually."
