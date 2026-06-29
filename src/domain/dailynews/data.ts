@@ -44,6 +44,7 @@ export function latestVisibleNews(): {
   date: string;
   generated_at: string;
   published_at?: string;
+  status: NewsEnvelope["status"];
   items: NewsItem[];
 } | null {
   for (const envelope of loadAllNewsEnvelopes()) {
@@ -53,6 +54,7 @@ export function latestVisibleNews(): {
         date: envelope.date,
         generated_at: envelope.generated_at,
         published_at: envelope.published_at,
+        status: envelope.status,
         items,
       };
     }

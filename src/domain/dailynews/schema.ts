@@ -3,24 +3,25 @@
  * output: parsed DailyNews data and strict publication contract
  * pos: domain contract for the 日报 feed — shared by build, validation, and automation
  *
- * Mirrors memedaily/schema.ts but for a different content type: up to 10 heat-ranked daily
- * news items curated through a WeChat-official-account lens. Reader-facing fields are the
- * headline/summary/category/heat_rank/sources; wechat_bridge, filter_pass and risk are
- * INTERNAL editorial reasoning (validated for presence, never rendered — like meme brand_usage).
+ * v2: a genuine 民生 daily-news digest — up to 10 heat-ranked items, news tone (新闻类标题),
+ * close to everyday life (民生/节日/考试/会展/重大事件/科技/文化). The WeChat-bridge angle is
+ * dropped from selection ("只做呈现"); wechat_bridge/filter_pass are now OPTIONAL legacy fields.
+ * Reader-facing fields: headline/summary/category/heat_rank/sources(+outlet). risk stays internal.
  */
 import { z } from "zod";
 
-// The five priority categories, ordered most→least preferred (see DAILYNEWS prompt).
+// Loose editorial buckets — broadened for the 民生 direction (less 国家高光, more 民生社会).
+// Category is NO LONGER rendered (the chip cluttered layout); it only guides the agent's mix.
 export const NewsCategorySchema = z.enum([
-  "国家高光", // 航天/大国工程/重大科技突破/体育大赛
-  "节日节气", // 传统节日与节气
+  "民生社会", // 高考/填报志愿/会展(广交会)/重大社会事件(含地震等)/与生活息息相关
+  "节日节气", // 传统节日(母亲节/端午/五一)与节气
+  "国家高光", // 航天/大国工程/重大科技突破/体育大赛（不宜过多）
   "科技AI", // 科技与 AI 进展
-  "科技向善", // 公益/寻人/助农/灾时连接协作/凡人善举
+  "科技向善", // 公益/寻人/助农/凡人善举
   "文化数字经济", // 文化非遗/国潮/数字经济/小店经济
 ]);
 
-// Concrete WeChat capabilities a news item can bridge to. INTERNAL selection signal only —
-// requiring an enum forces the agent to name a real capability, not hand-wave.
+// Concrete WeChat capabilities a news item can bridge to. LEGACY/optional in v2 (bridge dropped).
 export const WechatCapabilitySchema = z.enum([
   "视频号直播",
   "视频号创作者",
@@ -50,6 +51,7 @@ export const NewsTierSchema = z.enum([
 
 const NewsSourceSchema = z.object({
   tier: NewsTierSchema,
+  outlet: z.string().min(1).max(20).optional(), // 媒体名（新华社/央视/澎湃…）— shown in 来源媒体
   url: z.string().url(),
   title: z.string().min(1).max(120).optional(),
   captured_at: z.string().datetime({ offset: true }),
@@ -58,20 +60,26 @@ const NewsSourceSchema = z.object({
 
 export const NewsItemSchema = z.object({
   id: z.string().regex(/^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/),
-  headline: z.string().min(4).max(48),
-  summary: z.string().min(6).max(120), // shorter than meme summary — enforce 克制
+  headline: z.string().min(4).max(48), // 新闻类标题，含一个相关 emoji 前缀
+  summary: z.string().min(6).max(140), // 新闻简述，约 100 字（平实完整，不玩梗）
   category: NewsCategorySchema,
   heat_rank: z.number().int().min(1).max(10), // 1 = hottest; gate enforces contiguous 1..N
   // --- INTERNAL editorial reasoning (validated, NEVER rendered) ---
-  wechat_bridge: z.object({
-    capability: WechatCapabilitySchema,
-    note: z.string().min(6).max(360),
-  }),
-  filter_pass: z.object({
-    consensus: z.string().min(4).max(240), // (a) 最大公约数/非争议
-    bridge_fit: z.string().min(4).max(240), // (b) 可桥接到具体微信能力
-    tone_fit: z.string().min(4).max(240), // (c) 克制/有温度/不喧哗
-  }),
+  // wechat_bridge / filter_pass are LEGACY (v2 drops the bridge — "只做呈现"); kept OPTIONAL so
+  // old envelopes still validate and the agent may omit them. risk stays a required safety note.
+  wechat_bridge: z
+    .object({
+      capability: WechatCapabilitySchema,
+      note: z.string().min(6).max(360),
+    })
+    .optional(),
+  filter_pass: z
+    .object({
+      consensus: z.string().min(4).max(240),
+      bridge_fit: z.string().min(4).max(240),
+      tone_fit: z.string().min(4).max(240),
+    })
+    .optional(),
   risk: z.object({
     level: RiskLevelSchema,
     note: z.string().min(2).max(240),

@@ -2,6 +2,7 @@ import { loadAllEnvelopes } from "@/domain/memedaily/data";
 import { statusLabels } from "@/domain/memedaily/labels";
 import { visibleItems } from "@/domain/memedaily/rules";
 import { latestVisibleNews } from "@/domain/dailynews/data";
+import { statusLabels as newsStatusLabels } from "@/domain/dailynews/labels";
 import { HomeTabs } from "@/features/home/HomeTabs";
 
 const MAX_DAYS_ON_HOME = 4;
@@ -51,10 +52,20 @@ export default function TodayPage() {
       }
     : null;
 
+  const newsStatus = latestNews
+    ? {
+        date: latestNews.date,
+        time: (latestNews.published_at ?? latestNews.generated_at).slice(11, 16),
+        statusLabel: newsStatusLabels[latestNews.status],
+        count: latestNews.items.length,
+      }
+    : null;
+
   return (
     <main className="page">
       <HomeTabs
         memeStatus={memeStatus}
+        newsStatus={newsStatus}
         staleNotice={staleNotice}
         days={shown}
         freshDate={freshDate}

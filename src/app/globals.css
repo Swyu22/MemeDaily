@@ -695,15 +695,99 @@ select {
   text-decoration: underline;
 }
 
-/* 首页分栏：热梗 / 日报（复用 .button + .button.primary 作为选中态） */
+/* 首页分栏：热梗 / 日报。
+   Desktop: a VERTICAL tab rail at the content's top-left, content to its right.
+   Mobile:  a HORIZONTAL row between the status bar and the content (handled in the media query).
+   Selected tab = 品牌黄 background + black text (scoped to .tabbar so the toolbar's black
+   .button.primary elsewhere is unaffected). Unselected = white (default .button). */
+.tab-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
 .tabbar {
   display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
   gap: 8px;
-  margin-bottom: var(--space-4);
 }
 
 .tabbar .button {
-  flex: 0 0 auto;
-  min-width: 72px;
+  min-width: 88px;
   justify-content: center;
+}
+
+.tabbar .button.primary {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: var(--text);
+}
+
+.tab-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* 日报 news card — labeled sections (新闻简述 / 热度 / 来源媒体 / 来源链接). */
+.news-title {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.news-block {
+  margin-top: var(--space-4);
+}
+
+.news-block .field-body {
+  margin-top: var(--space-1);
+}
+
+.news-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  margin-top: var(--space-4);
+}
+
+.news-inline {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.news-inline .field-label {
+  margin-bottom: 0;
+}
+
+.news-heat {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.news-outlets {
+  color: var(--text);
+  font-size: 14px;
+}
+
+/* Mobile tab layout. Placed AFTER the desktop .tab-layout/.tabbar rules above so it wins on
+   source order (a media query adds no specificity). Tabs become a HORIZONTAL row between the
+   status bar and the content, split 50/50. */
+@media (max-width: 720px) {
+  .tab-layout {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .tabbar {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .tabbar .button {
+    flex: 1 1 0;
+  }
 }

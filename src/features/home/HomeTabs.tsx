@@ -2,8 +2,12 @@
 
 /**
  * input: serializable 热梗 (memes) + 日报 (news) feed data from the server page
- * output: a client tab shell switching between the two feeds (热梗 default)
- * pos: the single shared UI touch point; TodayFeed/MemeCard are reused unchanged
+ * output: a client tab shell — a shared status bar on top, then a tab rail beside the active feed
+ * pos: the single shared UI touch point; TodayFeed/MemeCard/DailyReport are reused unchanged
+ *
+ * Layout: the tab rail is VERTICAL at the content's top-left on desktop, and a HORIZONTAL row
+ * between the status bar and the content on mobile (see .tab-layout / .tabbar in globals.css).
+ * The status bar is tab-aware: it reflects the active feed's run (热梗 vs 日报).
  */
 import { useState } from "react";
 import { Activity } from "lucide-react";
@@ -13,10 +17,11 @@ import { TodayFeed } from "@/features/memes/TodayFeed";
 import { DailyReport } from "./DailyReport";
 
 type Tab = "memes" | "news";
-type MemeStatus = { date: string; time: string; statusLabel: string; count: number };
+type RunStatus = { date: string; time: string; statusLabel: string; count: number };
 
 type HomeTabsProps = {
-  memeStatus: MemeStatus | null;
+  memeStatus: RunStatus | null;
+  newsStatus: RunStatus | null;
   staleNotice: string | null;
   days: { date: string; items: MemeItem[] }[];
   freshDate: string | null;
@@ -24,72 +29,86 @@ type HomeTabsProps = {
   news: { date: string; items: PublicNewsItem[] } | null;
 };
 
-export function HomeTabs({ memeStatus, staleNotice, days, freshDate, hasMore, news }: HomeTabsProps) {
+export function HomeTabs({
+  memeStatus,
+  newsStatus,
+  staleNotice,
+  days,
+  freshDate,
+  hasMore,
+  news,
+}: HomeTabsProps) {
   const [tab, setTab] = useState<Tab>("memes"); // 热梗 default; v1 keeps tab state client-only
+
+  const status = tab === "memes" ? memeStatus : newsStatus;
 
   return (
     <>
-      <div className="tabbar" role="tablist" aria-label="内容分栏">
-        <button
-          type="button"
-          role="tab"
-          aria-selected={tab === "memes"}
-          className={`button${tab === "memes" ? " primary" : ""}`}
-          onClick={() => setTab("memes")}
-        >
-          热梗
-        </button>
-        <button
-          type="button"
-          role="tab"
-          aria-selected={tab === "news"}
-          className={`button${tab === "news" ? " primary" : ""}`}
-          onClick={() => setTab("news")}
-        >
-          日报
-        </button>
-      </div>
+      <section className="status-bar" aria-label="Run status">
+        <strong style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
+          <Activity size={15} color="var(--green-dot)" aria-hidden="true" />
+          今日运行
+        </strong>
+        {status ? (
+          <>
+            <span className="mono">{status.date}</span>
+            <span>
+              发布时间 <span className="mono">{status.time}</span>
+            </span>
+            <span>状态 {status.statusLabel}</span>
+            <span>
+              发布 <b>{status.count}</b> 条
+            </span>
+          </>
+        ) : (
+          <span>{tab === "memes" ? "暂无热梗数据" : "暂无日报数据"}</span>
+        )}
+      </section>
 
-      {tab === "memes" ? (
-        <>
-          <section className="status-bar" aria-label="Run status">
-            <strong style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
-              <Activity size={15} color="var(--green-dot)" aria-hidden="true" />
-              今日运行
-            </strong>
-            {memeStatus ? (
-              <>
-                <span className="mono">{memeStatus.date}</span>
-                <span>
-                  发布时间 <span className="mono">{memeStatus.time}</span>
-                </span>
-                <span>状态 {memeStatus.statusLabel}</span>
-                <span>
-                  发布 <b>{memeStatus.count}</b> 条
-                </span>
-              </>
-            ) : (
-              <span>暂无日更数据</span>
-            )}
-          </section>
+      <div className="tab-layout">
+        <div className="tabbar" role="tablist" aria-label="内容分栏">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={tab === "memes"}
+            className={`button${tab === "memes" ? " primary" : ""}`}
+            onClick={() => setTab("memes")}
+          >
+            热梗
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={tab === "news"}
+            className={`button${tab === "news" ? " primary" : ""}`}
+            onClick={() => setTab("news")}
+          >
+            日报
+          </button>
+        </div>
 
-          {staleNotice ? (
-            <div className="notice" role="status">
-              {staleNotice}
-            </div>
-          ) : null}
+        <div className="tab-content">
+          {tab === "memes" ? (
+            <>
+              {staleNotice ? (
+                <div className="notice" role="status">
+                  {staleNotice}
+                </div>
+              ) : null}
 
-          {days.length > 0 ? (
-            <TodayFeed days={days} freshDate={freshDate} hasMore={hasMore} />
+              {days.length > 0 ? (
+                <TodayFeed days={days} freshDate={freshDate} hasMore={hasMore} />
+              ) : (
+                <div className="empty">
+                  今日没有通过证据和安全门槛的热梗。自动化会宁可跳过，也不发布弱证据内容。
+                </div>
+              )}
+            </>
           ) : (
-            <div className="empty">
-              今日没有通过证据和安全门槛的热梗。自动化会宁可跳过，也不发布弱证据内容。
-            </div>
+            <DailyReport news={news} />
           )}
-        </>
-      ) : (
-        <DailyReport news={news} />
-      )}
+        </div>
+      </div>
     </>
   );
 }

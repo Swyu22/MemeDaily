@@ -37,9 +37,14 @@ function normalizeHeadline(value: string): string {
 // internal reasoning fields (filter_pass / risk.note), which routinely contain NEGATIONS like
 // "无争议 / 不涉及地缘" that would false-positive. A hit fails validation so the agent self-corrects.
 // Keep the lists high-signal and reviewable; start narrow and widen only from real misses.
-// NOTE on 灾难: 科技向善 may cover 灾时连接协作, but the disaster ITSELF must never be the subject —
-// so disaster terms in the headline/summary HARD-FAIL, forcing assist/connection-framed copy
-// (the internal wechat_bridge.note may still mention 救援协作; it is not scanned).
+//
+// v2 EDITORIAL SHIFT (per user):
+//  - 灾难/事故 is NO LONGER a red line. 民生 news legitimately covers major events people care about
+//    (四川宜宾地震 was named as a WANTED example); the bucket is dropped. The tone discipline
+//    (factual, restrained, no casualty-sensationalism) is enforced via the PROMPT, not a keyword gate.
+//  - 政府政策 IS a new red line: 政策/政府部署 framing reads too "官方/政府色彩" — exclude it so the
+//    feed stays 民生. Government-organized LIFE events (高考/广交会/航天/体育) contain none of these
+//    terms and pass cleanly; only abstract policy/directive framing is caught.
 const RED_LINE_BUCKETS: { label: string; terms: string[] }[] = [
   {
     label: "政治/地缘/冲突",
@@ -49,8 +54,11 @@ const RED_LINE_BUCKETS: { label: string; terms: string[] }[] = [
     ],
   },
   {
-    label: "灾难事故",
-    terms: ["地震", "洪灾", "火灾", "爆炸", "坠机", "空难", "车祸", "遇难", "伤亡", "灾情", "泥石流", "事故"],
+    label: "政府/政策",
+    terms: [
+      "国务院", "政治局", "部委", "发改委", "印发", "出台", "规划纲要",
+      "会议精神", "政府部署", "战略部署", "中央部署", "政策",
+    ],
   },
   {
     label: "明星丑闻",

@@ -101,11 +101,16 @@ describe("redLineIssues", () => {
     expect(issues[0]).toContain("政治/地缘/冲突");
   });
 
-  it("flags a disaster subject in the headline (force assist-framing instead)", () => {
-    const dis = { ...baseItem, headline: "某地地震致多人遇难", summary: "灾情牵动人心。" };
-    const issues = redLineIssues(envelopeWith([dis], "published"));
+  it("does NOT flag a 民生 disaster-event item (v2: 地震 is now a wanted topic)", () => {
+    const quake = { ...baseItem, id: "2026-06-29-quake", headline: "🌏 四川宜宾发生地震，当地启动应急响应", summary: "震区交通与通信正在逐步恢复，救援力量已抵达现场。" };
+    expect(redLineIssues(envelopeWith([quake], "published"))).toHaveLength(0);
+  });
+
+  it("flags a 政府/政策 subject in the headline (too 官方色彩)", () => {
+    const policy = { ...baseItem, headline: "国务院部署下一阶段经济工作", summary: "会议印发相关规划纲要。" };
+    const issues = redLineIssues(envelopeWith([policy], "published"));
     expect(issues.length).toBeGreaterThan(0);
-    expect(issues[0]).toContain("灾难事故");
+    expect(issues[0]).toContain("政府/政策");
   });
 
   it("flags a celebrity-scandal subject", () => {
