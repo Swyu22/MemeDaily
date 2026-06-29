@@ -696,25 +696,20 @@ select {
 }
 
 /* 首页分栏：热梗 / 日报。
-   Desktop: a VERTICAL tab rail at the content's top-left, content to its right.
-   Mobile:  a HORIZONTAL row between the status bar and the content (handled in the media query).
+   A HORIZONTAL two-tab row at the content's top-left, below the status bar and above the feed,
+   on every breakpoint. Desktop: left-aligned, auto-width buttons. Mobile: split 50/50 full-width
+   (in the media query below). margin-bottom keeps a clear gap before the content.
    Selected tab = 品牌黄 background + black text (scoped to .tabbar so the toolbar's black
    .button.primary elsewhere is unaffected). Unselected = white (default .button). */
-.tab-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-4);
-}
-
 .tabbar {
   display: flex;
-  flex-direction: column;
-  flex: 0 0 auto;
-  gap: 8px;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: var(--space-4);
 }
 
 .tabbar .button {
-  min-width: 88px;
+  min-width: 92px;
   justify-content: center;
 }
 
@@ -722,11 +717,6 @@ select {
   border-color: var(--brand);
   background: var(--brand);
   color: var(--text);
-}
-
-.tab-content {
-  flex: 1 1 auto;
-  min-width: 0;
 }
 
 /* 日报 news card — labeled sections (新闻简述 / 热度 / 来源媒体 / 来源链接). */
@@ -773,17 +763,10 @@ select {
   font-size: 14px;
 }
 
-/* Mobile tab layout. Placed AFTER the desktop .tab-layout/.tabbar rules above so it wins on
-   source order (a media query adds no specificity). Tabs become a HORIZONTAL row between the
-   status bar and the content, split 50/50. */
+/* Mobile: the same horizontal tab row spans full width and splits 50/50 (finger-friendly).
+   Placed AFTER the base .tabbar rules above so it wins on source order. */
 @media (max-width: 720px) {
-  .tab-layout {
-    flex-direction: column;
-    gap: var(--space-3);
-  }
-
   .tabbar {
-    flex-direction: row;
     width: 100%;
   }
 
