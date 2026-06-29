@@ -710,6 +710,15 @@ select {
   margin-top: var(--space-1);
 }
 
+/* The home toolbar sits in the header stack (副标题 → toolbar → tabs) on BOTH tabs. Unlike the
+   archive toolbar it must NOT stick, or it would float over the tab strip while scrolling. */
+.feed-toolbar {
+  position: static;
+  top: auto;
+  margin-bottom: var(--space-3);
+  padding-top: 0;
+}
+
 /* 首页分栏：热梗 / 日报 —— 文件夹/页签式标签。
    水平排列；选中项底部一条品牌黄下划线 + 黑色加重字，未选中为灰。标签条的底边就是内容区的上沿，
    标签与内容"结合"在一起、无空隙（.tab-panel 紧贴标签条，仅在内部留出阅读间距）。 */

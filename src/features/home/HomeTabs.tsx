@@ -5,13 +5,14 @@
  * output: the home shell — status bar, meme toolbar, a tab-aware 大标题/副标题, folder tabs, content
  * pos: the single shared UI touch point; TodayFeed/MemeCard/DailyReport are reused
  *
- * Layout (top → bottom, per the user's spec):
+ * Layout (top → bottom, IDENTICAL on both tabs — switching only changes content + heading text):
  *   1. 今日运行 status bar (tab-aware)
- *   2. 排序/每日目标/证据 toolbar (热梗 only) — kept directly under the status bar
- *   3. 大标题 + 副标题 (tab-aware: 今日热梗 ⇄ 今日日报, with date · 条数 · 排序)
+ *   2. 大标题 + 副标题 (今日热梗 / 今日日报 — FIXED title even when a feed is skipped/empty)
+ *   3. 排序/每日目标/证据 toolbar (shown on BOTH tabs so the chrome is unified)
  *   4. folder-style tabs [热梗 | 日报] (brand-yellow underline on the active tab)
  *   5. the tab panel, flush against the tab strip (no gap)
- * The meme sort state lives here so the toolbar (above) and the day list (in the panel) stay in sync.
+ * The meme sort state lives here; it drives the 热梗 day list. 日报 is always heat_rank-ordered, so
+ * the sort toggle is a no-op there (kept only so both tabs share the exact same chrome).
  */
 import { useState } from "react";
 import { Activity } from "lucide-react";
@@ -58,7 +59,7 @@ export function HomeTabs({
     if (!top) return { title: "今日热梗", subtitle: null };
     const isToday = top.date === freshDate;
     return {
-      title: isToday ? "今日热梗" : top.date,
+      title: "今日热梗", // fixed label — stays put whether today is published, skipped, or empty
       subtitle: `${isToday ? top.date : "历史发布"} · ${top.items.length} 条 · 按${feedSortLabels[sort]}排序`,
     };
   })();
@@ -93,26 +94,24 @@ export function HomeTabs({
         )}
       </section>
 
-      {tab === "memes" ? (
-        <div className="toolbar">
-          <span className="mini">排序</span>
-          <select
-            className="select"
-            value={sort}
-            onChange={(event) => setSort(event.target.value as FeedSort)}
-            aria-label="排序方式"
-          >
-            <option value="heat">{feedSortLabels.heat}</option>
-            <option value="fresh">{feedSortLabels.fresh}</option>
-          </select>
-          <span className="mini">每日目标 10 条</span>
-          <span className="mini">公开网页证据</span>
-        </div>
-      ) : null}
-
       <div className="feed-head">
         <h1>{head.title}</h1>
         {head.subtitle ? <p className="summary">{head.subtitle}</p> : null}
+      </div>
+
+      <div className="toolbar feed-toolbar">
+        <span className="mini">排序</span>
+        <select
+          className="select"
+          value={sort}
+          onChange={(event) => setSort(event.target.value as FeedSort)}
+          aria-label="排序方式"
+        >
+          <option value="heat">{feedSortLabels.heat}</option>
+          <option value="fresh">{feedSortLabels.fresh}</option>
+        </select>
+        <span className="mini">每日目标 10 条</span>
+        <span className="mini">公开网页证据</span>
       </div>
 
       <div className="tabbar" role="tablist" aria-label="内容分栏">
