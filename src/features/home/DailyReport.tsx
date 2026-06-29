@@ -3,15 +3,17 @@
  * output: the 日报 tab body — heat-ranked news cards (the 大标题/副标题 are lifted to HomeTabs)
  * pos: feature UI for the 日报 feed; rendered by HomeTabs inside the tab panel
  */
-import { sortByHeatRank } from "@/domain/dailynews/labels";
+import { sortByHeatRank, sortNewsByFreshness } from "@/domain/dailynews/labels";
 import type { PublicNewsItem } from "@/domain/dailynews/schema";
+import type { FeedSort } from "@/domain/memedaily/labels";
 import { NewsCard } from "./NewsCard";
 
 type DailyReportProps = {
   news: { date: string; items: PublicNewsItem[] } | null;
+  sort: FeedSort;
 };
 
-export function DailyReport({ news }: DailyReportProps) {
+export function DailyReport({ news, sort }: DailyReportProps) {
   if (!news || news.items.length === 0) {
     return (
       <div className="empty">
@@ -20,9 +22,11 @@ export function DailyReport({ news }: DailyReportProps) {
     );
   }
 
+  const items = sort === "fresh" ? sortNewsByFreshness(news.items) : sortByHeatRank(news.items);
+
   return (
     <div className="stack">
-      {sortByHeatRank(news.items).map((item) => (
+      {items.map((item) => (
         <NewsCard item={item} key={item.id} />
       ))}
     </div>

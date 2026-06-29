@@ -29,7 +29,20 @@ export const statusLabels = {
   held: "暂存",
 } as const;
 
-// 日报顺序固定为编辑热度排序：heat_rank 升序（1 = 最热，置顶）。无读者侧切换。
+// 热度值排序（默认）：heat_rank 升序（1 = 最热，置顶）。
 export function sortByHeatRank<T extends { heat_rank: number }>(items: T[]): T[] {
   return [...items].sort((a, b) => a.heat_rank - b.heat_rank);
+}
+
+// 新鲜值排序：离现在越近（来源捕获时间越新）越靠前——以每条最新的 source.captured_at 为时间锚，
+// 降序排列；时间相同的以热度兜底，保证结果稳定。
+export function sortNewsByFreshness<
+  T extends { heat_rank: number; sources: { captured_at: string }[] },
+>(items: T[]): T[] {
+  const freshness = (item: T) =>
+    item.sources.reduce((newest, source) => Math.max(newest, Date.parse(source.captured_at)), 0);
+  return [...items].sort((a, b) => {
+    const diff = freshness(b) - freshness(a); // 更新（更靠近今天）的在前
+    return diff !== 0 ? diff : a.heat_rank - b.heat_rank;
+  });
 }

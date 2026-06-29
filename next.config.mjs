@@ -8,6 +8,15 @@ const nextConfig = {
   output: "export",
   trailingSlash: true,
   basePath: basePath || undefined,
+  // Inline the app CSS into each page's <head> as a <style> block (instead of a separate
+  // /_next/static/*.css <link>). The stylesheet then ships AS PART OF the network-first HTML,
+  // so it can never independently fail to load on a flaky mobile connection — fixing the
+  // intermittent "CSS 加载不上" / unstyled-page reports. The CSS is ~12KB (≈3KB gzipped) so the
+  // per-page inline cost is negligible. (fonts.css stays a separate link — a font miss only
+  // degrades to fallback fonts, never an unstyled layout.)
+  experimental: {
+    inlineCss: true,
+  },
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },

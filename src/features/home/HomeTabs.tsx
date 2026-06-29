@@ -11,8 +11,8 @@
  *   3. 排序/每日目标/证据 toolbar (shown on BOTH tabs so the chrome is unified)
  *   4. folder-style tabs [热梗 | 日报] (brand-yellow underline on the active tab)
  *   5. the tab panel, flush against the tab strip (no gap)
- * The meme sort state lives here; it drives the 热梗 day list. 日报 is always heat_rank-ordered, so
- * the sort toggle is a no-op there (kept only so both tabs share the exact same chrome).
+ * The sort state (热度值/新鲜值) lives here and drives BOTH feeds: 热梗 by heat/freshness lifecycle,
+ * 日报 by heat_rank / latest source time (新闻越靠近现在越靠前). Default 热度值.
  */
 import { useState } from "react";
 import { Activity } from "lucide-react";
@@ -66,7 +66,10 @@ export function HomeTabs({
 
   const newsHead: FeedHead =
     news && news.items.length > 0
-      ? { title: "今日日报", subtitle: `${news.date} · ${news.items.length} 条 · 按热度排序` }
+      ? {
+          title: "今日日报",
+          subtitle: `${news.date} · ${news.items.length} 条 · 按${feedSortLabels[sort]}排序`,
+        }
       : { title: "今日日报", subtitle: null };
 
   const head = tab === "memes" ? memeHead : newsHead;
@@ -152,7 +155,7 @@ export function HomeTabs({
             )}
           </>
         ) : (
-          <DailyReport news={news} />
+          <DailyReport news={news} sort={sort} />
         )}
       </div>
     </>
