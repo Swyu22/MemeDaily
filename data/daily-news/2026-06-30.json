@@ -3,70 +3,70 @@
   "policy_version": "v2-民生",
   "rubric_version": "v2-2026",
   "date": "2026-06-30",
-  "generated_at": "2026-06-30T09:00:00+08:00",
+  "generated_at": "2026-06-30T12:00:00+08:00",
   "status": "published",
   "run_report": {
-    "candidates_scanned": 18,
-    "published": 6,
+    "candidates_scanned": 24,
+    "published": 7,
     "dropped_safety": {
-      "政府政策色彩过浓": 2,
-      "来源证据不足": 4,
+      "政府政策色彩过浓": 3,
+      "来源证据不足": 3,
       "新闻过旧": 2
     },
-    "dropped_low_confidence": 4,
+    "dropped_low_confidence": 3,
     "sources": [
       "official",
       "state_media",
       "major_media"
     ],
     "evidence_summary": {
-      "candidates_with_urls": 18,
-      "official_sources": 4,
-      "state_media_sources": 8,
-      "major_media_sources": 7,
+      "candidates_with_urls": 24,
+      "official_sources": 3,
+      "state_media_sources": 7,
+      "major_media_sources": 8,
       "aggregator_sources": 5,
-      "dropped_insufficient_evidence": 4
+      "dropped_insufficient_evidence": 3
     }
   },
   "items": [
     {
-      "id": "2026-06-30-sichuan-earthquake",
-      "headline": "🌏四川宜宾发生5.5级地震，应急响应已启动",
-      "summary": "6月29日0时12分，四川宜宾市高县发生5.5级地震，震源深度6千米。共有13人受轻伤，其中1人骨折住院，225人被紧急转移安置。中国地震局已启动三级应急响应，省地震局44人现场工作组赶赴震中协助处置，已记录85次余震均低于3级，社会秩序稳定。",
-      "category": "民生社会",
+      "id": "2026-06-30-worldcup-upset-day",
+      "headline": "⚽世界杯冷门迭出：巴拉圭点球淘汰德国，摩洛哥复仇荷兰",
+      "summary": "2026美加墨世界杯1/16决赛6月30日冷门迭出：巴拉圭通过点球大战5:4淘汰德国，终结其44年世界杯点球不败纪录；摩洛哥点球3:2击败荷兰，时隔40年复仇成功；巴西补时绝杀2:1险胜日本晋级。三场比赛央视体育频道均有录播。",
+      "category": "国家高光",
       "heat_rank": 1,
+      "occurred_at": "2026-06-30T11:30:00+08:00",
       "risk": {
-        "level": "medium",
-        "note": "灾害类新闻，聚焦事件本身与应急响应、人员安置进展，不渲染伤亡数字，不消费悲情，保持克制平实"
+        "level": "safe",
+        "note": "体育赛事，无涉政治敏感内容，正面积极，所述比赛结果均经多方核实"
       },
       "sources": [
         {
           "tier": "state_media",
-          "outlet": "新华网",
-          "url": "https://www.news.cn/20260629/7d5fc5b0e30f45eab33191e24a9bba2b/c.html",
-          "title": "中国地震局对四川宜宾市高县地震启动三级应急响应",
-          "captured_at": "2026-06-30T06:00:00+08:00",
-          "note": "新华社：宜宾高县5.5级地震三级应急响应启动，工作组赶赴震中"
-        },
-        {
-          "tier": "state_media",
-          "outlet": "央广网",
-          "url": "https://www.cnr.cn/newscenter/native/gd/20260629/t20260629_527680953.shtml",
-          "title": "中国地震局迅即开展四川宜宾市高县5.5级地震应急处置工作",
-          "captured_at": "2026-06-30T06:00:00+08:00",
-          "note": "央广网：地震局应急部署，省局44人工作组赶赴震中"
+          "outlet": "央视体育",
+          "url": "https://worldcup.cctv.com/2026/",
+          "title": "2026年美加墨世界杯——央视官方频道",
+          "captured_at": "2026-06-30T11:30:00+08:00",
+          "note": "央视世界杯官方频道：1/16决赛赛程与结果"
         },
         {
           "tier": "major_media",
-          "outlet": "中国新闻网",
-          "url": "https://www.chinanews.com.cn/sh/2026/06-29/10649074.shtml",
-          "title": "四川高县5.5级地震：13人轻伤 紧急避险转移和安置225人",
-          "captured_at": "2026-06-30T06:30:00+08:00",
-          "note": "中新网：伤亡与转移安置数据，余震85次均低于3.0级"
+          "outlet": "网易体育",
+          "url": "https://www.163.com/dy/article/L0LVBB6O0514R9P4.html",
+          "title": "荷兰足球再次倒在世界杯点球大战，摩洛哥挺进16强",
+          "captured_at": "2026-06-30T11:30:00+08:00",
+          "note": "网易体育：荷兰点球大战负摩洛哥详情"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "网易体育",
+          "url": "https://www.163.com/dy/article/L0LVJU7M05299VFU.html",
+          "title": "赛巴里点球绝杀！摩洛哥时隔40年复仇荷兰",
+          "captured_at": "2026-06-30T11:30:00+08:00",
+          "note": "网易体育：摩洛哥点球大战进球详情与历史数据"
         }
       ],
-      "published": true,
-      "occurred_at": "2026-06-29T00:12:00+08:00"
+      "published": true
     },
     {
       "id": "2026-06-30-gaokao-volunteer-filing",
@@ -74,6 +74,7 @@
       "summary": "多地2026年高考志愿填报进入关键期：浙江6月30日截止，北京至7月1日，江苏、河北至7月2日。教育部6月29日发出警示，提醒考生妥善保管账号密码，勿将准考证号等信息外泄，防止志愿被恶意篡改。已有案例表明，篡改他人志愿可构成破坏计算机信息系统罪。",
       "category": "民生社会",
       "heat_rank": 2,
+      "occurred_at": "2026-06-29T10:00:00+08:00",
       "risk": {
         "level": "safe",
         "note": "考生服务类信息，来源权威，调性平实，无涉敏感内容"
@@ -104,18 +105,96 @@
           "note": "教育部官网：防诈骗防篡改警示，高考关键节点提醒"
         }
       ],
-      "published": true,
-      "occurred_at": "2026-06-29T10:00:00+08:00"
+      "published": true
+    },
+    {
+      "id": "2026-06-30-july-new-regulations",
+      "headline": "📋明日起多项民生新标准施行，电动车安全与快递包装同步升级",
+      "summary": "7月1日起多项民生新标准落地：《电动汽车安全要求》首次强制要求配备物理一键断电装置；快递非易损品包装层数不超2层；《超龄劳动者基本权益保障暂行规定》要求及时足额支付报酬、一般不强制加班；《社会救助法》将低保边缘家庭等纳入救助范围。",
+      "category": "民生社会",
+      "heat_rank": 3,
+      "occurred_at": "2026-06-30T08:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "民生服务类信息，来源权威，调性平实，无涉政治敏感"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国日报网",
+          "url": "https://cn.chinadaily.com.cn/a/202606/28/WS6a405d30a310d709c2fba7ac.html",
+          "title": "与你我有关！下月起，这些新规将施行",
+          "captured_at": "2026-06-30T09:00:00+08:00",
+          "note": "中国日报：7月1日起新规汇总，含电动车安全标准和快递包装标准"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/gn/2026/06-30/10649704.shtml",
+          "title": "7月起，这些新规将影响你我生活！",
+          "captured_at": "2026-06-30T09:30:00+08:00",
+          "note": "中新网6月30日：七月新规详解，社会救助法、超龄劳动者保障"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "光明网",
+          "url": "https://m.gmw.cn/2026-06/29/content_1304513220.htm",
+          "title": "7月起，这些新规将影响你我生活",
+          "captured_at": "2026-06-30T09:00:00+08:00",
+          "note": "光明网6月29日：七月新规预告，电动汽车、快递包装等新标准"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-06-30-sichuan-earthquake",
+      "headline": "🌏四川宜宾发生5.5级地震，应急响应已启动",
+      "summary": "6月29日0时12分，四川宜宾市高县发生5.5级地震，震源深度6千米。共有13人受轻伤，其中1人骨折住院，225人被紧急转移安置。中国地震局已启动三级应急响应，省地震局44人现场工作组赶赴震中协助处置，已记录85次余震均低于3级，社会秩序稳定。",
+      "category": "民生社会",
+      "heat_rank": 4,
+      "occurred_at": "2026-06-29T00:12:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "灾害类新闻，聚焦事件本身与应急响应、人员安置进展，不渲染伤亡数字，不消费悲情，保持克制平实"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260629/7d5fc5b0e30f45eab33191e24a9bba2b/c.html",
+          "title": "中国地震局对四川宜宾市高县地震启动三级应急响应",
+          "captured_at": "2026-06-30T06:00:00+08:00",
+          "note": "新华社：宜宾高县5.5级地震三级应急响应启动，工作组赶赴震中"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/newscenter/native/gd/20260629/t20260629_527680953.shtml",
+          "title": "中国地震局迅即开展四川宜宾市高县5.5级地震应急处置工作",
+          "captured_at": "2026-06-30T06:00:00+08:00",
+          "note": "央广网：地震局应急部署，省局44人工作组赶赴震中"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/06-29/10649074.shtml",
+          "title": "四川高县5.5级地震：13人轻伤 紧急避险转移和安置225人",
+          "captured_at": "2026-06-30T06:30:00+08:00",
+          "note": "中新网：伤亡与转移安置数据，余震85次均低于3.0级"
+        }
+      ],
+      "published": true
     },
     {
       "id": "2026-06-30-south-china-rainstorm",
-      "headline": "🌧️南方多省暴雨预警，今明两天防范强对流",
-      "summary": "中央气象台6月29日06时发布预警，安徽南部、江西北部、浙江西部、贵州、广西北部等地6月29日至7月2日将有大到暴雨，部分地区累积雨量100至180毫米。同期多地还将遭遇8级以上雷暴大风，局部阵风可达11级以上。气象部门提醒公众减少外出，远离山区沟谷等地质灾害易发区。",
+      "headline": "🌧️南方多省暴雨预警，江苏上海安徽等地防范强对流",
+      "summary": "中央气象台6月30日6时发布蓝色预警：江苏南部、上海、安徽南部、浙江、江西中北部、湖南中北部、贵州南部等地30日至7月1日将有大到暴雨，安徽南部、江西北部局部大暴雨100至220毫米，并伴有雷暴大风或冰雹，最大阵风11级以上。气象部门提醒减少外出，远离山区沟谷。",
       "category": "民生社会",
-      "heat_rank": 3,
+      "heat_rank": 5,
+      "occurred_at": "2026-06-30T06:00:00+08:00",
       "risk": {
         "level": "medium",
-        "note": "气象灾害预警类，聚焦预警信息和防范建议，不渲染伤亡，以官方气象数据为准"
+        "note": "气象灾害预警类，聚焦预警信息和防范建议，以官方气象数据为准，不渲染伤亡"
       },
       "sources": [
         {
@@ -123,63 +202,40 @@
           "outlet": "中央气象台",
           "url": "https://nmc.cn/publish/alarm.html",
           "title": "中央气象台预警信号",
-          "captured_at": "2026-06-29T08:00:00+08:00",
-          "note": "中央气象台6月29日06时：暴雨蓝色预警，安徽浙江贵州等多省受影响"
-        },
-        {
-          "tier": "major_media",
-          "outlet": "中国新闻网",
-          "url": "https://www.chinanews.com.cn/sh/2026/06-29/10649010.shtml",
-          "title": "云贵高原至江南中北部将有强降雨 内蒙古华北东北地区多雷阵雨",
-          "captured_at": "2026-06-30T06:00:00+08:00",
-          "note": "中新网6月29日：具体受影响省份和降雨量预测，强对流天气范围"
-        }
-      ],
-      "published": true,
-      "occurred_at": "2026-06-29T06:00:00+08:00"
-    },
-    {
-      "id": "2026-06-30-world-cup-round-of-32",
-      "headline": "⚽2026世界杯32强激战，今日三场焦点对决",
-      "summary": "2026年美加墨世界杯淘汰赛阶段正酣，32强对决自6月28日起陆续展开。今日（北京时间6月30日深夜）将上演科特迪瓦对阵挪威、法国对阵瑞典、墨西哥对阵厄瓜多尔三场较量。本届世界杯首次扩军至48支球队并增设32强轮次，球迷可通过央视体育频道观看直播，赛事将持续至7月19日决赛。",
-      "category": "国家高光",
-      "heat_rank": 4,
-      "risk": {
-        "level": "safe",
-        "note": "体育赛事，无涉政治或敏感内容，正面积极，调性轻松"
-      },
-      "sources": [
-        {
-          "tier": "state_media",
-          "outlet": "央视体育",
-          "url": "https://worldcup.cctv.com/2026/",
-          "title": "2026年美加墨世界杯——央视官方频道",
           "captured_at": "2026-06-30T08:00:00+08:00",
-          "note": "央视世界杯官方频道：32强赛程与直播安排"
+          "note": "中央气象台6月30日6时：暴雨蓝色预警，江苏上海安徽等多省受影响"
         },
         {
           "tier": "major_media",
-          "outlet": "半岛电视台",
-          "url": "https://www.aljazeera.com/sports/2026/6/28/which-teams-are-in-world-cup-last-32-knockouts-and-what-is-the-schedule",
-          "title": "Which teams are in World Cup last 32 knockouts and what is the schedule",
-          "captured_at": "2026-06-30T07:00:00+08:00",
-          "note": "Al Jazeera：32强对决名单与6月30日三场比赛时间地点"
+          "outlet": "杭州网",
+          "url": "https://news.hangzhou.com.cn/gnxw/content/2026-06/30/content_9247211.htm",
+          "title": "暴雨+强对流双预警 多地将有雷暴大风或冰雹天气",
+          "captured_at": "2026-06-30T09:00:00+08:00",
+          "note": "杭州网6月30日：6月30日暴雨预警范围及强对流风险区域"
         }
       ],
-      "published": true,
-      "occurred_at": "2026-06-30T22:00:00+08:00"
+      "published": true
     },
     {
       "id": "2026-06-30-railway-summer-transport",
-      "headline": "🚄全国铁路暑运明日启动，长三角日均旅客破300万",
-      "summary": "全国铁路暑期运输7月1日正式启动，62天历时至8月31日。长三角铁路日均旅客发送量将首次突破300万人次，预计发送1.9亿人次创历史新高。铁路部门将增开临时旅客列车，北京、上海、成都等城市为热门目的地，7月上旬及8月中下旬将是出行高峰期。",
+      "headline": "🚄全国铁路暑运明日启动，62天预计发送9.53亿人次",
+      "summary": "全国铁路暑期运输7月1日正式启动，历时62天至8月31日，全国预计发送旅客9.53亿人次。其中长三角铁路日均旅客发送量首次突破300万人次、62天共1.9亿人次创历史新高。同日铁路将实行新版列车运行图，增开暑期临时旅客列车，7月上旬及8月中下旬为出行高峰期。",
       "category": "民生社会",
-      "heat_rank": 5,
+      "heat_rank": 6,
+      "occurred_at": "2026-06-30T08:00:00+08:00",
       "risk": {
         "level": "safe",
         "note": "出行服务类信息，来源权威，无涉敏感内容"
       },
       "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260617/3cfa4154be374d9581b6815a24278e31/c.html",
+          "title": "全国铁路7月1日起实行新的列车运行图",
+          "captured_at": "2026-06-30T07:00:00+08:00",
+          "note": "新华社：7月1日新列车运行图实施，暑运同步启动"
+        },
         {
           "tier": "state_media",
           "outlet": "人民网",
@@ -189,33 +245,33 @@
           "note": "人民网上海：长三角铁路暑运数据，日均首破300万人次"
         },
         {
-          "tier": "state_media",
-          "outlet": "中国日报",
-          "url": "https://cn.chinadaily.com.cn/a/202606/24/WS6a3b9651a310d709c2fb9e2d.html",
-          "title": "优化铁路列车运行图，全力保障暑期出行与物资运输",
-          "captured_at": "2026-06-30T07:00:00+08:00",
-          "note": "中国日报：7月1日铁路新运行图实施，新高铁线路同步开通"
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://cj.sina.com.cn/articles/view/1749604875/6848da0b01901doti",
+          "title": "全国铁路暑运7月1日启动 62天预计发送旅客9.53亿人次",
+          "captured_at": "2026-06-30T07:30:00+08:00",
+          "note": "新浪财经：全国铁路暑运9.53亿人次数据"
         }
       ],
-      "published": true,
-      "occurred_at": "2026-06-30T08:00:00+08:00"
+      "published": true
     },
     {
       "id": "2026-06-30-medical-insurance-drugs",
       "headline": "💊8种谈判药品今日起退出医保，7月1日停止报销",
       "summary": "依据2025年医保药品目录调整，8种原谈判药品（含糖尿病用药贝那鲁肽注射液、丙型肝炎抗病毒药达诺瑞韦钠等）的6个月过渡期今日（6月30日）到期，7月1日起医保基金将停止报销。目前在用上述药品的患者，应尽快与主治医生沟通，制定替代用药方案，避免产生额外自费支出。",
       "category": "民生社会",
-      "heat_rank": 6,
+      "heat_rank": 7,
+      "occurred_at": "2026-06-30T00:00:00+08:00",
       "risk": {
         "level": "low",
-        "note": "患者用药信息类，来自官方医保部门，调性平实，无政治敏感，summary刻意回避政策等敏感词"
+        "note": "患者用药信息类，来自官方医保部门，调性平实，无政治敏感，summary回避政策等敏感词"
       },
       "sources": [
         {
           "tier": "official",
           "outlet": "国家医保局",
           "url": "https://www.nhsa.gov.cn/art/2025/12/7/art_53_18971.html",
-          "title": "国家医保局人力资源社会保障部关于印发国家基本医疗保险药品目录（2025年）的通知",
+          "title": "国家医保局关于国家基本医疗保险药品目录（2025年）的通知",
           "captured_at": "2026-06-30T07:30:00+08:00",
           "note": "国家医保局：2025年版医保药品目录，谈判药品过渡期截至6月30日"
         },
@@ -228,9 +284,8 @@
           "note": "中华网6月27日：8种具体药品名称、适应症及过渡期安排详情"
         }
       ],
-      "published": true,
-      "occurred_at": "2026-06-30T00:00:00+08:00"
+      "published": true
     }
   ],
-  "published_at": "2026-06-30T00:45:00+08:00"
+  "published_at": "2026-06-30T14:15:36+08:00"
 }
