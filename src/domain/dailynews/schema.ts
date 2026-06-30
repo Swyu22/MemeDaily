@@ -49,10 +49,18 @@ export const NewsTierSchema = z.enum([
   "aggregator", // 百度热搜新闻类/微博热搜要闻 — 仅佐证，不可单独成立
 ]);
 
+// Only http(s) links — z.string().url() alone accepts javascript:/data: URLs that would render as a
+// clickable <a href> (stored-XSS if a source url were ever poisoned). See memedaily/schema.ts (kept
+// decoupled, redeclared here). All real news sources are http(s).
+const HttpUrlSchema = z
+  .string()
+  .url()
+  .refine((u) => /^https?:\/\//i.test(u), { message: "source url 必须是 http(s) 链接" });
+
 const NewsSourceSchema = z.object({
   tier: NewsTierSchema,
   outlet: z.string().min(1).max(20).optional(), // 媒体名（新华社/央视/澎湃…）— shown in 来源媒体
-  url: z.string().url(),
+  url: HttpUrlSchema,
   title: z.string().min(1).max(120).optional(),
   captured_at: z.string().datetime({ offset: true }),
   note: z.string().min(2).max(160),

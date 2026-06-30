@@ -96,9 +96,9 @@
   `type` 取枚举（热点事件梗/短视频梗/生活方式梗/二创梗/句式梗/口头禅梗/情绪梗/职场梗/其他）。
 - `summary` 一句话；`origin` 来源与已验证信息（只写公开源能确认的，不靠记忆）；`usage` 典型用法 /
   传播场景；`fun_point` 有趣点；`why_spread` 为何放大，**必须分「已验证：… / 推测：…」**。
-- `lifecycle` **唯一标准 = 天数**：`declining`（已过气）**只有当该梗第一次被收录至今 > 10 天**才标
+- `lifecycle` **唯一标准 = 天数**：`declining`（已过气）**只有当该梗第一次被收录至今 > 5 天**才标
   （从最近 `data/daily/*.json` 历史按梗名 / 别名查首次日期）；否则**至少 `rising`（还能上车）**，
-  明显大热标 `peak`（正热）。**代码门禁强制此条：把不满 10 天的梗标 declining 会让 `npm run validate`
+  明显大热标 `peak`（正热）。**代码门禁强制此条：把不满 5 天的梗标 declining 会让 `npm run validate`
   失败、无法提交。**
 - `brand_usage` 借用方向、`risk`{level,note}、`score`(0–100, 选填)、`days_on_list`（命中近 14 天历史
   则设连续天数，别当全新发）——这些写好但页面不渲染（内部参考）。

@@ -45,11 +45,19 @@ export const EvidenceRoleSchema = z.enum([
   "cross_platform",
 ]);
 
+// Only http(s) links. z.string().url() alone ACCEPTS javascript:/data:/vbscript: URLs, which
+// would render as a clickable <a href> on the static page (stored-XSS if a source url were ever
+// poisoned). Constraining the scheme rejects them at validation + build time. All real sources are http(s).
+const HttpUrlSchema = z
+  .string()
+  .url()
+  .refine((u) => /^https?:\/\//i.test(u), { message: "source url 必须是 http(s) 链接" });
+
 const SourceSchema = z.object({
   tier: EvidenceTierSchema,
   evidence_role: EvidenceRoleSchema,
   platform: PlatformSchema,
-  url: z.string().url(),
+  url: HttpUrlSchema,
   title: z.string().min(1).max(120).optional(),
   captured_at: z.string().datetime({ offset: true }),
   note: z.string().min(2).max(160),

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { NewsEnvelope, NewsItem, NewsTier } from "./schema";
+import { NewsItemSchema } from "./schema";
 import {
   envelopeIssueSummary,
   hasPublishableEvidence,
@@ -131,6 +132,17 @@ describe("headlineCasualtyIssues", () => {
   it("does NOT flag a neutral people-count headline", () => {
     const ok = { ...baseItem, id: "2026-06-29-run", headline: "🏃5000人参与城市马拉松", summary: "清晨开跑，沿途设置补给与医疗保障点位，市民有序参与。" };
     expect(headlineCasualtyIssues(envelopeWith([ok], "published"))).toHaveLength(0);
+  });
+});
+
+describe("NewsItemSchema source url hardening (no javascript:/data:)", () => {
+  it("rejects a non-http(s) source url", () => {
+    const bad = { ...baseItem, sources: [source("state_media", "javascript:alert(1)")] };
+    expect(NewsItemSchema.safeParse(bad).success).toBe(false);
+  });
+
+  it("accepts an https source url", () => {
+    expect(NewsItemSchema.safeParse(baseItem).success).toBe(true);
   });
 });
 

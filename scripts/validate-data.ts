@@ -58,12 +58,12 @@ if (failureCount === 0) {
   const lifecycle = lifecycleIssues(envelopes);
   if (lifecycle.length > 0) {
     failureCount += lifecycle.length;
-    console.error("[validate-data] lifecycle (10-day declining) issues");
+    console.error("[validate-data] lifecycle (5-day declining) issues");
     for (const issue of lifecycle) {
       console.error(`  - ${issue}`);
     }
   } else {
-    console.log("[validate-data] ok lifecycle (10-day declining rule)");
+    console.log("[validate-data] ok lifecycle (5-day declining rule)");
   }
 }
 

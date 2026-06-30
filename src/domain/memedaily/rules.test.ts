@@ -253,6 +253,20 @@ describe("MemeDaily lifecycle 5-day rule", () => {
   });
 });
 
+describe("MemeItemSchema source url hardening (no javascript:/data:)", () => {
+  it("rejects a non-http(s) source url", () => {
+    const bad = {
+      ...baseItem,
+      sources: [{ ...baseItem.sources[0], url: "javascript:alert(1)" }, baseItem.sources[1]],
+    };
+    expect(MemeItemSchema.safeParse(bad).success).toBe(false);
+  });
+
+  it("accepts http(s) source urls", () => {
+    expect(MemeItemSchema.safeParse(baseItem).success).toBe(true);
+  });
+});
+
 describe("MemeDaily schema gates", () => {
   it("rejects a title longer than 48 chars", () => {
     const result = MemeItemSchema.safeParse({ ...baseItem, title: "梗".repeat(49) });

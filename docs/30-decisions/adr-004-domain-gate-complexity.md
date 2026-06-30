@@ -12,7 +12,7 @@ thresholds:
 
 - `lifecycleIssues` — two passes over `envelopes → visibleItems → itemNames` (a
   for→for→for shape) reaches nesting depth 4 to build a first-seen map and then flag
-  `declining` items younger than 10 days.
+  `declining` items younger than 5 days.
 - `crossDayIssues` — same envelope→item→name iteration to detect cross-day repeats
   without `days_on_list >= 2`.
 - `envelopeIssueSummary` — sequential independent gates (zero-items, per-item evidence,
