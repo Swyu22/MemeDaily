@@ -31,7 +31,7 @@ jobs:
         run: bash scripts/checks/check-secrets.sh --all
 
       # —— 应用架构层检查 ——
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: npm
