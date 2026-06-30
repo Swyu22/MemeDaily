@@ -9,12 +9,15 @@
  *   1. 今日运行 status bar (tab-aware)
  *   2. 大标题 + 副标题 (今日热梗 / 今日日报 — FIXED title even when a feed is skipped/empty)
  *   3. 排序/每日目标/证据 toolbar (shown on BOTH tabs so the chrome is unified)
- *   4. folder-style tabs [热梗 | 日报] (brand-yellow underline on the active tab)
+ *   4. folder-style tabs [热梗 | 日报] (brand-yellow underline on the active tab) — STICKY: they
+ *      pin just under the site header while scrolling and release when scrolled back up, so the
+ *      reader can quick-switch feeds mid-scroll. Switching while scrolled past snaps the strip back
+ *      to its sticky line so the newly-selected feed starts right below the tabs.
  *   5. the tab panel, flush against the tab strip (no gap)
  * The sort state (热度值/新鲜值) lives here and drives BOTH feeds: 热梗 by heat/freshness lifecycle,
  * 日报 by heat_rank / latest source time (新闻越靠近现在越靠前). Default 热度值.
  */
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Activity } from "lucide-react";
 import {
   feedSortLabels,
@@ -52,6 +55,38 @@ export function HomeTabs({
 }: HomeTabsProps) {
   const [tab, setTab] = useState<Tab>("memes"); // 热梗 default; v1 keeps tab state client-only
   const [sort, setSort] = useState<FeedSort>("heat");
+  // A zero-height, NON-sticky anchor rendered just above the tab strip. Reading its position gives
+  // the strip's true natural document offset — the tabbar itself can't be used because a stuck
+  // sticky element reports its pinned position, not its flow position.
+  const tabsTopRef = useRef<HTMLDivElement>(null);
+
+  // Keep --header-h in sync with the real (sticky) site header height so the tab strip pins exactly
+  // below it on every breakpoint (the mobile 2-row header is taller than desktop's). CSS has a 58px
+  // fallback for first paint / no-JS.
+  useEffect(() => {
+    const root = document.documentElement;
+    const sync = () => {
+      const header = document.querySelector(".topbar");
+      if (header) {
+        root.style.setProperty("--header-h", `${Math.round(header.getBoundingClientRect().height)}px`);
+      }
+    };
+    sync();
+    window.addEventListener("resize", sync);
+    return () => window.removeEventListener("resize", sync);
+  }, []);
+
+  // Switch tabs; if the strip is already pinned (reader scrolled into the content), snap back to the
+  // sticky line so the newly-selected feed starts right below the tabs instead of mid-scroll.
+  const switchTab = (next: Tab) => {
+    setTab(next);
+    const anchor = tabsTopRef.current;
+    if (!anchor) return;
+    const headerH = document.querySelector(".topbar")?.getBoundingClientRect().height ?? 0;
+    const naturalTop = anchor.getBoundingClientRect().top + window.scrollY;
+    const target = naturalTop - headerH;
+    if (window.scrollY > target) window.scrollTo({ top: Math.max(0, target) });
+  };
 
   const status = tab === "memes" ? memeStatus : newsStatus;
 
@@ -120,13 +155,14 @@ export function HomeTabs({
         <span className="mini">公开网页证据</span>
       </div>
 
+      <div ref={tabsTopRef} aria-hidden="true" />
       <div className="tabbar" role="tablist" aria-label="内容分栏">
         <button
           type="button"
           role="tab"
           aria-selected={tab === "memes"}
           className={`tab${tab === "memes" ? " active" : ""}`}
-          onClick={() => setTab("memes")}
+          onClick={() => switchTab("memes")}
         >
           热梗
         </button>
@@ -135,7 +171,7 @@ export function HomeTabs({
           role="tab"
           aria-selected={tab === "news"}
           className={`tab${tab === "news" ? " active" : ""}`}
-          onClick={() => setTab("news")}
+          onClick={() => switchTab("news")}
         >
           日报
         </button>
