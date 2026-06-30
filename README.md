@@ -1,66 +1,67 @@
-# MemeDaily
+# MemeDaily / 热梗日报
 
-MemeDaily is an internal-facing Chinese internet meme intelligence desk for content,
-marketing, and communications teams. It publishes a daily static brief built from
-publicly accessible web evidence, with conservative safety gates and permanent archives.
+A Chinese-internet daily desk for content, marketing, and communications teams. It publishes
+a daily static site built from publicly accessible web evidence, with conservative safety
+gates and permanent archives. The site has **two feeds**, switchable via the home tabs:
+
+- **热梗 (memes)** — genuinely spreading, reusable 网络流行语 / 语言梗 (curated for content &
+  advertising value). Data: `data/daily/YYYY-MM-DD.json`.
+- **日报 (news)** — up to 10 heat-ranked 民生 news items a day (close to everyday life,
+  restrained news tone). Data: `data/daily-news/YYYY-MM-DD.json`.
 
 ## Current Architecture
 
 - **Collaboration OS:** this repo uses the Ai-Workflow-Kit governance layer. Read
   `AGENTS.md` first, then `.cloud.md`, then the active plan.
-- **App layer:** a static web product published with GitHub Pages.
-- **Data source:** one JSON file per day under `data/daily/YYYY-MM-DD.json`.
-- **Automation model:** GitHub Actions is the live publisher — `daily-publish.yml`
-  (`anthropics/claude-code-action` on a Claude subscription token) generates, validates,
-  commits, and pushes the daily file on a cloud cron (~07:00 Asia/Shanghai); `daily-catchup`,
-  `daily-fallback`, and `daily-monitor` add re-publish / skip / alert resilience. The local
-  Codex App run is now an optional manual fallback only.
-- **Client freshness:** an inline boot script in `layout.tsx` `<head>` (chunk-independent, so
-  it runs even when hashed CSS/JS 404) self-heals an unstyled render from a stale cached HTML —
-  if the layout-critical `/_next/static` stylesheet has no rules, it reloads once (bounded,
-  cache-busted) to fetch fresh HTML — and registers a hand-written network-first service worker
-  (`public/sw.js`: online opens always fetch fresh HTML; immutable assets cached). `sw.js`
-  hardcodes the basePath scope (`/MemeDaily/`), so its prefixes must be updated together with
-  `next.config.mjs` basePath on domain re-attach (the boot script derives basePath, so it does not).
-- **Collection policy:** public web intelligence only. No login cookies, no private
-  platform scraping, no media archiving, no comment-text dumps.
+- **App layer:** a static web product (Next.js static export) published with GitHub Pages.
+  One JSON file per day per feed under `data/daily/` (memes) and `data/daily-news/` (news).
+- **Automation model:** GitHub Actions is the live publisher. Two confined two-job pipelines —
+  `daily-publish.yml` (memes, ~07:00 Asia/Shanghai) and `daily-news-publish.yml` (news,
+  ~06:00) — each runs `anthropics/claude-code-action` (SHA-pinned, on a Claude subscription
+  token) in a **read-only `agent` job** that only uploads the day's JSON artifact, then a
+  separate **`publish` job** checks out trusted repo code, validates, commits, pushes, and
+  deploys. The reliable primary trigger for each is an external cron-job.org job (the GitHub
+  cron is a backup); `daily-{news-}catchup` / `fallback` / `monitor` add re-publish / skip /
+  alert resilience. A local Codex run can take over both feeds — see
+  `ai/prompts/CODEX_FULL_HANDOFF.md`.
+- **Client freshness:** an inline boot script in `layout.tsx` `<head>` (chunk-independent,
+  runs even if hashed JS 404s) self-heals an unstyled render and registers a hand-written
+  **network-first** service worker (`public/sw.js`: online opens always fetch fresh HTML;
+  immutable hashed assets cached). The app CSS is **inlined** into each page's `<head>`
+  (`experimental.inlineCss`), so it ships with the HTML and can't independently fail to load.
+  `sw.js` **derives** its scope/prefixes from `self.registration.scope`, so a domain
+  detach/re-attach (a `basePath` change) needs NO `sw.js` edit.
+- **Collection policy:** public web intelligence only. No login cookies, no private platform
+  scraping, no media archiving, no comment-text dumps. No paid model API in the product itself.
 
 ## Important Paths
 
 | Path | Purpose |
 | --- | --- |
-| `.cloud.md` | Current project state and next actions |
-| `docs/00-context/PROJECT_MAP.md` | Module map, constraints, and reading path |
-| `docs/10-spec/` | Product and data-contract specs |
-| `docs/20-plan/current-iteration.md` | Active implementation checklist |
+| `.cloud.md` | Current project state and next actions (SSOT — read first) |
+| `AGENTS.md` | Cross-model canon (reading order, rules, tool adaptation) |
+| `ai/prompts/CODEX_FULL_HANDOFF.md` | Self-contained prompt for Codex to take over both feeds |
+| `ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md` / `DAILYNEWS_DAILY_AUTOMATION.md` | Living per-feed rules |
+| `src/domain/{memedaily,dailynews}/schema.ts` | Zod data contracts |
+| `docs/00-context/PROJECT_MAP.md` | Module map, constraints, reading path |
 | `docs/30-decisions/` | Architecture decision records |
-| `.github/workflows/` | CI + daily publish / catch-up / fallback / monitor automation |
-| `ai/prompts/` | Codex/agent run prompts and routines |
-| `ai/sessions/` | Session logs and handoff notes |
-| `产品方案.md` | Original Chinese product plan |
-| `docs/project/` | Claude Design handoff prototype |
+| `.github/workflows/` | CI + per-feed publish / catch-up / fallback / monitor automation |
+| `产品方案.md` | Original Chinese product plan (memes feed) |
 
 ## Local Workflow
 
 ```bash
 git config core.hooksPath .githooks
-bash scripts/checks/check-state-fresh.sh
-bash scripts/checks/check-file-size.sh --all
-```
-
-Standard local pre-push check (mirrors CI):
-
-```bash
 npm install
-npm run check   # validate + lint + typecheck + test + build
+npm run check   # validate + validate:news + lint + typecheck + test + build
 ```
 
 ## Publishing Target
 
-The site is currently live at `https://swyu22.github.io/MemeDaily/` with `next.config.mjs`
-basePath `"/MemeDaily"`, because the custom domain `memedaily.fun` is **detached** for ICP
-filing (备案). Re-attaching the domain flips basePath back to `""` and must update
-`public/sw.js` scope prefixes and `layout.tsx` metadata in lockstep (see the re-attach
-runbook in `.cloud.md`). On GitHub Free, the repository must remain public for Pages.
-Do not store secrets, private company information, media assets, platform cookies,
-or unpublished source material in this repo.
+The site is **live at `https://memedaily.fun`** (custom domain re-attached 2026-06-29 after
+ICP 备案 approval; `next.config.mjs` basePath `""`). To detach again if ever needed, flip
+basePath to `"/MemeDaily"`, point `layout.tsx` metadata back at the github.io origin, remove
+`public/CNAME`, and disable the DNS records — `sw.js` self-derives, so it needs no edit (see
+the re-attach runbook in `.cloud.md`). On GitHub Free the repository must remain public for
+Pages. Do not store secrets, private company information, media assets, platform cookies, or
+unpublished source material in this repo.
