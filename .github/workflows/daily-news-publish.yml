@@ -16,7 +16,11 @@ name: daily-news-publish
 
 on:
   schedule:
-    - cron: "0 22 * * *" # 22:00 UTC = 06:00 Asia/Shanghai (news runs an hour BEFORE the meme job's 07:00)
+    # 22:00 UTC = 06:00 Asia/Shanghai (an hour BEFORE the meme job's 07:00). Like the meme job, the
+    # PRIMARY reliable trigger should be an external cron-job.org @ 06:00 (cron-job.org -> GitHub
+    # workflow_dispatch API with a minimal actions:write PAT); this GitHub schedule is only the
+    # backup (GitHub can silently drop scheduled events), and daily-news-catchup retries hourly after.
+    - cron: "0 22 * * *"
   workflow_dispatch:
     inputs:
       force:

@@ -8,9 +8,9 @@ name: daily-news-catchup
 
 on:
   schedule:
-    # Every hour at :15, 00:15–05:15 UTC = 08:15–13:15 Asia/Shanghai (staggered off the meme
-    # catchup's :00, and after the 06:00 news publish + its ~30min research window).
-    - cron: "15 0,1,2,3,4,5 * * *"
+    # Every hour at :15, 23:15–04:15 UTC = 07:15–12:15 Asia/Shanghai — starts 1h after the 06:00
+    # news publish (mirrors the meme catchup's 1h-after-07:00 window), staggered :15 off it.
+    - cron: "15 23,0,1,2,3,4 * * *"
   workflow_dispatch:
 
 permissions:
