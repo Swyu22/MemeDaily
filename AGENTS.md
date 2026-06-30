@@ -49,6 +49,8 @@
 | 全局地图 / 依赖规则 | `docs/00-context/PROJECT_MAP.md` |
 | 状态字段语义 | `docs/00-context/STATE_SCHEMA.md` |
 | 当前状态（SSOT） | `.cloud.md` |
+| **Codex 接手每日发布（双线，自包含）** | **`ai/prompts/CODEX_FULL_HANDOFF.md`** |
+| 每日自动化活规则 | `ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md`（热梗）/ `ai/prompts/DAILYNEWS_DAILY_AUTOMATION.md`（日报） |
 | 当前计划 | `docs/20-plan/current-iteration.md` |
 | 规格 | `docs/10-spec/` |
 | 决策记录 | `docs/30-decisions/` |
@@ -57,3 +59,8 @@
 ## 8. 工具适配
 - **Claude Code**：slash 命令 `/kickoff`（新项目共创）`/start` `/handoff` `/sync` `/close`；子代理 `context-loader` `session-closer`；hooks 见 `.claude/settings.json`。
 - **Codex / 其他**：本文即入口；`ai/prompts/*` 作为可复制提示词；`scripts/checks/*` 作为自检。
+  - **接手每日发布 → 先读 `ai/prompts/CODEX_FULL_HANDOFF.md`**：这是 Codex 完整接手「每日热梗 +
+    每日日报（新闻）」双线的**自包含提示词**，整段复制即可作为 Codex 自动化任务的 prompt——含两条线各自的
+    选题研究范围 / 红线 / 输出契约、收集→校验→推送→上线的完整技术管线、与云端自动发布的去重协调、一次性设置。
+    其中的「活规则」以 `ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md`（热梗）与
+    `ai/prompts/DAILYNEWS_DAILY_AUTOMATION.md`（日报）为准。
