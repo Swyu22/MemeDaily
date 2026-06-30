@@ -3,28 +3,29 @@
   "policy_version": "1.0",
   "rubric_version": "1.0",
   "date": "2026-06-30",
-  "generated_at": "2026-06-30T10:45:00+08:00",
+  "generated_at": "2026-06-30T15:30:00+08:00",
   "status": "partial",
   "run_report": {
-    "candidates_scanned": 62,
-    "published": 4,
+    "candidates_scanned": 85,
+    "published": 5,
     "dropped_safety": {
       "政治时政": 5,
-      "纯体育赛事结果": 14,
-      "纯新闻事件无梗壳": 16,
-      "涉及具体品牌公司": 7,
-      "涉及具体人物无通用句式": 7
+      "纯体育赛事结果": 20,
+      "涉及具体人物无通用句式": 12,
+      "涉及具体品牌公司": 8,
+      "纯新闻事件无梗壳": 15,
+      "涉及具体综艺节目": 2
     },
-    "dropped_low_confidence": 5,
+    "dropped_low_confidence": 7,
     "sources": [
       "weibo",
       "other"
     ],
     "evidence_summary": {
-      "candidates_with_urls": 19,
+      "candidates_with_urls": 22,
       "platform_public_sources": 0,
-      "aggregator_sources": 4,
-      "search_media_sources": 7,
+      "aggregator_sources": 5,
+      "search_media_sources": 9,
       "spillover_sources": 0,
       "dropped_insufficient_evidence": 5
     }
@@ -246,7 +247,63 @@
           "note": "新浪收录网友减量经验分享：三四天喝一次才不会有瘾，以及「现在咖啡量反而越来越多」式自嘲，确认「咖啡戒断」句式在评论区的接龙扩散路径"
         }
       ]
+    },
+    {
+      "id": "2026-06-30-miansitang",
+      "title": "🍜 一直以为方便面汤是要倒掉的",
+      "aliases": [
+        "泡面汤该不该倒",
+        "方便面汤倒掉派",
+        "一直以为X是要Y的",
+        "泡面汤南北大战"
+      ],
+      "platform": [
+        "weibo"
+      ],
+      "type": "生活方式梗",
+      "summary": "「一直以为方便面汤是要倒掉的」——今日微博热搜话题，南北两派大战：南方人从小被教「汤有添加剂要倒掉」，北方人视汤为精华一滴不剩；揭开一条「成长中的地域性误导」，衍生出「一直以为[X]是要[Y]的」通用揭穿句式。",
+      "origin": "今日微博热搜话题「#一直以为方便面汤是要倒掉的#」，今日热榜确认在榜（约4万热度）。网友分享：从小被父母告知「泡面汤太咸太油有添加剂要倒掉」，长大后发现有人视其为精华从不丢弃；触发南北饮食哲学大辩论——广东人「倒掉保健康」，北方人「汤才是灵魂」；延伸到各类「一直以为XX是要XX的」家庭错误教育大盘点。新浪收录多条相关讨论帖。",
+      "usage": "「一直以为[X]是要[Y]的」——任何成长中被教成习惯却非共识的揭露：一直以为面包边是要切掉的；一直以为吃饭后要马上刷碗的；一直以为某件事是必须这样做的；反向：「原来不是所有人都[X]啊」；内容话题：「你从小被教错了哪件事」；品牌：「留住所有精华，别随手倒掉」；南北文化差异系列内容天然入口。",
+      "fun_point": "方便面的汤成了南北文化暗战的新战场。被从小教导「倒掉保健康」的那一批人，和把汤喝到见底的那一批人，没有一方会承认自己错了——因为他们都是对的（在自己的地域文化里）。「一直以为」的句式是成年后发现「原来我妈教的只是她的偏好、不是宇宙真理」的温柔震惊。",
+      "why_spread": "已验证：微博热搜话题今日在榜（tophub聚合确认），新浪收录多条「#一直以为方便面汤是要倒掉的#」相关讨论帖；推测：方便面是跨代际共同记忆，南北饮食差异触发地域站队，「一直以为」模板零门槛可套用到任何家庭教养偏好，揭穿「我妈说的不是真理」话题分享欲强。",
+      "lifecycle": "rising",
+      "brand_usage": "方便食品/食品类：「不是所有精华都该倒掉」创意角度；内容账号可做「你家一直以为X是要Y的」话题接龙，互动门槛极低；地域差异内容天然入口（南北饮食文化对比）；亲子/教育类：「教育观念的代际传递」新视角切入。",
+      "risk": {
+        "level": "safe",
+        "note": "生活习惯梗，无争议；南北差异内容保持中立好笑，不踩「哪个地域更健康/正确」的评判立场。"
+      },
+      "score": 76,
+      "days_on_list": 1,
+      "published": true,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://tophub.today/n/KqndgxeLl9",
+          "title": "今日热榜·微博热搜",
+          "captured_at": "2026-06-30T12:00:00+08:00",
+          "note": "今日热榜微博热搜「一直以为方便面汤是要倒掉的」今日在榜（约4万热度），南北泡面汤大辩论话题确认在榜"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "weibo",
+          "url": "https://www.sina.cn/news/detail/5315227709347782.html",
+          "captured_at": "2026-06-30T12:10:00+08:00",
+          "note": "新浪收录「#一直以为方便面汤是要倒掉的#」话题讨论帖：「感觉汤不好喝肯定要倒」——南方倒汤派典型发言，梗的传播起点"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.sina.cn/news/detail/5315222881700151.html",
+          "title": "方便面汤别倒掉",
+          "captured_at": "2026-06-30T12:15:00+08:00",
+          "note": "新浪收录「方便面汤别倒掉」北方汤是精华派观点：「吃泡面先吃面最后把汤底喝得一干二净」——两派对立确认话题的南北站队属性"
+        }
+      ]
     }
   ],
-  "published_at": "2026-06-30T07:24:03+08:00"
+  "published_at": "2026-06-30T08:10:31+08:00"
 }
