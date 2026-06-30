@@ -52,7 +52,7 @@ jobs:
         if: env.HAS_OAUTH != 'true'
         run: echo "::warning::CLAUDE_CODE_OAUTH_TOKEN not set — add it as a repo secret to enable cloud publishing. Skipping this run."
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         if: env.HAS_OAUTH == 'true'
         with:
           persist-credentials: false # defense-in-depth; this job has no write scope anyway
@@ -157,7 +157,7 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       DATE: ${{ needs.agent.outputs.date }}
     steps:
-      - uses: actions/checkout@v4 # TRUSTED repo code — NOT the agent's tree
+      - uses: actions/checkout@v7 # TRUSTED repo code — NOT the agent's tree
 
       - uses: actions/setup-node@v4
         with:
