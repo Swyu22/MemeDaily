@@ -1,32 +1,212 @@
 {
   "schema_version": "1.0",
-  "policy_version": "1.0",
-  "rubric_version": "1.0",
+  "policy_version": "v2-民生",
+  "rubric_version": "v2-2026",
   "date": "2026-07-02",
-  "generated_at": "2026-07-01T16:01:19.664+00:00",
-  "published_at": "2026-07-02T00:01:19+08:00",
-  "status": "skipped",
+  "generated_at": "2026-07-02T10:00:00+08:00",
+  "status": "published",
   "run_report": {
-    "candidates_scanned": 0,
-    "published": 0,
+    "candidates_scanned": 12,
+    "published": 5,
     "dropped_safety": {
-      "政治地缘": 0,
-      "灾难事故": 0,
-      "明星丑闻": 0,
-      "争议对立": 0,
-      "竞品互撕": 0,
-      "未经证实": 0
+      "政治地缘": 2,
+      "政府部署色彩过浓": 1
     },
-    "dropped_low_confidence": 0,
-    "sources": [],
+    "dropped_low_confidence": 2,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
     "evidence_summary": {
-      "candidates_with_urls": 0,
-      "official_sources": 0,
-      "state_media_sources": 0,
-      "major_media_sources": 0,
-      "aggregator_sources": 0,
-      "dropped_insufficient_evidence": 0
+      "candidates_with_urls": 10,
+      "official_sources": 5,
+      "state_media_sources": 2,
+      "major_media_sources": 9,
+      "aggregator_sources": 3,
+      "dropped_insufficient_evidence": 2
     }
   },
-  "items": []
+  "items": [
+    {
+      "id": "2026-07-02-gaokao-zytb-deadline",
+      "headline": "📚高考志愿填报今日多省截止，浙江福建上海等地最后报名",
+      "summary": "7月2日是2026年全国多地高考志愿填报截止节点：福建本科批、浙江综合评价等多批次于今日17-18时截止；上海本科批次每日8:00-17:00填报至今日。江苏、河北本科志愿亦同日收官。各省考试院提醒考生妥善保管账号，防止志愿遭恶意篡改。",
+      "category": "民生社会",
+      "heat_rank": 1,
+      "occurred_at": "2026-07-02T08:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "考生服务类信息，来源权威，无政治敏感内容，调性平实"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260623/1184aff4c4b54ac8a1b3b25d9d5836fd/c.html",
+          "title": "2026高考成绩今起陆续可查，多地公布志愿填报安排",
+          "captured_at": "2026-07-02T08:00:00+08:00",
+          "note": "新华社：2026年高考志愿填报时间汇总，多省7月2日为截止日，含福建、浙江、上海等"
+        },
+        {
+          "tier": "official",
+          "outlet": "阳光高考",
+          "url": "https://gaokao.chsi.com.cn/z/gkbmfslq/zytb.jsp",
+          "title": "2026年高考志愿填报时间",
+          "captured_at": "2026-07-02T08:30:00+08:00",
+          "note": "教育部学信网阳光高考平台：2026年全国各省高考志愿填报时间，7月2日为多省截止日"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-02-worldcup-england-dr-congo",
+      "headline": "⚽哈里·凯恩梅开二度，英格兰2-1逆转刚果晋级世界杯16强",
+      "summary": "北京时间7月2日凌晨，2026世界杯1/16决赛，英格兰2-1击败刚果民主共和国晋级。刚果7分钟取得领先，凯恩分别于75分钟和86分钟两度破门完成逆转，英格兰将在下一轮对阵墨西哥。全场英格兰在落后情况下沉着反击，凯恩的双响是本届杯赛迄今最关键表现之一。",
+      "category": "国家高光",
+      "heat_rank": 2,
+      "occurred_at": "2026-07-02T04:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事报道，来源权威，无政治敏感内容，结果经官方与多家主流媒体核实"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "英格兰足球协会",
+          "url": "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/World-Cup/england-v-dr-congo-fifa-world-cup-wednesday-1-july-2026-match-centre",
+          "title": "Match Report: England 2-1 DR Congo, FIFA World Cup, Wednesday 1 July 2026",
+          "captured_at": "2026-07-02T06:00:00+08:00",
+          "note": "英足总官网赛报：英格兰2-1刚果，凯恩75'与86'两度进球完成逆转，晋级后将战墨西哥"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视体育",
+          "url": "https://worldcup.cctv.com/2026/schedule/index.shtml",
+          "title": "2026年美加墨世界杯赛程",
+          "captured_at": "2026-07-02T08:00:00+08:00",
+          "note": "央视世界杯频道：1/16决赛英格兰对刚果民主共和国，英格兰2-1晋级确认"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "ESPN",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket",
+          "title": "2026 FIFA World Cup match schedule: Fixtures, results",
+          "captured_at": "2026-07-02T06:30:00+08:00",
+          "note": "ESPN世界杯赛程结果页：英格兰2-1刚果民主共和国，凯恩双响逆转"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-02-southern-heavy-rain",
+      "headline": "🌧️强降雨今明继续覆盖南方多省，江淮至华南暴雨预警持续",
+      "summary": "中央气象台预报，7月2日至3日，云南贵州至长江中下游有强降雨，安徽南部、江西北部、浙江西部等地累计雨量可达100至180毫米，局地超200毫米，伴有雷暴大风。华南沿海风雨明显。气象台继续发布暴雨黄色预警，提醒公众减少外出、远离山谷沟道，注意洪涝风险。",
+      "category": "民生社会",
+      "heat_rank": 3,
+      "occurred_at": "2026-07-02T06:00:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "气象灾害预警类报道，来源官方权威，聚焦预警信息与防范建议，不渲染伤亡，不消费悲情"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "https://www.nmc.cn/publish/alarm.html",
+          "title": "中央气象台预警信号",
+          "captured_at": "2026-07-02T07:00:00+08:00",
+          "note": "中央气象台：7月2至3日南方多省暴雨黄色预警持续，江淮及华南多地强降雨"
+        },
+        {
+          "tier": "official",
+          "outlet": "中国气象局",
+          "url": "https://www.nmc.cn/publish/bulletin/mid-range.htm",
+          "title": "天气预报_中期天气",
+          "captured_at": "2026-07-02T07:00:00+08:00",
+          "note": "中国气象局中期预报：7月1-3日云贵至长江中下游强降雨，安徽南部等局地雨量超200毫米"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-02-airline-fuel-surcharge-cut",
+      "headline": "✈️国内航线燃油附加费7月5日起大降，长途单程最多省50元",
+      "summary": "7月5日起，国内航线燃油附加费下调：800公里以下航段每人次50元（降30元），800公里以上100元（降50元）。叠加暑运期间机票整体处于近年低位，7月首周仍有大量300元内裸票可选。去哪儿数据显示7月4日将迎暑运首轮客流小高峰，此次降费对出行旅客是实惠利好。",
+      "category": "民生社会",
+      "heat_rank": 4,
+      "occurred_at": "2026-07-01T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "民航服务收费调整，来源权威，数据清晰，与出行民生直接相关，无涉敏感内容"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "21世纪经济报道",
+          "url": "https://m.21jingji.com/article/20260701/herald/3a1d21720a41da1816dc54b858576ecc.html",
+          "title": "7月5日起国内航线燃油附加费下调，多家航司加密暑运航线",
+          "captured_at": "2026-07-02T08:00:00+08:00",
+          "note": "21财经：7月5日起燃油附加费大幅下调，800公里以上单程减50元，多家航司增班"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1782898487129701.html",
+          "title": "7月5日起，国内航线燃油附加费大幅下调",
+          "captured_at": "2026-07-02T08:00:00+08:00",
+          "note": "新京报：800公里以下降至50元、以上降至100元，与5月高位相比降幅显著"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "证券时报",
+          "url": "https://www.stcn.com/article/detail/3992763.html",
+          "title": "国内航线燃油附加费7月5日起大幅下调",
+          "captured_at": "2026-07-02T08:00:00+08:00",
+          "note": "证券时报：燃油附加费7月5日起再次下调，继6月5日下调后再度让利旅客"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-02-robot-school-hangzhou",
+      "headline": "🤖全国首个机器人学校杭州余杭开学，30台机器人领证上岗",
+      "summary": "全国首个机器人学校6月底在杭州余杭正式开学，由浙大机器人研究院联合建立。首批30台来自工业、服务、安保等领域的机器人完成入学，将接受分科培训并通过技能考核后方可「领证上岗」。学校借鉴人类职业教育体系，探索解决机器人从实验室走向实际应用的瓶颈。",
+      "category": "科技AI",
+      "heat_rank": 5,
+      "occurred_at": "2026-06-30T09:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "科技教育创新报道，来源权威，调性活泼平实，无涉政治敏感，无夸大技术能力"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_33484243",
+          "title": "全国首个机器人学校，在杭州余杭开学",
+          "captured_at": "2026-07-01T10:00:00+08:00",
+          "note": "澎湃新闻：全国首个机器人学校杭州余杭开学，30台机器人入学接受职业培训"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/edu/2026/07-01/10650654.shtml",
+          "title": "从「背答案」到「会解题」 国内首个机器人学校开学了",
+          "captured_at": "2026-07-01T10:00:00+08:00",
+          "note": "中新网：机器人学校借鉴人类职教体系进行分科培养，解决机器人实际落地难题"
+        },
+        {
+          "tier": "official",
+          "outlet": "杭州政务网",
+          "url": "https://ori.hangzhou.com.cn/ornews/content/2026-06/30/content_9247527.htm",
+          "title": "全国首个！杭州机器人学校正式开学",
+          "captured_at": "2026-06-30T12:00:00+08:00",
+          "note": "杭州政务信息网：杭州机器人学校余杭正式开学，首批30台机器人入学"
+        }
+      ],
+      "published": true
+    }
+  ],
+  "published_at": "2026-07-02T06:15:29+08:00"
 }
