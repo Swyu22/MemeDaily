@@ -1,32 +1,245 @@
 {
   "schema_version": "1.0",
-  "policy_version": "1.0",
-  "rubric_version": "1.0",
+  "policy_version": "v2-民生",
+  "rubric_version": "v2-2026",
   "date": "2026-07-07",
-  "generated_at": "2026-07-06T16:33:43.678+00:00",
-  "published_at": "2026-07-07T00:33:43+08:00",
-  "status": "skipped",
+  "generated_at": "2026-07-07T08:00:00+08:00",
+  "status": "published",
   "run_report": {
-    "candidates_scanned": 0,
-    "published": 0,
+    "candidates_scanned": 15,
+    "published": 7,
     "dropped_safety": {
+      "政府政策色彩": 2,
+      "未证实内容": 1,
       "政治地缘": 0,
-      "灾难事故": 0,
-      "明星丑闻": 0,
-      "争议对立": 0,
-      "竞品互撕": 0,
-      "未经证实": 0
+      "明星丑闻": 0
     },
-    "dropped_low_confidence": 0,
-    "sources": [],
+    "dropped_low_confidence": 2,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
     "evidence_summary": {
-      "candidates_with_urls": 0,
-      "official_sources": 0,
-      "state_media_sources": 0,
-      "major_media_sources": 0,
+      "candidates_with_urls": 12,
+      "official_sources": 4,
+      "state_media_sources": 6,
+      "major_media_sources": 5,
       "aggregator_sources": 0,
-      "dropped_insufficient_evidence": 0
+      "dropped_insufficient_evidence": 2
     }
   },
-  "items": []
+  "items": [
+    {
+      "id": "2026-07-07-typhoon-bawi-approaching",
+      "headline": "🌀超强台风巴威明日起影响我国海域，东南沿海提前防台",
+      "summary": "今年第9号超强台风巴威7月7日仍以25-30公里/时向西偏北方向移动，中心最大风力17级以上，七级风圈半径达380公里。预计8日起进入我国海域，10日前后向浙闽沿海靠近，路径存在变数：若副高东退可能直扑浙江，否则或先登台湾再进福建。沿海渔船须立即回港，居民尽早储备物资、加固门窗。",
+      "category": "民生社会",
+      "heat_rank": 1,
+      "occurred_at": "2026-07-07T08:00:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "台风预警信息，聚焦路径与防范提示，不含具体伤亡数字，以生活安全准备为导向，risk设medium"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "https://www.nmc.cn/publish/typhoon/warning.html",
+          "captured_at": "2026-07-07T06:00:00+08:00",
+          "note": "中央气象台台风公报：超强台风巴威7月7日持续以17级以上强度向西偏北移动，预计8日后进入我国海域"
+        },
+        {
+          "tier": "official",
+          "outlet": "苏州市人民政府",
+          "url": "https://www.suzhou.gov.cn/szsrmzf/mszx/202607/2c31aaff8565440094feeb250c5c8fd2.shtml",
+          "captured_at": "2026-07-06T12:00:00+08:00",
+          "note": "苏州市政府：超强台风巴威最新动态，预计10日前后进入我国东部海区，11日起外围影响苏沪"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_33525920",
+          "captured_at": "2026-07-06T10:00:00+08:00",
+          "note": "澎湃新闻：情况有变！超强台风巴威或绕开台湾直扑浙江，副高位置是路径关键变量"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-07-gaokao-volunteer-deadline",
+      "headline": "📚河南高职志愿今日18时截止，各地填报进入尾声",
+      "summary": "河南省2026年高职（专科）志愿填报今日18时截止，考生须在普通高职、艺术类、体育类批次中完成最终选择，逾期不予补报。全国多省本科志愿填报已陆续结束，考生可借助志愿参考软件，以历年录取位次为据，结合专业兴趣做出理性决策。",
+      "category": "民生社会",
+      "heat_rank": 2,
+      "occurred_at": "2026-07-05T08:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "高考志愿填报信息，来源权威，无政治敏感内容，直接关系考生升学利益"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/06-23/10645320.shtml",
+          "captured_at": "2026-06-23T10:00:00+08:00",
+          "note": "中新网：2026高考成绩今起陆续可查，多省公布志愿填报安排，涵盖时间节点与系统入口"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国教育在线",
+          "url": "https://gaokao.eol.cn/he_nan/dongtai/202606/t20260622_2747208.shtml",
+          "captured_at": "2026-06-22T12:00:00+08:00",
+          "note": "中国教育在线：河南省2026年高考志愿填报时间，专科批次7月5-7日填报，今日18时截止"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-07-xiaoshu-solar-term",
+      "headline": "🌿今日小暑：暑气渐盛，三伏天7月15日启动",
+      "summary": "7月7日09时56分，太阳到达黄经105度，迎来第十一个节气小暑。小暑标志暑气已至尚未至极，长江流域梅雨趋于结束，全国进入酷暑序幕，三伏天将于7月15日正式开启，今年三伏共40天。民间有小暑食藕、小暑黄鳝赛人参等时令习俗。高温湿热，建议减少正午户外活动，保持补水，适度午休。",
+      "category": "节日节气",
+      "heat_rank": 3,
+      "occurred_at": "2026-07-07T09:56:40+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "节气文化科普，无政治敏感内容，兼含日常养生提示，调性平实"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国气象局",
+          "url": "https://weather.cma.cn/",
+          "captured_at": "2026-07-07T06:00:00+08:00",
+          "note": "中国气象局：2026年小暑节气为7月7日09时56分，二十四节气第十一节，标志盛夏酷暑序幕开启"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://m.gmw.cn/2026-07/05/content_38867569.htm",
+          "captured_at": "2026-07-05T10:00:00+08:00",
+          "note": "光明网：7月气候趋势解读，小暑后三伏天7月15日启动，今年三伏共40天，高温湿热为主要特征"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-07-high-temp-warning-east-china",
+      "headline": "🔥高温预警持续发布，东部多省局地或达40℃",
+      "summary": "中央气象台7月7日继续发布高温预警，江淮、江汉、江南及华南中东部等地最高气温37至39℃，浙北局地可达40℃以上，本轮高温过程延续至8日前后。台风巴威外围湿热气流叠加，体感闷热较往年更甚。老人、儿童及户外劳动者需注意防暑降温，避开11至15时高温时段外出。",
+      "category": "民生社会",
+      "heat_rank": 4,
+      "occurred_at": "2026-07-07T06:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "气象预警信息，来源权威，无政治敏感内容，与公众日常生活健康直接相关"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "https://www.nmc.cn/publish/alarm.html",
+          "captured_at": "2026-07-07T06:00:00+08:00",
+          "note": "中央气象台7月7日继续发布高温预警，江淮南部、江南等地最高气温37-39℃，浙北局地预计达40℃以上"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/07-04/10652691.shtml",
+          "captured_at": "2026-07-04T14:00:00+08:00",
+          "note": "中新网：7月台风高温同时来袭，气候趋势分析显示月内4次高温过程，首轮7月3-8日影响华东"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-07-summer-travel-peak",
+      "headline": "🚄暑运首峰持续，铁路民航运力双双创新高",
+      "summary": "2026年全国铁路暑运7月1日启动，日均开行旅客列车1.2万列以上，62天运输期预计发送旅客超10亿人次。民航暑运同步启动，7-8月旅客吞吐量预计达1.42亿人次，7月初票价较8月低约三成。学生返乡与亲子出游叠加，哈尔滨、昆明、西安等避暑城市最受追捧，出行可关注候补购票渠道。",
+      "category": "民生社会",
+      "heat_rank": 5,
+      "occurred_at": "2026-07-07T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "出行民生信息，来源权威，无政治敏感内容，直接服务暑期旅客出行决策"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/fortune/20260630/3aa4aba68a604099b2c9861313ca4dfd/c.html",
+          "captured_at": "2026-06-30T10:00:00+08:00",
+          "note": "新华网：2026年全国铁路暑期运输7月1日启动，日均开行1.2万列旅客列车，增开跨区列车480列"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/07/01/11837615.shtml",
+          "captured_at": "2026-07-01T10:00:00+08:00",
+          "note": "北京日报：2026民航暑运7月1日启动，出行热度持续攀升，7-8月旅客吞吐量预计达1.42亿人次"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-07-waic-2026-countdown",
+      "headline": "🤖世界人工智能大会7月17日上海开幕，全球千余企业参展",
+      "summary": "2026世界人工智能大会（WAIC）将于7月17日至20日在上海举办，主题「智能伙伴，共创未来」。大会覆盖世博、张江、西岸三大片区，1100余家全球企业参展，展览面积超10万平方米，140余场论坛吸引约1400位嘉宾。主流大模型及AI应用将集中亮相，市民可提前关注官网报名。",
+      "category": "科技AI",
+      "heat_rank": 6,
+      "occurred_at": "2026-06-18T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "科技会展信息，来源权威，无政治敏感内容，是国内外AI界年度重要活动，预告性报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://business.cctv.com/2026/06/18/ARTIqtjxJlq4F4cdSJH9RPBa260618.shtml",
+          "captured_at": "2026-06-18T12:00:00+08:00",
+          "note": "央视网：2026世界人工智能大会将于7月17日至20日在上海举行，主题智能伙伴共创未来"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/hy/hyjz/2026-06-29/doc-inifaisy6993585.shtml",
+          "captured_at": "2026-06-29T10:00:00+08:00",
+          "note": "新浪财经：WAIC 2026已有1100余家全球企业确认参展，论坛规模超往届，门票预售同步开启"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-07-express-100b-packages",
+      "headline": "📦快递年度业务量破千亿件，比去年提前9天",
+      "summary": "据国家邮政局数据，截至6月30日，2026年全国快递业务量已突破1000亿件，比2025年提前9天达到这一里程碑，同比增速约5%。暑期电商促销叠加，7月快递量有望持续走高。件量增长折射出消费市场活跃度，也推动行业加快农村配送网络和绿色包装普及。",
+      "category": "文化数字经济",
+      "heat_rank": 7,
+      "occurred_at": "2026-07-04T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "经济消费数据，来源官方，无政治敏感内容，反映消费民生状况"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "科技日报",
+          "url": "https://www.stdaily.com/web/gdxw/2026-07/04/content_542143.html",
+          "captured_at": "2026-07-04T10:00:00+08:00",
+          "note": "科技日报：今年快递业务量已超1000亿件，比去年提前9天，国家邮政局数据显示增速稳健"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪科技",
+          "url": "https://finance.sina.com.cn/tech/discovery/2026-07-04/doc-inifrtiy0072465.shtml",
+          "captured_at": "2026-07-04T12:00:00+08:00",
+          "note": "新浪科技：今年我国快递业务量已超1000亿件，比去年提前9天，暑期电商带动量仍将持续攀升"
+        }
+      ],
+      "published": true
+    }
+  ],
+  "published_at": "2026-07-07T06:14:24+08:00"
 }
