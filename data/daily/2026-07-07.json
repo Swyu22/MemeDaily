@@ -3,11 +3,10 @@
   "policy_version": "1.0",
   "rubric_version": "1.0",
   "date": "2026-07-07",
-  "generated_at": "2026-07-07T08:30:00+08:00",
-  "published_at": "2026-07-07T07:47:15+08:00",
+  "generated_at": "2026-07-07T11:00:00+08:00",
   "status": "published",
   "run_report": {
-    "candidates_scanned": 50,
+    "candidates_scanned": 52,
     "published": 10,
     "dropped_safety": {
       "政治时政": 3,
@@ -16,7 +15,7 @@
       "病毒式单条内容非梗": 3,
       "涉及具体人物无通用句式": 3
     },
-    "dropped_low_confidence": 5,
+    "dropped_low_confidence": 6,
     "sources": [
       "weibo",
       "zhihu",
@@ -24,12 +23,12 @@
       "other"
     ],
     "evidence_summary": {
-      "candidates_with_urls": 25,
+      "candidates_with_urls": 27,
       "platform_public_sources": 0,
-      "aggregator_sources": 10,
-      "search_media_sources": 11,
+      "aggregator_sources": 11,
+      "search_media_sources": 12,
       "spillover_sources": 0,
-      "dropped_insufficient_evidence": 5
+      "dropped_insufficient_evidence": 6
     }
   },
   "items": [
@@ -126,6 +125,55 @@
           "title": "字节跳动批量注册「咕咕嘎嘎」等网络热梗著作权",
           "captured_at": "2026-07-04T08:00:00+08:00",
           "note": "IT之家报道：字节旗下北京字跳网络注册「咕咕嘎嘎」等热梗著作权，引发「侵占网友共创成果」舆论争议"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-07-dai-gap-qi",
+      "title": "🏢 把上班叫做「待gap期」",
+      "aliases": [
+        "待gap期",
+        "gap期上班法",
+        "不叫打工叫gap期",
+        "gap day"
+      ],
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "职场梗",
+      "summary": "把当前的在职状态重新定义为「待gap期」——不是在真正打拼，只是在等待下一个方向的过渡窗口。gap year→gap day→待gap期，是打工人对职场现实的一种幽默自我脱嵌。",
+      "origin": "「gap year」本为主动休整探索自我的概念，后被压缩为「gap day」（把休假/病假当gap探索），再延伸为「待gap期」（把整段在职状态视为过渡期，心理上不真正投入）。2026年7月7日，微博热搜「把上班叫做待gap期」以31万热度在榜（tophub聚合，rank 40）。澎湃新闻「管休息叫Gap Day的，我谢谢你」等媒体对该梗延伸脉络有详细梳理。",
+      "usage": "「我现在不叫上班，叫待gap期」「入职三个月，还在gap期感觉里出不来」「这份工作一直当待gap期处理，早晚得换」；反向版：「什么gap期，就是在摸鱼」；接龙：「待gap期最高境界：老板也以为你在认真干，只有你知道你在gap」；对比版：「别人gap year是真gap，我gap的是班」；自嘲版：「整段就业史其实是一部缝缝补补的待gap期」。",
+      "fun_point": "「gap year」是主动选择的清醒探索，「待gap期」是被动接受的心理包装——两者逻辑正好反着。把「被迫就业」重新叙事成「主动gap」，用心理自救应对职场迷茫。从gap year → gap day → gap hour → gap minute → 待gap期的压缩链条，把打工人对时间自主权的渴望压缩到了荒诞极致。",
+      "why_spread": "已验证：微博热搜「把上班叫做待gap期」31万热度（2026-07-07，tophub聚合，rank 40）；澎湃新闻系统梳理gap day/gap year梗延伸脉络，确认「待gap期」为当前职场主流自我重定义句式；推测：2026年就业压力持续，年轻人以「待gap期」重构对当下工作的叙事，化焦虑为幽默；句式简洁、任意职业场景均可套用，传播门槛极低。",
+      "lifecycle": "rising",
+      "brand_usage": "招聘/职场平台：「从待gap期，到找到真正属于你的方向——陪你跨越gap」；成长/课程类：「待gap期也是人生的一部分，别浪费它」；内容账号发起「你的待gap期最搞笑的一幕」UGC话题；职业测评工具：「测测你的待gap期适合gap向何处」。",
+      "risk": {
+        "level": "safe",
+        "note": "纯职场自嘲情绪，不涉及政治/具体品牌/具体人物，正向或自嘲语境均安全，适合广泛商业化使用。"
+      },
+      "days_on_list": 1,
+      "score": 74,
+      "published": true,
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://tophub.today/n/KqndgxeLl9",
+          "title": "今日热榜·微博热搜（2026-07-07）",
+          "captured_at": "2026-07-07T09:00:00+08:00",
+          "note": "tophub聚合微博热搜「把上班叫做待gap期」31万热度（2026-07-07，rank 40），话题在榜确认"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.thepaper.cn/newsDetail_forward_23003277",
+          "title": "管休息叫Gap Day的，我谢谢你",
+          "captured_at": "2026-07-07T09:30:00+08:00",
+          "note": "澎湃新闻梳理gap day/gap year/待gap期梗延伸脉络：gap year → gap day → gap hour，「把工作当待gap期」为职场语境下广泛使用的幽默重定义句式"
         }
       ]
     },
@@ -429,54 +477,6 @@
       ]
     },
     {
-      "id": "2026-07-04-zuihou-guangyin",
-      "title": "⚙️ 珍惜当牛马最后光阴",
-      "aliases": [
-        "珍惜做牛马的最后光阴",
-        "珍惜[X]最后光阴",
-        "当牛马还有多久"
-      ],
-      "platform": [
-        "zhihu",
-        "other"
-      ],
-      "type": "职场梗",
-      "summary": "「珍惜当牛马最后光阴」——某机器人公司CEO公开表示20年内机器人将全面取代人类劳动，激活了网友对「打工人最后时代」的集体调侃，衍生出「好好珍惜[X]的最后光阴」句式，反讽当下辛苦换成了一种奇异的珍贵。",
-      "origin": "2026年6月30日，某人形机器人公司CEO在全球发布会上表示：「好好珍惜我们作为牛马、作为劳动力工作的最后光阴吧，这也就是未来5年10年20年的事情了，因为全都是机器人在干活。」知乎热榜收录相关话题114万热度（2026-07-04）；今日为第4天，IT之家、驱动中国等媒体持续跟进。",
-      "usage": "「珍惜[X]的最后光阴」：「好好珍惜手动写PPT的最后光阴，AI以后全包了」「珍惜自己翻译的最后光阴，机器比你快多了」「珍惜还能说不会用AI的最后光阴，这个借口寿命有限」；自嘲版：「我现在努力工作，是在珍惜当牛马最后光阴」；接龙：「打工人打工魂，珍惜最后时光认真摸鱼」。",
-      "fun_point": "把「劳动力将被机器替代」的宏大科技预言，通过「珍惜最后光阴」这个哀悼式表达，反向变成了一种令人沮丧又好笑的「辛苦居然成了一种稀缺」。「牛马」本是打工人自嘲词，现在「当牛马都要被剥夺了」的荒诞更进一步。",
-      "why_spread": "已验证：知乎热榜「XX CEO称珍惜当牛马最后光阴，20年后是机器人干活」114万热度（tophub聚合知乎榜，2026-07-04）；雷峰网收录CEO完整原话；今日头条搜索显示IT之家、驱动中国等媒体在2026-07-05前6-22小时内仍在持续发文跟进；推测：「牛马」是打工人高频自嘲词，被CEO亲口「劝珍惜」的反转感极强。",
-      "lifecycle": "peak",
-      "brand_usage": "AI工具/效率类App可用「让牛马升级，而不是倒计时」做正向反转；内容账号可发起「说说你在珍惜哪件事的最后光阴」UGC话题；职场类内容：「与其倒计时，不如现在开始搞定[某技能]」。",
-      "risk": {
-        "level": "low",
-        "note": "不点名具体人物，抽象为通用句式，但「机器替代人」话题本身偶有负面情绪；品牌借势时避免渲染失业焦虑。"
-      },
-      "score": 76,
-      "days_on_list": 4,
-      "published": true,
-      "sources": [
-        {
-          "tier": "aggregator",
-          "evidence_role": "popularity",
-          "platform": "zhihu",
-          "url": "https://tophub.today/n/JZe5YnGHmj",
-          "title": "今日热榜·知乎热榜",
-          "captured_at": "2026-07-04T07:00:00+08:00",
-          "note": "tophub聚合知乎热榜第16位「XXX CEO称珍惜当牛马最后光阴，20年后是机器人干活」114万热度（2026-07-04），确认话题发酵"
-        },
-        {
-          "tier": "search_media",
-          "evidence_role": "origin",
-          "platform": "other",
-          "url": "https://m.leiphone.com/category/zaobao/8xIKNxdh5DASn0Tj.html",
-          "title": "优必选CEO：珍惜做牛马的时光，20年后全是机器人干活",
-          "captured_at": "2026-07-04T07:00:00+08:00",
-          "note": "雷峰网收录CEO原话全文：「好好珍惜我们作为牛马的最后光阴，5到20年后全都是机器人在干活」，为句式来源确认"
-        }
-      ]
-    },
-    {
       "id": "2026-07-04-word-jianli",
       "title": "💼 把会[X]写进简历/核心竞争力",
       "aliases": [
@@ -523,5 +523,6 @@
         }
       ]
     }
-  ]
+  ],
+  "published_at": "2026-07-07T14:23:49+08:00"
 }
