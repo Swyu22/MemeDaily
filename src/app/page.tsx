@@ -1,6 +1,11 @@
 import { loadAllEnvelopes } from "@/domain/memedaily/data";
 import { statusLabels } from "@/domain/memedaily/labels";
-import { visibleItems } from "@/domain/memedaily/rules";
+import {
+  boardStreakFor,
+  nameAppearanceDates,
+  publishedDates,
+  visibleItems,
+} from "@/domain/memedaily/rules";
 import { visibleNewsDays } from "@/domain/dailynews/data";
 import { statusLabels as newsStatusLabels } from "@/domain/dailynews/labels";
 import { HomeTabs } from "@/features/home/HomeTabs";
@@ -12,8 +17,18 @@ export default function TodayPage() {
   // 热梗 feed (unchanged computation; rendered inside the 热梗 tab).
   const all = loadAllEnvelopes();
   const latest = all[0] ?? null;
+  // 「连续上榜天数」以我们自己的库为准：用 boardStreakFor 覆盖 agent 自填的 days_on_list
+  // （后者是全网累计天数，会把 6 月火过、7 月复现的梗标成「4 天」，与「连续」文案矛盾）。
+  const nameDates = nameAppearanceDates(all);
+  const boardDates = publishedDates(all);
   const days = all
-    .map((envelope) => ({ date: envelope.date, items: visibleItems(envelope) }))
+    .map((envelope) => ({
+      date: envelope.date,
+      items: visibleItems(envelope).map((item) => ({
+        ...item,
+        days_on_list: boardStreakFor(item, envelope.date, nameDates, boardDates),
+      })),
+    }))
     .filter((day) => day.items.length > 0);
   const freshDate = latest && days[0]?.date === latest.date ? latest.date : null;
   const shown = days.slice(0, MAX_DAYS_ON_HOME);

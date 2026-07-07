@@ -2,11 +2,14 @@ import { describe, expect, it } from "vitest";
 import type { DailyEnvelope, MemeItem } from "./schema";
 import { MemeItemSchema } from "./schema";
 import {
+  boardStreakFor,
   crossDayIssues,
   dedupeRecurring,
   envelopeIssueSummary,
   hasPublishableEvidence,
   lifecycleIssues,
+  nameAppearanceDates,
+  publishedDates,
   visibleItems,
 } from "./rules";
 
@@ -215,6 +218,51 @@ describe("MemeDaily cross-day freshness", () => {
     });
 
     expect(crossDayIssues([day1, day2])).toHaveLength(0);
+  });
+});
+
+describe("MemeDaily 连续上榜天数 (boardStreakFor)", () => {
+  function dayWith(date: string, item: MemeItem): DailyEnvelope {
+    return { ...envelopeWith(item, "published"), date };
+  }
+  // A meme (matched by normalized title/alias) whose board presence has a gap: 06-23/24/25,
+  // then absent, then recurs 07-06/07. The consecutive streak must reset on the recurrence.
+  const viking = (date: string, title: string): DailyEnvelope =>
+    dayWith(date, { ...baseItem, id: `${date}-viking`, title, aliases: ["维京划船"] });
+  const gap = (date: string): DailyEnvelope =>
+    dayWith(date, { ...baseItem, id: `${date}-other`, title: "别的梗", aliases: [] });
+  const itemOf = (envelope: DailyEnvelope): MemeItem => {
+    const item = envelope.items[0];
+    if (!item) throw new Error("fixture envelope has no item");
+    return item;
+  };
+  const v0625 = viking("2026-06-25", "一起划起来了");
+  const v0706 = viking("2026-07-06", "一起Ro！维京划船");
+  const v0707 = viking("2026-07-07", "一起Ro！维京划船");
+  const v0623 = viking("2026-06-23", "一起划起来了");
+  const history = [
+    v0623,
+    viking("2026-06-24", "一起划起来了"),
+    v0625,
+    gap("2026-06-26"),
+    gap("2026-07-05"),
+    v0706,
+    v0707,
+  ];
+  const nameDates = nameAppearanceDates(history);
+  const boardDates = publishedDates(history);
+
+  it("counts up over a consecutive run", () => {
+    expect(boardStreakFor(itemOf(v0625), "2026-06-25", nameDates, boardDates)).toBe(3);
+  });
+
+  it("resets to day 1 when the meme recurs after a gap (the viking bug)", () => {
+    expect(boardStreakFor(itemOf(v0706), "2026-07-06", nameDates, boardDates)).toBe(1);
+    expect(boardStreakFor(itemOf(v0707), "2026-07-07", nameDates, boardDates)).toBe(2);
+  });
+
+  it("never returns less than 1 for a shown item", () => {
+    expect(boardStreakFor(itemOf(v0623), "2026-06-23", nameDates, boardDates)).toBe(1);
   });
 });
 

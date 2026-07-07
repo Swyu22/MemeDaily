@@ -55,6 +55,61 @@ export function dedupeRecurring<T extends MemeItem>(rows: T[]): T[] {
   return out;
 }
 
+// 「连续上榜天数」按 OUR OWN 榜确定性计算——不采信 agent 自填的 `days_on_list`（它反映的是全网热度
+// 天数，不是我们的库；曾出现「首现即 4 天」的 bug：那是 6 月的「维京划船」在 7 月复现，被 agent 按全网
+// 累计天数标成 4）。UI 文案是「连续 N 天上榜」，所以语义必须是「连续」：梗按标准化 title/alias 归并，
+// 从展示当天沿【本站有发布的日期】往回数，直到它缺席的第一天为止。中断后复现 → 重新从「第 1 天」计。
+// 这样既贴合「连续」文案，也让复现梗在「新鲜值」排序里回到高位（它确实是又火了一次）。
+export function nameAppearanceDates(envelopes: DailyEnvelope[]): Map<string, string[]> {
+  const byName = new Map<string, Set<string>>();
+  for (const envelope of envelopes) {
+    for (const item of visibleItems(envelope)) {
+      for (const name of itemNames(item)) {
+        let dates = byName.get(name);
+        if (!dates) {
+          dates = new Set<string>();
+          byName.set(name, dates);
+        }
+        dates.add(envelope.date);
+      }
+    }
+  }
+  const sorted = new Map<string, string[]>();
+  for (const [name, dates] of byName) sorted.set(name, [...dates].sort());
+  return sorted;
+}
+
+// Dates on which the SITE published a non-empty board (has visible items), ascending. Days the
+// site itself skipped/held don't count against a meme's streak — only days we actually published.
+export function publishedDates(envelopes: DailyEnvelope[]): string[] {
+  const dates = new Set<string>();
+  for (const envelope of envelopes) {
+    if (visibleItems(envelope).length > 0) dates.add(envelope.date);
+  }
+  return [...dates].sort();
+}
+
+export function boardStreakFor(
+  item: MemeItem,
+  onDate: string,
+  nameDates: Map<string, string[]>,
+  published: string[],
+): number {
+  const present = new Set<string>();
+  for (const name of itemNames(item)) {
+    for (const date of nameDates.get(name) ?? []) present.add(date);
+  }
+  // Walk published boards backwards from onDate; count consecutive presence, stop at first gap.
+  let streak = 0;
+  for (let i = published.length - 1; i >= 0; i--) {
+    const date = published[i];
+    if (date === undefined || date > onDate) continue; // ignore boards after the shown day
+    if (!present.has(date)) break; // first absent published day ends the streak
+    streak++;
+  }
+  return Math.max(1, streak); // the shown day always counts as day 1
+}
+
 const DECLINING_MIN_DAYS = 5;
 
 function daysBetween(fromDate: string, toDate: string): number {
