@@ -12,8 +12,18 @@ mkdir -p "$OUT"
 UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
 # name|url — public, server-rendered hot-list aggregators (aggregator-first; see automation prompt).
+# Per-platform tophub boards are included so the agent's ready pool isn't 微博/百度/聚合榜-only —
+# 小红书/抖音 were chronically under-represented as sources. ONLY boards that genuinely SERVER-render
+# their list are here (verified: the 抖音 realtime board /n/3adqqzadng returns real video titles +
+# hashtags + play counts; 知乎 /n/mproPpoq6O returns the real 热榜). NOTE: several tophub node pages
+# (抖音总榜, B站全站日榜) render their list CLIENT-SIDE — they'd yield only nav/scaffold, so they're
+# excluded; the tophub HOMEPAGE already inlines a few B站/微博 top items. 小红书 has NO fetchable
+# aggregator board (anti-scraping) — it stays sparse by nature; the prompt tells the agent to surface
+# it via honest public-page/search evidence when a meme clearly lives there, never to fabricate.
 SOURCES="
 tophub|https://tophub.today/
+douyin-hot|https://tophub.today/n/3adqqzadng
+zhihu-hot|https://tophub.today/n/mproPpoq6O
 rebang|https://rebang.today/
 cnxiaobai|https://hot.cnxiaobai.com/
 moyuoo|https://moyuoo.com/

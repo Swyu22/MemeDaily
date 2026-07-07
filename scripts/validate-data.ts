@@ -8,6 +8,7 @@ import {
   crossDayIssues,
   envelopeIssueSummary,
   lifecycleIssues,
+  platformDiversityWarnings,
 } from "../src/domain/memedaily/rules";
 import type { DailyEnvelope } from "../src/domain/memedaily/schema";
 
@@ -64,6 +65,18 @@ if (failureCount === 0) {
     }
   } else {
     console.log("[validate-data] ok lifecycle (5-day declining rule)");
+  }
+
+  // SOFT platform-diversity check (warn, never fail): only for the LATEST envelope — the one the
+  // daily agent just produced. Surfaces a 微博/聚合榜-only day without blocking it.
+  const latest = envelopes.reduce<DailyEnvelope | null>(
+    (newest, env) => (!newest || env.date > newest.date ? env : newest),
+    null,
+  );
+  if (latest) {
+    for (const warning of platformDiversityWarnings(latest)) {
+      console.warn(`[validate-data] warn ${latest.date}\n  - ${warning}`);
+    }
   }
 }
 

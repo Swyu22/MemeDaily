@@ -116,12 +116,14 @@ jobs:
             Environment note: this runner is a non-CN datacenter IP. Direct Weibo / Douyin /
             Xiaohongshu pages are anti-bot/login-walled here, so be AGGREGATOR-FIRST.
             SPEED: a prior step already fetched several hot-list aggregators into prefetch/*.txt
-            (tophub, baidu-hot, moyuoo, etc., as plain text). READ those files FIRST via the Read
-            tool — they are your fast starting candidate pool; do NOT re-WebFetch a source that
-            already has a non-trivial prefetch file. Then WebFetch/WebSearch for follow-up,
-            cross-checking, and any source whose prefetch is empty (cast the same wide net — breadth
-            is unchanged, you are only skipping the slow re-fetch of what is already on disk).
-            Never attempt logins, cookies, or anti-bot bypass.
+            (tophub, baidu-hot, moyuoo, weibo-hot, **AND per-platform boards douyin-hot (抖音实时热榜，
+            含真实视频标题+话题标签+播放量) / zhihu-hot (知乎热榜)**, as plain text). READ those files FIRST
+            via the Read tool — they are your fast starting candidate pool; do NOT re-WebFetch a source that
+            already has a non-trivial prefetch file. **务必也读 douyin-hot / zhihu-hot，B站 从 tophub.txt 的
+            哔哩哔哩分区取，让候选池天然覆盖多平台，别只从微博榜取梗。**
+            Then WebFetch/WebSearch for follow-up, cross-checking, and any source whose prefetch is empty
+            (cast the same wide net — breadth is unchanged, you are only skipping the slow re-fetch of
+            what is already on disk). Never attempt logins, cookies, or anti-bot bypass.
 
             硬性内容规则：①【时事政治一律不发】任何涉及政治人物/选举/政府/官员任免/辞职就职/
             国家领导人/政党/外交/战争/地缘冲突/政策法案的内容，**即使衍生出梗、或把梗壳套到政治
@@ -149,6 +151,13 @@ jobs:
             采集要广、要聪明：横扫多个聚合榜单 + 平台公开页 + 梗词典 + 搜索
             引擎 + 跨平台外溢，先建一个大候选池(~30+)，再按 rubric 排序、挑出最好的 ~10 条；
             分多轮：广撒网 → 筛选排序 → 核实增强。预算充足(~$5/天、~60 轮)，质量与广度优先。
+            **平台多样性（重要）**：历史来源与 platform 标签严重偏 微博/聚合榜(other)，抖音/小红书常年偏少。
+            请刻意平衡：先扫 douyin-hot/bilibili-hot/zhihu-hot 让候选池覆盖多平台；`platform` 标签要如实覆盖
+            梗真正活跃的**所有**平台（跨平台的梗就把 douyin/xiaohongshu/bilibili 一并标上，别习惯性只标 weibo/other）。
+            小红书反爬最狠、几乎没有可直读聚合榜，天然最少——梗明显源自小红书时用能拿到的公开笔记/话题/搜索/媒体
+            转述佐证并标 xiaohongshu，但不强求。**诚信红线压过多样性：绝不为凑平台编造抖音/小红书来源、或把纯微博梗
+            误标别的平台；今天确是微博主导就如实呈现，多样性是长期倾向不是每日配额。** validate 会在某天可见梗
+            platform 标签里既无抖音也无小红书时打印 warning(不阻断)，别为消除它造假。
 
             CRITICAL OUTPUT REQUIREMENT: You MUST create the file
             data/daily/${{ steps.guard.outputs.date }}.json using the Write tool (today is

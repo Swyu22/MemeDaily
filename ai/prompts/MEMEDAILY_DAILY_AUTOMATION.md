@@ -74,6 +74,24 @@ categories before deciding the day is thin:
 是 tophub.today / top.baidu.com / newrank.cn / hot.cnxiaobai.com + 墨鱼词典 + 媒体/搜索结果**。
 优先把这些打透、交叉印证，别在打不开的页面上浪费回合预算。
 
+### 平台多样性（重要，别让「微博 + 聚合榜」独占）
+历史数据显示来源与 `platform` 标签严重偏向 **微博 / 聚合榜(other)**，而 **抖音 / 小红书** 常年偏少
+（各仅个位数）。请刻意平衡：
+- **专门看各平台的榜**：prefetch 已额外抓了服务端渲染可直读的 **抖音实时热榜**（`prefetch/douyin-hot.txt`，
+  含真实视频标题+话题标签+播放量，最能挖抖音梗）和 **知乎热榜**（`prefetch/zhihu-hot.txt`）。**B站** 的
+  独立日榜页是客户端渲染（抓不到列表），改从 `prefetch/tophub.txt` 里的哔哩哔哩分区取。开工先把这些和
+  tophub 各平台分区一起扫，让候选池天然覆盖多平台，而不是只从微博榜取梗。
+- **`platform` 标签要如实覆盖梗真正活跃的所有平台**：很多梗是跨平台的——若它在抖音/小红书/B站也在
+  刷屏，就把 `douyin`/`xiaohongshu`/`bilibili` 一并标上，别习惯性只标 `weibo`/`other`。标签反映的是
+  「梗在哪些平台传播」，用公开证据能佐证到哪个平台就标哪个。
+- **小红书的现实**：它反爬最狠、几乎没有可直读的聚合榜，所以天然最少；当一个梗明显源自/活跃于小红书
+  （模板体/穿搭/生活方式/「family」体等），用能拿到的公开笔记/话题/搜索/媒体转述佐证并标上 `xiaohongshu`，
+  但**不强求、更不许硬凑**。
+- **诚信红线（压过多样性）**：多样性只能来自**如实的来源与标签**——**绝不**为凑平台而编造抖音/小红书
+  来源，或把纯微博梗误标成别的平台。今天若确实是微博主导，那就如实呈现，多样性是长期倾向不是每日配额。
+- 软校验：满 5 条的当天，若可见梗里挂 `douyin`/`xiaohongshu` 标签的**少于 2 条**，`npm run validate`
+  会打印一条 warning（不阻断构建），用来长期盯这个偏向——但**不要为了消除 warning 去造假**。
+
 ## Evidence grading → publish decision
 Grade each candidate, then map the grade to a decision:
 

@@ -9,6 +9,7 @@ import {
   hasPublishableEvidence,
   lifecycleIssues,
   nameAppearanceDates,
+  platformDiversityWarnings,
   publishedDates,
   visibleItems,
 } from "./rules";
@@ -218,6 +219,52 @@ describe("MemeDaily cross-day freshness", () => {
     });
 
     expect(crossDayIssues([day1, day2])).toHaveLength(0);
+  });
+});
+
+describe("MemeDaily 平台多样性软校验 (platformDiversityWarnings)", () => {
+  // Build a full published day (>=5 items) from a per-item platform-tag list.
+  const dayFrom = (platformsPerItem: MemeItem["platform"][]): DailyEnvelope => {
+    const env = envelopeWith(baseItem, "published");
+    env.items = platformsPerItem.map((platform, i) => ({
+      ...baseItem,
+      id: `2026-06-20-item-${i}`,
+      title: `梗第${i}号`,
+      aliases: [],
+      platform,
+    }));
+    env.run_report.published = env.items.length;
+    return env;
+  };
+  const weibo: MemeItem["platform"] = ["weibo"];
+  const douyin: MemeItem["platform"] = ["douyin", "weibo"];
+
+  it("warns when a full day has <2 memes tagging 抖音/小红书 (the 微博-dominance case)", () => {
+    const day = dayFrom([weibo, weibo, weibo, weibo, douyin]); // only 1 of 5 touches 抖音/小红书
+    const warnings = platformDiversityWarnings(day);
+    expect(warnings.length).toBeGreaterThan(0);
+    expect(warnings[0]).toContain("抖音/小红书");
+  });
+
+  it("is silent when >=2 memes tag 抖音/小红书", () => {
+    const day = dayFrom([weibo, weibo, weibo, douyin, douyin]); // 2 of 5 → ok
+    expect(platformDiversityWarnings(day)).toHaveLength(0);
+  });
+
+  it("exempts a thin day (<5 visible memes) from the diversity check", () => {
+    const thin = dayFrom([weibo, weibo, weibo]); // all 微博 but only 3 items → no warn
+    expect(platformDiversityWarnings(thin)).toHaveLength(0);
+  });
+
+  it("is silent for a skipped day (nothing visible)", () => {
+    const day = dayFrom([weibo, weibo, weibo, weibo, weibo]);
+    day.status = "skipped";
+    expect(platformDiversityWarnings(day)).toHaveLength(0);
+  });
+
+  it("does NOT affect the hard-fail envelopeIssueSummary (warning is separate)", () => {
+    const day = dayFrom([weibo, weibo, weibo, weibo, weibo]);
+    expect(envelopeIssueSummary(day)).toHaveLength(0);
   });
 });
 

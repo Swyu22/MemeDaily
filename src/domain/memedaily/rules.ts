@@ -236,6 +236,30 @@ export function politicalContentIssues(envelope: DailyEnvelope): string[] {
   return issues;
 }
 
+// SOFT platform-diversity check (WARN, never fail — mirrors the news 国际 soft check). 小红书/抖音
+// are chronically under-represented as meme origins vs 微博/聚合榜（历史上各仅 5 条 source, 且单日常
+// 9/10 条只挂 weibo）. On a FULL day (>=5 visible memes) this warns when fewer than 2 of them tag 抖音
+// or 小红书 — surfacing the 微博-dominance over time WITHOUT blocking a genuinely 微博-driven day, and
+// WITHOUT ever pressuring the agent to fabricate: diversity must come from HONEST tags/sources, so this
+// stays advisory only (thin days are exempt — they aren't expected to be diverse).
+const UNDERREPRESENTED_PLATFORMS = ["douyin", "xiaohongshu"];
+const MIN_ITEMS_FOR_DIVERSITY_CHECK = 5;
+const MIN_UNDERREPRESENTED_ITEMS = 2;
+
+export function platformDiversityWarnings(envelope: DailyEnvelope): string[] {
+  const items = visibleItems(envelope);
+  if (items.length < MIN_ITEMS_FOR_DIVERSITY_CHECK) return [];
+  const underCount = items.filter((item) =>
+    item.platform.some((platform) => UNDERREPRESENTED_PLATFORMS.includes(platform)),
+  ).length;
+  if (underCount < MIN_UNDERREPRESENTED_ITEMS) {
+    return [
+      `only ${underCount}/${items.length} memes tag 抖音/小红书 — chronically under-represented vs 微博/聚合榜; aim for >=${MIN_UNDERREPRESENTED_ITEMS} on a full day (soft target; honest tags/sources only, never fabricate)`,
+    ];
+  }
+  return [];
+}
+
 export function envelopeIssueSummary(envelope: DailyEnvelope): string[] {
   const issues: string[] = [];
 
