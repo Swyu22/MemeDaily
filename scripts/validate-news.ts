@@ -7,8 +7,9 @@
  * data/daily-news/ directory and exits 0 — so CI is not blocked before the news agent's
  * first run ever produces a file.
  */
+import type { NewsEnvelope } from "../src/domain/dailynews/schema";
 import { newsJsonFiles, loadNewsEnvelope } from "../src/domain/dailynews/data";
-import { envelopeIssueSummary } from "../src/domain/dailynews/rules";
+import { envelopeIssueSummary, internationalCoverageWarnings } from "../src/domain/dailynews/rules";
 
 const files = newsJsonFiles();
 
@@ -18,11 +19,14 @@ if (files.length === 0) {
 }
 
 let failureCount = 0;
+let latest: { file: string; envelope: NewsEnvelope } | null = null;
 
 for (const file of files) {
   try {
     const envelope = loadNewsEnvelope(file);
     const issues = envelopeIssueSummary(envelope);
+
+    if (!latest || envelope.date > latest.envelope.date) latest = { file, envelope };
 
     if (issues.length > 0) {
       failureCount += issues.length;
@@ -37,6 +41,14 @@ for (const file of files) {
     failureCount += 1;
     console.error(`[validate-news] invalid ${file}`);
     console.error(error instanceof Error ? error.message : String(error));
+  }
+}
+
+// SOFT check (warn, never fail): only for the latest envelope — the one the daily agent just
+// produced. Surfaces a missing 国际 story without blocking a genuinely quiet international day.
+if (latest) {
+  for (const warning of internationalCoverageWarnings(latest.envelope)) {
+    console.warn(`[validate-news] warn ${latest.file}\n  - ${warning}`);
   }
 }
 

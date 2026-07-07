@@ -123,6 +123,20 @@ export function heatRankIssues(envelope: NewsEnvelope): string[] {
   return [];
 }
 
+// SOFT coverage check (WARN, never fail — per user "强 prompt + 软校验"). The daily mix should
+// carry >=1 non-political 国际 item so the feed isn't 100% domestic 民生 bulletins. Returned
+// separately from envelopeIssueSummary so the validator can print it without failing the build:
+// a genuinely quiet international day shouldn't block publishing, but the gap gets surfaced.
+export function internationalCoverageWarnings(envelope: NewsEnvelope): string[] {
+  const visible = visibleNews(envelope);
+  if (visible.length === 0) return [];
+  const intl = visible.filter((item) => item.category === "国际").length;
+  if (intl === 0) {
+    return [`no 国际 item today — aim for >=1 non-political international story (soft target)`];
+  }
+  return [];
+}
+
 export function envelopeIssueSummary(envelope: NewsEnvelope): string[] {
   const issues: string[] = [];
 

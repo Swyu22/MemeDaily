@@ -6,6 +6,7 @@ import {
   hasPublishableEvidence,
   headlineCasualtyIssues,
   heatRankIssues,
+  internationalCoverageWarnings,
   redLineIssues,
   visibleNews,
 } from "./rules";
@@ -169,6 +170,28 @@ describe("heatRankIssues", () => {
       { ...baseItem, id: "2026-06-29-b", headline: "节日的味道又回来了", heat_rank: 1 },
     ];
     expect(heatRankIssues(envelopeWith(items, "published")).length).toBeGreaterThan(0);
+  });
+});
+
+describe("internationalCoverageWarnings (soft — warn, never fail)", () => {
+  it("warns when no 国际 item is present", () => {
+    const warnings = internationalCoverageWarnings(envelopeWith([baseItem], "published"));
+    expect(warnings.length).toBeGreaterThan(0);
+    expect(warnings[0]).toContain("国际");
+  });
+
+  it("is silent when a 国际 item is present", () => {
+    const intl = { ...baseItem, id: "2026-06-29-intl", category: "国际" as const, headline: "🔭 詹姆斯·韦布望远镜再传新影像", summary: "国际团队公布一批深空图像，展示遥远星系的细节。" };
+    expect(internationalCoverageWarnings(envelopeWith([baseItem, intl], "published"))).toHaveLength(0);
+  });
+
+  it("is silent for an empty/skipped envelope (nothing to warn about)", () => {
+    expect(internationalCoverageWarnings(envelopeWith([baseItem], "skipped"))).toHaveLength(0);
+  });
+
+  it("does not affect the hard-fail envelopeIssueSummary", () => {
+    // a clean domestic-only envelope must still PASS the hard gate (warning is separate)
+    expect(envelopeIssueSummary(envelopeWith([baseItem], "published"))).toHaveLength(0);
   });
 });
 
