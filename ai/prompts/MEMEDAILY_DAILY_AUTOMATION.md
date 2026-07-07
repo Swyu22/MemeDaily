@@ -81,6 +81,12 @@ categories before deciding the day is thin:
   含真实视频标题+话题标签+播放量，最能挖抖音梗）和 **知乎热榜**（`prefetch/zhihu-hot.txt`）。**B站** 的
   独立日榜页是客户端渲染（抓不到列表），改从 `prefetch/tophub.txt` 里的哔哩哔哩分区取。开工先把这些和
   tophub 各平台分区一起扫，让候选池天然覆盖多平台，而不是只从微博榜取梗。
+- **把平台榜当「该平台证据」用（关键，别再漏这步）**：一个梗**出现在 `prefetch/douyin-hot.txt`（抖音榜）里，
+  本身就是它在抖音活跃的可引用证据**——请把该榜作为一条 source 收下：`tier: aggregator`、`platform: douyin`、
+  `url: https://tophub.today/n/3adqqzadng`、`note` 写明「抖音热榜第 N 位 / 话题标签」，并把 `douyin` 标进
+  `platform`。知乎榜同理（`platform: zhihu`、`url: https://tophub.today/n/mproPpoq6O`）。**这样无需打开被墙的
+  douyin.com 就能如实抬升抖音/知乎占比。** 反面教训：明明在抖音刷屏的梗（如世界杯「维京划船」），别再只从
+  百度/微博榜取证、标成 `other`/`weibo`——它就在抖音榜上，就该收一条 douyin 源并标 `douyin`。
 - **`platform` 标签要如实覆盖梗真正活跃的所有平台**：很多梗是跨平台的——若它在抖音/小红书/B站也在
   刷屏，就把 `douyin`/`xiaohongshu`/`bilibili` 一并标上，别习惯性只标 `weibo`/`other`。标签反映的是
   「梗在哪些平台传播」，用公开证据能佐证到哪个平台就标哪个。

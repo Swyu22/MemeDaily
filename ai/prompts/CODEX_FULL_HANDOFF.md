@@ -119,8 +119,10 @@
   **本地 CN IP、平台原页可直读**，正好补上——刻意去抖音/小红书/B站原页取梗，`platform` 标签如实覆盖梗真正活跃
   的**所有**平台（跨平台就 douyin/xiaohongshu/bilibili 一并标，别只标 weibo/other）。**诚信红线压过多样性**：
   绝不为凑平台编造来源或误标；确是微博主导就如实呈现。`prefetch/*.txt` 已含 douyin-hot（抖音实时热榜）/zhihu-hot；
-  你在本地 CN IP 更可直接开抖音/小红书/B站原页补齐。`npm run validate` 会在满 5 条的当天可见梗里挂抖音/小红书的
-  少于 2 条时打印 warning（不阻断，别为消除它造假）。
+  你在本地 CN IP 更可直接开抖音/小红书/B站原页补齐。**把平台榜当「该平台证据」用（关键）**：梗出现在抖音榜里本身
+  就是它在抖音活跃的可引用证据——收作一条 source（`tier:aggregator`、`platform:douyin`、`url:https://tophub.today/n/3adqqzadng`）
+  并标 `douyin`（知乎榜同理 `platform:zhihu`）；别把明明在抖音刷屏的梗只从百度/微博取证、标成 `other/weibo`。
+  `npm run validate` 会在满 5 条的当天可见梗里挂抖音/小红书的少于 2 条时打印 warning（不阻断，别为消除它造假）。
 
 ### 5.3 红线（命中即丢，并计入 `run_report.dropped_safety`）
 - **要梗不要新闻**：纯新闻/单一事件（某人做了某事、赛果/比分、获奖、见义勇为、哽咽表态…）一律不发——

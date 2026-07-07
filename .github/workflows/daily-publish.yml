@@ -152,8 +152,13 @@ jobs:
             引擎 + 跨平台外溢，先建一个大候选池(~30+)，再按 rubric 排序、挑出最好的 ~10 条；
             分多轮：广撒网 → 筛选排序 → 核实增强。预算充足(~$5/天、~60 轮)，质量与广度优先。
             **平台多样性（重要）**：历史来源与 platform 标签严重偏 微博/聚合榜(other)，抖音/小红书常年偏少。
-            请刻意平衡：先扫 douyin-hot/bilibili-hot/zhihu-hot 让候选池覆盖多平台；`platform` 标签要如实覆盖
+            请刻意平衡：先扫 douyin-hot/zhihu-hot 让候选池覆盖多平台；`platform` 标签要如实覆盖
             梗真正活跃的**所有**平台（跨平台的梗就把 douyin/xiaohongshu/bilibili 一并标上，别习惯性只标 weibo/other）。
+            **把平台榜当「该平台证据」用（关键，之前漏了这步）**：一个梗出现在 prefetch/douyin-hot.txt(抖音榜)里，
+            本身就是它在抖音活跃的可引用证据——请把该榜收作一条 source(tier:aggregator, platform:douyin,
+            url:https://tophub.today/n/3adqqzadng, note 写「抖音热榜第 N 位/话题」)并把 douyin 标进 platform；
+            知乎榜同理(platform:zhihu, url:https://tophub.today/n/mproPpoq6O)。这样无需打开被墙的 douyin.com 就能
+            如实抬升占比。反面教训：明明在抖音刷屏的梗(如世界杯「维京划船」)别再只从百度/微博榜取证、标成 other/weibo。
             小红书反爬最狠、几乎没有可直读聚合榜，天然最少——梗明显源自小红书时用能拿到的公开笔记/话题/搜索/媒体
             转述佐证并标 xiaohongshu，但不强求。**诚信红线压过多样性：绝不为凑平台编造抖音/小红书来源、或把纯微博梗
             误标别的平台；今天确是微博主导就如实呈现，多样性是长期倾向不是每日配额。** validate 会在某天可见梗
