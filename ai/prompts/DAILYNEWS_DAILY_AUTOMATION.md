@@ -85,6 +85,12 @@ Sweep authoritative public sources, in tier priority (record `tier` AND `outlet`
 **Evidence bar (enforced in code):** an item needs **≥1 `official`/`state_media` source, OR ≥2
 distinct-URL sources with ≥1 `major_media`**. A lone aggregator never qualifies. 交叉印证优先。
 
+**前瞻/预告类，或「全球首创 / 首次 / 首验 / 窗口锁定X日」这类强主张**：承载该关键事实的**最高档来源
+必须真正印证它本身**——不能用一篇泛化的行业综述（只带过名号、并未提到那个具体窗口/首创）来凑 tier、
+制造"交叉印证"的假象（真实反例：火箭首飞条把一篇 4 月的行业综述当 state_media 交叉源，实际只有一条
+major_media 写了 7/10–13 窗口）。若最高档源并不背书该强主张，就**降级表述**（删掉未被印证的强限定词，
+如"全球首次""窗口锁定X日"，改为更保守的说法）或**干脆不发**。宁可平实，不要来源撑不住的"高光"。
+
 ## How to write each item (map to schema fields)
 Reader-facing (ALL rendered):
 - `id` — `YYYY-MM-DD-slug`, lowercase ASCII `[a-z0-9-]` only, globally unique.
