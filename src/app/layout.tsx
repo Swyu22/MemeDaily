@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import "./globals.css";
 
@@ -67,17 +67,29 @@ export const metadata: Metadata = {
     description: SHARE_DESC,
     images: [`${BP}/share.png`],
   },
+  // PWA: 「添加到主屏幕」用高清图标（Android 走 manifest 的 192/512 + maskable；iOS 走 apple-icon 180）。
+  manifest: `${BP}/manifest.webmanifest`,
+  appleWebApp: {
+    capable: true,
+    title: "热梗日报",
+    statusBarStyle: "default",
+  },
   icons: {
     icon: [
-      { url: `${BP}/icon-t.png`, type: "image/png" },
       { url: `${BP}/favicon.ico`, sizes: "any" },
+      { url: `${BP}/icon-192.png`, type: "image/png", sizes: "192x192" },
+      { url: `${BP}/icon-512.png`, type: "image/png", sizes: "512x512" },
     ],
-    apple: `${BP}/apple-icon-t.png`,
+    apple: { url: `${BP}/apple-icon-t.png`, sizes: "180x180" },
   },
   robots: {
     index: false,
     follow: false,
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#fafafa", // 与站点近白顶栏一致，避免主屏 PWA/浏览器地址栏出现突兀色块
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
