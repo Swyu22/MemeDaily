@@ -15,8 +15,8 @@
  *      to its sticky line so the newly-selected feed starts right below the tabs.
  *   5. the tab panel, flush against the tab strip (no gap)
  * The sort state (热度值/新鲜值) lives here and drives BOTH feeds: 热梗 by heat/freshness lifecycle,
- * 日报 by heat_rank / latest source time (新闻越靠近现在越靠前). Each feed keeps its own sort with its
- * own default — 热梗 defaults 新鲜值, 日报 defaults 热度值.
+ * 日报 by heat_rank / latest source time (新闻越靠近现在越靠前). Each feed keeps its own sort
+ * independently; both default to 新鲜值.
  */
 import { useEffect, useRef, useState } from "react";
 import { Activity } from "lucide-react";
@@ -55,11 +55,11 @@ export function HomeTabs({
   newsDays,
 }: HomeTabsProps) {
   const [tab, setTab] = useState<Tab>("memes"); // 热梗 default; v1 keeps tab state client-only
-  // Each feed carries its OWN sort with its own sensible default: 热梗 defaults to 新鲜值 (freshest
-  // lifecycle first), 日报 defaults to 热度值 (heat_rank). The single toolbar control drives whichever
-  // feed is active and remembers each tab's choice independently.
+  // Each feed carries its OWN sort, both defaulting to 新鲜值 (热梗 = freshest lifecycle first, 日报 =
+  // newest event time first). The single toolbar control drives whichever feed is active and
+  // remembers each tab's choice independently.
   const [memeSort, setMemeSort] = useState<FeedSort>("fresh");
-  const [newsSort, setNewsSort] = useState<FeedSort>("heat");
+  const [newsSort, setNewsSort] = useState<FeedSort>("fresh");
   const sort = tab === "memes" ? memeSort : newsSort;
   const setSort = tab === "memes" ? setMemeSort : setNewsSort;
   // A zero-height, NON-sticky anchor rendered just above the tab strip. Reading its position gives
