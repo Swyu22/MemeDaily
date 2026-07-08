@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v2-民生",
+  "rubric_version": "v2-2026",
+  "date": "2026-07-09",
+  "generated_at": "2026-07-09T07:30:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 15,
+    "published": 6,
+    "dropped_safety": {
+      "政治地缘": 3,
+      "政府政策色彩": 1
+    },
+    "dropped_low_confidence": 3,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 13,
+      "official_sources": 2,
+      "state_media_sources": 6,
+      "major_media_sources": 4,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 2
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-09-typhoon-bawi-48h-warning",
+      "headline": "🌀台风巴威进入48小时警戒区，浙闽严阵以待",
+      "summary": "超强台风巴威9日已进入我国华东近海48小时警戒线范围，路径趋于明朗：以70%至80%概率登陆浙中南至闽北沿海，另有小概率直扑浙江北部。浙闽沿海强风雨考验在即，渔船已回港，各地启动防台应急响应，居民须尽快转移低洼和危旧房屋、储备生活物资。",
+      "category": "民生社会",
+      "heat_rank": 1,
+      "occurred_at": "2026-07-09T06:00:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "台风防御信息，聚焦路径预报与防范指引，标题无具体伤亡人数，不渲染灾情；以防范准备为导向；今日新进展为进入48小时警戒区且登陆路径大幅确定，risk设medium"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "http://typhoon.nmc.cn/web.html",
+          "title": "超强台风巴威实时路径预报",
+          "captured_at": "2026-07-09T06:00:00+08:00",
+          "note": "中央气象台台风网：超强台风巴威9日进入48小时警戒区，路径70%至80%概率登陆浙中南至闽北，11日至12日登陆"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国天气网",
+          "url": "http://news.weather.com.cn/2026/07/4708388.shtml",
+          "title": "超强台风巴威即将进入48小时警戒线 华东面临猛烈风雨考验",
+          "captured_at": "2026-07-09T06:30:00+08:00",
+          "note": "中国天气网：巴威进入48小时警戒范围，7月11日至12日登陆浙闽交界可能性较大，华东面临大风大雨极端考验"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-09-dangchang-landslide-final",
+      "headline": "🏔甘肃宕昌山体滑坡现场搜救工作正式结束",
+      "summary": "7月7日发生于甘肃陇南宕昌县的山体滑坡，历经约两天搜救，7月8日上午搜救工作正式宣告结束。此次滑坡共33名岷江林业总场工人遭掩埋，最终21人不幸遇难，7人轻伤，5人平安获救。陇南市政府召开新闻发布会，并为遇难者全场默哀。",
+      "category": "民生社会",
+      "heat_rank": 2,
+      "occurred_at": "2026-07-08T08:00:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "灾害事件结论性报道，标题无具体伤亡数字，伤亡细节置于summary，以客观记录为导向，不消费悲情；risk设medium"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/20260708/af58447a9bfb4d27be12012f0f25dc13/c.html",
+          "title": "甘肃宕昌山体滑坡致21人遇难 7人轻伤",
+          "captured_at": "2026-07-08T10:00:00+08:00",
+          "note": "新华社：甘肃宕昌县山体滑坡搜救结束，21人遇难，7人轻伤均无生命危险，5人未受伤"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "界面新闻",
+          "url": "https://www.jiemian.com/article/14720458.html",
+          "title": "甘肃宕昌山体滑坡共致21人遇难，7名伤者均无生命危险",
+          "captured_at": "2026-07-08T11:00:00+08:00",
+          "note": "界面新闻：宕昌滑坡搜救结束，陇南市政府召开发布会为遇难者默哀，21人遇难事件正式画上句点"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-09-national-science-awards-2025",
+      "headline": "🏆2025年度国家科技奖揭晓，两院士摘得最高奖",
+      "summary": "7月8日，2025年度国家科学技术奖正式揭晓。我国锂电池领域奠基人、中科院物理所陈立泉院士与机载脉冲多普勒雷达技术奠基人、中国电科贲德院士同获国家最高科学技术奖。本年度共评选258项成果，并首次同届评出3项自然科学奖一等奖。",
+      "category": "科技AI",
+      "heat_rank": 3,
+      "occurred_at": "2026-07-08T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "科技成就表彰类报道，来源权威，无政治敏感内容，与科技教育领域读者直接相关，调性平实"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/20260708/c19131551d7e47b388acebb931fb19e1/c.html",
+          "title": "新华社权威快报：陈立泉、贲德获国家最高科学技术奖",
+          "captured_at": "2026-07-08T10:00:00+08:00",
+          "note": "新华社权威快报：2025年度国家最高科学技术奖授予陈立泉、贲德两位院士"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "IT之家",
+          "url": "https://www.ithome.com/0/973/906.htm",
+          "title": "2025年度国家最高科学技术奖揭晓，锂电池奠基人陈立泉、机载雷达奠基人贲德获奖",
+          "captured_at": "2026-07-08T11:00:00+08:00",
+          "note": "IT之家：258项获奖成果，陈立泉（锂电池产业化）和贲德（机载雷达）获最高科技奖，首次同届3项自然科学一等奖"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-09-worldcup-qf-bracket-confirmed",
+      "headline": "⚽世界杯八强阵容全部确定，四场决战揭幕在即",
+      "summary": "随着阿根廷、英格兰、挪威、瑞士相继晋级，2026年世界杯八强阵容全部出炉：法国对阵摩洛哥、西班牙对阵比利时、挪威对阵英格兰、阿根廷对阵瑞士。四场四分之一决赛将于北京时间7月10日至12日相继打响，法摩揭幕首场，总决赛定于7月19日举行。",
+      "category": "国际",
+      "heat_rank": 4,
+      "occurred_at": "2026-07-08T03:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际体育赛事资讯，来源权威，无政治敏感内容，调性平实"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视体育",
+          "url": "https://worldcup.cctv.com/2026/schedule/index.shtml",
+          "title": "2026年美加墨世界杯赛程与比分",
+          "captured_at": "2026-07-08T05:00:00+08:00",
+          "note": "央视世界杯官网：2026年世界杯四分之一决赛对阵全部确定，法摩、西利、挪英、阿瑞四场比赛时间表"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪体育",
+          "url": "https://k.sina.com.cn/article_7879995911_1d5af3207068026rte.html",
+          "title": "2026世界杯1-4决赛对阵全部出炉",
+          "captured_at": "2026-07-08T08:00:00+08:00",
+          "note": "新浪体育：2026年世界杯四强争夺赛阵容完整出炉，法国、摩洛哥、西班牙、比利时、挪威、英格兰、阿根廷、瑞士晋级"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-09-tianwen2-asteroid-science",
+      "headline": "🚀天问二号抵达目标小行星，正式启动科学探测",
+      "summary": "经历约400天、行程逾10亿千米，天问二号探测器于7月6日成功与近地小行星2016HO3（卡莫奥阿莱瓦）交会，到达距离小行星20千米处，正式开始系统科学探测，这是中国首次完成小行星交会任务。后续将获取小行星形貌、物质成分等数据，并计划完成采样返回。",
+      "category": "国家高光",
+      "heat_rank": 5,
+      "occurred_at": "2026-07-06T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国家航天成就报道，来源权威（国家航天局+新华社），无政治敏感内容，是中国深空探测重要里程碑"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家航天局",
+          "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c10760422/content.html",
+          "title": "天问二号探测器抵达目标小行星 开展科学探测",
+          "captured_at": "2026-07-06T12:00:00+08:00",
+          "note": "国家航天局官网：天问二号7月6日与2016HO3小行星交会，到达20千米处正式开始科学探测"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/20260706/eb8cbec6dfc94a0c84a24e6940334f1d/c.html",
+          "title": "天问二号探测器抵达目标小行星 开始科学探测",
+          "captured_at": "2026-07-06T14:00:00+08:00",
+          "note": "新华社：天问二号历时400天行程10亿公里，成功与近地小行星2016HO3交会，开启科学探测，计划后续采样返回"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-09-summer-air-ticket-price-window",
+      "headline": "✈暑运低价机票窗口将关，7月15日后旺季高价来临",
+      "summary": "民航数据显示，2026年暑运国内机票出现一波低价窗口：7月6至12日出发的航班均价同比降约两成，部分热门航线裸票低于300元。此窗口关闭后，7月15日前后旺季客流高峰来临，票价将大幅拉升。燃油附加费也已于7月5日调降，800公里以上航段降至100元。有出行计划的旅客可抓紧抢购。",
+      "category": "民生社会",
+      "heat_rank": 6,
+      "occurred_at": "2026-07-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "民航暑运消费资讯，来源权威，无政治敏感内容，与夏季出行的普通旅客直接相关，调性平实"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6a444dc7e4b03fa51a80adbc.html",
+          "title": "2026年民航暑运7月1日启动 出行热度持续攀升",
+          "captured_at": "2026-07-01T08:00:00+08:00",
+          "note": "北京日报：2026年暑运7月1日正式启动，出行热度持续攀升，各航空公司积极扩容航线应对旺季客流"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://travel.sina.cn/2026-07-02/detail-inifixkk6033059.d.html",
+          "title": "2026年暑运票价低价窗口期能维持多久？",
+          "captured_at": "2026-07-02T10:00:00+08:00",
+          "note": "新浪旅游：暑运低价窗口期分析，7月6至12日均价同比降两成，7月15日起进入旺季，票价大幅拉升"
+        }
+      ],
+      "published": true
+    }
+  ],
+  "published_at": "2026-07-09T06:17:51+08:00"
+}
