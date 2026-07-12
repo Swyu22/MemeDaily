@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v2-民生",
+  "rubric_version": "v2-2026",
+  "date": "2026-07-12",
+  "generated_at": "2026-07-12T09:30:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 12,
+    "published": 5,
+    "dropped_safety": {
+      "政治地缘": 1,
+      "未经证实突发": 1
+    },
+    "dropped_low_confidence": 3,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 10,
+      "official_sources": 1,
+      "state_media_sources": 4,
+      "major_media_sources": 5,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-12-typhoon-bawi-double-landfall-rescue",
+      "headline": "🌀台风巴威两次登陆浙江，各地应急救援全面展开",
+      "summary": "台风巴威于11日夜在浙江台州玉环登陆，12日零时在温州乐清二次登陆，均达13级风力。浙江累计疏散逾221万人，浙南遭受特大暴雨袭击。中央紧急预拨4000万元救灾资金，调运5万件救灾物资支援浙闽救灾。台风北上将持续带来大范围强降水，中东部多省防汛进入紧急状态。",
+      "category": "民生社会",
+      "heat_rank": 1,
+      "occurred_at": "2026-07-12T00:00:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "台风灾害类民生新闻，克制处理：标题聚焦事件+响应，不写具体伤亡/转移人数，疏散人数等细节在summary；聚焦登陆事实与救援进展，不渲染悲情"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260712/df0fe7fc24f34c98add7ea757e7a7887/c.html",
+          "title": "各部门多措并举防汛防台风 保障人民生命财产安全",
+          "captured_at": "2026-07-12T08:00:00+08:00",
+          "note": "新华网：中央预拨4000万元救灾资金，水利部将浙闽洪水防御应急响应升至Ⅲ级，多部门应急响应全面启动"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://society.people.com.cn/n1/2026/0712/c1008-40758603.html",
+          "title": "浙江、福建等地全力应对台风「巴威」（扎实做好防灾救灾各项工作）",
+          "captured_at": "2026-07-12T08:00:00+08:00",
+          "note": "人民网：浙闽全力应对台风巴威，浙江累计疏散逾221万人，各地扎实推进防灾救灾各项工作"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-12-worldcup-england-2-1-norway",
+      "headline": "⚽贝林厄姆连场双响，英格兰加时2-1挪威晋级世界杯四强",
+      "summary": "北京时间7月12日凌晨，2026美加墨世界杯四分之一决赛，英格兰加时2-1逆转挪威晋级四强。谢尔德鲁普第36分钟打入世界波率先破门，贝林厄姆补时扳平后在加时第93分钟再次绝杀，本届已进6球。哈兰德全场受压无缘进球出局。英格兰半决赛将对阵阿根廷与瑞士的胜者。",
+      "category": "国际",
+      "heat_rank": 2,
+      "occurred_at": "2026-07-12T07:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际体育赛事资讯，来源权威，无政治敏感内容，调性平实"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760512/england-norway",
+          "title": "Norway 1-2 England (Jul 11, 2026) Final Score",
+          "captured_at": "2026-07-12T07:00:00+08:00",
+          "note": "ESPN：英格兰加时2-1击败挪威，贝林厄姆双响，谢尔德鲁普首开纪录，英格兰晋级世界杯四强"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "网易体育",
+          "url": "https://m.163.com/sports/article/L1KDJH2400058781.html",
+          "title": "世界杯-英格兰加时2-1挪威晋级四强 贝林厄姆连场双响",
+          "captured_at": "2026-07-12T08:00:00+08:00",
+          "note": "网易体育：英格兰加时2-1逆转挪威晋级四强，贝林厄姆本届已进6球，哈兰德无缘进球"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-12-summer-grain-harvest-record-3000bn-jin",
+      "headline": "🌾今年全国夏粮产量首次突破3000亿斤",
+      "summary": "国家统计局7月10日发布，2026年全国夏粮总产量3014.9亿斤，历史上首次突破3000亿斤大关，比上年增加约20亿斤、增幅0.7%。小麦及冬小麦产量均创历史新高。本次丰收克服黄淮海冬小麦晚播及局部强降水等不利影响，25个夏粮生产省区中22个实现增产，粮食安全基础进一步夯实。",
+      "category": "民生社会",
+      "heat_rank": 3,
+      "occurred_at": "2026-07-10T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "农业丰收数据资讯，来源权威（国家统计局数据经新华社发布），涉及国家粮食安全与民生福祉，无政治敏感词，调性平实"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/politics/20260710/0225a73480364e109658709bc74f7499/c.html",
+          "title": "全国夏粮产量首次突破3000亿斤",
+          "captured_at": "2026-07-10T12:00:00+08:00",
+          "note": "新华社：国家统计局数据，2026年全国夏粮产量3014.9亿斤，首次突破3000亿斤，比上年增加20亿斤"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/07-10/10656463.shtml",
+          "title": "国家统计局：2026年全国夏粮产量首次突破3000亿斤",
+          "captured_at": "2026-07-10T14:00:00+08:00",
+          "note": "中新网：小麦产量2779亿斤、冬小麦产量2730.7亿斤均创历史新高，25省区中22个增产"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-12-waic-2026-shanghai-preview",
+      "headline": "🤖2026世界人工智能大会下周上海开幕，逾300款AI新品全球首发",
+      "summary": "2026世界人工智能大会将于7月17—20日在上海举办，展览面积首次突破10万平方米。超300款AI新产品将全球首发，涵盖大模型、人形机器人、AI医疗等多领域；1100余家企业携3000余项展品亮相，140余场论坛汇聚1400余位中外嘉宾，是历届规模最大的人工智能盛会。",
+      "category": "科技AI",
+      "heat_rank": 4,
+      "occurred_at": "2026-07-08T10:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "重大科技展会预告，来源权威，无政治敏感词；展会内容贴近AI应用民生场景；low因为是大型会展且有官方背景，但内容聚焦科技展示而非政策发布"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/tech/20260708/fbbd5fbe39b5452098b5dde915b0c959/c.html",
+          "title": "超300款AI新品将在2026世界人工智能大会首发",
+          "captured_at": "2026-07-08T12:00:00+08:00",
+          "note": "新华网：WAIC 2026于7月17—20日在上海举办，超300款AI新品全球首发，展览面积首次突破10万平方米"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "IT之家",
+          "url": "https://www.ithome.com/0/973/507.htm",
+          "title": "2026世界人工智能大会7月17日在上海开幕：规模创新双突破，全球首发超300款AI新产品",
+          "captured_at": "2026-07-07T12:00:00+08:00",
+          "note": "IT之家：WAIC 2026规模创新双突破，五大AI生态矩阵全新亮相，展品涵盖大模型到具身机器人"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-12-electricity-load-record-1518bn-kw",
+      "headline": "⚡今夏全国用电负荷创15.18亿千瓦历史新高",
+      "summary": "国家能源局7月10日通报，全国最高用电负荷达15.18亿千瓦，刷新历史极值，较上年同期高逾千万千瓦。受持续高温影响，空调降温负荷占全国总负荷近三成，部分省份超四成。入夏以来南方区域电网已多次刷新历史峰值。相关部门多措并举保障夏季电力供应，目前电力供需总体平稳有序。",
+      "category": "民生社会",
+      "heat_rank": 5,
+      "occurred_at": "2026-07-10T16:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "能源民生数据资讯，来源权威（国家能源局官网），无政治敏感词，与普通人夏季用电安全直接相关，调性平实"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家能源局",
+          "url": "https://www.nea.gov.cn/20260710/02dd0d866ecd4e12855f69848a350181/c.html",
+          "title": "全国用电负荷首创历史新高 国家能源局多措并举全力保障电力供应平稳有序",
+          "captured_at": "2026-07-10T16:00:00+08:00",
+          "note": "国家能源局官网：7月10日全国最高用电负荷达15.18亿千瓦，创历史新高，空调降温负荷占比近30%"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "大河网",
+          "url": "https://news.dahe.cn/2026/07-10/2108465.html",
+          "title": "全国用电负荷创15.18亿千瓦历史新高",
+          "captured_at": "2026-07-10T17:00:00+08:00",
+          "note": "大河网：全国用电负荷创15.18亿千瓦历史新高，南方区域入夏已多次创纪录，电力供需总体平衡"
+        }
+      ],
+      "published": true
+    }
+  ],
+  "published_at": "2026-07-12T11:11:38+08:00"
+}
