@@ -32,7 +32,7 @@ verify the correction under Safari and Chrome PWA contracts, and deploy it to pr
 - [x] Identify the remaining gray strip as the configured `#fafafa` app surface, not scroll bleed.
 - [x] Align runtime, manifest, launch, and offline surfaces to pure white `#ffffff`.
 - [x] Add a cross-file regression test and refresh the manifest/worker generations.
-- [ ] Run the complete gate, deploy the white-shell correction, and verify production assets.
+- [x] Run the complete gate, deploy the white-shell correction, and verify production assets.
 
 ## High-Risk Areas
 - iOS Home Screen mode calculates viewport and safe-area geometry differently from a normal
@@ -51,4 +51,4 @@ verify the correction under Safari and Chrome PWA contracts, and deploy it to pr
 - `npm run check` passes, Pages deploys the commit, and production serves the new metadata/assets.
 
 ## Last Updated
-- 2026-07-13 23:51 +0800
+- 2026-07-13 23:55 +0800
