@@ -52,6 +52,7 @@ html {
   min-height: 100%;
   background: var(--app);
   color-scheme: light;
+  overscroll-behavior-y: none;
 }
 
 body {
@@ -60,6 +61,7 @@ body {
   background: var(--app);
   color: var(--text);
   font-family: var(--font-sans);
+  overscroll-behavior-y: none;
 }
 
 a {
@@ -108,6 +110,17 @@ select {
   padding-top: var(--safe-area-top);
   border-bottom: 1px solid var(--border-soft);
   background: var(--app);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.topbar::before {
+  position: fixed;
+  inset: 0 0 auto;
+  height: var(--safe-area-top);
+  background: var(--app);
+  content: "";
+  pointer-events: none;
 }
 
 .topbar-inner {

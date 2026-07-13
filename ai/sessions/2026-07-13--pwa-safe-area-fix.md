@@ -53,6 +53,21 @@ late WebKit geometry changes without overlap.
 - Production exposes `status-bar-style=default`, `theme-color=#fafafa`, matching manifest colors,
   and passed the same safe-area color/scroll acceptance with zero mismatched pixels.
 
+## Follow-up: Chrome PWA
+- Safari physical-device behavior is corrected; the user reports that Chrome still exposes blurred
+  scrolling content in the top region.
+- Chrome already received matching document and manifest theme colors, so the remaining path is
+  root overscroll/rubber-banding plus aggressively cached installed-app metadata.
+- Disabled vertical overscroll on both root scroll elements and added a fixed `#fafafa` safe-area
+  compositor guard above the sticky header.
+- Added `color-scheme=light`, a versioned manifest URL, and a stable manifest `id`; bumped the
+  Service Worker generation to `memedaily-v3` so installed clients replace the old shell caches.
+- Chromium mobile acceptance used a dark system preference, forced a 47px inset, and scrolled to
+  1200px. It confirmed one generic capable meta, the new manifest/SW contract, overscroll `none`,
+  a fixed 47px guard, no blur, exact 133px sticky alignment, and zero mismatched top pixels.
+- `npm run check` passes both validators, lint, typecheck, 80 tests, and a 124-page build.
+- Production deployment is pending.
+
 ## Residual Manual Check
 - A physical installed PWA is the final authority for iOS system status-bar composition. Reopen
   the app after deployment (or remove/re-add it if iOS retains old metadata) and confirm the top
