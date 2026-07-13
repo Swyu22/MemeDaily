@@ -32,8 +32,9 @@
 ## Daily Summary
 - Last Done: implemented the unified light PWA shell; full validation, lint, typecheck, all 83
   tests, the 124-page static build, emitted-artifact assertions, and mobile dark/light browser
-  computed-style checks pass.
-- Next Actions: publish to Pages, verify production HTML/CSS/PWA assets, and ask for one physical
-  iOS Chrome dark-mode confirmation after refresh/reinstall.
+  computed-style checks pass. Commit `1062fb7`, CI run `29274507137`, Pages run `29274507162`,
+  production asset assertions, and production mobile dark-mode browser checks also pass.
+- Next Actions: ask for one physical iOS Chrome dark-mode confirmation after refresh/reinstall;
+  retain the rollback point until that observation is complete.
 - Key Decision: retain the normal reserved status-bar area rather than masking the symptom
   with an immersive overlay layout.

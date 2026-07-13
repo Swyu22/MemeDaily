@@ -18,7 +18,7 @@ while keeping the current non-immersive status-bar layout and an opaque page-col
 - [x] P1 Align manifest, offline fallback, and service-worker cache generation.
 - [x] P1 Add focused installed-PWA surface regression coverage.
 - [x] P0 Run full lint, type, test, build, governance, and emitted-output assertions.
-- [ ] P0 Commit, push, await Pages, and verify the production HTML/manifest/SW/CSS.
+- [x] P0 Commit, push, await Pages, and verify the production HTML/manifest/SW/CSS.
 - [ ] P1 Confirm the remaining physical-device behavior after Chrome refresh/reinstall.
 
 ## High-Risk Areas
@@ -39,4 +39,4 @@ while keeping the current non-immersive status-bar layout and an opaque page-col
 - GitHub Pages serves the new HTML, manifest, worker, and hashed CSS over HTTPS.
 
 ## Last Updated
-- 2026-07-14 02:27 +0800
+- 2026-07-14 02:28 +0800
