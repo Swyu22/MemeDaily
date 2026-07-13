@@ -28,7 +28,7 @@ verify the correction under Safari and Chrome PWA contracts, and deploy it to pr
 - [x] Keep the document viewport inside the system safe area with `viewport-fit=contain`.
 - [x] Remove synthetic inset padding/guards and refresh the installed manifest/SW generations.
 - [x] Trace the July 13 three-to-two item change through the publisher and audit commits.
-- [ ] Run the complete gate, deploy the containment correction, and verify production assets.
+- [x] Run the complete gate, deploy the containment correction, and verify production assets.
 
 ## High-Risk Areas
 - iOS Home Screen mode calculates viewport and safe-area geometry differently from a normal
@@ -47,4 +47,4 @@ verify the correction under Safari and Chrome PWA contracts, and deploy it to pr
 - `npm run check` passes, Pages deploys the commit, and production serves the new metadata/assets.
 
 ## Last Updated
-- 2026-07-13 23:27 +0800
+- 2026-07-13 23:33 +0800
