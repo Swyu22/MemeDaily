@@ -11,7 +11,6 @@ domain data; this directory must not import automation scripts.
 | `meme/[id]/page.tsx` | Static meme detail routes and metadata |
 | `globals.css` | Base tokens, shared desktop styles, focus, and component presentation |
 | `responsive.css` | Responsive breakpoints extracted to keep first-party files under 800 lines |
-| `pwa-surface.test.ts` | Regression contract for the installed-shell color, viewport, and cache generation |
 
 Behavior belongs in `src/features/`; schemas, loaders, and policy rules belong in
 `src/domain/`.

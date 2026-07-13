@@ -77,8 +77,8 @@ export function HomeTabs({
   // sticky element reports its pinned position, not its flow position.
   const tabsTopRef = useRef<HTMLDivElement>(null);
 
-  // Keep --header-h aligned with the sticky header when responsive or font geometry changes after
-  // first paint. CSS provides the pre-hydration fallback.
+  // Keep --header-h aligned with the sticky header, including safe-area changes that WebKit may
+  // report after first paint. CSS provides the pre-hydration fallback.
   useEffect(() => {
     const root = document.documentElement;
     const header = document.querySelector(".topbar");
