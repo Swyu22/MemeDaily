@@ -38,7 +38,7 @@ export function TodayFeed({ days, hasMore, sort }: TodayFeedProps) {
             )}
             <div className="stack">
               {sortFn(day.items).map((item) => (
-                <MemeCard item={item} key={item.id} />
+                <MemeCard expanded item={item} key={item.id} />
               ))}
             </div>
           </section>

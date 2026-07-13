@@ -14,8 +14,7 @@
     "validate:news": "tsx scripts/validate-news.ts",
     "check": "npm run validate && npm run validate:news && npm run lint && npm run typecheck && npm test && npm run build",
     "fallback:skipped": "tsx scripts/create-skipped-day.ts",
-    "fallback:skipped:news": "tsx scripts/create-skipped-news-day.ts",
-    "stamp:publish": "tsx scripts/stamp-publish-time.ts"
+    "fallback:skipped:news": "tsx scripts/create-skipped-news-day.ts"
   },
   "dependencies": {
     "lucide-react": "^0.561.0",

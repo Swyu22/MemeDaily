@@ -5,17 +5,16 @@ name: daily-publish
 # billing): aggregator-first public-web research -> today's data/daily JSON.
 #
 # SECURITY MODEL — TWO JOBS so the web-content-steered agent never holds write power:
-#   - job `agent`: permissions contents:read with the job token passed explicitly. It
+#   - job `agent`: permissions contents:read (+ id-token:write for the action's OIDC). It
 #     runs claude-code-action (which reads attacker-influenceable public pages) confined by
-#     path-scoped Write/Edit permissions in dontAsk mode and NO shell access. It produces
-#     data/daily/<date>.json and uploads ONLY that JSON as
+#     an explicit --allowedTools list (NO bypassPermissions; the only Bash it may run is
+#     `npm run validate`). It produces data/daily/<date>.json and uploads ONLY that JSON as
 #     an artifact. Even a full agent compromise cannot push, dispatch workflows, or mint a
 #     write/Pages token — this job simply has none.
 #   - job `publish`: needs `agent`; permissions contents:write + actions:write. It checks out
 #     TRUSTED repo code (NOT the agent's tree), downloads only the data-JSON artifact, runs
 #     `npm run check` against repo-controlled scripts, then commits + pushes + dispatches the
-#     Pages deploy. The agent can influence only the downloaded JSON, which is schema/policy
-#     validated by trusted repository code; it cannot alter commands, validators, or credentials.
+#     Pages deploy. The agent cannot influence anything in this job.
 #
 # ONE-TIME SETUP (required before it does anything):
 #   1. On your Mac: `claude setup-token`  -> copies a long-lived subscription OAuth token.
@@ -42,9 +41,9 @@ jobs:
   # ── JOB 1: confined, web-content-steered agent. contents:read only — it cannot push. ──
   agent:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
     permissions:
       contents: read
+      id-token: write # claude-code-action uses OIDC for its GitHub token setup
     env:
       # Boolean only — the token VALUE is never exposed to the job shell env.
       HAS_OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
@@ -61,7 +60,7 @@ jobs:
         if: env.HAS_OAUTH != 'true'
         run: echo "::warning::CLAUDE_CODE_OAUTH_TOKEN not set — run 'claude setup-token' and add it as a repo secret to enable cloud publishing. Skipping this run."
 
-      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
+      - uses: actions/checkout@v4
         if: env.HAS_OAUTH == 'true'
         with:
           persist-credentials: false # defense-in-depth; this job has no write scope anyway
@@ -89,24 +88,31 @@ jobs:
           fi
           echo "skip=${SKIP}" >> "$GITHUB_OUTPUT"
 
+      - uses: actions/setup-node@v4
+        if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install deps
+        if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
+        run: npm ci
+
       - name: Pre-fetch hot-list aggregators in parallel (speed; agent reads prefetch/*.txt)
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
         run: bash scripts/prefetch-hotlists.sh
 
-      - name: Generate today's MemeDaily data (path-confined agent, no shell or git)
+      - name: Generate + self-check today's MemeDaily data (confined agent, no git)
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
         uses: anthropics/claude-code-action@2fee15510437d71399d9139ed60433470484a8fb # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          # Force the action to use this job's short-lived contents:read token. Without this
-          # override it exchanges OIDC for a separate Claude GitHub App token with write scopes.
-          github_token: ${{ github.token }}
           # daily-catchup dispatches this workflow via GITHUB_TOKEN → actor = github-actions (Bot).
           # The action's runtime now rejects bot actors by default (2026-07-12 incident: every
           # catchup retry died on "non-human actor"), so allowlist exactly this repo-internal bot.
           # Only workflows in THIS repo with actions:write can dispatch as it; agent stays confined.
           allowed_bots: "github-actions"
-          claude_args: '--max-turns 60 --permission-mode dontAsk --allowedTools "WebSearch,WebFetch,Read(./**),Glob(./**),Grep(./**),TodoWrite,Write(data/daily/${{ steps.guard.outputs.date }}.json),Edit(data/daily/${{ steps.guard.outputs.date }}.json)"'
+          claude_args: '--max-turns 60 --allowedTools "WebSearch,WebFetch,Read,Glob,Grep,Write,Edit,TodoWrite,Bash(npm run validate)"'
           prompt: |
             You are the MemeDaily daily publishing job running unattended in GitHub Actions.
             Read and follow ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md EXACTLY, including its
@@ -146,7 +152,7 @@ jobs:
             如把"马宁没有软肋，全是商务"写成"没有软肋，全是商务"）；离开这个人就不成立的（发型/私
             生活/花边）则丢弃。强烈偏向新网络流行用语/新句式/抽象表达/谐音/大众可套用接龙的语言模板（如
             "不讲不讲""确诊了XX症候群""XX文学""父爱如山体滑坡"），优先级高于赛事/明星/品牌。
-            生命周期：只有话题第一次收录至今至少5天才标「已过气」，否则至少「还能上车」（代码校验强制）。
+            生命周期：只有话题第一次收录至今超过5天才标「已过气」，否则至少「还能上车」（代码校验强制）。
             采集要广、要聪明：横扫多个聚合榜单 + 平台公开页 + 梗词典 + 搜索
             引擎 + 跨平台外溢，先建一个大候选池(~30+)，再按 rubric 排序、挑出最好的 ~10 条；
             分多轮：广撒网 → 筛选排序 → 核实增强。预算充足(~$5/天、~60 轮)，质量与广度优先。
@@ -167,15 +173,18 @@ jobs:
             data/daily/${{ steps.guard.outputs.date }}.json using the Write tool (today is
             ${{ steps.guard.outputs.date }}, Asia/Shanghai). The file MUST exist on disk before you
             finish — do NOT just print the JSON in a chat message, and do NOT end your turn until the
-            file is written. Use Read/Glob/Grep to inspect the schema and existing files. You have no
-            shell permission and may write/edit only that exact daily JSON path. A separate trusted
-            job stamps time, runs the full validation/typecheck/test/build suite, and publishes it.
+            file is written. Use Read/Glob/Grep to inspect the schema and existing files; the ONLY
+            shell command you may run is `npm run validate` (fast — it just checks your JSON against
+            the schema; do NOT build the app). After writing the file, run `npm run validate` once;
+            if it reports errors, fix the file and re-run — but after at most 3 attempts, Write a
+            valid status:"skipped" envelope instead of looping. A separate deterministic job runs the
+            full check (typecheck/test/build) and publishes your file, so do NOT run git/commit/push.
             If nothing qualifies after sweeping aggregators, you STILL must Write a valid
             status:"skipped" envelope to that exact path. Never fabricate evidence and never pad to 10.
 
       - name: Upload the agent's data file (ONLY the JSON — never code) for the publish job
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        uses: actions/upload-artifact@v4
         with:
           name: daily-data
           path: data/daily/${{ steps.guard.outputs.date }}.json
@@ -187,19 +196,16 @@ jobs:
     needs: agent
     if: needs.agent.outputs.has_oauth == 'true' && needs.agent.outputs.skip != 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 25
     permissions:
       contents: write
       actions: write # to dispatch the Pages deploy after a GITHUB_TOKEN push
     env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       DATE: ${{ needs.agent.outputs.date }}
     steps:
-      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # TRUSTED repo code — NOT the agent's tree
-        with:
-          fetch-depth: 0
-          persist-credentials: false
+      - uses: actions/checkout@v4 # TRUSTED repo code — NOT the agent's tree
 
-      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
@@ -208,14 +214,12 @@ jobs:
         run: npm ci
 
       - name: Download the agent's data file (only the JSON artifact)
-        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+        uses: actions/download-artifact@v4
         with:
           name: daily-data
           path: data/daily
 
       - name: Validate, commit & publish (deterministic; agent cannot reach this)
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
           # Fail LOUD if the artifact is missing (don't pass green-but-empty — a red run lets
@@ -224,8 +228,11 @@ jobs:
             echo "::error::Agent job produced no data/daily/${DATE}.json artifact. Failing so daily-catchup/monitor recover."
             exit 1
           fi
-          # Normalize every publish-bound timestamp against the trusted runner clock before validation.
-          npm run stamp:publish -- "data/daily/${DATE}.json"
+          # Stamp the REAL publish time (Asia/Shanghai, fixed UTC+8) into published_at, so the
+          # UI's 发布时间 is the actual push moment — never a time LATER than when a user views it.
+          # This is independent of the agent-guessed generated_at (which has no reliable clock and
+          # was often ~1-2h ahead of reality), and leaves generated_at/captured_at + their gate intact.
+          node -e 'const fs=require("fs"),p=process.argv[1],o=JSON.parse(fs.readFileSync(p,"utf8"));o.published_at=new Date(Date.now()+8*3600*1000).toISOString().replace(/\.\d+Z$/,"+08:00");fs.writeFileSync(p,JSON.stringify(o,null,2)+"\n")' "data/daily/${DATE}.json"
           npm run check # re-validate against TRUSTED repo code before trusting the data
           # Stage FIRST, then check staged changes — a brand-new day's file is UNTRACKED, and
           # `git diff --quiet` ignores untracked files (this silently dropped 06-23's first publish).
@@ -237,10 +244,32 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore(data): publish MemeDaily ${DATE}"
-          gh auth setup-git
           git pull --rebase origin main
           git push origin HEAD:main
+          # GITHUB_TOKEN pushes don't trigger on:push workflows, so dispatch the Pages deploy.
+          # `--ref main` resolves main's HEAD at dispatch time; dispatching before the push has
+          # propagated to the dispatch resolver builds the PRE-push commit (this once left a day
+          # committed but the live site stuck on the previous day). So wait, dispatch, then VERIFY
+          # the created run targets our SHA — retry a few times before giving up.
           SHA="$(git rev-parse HEAD)"
-          # GITHUB_TOKEN pushes do not trigger on:push. Dispatch a new Pages run, correlate it
-          # to this commit (or a descendant), and wait for its successful conclusion.
-          bash scripts/dispatch-pages.sh "$SHA"
+          DEPLOYED=false
+          for attempt in 1 2 3 4; do
+            sleep 10
+            gh workflow run pages.yml --ref main || true
+            sleep 6
+            RUN_SHA="$(gh run list --workflow=pages.yml --limit 1 --json headSha --jq '.[0].headSha' 2>/dev/null || echo '')"
+            # Accept if the deploy targets our commit OR a DESCENDANT of it (a concurrent push
+            # moved main forward but still includes our content); only the PRE-push parent — the
+            # race we actually guard against — is rejected. Fetch so ancestry can see RUN_SHA.
+            git fetch origin -q 2>/dev/null || true
+            if [ -n "$RUN_SHA" ] && { [ "$RUN_SHA" = "$SHA" ] || git merge-base --is-ancestor "$SHA" "$RUN_SHA" 2>/dev/null; }; then
+              echo "Pages deploy includes ${SHA} (deployed ${RUN_SHA}, attempt ${attempt})."
+              DEPLOYED=true
+              break
+            fi
+            echo "::warning::Pages deploy targeted ${RUN_SHA:-?}, which does not include ${SHA}; retrying (attempt ${attempt})."
+          done
+          if [ "$DEPLOYED" != "true" ]; then
+            echo "::error::Could not dispatch a Pages deploy for ${SHA} after retries — the commit is published but the live site may lag. Re-run pages.yml manually."
+            exit 1
+          fi

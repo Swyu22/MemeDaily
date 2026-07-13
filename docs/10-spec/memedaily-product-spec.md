@@ -1,80 +1,86 @@
 # MemeDaily Product Spec
 
 ## Purpose
-MemeDaily is an internal-facing, publicly hosted reference desk for content, marketing,
-and communications teams. It combines a reusable Chinese-internet meme feed with a
-restrained everyday-life news digest. It is not a community, scraper, or private intranet.
+MemeDaily is a daily Chinese internet meme intelligence desk for internal content,
+marketing, and communications teams. It is not a general news site and not a public
+consumer community.
 
 ## Core Jobs
-- **Triage:** understand what is worth noticing today in one to two minutes.
-- **Interpret:** see a meme's use, spread mechanism, interesting point, and evidence, or a
-  news item's concise factual summary and source context.
-- **Lookup:** browse earlier dates, search the meme archive, and open stable detail URLs.
+- **Triage:** see what is worth noticing today in one to two minutes.
+- **Decide:** understand whether a meme can still be used, how a brand could use it,
+  and what risk to avoid.
+- **Lookup:** search prior days and open a permanent detail URL for sharing.
 
-## Feed Contracts
-### Memes
-- One envelope per day: `data/daily/YYYY-MM-DD.json`.
-- Each published item has a stable `id`, title, platforms, type, reader-facing summary,
-  origin, usage, fun point, spread reason, lifecycle, internal policy fields, and sources.
-- `brand_usage` and `risk` remain contract/policy inputs but are intentionally not rendered
-  as card sections. Editorial output must not become a named-brand recommendation.
-- Each source records tier, evidence role, platform, HTTP(S) URL, capture time, and a compact
-  title/note. The UI shows concise links, never long excerpts.
+## Data Contract Summary
+- One file per day: `data/daily/YYYY-MM-DD.json`.
+- Daily envelope includes `schema_version`, `policy_version`, `rubric_version`,
+  `date`, `generated_at`, `status`, `run_report`, and `items`.
+- Each published item requires:
+  - stable `id`
+  - `title`
+  - `platform[]`
+  - `type`
+  - `summary`
+  - `origin`
+  - `usage`
+  - `fun_point`
+  - `why_spread`
+  - `lifecycle`
+  - `brand_usage`
+  - `risk`
+  - at least two independent `sources[]`
+- Each source includes `tier`, `evidence_role`, `platform`, `url`, `captured_at`,
+  and a short `note`.
 
-### News
-- One envelope per day: `data/daily-news/YYYY-MM-DD.json`.
-- Items contain a stable id, emoji-led headline, category, summary, heat rank, event time,
-  and evidence sources with outlet metadata.
-- The feed prioritizes genuinely fresh, everyday-life information and non-political
-  international culture, science, technology, sports, or public-interest developments.
+## Evidence Gate
+- Publish only when an item has at least two independent reachable URLs.
+- At least one source must be `platform_public` or `aggregator`.
+- Items supported only by search results, media reports, or spillover discussion are
+  discarded.
+- Store URLs and compact notes only. Do not store media, screenshots, comment dumps,
+  private account data, or long excerpts.
 
-### Envelope Integrity
-- Both envelopes include version fields, date, `generated_at`, optional `published_at`,
-  status, run report, and items.
-- Trusted automation stamps pipeline acceptance time after the model artifact is produced;
-  the live Pages deployment may complete a few minutes later.
-- `generated_at` and every source `captured_at` must not be later than `published_at`.
-- Invalid JSON, schema failures, policy failures, or accounting mismatches block publication.
+## Safety Gate
+Drop, do not display, any candidate involving:
+- politics or current affairs sensitivity
+- social tragedies, accidents, crimes, disasters, or public safety incidents
+- celebrity controversies, scandals, private disputes, or fan wars
+- minors as identifiable subjects
+- privacy invasion, doxxing, or ordinary people being targeted
+- harassment, attacks, slurs, discrimination, or regional insults
+- explicit, illegal, bloody, violent, harmful-rumor, or dangerous content
 
-## Meme Evidence And Safety Gates
-- Publish only with at least two independent reachable HTTP(S) URLs.
-- At least one source must be `platform_public` or `aggregator`; third-tier-only evidence is
-  insufficient.
-- Store URLs and short notes only. Do not store media, screenshots, comment dumps, login
-  state, private account data, or long excerpts.
-- Drop politics, disasters/public-safety incidents, crimes/tragedies, celebrity disputes,
-  identifiable minors, privacy invasion, doxxing, harassment, attacks, explicit/illegal or
-  dangerous content, and harmful rumors.
-- A candidate needs a reusable phrase, template, BGM, visual/action pattern, persona, or
-  remix structure. A hot one-off news event is not a meme.
-- Never fabricate sources or weaken safety to fill a daily quota.
+## Meme-Shell Gate
+The candidate must have a reusable shell: phrase, template, BGM, visual setup,
+action pattern, persona, or remix structure. A high-heat one-off news event is not
+a meme for this product.
+
+Avoid topics that are mainly about one specific brand, product launch, company dispute,
+or marketing claim. Brand names can appear in evidence sources, but the published card
+should stand on a generalized meme shell rather than a single company's news cycle.
 
 ## UI Requirements
-- Home: same chrome for both tabs, latest date first, up to five days, heat/freshness sorting,
-  visible source links, status handling, and responsive cards.
-- Meme archive: text search plus platform, type, lifecycle, date-range, and sort controls.
-- Meme detail: permanent static route, complete reader-facing fields, evidence, history,
-  related items, and copy actions.
-- Accessibility: keyboard-operable tabs and controls, visible focus, semantic labels, skip
-  navigation, live result counts, and wrapping source rows on mobile.
-- PWA: same-origin self-hosted fonts/icons/manifest and a network-first service worker whose
-  paths adapt to root or GitHub project-subpath hosting.
+- Today desk: date-grouped feed, latest day first, compact cards, visible source rows,
+  inline details, copy-away action.
+- Archive/search: keyword search, day/library view, platform/type/range filters,
+  lifecycle and value display.
+- Meme detail: permanent URL, full fields, source links, history, related memes,
+  copy link and copy-away actions.
+- Mobile source rows must wrap cleanly; no forced `white-space: nowrap` that causes
+  vertical text or clipped evidence links.
 
 ## Automation Requirements
-- Primary cloud jobs run at about 06:00 (news) and 07:00 (memes), Asia/Shanghai. External
-  workflow dispatch is the reliable trigger; GitHub schedules, catch-up, fallback, and
-  monitor workflows provide resilience.
-- The model-facing job receives public prefetch/search context, cannot run shell commands,
-  and can write only the exact dated artifact. It receives only the job-scoped, short-lived
-  `contents:read` token and no write credential.
-- A separate trusted job checks out clean code, stamps chronology, validates all contracts,
-  commits, pushes, and lets GitHub Pages deploy.
-- Local Codex is a supervised recovery option. Its prompt is guidance, not an OS sandbox.
-- Missing content may publish `skipped`; the system prefers fewer correct items to unsafe,
-  weakly evidenced, or fabricated ones.
+- The daily automation runs unattended in GitHub Actions (`daily-publish.yml`) on a cloud
+  cron (~07:40 Asia/Shanghai), with `daily-catchup` re-publishing if a scheduled run is
+  dropped. The local Codex App run (07:15) is an optional manual fallback only.
+- Automation writes one complete daily file, validates it, builds the site, then
+  commits and pushes.
+- Automation targets 10 publishable items per day by expanding public hot-list
+  aggregators and search queries before giving up. It must never fabricate sources
+  or publish unsafe/weak-evidence items only to fill the count.
+- GitHub fallback creates a `skipped` envelope if the daily file is missing after
+  the expected publication window.
+- Invalid JSON must fail CI/build and leave the last successful site online.
 
-## References
-- Living meme rules: `../../ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md`
-- Living news rules: `../../ai/prompts/DAILYNEWS_DAILY_AUTOMATION.md`
-- Architecture decisions: `../30-decisions/`
-- Original product rationale: `../../产品方案.md`
+## Reference
+The fuller Chinese product rationale remains in `产品方案.md`.

@@ -1,9 +1,5 @@
 # MemeDaily — Codex 每日发布自动化（冗余 / 迁移版）
 
-> **状态：已废弃（2026-07-13）。不要用本文件建立自动化，也不要按下文停用云端。**
-> 当前无人值守发布以 `.github/workflows/daily-publish.yml` 为准；本地人工恢复使用
-> `ai/prompts/CODEX_FULL_HANDOFF.md`。下文仅保留为历史迁移记录。
-
 > 用途：把每日发布从 Claude 云端（GitHub Actions + claude-code-action）迁移 / 冗余到
 > **本地 Mac 上的 Codex**。把本文件整段作为 Codex 自动化任务的提示词。
 
@@ -100,7 +96,7 @@
   `type` 取枚举（热点事件梗/短视频梗/生活方式梗/二创梗/句式梗/口头禅梗/情绪梗/职场梗/其他）。
 - `summary` 一句话；`origin` 来源与已验证信息（只写公开源能确认的，不靠记忆）；`usage` 典型用法 /
   传播场景；`fun_point` 有趣点；`why_spread` 为何放大，**必须分「已验证：… / 推测：…」**。
-- `lifecycle` **唯一标准 = 天数**：`declining`（已过气）**只有当该梗第一次被收录至今 ≥5 天**才标
+- `lifecycle` **唯一标准 = 天数**：`declining`（已过气）**只有当该梗第一次被收录至今 > 5 天**才标
   （从最近 `data/daily/*.json` 历史按梗名 / 别名查首次日期）；否则**至少 `rising`（还能上车）**，
   明显大热标 `peak`（正热）。**代码门禁强制此条：把不满 5 天的梗标 declining 会让 `npm run validate`
   失败、无法提交。**
@@ -137,8 +133,7 @@
    sources / evidence_summary）。
 7. 跑 `npm run validate` → `npm run typecheck` → `npm test` → `npm run build`，**全过才继续**。
 8. 只暂存今天这个文件（别动以前的）：
-   `npm run stamp:publish -- "data/daily/${DATE}.json" && npm run check &&
-   git add -- "data/daily/${DATE}.json" && git commit -m "chore(data): publish MemeDaily ${DATE}" && git push`。
+   `git add data/daily/<今天>.json && git commit -m "chore(data): publish MemeDaily <今天>" && git push`。
 9. 留一句运行小结：日期、status、发了几条、各类丢弃数、push 结果。任一步失败：**不提交**、保持仓库
    干净、说明失败原因。
 
