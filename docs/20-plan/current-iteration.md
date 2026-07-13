@@ -1,46 +1,42 @@
 # Current Iteration
 
 ## Iteration Goal
-Complete a full installed-Skills audit of the live MemeDaily repository, repair all safe
-and actionable findings, verify each repair, publish the result, and leave an auditable
-handoff for the next agent.
+Remove the gray translucent top region seen in the installed iOS Chrome PWA under dark mode,
+while keeping the current non-immersive status-bar layout and an opaque page-colored surface.
 
 ## Scope
-- **In:** source, schemas, data history, styles, PWA, assets, scripts, hooks, workflows,
-  dependencies, prompts, governance state, docs, deployment, and production verification.
-- **Out:** unrelated product features, direct/login-based platform scraping, external
-  account changes, and broad dependency upgrades without a concrete finding.
+- **In:** root viewport metadata, critical first-paint CSS, global shell/topbar styles,
+  manifest launch colors, offline shell, service-worker generation, regression tests,
+  state records, and production verification.
+- **Out:** content feeds, publishing jobs, immersive `viewport-fit=cover`, safe-area layout
+  changes, unrelated visual redesign, and external account configuration.
 
 ## Checklist
-- [x] P0 Inventory all installed Skills and select the project-relevant set.
-- [x] P0 Scan every important first-party directory and file type.
-- [x] P0 Audit publishing-agent confinement, workflow permissions, action pinning, and token
-  exposure boundaries.
-- [x] P0 Add trusted publication chronology and deterministic high-signal meme safety gates.
-- [x] P0 Hide confirmed unsafe historical meme records and normalize impossible timestamps.
-- [x] P1 Repair PWA path/caching behavior, accessibility, dead exports, and deprecated schema
-  APIs.
-- [x] P1 Make file/header/state governance checks reflect their documented enforcement.
-- [x] P1 Refresh canonical state, map, spec, ADR, module indexes, and automation handoffs.
-- [x] P0 Run the complete local gate suite, browser/PWA checks, and audit-specific assertions.
-- [x] P0 Commit, push, wait for CI/Pages, and verify production content and HTTPS.
-- [x] P1 Close the session with the final report, evidence, and residual manual actions.
+- [x] P0 Confirm manifest, root canvas, and transparent topbar conflicts at the rollback SHA.
+- [x] P0 Lock document/app chrome to one light color without enabling an overlay status bar.
+- [x] P0 Make the sticky topbar opaque and remove its backdrop blur.
+- [x] P1 Align manifest, offline fallback, and service-worker cache generation.
+- [x] P1 Add focused installed-PWA surface regression coverage.
+- [x] P0 Run full lint, type, test, build, governance, and emitted-output assertions.
+- [ ] P0 Commit, push, await Pages, and verify the production HTML/manifest/SW/CSS.
+- [ ] P1 Confirm the remaining physical-device behavior after Chrome refresh/reinstall.
 
 ## High-Risk Areas
-- Untrusted public-web text reaching a model job with repository credentials or shell access.
-- Published content involving disasters, privacy, minors, harassment, or unsafe rumor context.
-- Agent-authored timestamps being mistaken for trusted publication chronology.
-- PWA caching or root/subpath assumptions serving stale or missing assets.
-- Public-repository secrets, especially credentials previously shared outside git.
+- iOS installed-app chrome may use manifest, document metadata, root paint, or cached shell
+  state at different lifecycle stages.
+- `black-translucent` or `viewport-fit=cover` would move content under the status bar and
+  recreate the visible scroll-through failure.
+- A stale service worker or cached manifest can conceal a correct source change until the
+  installed app refreshes its shell metadata.
 
 ## Acceptance Standard
-- `npm run check` and all governance/security checks pass from a clean staged candidate.
-- Workflow YAML parses; every external action is full-SHA pinned; model jobs lack shell, broad
-  write paths, and git credentials.
-- Browser checks cover desktop/mobile home, archive, detail, keyboard tabs, source wrapping,
-  manifest/service worker, and static route availability.
-- Production deploys the audited commit and no longer exposes the hidden unsafe records.
-- Every repair maps to a finding, verification method, result, and residual risk in the audit.
+- Both light and dark preference metadata resolve to `#fafafa` with `only light` declared.
+- Root elements and sticky topbar remain opaque; no topbar `rgba()` or blur survives.
+- Manifest and offline shell use the same background, and the service-worker cache generation
+  changes so an installed app cannot remain pinned to the old shell.
+- `npm run check` passes and the emitted static HTML contains the expected metadata and
+  critical style before the boot script.
+- GitHub Pages serves the new HTML, manifest, worker, and hashed CSS over HTTPS.
 
 ## Last Updated
-- 2026-07-13 20:37 +0800
+- 2026-07-14 02:27 +0800

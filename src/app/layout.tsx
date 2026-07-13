@@ -11,6 +11,11 @@ import "./responsive.css";
 // 子路径前缀（见 next.config.mjs）。根域名时为 ""，github.io 子路径时为 "/MemeDaily"。
 // metadata.icons / openGraph.images 不会被 basePath 自动加前缀，需手动拼。
 const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const APP_BACKGROUND = "#fafafa";
+
+// Paint the installed-app surface before hashed CSS is available. This prevents iOS from
+// exposing its dark translucent canvas during launch, overscroll, or a stale-asset rescue.
+const ROOT_SURFACE = `html,body{min-height:100%;background:${APP_BACKGROUND};color-scheme:only light}body{margin:0}`;
 
 // Inline boot script — runs even when the hashed CSS/JS chunks 404 (the EXACT unstyled
 // scenario: a stale cached HTML references purged hashes, so the CSS 404s -> no styles, and
@@ -77,7 +82,7 @@ export const metadata: Metadata = {
     images: [`${BP}/share.png`],
   },
   // PWA: 「添加到主屏幕」用高清图标（Android 走 manifest 的 192/512 + maskable；iOS 走 apple-icon 180）。
-  manifest: `${BP}/manifest.webmanifest`,
+  manifest: `${BP}/manifest.webmanifest?v=3`,
   appleWebApp: {
     capable: true,
     title: "热梗日报",
@@ -95,17 +100,25 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
   },
+  other: {
+    "supported-color-schemes": "light",
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#fafafa", // 与站点近白顶栏一致，避免主屏 PWA/浏览器地址栏出现突兀色块
+  colorScheme: "only light",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: APP_BACKGROUND },
+    { media: "(prefers-color-scheme: dark)", color: APP_BACKGROUND },
+  ],
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="zh-CN">
       <head>
-        {/* Boot/rescue script — inline & first so it runs even if hashed CSS/JS chunks 404. */}
+        <style dangerouslySetInnerHTML={{ __html: ROOT_SURFACE }} />
+        {/* First executable element, so rescue still runs when hashed CSS/JS chunks 404. */}
         <script dangerouslySetInnerHTML={{ __html: BOOT }} />
         {/* Use the system fallback for first paint; BOOT enables self-hosted fonts when the page is idle. */}
         <link id="self-hosted-fonts" rel="stylesheet" href={`${BP}/fonts/fonts.css`} media="print" />

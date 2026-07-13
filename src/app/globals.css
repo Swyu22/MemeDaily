@@ -48,12 +48,15 @@
 }
 
 html {
-  color-scheme: light;
+  min-height: 100%;
+  background-color: var(--app);
+  color-scheme: only light;
 }
 
 body {
+  min-height: 100%;
   margin: 0;
-  background: var(--app);
+  background-color: var(--app);
   color: var(--text);
   font-family: var(--font-sans);
 }
@@ -93,6 +96,8 @@ select {
 
 .shell {
   min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--app);
 }
 
 .topbar {
@@ -100,8 +105,9 @@ select {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid var(--border-soft);
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(12px);
+  background-color: var(--app);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 .topbar-inner {
