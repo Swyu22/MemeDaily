@@ -29,6 +29,10 @@ verify the correction under Safari and Chrome PWA contracts, and deploy it to pr
 - [x] Remove synthetic inset padding/guards and refresh the installed manifest/SW generations.
 - [x] Trace the July 13 three-to-two item change through the publisher and audit commits.
 - [x] Run the complete gate, deploy the containment correction, and verify production assets.
+- [x] Identify the remaining gray strip as the configured `#fafafa` app surface, not scroll bleed.
+- [x] Align runtime, manifest, launch, and offline surfaces to pure white `#ffffff`.
+- [x] Add a cross-file regression test and refresh the manifest/worker generations.
+- [ ] Run the complete gate, deploy the white-shell correction, and verify production assets.
 
 ## High-Risk Areas
 - iOS Home Screen mode calculates viewport and safe-area geometry differently from a normal
@@ -39,12 +43,12 @@ verify the correction under Safari and Chrome PWA contracts, and deploy it to pr
 
 ## Acceptance Standard
 - Generated HTML contains `viewport-fit=contain` and the light `default` standalone status-bar
-  metadata, with page, header, theme, and launch surfaces all set to `#fafafa`.
+  metadata, with page, header, theme, launch, and offline surfaces all set to `#ffffff`.
 - The document cannot paint into the system unsafe region; no synthetic safe-area overlay remains.
 - The mobile tab strip pins immediately below the measured header after entering sticky range.
 - Chrome receives one generic capable meta, a versioned manifest with stable app `id`, a forced
-  light color scheme, disabled root overscroll, and the `memedaily-v4` installed-shell cache.
+  light color scheme, disabled root overscroll, and the `memedaily-v5` installed-shell cache.
 - `npm run check` passes, Pages deploys the commit, and production serves the new metadata/assets.
 
 ## Last Updated
-- 2026-07-13 23:33 +0800
+- 2026-07-13 23:51 +0800

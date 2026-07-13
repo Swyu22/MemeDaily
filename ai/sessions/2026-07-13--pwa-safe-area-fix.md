@@ -119,3 +119,19 @@ late WebKit geometry changes without overlap.
 - A physical installed PWA is the final authority for iOS system status-bar composition. Chrome
   can retain install metadata outside normal web caches, so remove the existing icon, open the
   deployed site in Chrome, add it again, and confirm the top region remains solid while scrolling.
+
+## Follow-up: Pure-White Installed Surface
+- The physical Chrome retest confirmed the transparency/scroll bleed was gone but showed a stable
+  light-gray strip. This is the configured `#fafafa` app surface becoming visible under viewport
+  containment, not content moving through the status region.
+- WebKit documents that default safe-area insets are filled from the page background. Since the
+  surrounding content is predominantly pure white, the intentional Zinc-50 app token created the
+  visible boundary the user reported.
+- Changed the runtime app token, document theme, manifest launch/theme colors, and offline shell to
+  `#ffffff`. Kept `viewport-fit=contain`, the light default status style, opaque header, and root
+  overscroll lock, so the earlier transparency failure cannot return.
+- Versioned the manifest URL as `20260713-3`, bumped the worker to `memedaily-v5`, and added
+  `src/app/pwa-surface.test.ts` to prevent the six installed-shell values from drifting again.
+- Local Chromium at 390x844 under a dark system preference confirms pure-white document and header
+  surfaces, zero top-scan mismatches, no blur/overlay, disabled overscroll, and exact 86px sticky
+  alignment. `npm run check` passes both validators, lint, typecheck, 82 tests, and 124 pages.
