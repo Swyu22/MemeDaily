@@ -25,8 +25,7 @@
 | `milestone` | 跨模块 / 接口 / 架构 | 上 + ADR + Milestone summary + README/PROJECT_MAP 同步 |
 
 ## 机器消费方
-- `scripts/checks/check-state-fresh.sh`：校验 `goal` / `tier` / `updated` / `active_session`，
-  并确保状态日期不早于最近非生成数据改动；pre-commit 还要求状态相关改动同时暂存 `.cloud.md`。
+- `scripts/checks/check-state-fresh.sh`：校验 `goal` / `updated` 非占位符。
 - `scripts/checks/suggest-tier.sh`：据 `git diff --stat` 给出 `tier` 建议。
 - `.claude/settings.json` 的 `SessionStart` hook：读取并打印 `goal` + `next_actions`。
 - `.claude/agents/session-closer.md`：收工时回写本 frontmatter。

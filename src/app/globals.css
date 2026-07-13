@@ -1,26 +1,21 @@
-/**
- * input: semantic class names emitted by app and feature components
- * output: shared design tokens, accessible focus, and desktop presentation
- * pos: base stylesheet imported before responsive.css by the root layout
- */
 :root {
   --app: #fafafa;
   --surface: #ffffff;
   --border: #e4e4e7;
   --border-soft: #ececef;
   --text: #18181b;
-  --muted: #61616b;
-  --faint: #6b6b75;
+  --muted: #71717a;
+  --faint: #a1a1aa;
   --chip: #f4f4f5;
   --brand: #ffd000;
   --green-bg: #e7f8ed;
   --green-fg: #15803d;
   --green-dot: #22c55e;
   --amber-bg: #fef4dc;
-  --amber-fg: #92400e;
+  --amber-fg: #b45309;
   --amber-dot: #f59e0b;
   --gray-bg: #f1f1f3;
-  --gray-fg: #61616b;
+  --gray-fg: #71717a;
   --blue-bg: #e9f1fe;
   --blue-fg: #1d4ed8;
   --blue-bd: #bfd7fe;
@@ -60,29 +55,6 @@ body {
 
 a {
   color: inherit;
-}
-
-:focus-visible {
-  outline: 3px solid var(--blue-fg);
-  outline-offset: 2px;
-}
-
-.skip-link {
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  z-index: 100;
-  padding: 10px 12px;
-  border-radius: 8px;
-  background: var(--text);
-  color: var(--surface);
-  font-weight: 600;
-  text-decoration: none;
-  transform: translateY(-160%);
-}
-
-.skip-link:focus-visible {
-  transform: translateY(0);
 }
 
 button,
@@ -186,6 +158,7 @@ select {
 .nav a:focus-visible {
   background: var(--chip);
   color: var(--text);
+  outline: none;
 }
 
 .page {
@@ -322,9 +295,8 @@ select {
 }
 
 .card[data-faded="true"] {
-  border-color: #d4d4d8;
-  border-style: dashed;
-  background: #fcfcfc;
+  opacity: 0.58;
+  filter: saturate(0.65);
 }
 
 .card-head,
@@ -355,7 +327,7 @@ select {
 .card h2,
 .detail-card h1 {
   margin: 0;
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
 }
 
 .card h2 {
@@ -470,7 +442,7 @@ select {
   color: var(--faint);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0;
+  letter-spacing: 0.04em;
 }
 
 .field-body {
@@ -483,6 +455,12 @@ select {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+}
+
+.sources-compact {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-soft);
 }
 
 .source-link {
@@ -506,6 +484,7 @@ select {
 .source-link:focus-visible {
   border-color: var(--blue-bd);
   background: var(--blue-bg);
+  outline: none;
 }
 
 .source-link:hover .source-note {
@@ -547,11 +526,6 @@ select {
   font-size: 16px;
 }
 
-.search-box:focus-within {
-  border-color: var(--blue-fg);
-  box-shadow: 0 0 0 2px var(--blue-bg);
-}
-
 .result-list {
   overflow: hidden;
   border-radius: 12px;
@@ -585,6 +559,7 @@ select {
 .result-row:hover,
 .result-row:focus-visible {
   background: var(--chip);
+  outline: none;
 }
 
 .empty {
@@ -593,6 +568,115 @@ select {
   border-radius: 12px;
   color: var(--muted);
   text-align: center;
+}
+
+@media (max-width: 720px) {
+  /* Pre-JS fallback for the taller 2-row mobile header (HomeTabs measures + overwrites at runtime). */
+  :root {
+    --header-h: 88px;
+  }
+
+  .topbar-inner,
+  .page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Compact 2-row header: [studio · nav] then [product brand] */
+  .topbar-inner {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "studio nav"
+      "product product";
+    gap: 8px 12px;
+  }
+
+  .studio-brand {
+    grid-area: studio;
+    justify-self: start;
+  }
+
+  .nav {
+    grid-area: nav;
+    justify-self: end;
+    width: auto;
+  }
+
+  .product-brand {
+    grid-area: product;
+    justify-self: start;
+    justify-content: flex-start;
+  }
+
+  .product-brand strong {
+    font-size: 16px;
+  }
+
+  /* Header height varies on mobile, so don't pin the toolbar to a fixed offset. */
+  .toolbar {
+    position: static;
+    top: auto;
+  }
+
+  /* Finger-friendly controls. */
+  .select,
+  .button {
+    min-height: 40px;
+  }
+
+  .nav a {
+    padding: 8px 12px;
+  }
+
+  .day-head {
+    gap: 6px;
+  }
+
+  .day-head h1 {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: var(--space-4);
+  }
+
+  .card-head,
+  .detail-head,
+  .day-head,
+  .result-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .card-head {
+    gap: var(--space-2);
+  }
+
+  .result-row {
+    gap: 8px;
+  }
+
+  .detail-card {
+    padding: 22px 18px;
+  }
+
+  .detail-card h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: var(--space-3);
+  }
+
+  .card h2 {
+    font-size: 17px;
+  }
+
+  .product-brand span {
+    font-size: 13px;
+  }
 }
 
 /* 备案 / 版权页脚（所有页面底部，居中） */
@@ -675,6 +759,7 @@ select {
 .tab:hover,
 .tab:focus-visible {
   color: var(--text);
+  outline: none;
 }
 
 .tab.active {
@@ -692,7 +777,7 @@ select {
   margin: 0;
   font-size: 19px;
   line-height: 1.35;
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
 }
 
 .news-block {
@@ -729,4 +814,12 @@ select {
 .news-outlets {
   color: var(--text);
   font-size: 14px;
+}
+
+/* Mobile: keep the folder tabs left-aligned (auto-width); just match the lifted heading to the
+   smaller in-feed heading size. */
+@media (max-width: 720px) {
+  .feed-head h1 {
+    font-size: 22px;
+  }
 }

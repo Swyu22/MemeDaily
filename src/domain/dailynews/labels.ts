@@ -4,6 +4,18 @@
  * pos: UI-safe mapping layer with no filesystem or rendering side effects
  */
 
+// Kept for reference / possible future use. NOTE: the category chip is no longer rendered in v2
+// (it cluttered the card); category now only steers the agent's editorial mix.
+export const categoryLabels = {
+  民生社会: "民生社会",
+  节日节气: "节日节气",
+  国家高光: "国家高光",
+  国际: "国际",
+  科技AI: "科技 · AI",
+  科技向善: "科技向善",
+  文化数字经济: "文化 · 数字经济",
+} as const;
+
 export const newsTierLabels = {
   official: "官方",
   state_media: "央媒",

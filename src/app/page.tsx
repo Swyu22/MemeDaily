@@ -1,8 +1,3 @@
-/**
- * input: validated meme/news envelopes loaded at static-build time
- * output: home route props for the dual-feed interactive surface
- * pos: App Router composition boundary between pure domain data and HomeTabs
- */
 import { loadAllEnvelopes } from "@/domain/memedaily/data";
 import { statusLabels } from "@/domain/memedaily/labels";
 import {
@@ -26,13 +21,15 @@ export default function TodayPage() {
   // （后者是全网累计天数，会把 6 月火过、7 月复现的梗标成「4 天」，与「连续」文案矛盾）。
   const nameDates = nameAppearanceDates(all);
   const boardDates = publishedDates(all);
-  const days = all.flatMap((envelope) => {
-    const items = visibleItems(envelope).map((item) => ({
+  const days = all
+    .map((envelope) => ({
+      date: envelope.date,
+      items: visibleItems(envelope).map((item) => ({
         ...item,
         days_on_list: boardStreakFor(item, envelope.date, nameDates, boardDates),
-      }));
-    return items.length > 0 ? [{ date: envelope.date, items }] : [];
-  });
+      })),
+    }))
+    .filter((day) => day.items.length > 0);
   const freshDate = latest && days[0]?.date === latest.date ? latest.date : null;
   const shown = days.slice(0, MAX_DAYS_ON_HOME);
   const hasMore = days.length > shown.length;
@@ -81,7 +78,7 @@ export default function TodayPage() {
     : null;
 
   return (
-    <main className="page" id="main-content">
+    <main className="page">
       <HomeTabs
         memeStatus={memeStatus}
         newsStatus={newsStatus}

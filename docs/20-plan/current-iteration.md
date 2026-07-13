@@ -1,46 +1,44 @@
 # Current Iteration
 
 ## Iteration Goal
-Complete a full installed-Skills audit of the live MemeDaily repository, repair all safe
-and actionable findings, verify each repair, publish the result, and leave an auditable
-handoff for the next agent.
+- Initialize MemeDaily as a governed static product: Ai-Workflow-Kit state,
+  Next.js static scaffold, JSON contract validation, GitHub Pages workflows, and
+  Codex App daily automation.
 
 ## Scope
-- **In:** source, schemas, data history, styles, PWA, assets, scripts, hooks, workflows,
-  dependencies, prompts, governance state, docs, deployment, and production verification.
-- **Out:** unrelated product features, direct/login-based platform scraping, external
-  account changes, and broad dependency upgrades without a concrete finding.
+- **In:** governance docs, project map, product spec, ADRs, data contract, sample
+  daily data, validation scripts, static pages, build workflows, automation prompt.
+- **Out:** real daily content collection run, login-based scraping, OpenAI API,
+  Supabase, private access control, production DNS changes.
 
 ## Checklist
-- [x] P0 Inventory all installed Skills and select the project-relevant set.
-- [x] P0 Scan every important first-party directory and file type.
-- [x] P0 Audit publishing-agent confinement, workflow permissions, action pinning, and token
-  exposure boundaries.
-- [x] P0 Add trusted publication chronology and deterministic high-signal meme safety gates.
-- [x] P0 Hide confirmed unsafe historical meme records and normalize impossible timestamps.
-- [x] P1 Repair PWA path/caching behavior, accessibility, dead exports, and deprecated schema
-  APIs.
-- [x] P1 Make file/header/state governance checks reflect their documented enforcement.
-- [x] P1 Refresh canonical state, map, spec, ADR, module indexes, and automation handoffs.
-- [x] P0 Run the complete local gate suite, browser/PWA checks, and audit-specific assertions.
-- [x] P0 Commit, push, wait for CI/Pages, and verify production content and HTTPS.
-- [x] P1 Close the session with the final report, evidence, and residual manual actions.
+- [x] P0 Import and adapt Ai-Workflow-Kit collaboration OS.
+- [x] P0 Initialize git repo and connect `Swyu22/MemeDaily`.
+- [x] P0 Create application scaffold and static data loader.
+- [x] P0 Implement daily JSON schema validation and evidence gates.
+- [x] P0 Build Today, Archive/Search, and Meme detail pages.
+- [x] P0 Add GitHub Pages build workflow.
+- [x] P0 Add skipped-day fallback workflow.
+- [x] P1 Add Codex daily automation prompt and local app automation.
+- [x] P1 Add tests for evidence, safety, meme-shell, and invalid JSON cases.
+- [x] P2 Commit and push initial foundation.
 
-## High-Risk Areas
-- Untrusted public-web text reaching a model job with repository credentials or shell access.
-- Published content involving disasters, privacy, minors, harassment, or unsafe rumor context.
-- Agent-authored timestamps being mistaken for trusted publication chronology.
-- PWA caching or root/subpath assumptions serving stale or missing assets.
-- Public-repository secrets, especially credentials previously shared outside git.
+## Risks / Dependencies
+- GitHub Pages public repo requirement means no sensitive data can enter this repo.
+- Local Codex automation depends on the current Mac staying awake and logged in.
+- Evidence pages can disappear; the app must preserve compact source metadata without
+  copying large excerpts or media.
+- GitHub Pages is enabled and deploying; `memedaily.fun` needs Aliyun DNS records
+  before HTTPS can be enforced.
 
-## Acceptance Standard
-- `npm run check` and all governance/security checks pass from a clean staged candidate.
-- Workflow YAML parses; every external action is full-SHA pinned; model jobs lack shell, broad
-  write paths, and git credentials.
-- Browser checks cover desktop/mobile home, archive, detail, keyboard tabs, source wrapping,
-  manifest/service worker, and static route availability.
-- Production deploys the audited commit and no longer exposes the hidden unsafe records.
-- Every repair maps to a finding, verification method, result, and residual risk in the audit.
+## Docs To Update
+- [x] `.cloud.md`
+- [x] `docs/00-context/PROJECT_MAP.md`
+- [x] `docs/20-plan/current-iteration.md`
+- [x] `docs/10-spec/memedaily-product-spec.md`
+- [x] ADR for static GitHub Pages architecture
+- [x] ADR for public-web evidence strategy
+- [x] `ai/sessions/2026-06-20--project-kickoff.md`
 
 ## Last Updated
-- 2026-07-13 20:37 +0800
+- 2026-06-20 16:36 +0800

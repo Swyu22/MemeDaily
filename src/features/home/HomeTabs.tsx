@@ -18,7 +18,7 @@
  * 日报 by heat_rank / latest source time (新闻越靠近现在越靠前). Each feed keeps its own sort
  * independently; both default to 新鲜值.
  */
-import { useEffect, useRef, useState, type KeyboardEvent } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Activity } from "lucide-react";
 import {
   feedSortLabels,
@@ -34,16 +34,6 @@ type RunStatus = { date: string; time: string; statusLabel: string; count: numbe
 type FeedHead = { title: string; subtitle: string | null };
 
 type NewsDay = { date: string; items: PublicNewsItem[] };
-const TABS: Tab[] = ["memes", "news"];
-
-function tabForKey(current: Tab, key: string): Tab | null {
-  if (key === "Home") return TABS[0] ?? null;
-  if (key === "End") return TABS.at(-1) ?? null;
-  if (key !== "ArrowLeft" && key !== "ArrowRight") return null;
-  const offset = key === "ArrowRight" ? 1 : -1;
-  const index = TABS.indexOf(current);
-  return TABS[(index + offset + TABS.length) % TABS.length] ?? null;
-}
 
 type HomeTabsProps = {
   memeStatus: RunStatus | null;
@@ -105,14 +95,6 @@ export function HomeTabs({
     if (window.scrollY > target) window.scrollTo({ top: Math.max(0, target) });
   };
 
-  const onTabKeyDown = (event: KeyboardEvent<HTMLButtonElement>, current: Tab) => {
-    const next = tabForKey(current, event.key);
-    if (!next) return;
-    event.preventDefault();
-    switchTab(next);
-    requestAnimationFrame(() => document.getElementById(`tab-${next}`)?.focus());
-  };
-
   const status = tab === "memes" ? memeStatus : newsStatus;
 
   // The freshest meme day (day 0) feeds the lifted 大标题/副标题; "今日热梗" only when today is fresh.
@@ -139,7 +121,7 @@ export function HomeTabs({
 
   return (
     <>
-      <section className="status-bar" aria-label="今日运行状态">
+      <section className="status-bar" aria-label="Run status">
         <strong style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
           <Activity size={15} color="var(--green-dot)" aria-hidden="true" />
           今日运行
@@ -170,7 +152,6 @@ export function HomeTabs({
         <select
           className="select"
           value={sort}
-          name="feed-sort"
           onChange={(event) => setSort(event.target.value as FeedSort)}
           aria-label="排序方式"
         >
@@ -185,39 +166,25 @@ export function HomeTabs({
       <div className="tabbar" role="tablist" aria-label="内容分栏">
         <button
           type="button"
-          id="tab-memes"
           role="tab"
           aria-selected={tab === "memes"}
-          aria-controls="feed-panel"
-          tabIndex={tab === "memes" ? 0 : -1}
           className={`tab${tab === "memes" ? " active" : ""}`}
           onClick={() => switchTab("memes")}
-          onKeyDown={(event) => onTabKeyDown(event, "memes")}
         >
           热梗
         </button>
         <button
           type="button"
-          id="tab-news"
           role="tab"
           aria-selected={tab === "news"}
-          aria-controls="feed-panel"
-          tabIndex={tab === "news" ? 0 : -1}
           className={`tab${tab === "news" ? " active" : ""}`}
           onClick={() => switchTab("news")}
-          onKeyDown={(event) => onTabKeyDown(event, "news")}
         >
           日报
         </button>
       </div>
 
-      <div
-        aria-labelledby={`tab-${tab}`}
-        className="tab-panel"
-        id="feed-panel"
-        role="tabpanel"
-        tabIndex={0}
-      >
+      <div className="tab-panel">
         {tab === "memes" ? (
           <>
             {staleNotice ? (

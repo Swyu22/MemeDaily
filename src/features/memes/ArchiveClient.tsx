@@ -69,10 +69,6 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
       <label className="search-box">
         <Search size={18} aria-hidden="true" />
         <input
-          aria-label="搜索梗库"
-          autoComplete="off"
-          name="archive-query"
-          type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="搜梗名 / 别名 / 内容关键词"
@@ -80,26 +76,14 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
       </label>
 
       <div className="toolbar">
-        <select
-          aria-label="平台筛选"
-          className="select"
-          name="archive-platform"
-          value={platform}
-          onChange={(event) => setPlatform(event.target.value)}
-        >
+        <select className="select" value={platform} onChange={(event) => setPlatform(event.target.value)}>
           {platforms.map((value) => (
             <option key={value} value={value}>
               {value === "全部" ? value : platformLabels[value as keyof typeof platformLabels]}
             </option>
           ))}
         </select>
-        <select
-          aria-label="梗类型筛选"
-          className="select"
-          name="archive-type"
-          value={type}
-          onChange={(event) => setType(event.target.value)}
-        >
+        <select className="select" value={type} onChange={(event) => setType(event.target.value)}>
           {types.map((value) => (
             <option key={value} value={value}>
               {value}
@@ -111,7 +95,6 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
           value={lifecycle}
           onChange={(event) => setLifecycle(event.target.value)}
           aria-label="生命周期阶段"
-          name="archive-lifecycle"
         >
           <option value="全部">全部阶段</option>
           {LIFECYCLES.map((value) => (
@@ -125,12 +108,11 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
           value={sort}
           onChange={(event) => setSort(event.target.value as "value" | "date")}
           aria-label="排序方式"
-          name="archive-sort"
         >
           <option value="value">按价值</option>
           <option value="date">按日期</option>
         </select>
-        <span className="mini" aria-live="polite">匹配 {filtered.length} 个梗</span>
+        <span className="mini">匹配 {filtered.length} 个梗</span>
       </div>
 
       {filtered.length > 0 ? (
