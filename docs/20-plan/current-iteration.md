@@ -18,7 +18,7 @@ verify the correction under a simulated notched viewport, and deploy it to produ
 - [x] Commit, push, wait for Pages, and verify production metadata and rendering.
 - [x] Match the iOS system status region to the `#fafafa` page surface without restoring blur.
 - [x] Recheck mobile safe-area pixels and sticky geometry after the status-style adjustment.
-- [ ] Run the complete gate and deploy the color-matched status region to production.
+- [x] Run the complete gate and deploy the color-matched status region to production.
 
 ## High-Risk Areas
 - iOS Home Screen mode calculates viewport and safe-area geometry differently from a normal
@@ -34,4 +34,4 @@ verify the correction under a simulated notched viewport, and deploy it to produ
 - `npm run check` passes, Pages deploys the commit, and production serves the new metadata/assets.
 
 ## Last Updated
-- 2026-07-13 22:28 +0800
+- 2026-07-13 22:31 +0800
