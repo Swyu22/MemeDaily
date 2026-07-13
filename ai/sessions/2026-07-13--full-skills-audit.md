@@ -38,16 +38,21 @@
   from 56 to 78 without removing the required self-hosted fonts.
 - Fixed the empty-staged-diff `suggest-tier.sh` variable-boundary bug exposed by the real amend
   hook and added a regression fixture.
+- PR #17 merged at `1c04ed8`; Pages run `29250003804` succeeded and production HTTPS,
+  detail/source completeness, PWA endpoints, 11 hidden routes, and console state passed.
+- The successful Pages run exposed Node 20 deprecation annotations in official Actions. Their
+  latest release metadata was checked through authenticated GitHub API calls and all seven were
+  upgraded to reviewed Node 24 commit SHAs with a regression pin map.
 
 ## Verification Status
-- Passing: 24 meme and 14 news validators, ESLint, TypeScript, 78 Vitest tests, 124-page
+- Passing: 24 meme and 14 news validators, ESLint, TypeScript, 80 Vitest tests, 124-page
   static build, 38 documented advisory complexity warnings, shell/YAML/security assertions,
   strict governance checks, font integrity, npm audit, Playwright desktop/mobile/offline,
   162/162 detail exports, Lighthouse accessibility/best-practices 100, and performance 78.
-- Pending at this checkpoint: staged pre-commit, commit/push, CI/Pages, and live production
-  verification.
+- Pending at this checkpoint: closeout branch CI/Pages after the Node 24 Action upgrade, then
+  final report/state closure.
 
 ## Next Actions
-1. P0 Stage the complete candidate and let the real pre-commit hook re-run index gates.
-2. P0 Commit/push and verify CI, Pages, HTTPS, routes, and hidden unsafe content.
-3. P1 Update A-18, close this session, and leave `.cloud.md` at the production-verified SHA.
+1. P0 Run local workflow/YAML/full gates for the Node 24 Action pins.
+2. P0 Commit the closeout branch, merge after CI, and require a warning-free successful Pages run.
+3. P1 Mark A-20 complete and leave `.cloud.md` at the final production-verified SHA.
