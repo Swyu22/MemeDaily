@@ -49,7 +49,9 @@ late WebKit geometry changes without overlap.
 - A 390x844 mobile check with a forced 47px inset and `scrollY=1200` found zero mismatched top
   pixels, no backdrop blur, and exact 133px header/tab-strip alignment.
 - `npm run check` passes both validators, lint, typecheck, 80 tests, and a 124-page build.
-- Production deployment is pending.
+- PR #22 merged as `295e0d0`; Pages run `29258153928` built and deployed successfully.
+- Production exposes `status-bar-style=default`, `theme-color=#fafafa`, matching manifest colors,
+  and passed the same safe-area color/scroll acceptance with zero mismatched pixels.
 
 ## Residual Manual Check
 - A physical installed PWA is the final authority for iOS system status-bar composition. Reopen
