@@ -4,7 +4,7 @@
  * pos: base stylesheet imported before responsive.css by the root layout
  */
 :root {
-  --app: #ffffff;
+  --app: #fafafa;
   --surface: #ffffff;
   --border: #e4e4e7;
   --border-soft: #ececef;
@@ -31,8 +31,10 @@
   --space-4: 18px;
   --space-5: 24px;
   --space-6: 32px;
+  --safe-area-top: constant(safe-area-inset-top);
+  --safe-area-top: env(safe-area-inset-top, 0px);
   /* HomeTabs overwrites this with the measured topbar height after hydration. */
-  --header-h: 58px;
+  --header-h: calc(58px + var(--safe-area-top));
   --font-sans: "Space Grotesk", "Noto Sans SC", -apple-system, "PingFang SC",
     "Microsoft YaHei", "Segoe UI", sans-serif;
   --font-display: "Space Grotesk", "Noto Sans SC", -apple-system, "PingFang SC",
@@ -50,7 +52,6 @@ html {
   min-height: 100%;
   background: var(--app);
   color-scheme: light;
-  overscroll-behavior-y: none;
 }
 
 body {
@@ -59,7 +60,6 @@ body {
   background: var(--app);
   color: var(--text);
   font-family: var(--font-sans);
-  overscroll-behavior-y: none;
 }
 
 a {
@@ -73,7 +73,7 @@ a {
 
 .skip-link {
   position: fixed;
-  top: 8px;
+  top: calc(var(--safe-area-top) + 8px);
   left: 8px;
   z-index: 100;
   padding: 10px 12px;
@@ -82,7 +82,7 @@ a {
   color: var(--surface);
   font-weight: 600;
   text-decoration: none;
-  transform: translateY(-160%);
+  transform: translateY(calc(-160% - var(--safe-area-top)));
 }
 
 .skip-link:focus-visible {
@@ -105,10 +105,9 @@ select {
   position: sticky;
   top: 0;
   z-index: 20;
+  padding-top: var(--safe-area-top);
   border-bottom: 1px solid var(--border-soft);
   background: var(--app);
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
 }
 
 .topbar-inner {
