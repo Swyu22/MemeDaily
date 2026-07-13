@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     images: [`${BP}/share.png`],
   },
   // PWA: 「添加到主屏幕」用高清图标（Android 走 manifest 的 192/512 + maskable；iOS 走 apple-icon 180）。
-  manifest: `${BP}/manifest.webmanifest?v=20260713-1`,
+  manifest: `${BP}/manifest.webmanifest?v=20260713-2`,
   appleWebApp: {
     capable: true,
     title: "热梗日报",
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: "#fafafa", // 与站点近白顶栏一致，避免主屏 PWA/浏览器地址栏出现突兀色块
   colorScheme: "light",
-  viewportFit: "cover",
+  viewportFit: "contain",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

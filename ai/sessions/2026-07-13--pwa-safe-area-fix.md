@@ -70,7 +70,40 @@ late WebKit geometry changes without overlap.
 - Production Chromium acceptance repeated every local assertion with 200 manifest/SW responses,
   zero top pixel mismatch, and no hard first-party request failures.
 
+## Follow-up: Physical Chrome Containment Correction
+- A physical Chrome retest still showed blurred content crossing the system status region, proving
+  that the simulated 47px inset and fixed guard did not model Chrome's installed-shell composition.
+- The remaining root cause is `viewport-fit=cover`: it explicitly lets the document extend into
+  the unsafe region, while Chrome can report a zero CSS inset there. A zero-height guard cannot
+  paint an operating-system-owned region.
+- Switched the viewport contract to `contain`, so the browser reserves the unsafe region instead
+  of allowing page content below it. Removed `--safe-area-top`, topbar inset padding, and the fixed
+  pseudo-element guard; the ordinary document and sticky header remain opaque `#fafafa`.
+- Retained root `overscroll-behavior-y: none`, light color-scheme and theme metadata, and the stable
+  manifest identity. Versioned the manifest URL as `20260713-2` and bumped caches to
+  `memedaily-v4` to force installed-shell metadata/assets forward.
+- The static build emits `viewport-fit=contain`, `theme-color=#fafafa`, `color-scheme=light`, and
+  the new manifest URL. Chromium at 390x844 under dark system preference confirms 200 manifest/SW
+  responses, opaque root/body/header surfaces, no blur or CSS safe-area overlay, disabled root
+  overscroll, and exact 86px tab/header alignment once sticky.
+- A device-scale-2 screenshot scan found zero non-`#fafafa` pixels in the unobstructed top eight
+  CSS pixels after scrolling. `npm run check` passes both validators, lint, typecheck, 80 tests,
+  and the 124-page static build.
+
+## July 13 Item-Count Investigation
+- The primary meme workflow succeeded and committed three visible records at 07:37:36 +0800 in
+  `ecbc3a5` (`chore(data): publish MemeDaily 2026-07-13`). `谢停风` was initially
+  `published:true`.
+- The full Skills audit later added a deterministic disaster/public-safety backstop. Commit
+  `e45be31` at 20:24:50 +0800, merged through PR #17, changed the envelope from `published` to
+  `partial`, the visible count from three to two, and `谢停风` to `published:false`.
+- Its text repeatedly uses `台风` and `防灾`, both explicit high-signal terms in
+  `src/domain/memedaily/rules.ts`. The public loader intentionally filters out records whose
+  `published` flag is false.
+- The JSON record and its sources were not deleted. Restoring it would require an explicit product
+  policy exception plus tests; simply flipping the flag would bypass the current safety contract.
+
 ## Residual Manual Check
-- A physical installed PWA is the final authority for iOS system status-bar composition. Reopen
-  the app after deployment (or remove/re-add it if iOS retains old metadata) and confirm the top
-  region remains solid while scrolling.
+- A physical installed PWA is the final authority for iOS system status-bar composition. Chrome
+  can retain install metadata outside normal web caches, so remove the existing icon, open the
+  deployed site in Chrome, add it again, and confirm the top region remains solid while scrolling.
