@@ -24,6 +24,11 @@ verify the correction under Safari and Chrome PWA contracts, and deploy it to pr
 - [x] Version the Chrome manifest URL and installed-shell cache while preserving app identity.
 - [x] Verify the Chrome contract under dark system preference and a forced 47px inset.
 - [x] Run the complete gate and deploy the Chrome-specific follow-up.
+- [x] Use the physical Chrome result to reject the cover-and-guard workaround.
+- [x] Keep the document viewport inside the system safe area with `viewport-fit=contain`.
+- [x] Remove synthetic inset padding/guards and refresh the installed manifest/SW generations.
+- [x] Trace the July 13 three-to-two item change through the publisher and audit commits.
+- [ ] Run the complete gate, deploy the containment correction, and verify production assets.
 
 ## High-Risk Areas
 - iOS Home Screen mode calculates viewport and safe-area geometry differently from a normal
@@ -33,13 +38,13 @@ verify the correction under Safari and Chrome PWA contracts, and deploy it to pr
 - Chrome can retain install metadata independently of normal document and Service Worker caches.
 
 ## Acceptance Standard
-- Generated HTML contains `viewport-fit=cover` and the light `default` standalone status-bar
+- Generated HTML contains `viewport-fit=contain` and the light `default` standalone status-bar
   metadata, with page, header, theme, and launch surfaces all set to `#fafafa`.
-- A simulated 47px top inset remains fully painted by the opaque header before and after scroll.
-- The mobile tab strip pins immediately below the complete header, including the safe area.
+- The document cannot paint into the system unsafe region; no synthetic safe-area overlay remains.
+- The mobile tab strip pins immediately below the measured header after entering sticky range.
 - Chrome receives one generic capable meta, a versioned manifest with stable app `id`, a forced
-  light color scheme, disabled root overscroll, and a fixed `#fafafa` safe-area guard.
+  light color scheme, disabled root overscroll, and the `memedaily-v4` installed-shell cache.
 - `npm run check` passes, Pages deploys the commit, and production serves the new metadata/assets.
 
 ## Last Updated
-- 2026-07-13 22:49 +0800
+- 2026-07-13 23:27 +0800
