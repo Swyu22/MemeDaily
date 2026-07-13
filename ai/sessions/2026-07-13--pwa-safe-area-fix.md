@@ -66,7 +66,9 @@ late WebKit geometry changes without overlap.
   1200px. It confirmed one generic capable meta, the new manifest/SW contract, overscroll `none`,
   a fixed 47px guard, no blur, exact 133px sticky alignment, and zero mismatched top pixels.
 - `npm run check` passes both validators, lint, typecheck, 80 tests, and a 124-page build.
-- Production deployment is pending.
+- PR #24 merged as `f9ce590`; Pages run `29259440314` built and deployed successfully.
+- Production Chromium acceptance repeated every local assertion with 200 manifest/SW responses,
+  zero top pixel mismatch, and no hard first-party request failures.
 
 ## Residual Manual Check
 - A physical installed PWA is the final authority for iOS system status-bar composition. Reopen

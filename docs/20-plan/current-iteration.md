@@ -23,7 +23,7 @@ verify the correction under Safari and Chrome PWA contracts, and deploy it to pr
 - [x] Add a fixed safe-area compositor guard and disable vertical root overscroll.
 - [x] Version the Chrome manifest URL and installed-shell cache while preserving app identity.
 - [x] Verify the Chrome contract under dark system preference and a forced 47px inset.
-- [ ] Run the complete gate and deploy the Chrome-specific follow-up.
+- [x] Run the complete gate and deploy the Chrome-specific follow-up.
 
 ## High-Risk Areas
 - iOS Home Screen mode calculates viewport and safe-area geometry differently from a normal
@@ -42,4 +42,4 @@ verify the correction under Safari and Chrome PWA contracts, and deploy it to pr
 - `npm run check` passes, Pages deploys the commit, and production serves the new metadata/assets.
 
 ## Last Updated
-- 2026-07-13 22:46 +0800
+- 2026-07-13 22:49 +0800
