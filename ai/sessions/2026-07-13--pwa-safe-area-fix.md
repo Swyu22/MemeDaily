@@ -40,6 +40,17 @@ The repository, `origin/main`, and GitHub Pages production contain the safe-area
 header is now an opaque surface that covers the full PWA top inset, and downstream sticky UI tracks
 late WebKit geometry changes without overlap.
 
+## Follow-up: Status Surface Color
+- The user requested that the former transparent top region visually match the page background.
+- Changed the iOS standalone status-bar style from `black-translucent` to `default`, removing the
+  system's dark translucent overlay while retaining `viewport-fit=cover` and safe-area padding.
+- Generated metadata now combines `status-bar-style=default` with `theme-color=#fafafa`; manifest,
+  HTML, body, shell, and sticky header surfaces already use the same color.
+- A 390x844 mobile check with a forced 47px inset and `scrollY=1200` found zero mismatched top
+  pixels, no backdrop blur, and exact 133px header/tab-strip alignment.
+- `npm run check` passes both validators, lint, typecheck, 80 tests, and a 124-page build.
+- Production deployment is pending.
+
 ## Residual Manual Check
 - A physical installed PWA is the final authority for iOS system status-bar composition. Reopen
   the app after deployment (or remove/re-add it if iOS retains old metadata) and confirm the top
