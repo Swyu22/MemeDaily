@@ -103,6 +103,18 @@ late WebKit geometry changes without overlap.
 - The JSON record and its sources were not deleted. Restoring it would require an explicit product
   policy exception plus tests; simply flipping the flag would bypass the current safety contract.
 
+## Production Deployment
+- PR #26 passed both governance jobs and merged to `main` as `aa1df95`. CI run `29262548831` and
+  Pages run `29262548127` completed successfully.
+- Production HTML now emits `viewport-fit=contain`, `theme-color=#fafafa`,
+  `color-scheme=light`, and manifest URL `20260713-2`; the manifest and Service Worker return 200
+  with stable app `id`, matching `#fafafa` colors, and cache generation `memedaily-v4`.
+- Production Chromium at 390x844 under dark system preference passed opaque-surface, no-blur,
+  disabled-overscroll, no-synthetic-guard, 86px sticky-alignment, and top-pixel checks with no
+  hard first-party failures.
+- The same acceptance found exactly two cards in the July 13 section and no visible `谢停风` text;
+  its unpublished detail route returns 404 as required by the current public selector.
+
 ## Residual Manual Check
 - A physical installed PWA is the final authority for iOS system status-bar composition. Chrome
   can retain install metadata outside normal web caches, so remove the existing icon, open the
