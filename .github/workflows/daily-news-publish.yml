@@ -6,11 +6,12 @@ name: daily-news-publish
 #
 # SECURITY MODEL — identical to daily-publish.yml: TWO JOBS so the web-content-steered agent
 # never holds write power.
-#   - job `agent`: contents:read (+ id-token:write). Confined claude-code-action (--allowedTools,
-#     the only Bash it may run is `npm run validate:news`). Produces data/daily-news/<date>.json
+#   - job `agent`: contents:read with the job token passed explicitly. Confined action in dontAsk mode
+#     with path-scoped Write/Edit and no shell. Produces data/daily-news/<date>.json
 #     and uploads ONLY that JSON artifact. A full compromise still cannot push or deploy.
 #   - job `publish`: needs `agent`; contents:write + actions:write. Checks out TRUSTED repo code,
 #     downloads only the JSON artifact, runs `npm run check`, commits + pushes + dispatches Pages.
+#     The artifact can influence content only; trusted code owns commands and credentials.
 #
 # Requires the same CLAUDE_CODE_OAUTH_TOKEN secret as daily-publish. Until it exists, a clean no-op.
 
@@ -38,9 +39,9 @@ jobs:
   # ── JOB 1: confined, web-content-steered agent. contents:read only — it cannot push. ──
   agent:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     permissions:
       contents: read
-      id-token: write # claude-code-action uses OIDC for its GitHub token setup
     env:
       HAS_OAUTH: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
     outputs:
@@ -56,7 +57,7 @@ jobs:
         if: env.HAS_OAUTH != 'true'
         run: echo "::warning::CLAUDE_CODE_OAUTH_TOKEN not set — add it as a repo secret to enable cloud publishing. Skipping this run."
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
         if: env.HAS_OAUTH == 'true'
         with:
           persist-credentials: false # defense-in-depth; this job has no write scope anyway
@@ -80,27 +81,18 @@ jobs:
           fi
           echo "skip=${SKIP}" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/setup-node@v4
-        if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
-        with:
-          node-version: 22
-          cache: npm
-
-      - name: Install deps
-        if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
-        run: npm ci
-
-      - name: Generate + self-check today's 日报 data (confined agent, no git)
+      - name: Generate today's 日报 data (path-confined agent, no shell or git)
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
         uses: anthropics/claude-code-action@2fee15510437d71399d9139ed60433470484a8fb # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ github.token }} # avoids an OIDC exchange for a write-capable App token
           # daily-news-catchup dispatches via GITHUB_TOKEN → actor = github-actions (Bot). The
           # action's runtime now rejects bot actors by default (2026-07-12: catchup retries all
           # died on "non-human actor"), so allowlist exactly this repo-internal bot. Only workflows
           # in THIS repo with actions:write can dispatch as it; agent stays confined.
           allowed_bots: "github-actions"
-          claude_args: '--max-turns 60 --allowedTools "WebSearch,WebFetch,Read,Glob,Grep,Write,Edit,TodoWrite,Bash(npm run validate:news)"'
+          claude_args: '--max-turns 60 --permission-mode dontAsk --allowedTools "WebSearch,WebFetch,Read(./**),Glob(./**),Grep(./**),TodoWrite,Write(data/daily-news/${{ steps.guard.outputs.date }}.json),Edit(data/daily-news/${{ steps.guard.outputs.date }}.json)"'
           prompt: |
             You are the DailyNews (日报) publishing job running unattended in GitHub Actions.
             Read and follow ai/prompts/DAILYNEWS_DAILY_AUTOMATION.md EXACTLY, including its first
@@ -150,16 +142,14 @@ jobs:
             CRITICAL OUTPUT REQUIREMENT: You MUST create the file
             data/daily-news/${{ steps.guard.outputs.date }}.json using the Write tool (today is
             ${{ steps.guard.outputs.date }}, Asia/Shanghai). The file MUST exist on disk before you
-            finish. Use Read/Glob/Grep to inspect src/domain/dailynews/schema.ts and existing files;
-            the ONLY shell command you may run is `npm run validate:news`. After writing the file,
-            run it once; if it reports errors, fix and re-run — but after at most 3 attempts, Write a
-            valid status:"skipped" envelope instead of looping. A separate deterministic job runs the
-            full check and publishes your file, so do NOT run git/commit/push. If nothing qualifies,
+            finish. Use Read/Glob/Grep to inspect src/domain/dailynews/schema.ts and existing files.
+            You have no shell permission and may write/edit only that exact daily JSON path. A separate
+            trusted job stamps time, runs the full check, and publishes it. If nothing qualifies,
             you STILL must Write a valid status:"skipped" envelope. Never fabricate sources, never pad to 10.
 
       - name: Upload the agent's data file (ONLY the JSON — never code) for the publish job
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: daily-news-data
           path: data/daily-news/${{ steps.guard.outputs.date }}.json
@@ -171,16 +161,19 @@ jobs:
     needs: agent
     if: needs.agent.outputs.has_oauth == 'true' && needs.agent.outputs.skip != 'true'
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     permissions:
       contents: write
       actions: write # to dispatch the Pages deploy after a GITHUB_TOKEN push
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       DATE: ${{ needs.agent.outputs.date }}
     steps:
-      - uses: actions/checkout@v4 # TRUSTED repo code — NOT the agent's tree
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # TRUSTED repo code — NOT the agent's tree
+        with:
+          fetch-depth: 0
+          persist-credentials: false
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 22
           cache: npm
@@ -189,20 +182,21 @@ jobs:
         run: npm ci
 
       - name: Download the agent's data file (only the JSON artifact)
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
         with:
           name: daily-news-data
           path: data/daily-news
 
       - name: Validate, commit & publish (deterministic; agent cannot reach this)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
           if [ ! -f "data/daily-news/${DATE}.json" ]; then
             echo "::error::Agent job produced no data/daily-news/${DATE}.json artifact. Failing so catchup/monitor recover."
             exit 1
           fi
-          # Stamp the REAL publish time (Asia/Shanghai, fixed UTC+8) into published_at.
-          node -e 'const fs=require("fs"),p=process.argv[1],o=JSON.parse(fs.readFileSync(p,"utf8"));o.published_at=new Date(Date.now()+8*3600*1000).toISOString().replace(/\.\d+Z$/,"+08:00");fs.writeFileSync(p,JSON.stringify(o,null,2)+"\n")' "data/daily-news/${DATE}.json"
+          npm run stamp:publish -- "data/daily-news/${DATE}.json"
           npm run check # re-validate (both feeds) against TRUSTED repo code before trusting the data
           git add data/daily-news
           if git diff --cached --quiet; then
@@ -212,26 +206,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore(data): publish DailyNews ${DATE}"
+          gh auth setup-git
           git pull --rebase origin main
           git push origin HEAD:main
-          # GITHUB_TOKEN pushes don't trigger on:push, so dispatch the Pages deploy and verify it
-          # targets our commit (or a descendant) — same race-safe loop as daily-publish.yml.
           SHA="$(git rev-parse HEAD)"
-          DEPLOYED=false
-          for attempt in 1 2 3 4; do
-            sleep 10
-            gh workflow run pages.yml --ref main || true
-            sleep 6
-            RUN_SHA="$(gh run list --workflow=pages.yml --limit 1 --json headSha --jq '.[0].headSha' 2>/dev/null || echo '')"
-            git fetch origin -q 2>/dev/null || true
-            if [ -n "$RUN_SHA" ] && { [ "$RUN_SHA" = "$SHA" ] || git merge-base --is-ancestor "$SHA" "$RUN_SHA" 2>/dev/null; }; then
-              echo "Pages deploy includes ${SHA} (deployed ${RUN_SHA}, attempt ${attempt})."
-              DEPLOYED=true
-              break
-            fi
-            echo "::warning::Pages deploy targeted ${RUN_SHA:-?}, which does not include ${SHA}; retrying (attempt ${attempt})."
-          done
-          if [ "$DEPLOYED" != "true" ]; then
-            echo "::error::Could not dispatch a Pages deploy for ${SHA} after retries — the commit is published but the live site may lag. Re-run pages.yml manually."
-            exit 1
-          fi
+          bash scripts/dispatch-pages.sh "$SHA"

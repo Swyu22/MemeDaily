@@ -1,36 +1,36 @@
 /*
- * MemeDaily service worker — served at /MemeDaily/sw.js, scope /MemeDaily/.
+ * MemeDaily service worker — served from the active deployment root or Pages subpath.
+ * input: fetch/message/lifecycle events within the active registration scope
+ * output: fresh-first pages, cached immutable assets/fonts, and an offline fallback
+ * pos: public static runtime worker copied to the deployment root
  *
- * GOAL: every ONLINE open shows fresh + fully-styled content with no manual reload,
- * while making "stale-forever" structurally impossible.
+ * GOAL: prefer fresh, fully styled online content and provide deterministic offline fallback.
  *
  * STRATEGY (per request type):
- *  - NAVIGATIONS (HTML documents): NETWORK-FIRST. We always hit the network first so an
- *    online user can never be pinned on yesterday's HTML. Cache is a same-day fallback
+ *  - NAVIGATIONS (HTML documents): NETWORK-FIRST at the browser boundary. GitHub Pages may
+ *    still retain HTML at its edge for its own TTL. Cache is a same-day fallback
  *    used ONLY when the network actually fails (offline / flaky). Because fresh HTML
  *    carries the CURRENT content-hashed asset URLs, this single rule fixes BOTH symptoms
  *    (stale memes AND missing CSS from a purged old hash).
- *  - IMMUTABLE HASHED ASSETS (/MemeDaily/_next/static/...): CACHE-FIRST. Content-hashed,
+ *  - IMMUTABLE HASHED ASSETS (<scope>/_next/static/...): CACHE-FIRST. Content-hashed,
  *    so cache-first is safe forever and kills the wasteful 10-min re-fetch. It also
  *    survives the redeploy purge race: a still-referenced old chunk is served from cache
  *    even if the CDN already purged it (network falls back to cache).
- *  - FONTS CSS + font files (/MemeDaily/fonts/...): STALE-WHILE-REVALIDATE. Serve instantly,
+ *  - FONTS CSS + font files (<scope>/fonts/...): STALE-WHILE-REVALIDATE. Serve instantly,
  *    refresh in background. fonts.css is NOT content-hashed, so we never cache-first it
  *    forever; SWR keeps it self-healing.
  *  - EVERYTHING ELSE (data JSON via fetch, etc.): pass through to the network untouched.
  *
- * input:  fetch events within scope /MemeDaily/
- * output: Response (network-preferred for HTML; cache-preferred for immutable assets)
- * pos:    public/sw.js -> deployed to out/sw.js at /MemeDaily/sw.js
  */
 
-// Bump this string to force a full cache flush for ALL clients on the next deploy
-// (activate deletes every cache whose name does not start with CACHE_VERSION).
+// Bump this string after service-worker strategy changes. Activation deletes only older
+// MemeDaily generations and never touches another app's origin cache.
 // Immutable assets are keyed by their content-hashed URL, so a new build just writes new
 // keys; superseded keys are NOT auto-evicted (the Cache API has no TTL) but accumulate
 // only slowly — they change when code/CSS hashes change, not on daily content-only
 // publishes — and stay tiny. Bump the version if you ever want to reclaim that space.
-const CACHE_VERSION = "memedaily-v1";
+const APP_CACHE_PREFIX = "memedaily-";
+const CACHE_VERSION = "memedaily-v2";
 const ASSET_CACHE = `${CACHE_VERSION}-assets`;
 const HTML_CACHE = `${CACHE_VERSION}-html`;
 
@@ -39,11 +39,16 @@ const HTML_CACHE = `${CACHE_VERSION}-html`;
 const SCOPE_PATH = new URL(self.registration.scope).pathname;
 const STATIC_PREFIX = `${SCOPE_PATH}_next/static/`;
 const FONTS_PREFIX = `${SCOPE_PATH}fonts/`;
+const OFFLINE_URL = `${SCOPE_PATH}offline.html`;
 
-self.addEventListener("install", () => {
+self.addEventListener("install", (event) => {
   // Take over as soon as possible; we rely on network-first for HTML so there is no
   // risk of skipWaiting serving stale content — the new SW still goes to network first.
-  self.skipWaiting();
+  event.waitUntil(
+    caches.open(HTML_CACHE)
+      .then((cache) => cache.add(new Request(OFFLINE_URL, { cache: "reload" })))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener("activate", (event) => {
@@ -51,11 +56,12 @@ self.addEventListener("activate", (event) => {
     (async () => {
       // Drop any cache not belonging to the current version (old SW generations).
       const keys = await caches.keys();
-      await Promise.all(
-        keys
-          .filter((k) => !k.startsWith(CACHE_VERSION))
-          .map((k) => caches.delete(k))
+      const stale = keys.flatMap((key) =>
+        key.startsWith(APP_CACHE_PREFIX) && !key.startsWith(CACHE_VERSION)
+          ? [caches.delete(key)]
+          : []
       );
+      await Promise.all(stale);
       await self.clients.claim();
     })()
   );
@@ -81,15 +87,22 @@ function htmlKey(request) {
   return u.toString();
 }
 
+async function cacheSafely(cache, key, response) {
+  try {
+    await cache.put(key, response.clone());
+  } catch {
+    // Cache Storage can fail because of quota/privacy mode; never discard a valid network response.
+  }
+}
+
 // NETWORK-FIRST for navigations. Never returns stale HTML to an online user.
 async function handleNavigation(request) {
   const cache = await caches.open(HTML_CACHE);
   try {
-    // No-store at the SW boundary so we always revalidate the document against origin;
-    // the CDN's max-age=600 cannot pin us because we explicitly bypass the HTTP cache.
+    // No-store bypasses the browser HTTP cache. The hosting edge may still enforce its TTL.
     const fresh = await fetch(request, { cache: "no-store" });
     if (fresh && fresh.ok && fresh.type === "basic") {
-      cache.put(htmlKey(request), fresh.clone()); // same-day offline fallback (rescue ?_r normalized out)
+      await cacheSafely(cache, htmlKey(request), fresh); // same-day offline fallback
     }
     return fresh;
   } catch (err) {
@@ -97,8 +110,8 @@ async function handleNavigation(request) {
     // else let the browser show its normal offline error.
     const cached = await cache.match(htmlKey(request));
     if (cached) return cached;
-    // No homepage (SCOPE_PATH) fallback: serving the homepage HTML under a different
-    // deep-link URL is confusing. Let the browser show its native offline page instead.
+    const offline = await cache.match(OFFLINE_URL);
+    if (offline) return offline;
     throw err;
   }
 }
@@ -111,7 +124,7 @@ async function handleImmutableAsset(request) {
   try {
     const fresh = await fetch(request);
     if (fresh && fresh.ok && fresh.type === "basic") {
-      cache.put(request, fresh.clone()); // never cache a 404/opaque (would poison the asset cache)
+      await cacheSafely(cache, request, fresh); // never cache a 404/opaque
     }
     return fresh;
   } catch (err) {
@@ -123,18 +136,27 @@ async function handleImmutableAsset(request) {
 }
 
 // STALE-WHILE-REVALIDATE for fonts (fonts.css is not content-hashed; font files are stable).
-async function handleFont(request) {
+async function fetchAndCacheFont(request, cache) {
+  try {
+    const fresh = await fetch(request);
+    if (fresh && (fresh.ok || fresh.type === "opaque")) {
+      await cacheSafely(cache, request, fresh);
+    }
+    return fresh;
+  } catch {
+    return undefined;
+  }
+}
+
+async function handleFont(request, event) {
   const cache = await caches.open(ASSET_CACHE);
   const cached = await cache.match(request);
-  const network = fetch(request)
-    .then((fresh) => {
-      if (fresh && (fresh.ok || fresh.type === "opaque")) {
-        cache.put(request, fresh.clone());
-      }
-      return fresh;
-    })
-    .catch(() => undefined);
-  return cached || (await network) || fetch(request);
+  const network = fetchAndCacheFont(request, cache);
+  if (cached) {
+    event.waitUntil(network);
+    return cached;
+  }
+  return (await network) || fetch(request);
 }
 
 self.addEventListener("fetch", (event) => {
@@ -165,7 +187,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
   if (url.pathname.startsWith(FONTS_PREFIX)) {
-    event.respondWith(handleFont(request));
+    event.respondWith(handleFont(request, event));
     return;
   }
   // data JSON and everything else: do not intercept — must always be fresh from network.

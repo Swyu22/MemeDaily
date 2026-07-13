@@ -4,6 +4,9 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
@@ -11,27 +14,31 @@ concurrency:
 jobs:
   governance:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          fetch-depth: 0
+          persist-credentials: false
 
       # —— 协作 OS 层检查（与本地 .githooks 同源 scripts/checks/*）——
       - name: 状态新鲜度（.cloud.md）
-        run: bash scripts/checks/check-state-fresh.sh
+        run: bash scripts/checks/check-state-fresh.sh --all
 
       - name: 文件行数（全仓）
-        run: bash scripts/checks/check-file-size.sh --all
+        run: STRICT=1 bash scripts/checks/check-file-size.sh --all
 
       - name: 关键文件头说明
-        run: bash scripts/checks/check-key-file-header.sh
+        run: STRICT=1 bash scripts/checks/check-key-file-header.sh --all
 
-      - name: 依赖边界（opt-in，缺规则文件则跳过）
-        run: bash scripts/checks/check-import-boundaries.sh
+      - name: 依赖边界
+        run: STRICT=1 bash scripts/checks/check-import-boundaries.sh --all
 
       - name: 密钥扫描（全仓 tracked）
         run: bash scripts/checks/check-secrets.sh --all
 
       # —— 应用架构层检查 ——
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 22
           cache: npm

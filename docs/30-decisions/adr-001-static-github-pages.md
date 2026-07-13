@@ -15,6 +15,11 @@ as `Swyu22/MemeDaily`.
 > during filing; it will be re-attached after approval. The GitHub Pages decision itself is
 > unchanged. See `.cloud.md` for the re-attach checklist.
 
+> Resolution (2026-06-29): ICP filing was approved, `memedaily.fun` was re-attached,
+> GitHub Pages HTTPS was enforced, and the app returned to root-path hosting. The temporary
+> project-subpath state above is retained as historical context; current runtime state is
+> defined by `next.config.mjs`, `public/CNAME`, and `.cloud.md`.
+
 ## Decision
 Use a static web app built from repository JSON files and published through GitHub
 Pages. Daily content updates are normal git commits.

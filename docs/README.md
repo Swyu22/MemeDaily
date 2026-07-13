@@ -1,22 +1,28 @@
-# CODING AGENTS: READ THIS FIRST
+# MemeDaily Documentation
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+This directory contains the current collaboration, product, architecture, planning,
+decision, and audit records. The HTML/CSS prototypes under `docs/project/` are historical
+Claude Design references, not production source and not the current architecture canon.
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+## Canonical Reading Order
 
-## What you should do — IMPORTANT
+1. `../.cloud.md` - current goal, state, blockers, and next actions.
+2. `00-context/PROJECT_MAP.md` - modules, dependencies, runtime, and automation map.
+3. `20-plan/current-iteration.md` - active milestone and acceptance checklist.
+4. `10-spec/memedaily-product-spec.md` - current product and data contract.
+5. `30-decisions/` - architecture decisions and accepted exceptions.
+6. `40-audits/` - dated engineering audit evidence and Skills inventories.
 
-**Read `meme-daily/project/梗档案.dc.html` in full.** The user had this file open when they triggered the handoff, so it's almost certainly the primary design they want built. Read it top to bottom — don't skim. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+## Directory Index
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+| Directory | Purpose |
+| --- | --- |
+| `00-context/` | Collaboration constitution, state schema, and project map |
+| `10-spec/` | Product and contract specifications |
+| `20-plan/` | Current and reusable iteration plans |
+| `30-decisions/` | Architecture decision records |
+| `40-audits/` | Full-scope audit reports and installed-Skills classification |
+| `project/` | Read-only design prototypes retained for visual provenance |
 
-## About the design files
-
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
-
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
-
-## Bundle contents
-
-- `meme-daily/README.md` — this file
-- `meme-daily/project/` — the `Meme Daily 今日台` project files (HTML prototypes, assets, components)
+Operational prompts live in `../ai/prompts/`; session logs live in
+`../ai/sessions/`. Production implementation lives under `../src/`.

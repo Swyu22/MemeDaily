@@ -184,7 +184,8 @@ do not publish it — it never enters `items`, and the public page never shows a
 
 ## How to write each item (map editorial richness → schema fields)
 - `title` — 梗名/话题名; a relevant emoji prefix is allowed (≤48 chars total).
-- `id` — MUST match `^YYYY-MM-DD-slug` where `YYYY-MM-DD` is today's envelope date and
+- `id` — MUST match `^YYYY-MM-DD-slug`; a new meme uses today's envelope date, while a recurrence
+  retains the first appearance's date and exact id so its detail URL stays stable. The
   `slug` is lowercase ASCII `[a-z0-9-]` only (e.g. `2026-06-20-banwei`). Never use Chinese,
   uppercase, spaces, or underscores in `id` — the Chinese 梗名 lives in `title`. For a
   carry-over meme (days_on_list > 1) reuse the EXACT id from its first appearance so detail
@@ -205,7 +206,7 @@ do not publish it — it never enters `items`, and the public page never shows a
   `"已验证：…；推测：…"`. Cover 节日/赛事/综艺/热点窗口、明星/品牌/算法/粉丝推动、
   是否易截图模仿改写二创、评论门槛是否低、能否跨平台.
 - `lifecycle` — 生命周期，**唯一判定标准 = 天数**：
-  - `declining`（已过气）：**只有当这个梗第一次被收录至今已超过 5 天**才标。从最近的
+  - `declining`（已过气）：**只有当这个梗第一次被收录至今至少 5 天（≥5）**才标。从最近的
     `data/daily/*.json` 历史按梗名 / 别名查它第一次出现的日期来算。
   - 否则一律**至少标 `rising`（还能上车）**；明显仍在大热的可标 `peak`（正热）。
   - 代码校验会强制这条：把不满 5 天的梗标成 `declining` 会让 `npm run validate` 失败、无法提交。
@@ -259,10 +260,11 @@ do not publish it — it never enters `items`, and the public page never shows a
    `status: "skipped"` envelope.
 6. Fill `run_report` honestly: `candidates_scanned`, `published`, `dropped_safety` (by
    category), `dropped_low_confidence`, `sources`, `evidence_summary`.
-7. Run: `npm run validate` → `npm run typecheck` → `npm test` → `npm run build`.
-8. Only if all pass, stage ONLY today's file (never modify prior days' envelopes):
-   `git add data/daily/<today>.json && git commit -m "chore(data): publish MemeDaily
-   YYYY-MM-DD" && git push`.
+7. In a trusted local recovery, run the stamp/check commands below. In the confined GitHub agent job,
+   do not request shell access; the separate trusted publish job owns all validation and publication.
+8. Run `npm run stamp:publish -- "data/daily/${DATE}.json"` then `npm run check`, then stage ONLY
+   today's file (never modify prior days' envelopes): `git add -- "data/daily/${DATE}.json" &&
+   git commit -m "chore(data): publish MemeDaily ${DATE}" && git push`.
 
 ## Output Expectations
 - Leave a concise run note: date, status, items published, major drop counts, push result.

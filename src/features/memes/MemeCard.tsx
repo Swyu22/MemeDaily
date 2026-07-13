@@ -2,8 +2,6 @@
  * input: a validated MemeDaily item
  * output: compact card with inline decision details and wrapped evidence links
  * pos: feature UI component shared by Today and detail surfaces
- * note: currently always rendered with `expanded` (see TodayFeed); the compact
- *       (non-expanded) branch + MemeSourceList `compact` mode are reserved for reuse.
  */
 import { ExternalLink } from "lucide-react";
 import { lifecycleLabels, platformLabels, tierLabels } from "@/domain/memedaily/labels";
@@ -12,12 +10,7 @@ import type { MemeItem } from "@/domain/memedaily/schema";
 // basePath prefix for raw <a> internal links (Next only rewrites next/link). See next.config.mjs.
 const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-type MemeCardProps = {
-  item: MemeItem;
-  expanded?: boolean;
-};
-
-export function MemeCard({ item, expanded = false }: MemeCardProps) {
+export function MemeCard({ item }: { item: MemeItem }) {
   return (
     <article className="card" data-faded={item.lifecycle === "declining"}>
       <div className="card-head">
@@ -54,7 +47,7 @@ export function MemeCard({ item, expanded = false }: MemeCardProps) {
         ) : null}
       </div>
 
-      {expanded ? <MemeDetailFields item={item} /> : <MemeSourceList item={item} compact />}
+      <MemeDetailFields item={item} />
 
       <div className="tag-row">
         <a className="button" href={`${BP}/meme/${item.id}/index.html`}>
@@ -81,9 +74,9 @@ export function MemeDetailFields({ item }: { item: MemeItem }) {
   );
 }
 
-export function MemeSourceList({ item, compact = false }: { item: MemeItem; compact?: boolean }) {
+function MemeSourceList({ item }: { item: MemeItem }) {
   return (
-    <div className={compact ? "sources sources-compact" : "sources"}>
+    <div className="sources">
       {item.sources.map((source) => (
         <a
           className="source-link"

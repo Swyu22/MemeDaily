@@ -54,7 +54,6 @@ export const NewsTierSchema = z.enum([
 // clickable <a href> (stored-XSS if a source url were ever poisoned). See memedaily/schema.ts (kept
 // decoupled, redeclared here). All real news sources are http(s).
 const HttpUrlSchema = z
-  .string()
   .url()
   .refine((u) => /^https?:\/\//i.test(u), { message: "source url 必须是 http(s) 链接" });
 
@@ -63,7 +62,7 @@ const NewsSourceSchema = z.object({
   outlet: z.string().min(1).max(20).optional(), // 媒体名（新华社/央视/澎湃…）— shown in 来源媒体
   url: HttpUrlSchema,
   title: z.string().min(1).max(120).optional(),
-  captured_at: z.string().datetime({ offset: true }),
+  captured_at: z.iso.datetime({ offset: true }),
   note: z.string().min(2).max(160),
 });
 
@@ -75,7 +74,7 @@ export const NewsItemSchema = z.object({
   heat_rank: z.number().int().min(1).max(10), // 1 = hottest; gate enforces contiguous 1..N
   // 新闻"真实发生/披露时间"（Asia/Shanghai, offset）。用于「新鲜值」排序——越接近现在越靠前。
   // 与 source.captured_at（抓取时刻）不同。可选以兼容旧档；排序时缺失则回退到最新 captured_at。
-  occurred_at: z.string().datetime({ offset: true }).optional(),
+  occurred_at: z.iso.datetime({ offset: true }).optional(),
   // --- INTERNAL editorial reasoning (validated, NEVER rendered) ---
   // wechat_bridge / filter_pass are LEGACY (v2 drops the bridge — "只做呈现"); kept OPTIONAL so
   // old envelopes still validate and the agent may omit them. risk stays a required safety note.
@@ -106,11 +105,11 @@ export const NewsEnvelopeSchema = z.object({
   policy_version: z.string().min(1),
   rubric_version: z.string().min(1),
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-  generated_at: z.string().datetime({ offset: true }),
+  generated_at: z.iso.datetime({ offset: true }),
   // Real publish moment (Asia/Shanghai), stamped deterministically by the publish step
   // (distinct from the agent-guessed generated_at). Optional so the agent's pre-publish file
   // validates; the publish step and the skipped-day fallback add it.
-  published_at: z.string().datetime({ offset: true }).optional(),
+  published_at: z.iso.datetime({ offset: true }).optional(),
   status: StatusSchema,
   run_report: z.object({
     candidates_scanned: z.number().int().min(0),
