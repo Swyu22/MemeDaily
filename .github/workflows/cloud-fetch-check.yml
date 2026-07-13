@@ -2,8 +2,9 @@ name: cloud-fetch-check
 
 # Feasibility probe for cloud publishing: a GitHub runner is a non-CN datacenter IP,
 # a reasonable proxy for the IP a cloud routine would use. This checks whether the public
-# CN aggregator/platform pages are readable WITHOUT cookies or anti-bot bypass from such
-# an IP. This is a diagnostic for the active cloud pipeline, not a migration prerequisite.
+# CN aggregator/platform pages the daily job relies on are readable WITHOUT cookies or
+# anti-bot bypass from such an IP. Run before migrating the daily job off the local Mac.
+# Trigger manually: Actions tab -> cloud-fetch-check -> Run workflow (or `gh workflow run`).
 
 on:
   workflow_dispatch:
@@ -14,7 +15,6 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
       - name: Probe public sources from a cloud IP
         run: |
@@ -35,17 +35,13 @@ jobs:
             "https://www.bilibili.com/v/hot/"
           )
           ua="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-          body="$(mktemp)"
-          trap 'rm -f "$body"' EXIT
           for u in "${urls[@]}"; do
             echo "==== ${u} ===="
-            : > "$body"
-            code="$(curl -sSL -o "$body" -w '%{http_code}' -A "$ua" --max-time 25 "$u" 2>/dev/null || true)"
-            code="${code:-000}"
-            bytes="$(wc -c < "$body" | tr -d ' ')"
-            title="$(grep -ioE '<title>[^<]*</title>' "$body" | head -1 || true)"
+            code="$(curl -sSL -o /tmp/body -w '%{http_code}' -A "$ua" --max-time 25 "$u" 2>/dev/null || echo 000)"
+            bytes="$(wc -c < /tmp/body | tr -d ' ')"
+            title="$(grep -ioE '<title>[^<]*</title>' /tmp/body | head -1 || true)"
             wall=""
-            if grep -iqE '(登录|请登录|captcha|安全验证|滑动验证|verify you are human)' "$body"; then
+            if grep -iqE '(登录|请登录|captcha|安全验证|滑动验证|verify you are human)' /tmp/body; then
               wall="⚠ 疑似登录/验证墙"
             fi
             echo "http=${code} bytes=${bytes} title=${title} ${wall}"

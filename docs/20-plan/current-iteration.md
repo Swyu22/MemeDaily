@@ -1,37 +1,44 @@
 # Current Iteration
 
 ## Iteration Goal
-Fix the installed mobile PWA's uncovered top safe area and blurred content bleed-through,
-verify the correction under a simulated notched viewport, and deploy it to production.
+- Initialize MemeDaily as a governed static product: Ai-Workflow-Kit state,
+  Next.js static scaffold, JSON contract validation, GitHub Pages workflows, and
+  Codex App daily automation.
 
 ## Scope
-- **In:** iOS standalone metadata, viewport safe-area handling, sticky header painting and
-  offsets, PWA launch colors, mobile scroll behavior, and production verification.
-- **Out:** unrelated visual redesign, feed/content changes, and native-app packaging.
+- **In:** governance docs, project map, product spec, ADRs, data contract, sample
+  daily data, validation scripts, static pages, build workflows, automation prompt.
+- **Out:** real daily content collection run, login-based scraping, OpenAI API,
+  Supabase, private access control, production DNS changes.
 
 ## Checklist
-- [x] Reproduce the failure path from the PWA metadata and sticky-header CSS.
-- [x] Extend the viewport into the device safe area and expose the inset to layout CSS.
-- [x] Replace the translucent blurred header with an opaque safe-area-covering surface.
-- [x] Include the safe-area inset in pre-hydration sticky offsets and PWA launch colors.
-- [x] Run static checks, the full gate suite, and simulated notched-mobile scroll acceptance.
-- [x] Commit, push, wait for Pages, and verify production metadata and rendering.
-- [x] Match the iOS system status region to the `#fafafa` page surface without restoring blur.
-- [x] Recheck mobile safe-area pixels and sticky geometry after the status-style adjustment.
-- [x] Run the complete gate and deploy the color-matched status region to production.
+- [x] P0 Import and adapt Ai-Workflow-Kit collaboration OS.
+- [x] P0 Initialize git repo and connect `Swyu22/MemeDaily`.
+- [x] P0 Create application scaffold and static data loader.
+- [x] P0 Implement daily JSON schema validation and evidence gates.
+- [x] P0 Build Today, Archive/Search, and Meme detail pages.
+- [x] P0 Add GitHub Pages build workflow.
+- [x] P0 Add skipped-day fallback workflow.
+- [x] P1 Add Codex daily automation prompt and local app automation.
+- [x] P1 Add tests for evidence, safety, meme-shell, and invalid JSON cases.
+- [x] P2 Commit and push initial foundation.
 
-## High-Risk Areas
-- iOS Home Screen mode calculates viewport and safe-area geometry differently from a normal
-  mobile browser tab.
-- Sticky offsets must remain correct before and after `HomeTabs` measures the real header.
-- An installed service worker must discover the new static HTML and hashed stylesheet.
+## Risks / Dependencies
+- GitHub Pages public repo requirement means no sensitive data can enter this repo.
+- Local Codex automation depends on the current Mac staying awake and logged in.
+- Evidence pages can disappear; the app must preserve compact source metadata without
+  copying large excerpts or media.
+- GitHub Pages is enabled and deploying; `memedaily.fun` needs Aliyun DNS records
+  before HTTPS can be enforced.
 
-## Acceptance Standard
-- Generated HTML contains `viewport-fit=cover` and the light `default` standalone status-bar
-  metadata, with page, header, theme, and launch surfaces all set to `#fafafa`.
-- A simulated 47px top inset remains fully painted by the opaque header before and after scroll.
-- The mobile tab strip pins immediately below the complete header, including the safe area.
-- `npm run check` passes, Pages deploys the commit, and production serves the new metadata/assets.
+## Docs To Update
+- [x] `.cloud.md`
+- [x] `docs/00-context/PROJECT_MAP.md`
+- [x] `docs/20-plan/current-iteration.md`
+- [x] `docs/10-spec/memedaily-product-spec.md`
+- [x] ADR for static GitHub Pages architecture
+- [x] ADR for public-web evidence strategy
+- [x] `ai/sessions/2026-06-20--project-kickoff.md`
 
 ## Last Updated
-- 2026-07-13 22:31 +0800
+- 2026-06-20 16:36 +0800

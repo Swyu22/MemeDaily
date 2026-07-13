@@ -137,7 +137,5 @@ INTERNAL (not rendered):
    **主动求多样、反重复**（周期性服务公告每天最多 1 条且须有新信息）。
 4. Keep the best (up to 10); assign contiguous `heat_rank` by heat. **尽量纳入 ≥1 条 `国际`（非政治）**。
    Write a ~100-char `summary`, an emoji-prefixed `headline`, and `outlet` on every source.
-5. In a trusted local recovery, run `npm run stamp:publish -- "data/daily-news/${DATE}.json"` then
-   `npm run validate:news`; fix and re-run (≤3 attempts), else write a valid `status:"skipped"` envelope.
-   In the confined GitHub agent job, do not request shell access: the separate trusted publish job stamps,
-   validates, and publishes — never git/commit/push from the research agent.
+5. Run `npm run validate:news`; fix and re-run (≤3 attempts), else write a valid `status:"skipped"`
+   envelope. A separate deterministic job runs the full check and publishes — do NOT git/commit/push.

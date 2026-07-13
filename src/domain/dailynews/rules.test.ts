@@ -208,12 +208,4 @@ describe("envelopeIssueSummary", () => {
   it("flags a published envelope with zero items", () => {
     expect(envelopeIssueSummary(envelopeWith([], "published")).some((i) => i.includes("zero items"))).toBe(true);
   });
-
-  it("flags generated/source timestamps after the trusted publish time", () => {
-    const env = envelopeWith([baseItem], "published");
-    env.published_at = "2026-06-29T07:10:00+08:00";
-    const issues = envelopeIssueSummary(env);
-    expect(issues.some((issue) => issue.includes("generated_at") && issue.includes("published_at"))).toBe(true);
-    expect(issues.some((issue) => issue.includes("source captured_at") && issue.includes("published_at"))).toBe(true);
-  });
 });

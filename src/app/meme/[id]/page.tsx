@@ -1,8 +1,3 @@
-/**
- * input: a static meme id and validated archive data
- * output: permanent detail route, evidence, history, related items, and copy actions
- * pos: App Router static-detail composition boundary
- */
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LinkIcon } from "lucide-react";
@@ -29,7 +24,7 @@ export default async function MemeDetailPage({ params }: { params: Promise<{ id:
   }
 
   return (
-    <main className="page" id="main-content" style={{ maxWidth: 880 }}>
+    <main className="page" style={{ maxWidth: 880 }}>
       <article className="detail-card">
         <div className="detail-head">
           <div className="head-main">

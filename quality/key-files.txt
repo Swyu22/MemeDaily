@@ -1,15 +1,6 @@
 # Critical files checked by scripts/checks/check-key-file-header.sh.
 # Each file must contain input/output/pos in its first 20 lines.
 
-next.config.mjs
-eslint.config.mjs
-public/sw.js
-src/app/layout.tsx
-src/app/page.tsx
-src/app/archive/page.tsx
-src/app/meme/[id]/page.tsx
-src/app/globals.css
-src/app/responsive.css
 src/domain/memedaily/schema.ts
 src/domain/memedaily/rules.ts
 src/domain/memedaily/data.ts
@@ -29,7 +20,3 @@ scripts/validate-data.ts
 scripts/create-skipped-day.ts
 scripts/validate-news.ts
 scripts/create-skipped-news-day.ts
-scripts/stamp-publish-time.ts
-scripts/dispatch-pages.sh
-scripts/fetch-fonts.sh
-scripts/compact_font_css.py

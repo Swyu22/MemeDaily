@@ -64,3 +64,8 @@ export function visibleNewsDays(limit: number): VisibleNewsDay[] {
   }
   return out;
 }
+
+// The most recent 日报 day with visible items (or null). Used for the tab-aware status bar.
+export function latestVisibleNews(): VisibleNewsDay | null {
+  return visibleNewsDays(1)[0] ?? null;
+}

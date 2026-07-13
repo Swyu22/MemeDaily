@@ -1,12 +1,7 @@
-/**
- * input: current root-domain or GitHub Pages project-subpath deployment choice
- * output: deterministic static export with inline application CSS
- * pos: Next.js build and hosting contract
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 // 备案已通过 (2026-06-29)，站点回挂根域名 memedaily.fun，资源走根路径，basePath="".
-// 若再次脱离到 GitHub Pages 子路径，只需把 basePath 改回 "/MemeDaily"，并同步
-// layout.tsx 的 metadataBase/openGraph.url，并移除 public/CNAME（sw.js、manifest 和字体路径自适配）。
+// 若再次脱离到 GitHub Pages 子路径，把 basePath 改回 "/MemeDaily"，并同步 public/sw.js 的
+// SCOPE_PATH/STATIC_PREFIX/FONTS_PREFIX 与 layout.tsx 的 metadataBase/openGraph.url（见 .cloud.md runbook）。
 const basePath = "";
 
 const nextConfig = {

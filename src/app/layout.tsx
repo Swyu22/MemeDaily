@@ -1,12 +1,6 @@
-/**
- * input: static route children, deployment base path, and public app assets
- * output: accessible root shell, metadata, nonblocking fonts, and PWA registration
- * pos: top-level App Router layout shared by every static page
- */
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import "./globals.css";
-import "./responsive.css";
 
 // 子路径前缀（见 next.config.mjs）。根域名时为 ""，github.io 子路径时为 "/MemeDaily"。
 // metadata.icons / openGraph.images 不会被 basePath 自动加前缀，需手动拼。
@@ -24,10 +18,7 @@ const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 //  (3) Registers the network-first service worker (re-armed even after iOS evicts it) — done
 //      here, not in React, so it survives a stale load's JS-chunk 404s.
 const BOOT = `(function(){
-  var BP=${JSON.stringify(BP)},RK="md-rescue-v1",fontScheduled=false;
-  function fonts(){var f=document.getElementById("self-hosted-fonts");if(f)f.media="all";}
-  function scheduleFonts(){if(fontScheduled)return;fontScheduled=true;var run=function(){fonts();};if("requestIdleCallback" in window){requestIdleCallback(run,{timeout:1500});}else{setTimeout(run,0);}}
-  addEventListener("load",scheduleFonts);
+  var BP=${JSON.stringify(BP)},RK="md-rescue-v1";
   function broken(){try{var ls=document.querySelectorAll('link[rel="stylesheet"][href*="/_next/static/"]');if(!ls.length)return false;for(var i=0;i<ls.length;i++){var s=ls[i].sheet;if(!s||s.cssRules.length===0)return true;}return false;}catch(e){return false;}}
   function clean(){try{sessionStorage.removeItem(RK);}catch(e){}if(location.search.indexOf("_r=")>-1){try{var c=new URL(location.href);c.searchParams.delete("_r");history.replaceState(null,"",c.pathname+(c.search||"")+c.hash);}catch(e){}}}
   function rescue(){
@@ -98,12 +89,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  // 不用 viewport-fit:cover。cover 会把页面内容铺到 iOS 状态栏底下，而 iOS 会把状态栏渲染成一层
-  // 半透明浅色材质——滚动时内容会以模糊形式透出（用户反馈的「顶部浅灰透明带」）。改回默认(auto)后
-  // 内容不进入状态栏区域，iOS 直接画一条不透明状态栏，颜色取 theme-color(#fafafa)＝页面背景色，
-  // 无内容透出、无模糊。顶栏本身早已是不透明的（backdrop-filter 已移除），故不会回到最初的模糊问题。
-  themeColor: "#fafafa",
-  viewportFit: "auto",
+  themeColor: "#fafafa", // 与站点近白顶栏一致，避免主屏 PWA/浏览器地址栏出现突兀色块
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -112,22 +98,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         {/* Boot/rescue script — inline & first so it runs even if hashed CSS/JS chunks 404. */}
         <script dangerouslySetInnerHTML={{ __html: BOOT }} />
-        {/* Use the system fallback for first paint; BOOT enables self-hosted fonts when the page is idle. */}
-        <link id="self-hosted-fonts" rel="stylesheet" href={`${BP}/fonts/fonts.css`} media="print" />
-        <noscript><link rel="stylesheet" href={`${BP}/fonts/fonts.css`} /></noscript>
+        {/* 自托管字体 CSS（/public/fonts），按 basePath 加前缀以适配子路径托管。 */}
+        <link rel="stylesheet" href={`${BP}/fonts/fonts.css`} />
       </head>
       <body>
-        <a className="skip-link" href="#main-content">
-          跳到主要内容
-        </a>
         <div className="shell">
           <header className="topbar">
             <div className="topbar-inner">
               <Link className="studio-brand" href="/">
                 {/* WithMedia monogram — same asset/style as www.withoa.cn (logo-mark.svg). */}
-                <svg className="studio-mark" width="36" height="36" viewBox="0 0 112 112" fill="none" aria-hidden="true">
+                <svg className="studio-mark" width="36" height="36" viewBox="0 0 112 112" fill="none" role="img" aria-label="WithMedia">
                   <rect width="112" height="112" rx="24" fill="#FFD000" />
-                  <text x="54" y="56" dy="0.34em" textAnchor="middle" fontFamily="'Space Grotesk', 'Noto Sans SC', sans-serif" fontSize="56" fontWeight="700" fill="#18181B">W</text>
+                  <text x="54" y="56" dy="0.34em" textAnchor="middle" fontFamily="'Space Grotesk', 'Noto Sans SC', sans-serif" fontSize="56" fontWeight="700" letterSpacing="-2" fill="#18181B">W</text>
                   <circle cx="85" cy="72" r="6.5" fill="#18181B" />
                 </svg>
                 <span>

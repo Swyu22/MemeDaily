@@ -23,8 +23,7 @@
 4. 复杂 / 跨模块时再读 `docs/00-context/PROJECT_MAP.md`、spec、ADR、plan
 
 ## 3. 三条最高禁止
-1. 禁止：改了东西不回写 `.cloud.md`（唯一例外：受信任自动化生成的
-   `data/daily/YYYY-MM-DD.json` / `data/daily-news/YYYY-MM-DD.json` 数据提交；它们必须保持 data-only）
+1. 禁止：改了东西不回写 `.cloud.md`
 2. 禁止：新增文件不登记到所属模块 README 文件清单
 3. 禁止：跨越模块依赖边界乱引用（规则见 `PROJECT_MAP` §依赖规则）
 
