@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fafafa" />
+    <title>暂时离线 - 热梗日报</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #fafafa; color: #18181b; font-family: system-ui, sans-serif; }
+      main { min-height: 100vh; display: grid; place-content: center; gap: 16px; padding: 24px; text-align: center; }
+      h1 { margin: 0; font-size: 24px; letter-spacing: 0; }
+      p { max-width: 32rem; margin: 0; color: #61616b; line-height: 1.7; }
+      button { width: 44px; height: 44px; margin: 4px auto 0; border: 1px solid #d4d4d8; border-radius: 8px; background: #fff; color: #18181b; font-size: 24px; cursor: pointer; }
+      button:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>暂时无法连接</h1>
+      <p>请检查网络后重试。已经访问过的页面仍可能从本机缓存打开。</p>
+      <button type="button" aria-label="重新加载" title="重新加载" onclick="location.reload()">↻</button>
+    </main>
+  </body>
+</html>

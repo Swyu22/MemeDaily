@@ -31,7 +31,11 @@ function normalizeName(value: string): string {
 }
 
 function itemNames(item: MemeItem): string[] {
-  return Array.from(new Set([item.title, ...item.aliases].map(normalizeName).filter(Boolean)));
+  const names = [item.title, ...item.aliases].flatMap((value) => {
+    const normalized = normalizeName(value);
+    return normalized ? [normalized] : [];
+  });
+  return Array.from(new Set(names));
 }
 
 // Merge a recurring meme so it appears once: keep the FIRST occurrence (caller passes rows
@@ -236,6 +240,56 @@ export function politicalContentIssues(envelope: DailyEnvelope): string[] {
   return issues;
 }
 
+// Hard backstop for the product's explicit "do not memeify" categories. Terms stay
+// deliberately high-signal: the prompt remains the broader editorial gate, while this
+// deterministic check blocks clear disaster/public-safety, privacy/minor, abuse, and
+// illegal-rumor cases from reaching a public page.
+const CONTENT_SAFETY_BUCKETS = [
+  {
+    label: "灾害/公共安全",
+    terms: [
+      "台风", "地震", "洪水", "洪涝", "暴雨", "雷暴", "山火", "火灾",
+      "坠机", "空难", "车祸", "灾情", "遇难", "伤亡", "救灾", "防灾",
+    ],
+  },
+  {
+    label: "隐私/未成年人",
+    terms: [
+      "未成年人", "未成年", "偷拍", "裸照", "裸身", "裸体", "人肉搜索",
+      "开盒", "隐私泄露", "身份证号", "手机号曝光",
+    ],
+  },
+  {
+    label: "人身攻击/违法谣言",
+    terms: ["人身攻击", "侮辱", "辱骂", "网暴", "造谣", "谣言", "色情", "赌博", "毒品"],
+  },
+] as const;
+
+function publicItemText(item: MemeItem): string {
+  return [
+    item.title,
+    ...item.aliases,
+    item.summary,
+    item.origin,
+    item.usage,
+    item.fun_point,
+    item.why_spread,
+    ...item.sources.flatMap((source) => [source.title ?? "", source.note]),
+  ].join(" ");
+}
+
+export function safetyContentIssues(envelope: DailyEnvelope): string[] {
+  const issues: string[] = [];
+  for (const item of visibleItems(envelope)) {
+    const text = publicItemText(item);
+    for (const bucket of CONTENT_SAFETY_BUCKETS) {
+      const hit = bucket.terms.find((term) => text.includes(term));
+      if (hit) issues.push(`${item.id} contains safety term "${hit}" (${bucket.label}) — 必须丢弃`);
+    }
+  }
+  return issues;
+}
+
 // SOFT platform-diversity check (WARN, never fail — mirrors the news 国际 soft check). 小红书/抖音
 // are chronically under-represented as meme origins vs 微博/聚合榜（历史上各仅 5 条 source, 且单日常
 // 9/10 条只挂 weibo）. On a FULL day (>=5 visible memes) this warns when fewer than 2 of them tag 抖音
@@ -277,13 +331,20 @@ export function envelopeIssueSummary(envelope: DailyEnvelope): string[] {
     issues.push("run_report.published does not match visible item count");
   }
 
-  // Temporal invariant: evidence cannot be captured after the envelope was generated.
+  // Temporal invariants use the trusted publish stamp when present. Agent-provided
+  // generated/captured times may never claim an event after the actual publish moment.
   const generatedMs = Date.parse(envelope.generated_at);
+  const publishedMs = envelope.published_at ? Date.parse(envelope.published_at) : undefined;
+  if (publishedMs !== undefined && generatedMs > publishedMs) {
+    issues.push(`generated_at ${envelope.generated_at} is after published_at ${envelope.published_at}`);
+  }
+  const sourceCutoffMs = publishedMs ?? generatedMs;
+  const sourceCutoffLabel = publishedMs === undefined ? "generated_at" : "published_at";
   for (const item of envelope.items) {
     for (const source of item.sources) {
-      if (Date.parse(source.captured_at) > generatedMs) {
+      if (Date.parse(source.captured_at) > sourceCutoffMs) {
         issues.push(
-          `${item.id} source captured_at ${source.captured_at} is after generated_at ${envelope.generated_at}`,
+          `${item.id} source captured_at ${source.captured_at} is after ${sourceCutoffLabel}`,
         );
       }
     }
@@ -305,6 +366,7 @@ export function envelopeIssueSummary(envelope: DailyEnvelope): string[] {
   }
 
   issues.push(...politicalContentIssues(envelope));
+  issues.push(...safetyContentIssues(envelope));
 
   return issues;
 }

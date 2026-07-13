@@ -3,17 +3,18 @@
   "policy_version": "1.0",
   "rubric_version": "1.0",
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T09:00:00+08:00",
-  "status": "published",
+  "generated_at": "2026-07-13T07:37:19+08:00",
+  "status": "partial",
   "run_report": {
     "candidates_scanned": 55,
-    "published": 3,
+    "published": 2,
     "dropped_safety": {
       "政治时政": 4,
       "纯新闻事件无梗壳": 22,
       "纯体育赛事结果": 8,
       "病毒式单条内容非梗": 5,
-      "涉及明星个人非通用句式": 3
+      "涉及明星个人非通用句式": 3,
+      "审计回溯：灾害/隐私红线": 1
     },
     "dropped_low_confidence": 10,
     "sources": [
@@ -160,7 +161,7 @@
       },
       "days_on_list": 1,
       "score": 72,
-      "published": true,
+      "published": false,
       "sources": [
         {
           "tier": "search_media",

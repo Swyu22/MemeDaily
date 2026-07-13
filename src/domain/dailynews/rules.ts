@@ -92,6 +92,7 @@ const HEADLINE_PEOPLE_COUNT_RE = /\d[\d,，]*\s*(?:余|多|名)?\s*人/;
 const HEADLINE_CASUALTY_WORDS = [
   "死", "亡", "遇难", "罹难", "遇害", "伤", "失联", "被困", "遇险", "获救", "转移", "疏散", "安置",
 ];
+const HEADLINE_CASUALTY_RE = new RegExp(HEADLINE_CASUALTY_WORDS.join("|"));
 
 export function headlineCasualtyIssues(envelope: NewsEnvelope): string[] {
   const issues: string[] = [];
@@ -99,7 +100,7 @@ export function headlineCasualtyIssues(envelope: NewsEnvelope): string[] {
     const headline = item.headline;
     if (
       HEADLINE_PEOPLE_COUNT_RE.test(headline) &&
-      HEADLINE_CASUALTY_WORDS.some((word) => headline.includes(word))
+      HEADLINE_CASUALTY_RE.test(headline)
     ) {
       issues.push(
         `${item.id} 标题含具体伤亡/转移人数，请移到 summary（标题只写事件+响应）: "${headline}"`,
@@ -154,13 +155,20 @@ export function envelopeIssueSummary(envelope: NewsEnvelope): string[] {
     issues.push("run_report.published does not match visible item count");
   }
 
-  // Temporal invariant: evidence cannot be captured after the envelope was generated.
+  // Temporal invariants use the trusted publish stamp when present. Agent-provided
+  // generated/captured times may never claim an event after the actual publish moment.
   const generatedMs = Date.parse(envelope.generated_at);
+  const publishedMs = envelope.published_at ? Date.parse(envelope.published_at) : undefined;
+  if (publishedMs !== undefined && generatedMs > publishedMs) {
+    issues.push(`generated_at ${envelope.generated_at} is after published_at ${envelope.published_at}`);
+  }
+  const sourceCutoffMs = publishedMs ?? generatedMs;
+  const sourceCutoffLabel = publishedMs === undefined ? "generated_at" : "published_at";
   for (const item of envelope.items) {
     for (const source of item.sources) {
-      if (Date.parse(source.captured_at) > generatedMs) {
+      if (Date.parse(source.captured_at) > sourceCutoffMs) {
         issues.push(
-          `${item.id} source captured_at ${source.captured_at} is after generated_at ${envelope.generated_at}`,
+          `${item.id} source captured_at ${source.captured_at} is after ${sourceCutoffLabel}`,
         );
       }
     }

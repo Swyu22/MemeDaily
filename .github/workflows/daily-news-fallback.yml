@@ -15,19 +15,21 @@ permissions:
 jobs:
   skipped-day:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
         with:
           fetch-depth: 0
+          persist-credentials: false
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 22
           cache: npm
 
       - run: npm ci
       - run: npm run fallback:skipped:news
-      - run: npm run validate:news
+      - run: npm run check
 
       - name: Commit skipped 日报 day if created
         env:
@@ -42,6 +44,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore(data): add skipped DailyNews fallback"
+          gh auth setup-git
           git pull --rebase origin main
           git push
-          gh workflow run pages.yml --ref main
+          bash scripts/dispatch-pages.sh "$(git rev-parse HEAD)"

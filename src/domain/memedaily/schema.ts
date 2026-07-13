@@ -49,7 +49,6 @@ export const EvidenceRoleSchema = z.enum([
 // would render as a clickable <a href> on the static page (stored-XSS if a source url were ever
 // poisoned). Constraining the scheme rejects them at validation + build time. All real sources are http(s).
 const HttpUrlSchema = z
-  .string()
   .url()
   .refine((u) => /^https?:\/\//i.test(u), { message: "source url 必须是 http(s) 链接" });
 
@@ -59,7 +58,7 @@ const SourceSchema = z.object({
   platform: PlatformSchema,
   url: HttpUrlSchema,
   title: z.string().min(1).max(120).optional(),
-  captured_at: z.string().datetime({ offset: true }),
+  captured_at: z.iso.datetime({ offset: true }),
   note: z.string().min(2).max(160),
 });
 
@@ -91,11 +90,11 @@ export const DailyEnvelopeSchema = z.object({
   policy_version: z.string().min(1),
   rubric_version: z.string().min(1),
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-  generated_at: z.string().datetime({ offset: true }),
+  generated_at: z.iso.datetime({ offset: true }),
   // Real publish/push moment (Asia/Shanghai), stamped deterministically by the publish step
   // (distinct from the agent-guessed generated_at). Drives the UI's 发布时间. Optional so the
   // agent's pre-publish file validates; the publish step and the skipped-day fallback add it.
-  published_at: z.string().datetime({ offset: true }).optional(),
+  published_at: z.iso.datetime({ offset: true }).optional(),
   status: StatusSchema,
   run_report: z.object({
     candidates_scanned: z.number().int().min(0),

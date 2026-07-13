@@ -1,7 +1,7 @@
 # Basic application dependency boundaries.
 
-src/domain/** ==> src/app/
-src/domain/** ==> src/features/
-src/domain/** ==> next/
-src/features/** ==> scripts/
-src/app/** ==> scripts/
+src/domain/** ==> (@/|src/|(\.\./)+)app/
+src/domain/** ==> (@/|src/|(\.\./)+)features/
+src/domain/** ==> ["']next(/|["'])
+src/features/** ==> (@/|src/|(\.\./)+)scripts/
+src/app/** ==> (@/|src/|(\.\./)+)scripts/

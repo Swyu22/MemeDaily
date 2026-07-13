@@ -4,16 +4,17 @@
   "rubric_version": "1.0",
   "date": "2026-07-12",
   "generated_at": "2026-07-12T09:30:00+08:00",
-  "status": "published",
+  "status": "partial",
   "run_report": {
     "candidates_scanned": 65,
-    "published": 5,
+    "published": 4,
     "dropped_safety": {
       "政治时政": 2,
       "纯新闻事件无梗壳": 28,
       "纯体育赛事结果": 8,
       "病毒式单条内容非梗": 5,
-      "涉及具体品牌": 1
+      "涉及具体品牌": 1,
+      "审计回溯：灾害/隐私红线": 1
     },
     "dropped_low_confidence": 8,
     "sources": [
@@ -107,7 +108,7 @@
       },
       "days_on_list": 1,
       "score": 76,
-      "published": true,
+      "published": false,
       "sources": [
         {
           "tier": "aggregator",

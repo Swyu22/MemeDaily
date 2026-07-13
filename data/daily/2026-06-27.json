@@ -4,17 +4,18 @@
   "rubric_version": "1.0",
   "date": "2026-06-27",
   "generated_at": "2026-06-27T11:00:00+08:00",
-  "status": "published",
+  "status": "partial",
   "run_report": {
     "candidates_scanned": 55,
-    "published": 10,
+    "published": 9,
     "dropped_safety": {
       "政治时政": 5,
       "社会事件灾难未成年": 3,
       "纯新闻事件无梗壳": 18,
       "涉及具体人物无通用句式": 8,
       "涉及具体品牌公司": 5,
-      "综艺节目主体内容": 2
+      "综艺节目主体内容": 2,
+      "审计回溯：灾害/隐私红线": 1
     },
     "dropped_low_confidence": 4,
     "sources": [
@@ -237,7 +238,7 @@
       },
       "score": 79,
       "days_on_list": 1,
-      "published": true,
+      "published": false,
       "sources": [
         {
           "tier": "aggregator",

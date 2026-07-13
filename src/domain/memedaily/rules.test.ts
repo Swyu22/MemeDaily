@@ -11,6 +11,7 @@ import {
   nameAppearanceDates,
   platformDiversityWarnings,
   publishedDates,
+  safetyContentIssues,
   visibleItems,
 } from "./rules";
 
@@ -166,6 +167,15 @@ describe("MemeDaily publication rules", () => {
     ).toBe(true);
   });
 
+  it("flags generated/source timestamps after the trusted publish time", () => {
+    const envelope = envelopeWith(baseItem, "published");
+    envelope.published_at = "2026-06-20T07:10:00+08:00";
+
+    const issues = envelopeIssueSummary(envelope);
+    expect(issues.some((issue) => issue.includes("generated_at") && issue.includes("published_at"))).toBe(true);
+    expect(issues.some((issue) => issue.includes("source captured_at") && issue.includes("published_at"))).toBe(true);
+  });
+
   it("flags an item whose subject is politics (首相)", () => {
     const political = { ...baseItem, summary: "铁打的拉里，流水的英国首相，网友这么调侃。" } satisfies MemeItem;
     expect(
@@ -183,6 +193,33 @@ describe("MemeDaily publication rules", () => {
     expect(
       envelopeIssueSummary(envelopeWith(ok, "published")).some((i) => i.includes("political term")),
     ).toBe(false);
+  });
+
+  it("drops a typhoon-derived meme through the deterministic safety gate", () => {
+    const unsafe = {
+      ...baseItem,
+      id: "2026-06-20-typhoon-template",
+      title: "台风届变脸第一名",
+    } satisfies MemeItem;
+    expect(safetyContentIssues(envelopeWith(unsafe, "published"))[0]).toContain("灾害/公共安全");
+  });
+
+  it("drops a privacy-invasive meme through the deterministic safety gate", () => {
+    const unsafe = {
+      ...baseItem,
+      id: "2026-06-20-privacy-template",
+      origin: "邻居偷拍视频并发到公开群聊，随后引发接龙。",
+    } satisfies MemeItem;
+    expect(safetyContentIssues(envelopeWith(unsafe, "published"))[0]).toContain("隐私/未成年人");
+  });
+
+  it("does not treat a figurative old-show '塌房' critique as a hard safety hit", () => {
+    const safe = {
+      ...baseItem,
+      id: "2026-06-20-old-show",
+      summary: "重看旧剧发现设定塌房，是对剧情逻辑的幽默吐槽。",
+    } satisfies MemeItem;
+    expect(safetyContentIssues(envelopeWith(safe, "published"))).toHaveLength(0);
   });
 });
 
