@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     title: "热梗日报",
-    statusBarStyle: "black-translucent",
+    statusBarStyle: "default",
   },
   icons: {
     icon: [

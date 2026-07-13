@@ -16,6 +16,9 @@ verify the correction under a simulated notched viewport, and deploy it to produ
 - [x] Include the safe-area inset in pre-hydration sticky offsets and PWA launch colors.
 - [x] Run static checks, the full gate suite, and simulated notched-mobile scroll acceptance.
 - [x] Commit, push, wait for Pages, and verify production metadata and rendering.
+- [x] Match the iOS system status region to the `#fafafa` page surface without restoring blur.
+- [x] Recheck mobile safe-area pixels and sticky geometry after the status-style adjustment.
+- [ ] Run the complete gate and deploy the color-matched status region to production.
 
 ## High-Risk Areas
 - iOS Home Screen mode calculates viewport and safe-area geometry differently from a normal
@@ -24,11 +27,11 @@ verify the correction under a simulated notched viewport, and deploy it to produ
 - An installed service worker must discover the new static HTML and hashed stylesheet.
 
 ## Acceptance Standard
-- Generated HTML contains `viewport-fit=cover` and `black-translucent` standalone status-bar
-  metadata.
+- Generated HTML contains `viewport-fit=cover` and the light `default` standalone status-bar
+  metadata, with page, header, theme, and launch surfaces all set to `#fafafa`.
 - A simulated 47px top inset remains fully painted by the opaque header before and after scroll.
 - The mobile tab strip pins immediately below the complete header, including the safe area.
 - `npm run check` passes, Pages deploys the commit, and production serves the new metadata/assets.
 
 ## Last Updated
-- 2026-07-13 22:02 +0800
+- 2026-07-13 22:28 +0800
