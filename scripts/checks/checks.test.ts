@@ -101,3 +101,11 @@ it("import scanning catches staged alias imports hidden by the worktree", () => 
   const result = run(repo, "bash", ["scripts/checks/check-import-boundaries.sh", "staged"], { STRICT: "1" });
   expect(result.status).toBe(1);
 });
+
+it("tier suggestion handles an empty staged diff", () => {
+  const repo = fixture("suggest-tier.sh");
+  commit(repo);
+  const result = run(repo, "bash", ["scripts/checks/suggest-tier.sh", "cached"]);
+  expect(result.status).toBe(0);
+  expect(result.stdout).toContain("range=cached");
+});

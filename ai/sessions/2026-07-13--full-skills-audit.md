@@ -36,6 +36,8 @@
 - Added staged-index integration tests, workflow security assertions, full audit artifacts,
   browser/PWA acceptance, and a post-load idle font path that improved Lighthouse performance
   from 56 to 78 without removing the required self-hosted fonts.
+- Fixed the empty-staged-diff `suggest-tier.sh` variable-boundary bug exposed by the real amend
+  hook and added a regression fixture.
 
 ## Verification Status
 - Passing: 24 meme and 14 news validators, ESLint, TypeScript, 78 Vitest tests, 124-page

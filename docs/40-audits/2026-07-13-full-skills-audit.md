@@ -135,6 +135,7 @@
 | F-22 | 历史 daily JSON | 原始精确 `captured_at` 无审计日志可恢复 | 数据溯源 | 低 | analyze-data-quality | 上界修复，精度不可恢复 |
 | F-23 | `HomeTabs.tsx`, `layout.tsx` | React Doctor 把事件函数误报为 updater，并反对主/无脚本两处有意的同源字体 link | 工具诊断 | 低 | react-doctor | 已逐项判为误报/例外 |
 | F-24 | `layout.tsx` | 字体 CSS preload 且 DOMContentLoaded 立即启用，慢速移动模拟性能 56 | Web 性能 | 中 | web-perf, react-best-practices | 是，提升至 78 |
+| F-25 | `scripts/checks/suggest-tier.sh` | 空暂存区时未加花括号的变量紧邻全角括号，被 Bash 解析成未定义变量 | Shell 稳定性 | 低 | find-bugs, verification-before-completion | 是 |
 
 # 5. 修复记录
 
@@ -157,6 +158,7 @@
 | R-15 | page/rules/SW 小循环 | 用 `flatMap`/预编译 regex 消除低价值重复迭代 | 运行与可读性 | 保持结果顺序与语义 |
 | R-16 | domain/workflow/check/timestamp tests | 测试总数扩到 78，覆盖安全词、时间不变量、token 边界、Action pin 和 staged bypass | 回归保护 | 浏览器脚本当前为验收命令，尚未纳入 CI |
 | R-17 | `layout.tsx` | 删除字体 CSS preload，不在 DOMContentLoaded 启用，改 window load 后 idle 调度 | Web 性能 | 首屏先用系统 CJK，随后 swap 到自托管字体 |
+| R-18 | `suggest-tier.sh`, `checks.test.ts` | 用 `${RANGE}` 明确变量边界，并增加空 staged diff 回归测试 | 提交 tier 提示 | advisory 脚本仍不阻断硬门禁 |
 
 # 6. 验收结果
 
@@ -180,6 +182,7 @@
 | A-16 | 全量项目门禁 | 数据、lint、types、tests、build 全绿 | 新鲜 `npm run check` | 24 meme + 14 news、78 tests、124 pages 全通过 | 是 | 最终 staged candidate 将再跑一次 |
 | A-17 | 复杂度例外 | 例外数量稳定且有 ADR | `npm run lint:complexity` + ADR-005 | 38 warning、0 error，与 ADR 一致 | 是（例外） | 17 个文件，保持 advisory |
 | A-18 | 远端/生产 | 审计提交在远端且 Pages success，HTTPS/路由/隐藏内容正确 | `gh` workflow/Pages + `curl`/浏览器 | 待审计提交推送后执行 | 待执行 | 本报告收尾时更新 |
+| A-19 | R-18 空 diff | advisory tier 在无改动时正常退出 | Vitest fixture + 真实 amend hook | 输出 `range=cached`，退出码 0 | 是 | 修复由提交后空 index 路径发现 |
 
 # 7. 未完成项 / 需人工确认项
 
@@ -200,7 +203,7 @@
 
 - **项目整体规范符合度：** 本地代码、数据、自动化、PWA、文档与机械门禁约 92%。核心高风险
   仓库问题均已修复；外部已泄露 AccessKey 是唯一未完成的高风险项。
-- **本轮修复完成度：** 24 项发现中 19 项完成代码/数据/文档修复，2 项完成可验证的风险澄清或
+- **本轮修复完成度：** 25 项发现中 20 项完成代码/数据/文档修复，2 项完成可验证的风险澄清或
   上界修复，3 项属于外部账户、托管机制或工具环境残余。可自动修复项完成度约 95%。
 - **当前剩余风险：** 外部 key、首次定时 workflow、历史语义安全、Pages edge TTL、长中文页字体
   负载与本地静态分析工具缺口。均已给出责任边界和下一步，不影响当前静态站点构建。

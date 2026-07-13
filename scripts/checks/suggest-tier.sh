@@ -13,7 +13,7 @@ else
 fi
 
 if [ -z "$stat" ]; then
-  echo "[suggest-tier] 无改动可分析（range=$RANGE）"
+  echo "[suggest-tier] 无改动可分析（range=${RANGE}）"
   exit 0
 fi
 
