@@ -28,7 +28,17 @@ opened as an installed mobile PWA, then verify and deploy the correction.
   opaque header stayed at top 0 with height 133px, the tab strip pinned at 133px, and all 18,330
   pixels in the simulated top safe area remained exactly `#fafafa`.
 - A border-box `ResizeObserver` test confirmed delayed safe-area changes update `--header-h`.
-- Pending GitHub Pages deployment and production verification.
+- PR #20 passed both governance checks and merged as `9e2350a`. Pages run `29256033620` built and
+  deployed successfully.
+- Production returned 200 for `/`, `/archive/`, and `/sw.js`; its HTML/manifest exposed the new
+  viewport, status-bar, theme, and launch-background values.
+- Production repeated the forced-inset scroll/geometry/pixel acceptance with zero hard request
+  failures and zero safe-area pixel contamination.
+
+## Outcome
+The repository, `origin/main`, and GitHub Pages production contain the safe-area fix. The sticky
+header is now an opaque surface that covers the full PWA top inset, and downstream sticky UI tracks
+late WebKit geometry changes without overlap.
 
 ## Residual Manual Check
 - A physical installed PWA is the final authority for iOS system status-bar composition. Reopen

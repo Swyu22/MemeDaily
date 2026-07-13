@@ -15,7 +15,7 @@ verify the correction under a simulated notched viewport, and deploy it to produ
 - [x] Replace the translucent blurred header with an opaque safe-area-covering surface.
 - [x] Include the safe-area inset in pre-hydration sticky offsets and PWA launch colors.
 - [x] Run static checks, the full gate suite, and simulated notched-mobile scroll acceptance.
-- [ ] Commit, push, wait for Pages, and verify production metadata and rendering.
+- [x] Commit, push, wait for Pages, and verify production metadata and rendering.
 
 ## High-Risk Areas
 - iOS Home Screen mode calculates viewport and safe-area geometry differently from a normal
@@ -31,4 +31,4 @@ verify the correction under a simulated notched viewport, and deploy it to produ
 - `npm run check` passes, Pages deploys the commit, and production serves the new metadata/assets.
 
 ## Last Updated
-- 2026-07-13 21:58 +0800
+- 2026-07-13 22:02 +0800
