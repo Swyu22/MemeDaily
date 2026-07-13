@@ -61,7 +61,7 @@ jobs:
         if: env.HAS_OAUTH != 'true'
         run: echo "::warning::CLAUDE_CODE_OAUTH_TOKEN not set — run 'claude setup-token' and add it as a repo secret to enable cloud publishing. Skipping this run."
 
-      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
         if: env.HAS_OAUTH == 'true'
         with:
           persist-credentials: false # defense-in-depth; this job has no write scope anyway
@@ -175,7 +175,7 @@ jobs:
 
       - name: Upload the agent's data file (ONLY the JSON — never code) for the publish job
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: daily-data
           path: data/daily/${{ steps.guard.outputs.date }}.json
@@ -194,12 +194,12 @@ jobs:
     env:
       DATE: ${{ needs.agent.outputs.date }}
     steps:
-      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # TRUSTED repo code — NOT the agent's tree
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # TRUSTED repo code — NOT the agent's tree
         with:
           fetch-depth: 0
           persist-credentials: false
 
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
           node-version: 22
           cache: npm
@@ -208,7 +208,7 @@ jobs:
         run: npm ci
 
       - name: Download the agent's data file (only the JSON artifact)
-        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
         with:
           name: daily-data
           path: data/daily

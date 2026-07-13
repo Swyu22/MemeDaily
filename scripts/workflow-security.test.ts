@@ -9,6 +9,15 @@ import { expect, it } from "vitest";
 
 const WORKFLOWS = path.join(process.cwd(), ".github/workflows");
 const publishers = ["daily-publish.yml", "daily-news-publish.yml"];
+const NODE24_ACTIONS = new Map([
+  ["actions/checkout", "9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0"],
+  ["actions/setup-node", "48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e"],
+  ["actions/configure-pages", "45bfe0192ca1faeb007ade9deae92b16b8254a0d"],
+  ["actions/upload-pages-artifact", "fc324d3547104276b827a68afc52ff2a11cc49c9"],
+  ["actions/deploy-pages", "cd2ce8fcbc39b97be8ca5fce6e763baed58fa128"],
+  ["actions/upload-artifact", "043fb46d1a93c77aae656e7c1c64a875d1fc6a0a"],
+  ["actions/download-artifact", "3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c"],
+]);
 
 it.each(publishers)("confines the model-facing job in %s", (name) => {
   const text = fs.readFileSync(path.join(WORKFLOWS, name), "utf8");
@@ -28,6 +37,17 @@ it("pins every external workflow action to a full commit SHA", () => {
       if (line.includes("uses: ./")) continue;
       expect(line, `${file}: ${line.trim()}`).toMatch(/@[0-9a-f]{40}(?:\s|$)/);
     }
+  }
+});
+
+it("uses the reviewed Node 24 releases for official JavaScript actions", () => {
+  const text = fs.readdirSync(WORKFLOWS)
+    .filter((file) => file.endsWith(".yml"))
+    .map((file) => fs.readFileSync(path.join(WORKFLOWS, file), "utf8"))
+    .join("\n");
+  for (const [action, sha] of NODE24_ACTIONS) {
+    expect(text).toContain(`${action}@${sha}`);
+    expect(text.match(new RegExp(`${action}@(?!${sha})`, "g")) ?? []).toHaveLength(0);
   }
 });
 

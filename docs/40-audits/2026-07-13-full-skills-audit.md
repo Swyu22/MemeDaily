@@ -136,6 +136,7 @@
 | F-23 | `HomeTabs.tsx`, `layout.tsx` | React Doctor 把事件函数误报为 updater，并反对主/无脚本两处有意的同源字体 link | 工具诊断 | 低 | react-doctor | 已逐项判为误报/例外 |
 | F-24 | `layout.tsx` | 字体 CSS preload 且 DOMContentLoaded 立即启用，慢速移动模拟性能 56 | Web 性能 | 中 | web-perf, react-best-practices | 是，提升至 78 |
 | F-25 | `scripts/checks/suggest-tier.sh` | 空暂存区时未加花括号的变量紧邻全角括号，被 Bash 解析成未定义变量 | Shell 稳定性 | 低 | find-bugs, verification-before-completion | 是 |
+| F-26 | `.github/workflows/*.yml` | 旧版官方 JavaScript Actions 仍声明 Node 20，runner 仅以强制兼容模式运行 | 供应链维护 | 中 | supply-chain-risk-auditor, gha-security-review | 是 |
 
 # 5. 修复记录
 
@@ -156,16 +157,17 @@
 | R-13 | cloud fetch workflow | 每次探针独立 temp body，并将状态/body 绑定同次请求 | 生产监控 | 仍依赖 GitHub runner 网络 |
 | R-14 | SW | cache put 失败时继续返回有效网络响应，后台字体写入由 event 生命周期托管 | 弱网/隐私模式 | quota 满时只失去缓存，不失去在线内容 |
 | R-15 | page/rules/SW 小循环 | 用 `flatMap`/预编译 regex 消除低价值重复迭代 | 运行与可读性 | 保持结果顺序与语义 |
-| R-16 | domain/workflow/check/timestamp tests | 测试总数扩到 78，覆盖安全词、时间不变量、token 边界、Action pin 和 staged bypass | 回归保护 | 浏览器脚本当前为验收命令，尚未纳入 CI |
+| R-16 | domain/workflow/check/timestamp tests | 测试总数扩到 80，覆盖安全词、时间不变量、token 边界、Action pin 和 staged bypass | 回归保护 | 浏览器脚本当前为验收命令，尚未纳入 CI |
 | R-17 | `layout.tsx` | 删除字体 CSS preload，不在 DOMContentLoaded 启用，改 window load 后 idle 调度 | Web 性能 | 首屏先用系统 CJK，随后 swap 到自托管字体 |
 | R-18 | `suggest-tier.sh`, `checks.test.ts` | 用 `${RANGE}` 明确变量边界，并增加空 staged diff 回归测试 | 提交 tier 提示 | advisory 脚本仍不阻断硬门禁 |
+| R-19 | 11 个 workflow、workflow security test | 将 7 个官方 Action 升到已核对的 Node 24 主版本发布 commit，并锁定精确 SHA | 全部 CI/CD | major 升级需由远端 CI/Pages 复证输入输出兼容性 |
 
 # 6. 验收结果
 
 | 验收编号 | 验收对象 | 验收标准 | 验收方法 | 验收结论 | 是否通过 | 备注 |
 | --- | --- | --- | --- | --- | --- | --- |
 | A-01 | R-01 Agent 边界 | 模型无 OIDC/shell/广域写；trusted job 才可发布 | `workflow-security.test.ts`、YAML 解析、权限静态检索 | token/工具/路径均符合最小权限 | 是 | Anthropic Action 必需 token 仅传给 Action，不暴露给模型工具 |
-| A-02 | R-02 staged 门禁 | index 与 worktree 不一致时仍能拦截 | 5 个隔离 git fixture 集成测试 | secret/801 行/缺头/非法 state/alias import 均被拦截 | 是 | 14 项审计专项测试包含此组 |
+| A-02 | R-02 staged 门禁 | index 与 worktree 不一致时仍能拦截 | 5 个隔离 git fixture 集成测试 | secret/801 行/缺头/非法 state/alias import 均被拦截 | 是 | 16 项审计专项测试包含此组 |
 | A-03 | R-03 内容安全 | 可见内容不命中高信号红线 | domain 单测、24 日 validator、全历史可见文本扫描 | 0 条可见违规；11 条历史记录隐藏 | 是 | 纯比喻“塌房”样本不误杀 |
 | A-04 | R-04 时间完整性 | generated/source 不晚于 published | 双 domain 单测、38 日 JSON 全量脚本 | envelope 0 违规，source 0 违规 | 是 | 当前流程对未来来源 fail closed |
 | A-05 | R-05 Action pin | 不存在 tag/main/master ref | workflow test + `rg` | 11 个 workflow 全为 40 位 SHA | 是 | SHA 来源逐项核对官方仓库 |
@@ -179,10 +181,11 @@
 | A-13 | 详情与信源 | 所有 published ID 有静态详情；首页卡至少 2 信源 | out 文件全量检查 + Playwright | 162/162 路由存在；可见卡片字段/信源齐全 | 是 | “查看档案”实测 HTTP 200 |
 | A-14 | 供应链 | 无已知 npm 漏洞，依赖树可解析 | `npm audit --audit-level=low`、`npm ls --all` | 0 vulnerabilities；依赖树退出码 0 | 是 | optional 跨平台包未安装属预期 |
 | A-15 | R-17 Web 性能 | 不牺牲自托管字体的前提下缩短关键首屏 | 前后两次 Lighthouse mobile | performance 56→78，FCP 10.8s→1.8s，a11y/best-practices 100 | 是 | 本地 HTTP/1.0 无压缩，LCP 5.6s 仍列残余 |
-| A-16 | 全量项目门禁 | 数据、lint、types、tests、build 全绿 | 新鲜 `npm run check` | 24 meme + 14 news、78 tests、124 pages 全通过 | 是 | 最终 staged candidate 将再跑一次 |
+| A-16 | 全量项目门禁 | 数据、lint、types、tests、build 全绿 | 新鲜 `npm run check` | 24 meme + 14 news、80 tests、124 pages 全通过 | 是 | 最终 staged candidate 将再跑一次 |
 | A-17 | 复杂度例外 | 例外数量稳定且有 ADR | `npm run lint:complexity` + ADR-005 | 38 warning、0 error，与 ADR 一致 | 是（例外） | 17 个文件，保持 advisory |
-| A-18 | 远端/生产 | 审计提交在远端且 Pages success，HTTPS/路由/隐藏内容正确 | `gh` workflow/Pages + `curl`/浏览器 | 待审计提交推送后执行 | 待执行 | 本报告收尾时更新 |
+| A-18 | 远端/生产 | 审计提交在远端且 Pages success，HTTPS/路由/隐藏内容正确 | `gh` workflow/Pages + `curl` + Playwright | SHA `1c04ed8` / run `29250003804` 成功；apex/www/详情/manifest/offline 200，11 个隐藏路由 404，console 0 | 是 | 分支 deploy 被环境保护正确拒绝，main deploy 成功 |
 | A-19 | R-18 空 diff | advisory tier 在无改动时正常退出 | Vitest fixture + 真实 amend hook | 输出 `range=cached`，退出码 0 | 是 | 修复由提交后空 index 路径发现 |
+| A-20 | R-19 Node 24 Actions | 7 个官方 Action 使用已核对的 Node 24 release SHA | GitHub API action.yml/commit + workflow test + YAML | 本地 pin/runtime/语法通过；远端 closeout Pages 待合并后复证 | 待执行 | 不使用可变 tag |
 
 # 7. 未完成项 / 需人工确认项
 
@@ -203,7 +206,7 @@
 
 - **项目整体规范符合度：** 本地代码、数据、自动化、PWA、文档与机械门禁约 92%。核心高风险
   仓库问题均已修复；外部已泄露 AccessKey 是唯一未完成的高风险项。
-- **本轮修复完成度：** 25 项发现中 20 项完成代码/数据/文档修复，2 项完成可验证的风险澄清或
+- **本轮修复完成度：** 26 项发现中 21 项完成代码/数据/文档修复，2 项完成可验证的风险澄清或
   上界修复，3 项属于外部账户、托管机制或工具环境残余。可自动修复项完成度约 95%。
 - **当前剩余风险：** 外部 key、首次定时 workflow、历史语义安全、Pages edge TTL、长中文页字体
   负载与本地静态分析工具缺口。均已给出责任边界和下一步，不影响当前静态站点构建。
