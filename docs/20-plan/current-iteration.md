@@ -1,46 +1,34 @@
 # Current Iteration
 
 ## Iteration Goal
-Complete a full installed-Skills audit of the live MemeDaily repository, repair all safe
-and actionable findings, verify each repair, publish the result, and leave an auditable
-handoff for the next agent.
+Fix the installed mobile PWA's uncovered top safe area and blurred content bleed-through,
+verify the correction under a simulated notched viewport, and deploy it to production.
 
 ## Scope
-- **In:** source, schemas, data history, styles, PWA, assets, scripts, hooks, workflows,
-  dependencies, prompts, governance state, docs, deployment, and production verification.
-- **Out:** unrelated product features, direct/login-based platform scraping, external
-  account changes, and broad dependency upgrades without a concrete finding.
+- **In:** iOS standalone metadata, viewport safe-area handling, sticky header painting and
+  offsets, PWA launch colors, mobile scroll behavior, and production verification.
+- **Out:** unrelated visual redesign, feed/content changes, and native-app packaging.
 
 ## Checklist
-- [x] P0 Inventory all installed Skills and select the project-relevant set.
-- [x] P0 Scan every important first-party directory and file type.
-- [x] P0 Audit publishing-agent confinement, workflow permissions, action pinning, and token
-  exposure boundaries.
-- [x] P0 Add trusted publication chronology and deterministic high-signal meme safety gates.
-- [x] P0 Hide confirmed unsafe historical meme records and normalize impossible timestamps.
-- [x] P1 Repair PWA path/caching behavior, accessibility, dead exports, and deprecated schema
-  APIs.
-- [x] P1 Make file/header/state governance checks reflect their documented enforcement.
-- [x] P1 Refresh canonical state, map, spec, ADR, module indexes, and automation handoffs.
-- [x] P0 Run the complete local gate suite, browser/PWA checks, and audit-specific assertions.
-- [x] P0 Commit, push, wait for CI/Pages, and verify production content and HTTPS.
-- [x] P1 Close the session with the final report, evidence, and residual manual actions.
+- [x] Reproduce the failure path from the PWA metadata and sticky-header CSS.
+- [x] Extend the viewport into the device safe area and expose the inset to layout CSS.
+- [x] Replace the translucent blurred header with an opaque safe-area-covering surface.
+- [x] Include the safe-area inset in pre-hydration sticky offsets and PWA launch colors.
+- [x] Run static checks, the full gate suite, and simulated notched-mobile scroll acceptance.
+- [ ] Commit, push, wait for Pages, and verify production metadata and rendering.
 
 ## High-Risk Areas
-- Untrusted public-web text reaching a model job with repository credentials or shell access.
-- Published content involving disasters, privacy, minors, harassment, or unsafe rumor context.
-- Agent-authored timestamps being mistaken for trusted publication chronology.
-- PWA caching or root/subpath assumptions serving stale or missing assets.
-- Public-repository secrets, especially credentials previously shared outside git.
+- iOS Home Screen mode calculates viewport and safe-area geometry differently from a normal
+  mobile browser tab.
+- Sticky offsets must remain correct before and after `HomeTabs` measures the real header.
+- An installed service worker must discover the new static HTML and hashed stylesheet.
 
 ## Acceptance Standard
-- `npm run check` and all governance/security checks pass from a clean staged candidate.
-- Workflow YAML parses; every external action is full-SHA pinned; model jobs lack shell, broad
-  write paths, and git credentials.
-- Browser checks cover desktop/mobile home, archive, detail, keyboard tabs, source wrapping,
-  manifest/service worker, and static route availability.
-- Production deploys the audited commit and no longer exposes the hidden unsafe records.
-- Every repair maps to a finding, verification method, result, and residual risk in the audit.
+- Generated HTML contains `viewport-fit=cover` and `black-translucent` standalone status-bar
+  metadata.
+- A simulated 47px top inset remains fully painted by the opaque header before and after scroll.
+- The mobile tab strip pins immediately below the complete header, including the safe area.
+- `npm run check` passes, Pages deploys the commit, and production serves the new metadata/assets.
 
 ## Last Updated
-- 2026-07-13 20:37 +0800
+- 2026-07-13 21:58 +0800

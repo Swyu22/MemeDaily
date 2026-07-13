@@ -77,20 +77,24 @@ export function HomeTabs({
   // sticky element reports its pinned position, not its flow position.
   const tabsTopRef = useRef<HTMLDivElement>(null);
 
-  // Keep --header-h in sync with the real (sticky) site header height so the tab strip pins exactly
-  // below it on every breakpoint (the mobile 2-row header is taller than desktop's). CSS has a 58px
-  // fallback for first paint / no-JS.
+  // Keep --header-h aligned with the sticky header, including safe-area changes that WebKit may
+  // report after first paint. CSS provides the pre-hydration fallback.
   useEffect(() => {
     const root = document.documentElement;
+    const header = document.querySelector(".topbar");
     const sync = () => {
-      const header = document.querySelector(".topbar");
       if (header) {
         root.style.setProperty("--header-h", `${Math.round(header.getBoundingClientRect().height)}px`);
       }
     };
     sync();
+    const observer = header && "ResizeObserver" in window ? new ResizeObserver(sync) : null;
+    if (header) observer?.observe(header, { box: "border-box" });
     window.addEventListener("resize", sync);
-    return () => window.removeEventListener("resize", sync);
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener("resize", sync);
+    };
   }, []);
 
   // Switch tabs; if the strip is already pinned (reader scrolled into the content), snap back to the
