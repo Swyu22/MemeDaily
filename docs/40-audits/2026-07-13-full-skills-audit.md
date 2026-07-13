@@ -185,7 +185,7 @@
 | A-17 | 复杂度例外 | 例外数量稳定且有 ADR | `npm run lint:complexity` + ADR-005 | 38 warning、0 error，与 ADR 一致 | 是（例外） | 17 个文件，保持 advisory |
 | A-18 | 远端/生产 | 审计提交在远端且 Pages success，HTTPS/路由/隐藏内容正确 | `gh` workflow/Pages + `curl` + Playwright | SHA `1c04ed8` / run `29250003804` 成功；apex/www/详情/manifest/offline 200，11 个隐藏路由 404，console 0 | 是 | 分支 deploy 被环境保护正确拒绝，main deploy 成功 |
 | A-19 | R-18 空 diff | advisory tier 在无改动时正常退出 | Vitest fixture + 真实 amend hook | 输出 `range=cached`，退出码 0 | 是 | 修复由提交后空 index 路径发现 |
-| A-20 | R-19 Node 24 Actions | 7 个官方 Action 使用已核对的 Node 24 release SHA | GitHub API action.yml/commit + workflow test + YAML | 本地 pin/runtime/语法通过；远端 closeout Pages 待合并后复证 | 待执行 | 不使用可变 tag |
+| A-20 | R-19 Node 24 Actions | 7 个官方 Action 使用已核对的 Node 24 release SHA | GitHub API action.yml/commit + workflow test + YAML + Pages | SHA `fd8ef5e` / run `29250488371` build/deploy 成功，日志无 Node 20 弃用注解 | 是 | 两个 governance checks 同时通过，不使用可变 tag |
 
 # 7. 未完成项 / 需人工确认项
 

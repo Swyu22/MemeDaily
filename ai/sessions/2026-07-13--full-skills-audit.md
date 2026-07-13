@@ -43,16 +43,18 @@
 - The successful Pages run exposed Node 20 deprecation annotations in official Actions. Their
   latest release metadata was checked through authenticated GitHub API calls and all seven were
   upgraded to reviewed Node 24 commit SHAs with a regression pin map.
+- PR #18 merged at `fd8ef5e`; both governance checks and Pages run `29250488371` passed with
+  the reviewed Node 24 Actions and no Node 20 deprecation annotations.
 
 ## Verification Status
 - Passing: 24 meme and 14 news validators, ESLint, TypeScript, 80 Vitest tests, 124-page
   static build, 38 documented advisory complexity warnings, shell/YAML/security assertions,
   strict governance checks, font integrity, npm audit, Playwright desktop/mobile/offline,
   162/162 detail exports, Lighthouse accessibility/best-practices 100, and performance 78.
-- Pending at this checkpoint: closeout branch CI/Pages after the Node 24 Action upgrade, then
-  final report/state closure.
+- Complete: repository, remote, Pages, HTTPS, production browser, PWA, content visibility, and
+  Node 24 Action acceptance all passed. Only the external/manual risks in the audit remain.
 
 ## Next Actions
-1. P0 Run local workflow/YAML/full gates for the Node 24 Action pins.
-2. P0 Commit the closeout branch, merge after CI, and require a warning-free successful Pages run.
-3. P1 Mark A-20 complete and leave `.cloud.md` at the final production-verified SHA.
+1. USER P0 rotate/revoke the previously exposed Aliyun AccessKey.
+2. P1 Observe the next 06:00/07:00 scheduled publishers under the new confinement contract.
+3. P2 Continue periodic semantic review of historical public-source content.
