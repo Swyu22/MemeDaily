@@ -135,3 +135,8 @@ late WebKit geometry changes without overlap.
 - Local Chromium at 390x844 under a dark system preference confirms pure-white document and header
   surfaces, zero top-scan mismatches, no blur/overlay, disabled overscroll, and exact 86px sticky
   alignment. `npm run check` passes both validators, lint, typecheck, 82 tests, and 124 pages.
+- PR #28 passed both governance checks and merged as `bb92389`; CI run `29264121356` and Pages run
+  `29264118260` completed successfully.
+- Production returns the pure-white document/manifest/launch contract and `memedaily-v5` worker.
+  Chromium production acceptance repeated the zero-mismatch top scan, no-bleed assertions, exact
+  86px sticky alignment, and zero hard first-party request failures.
