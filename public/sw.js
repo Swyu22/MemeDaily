@@ -30,7 +30,7 @@
 // only slowly — they change when code/CSS hashes change, not on daily content-only
 // publishes — and stay tiny. Bump the version if you ever want to reclaim that space.
 const APP_CACHE_PREFIX = "memedaily-";
-const CACHE_VERSION = "memedaily-v4";
+const CACHE_VERSION = "memedaily-v5";
 const ASSET_CACHE = `${CACHE_VERSION}-assets`;
 const HTML_CACHE = `${CACHE_VERSION}-html`;
 
