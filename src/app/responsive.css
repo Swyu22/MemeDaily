@@ -7,7 +7,7 @@
 @media (max-width: 720px) {
   /* Pre-JS fallback for the taller 2-row mobile header (HomeTabs measures + overwrites at runtime). */
   :root {
-    --header-h: 88px;
+    --header-h: calc(88px + var(--safe-area-top));
   }
 
   .topbar-inner,
