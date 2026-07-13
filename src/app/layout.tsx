@@ -98,8 +98,12 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#fafafa", // 与站点近白顶栏一致，避免主屏 PWA/浏览器地址栏出现突兀色块
-  viewportFit: "cover",
+  // 不用 viewport-fit:cover。cover 会把页面内容铺到 iOS 状态栏底下，而 iOS 会把状态栏渲染成一层
+  // 半透明浅色材质——滚动时内容会以模糊形式透出（用户反馈的「顶部浅灰透明带」）。改回默认(auto)后
+  // 内容不进入状态栏区域，iOS 直接画一条不透明状态栏，颜色取 theme-color(#fafafa)＝页面背景色，
+  // 无内容透出、无模糊。顶栏本身早已是不透明的（backdrop-filter 已移除），故不会回到最初的模糊问题。
+  themeColor: "#fafafa",
+  viewportFit: "auto",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

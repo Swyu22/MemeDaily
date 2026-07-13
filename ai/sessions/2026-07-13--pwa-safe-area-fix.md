@@ -57,3 +57,22 @@ late WebKit geometry changes without overlap.
 - A physical installed PWA is the final authority for iOS system status-bar composition. Reopen
   the app after deployment (or remove/re-add it if iOS retains old metadata) and confirm the top
   region remains solid while scrolling.
+
+## Follow-up 2 (2026-07-14): drop cover, use an opaque iOS status bar
+- The user still saw a translucent light-gray band at the very top of the installed iOS (Chrome)
+  PWA, with scrolling content bleeding through it in blurred form.
+- Reconfirmed on production: served metadata was `viewport-fit=cover` + `status-bar-style=default`
+  + `theme-color=#fafafa`, and the inlined CSS had NO `backdrop-filter` and an opaque `.topbar`.
+  Conclusion: the blur is iOS's own status-bar material, not site CSS. `cover` extends page
+  content under the status bar, so iOS blurs that content through the bar; an opaque sticky
+  topbar cannot cover a system-composited layer drawn above it.
+- Change: `layout.tsx` viewport `viewport-fit: cover -> auto`. Content no longer enters the
+  status-bar region, so iOS draws a fully opaque status bar filled by `theme-color=#fafafa`
+  (the page background). Left `overscroll-behavior` alone (the earlier `contain` attempt bundled
+  `overscroll-behavior:none` + color/safe-area removal and reintroduced scroll bleed, so it was
+  rolled back in #30 — this change is viewport-only). Bumped `sw.js CACHE_VERSION` v2 -> v6 to
+  refresh installed shells.
+- Verification: `npm run check` green (80 tests / 124-page build), zero console errors, and the
+  Chromium mobile preview shows the opaque `#fafafa` topbar pinned at top:0 before/after scroll
+  with `backdrop-filter:none`. The iOS system status bar itself cannot be reproduced off-device,
+  so the definitive check is the physical PWA after a remove/re-add.
