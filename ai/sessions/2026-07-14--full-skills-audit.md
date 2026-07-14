@@ -31,7 +31,10 @@
 - Last Done: repaired ten confirmed workflow/data/UI/performance/governance defects; final local
   validation passes 25 meme days, 15 news days, 94 tests, 127 static pages, strict governance,
   dependency/YAML/Shell checks, React Doctor, Playwright, and Lighthouse.
-- Next Actions: commit and push the branch, pass PR CI, merge, correlate Pages to the accepted
-  commit, verify production, and close the audit report with run evidence.
+- Remote Acceptance: PR #32 and main CI passed; merge commit `5213cda` deployed in Pages run
+  `29313828427`. Production HTTPS/PWA/routes/browser checks pass, and both fallback no-op smoke
+  runs pass without a data or push mutation.
+- Next Actions: rotate the external Aliyun key, observe the next real scheduled writers, and obtain
+  one physical iOS Chrome dark-mode confirmation.
 - Key Decision: treat historical generated design exports as documented non-production artifacts;
   record their residual risk without rewriting generated code.

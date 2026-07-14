@@ -20,8 +20,8 @@ browser, and production evidence.
 - [x] P0 Repair confirmed publishing, monitoring, data-contract, and latest-run state defects.
 - [x] P1 Repair accessibility feedback, fallback-label drift, complexity drift, and canonical docs.
 - [x] P0 Run full local gates plus focused regression, browser, accessibility, and performance checks.
-- [ ] P0 Push, pass CI, deploy Pages, and verify the production generation.
-- [ ] P1 Publish the complete audit and itemized acceptance report.
+- [x] P0 Push, pass CI, deploy Pages, and verify the production generation.
+- [x] P1 Publish the complete audit and itemized acceptance report.
 - [ ] P1 USER: confirm iOS Chrome dark-mode installed-PWA status area on a physical device.
 
 ## High-Risk Areas
@@ -43,4 +43,4 @@ browser, and production evidence.
 - CI and Pages succeed for the exact accepted commit, and production serves the same generation.
 
 ## Last Updated
-- 2026-07-14 14:48 +0800
+- 2026-07-14 15:17 +0800
