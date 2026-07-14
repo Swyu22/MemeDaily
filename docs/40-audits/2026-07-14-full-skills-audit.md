@@ -139,7 +139,7 @@
 | A-02 | R-02 monitor | 两类 Issue lookup 均有 MemeDaily 前缀 | regression test + YAML 原文 | 不再仅按日期命中 | 是 | DailyNews monitor 原本已正确隔离 |
 | A-03 | R-03 latest run | skipped 最新日不能被旧成功日替代 | synthetic unit test + current SSR/browser | skipped/partial/fresh 三类结果正确 | 是 | 当前生产样本为 meme partial/news published |
 | A-04 | R-04 source outlet | 每个 news source 有 1-20 字 outlet | schema negative test + 15 日 JSON validation | 缺 outlet 被拒；现有数据全过 | 是 | UI 不再伪造 tier 媒体名 |
-| A-05 | R-05 fallback | buckets 与 v2 活规则一致 | source review + schema parse | 灾难禁区移除，政策/八卦等命名对齐 | 是 | 真正 fallback 路径待晚间事件实跑 |
+| A-05 | R-05 fallback | buckets 与 v2 活规则一致 | source review + schema parse | 灾难禁区移除，政策/八卦等命名对齐 | 是 | main no-op smoke 已通过；新日期生成由下次真实 fallback 覆盖 |
 | A-06 | R-06 a11y | clipboard 成败可见/播报；移动交互可用 | Vitest + Playwright clipboard permission | “内容已复制”实测；失败文案有下一步 | 是 | Lighthouse accessibility 100 |
 | A-07 | R-07 perf | 首页无 archive 预取，点击路由仍 200 | Playwright request log + Lighthouse 前后 | archive request 5→0；mobile perf 69→77 | 是 | FCP 3.2s→1.8s，LCP 9.1s→6.3s |
 | A-08 | R-08 complexity | 本轮不新增未登记告警 | `npm run lint:complexity` | 37 warnings / 0 errors，与 ADR 一致 | 是（例外） | 审计前 39 |
@@ -151,8 +151,9 @@
 | A-14 | PWA 表面 | dark 偏好仍为 opaque `#fafafa`, only-light | static PWA test + computed styles | html/body/topbar 均 `rgb(250,250,250)`，无 blur | 是 | 物理 iOS 状态栏仍需人工确认 |
 | A-15 | Lighthouse | a11y/best-practices 100；记录性能与 noindex | mobile/desktop 本地静态产物 | mobile 77/100/100/63；desktop 98/100/100/63 | 是（带残余） | SEO 63 来自产品明确 `noindex` |
 | A-16 | 资源/数据 | 字体、PWA 图标、JSON、今日来源可访问 | 签名/引用/尺寸/parse/curl | 110/110 fonts；40 JSON；今日 14 URL 均 200/206 | 是 | 历史外链可随外站变化 |
-| A-17 | 远端 CI/PR | PR 精确 SHA 的 CI 全绿 | `gh pr checks` / Actions | 待分支推送 | 待验收 | 提交后补齐 run |
-| A-18 | Pages/生产 | main 精确提交 Pages success；HTTPS/路由/资产正确 | `gh run`, curl, production Playwright | 待 merge | 待验收 | 完成后补齐 commit/run |
+| A-17 | 远端 CI/PR | PR 与 main 精确 SHA 的 CI 全绿 | `gh pr checks` / Actions | PR #32 runs `29313758214`/`29313775897`；main run `29313828480` | 是 | 分支 SHA `985d8c4`，merge SHA `5213cda` |
+| A-18 | Pages/生产 | main 精确提交 Pages success；HTTPS/路由/资产正确 | `gh run`, curl, production Playwright | Pages `29313828427` success；apex/www/PWA/archive/detail 均 200，浏览器 0 error | 是 | 生产 commit `5213cdad99e8018685a302e1c5365c4d267faefd` |
+| A-19 | fallback main smoke | 今日已存在时 no-op 且不触发 token push | 两个 workflow_dispatch + run logs | runs `29313998364` / `29314006065` success，push step skipped | 是 | 未改 data/main；真实 rebase 写入待下一日期 |
 
 # 7. 未完成项 / 需人工确认项
 
@@ -160,7 +161,7 @@
 | --- | --- | --- | --- |
 | 外部阿里云 RAM | 已公开并重新启用的 AccessKey 不可信 | 仓库无法撤销云账户凭据 | 立即禁用/删除并新建最小权限 key；不要再发送到聊天或仓库 |
 | iOS Chrome PWA | 顶部系统状态区最终观感 | 浏览器拥有该区域，桌面模拟不能证明物理设备 | 刷新/重装后用深色模式实机确认；异常时记录版本和录屏 |
-| writer workflows | rebase 后真实写入分支尚未发生 | 不能为验收主动消耗模型订阅或伪造次日数据 | 观察下一次 06:00/07:00；失败时保持 fail-closed，不放宽 token |
+| writer workflows | rebase 后真实写入分支尚未发生；no-op smoke 已通过 | 不能为验收主动消耗模型订阅或伪造次日数据 | 观察下一次 06:00/07:00；失败时保持 fail-closed，不放宽 token |
 | `docs/project/` | 历史导出不符合生产 lint | 生成设计证据，不参与 runtime | 继续隔离；若重新启用，按生产标准重建而非直接上线 |
 | 16 个 TS/TSX 文件 | 37 条复杂度例外 | JSX 与确定性 gate 的既有 ADR 决策 | 不为数字拆碎组件；新增告警必须修复或更新 ADR |
 | 首页字体/数据 | mobile LCP 6.3s（本地 HTTP/1.0 throttling） | 自托管全量 CJK + 五日双 feed 数据较重 | 先看生产/RUM；若持续偏高，再产品决策首页天数或字体子集 |
@@ -170,11 +171,11 @@
 
 # 8. 最终结论
 
-- **项目整体规范符合度：** 本地阶段约 96%。当前代码、数据、文档、PWA、自动化和供应链门禁均通过；
-  远端 CI/Pages/生产验收完成后关闭本报告。
+- **项目整体规范符合度：** 约 96%。当前代码、数据、文档、PWA、自动化、供应链、远端 CI、
+  Pages 与生产行为全部通过；扣分项均为仓库外或已登记的残余风险。
 - **本轮修复完成度：** 10 个可自动修复问题已完成 10 个；4 个残余项属于外部账户、历史制品、
   已登记复杂度或缺失工具，不以不安全改动强行“清零”。
 - **当前剩余风险：** 最高风险仍是仓库外已泄露 Aliyun key；其次是下一次 writer 实跑、物理 iOS
   状态栏和长中文首页移动 LCP。
-- **建议下一步动作：** 先完成远端/生产验收，再轮换 Aliyun key；观察下一次双线 schedule；性能只基于
+- **建议下一步动作：** 立即轮换 Aliyun key；观察下一次双线 schedule；完成 iOS 实机确认。性能只基于
   生产证据继续优化，不牺牲自托管字体和日期连续浏览需求。
