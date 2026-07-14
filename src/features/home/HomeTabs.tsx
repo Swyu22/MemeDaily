@@ -49,8 +49,10 @@ type HomeTabsProps = {
   memeStatus: RunStatus | null;
   newsStatus: RunStatus | null;
   staleNotice: string | null;
+  newsStaleNotice: string | null;
   days: { date: string; items: MemeItem[] }[];
   freshDate: string | null;
+  freshNewsDate: string | null;
   hasMore: boolean;
   newsDays: NewsDay[];
 };
@@ -59,8 +61,10 @@ export function HomeTabs({
   memeStatus,
   newsStatus,
   staleNotice,
+  newsStaleNotice,
   days,
   freshDate,
+  freshNewsDate,
   hasMore,
   newsDays,
 }: HomeTabsProps) {
@@ -129,9 +133,10 @@ export function HomeTabs({
   const newsHead: FeedHead = (() => {
     const top = newsDays[0];
     if (!top) return { title: "今日日报", subtitle: null };
+    const isLatest = top.date === freshNewsDate;
     return {
       title: "今日日报",
-      subtitle: `${top.date} · ${top.items.length} 条 · 按${feedSortLabels[sort]}排序`,
+      subtitle: `${isLatest ? top.date : "历史发布"} · ${top.items.length} 条 · 按${feedSortLabels[sort]}排序`,
     };
   })();
 
@@ -234,7 +239,14 @@ export function HomeTabs({
             )}
           </>
         ) : (
-          <DailyReport days={newsDays} sort={sort} />
+          <>
+            {newsStaleNotice ? (
+              <div className="notice" role="status">
+                {newsStaleNotice}
+              </div>
+            ) : null}
+            <DailyReport days={newsDays} sort={sort} />
+          </>
         )}
       </div>
     </>

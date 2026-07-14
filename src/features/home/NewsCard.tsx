@@ -6,14 +6,10 @@
  *       server boundary into PublicNewsItem) — and the category chip is intentionally not rendered.
  */
 import { ExternalLink } from "lucide-react";
-import { newsTierLabels } from "@/domain/dailynews/labels";
 import type { PublicNewsItem } from "@/domain/dailynews/schema";
 
 export function NewsCard({ item }: { item: PublicNewsItem }) {
-  // 来源媒体: distinct outlet names, falling back to the tier label when an outlet is unnamed.
-  const outlets = Array.from(
-    new Set(item.sources.map((source) => source.outlet ?? newsTierLabels[source.tier])),
-  );
+  const outlets = Array.from(new Set(item.sources.map((source) => source.outlet)));
 
   return (
     <article className="card news-card">
@@ -46,7 +42,7 @@ export function NewsCard({ item }: { item: PublicNewsItem }) {
               rel="noreferrer"
               target="_blank"
             >
-              <span className="source-tier">{source.outlet ?? newsTierLabels[source.tier]}</span>
+              <span className="source-tier">{source.outlet}</span>
               <span className="source-note">{source.title ?? source.note}</span>
               <span className="mono">{source.captured_at.slice(5, 10)}</span>
               <ExternalLink size={13} aria-hidden="true" />

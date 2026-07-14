@@ -8,11 +8,10 @@
 
 ## 第一步：读取与对齐（必须先做）
 请先按顺序读取并总结：
-1. `CLAUDE.md`
-2. `/.cloud.md`
-3. 本次目标模块的 `README.md`（或 `_module.md`，如果存在）
-4. 我指定的目标文件与相邻关键文件（如果我已指定）
-5. 如果任务涉及架构/跨模块/接口变更，请继续读取：
+1. `/.cloud.md`
+2. 本次目标模块的 `README.md`（或 `_module.md`，如果存在）
+3. 我指定的目标文件与相邻关键文件（如果我已指定）
+4. 如果任务涉及架构/跨模块/接口变更，请继续读取：
    - `/docs/00-context/PROJECT_MAP.md`
    - `/docs/10-spec/*`（相关文档）
    - `/docs/20-plan/current-iteration.md`
@@ -45,7 +44,7 @@
   4) `/.cloud.md`
   5) `docs/20-plan/current-iteration.md`（更新 checklist）
   6) `docs/30-decisions/*`（如有关键决策）
-  7) `ai/sessions/YYYY-MM-DD.md`
+  7) `ai/sessions/YYYY-MM-DD--<slug>.md`
 - 质量红线（默认）：单文件≤800行、单函数≤30行、嵌套≤3层、分支≤3个（如项目文档另有规定，以项目文档为准）
 
 ## 第五步：工作完成后必须输出并建议写入的文件内容
@@ -69,7 +68,7 @@
 - 原因：
 - 影响：
 ```
-建议写入：`/ai/sessions/YYYY-MM-DD.md`
+建议写入：`/ai/sessions/YYYY-MM-DD--<slug>.md`
 
 ### B. 复杂任务/里程碑任务输出（Milestone）
 ```md
@@ -97,7 +96,7 @@
 2. ...
 ```
 建议写入：
-- `/ai/sessions/YYYY-MM-DD.md`
+- `/ai/sessions/YYYY-MM-DD--<slug>.md`
 - `/docs/30-decisions/adr-XXXX-<slug>.md`（如有关键决策）
 
 ## 第六步：输出格式要求

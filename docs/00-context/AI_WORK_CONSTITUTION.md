@@ -12,17 +12,16 @@
 6. 工具原生能力可利用，但不得替代项目内状态文件
 
 ## 2. 四层协作架构
-- 入口层：`CLAUDE.md`
+- 入口层：`AGENTS.md`（工具中立正典）+ `CLAUDE.md`（Claude 适配层）
 - 状态层：`.cloud.md` + `docs/20-plan/*` + `ai/sessions/*`
 - 宪法层：本文件
 - 机械执行层：Hooks / Lint / Checks
 
 ## 3. 启动前默认读取顺序（局部任务）
-1. `CLAUDE.md`
-2. `/.cloud.md`
-3. 目标模块 README / `_module.md`
-4. 目标文件 + 相邻关键文件
-5. 如需跨模块/架构改动，再读 `PROJECT_MAP` / `spec` / `ADR` / `plan`
+1. `/.cloud.md`
+2. 目标模块 README / `_module.md`
+3. 目标文件 + 相邻关键文件
+4. 如需跨模块/架构改动，再读 `PROJECT_MAP` / `spec` / `ADR` / `plan`
 
 ## 4. 分形文档（V2，降低维护成本）
 ### 4.1 必须有：根目录全局地图
@@ -75,7 +74,7 @@
 
 ## 7. 渐进式上下文加载策略
 ### 修 bug（局部）
-读取：`CLAUDE.md` → `.cloud.md` → 模块 README → 目标文件 + 直接相关文件 → 必要日志
+读取：`.cloud.md` → 模块 README → 目标文件 + 直接相关文件 → 必要日志
 
 ### 单模块功能开发
 在修 bug 基础上增加：相关 spec + 当前 plan
@@ -91,7 +90,7 @@
 - 读取入口与状态文件，明确目标 / 范围 / 验收标准
 
 ### Plan
-- 在 `docs/20-plan/current-iteration.md` 或 `ai/sessions/YYYY-MM-DD.md` 写 checklist（目标、约束、验收、影响范围、回写清单）
+- 在 `docs/20-plan/current-iteration.md` 或 `ai/sessions/YYYY-MM-DD--<slug>.md` 写 checklist（目标、约束、验收、影响范围、回写清单）
 
 ### Execute
 - 在约束内修改代码/文档；优先局部修改；必要时追加读取上下文
@@ -109,7 +108,7 @@
 落盘顺序：代码侧（文件头）→ 结构侧（README / MAP）→ 状态侧（`.cloud.md` / plan）→ 留痕侧（ADR / session）。
 
 ### Close（收工）
-输出 Daily 或 Milestone Session Summary，并写入 `ai/sessions/YYYY-MM-DD.md` 后再提交代码。
+输出 Daily 或 Milestone Session Summary，并写入 `ai/sessions/YYYY-MM-DD--<slug>.md` 后再提交代码。
 
 ## 9. 收工模板（双层）
 ### 9.1 Daily（默认）

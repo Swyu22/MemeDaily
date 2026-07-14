@@ -7,6 +7,8 @@ domain data; this directory must not import automation scripts.
 | --- | --- |
 | `layout.tsx` | Metadata, self-hosted fonts, PWA boot/registration, header, and app shell |
 | `page.tsx` | Static home data composition for meme and news feeds |
+| `homeRunState.ts` | Pure latest-run status and stale-content composition for both feeds |
+| `page.test.ts` | Latest-run status and stale-content composition regression coverage |
 | `archive/page.tsx` | Static archive/search route |
 | `meme/[id]/page.tsx` | Static meme detail routes and metadata |
 | `globals.css` | Base tokens, shared desktop styles, focus, and component presentation |

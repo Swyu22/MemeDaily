@@ -20,8 +20,9 @@ gates and permanent archives. The site has **two feeds**, switchable via the hom
   ~06:00) — each runs `anthropics/claude-code-action` (SHA-pinned, on a Claude subscription
   token) in an **exact-path `agent` job** that may write only the day's JSON artifact and
   cannot run shell commands. A
-  separate **`publish` job** checks out trusted repo code, validates, commits, pushes, and
-  deploys. The reliable primary trigger for each is an external cron-job.org job (the GitHub
+  separate **`publish` job** checks out trusted repo code, validates, commits locally, rebases
+  without a write token, then reinstalls and revalidates the final tree. Only the last push/Pages
+  step receives the write token. The reliable primary trigger for each is an external cron-job.org job (the GitHub
   cron is a backup); `daily-{news-}catchup` / `fallback` / `monitor` add re-publish / skip /
   alert resilience. A local Codex run is a supervised recovery path because prompts are not
   an OS sandbox; see `ai/prompts/CODEX_FULL_HANDOFF.md`.

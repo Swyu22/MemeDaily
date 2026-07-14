@@ -46,7 +46,7 @@ export function TodayFeed({ days, hasMore, sort }: TodayFeedProps) {
       })}
       {hasMore ? (
         <div className="day-head">
-          <Link className="button" href="/archive/">
+          <Link className="button" href="/archive/" prefetch={false}>
             查看更多历史 → 梗库
           </Link>
         </div>

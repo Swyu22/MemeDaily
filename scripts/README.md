@@ -10,6 +10,8 @@ route components.
 | `stamp-publish-time.ts` | Apply trusted acceptance time and reject future source captures |
 | `stamp-publish-time.test.ts` | Regression coverage for both feed timestamp contracts |
 | `pwa-surface.test.ts` | Installed-app light surface and opaque top-chrome regression contract |
+| `accessibility-contract.test.ts` | Clipboard announcement and search-affordance accessibility regressions |
+| `web-performance.test.ts` | Prevent eager prefetch of the large archive route |
 | `checks/checks.test.ts` | Adversarial staged-index bypass regression suite |
 | `workflow-security.test.ts` | Static workflow token/tool/SHA/deploy security contract |
 | `create-skipped-day.ts` | Produce a valid skipped meme envelope |

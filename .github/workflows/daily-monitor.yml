@@ -36,7 +36,7 @@ jobs:
           if [ "${RUNS:-0}" -gt 4 ]; then
             RTITLE="MemeDaily 成本异常: ${DATE} (18h 内 daily-publish 运行 ${RUNS} 次)"
             RBODY="自动监控：过去 18 小时 daily-publish 运行了 ${RUNS} 次（每次约 \$4）。可能是反复重试/失败在烧预算，请检查近期运行。"
-            REX="$(gh issue list --state open --json number,title --jq "[.[] | select(.title | contains(\"成本异常: ${DATE}\"))][0].number // empty")"
+            REX="$(gh issue list --state open --json number,title --jq "[.[] | select(.title | contains(\"MemeDaily 成本异常: ${DATE}\"))][0].number // empty")"
             if [ -n "$REX" ]; then gh issue comment "$REX" --body "$RBODY"; else gh issue create --title "$RTITLE" --body "$RBODY"; fi
           fi
 
@@ -58,7 +58,7 @@ jobs:
 
           TITLE="MemeDaily 未发布告警: ${DATE} (${STATUS})"
           BODY="自动监控：\`data/daily/${DATE}.json\`（Asia/Shanghai）状态为 \`${STATUS}\`，未成功发布。请检查每日自动化（本地 Codex 或云端 routine）是否运行成功。"
-          EXISTING="$(gh issue list --state open --json number,title --jq "[.[]|select(.title|contains(\"${DATE}\"))][0].number // empty")"
+          EXISTING="$(gh issue list --state open --json number,title --jq "[.[]|select(.title|contains(\"MemeDaily 未发布告警: ${DATE}\"))][0].number // empty")"
 
           if [ -n "$EXISTING" ]; then
             gh issue comment "$EXISTING" --body "$BODY"

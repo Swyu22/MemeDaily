@@ -7,10 +7,10 @@ Accepted
 ADR-004 documented per-function complexity red-line exceptions for the three memedaily
 publication-gate functions. Since then the codebase grew a second feed (`dailynews`) and
 more view components, so the ADVISORY `npm run lint:complexity` (config
-`eslint.complexity.config.mjs`, all rules at `warn`) now surfaces 38 accepted warnings across
+`eslint.complexity.config.mjs`, all rules at `warn`) now surfaces 37 accepted warnings across
 17 files. They fall into four families, none of which is a defect:
 
-- **React/JSX view components** — `HomeTabs`, `MemeCard`, `ArchiveClient`, `CopyButtons`,
+- **React/JSX view components** — `HomeTabs`, `MemeCard`, `ArchiveClient`,
   `TodayFeed`, `DailyReport`, `NewsCard`, plus `app/page.tsx` / `app/layout.tsx` /
   `app/meme/[id]/page.tsx`. JSX with conditional rendering inflates both line count and
   cyclomatic complexity; the ≤30-line / complexity-≤4 thresholds were written for general
@@ -30,9 +30,9 @@ ADVISORY `npm run lint:complexity` (all `warn`, deliberately NOT part of
 (The 2026-07-01 audit's hardening — http(s)-only source URLs + regression tests — is
 orthogonal and unaffected.)
 
-The 2026-07-13 full audit measured 39 warnings before cleanup. One warning introduced by
-the new trusted timestamp normalizer was refactored immediately; the remaining 38 are the
-accepted families above. Future audits must update this count or refactor/document new
+The 2026-07-13 full audit measured 39 warnings before cleanup, then accepted 38. The
+2026-07-14 audit extracted the PWA test callbacks and clipboard interaction helpers, reducing
+the accepted baseline to 37. Future audits must update this count or refactor/document new
 families rather than silently growing the exception.
 
 ## Alternatives Considered

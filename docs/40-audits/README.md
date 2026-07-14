@@ -5,5 +5,6 @@ scan boundary, file-level findings, repairs, verification methods, and residual 
 
 | Date | Artifact | Purpose |
 | --- | --- | --- |
+| 2026-07-14 | `2026-07-14-full-skills-audit.md` | Full follow-up audit, focused repairs, and local/remote/production acceptance |
 | 2026-07-13 | `2026-07-13-full-skills-audit.md` | Full source/config/data/docs/automation/PWA audit and acceptance report |
 | 2026-07-13 | `2026-07-13-skills-inventory.md` | Deduplicated installed-Skills applicability inventory |

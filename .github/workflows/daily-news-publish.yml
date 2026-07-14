@@ -10,8 +10,8 @@ name: daily-news-publish
 #     with path-scoped Write/Edit and no shell. Produces data/daily-news/<date>.json
 #     and uploads ONLY that JSON artifact. A full compromise still cannot push or deploy.
 #   - job `publish`: needs `agent`; contents:write + actions:write. Checks out TRUSTED repo code,
-#     downloads only the JSON artifact, runs `npm run check`, commits + pushes + dispatches Pages.
-#     The artifact can influence content only; trusted code owns commands and credentials.
+#     downloads only the JSON artifact, validates, rebases and revalidates the final tree, then
+#     gives only the accepted commit to a token-scoped push/Pages step.
 #
 # Requires the same CLAUDE_CODE_OAUTH_TOKEN secret as daily-publish. Until it exists, a clean no-op.
 
@@ -187,11 +187,11 @@ jobs:
           name: daily-news-data
           path: data/daily-news
 
-      - name: Validate, commit & publish (deterministic; agent cannot reach this)
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Validate, commit and revalidate final tree (no write token)
+        id: prepare
         run: |
           set -euo pipefail
+          echo "publish=false" >> "$GITHUB_OUTPUT"
           if [ ! -f "data/daily-news/${DATE}.json" ]; then
             echo "::error::Agent job produced no data/daily-news/${DATE}.json artifact. Failing so catchup/monitor recover."
             exit 1
@@ -206,8 +206,20 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore(data): publish DailyNews ${DATE}"
-          gh auth setup-git
+          # Rebase without a write token, then validate the exact combined tree. If main moves
+          # again after this point, the token-scoped push below fails closed as non-fast-forward.
           git pull --rebase origin main
+          npm ci
+          npm run check
+          echo "publish=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push accepted commit and deploy
+        if: steps.prepare.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gh auth setup-git
           git push origin HEAD:main
           SHA="$(git rev-parse HEAD)"
           bash scripts/dispatch-pages.sh "$SHA"

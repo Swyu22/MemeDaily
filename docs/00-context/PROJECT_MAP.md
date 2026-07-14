@@ -19,15 +19,15 @@
   safety, privacy/minors, abuse, illegal/explicit content, harmful rumors, and contextual
   risk. News has a separate restrained editorial policy.
 - **Automation:** model-facing jobs cannot execute shell commands or edit arbitrary paths.
-  Trusted jobs own timestamps, validation, git credentials, commits, and deploys.
+  Trusted no-token steps own timestamps, validation, local commits, and rebases; a final
+  token-scoped step owns the push and correlated deploy.
 
 ## Module Map
 - `src/app/`: Next.js routes, metadata, global/responsive styles, and static composition.
   Depends on `src/features/` and `src/domain/`.
-- `src/features/home/`: dual-feed tabs, sorting, status, and home composition.
+- `src/features/home/`: dual-feed tabs, sorting, status, news cards, and home composition.
 - `src/features/memes/`: meme cards, archives, detail helpers, and list behavior. Depends
   on `src/domain/memedaily/`.
-- `src/features/news/`: news report/card behavior. Depends on `src/domain/dailynews/`.
 - `src/domain/memedaily/`: meme schema, loaders, evidence/safety/lifecycle gates, and
   deterministic history calculations. It has no UI or infrastructure dependency.
 - `src/domain/dailynews/`: news schema, loaders, labels, freshness, editorial gates, and
@@ -56,6 +56,7 @@
   `platform_public` or `aggregator` source, plus a reusable meme shell and all safety gates.
 - **Trusted chronology:** publication jobs set `generated_at` and `published_at`; sources
   cannot claim capture after publication.
+- **News attribution:** every reader-visible DailyNews source has a required `outlet` label.
 - **Runtime:** static files only; there is no backend API.
 
 ## Automation Map

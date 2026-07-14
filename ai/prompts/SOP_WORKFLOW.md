@@ -9,15 +9,15 @@
 1. 将本 Starter Kit 复制到项目根目录
 2. 填写 `/.cloud.md`（当前目标、范围、下一步）
 3. 填写 `docs/00-context/PROJECT_MAP.md`（目标、约束、模块地图）
-4. 创建首个 `ai/sessions/YYYY-MM-DD.md`（可复制模板）
+4. 创建首个 `ai/sessions/YYYY-MM-DD--<slug>.md`（可复制模板）
 5. （可选）创建第一批模块 README（重要模块先建）
 6. （可选）启用第一批 Hook
 
 ## SOP-1：每次开工（公司/家里都一样）
 1. 打开项目根目录
-2. 打开或新建 `ai/sessions/YYYY-MM-DD.md`
+2. 打开或新建 `ai/sessions/YYYY-MM-DD--<slug>.md`
 3. 将 `ai/prompts/UNIFIED_START_PROMPT.md` 发给当前模型
-4. 确认模型先读取：`CLAUDE.md` → `.cloud.md` → 模块 README → 目标文件
+4. 确认模型先读取：`.cloud.md` → 模块 README → 目标文件；复杂任务再追加 MAP/spec/ADR/plan
 5. 审核模型输出的执行计划与回写清单
 6. 再开始执行
 

@@ -387,6 +387,17 @@ select {
   margin-top: var(--space-3);
 }
 
+.copy-feedback {
+  margin: var(--space-2) 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.copy-feedback:empty {
+  display: none;
+}
+
 .badge,
 .mini,
 .value {
