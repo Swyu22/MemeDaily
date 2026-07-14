@@ -20,8 +20,9 @@ Use two jobs for each feed:
 2. The trusted publish job checks out clean repository code without persisted credentials,
    downloads only the artifact, stamps `generated_at` / `published_at` with
    `scripts/stamp-publish-time.ts`, rejects sources later than that trusted clock, validates
-   the entire repository, then exposes
-   `GITHUB_TOKEN` only to the final authenticated pull/commit/push step.
+   the entire repository, commits locally, rebases without a write token, reinstalls from the
+   final lockfile, and validates the exact rebased tree again. Only a separate final push/Pages
+   step receives `GITHUB_TOKEN`; a new race after validation fails closed as non-fast-forward.
 
 All third-party and official workflow actions are pinned to full commit SHAs. Local Codex
 publishing remains a supervised recovery option because an instruction prompt cannot provide
@@ -40,13 +41,15 @@ the same mechanical OS-level isolation.
   project files, or use git credentials; chronology is stamped by trusted code.
 - Positive: validation uses the repository's reviewed implementation, not an agent-modified
   copy.
+- Positive: package lifecycle scripts and validation commands never inherit the repository write
+  token, and a concurrent feed commit cannot enter the final pushed tree without validation.
 - Negative: workflow structure is more verbose and must preserve exact-path permissions.
 - Negative: source capture times are an upper-bound claim. Historical impossible values are
   clamped, but their exact original capture moments cannot be reconstructed.
 
 ## Verification
 - CI checks workflow YAML and repository tests; audit scripts verify action SHA pins and
-  model-job permissions.
+  model-job permissions, post-rebase validation order, and token confinement.
 - `scripts/stamp-publish-time.test.ts` covers both feed schemas, trusted stamping, preservation
   of earlier source times, and rejection of future source times.
 - The first scheduled runs after this decision remain an operational monitoring item.

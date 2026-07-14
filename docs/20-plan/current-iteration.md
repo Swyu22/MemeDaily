@@ -1,42 +1,46 @@
 # Current Iteration
 
 ## Iteration Goal
-Remove the gray translucent top region seen in the installed iOS Chrome PWA under dark mode,
-while keeping the current non-immersive status-bar layout and an opaque page-colored surface.
+Complete a full installed-Skills engineering audit across every important project file, repair
+confirmed defects with minimal changes, and close the loop with reproducible local, CI, Pages,
+browser, and production evidence.
 
 ## Scope
-- **In:** root viewport metadata, critical first-paint CSS, global shell/topbar styles,
-  manifest launch colors, offline shell, service-worker generation, regression tests,
-  state records, and production verification.
-- **Out:** content feeds, publishing jobs, immersive `viewport-fit=cover`, safe-area layout
-  changes, unrelated visual redesign, and external account configuration.
+- **In:** application/domain/feature source, both feed contracts and data, workflows, scripts,
+  hooks, configuration, prompts, documentation, PWA assets, tests, governance records, and
+  deployment verification.
+- **Out:** historical generated prototype rewrites, unrelated product redesign, speculative
+  dependency upgrades, and external account/credential administration.
 
 ## Checklist
-- [x] P0 Confirm manifest, root canvas, and transparent topbar conflicts at the rollback SHA.
-- [x] P0 Lock document/app chrome to one light color without enabling an overlay status bar.
-- [x] P0 Make the sticky topbar opaque and remove its backdrop blur.
-- [x] P1 Align manifest, offline fallback, and service-worker cache generation.
-- [x] P1 Add focused installed-PWA surface regression coverage.
-- [x] P0 Run full lint, type, test, build, governance, and emitted-output assertions.
-- [x] P0 Commit, push, await Pages, and verify the production HTML/manifest/SW/CSS.
-- [ ] P1 Confirm the remaining physical-device behavior after Chrome refresh/reinstall.
+- [x] P0 Inventory installed Skills, deduplicate aliases, and select applicable Skills.
+- [x] P0 Scan and read all important source, configuration, data, workflow, script, asset,
+  prompt, and documentation types.
+- [x] P0 Run baseline build/test/governance/security/supply-chain checks and inspect live runs.
+- [x] P0 Repair confirmed publishing, monitoring, data-contract, and latest-run state defects.
+- [x] P1 Repair accessibility feedback, fallback-label drift, complexity drift, and canonical docs.
+- [x] P0 Run full local gates plus focused regression, browser, accessibility, and performance checks.
+- [ ] P0 Push, pass CI, deploy Pages, and verify the production generation.
+- [ ] P1 Publish the complete audit and itemized acceptance report.
+- [ ] P1 USER: confirm iOS Chrome dark-mode installed-PWA status area on a physical device.
 
 ## High-Risk Areas
-- iOS installed-app chrome may use manifest, document metadata, root paint, or cached shell
-  state at different lifecycle stages.
-- `black-translucent` or `viewport-fit=cover` would move content under the status bar and
-  recreate the visible scroll-through failure.
-- A stale service worker or cached manifest can conceal a correct source change until the
-  installed app refreshes its shell metadata.
+- Both daily writers can race and rebase after their first validation; final pushed trees must be
+  reinstalled and revalidated after rebase.
+- Feed status UI must describe the latest run, including `skipped` and `held`, rather than silently
+  substituting the latest visible successful day.
+- Workflow monitors for two feeds share one issue tracker and must use feed-specific issue titles.
+- The installed iOS status area remains partly browser-owned and cannot be fully accepted in
+  desktop emulation.
 
 ## Acceptance Standard
-- Both light and dark preference metadata resolve to `#fafafa` with `only light` declared.
-- Root elements and sticky topbar remain opaque; no topbar `rgba()` or blur survives.
-- Manifest and offline shell use the same background, and the service-worker cache generation
-  changes so an installed app cannot remain pinned to the old shell.
-- `npm run check` passes and the emitted static HTML contains the expected metadata and
-  critical style before the boot script.
-- GitHub Pages serves the new HTML, manifest, worker, and hashed CSS over HTTPS.
+- Every finding is tied to a concrete file, Skill/standard, repair decision, and acceptance method.
+- `npm run check` and all strict project governance/security checks pass from a clean tree.
+- Focused tests prove post-rebase validation, monitor isolation, source-outlet enforcement,
+  latest-run UI state, clipboard feedback, and PWA surface behavior.
+- Desktop/mobile light/dark browser checks show no console errors, overflow, broken routes, or
+  inaccessible primary interactions; performance evidence is recorded.
+- CI and Pages succeed for the exact accepted commit, and production serves the same generation.
 
 ## Last Updated
-- 2026-07-14 02:28 +0800
+- 2026-07-14 14:48 +0800

@@ -59,7 +59,7 @@ const HttpUrlSchema = z
 
 const NewsSourceSchema = z.object({
   tier: NewsTierSchema,
-  outlet: z.string().min(1).max(20).optional(), // 媒体名（新华社/央视/澎湃…）— shown in 来源媒体
+  outlet: z.string().min(1).max(20), // 媒体名（新华社/央视/澎湃…）— shown in 来源媒体
   url: HttpUrlSchema,
   title: z.string().min(1).max(120).optional(),
   captured_at: z.iso.datetime({ offset: true }),

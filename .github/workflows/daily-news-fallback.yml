@@ -32,10 +32,10 @@ jobs:
       - run: npm run check
 
       - name: Commit skipped 日报 day if created
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: prepare
         run: |
           set -euo pipefail
+          echo "publish=false" >> "$GITHUB_OUTPUT"
           git add data/daily-news
           if git diff --cached --quiet; then
             echo "No skipped 日报 fallback needed."
@@ -44,7 +44,17 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore(data): add skipped DailyNews fallback"
-          gh auth setup-git
           git pull --rebase origin main
+          npm ci
+          npm run check
+          echo "publish=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push accepted fallback and deploy
+        if: steps.prepare.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gh auth setup-git
           git push
           bash scripts/dispatch-pages.sh "$(git rev-parse HEAD)"

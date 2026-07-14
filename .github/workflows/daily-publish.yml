@@ -13,9 +13,9 @@ name: daily-publish
 #     write/Pages token — this job simply has none.
 #   - job `publish`: needs `agent`; permissions contents:write + actions:write. It checks out
 #     TRUSTED repo code (NOT the agent's tree), downloads only the data-JSON artifact, runs
-#     `npm run check` against repo-controlled scripts, then commits + pushes + dispatches the
-#     Pages deploy. The agent can influence only the downloaded JSON, which is schema/policy
-#     validated by trusted repository code; it cannot alter commands, validators, or credentials.
+#     `npm run check` against repo-controlled scripts, rebases and revalidates the final tree, then
+#     hands only the accepted commit to a token-scoped push/Pages step. The agent can influence only
+#     the downloaded JSON; it cannot alter commands, validators, or credentials.
 #
 # ONE-TIME SETUP (required before it does anything):
 #   1. On your Mac: `claude setup-token`  -> copies a long-lived subscription OAuth token.
@@ -213,11 +213,11 @@ jobs:
           name: daily-data
           path: data/daily
 
-      - name: Validate, commit & publish (deterministic; agent cannot reach this)
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Validate, commit and revalidate final tree (no write token)
+        id: prepare
         run: |
           set -euo pipefail
+          echo "publish=false" >> "$GITHUB_OUTPUT"
           # Fail LOUD if the artifact is missing (don't pass green-but-empty — a red run lets
           # daily-catchup re-dispatch and daily-monitor alert).
           if [ ! -f "data/daily/${DATE}.json" ]; then
@@ -237,8 +237,21 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore(data): publish MemeDaily ${DATE}"
-          gh auth setup-git
+          # This public-repo fetch needs no write credential. Reinstall and re-run the canonical
+          # gate after rebase so the exact tree sent to main, including a concurrent feed update,
+          # has been validated. A later race makes the final push fail closed as non-fast-forward.
           git pull --rebase origin main
+          npm ci
+          npm run check
+          echo "publish=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push accepted commit and deploy
+        if: steps.prepare.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gh auth setup-git
           git push origin HEAD:main
           SHA="$(git rev-parse HEAD)"
           # GITHUB_TOKEN pushes do not trigger on:push. Dispatch a new Pages run, correlate it

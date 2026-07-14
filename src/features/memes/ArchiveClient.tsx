@@ -75,7 +75,7 @@ export function ArchiveClient({ rows }: ArchiveClientProps) {
           type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="搜梗名 / 别名 / 内容关键词"
+          placeholder="搜梗名 / 别名 / 内容关键词…"
         />
       </label>
 

@@ -12,7 +12,7 @@ import {
 } from "./rules";
 
 function source(tier: NewsTier, url: string): NewsItem["sources"][number] {
-  return { tier, url, captured_at: "2026-06-29T07:15:00+08:00", note: "公开页可访问。" };
+  return { tier, outlet: "测试媒体", url, captured_at: "2026-06-29T07:15:00+08:00", note: "公开页可访问。" };
 }
 
 const baseItem: NewsItem = {
@@ -144,6 +144,19 @@ describe("NewsItemSchema source url hardening (no javascript:/data:)", () => {
 
   it("accepts an https source url", () => {
     expect(NewsItemSchema.safeParse(baseItem).success).toBe(true);
+  });
+
+  it("requires a named outlet for every reader-visible source", () => {
+    const unnamed = {
+      ...baseItem,
+      sources: [{
+        tier: "state_media",
+        url: "https://example.com/unnamed",
+        captured_at: "2026-06-29T07:15:00+08:00",
+        note: "公开页可访问。",
+      }],
+    };
+    expect(NewsItemSchema.safeParse(unnamed).success).toBe(false);
   });
 });
 

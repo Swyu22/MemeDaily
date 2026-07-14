@@ -148,7 +148,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </Link>
               <nav className="nav" aria-label="Primary">
                 <Link href="/">首页</Link>
-                <Link href="/archive/">梗库</Link>
+                <Link href="/archive/" prefetch={false}>梗库</Link>
               </nav>
             </div>
           </header>

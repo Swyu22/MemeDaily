@@ -11,9 +11,11 @@ import {
   publishedDates,
   visibleItems,
 } from "@/domain/memedaily/rules";
-import { visibleNewsDays } from "@/domain/dailynews/data";
+import { loadAllNewsEnvelopes, visibleNewsDays } from "@/domain/dailynews/data";
 import { statusLabels as newsStatusLabels } from "@/domain/dailynews/labels";
+import { visibleNews } from "@/domain/dailynews/rules";
 import { HomeTabs } from "@/features/home/HomeTabs";
+import { homeRunState } from "./homeRunState";
 
 const MAX_DAYS_ON_HOME = 5; // 热梗首页默认保留最近 5 天
 const MAX_NEWS_DAYS_ON_HOME = 5; // 日报首页默认保留最近 5 天
@@ -33,29 +35,21 @@ export default function TodayPage() {
       }));
     return items.length > 0 ? [{ date: envelope.date, items }] : [];
   });
-  const freshDate = latest && days[0]?.date === latest.date ? latest.date : null;
   const shown = days.slice(0, MAX_DAYS_ON_HOME);
   const hasMore = days.length > shown.length;
-
-  const staleNotice =
-    latest && visibleItems(latest).length === 0
-      ? `最近一次运行 ${latest.date} 状态为「${statusLabels[latest.status]}」，没有合格内容——下方展示的是最近一次有内容的发布。`
-      : latest && latest.status === "partial"
-        ? `${latest.date} 为部分发布（partial）。鉴于合格内容较少，当日发布可能少于每日目标。`
-        : null;
-
-  const memeStatus = latest
-    ? {
-        date: latest.date,
-        time: (latest.published_at ?? latest.generated_at).slice(11, 16),
-        statusLabel: statusLabels[latest.status],
-        count: visibleItems(latest).length,
-      }
-    : null;
+  const memeRun = homeRunState(
+    all,
+    days[0]?.date ?? null,
+    latest ? visibleItems(latest).length : 0,
+    statusLabels,
+    "热梗",
+  );
 
   // 日报 feed (today's heat-ranked news; null until the news agent's first run). Strip the
   // internal editorial fields (wechat_bridge/filter_pass/risk) here so they never reach the
   // client bundle / serialized HTML — readers only ever get the reader-facing projection.
+  const allNews = loadAllNewsEnvelopes();
+  const latestNews = allNews[0] ?? null;
   const rawNewsDays = visibleNewsDays(MAX_NEWS_DAYS_ON_HOME);
   const newsDays = rawNewsDays.map((day) => ({
     date: day.date,
@@ -70,24 +64,24 @@ export default function TodayPage() {
     })),
   }));
 
-  const freshNews = rawNewsDays[0] ?? null;
-  const newsStatus = freshNews
-    ? {
-        date: freshNews.date,
-        time: (freshNews.published_at ?? freshNews.generated_at).slice(11, 16),
-        statusLabel: newsStatusLabels[freshNews.status],
-        count: freshNews.items.length,
-      }
-    : null;
+  const newsRun = homeRunState(
+    allNews,
+    rawNewsDays[0]?.date ?? null,
+    latestNews ? visibleNews(latestNews).length : 0,
+    newsStatusLabels,
+    "日报",
+  );
 
   return (
     <main className="page" id="main-content">
       <HomeTabs
-        memeStatus={memeStatus}
-        newsStatus={newsStatus}
-        staleNotice={staleNotice}
+        memeStatus={memeRun.status}
+        newsStatus={newsRun.status}
+        staleNotice={memeRun.notice}
+        newsStaleNotice={newsRun.notice}
         days={shown}
-        freshDate={freshDate}
+        freshDate={memeRun.freshDate}
+        freshNewsDate={newsRun.freshDate}
         hasMore={hasMore}
         newsDays={newsDays}
       />
