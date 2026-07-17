@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v2-民生",
+  "rubric_version": "v2-2026",
+  "date": "2026-07-18",
+  "generated_at": "2026-07-18T06:15:17+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 16,
+    "published": 4,
+    "dropped_safety": {
+      "政治地缘": 1,
+      "政府政策色彩": 4
+    },
+    "dropped_low_confidence": 3,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 12,
+      "official_sources": 3,
+      "state_media_sources": 2,
+      "major_media_sources": 5,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-18-chongqing-pengshui-landslide-rescue",
+      "headline": "🏔️重庆彭水山体崩塌，救援力量持续搜寻被困人员",
+      "summary": "7月17日9时许，重庆彭水县汉葭街道发生大型山体崩塌，多栋民房被压。截至17日18时30分，已搜救出18人，其中8人遇难；10人受伤（含2人危重）；34人仍失联。崩塌体积约1.8万立方米，800余名救援人员持续搜救，约1100名周边居民已提前疏散；现场布设滚石雷达防范再次崩塌风险。",
+      "category": "民生社会",
+      "heat_rank": 1,
+      "occurred_at": "2026-07-17T09:08:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "重大地质灾害事件，权威来源（央视/央广/中新）；标题不含伤亡/失联人数，聚焦事件与救援响应；伤亡数字仅置于summary；克制报道不渲染悲情，risk设medium"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/07/18/ARTIOrchUvBXwcoqsnpIKcIJ260718.shtml",
+          "title": "重庆市彭水县山体崩塌已致8人死亡34人失联",
+          "captured_at": "2026-07-18T01:00:00+08:00",
+          "note": "央视网播发新华社稿（7月18日00:02），确认重庆彭水山体崩塌致8人死亡、34人失联，救援持续进行"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://cq.cnr.cn/tp/20260718/t20260718_527715994.shtml",
+          "title": "重庆彭水山体崩塌 已致8死34失联",
+          "captured_at": "2026-07-18T02:00:00+08:00",
+          "note": "央广网重庆频道：7月18日更新，8人遇难、34人失联，超800名救援人员通宵搜救，航拍画面确认崩塌规模"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/07-18/10661803.shtml",
+          "title": "重庆彭水突发山体崩塌已致8人死亡34人失联",
+          "captured_at": "2026-07-18T02:00:00+08:00",
+          "note": "中新网：崩塌体积约1.8万立方米，13支专业救援队683人赶赴现场，约1100名居民提前撤离，布设雷达监控二次崩塌风险"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-18-india-vikram1-private-orbital-launch",
+      "headline": "🚀印度首枚私营轨道火箭今日升空，将尝试历史性入轨",
+      "summary": "印度私营航天公司Skyroot的维克拉姆-1小型火箭，计划于北京时间7月18日下午约2时从斯里赫里科塔发射，执行首次入轨任务「Aagaman」。若成功，将成为印度私营企业首次将载荷送入低轨道；本次携带印、德两国多枚科技演示卫星，主要目标是采集全系统飞行数据。",
+      "category": "国际",
+      "heat_rank": 2,
+      "occurred_at": "2026-07-18T14:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际商业航天预告资讯，来源权威（Space.com + Business Standard，均为major_media）；「印度私营首次入轨」以「若成功」限定，避免未核实强主张；无政治敏感内容，调性平实"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/skyroot-aerospace-india-first-private-orbital-launch-vikram-1",
+          "title": "Making history: Watch Vikram-1, India's 1st private orbital rocket, launch early on July 18",
+          "captured_at": "2026-07-17T20:00:00+08:00",
+          "note": "Space.com：维克拉姆-1定于7月18日当地时间11:30（北京时间约14:00）从斯里赫里科塔发射，火箭可携约350公斤载荷至450公里低轨，含德国DCUBED与印度Grahaa Space等4个载荷"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "Business Standard",
+          "url": "https://www.business-standard.com/technology/tech-news/skyroot-aims-july-18-launch-of-india-s-1st-private-orbital-rocket-vikram-1-126071600855_1.html",
+          "title": "Skyroot aims July 18 launch of India's 1st private orbital rocket Vikram-1",
+          "captured_at": "2026-07-17T14:00:00+08:00",
+          "note": "Business Standard：Skyroot确认7月18日发射维克拉姆-1，任务代号「Aagaman」；核心目标为采集飞行数据；发射窗口持续至8月4日，为印度私营航天里程碑"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-18-h1-income-5-2-percent",
+      "headline": "💰上半年居民收入涨5.2%，农村增速连续跑赢城镇",
+      "summary": "国家统计局7月15日公布：上半年全国居民人均可支配收入22981元，名义增长5.2%，实际增长4.2%。城镇居民实际增3.4%，农村居民实际增5.5%，农村增速已连续多季高于城镇，城乡差距持续缩小。居民人均消费支出同步回升；上半年CPI同比涨1.0%，价格涨势平稳。",
+      "category": "民生社会",
+      "heat_rank": 3,
+      "occurred_at": "2026-07-15T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国家统计局权威数据，居民收入是重大民生信息；聚焦实际收入与消费变动，无政策/部委/印发等禁用措辞，调性中立"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家统计局",
+          "url": "https://www.stats.gov.cn/sj/zxfb/202607/t20260715_1964129.html",
+          "title": "2026年上半年居民收入和消费支出情况",
+          "captured_at": "2026-07-15T14:00:00+08:00",
+          "note": "国家统计局：上半年全国居民人均可支配收入22981元，名义增5.2%，实际增4.2%；农村增速5.5%高于城镇3.4%，农村居民消费支出同步扩大"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_33589143",
+          "title": "【数据发布】2026年上半年居民收入和消费支出情况",
+          "captured_at": "2026-07-15T16:00:00+08:00",
+          "note": "澎湃新闻：上半年收入消费数据即时播报，农村收入实际增速连续高于城镇，消费支出同步回升，CPI同比上涨1.0%"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/07-15/10659579.shtml",
+          "title": "国家统计局公布2026年上半年居民收入和消费支出情况",
+          "captured_at": "2026-07-15T16:00:00+08:00",
+          "note": "中新网：城乡收入差距继续缩小，全国居民人均可支配收入实际增4.2%，农村增速持续跑赢城镇，消费意愿温和回暖"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-18-la2028-two-year-countdown-volunteers",
+      "headline": "🏅洛杉矶奥运倒计时两年，全球招募六万名志愿者",
+      "summary": "7月14日，距洛杉矶奥运会开幕整整两年，LA28组委会当日开放全球志愿者申请：约6万个席位面向世界招募，可选体育、医疗、技术等8类岗位，最低完成10个班次。1984年奥运金牌卡尔·刘易斯受任志愿者计划大使。本届奥运会2028年7月14日至30日在洛杉矶举行，全程使用40余个现有场馆，不新建永久设施。",
+      "category": "国际",
+      "heat_rank": 4,
+      "occurred_at": "2026-07-14T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际体育赛事资讯，来源权威（国际奥委会+LA28奥组委官网，均为official），无政治敏感内容，调性平实"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国际奥委会",
+          "url": "https://www.olympics.com/ioc/news/the-countdown-is-on-la28-marks-two-years-to-go-with-launch-of-volunteer-programme",
+          "title": "The countdown is on: LA28 marks two years to go with launch of volunteer programme",
+          "captured_at": "2026-07-15T10:00:00+08:00",
+          "note": "IOC官网：LA28奥运两年倒计时，7月14日正式开放志愿者申请，约6万个岗位面向全球，分体育、医疗、技术、典礼等8类"
+        },
+        {
+          "tier": "official",
+          "outlet": "LA28奥组委",
+          "url": "https://la28.org/en/newsroom/la28-calls-on-the-world-to-volunteer.html",
+          "title": "LA28 Calls on the World to Volunteer",
+          "captured_at": "2026-07-14T10:00:00+08:00",
+          "note": "LA28官网：7月14日宣布开放志愿者申请，1984年金牌卡尔·刘易斯任大使；奥运赛期2028年7月14-30日，赛事使用40余个现有场馆不新建永久设施"
+        }
+      ],
+      "published": true
+    }
+  ],
+  "published_at": "2026-07-18T06:15:17+08:00"
+}
