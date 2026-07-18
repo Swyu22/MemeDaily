@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v2-民生",
+  "rubric_version": "v2-2026",
+  "date": "2026-07-19",
+  "generated_at": "2026-07-19T07:04:41+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 20,
+    "published": 4,
+    "dropped_safety": {
+      "政治地缘": 1,
+      "政府政策色彩": 5
+    },
+    "dropped_low_confidence": 3,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 16,
+      "official_sources": 0,
+      "state_media_sources": 2,
+      "major_media_sources": 11,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 2
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-19-chongqing-pengshui-rescue-day3",
+      "headline": "🏔️重庆彭水崩塌救援第三日：雨中争分夺秒",
+      "summary": "7月17日重庆彭水县汉葭街道发生山体崩塌，多栋居民楼被压。截至18日，已救出18人，8人遇难，34人失联。18日10时50分搜救犬发现生命迹象，位于地下1.5至3米，被巨石板覆盖，救援队已在上方开口清理。持续降雨加大救援难度，现场研究爆破开路方案，872名救援人员不间断搜救作业。",
+      "category": "民生社会",
+      "heat_rank": 1,
+      "occurred_at": "2026-07-18T10:50:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "重大地质灾害续报；标题聚焦救援动态不写伤亡人数，伤亡/失联数据置于summary；克制报道不渲染悲情；risk设medium"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/07/18/ARTIOrchUvBXwcoqsnpIKcIJ260718.shtml",
+          "title": "重庆市彭水县山体崩塌已致8人死亡34人失联",
+          "captured_at": "2026-07-18T08:00:00+08:00",
+          "note": "央视网：截至7月18日，彭水山体崩塌8人遇难34人失联，搜救持续；18日10时50分发现生命迹象，救援队在上方开口清理"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/newscenter/kuaixun/20260718/t20260718_527717142.shtml",
+          "title": "重庆彭水山体崩塌救援最新进展：已在生命迹象位置上方开口",
+          "captured_at": "2026-07-18T12:00:00+08:00",
+          "note": "央广网：18日10时50分搜救犬协助发现生命迹象，位于1.5至3米深处被巨石板覆盖，救援队已在上方开口，降雨持续加大难度"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/07-18/10662111.shtml",
+          "title": "重庆彭水山体崩塌救援最新进展：已在生命迹象位置上方开口",
+          "captured_at": "2026-07-18T12:00:00+08:00",
+          "note": "中新网：生命迹象位置确定，救援队采取机械掘进+人工排查结合方式，现场研究爆破方案，872人、1100余台套装备持续作业"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-19-india-vikram1-orbit-success",
+      "headline": "🚀印度私营轨道火箭首飞成功，跻身全球第三",
+      "summary": "印度Skyroot Aerospace维克拉姆-1火箭7月18日成功完成首飞，升空约15分钟后将载荷送入450公里低轨道，成为印度首次完全私营的轨道发射。印度由此跻身继美国、中国之后第三个具备私营轨道发射能力的国家，22米高四级火箭搭载印德两国多枚科技演示载荷及实验室培育钻石。",
+      "category": "国际",
+      "heat_rank": 2,
+      "occurred_at": "2026-07-18T14:35:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际商业航天里程碑，非政治内容；来源权威（Space.com+CNBC+Al Jazeera三源独立核实）；调性平实，不涉地缘或冲突"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/skyroot-aerospace-india-first-private-orbital-launch-vikram-1",
+          "title": "'The dawn of a new space era': Vikram-1, India's 1st private orbital rocket, aces debut launch",
+          "captured_at": "2026-07-18T20:00:00+08:00",
+          "note": "Space.com：维克拉姆-1首飞成功，7月18日0635 GMT升空，约15分钟后入轨450公里，印度成为第三个拥有私营轨道发射能力的国家"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "CNBC",
+          "url": "https://www.cnbc.com/2026/07/18/indias-skyroot-launches-first-private-orbital-rocket-mission.html",
+          "title": "India's Skyroot launches Vikram-1 in first private orbital rocket mission",
+          "captured_at": "2026-07-18T18:00:00+08:00",
+          "note": "CNBC：Skyroot完成印度首次私营轨道发射，入轨450公里，火箭高22米可载荷350公斤至LEO，搭载印德多枚载荷"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/18/india-achieves-milestone-with-launch-of-first-private-sector-orbital-rocket",
+          "title": "India achieves milestone with launch of first private-sector orbital rocket",
+          "captured_at": "2026-07-18T18:00:00+08:00",
+          "note": "Al Jazeera：印度维克拉姆-1首飞成功，继美国、中国之后成为第三个具备私营轨道发射能力的国家，获国际航天界高度关注"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-19-kung-fu-soccer-1b-box-office",
+      "headline": "🎬《功夫女足》7天破10亿，周星驰暑期新神话",
+      "summary": "周星驰编剧执导、张小斐和迪丽热巴主演的《功夫女足》，借世界杯热潮，7月10日上映后6天9时10分票房破10亿，成2026年第六部破10亿国产片，暑期档最快开画纪录。周星驰宣布续集《功夫女足2》已进入规划，2026年暑期档总票房已超37亿元，足球题材热潮持续发酵。",
+      "category": "文化数字经济",
+      "heat_rank": 3,
+      "occurred_at": "2026-07-17T00:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "文化消费资讯，票房数据经灯塔专业版及多源媒体印证；主演均为主流演员，无争议因素；risk设low"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "荔枝新闻",
+          "url": "https://m.jstv.com/news/2026/7/17/1527733368679182336.html",
+          "title": "《功夫女足》，6天10亿！",
+          "captured_at": "2026-07-17T20:00:00+08:00",
+          "note": "荔枝新闻（江苏卫视）：《功夫女足》6天9时10分破10亿，成暑期档最快破十亿纪录，2026年第6部票房破十亿影片"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪新闻",
+          "url": "https://k.sina.com.cn/article_7880068323_1d5b04ce306801sy7y.html",
+          "title": "《功夫女足》7天破10亿！周星驰再创票房神话",
+          "captured_at": "2026-07-17T20:00:00+08:00",
+          "note": "新浪新闻：《功夫女足》7天票房破10亿，周星驰续集《功夫女足2》前期规划正式官宣，暑期档票房热潮延续"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "腾讯新闻",
+          "url": "https://view.inews.qq.com/a/20260717A08SG500",
+          "title": "《功夫女足》上映7天票房破10亿！成2026年第六部破10亿电影，凭一己之力盘活暑期档",
+          "captured_at": "2026-07-17T20:00:00+08:00",
+          "note": "腾讯新闻：《功夫女足》首日2.6亿创年内新高，7天破10亿，2026暑期档总票房超37亿元，足球题材内容热度创新高"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-19-waic-embodied-ai-mass-production",
+      "headline": "🤖WAIC 2026：具身机器人从秀场走向量产元年",
+      "summary": "WAIC 2026第二日（7月18日），逾200家具身智能企业展示300余台机器人在仓储等真实场景作业，从「概念秀」转向「进厂干活」。行业预测2026年中国人形机器人年产量将首破10万台，市场规模有望达1.09万亿元。智元等厂商现场发布量产型人形机器人并已落地部署，量产元年信号明确。",
+      "category": "科技AI",
+      "heat_rank": 4,
+      "occurred_at": "2026-07-18T10:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "科技展会产业报道，聚焦具身智能企业与产品进展；1.09万亿预测来自行业研究院，措辞为「有望」；不涉政策措辞；risk设low"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新浪科技",
+          "url": "https://finance.sina.com.cn/tech/roll/2026-07-18/doc-iniiftkc0888186.shtml",
+          "title": "多款行业首创机器人登陆WAIC，具身智能迎来规模化落地新阶段",
+          "captured_at": "2026-07-18T20:00:00+08:00",
+          "note": "新浪科技：WAIC 2026具身智能展区报道，行业首创机器人展示真实落地场景，200家具身智能企业参展创历史新高，产业全面转向实际部署"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪科技",
+          "url": "https://finance.sina.com.cn/tech/roll/2026-07-18/doc-iniiftiz4094153.shtml",
+          "title": "打破「脑中之缸」：今年AI+答案锁定具身智能 从表演炫技转向进厂干活",
+          "captured_at": "2026-07-18T18:00:00+08:00",
+          "note": "新浪科技：WAIC 2026深度报道，2026年具身智能从「表演炫技」转向「进厂干活」，行业预测人形机器人年产量首破10万台，市场规模约1.09万亿"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中华网",
+          "url": "https://news.china.com/socialgd/10000169/20260718/49618479.html",
+          "title": "WAIC上具身智能占据C位 智能体市场方兴未艾",
+          "captured_at": "2026-07-18T20:00:00+08:00",
+          "note": "中华网：WAIC 2026具身智能展区聚焦真实场景，300余台机器人同台，具身智能与智算并列为两大核心展区"
+        }
+      ],
+      "published": true
+    }
+  ],
+  "published_at": "2026-07-19T07:04:41+08:00"
+}
