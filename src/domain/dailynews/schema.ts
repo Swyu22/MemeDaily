@@ -69,7 +69,7 @@ const NewsSourceSchema = z.object({
 export const NewsItemSchema = z.object({
   id: z.string().regex(/^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/),
   headline: z.string().min(4).max(48), // 新闻类标题，含一个相关 emoji 前缀；不放伤亡/转移人数
-  summary: z.string().min(6).max(150), // 新闻简述，约 100–150 字（平实完整，不玩梗）
+  summary: z.string().min(6).max(150), // 新闻简述，目标约 100–140 字（硬上限 150，别贴着写；平实完整，不玩梗）
   category: NewsCategorySchema,
   heat_rank: z.number().int().min(1).max(10), // 1 = hottest; gate enforces contiguous 1..N
   // 新闻"真实发生/披露时间"（Asia/Shanghai, offset）。用于「新鲜值」排序——越接近现在越靠前。

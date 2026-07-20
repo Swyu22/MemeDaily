@@ -35,7 +35,8 @@ editorial richness below into the JSON fields. The daily target is up to 10 stro
   as either verified or inferred. If you cannot go online or a platform is unreachable
   today, say so plainly. If nothing qualifies, publish a valid `status: "skipped"`
   envelope. Never pad to 10 with weak or invented memes.
-- Be thorough — this job has a GENEROUS budget (~$5/day of usage, ~100 turns). Cast a wide
+- Be thorough — this job has a GENEROUS budget (~$5/day of usage, ~60 turns; reserve the
+  last few turns for the mandatory re-Read self-check below). Cast a wide
   net across every source category listed below, build a LARGE candidate pool (aim ~30+ raw
   candidates) before selecting. Work in passes: (1) broad discovery sweep across sources,
   (2) shortlist + rank by the rubric, (3) verify & enrich the top picks (sources, usage,
@@ -262,6 +263,11 @@ do not publish it — it never enters `items`, and the public page never shows a
    category), `dropped_low_confidence`, `sources`, `evidence_summary`.
 7. In a trusted local recovery, run the stamp/check commands below. In the confined GitHub agent job,
    do not request shell access; the separate trusted publish job owns all validation and publication.
+   **无 shell 时的自检（confined agent 必做）**：你没有 validator 可跑，你留下的文件就是最终产物，一处
+   JSON 语法错误就会让**整天发布失败**（真实事故已发生）。所以每次 Write/Edit 之后必须用 Read 重读完整
+   文件，核对语法配平未截断、title ≤48、每条 published 项 ≥2 个**不同 URL** 信源且**至少 1 个 tier 为
+   `platform_public` 或 `aggregator`**、run_report 计数与 items 一致；发现问题立即修复并再次重读。
+   **结束前的最后一个动作必须是一次核对通过的完整 Read。**
 8. Run `npm run stamp:publish -- "data/daily/${DATE}.json"` then `npm run check`, then stage ONLY
    today's file (never modify prior days' envelopes): `git add -- "data/daily/${DATE}.json" &&
    git commit -m "chore(data): publish MemeDaily ${DATE}" && git push`.

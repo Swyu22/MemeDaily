@@ -72,8 +72,29 @@ jobs:
           SKIP=false
           FILE="data/daily-news/${DATE}.json"
           FORCE="${{ github.event_name == 'workflow_dispatch' && inputs.force == true }}"
-          if [ "$FORCE" != "true" ] && [ -f "$FILE" ]; then
-            STATUS="$(node -e "try{process.stdout.write(String(JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')).status||''))}catch(e){process.stdout.write('')}" "$FILE" 2>/dev/null || echo '')"
+          if [ "$FORCE" != "true" ]; then
+            # Check the LIVE main tip, not this run's pinned checkout: a dispatch queued behind an
+            # in-progress publish is pinned to the PRE-publish SHA, so a worktree-only check would
+            # miss the just-published file and re-run the whole agent for an already-published day.
+            # Anonymous fetch works (public repo). On persistent fetch failure fall back to the
+            # pinned worktree copy (previous behavior) rather than blocking the day.
+            STATUS=""
+            FETCHED=false
+            for attempt in 1 2 3; do
+              if git fetch --quiet --depth=1 origin main; then
+                FETCHED=true
+                break
+              fi
+              echo "guard fetch attempt ${attempt}/3 failed (transient network?)."
+              if [ "$attempt" -lt 3 ]; then sleep $((attempt * 10)); fi
+            done
+            if [ "$FETCHED" = "true" ]; then
+              if git cat-file -e "FETCH_HEAD:${FILE}" 2>/dev/null; then
+                STATUS="$(git show "FETCH_HEAD:${FILE}" 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(String(JSON.parse(s).status||""))}catch(e){process.stdout.write("")}})' || echo '')"
+              fi
+            elif [ -f "$FILE" ]; then
+              STATUS="$(node -e "try{process.stdout.write(String(JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')).status||''))}catch(e){process.stdout.write('')}" "$FILE" 2>/dev/null || echo '')"
+            fi
             if [ "$STATUS" = "published" ]; then
               SKIP=true
               echo "::notice::Today (${DATE}) 日报 is already published; skipping (workflow_dispatch force=true to re-publish)."
@@ -131,7 +152,8 @@ jobs:
             表述(删掉未被印证的强限定词)或不发。宁可平实，别要来源撑不住的"高光"。**
             每条字段：headline(4–48，**必须以一个相关 emoji 开头**，新闻类标题，不玩梗；**标题里绝不写具体伤亡/转移/
             受灾人数**，如「13人轻伤」「225人转移」，只写事件+响应，人数放 summary——代码会拦截标题里的「数字+人+伤亡/转移类词」)、
-            summary(**新闻简述，约100–150字**，平实完整克制；伤亡/人数细节放这里)、occurred_at(新闻**真实发生/披露时间**，
+            summary(**新闻简述，目标约100–140字，硬上限150——超一个字整天发布都会失败，写到140左右就收，
+            不要贴着150写**，平实完整克制；伤亡/人数细节放这里)、occurred_at(新闻**真实发生/披露时间**，
             ISO8601 带时区如 2026-06-29T00:12:00+08:00；这是「新鲜值」排序依据，**按真实事件时间填，别用抓取时间**)、
             category(内部分类：民生社会/节日节气/国家高光/**国际**/科技AI/科技向善/文化数字经济，读者看不到；
             "国际"专指**非政治**的国际新鲜事，且尽量每天 ≥1 条)、
@@ -146,6 +168,31 @@ jobs:
             You have no shell permission and may write/edit only that exact daily JSON path. A separate
             trusted job stamps time, runs the full check, and publishes it. If nothing qualifies,
             you STILL must Write a valid status:"skipped" envelope. Never fabricate sources, never pad to 10.
+            SELF-CHECK (no validator available to you — the file you leave IS the final artifact, and ONE
+            JSON syntax error or over-limit field fails the WHOLE day; this really happened two days in a
+            row): after EVERY Write/Edit you MUST Read the complete file back and verify (1) JSON syntax is
+            balanced and untruncated, (2) every summary ≤150 chars (aim ≤140), headline ≤48, outlet 1–20,
+            (3) heat_rank is contiguous 1..N. Fix and re-Read until clean. Your LAST action before
+            finishing MUST be a full clean Read of the file.
+
+      # The confined agent has no shell, so it cannot self-run the validator; malformed JSON
+      # otherwise ships to the publish job (2026-07-20: two runs died there on SyntaxError).
+      # Deterministic well-formedness parse here fails the cheap agent job fast with a crisp
+      # error; schema-level gates still run in the trusted publish job.
+      - name: Fail fast unless the agent artifact is well-formed JSON
+        if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
+        run: |
+          set -euo pipefail
+          FILE="data/daily-news/${{ steps.guard.outputs.date }}.json"
+          if [ ! -f "$FILE" ]; then
+            echo "::error::Agent produced no ${FILE}; failing so daily-news-catchup/monitor recover."
+            exit 1
+          fi
+          if ! node -e 'JSON.parse(require("fs").readFileSync(process.argv[1], "utf8"))' "$FILE"; then
+            echo "::error::${FILE} is not well-formed JSON (agent output corrupted); failing fast so daily-news-catchup retries."
+            exit 1
+          fi
+          echo "${FILE} parses as JSON."
 
       - name: Upload the agent's data file (ONLY the JSON — never code) for the publish job
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'

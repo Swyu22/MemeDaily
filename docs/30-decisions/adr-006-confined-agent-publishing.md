@@ -53,3 +53,17 @@ the same mechanical OS-level isolation.
 - `scripts/stamp-publish-time.test.ts` covers both feed schemas, trusted stamping, preservation
   of earlier source times, and rejection of future source times.
 - The first scheduled runs after this decision remain an operational monitoring item.
+
+## Amendment (2026-07-20): shell-less agent resilience
+Removing shell also removed the agent's `npm run validate` self-check loop; malformed agent JSON
+then surfaced only in the trusted publish job (memes 2026-07-15, news 2026-07-20 ×2). The
+confinement contract is unchanged, with three additions that stay outside the model boundary:
+- A deterministic, dependency-free `node -e JSON.parse` step in the agent job (after the model
+  step, before artifact upload) fails fast on non-well-formed output. It executes no repo or npm
+  code and sees no write token, so the rejected-alternative rationale above does not apply.
+- The prompts now mandate a Read-back self-check after every Write/Edit (the only verification
+  channel a shell-less agent has); schema-level gates still run only in the trusted publish job.
+- The dedup guard now reads today's envelope from the live `origin/main` tip (anonymous fetch,
+  worktree fallback), so a dispatch queued behind an in-progress publish no-ops instead of
+  re-running the agent against a stale pinned checkout; catch-up dispatches retry transient API
+  failures instead of dying on the first 503.

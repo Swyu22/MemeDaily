@@ -98,7 +98,8 @@ Reader-facing (ALL rendered):
   例如 📚高考 / 🚄出行 / 🚀航天 / 🌏地震 / 🎋节日 / 🤖AI）。不玩梗、不标题党。**标题里绝不写具体
   伤亡 / 转移 / 受灾人数**（如「13人轻伤」「225人转移」「3人遇难」）——只写事件 + 响应，人数放进
   summary。代码会拦截标题里的「数字+人+伤亡/转移类词」，触发即自纠。
-- `summary` — **新闻简述，约 100–150 字**（6–150 区间），平实完整地把事说清楚，克制有温度；
+- `summary` — **新闻简述，目标约 100–140 字**（硬上限 150，超一个字整天发布都会失败——写到 140
+  左右就收，**不要贴着 150 写**），平实完整地把事说清楚，克制有温度；
   伤亡 / 人数等细节放这里，不放标题。
 - `category` — one of 民生社会 / 节日节气 / 国家高光 / **国际** / 科技AI / 科技向善 / 文化数字经济。
   **内部分类，读者看不到**（用于把控选题结构：别让"国家高光"占太多，且**尽量每天有 ≥1 条 `国际`**）。
@@ -141,3 +142,9 @@ INTERNAL (not rendered):
    `npm run validate:news`; fix and re-run (≤3 attempts), else write a valid `status:"skipped"` envelope.
    In the confined GitHub agent job, do not request shell access: the separate trusted publish job stamps,
    validates, and publishes — never git/commit/push from the research agent.
+6. **无 shell 时的自检（confined agent 必做）**：你没有 validator 可跑，你留下的文件就是最终产物，
+   任何一处 JSON 语法错误或超限字段都会让**整天发布失败**（真实事故：连续两天因末尾多/少一个逗号、
+   summary 超 150 字而全天未发）。所以**每次 Write/Edit 之后，必须用 Read 重读完整文件**，逐项核对：
+   ① JSON 语法完整（括号/引号/逗号配平，无截断）；② 每条 `summary` ≤150 字（目标 ≤140）、`headline`
+   ≤48 字、`outlet` 1–20 字；③ `heat_rank` 连续 1..N。发现问题立即 Edit 修复并**再次重读**。
+   **结束前的最后一个动作必须是一次核对通过的完整 Read。**

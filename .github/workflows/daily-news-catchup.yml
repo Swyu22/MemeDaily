@@ -43,12 +43,34 @@ jobs:
             exit 0
           fi
 
-          ACTIVE="$(gh run list --workflow=daily-news-publish.yml --json status \
-            --jq '[.[] | select(.status == "in_progress" or .status == "queued")] | length')"
+          # Transient GitHub API failures (e.g. a 503) must not burn this hour's catch-up slot —
+          # 2026-07-20 the ONLY catchup that fired died on a single 503 and the 日报 stayed
+          # unpublished all morning. Retry the API calls with backoff. If the run-list check still
+          # fails after retries, PROCEED to dispatch: daily-news-publish has its own concurrency
+          # group and already-published dedup guard, so a duplicate dispatch queues or no-ops.
+          ACTIVE=""
+          for attempt in 1 2 3; do
+            if ACTIVE="$(gh run list --workflow=daily-news-publish.yml --json status \
+              --jq '[.[] | select(.status == "in_progress" or .status == "queued")] | length')"; then
+              break
+            fi
+            ACTIVE=""
+            echo "run-list attempt ${attempt}/3 failed (transient API error?)."
+            if [ "$attempt" -lt 3 ]; then sleep $((attempt * 15)); fi
+          done
           if [ "${ACTIVE:-0}" -gt 0 ]; then
             echo "daily-news-publish already in progress/queued; letting it finish."
             exit 0
           fi
 
           echo "Today (${DATE}) 日报 not published; dispatching catch-up daily-news-publish."
-          gh workflow run daily-news-publish.yml --ref main
+          for attempt in 1 2 3; do
+            if gh workflow run daily-news-publish.yml --ref main; then
+              echo "Dispatched (attempt ${attempt})."
+              exit 0
+            fi
+            echo "dispatch attempt ${attempt}/3 failed (transient API error?)."
+            if [ "$attempt" -lt 3 ]; then sleep $((attempt * 20)); fi
+          done
+          echo "::error::Failed to dispatch daily-news-publish after 3 attempts."
+          exit 1
