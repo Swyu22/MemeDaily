@@ -116,7 +116,7 @@ jobs:
 
       - name: Generate today's MemeDaily data (path-confined agent, no shell or git)
         if: env.HAS_OAUTH == 'true' && steps.guard.outputs.skip != 'true'
-        uses: anthropics/claude-code-action@2fee15510437d71399d9139ed60433470484a8fb # v1
+        uses: anthropics/claude-code-action@af0559ee4f514d1ef21826982bed13f7edc3c35e # v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           # Force the action to use this job's short-lived contents:read token. Without this
