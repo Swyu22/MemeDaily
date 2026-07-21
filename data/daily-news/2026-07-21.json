@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v2-民生",
+  "rubric_version": "v2-2026",
+  "date": "2026-07-21",
+  "generated_at": "2026-07-21T12:06:01+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 16,
+    "published": 4,
+    "dropped_safety": {
+      "政府政策色彩": 4,
+      "政治地缘": 1,
+      "反重复红线(话题疲劳)": 3
+    },
+    "dropped_low_confidence": 4,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 12,
+      "official_sources": 1,
+      "state_media_sources": 2,
+      "major_media_sources": 8,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-21-waic-2026-closing-results",
+      "headline": "🤖WAIC 2026落幕：351款产品首发，意向采购超200亿",
+      "summary": "2026世界人工智能大会于7月20日在上海闭幕，超40万人次线下参观。大会共展出4486项展品，351款产品全球首发，接待177个全球采购团组，预计达成意向采购额约203.6亿元，同比增长25%；32个上海市AI重点项目现场签约，投资额超409亿元，AI产业从展示走向规模化落地。",
+      "category": "科技AI",
+      "heat_rank": 1,
+      "occurred_at": "2026-07-20T17:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "行业展会闭幕成果报道，聚焦商业数据与产业进展；来源为IT之家与新浪财经；「意向采购」非实际成交，措辞已标注「预计」；无政府政策敏感措辞；risk设low"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "IT之家",
+          "url": "https://www.ithome.com/0/979/174.htm",
+          "title": "2026世界人工智能大会闭幕：351款产品全球首发，预计达成超200亿元意向采购金额",
+          "captured_at": "2026-07-21T08:00:00+08:00",
+          "note": "IT之家：WAIC 2026于7月20日闭幕，展览10万平方米，展品4486项，351款全球首发，177采购团，意向采购额203.6亿（同比+25%），32个AI项目签约409亿"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-07-21/doc-iniinwmu8199602.shtml",
+          "title": "世界人工智能大会预计达成意向采购金额超200亿元",
+          "captured_at": "2026-07-21T09:00:00+08:00",
+          "note": "新浪财经：WAIC 2026闭幕数据独立核实，意向采购203.6亿元同比增25%，超40万人次线下参观，AI大会落幕标志产业进入采购落地周期"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-21-lhs1140b-habitable-zone-atmosphere",
+      "headline": "🌌49光年外岩石行星首现大气层，宜居带重大发现",
+      "summary": "国际天文团队7月17日在《科学》杂志发表研究，利用智利麦哲伦望远镜观测距地约49光年的超级地球LHS 1140b，首次在宜居带岩石行星上探测到大气层存在的直接证据：上层大气有氦逸出，大气已稳定存续逾30亿年。这是宜居带岩石行星首次确认有大气，为寻找地外生命开辟新方向。",
+      "category": "国际",
+      "heat_rank": 2,
+      "occurred_at": "2026-07-17T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际天文学重大发现，来源为哈佛-史密森天体物理中心（官方学术机构）与Space.com、Nature两家主流科学媒体；聚焦科学事实，无政治敏感内容；调性平实"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "哈佛-史密森天体物理中心",
+          "url": "https://www.cfa.harvard.edu/news/first-atmosphere-detected-habitable-zone-rocky-world",
+          "title": "First atmosphere detected on a habitable-zone rocky world",
+          "captured_at": "2026-07-18T10:00:00+08:00",
+          "note": "CfA官方新闻：论文发表于7月17日《科学》，用麦哲伦望远镜WINERED光谱仪探测LHS 1140b凌星时氦逸出信号，多次重现，确认大气稳定存在逾30亿年"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "Space.com",
+          "url": "https://www.space.com/astronomy/exoplanets/astronomers-discover-1st-atmosphere-around-a-rocky-earth-like-planet-in-the-habitable-zone",
+          "title": "Astronomers discover 1st atmosphere around a rocky Earth-like planet in the habitable zone",
+          "captured_at": "2026-07-18T10:00:00+08:00",
+          "note": "Space.com：LHS 1140b距地49光年，质量约5.6倍地球，24.7天轨道周期，宿主红矮星异常平静，助行星在宜居带内保有持续大气层"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "Nature",
+          "url": "https://www.nature.com/articles/d41586-026-02200-5",
+          "title": "Found: a rocky exoplanet with an atmosphere — could it host life?",
+          "captured_at": "2026-07-18T10:00:00+08:00",
+          "note": "Nature：评价此发现为宜居带岩石行星大气研究的里程碑，与此前数百颗宜居带行星均未确认大气的现状形成历史性突破"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-21-jizheng-service-credit-reform",
+      "headline": "🏠万亿家政市场新变化：信用档案、指导价将有据可查",
+      "summary": "我国家政服务业年营业收入超1.3万亿元、从业者逾3000万，但信用不透明、定价不规范、纠纷处理难等痛点长期困扰消费者。多部门7月20日联合推出19条举措，推动建立家政从业人员诚信档案，消费者雇佣月嫂、保洁时将可在线查阅信用信息和指导价格区间，有望从源头减少纠纷。",
+      "category": "民生社会",
+      "heat_rank": 3,
+      "occurred_at": "2026-07-20T00:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "民生服务资讯，聚焦消费者痛点改善；新华网+中新网双源印证；summary未使用政策/印发/出台等禁用措辞；risk设low"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260721/6f2334f2c0b24f48a7c114eac6318918/c.html",
+          "title": "从用工到价格全链条覆盖 万亿级家政服务赛道迎新政",
+          "captured_at": "2026-07-21T08:00:00+08:00",
+          "note": "新华网：9部门发文促家政业规范，19条举措涵盖技能认定、信用平台、用工协议、价格透明；行业规模逾1.3万亿、从业超3000万人、岗位缺口2000余万"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/07-21/10663275.shtml",
+          "title": "家政服务新规出台 解决素质不高信用不明等痛点",
+          "captured_at": "2026-07-21T09:00:00+08:00",
+          "note": "中新网：7月21日详解新举措对信用不明、纠纷频发等核心痛点的解决方案，含诚信档案、价格指引及用工标准协议"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-21-zju-qiushi-engine-ai-research",
+      "headline": "🔬浙大AI科研系统问世：自主拆解问题，6小时完成数周工作",
+      "summary": "浙江大学团队7月15日发布AI自主科研系统「求是引擎」，具备千步级长程推理能力，输入研究方向即可自主拆解问题、持续试错推进，约6小时完成研究者数周工作量，已覆盖物理、光学、医学等十余个方向。在国际自主科研评测榜单ResearchClawBench中位列全球第一。",
+      "category": "科技AI",
+      "heat_rank": 4,
+      "occurred_at": "2026-07-15T00:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "国内科研进展报道，中新网与人民网双源印证；全球第一以国际评测榜单数据为据；不夸大替代科学家，summary用可量化数据呈现；risk设low"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/edu/2026/07-15/10660136.shtml",
+          "title": "浙江大学发布AI自主科研系统求是引擎",
+          "captured_at": "2026-07-15T18:00:00+08:00",
+          "note": "中新网：浙大7月15日发布「求是引擎」，首款可自主组织全流程科研的AI系统，千步级长程推理，6小时完成数周工作，覆盖物理/光学/医学等方向"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "人民网",
+          "url": "https://finance.people.com.cn/n1/2026/0716/c1004-40761528.html",
+          "title": "浙江大学发布AI自主科研系统求是引擎",
+          "captured_at": "2026-07-16T10:00:00+08:00",
+          "note": "人民网：求是引擎在ResearchClawBench榜单位列第一，多智能体协同框架，含研究规划/方法构建/任务执行/结果分析/风险质疑等模块"
+        }
+      ],
+      "published": true
+    }
+  ],
+  "published_at": "2026-07-21T12:06:01+08:00"
+}
