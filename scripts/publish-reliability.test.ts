@@ -138,6 +138,22 @@ it("fails closed when the correlated Pages run fails", () => {
   expect(result.stderr).toContain("ended failure");
 });
 
+it("gives correlated and recovery Pages runs a budget wider than the Pages job maximum", () => {
+  const dispatch = fs.readFileSync(DISPATCH, "utf8");
+  const pages = fs.readFileSync(path.join(WORKFLOWS, "pages.yml"), "utf8");
+  const publisher = fs.readFileSync(path.join(WORKFLOWS, "codex-daily-pr-publish.yml"), "utf8");
+
+  expect(dispatch).toContain('status_attempts="${PAGES_STATUS_ATTEMPTS:-300}"');
+  expect(pages).toContain("timeout-minutes: 25");
+  expect(pages).toContain("timeout-minutes: 10");
+  expect(publisher.split("\n  publish:")[1]).toContain("timeout-minutes: 180");
+  for (const name of ["daily-fallback.yml", "daily-news-fallback.yml"]) {
+    expect(fs.readFileSync(path.join(WORKFLOWS, name), "utf8")).toContain(
+      "timeout-minutes: 180",
+    );
+  }
+});
+
 it.each([
   ["daily-fallback.yml", "npm run fallback:skipped"],
   ["daily-news-fallback.yml", "npm run fallback:skipped:news"],

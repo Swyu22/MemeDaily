@@ -6,7 +6,7 @@ name: codex-daily-pr-publish
 #   1. `validate` has read-only permissions, fetches only the JSON blob (never the PR tree),
 #      stamps it with a trusted clock, and runs the repository's full checks.
 #   2. `publish` downloads only the accepted JSON, revalidates against the latest trusted
-#      main tree, then receives a short-lived write token only for the final push/deploy.
+#      main tree, then receives the dedicated deploy-key credential only in its final step.
 #
 # The cloud task must use one of these exact branch names for today's Asia/Shanghai date:
 #   codex/daily-meme-YYYY-MM-DD
@@ -135,7 +135,8 @@ jobs:
   publish:
     needs: validate
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    # Two bounded 75-minute waits cover a failed/missing push run plus one recovery run.
+    timeout-minutes: 180
     permissions:
       actions: write
       contents: read

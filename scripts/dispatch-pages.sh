@@ -10,7 +10,10 @@ api_attempts="${PAGES_API_ATTEMPTS:-4}"
 push_poll_attempts="${PAGES_PUSH_POLL_ATTEMPTS:-6}"
 poll_attempts="${PAGES_POLL_ATTEMPTS:-24}"
 poll_delay="${PAGES_POLL_DELAY_SECONDS:-5}"
-status_attempts="${PAGES_STATUS_ATTEMPTS:-48}"
+# One Pages run may legitimately spend up to 35 minutes in its build/deploy jobs,
+# plus time behind an earlier run because the Pages concurrency group does not cancel.
+# Seventy-five minutes covers one full predecessor plus the correlated run.
+status_attempts="${PAGES_STATUS_ATTEMPTS:-300}"
 status_delay="${PAGES_STATUS_DELAY_SECONDS:-15}"
 retry_delay="${PAGES_RETRY_BASE_SECONDS:-3}"
 

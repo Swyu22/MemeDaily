@@ -61,14 +61,23 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   paths adapt to root or GitHub project-subpath hosting.
 
 ## Automation Requirements
-- Primary cloud jobs run at about 06:00 (news) and 07:00 (memes), Asia/Shanghai. External
-  workflow dispatch is the reliable trigger; GitHub schedules, catch-up, fallback, and
-  monitor workflows provide resilience.
-- The model-facing job receives public prefetch/search context, cannot run shell commands,
-  and can write only the exact dated artifact. It receives only the job-scoped, short-lived
-  `contents:read` token and no write credential.
-- A separate trusted job checks out clean code, stamps chronology, validates all contracts,
-  commits, pushes, and lets GitHub Pages deploy.
+- Eight ChatGPT Work / Codex Cloud trigger groups run in Asia/Shanghai: news primary
+  06:00, hourly catch-up 07:15–12:15, monitor 14:45, fallback 21:30; meme primary
+  07:00, hourly catch-up 08:00–13:00, monitor 14:30, fallback 21:20. GitHub cron and
+  external cron are not active schedulers.
+- The Cloud operator rereads the repository runbook and living rules on every run. A
+  content/fallback run may write only the exact dated JSON on the exact same-repository
+  `codex/daily-{meme|news}-YYYY-MM-DD` branch and open one non-draft PR. It never updates
+  or merges `main`; monitor mode is read-mostly and may only maintain its alert issue.
+- A read-only trusted workflow fetches only the candidate JSON blob, never checks out or
+  executes the PR tree, stamps chronology, and validates all contracts. A separate job
+  resets to live `main`, revalidates after rebase, and exposes the dedicated write deploy
+  key only to its final `HEAD:main` push.
+- The active `codex-trusted-main` ruleset blocks ordinary users and connected apps from
+  updating or merging `main`; its sole bypass type is the trusted publisher DeployKey.
+- Publication completes only after a Pages run covering the accepted SHA (or descendant)
+  succeeds. The publisher adopts the push-triggered run and explicitly dispatches one
+  bounded recovery run only if that run is missing or fails.
 - Local Codex is a supervised recovery option. Its prompt is guidance, not an OS sandbox.
 - Missing content may publish `skipped`; the system prefers fewer correct items to unsafe,
   weakly evidenced, or fabricated ones.

@@ -13,7 +13,7 @@ primary, catch-up, monitor, and fallback schedules for both feeds.
   reliability, public data minimization, metadata, cloud prompts, all eight cloud
   schedules, documentation/state/session synchronization, and production acceptance.
 - **Out:** unrelated visual redesign, historical audit rewrites, private-platform
-  extraction, paid model APIs in the product, and destructive credential/account changes.
+  extraction, paid model APIs in the product, and unrelated credential/account changes.
 
 ## Checklist
 
@@ -28,11 +28,13 @@ primary, catch-up, monitor, and fallback schedules for both feeds.
 - [x] Add the same-repository, exact-branch, one-JSON Codex candidate workflow with
   trusted stamping/check/rebase/push/Pages boundaries.
 - [x] Add ADR-007 and durable Codex Cloud primary/catch-up/monitor/fallback runbooks.
-- [ ] Activate and verify deploy-key-only `codex-trusted-main` plus its sole writable key.
+- [x] Activate and API-verify deploy-key-only `codex-trusted-main` plus its sole
+  writable key (end-to-end push proof remains in the candidate acceptance item).
 - [x] Create and inspect eight dedicated Cloud task contexts plus eight active
   Asia/Shanghai trigger groups (one heartbeat per Cloud context).
-- [ ] Run the complete local/governance/security suite and independent diff review.
-- [ ] Commit, push, pass PR CI, merge, and verify remote main + Pages + production.
+- [x] Run the complete local/governance/security suite and independent diff review;
+  correct its final Pages-budget and documentation findings.
+- [ ] Merge the final correction, pass main CI/Pages, and verify production.
 - [ ] Exercise a real Codex candidate/fallback run and verify idempotent publication.
 - [ ] Sync `.cloud.md`, session log/index, and final operational evidence.
 
@@ -63,4 +65,4 @@ primary, catch-up, monitor, and fallback schedules for both feeds.
 
 ## Last Updated
 
-- 2026-07-25 22:25 +0800
+- 2026-07-25 22:59 +0800
