@@ -3,6 +3,7 @@
  * output: permanent detail route, evidence, history, related items, and copy actions
  * pos: App Router static-detail composition boundary
  */
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LinkIcon } from "lucide-react";
@@ -10,6 +11,8 @@ import { allVisibleItems, findItemById } from "@/domain/memedaily/data";
 import { lifecycleLabels, platformLabels } from "@/domain/memedaily/labels";
 import { CopyButtons } from "@/features/memes/CopyButtons";
 import { MemeDetailFields } from "@/features/memes/MemeCard";
+
+type MemeDetailPageProps = { params: Promise<{ id: string }> };
 
 export async function generateStaticParams() {
   const items = allVisibleItems();
@@ -20,7 +23,31 @@ export async function generateStaticParams() {
   return items.map((item) => ({ id: item.id }));
 }
 
-export default async function MemeDetailPage({ params }: { params: Promise<{ id: string }> }) {
+export async function generateMetadata({ params }: MemeDetailPageProps): Promise<Metadata> {
+  const { id } = await params;
+  const item = findItemById(id);
+  if (!item) return { title: "梗未找到 | 热梗日报" };
+  const canonical = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/meme/${item.id}/index.html`;
+  const title = `${item.title} | 热梗日报`;
+  return {
+    title,
+    description: item.summary,
+    alternates: { canonical },
+    openGraph: {
+      type: "article",
+      url: canonical,
+      title,
+      description: item.summary,
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description: item.summary,
+    },
+  };
+}
+
+export default async function MemeDetailPage({ params }: MemeDetailPageProps) {
   const { id } = await params;
   const item = findItemById(id);
 

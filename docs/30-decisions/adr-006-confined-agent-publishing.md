@@ -1,7 +1,8 @@
 # ADR-006: Separate Untrusted Agent Research From Trusted Publication
 
 ## Status
-Accepted
+Accepted trust-separation principle; the Anthropic/GitHub-Actions model job is
+superseded by ADR-007's Codex Cloud candidate-PR transport.
 
 ## Context
 The daily publishers ask a model to read untrusted public-web material and produce a JSON

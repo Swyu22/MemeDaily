@@ -3,9 +3,8 @@
  * output: exits non-zero when schema or publication gates fail
  * pos: CI/local gate for the 日报 feed, before static build and daily automation commit
  *
- * Unlike validate-data.ts (which requires >=1 meme file), this TOLERATES an empty/absent
- * data/daily-news/ directory and exits 0 — so CI is not blocked before the news agent's
- * first run ever produces a file.
+ * DailyNews is initialized in this live project, so an empty/absent directory is data loss
+ * and must fail just like the MemeDaily validator.
  */
 import type { NewsEnvelope } from "../src/domain/dailynews/schema";
 import { newsJsonFiles, loadNewsEnvelope } from "../src/domain/dailynews/data";
@@ -14,8 +13,8 @@ import { envelopeIssueSummary, internationalCoverageWarnings } from "../src/doma
 const files = newsJsonFiles();
 
 if (files.length === 0) {
-  console.log("[validate-news] no data/daily-news files yet — skipping (ok)");
-  process.exit(0);
+  console.error("[validate-news] no data/daily-news/YYYY-MM-DD.json files found");
+  process.exit(1);
 }
 
 let failureCount = 0;

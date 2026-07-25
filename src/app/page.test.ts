@@ -4,6 +4,10 @@
  * pos: app-composition contract test for dual-feed status and stale-content notices
  */
 import { describe, expect, it } from "vitest";
+import fs from "node:fs";
+import path from "node:path";
+import { allVisibleItems } from "../domain/memedaily/data";
+import { toPublicMemeItem } from "../domain/memedaily/schema";
 import { homeRunState } from "./homeRunState";
 
 const labels = {
@@ -38,4 +42,39 @@ describe("homeRunState", () => {
     expect(state.status).toMatchObject({ statusLabel: "部分发布", count: 3 });
     expect(state.notice).toContain("部分发布");
   });
+});
+
+describe("public meme boundary", () => {
+  it("removes editorial-only fields from client-safe meme items", () => {
+    const item = allVisibleItems()[0];
+    expect(item).toBeDefined();
+
+    const projected = toPublicMemeItem(item!);
+
+    expect(projected).not.toHaveProperty("brand_usage");
+    expect(projected).not.toHaveProperty("risk");
+    expect(projected).not.toHaveProperty("published");
+  });
+
+  it("projects both homepage and archive client props", () => {
+    const appDir = path.join(process.cwd(), "src", "app");
+    const homeSource = fs.readFileSync(path.join(appDir, "page.tsx"), "utf8");
+    const archiveSource = fs.readFileSync(path.join(appDir, "archive", "page.tsx"), "utf8");
+
+    expect(homeSource).toContain("toPublicMemeItem");
+    expect(archiveSource).toContain("toPublicMemeItem");
+  });
+});
+
+it("defines reader-facing metadata for meme detail routes", () => {
+  const detailSource = fs.readFileSync(
+    path.join(process.cwd(), "src", "app", "meme", "[id]", "page.tsx"),
+    "utf8",
+  );
+
+  expect(detailSource).toContain("export async function generateMetadata");
+  expect(detailSource).toContain("const title = `${item.title} | 热梗日报`");
+  expect(detailSource).toContain("description: item.summary");
+  expect(detailSource).toContain("alternates: { canonical }");
+  expect(detailSource).toContain('type: "article"');
 });

@@ -119,3 +119,43 @@ export type Lifecycle = z.infer<typeof LifecycleSchema>;
 export type MemeItem = z.infer<typeof MemeItemSchema>;
 export type DailyEnvelope = z.infer<typeof DailyEnvelopeSchema>;
 export type EvidenceTier = z.infer<typeof EvidenceTierSchema>;
+
+// Reader-facing projection sent to client components. Excluding brand_usage/risk here prevents
+// those editorial fields from being serialized into homepage/archive payloads. This is a browser
+// data-minimization boundary, NOT a confidentiality boundary: the repository and source JSON are public.
+export type PublicMemeItem = Pick<
+  MemeItem,
+  | "id"
+  | "title"
+  | "aliases"
+  | "platform"
+  | "type"
+  | "summary"
+  | "origin"
+  | "usage"
+  | "fun_point"
+  | "why_spread"
+  | "lifecycle"
+  | "days_on_list"
+  | "score"
+  | "sources"
+>;
+
+export function toPublicMemeItem(item: MemeItem): PublicMemeItem {
+  return {
+    id: item.id,
+    title: item.title,
+    aliases: item.aliases,
+    platform: item.platform,
+    type: item.type,
+    summary: item.summary,
+    origin: item.origin,
+    usage: item.usage,
+    fun_point: item.fun_point,
+    why_spread: item.why_spread,
+    lifecycle: item.lifecycle,
+    days_on_list: item.days_on_list,
+    score: item.score,
+    sources: item.sources,
+  };
+}

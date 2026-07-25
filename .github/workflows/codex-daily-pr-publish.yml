@@ -1,0 +1,252 @@
+name: codex-daily-pr-publish
+
+# Codex Cloud researches public-web content and opens a same-repository PR containing
+# exactly one dated JSON envelope. This workflow is the only bridge from that untrusted
+# candidate to main:
+#   1. `validate` has read-only permissions, fetches only the JSON blob (never the PR tree),
+#      stamps it with a trusted clock, and runs the repository's full checks.
+#   2. `publish` downloads only the accepted JSON, revalidates against the latest trusted
+#      main tree, then receives a short-lived write token only for the final push/deploy.
+#
+# The cloud task must use one of these exact branch names for today's Asia/Shanghai date:
+#   codex/daily-meme-YYYY-MM-DD
+#   codex/daily-news-YYYY-MM-DD
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+    paths:
+      - "data/daily/*.json"
+      - "data/daily-news/*.json"
+
+permissions: {}
+
+concurrency:
+  group: daily-data-publish
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: >-
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.event.pull_request.base.ref == 'main' &&
+      github.event.pull_request.draft == false &&
+      (startsWith(github.event.pull_request.head.ref, 'codex/daily-meme-') ||
+       startsWith(github.event.pull_request.head.ref, 'codex/daily-news-'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      artifact: ${{ steps.scope.outputs.artifact }}
+      date: ${{ steps.scope.outputs.date }}
+      feed: ${{ steps.scope.outputs.feed }}
+      target: ${{ steps.scope.outputs.target }}
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install trusted dependencies
+        run: npm ci
+
+      - name: Resolve and enforce the one-file candidate scope
+        id: scope
+        env:
+          BRANCH: ${{ github.event.pull_request.head.ref }}
+          GH_TOKEN: ${{ github.token }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          DATE="$(TZ=Asia/Shanghai date +%F)"
+
+          case "$BRANCH" in
+            "codex/daily-meme-${DATE}")
+              FEED="meme"
+              TARGET="data/daily/${DATE}.json"
+              ;;
+            "codex/daily-news-${DATE}")
+              FEED="news"
+              TARGET="data/daily-news/${DATE}.json"
+              ;;
+            *)
+              echo "::error::Branch must match today's exact Codex Cloud branch name; got ${BRANCH}."
+              exit 1
+              ;;
+          esac
+
+          mapfile -t CHANGED_FILES < <(
+            gh api "repos/${REPOSITORY}/pulls/${PR_NUMBER}/files" --paginate --jq '.[].filename'
+          )
+          if [ "${#CHANGED_FILES[@]}" -ne 1 ] || [ "${CHANGED_FILES[0]}" != "$TARGET" ]; then
+            echo "::error::Candidate PR must change exactly ${TARGET}; got: ${CHANGED_FILES[*]:-none}."
+            exit 1
+          fi
+
+          mkdir -p codex-artifact "$(dirname "$TARGET")"
+          gh api \
+            -H "Accept: application/vnd.github.raw+json" \
+            "repos/${REPOSITORY}/contents/${TARGET}?ref=${HEAD_SHA}" \
+            > codex-artifact/candidate.json
+          cp codex-artifact/candidate.json "$TARGET"
+
+          node - "$TARGET" "$DATE" <<'NODE'
+          const fs = require("node:fs");
+          const [file, expectedDate] = process.argv.slice(2);
+          const envelope = JSON.parse(fs.readFileSync(file, "utf8"));
+          if (envelope.date !== expectedDate) {
+            throw new Error(`Envelope date ${String(envelope.date)} does not match ${expectedDate}`);
+          }
+          NODE
+
+          ARTIFACT="codex-${FEED}-${DATE}-${HEAD_SHA}"
+          echo "artifact=${ARTIFACT}" >> "$GITHUB_OUTPUT"
+          echo "date=${DATE}" >> "$GITHUB_OUTPUT"
+          echo "feed=${FEED}" >> "$GITHUB_OUTPUT"
+          echo "target=${TARGET}" >> "$GITHUB_OUTPUT"
+
+      - name: Stamp and validate the candidate with trusted code
+        env:
+          TARGET: ${{ steps.scope.outputs.target }}
+        run: |
+          set -euo pipefail
+          npm run stamp:publish -- "$TARGET"
+          npm run check
+          cp "$TARGET" codex-artifact/candidate.json
+
+      - name: Upload only the accepted JSON
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: ${{ steps.scope.outputs.artifact }}
+          path: codex-artifact/candidate.json
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      actions: write
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install trusted dependencies
+        run: npm ci
+
+      - name: Download only the accepted JSON
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+        with:
+          name: ${{ needs.validate.outputs.artifact }}
+          path: codex-artifact
+
+      - name: Recheck the live tip and prepare the exact publish commit
+        id: prepare
+        env:
+          DATE: ${{ needs.validate.outputs.date }}
+          FEED: ${{ needs.validate.outputs.feed }}
+          TARGET: ${{ needs.validate.outputs.target }}
+        run: |
+          set -euo pipefail
+          echo "publish=false" >> "$GITHUB_OUTPUT"
+
+          git fetch --quiet origin main
+          git reset --hard FETCH_HEAD
+          if [ -f "$TARGET" ]; then
+            STATUS="$(
+              node -e "try{process.stdout.write(String(JSON.parse(require('fs').readFileSync(process.argv[1], 'utf8')).status || 'invalid'))}catch{process.stdout.write('invalid')}" "$TARGET"
+            )"
+            echo "reason=live main already contains ${TARGET} (${STATUS})" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          mkdir -p "$(dirname "$TARGET")"
+          cp codex-artifact/candidate.json "$TARGET"
+          npm run stamp:publish -- "$TARGET"
+          npm run check
+
+          git add "$TARGET"
+          if git diff --cached --quiet; then
+            echo "reason=candidate produced no change" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$(git diff --cached --name-only | wc -l | tr -d ' ')" != "1" ]; then
+            echo "::error::Trusted publish may stage only ${TARGET}."
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(data): publish Codex ${FEED} ${DATE}"
+
+          # The shared concurrency group prevents normal publisher/fallback races. Rebase and
+          # validate once more anyway; a non-cooperating writer then fails closed at push.
+          git pull --rebase origin main
+          npm ci
+          npm run check
+          echo "publish=true" >> "$GITHUB_OUTPUT"
+          echo "reason=validated and published" >> "$GITHUB_OUTPUT"
+
+      - name: Push, wait for the correlated Pages deployment, and close the PR
+        if: steps.prepare.outputs.publish == 'true'
+        env:
+          DATE: ${{ needs.validate.outputs.date }}
+          FEED: ${{ needs.validate.outputs.feed }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_DEPLOY_KEY: ${{ secrets.CODEX_PUBLISH_DEPLOY_KEY }}
+          PUBLISH_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          bash scripts/push-main-with-deploy-key.sh
+          SHA="$(git rev-parse HEAD)"
+          bash scripts/dispatch-pages.sh "$SHA"
+          gh pr comment "$PR_NUMBER" --repo "$REPOSITORY" \
+            --body "Codex Cloud candidate accepted: ${FEED} ${DATE} was validated, committed as \`${SHA}\`, and its correlated Pages deployment succeeded."
+          gh pr close "$PR_NUMBER" --repo "$REPOSITORY"
+
+      - name: Close a duplicate candidate without changing main
+        if: steps.prepare.outputs.publish != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REASON: ${{ steps.prepare.outputs.reason }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          git fetch --quiet origin main
+          LIVE_SHA="$(git rev-parse FETCH_HEAD)"
+          DEPLOYED="$(
+            gh run list --workflow=pages.yml --status=success --limit=40 \
+              --json headSha \
+              --jq "[.[] | select(.headSha == \"${LIVE_SHA}\")] | length"
+          )"
+          if [ "${DEPLOYED:-0}" -eq 0 ]; then
+            echo "No successful Pages run covers live main ${LIVE_SHA}; dispatching recovery."
+            bash scripts/dispatch-pages.sh "$LIVE_SHA"
+          fi
+          gh pr comment "$PR_NUMBER" --repo "$REPOSITORY" \
+            --body "Codex Cloud candidate was a safe no-op: ${REASON}. Pages success was verified for live main \`${LIVE_SHA}\`."
+          gh pr close "$PR_NUMBER" --repo "$REPOSITORY"

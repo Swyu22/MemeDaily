@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # input: (none) — a fixed list of public hot-list aggregators
 # output: prefetch/*.txt — each aggregator's page fetched IN PARALLEL and stripped to plain text
-# pos: speed step before the confined daily-publish agent, so it Reads a ready candidate pool
+# pos: optional supervised/cloud research helper that prepares a public candidate pool
 #      instead of fetching each aggregator sequentially over the network (slow). Same sources,
 #      same breadth — only the network wait is parallelized. Never fails the job (best-effort).
 set -uo pipefail # NOT -e: one dead source must not abort the whole prefetch

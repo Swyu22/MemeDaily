@@ -6,10 +6,10 @@
  */
 import Link from "next/link";
 import { feedSortLabels, sortByFreshness, sortByHeat, type FeedSort } from "@/domain/memedaily/labels";
-import type { MemeItem } from "@/domain/memedaily/schema";
+import type { PublicMemeItem } from "@/domain/memedaily/schema";
 import { MemeCard } from "./MemeCard";
 
-type FeedDay = { date: string; items: MemeItem[] };
+type FeedDay = { date: string; items: PublicMemeItem[] };
 
 type TodayFeedProps = {
   days: FeedDay[];

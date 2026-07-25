@@ -5,12 +5,12 @@
  */
 import { ExternalLink } from "lucide-react";
 import { lifecycleLabels, platformLabels, tierLabels } from "@/domain/memedaily/labels";
-import type { MemeItem } from "@/domain/memedaily/schema";
+import type { PublicMemeItem } from "@/domain/memedaily/schema";
 
 // basePath prefix for raw <a> internal links (Next only rewrites next/link). See next.config.mjs.
 const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-export function MemeCard({ item }: { item: MemeItem }) {
+export function MemeCard({ item }: { item: PublicMemeItem }) {
   return (
     <article className="card" data-faded={item.lifecycle === "declining"}>
       <div className="card-head">
@@ -58,7 +58,7 @@ export function MemeCard({ item }: { item: MemeItem }) {
   );
 }
 
-export function MemeDetailFields({ item }: { item: MemeItem }) {
+export function MemeDetailFields({ item }: { item: PublicMemeItem }) {
   return (
     <div className="detail-panel">
       <Field label="来源" body={item.origin} />
@@ -74,7 +74,7 @@ export function MemeDetailFields({ item }: { item: MemeItem }) {
   );
 }
 
-function MemeSourceList({ item }: { item: MemeItem }) {
+function MemeSourceList({ item }: { item: PublicMemeItem }) {
   return (
     <div className="sources">
       {item.sources.map((source) => (

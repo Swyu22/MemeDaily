@@ -42,17 +42,18 @@ jobs:
         with:
           node-version: 22
           cache: npm
+
+      - name: 安装应用层依赖
+        run: npm ci
+
+      - name: 生产依赖高危漏洞门禁
+        run: npm audit --omit=dev --audit-level=high
+
       - name: 应用层 lint / typecheck / test
         run: |
-          if [ -f package.json ]; then
-            echo "检测到 package.json，运行应用层检查"
-            npm ci
-            npm run validate
-            npm run validate:news --if-present
-            npm run lint --if-present
-            npm run typecheck --if-present
-            npm test --if-present
-            npm run build --if-present
-          else
-            echo "无 package.json，跳过应用层检查（kit 为技术栈中立）"
-          fi
+          npm run validate
+          npm run validate:news --if-present
+          npm run lint --if-present
+          npm run typecheck --if-present
+          npm test --if-present
+          npm run build --if-present
