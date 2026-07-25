@@ -44,12 +44,18 @@
   `dailynews-06-00`, `dailynews-07-15-12-15`, `dailynews-14-45`,
   `dailynews-21-30`, `memedaily-07-00`, `memedaily-08-00-13-00`,
   `memedaily-14-30`, and `memedaily-21-20`.
-- Added deploy-key-only main transport and a disabled rollout ruleset
+- Added deploy-key-only main transport and a rollout ruleset
   `codex-trusted-main` (ID `19734348`). The repository has one writable key,
   `MemeDaily trusted publisher` (ID `158323935`), backed by the Actions secret
-  `CODEX_PUBLISH_DEPLOY_KEY`; activation waits until this workflow is merged.
+  `CODEX_PUBLISH_DEPLOY_KEY`.
 - Final security review added a non-draft PR gate, push-triggered Pages-run adoption
   with dispatch recovery, and bounded GitHub SSH host-key lookup retries.
+- PR #37 merged the takeover at `fbccae3`; main CI run `30162583775` and Pages run
+  `30162583849` succeeded. Ruleset `19734348` was then activated and returned only
+  the `DeployKey` update bypass.
+- A final independent review found a wait-budget mismatch and stale product-spec
+  wording. The correction expands each Pages-run wait to 75 minutes, writer jobs to
+  180 minutes, adds a regression assertion, and updates the security/operations canon.
 
 ## Key Decision
 
@@ -60,8 +66,8 @@ that may turn that JSON into a main commit and declare production success.
 ## Verification So Far
 
 - Node 22.23.1/npm 10.9.8 full gate passes: production audit zero, both validators,
-  strict lint, typecheck, 114 tests, and a 176-page static build.
-- Focused security/reliability/data suite: 27 passed.
+  strict lint, typecheck, 115 tests, and a 176-page static build.
+- Focused security/reliability/data suite: 28 passed after the final wait-budget fix.
 - All remaining workflow YAML parses; both trusted shell scripts pass `bash -n`;
   all-repository plus staged strict governance and secret gates pass; staged diff
   whitespace is clean.
@@ -72,10 +78,9 @@ that may turn that JSON into a main commit and declare production success.
 
 ## Remaining
 
-1. Run the integrated full suite and final diff review.
-2. Commit/push/PR/merge, wait for CI and Pages, then activate and API-verify the
-   deploy-key-only ruleset.
-3. Exercise a real Cloud candidate/fallback path and record PR/workflow/deployment
+1. Run the full suite for the final correction, merge it, wait for CI/Pages, and
+   restore/API-verify the deploy-key-only ruleset after the maintenance window.
+2. Exercise a real Cloud candidate/fallback path and record PR/workflow/deployment
    identifiers.
-4. Retire the unused Anthropic OAuth secret and prove local/main/Pages/production
+3. Retire the unused Anthropic OAuth secret and prove local/main/Pages/production
    alignment.

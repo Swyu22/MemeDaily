@@ -104,7 +104,7 @@ the first scheduled runs as defense in depth.
   diagnosis.
 - Negative: first-run observation remains necessary because scheduled tasks and
   connected tools are account-level services outside repository CI.
-- Negative: ordinary code-maintenance PRs cannot update `main` while the Actions-only
+- Negative: ordinary code-maintenance PRs cannot update `main` while the DeployKey-only
   ruleset is active; the owner must deliberately suspend/amend it for reviewed
   maintenance, then restore and reverify it.
 

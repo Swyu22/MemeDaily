@@ -21,8 +21,9 @@ gates and permanent archives. The site has **two feeds**, switchable via the hom
   same-repository `codex/daily-{meme|news}-YYYY-MM-DD` branch and opens a PR; it never
   writes or merges `main`. `codex-daily-pr-publish.yml` reads only that JSON blob in a
   read-only job, stamps and validates it with trusted `main` code, then a separate trusted
-  job revalidates the final tree, pushes with a short-lived token, and waits for the
-  correlated Pages deployment to succeed. The active `codex-trusted-main` ruleset
+  job revalidates the final tree, exposes the dedicated deploy key only to its final push
+  step, and waits for the correlated Pages deployment to succeed. The active
+  `codex-trusted-main` ruleset
   blocks ordinary users/connected apps from updating or merging `main`; only one
   dedicated write deploy key, injected into the trusted final workflow step, can
   bypass for publication. GitHub cron, external
