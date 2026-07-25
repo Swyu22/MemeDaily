@@ -34,9 +34,11 @@ primary, catch-up, monitor, and fallback schedules for both feeds.
   Asia/Shanghai trigger groups (one heartbeat per Cloud context).
 - [x] Run the complete local/governance/security suite and independent diff review;
   correct its final Pages-budget and documentation findings.
-- [ ] Merge the final correction, pass main CI/Pages, and verify production.
-- [ ] Exercise a real Codex candidate/fallback run and verify idempotent publication.
-- [ ] Sync `.cloud.md`, session log/index, and final operational evidence.
+- [x] Merge the final correction, pass main CI/Pages, restore protection, and verify
+  production.
+- [x] Exercise a formal Cloud fallback run and verify terminal-day idempotent no-op.
+- [x] Retire the unreferenced Anthropic OAuth secret.
+- [x] Sync `.cloud.md`, session log/index, and final operational evidence.
 
 ## High-Risk Areas
 
@@ -58,11 +60,12 @@ primary, catch-up, monitor, and fallback schedules for both feeds.
   cadence.
 - The active main ruleset exposes only `DeployKey` as an update bypass, the repository
   has one writable trusted publisher key, and a trusted fallback proves that path works.
-- One real candidate is accepted only after trusted checks; duplicate/catch-up behavior
-  is a no-op after a terminal live envelope.
+- Duplicate/catch-up/fallback behavior is a no-op after a terminal live envelope.
+  The first naturally content-producing candidate must be accepted only after trusted
+  checks and correlated Pages success.
 - Local checkout, GitHub `main`, latest successful Pages deployment, and
   `https://memedaily.fun` agree on the accepted commit/content.
 
 ## Last Updated
 
-- 2026-07-25 22:59 +0800
+- 2026-07-25 23:07 +0800

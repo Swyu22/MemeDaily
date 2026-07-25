@@ -56,6 +56,17 @@
 - A final independent review found a wait-budget mismatch and stale product-spec
   wording. The correction expands each Pages-run wait to 75 minutes, writer jobs to
   180 minutes, adds a regression assertion, and updates the security/operations canon.
+- PR #38 merged that correction at `3dc921b`. Main CI run `30162830895` and Pages
+  run `30162831002` succeeded; production returned HTTP 200 with current 2026-07-25
+  content. The ruleset was restored by an exit-protected maintenance window and API
+  verification again showed `active`, `refs/heads/main`, `update`, and only the
+  `DeployKey` bypass with one writable verified key.
+- Ran the `news`/`fallback` Cloud context formally against live main `3dc921b`.
+  It read the current runbook, validated today's terminal `skipped` envelope, and
+  returned an idempotent no-op without branch, PR, comment, or main mutation.
+- Confirmed no active workflow references Anthropic and deleted the obsolete
+  `CLAUDE_CODE_OAUTH_TOKEN`; `CODEX_PUBLISH_DEPLOY_KEY` is now the only repository
+  Actions secret.
 
 ## Key Decision
 
@@ -78,9 +89,9 @@ that may turn that JSON into a main commit and declare production success.
 
 ## Remaining
 
-1. Run the full suite for the final correction, merge it, wait for CI/Pages, and
-   restore/API-verify the deploy-key-only ruleset after the maintenance window.
-2. Exercise a real Cloud candidate/fallback path and record PR/workflow/deployment
-   identifiers.
-3. Retire the unused Anthropic OAuth secret and prove local/main/Pages/production
-   alignment.
+1. Observe the first naturally content-producing scheduled candidate and record its
+   PR, trusted DeployKey push, and correlated Pages evidence. A synthetic current-day
+   write was intentionally not fabricated because both feeds already had terminal
+   envelopes and the runbook requires no-op.
+2. User-owned follow-ups remain: rotate the previously exposed Aliyun AccessKey and
+   confirm the installed-PWA status area on a physical iOS device.
