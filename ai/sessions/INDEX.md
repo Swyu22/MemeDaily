@@ -7,3 +7,4 @@
 | 2026-07-14 | `2026-07-14--ios-pwa-top-surface.md` | iOS Chrome dark-mode installed-PWA top-surface diagnosis, repair, and deployment verification. |
 | 2026-07-14 | `2026-07-14--full-skills-audit.md` | Full installed-Skills audit, focused repairs, and end-to-end acceptance. |
 | 2026-07-20 | `2026-07-20--publish-resilience-hardening.md` | DailyNews outage diagnosis, supervised recovery, catchup-retry + agent fail-fast/self-check hardening. |
+| 2026-07-25 | `2026-07-25--codex-cloud-publisher-takeover.md` | Three-end reconciliation, reliability/security repair, and full Codex Cloud dual-feed publisher takeover. |

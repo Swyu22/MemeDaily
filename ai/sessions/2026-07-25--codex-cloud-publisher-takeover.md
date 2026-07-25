@@ -1,0 +1,81 @@
+# AI Session Log - 2026-07-25 -- codex-cloud-publisher-takeover
+
+## Session Meta
+
+- Project: MemeDaily
+- Device: local Mac workspace + ChatGPT Work Cloud
+- Model: Codex
+- Task Type: architecture / reliability / operations takeover
+- Tier: milestone
+- Start Time: 2026-07-25
+
+## Start Snapshot
+
+- Current goal: reconcile local/GitHub/production, repair the audited project, and
+  replace the stopped Anthropic daily publishers with Codex Cloud.
+- Scope: both feeds, all primary/catch-up/monitor/fallback triggers, trusted
+  publication, CI/Pages, data boundaries, prompts, state, and production acceptance.
+- Constraints: public web only; no direct model-to-main publication; one JSON per
+  feed/date; Asia/Shanghai dates; keep the Mac out of the availability path.
+- Acceptance: local/remote/Pages/production align, full gates pass, eight Cloud
+  schedules are active, and one real candidate path is observed end to end.
+
+## Work Completed
+
+- Fast-forwarded local `main` from `6cf1195` to `47e16e1`; proved that local,
+  GitHub `main`, the latest successful Pages deployment, and production shared that
+  baseline before edits.
+- Upgraded Next.js and production transitive overrides; production high-severity
+  audit is zero. Added Node 22/npm 10 contracts and CI/Pages production audit gates.
+- Downscoped Pages permissions so only deploy has `pages:write`/`id-token:write`.
+- Hardened Pages dispatch into a bounded, SHA-correlated success wait; synchronized
+  fallback to live main; serialized all automatic main writers; made monitors read
+  live main and verify deployment freshness.
+- Made empty DailyNews data fail validation and made fallback dates/paths reject
+  traversal or invalid calendar dates.
+- Added a public meme projection so client payloads exclude internal
+  `brand_usage`, `risk`, and `published`; restored detail canonical/OG/Twitter metadata.
+- Removed the stopped Anthropic publishers and GitHub/external cron ownership.
+- Added `codex-daily-pr-publish.yml`: exact same-repository branch, one-file JSON
+  extraction, read-only validation, trusted revalidation/rebase/push, and Pages wait.
+- Added ADR-007 plus durable Cloud runbook and updated both living editorial prompts.
+- Created and read back eight dedicated ChatGPT Work Cloud contexts. Each passed a
+  non-local, read-only GitHub/main check and owns one active trigger group:
+  `dailynews-06-00`, `dailynews-07-15-12-15`, `dailynews-14-45`,
+  `dailynews-21-30`, `memedaily-07-00`, `memedaily-08-00-13-00`,
+  `memedaily-14-30`, and `memedaily-21-20`.
+- Added deploy-key-only main transport and a disabled rollout ruleset
+  `codex-trusted-main` (ID `19734348`). The repository has one writable key,
+  `MemeDaily trusted publisher` (ID `158323935`), backed by the Actions secret
+  `CODEX_PUBLISH_DEPLOY_KEY`; activation waits until this workflow is merged.
+- Final security review added a non-draft PR gate, push-triggered Pages-run adoption
+  with dispatch recovery, and bounded GitHub SSH host-key lookup retries.
+
+## Key Decision
+
+Codex Cloud is the unattended researcher/operator, not the production publisher.
+It creates one exact candidate PR. Repository-owned trusted code is the only component
+that may turn that JSON into a main commit and declare production success.
+
+## Verification So Far
+
+- Node 22.23.1/npm 10.9.8 full gate passes: production audit zero, both validators,
+  strict lint, typecheck, 114 tests, and a 176-page static build.
+- Focused security/reliability/data suite: 27 passed.
+- All remaining workflow YAML parses; both trusted shell scripts pass `bash -n`;
+  all-repository plus staged strict governance and secret gates pass; staged diff
+  whitespace is clean.
+- During the maintenance window, the still-live legacy scheduled news fallback
+  created valid `data/daily-news/2026-07-25.json` (`skipped`) at `d783d8e`, then
+  Pages workflow-dispatch run `30162235683` deployed it successfully. The feature
+  commit must rebase onto this non-conflicting data-only main update.
+
+## Remaining
+
+1. Run the integrated full suite and final diff review.
+2. Commit/push/PR/merge, wait for CI and Pages, then activate and API-verify the
+   deploy-key-only ruleset.
+3. Exercise a real Cloud candidate/fallback path and record PR/workflow/deployment
+   identifiers.
+4. Retire the unused Anthropic OAuth secret and prove local/main/Pages/production
+   alignment.

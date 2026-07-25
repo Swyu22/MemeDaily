@@ -5,6 +5,7 @@
  */
 import { loadAllEnvelopes } from "@/domain/memedaily/data";
 import { statusLabels } from "@/domain/memedaily/labels";
+import { toPublicMemeItem } from "@/domain/memedaily/schema";
 import {
   boardStreakFor,
   nameAppearanceDates,
@@ -29,10 +30,12 @@ export default function TodayPage() {
   const nameDates = nameAppearanceDates(all);
   const boardDates = publishedDates(all);
   const days = all.flatMap((envelope) => {
-    const items = visibleItems(envelope).map((item) => ({
+    const items = visibleItems(envelope).map((item) =>
+      toPublicMemeItem({
         ...item,
         days_on_list: boardStreakFor(item, envelope.date, nameDates, boardDates),
-      }));
+      }),
+    );
     return items.length > 0 ? [{ date: envelope.date, items }] : [];
   });
   const shown = days.slice(0, MAX_DAYS_ON_HOME);

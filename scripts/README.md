@@ -14,12 +14,16 @@ route components.
 | `web-performance.test.ts` | Prevent eager prefetch of the large archive route |
 | `checks/checks.test.ts` | Adversarial staged-index bypass regression suite |
 | `workflow-security.test.ts` | Static workflow token/tool/SHA/deploy security contract |
+| `publish-reliability.test.ts` | Pages retry, live-tip fallback, and deploy-freshness regressions |
 | `create-skipped-day.ts` | Produce a valid skipped meme envelope |
 | `create-skipped-news-day.ts` | Produce a valid skipped news envelope |
+| `fallback-target.ts` | Validate fallback dates and contain generated JSON paths |
+| `fallback-data-integrity.test.ts` | Empty-news and fallback date/path regression coverage |
 | `prefetch-hotlists.sh` | Fetch public hot-list context for cloud research jobs |
 | `fetch-fonts.sh` | Regenerate same-origin font assets; run locally, never in production |
 | `compact_font_css.py` | Merge duplicate variable-font weight faces into compact ranges |
-| `dispatch-pages.sh` | Correlate and await a successful Pages run after bot-authored pushes |
+| `dispatch-pages.sh` | Adopt the correlated push Pages run or dispatch one recovery, then await success |
+| `push-main-with-deploy-key.sh` | Push trusted HEAD through the protected-main deploy-key bypass |
 | `print-state.sh` | Print the current file-backed project state |
 | `checks/` | Shared git-hook and CI governance/security checks |
 

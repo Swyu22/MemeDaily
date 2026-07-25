@@ -6,6 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { NewsEnvelopeSchema } from "../src/domain/dailynews/schema";
+import { resolveFallbackTarget } from "./fallback-target";
 
 function shanghaiDate(): string {
   const parts = new Intl.DateTimeFormat("en-CA", {
@@ -25,9 +26,11 @@ function shanghaiDate(): string {
   return `${year}-${month}-${day}`;
 }
 
-const targetDate = process.env.DAILYNEWS_DATE ?? shanghaiDate();
 const dataDir = path.join(process.cwd(), "data", "daily-news");
-const filePath = path.join(dataDir, `${targetDate}.json`);
+const { targetDate, filePath } = resolveFallbackTarget(
+  dataDir,
+  process.env.DAILYNEWS_DATE ?? shanghaiDate(),
+);
 
 if (fs.existsSync(filePath)) {
   console.log(`[news-fallback] ${targetDate} already exists; no action`);

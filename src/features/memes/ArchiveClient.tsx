@@ -13,12 +13,12 @@ import {
   sortByDateThenLife,
   sortByDecisionValue,
 } from "@/domain/memedaily/labels";
-import type { Lifecycle, MemeItem, Platform } from "@/domain/memedaily/schema";
+import type { Lifecycle, Platform, PublicMemeItem } from "@/domain/memedaily/schema";
 
 // basePath prefix for raw <a> internal links (Next only rewrites next/link). See next.config.mjs.
 const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-export type ArchiveRow = MemeItem & { date: string };
+export type ArchiveRow = PublicMemeItem & { date: string };
 
 type ArchiveClientProps = {
   rows: ArchiveRow[];

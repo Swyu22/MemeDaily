@@ -24,7 +24,7 @@ import {
   feedSortLabels,
   type FeedSort,
 } from "@/domain/memedaily/labels";
-import type { MemeItem } from "@/domain/memedaily/schema";
+import type { PublicMemeItem } from "@/domain/memedaily/schema";
 import type { PublicNewsItem } from "@/domain/dailynews/schema";
 import { TodayFeed } from "@/features/memes/TodayFeed";
 import { DailyReport } from "./DailyReport";
@@ -50,7 +50,7 @@ type HomeTabsProps = {
   newsStatus: RunStatus | null;
   staleNotice: string | null;
   newsStaleNotice: string | null;
-  days: { date: string; items: MemeItem[] }[];
+  days: { date: string; items: PublicMemeItem[] }[];
   freshDate: string | null;
   freshNewsDate: string | null;
   hasMore: boolean;

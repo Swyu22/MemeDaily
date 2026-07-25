@@ -15,17 +15,20 @@ gates and permanent archives. The site has **two feeds**, switchable via the hom
   `AGENTS.md` first, then `.cloud.md`, then the active plan.
 - **App layer:** a static web product (Next.js static export) published with GitHub Pages.
   One JSON file per day per feed under `data/daily/` (memes) and `data/daily-news/` (news).
-- **Automation model:** GitHub Actions is the live publisher. Two confined two-job pipelines -
-  `daily-publish.yml` (memes, ~07:00 Asia/Shanghai) and `daily-news-publish.yml` (news,
-  ~06:00) — each runs `anthropics/claude-code-action` (SHA-pinned, on a Claude subscription
-  token) in an **exact-path `agent` job** that may write only the day's JSON artifact and
-  cannot run shell commands. A
-  separate **`publish` job** checks out trusted repo code, validates, commits locally, rebases
-  without a write token, then reinstalls and revalidates the final tree. Only the last push/Pages
-  step receives the write token. The reliable primary trigger for each is an external cron-job.org job (the GitHub
-  cron is a backup); `daily-{news-}catchup` / `fallback` / `monitor` add re-publish / skip /
-  alert resilience. A local Codex run is a supervised recovery path because prompts are not
-  an OS sandbox; see `ai/prompts/CODEX_FULL_HANDOFF.md`.
+- **Automation model:** ChatGPT Work / Codex Cloud Scheduled tasks own every unattended
+  primary, catch-up, monitor, and fallback trigger (news 06:00; memes 07:00,
+  Asia/Shanghai). The cloud operator can write only one exact dated JSON on a
+  same-repository `codex/daily-{meme|news}-YYYY-MM-DD` branch and opens a PR; it never
+  writes or merges `main`. `codex-daily-pr-publish.yml` reads only that JSON blob in a
+  read-only job, stamps and validates it with trusted `main` code, then a separate trusted
+  job revalidates the final tree, pushes with a short-lived token, and waits for the
+  correlated Pages deployment to succeed. The active `codex-trusted-main` ruleset
+  blocks ordinary users/connected apps from updating or merging `main`; only one
+  dedicated write deploy key, injected into the trusted final workflow step, can
+  bypass for publication. GitHub cron, external
+  cron-job.org, and the Anthropic publisher are retired. Manual fallback/monitor
+  workflows remain for disaster recovery. See `ai/prompts/CODEX_CLOUD_RUNBOOK.md`
+  and ADR-007.
 - **Client freshness:** an inline boot script in `layout.tsx` `<head>` (chunk-independent,
   runs even if hashed JS 404s) self-heals an unstyled render and registers a hand-written
   **network-first** service worker (`public/sw.js`: browser-cache bypass for HTML, offline
@@ -43,14 +46,15 @@ gates and permanent archives. The site has **two feeds**, switchable via the hom
 | --- | --- |
 | `.cloud.md` | Current project state and next actions (SSOT — read first) |
 | `AGENTS.md` | Cross-model canon (reading order, rules, tool adaptation) |
+| `ai/prompts/CODEX_CLOUD_RUNBOOK.md` | Codex Cloud trigger, idempotency, candidate-PR, and fallback contract |
 | `ai/prompts/CODEX_FULL_HANDOFF.md` | Self-contained prompt for Codex to take over both feeds |
 | `ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md` / `DAILYNEWS_DAILY_AUTOMATION.md` | Living per-feed rules |
 | `src/domain/{memedaily,dailynews}/schema.ts` | Zod data contracts |
 | `docs/00-context/PROJECT_MAP.md` | Module map, constraints, reading path |
 | `docs/30-decisions/` | Architecture decision records |
 | `docs/40-audits/` | Dated engineering audits and installed-Skills inventories |
-| `scripts/stamp-publish-time.ts` | Trusted post-agent publication timestamp normalization |
-| `.github/workflows/` | CI + per-feed publish / catch-up / fallback / monitor automation |
+| `scripts/stamp-publish-time.ts` | Trusted post-candidate publication timestamp normalization |
+| `.github/workflows/` | CI + trusted candidate ingestion + Pages + manual fallback/monitor recovery |
 | `产品方案.md` | Original Chinese product plan (memes feed) |
 
 ## Local Workflow

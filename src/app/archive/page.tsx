@@ -5,11 +5,15 @@
  */
 import { allVisibleItems } from "@/domain/memedaily/data";
 import { dedupeRecurring } from "@/domain/memedaily/rules";
+import { toPublicMemeItem } from "@/domain/memedaily/schema";
 import { ArchiveClient } from "@/features/memes/ArchiveClient";
 
 export default function ArchivePage() {
   // allVisibleItems is date-desc, so dedupeRecurring keeps each meme's most-recent occurrence.
-  const rows = dedupeRecurring(allVisibleItems());
+  const rows = dedupeRecurring(allVisibleItems()).map((item) => ({
+    ...toPublicMemeItem(item),
+    date: item.date,
+  }));
 
   return (
     <main className="page" id="main-content">

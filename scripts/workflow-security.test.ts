@@ -1,14 +1,15 @@
 /**
  * input: tracked GitHub Actions workflow text
- * output: regression assertions for token scope, tool confinement, SHA pins, and deploy gates
- * pos: static security-contract tests for unattended publishing
+ * output: regression assertions for candidate scope, token confinement, SHA pins, and deploy gates
+ * pos: static security contract for Codex Cloud candidate ingestion and trusted publication
  */
 import fs from "node:fs";
 import path from "node:path";
 import { expect, it } from "vitest";
 
 const WORKFLOWS = path.join(process.cwd(), ".github/workflows");
-const publishers = ["daily-publish.yml", "daily-news-publish.yml"];
+const publisher = "codex-daily-pr-publish.yml";
+const publishers = [publisher];
 const writers = [...publishers, "daily-fallback.yml", "daily-news-fallback.yml"];
 const NODE24_ACTIONS = new Map([
   ["actions/checkout", "9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0"],
@@ -20,14 +21,43 @@ const NODE24_ACTIONS = new Map([
   ["actions/download-artifact", "3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c"],
 ]);
 
-it.each(publishers)("confines the model-facing job in %s", (name) => {
-  const text = fs.readFileSync(path.join(WORKFLOWS, name), "utf8");
-  const claudeArgs = text.split("\n").find((line) => line.includes("claude_args:")) ?? "";
-  expect(text).toContain("github_token: ${{ github.token }}");
-  expect(text).not.toContain("id-token: write");
-  expect(claudeArgs).toContain("Read(./**)");
-  expect(claudeArgs).not.toContain("Bash");
-  expect(claudeArgs).toMatch(/Write\(data\/daily(?:-news)?\/\$\{\{/);
+it("confines Codex Cloud PR input to one dated JSON blob before any write token exists", () => {
+  const text = fs.readFileSync(path.join(WORKFLOWS, publisher), "utf8");
+  const validate = text.split("\n  publish:")[0] ?? "";
+  const publish = text.split("\n  publish:")[1] ?? "";
+
+  expect(text).toContain("pull_request_target:");
+  expect(text).toContain("github.event.pull_request.head.repo.full_name == github.repository");
+  expect(text).toContain("github.event.pull_request.base.ref == 'main'");
+  expect(text).toContain("github.event.pull_request.draft == false");
+  expect(text).toContain("types: [opened, reopened, synchronize, ready_for_review]");
+  expect(text).toContain('"codex/daily-meme-${DATE}"');
+  expect(text).toContain('"codex/daily-news-${DATE}"');
+  expect(text).toContain('"${#CHANGED_FILES[@]}" -ne 1');
+  expect(text).toContain("codex-artifact/candidate.json");
+  expect(text).toContain("ref: main");
+  expect(text).not.toContain("ref: ${{ github.event.pull_request.head.sha }}");
+  expect(validate).toContain("contents: read");
+  expect(validate).not.toContain("contents: write");
+  expect(validate).not.toContain("secrets.GITHUB_TOKEN");
+  expect(publish).toContain("contents: read");
+  expect(publish).not.toContain("contents: write");
+  expect(publish).toContain("actions/download-artifact@");
+  expect(publish).toContain("npm run check");
+});
+
+it("contains no active Anthropic publisher or GitHub cron after the Codex Cloud takeover", () => {
+  const workflowFiles = fs.readdirSync(WORKFLOWS).filter((file) => file.endsWith(".yml"));
+  const text = workflowFiles
+    .map((file) => fs.readFileSync(path.join(WORKFLOWS, file), "utf8"))
+    .join("\n");
+
+  expect(workflowFiles).not.toContain("daily-publish.yml");
+  expect(workflowFiles).not.toContain("daily-news-publish.yml");
+  expect(workflowFiles).not.toContain("daily-catchup.yml");
+  expect(workflowFiles).not.toContain("daily-news-catchup.yml");
+  expect(text).not.toMatch(/anthropic|CLAUDE_CODE_OAUTH_TOKEN/i);
+  expect(text).not.toContain("\n  schedule:");
 });
 
 it("pins every external workflow action to a full commit SHA", () => {
@@ -52,13 +82,42 @@ it("uses the reviewed Node 24 releases for official JavaScript actions", () => {
   }
 });
 
+it("keeps the local runtime contract aligned with Node 22 automation", () => {
+  const packageJson = JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), "package.json"), "utf8"),
+  ) as {
+    packageManager?: string;
+    engines?: Record<string, string>;
+  };
+  const automatedWorkflows = ["ci.yml", "pages.yml", ...writers];
+
+  expect(packageJson.packageManager).toBe("npm@10.9.8");
+  expect(packageJson.engines).toEqual({ node: "22.x", npm: "10.x" });
+  for (const name of automatedWorkflows) {
+    const workflow = fs.readFileSync(path.join(WORKFLOWS, name), "utf8");
+    expect(workflow).toContain("node-version: 22");
+  }
+});
+
 it("requires canonical checks and successful correlated Pages dispatches", () => {
   const pages = fs.readFileSync(path.join(WORKFLOWS, "pages.yml"), "utf8");
-  const meme = fs.readFileSync(path.join(WORKFLOWS, "daily-publish.yml"), "utf8");
-  const news = fs.readFileSync(path.join(WORKFLOWS, "daily-news-publish.yml"), "utf8");
+  const ci = fs.readFileSync(path.join(WORKFLOWS, "ci.yml"), "utf8");
+  const codex = fs.readFileSync(path.join(WORKFLOWS, "codex-daily-pr-publish.yml"), "utf8");
+  const buildJob = pages.split("\n  build:")[1]?.split("\n  deploy:")[0] ?? "";
+  const deployJob = pages.split("\n  deploy:")[1] ?? "";
   expect(pages).toContain("npm run check");
-  expect(meme).toContain('bash scripts/dispatch-pages.sh "$SHA"');
-  expect(news).toContain('bash scripts/dispatch-pages.sh "$SHA"');
+  expect(pages.split("\njobs:")[0]).not.toContain("pages: write");
+  expect(pages.split("\njobs:")[0]).not.toContain("id-token: write");
+  expect(buildJob).toContain("contents: read");
+  expect(buildJob).toContain("pages: read");
+  expect(buildJob).not.toContain("pages: write");
+  expect(deployJob).toContain("pages: write");
+  expect(deployJob).toContain("id-token: write");
+  expect(ci).toContain("npm audit --omit=dev --audit-level=high");
+  expect(pages).toContain("npm audit --omit=dev --audit-level=high");
+  expect(codex).toContain('bash scripts/dispatch-pages.sh "$SHA"');
+  expect(codex).toContain('bash scripts/dispatch-pages.sh "$LIVE_SHA"');
+  expect(codex).toContain("Pages success was verified for live main");
 });
 
 it.each(writers)("revalidates the final rebased tree before token-scoped push in %s", (name) => {
@@ -66,20 +125,33 @@ it.each(writers)("revalidates the final rebased tree before token-scoped push in
   const rebase = workflow.lastIndexOf("git pull --rebase origin main");
   const finalInstall = workflow.lastIndexOf("npm ci");
   const finalCheck = workflow.lastIndexOf("npm run check");
-  const writeToken = workflow.lastIndexOf("GH_TOKEN:");
-  const push = workflow.lastIndexOf("git push");
+  const writeCredential = workflow.indexOf("PUBLISH_DEPLOY_KEY:", finalCheck);
+  const push = workflow.indexOf("bash scripts/push-main-with-deploy-key.sh", writeCredential);
 
   expect(rebase).toBeGreaterThan(-1);
   expect(finalInstall).toBeGreaterThan(rebase);
   expect(finalCheck).toBeGreaterThan(finalInstall);
-  expect(writeToken).toBeGreaterThan(finalCheck);
-  expect(push).toBeGreaterThan(writeToken);
+  expect(writeCredential).toBeGreaterThan(finalCheck);
+  expect(push).toBeGreaterThan(writeCredential);
+  expect(workflow).not.toContain("contents: write");
+});
+
+it("uses the dedicated deploy key as the sole protected-main transport", () => {
+  const script = fs.readFileSync(
+    path.join(process.cwd(), "scripts", "push-main-with-deploy-key.sh"),
+    "utf8",
+  );
+
+  expect(script).toContain('chmod 600 "$key_file"');
+  expect(script).toContain("gh api meta");
+  expect(script).toContain("StrictHostKeyChecking=yes");
+  expect(script).toContain('git push "git@github.com:${repository}.git" HEAD:main');
+  expect(script).not.toContain("echo \"$PUBLISH_DEPLOY_KEY\"");
 });
 
 it("keeps MemeDaily monitor issue lookup isolated from DailyNews issues", () => {
   const monitor = fs.readFileSync(path.join(WORKFLOWS, "daily-monitor.yml"), "utf8");
 
-  expect(monitor).toContain('contains(\\"MemeDaily 成本异常: ${DATE}\\")');
   expect(monitor).toContain('contains(\\"MemeDaily 未发布告警: ${DATE}\\")');
   expect(monitor).not.toContain('select(.title|contains(\\"${DATE}\\"))');
 });

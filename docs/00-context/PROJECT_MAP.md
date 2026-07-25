@@ -18,9 +18,12 @@
 - **Safety:** meme candidates are dropped conservatively for politics, disasters/public
   safety, privacy/minors, abuse, illegal/explicit content, harmful rumors, and contextual
   risk. News has a separate restrained editorial policy.
-- **Automation:** model-facing jobs cannot execute shell commands or edit arbitrary paths.
-  Trusted no-token steps own timestamps, validation, local commits, and rebases; a final
-  token-scoped step owns the push and correlated deploy.
+- **Automation:** Codex Cloud tasks may submit only an exact same-repository, one-file
+  daily candidate PR. Trusted base-code jobs own timestamps, validation, local commits,
+  and rebases; a final token-scoped step owns the push and correlated deploy. Repository
+  ruleset `codex-trusted-main` prevents the Cloud connector or ordinary users from
+  updating/merging main and permits only the dedicated trusted publisher deploy key
+  to bypass.
 
 ## Module Map
 - `src/app/`: Next.js routes, metadata, global/responsive styles, and static composition.
@@ -34,8 +37,9 @@
   deterministic history calculations. It has no UI or infrastructure dependency.
 - `scripts/`: validation, skipped-envelope generation, trusted publish-time stamping,
   public hot-list prefetching, font generation, and governance checks.
-- `.github/workflows/`: CI, Pages, two primary publishers, catch-up, fallback, monitor,
-  and cloud-fetch diagnostics. Official actions are pinned to commit SHAs.
+- `.github/workflows/`: CI, Pages, trusted Codex candidate ingestion, manual
+  fallback/monitor recovery, and cloud-fetch diagnostics. Official actions are pinned
+  to commit SHAs.
 - `data/daily/` and `data/daily-news/`: product content sources of truth.
 - `public/`: same-origin fonts, PWA manifest/icons/service worker, domain token, and CNAME.
 - `ai/`: operational prompts and one-file-per-session handoffs.
@@ -60,11 +64,13 @@
 - **Runtime:** static files only; there is no backend API.
 
 ## Automation Map
-- `daily-news-publish.yml`: news publisher, about 06:00 Asia/Shanghai.
-- `daily-publish.yml`: meme publisher, about 07:00 Asia/Shanghai.
-- `daily-{news-}catchup.yml`: redispatch after a missed primary run.
-- `daily-{news-}fallback.yml`: publish a validated skipped marker late in the day.
-- `daily-{news-}monitor.yml`: open an operational alert when publication is still missing.
+- ChatGPT Work / Codex Cloud Scheduled tasks: news primary 06:00 and meme primary
+  07:00 Asia/Shanghai, plus the original staggered catch-up, monitor, and late
+  fallback cadence. Durable behavior lives in `ai/prompts/CODEX_CLOUD_RUNBOOK.md`.
+- `codex-daily-pr-publish.yml`: same-repository exact-branch/one-JSON candidate
+  ingestion, trusted validation, serialized main publication, and correlated Pages wait.
+- `daily-{news-}fallback.yml`: manual-only validated skipped-marker disaster recovery.
+- `daily-{news-}monitor.yml`: manual-only live-main/Pages operational verification.
 - `pages.yml`: build and deploy the static export after trusted changes.
 - `ci.yml`: source, data, governance, secret, type, test, and build gates.
 

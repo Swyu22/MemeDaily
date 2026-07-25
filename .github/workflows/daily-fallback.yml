@@ -1,16 +1,18 @@
 name: daily-fallback
 
 on:
-  schedule:
-    # 13:20 UTC = 21:20 Asia/Shanghai. Evening LAST resort: only marks today "skipped" if
-    # the primary publish AND every daily-catchup attempt failed to produce any envelope.
-    # Runs late on purpose so it can't pre-empt the daytime catch-up retries.
-    - cron: "20 13 * * *"
   workflow_dispatch:
 
+# Manual disaster-recovery path only. The active 21:20 Asia/Shanghai schedule is owned by
+# Codex Cloud, which submits the same skipped envelope through codex-daily-pr-publish.yml.
+
 permissions:
-  contents: write
-  actions: write # to dispatch the Pages deploy after a GITHUB_TOKEN push
+  contents: read
+  actions: write # to dispatch/inspect Pages after the protected deploy-key push
+
+concurrency:
+  group: daily-data-publish
+  cancel-in-progress: false
 
 jobs:
   skipped-day:
@@ -21,6 +23,21 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+
+      - name: Sync to live main before fallback dedup
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            if git fetch --quiet origin main; then
+              git reset --hard FETCH_HEAD
+              echo "Fallback base synchronized to live main at $(git rev-parse HEAD)."
+              exit 0
+            fi
+            echo "live-main fetch attempt ${attempt}/3 failed."
+            if [ "$attempt" -lt 3 ]; then sleep $((attempt * 10)); fi
+          done
+          echo "::error::Cannot verify live main; refusing to create a fallback from stale data."
+          exit 1
 
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
@@ -55,8 +72,9 @@ jobs:
         if: steps.prepare.outputs.publish == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_DEPLOY_KEY: ${{ secrets.CODEX_PUBLISH_DEPLOY_KEY }}
+          PUBLISH_REPOSITORY: ${{ github.repository }}
         run: |
           set -euo pipefail
-          gh auth setup-git
-          git push
+          bash scripts/push-main-with-deploy-key.sh
           bash scripts/dispatch-pages.sh "$(git rev-parse HEAD)"

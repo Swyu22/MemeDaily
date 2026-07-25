@@ -5,6 +5,8 @@
  */
 import type { MemeItem } from "./schema";
 
+type SortableMeme = Pick<MemeItem, "days_on_list" | "lifecycle" | "score">;
+
 export const lifecycleLabels = {
   rising: "还能上车",
   peak: "正热",
@@ -41,7 +43,7 @@ export const tierLabels = {
   spillover: "外溢讨论",
 } as const;
 
-export function sortByDecisionValue<T extends MemeItem>(items: T[]): T[] {
+export function sortByDecisionValue<T extends SortableMeme>(items: T[]): T[] {
   return [...items].sort((a, b) => {
     const byLife = lifecycleRank[a.lifecycle] - lifecycleRank[b.lifecycle];
     // Unscored items use a neutral midpoint so absence of a score does not
@@ -51,7 +53,7 @@ export function sortByDecisionValue<T extends MemeItem>(items: T[]): T[] {
 }
 
 // 热度值：综合分高者优先（缺分用中位数 50），同分再按生命周期。
-export function sortByHeat<T extends MemeItem>(items: T[]): T[] {
+export function sortByHeat<T extends SortableMeme>(items: T[]): T[] {
   return [...items].sort(
     (a, b) =>
       (b.score ?? 50) - (a.score ?? 50) ||
@@ -60,7 +62,7 @@ export function sortByHeat<T extends MemeItem>(items: T[]): T[] {
 }
 
 // 新鲜值：刚起势优先，再按上榜天数（越少越新），最后按分数。
-export function sortByFreshness<T extends MemeItem>(items: T[]): T[] {
+export function sortByFreshness<T extends SortableMeme>(items: T[]): T[] {
   return [...items].sort((a, b) => {
     const byLife = lifecycleRank[a.lifecycle] - lifecycleRank[b.lifecycle];
     if (byLife) return byLife;
@@ -78,7 +80,7 @@ const archiveLifecycleRank = {
 } as const;
 
 // 梗库主排序：日期(近→远) → 生命周期(正热>还能上车>已过气) → 热度值(score)。
-export function sortByDateThenLife<T extends MemeItem & { date: string }>(rows: T[]): T[] {
+export function sortByDateThenLife<T extends SortableMeme & { date: string }>(rows: T[]): T[] {
   return [...rows].sort(
     (a, b) =>
       b.date.localeCompare(a.date) ||
