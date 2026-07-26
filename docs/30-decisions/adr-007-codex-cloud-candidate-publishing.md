@@ -3,7 +3,8 @@
 ## Status
 
 Accepted, superseding ADR-006's Anthropic/GitHub-Actions model-facing job while
-preserving its trust separation.
+preserving its trust separation. The scheduler implementation was corrected on
+2026-07-26 after local Desktop heartbeats were mistaken for server-hosted tasks.
 
 ## Context
 
@@ -11,6 +12,12 @@ The Anthropic subscription publisher stopped running, and the product needs an
 unattended operator that does not depend on the owner's Mac. ChatGPT Work / Codex
 Cloud Scheduled tasks can browse public sources and use the connected GitHub tool,
 but web tasks do not retain a local repository folder or worktree.
+
+The first implementation created eight Codex Desktop `heartbeat` automations that
+pointed at Cloud task contexts. That proved the target contexts could read GitHub, but
+did not move scheduling off the owner's Mac. On 2026-07-26 none of the expected morning
+runs reached GitHub. The local heartbeats were deleted and replaced with genuine
+ChatGPT Work Web Scheduled Tasks.
 
 Public pages are attacker-influenceable. A cloud task that both researches them and
 can publish `main` would collapse the untrusted research and trusted release
@@ -29,10 +36,10 @@ repository:
    `CODEX_PUBLISH_DEPLOY_KEY` and is exposed only to final trusted push steps. This also
    prevents a cloud task from merging its own candidate PR. Code-maintenance merges
    require a deliberate temporary ruleset change by the repository owner.
-2. Eight dedicated cloud task contexts own eight Asia/Shanghai trigger groups—one
-   heartbeat per context because the service permits only one active heartbeat in
-   each conversation. Together they cover each feed's primary, catch-up, monitor,
-   and late fallback modes.
+2. Eight genuine ChatGPT Work Web Scheduled Tasks own eight Asia/Shanghai trigger
+   groups. News runs at 06:00, hourly 07:15–12:15, 14:45, and 21:30; memes run at
+   07:00, hourly 08:00–13:00, 14:30, and 21:20. Codex Desktop heartbeats are local
+   automation and are prohibited from the unattended availability path.
 3. Every run rereads `ai/prompts/CODEX_CLOUD_RUNBOOK.md`, the current living
    per-feed rules, schema, and recent envelopes from GitHub `main`.
 4. A content/fallback run may create or update only one same-repository branch:
@@ -52,6 +59,10 @@ repository:
    candidate PR.
 7. GitHub `schedule:` and external cron triggers are retired. The deterministic
    fallback and monitor workflows remain `workflow_dispatch`-only recovery tools.
+8. Every fixed retry still starts and performs one inexpensive live-main preflight.
+   If the current feed/date already has a valid terminal envelope, the task stops
+   before research, file writes, branch creation, or PR creation. Idempotency avoids
+   expensive and mutating work; it does not suppress the server scheduler invocation.
 
 ## Security Properties
 
@@ -69,7 +80,7 @@ repository:
   and close the accepted PR, but cannot update protected main. Only the final step
   receives `CODEX_PUBLISH_DEPLOY_KEY`.
 - Existing live-main envelopes are terminal, so primary, catch-up, and fallback
-  races become no-ops.
+  races become no-ops after one inexpensive live-main preflight.
 - All final writers share `daily-data-publish` concurrency and fail closed on
   live-main fetch, validation, non-fast-forward push, or Pages failure.
 
@@ -92,7 +103,8 @@ the first scheduled runs as defense in depth.
 
 ## Consequences
 
-- Positive: schedules run without the user's machine and have one owner.
+- Positive: genuine Web Scheduled Tasks run without the user's machine and have one
+  owner; local Desktop automation is explicitly outside the availability path.
 - Positive: cloud research can recover by updating the same failed candidate PR,
   while main publication stays deterministic and audited.
 - Positive: successful publication includes production deployment evidence, not
@@ -102,8 +114,11 @@ the first scheduled runs as defense in depth.
 - Negative: cloud tool availability/permissions are an external dependency.
 - Negative: the candidate PR adds latency and leaves failed runs visible for
   diagnosis.
-- Negative: first-run observation remains necessary because scheduled tasks and
-  connected tools are account-level services outside repository CI.
+- Negative: fixed retries still incur one server task invocation and live-main read
+  after an earlier terminal result, although they do not proceed to research or GitHub
+  mutation.
+- Negative: continued observation remains useful because scheduled tasks and connected
+  tools are account-level services outside repository CI.
 - Negative: ordinary code-maintenance PRs cannot update `main` while the DeployKey-only
   ruleset is active; the owner must deliberately suspend/amend it for reviewed
   maintenance, then restore and reverify it.
@@ -117,11 +132,21 @@ the first scheduled runs as defense in depth.
   alerts.
 - CI runs production high-severity dependency audit plus the canonical full check;
   Pages repeats the production audit and full check before deployment.
-- Operational acceptance requires inspecting all eight active cloud schedules,
-  exercising one candidate, and confirming live `main`, Pages SHA/run, and
-  `https://memedaily.fun` agree.
+- Operational acceptance requires inspecting all eight active Web Scheduled Tasks,
+  exercising a real server-triggered run, exercising the candidate publisher, and
+  confirming live `main`, Pages SHA/run, and `https://memedaily.fun` agree.
 - `GET /repos/Swyu22/MemeDaily/rulesets` plus the selected ruleset detail must show
   enforcement `active`, `refs/heads/main`, an `update` rule, and the sole bypass
   type `DeployKey`. Repository deploy keys must contain exactly one writable key titled
   `MemeDaily trusted publisher`. A real manual fallback run proves the trusted final
   step can still update main.
+- 2026-07-26 recovery provided two real publication paths: meme PR #40 produced a
+  zero-item `skipped` envelope, trusted run `30186891155` accepted main `6583aec`,
+  and CI `30186948953` plus Pages `30186948929` succeeded; news PR #41 produced six
+  published items, trusted run `30186938154` accepted final main `90aa02c`, and CI
+  `30187028830` plus Pages `30187028839` succeeded.
+- The 12:00 meme Web Scheduled catch-up reported `Last ran 12:02`, observed the
+  terminal `skipped` envelope on live main, and stopped without another GitHub
+  mutation. The 12:15 news catch-up ran at 12:14, observed the terminal `published`
+  envelope with six items, and did the same. A cache-bypassed production request
+  returned HTTP 200 with `Last-Modified: Sun, 26 Jul 2026 04:00:00 GMT`.

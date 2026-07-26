@@ -95,3 +95,18 @@ that may turn that JSON into a main commit and declare production success.
    envelopes and the runbook requires no-op.
 2. User-owned follow-ups remain: rotate the previously exposed Aliyun AccessKey and
    confirm the installed-PWA status area on a physical iOS device.
+
+## Post-Session Correction — 2026-07-26
+
+- The eight trigger groups described above were Codex Desktop `heartbeat`
+  automations pointing at ChatGPT Work Cloud contexts, not server-hosted schedules.
+  Their successful read-only Cloud checks proved the contexts and GitHub connection,
+  but did not satisfy the stated requirement to keep the owner's Mac out of the
+  availability path.
+- The formal fallback no-op proved the runbook's terminal-envelope behavior when a
+  Cloud context was invoked; it did not prove that a server scheduler would invoke
+  that context unattended. Accordingly, the scheduling and real-candidate acceptance
+  criteria in this session were not complete on 2026-07-25.
+- The 2026-07-26 failure, scheduler replacement, dual-feed backfill, and production
+  evidence are recorded in
+  `ai/sessions/2026-07-26--server-scheduled-publishing-recovery.md`.
