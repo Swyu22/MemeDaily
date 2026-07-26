@@ -270,10 +270,12 @@ git push                                 # 真实 push → pages.yml 部署；�
 
 ## 9. Codex Cloud 自动化设置
 
-1. 建立 8 个 ChatGPT Work **Cloud** 任务上下文（每个触发组一个上下文，因为每个会话只允许一个
-   heartbeat），连接 GitHub，并逐个以只读方式验证能读取 `Swyu22/MemeDaily` 的 `main` 与
-   `CODEX_CLOUD_RUNBOOK.md`。
-2. 在对应 Cloud 任务中建立 8 个定时触发组（Asia/Shanghai）：
+1. 必须在 **ChatGPT Work Web 的 Scheduled Tasks** 界面建立 8 个真正由服务器托管的任务，
+   每个触发组一个任务。连接 GitHub，并逐个以只读方式验证能读取 `Swyu22/MemeDaily` 的
+   `main` 与 `CODEX_CLOUD_RUNBOOK.md`。目标会话位于 Cloud 并不等于调度器位于 Cloud；
+   Codex Desktop 的 `heartbeat`（包括 `~/.codex/automations/` 下的配置）是本机自动化，
+   不能用于本项目的无人值守可用性路径。
+2. 在对应 Web Scheduled Task 中建立 8 个定时触发组（Asia/Shanghai）：
    - 日报：06:00 primary；07:15–12:15 每小时 catch-up；14:45 monitor；21:30 fallback。
    - 热梗：07:00 primary；08:00–13:00 每小时 catch-up；14:30 monitor；21:20 fallback。
 3. 每个触发只传 `feed` 与 `mode`，要求每次重读 Cloud runbook；不要把本机路径当成云端可用状态。
@@ -283,6 +285,12 @@ git push                                 # 真实 push → pages.yml 部署；�
    Actions secret `CODEX_PUBLISH_DEPLOY_KEY`；任一条件缺失就停止自动发布。
 6. 首轮检查 Cloud task 运行位置确实为 Cloud，并验证一条候选 PR 只触发
    `codex-daily-pr-publish.yml`；受信任 workflow 成功前不得称“已发布”。
+7. 设置完成后，从 ChatGPT Work Web 逐个读回任务的 active 状态、时区、下一次运行时间和
+   `Last ran`；同时确认对应的 8 个 Codex Desktop heartbeat 均不存在。验收必须包含一次真实
+   Web Scheduled 触发，不能只靠手工打开 Cloud 会话。
+8. 固定 catch-up / monitor / fallback 到点仍会启动一次任务并消耗很少量的 live-main 预检。
+   当当天已有合法终态信封时，必须立即停止，不再研究、不写文件、不建分支、不开 PR。这里的
+   “去重 no-op”是廉价预检后停止，不是服务器完全不唤醒任务。
 
 ---
 

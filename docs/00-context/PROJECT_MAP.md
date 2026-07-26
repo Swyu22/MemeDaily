@@ -18,12 +18,13 @@
 - **Safety:** meme candidates are dropped conservatively for politics, disasters/public
   safety, privacy/minors, abuse, illegal/explicit content, harmful rumors, and contextual
   risk. News has a separate restrained editorial policy.
-- **Automation:** Codex Cloud tasks may submit only an exact same-repository, one-file
-  daily candidate PR. Trusted base-code jobs own timestamps, validation, local commits,
-  and rebases; a final token-scoped step owns the push and correlated deploy. Repository
-  ruleset `codex-trusted-main` prevents the Cloud connector or ordinary users from
-  updating/merging main and permits only the dedicated trusted publisher deploy key
-  to bypass.
+- **Automation:** genuine ChatGPT Work Web Scheduled Tasks may submit only an exact
+  same-repository, one-file daily candidate PR. Codex Desktop heartbeats are local and
+  are not part of the unattended path. Trusted base-code jobs own timestamps,
+  validation, local commits, and rebases; a final token-scoped step owns the push and
+  correlated deploy. Repository ruleset `codex-trusted-main` prevents the Cloud
+  connector or ordinary users from updating/merging main and permits only the
+  dedicated trusted publisher deploy key to bypass.
 
 ## Module Map
 - `src/app/`: Next.js routes, metadata, global/responsive styles, and static composition.
@@ -64,9 +65,13 @@
 - **Runtime:** static files only; there is no backend API.
 
 ## Automation Map
-- ChatGPT Work / Codex Cloud Scheduled tasks: news primary 06:00 and meme primary
-  07:00 Asia/Shanghai, plus the original staggered catch-up, monitor, and late
-  fallback cadence. Durable behavior lives in `ai/prompts/CODEX_CLOUD_RUNBOOK.md`.
+- Eight ChatGPT Work Web Scheduled Tasks: news runs at 06:00, hourly 07:15–12:15,
+  14:45, and 21:30; memes run at 07:00, hourly 08:00–13:00, 14:30, and 21:20, all
+  in Asia/Shanghai. Durable behavior lives in `ai/prompts/CODEX_CLOUD_RUNBOOK.md`.
+- Fixed retries always start with one inexpensive live-main terminal-envelope
+  preflight. A terminal result stops the task before research, writes, branches, or
+  PRs. The eight former Codex Desktop heartbeats were deleted; a local automation
+  pointing at a Cloud context must never be described as a server schedule.
 - `codex-daily-pr-publish.yml`: same-repository exact-branch/one-JSON candidate
   ingestion, trusted validation, serialized main publication, and correlated Pages wait.
 - `daily-{news-}fallback.yml`: manual-only validated skipped-marker disaster recovery.
