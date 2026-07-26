@@ -1,0 +1,544 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "1.0",
+  "rubric_version": "1.0",
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T07:12:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 3,
+    "dropped_safety": {
+      "政治时政": 1,
+      "灾害与公共安全": 1,
+      "隐私与犯罪": 1,
+      "死亡与哀悼": 1,
+      "未成年人隐私": 1,
+      "战争与暴力": 1
+    },
+    "dropped_low_confidence": 12,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "platform_public_sources": 0,
+      "aggregator_sources": 5,
+      "search_media_sources": 1,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 9
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 9,
+        "relaxed_72h": 11
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-07-27-qingjia-bu-xuyao-liyou",
+          "canonical_phrase": "原来请假是不需要理由的",
+          "outcome": "selected",
+          "item_id": "2026-07-27-qingjia-bu-xuyao-liyou",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-27-zhichang-meiyou-pengyou",
+          "canonical_phrase": "终于明白职场没有朋友的含义了",
+          "outcome": "selected",
+          "item_id": "2026-07-27-zhichang-meiyou-pengyou",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-27-koukou-sousou-hua-hen-duo",
+          "canonical_phrase": "扣扣搜搜却花了很多钱",
+          "outcome": "selected",
+          "item_id": "2026-07-27-koukou-sousou-hua-hen-duo",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 29,
+            "reusability": 19,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-ai-qingxie",
+          "canonical_phrase": "不要长期向AI倾泻心事",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 29,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-qinmi-qingshi",
+          "canonical_phrase": "亲密关系容易产生轻视",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 28,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-pengyouquan-ganga",
+          "canonical_phrase": "每次发完朋友圈都特别尴尬",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 29,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-xiaoqu-mingming",
+          "canonical_phrase": "原来小区是这样命名的",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 28,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-chuanda-fupan",
+          "canonical_phrase": "复盘一周穿搭思路",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 29,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-guzhao-senxi",
+          "canonical_phrase": "古早森系穿搭是氛围感的神",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 29,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-tuolaji-wu",
+          "canonical_phrase": "谁还没跳ACAI拖拉机舞",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 28,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-cashi-yanlei",
+          "canonical_phrase": "我的朋友我该怎么擦拭眼泪",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 27,
+            "reusability": 13,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-wufen-gong",
+          "canonical_phrase": "UP主挑战一天打五份工",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-zheche-zenme-kai",
+          "canonical_phrase": "很难想象这车是怎么开过来的",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 27,
+            "reusability": 8,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-luosi-shunhua",
+          "canonical_phrase": "中国螺丝拧着特别顺滑",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 27,
+            "reusability": 9,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-daixin-peiwa",
+          "canonical_phrase": "带薪陪娃这才是最好的招工简章",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 27,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://codertools.site/",
+            "observed_at": "2026-07-27T01:54:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "insufficient-hangzhou",
+          "canonical_phrase": "杭州已经发展成这样了吗",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-name-long",
+          "canonical_phrase": "迪丽热巴名字长还有这好处",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-clothes-pilling",
+          "canonical_phrase": "鹿晗你衣服起球了",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-concert-sing",
+          "canonical_phrase": "TOP演唱会大合唱同手同脚",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-seaview-flat",
+          "canonical_phrase": "花二十多万买了个48平的海景房",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-youth-given",
+          "canonical_phrase": "我的青春也献给了你们",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-film-fear",
+          "canonical_phrase": "电影痴迷到底恐怖在哪里",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-top-product",
+          "canonical_phrase": "普通人可以买到的顶级产品",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-five-million",
+          "canonical_phrase": "给你500万一天之内你能完成哪个",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与犯罪"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "未成年人隐私"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "战争与暴力"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-27-qingjia-bu-xuyao-liyou",
+      "title": "📝 原来请假是不需要理由的",
+      "aliases": [
+        "原来请假是不需要理由的",
+        "请假不需要理由"
+      ],
+      "canonical_phrase": "原来请假是不需要理由的",
+      "platform": [
+        "weibo"
+      ],
+      "type": "职场梗",
+      "summary": "用“原来……”的醒悟口吻，把请假从过度解释改写成一句适合职场吐槽与边界表达的短句。",
+      "origin": "已验证：2026年7月27日凌晨，两套独立公开热榜聚合页均收录“原来请假是不需要理由的”；其中实时榜在01:54列为微博第6。现有证据不支持指定唯一首发者。",
+      "usage": "原句可直接作职场吐槽；也可替换成“原来拒绝是不需要长篇理由的”“原来休息是不需要自证的”，用于表达少解释、先说清边界的场景。",
+      "fun_point": "一本正经的“原来”配上本应简短的日常动作，戳中很多人写请假理由时越写越长的反差，句壳也便于替换。",
+      "why_spread": "已验证：两套独立榜单在7月27日同步收录，实时榜位居前十；推测：职场共鸣强、句式短且能替换动词，评论区参与门槛低。",
+      "lifecycle": "rising",
+      "brand_usage": "效率工具、职场内容或员工关怀账号可改写成“原来休息不用写小作文”；不得暗示绕过单位制度或伪造请假理由。",
+      "risk": {
+        "level": "low",
+        "note": "属于职场边界表达；借势时应尊重真实制度，不提供欺骗、伪造或规避流程的方法。"
+      },
+      "days_on_list": 1,
+      "score": 89,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://codertools.site/",
+          "title": "摸鱼热榜 - 今日微博知乎B站抖音热搜聚合",
+          "captured_at": "2026-07-27T07:08:00+08:00",
+          "note": "页面标明07/27同步时间01:54:12，并将该词列为微博第6。",
+          "observed_at": "2026-07-27T01:54:00+08:00"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "weibo",
+          "url": "https://www.ymym.tv/",
+          "title": "YMYM.TV导航",
+          "captured_at": "2026-07-27T07:08:00+08:00",
+          "note": "独立公开热榜页同日收录该词，提供第二条不同URL的榜单佐证。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-27-zhichang-meiyou-pengyou",
+      "title": "🧑‍💼 终于明白职场没有朋友的含义了",
+      "aliases": [
+        "终于明白职场没有朋友的含义了",
+        "职场没有朋友的含义"
+      ],
+      "canonical_phrase": "终于明白职场没有朋友的含义了",
+      "platform": [
+        "weibo"
+      ],
+      "type": "职场梗",
+      "summary": "把同事关系里的边界感压缩成一句“终于明白了”的顿悟体，用来吐槽上班后对合作与交心的重新理解。",
+      "origin": "已验证：该句在2026年7月27日01:54的微博实时聚合榜位列第7；新浪公开传播页还保留了7月26日晚多名用户围绕同句发布的不同职场用法。",
+      "usage": "可写成“终于明白职场没有朋友的含义了：合作归合作，情绪归情绪”；也可迁移为“终于明白群聊静音的含义了”等顿悟体。",
+      "fun_point": "句子先抛出沉重结论，再由用户补上各自鸡毛蒜皮的上班经历，宏大顿悟和日常小事之间形成反差。",
+      "why_spread": "已验证：实时榜前十与多个同日晚间公开用例共同证明活动；推测：职场边界是高共鸣话题，顿悟句壳可继续改写和接龙。",
+      "lifecycle": "rising",
+      "brand_usage": "职场培训、协作工具可用它引出“边界清晰不等于关系冷漠”的讨论；不宜鼓励敌意、孤立或把所有同事关系污名化。",
+      "risk": {
+        "level": "medium",
+        "note": "可能强化职场犬儒或关系对立；内容应强调协作边界，不指认、羞辱具体同事。"
+      },
+      "days_on_list": 1,
+      "score": 88,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://codertools.site/",
+          "title": "摸鱼热榜 - 今日微博知乎B站抖音热搜聚合",
+          "captured_at": "2026-07-27T07:08:00+08:00",
+          "note": "页面标明07/27同步时间01:54:12，并将该句列为微博第7。",
+          "observed_at": "2026-07-27T01:54:00+08:00"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://www.sina.cn/news/detail/5325046801245457.html",
+          "title": "#终于明白职场没有朋友的含义了#虽然我偶尔说下同事，但是一直谨记这一条…",
+          "captured_at": "2026-07-27T07:08:00+08:00",
+          "note": "新浪公开传播页保留7月26日21:45发布的同句用例，展示不同用户可复用的职场语境。",
+          "observed_at": "2026-07-26T21:45:00+08:00"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-27-koukou-sousou-hua-hen-duo",
+      "title": "🧾 扣扣搜搜却花了很多钱",
+      "aliases": [
+        "扣扣搜搜却花了很多钱",
+        "平时扣扣搜搜最后花了很多钱"
+      ],
+      "canonical_phrase": "扣扣搜搜却花了很多钱",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "用“扣扣搜搜”对撞“花了很多钱”，概括日常小处省钱、最后总账却失控的消费反差。",
+      "origin": "已验证：2026年7月27日01:54的微博实时聚合榜将该句列为第10，另一独立公开热榜页同日也收录该词；现有证据不支持指定唯一首发者。",
+      "usage": "消费版：“奶茶不加料，旅行却说走就走”；替换版：“平时在[X]上扣扣搜搜，却在[Y]上花了很多钱”，适合账单复盘和自嘲。",
+      "fun_point": "前半句是极度节省的动作感，后半句却突然承认总支出失守；口语叠词让自嘲听起来更轻，也方便替换具体消费场景。",
+      "why_spread": "已验证：两套独立榜单在7月27日同步收录且实时榜进入前十；推测：人人都能找到自己的“省小钱、花大钱”场景，句式可快速套用。",
+      "lifecycle": "rising",
+      "brand_usage": "记账、支付或理性消费内容可发起“你的钱都花在哪个Y上”互动；不要借势鼓励超前消费、债务美化或羞辱个人消费选择。",
+      "risk": {
+        "level": "low",
+        "note": "普通消费自嘲，风险较低；避免炫耀负债、制造攀比或进行财务建议式承诺。"
+      },
+      "days_on_list": 1,
+      "score": 87,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 29,
+        "reusability": 19,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://codertools.site/",
+          "title": "摸鱼热榜 - 今日微博知乎B站抖音热搜聚合",
+          "captured_at": "2026-07-27T07:08:00+08:00",
+          "note": "页面标明07/27同步时间01:54:12，并将该句列为微博第10。",
+          "observed_at": "2026-07-27T01:54:00+08:00"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "weibo",
+          "url": "https://www.ymym.tv/",
+          "title": "YMYM.TV导航",
+          "captured_at": "2026-07-27T07:08:00+08:00",
+          "note": "独立公开热榜页同日收录该词，提供第二条不同URL的榜单佐证。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
