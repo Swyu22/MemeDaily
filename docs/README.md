@@ -27,6 +27,9 @@ Claude Design references, not production source and not the current architecture
 Operational prompts live in `../ai/prompts/`; session logs live in
 `../ai/sessions/`. Production implementation lives under `../src/`.
 
-Current automation decision:
-`30-decisions/adr-007-codex-cloud-candidate-publishing.md` (Codex Cloud
-candidate PRs with trusted repository publication).
+Current automation decisions:
+
+- `30-decisions/adr-007-codex-cloud-candidate-publishing.md` (Codex Cloud
+  candidate PRs with trusted repository publication).
+- `30-decisions/adr-008-minimum-three-daily-output.md` (minimum-three terminal
+  output, bounded quality relaxation, and monotonic under-minimum repair).

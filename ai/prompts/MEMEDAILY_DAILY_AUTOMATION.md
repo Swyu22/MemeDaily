@@ -17,6 +17,8 @@ filling in, and 接龙 with their OWN unrelated content.
 Produce/overwrite `data/daily/YYYY-MM-DD.json` for Asia/Shanghai, validating against
 `src/domain/memedaily/schema.ts`. Do NOT output a Markdown briefing — pack all the
 editorial richness below into the JSON fields. The daily target is up to 10 strong items.
+For every envelope dated **2026-07-26 or later**, the non-negotiable visible minimum is
+**3 evidence-qualified items**; a complete day therefore contains 3–10 items.
 When running in Codex Cloud, also follow `ai/prompts/CODEX_CLOUD_RUNBOOK.md`: write this
 one file only on the exact daily candidate branch, open a PR, and never merge or push `main`.
 
@@ -35,8 +37,9 @@ one file only on the exact daily candidate branch, open a PR, and never merge or
   Store only URLs, page titles, timestamps, compact notes, and your own summaries.
 - Never fabricate sources, hotness, rankings, comments, or spread paths. Mark every claim
   as either verified or inferred. If you cannot go online or a platform is unreachable
-  today, say so plainly. If nothing qualifies, publish a valid `status: "skipped"`
-  envelope. Never pad to 10 with weak or invented memes.
+  today, say so plainly and continue through the minimum-output recovery ladder below.
+  Never pad to 10 with weak or invented memes, and never treat a 0–2 item envelope as a
+  successful day.
 - Be thorough — this job has a GENEROUS budget (~$5/day of usage, ~60 turns; reserve the
   last few turns for the mandatory re-Read self-check below). Cast a wide
   net across every source category listed below, build a LARGE candidate pool (aim ~30+ raw
@@ -45,6 +48,32 @@ one file only on the exact daily candidate branch, open a PR, and never merge or
   why-it-spreads). Strongly prefer memes corroborated across MULTIPLE independent sources.
   Spend the budget on breadth and quality; the only thing to avoid is needlessly re-fetching
   identical pages. Keep only the best ~10 — quality and "梗-ness" over filling slots.
+
+## Minimum daily output and bounded recovery (effective 2026-07-26)
+Every current-day result must be `status: "published"` or `status: "partial"` with at least
+**3 visible items**. `skipped`, `held`, or a 0–2 item envelope is not a terminal success and
+must trigger recovery rather than stop later catch-up/fallback runs.
+
+Use this ordered ladder only when the strict current-day pool has fewer than 3 items:
+
+1. Complete the broad current-day sweep and try additional public surfaces from every source
+   category above; do not stop after one platform is blocked.
+2. Expand discovery across the previous **7 complete Asia/Shanghai calendar days** and
+   re-evaluate still-active reusable language units against today's context.
+3. If still short, safely carry over a qualified meme seen within the last **14 days**.
+   Reuse its **exact original `id`**, calculate `days_on_list` from history, and describe it
+   as continuing rather than newly born. Each expanded-window/carry-over item must have
+   public evidence newly opened or rechecked within the most recent **72 hours**, while still
+   satisfying the full two-distinct-URL evidence gate below.
+4. The minimum-fill floor may lower only **heat, freshness, or editorial confidence**. It
+   must never lower the reusable-language test, truthfulness, source/evidence gate, hard
+   content rules, safety rules, privacy rules, or JSON/accounting integrity. A lower-confidence
+   but mechanically qualified 3–10 item day is `partial`, with the recovery reason recorded
+   honestly in `run_report`.
+
+If exhaustive recovery still cannot produce 3 compliant items because evidence or
+infrastructure is unavailable, fail closed and raise an operational incident. Do not invent
+content and do not submit `skipped`, `held`, or 0–2 items as a successful daily artifact.
 
 ## Focus & sources
 Primary platforms for this brief: **微博、抖音、小红书** (B站 / 知乎 / 微信 only as
@@ -108,8 +137,10 @@ Grade each candidate, then map the grade to a decision:
   clear context. Publishable.
 - **B** — you opened a public platform content page AND multiple external sources
   corroborate. Publishable.
-- **C** — mainly from aggregator / search / secondhand writeups; spread plausible but
-  unconfirmed → mark 待观察 and **do NOT publish**.
+- **C** — lower heat/freshness/editorial-confidence signal, but factual claims are checked
+  and the enforced source gate is fully met. Normally keep 待观察; it may be used only at
+  the minimum-fill floor after the ordered recovery ladder, and the envelope must be
+  `partial`.
 - **D** — only scattered traces, unstable source → **drop**.
 
 A published item must also pass the enforced gate: **at least 2 sources with DISTINCT
@@ -146,7 +177,8 @@ De-prioritize or drop: 单纯明星八卦但无梗化表达；纯负面公共事
     某地发生某事、赛事赛果 / 比分 / 出线、某人获奖等「某人做了某事 / 某事发生了」的单一
     事件报道。这些一律不发——**除非**它已经衍生出大众正在套用的固定句式或二创模板，此时
     你发的是那个「模板/句式」本身（并说明怎么套用），而不是报道那个事件。
-  - 拿不准时默认按「新闻」处理、丢弃。宁可当天少几条，也不要混入新闻。
+  - 拿不准时默认按「新闻」处理、丢弃；最低数量缺口按上面的合规恢复梯子补齐，
+    不要为了到 3 条而把新闻混进热梗。
 - **不要「病毒式趣味观察 / 段子 / 轶事 / 短视频标题」——哪怕全网刷屏、很好笑、有画面感有反差**：
   本产品要的是「网络流行语」（大众能自己造句、套用、接龙的语言单位），不是「今天最好笑的那条内容」。
   一条趣味观察 / 段子 / 故事 / 视频标题，即使刷屏，也只是**单条内容**、不是梗。
@@ -236,15 +268,16 @@ do not publish it — it never enters `items`, and the public page never shows a
 - `id` format `^YYYY-MM-DD-[a-z0-9-]+$` (see above); ids globally unique across all days.
 - `items` hard-caps at 10. If more than 10 qualify, keep only the 10 highest-value; the
   rest simply do not publish today.
-- `status` semantics: `published` = a full, confident day (items non-empty). `partial` =
-  you published some items but the day was thin or a target platform was unreachable (items
-  non-empty; explain the shortfall in `run_report`). `skipped` = zero qualifying items
-  (`items: []`). `held` = items exist but must not display today (embargo). A `published`
-  or `partial` envelope must NOT have zero items.
+- For dates on or after `2026-07-26`, `items` and the visible evidence-qualified count must
+  both be 3–10. `published` = at least 3 items selected at the normal bar. `partial` = at
+  least 3 items after bounded recovery or with an honestly recorded source/platform
+  limitation. `skipped`, `held`, and any 0–2 item result are invalid current-day terminal
+  states. Older historical envelopes retain their original status semantics.
 - `run_report.published` MUST equal the number of items that are both `published: true`
   AND pass the gate (≥2 distinct source URLs, ≥1 `platform_public`/`aggregator`). For
-  `skipped`/`held` it MUST be 0. The validator checks this equality across every file and
-  blocks the commit on mismatch — this is the most common silent failure, get it exact.
+  dates on or after `2026-07-26`, this value must be at least 3. The validator checks this
+  equality across every file and blocks the commit on mismatch — this is the most common
+  silent failure, get it exact.
 - `run_report.sources` is an array of Platform enum values only
   (`weibo|douyin|xiaohongshu|bilibili|zhihu|wechat|other`) — never URLs, domains, or tier
   names. `dropped_safety` keys are safety-category names; values are non-negative integers.
@@ -259,9 +292,10 @@ do not publish it — it never enters `items`, and the public page never shows a
 2. Apply the runbook's live-main idempotency and exact branch/target guard.
 3. Build today's public-web query plan; sweep platform pages + aggregators as above.
 4. Grade evidence (A/B/C/D); apply safety + shell + selection filters; dedupe vs recent days.
-5. Publish up to 10 qualified items (A/B + gate). If fewer qualify, publish only those and
-   record why the day is short in `run_report`; if none qualify, write a valid
-   `status: "skipped"` envelope.
+5. Publish 3–10 qualified items. If the strict current-day pool has fewer than 3, complete
+   the ordered 7-day expansion → 14-day safe carry-over → lower-editorial-confidence
+   recovery above, preserving fresh-within-72h evidence. Use `partial` and record the
+   recovery reason; never terminate successfully with `skipped`, `held`, or 0–2 items.
 6. Fill `run_report` honestly: `candidates_scanned`, `published`, `dropped_safety` (by
    category), `dropped_low_confidence`, `sources`, `evidence_summary`.
 7. In Codex Cloud, do not request shell access: the separate trusted workflow owns stamping,

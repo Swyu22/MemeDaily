@@ -35,6 +35,7 @@ it("confines Codex Cloud PR input to one dated JSON blob before any write token 
   expect(text).toContain('"codex/daily-news-${DATE}"');
   expect(text).toContain('"${#CHANGED_FILES[@]}" -ne 1');
   expect(text).toContain("codex-artifact/candidate.json");
+  expect(text).toContain("Candidate must contain at least 3 visible items");
   expect(text).toContain("ref: main");
   expect(text).not.toContain("ref: ${{ github.event.pull_request.head.sha }}");
   expect(validate).toContain("contents: read");
@@ -44,6 +45,10 @@ it("confines Codex Cloud PR input to one dated JSON blob before any write token 
   expect(publish).not.toContain("contents: write");
   expect(publish).toContain("actions/download-artifact@");
   expect(publish).toContain("npm run check");
+  expect(publish).toContain("live-under-minimum.json");
+  expect(publish).toContain("Under-minimum repair must preserve existing visible item unchanged");
+  expect(publish).toContain('reported >= 3');
+  expect(publish).toContain('publishedItems >= 3');
 });
 
 it("contains no active Anthropic publisher or GitHub cron after the Codex Cloud takeover", () => {
