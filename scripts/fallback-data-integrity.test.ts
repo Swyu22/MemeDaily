@@ -1,6 +1,6 @@
 /**
  * input: isolated temporary workspaces and fallback/date validator CLIs
- * output: regressions for empty DailyNews data and contained YYYY-MM-DD fallback writes
+ * output: regressions for empty DailyNews data and fail-closed fallback/date handling
  * pos: subprocess-level safety coverage for trusted data maintenance scripts
  */
 import { spawnSync } from "node:child_process";
@@ -72,17 +72,46 @@ it.each([
     variable: "DAILYNEWS_DATE",
     directory: "daily-news",
   },
-])("creates one contained skipped envelope via $script", ({ script, variable, directory }) => {
+])("fails closed without creating a skipped envelope via $script", ({ script, variable, directory }) => {
   const root = tempRoot();
-  const result = runScript(script, root, { [variable]: "2026-07-25" });
-  const filePath = path.join(root, "data", directory, "2026-07-25.json");
+  const result = runScript(script, root, { [variable]: "2026-07-26" });
+  const filePath = path.join(root, "data", directory, "2026-07-26.json");
+
+  expect(result.status).not.toBe(0);
+  expect(`${result.stdout}${result.stderr}`).toContain(
+    "Automatic skipped envelopes are disabled",
+  );
+  expect(`${result.stdout}${result.stderr}`).toContain(
+    "publish at least 3 independently verified items",
+  );
+  expect(fs.existsSync(filePath)).toBe(false);
+  expect(fs.existsSync(path.join(root, "data"))).toBe(false);
+});
+
+it.each([
+  {
+    script: "create-skipped-day.ts",
+    variable: "MEMEDAILY_DATE",
+    directory: "daily",
+  },
+  {
+    script: "create-skipped-news-day.ts",
+    variable: "DAILYNEWS_DATE",
+    directory: "daily-news",
+  },
+])("leaves an existing target untouched via $script", ({ script, variable, directory }) => {
+  const root = tempRoot();
+  const targetDir = path.join(root, "data", directory);
+  const filePath = path.join(targetDir, "2026-07-26.json");
+  const original = '{"sentinel":"existing editorial result"}\n';
+  fs.mkdirSync(targetDir, { recursive: true });
+  fs.writeFileSync(filePath, original);
+
+  const result = runScript(script, root, { [variable]: "2026-07-26" });
 
   expect(result.status, result.stderr).toBe(0);
-  expect(fs.existsSync(filePath)).toBe(true);
-  expect(JSON.parse(fs.readFileSync(filePath, "utf8"))).toMatchObject({
-    date: "2026-07-25",
-    status: "skipped",
-  });
+  expect(result.stdout).toContain("already exists; no action");
+  expect(fs.readFileSync(filePath, "utf8")).toBe(original);
 });
 
 it.each([

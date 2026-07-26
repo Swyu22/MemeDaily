@@ -150,3 +150,31 @@ the first scheduled runs as defense in depth.
   mutation. The 12:15 news catch-up ran at 12:14, observed the terminal `published`
   envelope with six items, and did the same. A cache-bypassed production request
   returned HTTP 200 with `Last-Modified: Sun, 26 Jul 2026 04:00:00 GMT`.
+
+## 2026-07-26 Amendment: Minimum-Three Terminal State
+
+ADR-008 narrows this ADR's idempotency and existing-envelope rules from
+2026-07-26 onward. Where the original text treats every existing or
+`published` / `partial` / `skipped` / `held` envelope as terminal, the amended
+contract is:
+
+- only `published` or `partial` with at least three published items and matching
+  `run_report.published` is terminal;
+- `skipped`, `held`, malformed, or fewer-than-three output is an under-minimum
+  state, so primary, catch-up, and fallback tasks must continue recovery;
+- the trusted publisher may replace that one existing feed/date JSON only with a
+  same-date, exact-path candidate that raises it to the compliant minimum; it still
+  preserves any already-visible item unchanged and rejects arbitrary rewrites,
+  compliant-to-compliant replacement, and downgrade;
+- editorial recovery may lower freshness, heat, novelty, or confidence and may use
+  freshly revalidated safe carry-over candidates, but may not lower hard safety,
+  truthfulness, schema, chronology, or public-evidence requirements.
+
+This is a monotonic repair exception, not a general right to overwrite live data.
+Once live `main` reaches the minimum, all later scheduled invocations return to the
+inexpensive preflight no-op behavior.
+
+Recovery PR #40 remains immutable historical evidence that the earlier contract
+accepted a zero-item `skipped` meme envelope. The new policy repairs the current
+`data/daily/2026-07-26.json` through a later audited exact-file change; it does not
+amend, force-push, or conceal PR #40 or its commits.

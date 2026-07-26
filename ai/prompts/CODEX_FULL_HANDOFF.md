@@ -45,8 +45,8 @@
   公开网页。云端机房 IP 打不开平台原页时，改用可读聚合榜与公开媒体交叉印证，绝不伪装已直读。
 - **本地恢复的 IP 优势（热梗）**：本地中国 IP 下微博 / 抖音 / 小红书公开页通常更易读，可优先平台
   原页，再用聚合榜单 + 墨鱼词典交叉印证。日报仍优先权威媒体原页。
-- **联网**：执行前确认 Codex 联网 / 浏览已开。确实打不开目标站点时，**绝不编造**——按规则写合法的
-  `status:"skipped"` 信封。
+- **联网**：执行前确认 Codex 联网 / 浏览已开。确实打不开目标站点时，**绝不编造**；继续使用第 3 节的
+  安全扩源 / 回带阶梯。若仍不足 3 条，告警并以 `blocked` 结束，不写入零条或不足量信封。
 - **只读公开页**：不登录、不用 cookie / session token、不绕反爬、不批量爬内容、不下图/视频/长摘录；
   只存 URL、页面标题、时间戳、你自己的简短笔记。
 - **「不用第三方付费大模型 API」这条**：指**产品本身**（站点、`scripts/` 校验、数据管线）不得依赖
@@ -58,23 +58,37 @@
   与目标 SHA 对应的 Pages 成功。
 - **本地事故恢复**：必须先 `npm run check`，再 push；`pages.yml` 监听真实用户 push，但仍要等待并
   核验生产端，而不是把“已 push”当成“已上线”。
+- **最低产出（2026-07-26 起）**：两条线每天都必须至少发布 3 条读者可见且逐条通过证据门禁的内容。
+  允许为达到下限适度降低热度、新鲜感偏好或编辑置信度，并用 `partial` 诚实标记；对应内容线的硬安全红线
+  （例如热梗禁政治与灾难、日报灾害须按规则克制处理）、真实性、来源真实性、证据门禁、schema 与时间逻辑
+  一律不得降低，更不能编造凑数。
 
 ---
 
 ## 3. 当前唯一无人值守管线（避免双发）
 
 所有自动触发均由 Codex Cloud Scheduled tasks 负责，旧 Anthropic publisher、外部
-cron-job.org 与 GitHub `schedule:` 已退出。固定去重协议：
+cron-job.org 与 GitHub `schedule:` 已退出。固定去重 / 最低产出协议：
 
-1. 每次按 Asia/Shanghai 算日期并先读 live `main`。当天目标只要已有合法
-   `published|partial|skipped|held` 信封，就终止为 no-op，不覆盖。
+1. 每次按 Asia/Shanghai 算日期并先读 live `main`。从 `2026-07-26` 起，只有同时满足下面三项才是
+   **terminal**，并立即 no-op：
+   - `status` 是 `published` 或 `partial`；
+   - `run_report.published >= 3`；
+   - 实际至少有 3 条读者可见、逐条通过对应证据门禁的 item。
+   `missing`、`skipped`、`held`、0–2 条、计数不一致或不足 3 条均是 `under_minimum`，必须继续恢复；
+   JSON 无法解析、状态未知、结构无法安全判定则是 incident，只告警、不覆盖不明 live 数据。
 2. 每条线每天只用一个精确分支：
    `codex/daily-meme-YYYY-MM-DD` 或 `codex/daily-news-YYYY-MM-DD`。
 3. Cloud 只提交候选 PR；`codex-daily-pr-publish.yml` 是唯一自动写 `main` 的内容入口。
-4. 06:00/07:00 主任务与白天 catch-up 使用同一质量规则；14:30/14:45 监控；21:20/21:30
-   才允许按 generator 形状提交 `skipped` 候选。
+4. 06:00/07:00 primary、白天 catch-up 与夜间 fallback 都能执行安全扩源 / 回带，并遵守同一硬门禁；
+   14:30/14:45 monitor 只读数据与生产端，发现 `<3` 即告警，绝不写候选。
 5. `daily-{news-}fallback.yml` 与 `daily-{news-}monitor.yml` 仅保留人工
    `workflow_dispatch` 灾难恢复，不再有仓库 cron。
+6. 热梗当前发现不足 3 条时，先从近 7 天安全候选恢复，再最多扩至近 14 天；必须复用历史稳定 id /
+   连续天数，并为每条重新取得近 72 小时内的公开证据。日报可扩大到最近 72 小时内真实发生或披露、
+   仍有民生价值且未重复的新闻，保留真实 `occurred_at` 并更新已变化事实。
+7. 受信任 publisher 只允许对精确目标做一次**单调修复**：`under_minimum → >=3`。原有读者可见 item
+   必须逐项原样保留，只追加合格项并协调 status / `run_report`；已有 terminal 目标仍严格 no-op。
 
 ---
 
@@ -83,6 +97,7 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重协议：
 每条线的**信封（envelope）**顶层字段（两个 schema 基本一致）：
 `schema_version:"1.0"`、`policy_version`、`rubric_version`、`date:"YYYY-MM-DD"`、
 `generated_at`(ISO8601 带时区)、`status`(`published|partial|skipped|held`)、`run_report{...}`、`items[]`。
+`skipped|held` 只为历史数据兼容保留在 schema 中；`2026-07-26` 起它们不是当天发布成功或自动化终态。
 `generated_at` / `published_at` 会在提交前由 `npm run stamp:publish -- <文件>` 用可信本机时钟统一写入；
 来源时间晚于该时刻时也会被压到发布上界，避免生成内容声称“未来取证”。
 
@@ -90,12 +105,11 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重协议：
 - 仅热梗数据：`npm run validate`（= `tsx scripts/validate-data.ts`，校验所有 `data/daily/*.json`）
 - 仅日报数据：`npm run validate:news`（= `tsx scripts/validate-news.ts`，校验所有 `data/daily-news/*.json`）
 - **全量门禁**：`npm run check` = `validate` + `validate:news` + `lint` + `typecheck` + `test` + `build`
-- 兜底空跳过：`npm run fallback:skipped`（热梗）/ `npm run fallback:skipped:news`（日报）
 
 **`run_report` 两条线都要诚实填**（值都是非负整数）：`candidates_scanned`、`published`、
 `dropped_safety`{分类名:数量}、`dropped_low_confidence`、`sources`、`evidence_summary`{...}。
 最易错的一条：**`run_report.published` 必须等于「`published:true` 且通过证据门禁」的条数**
-（`skipped`/`held` 时为 0），校验跨所有文件强制此等式，务必精确。
+（历史 `skipped`/`held` 时为 0），校验跨所有文件强制此等式，务必精确；当天候选还必须至少为 3。
 
 ---
 
@@ -127,6 +141,10 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重协议：
   就是它在抖音活跃的可引用证据——收作一条 source（`tier:aggregator`、`platform:douyin`、`url:https://tophub.today/n/3adqqzadng`）
   并标 `douyin`（知乎榜同理 `platform:zhihu`）；别把明明在抖音刷屏的梗只从百度/微博取证、标成 `other/weibo`。
   `npm run validate` 会在满 5 条的当天可见梗里挂抖音/小红书的少于 2 条时打印 warning（不阻断，别为消除它造假）。
+- **不足 3 条时的恢复阶梯**：先放宽热度、新鲜感偏好和编辑置信度，再回看近 7 天已经安全入选或曾因软性
+  置信度暂缓的可复用语言梗；仍不足时最多扩至近 14 天。连续梗复用首次 id，`days_on_list` 如实递增，且每条
+  都要重新取得**证据本身能证明最近 72 小时仍在传播**的公开材料并重新通过 5.3–5.4；只给旧网页换一个新的
+  `captured_at` 不算近 72 小时证据。不得回带已失真或不再传播的内容；硬安全和证据门禁不因最低 3 条而降低。
 
 ### 5.3 红线（命中即丢，并计入 `run_report.dropped_safety`）
 - **要梗不要新闻**：纯新闻/单一事件（某人做了某事、赛果/比分、获奖、见义勇为、哽咽表态…）一律不发——
@@ -144,7 +162,8 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重协议：
 
 ### 5.4 证据门禁（不满足就不发这条）
 分级 A=直接开了平台话题/热榜/视频/笔记原页且语境清楚（可发）；B=平台内容页+多外部印证（可发）；
-C=主要靠聚合/搜索/二手→待观察、不发；D=零散→丢。**强制门禁**：每条 **≥2 个互不相同的 `url`**，
+C=热度/新鲜度/编辑置信度较低，但事实已核对且仍完整通过强制门禁→平时待观察，只能在最低三条恢复阶段
+用于补足并把信封标为 `partial`；D=零散→丢。**强制门禁**：每条 **≥2 个互不相同的 `url`**，
 且**至少 1 个** `tier` 为 `platform_public` 或 `aggregator`（重复 URL collapse 成 1 个，过不了门禁）。
 
 ### 5.5 每条字段（→ `data/daily/*.json`，对照 memedaily/schema.ts）
@@ -168,7 +187,8 @@ C=主要靠聚合/搜索/二手→待观察、不发；D=零散→丢。**强制
 ### 6.1 这条线到底要什么
 **真新闻、不玩梗**。选**和大众生活息息相关、值得知道**的当天新闻，用**克制、平实、有温度的新闻口吻**。
 最多 10 条、按热度从高到低，`heat_rank` 连续 1..N。三条同时满足：①和大众生活息息相关（普通人会关心、用得上）
-②真实有据、权威多源 ③新闻调性（不煽情/不喊口号/不标题党/不玩梗）。**宁缺毋滥，质量与调性 > 数量。**
+②真实有据、权威多源 ③新闻调性（不煽情/不喊口号/不标题党/不玩梗）。**硬红线宁缺毋滥；最低三条
+通过有边界的 72 小时恢复池实现，不靠弱证据或虚构凑数。**
 
 ### 6.2 优先题材（多民生、少「国家高光/政府色彩」；**题材是调色板不是清单，反重复、求多样**）
 **周期性「服务公告」——高考·志愿填报、暑运/春运、天气生活提示——每天最多 1 条且须有当天新信息，连日无新信息不收；
@@ -178,6 +198,10 @@ C=主要靠聚合/搜索/二手→待观察、不发；D=零散→丢。**强制
 AI应用；航天大工程**适量别堆**）、科技向善凡人善举（公益/寻人/助农/救援互助/平民英雄）、文化非遗国潮、体育大赛、
 **国际（非政治）**——全球贴近普通人的科技/文化/体育/民生/自然/太空新鲜事。**每天尽量 ≥1 条「国际」**（`category:"国际"`，
 **软目标**：`validate:news` 缺失只打印 warning 不失败；确实平淡的一天可无，但别习惯性一条不放）。
+
+当前日发现不足 3 条时，先放宽热度、新奇性和栏目结构等软偏好，再扩至最近 72 小时内真实发生或首次披露、
+仍与普通人生活相关且未在近日报重复的安全新闻。`occurred_at` 必须保持真实事件 / 披露时刻，变化中的事实要用
+当前权威来源更新，不得把旧闻伪装成今日新事件。硬安全、真实性和 6.4 证据门禁始终不变。
 
 ### 6.3 红线（代码会硬拦 headline/summary，命中即自纠或丢，并计入 `dropped_safety`）
 - **政治/地缘/国际冲突/外交**——一个字都不碰。**注意区分**：被禁的是**政治性**国际内容（政要/外交/制裁/战争/
@@ -229,7 +253,8 @@ git pull --ff-only                       # 同步 live main，避免覆盖云端
 DATE="$(TZ=Asia/Shanghai date +%F)"
 # —— 选择本次线；日报改为 TARGET_FILE="data/daily-news/${DATE}.json" ——
 TARGET_FILE="data/daily/${DATE}.json"
-# —— 去重锁：若 ${TARGET_FILE} 已 status:published，本线跳过 ——
+# —— 去重锁：仅 status=published|partial 且 reported/visible 均 >=3 才跳过 ——
+# —— 若为 under_minimum，只可保留原有可见 item 原样并追加合格项至 >=3 ——
 # （可选）热梗预取：bash scripts/prefetch-hotlists.sh   # 生成 prefetch/*.txt 供你 Read，加速
 # …研究 + 生成今天的 JSON 到 ${TARGET_FILE}…
 npm run stamp:publish -- "${TARGET_FILE}" # 可信时钟统一 generated_at/published_at + 时间上界
@@ -247,8 +272,10 @@ git push                                 # 真实 push → pages.yml 部署；�
 - 提交信息遵守 Conventional Commits（`chore(data): …` / `feat(...)` / `fix(...)`；scope 别带 `+` 等特殊字符，
   否则 commit-msg 钩子会拒绝）。仓库有 git 预提交钩子（密钥扫描/文件大小/状态新鲜度等），失败别强推。
 - **任一步失败：不提交、保持仓库干净、说明失败原因。** 不要提交半成品数据。
-- 一条线没有合格内容：写合法的 `status:"skipped"`（`items:[]`、`run_report.published:0`）或直接
-  `npm run fallback:skipped` / `npm run fallback:skipped:news` 生成空跳过信封再提交。
+- 当前日候选不足 3 条时执行第 3、5、6 节的扩源 / 回带阶梯，软偏好可降、硬门禁不可降；仍不足则告警并
+  `blocked`，不提交 0–2 条、`skipped` 或 `held` 信封。任何零条 generator 都不是当前发布兜底。
+- 修复 live `under_minimum` 目标时，只能修改当天精确文件；已有读者可见 item 必须逐项原样保留，仅追加
+  新合格项并协调 status / `run_report`。live 目标达到 terminal 后再次运行必须 no-op。
 - 验证上线：`curl -s https://memedaily.fun/ | grep <你的某条标题关键词>`，或浏览器开 memedaily.fun 看「热梗/日报」两个标签。
 
 ---
@@ -259,9 +286,10 @@ git push                                 # 真实 push → pages.yml 部署；�
 2. 算今天 Asia/Shanghai 日期；按第 3 节**去重锁**决定每条线是否要发。
 3. 读 `.cloud.md` + 对应 schema + 最近若干天的同线 `*.json`（避免重复、连续梗复用 id）。
 4. 研究取源：热梗按 5.2（平台原页优先）、日报按 6.4（权威多源）；广撒网、交叉印证。
-5. 套用红线 + 证据门禁，生成今天 JSON：达标几条发几条；偏少 `partial`；零条 `skipped`；绝不凑数/编造。
+5. 套用红线 + 证据门禁，生成今天 JSON；当前发现不足 3 条时执行热梗 7/14 天 + 近 72 小时新证据，
+   或日报近 72 小时恢复。至少 3 条合格后才能提交；使用软偏好放宽时标 `partial`，绝不凑数/编造。
 6. 诚实填 `run_report`（尤其 `published` 等式、`evidence_summary` 字段名精确）。
-7. `npm run check` 全过；失败就改、最多重试几次，仍不行就写 `skipped` 信封。
+7. `npm run check` 全过；失败就改、最多重试几次，仍不能得到至少 3 条则告警并停止，不写不足量信封。
 8. `git add 今天的文件` → commit（Conventional）→ `git pull --rebase` → `npm ci` →
    `npm run check` → `git push`。最终树校验失败不得 push；push 即触发部署。
 9. 留一句运行小结：日期、两条线各自 status / 发了几条 / 主要丢弃数 / push 与上线结果。
@@ -284,13 +312,16 @@ git push                                 # 真实 push → pages.yml 部署；�
    唯一 bypass 类型是 DeployKey；仓库只有一个可写 key `MemeDaily trusted publisher`，其私钥只在
    Actions secret `CODEX_PUBLISH_DEPLOY_KEY`；任一条件缺失就停止自动发布。
 6. 首轮检查 Cloud task 运行位置确实为 Cloud，并验证一条候选 PR 只触发
-   `codex-daily-pr-publish.yml`；受信任 workflow 成功前不得称“已发布”。
+   `codex-daily-pr-publish.yml`；该 workflow 在进入域校验前还必须独立拒绝非
+   `published|partial`、`run_report.published < 3` 或读者可见项 `< 3` 的候选，确保迁移期不会让
+   0–2 条候选漏过。受信任 workflow 成功前不得称“已发布”。
 7. 设置完成后，从 ChatGPT Work Web 逐个读回任务的 active 状态、时区、下一次运行时间和
    `Last ran`；同时确认对应的 8 个 Codex Desktop heartbeat 均不存在。验收必须包含一次真实
    Web Scheduled 触发，不能只靠手工打开 Cloud 会话。
 8. 固定 catch-up / monitor / fallback 到点仍会启动一次任务并消耗很少量的 live-main 预检。
-   当当天已有合法终态信封时，必须立即停止，不再研究、不写文件、不建分支、不开 PR。这里的
-   “去重 no-op”是廉价预检后停止，不是服务器完全不唤醒任务。
+   只有当天已有满足第 3 节 minimum-three 契约的 terminal 信封时，才必须立即停止，不再研究、不写文件、
+   不建分支、不开 PR。`under_minimum` 必须继续恢复，monitor 则只告警。这里的“去重 no-op”是廉价预检后停止，
+   不是服务器完全不唤醒任务。
 
 ---
 
@@ -300,6 +331,7 @@ git push                                 # 真实 push → pages.yml 部署；�
 - 两条线数据：`data/daily/*.json`（热梗）、`data/daily-news/*.json`（日报）。**别动 `public/cc6f97658…d3ad9.txt`**
   （微信站长认证 token 文件，必须一直在线）。
 - 校验：`npm run validate`（热梗）、`npm run validate:news`（日报）、`npm run check`（全量门禁）。
-- 兜底空跳过：`npm run fallback:skipped` / `npm run fallback:skipped:news`。
+- 最低产出：两条线均至少 3 条；热梗不足时近 7/14 天恢复并取近 72 小时证据，日报不足时扩至近 72 小时；
+  zero-item / `skipped` generator 不得用于当前日发布。
 - Cloud 协议：`ai/prompts/CODEX_CLOUD_RUNBOOK.md`；活规则：
   `ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md`、`ai/prompts/DAILYNEWS_DAILY_AUTOMATION.md`、`.cloud.md`。

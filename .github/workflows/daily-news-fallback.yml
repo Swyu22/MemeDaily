@@ -3,8 +3,9 @@ name: daily-news-fallback
 on:
   workflow_dispatch:
 
-# Manual disaster-recovery path only. The active 21:30 Asia/Shanghai schedule is owned by
-# Codex Cloud, which submits the same skipped envelope through codex-daily-pr-publish.yml.
+# Manual fail-closed recovery guard only. The active 21:30 Asia/Shanghai schedule is owned by
+# Codex Cloud and must research a three-item recovery candidate. This workflow never creates
+# an empty/skipped marker; a missing target exits with an actionable error.
 
 permissions:
   contents: read
@@ -15,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  skipped-day:
+  minimum-recovery-guard:
     runs-on: ubuntu-latest
     # Match the publisher's bounded Pages queue/recovery budget.
     timeout-minutes: 180
@@ -49,19 +50,19 @@ jobs:
       - run: npm run fallback:skipped:news
       - run: npm run check
 
-      - name: Commit skipped 日报 day if created
+      - name: Confirm no automatic zero-item 日报 fallback was created
         id: prepare
         run: |
           set -euo pipefail
           echo "publish=false" >> "$GITHUB_OUTPUT"
           git add data/daily-news
           if git diff --cached --quiet; then
-            echo "No skipped 日报 fallback needed."
+            echo "Target already exists; fail-closed guard made no changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore(data): add skipped DailyNews fallback"
+          git commit -m "chore(data): publish verified DailyNews recovery"
           git pull --rebase origin main
           npm ci
           npm run check

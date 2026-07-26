@@ -6,7 +6,8 @@
 - **Current stage:** a live, dual-feed, static product with evidence-backed content,
   conservative publication gates, permanent archives, and unattended cloud publishing.
 - **Success standard:** trusted validation is the only path to publication; a failed or
-  missing run leaves the last valid site online and may later publish a `skipped` marker.
+  missing run leaves the last valid site online and opens an incident until that feed
+  reaches at least three evidence-qualified, reader-visible items for the day.
 
 ## Constraints
 - **Collection:** public web intelligence only. No login cookies, private-platform
@@ -36,8 +37,8 @@
   deterministic history calculations. It has no UI or infrastructure dependency.
 - `src/domain/dailynews/`: news schema, loaders, labels, freshness, editorial gates, and
   deterministic history calculations. It has no UI or infrastructure dependency.
-- `scripts/`: validation, skipped-envelope generation, trusted publish-time stamping,
-  public hot-list prefetching, font generation, and governance checks.
+- `scripts/`: validation, fail-closed minimum-output guards, trusted publish-time
+  stamping, public hot-list prefetching, font generation, and governance checks.
 - `.github/workflows/`: CI, Pages, trusted Codex candidate ingestion, manual
   fallback/monitor recovery, and cloud-fetch diagnostics. Official actions are pinned
   to commit SHAs.
@@ -59,6 +60,10 @@
 - **Evidence tiers:** `platform_public`, `aggregator`, `search_media`, `spillover`
 - **Meme publication minimum:** two independent HTTP(S) URLs with at least one
   `platform_public` or `aggregator` source, plus a reusable meme shell and all safety gates.
+- **Daily output minimum (effective 2026-07-26):** each feed independently requires
+  `published`/`partial` plus at least three evidence-qualified, reader-visible items.
+  Heat, freshness, and editorial confidence may be relaxed through the documented
+  recovery pool; safety, truth, chronology, and source gates may not.
 - **Trusted chronology:** publication jobs set `generated_at` and `published_at`; sources
   cannot claim capture after publication.
 - **News attribution:** every reader-visible DailyNews source has a required `outlet` label.
@@ -68,14 +73,17 @@
 - Eight ChatGPT Work Web Scheduled Tasks: news runs at 06:00, hourly 07:15–12:15,
   14:45, and 21:30; memes run at 07:00, hourly 08:00–13:00, 14:30, and 21:20, all
   in Asia/Shanghai. Durable behavior lives in `ai/prompts/CODEX_CLOUD_RUNBOOK.md`.
-- Fixed retries always start with one inexpensive live-main terminal-envelope
-  preflight. A terminal result stops the task before research, writes, branches, or
-  PRs. The eight former Codex Desktop heartbeats were deleted; a local automation
-  pointing at a Cloud context must never be described as a server schedule.
+- Fixed retries always start with one inexpensive live-main minimum preflight. Only a
+  valid `published`/`partial` envelope with at least three visible qualified items is
+  terminal and stops before research, writes, branches, or PRs. The eight former Codex
+  Desktop heartbeats were deleted; a local automation pointing at a Cloud context must
+  never be described as a server schedule.
 - `codex-daily-pr-publish.yml`: same-repository exact-branch/one-JSON candidate
-  ingestion, trusted validation, serialized main publication, and correlated Pages wait.
-- `daily-{news-}fallback.yml`: manual-only validated skipped-marker disaster recovery.
-- `daily-{news-}monitor.yml`: manual-only live-main/Pages operational verification.
+  ingestion, explicit three-item candidate gate, serialized new/under-minimum publication,
+  and correlated Pages wait. A complete day remains immutable.
+- `daily-{news-}fallback.yml`: manual-only fail-closed recovery guards; the server
+  fallback tasks perform the editorial research.
+- `daily-{news-}monitor.yml`: manual-only minimum-count/live-main/Pages verification.
 - `pages.yml`: build and deploy the static export after trusted changes.
 - `ci.yml`: source, data, governance, secret, type, test, and build gates.
 

@@ -14,6 +14,8 @@ restrained everyday-life news digest. It is not a community, scraper, or private
 ## Feed Contracts
 ### Memes
 - One envelope per day: `data/daily/YYYY-MM-DD.json`.
+- From 2026-07-26 onward, every daily envelope exposes 3–10 evidence-qualified items and
+  uses only `published` or `partial`.
 - Each published item has a stable `id`, title, platforms, type, reader-facing summary,
   origin, usage, fun point, spread reason, lifecycle, internal policy fields, and sources.
 - `brand_usage` and `risk` remain contract/policy inputs but are intentionally not rendered
@@ -23,6 +25,8 @@ restrained everyday-life news digest. It is not a community, scraper, or private
 
 ### News
 - One envelope per day: `data/daily-news/YYYY-MM-DD.json`.
+- From 2026-07-26 onward, every daily envelope exposes 3–10 evidence-qualified items and
+  uses only `published` or `partial`.
 - Items contain a stable id, emoji-led headline, category, summary, heat rank, event time,
   and evidence sources with outlet metadata.
 - The feed prioritizes genuinely fresh, everyday-life information and non-political
@@ -35,8 +39,11 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   the live Pages deployment may complete a few minutes later.
 - `generated_at` and every source `captured_at` must not be later than `published_at`.
 - Invalid JSON, schema failures, policy failures, or accounting mismatches block publication.
+- For current envelopes, `skipped`, `held`, or fewer than three visible qualified items is
+  an under-minimum incident to recover, not a successful terminal day. Historical envelopes
+  before 2026-07-26 retain their recorded status.
 
-## Meme Evidence And Safety Gates
+## Evidence, Safety, And Recovery Gates
 - Publish only with at least two independent reachable HTTP(S) URLs.
 - At least one source must be `platform_public` or `aggregator`; third-tier-only evidence is
   insufficient.
@@ -47,7 +54,14 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   dangerous content, and harmful rumors.
 - A candidate needs a reusable phrase, template, BGM, visual/action pattern, persona, or
   remix structure. A hot one-off news event is not a meme.
-- Never fabricate sources or weaken safety to fill a daily quota.
+- When the strict meme pool is under three, search the previous 7 days, then allow safe
+  carry-over from the previous 14 days with public evidence newly opened or rechecked
+  within 72 hours. Carry-over reuses the exact stable id and correct `days_on_list`.
+- DailyNews may recover an under-three day with useful, still-current material from the
+  previous 72 hours only when it has never been visibly published in an earlier news
+  envelope and still passes the normal authoritative-source gate.
+- Recovery may lower heat, freshness, or editorial confidence only. Never fabricate,
+  weaken safety/truth, relax source evidence, or cross any content red line to reach three.
 
 ## UI Requirements
 - Home: same chrome for both tabs, latest date first, up to five days, heat/freshness sorting,
@@ -79,8 +93,12 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   succeeds. The publisher adopts the push-triggered run and explicitly dispatches one
   bounded recovery run only if that run is missing or fails.
 - Local Codex is a supervised recovery option. Its prompt is guidance, not an OS sandbox.
-- Missing content may publish `skipped`; the system prefers fewer correct items to unsafe,
-  weakly evidenced, or fabricated ones.
+- Primary, catch-up, and fallback content runs treat only `published`/`partial` with at
+  least three visible evidence-qualified items as terminal. Under-minimum days continue the
+  bounded recovery policy; monitors alert but never author content.
+- If the bounded recovery pool still cannot produce three compliant items, automation fails
+  closed and raises an operational incident. It never fabricates or publishes a 0–2 item,
+  `skipped`, or `held` current-day envelope.
 
 ## References
 - Living meme rules: `../../ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md`

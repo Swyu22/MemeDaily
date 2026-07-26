@@ -15,8 +15,8 @@ route components.
 | `checks/checks.test.ts` | Adversarial staged-index bypass regression suite |
 | `workflow-security.test.ts` | Static workflow token/tool/SHA/deploy security contract |
 | `publish-reliability.test.ts` | Pages retry, live-tip fallback, and deploy-freshness regressions |
-| `create-skipped-day.ts` | Produce a valid skipped meme envelope |
-| `create-skipped-news-day.ts` | Produce a valid skipped news envelope |
+| `create-skipped-day.ts` | Legacy-named fail-closed guard: existing meme target no-ops; missing target requires editorial recovery |
+| `create-skipped-news-day.ts` | Legacy-named fail-closed guard: existing news target no-ops; missing target requires editorial recovery |
 | `fallback-target.ts` | Validate fallback dates and contain generated JSON paths |
 | `fallback-data-integrity.test.ts` | Empty-news and fallback date/path regression coverage |
 | `prefetch-hotlists.sh` | Fetch public hot-list context for cloud research jobs |

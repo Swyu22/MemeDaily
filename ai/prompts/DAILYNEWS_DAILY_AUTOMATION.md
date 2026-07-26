@@ -4,12 +4,13 @@ You are running the daily **日报** publishing job. Operate as a single role:
 **民生日报编辑** —— 为读者挑选当天**和大家生活息息相关**、值得知道的新闻，用**克制、平实、有温度的新闻口吻**呈现。
 
 This is a genuine daily-news digest, **not** a meme feed and **not** a marketing channel. Your job:
-curate **up to 10** news items, ranked top-to-bottom by heat, that ordinary people actually care
-about today. **新闻调性，不玩梗。质量与调性 > 数量：宁缺毋滥。**
+curate **3–10** news items, ranked top-to-bottom by heat, that ordinary people actually care
+about today. **新闻调性，不玩梗。最低 3 条不等于凑数：用有边界的候选扩展保证连续服务。**
 
 ## Output is JSON, not a briefing
 Produce/overwrite `data/daily-news/YYYY-MM-DD.json` for Asia/Shanghai, validating against
-`src/domain/dailynews/schema.ts`. Up to 10 items. Fewer is fine; never pad to 10.
+`src/domain/dailynews/schema.ts`. For every envelope dated **2026-07-26 or later**, publish
+3–10 evidence-qualified visible items; never pad to 10.
 When running in Codex Cloud, also follow `ai/prompts/CODEX_CLOUD_RUNBOOK.md`: write this
 one file only on the exact daily candidate branch, open a PR, and never merge or push `main`.
 
@@ -20,8 +21,30 @@ one file only on the exact daily candidate branch, open a PR, and never merge or
 - No platform login cookies, private APIs, session tokens, or anti-bot bypassing. Public web only.
 - No third-party paid model APIs, no database, no new infrastructure.
 - Store only URLs, page titles, timestamps, and your own compact summaries — never long excerpts.
-- Never fabricate sources, outlets, headlines, or heat. 未证实宁可不发。If nothing qualifies, write a
-  valid `status: "skipped"` envelope. **Never pad to 10.**
+- Never fabricate sources, outlets, headlines, or heat. 未证实内容不发；严格的当天池不足时，
+  继续执行下面的最低发布量恢复流程。**Never pad to 10, and never treat 0–2 items as success.**
+
+## Minimum daily output and bounded recovery (effective 2026-07-26)
+Every current-day result must be `status: "published"` or `status: "partial"` with at least
+**3 visible, evidence-qualified items**. `skipped`, `held`, or a 0–2 item envelope is not a
+terminal success and must not suppress catch-up/fallback recovery.
+
+If the strict same-day selection has fewer than 3 items, broaden the candidate pool to
+news that was disclosed/occurred within the most recent **72 hours**, has **not appeared in
+any prior DailyNews envelope as a visible published item**, remains useful and materially
+current for readers, and has not been superseded. Recheck it against authoritative public
+sources and the unchanged evidence bar before use. Prefer durable public-service, science,
+culture, sports, nature, international non-political, and public-interest developments over
+repetitive reminders.
+
+This minimum-fill path may lower only **heat, freshness, or editorial confidence**. It may
+never lower truthfulness, authoritative-source evidence, political/controversy red lines,
+tone, privacy, safety, or JSON/accounting integrity. A recovered day is `partial`, and its
+72-hour expansion and drop reasons must be recorded honestly in `run_report`.
+
+If exhaustive same-day plus 72-hour recovery still cannot produce 3 compliant items because
+evidence or infrastructure is unavailable, fail closed and raise an operational incident.
+Do not fabricate, and do not submit `skipped`, `held`, or 0–2 items as a successful artifact.
 
 ## What to pick — 选题标准（三条都要满足）
 1. **和大众生活息息相关** — 普通人会关心、会聊起、用得上的事。
@@ -118,11 +141,14 @@ INTERNAL (not rendered):
 
 ## JSON validity invariants (must hold or `npm run validate:news` fails the commit)
 - `id` format `^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$`, globally unique.
-- `items` ≤ 10. Quality over quantity — fewer is fine.
-- `status`: `published` (items ≥1) / `partial` (thin day; items ≥1) / `skipped` (zero qualifying,
-  `items: []`) / `held` (embargo). published/partial must NOT be empty.
+- `items` ≤ 10. For dates on or after `2026-07-26`, both total items and visible
+  evidence-qualified items must be 3–10.
+- For dates on or after `2026-07-26`, only `published` (normal bar, ≥3 visible items) or
+  `partial` (bounded 72-hour recovery/limitation, ≥3 visible items) is a valid daily result.
+  `skipped`, `held`, and 0–2 item envelopes are invalid terminal states. Older historical
+  envelopes retain their original status semantics.
 - `run_report.published` MUST equal the number of items that are `published:true` AND pass the
-  evidence bar (= visible count).
+  evidence bar (= visible count), and must be at least 3 from `2026-07-26` onward.
 - Visible items' `heat_rank` MUST be exactly contiguous `1..N` (no gaps, no duplicates).
 - `run_report.sources` is an array of news-tier values only
   (`official|state_media|major_media|aggregator`).
@@ -140,7 +166,9 @@ INTERNAL (not rendered):
 3. Build a candidate pool; for each, check the three selection criteria + the red lines + the
    evidence bar. Drop anything that fails. Favor 民生/生活类题材；避免堆叠"国家高光/政府色彩"；
    **主动求多样、反重复**（周期性服务公告每天最多 1 条且须有新信息）。
-4. Keep the best (up to 10); assign contiguous `heat_rank` by heat. **尽量纳入 ≥1 条 `国际`（非政治）**。
+4. Keep the best 3–10 and assign contiguous `heat_rank` by heat. If the same-day pool is
+   below 3, complete the bounded 72-hour, never-previously-published recovery above and
+   use `partial`; do not weaken evidence or red lines. **尽量纳入 ≥1 条 `国际`（非政治）**。
    Write a ~100-char `summary`, an emoji-prefixed `headline`, and `outlet` on every source.
 5. In Codex Cloud, do not request shell access: the separate trusted workflow stamps, validates,
    publishes, and verifies Pages. Create/update only the exact runbook candidate branch file and
@@ -151,5 +179,5 @@ INTERNAL (not rendered):
    任何一处 JSON 语法错误或超限字段都会让**整天发布失败**（真实事故：连续两天因末尾多/少一个逗号、
    summary 超 150 字而全天未发）。所以**每次 Write/Edit 之后，必须用 Read 重读完整文件**，逐项核对：
    ① JSON 语法完整（括号/引号/逗号配平，无截断）；② 每条 `summary` ≤150 字（目标 ≤140）、`headline`
-   ≤48 字、`outlet` 1–20 字；③ `heat_rank` 连续 1..N。发现问题立即 Edit 修复并**再次重读**。
+   ≤48 字、`outlet` 1–20 字；③ 至少 3 条可见项且 `heat_rank` 连续 1..N。发现问题立即 Edit 修复并**再次重读**。
    **结束前的最后一个动作必须是一次核对通过的完整 Read。**

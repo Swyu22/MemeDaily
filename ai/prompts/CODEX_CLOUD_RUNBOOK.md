@@ -22,6 +22,12 @@ or changes more than one JSON file. It submits a candidate. The trusted
 `.github/workflows/codex-daily-pr-publish.yml` workflow alone stamps, validates,
 publishes, and waits for the correlated Pages deployment.
 
+As an independent migration guard, the trusted workflow must reject a candidate
+before domain validation unless its status is `published` or `partial`,
+`run_report.published >= 3`, and its raw reader-visible item count is at least
+three. Domain validation then proves that those visible items qualify under the
+feed rules; neither layer replaces the other.
+
 Repository ruleset `codex-trusted-main` mechanically rejects direct updates and
 merges from this connected Cloud tool; only the repository's dedicated trusted
 publisher deploy key may update `main`. If a tool claims that rule is absent or
@@ -33,6 +39,24 @@ instead of attempting another publication path.
 Use the calendar date in `Asia/Shanghai`, regardless of runner location. Let it be
 `YYYY-MM-DD`.
 
+For both feeds, the minimum-output contract is effective from `2026-07-26`
+inclusive:
+
+- a terminal envelope must have status `published` or `partial`,
+  `run_report.published >= 3`, and at least three reader-visible items that each
+  satisfy the selected feed's evidence gate;
+- a missing target, status `skipped` or `held`, zero to two reported/visible
+  items, or any mismatch that leaves fewer than three qualified visible items is
+  `under_minimum`, not success and not a no-op;
+- an envelope that is not parseable JSON, has an unknown status, has an
+  unrecognizable shape, or cannot be safely classified is an incident. Never
+  overwrite unexplained malformed live data.
+
+The threshold may relax heat, novelty, and editorial-confidence preferences only.
+It never relaxes hard safety, factual accuracy, source authenticity, evidence
+qualification, schema rules, or chronological plausibility. Never fabricate an
+item or source to reach three.
+
 | Feed | Target on `main` | Exact candidate branch |
 | --- | --- | --- |
 | `meme` | `data/daily/YYYY-MM-DD.json` | `codex/daily-meme-YYYY-MM-DD` |
@@ -41,11 +65,11 @@ Use the calendar date in `Asia/Shanghai`, regardless of runner location. Let it 
 Before any mutation:
 
 1. Fetch the target from `main`.
-2. If it exists and is valid JSON with status `published`, `partial`, `skipped`,
-   or `held`, report a terminal idempotent no-op. Do not replace it.
-3. If it exists but is malformed or has an unknown status, treat that as an
-   incident. Open or update a feed-specific GitHub issue and stop; never overwrite
-   an unexplained live-main file.
+2. Classify it using the minimum-output contract above. A terminal envelope is an
+   idempotent no-op and must not be replaced.
+3. Treat a missing target or a safely classified `under_minimum` target as work
+   still required. Treat malformed, unknown, or unclassifiable content as an
+   incident: open or update a feed-specific GitHub issue and stop.
 4. Inspect open pull requests and recent same-repository pull requests for the
    exact branch. Never create a second branch for the same feed/date.
 
@@ -55,10 +79,19 @@ Repair the JSON only when the failure is a candidate/schema/content failure. For
 an infrastructure failure, rerun the failed trusted job when the connector permits
 it; otherwise report the failure without broadening the file scope.
 
+An `under_minimum` target on `main` may be repaired only monotonically through
+the exact target and branch: preserve every existing reader-visible item exactly
+as published, add enough newly qualified items to reach at least three, reconcile
+status and `run_report`, and change no other path. Never remove, rewrite, reorder,
+or silently downgrade an existing visible item during this recovery. The trusted
+publisher may accept this one exact under-minimum-to-at-least-three repair; once
+the live target is terminal, every later run is a no-op.
+
 ## 3. Primary and catch-up mode
 
 `primary` and `catchup` use the same editorial contract. Catch-up is not a
-lower-quality path.
+free-form lower-quality path; it may progress farther through the bounded recovery
+ladder, while the hard gates remain identical.
 
 Always fetch from `main` and read completely:
 
@@ -76,19 +109,38 @@ Then:
 
 1. Research broadly using public sources and the living rule. Cross-check claims,
    preserve real URLs, and never invent evidence.
-2. Produce one complete JSON envelope for the exact target. `generated_at` must be
+2. Apply the bounded recovery ladder when current-day discovery alone has fewer
+   than three qualified items:
+   - for `meme`, first reconsider safe, reusable candidates from the previous
+     seven days, then extend to at most the previous fourteen days. Reuse the
+     stable historical item id, maintain truthful continuity metadata, and obtain
+     public evidence that itself demonstrates activity within the most recent
+     72 hours. Merely recapturing an old page with a new `captured_at` does not
+     qualify;
+   - for `news`, broaden to still-relevant, non-duplicative everyday-life events
+     genuinely disclosed or occurring within the most recent 72 hours. Preserve
+     the real `occurred_at`, refresh changed facts, and do not present an old item
+     as a new event.
+   Lower heat, novelty, or editorial-confidence preferences before rejecting a
+   safe evidence-qualified candidate, and mark a below-ideal but valid day
+   `partial`. Hard safety and evidence gates remain unchanged.
+3. Produce one complete JSON envelope for the exact target. `generated_at` must be
    a real current ISO 8601 time with offset; `published_at` may be omitted because
    trusted publication stamps both clocks.
-3. Self-check JSON syntax, every schema limit, source independence, safety,
+4. Self-check JSON syntax, every schema limit, source independence, safety,
    chronological plausibility, item counts/ranks, and `run_report` consistency.
-4. If honest research yields no qualifying items, submit the living rule's valid
-   `skipped` envelope. Never pad or fabricate.
-5. Create the exact branch from the latest `main` if it does not exist. Create or
+   The candidate must contain at least three reader-visible evidence-qualified
+   items and `run_report.published` must report the same qualified visible count.
+5. If the bounded ladder still cannot reach three because authentic evidence is
+   unavailable or infrastructure is blocked, do not submit a zero-to-two-item or
+   `skipped` candidate. Create or update the feed/date alert with the attempted
+   sources and blocker, report `blocked`, and stop without data mutation.
+6. Create the exact branch from the latest `main` if it does not exist. Create or
    update only the target file on that branch.
-6. Open one non-draft PR to `main` if none is open. Title it
+7. Open one non-draft PR to `main` if none is open. Title it
    `chore(data): Codex <feed> YYYY-MM-DD`. State that it is a one-file untrusted
    candidate for trusted validation and must not be manually merged.
-7. Stop after confirming that the PR exists. Do not merge, auto-merge, close, or
+8. Stop after confirming that the PR exists. Do not merge, auto-merge, close, or
    edit any other path.
 
 When repairing a failed open candidate, update the same target on the same branch;
@@ -96,16 +148,19 @@ the PR `synchronize` event will retrigger trusted validation.
 
 ## 4. Monitor mode
 
-Monitor is read-mostly and never creates or edits a data candidate.
+Monitor is data-read-only and never creates, edits, or repairs a data candidate.
+Its only permitted write is creating or updating the single deduplicated alert
+issue described below.
 
 1. Apply the scope/idempotency reads from section 2.
-2. For `published` or `partial`, select a distinctive reader-visible title from
-   the envelope and fetch `https://memedaily.fun/` with cache bypass when the tool
-   supports it. Verify HTTP success and that production exposes today's content.
-3. For `skipped` or `held`, confirm the envelope exists on live `main`; production
-   may intentionally show the last visible successful content.
-4. Inspect today's exact candidate PR and its trusted workflow status when the
-   main envelope is missing.
+2. Only for a terminal envelope, select distinctive reader-visible titles and
+   fetch `https://memedaily.fun/` with cache bypass when the tool supports it.
+   Verify HTTP success and that production exposes at least three of today's
+   qualified visible items.
+3. Treat a missing target, `skipped`, `held`, zero-to-two items, count mismatch,
+   or fewer than three items on production as unhealthy `under_minimum`.
+4. Inspect today's exact candidate PR and its trusted workflow status whenever
+   the main envelope is missing or under minimum.
 5. If healthy, close any matching open alert as completed. If unhealthy, create
    or update one GitHub issue using:
    - `MemeDaily 未发布告警: YYYY-MM-DD (<status>)`, or
@@ -119,29 +174,36 @@ connected tool actually returned that evidence.
 
 ## 5. Fallback mode
 
-Fallback is the late last resort. It performs no content research.
+Fallback is the late last resort, but it is still a content-recovery run. It uses
+the same hard safety, truth, evidence, schema, and minimum-three contract as
+primary/catch-up; it must not call or reproduce a zero-item/skipped generator.
 
-1. Apply section 2. Any existing valid live-main envelope is a no-op.
+1. Apply section 2. Only an existing terminal live-main envelope is a no-op.
 2. If an open candidate is still running, leave it intact and report its state.
-3. If an open candidate failed because its JSON is invalid, replace that same
-   target on the same branch with a valid `skipped` envelope.
-4. Otherwise read the matching trusted generator from `main`:
-   - meme: `scripts/create-skipped-day.ts`
-   - news: `scripts/create-skipped-news-day.ts`
-5. Reproduce that generator's current envelope shape for today, with zero counts,
-   empty items/sources, status `skipped`, and a real current ISO 8601
-   `generated_at`. Omit `published_at`; the trusted workflow supplies it.
-6. Create/update the exact one-file branch and open the same kind of non-draft
-   candidate PR described in section 3.
+3. Read the same runbook, living rule, schema/rules, and recent envelopes required
+   by section 3. Perform bounded public-source research and the same recovery
+   ladder: memes use seven-day then fourteen-day safe carryover with evidence from
+   the latest 72 hours; news may recover still-relevant events from the latest
+   72 hours.
+4. If repairing an existing under-minimum live target or failed candidate,
+   preserve all existing reader-visible items exactly and append qualified items
+   on the same exact branch/file until the envelope has at least three.
+5. Self-check the completed candidate and submit the same one-file non-draft PR
+   described in section 3. `partial` is appropriate when the relaxed editorial
+   preferences were needed.
+6. If three authentic evidence-qualified items still cannot be produced, alert
+   and report `blocked`; do not submit a zero-to-two-item, `skipped`, or `held`
+   candidate.
 
-Fallback never bypasses the trusted workflow and never pushes a skipped marker
-directly to `main`.
+Fallback never bypasses the trusted workflow and never writes `main` directly.
 
 ## 6. Completion report
 
 Every run returns a compact report containing:
 
 - feed, mode, and Asia/Shanghai date;
+- live-main classification (`terminal`, `under_minimum`, `missing`, or `incident`),
+  status, reported count, and reader-visible count when available;
 - terminal main status or exact target;
 - branch and PR URL/number when mutated;
 - trusted workflow state when visible;

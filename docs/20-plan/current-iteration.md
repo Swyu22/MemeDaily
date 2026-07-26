@@ -6,7 +6,9 @@ Align local, GitHub `main`, and production; repair confirmed reliability/securit
 defects; then replace the stopped Anthropic publisher with fully cloud-hosted Codex
 primary, catch-up, monitor, and fallback schedules for both feeds. Correct the
 2026-07-26 local-heartbeat deployment error, backfill both feeds, and prove that the
-server scheduler and trusted publication path operate without the owner's Mac.
+server scheduler and trusted publication path operate without the owner's Mac. Replace
+the initial meme `skipped/0` result with a hard per-feed minimum of three safe,
+evidence-qualified items and prove the trusted under-minimum repair path.
 
 ## Scope
 
@@ -14,7 +16,8 @@ server scheduler and trusted publication path operate without the owner's Mac.
   trusted candidate ingestion, publish/deploy correlation, fallback/monitor
   reliability, public data minimization, metadata, cloud prompts, all eight cloud
   schedules, retirement of all eight local heartbeats, 2026-07-26 dual-feed recovery,
-  documentation/state/session synchronization, and production acceptance.
+  minimum-three recovery policy and monotonic repair, documentation/state/session
+  synchronization, and production acceptance.
 - **Out:** unrelated visual redesign, historical audit rewrites, private-platform
   extraction, paid model APIs in the product, and unrelated credential/account changes.
 
@@ -43,6 +46,14 @@ server scheduler and trusted publication path operate without the owner's Mac.
   cache-bypassed production HTTP 200 with current dual-feed content.
 - [x] Observe the real 12:00 meme and 12:15 news Web Scheduled catch-up runs; prove
   both terminal live-main preflights caused no-ops with no additional GitHub mutation.
+- [ ] Deploy the explicit candidate `>=3` gate and trusted exact-file
+  under-minimum-to-complete repair path.
+- [ ] Replace the 2026-07-26 meme `skipped/0` envelope with three reverified safe
+  carryovers through the exact daily candidate PR and correlated Pages deployment.
+- [ ] Update and read back all eight server Scheduled Task prompts so only
+  `published/partial + >=3` is terminal and fallback performs editorial recovery.
+- [ ] Activate the domain/monitor/fallback gates, complete full verification, and prove
+  local, GitHub main, Pages, and production agree.
 - [x] Run the complete local/governance/security suite and independent diff review;
   correct its final Pages-budget and documentation findings.
 - [x] Merge the final correction, pass main CI/Pages, restore protection, and verify
@@ -72,7 +83,8 @@ server scheduler and trusted publication path operate without the owner's Mac.
   path.
 - The active main ruleset exposes only `DeployKey` as an update bypass, the repository
   has one writable trusted publisher key, and a trusted fallback proves that path works.
-- Duplicate/catch-up/fallback behavior is a no-op after a terminal live envelope.
+- Duplicate/catch-up/fallback behavior is a no-op only after a valid live envelope has
+  at least three evidence-qualified visible items.
   Fixed retries may still wake and spend one inexpensive live-main preflight, but must
   stop before research, writes, branches, or PRs. Real Web Scheduled no-ops and real
   candidate publications must both be evidenced.
@@ -81,4 +93,4 @@ server scheduler and trusted publication path operate without the owner's Mac.
 
 ## Last Updated
 
-- 2026-07-26 12:18 +0800
+- 2026-07-26 13:18 +0800

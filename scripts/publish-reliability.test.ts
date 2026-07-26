@@ -157,15 +157,16 @@ it("gives correlated and recovery Pages runs a budget wider than the Pages job m
 it.each([
   ["daily-fallback.yml", "npm run fallback:skipped"],
   ["daily-news-fallback.yml", "npm run fallback:skipped:news"],
-])("serializes and live-syncs %s before creating a skipped envelope", (name, createCommand) => {
+])("serializes and live-syncs the fail-closed guard in %s", (name, guardCommand) => {
   const workflow = fs.readFileSync(path.join(WORKFLOWS, name), "utf8");
   const sync = workflow.indexOf("Sync to live main before fallback dedup");
   expect(workflow).toContain("group: daily-data-publish");
+  expect(workflow).toContain("never creates");
   expect(workflow).toContain("git fetch --quiet origin main");
   expect(workflow).toContain("git reset --hard FETCH_HEAD");
   expect(workflow).toContain("bash scripts/push-main-with-deploy-key.sh");
   expect(sync).toBeGreaterThan(-1);
-  expect(workflow.indexOf(createCommand)).toBeGreaterThan(sync);
+  expect(workflow.indexOf(guardCommand)).toBeGreaterThan(sync);
 });
 
 it.each(["daily-monitor.yml", "daily-news-monitor.yml"])(
@@ -177,5 +178,8 @@ it.each(["daily-monitor.yml", "daily-news-monitor.yml"])(
     expect(workflow).toContain("--workflow=pages.yml --status=success");
     expect(workflow).toContain('.headSha == \\"${LIVE_SHA}\\"');
     expect(workflow).toContain("Pages 部署核验告警");
+    expect(workflow).toContain("minimum=3");
+    expect(workflow).toContain('[ "$REPORTED" -ge 3 ]');
+    expect(workflow).toContain('[ "$VISIBLE" -ge 3 ]');
   },
 );
