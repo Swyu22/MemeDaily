@@ -5,7 +5,10 @@
  */
 import type { MemeItem } from "./schema";
 
-type SortableMeme = Pick<MemeItem, "days_on_list" | "lifecycle" | "score">;
+type SortableMeme = Pick<
+  MemeItem,
+  "days_on_list" | "lifecycle" | "score" | "score_breakdown"
+>;
 
 export const lifecycleLabels = {
   rising: "还能上车",
@@ -43,31 +46,55 @@ export const tierLabels = {
   spillover: "外溢讨论",
 } as const;
 
+function decisionScore(item: SortableMeme): number {
+  if (item.score === undefined) return 50;
+  return item.score;
+}
+
 export function sortByDecisionValue<T extends SortableMeme>(items: T[]): T[] {
   return [...items].sort((a, b) => {
     const byLife = lifecycleRank[a.lifecycle] - lifecycleRank[b.lifecycle];
     // Unscored items use a neutral midpoint so absence of a score does not
     // silently sink an otherwise valuable meme to the bottom of its bucket.
-    return byLife || (b.score ?? 50) - (a.score ?? 50);
+    return byLife || decisionScore(b) - decisionScore(a);
   });
 }
 
-// 热度值：综合分高者优先（缺分用中位数 50），同分再按生命周期。
+function heatValue(item: SortableMeme): number {
+  if (item.score_breakdown) return item.score_breakdown.heat;
+  return item.score ?? 50;
+}
+
+function freshnessValue(item: SortableMeme): number {
+  if (item.score_breakdown) return item.score_breakdown.freshness;
+  return -1;
+}
+
+function daysValue(item: SortableMeme): number {
+  if (item.days_on_list === undefined) return 1;
+  return item.days_on_list;
+}
+
+// 热度值：新契约按 heat 分量，历史数据回退综合分；同分再按生命周期。
 export function sortByHeat<T extends SortableMeme>(items: T[]): T[] {
   return [...items].sort(
     (a, b) =>
-      (b.score ?? 50) - (a.score ?? 50) ||
+      heatValue(b) - heatValue(a) ||
+      decisionScore(b) - decisionScore(a) ||
       lifecycleRank[a.lifecycle] - lifecycleRank[b.lifecycle],
   );
 }
 
-// 新鲜值：刚起势优先，再按上榜天数（越少越新），最后按分数。
+// 新鲜值：新契约按 freshness 分量；历史数据回退生命周期/上榜天数。
 export function sortByFreshness<T extends SortableMeme>(items: T[]): T[] {
   return [...items].sort((a, b) => {
+    const byFreshness = freshnessValue(b) - freshnessValue(a);
+    if (byFreshness) return byFreshness;
     const byLife = lifecycleRank[a.lifecycle] - lifecycleRank[b.lifecycle];
     if (byLife) return byLife;
-    const byDays = (a.days_on_list ?? 1) - (b.days_on_list ?? 1);
-    return byDays || (b.score ?? 50) - (a.score ?? 50);
+    const byDays = daysValue(a) - daysValue(b);
+    if (byDays) return byDays;
+    return decisionScore(b) - decisionScore(a);
   });
 }
 
@@ -85,7 +112,7 @@ export function sortByDateThenLife<T extends SortableMeme & { date: string }>(ro
     (a, b) =>
       b.date.localeCompare(a.date) ||
       archiveLifecycleRank[a.lifecycle] - archiveLifecycleRank[b.lifecycle] ||
-      (b.score ?? 50) - (a.score ?? 50),
+      decisionScore(b) - decisionScore(a),
   );
 }
 

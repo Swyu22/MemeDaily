@@ -5,7 +5,7 @@ route components.
 
 | File | Responsibility |
 | --- | --- |
-| `validate-data.ts` | Validate every meme envelope and cross-day policy |
+| `validate-data.ts` | Validate every meme envelope, cross-day lifecycle, and dynamic selection policy |
 | `validate-news.ts` | Validate every news envelope and editorial policy |
 | `stamp-publish-time.ts` | Apply trusted acceptance time and reject future source captures |
 | `stamp-publish-time.test.ts` | Regression coverage for both feed timestamp contracts |

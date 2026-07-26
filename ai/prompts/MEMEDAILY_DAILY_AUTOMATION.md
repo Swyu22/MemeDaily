@@ -42,36 +42,82 @@ one file only on the exact daily candidate branch, open a PR, and never merge or
   successful day.
 - Be thorough — this job has a GENEROUS budget (~$5/day of usage, ~60 turns; reserve the
   last few turns for the mandatory re-Read self-check below). Cast a wide
-  net across every source category listed below, build a LARGE candidate pool (aim ~30+ raw
-  candidates) before selecting. Work in passes: (1) broad discovery sweep across sources,
-  (2) shortlist + rank by the rubric, (3) verify & enrich the top picks (sources, usage,
+  net across every source category listed below, build a LARGE candidate pool (30–100 unique
+  candidates after identity dedupe) before selecting. Work in passes: (1) broad discovery
+  sweep across sources, (2) identity dedupe + shortlist + rank by the rubric, (3) verify &
+  enrich the top picks (sources, usage,
   why-it-spreads). Strongly prefer memes corroborated across MULTIPLE independent sources.
   Spend the budget on breadth and quality; the only thing to avoid is needlessly re-fetching
   identical pages. Keep only the best ~10 — quality and "梗-ness" over filling slots.
 
-## Minimum daily output and bounded recovery (effective 2026-07-26)
+## Minimum daily output and dynamic selection (effective 2026-07-27)
 Every current-day result must be `status: "published"` or `status: "partial"` with at least
 **3 visible items**. `skipped` or a 0–2 item envelope is not a terminal success and must
 trigger recovery rather than stop later catch-up/fallback runs. `held` specifically remains
 an operator-controlled emergency takedown: unattended
 automation must alert and stop, never turn its hidden items visible or overwrite it.
 
-Use this ordered ladder only when the strict current-day pool has fewer than 3 items:
+Do **not** impose a fixed count or percentage on cross-day memes. A meme that is still rising
+or has a genuine second-wave surge should continue to rank; a brand-new but weak item must not
+beat it merely because its calendar date is newer. New and recurring candidates compete under
+the same 100-point rubric:
 
-1. Complete the broad current-day sweep and try additional public surfaces from every source
-   category above; do not stop after one platform is blocked.
-2. Expand discovery across the previous **7 complete Asia/Shanghai calendar days** and
-   re-evaluate still-active reusable language units against today's context.
-3. If still short, safely carry over a qualified meme seen within the last **14 days**.
-   Reuse its **exact original `id`**, calculate `days_on_list` from history, and describe it
-   as continuing rather than newly born. Each expanded-window/carry-over item must have
-   public evidence newly opened or rechecked within the most recent **72 hours**, while still
-   satisfying the full two-distinct-URL evidence gate below.
-4. The minimum-fill floor may lower only **heat, freshness, or editorial confidence**. It
-   must never lower the reusable-language test, truthfulness, source/evidence gate, hard
-   content rules, safety rules, privacy rules, or JSON/accounting integrity. A lower-confidence
-   but mechanically qualified 3–10 item day is `partial`, with the recovery reason recorded
-   honestly in `run_report`.
+- `heat` 0–40: current verified rank, plays/interactions, duration, trajectory, and
+  cross-platform acceleration;
+- `freshness` 0–30: how recently the evidenced activity occurred, including a current-day
+  second wave for an older phrase;
+- `reusability` 0–20: actual public copying, filling-in, or unrelated-scene reuse. This must be
+  at least 16; an editor inventing hypothetical variants does not count;
+- `evidence` 0–10: source independence, platform/public context, and timestamp quality. This
+  must be at least 7.
+
+Store those four integers in `score_breakdown`; `score` must equal their exact sum. Store the
+stable language identity in `canonical_phrase`. Build and rank at least **30 real candidates**
+before selection, then use this ordered ladder:
+
+1. `strict_24h`: score ≥75 and at least one source proves activity within 24 hours of the
+   trusted publication time. Publish with `status:"published"`.
+2. If fewer than three qualify after the broad sweep, `relaxed_48h`: score ≥70 and verified
+   activity within 48 hours. Publish with `status:"partial"`.
+3. If still short, `relaxed_72h`: score ≥65 and verified activity within 72 hours. Publish
+   with `status:"partial"`. Never lower the score below 65.
+
+Record the selected tier in `run_report.selection.tier`. `captured_at` means only “the page
+was opened at this time”; it is not proof that the meme was active then. Every selected item
+must also provide at least one non-`origin` source (`popularity`, `usage_context`, or
+`cross_platform`) whose `observed_at` records the activity time displayed or demonstrated by
+the evidence, with `observed_at <= captured_at`.
+
+For a meme already visible on this site, reuse its exact first `id`, set `days_on_list` to the
+exact number of visible board appearances including today, and require at least one current
+source whose `observed_at` is later than the meme's previous site publication. This rule has
+**no cross-day quantity cap**: even a full board may legitimately recur when every item
+independently clears today's score and post-publication activity test. Reopening a prior-day
+archive and changing only `captured_at` fails.
+
+Make the post-identity-deduped candidate pool auditable in `run_report`:
+
+- `candidates_scanned` must equal `selection.candidate_audit.length` (30–100). Every unique
+  candidate appears exactly once with one mutually exclusive `outcome`: `selected`,
+  `dropped_safety`, `dropped_low_confidence`, `dropped_insufficient_evidence`, or
+  `dropped_capacity`. Candidate keys are unique; non-safety canonical phrases are unique.
+- `selection.qualified` records three cumulative counts derived from the audit:
+  `{strict_24h, relaxed_48h, relaxed_72h}`. Use the first tier whose count reaches three;
+  never declare a relaxed tier while a stricter one already has three.
+- A scored row (`selected`, `dropped_low_confidence`, or `dropped_capacity`) records its
+  stable `canonical_phrase`, exact `score`, `score_breakdown`, and one representative
+  non-origin `activity` (`evidence_role`, real URL, `observed_at`). A selected row also has
+  `candidate_key == item_id` and must match that item's score, canonical identity, and source.
+- A `dropped_insufficient_evidence` row records its unique key, stable canonical phrase, and
+  outcome. A `dropped_safety` row is deliberately private: use only an opaque `candidate-N`
+  key, the outcome, and one primary categorical `drop_reason`. Never commit its phrase,
+  person/topic, URL, item id, score, breakdown, or activity. Other outcomes have no
+  `drop_reason`.
+- `dropped_safety`, `dropped_low_confidence`,
+  `evidence_summary.dropped_insufficient_evidence`, and `dropped_capacity` exactly match
+  their audit outcomes. Qualified candidates beyond the 10-item display cap use
+  `dropped_capacity`; selected rows are the highest-scoring candidates that clear the chosen
+  tier, not whichever mix is newest.
 
 If exhaustive recovery still cannot produce 3 compliant items because evidence or
 infrastructure is unavailable, fail closed and raise an operational incident. Do not invent
@@ -220,13 +266,16 @@ do not publish it — it never enters `items`, and the public page never shows a
 "observation list". The site only renders publishable memes.
 
 ## How to write each item (map editorial richness → schema fields)
-- `title` — 梗名/话题名; a relevant emoji prefix is allowed (≤48 chars total).
+- `title` — 梗名/话题名; from 2026-07-27 it MUST start with one relevant semantic emoji
+  followed by the concise phrase (≤48 chars total). Do not reuse the same emoji mechanically
+  for unrelated items.
 - `id` — MUST match `^YYYY-MM-DD-slug`; a new meme uses today's envelope date, while a recurrence
   retains the first appearance's date and exact id so its detail URL stays stable. The
   `slug` is lowercase ASCII `[a-z0-9-]` only (e.g. `2026-06-20-banwei`). Never use Chinese,
   uppercase, spaces, or underscores in `id` — the Chinese 梗名 lives in `title`. For a
   carry-over meme (days_on_list > 1) reuse the EXACT id from its first appearance so detail
-  URLs stay stable; treat ids as globally unique across all days.
+  URLs stay stable. One id identifies one canonical meme globally: a new identity needs an
+  unused id, while every recurrence of that same identity must reuse its original id.
 - `aliases` — 别名/变体写法.
 - `platform` — array of platforms where it actually appears.
 - `type` — one schema enum value (热点事件梗/短视频梗/生活方式梗/二创梗/句式梗/口头禅梗/
@@ -243,8 +292,8 @@ do not publish it — it never enters `items`, and the public page never shows a
   `"已验证：…；推测：…"`. Cover 节日/赛事/综艺/热点窗口、明星/品牌/算法/粉丝推动、
   是否易截图模仿改写二创、评论门槛是否低、能否跨平台.
 - `lifecycle` — 生命周期，**唯一判定标准 = 天数**：
-  - `declining`（已过气）：**只有当这个梗第一次被收录至今至少 5 天（≥5）**才标。从最近的
-    `data/daily/*.json` 历史按梗名 / 别名查它第一次出现的日期来算。
+  - `declining`（已过气）：**只有当这个梗第一次被收录至今至少 5 天（≥5）**才标。从全部
+    `data/daily/*.json` 历史按 id / canonical phrase / 梗名 / 别名查首次日期。
   - 否则一律**至少标 `rising`（还能上车）**；明显仍在大热的可标 `peak`（正热）。
   - 代码校验会强制这条：把不满 5 天的梗标成 `declining` 会让 `npm run validate` 失败、无法提交。
 - `brand_usage` — 广告营销/内容创作可借用方向: concrete and executable (可改写的标题、
@@ -252,12 +301,20 @@ do not publish it — it never enters `items`, and the public page never shows a
   does not render it, but still write it well.
 - `risk` — `{ level: safe|low|medium|high, note }`: 是否有争议/易翻车/不宜商业化玩梗.
   Also internal-only on the page; write it anyway.
-- `score` — optional 0–100: overall 可借势价值 (传播力 × 借势安全度 × 可复用度).
-- `days_on_list` — if the meme already appeared in the last 14 days of `data/daily/*.json`,
-  set the running count and do NOT re-publish it as if brand new.
-- `sources` — at least 2 independent URLs. For EACH source record `tier`, `evidence_role`
-  (origin|popularity|usage_context|cross_platform), `platform`, `url`, `captured_at`,
-  `note`, and:
+- `canonical_phrase` — required from 2026-07-27: stable reusable sentence/template used for
+  same-day and cross-day identity matching. Its normalized form must contain a letter or
+  number and must exactly match the normalized current `title` or one current alias; a hidden
+  unrelated title cannot borrow an old canonical identity.
+- `score` — required from 2026-07-27: overall 0–100 dynamic selection score.
+- `score_breakdown` — required from 2026-07-27: integer `heat` 0–40, `freshness` 0–30,
+  `reusability` 0–20, and `evidence` 0–10; their exact sum must equal `score`.
+- `days_on_list` — from 2026-07-27 every item has it. A recurrence retains the exact
+  original id and uses the exact visible-appearance count; a new-to-site item uses 1.
+- `sources` — at least 2 independent URLs. For EACH source record write `tier`,
+  `evidence_role` (origin|popularity|usage_context|cross_platform), `platform`, `url`,
+  `captured_at`, `note`, and:
+  - `observed_at` — include only when that source displays or demonstrates the activity time.
+    Every selected item still requires at least one non-`origin` source with this field.
   - `title` — **the concise, real, human-readable title/headline of the page you actually
     opened** (article headline, topic-page title, note title), ≤120 chars; truncate a
     longer headline sensibly rather than dropping it, and never emit an empty string (omit
@@ -267,9 +324,10 @@ do not publish it — it never enters `items`, and the public page never shows a
     actually use as evidence.
 
 ## JSON validity invariants (must hold or `npm run validate` fails the commit)
-- `id` format `^YYYY-MM-DD-[a-z0-9-]+$` (see above); ids globally unique across all days.
-- `items` hard-caps at 10. If more than 10 qualify, keep only the 10 highest-value; the
-  rest simply do not publish today.
+- `id` format `^YYYY-MM-DD-[a-z0-9-]+$` (see above). New canonical identities use unused
+  ids; repeated appearances of one canonical identity reuse its first id.
+- `items` hard-caps at 10. If more than 10 qualify, keep the 10 highest scores and record
+  every remaining chosen-tier qualifier as `dropped_capacity`.
 - For dates on or after `2026-07-26`, `items` and the visible evidence-qualified count must
   both be 3–10. `published` = at least 3 items selected at the normal bar. `partial` = at
   least 3 items after bounded recovery or with an honestly recorded source/platform
@@ -286,25 +344,38 @@ do not publish it — it never enters `items`, and the public page never shows a
 - `run_report.evidence_summary` MUST contain exactly these integer fields:
   `candidates_with_urls`, `platform_public_sources`, `aggregator_sources`,
   `search_media_sources`, `spillover_sources`, `dropped_insufficient_evidence`.
+- From 2026-07-27, `run_report.candidates_scanned` is 30–100 unique
+  post-identity-deduped candidates and equals `run_report.selection.candidate_audit.length`.
+  The report also includes `dropped_capacity`; `selection.tier`
+  (`strict_24h|relaxed_48h|relaxed_72h`); cumulative `selection.qualified` counts for all
+  three tiers; and the privacy-safe, mutually exclusive candidate ledger defined above.
+  Selected rows are the chosen tier's highest-scoring qualifying rows, capped at 10.
 
 ## Workflow
 1. Read live GitHub `main`, `ai/prompts/CODEX_CLOUD_RUNBOOK.md`, `.cloud.md`,
-   `docs/10-spec/memedaily-product-spec.md`, and the last 14 days of `data/daily/*.json`.
-   In a supervised local recovery, begin with `git pull --ff-only`.
+   `docs/10-spec/memedaily-product-spec.md`, and recent `data/daily/*.json` for discovery
+   context. For **every finalist**, scan **all** `data/daily/*.json` (including `held`
+   history) by id, title, aliases, and canonical phrase to recover its first id/canonical,
+   exact visible appearance count, previous publication time, and hold state. Recent
+   14-day context is not an identity horizon. In a supervised local recovery, begin with
+   `git pull --ff-only`.
 2. Apply the runbook's live-main idempotency and exact branch/target guard.
 3. Build today's public-web query plan; sweep platform pages + aggregators as above.
-4. Grade evidence (A/B/C/D); apply safety + shell + selection filters; dedupe vs recent days.
-5. Publish 3–10 qualified items. If the strict current-day pool has fewer than 3, complete
-   the ordered 7-day expansion → 14-day safe carry-over → lower-editorial-confidence
-   recovery above, preserving fresh-within-72h evidence. Use `partial` and record the
-   recovery reason; never terminate successfully with `skipped`, `held`, or 0–2 items.
+4. Grade evidence (A/B/C/D); apply safety + shell + selection filters. Collapse duplicate
+   records for the same language identity, but do not reject a genuinely qualifying
+   recurrence merely because it appeared on a recent day.
+5. Rank new and recurring candidates together with the dynamic rubric. If fewer than three
+   clear `strict_24h`, progress to `relaxed_48h`, then `relaxed_72h`. Use `partial` for
+   either relaxed tier; never terminate successfully with `skipped`, `held`, or 0–2 items.
 6. Fill `run_report` honestly: `candidates_scanned`, `published`, `dropped_safety` (by
-   category), `dropped_low_confidence`, `sources`, `evidence_summary`.
+   category), `dropped_low_confidence`, `dropped_capacity`, `sources`,
+   `evidence_summary`, and the complete `selection.{tier,qualified,candidate_audit}` ledger.
 7. In Codex Cloud, do not request shell access: the separate trusted workflow owns stamping,
    validation, `main`, and Pages. **无 shell 时的自检（Cloud agent 必做）**：你没有 validator 可跑，你留下的文件就是最终产物，一处
    JSON 语法错误就会让**整天发布失败**（真实事故已发生）。所以每次 Write/Edit 之后必须用 Read 重读完整
    文件，核对语法配平未截断、title ≤48、每条 published 项 ≥2 个**不同 URL** 信源且**至少 1 个 tier 为
-   `platform_public` 或 `aggregator`**、run_report 计数与 items 一致；发现问题立即修复并再次重读。
+   `platform_public` 或 `aggregator`**、run_report 计数与 items 一致、候选账本正好覆盖全部
+   `candidates_scanned` 且安全淘汰行不泄露内容；发现问题立即修复并再次重读。
    **结束前的最后一个动作必须是一次核对通过的完整 Read。**
 8. In Codex Cloud, create/update only the exact candidate branch file and open the non-draft PR
    specified by the runbook; never merge. In trusted local recovery only, run

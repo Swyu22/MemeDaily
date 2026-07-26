@@ -7,10 +7,36 @@ import type { DailyEnvelope, EvidenceTier, MemeItem } from "./schema";
 
 const primaryEvidenceTiers: EvidenceTier[] = ["platform_public", "aggregator"];
 const MINIMUM_DAILY_PUBLICATION_DATE = "2026-07-26";
+const MEME_TITLE_EMOJI_DATE = "2026-07-27";
 const MINIMUM_VISIBLE_ITEMS = 3;
+const LEADING_EMOJI = /^(?:\p{Extended_Pictographic}|\p{Regional_Indicator})/u;
+
+const trackingQueryKeys = new Set([
+  "fbclid",
+  "from",
+  "gclid",
+  "ref",
+  "referrer",
+  "source",
+  "spm",
+]);
+
+function isTrackingQueryKey(key: string): boolean {
+  return key.startsWith("utm_") || trackingQueryKeys.has(key);
+}
+
+function evidenceIdentity(url: string): string {
+  const parsed = new URL(url);
+  for (const key of Array.from(parsed.searchParams.keys())) {
+    if (isTrackingQueryKey(key.toLowerCase())) parsed.searchParams.delete(key);
+  }
+  parsed.searchParams.sort();
+  const path = parsed.pathname.replace(/\/+$/, "") || "/";
+  return `${parsed.origin}${path}${parsed.search}`;
+}
 
 export function hasPublishableEvidence(item: MemeItem): boolean {
-  const uniqueUrls = new Set(item.sources.map((source) => source.url));
+  const uniqueUrls = new Set(item.sources.map((source) => evidenceIdentity(source.url)));
   const hasPrimary = item.sources.some((source) =>
     primaryEvidenceTiers.includes(source.tier),
   );
@@ -56,7 +82,7 @@ function normalizeName(value: string): string {
 }
 
 function itemNames(item: MemeItem): string[] {
-  const names = [item.title, ...item.aliases].flatMap((value) => {
+  const names = [item.title, ...item.aliases, item.canonical_phrase ?? ""].flatMap((value) => {
     const normalized = normalizeName(value);
     return normalized ? [normalized] : [];
   });
@@ -315,6 +341,13 @@ export function safetyContentIssues(envelope: DailyEnvelope): string[] {
   return issues;
 }
 
+function titleEmojiIssues(envelope: DailyEnvelope): string[] {
+  if (envelope.date < MEME_TITLE_EMOJI_DATE) return [];
+  return visibleItems(envelope).flatMap((item) =>
+    LEADING_EMOJI.test(item.title) ? [] : [`${item.id} title must start with an emoji`],
+  );
+}
+
 // SOFT platform-diversity check (WARN, never fail — mirrors the news 国际 soft check). 小红书/抖音
 // are chronically under-represented as meme origins vs 微博/聚合榜（历史上各仅 5 条 source, 且单日常
 // 9/10 条只挂 weibo）. On a FULL day (>=5 visible memes) this warns when fewer than 2 of them tag 抖音
@@ -394,6 +427,7 @@ export function envelopeIssueSummary(envelope: DailyEnvelope): string[] {
 
   issues.push(...politicalContentIssues(envelope));
   issues.push(...safetyContentIssues(envelope));
+  issues.push(...titleEmojiIssues(envelope));
 
   return issues;
 }

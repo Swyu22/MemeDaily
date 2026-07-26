@@ -142,10 +142,64 @@ branches, or PRs once a valid terminal envelope exists.
 
 ## Remaining
 
-1. P2: Observe the next naturally content-producing Web Scheduled Task as
+1. P0: Merge the dynamic meme-selection gate and synchronize/read back all eight
+   server Scheduled Task prompts.
+2. P2: Observe the next naturally content-producing Web Scheduled Task as
    defense-in-depth confirmation that the already verified scheduler and publisher
    paths compose in one unattended run.
-2. P1 USER: revoke/rotate the previously exposed Aliyun AccessKey outside this
+3. P1 USER: revoke/rotate the previously exposed Aliyun AccessKey outside this
    repository.
-3. P2 USER: refresh/reinstall the iOS Chrome Home Screen app and confirm the dark-mode
+4. P2 USER: refresh/reinstall the iOS Chrome Home Screen app and confirm the dark-mode
    status area on a physical device.
+
+## Editorial Quality Incident And Dynamic Selection Correction
+
+- The availability repair in PR #46 met the new count and evidence shape but reused
+  all three visible items from 2026-07-25. The owner correctly rejected this as an
+  editorial quality failure: the former 7/14-day carry-over rule established only
+  calendar eligibility, not that those three were today's strongest memes.
+- A proposed “at most one cross-day item” limit was also rejected. That limit would
+  suppress a genuinely continuing or second-wave trend for an arbitrary calendar
+  reason. The desired rule is: recur whenever present heat and freshness warrant it;
+  do not recur merely to fill the minimum.
+- Data-only PR #48 replaced the board with four independently researched items:
+  `像开了高清`, `软孤立`, `当你学会外耗他人后`, and `你要我好友位不？`.
+  Two independent reviewers returned GO. The third item intentionally demonstrates
+  legitimate recurrence/second-wave treatment: an earlier Bilibili phrase entered a
+  current-day Weibo hot list and was selected on that new activity.
+- PR #48 reached main `73d954303665892d6df8fadd666385d5c18661da`; main CI
+  `30202300031` and Pages `30202299980` succeeded. A cache-bypassed HTTP 200
+  production check displayed date 2026-07-26, status published, count four, and all
+  corrected titles.
+- ADR-009 replaces calendar carry-over selection from 2026-07-27 with at least 30
+  ranked candidates and a 100-point heat/freshness/reusability/evidence score.
+  `strict_24h`, `relaxed_48h`, and `relaxed_72h` have floors of 75, 70, and 65.
+  Cross-day count is deliberately unlimited, while each recurrence must retain stable
+  identity/count and cite activity observed after its previous site publication.
+- `observed_at` records activity demonstrated by evidence; `captured_at` only records
+  when a page was opened. Reopening an archive can no longer qualify as renewed heat.
+
+## Emoji Title Follow-up And Dynamic Gate Verification
+
+- The owner requested a semantic leading emoji on every newly corrected meme title.
+  Data-only PR #49 changed only four title values to `✨ 像开了高清`, `🫥 软孤立`,
+  `🔄 当你学会外耗他人后`, and `🤝 你要我好友位不？`.
+- PR #49 merged at `6dc4cc89feb79f483859c35b531162a2a06290fb`. Main CI
+  `30204360069` and Pages `30204360045` succeeded. The temporary bounded ruleset
+  maintenance window was closed immediately; `codex-trusted-main` is active again
+  with the single DeployKey bypass. Cache-bypassed production HTML displayed the
+  emoji titles.
+- ADR-009 implementation now audits 30–100 identity-deduped candidates, derives all
+  three cumulative qualification counts, requires the strictest tier with at least
+  three, reconciles mutually exclusive outcomes and capacity, and proves selected
+  rows are the chosen tier's Top-N. Safety-drop rows are opaque and content-free.
+- Recurrence identity is resolved across all meme history, not a recent-day window.
+  A title or alias must visibly anchor a stable non-empty canonical phrase, held
+  identities cannot automatically reappear, and recurrence requires activity after
+  the previous site publication. There remains no cross-day count, ratio, or age cap.
+- `npm run check` passed both validators, strict lint, typecheck, all 191 tests, and
+  the 180-page build. Strict file-size/header/import/state/secrets checks, diff
+  whitespace, and production dependency audit passed. Complexity output returned to
+  the 44 pre-existing warnings, with none in the new dynamic-selection or label code/tests.
+- Final independent review returned GO after the id-reuse and per-source
+  `observed_at` language was aligned with the executable contract.

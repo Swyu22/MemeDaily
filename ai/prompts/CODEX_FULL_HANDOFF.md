@@ -41,12 +41,13 @@
 ## 2. Codex Cloud / 本地恢复的关键差异 + 硬规则
 
 - **云端任务**：每次都从 GitHub `main` 重读
-  `ai/prompts/CODEX_CLOUD_RUNBOOK.md`、对应活规则、schema 与最近数据；只使用连接的 GitHub 工具和
+  `ai/prompts/CODEX_CLOUD_RUNBOOK.md`、对应活规则、schema 与近期数据语境；热梗 finalist 的身份、
+  首次 id/canonical、出现次数、上次发布时间和 held 状态必须再查全部历史。只使用连接的 GitHub 工具和
   公开网页。云端机房 IP 打不开平台原页时，改用可读聚合榜与公开媒体交叉印证，绝不伪装已直读。
 - **本地恢复的 IP 优势（热梗）**：本地中国 IP 下微博 / 抖音 / 小红书公开页通常更易读，可优先平台
   原页，再用聚合榜单 + 墨鱼词典交叉印证。日报仍优先权威媒体原页。
 - **联网**：执行前确认 Codex 联网 / 浏览已开。确实打不开目标站点时，**绝不编造**；继续使用第 3 节的
-  安全扩源 / 回带阶梯。若仍不足 3 条，告警并以 `blocked` 结束，不写入零条或不足量信封。
+  安全扩源 / 动态分层。若仍不足 3 条，告警并以 `blocked` 结束，不写入零条或不足量信封。
 - **只读公开页**：不登录、不用 cookie / session token、不绕反爬、不批量爬内容、不下图/视频/长摘录；
   只存 URL、页面标题、时间戳、你自己的简短笔记。
 - **「不用第三方付费大模型 API」这条**：指**产品本身**（站点、`scripts/` 校验、数据管线）不得依赖
@@ -81,13 +82,15 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重 / 最低产出协�
 2. 每条线每天只用一个精确分支：
    `codex/daily-meme-YYYY-MM-DD` 或 `codex/daily-news-YYYY-MM-DD`。
 3. Cloud 只提交候选 PR；`codex-daily-pr-publish.yml` 是唯一自动写 `main` 的内容入口。
-4. 06:00/07:00 primary、白天 catch-up 与夜间 fallback 都能执行安全扩源 / 回带，并遵守同一硬门禁；
+4. 06:00/07:00 primary、白天 catch-up 与夜间 fallback 都能执行安全扩源 / 动态分层，并遵守同一硬门禁；
    14:30/14:45 monitor 只读数据与生产端，发现 `<3` 即告警，绝不写候选。
 5. `daily-{news-}fallback.yml` 与 `daily-{news-}monitor.yml` 仅保留人工
    `workflow_dispatch` 灾难恢复，不再有仓库 cron。
-6. 热梗当前发现不足 3 条时，先从近 7 天安全候选恢复，再最多扩至近 14 天；必须复用历史稳定 id /
-   连续天数，并为每条重新取得近 72 小时内的公开证据。日报可扩大到最近 72 小时内真实发生或披露、
-   仍有民生价值且未重复的新闻，保留真实 `occurred_at` 并更新已变化事实。
+6. 热梗从 `2026-07-27` 起不设固定跨日数量或比例。至少 30 个身份去重后的新梗 / 连续梗同池评分，
+   依次采用 `strict_24h`（≥75）、`relaxed_48h`（≥70）和 `relaxed_72h`（≥65）；连续梗还必须有
+   晚于上次本站发布时间的新增活动证据。候选总账派生三层合格数，并选首个达到 3 条的最严格层。
+   日报可扩大到最近 72 小时内真实发生或披露、仍有民生价值且未重复的新闻，保留真实
+   `occurred_at` 并更新已变化事实。
 7. 受信任 publisher 只允许对精确目标做一次**单调修复**：`under_minimum → >=3`。原有读者可见 item
    必须逐项原样保留，只追加合格项并协调 status / `run_report`；已有 terminal 目标仍严格 no-op。
 
@@ -113,6 +116,14 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重 / 最低产出协�
 最易错的一条：**`run_report.published` 必须等于「`published:true` 且通过证据门禁」的条数**
 （历史 `skipped`/`held` 时为 0），校验跨所有文件强制此等式，务必精确；当天候选还必须至少为 3。
 
+热梗 `2026-07-27` 起还必须写 `dropped_capacity` 和
+`selection{tier,qualified,candidate_audit}`：30–100 个身份去重候选逐条、互斥地记录
+`selected|dropped_safety|dropped_low_confidence|dropped_insufficient_evidence|dropped_capacity`，
+总账长度等于 `candidates_scanned`，各 outcome 与报告计数完全相等。`qualified` 是从账本派生的
+strict/48h/72h 累积合格数；选首个达到 3 条的最严格层，再按总分取前 10，其余合格项记
+`dropped_capacity`。安全淘汰只写匿名 `candidate-N`、outcome 和单一主分类，绝不写内容、人物/
+主题、URL、item id、评分或活动。
+
 ---
 
 ## 5. 【热梗】研究范围 + 红线 + 输出格式（浓缩；活规则见 MEMEDAILY_DAILY_AUTOMATION.md）
@@ -134,7 +145,8 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重 / 最低产出协�
   （小鸡词典 jikipedia / 有梗鸭 / 鲸吼 常被墙，别依赖。）
 - **搜索引擎**：百度/必应查「XX 梗 什么意思/出处/二创」「今日热梗 出圈 模板」。
 - **跨平台外溢** `tier=spillover`：知乎「如何评价 X」、豆瓣小组、公众号、贴吧。
-- 广撒网建**大候选池（~30+）**，分轮：发现 → 排序 → 核实增强；多源交叉印证。
+- 广撒网建**大候选池（身份去重后 30–100）**，分轮：发现 → 身份去重 → 排序 → 核实增强；
+  多源交叉印证。同一 canonical 不得虚算成多个候选。
 - **平台多样性（重要）**：历史来源与 `platform` 标签严重偏 微博/聚合榜(other)，抖音/小红书常年偏少。你在
   **本地 CN IP、平台原页可直读**，正好补上——刻意去抖音/小红书/B站原页取梗，`platform` 标签如实覆盖梗真正活跃
   的**所有**平台（跨平台就 douyin/xiaohongshu/bilibili 一并标，别只标 weibo/other）。**诚信红线压过多样性**：
@@ -143,10 +155,15 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重 / 最低产出协�
   就是它在抖音活跃的可引用证据——收作一条 source（`tier:aggregator`、`platform:douyin`、`url:https://tophub.today/n/3adqqzadng`）
   并标 `douyin`（知乎榜同理 `platform:zhihu`）；别把明明在抖音刷屏的梗只从百度/微博取证、标成 `other/weibo`。
   `npm run validate` 会在满 5 条的当天可见梗里挂抖音/小红书的少于 2 条时打印 warning（不阻断，别为消除它造假）。
-- **不足 3 条时的恢复阶梯**：先放宽热度、新鲜感偏好和编辑置信度，再回看近 7 天已经安全入选或曾因软性
-  置信度暂缓的可复用语言梗；仍不足时最多扩至近 14 天。连续梗复用首次 id，`days_on_list` 如实递增，且每条
-  都要重新取得**证据本身能证明最近 72 小时仍在传播**的公开材料并重新通过 5.3–5.4；只给旧网页换一个新的
-  `captured_at` 不算近 72 小时证据。不得回带已失真或不再传播的内容；硬安全和证据门禁不因最低 3 条而降低。
+- **不足 3 条时的动态分层**（`2026-07-27` 起）：至少建立 30 个真实候选，让新梗和连续梗按
+  `heat 0–40 + freshness 0–30 + reusability 0–20 + evidence 0–10` 同池排序；可复用度不得低于 16，
+  证据质量不得低于 7。先选 24 小时内活动且总分 ≥75 的 `strict_24h`；不足时依次放宽为 48 小时 /
+  ≥70 的 `relaxed_48h`、72 小时 / ≥65 的 `relaxed_72h`。后两级用 `partial`，总分绝不低于 65。
+  **跨日数量不设上限也不设配额**：只要每条都通过当日评分，整版连续梗也可成立；反之没有新增热度的旧梗
+  一条也不能拿来填数。连续梗复用首次 id，`days_on_list` 按实际可见上榜次数精确递增，并至少有一个非
+  `origin` 的热度 / 用法 / 跨平台来源，其 `observed_at` 晚于上次本站发布时间。`captured_at` 只是打开
+  网页的时间，给旧网页换新抓取时间不算新活动。每个 finalist 都要扫描全部 `data/daily/*.json`
+  （含 held）确认首次身份；近期窗口只能帮助发现，不能限制真实复发。
 
 ### 5.3 红线（命中即丢，并计入 `run_report.dropped_safety`）
 - **要梗不要新闻**：纯新闻/单一事件（某人做了某事、赛果/比分、获奖、见义勇为、哽咽表态…）一律不发——
@@ -169,18 +186,27 @@ C=热度/新鲜度/编辑置信度较低，但事实已核对且仍完整通过�
 且**至少 1 个** `tier` 为 `platform_public` 或 `aggregator`（重复 URL collapse 成 1 个，过不了门禁）。
 
 ### 5.5 每条字段（→ `data/daily/*.json`，对照 memedaily/schema.ts）
-`id`=`^YYYY-MM-DD-slug`（slug 小写 ASCII `[a-z0-9-]`，中文梗名放 `title`；连续梗复用首次的同一 id，全局唯一）；
-`title`(≤48，可带 emoji)；`aliases[]`；`platform[]`(weibo|douyin|xiaohongshu|bilibili|zhihu|wechat|other)；
+`id`=`^YYYY-MM-DD-slug`（slug 小写 ASCII `[a-z0-9-]`，中文梗名放 `title`；一个 id 全局标识一个
+canonical meme，新身份使用未占用 id，同一身份的连续梗必须复用首次 id）；
+`title`(≤48，`2026-07-27` 起必须以一个语义匹配的 emoji 开头，不同梗不要机械复用同一 emoji)；
+`aliases[]`；`platform[]`(weibo|douyin|xiaohongshu|bilibili|zhihu|wechat|other)；
 `type`(热点事件梗|短视频梗|生活方式梗|二创梗|句式梗|口头禅梗|情绪梗|职场梗|其他)；`summary`(6–180)；
 `origin`/`usage`/`fun_point`/`why_spread`(各6–360；`why_spread` 必须分「已验证：…/推测：…」)；
 `lifecycle`(rising|peak|declining)——**唯一标准=天数：`declining`(已过气)只有该梗首次收录至今 ≥5 天才能标**
-（从近 `data/daily/*.json` 按梗名/别名查首次日期；不满 5 天标 declining 会让 `npm run validate` 失败）；
-`brand_usage`/`risk{level,note}`/`score`(0–100 选填)/`days_on_list`（命中近14天历史则设连续天数）——内部字段，
-页面不渲染但要写好；`sources`(≥2，每条 `tier`/`evidence_role`(origin|popularity|usage_context|cross_platform)/
-`platform`/`url`/`captured_at`/`note`/`title`=你实际打开那页的真实标题≤120，无意义列表页省略 title 回退 note，不编标题)。
+（从全部 `data/daily/*.json` 按 id/canonical/梗名/别名查首次日期；不满 5 天标 declining 会失败）；
+`brand_usage`/`risk{level,note}`——内部字段，页面不渲染但要写好；从 `2026-07-27` 起还必须写：
+`canonical_phrase`（稳定语言身份，规范化后非空且必须与当前 title 或 alias 匹配）、
+`score`(0–100)、`score_breakdown{heat,freshness,reusability,evidence}`、
+`days_on_list`（首次为 1，连续梗为实际可见上榜次数）；四项分数之和必须等于 `score`。`sources`(≥2，每条
+`tier`/`evidence_role`(origin|popularity|usage_context|cross_platform)/`platform`/`url`/`captured_at`/
+`note`/`title`=你实际打开那页的真实标题≤120，无意义列表页省略 title 回退 note，不编标题)。
+仅当该 source 展示/证明活动时间时写 `observed_at`，且不得晚于 `captured_at`；每个 selected item
+仍必须至少有一个带 `observed_at` 的非 `origin` source。
 `run_report.evidence_summary` 必须恰含整数字段：`candidates_with_urls`/`platform_public_sources`/
 `aggregator_sources`/`search_media_sources`/`spillover_sources`/`dropped_insufficient_evidence`。
-`run_report.sources` 只能放 Platform 枚举（不放 URL/域名/tier 名）。`items` ≤10。
+`run_report.sources` 只能放 Platform 枚举（不放 URL/域名/tier 名）。从 `2026-07-27` 起写完整
+`dropped_capacity` 与 `selection{tier,qualified,candidate_audit}`；账本、隐私、Top-N 和计数规则见第 4 节。
+`items` ≤10。
 
 ---
 
@@ -274,7 +300,7 @@ git push                                 # 真实 push → pages.yml 部署；�
 - 提交信息遵守 Conventional Commits（`chore(data): …` / `feat(...)` / `fix(...)`；scope 别带 `+` 等特殊字符，
   否则 commit-msg 钩子会拒绝）。仓库有 git 预提交钩子（密钥扫描/文件大小/状态新鲜度等），失败别强推。
 - **任一步失败：不提交、保持仓库干净、说明失败原因。** 不要提交半成品数据。
-- 当前日候选不足 3 条时执行第 3、5、6 节的扩源 / 回带阶梯，软偏好可降、硬门禁不可降；仍不足则告警并
+- 当前日候选不足 3 条时执行第 3、5、6 节的扩源 / 动态评分阶梯，软偏好可降、硬门禁不可降；仍不足则告警并
   `blocked`，不提交 0–2 条、`skipped` 或 `held` 信封。任何零条 generator 都不是当前发布兜底。
 - 修复 live `under_minimum` 目标时，只能修改当天精确文件；已有读者可见 item 必须逐项原样保留，仅追加
   新合格项并协调 status / `run_report`。live 目标达到 terminal 后再次运行必须 no-op。
@@ -287,11 +313,14 @@ git push                                 # 真实 push → pages.yml 部署；�
 
 1. `cd` 到仓库（路径含空格，加引号）→ `git pull --ff-only`。
 2. 算今天 Asia/Shanghai 日期；按第 3 节**去重锁**决定每条线是否要发。
-3. 读 `.cloud.md` + 对应 schema + 最近若干天的同线 `*.json`（避免重复、连续梗复用 id）。
+3. 读 `.cloud.md` + 对应 schema + 近期同线 `*.json` 作语境；所有热梗 finalist 再扫描全部
+   `data/daily/*.json`（含 held），确定首次 id/canonical、精确出现次数与上次发布时间。
 4. 研究取源：热梗按 5.2（平台原页优先）、日报按 6.4（权威多源）；广撒网、交叉印证。
-5. 套用红线 + 证据门禁，生成今天 JSON；当前发现不足 3 条时执行热梗 7/14 天 + 近 72 小时新证据，
-   或日报近 72 小时恢复。至少 3 条合格后才能提交；使用软偏好放宽时标 `partial`，绝不凑数/编造。
-6. 诚实填 `run_report`（尤其 `published` 等式、`evidence_summary` 字段名精确）。
+5. 套用红线 + 证据门禁，生成今天 JSON；热梗将至少 30 个新 / 连续候选同池评分，按
+   `strict_24h → relaxed_48h → relaxed_72h` 选择，跨日不限数量但逐条要求上次发布后的新活动；
+   日报不足时按近 72 小时恢复。至少 3 条合格后才能提交；使用软偏好放宽时标 `partial`，绝不凑数/编造。
+6. 诚实填 `run_report`（尤其 `published` 等式、`evidence_summary` 字段名精确；热梗还要完整候选
+   账本、三层累计 qualified、capacity、Top-N 和安全隐私）。
 7. `npm run check` 全过；失败就改、最多重试几次，仍不能得到至少 3 条则告警并停止，不写不足量信封。
 8. `git add 今天的文件` → commit（Conventional）→ `git pull --rebase` → `npm ci` →
    `npm run check` → `git push`。最终树校验失败不得 push；push 即触发部署。
@@ -335,7 +364,8 @@ git push                                 # 真实 push → pages.yml 部署；�
 - 两条线数据：`data/daily/*.json`（热梗）、`data/daily-news/*.json`（日报）。**别动 `public/cc6f97658…d3ad9.txt`**
   （微信站长认证 token 文件，必须一直在线）。
 - 校验：`npm run validate`（热梗）、`npm run validate:news`（日报）、`npm run check`（全量门禁）。
-- 最低产出：两条线均至少 3 条；热梗不足时近 7/14 天恢复并取近 72 小时证据，日报不足时扩至近 72 小时；
+- 最低产出：两条线均至少 3 条；热梗至少 30 个身份去重候选同池动态评分，无固定跨日配额，连续梗须有
+  上次发布后的新活动证据并查全历史身份；候选账本派生最严格足量 tier 与 Top-N；日报不足时扩至近 72 小时；
   zero-item / `skipped` generator 不得用于当前日发布。
 - Cloud 协议：`ai/prompts/CODEX_CLOUD_RUNBOOK.md`；活规则：
   `ai/prompts/MEMEDAILY_DAILY_AUTOMATION.md`、`ai/prompts/DAILYNEWS_DAILY_AUTOMATION.md`、`.cloud.md`。

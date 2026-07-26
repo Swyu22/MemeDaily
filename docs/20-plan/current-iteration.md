@@ -8,7 +8,9 @@ primary, catch-up, monitor, and fallback schedules for both feeds. Correct the
 2026-07-26 local-heartbeat deployment error, backfill both feeds, and prove that the
 server scheduler and trusted publication path operate without the owner's Mac. Replace
 the initial meme `skipped/0` result with a hard per-feed minimum of three safe,
-evidence-qualified items and prove the trusted under-minimum repair path.
+evidence-qualified items and prove the trusted under-minimum repair path. Correct the
+subsequent all-prior-day meme board, then replace calendar-based carry-over with an
+auditable heat/freshness score that deliberately has no fixed cross-day quota.
 
 ## Scope
 
@@ -17,7 +19,8 @@ evidence-qualified items and prove the trusted under-minimum repair path.
   reliability, public data minimization, metadata, cloud prompts, all eight cloud
   schedules, retirement of all eight local heartbeats, 2026-07-26 dual-feed recovery,
   minimum-three recovery policy and monotonic repair, documentation/state/session
-  synchronization, and production acceptance.
+  synchronization, 2026-07-26 editorial correction, dynamic meme selection,
+  server-task prompt synchronization, and production acceptance.
 - **Out:** unrelated visual redesign, historical audit rewrites, private-platform
   extraction, paid model APIs in the product, and unrelated credential/account changes.
 
@@ -48,8 +51,20 @@ evidence-qualified items and prove the trusted under-minimum repair path.
   both terminal live-main preflights caused no-ops with no additional GitHub mutation.
 - [x] Deploy the explicit candidate `>=3` gate and trusted exact-file
   under-minimum-to-complete repair path.
-- [x] Replace the 2026-07-26 meme `skipped/0` envelope with three reverified safe
-  carryovers through the exact daily candidate PR and correlated Pages deployment.
+- [x] Replace the 2026-07-26 meme `skipped/0` envelope through the exact daily
+  candidate PR and correlated Pages deployment. This restored availability but
+  produced an editorial quality incident because all three items repeated 2026-07-25.
+- [x] Correct that board through data-only PR #48 with four independently researched
+  items, including one genuinely renewed cross-day phrase selected for current heat
+  rather than for quota filling; verify main CI, Pages, and production.
+- [x] Add distinct semantic leading emoji to all four corrected titles through
+  data-only PR #49; verify main CI, Pages, ruleset restoration, and production.
+- [x] Define ADR-009 and implement a 30-candidate, 100-point dynamic meme gate with
+  `strict_24h` / `relaxed_48h` / `relaxed_72h`, activity timestamps, stable recurrence
+  identity, an auditable candidate/capacity ledger, and no fixed cross-day maximum.
+- [x] Pass full local/governance validation and independent review for the dynamic gate.
+- [ ] Merge the dynamic policy, update the server Scheduled Task prompts without
+  changing their schedules, and read back all eight persistent task definitions.
 - [x] Update and read back all eight server Scheduled Task prompts so only
   `published/partial + >=3` is terminal and fallback performs editorial recovery.
 - [x] Activate the domain/monitor/fallback gates, complete full verification, and prove
@@ -90,7 +105,10 @@ evidence-qualified items and prove the trusted under-minimum repair path.
   candidate publications must both be evidenced.
 - Local checkout, GitHub `main`, latest successful Pages deployment, and
   `https://memedaily.fun` agree on the accepted commit/content.
+- Meme selection does not optimize for a calendar quota. Any number of recurring items
+  may rank when each has qualifying score and activity after its previous site
+  publication; stale recapture is mechanically rejected.
 
 ## Last Updated
 
-- 2026-07-26 15:10 +0800
+- 2026-07-26 20:46 +0800

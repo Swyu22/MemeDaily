@@ -59,6 +59,26 @@ It never relaxes hard safety, factual accuracy, source authenticity, evidence
 qualification, schema rules, or chronological plausibility. Never fabricate an
 item or source to reach three.
 
+For meme envelopes dated 2026-07-27 or later, “relaxation” means the dynamic
+selection tiers in the living rule, not a fixed carry-over quota. Rank at least
+30 unique post-identity-deduped new and recurring candidates together. A
+cross-day meme is eligible whenever it clears the selected score/evidence window
+and has source `observed_at` activity after its previous site publication; the
+qualifying source must demonstrate popularity, usage, or cross-platform activity
+rather than merely restate origin. Merely changing `captured_at` is invalid.
+There is no recurrence count, ratio, or age cap.
+
+The meme candidate must include `run_report.dropped_capacity` and
+`selection.{tier,qualified,candidate_audit}` exactly as the living rule defines.
+The 30–100 audit rows equal `candidates_scanned`, use unique keys and unique
+non-safety canonical identities, derive all three cumulative qualification
+counts, and assign one exclusive outcome per candidate. Choose the strictest tier
+with at least three qualifiers, select its highest scores up to 10, and mark its
+remaining qualifiers `dropped_capacity`. All outcome totals must reconcile with
+the report. A safety row exposes only an opaque `candidate-N` key, its outcome,
+and one primary categorical `drop_reason`; it contains no phrase, subject, URL,
+item id, score, breakdown, or activity.
+
 | Feed | Target on `main` | Exact candidate branch |
 | --- | --- | --- |
 | `meme` | `data/daily/YYYY-MM-DD.json` | `codex/daily-meme-YYYY-MM-DD` |
@@ -107,18 +127,27 @@ Always fetch from `main` and read completely:
 - at least the latest seven existing envelopes for that feed, or every available
   recent envelope when fewer exist.
 
+Recent envelopes are discovery/editorial context, not a meme identity horizon.
+Before scoring any meme finalist, resolve its id, normalized title/aliases,
+canonical phrase, first visible identity, exact visible-appearance count, latest
+site publication time, and any operator-held match across **all**
+`data/daily/*.json`. A canonical phrase must normalize to letters/numbers and
+match the current title or one current alias. Keep the first id and canonical for
+a recurrence; never automatically re-expose an identity found in held history.
+
 Then:
 
 1. Research broadly using public sources and the living rule. Cross-check claims,
    preserve real URLs, and never invent evidence.
-2. Apply the bounded recovery ladder when current-day discovery alone has fewer
-   than three qualified items:
-   - for `meme`, first reconsider safe, reusable candidates from the previous
-     seven days, then extend to at most the previous fourteen days. Reuse the
-     stable historical item id, maintain truthful continuity metadata, and obtain
-     public evidence that itself demonstrates activity within the most recent
-     72 hours. Merely recapturing an old page with a new `captured_at` does not
-     qualify;
+2. Apply the bounded recovery ladder when fewer than three candidates clear the
+   normal bar:
+   - for `meme`, rank new and recurring language units together with the living
+     rule's 100-point rubric. Start at `strict_24h` (score >=75), then
+     `relaxed_48h` (>=70), then `relaxed_72h` (>=65). There is no fixed cross-day
+     count: a recurrence keeps its first id and exact list count, and qualifies
+     only with activity observed after its prior site publication. Populate the
+     full candidate ledger, derive cumulative tier counts from it, and stop at
+     the first tier with at least three;
    - for `news`, broaden to still-relevant, non-duplicative everyday-life events
      genuinely disclosed or occurring within the most recent 72 hours. Preserve
      the real `occurred_at`, refresh changed facts, and do not present an old item
@@ -131,6 +160,10 @@ Then:
    trusted publication stamps both clocks.
 4. Self-check JSON syntax, every schema limit, source independence, safety,
    chronological plausibility, item counts/ranks, and `run_report` consistency.
+   For memes, also recheck the all-history identity result, canonical/display
+   anchor, exact audit length and outcome totals, safety-row privacy, cumulative
+   qualification counts, strictest-sufficient tier, score sums, and Top-N versus
+   capacity.
    The candidate must contain at least three reader-visible evidence-qualified
    items and `run_report.published` must report the same qualified visible count.
 5. If the bounded ladder still cannot reach three because authentic evidence is
@@ -185,13 +218,16 @@ primary/catch-up; it must not call or reproduce a zero-item/skipped generator.
    `held` envelope is an incident and stops without candidate mutation.
 2. If an open candidate is still running, leave it intact and report its state.
 3. Read the same runbook, living rule, schema/rules, and recent envelopes required
-   by section 3. Perform bounded public-source research and the same recovery
-   ladder: memes use seven-day then fourteen-day safe carryover with evidence from
-   the latest 72 hours; news may recover still-relevant events from the latest
-   72 hours.
+   by section 3, including the all-history meme identity/held scan. Perform
+   bounded public-source research and the same recovery ladder: memes use
+   `strict_24h` then `relaxed_48h` then `relaxed_72h`, with no fixed cross-day
+   quota and the complete candidate ledger; news may recover still-relevant
+   events from the latest 72 hours.
 4. If repairing an existing under-minimum live target or failed candidate,
    preserve all existing reader-visible items exactly and append qualified items
-   on the same exact branch/file until the envelope has at least three.
+   on the same exact branch/file until the envelope has at least three. Rebuild
+   the report/audit around that preserved prefix so every count, selected mapping,
+   tier total, and capacity outcome remains exact.
 5. Self-check the completed candidate and submit the same one-file non-draft PR
    described in section 3. `partial` is appropriate when the relaxed editorial
    preferences were needed.

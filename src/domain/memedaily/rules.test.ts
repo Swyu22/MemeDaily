@@ -102,6 +102,15 @@ function minimumDay(
 }
 
 describe("MemeDaily publication rules", () => {
+  it("requires a semantic leading emoji on new daily titles", () => {
+    const day = minimumDay("2026-07-27", "published", 3);
+    const missing = envelopeIssueSummary(day);
+    expect(missing.some((issue) => issue.includes("title must start with an emoji"))).toBe(true);
+    for (const item of day.items) item.title = `✨ ${item.title}`;
+    const corrected = envelopeIssueSummary(day);
+    expect(corrected.some((issue) => issue.includes("title must start with an emoji"))).toBe(false);
+  });
+
   it("accepts two independent URLs with platform or aggregator evidence", () => {
     expect(hasPublishableEvidence(baseItem)).toBe(true);
   });
@@ -128,6 +137,30 @@ describe("MemeDaily publication rules", () => {
     } satisfies MemeItem;
 
     expect(hasPublishableEvidence(item)).toBe(false);
+  });
+
+  it("does not count tracking queries or fragments as independent evidence", () => {
+    const item = {
+      ...baseItem,
+      sources: baseItem.sources.map((source, index) => ({
+        ...source,
+        url: `https://example.com/same?utm_source=${index}#${index}`,
+      })),
+    } satisfies MemeItem;
+
+    expect(hasPublishableEvidence(item)).toBe(false);
+  });
+
+  it("keeps content-bearing query parameters as distinct evidence resources", () => {
+    const item = {
+      ...baseItem,
+      sources: baseItem.sources.map((source, index) => ({
+        ...source,
+        url: `https://example.com/watch?v=${index + 1}`,
+      })),
+    } satisfies MemeItem;
+
+    expect(hasPublishableEvidence(item)).toBe(true);
   });
 
   it("hides skipped envelopes even when items are present", () => {

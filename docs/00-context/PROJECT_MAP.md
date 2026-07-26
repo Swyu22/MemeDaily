@@ -30,7 +30,8 @@
 ## Module Map
 - `src/app/`: Next.js routes, metadata, global/responsive styles, and static composition.
   Depends on `src/features/` and `src/domain/`.
-- `src/features/home/`: dual-feed tabs, sorting, status, news cards, and home composition.
+- `src/features/home/`: dual-feed tabs, component-based heat/freshness sorting, status,
+  news cards, and home composition.
 - `src/features/memes/`: meme cards, archives, detail helpers, and list behavior. Depends
   on `src/domain/memedaily/`.
 - `src/domain/memedaily/`: meme schema, loaders, evidence/safety/lifecycle gates, and
@@ -64,6 +65,14 @@
   `published`/`partial` plus at least three evidence-qualified, reader-visible items.
   Heat, freshness, and editorial confidence may be relaxed through the documented
   recovery pool; safety, truth, chronology, and source gates may not.
+- **Meme dynamic selection (effective 2026-07-27):** at least 30 new and recurring
+  candidates compete on current heat, freshness, demonstrated reusability, and evidence.
+  There is no fixed cross-day quota. Recurrence requires stable identity/list count and
+  non-origin observed activity after the previous site publication; origin or page capture
+  time alone is not renewed-activity evidence. Finalist identity is resolved across all
+  history (including held), canonical text is display-anchored, and a complete candidate
+  ledger derives the strictest sufficient tier, Top-N/capacity, and every report count.
+  Safety-drop ledger rows are opaque and content-free.
 - **Trusted chronology:** publication jobs set `generated_at` and `published_at`; sources
   cannot claim capture after publication.
 - **News attribution:** every reader-visible DailyNews source has a required `outlet` label.
@@ -78,6 +87,10 @@
   terminal and stops before research, writes, branches, or PRs. The eight former Codex
   Desktop heartbeats were deleted; a local automation pointing at a Cloud context must
   never be described as a server schedule.
+- Meme authoring applies ADR-009's `strict_24h`, `relaxed_48h`, and `relaxed_72h`
+  score/activity tiers without a fixed cross-day count, and must submit the auditable
+  candidate/qualification/capacity ledger. Monitor behavior and terminal no-op semantics
+  are unchanged.
 - `codex-daily-pr-publish.yml`: same-repository exact-branch/one-JSON candidate
   ingestion, explicit three-item candidate gate, serialized new/under-minimum publication,
   and correlated Pages wait. A complete day remains immutable.
