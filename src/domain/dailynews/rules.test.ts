@@ -59,6 +59,25 @@ function envelopeWith(items: NewsItem[], status: NewsEnvelope["status"], publish
   };
 }
 
+function minimumDay(
+  date: string,
+  status: NewsEnvelope["status"],
+  itemCount: number,
+): NewsEnvelope {
+  const items = Array.from({ length: itemCount }, (_, index) => ({
+    ...baseItem,
+    id: `${date}-verified-${index + 1}`,
+    headline: `📰 今日民生进展第${index + 1}条`,
+    heat_rank: index + 1,
+    sources: [
+      source("state_media", `https://example.com/${date}/news-${index + 1}`),
+    ],
+  }));
+  const envelope = envelopeWith(items, status);
+  envelope.date = date;
+  return envelope;
+}
+
 describe("hasPublishableEvidence (authority bar)", () => {
   it("accepts a single official/state_media source", () => {
     expect(hasPublishableEvidence(baseItem)).toBe(true);
@@ -221,6 +240,33 @@ describe("envelopeIssueSummary", () => {
   it("flags a published envelope with zero items", () => {
     expect(envelopeIssueSummary(envelopeWith([], "published")).some((i) => i.includes("zero items"))).toBe(true);
   });
+
+  it("keeps a historical skipped day valid before the minimum-output cutoff", () => {
+    expect(envelopeIssueSummary(minimumDay("2026-07-25", "skipped", 0))).toHaveLength(0);
+  });
+
+  it("keeps a post-cutoff held day available for operator emergency removal", () => {
+    expect(envelopeIssueSummary(minimumDay("2026-07-26", "held", 0))).toHaveLength(0);
+  });
+
+  it("rejects a post-cutoff skipped day even with no filler", () => {
+    expect(envelopeIssueSummary(minimumDay("2026-07-26", "skipped", 0))).toContain(
+      "2026-07-26 requires status published/partial with at least 3 visible items; got skipped with 0",
+    );
+  });
+
+  it("rejects a post-cutoff day with fewer than 3 visible items", () => {
+    expect(envelopeIssueSummary(minimumDay("2026-07-26", "published", 2))).toContain(
+      "2026-07-26 requires status published/partial with at least 3 visible items; got published with 2",
+    );
+  });
+
+  it.each(["published", "partial"] as const)(
+    "accepts post-cutoff status %s with 3 verified visible items",
+    (status) => {
+      expect(envelopeIssueSummary(minimumDay("2026-07-26", status, 3))).toHaveLength(0);
+    },
+  );
 
   it("flags generated/source timestamps after the trusted publish time", () => {
     const env = envelopeWith([baseItem], "published");
