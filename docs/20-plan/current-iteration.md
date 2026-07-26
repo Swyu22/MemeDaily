@@ -46,13 +46,13 @@ evidence-qualified items and prove the trusted under-minimum repair path.
   cache-bypassed production HTTP 200 with current dual-feed content.
 - [x] Observe the real 12:00 meme and 12:15 news Web Scheduled catch-up runs; prove
   both terminal live-main preflights caused no-ops with no additional GitHub mutation.
-- [ ] Deploy the explicit candidate `>=3` gate and trusted exact-file
+- [x] Deploy the explicit candidate `>=3` gate and trusted exact-file
   under-minimum-to-complete repair path.
-- [ ] Replace the 2026-07-26 meme `skipped/0` envelope with three reverified safe
+- [x] Replace the 2026-07-26 meme `skipped/0` envelope with three reverified safe
   carryovers through the exact daily candidate PR and correlated Pages deployment.
-- [ ] Update and read back all eight server Scheduled Task prompts so only
+- [x] Update and read back all eight server Scheduled Task prompts so only
   `published/partial + >=3` is terminal and fallback performs editorial recovery.
-- [ ] Activate the domain/monitor/fallback gates, complete full verification, and prove
+- [x] Activate the domain/monitor/fallback gates, complete full verification, and prove
   local, GitHub main, Pages, and production agree.
 - [x] Run the complete local/governance/security suite and independent diff review;
   correct its final Pages-budget and documentation findings.
@@ -93,4 +93,4 @@ evidence-qualified items and prove the trusted under-minimum repair path.
 
 ## Last Updated
 
-- 2026-07-26 13:18 +0800
+- 2026-07-26 15:10 +0800
