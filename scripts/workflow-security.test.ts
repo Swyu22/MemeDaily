@@ -35,7 +35,7 @@ it("confines Codex Cloud PR input to one dated JSON blob before any write token 
   expect(text).toContain('"codex/daily-news-${DATE}"');
   expect(text).toContain('"${#CHANGED_FILES[@]}" -ne 1');
   expect(text).toContain("codex-artifact/candidate.json");
-  expect(validate).toContain('validate-candidate "$TARGET" "$DATE"');
+  expect(validate).toContain('validate-candidate "$TARGET" "$DATE" "$FEED"');
   expect(text).toContain("ref: main");
   expect(text).not.toContain("ref: ${{ github.event.pull_request.head.sha }}");
   expect(validate).toContain("contents: read");
@@ -46,9 +46,9 @@ it("confines Codex Cloud PR input to one dated JSON blob before any write token 
   expect(publish).toContain("actions/download-artifact@");
   expect(publish).toContain("npm run check");
   expect(publish).toContain("live-under-minimum.json");
-  expect(publish).toContain('classify-live "$TARGET" "$DATE"');
+  expect(publish).toContain('classify-live "$TARGET" "$DATE" "$FEED"');
   expect(publish).toContain(
-    'preserve-repair codex-artifact/live-under-minimum.json "$TARGET" "$DATE"',
+    'preserve-repair codex-artifact/live-under-minimum.json "$TARGET" "$DATE" "$FEED"',
   );
 });
 

@@ -105,7 +105,7 @@ jobs:
           # Candidate must contain at least 3 visible items; the helper also requires
           # the raw published count to match run_report.published exactly.
           npx --no-install tsx scripts/daily-publish-gate.ts \
-            validate-candidate "$TARGET" "$DATE"
+            validate-candidate "$TARGET" "$DATE" "$FEED"
 
           ARTIFACT="codex-${FEED}-${DATE}-${HEAD_SHA}"
           echo "artifact=${ARTIFACT}" >> "$GITHUB_OUTPUT"
@@ -176,7 +176,7 @@ jobs:
           if [ -f "$TARGET" ]; then
             LIVE_DECISION="$(
               npx --no-install tsx scripts/daily-publish-gate.ts \
-                classify-live "$TARGET" "$DATE"
+                classify-live "$TARGET" "$DATE" "$FEED"
             )"
             IFS=$'\t' read -r LIVE_ACTION STATUS REPORTED PUBLISHED_ITEMS <<< "$LIVE_DECISION"
             if [ "$LIVE_ACTION" = "terminal" ]; then
@@ -196,7 +196,7 @@ jobs:
             # The helper requires at least three items and exact report/count equality
             # before either a terminal or repair decision.
             npx --no-install tsx scripts/daily-publish-gate.ts \
-              preserve-repair codex-artifact/live-under-minimum.json "$TARGET" "$DATE"
+              preserve-repair codex-artifact/live-under-minimum.json "$TARGET" "$DATE" "$FEED"
           fi
           npm run check
 

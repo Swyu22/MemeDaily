@@ -181,5 +181,7 @@ it.each(["daily-monitor.yml", "daily-news-monitor.yml"])(
     expect(workflow).toContain("minimum=3");
     expect(workflow).toContain('[ "$REPORTED" -eq "$VISIBLE" ]');
     expect(workflow).toContain('[ "$VISIBLE" -ge 3 ]');
+    expect(workflow).toContain("const r=e.run_report?.published");
+    expect(workflow).not.toContain("Number(e.run_report?.published)");
   },
 );

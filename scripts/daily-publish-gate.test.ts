@@ -107,6 +107,7 @@ it.each([
   ["date mismatch", { date: "2026-07-25" }],
   ["published count mismatch", { reported: 2 }],
   ["skipped raw item", { status: "skipped", reported: 0, items: [item("hidden", false)] }],
+  ["unrecognizable items", { reported: 3, items: [{}, {}, {}] }],
 ])("treats %s as an incident", (_label, options) => {
   expect(() => classifyLive(envelope(options), DATE)).toThrow();
 });
@@ -141,10 +142,14 @@ it("ignores unpublished live rows but still preserves visible order", () => {
 it("returns a non-zero CLI result for held live data", () => {
   const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "daily-publish-gate-"));
   const file = path.join(fixture, "held.json");
-  fs.writeFileSync(file, JSON.stringify(envelope({ status: "held", reported: 0, items: [] })));
+  const live = JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), "data", "daily", `${DATE}.json`), "utf8"),
+  ) as Record<string, unknown>;
+  live.status = "held";
+  fs.writeFileSync(file, JSON.stringify(live));
   const result = spawnSync(
     process.execPath,
-    ["--import", "tsx", SCRIPT, "classify-live", file, DATE],
+    ["--import", "tsx", SCRIPT, "classify-live", file, DATE, "meme"],
     { cwd: process.cwd(), encoding: "utf8" },
   );
   fs.rmSync(fixture, { recursive: true, force: true });

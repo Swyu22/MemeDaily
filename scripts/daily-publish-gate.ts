@@ -5,9 +5,12 @@
  */
 import fs from "node:fs";
 import { pathToFileURL } from "node:url";
+import { NewsEnvelopeSchema } from "../src/domain/dailynews/schema";
+import { DailyEnvelopeSchema } from "../src/domain/memedaily/schema";
 
 type JsonRecord = Record<string, unknown>;
 type DailyStatus = "published" | "partial" | "skipped" | "held";
+type Feed = "meme" | "news";
 
 export type EnvelopeFacts = {
   status: DailyStatus;
@@ -31,6 +34,9 @@ function readJson(file: string): unknown {
 
 function requireItem(item: unknown, index: number): JsonRecord {
   if (!isRecord(item)) throw new Error(`items[${index}] must be an object`);
+  if (typeof item.id !== "string" || item.id.length === 0) {
+    throw new Error(`items[${index}].id must be a non-empty string`);
+  }
   if ("published" in item && typeof item.published !== "boolean") {
     throw new Error(`items[${index}].published must be a boolean when present`);
   }
@@ -149,14 +155,26 @@ export function preserveRepair(
 function usage(): string {
   return [
     "Usage:",
-    "  tsx scripts/daily-publish-gate.ts validate-candidate <candidate.json> <YYYY-MM-DD>",
-    "  tsx scripts/daily-publish-gate.ts classify-live <live.json> <YYYY-MM-DD>",
-    "  tsx scripts/daily-publish-gate.ts preserve-repair <live.json> <candidate.json> <YYYY-MM-DD>",
+    "  tsx scripts/daily-publish-gate.ts validate-candidate <candidate.json> <YYYY-MM-DD> <feed>",
+    "  tsx scripts/daily-publish-gate.ts classify-live <live.json> <YYYY-MM-DD> <feed>",
+    "  tsx scripts/daily-publish-gate.ts preserve-repair <live.json> <candidate.json> <YYYY-MM-DD> <feed>",
   ].join("\n");
 }
 
-function classifyForCli(file: string, expectedDate: string): void {
-  const result = classifyLive(readJson(file), expectedDate);
+function requireFeed(value: string): Feed {
+  if (value === "meme" || value === "news") return value;
+  throw new Error(`feed must be meme or news; got ${value}`);
+}
+
+function readFeedEnvelope(file: string, feed: Feed): unknown {
+  const raw = readJson(file);
+  if (feed === "meme") DailyEnvelopeSchema.parse(raw);
+  else NewsEnvelopeSchema.parse(raw);
+  return raw;
+}
+
+function classifyForCli(file: string, expectedDate: string, feed: Feed): void {
+  const result = classifyLive(readFeedEnvelope(file, feed), expectedDate);
   process.stdout.write(
     `${result.action}\t${result.status}\t${result.reported}\t${result.rawPublished}\n`,
   );
@@ -167,22 +185,27 @@ function requireCliArgs(args: string[], count: number): void {
 }
 
 function validateCandidateCli(args: string[]): void {
-  requireCliArgs(args, 2);
-  const [file = "", expectedDate = ""] = args;
-  const result = validateCandidate(readJson(file), expectedDate);
+  requireCliArgs(args, 3);
+  const [file = "", expectedDate = "", feed = ""] = args;
+  const result = validateCandidate(readFeedEnvelope(file, requireFeed(feed)), expectedDate);
   process.stdout.write(`candidate-ok\t${result.status}\t${result.reported}\n`);
 }
 
 function classifyLiveCli(args: string[]): void {
-  requireCliArgs(args, 2);
-  const [file = "", expectedDate = ""] = args;
-  classifyForCli(file, expectedDate);
+  requireCliArgs(args, 3);
+  const [file = "", expectedDate = "", feed = ""] = args;
+  classifyForCli(file, expectedDate, requireFeed(feed));
 }
 
 function preserveRepairCli(args: string[]): void {
-  requireCliArgs(args, 3);
-  const [liveFile = "", candidateFile = "", expectedDate = ""] = args;
-  preserveRepair(readJson(liveFile), readJson(candidateFile), expectedDate);
+  requireCliArgs(args, 4);
+  const [liveFile = "", candidateFile = "", expectedDate = "", rawFeed = ""] = args;
+  const feed = requireFeed(rawFeed);
+  preserveRepair(
+    readFeedEnvelope(liveFile, feed),
+    readFeedEnvelope(candidateFile, feed),
+    expectedDate,
+  );
   process.stdout.write("repair-ok\n");
 }
 

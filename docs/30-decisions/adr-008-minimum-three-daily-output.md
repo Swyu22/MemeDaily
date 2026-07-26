@@ -85,7 +85,9 @@ availability interlock:
 2. use that path for a real same-date daily candidate that repairs
    `data/daily/2026-07-26.json` from `skipped` / zero to a compliant envelope;
 3. after the repair path and production result are accepted, enable the effective-
-   date domain rejection of `skipped`, `held`, and fewer-than-three envelopes.
+   date domain rejection of `skipped` and fewer-than-three published/partial
+   envelopes, while preserving `held` as a valid hidden emergency state that only
+   an operator may clear.
 
 This ordering ensures the zero-item live envelope does not become impossible to
 replace before its only bounded repair path exists, while still ending with the
@@ -133,8 +135,9 @@ closed and keeps the failure visible.
 
 ## Verification Requirements
 
-- Domain validators reject effective-date `skipped` / `held` and fewer-than-three
-  `published` / `partial` envelopes while retaining historical compatibility.
+- Domain validators reject effective-date `skipped` and fewer-than-three
+  `published` / `partial` envelopes while retaining historical compatibility and
+  accepting operator-authored `held` as hidden emergency state.
 - Workflow tests assert the under-minimum repair exception and the compliant
   existing-envelope no-op.
 - Feed monitors require both an allowed terminal status and at least three published
