@@ -114,6 +114,32 @@ Terminal-day deduplication is also stated precisely: later fixed tasks may wake 
 perform one cheap live-main read, but they must stop before research, data writes,
 branches, or PRs once a valid terminal envelope exists.
 
+## Minimum-Three Correction
+
+- The owner rejected zero-item publication days. ADR-008 and both living rules now
+  define terminal success as `published`/`partial` with matching reported and
+  evidence-qualified visible counts of at least three.
+- PR #43 introduced bounded under-minimum repair. Independent review caught a Bash
+  heredoc parse failure and held/count/fallback gaps before any repair candidate was
+  submitted; PR #44 fixed them at `4c8ac36`.
+- The first real three-item candidate check exposed a test coupled to today's zero-item
+  fixture. PR #45 replaced it with an isolated two-item fixture; 146 tests and the
+  176-page build passed, with an independent review GO.
+- Exact candidate PR #46 contained only `data/daily/2026-07-26.json`. Trusted publisher
+  run `30191367788` validated and stamped it, committed `ce1c961` to protected `main`,
+  waited for CI `30191428315` and correlated Pages `30191428317`, then closed the PR.
+- GitHub main and cache-bypassed production now agree on meme `partial/3` and news
+  `published/6`. Production returned HTTP 200 and rendered all three repaired meme
+  titles.
+- All eight ChatGPT Work Scheduled Tasks were updated without changing their names,
+  active status, Asia/Shanghai schedules, or next-run cadence. Direct persistent-config
+  read-back confirmed terminal `>=3`, operator-held no mutation, fallback recovery
+  without `skipped`, and terminal cheap no-op in every task.
+- The final meme/news domain gate rejects post-cutoff `skipped` and under-three
+  envelopes, counts only evidence-qualified visible items, preserves historical data,
+  and keeps `held` as an operator-only emergency removal state. Full verification passes
+  158 tests and a 176-page production build.
+
 ## Remaining
 
 1. P2: Observe the next naturally content-producing Web Scheduled Task as
