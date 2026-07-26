@@ -32,6 +32,27 @@ function runScript(
   });
 }
 
+function writeUnderMinimumFixture(sourcePath: string, filePath: string): void {
+  const envelope = JSON.parse(fs.readFileSync(sourcePath, "utf8")) as {
+    date: string;
+    status: string;
+    run_report: { published: number };
+    items: Array<Record<string, unknown>>;
+  };
+  if (envelope.items.length < 2) {
+    throw new Error(`fixture ${sourcePath} needs at least 2 items`);
+  }
+
+  envelope.date = "2026-07-26";
+  envelope.status = "partial";
+  envelope.run_report.published = 2;
+  envelope.items = envelope.items.slice(0, 2).map((item) => ({
+    ...item,
+    published: true,
+  }));
+  fs.writeFileSync(filePath, `${JSON.stringify(envelope, null, 2)}\n`);
+}
+
 afterEach(() => {
   for (const root of tempRoots.splice(0)) {
     fs.rmSync(root, { force: true, recursive: true });
@@ -129,13 +150,13 @@ it.each([
     script: "create-skipped-day.ts",
     variable: "MEMEDAILY_DATE",
     directory: "daily",
-    fixture: "data/daily/2026-07-26.json",
+    fixture: "data/daily/2026-07-25.json",
   },
   {
     script: "create-skipped-news-day.ts",
     variable: "DAILYNEWS_DATE",
     directory: "daily-news",
-    fixture: "data/daily-news/2026-07-25.json",
+    fixture: "data/daily-news/2026-07-26.json",
   },
 ])("fails closed for an existing under-minimum target via $script", ({
   script,
@@ -147,7 +168,7 @@ it.each([
   const targetDir = path.join(root, "data", directory);
   const filePath = path.join(targetDir, "2026-07-26.json");
   fs.mkdirSync(targetDir, { recursive: true });
-  fs.copyFileSync(path.join(repoRoot, fixture), filePath);
+  writeUnderMinimumFixture(path.join(repoRoot, fixture), filePath);
 
   const result = runScript(script, root, { [variable]: "2026-07-26" });
 
