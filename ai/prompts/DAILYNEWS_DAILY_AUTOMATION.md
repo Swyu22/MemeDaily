@@ -26,8 +26,10 @@ one file only on the exact daily candidate branch, open a PR, and never merge or
 
 ## Minimum daily output and bounded recovery (effective 2026-07-26)
 Every current-day result must be `status: "published"` or `status: "partial"` with at least
-**3 visible, evidence-qualified items**. `skipped`, `held`, or a 0–2 item envelope is not a
-terminal success and must not suppress catch-up/fallback recovery.
+**3 visible, evidence-qualified items**. `skipped` or a 0–2 item envelope is not a terminal
+success and must not suppress catch-up/fallback recovery. `held` specifically remains an
+operator-controlled emergency takedown: unattended
+automation must alert and stop, never turn its hidden items visible or overwrite it.
 
 If the strict same-day selection has fewer than 3 items, broaden the candidate pool to
 news that was disclosed/occurred within the most recent **72 hours**, has **not appeared in

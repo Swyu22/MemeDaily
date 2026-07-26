@@ -25,7 +25,8 @@ publishes, and waits for the correlated Pages deployment.
 As an independent migration guard, the trusted workflow must reject a candidate
 before domain validation unless its status is `published` or `partial`,
 `run_report.published >= 3`, and its raw reader-visible item count is at least
-three. Domain validation then proves that those visible items qualify under the
+three. Candidate envelopes may not smuggle unpublished/hidden rows. Domain
+validation then proves that those visible items qualify under the
 feed rules; neither layer replaces the other.
 
 Repository ruleset `codex-trusted-main` mechanically rejects direct updates and
@@ -45,9 +46,10 @@ inclusive:
 - a terminal envelope must have status `published` or `partial`,
   `run_report.published >= 3`, and at least three reader-visible items that each
   satisfy the selected feed's evidence gate;
-- a missing target, status `skipped` or `held`, zero to two reported/visible
-  items, or any mismatch that leaves fewer than three qualified visible items is
+- a missing target, status `skipped`, or zero to two reported/visible items is
   `under_minimum`, not success and not a no-op;
+- `held` is an operator safety hold and therefore an incident for unattended tasks.
+  Never turn held items visible or replace a held envelope automatically;
 - an envelope that is not parseable JSON, has an unknown status, has an
   unrecognizable shape, or cannot be safely classified is an incident. Never
   overwrite unexplained malformed live data.
@@ -68,8 +70,8 @@ Before any mutation:
 2. Classify it using the minimum-output contract above. A terminal envelope is an
    idempotent no-op and must not be replaced.
 3. Treat a missing target or a safely classified `under_minimum` target as work
-   still required. Treat malformed, unknown, or unclassifiable content as an
-   incident: open or update a feed-specific GitHub issue and stop.
+   still required. Treat `held`, malformed, unknown, or unclassifiable content as
+   an incident: open or update a feed-specific GitHub issue and stop.
 4. Inspect open pull requests and recent same-repository pull requests for the
    exact branch. Never create a second branch for the same feed/date.
 
@@ -157,8 +159,9 @@ issue described below.
    fetch `https://memedaily.fun/` with cache bypass when the tool supports it.
    Verify HTTP success and that production exposes at least three of today's
    qualified visible items.
-3. Treat a missing target, `skipped`, `held`, zero-to-two items, count mismatch,
-   or fewer than three items on production as unhealthy `under_minimum`.
+3. Treat a missing target, `skipped`, zero-to-two items, count mismatch, or fewer
+   than three items on production as unhealthy `under_minimum`. Treat `held` as
+   an unhealthy operator safety incident that automation must not clear.
 4. Inspect today's exact candidate PR and its trusted workflow status whenever
    the main envelope is missing or under minimum.
 5. If healthy, close any matching open alert as completed. If unhealthy, create
@@ -178,7 +181,8 @@ Fallback is the late last resort, but it is still a content-recovery run. It use
 the same hard safety, truth, evidence, schema, and minimum-three contract as
 primary/catch-up; it must not call or reproduce a zero-item/skipped generator.
 
-1. Apply section 2. Only an existing terminal live-main envelope is a no-op.
+1. Apply section 2. Only an existing terminal live-main envelope is a no-op. A
+   `held` envelope is an incident and stops without candidate mutation.
 2. If an open candidate is still running, leave it intact and report its state.
 3. Read the same runbook, living rule, schema/rules, and recent envelopes required
    by section 3. Perform bounded public-source research and the same recovery

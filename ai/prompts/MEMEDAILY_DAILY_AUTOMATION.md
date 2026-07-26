@@ -51,8 +51,10 @@ one file only on the exact daily candidate branch, open a PR, and never merge or
 
 ## Minimum daily output and bounded recovery (effective 2026-07-26)
 Every current-day result must be `status: "published"` or `status: "partial"` with at least
-**3 visible items**. `skipped`, `held`, or a 0–2 item envelope is not a terminal success and
-must trigger recovery rather than stop later catch-up/fallback runs.
+**3 visible items**. `skipped` or a 0–2 item envelope is not a terminal success and must
+trigger recovery rather than stop later catch-up/fallback runs. `held` specifically remains
+an operator-controlled emergency takedown: unattended
+automation must alert and stop, never turn its hidden items visible or overwrite it.
 
 Use this ordered ladder only when the strict current-day pool has fewer than 3 items:
 

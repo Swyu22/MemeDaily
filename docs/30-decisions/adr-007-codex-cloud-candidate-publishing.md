@@ -160,8 +160,9 @@ contract is:
 
 - only `published` or `partial` with at least three published items and matching
   `run_report.published` is terminal;
-- `skipped`, `held`, malformed, or fewer-than-three output is an under-minimum
-  state, so primary, catch-up, and fallback tasks must continue recovery;
+- `skipped` or fewer-than-three output is an under-minimum state, so primary,
+  catch-up, and fallback tasks must continue recovery; `held` remains an
+  operator-controlled safety incident that automation never clears;
 - the trusted publisher may replace that one existing feed/date JSON only with a
   same-date, exact-path candidate that raises it to the compliant minimum; it still
   preserves any already-visible item unchanged and rejects arbitrary rewrites,

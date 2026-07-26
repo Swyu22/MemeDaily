@@ -6,7 +6,7 @@ gates and permanent archives. The site has **two feeds**, switchable via the hom
 
 - **热梗 (memes)** — genuinely spreading, reusable 网络流行语 / 语言梗 (curated for content &
   advertising value). Data: `data/daily/YYYY-MM-DD.json`.
-- **日报 (news)** — up to 10 heat-ranked 民生 news items a day (close to everyday life,
+- **日报 (news)** — 3–10 heat-ranked 民生 news items a day (close to everyday life,
   restrained news tone). Data: `data/daily-news/YYYY-MM-DD.json`.
 
 ## Current Architecture
@@ -29,7 +29,9 @@ gates and permanent archives. The site has **two feeds**, switchable via the hom
   bypass for publication. GitHub cron, external
   cron-job.org, and the Anthropic publisher are retired. Manual fallback/monitor
   workflows remain for disaster recovery. See `ai/prompts/CODEX_CLOUD_RUNBOOK.md`
-  and ADR-007.
+  and ADR-007/ADR-008. From 2026-07-26 onward, only `published`/`partial` with at
+  least three evidence-qualified visible items per feed is terminal; `held` remains
+  an operator-only emergency takedown.
 - **Client freshness:** an inline boot script in `layout.tsx` `<head>` (chunk-independent,
   runs even if hashed JS 404s) self-heals an unstyled render and registers a hand-written
   **network-first** service worker (`public/sw.js`: browser-cache bypass for HTML, offline
@@ -56,7 +58,7 @@ gates and permanent archives. The site has **two feeds**, switchable via the hom
 | `docs/40-audits/` | Dated engineering audits and installed-Skills inventories |
 | `scripts/stamp-publish-time.ts` | Trusted post-candidate publication timestamp normalization |
 | `.github/workflows/` | CI + trusted candidate ingestion + Pages + manual fallback/monitor recovery |
-| `产品方案.md` | Original Chinese product plan (memes feed) |
+| `产品方案.md` | Original Chinese product plan (historical; current overrides are marked at its top) |
 
 ## Local Workflow
 

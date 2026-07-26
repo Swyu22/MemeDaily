@@ -75,8 +75,9 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重 / 最低产出协�
    - `status` 是 `published` 或 `partial`；
    - `run_report.published >= 3`；
    - 实际至少有 3 条读者可见、逐条通过对应证据门禁的 item。
-   `missing`、`skipped`、`held`、0–2 条、计数不一致或不足 3 条均是 `under_minimum`，必须继续恢复；
-   JSON 无法解析、状态未知、结构无法安全判定则是 incident，只告警、不覆盖不明 live 数据。
+   `missing`、`skipped`、0–2 条、计数不一致或不足 3 条均是 `under_minimum`，必须继续恢复；
+   `held` 是人工安全下架，自动化必须视为 incident、不得恢复其中内容；JSON 无法解析、状态未知、
+   结构无法安全判定也属于 incident，只告警、不覆盖不明 live 数据。
 2. 每条线每天只用一个精确分支：
    `codex/daily-meme-YYYY-MM-DD` 或 `codex/daily-news-YYYY-MM-DD`。
 3. Cloud 只提交候选 PR；`codex-daily-pr-publish.yml` 是唯一自动写 `main` 的内容入口。
@@ -97,7 +98,8 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重 / 最低产出协�
 每条线的**信封（envelope）**顶层字段（两个 schema 基本一致）：
 `schema_version:"1.0"`、`policy_version`、`rubric_version`、`date:"YYYY-MM-DD"`、
 `generated_at`(ISO8601 带时区)、`status`(`published|partial|skipped|held`)、`run_report{...}`、`items[]`。
-`skipped|held` 只为历史数据兼容保留在 schema 中；`2026-07-26` 起它们不是当天发布成功或自动化终态。
+`skipped|held` 只为历史数据兼容及人工安全下架保留在 schema 中；`2026-07-26` 起它们不是当天发布成功或
+自动化终态，其中 `held` 必须人工判断后解除，任何无人值守任务不得自动改回可见。
 `generated_at` / `published_at` 会在提交前由 `npm run stamp:publish -- <文件>` 用可信本机时钟统一写入；
 来源时间晚于该时刻时也会被压到发布上界，避免生成内容声称“未来取证”。
 
@@ -276,6 +278,7 @@ git push                                 # 真实 push → pages.yml 部署；�
   `blocked`，不提交 0–2 条、`skipped` 或 `held` 信封。任何零条 generator 都不是当前发布兜底。
 - 修复 live `under_minimum` 目标时，只能修改当天精确文件；已有读者可见 item 必须逐项原样保留，仅追加
   新合格项并协调 status / `run_report`。live 目标达到 terminal 后再次运行必须 no-op。
+- live 状态为 `held` 时立即告警并停止；它是人工安全下架，不属于可自动增补的 `under_minimum`。
 - 验证上线：`curl -s https://memedaily.fun/ | grep <你的某条标题关键词>`，或浏览器开 memedaily.fun 看「热梗/日报」两个标签。
 
 ---
@@ -320,7 +323,8 @@ git push                                 # 真实 push → pages.yml 部署；�
    Web Scheduled 触发，不能只靠手工打开 Cloud 会话。
 8. 固定 catch-up / monitor / fallback 到点仍会启动一次任务并消耗很少量的 live-main 预检。
    只有当天已有满足第 3 节 minimum-three 契约的 terminal 信封时，才必须立即停止，不再研究、不写文件、
-   不建分支、不开 PR。`under_minimum` 必须继续恢复，monitor 则只告警。这里的“去重 no-op”是廉价预检后停止，
+   不建分支、不开 PR。`under_minimum` 必须继续恢复，monitor 则只告警；`held` 作为安全 incident 只告警且
+   不得自动恢复。这里的“去重 no-op”是廉价预检后停止，
    不是服务器完全不唤醒任务。
 
 ---

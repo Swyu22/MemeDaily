@@ -93,7 +93,7 @@ export const DailyEnvelopeSchema = z.object({
   generated_at: z.iso.datetime({ offset: true }),
   // Real publish/push moment (Asia/Shanghai), stamped deterministically by the publish step
   // (distinct from the agent-guessed generated_at). Drives the UI's 发布时间. Optional so the
-  // agent's pre-publish file validates; the publish step and the skipped-day fallback add it.
+  // agent's pre-publish file validates; trusted or supervised publish steps add it.
   published_at: z.iso.datetime({ offset: true }).optional(),
   status: StatusSchema,
   run_report: z.object({
