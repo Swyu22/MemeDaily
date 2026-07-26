@@ -18,10 +18,16 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   uses only `published` or `partial`.
 - Each published item has a stable `id`, title, platforms, type, reader-facing summary,
   origin, usage, fun point, spread reason, lifecycle, internal policy fields, and sources.
+- From 2026-07-27, every meme title begins with one semantic emoji chosen for that phrase;
+  unrelated items should not mechanically reuse the same prefix.
+- From 2026-07-27, each item also carries a display-anchored `canonical_phrase`, exact
+  visible `days_on_list`, and auditable `score_breakdown` for heat, freshness,
+  reusability, and evidence.
 - `brand_usage` and `risk` remain contract/policy inputs but are intentionally not rendered
   as card sections. Editorial output must not become a named-brand recommendation.
 - Each source records tier, evidence role, platform, HTTP(S) URL, capture time, and a compact
-  title/note. The UI shows concise links, never long excerpts.
+  title/note. From 2026-07-27, selected items also record the activity `observed_at`
+  separately from page capture time. The UI shows concise links, never long excerpts.
 
 ### News
 - One envelope per day: `data/daily-news/YYYY-MM-DD.json`.
@@ -38,7 +44,14 @@ restrained everyday-life news digest. It is not a community, scraper, or private
 - Trusted automation stamps pipeline acceptance time after the model artifact is produced;
   the live Pages deployment may complete a few minutes later.
 - `generated_at` and every source `captured_at` must not be later than `published_at`.
+  `observed_at` must not be later than its source `captured_at`.
 - Invalid JSON, schema failures, policy failures, or accounting mismatches block publication.
+- From 2026-07-27, a meme report includes `dropped_capacity` and
+  `selection.{tier,qualified,candidate_audit}`. The 30–100 post-identity-deduped audit rows
+  equal `candidates_scanned`, use one exclusive outcome each, reconcile every selected/drop
+  total, derive all three cumulative tier counts, and prove chosen-tier Top-N/capacity
+  ordering. Safety drops retain only an opaque counter key and primary category; rejected
+  content, subjects, URLs, item ids, scores, and activity are not persisted.
 - For current envelopes, `skipped` or fewer than three visible qualified items is an
   under-minimum incident to recover, not a successful terminal day. `held` is a separate
   safety incident. Historical envelopes before 2026-07-26 retain their recorded status.
@@ -56,18 +69,32 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   dangerous content, and harmful rumors.
 - A candidate needs a reusable phrase, template, BGM, visual/action pattern, persona, or
   remix structure. A hot one-off news event is not a meme.
-- When the strict meme pool is under three, search the previous 7 days, then allow safe
-  carry-over from the previous 14 days with public evidence newly opened or rechecked
-  within 72 hours. Carry-over reuses the exact stable id and correct `days_on_list`.
+- From 2026-07-27, rank at least 30 new and recurring meme candidates together. There is
+  no fixed cross-day count or percentage: select by current heat, freshness, demonstrated
+  reusability, and evidence quality under the `strict_24h`, `relaxed_48h`, and
+  `relaxed_72h` thresholds.
+- A recurring meme may continue for as many days as its verified activity warrants, but it
+  must be resolved across all meme history, retain the original id/canonical, use the exact
+  visible-appearance count, and cite activity observed after its previous site publication
+  from a popularity, usage-context, or cross-platform source. Canonical identity must
+  normalize to letters/numbers and match the current title or an alias. A held identity is
+  never automatically re-exposed. An origin timestamp or recaptured old archive page is not
+  evidence of renewed heat.
 - DailyNews may recover an under-three day with useful, still-current material from the
   previous 72 hours only when it has never been visibly published in an earlier news
   envelope and still passes the normal authoritative-source gate.
-- Recovery may lower heat, freshness, or editorial confidence only. Never fabricate,
-  weaken safety/truth, relax source evidence, or cross any content red line to reach three.
+- Recovery may move the meme score floor from 75/24h to 70/48h and finally 65/72h, or
+  lower DailyNews heat/freshness/editorial confidence only. Meme reusability remains at
+  least 16/20 and evidence at least 7/10. Never fabricate, weaken safety/truth, relax
+  source evidence, or cross any content red line to reach three.
 
 ## UI Requirements
-- Home: same chrome for both tabs, latest date first, up to five days, heat/freshness sorting,
-  visible source links, status handling, and responsive cards.
+- Home: same chrome for both tabs, latest date first, up to five days, visible source links,
+  status handling, and responsive cards. For scored meme data, heat sorts by
+  `score_breakdown.heat` descending (total score breaks ties), while freshness sorts by
+  `score_breakdown.freshness` descending. Thus a genuinely fresh recurrence may outrank a
+  weaker new item. Historical rows without a breakdown fall back to lifecycle,
+  `days_on_list`, and total score; list age is not the primary freshness measure for new data.
 - Meme archive: text search plus platform, type, lifecycle, date-range, and sort controls.
 - Meme detail: permanent static route, complete reader-facing fields, evidence, history,
   related items, and copy actions.

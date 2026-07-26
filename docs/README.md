@@ -33,3 +33,5 @@ Current automation decisions:
   candidate PRs with trusted repository publication).
 - `30-decisions/adr-008-minimum-three-daily-output.md` (minimum-three terminal
   output, bounded quality relaxation, and monotonic under-minimum repair).
+- `30-decisions/adr-009-dynamic-meme-selection.md` (evidence-based heat/freshness
+  selection with no fixed cross-day quota).

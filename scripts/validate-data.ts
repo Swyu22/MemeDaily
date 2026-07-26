@@ -4,6 +4,7 @@
  * pos: CI/local gate before static build and daily automation commit
  */
 import { dailyJsonFiles, loadEnvelope } from "../src/domain/memedaily/data";
+import { dynamicSelectionIssues } from "../src/domain/memedaily/dynamic-selection";
 import {
   crossDayIssues,
   envelopeIssueSummary,
@@ -54,6 +55,17 @@ if (failureCount === 0) {
     }
   } else {
     console.log("[validate-data] ok cross-day freshness");
+  }
+
+  const dynamicSelection = dynamicSelectionIssues(envelopes);
+  if (dynamicSelection.length > 0) {
+    failureCount += dynamicSelection.length;
+    console.error("[validate-data] dynamic selection issues");
+    for (const issue of dynamicSelection) {
+      console.error(`  - ${issue}`);
+    }
+  } else {
+    console.log("[validate-data] ok dynamic selection");
   }
 
   const lifecycle = lifecycleIssues(envelopes);

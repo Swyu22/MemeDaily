@@ -58,14 +58,25 @@ const SourceSchema = z.object({
   platform: PlatformSchema,
   url: HttpUrlSchema,
   title: z.string().min(1).max(120).optional(),
+  // Time shown by the evidence for the activity itself. This is deliberately
+  // separate from captured_at, which only says when the page was opened.
+  observed_at: z.iso.datetime({ offset: true }).optional(),
   captured_at: z.iso.datetime({ offset: true }),
   note: z.string().min(2).max(160),
+});
+
+const ScoreBreakdownSchema = z.object({
+  heat: z.number().int().min(0).max(40),
+  freshness: z.number().int().min(0).max(30),
+  reusability: z.number().int().min(0).max(20),
+  evidence: z.number().int().min(0).max(10),
 });
 
 export const MemeItemSchema = z.object({
   id: z.string().regex(/^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/),
   title: z.string().min(1).max(48),
   aliases: z.array(z.string().min(1).max(48)).default([]),
+  canonical_phrase: z.string().min(1).max(48).optional(),
   platform: z.array(PlatformSchema).min(1),
   type: MemeTypeSchema,
   summary: z.string().min(6).max(180),
@@ -81,8 +92,49 @@ export const MemeItemSchema = z.object({
   }),
   days_on_list: z.number().int().min(1).optional(),
   score: z.number().int().min(0).max(100).optional(),
+  score_breakdown: ScoreBreakdownSchema.optional(),
   sources: z.array(SourceSchema).min(2),
   published: z.boolean().default(true),
+});
+
+const SelectionTierSchema = z.enum([
+  "strict_24h",
+  "relaxed_48h",
+  "relaxed_72h",
+]);
+
+const SelectionQualifiedSchema = z.object({
+  strict_24h: z.number().int().min(0),
+  relaxed_48h: z.number().int().min(0),
+  relaxed_72h: z.number().int().min(0),
+});
+
+const CandidateOutcomeSchema = z.enum([
+  "selected",
+  "dropped_safety",
+  "dropped_low_confidence",
+  "dropped_insufficient_evidence",
+  "dropped_capacity",
+]);
+
+const CandidateActivitySchema = z.object({
+  evidence_role: z.enum(["popularity", "usage_context", "cross_platform"]),
+  url: HttpUrlSchema,
+  observed_at: z.iso.datetime({ offset: true }),
+});
+
+const CandidateAuditSchema = z.object({
+  candidate_key: z.string().regex(/^[a-z0-9][a-z0-9-]{2,63}$/),
+  canonical_phrase: z.string().min(1).max(48).optional(),
+  outcome: CandidateOutcomeSchema,
+  item_id: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$/)
+    .optional(),
+  score: z.number().int().min(0).max(100).optional(),
+  score_breakdown: ScoreBreakdownSchema.optional(),
+  activity: CandidateActivitySchema.optional(),
+  drop_reason: z.string().min(1).max(48).optional(),
 });
 
 export const DailyEnvelopeSchema = z.object({
@@ -101,6 +153,7 @@ export const DailyEnvelopeSchema = z.object({
     published: z.number().int().min(0),
     dropped_safety: z.record(z.string(), z.number().int().min(0)),
     dropped_low_confidence: z.number().int().min(0),
+    dropped_capacity: z.number().int().min(0).optional(),
     sources: z.array(PlatformSchema),
     evidence_summary: z.object({
       candidates_with_urls: z.number().int().min(0),
@@ -110,6 +163,13 @@ export const DailyEnvelopeSchema = z.object({
       spillover_sources: z.number().int().min(0),
       dropped_insufficient_evidence: z.number().int().min(0),
     }),
+    selection: z
+      .object({
+        tier: SelectionTierSchema,
+        qualified: SelectionQualifiedSchema,
+        candidate_audit: z.array(CandidateAuditSchema).min(30).max(100),
+      })
+      .optional(),
   }),
   items: z.array(MemeItemSchema).max(10),
 });
@@ -138,6 +198,7 @@ export type PublicMemeItem = Pick<
   | "lifecycle"
   | "days_on_list"
   | "score"
+  | "score_breakdown"
   | "sources"
 >;
 
@@ -156,6 +217,7 @@ export function toPublicMemeItem(item: MemeItem): PublicMemeItem {
     lifecycle: item.lifecycle,
     days_on_list: item.days_on_list,
     score: item.score,
+    score_breakdown: item.score_breakdown,
     sources: item.sources,
   };
 }

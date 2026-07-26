@@ -6,6 +6,11 @@ Accepted. Effective for MemeDaily and DailyNews envelopes dated 2026-07-26 or
 later. Earlier repository history remains valid under the contract in force when
 it was published.
 
+The minimum-three terminal contract and monotonic repair boundary remain active.
+For MemeDaily editorial selection dated 2026-07-27 or later, the generic
+carry-over wording below is refined and superseded by ADR-009's evidence-based
+dynamic heat/freshness model. ADR-009 deliberately sets no fixed cross-day quota.
+
 ## Context
 
 The recovered server scheduler proved that a zero-item `skipped` envelope could be
