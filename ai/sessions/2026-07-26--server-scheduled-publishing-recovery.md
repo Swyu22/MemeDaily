@@ -142,14 +142,12 @@ branches, or PRs once a valid terminal envelope exists.
 
 ## Remaining
 
-1. P0: Merge the dynamic meme-selection gate and synchronize/read back all eight
-   server Scheduled Task prompts.
-2. P2: Observe the next naturally content-producing Web Scheduled Task as
+1. P2: Observe the next naturally content-producing Web Scheduled Task as
    defense-in-depth confirmation that the already verified scheduler and publisher
    paths compose in one unattended run.
-3. P1 USER: revoke/rotate the previously exposed Aliyun AccessKey outside this
+2. P1 USER: revoke/rotate the previously exposed Aliyun AccessKey outside this
    repository.
-4. P2 USER: refresh/reinstall the iOS Chrome Home Screen app and confirm the dark-mode
+3. P2 USER: refresh/reinstall the iOS Chrome Home Screen app and confirm the dark-mode
    status area on a physical device.
 
 ## Editorial Quality Incident And Dynamic Selection Correction
@@ -203,3 +201,23 @@ branches, or PRs once a valid terminal envelope exists.
   the 44 pre-existing warnings, with none in the new dynamic-selection or label code/tests.
 - Final independent review returned GO after the id-reuse and per-source
   `observed_at` language was aligned with the executable contract.
+
+## Dynamic Policy Rollout Closure
+
+- PR #50 merged the dynamic gate at main
+  `e1dee582ff97da9997497dd901954a2b1e7efd4c`. Main CI `30204833745` and
+  Pages `30204833760` succeeded.
+- A cache-bypassed production request displayed all four semantic-emoji titles:
+  `✨ 像开了高清`, `🫥 软孤立`, `🔄 当你学会外耗他人后`, and
+  `🤝 你要我好友位不？`.
+- Repository ruleset `codex-trusted-main` was read back as active with only the trusted
+  DeployKey bypass.
+- The eight existing ChatGPT Work Web Scheduled Tasks were updated in place and read
+  back as `ACTIVE`; no task, schedule, timezone, next-run cadence, or Custom recurrence
+  structure changed. All eight retained terminal `>=3`, operator-held no mutation,
+  fallback recovery without `skipped`, and terminal cheap no-op.
+- Each of the four meme task prompts was directly read back with all eight new clauses:
+  no fixed cross-day quota, full-history identity, 30–100 candidate audit,
+  strictest-sufficient tier, Top-N/capacity, privacy-minimized safety audit,
+  post-publication recurrence activity, and semantic leading emoji. The old 7/14-day
+  identity window and fixed cross-day language are absent.

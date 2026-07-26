@@ -63,7 +63,7 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
   `strict_24h` / `relaxed_48h` / `relaxed_72h`, activity timestamps, stable recurrence
   identity, an auditable candidate/capacity ledger, and no fixed cross-day maximum.
 - [x] Pass full local/governance validation and independent review for the dynamic gate.
-- [ ] Merge the dynamic policy, update the server Scheduled Task prompts without
+- [x] Merge the dynamic policy, update the server Scheduled Task prompts without
   changing their schedules, and read back all eight persistent task definitions.
 - [x] Update and read back all eight server Scheduled Task prompts so only
   `published/partial + >=3` is terminal and fallback performs editorial recovery.
