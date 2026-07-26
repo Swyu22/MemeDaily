@@ -1,10 +1,12 @@
 /**
  * input: optional DAILYNEWS_DATE=YYYY-MM-DD and data/daily-news directory
- * output: no-op for an existing target; otherwise fails and requests editorial recovery
+ * output: no-op only for a complete target; otherwise fails and requests editorial recovery
  * pos: fail-closed fallback guard that prevents automatic zero-item news publication
  */
 import fs from "node:fs";
 import path from "node:path";
+import { NewsEnvelopeSchema } from "../src/domain/dailynews/schema";
+import { visibleNews } from "../src/domain/dailynews/rules";
 import { resolveFallbackTarget } from "./fallback-target";
 
 function shanghaiDate(): string {
@@ -31,13 +33,28 @@ const { targetDate, filePath } = resolveFallbackTarget(
   process.env.DAILYNEWS_DATE ?? shanghaiDate(),
 );
 
-if (fs.existsSync(filePath)) {
-  console.log(`[news-fallback] ${targetDate} already exists; no action`);
-  process.exit(0);
+if (!fs.existsSync(filePath)) {
+  throw new Error(
+    `[news-fallback] ${targetDate} is missing. Automatic skipped envelopes are disabled; ` +
+      "run an editorial fallback and publish at least 3 independently verified items. " +
+      "Never pad, fabricate, or relax safety/politics/privacy red lines.",
+  );
 }
 
-throw new Error(
-  `[news-fallback] ${targetDate} is missing. Automatic skipped envelopes are disabled; ` +
-    "run an editorial fallback and publish at least 3 independently verified items. " +
-    "Never pad, fabricate, or relax safety/politics/privacy red lines.",
-);
+const envelope = NewsEnvelopeSchema.parse(JSON.parse(fs.readFileSync(filePath, "utf8")));
+const visible = visibleNews(envelope).length;
+const complete =
+  envelope.date === targetDate &&
+  (envelope.status === "published" || envelope.status === "partial") &&
+  envelope.run_report.published === visible &&
+  visible >= 3;
+
+if (!complete) {
+  throw new Error(
+    `[news-fallback] ${targetDate} is under minimum or malformed ` +
+      `(status=${envelope.status}, reported=${envelope.run_report.published}, visible=${visible}); ` +
+      "run editorial recovery to at least 3 verified items.",
+  );
+}
+
+console.log(`[news-fallback] ${targetDate} is complete (${visible}/3); no action`);

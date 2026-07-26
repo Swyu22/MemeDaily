@@ -39,9 +39,11 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   the live Pages deployment may complete a few minutes later.
 - `generated_at` and every source `captured_at` must not be later than `published_at`.
 - Invalid JSON, schema failures, policy failures, or accounting mismatches block publication.
-- For current envelopes, `skipped`, `held`, or fewer than three visible qualified items is
-  an under-minimum incident to recover, not a successful terminal day. Historical envelopes
-  before 2026-07-26 retain their recorded status.
+- For current envelopes, `skipped` or fewer than three visible qualified items is an
+  under-minimum incident to recover, not a successful terminal day. `held` is a separate
+  safety incident. Historical envelopes before 2026-07-26 retain their recorded status.
+- `held` remains an operator-controlled emergency takedown. Unattended recovery may repair
+  missing, skipped, or 0–2 item output, but may not clear `held` or re-expose its items.
 
 ## Evidence, Safety, And Recovery Gates
 - Publish only with at least two independent reachable HTTP(S) URLs.

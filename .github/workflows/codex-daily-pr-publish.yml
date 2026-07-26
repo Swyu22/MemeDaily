@@ -102,29 +102,10 @@ jobs:
             > codex-artifact/candidate.json
           cp codex-artifact/candidate.json "$TARGET"
 
-          node - "$TARGET" "$DATE" <<'NODE'
-          const fs = require("node:fs");
-          const [file, expectedDate] = process.argv.slice(2);
-          const envelope = JSON.parse(fs.readFileSync(file, "utf8"));
-          if (envelope.date !== expectedDate) {
-            throw new Error(`Envelope date ${String(envelope.date)} does not match ${expectedDate}`);
-          }
-          const status = String(envelope.status ?? "invalid");
-          const reported = Number(envelope.run_report?.published);
-          const visible = Array.isArray(envelope.items)
-            ? envelope.items.filter((item) => item?.published !== false).length
-            : 0;
-          if (
-            !["published", "partial"].includes(status) ||
-            !Number.isInteger(reported) ||
-            reported < 3 ||
-            visible < 3
-          ) {
-            throw new Error(
-              `Candidate must contain at least 3 visible items; got ${status}, reported=${reported}, items=${visible}`,
-            );
-          }
-          NODE
+          # Candidate must contain at least 3 visible items; the helper also requires
+          # the raw published count to match run_report.published exactly.
+          npx --no-install tsx scripts/daily-publish-gate.ts \
+            validate-candidate "$TARGET" "$DATE"
 
           ARTIFACT="codex-${FEED}-${DATE}-${HEAD_SHA}"
           echo "artifact=${ARTIFACT}" >> "$GITHUB_OUTPUT"
@@ -194,31 +175,10 @@ jobs:
           git reset --hard FETCH_HEAD
           if [ -f "$TARGET" ]; then
             LIVE_DECISION="$(
-              node - "$TARGET" "$DATE" <<'NODE'
-              const fs = require("node:fs");
-              const [file, expectedDate] = process.argv.slice(2);
-              const envelope = JSON.parse(fs.readFileSync(file, "utf8"));
-              const status = String(envelope.status ?? "invalid");
-              const reported = Number(envelope.run_report?.published);
-              const publishedItems = Array.isArray(envelope.items)
-                ? envelope.items.filter((item) => item?.published !== false).length
-                : 0;
-              const knownStatus = ["published", "partial", "skipped", "held"].includes(status);
-              if (!knownStatus || !Number.isInteger(reported) || reported < 0) {
-                throw new Error(`Live envelope is malformed or has unknown status: ${status}`);
-              }
-              const minimumApplies = expectedDate >= "2026-07-26";
-              const compliant =
-                !minimumApplies ||
-                (["published", "partial"].includes(status) &&
-                  reported >= 3 &&
-                  publishedItems >= 3);
-              process.stdout.write(
-                `${status}\t${reported}\t${publishedItems}\t${compliant ? "terminal" : "repair"}`,
-              );
-              NODE
+              npx --no-install tsx scripts/daily-publish-gate.ts \
+                classify-live "$TARGET" "$DATE"
             )"
-            IFS=$'\t' read -r STATUS REPORTED PUBLISHED_ITEMS LIVE_ACTION <<< "$LIVE_DECISION"
+            IFS=$'\t' read -r LIVE_ACTION STATUS REPORTED PUBLISHED_ITEMS <<< "$LIVE_DECISION"
             if [ "$LIVE_ACTION" = "terminal" ]; then
               echo "reason=live main already contains compliant ${TARGET} (${STATUS}, ${REPORTED} published)" >> "$GITHUB_OUTPUT"
               exit 0
@@ -232,24 +192,11 @@ jobs:
           cp codex-artifact/candidate.json "$TARGET"
           npm run stamp:publish -- "$TARGET"
           if [ -f codex-artifact/live-under-minimum.json ]; then
-            node - codex-artifact/live-under-minimum.json "$TARGET" <<'NODE'
-            const fs = require("node:fs");
-            const [liveFile, candidateFile] = process.argv.slice(2);
-            const live = JSON.parse(fs.readFileSync(liveFile, "utf8"));
-            const candidate = JSON.parse(fs.readFileSync(candidateFile, "utf8"));
-            const candidateById = new Map(
-              (Array.isArray(candidate.items) ? candidate.items : []).map((item) => [item?.id, item]),
-            );
-            for (const item of Array.isArray(live.items) ? live.items : []) {
-              if (!item || item.published === false) continue;
-              const retained = candidateById.get(item.id);
-              if (!retained || JSON.stringify(retained) !== JSON.stringify(item)) {
-                throw new Error(
-                  `Under-minimum repair must preserve existing visible item unchanged: ${String(item.id)}`,
-                );
-              }
-            }
-            NODE
+            # Under-minimum repair must preserve existing visible item unchanged.
+            # The helper requires at least three items and exact report/count equality
+            # before either a terminal or repair decision.
+            npx --no-install tsx scripts/daily-publish-gate.ts \
+              preserve-repair codex-artifact/live-under-minimum.json "$TARGET" "$DATE"
           fi
           npm run check
 

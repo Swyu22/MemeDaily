@@ -179,7 +179,7 @@ it.each(["daily-monitor.yml", "daily-news-monitor.yml"])(
     expect(workflow).toContain('.headSha == \\"${LIVE_SHA}\\"');
     expect(workflow).toContain("Pages 部署核验告警");
     expect(workflow).toContain("minimum=3");
-    expect(workflow).toContain('[ "$REPORTED" -ge 3 ]');
+    expect(workflow).toContain('[ "$REPORTED" -eq "$VISIBLE" ]');
     expect(workflow).toContain('[ "$VISIBLE" -ge 3 ]');
   },
 );

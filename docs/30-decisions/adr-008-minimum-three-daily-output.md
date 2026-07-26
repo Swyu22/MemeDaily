@@ -28,8 +28,10 @@ For each MemeDaily and DailyNews envelope dated 2026-07-26 or later:
 2. `run_report.published` must be at least three.
 3. At least three entries in `items` must have `published: true`; existing schema
    and domain checks continue to require the reported and actual counts to agree.
-4. `skipped`, `held`, malformed, and fewer-than-three envelopes are under-minimum
-   recovery states, not successful terminal results.
+4. `skipped` and fewer-than-three envelopes are under-minimum recovery states, not
+   successful terminal results.
+5. `held` remains an operator safety hold. It is non-terminal but unattended tasks
+   classify it as an incident and never re-expose or overwrite its hidden content.
 
 Primary, catch-up, and fallback tasks therefore keep working while live `main` is
 under minimum. Monitor tasks remain read-only and alert on that condition.
@@ -60,7 +62,8 @@ The trusted candidate publisher normally treats live data as immutable. It has o
 strict exception for an effective-date envelope that already exists but is under
 minimum:
 
-- accept only the same repository, expected daily branch, exact feed/date path, and
+- reject `held`; otherwise accept only the same repository, expected daily branch,
+  exact feed/date path, and
   same envelope date;
 - validate the candidate with trusted `main` code;
 - require the candidate to reach the minimum-three terminal contract;
@@ -128,7 +131,7 @@ the inexpensive preflight, but token savings never justify a false terminal resu
 When minimum count conflicts with hard safety or truthful evidence, the system fails
 closed and keeps the failure visible.
 
-## Verification
+## Verification Requirements
 
 - Domain validators reject effective-date `skipped` / `held` and fewer-than-three
   `published` / `partial` envelopes while retaining historical compatibility.

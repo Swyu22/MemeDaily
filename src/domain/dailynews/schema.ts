@@ -108,7 +108,7 @@ export const NewsEnvelopeSchema = z.object({
   generated_at: z.iso.datetime({ offset: true }),
   // Real publish moment (Asia/Shanghai), stamped deterministically by the publish step
   // (distinct from the agent-guessed generated_at). Optional so the agent's pre-publish file
-  // validates; the publish step and the skipped-day fallback add it.
+  // validates; trusted or supervised publish steps add it.
   published_at: z.iso.datetime({ offset: true }).optional(),
   status: StatusSchema,
   run_report: z.object({

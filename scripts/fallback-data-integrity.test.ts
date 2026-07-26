@@ -93,25 +93,67 @@ it.each([
     script: "create-skipped-day.ts",
     variable: "MEMEDAILY_DATE",
     directory: "daily",
+    date: "2026-07-25",
+    fixture: "data/daily/2026-07-25.json",
   },
   {
     script: "create-skipped-news-day.ts",
     variable: "DAILYNEWS_DATE",
     directory: "daily-news",
+    date: "2026-07-26",
+    fixture: "data/daily-news/2026-07-26.json",
   },
-])("leaves an existing target untouched via $script", ({ script, variable, directory }) => {
+])("no-ops only for a complete existing target via $script", ({
+  script,
+  variable,
+  directory,
+  date,
+  fixture,
+}) => {
+  const root = tempRoot();
+  const targetDir = path.join(root, "data", directory);
+  const filePath = path.join(targetDir, `${date}.json`);
+  fs.mkdirSync(targetDir, { recursive: true });
+  fs.copyFileSync(path.join(repoRoot, fixture), filePath);
+  const original = fs.readFileSync(filePath, "utf8");
+
+  const result = runScript(script, root, { [variable]: date });
+
+  expect(result.status, result.stderr).toBe(0);
+  expect(result.stdout).toContain("is complete");
+  expect(fs.readFileSync(filePath, "utf8")).toBe(original);
+});
+
+it.each([
+  {
+    script: "create-skipped-day.ts",
+    variable: "MEMEDAILY_DATE",
+    directory: "daily",
+    fixture: "data/daily/2026-07-26.json",
+  },
+  {
+    script: "create-skipped-news-day.ts",
+    variable: "DAILYNEWS_DATE",
+    directory: "daily-news",
+    fixture: "data/daily-news/2026-07-25.json",
+  },
+])("fails closed for an existing under-minimum target via $script", ({
+  script,
+  variable,
+  directory,
+  fixture,
+}) => {
   const root = tempRoot();
   const targetDir = path.join(root, "data", directory);
   const filePath = path.join(targetDir, "2026-07-26.json");
-  const original = '{"sentinel":"existing editorial result"}\n';
   fs.mkdirSync(targetDir, { recursive: true });
-  fs.writeFileSync(filePath, original);
+  fs.copyFileSync(path.join(repoRoot, fixture), filePath);
 
   const result = runScript(script, root, { [variable]: "2026-07-26" });
 
-  expect(result.status, result.stderr).toBe(0);
-  expect(result.stdout).toContain("already exists; no action");
-  expect(fs.readFileSync(filePath, "utf8")).toBe(original);
+  expect(result.status).not.toBe(0);
+  expect(`${result.stdout}${result.stderr}`).toContain("under minimum");
+  expect(fs.existsSync(filePath)).toBe(true);
 });
 
 it.each([

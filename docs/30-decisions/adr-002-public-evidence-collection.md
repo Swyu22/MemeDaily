@@ -3,6 +3,11 @@
 ## Status
 Accepted
 
+Amended by ADR-008 for envelopes dated 2026-07-26 or later: public-web
+collection still fails closed on unavailable evidence, but `skipped`/0–2 items
+are no longer successful terminal output. Bounded recovery continues until three
+qualified items are available or an incident remains open.
+
 ## Context
 The product needs daily evidence that a meme appeared in Chinese internet platforms,
 but direct logged-in scraping of Weibo, Douyin, Xiaohongshu, or Bilibili carries
@@ -28,7 +33,7 @@ Each published item must have at least two independent URLs and at least one
 - Positive: lower legal/platform risk, clearer audit trail, fewer secrets, easier
   public-repo operation.
 - Negative: evidence quality varies and some platform pages may disappear or block
-  requests; skipped or partial days are expected.
+  requests; `partial` days and visible recovery incidents are expected.
 
 ## Trade-off
 Lower-risk, evidence-backed automation is prioritized over exhaustive platform coverage.
