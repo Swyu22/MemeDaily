@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v2-民生",
+  "rubric_version": "v2-2026",
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28T06:07:53+08:00",
+  "published_at": "2026-07-28T06:07:53+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 12,
+    "published": 3,
+    "dropped_safety": {
+      "政治地缘": 3,
+      "政府政策色彩": 2,
+      "争议社会议题": 1
+    },
+    "dropped_low_confidence": 3,
+    "sources": [
+      "official",
+      "state_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 10,
+      "official_sources": 1,
+      "state_media_sources": 2,
+      "major_media_sources": 0,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 2
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-28-hong-kong-cockatoo-conservation",
+      "headline": "🦜极危鹦鹉在香港闹市安家，人工巢箱迎来雏鸟",
+      "summary": "香港约有200只全球极度濒危的小葵花凤头鹦鹉，约占全球总数一成。香港大学团队与树艺师在市区及校园安装十多个人工巢箱，并以镜头进行非干扰监测，目前至少一个巢箱已有雏鸟顺利破壳。学校还把直播画面用于自然教育，让学生参与城市野生动物保育。",
+      "category": "科技向善",
+      "heat_rank": 1,
+      "occurred_at": "2026-07-26T08:26:25+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "城市濒危动物保育与校园自然教育；数量、巢箱及雏鸟信息均来自新华社采访，避免夸大族群恢复程度。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/gangao/20260726/65079fceb8454bc9a73d2bbe061933e8/c.html",
+          "title": "香港故事丨“水泥森林”里的白衣稀客——极危鹦鹉香港安家记",
+          "captured_at": "2026-07-28T06:04:00+08:00",
+          "note": "新华社采访确认香港约200只小葵花凤头鹦鹉、人工巢箱安装与至少一只雏鸟破壳，并记录校园自然教育参与。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-28-wei-yi-national-chess-king",
+      "headline": "♟️韦奕首夺全国国际象棋棋王赛冠军",
+      "summary": "第四届全国国际象棋棋王赛26日在成都青白江收官。中国等级分第一人韦奕在决赛中以3比1击败余泱漪，第三次参赛首次获得“棋王”称号；丁立人在三四名决赛中战胜17岁特级大师薛皓文。赛事期间还同步开展棋文化讲座、挂盘讲棋和大师车轮战。",
+      "category": "国家高光",
+      "heat_rank": 2,
+      "occurred_at": "2026-07-26T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "全国国际象棋赛事结果；比分、名次与配套活动均由新华社报道确认，保持克制赛事口吻。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/sports/20260727/80bdfd0aa7174695974593a5ee96d4bb/c.html",
+          "title": "全国国际象棋棋王赛：韦奕首度加冕“棋王”",
+          "captured_at": "2026-07-28T06:04:00+08:00",
+          "note": "新华社确认赛事26日收官、韦奕以3比1击败余泱漪首夺冠军，并披露三四名赛及棋文化活动。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-28-swift-wandering-black-hole",
+      "headline": "🌌游离黑洞撕裂恒星，NASA验证新搜寻方法",
+      "summary": "NASA的Swift天文台观测到一次发生在星系核心外约3万光年处的恒星潮汐撕裂事件，背后的超大质量黑洞约为太阳质量的100万倍。论文27日发表后，研究团队表示，这次发现验证了利用恒星被撕裂时的强烈闪光寻找“游离”黑洞的方法，有助于了解这类黑洞在宇宙中的数量与来历。",
+      "category": "国际",
+      "heat_rank": 3,
+      "occurred_at": "2026-07-27T00:00:00-04:00",
+      "risk": {
+        "level": "safe",
+        "note": "非政治国际天文学研究；距离、质量与方法意义来自NASA任务页面及同行评议论文信息，未把模型推测写成定论。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "NASA",
+          "url": "https://science.nasa.gov/missions/swift/nasas-swift-sees-wandering-mega-black-hole-shredding-star/",
+          "title": "NASA’s Swift Sees ‘Wandering’ Mega Black Hole Shredding Star",
+          "captured_at": "2026-07-28T06:04:00+08:00",
+          "note": "NASA于7月27日发布研究，确认Swift参与识别星系核心外的潮汐撕裂事件，并说明黑洞质量、距离和新搜寻方法。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
