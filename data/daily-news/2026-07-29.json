@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v2-民生",
+  "rubric_version": "v2-2026",
+  "date": "2026-07-29",
+  "generated_at": "2026-07-29T06:09:12+08:00",
+  "published_at": "2026-07-29T06:09:12+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 14,
+    "published": 3,
+    "dropped_safety": {
+      "政治地缘": 4,
+      "政府政策色彩": 2,
+      "争议社会议题": 1
+    },
+    "dropped_low_confidence": 2,
+    "sources": [
+      "official",
+      "state_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 12,
+      "official_sources": 2,
+      "state_media_sources": 1,
+      "major_media_sources": 0,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 2
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-29-ciie-hundred-day-countdown",
+      "headline": "🌐第九届进博会进入百日倒计时，全球展商提前对接",
+      "summary": "第九届进博会27日在上海迎来100天倒计时，来自全球的展商和采购商开始提前对接，各项筹备已经展开。现场将通过企业商业展和配套活动集中呈现新产品与新技术；第十届进博会招展也在同日启动，为后续参展企业预留准备时间。",
+      "category": "文化数字经济",
+      "heat_rank": 1,
+      "occurred_at": "2026-07-27T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "会展与经济生活信息；仅呈现倒计时、展商对接和招展进展，不采用政治或政策表述。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/politics/20260728/28778528d51445ceae8c2dea23542023/c.html",
+          "title": "倒计时100天，第九届进博会热力满满",
+          "captured_at": "2026-07-29T05:45:00+08:00",
+          "note": "新华社确认第九届进博会7月27日迎来100天倒计时、第十届招展同步启动，并记录展商与采购商的提前对接。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-29-oregon-wildfire-smoke",
+      "headline": "🔥卫星记录俄勒冈山火烟霾，多地发布空气质量提示",
+      "summary": "NASA地球观测站28日发布的Aqua卫星影像显示，俄勒冈州中东部数十处山火产生大范围烟霾。干雷暴、阵风和持续干旱推动火势发展，部分社区收到撤离通知，东部及中部部分地区发布空气质量提示；相关机构正用卫星持续监测火情变化。",
+      "category": "国际",
+      "heat_rank": 2,
+      "occurred_at": "2026-07-27T00:00:00-07:00",
+      "risk": {
+        "level": "medium",
+        "note": "国际自然灾害与空气质量信息；标题不写伤亡或撤离人数，摘要聚焦监测、提示与社区响应，避免渲染灾情。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "NASA",
+          "url": "https://science.nasa.gov/earth/natural-disasters/wildfires/smoke-blankets-oregon/",
+          "title": "Smoke Blankets Oregon",
+          "captured_at": "2026-07-29T05:50:00+08:00",
+          "note": "NASA地球观测站依据Aqua卫星影像确认俄勒冈州数十处山火、烟霾范围、空气质量提示和社区撤离响应。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-29-penguin-diet-satellite",
+      "headline": "🐧卫星从粉红粪迹读出阿德利企鹅食谱变化",
+      "summary": "NASA地球观测站27日发布研究：科研人员分析南极100多个地点、近30年的Landsat影像，并用实地样本校准粪迹颜色。结果显示，磷虾会把阿德利企鹅粪便染成粉红色，海冰较少地区的企鹅更偏向吃磷虾；这套方法可持续追踪食谱与种群变化。",
+      "category": "国际",
+      "heat_rank": 3,
+      "occurred_at": "2026-07-27T00:00:00-04:00",
+      "risk": {
+        "level": "safe",
+        "note": "非政治国际生态研究；地点数量、影像跨度、食谱与海冰关系均来自NASA研究介绍，未把未来趋势写成定论。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "NASA",
+          "url": "https://science.nasa.gov/earth/earth-observatory/pink-penguin-guano-provides-diet-clues/",
+          "title": "Pink Penguin Guano Provides Diet Clues",
+          "captured_at": "2026-07-29T05:55:00+08:00",
+          "note": "NASA地球观测站介绍Landsat影像与实地样本结合的方法，并确认粪迹颜色、企鹅食谱和海冰条件之间的关系。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
