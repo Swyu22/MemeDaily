@@ -1,0 +1,539 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "1.0",
+  "rubric_version": "1.0",
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28T08:00:00+08:00",
+  "published_at": "2026-07-28T08:00:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 3,
+    "dropped_safety": {
+      "政治时政": 1,
+      "灾害与公共安全": 1,
+      "隐私与未成年人": 1,
+      "犯罪与争议": 1,
+      "死亡与哀悼": 1,
+      "人物与品牌争议": 1
+    },
+    "dropped_low_confidence": 12,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "platform_public_sources": 0,
+      "aggregator_sources": 3,
+      "search_media_sources": 3,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 9
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-07-28-bei-xx-yingkong",
+          "canonical_phrase": "被XX硬控了",
+          "outcome": "selected",
+          "item_id": "2026-07-28-bei-xx-yingkong",
+          "score": 94,
+          "score_breakdown": {
+            "heat": 39,
+            "freshness": 28,
+            "reusability": 19,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-28-shoucao-xx",
+          "canonical_phrase": "手搓XX",
+          "outcome": "selected",
+          "item_id": "2026-07-28-shoucao-xx",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 27,
+            "reusability": 19,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-28-yuyan-zhaojin-xianshi",
+          "canonical_phrase": "XX预言照进现实",
+          "outcome": "selected",
+          "item_id": "2026-07-28-yuyan-zhaojin-xianshi",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 24,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-five-years-no-contact",
+          "canonical_phrase": "超过五年没联系的朋友直接删",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 27,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-downstairs-neighbors",
+          "canonical_phrase": "不要和楼下邻居混熟",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-no-travel-photos",
+          "canonical_phrase": "发现朋友圈没人晒旅游照了",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 28,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-empathize-villain",
+          "canonical_phrase": "到了这个年纪开始共情反派",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 28,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-secrecy-succeeds",
+          "canonical_phrase": "越来越理解为什么事以密成",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-photo-life",
+          "canonical_phrase": "突然理解一生要出片的人了",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-comedy-talent",
+          "canonical_phrase": "以为搞笑没想到老天爷赏饭吃",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-language-doubt",
+          "canonical_phrase": "双方都对自己的母语产生了怀疑",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 28,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-00s-adult",
+          "canonical_phrase": "00后都在装大人",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-new-environment",
+          "canonical_phrase": "换了环境后整个人仿佛重生了",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-culture-output",
+          "canonical_phrase": "文化就这么水灵灵地输出了",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 28,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-bedding-forty",
+          "canonical_phrase": "床上四件套变床上四十件套",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 27,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://allnet.hot/",
+            "observed_at": "2026-07-28T07:05:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "insufficient-salt-lake",
+          "canonical_phrase": "去过盐湖的嘴真严",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-deodorize-meat",
+          "canonical_phrase": "哪种肉该怎么去腥",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-bbq-era",
+          "canonical_phrase": "大烤串时代降临了",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-fog-cats",
+          "canonical_phrase": "在大量雾气中发现少量猫咪",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-cat-singing",
+          "canonical_phrase": "小猫以为没人偷偷唱歌",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-dog-view",
+          "canonical_phrase": "用小狗视角看小狗卖萌",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-material-consciousness",
+          "canonical_phrase": "深刻地感觉到物质决定意识",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-abb-rap",
+          "canonical_phrase": "挑战用ABB句式写词",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-happiness-pressure",
+          "canonical_phrase": "快乐不会让人躺平打压才会",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-28-bei-xx-yingkong",
+      "title": "🧲 被XX硬控了",
+      "aliases": [
+        "被XX硬控了",
+        "XX硬控了我"
+      ],
+      "canonical_phrase": "被XX硬控了",
+      "platform": [
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "用“被XX硬控了”形容注意力被某段表演、画面或反复出现的内容牢牢吸住，语气夸张但便于替换对象。",
+      "origin": "已验证：7月28日清晨公开实时榜前十收录了包含“硬控了”的新用法，且另一篇无关领域公开文章也独立使用“硬控”作夸张表达；现有证据不支持指定唯一首发者。",
+      "usage": "可改写成“被这段转场硬控了”“今天又被这句台词硬控了”，适合描述反复观看、移不开眼或短暂上头。",
+      "fun_point": "把原本偏游戏或控制语境的“硬控”挪到日常注意力上，形成一本正经描述上头感的反差。",
+      "why_spread": "已验证：实时榜出现新的高位用法，且不同领域已有独立复用；推测：句式短、对象槽位清晰，评论区和短视频标题都容易套用。",
+      "lifecycle": "rising",
+      "brand_usage": "内容账号可用“被这个细节硬控了”引导观众回看；应避免把涉及危险、争议或具体人物的内容娱乐化。",
+      "risk": {
+        "level": "low",
+        "note": "普通注意力与观看体验表达；使用时避开敏感事件、真人争议和未成年人内容。"
+      },
+      "days_on_list": 1,
+      "score": 94,
+      "score_breakdown": {
+        "heat": 39,
+        "freshness": 28,
+        "reusability": 19,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜实时榜",
+          "observed_at": "2026-07-28T07:05:00+08:00",
+          "captured_at": "2026-07-28T07:12:00+08:00",
+          "note": "7月28日清晨实时榜前十收录包含“硬控了”的新句式用法，证明当天仍有新增活动。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://m.21jingji.com/article/20260630/herald/6a0700c45ef9b257172a34cfbdc93a96.html",
+          "captured_at": "2026-07-28T07:12:00+08:00",
+          "note": "公开媒体在另一无关领域独立使用“硬控”作夸张表达，支持该词壳可跨语境复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-28-shoucao-xx",
+      "title": "🛠️ 手搓XX",
+      "aliases": [
+        "手搓XX",
+        "手搓万物"
+      ],
+      "canonical_phrase": "手搓XX",
+      "platform": [
+        "other"
+      ],
+      "type": "造物梗",
+      "summary": "用“手搓XX”夸张描述靠个人、小团队或简易工具把复杂东西做出来，既能夸动手能力，也能表达低成本实现。",
+      "origin": "已验证：7月28日清晨公开实时榜出现新的“手搓”超薄卫星用法；此前公开报道把“手搓”解释为从游戏圈扩展出的网络热词，并记录“手搓万物”的广泛传播。现有证据不支持指定唯一首发者。",
+      "usage": "可改写成“周末手搓一个收纳架”“临时手搓一套流程”，用于手作、工作流、创意原型或低成本解决方案。",
+      "fun_point": "把高门槛产物说成像徒手揉出来一样轻松，技术难度与口语动作之间的反差很强。",
+      "why_spread": "已验证：当天实时榜出现新对象用法，历史公开报道也记录该词跨手工、技术和创意场景复用；推测：对象槽位几乎无限，天然适合教程标题和成果展示。",
+      "lifecycle": "rising",
+      "brand_usage": "教程或创意账号可用“手搓一个XX”展示从零到一过程；不得夸大安全性、性能或省略必要风险提示。",
+      "risk": {
+        "level": "low",
+        "note": "一般动手与创意表达；涉及机械、电气、医疗或飞行器时需保留专业安全边界。"
+      },
+      "days_on_list": 1,
+      "score": 90,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 27,
+        "reusability": 19,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜实时榜",
+          "observed_at": "2026-07-28T07:05:00+08:00",
+          "captured_at": "2026-07-28T07:12:00+08:00",
+          "note": "7月28日清晨实时榜收录新的“手搓超薄卫星”用法，证明该词当天仍有新增活动。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.chinanews.com/sh/2026/03-14/10586807.shtml",
+          "captured_at": "2026-07-28T07:12:00+08:00",
+          "note": "公开报道明确把“手搓”称为网络热词，并展示其在多类日常创作中的复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-28-yuyan-zhaojin-xianshi",
+      "title": "🔮 XX预言照进现实",
+      "aliases": [
+        "XX预言照进现实",
+        "预言照进现实"
+      ],
+      "canonical_phrase": "XX预言照进现实",
+      "platform": [
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "用“XX预言照进现实”把过去的设想与当下的新变化连起来，适合表达某个旧判断突然有了现实对应。",
+      "origin": "已验证：7月28日清晨公开实时榜首位出现新的“预言照进现实”用法；另一篇无关主题的公开文章也独立复用了同一句壳。现有证据不支持指定唯一首发者。",
+      "usage": "可改写成“小时候的预言照进现实”“同事上周的预言照进现实”，用于回看旧话、旧图或早先判断与今天的巧合。",
+      "fun_point": "把普通的前后呼应包装成宏大的“预言兑现”，形成轻度戏剧化和事后诸葛式幽默。",
+      "why_spread": "已验证：该句式当天进入实时榜首位，且不同主题文章已有独立复用；推测：前后对照结构清楚，适合配旧截图、旧聊天或时间线。",
+      "lifecycle": "rising",
+      "brand_usage": "内容账号可用“去年立下的预言照进现实”做前后对照；应明确哪些是事实、哪些只是巧合或推测。",
+      "risk": {
+        "level": "low",
+        "note": "普通时间线对照表达；不得借此制造伪科学、误导性预测或未经证实的因果关系。"
+      },
+      "days_on_list": 1,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 24,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜实时榜",
+          "observed_at": "2026-07-28T07:05:00+08:00",
+          "captured_at": "2026-07-28T07:12:00+08:00",
+          "note": "7月28日清晨实时榜首位收录包含“预言照进现实”的新用法，证明当天仍有新增活动。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://k.sina.com.cn/article_7857201856_1d45362c001903ha3e.html",
+          "captured_at": "2026-07-28T07:12:00+08:00",
+          "note": "公开媒体在另一无关主题中独立复用“预言照进现实”句壳，支持其跨语境可复用性。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
