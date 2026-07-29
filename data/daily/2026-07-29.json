@@ -1,0 +1,572 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "1.0",
+  "rubric_version": "1.0",
+  "date": "2026-07-29",
+  "generated_at": "2026-07-29T08:06:27+08:00",
+  "published_at": "2026-07-29T08:06:27+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 3,
+    "dropped_safety": {
+      "政治时政": 1,
+      "灾害与公共安全": 1,
+      "隐私与未成年人": 1,
+      "犯罪与争议": 1,
+      "死亡与哀悼": 1,
+      "人物与品牌争议": 1
+    },
+    "dropped_low_confidence": 12,
+    "dropped_capacity": 0,
+    "sources": [
+      "douyin",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "platform_public_sources": 1,
+      "aggregator_sources": 6,
+      "search_media_sources": 0,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 9
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-07-29-ba-xx-zuocheng-zine",
+          "canonical_phrase": "把XX做成一本Zine",
+          "outcome": "selected",
+          "item_id": "2026-07-29-ba-xx-zuocheng-zine",
+          "score": 94,
+          "score_breakdown": {
+            "heat": 39,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-29T06:50:02+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-29-chufa-bushi-zhao-xx",
+          "canonical_phrase": "这次出发不是找XX是去找XX",
+          "outcome": "selected",
+          "item_id": "2026-07-29-chufa-bushi-zhao-xx",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.abangshou.com/tools/douyin.html",
+            "observed_at": "2026-07-28T17:23:30+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-29-xx-chun-xx-moshi",
+          "canonical_phrase": "XX已开启纯XX模式",
+          "outcome": "selected",
+          "item_id": "2026-07-29-xx-chun-xx-moshi",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.abangshou.com/tools/douyin.html",
+            "observed_at": "2026-07-28T17:23:30+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-generation-food-personality",
+          "canonical_phrase": "一代人有一代人的XX人格",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 22,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rddh.cn/trending/douyin",
+            "observed_at": "2026-07-27T15:00:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-draw-me-in-your-eyes",
+          "canonical_phrase": "请画出你眼里的我",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-29T06:50:02+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-two-sided-mask",
+          "canonical_phrase": "一面双相把情绪藏进面具里",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-29T06:50:02+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-two-generations-fruit",
+          "canonical_phrase": "两代人童年水果差异对比",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-29T06:50:02+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-kaifeng-night-market",
+          "canonical_phrase": "开封宵夜大排档这么夯的吗",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-29T06:50:02+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-xray-effect",
+          "canonical_phrase": "X光片特效让小毛病无所遁形",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-29T06:50:02+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-music-memory",
+          "canonical_phrase": "音乐确实能让人回到特定时期",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-29T06:50:02+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-y2k-outfit",
+          "canonical_phrase": "千禧风穿搭",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-29T06:50:02+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-four-rice-noodles",
+          "canonical_phrase": "这盘四拼米粉太懂当代年轻人了",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.abangshou.com/tools/douyin.html",
+            "observed_at": "2026-07-28T17:23:30+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-next-stop-august",
+          "canonical_phrase": "下一站八月",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.abangshou.com/tools/douyin.html",
+            "observed_at": "2026-07-28T17:23:30+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-salmon-cake",
+          "canonical_phrase": "海鲜脑袋狂喜的三文鱼刺身蛋糕",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.abangshou.com/tools/douyin.html",
+            "observed_at": "2026-07-28T17:23:30+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-movie-obsession-aftereffect",
+          "canonical_phrase": "电影痴迷后劲有多大",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-29T06:50:02+08:00"
+          }
+        },
+        {
+          "candidate_key": "insufficient-greenbelt-lotus",
+          "canonical_phrase": "荷花居然还能开在绿化带上",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-best-person",
+          "canonical_phrase": "你见过最好的人是什么样的",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-cat-camera-move",
+          "canonical_phrase": "小猫吵着要拍百万运镜",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-filter-dance",
+          "canonical_phrase": "滤镜操控特效舞蹈挑战",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-corsage-outfit",
+          "canonical_phrase": "绝美胸花点亮穿搭",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-cangzhou-treasure-city",
+          "canonical_phrase": "沧州一座被低估的宝藏旅游城市",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-spring-from-textbook",
+          "canonical_phrase": "课本里的天下第一泉我见到了",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-summer-watermelon",
+          "canonical_phrase": "夏天怎么能少了西瓜",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-ice-chinese-summer",
+          "canonical_phrase": "没有冰中式的夏天是不完美的",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-29-ba-xx-zuocheng-zine",
+      "title": "📔 把XX做成一本Zine",
+      "aliases": [
+        "把XX做成一本Zine",
+        "把旅行做成一本zine",
+        "把XX做成一本小志"
+      ],
+      "canonical_phrase": "把XX做成一本Zine",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "生活方式梗",
+      "summary": "用“把XX做成一本Zine”把旅行、日常记录或一组作品包装成一本自制小志，强调低门槛整理与个人化表达。",
+      "origin": "已验证：7月29日清晨公开抖音聚合榜将“把旅行做成一本zine”列在前二；更早的公开视频也展示了把旅行照片制成Zine的实践。现有证据不支持指定唯一首发者。",
+      "usage": "可改写成“把这个夏天做成一本Zine”“把项目幕后做成一本Zine”，适合旅行相册、作品集、学习记录或活动复盘。",
+      "fun_point": "把零散素材从相册和备忘录里拎出来，郑重其事装订成一本小刊物，日常感与出版感形成反差。",
+      "why_spread": "已验证：该话题在7月29日清晨仍位于公开抖音聚合榜前二，且已有跨平台旅行照片实践；推测：对象槽位清楚，手作过程易拍、成品易展示，适合教程和挑战复用。",
+      "lifecycle": "rising",
+      "brand_usage": "内容账号可用“把一次活动做成一本Zine”呈现幕后素材；应尊重照片版权、参与者肖像与个人信息边界。",
+      "risk": {
+        "level": "low",
+        "note": "普通手作与内容整理表达；使用他人影像、文字或票据时需取得授权并遮蔽敏感信息。"
+      },
+      "days_on_list": 1,
+      "score": 94,
+      "score_breakdown": {
+        "heat": 39,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-07-29T06:50:02+08:00",
+          "captured_at": "2026-07-29T07:06:00+08:00",
+          "note": "页面显示当前更新时间为7月29日06:50:02，并将该话题列为抖音热搜第2，证明24小时内新增活动。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://hot.nxux.cn/hot/",
+          "title": "热搜榜 - 今日热榜",
+          "captured_at": "2026-07-29T07:06:00+08:00",
+          "note": "另一独立聚合页面同样将该话题列在抖音热点前二，支持热度并非单页偶发。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1JiobYcEPw/",
+          "title": "当我将旅行照片做成一本ZINE",
+          "captured_at": "2026-07-29T07:06:00+08:00",
+          "note": "公开视频展示旅行照片制成Zine的实际用法，支持句式可落到具体内容生产场景。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-29-chufa-bushi-zhao-xx",
+      "title": "🧭 这次出发不是找XX，是去找XX",
+      "aliases": [
+        "这次出发不是找XX是去找XX",
+        "这次出发不是找你是去找自由"
+      ],
+      "canonical_phrase": "这次出发不是找XX是去找XX",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "用“这次出发不是找XX，是去找XX”把一次离开写成目标转换，前半句否定具体对象，后半句落到自由、答案或新的状态。",
+      "origin": "已验证：7月28日17:23更新的公开抖音榜仍收录“这次出发不是找你是去找自由”，7月29日清晨另一实时聚合页也继续在榜；现有证据不支持指定唯一首发者。",
+      "usage": "可改写成“这次出发不是找答案，是去找问题”“这次出发不是找景点，是去找松弛感”，用于旅行、离职、毕业或阶段转换。",
+      "fun_point": "先让人以为要追寻某个对象，再把落点转成抽象目标，带来轻微反转和文案式仪式感。",
+      "why_spread": "已验证：该句式跨越7月28日晚与7月29日清晨仍出现在独立公开榜单；推测：前后槽位对称、情绪落点可替换，适合视频开头、旅行字幕和评论接龙。",
+      "lifecycle": "rising",
+      "brand_usage": "旅行、教育或生活方式内容可替换两个槽位讲阶段变化；应避免借具体真人关系炒作或暗示未经证实的经历。",
+      "risk": {
+        "level": "low",
+        "note": "普通情绪与出发主题表达；使用时避免影射具体个人、真实纠纷或敏感离境经历。"
+      },
+      "days_on_list": 1,
+      "score": 89,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.abangshou.com/tools/douyin.html",
+          "title": "抖音热搜数据 - A帮手工具箱",
+          "observed_at": "2026-07-28T17:23:30+08:00",
+          "captured_at": "2026-07-29T07:06:00+08:00",
+          "note": "页面标注7月28日17:23:30更新，并收录该话题，时间仍位于严格24小时窗口内。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://allnet.hot/",
+          "title": "全网热点 - 汇聚全网实时热点榜单",
+          "captured_at": "2026-07-29T07:06:00+08:00",
+          "note": "7月29日清晨实时聚合页继续列出该话题，独立支持其延续热度。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.rddh.cn/trending/douyin",
+          "title": "抖音热点热搜榜 - 热点导航",
+          "captured_at": "2026-07-29T07:06:00+08:00",
+          "note": "另一公开榜单在此前快照中记录该完整句式，支持其并非单一聚合页误抓。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-29-xx-chun-xx-moshi",
+      "title": "🍽️ XX已开启纯XX模式",
+      "aliases": [
+        "XX已开启纯XX模式",
+        "暑期大学生已开启纯吃模式"
+      ],
+      "canonical_phrase": "XX已开启纯XX模式",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "用“XX已开启纯XX模式”概括某类人进入单一而投入的阶段，把假期、周末或特定场景压缩成一个醒目的状态标签。",
+      "origin": "已验证：7月28日17:23更新的公开抖音榜收录“暑期大学生已开启纯吃模式”，7月29日清晨实时聚合页仍有同话题；现有证据不支持指定唯一首发者。",
+      "usage": "可改写成“周末打工人已开启纯睡模式”“考试周已开启纯背模式”，用于假期状态、兴趣冲刺或短期生活节奏。",
+      "fun_point": "把复杂生活夸张压缩成只做一件事的“纯模式”，既像设备状态，也像给自己贴的自嘲标签。",
+      "why_spread": "已验证：该话题在严格24小时窗口内由多个独立公开榜单持续收录；推测：主语、动作两个槽位都能替换，句子短，适合标题、字幕和评论区模仿。",
+      "lifecycle": "rising",
+      "brand_usage": "餐饮、学习或休闲内容可用“已开启纯XX模式”概括场景；不要鼓励暴饮暴食、过劳或其他不健康行为。",
+      "risk": {
+        "level": "low",
+        "note": "普通状态标签与自嘲表达；涉及饮食、睡眠或学习强度时避免宣传极端行为。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.abangshou.com/tools/douyin.html",
+          "title": "抖音热搜数据 - A帮手工具箱",
+          "observed_at": "2026-07-28T17:23:30+08:00",
+          "captured_at": "2026-07-29T07:06:00+08:00",
+          "note": "页面标注7月28日17:23:30更新，并收录该话题，证明严格24小时窗口内仍有活动。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://allnet.hot/",
+          "title": "全网热点 - 汇聚全网实时热点榜单",
+          "captured_at": "2026-07-29T07:06:00+08:00",
+          "note": "7月29日清晨实时聚合页继续列出该话题，独立支持其热度延续。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://stardata.cc/Default.aspx",
+          "title": "星辰数据 - 多平台实时热词",
+          "captured_at": "2026-07-29T07:06:00+08:00",
+          "note": "公开热词页在7月28日快照中记录同一完整话题，支持其并非单一页面误抓。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
