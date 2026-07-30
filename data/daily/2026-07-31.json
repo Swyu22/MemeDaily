@@ -1,0 +1,568 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-dynamic-selection",
+  "rubric_version": "v3-2026",
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31T07:11:53+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 3,
+    "dropped_safety": {
+      "政治时政": 1,
+      "灾害与公共安全": 1,
+      "隐私与未成年人": 1,
+      "犯罪与争议": 1,
+      "死亡与哀悼": 1,
+      "人物与品牌争议": 1
+    },
+    "dropped_low_confidence": 12,
+    "dropped_capacity": 0,
+    "sources": [
+      "douyin",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "platform_public_sources": 3,
+      "aggregator_sources": 3,
+      "search_media_sources": 2,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 9
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-07-31-shuqi-xianding-solo-trip",
+          "canonical_phrase": "我的XX限定solo trip",
+          "outcome": "selected",
+          "item_id": "2026-07-31-shuqi-xianding-solo-trip",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-31-x-yue-zoushangpo-lu",
+          "canonical_phrase": "X月要走上坡路了",
+          "outcome": "selected",
+          "item_id": "2026-07-31-x-yue-zoushangpo-lu",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-30-huidao-xx-nian-xiatian",
+          "canonical_phrase": "回到XX年的夏天",
+          "outcome": "selected",
+          "item_id": "2026-07-30-huidao-xx-nian-xiatian",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-food-fragrant",
+          "canonical_phrase": "XX把我香迷糊了",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-elements-daily-outfit",
+          "canonical_phrase": "当XX元素走进日常穿搭",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-next-stop-august",
+          "canonical_phrase": "下一站八月",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-dance-tutorial",
+          "canonical_phrase": "XX舞蹈教程来了",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-life-confidant",
+          "canonical_phrase": "人生几何能够得到知己",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-finally-understand",
+          "canonical_phrase": "终于懂了XX",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-how-did-you-promise",
+          "canonical_phrase": "你是咋答应我的",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-era-return",
+          "canonical_phrase": "我在等XX时代回归",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-fan-dance",
+          "canonical_phrase": "扇风舞挑战",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-q-avatar",
+          "canonical_phrase": "Q版的我",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-cat-temper-test",
+          "canonical_phrase": "小猫脾气测试",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-puppy-adventure",
+          "canonical_phrase": "小狗探险",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-31T06:29:44+08:00"
+          }
+        },
+        {
+          "candidate_key": "insufficient-summer-trip-transition",
+          "canonical_phrase": "暑期旅行转场",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-summer-outfit-elements",
+          "canonical_phrase": "夏日穿搭元素",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-august-wish-list",
+          "canonical_phrase": "八月愿望清单",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-old-song-memory",
+          "canonical_phrase": "旧歌回忆挑战",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-handdrawn-avatar",
+          "canonical_phrase": "手绘Q版头像",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-pet-personality",
+          "canonical_phrase": "宠物性格测试",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-dance-imitation",
+          "canonical_phrase": "舞蹈教程模仿",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-city-food-reaction",
+          "canonical_phrase": "城市美食反应",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-couple-cream-style",
+          "canonical_phrase": "情侣奶油风大片",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-31-shuqi-xianding-solo-trip",
+      "title": "🧳 我的XX限定solo trip",
+      "aliases": [
+        "我的XX限定solo trip",
+        "我的暑期限定solo trip",
+        "XX限定solo trip"
+      ],
+      "canonical_phrase": "我的XX限定solo trip",
+      "platform": [
+        "douyin",
+        "bilibili",
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "把一次独自出发包装成“XX限定solo trip”，用地点、假期或人生阶段替换槽位，突出短暂、专属和自我陪伴感。",
+      "origin": "已验证：7月31日抖音实时榜出现“我的暑期限定solotrip”，对应公开话题页仍可访问；公开搜索也呈现多个solo trip记录。现有证据不支持指定唯一首发者。",
+      "usage": "可改写成“周末限定solo trip”“下班后限定solo trip”“毕业前限定solo trip”，搭配路线、行李、吃住片段或第一视角转场。",
+      "fun_point": "“限定”给普通独行加上一层稀缺包装，像为自己发行一张只售几天的旅行通行证。",
+      "why_spread": "已验证：该表达7月31日进入抖音实时榜前列，并有独立公开话题页与跨内容搜索结果；推测：XX槽位清晰、素材易拍，适合短假和城市漫游叙事。",
+      "lifecycle": "rising",
+      "brand_usage": "适合旅行、户外和生活方式内容发起轻量路线征集；应给出真实体验信息，避免把普通行程包装成虚假稀缺。",
+      "risk": {
+        "level": "low",
+        "note": "普通旅行表达；公开内容应避免展示可即时定位的行程细节，也不要制造独行等于冒险的压力。"
+      },
+      "days_on_list": 1,
+      "score": 91,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-07-31T06:29:44+08:00",
+          "captured_at": "2026-07-31T07:11:30+08:00",
+          "note": "页面标注7月31日06:29:44更新，“我的暑期限定solotrip”位列第4，证明严格24小时内的当日活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2590796",
+          "title": "抖音“我的暑期限定solotrip”公开话题页",
+          "captured_at": "2026-07-31T07:10:30+08:00",
+          "note": "与实时榜条目对应的公开话题入口，支持该表达作为可参与的短视频主题存在。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=solo%20trip",
+          "title": "B站“solo trip”公开搜索结果",
+          "captured_at": "2026-07-31T07:10:40+08:00",
+          "note": "公开搜索结果呈现多个独自旅行记录，支持solo trip叙事脱离单一话题后仍可复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-31-x-yue-zoushangpo-lu",
+      "title": "📈 X月要走上坡路了",
+      "aliases": [
+        "X月要走上坡路了",
+        "八月要走上坡路了",
+        "下个月要走上坡路了"
+      ],
+      "canonical_phrase": "X月要走上坡路了",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "情绪梗",
+      "summary": "用“X月要走上坡路了”给新月份设置积极转折，把月份替换成自己的时间节点，表达告别低谷和重新起步。",
+      "origin": "已验证：7月31日抖音实时榜出现“八月要走上坡路了”，对应公开话题页可访问；这一表达以月份为可替换槽位。现有证据不支持指定唯一首发者。",
+      "usage": "可写“八月工作要走上坡路了”“下个月状态要走上坡路了”，配合清单、打卡、复盘或前后对比画面。",
+      "fun_point": "把日历翻页说成地形变化，仿佛只要跨进新月份，生活就自动切换到缓慢爬升的路线。",
+      "why_spread": "已验证：7月31日仍在抖音实时榜并有独立公开话题页；推测：月份槽位简单、正向情绪明确，适合月末复盘和新月计划反复使用。",
+      "lifecycle": "rising",
+      "brand_usage": "适合学习、运动和效率内容发起新月打卡；应把“上坡”落到可验证的小目标，避免承诺无法保证的结果。",
+      "risk": {
+        "level": "low",
+        "note": "普通自我激励表达；不要把运势承诺写成事实，也避免借积极口号向个人施压。"
+      },
+      "days_on_list": 1,
+      "score": 86,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-07-31T06:29:44+08:00",
+          "captured_at": "2026-07-31T07:11:30+08:00",
+          "note": "页面标注7月31日06:29:44更新，“八月要走上坡路了”位列第17，证明严格24小时内的当日活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2590356",
+          "title": "抖音“八月要走上坡路了”公开话题页",
+          "captured_at": "2026-07-31T07:10:50+08:00",
+          "note": "与实时榜条目对应的公开话题入口，支持该句式作为可参与的内容主题存在。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-30-huidao-xx-nian-xiatian",
+      "title": "🕰️ 回到XX年的夏天",
+      "aliases": [
+        "回到XX年的夏天",
+        "回到了2018的夏天",
+        "一秒回到那年夏天"
+      ],
+      "canonical_phrase": "回到XX年的夏天",
+      "platform": [
+        "douyin",
+        "bilibili",
+        "other"
+      ],
+      "type": "情绪梗",
+      "summary": "用旧歌、滤镜、穿搭或老照片制造时间倒流感，把年份替换成自己的记忆坐标，快速唤起集体怀旧。",
+      "origin": "已验证：该身份7月30日首次上榜；7月31日抖音实时榜再次出现“回到了2018的夏天”，公开话题页和跨平台搜索仍可访问，形成发布后的新增活动。",
+      "usage": "可改写成“回到2014年的夏天”“一首歌回到毕业那年夏天”，配合旧设备画质、年代穿搭、聊天截图或当年流行音乐。",
+      "fun_point": "只要换一首歌和一层滤镜，手机就像临时造出一台低成本时光机；年份越具体，评论区越容易集体对暗号。",
+      "why_spread": "已验证：7月31日的新榜单活动晚于本站上次发布时间，且公开话题页与跨平台内容继续承接；推测：年份槽位天然可替换，旧影像素材丰富。",
+      "lifecycle": "rising",
+      "brand_usage": "适合周年回顾、经典内容复刻和用户记忆征集；不要伪造历史素材，也应取得人物影像、聊天记录和音乐的必要授权。",
+      "risk": {
+        "level": "low",
+        "note": "普通怀旧表达；展示旧照片或聊天截图时需遮挡个人信息并取得授权。"
+      },
+      "days_on_list": 2,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-07-31T06:29:44+08:00",
+          "captured_at": "2026-07-31T07:11:30+08:00",
+          "note": "页面标注7月31日06:29:44更新，“回到了2018的夏天”仍在榜，且活动时间晚于本站7月30日11:35:34的上次发布。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2589163",
+          "title": "抖音“回到了2018的夏天”公开话题页",
+          "captured_at": "2026-07-31T07:11:00+08:00",
+          "note": "与实时榜条目对应的公开话题入口，支持复发身份仍有当日参与入口。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=%E6%80%80%E5%BF%B52018%E5%B9%B4%E7%9A%84%E5%A4%8F%E5%A4%A9",
+          "title": "B站“怀念2018年的夏天”搜索结果",
+          "captured_at": "2026-07-31T07:11:10+08:00",
+          "note": "公开搜索结果呈现多个以2018年夏天为记忆锚点的内容，支持怀旧模板跨内容复用。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
