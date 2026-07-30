@@ -1,0 +1,569 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-dynamic-selection",
+  "rubric_version": "v3-2026",
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T11:35:34+08:00",
+  "published_at": "2026-07-30T11:35:34+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 3,
+    "dropped_safety": {
+      "政治时政": 1,
+      "灾害与公共安全": 1,
+      "隐私与未成年人": 1,
+      "犯罪与争议": 1,
+      "死亡与哀悼": 1,
+      "人物与品牌争议": 1
+    },
+    "dropped_low_confidence": 12,
+    "dropped_capacity": 0,
+    "sources": [
+      "douyin",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "platform_public_sources": 2,
+      "aggregator_sources": 6,
+      "search_media_sources": 3,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 9
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-07-15-hanjinliang-zai-shang-sheng",
+          "canonical_phrase": "X的含金量还在上升",
+          "outcome": "selected",
+          "item_id": "2026-07-15-hanjinliang-zai-shang-sheng",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-07-30T11:00:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-30-x-hang-zhong-hang",
+          "canonical_phrase": "X夯中夯",
+          "outcome": "selected",
+          "item_id": "2026-07-30-x-hang-zhong-hang",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-30T10:50:11+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-30-huidao-xx-nian-xiatian",
+          "canonical_phrase": "回到XX年的夏天",
+          "outcome": "selected",
+          "item_id": "2026-07-30-huidao-xx-nian-xiatian",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-30T10:50:11+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-travel-first-last-day",
+          "canonical_phrase": "旅行第一天和最后一天",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-30T10:50:11+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-aobi-island-era",
+          "canonical_phrase": "我的奥比岛时期",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-30T10:50:11+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-xia-shuting-by-side",
+          "canonical_phrase": "夏树亭亭就在身边",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-30T10:50:11+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-forgot-qq-to-wechat",
+          "canonical_phrase": "已经忘了XX是怎么取代XX的",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-07-30T11:00:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-time-capsule-ten-years",
+          "canonical_phrase": "真的玩到了十年后",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-07-30T11:00:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-next-stop-august",
+          "canonical_phrase": "下一站八月",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 25,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rddh.cn/trending/douyin",
+            "observed_at": "2026-07-30T01:30:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-summer-sunset-template",
+          "canonical_phrase": "把夏天写进落日里",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rddh.cn/trending/douyin",
+            "observed_at": "2026-07-30T01:30:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-camera-roll-summer",
+          "canonical_phrase": "相册里的夏天",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rddh.cn/trending/douyin",
+            "observed_at": "2026-07-30T01:30:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-music-memory-trigger",
+          "canonical_phrase": "音乐把我拉回那一年",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "usage_context",
+            "url": "https://www.douyin.com/user/MS4wLjABAAAAc1UaPXUew8dje-B5qYliYsjbqoKTMzLilh5aw9A4FpG_SPnBq2wqtQNUCYj3dutU",
+            "observed_at": "2026-07-30T01:30:00+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-summer-before-after",
+          "canonical_phrase": "夏天开始前和结束后",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-30T10:50:11+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-childhood-game-era",
+          "canonical_phrase": "我人生的XX时期",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-30T10:50:11+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-spiderman-zero-show",
+          "canonical_phrase": "零点场口碑夯中夯",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-07-30T10:50:11+08:00"
+          }
+        },
+        {
+          "candidate_key": "insufficient-summer-seaside",
+          "canonical_phrase": "海边才是夏天的答案",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-pet-first-person",
+          "canonical_phrase": "宠物第一视角的一天",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-fridge-magnet",
+          "canonical_phrase": "把旅行装进冰箱贴",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-office-summer",
+          "canonical_phrase": "办公室也有夏日感",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-city-walk-night",
+          "canonical_phrase": "夜晚城市漫游",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-old-camera-filter",
+          "canonical_phrase": "旧相机滤镜挑战",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-desk-before-after",
+          "canonical_phrase": "桌面改造前后对比",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-summer-drink",
+          "canonical_phrase": "夏日饮品自制挑战",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-photo-diary",
+          "canonical_phrase": "一天一张照片日记",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-15-hanjinliang-zai-shang-sheng",
+      "title": "📈 X的含金量还在上升",
+      "aliases": [
+        "X的含金量还在上升",
+        "XX含金量继续上升",
+        "X的含金量又上升了"
+      ],
+      "canonical_phrase": "X的含金量还在上升",
+      "platform": [
+        "other",
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“X的含金量还在上升”表达某个人、习惯或旧事在新情境下被再次验证，价值和可信度越看越高。",
+      "origin": "已验证：该句式早已形成稳定网络表达；7月30日百度实时榜出现“广东人饭前烫碗的含金量还在上升”，在本站7月15日至16日发布后出现新的当日高热变体。",
+      "usage": "可改写为“老方法的含金量还在上升”“这句提醒的含金量还在上升”，适合复盘、反转验证和重新评价场景。",
+      "fun_point": "表面像在测纯度，实际是在给旧观点补发奖杯；每出现一次新证据，句子的“金条”就再重一点。",
+      "why_spread": "已验证：7月30日的新变体进入百度实时榜前列，且旧句式已有跨语境解释与长期用例；推测：槽位短、判断感强，适合任何“后来才发现说得对”的情境。",
+      "lifecycle": "peak",
+      "brand_usage": "品牌可用于产品能力被长期验证的复盘，但需给出真实新证据，避免空泛自夸或借食品安全等严肃议题轻佻营销。",
+      "risk": {
+        "level": "low",
+        "note": "通用评价句式；不要借公共安全、疾病或个体争议制造轻佻反转，也不要把未经验证的信息包装成新证据。"
+      },
+      "days_on_list": 3,
+      "score": 92,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度实时热搜（2026-07-30）",
+          "observed_at": "2026-07-30T11:00:00+08:00",
+          "captured_at": "2026-07-30T11:10:00+08:00",
+          "note": "7月30日实时榜第13位出现“广东人饭前烫碗的含金量还在上升”，指数约675万，证明发布后的新一轮活动。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://finance.sina.com.cn/wm/2024-09-02/doc-incmtmqs0998587.shtml",
+          "title": "“含金量还在上升”是什么梗？",
+          "captured_at": "2026-07-30T11:12:00+08:00",
+          "note": "公开释义说明X槽位可替换人或事，用来表达后来重新认识到其价值，支持稳定身份与跨语境复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-30-x-hang-zhong-hang",
+      "title": "🔨 X夯中夯",
+      "aliases": [
+        "X夯中夯",
+        "夯中夯",
+        "这个真的夯中夯"
+      ],
+      "canonical_phrase": "X夯中夯",
+      "platform": [
+        "douyin",
+        "bilibili",
+        "other"
+      ],
+      "type": "口头禅梗",
+      "summary": "用“X夯中夯”给电影、美食、穿搭或一次体验做最高档夸赞，语气比“很好”更夸张、更有弹幕节奏。",
+      "origin": "已验证：7月30日抖音实时榜出现“蜘蛛侠4零点场口碑夯中夯”；此前公开视频和媒体记录已将“夯中夯”用于美食、舞台与日常评价。现有证据不支持指定唯一首发者。",
+      "usage": "可写“这家夜宵夯中夯”“今天的穿搭夯中夯”“这个转场夯中夯”，也可用“夯不夯”发起评论区投票。",
+      "fun_point": "一个“夯”还不够，叠成“夯中夯”像给评价再套一层最高档位，土味、用力和肯定感一起拉满。",
+      "why_spread": "已验证：7月30日仍有新电影话题带动实时热度，且该表达已跨到美食与演出等不同内容；推测：三个字短促押节奏，适合标题、口播和弹幕快速复用。",
+      "lifecycle": "rising",
+      "brand_usage": "适合餐饮、娱乐和生活方式内容做轻量等级评价；应把“夯”落到真实体验点，避免对医疗、灾害或争议人物作戏谑判断。",
+      "risk": {
+        "level": "low",
+        "note": "普通网络夸赞语；可能带有审美分化和过度营销感，使用时不要攻击持不同意见的群体。"
+      },
+      "days_on_list": 1,
+      "score": 89,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-07-30T10:50:11+08:00",
+          "captured_at": "2026-07-30T11:14:00+08:00",
+          "note": "页面标注7月30日10:50:11更新，并列出“蜘蛛侠4零点场口碑夯中夯”，证明严格24小时内新增活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1bbG66fExS/",
+          "title": "N刷贵阳总结出的20家宝藏美食，夯中夯",
+          "captured_at": "2026-07-30T11:15:00+08:00",
+          "note": "公开视频把“夯中夯”用于美食评价，支持其脱离单一电影话题后仍可复用。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://k.sina.cn/article_7879776328_1d5abd84806801ckro.html?from=ent&subch=oent",
+          "title": "“夯”字短语成为粉丝互动表达",
+          "captured_at": "2026-07-30T11:16:00+08:00",
+          "note": "媒体记录“夯中夯”等变体在演出互动中的二创使用，支持跨场景语言单位身份。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-30-huidao-xx-nian-xiatian",
+      "title": "🕰️ 回到XX年的夏天",
+      "aliases": [
+        "回到XX年的夏天",
+        "回到了2018的夏天",
+        "一秒回到那年夏天"
+      ],
+      "canonical_phrase": "回到XX年的夏天",
+      "platform": [
+        "douyin",
+        "bilibili",
+        "other"
+      ],
+      "type": "情绪梗",
+      "summary": "用一首旧歌、滤镜、穿搭或老照片制造时间倒流感，把年份替换成自己的记忆坐标，快速唤起集体怀旧。",
+      "origin": "已验证：7月30日抖音实时榜出现“回到了2018的夏天”；公开归档、视频与跨站热榜也记录了“用特效回到2018年的夏天”等变体。现有证据不支持指定唯一首发者。",
+      "usage": "可改写成“回到2014年的夏天”“一首歌回到毕业那年夏天”，配合旧设备画质、年代穿搭、聊天截图或当年流行音乐。",
+      "fun_point": "只要换一首歌和一层滤镜，手机就像临时造出一台低成本时光机；年份越具体，评论区越容易集体对暗号。",
+      "why_spread": "已验证：7月30日实时榜出现新一轮活动，且同类表达已有跨平台高播放内容；推测：年份槽位天然可替换，音乐与旧影像素材丰富，参与门槛低。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于周年回顾、经典产品复刻和用户记忆征集；不要伪造历史素材，也应取得人物影像、聊天记录和音乐的必要授权。",
+      "risk": {
+        "level": "low",
+        "note": "普通怀旧表达；展示旧照片、聊天截图或未成年人影像时需遮蔽个人信息并取得授权。"
+      },
+      "days_on_list": 1,
+      "score": 87,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-07-30T10:50:11+08:00",
+          "captured_at": "2026-07-30T11:17:00+08:00",
+          "note": "页面标注7月30日10:50:11更新，并列出“回到了2018的夏天”，证明严格24小时内新增活动。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://h.cx4.cn/",
+          "title": "全网热点聚合",
+          "captured_at": "2026-07-30T11:18:00+08:00",
+          "note": "独立公开聚合页同时记录“用特效回到2018年的夏天”及约770万热度，支持并非单页偶发。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=%E6%80%80%E5%BF%B52018%E5%B9%B4%E7%9A%84%E5%A4%8F%E5%A4%A9",
+          "title": "B站“怀念2018年的夏天”搜索结果",
+          "captured_at": "2026-07-30T11:19:00+08:00",
+          "note": "搜索结果呈现多个以2018年夏天为记忆锚点的公开视频，支持怀旧模板的跨内容复用。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
