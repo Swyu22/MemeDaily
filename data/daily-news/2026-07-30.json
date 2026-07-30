@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v2-民生",
+  "rubric_version": "v2-2026",
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T11:30:35+08:00",
+  "published_at": "2026-07-30T11:30:35+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 12,
+    "published": 3,
+    "dropped_safety": {
+      "政府政策色彩": 2,
+      "政治地缘": 1,
+      "争议社会议题": 1
+    },
+    "dropped_low_confidence": 3,
+    "sources": [
+      "official",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 10,
+      "official_sources": 2,
+      "state_media_sources": 0,
+      "major_media_sources": 1,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 2
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-30-postal-ai-delivery",
+      "headline": "📦邮政快递加速应用无人机和无人车",
+      "summary": "7月29日披露的邮政业信息显示，无人机运邮将更多面向高时效、高价值以及山区、海岛、高原等特殊场景，快递网点和村级服务站也可探索建设起降平台；无人车、智能终端和全程智能调度将继续进入寄递环节。",
+      "category": "科技AI",
+      "heat_rank": 1,
+      "occurred_at": "2026-07-29T15:13:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "报道涉及邮政业技术应用方向；正文只呈现与日常寄递相关的无人设备和智能调度，不作落地规模或效果承诺。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://news.sina.com.cn/o/2026-07-29/doc-iniknezf0032848.shtml",
+          "title": "国家邮政局：“人工智能+”赋能邮政 无人机无人车加速落地",
+          "captured_at": "2026-07-30T11:20:00+08:00",
+          "note": "新京报官方微博转载央视报道，确认7月29日披露无人机运邮、网点起降平台、无人车及智能调度等应用方向。"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "新浪新闻",
+          "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908hfj8.html",
+          "title": "新浪AI热点小时报丨2026年07月29日17时",
+          "captured_at": "2026-07-30T11:21:00+08:00",
+          "note": "新浪新闻小时报保留同日条目和原报道链接，佐证信息在7月29日公开传播及核心应用场景。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-30-curiosity-mars-honeycomb",
+      "headline": "🪐好奇号发现大范围蜂窝状火星地貌",
+      "summary": "NASA于7月29日公布，好奇号在火星夏普山“Valle Grande”山谷发现此前未见规模的多边形裂隙地貌，单个结构约4至8厘米，范围延伸至视野尽头。团队正结合形状与化学数据，判断泥裂、冷热循环或沉积物受压等形成机制。",
+      "category": "国际",
+      "heat_rank": 2,
+      "occurred_at": "2026-07-29T00:00:00-04:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际行星科学进展；尺寸、影像日期和可能成因均来自NASA任务页面，并明确形成机制仍在研究。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "NASA",
+          "url": "https://www.nasa.gov/missions/mars-science-laboratory/curiosity-rover/nasas-curiosity-mars-rover-discovers-field-of-honeycomb-textures/",
+          "title": "NASA’s Curiosity Mars Rover Discovers Field of Honeycomb Textures",
+          "captured_at": "2026-07-30T11:22:00+08:00",
+          "note": "NASA于7月29日发布任务文章，确认地貌范围、4至8厘米尺度、6月影像时间及多种可能形成过程。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-30-webb-little-red-dots",
+      "headline": "🔭韦布望远镜追踪宇宙“小红点”的演化线索",
+      "summary": "NASA于7月29日介绍一项新研究：团队结合韦布与哈勃数据分析绰号“Saguaro”的较低红移旋涡星系，发现其核心具有典型“小红点”特征。研究提出，这类遥远致密红源可能是超大质量黑洞高度活跃的暂时阶段，但仍需更多同类样本验证。",
+      "category": "国际",
+      "heat_rank": 3,
+      "occurred_at": "2026-07-29T00:00:00-04:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际天文学研究；摘要将演化路径表述为团队提出的解释，并保留进一步验证的不确定性。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "NASA",
+          "url": "https://science.nasa.gov/missions/webb/nasa-webb-explores-family-tree-of-newly-discovered-distant-objects/",
+          "title": "NASA Webb Explores Family Tree of Newly Discovered Distant Objects",
+          "captured_at": "2026-07-30T11:23:00+08:00",
+          "note": "NASA于7月29日介绍新论文、Saguaro多波段证据，以及“小红点”可能对应黑洞活跃阶段的研究解释。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
