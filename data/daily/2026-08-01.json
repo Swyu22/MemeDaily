@@ -1,0 +1,568 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-dynamic-selection",
+  "rubric_version": "v3-2026",
+  "date": "2026-08-01",
+  "generated_at": "2026-08-01T07:09:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 3,
+    "dropped_safety": {
+      "政治时政": 1,
+      "灾害与公共安全": 1,
+      "隐私与未成年人": 1,
+      "犯罪与争议": 1,
+      "死亡与哀悼": 1,
+      "健康与身体羞辱": 1
+    },
+    "dropped_low_confidence": 12,
+    "dropped_capacity": 0,
+    "sources": [
+      "douyin",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "platform_public_sources": 3,
+      "aggregator_sources": 3,
+      "search_media_sources": 2,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 9
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-07-31-shuqi-xianding-solo-trip",
+          "canonical_phrase": "我的XX限定solo trip",
+          "outcome": "selected",
+          "item_id": "2026-07-31-shuqi-xianding-solo-trip",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-07-31-x-yue-zoushangpo-lu",
+          "canonical_phrase": "X月要走上坡路了",
+          "outcome": "selected",
+          "item_id": "2026-07-31-x-yue-zoushangpo-lu",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "2026-08-01-zhuda-yige-tingquan",
+          "canonical_phrase": "主打一个听劝",
+          "outcome": "selected",
+          "item_id": "2026-08-01-zhuda-yige-tingquan",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-friday-best-flavor",
+          "canonical_phrase": "周五是一周的最佳赏味期",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-july-bye-august-smooth",
+          "canonical_phrase": "七月再见八月你要顺顺利利",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-commute-motd",
+          "canonical_phrase": "职场人通勤MOTD",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-summer-to-torch",
+          "canonical_phrase": "把盛夏交给火把节",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-happiness-in-clouds",
+          "canonical_phrase": "把快乐装进云朵里",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-stop-for-cats",
+          "canonical_phrase": "总是为路边的小猫驻足算幼稚吗",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-timid-five",
+          "canonical_phrase": "窝囊five哪凉快哪去",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-storm-transition",
+          "canonical_phrase": "风雨飘摇转场",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-carefree-future",
+          "canonical_phrase": "我想要个潇洒的以后",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-gift-concert",
+          "canonical_phrase": "随礼200还能听演唱会",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-ai-art-question",
+          "canonical_phrase": "AI生成的作品算艺术吗",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "low-customer-service-wow",
+          "canonical_phrase": "客服坏了他真会啊",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-01T06:28:55+08:00"
+          }
+        },
+        {
+          "candidate_key": "insufficient-cloud-happiness",
+          "canonical_phrase": "快乐装进云朵",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-torch-summer",
+          "canonical_phrase": "盛夏火把节转场",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-commute-outfit",
+          "canonical_phrase": "通勤穿搭MOTD",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-friday-flavor",
+          "canonical_phrase": "周五最佳赏味期",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-roadside-cat",
+          "canonical_phrase": "路边小猫驻足",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-storm-transition",
+          "canonical_phrase": "风雨飘摇转场挑战",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-carefree-future",
+          "canonical_phrase": "潇洒以后情绪模板",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-gift-concert",
+          "canonical_phrase": "随礼听演唱会",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "insufficient-ai-art",
+          "canonical_phrase": "AI作品算不算艺术",
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "健康与身体羞辱"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-31-shuqi-xianding-solo-trip",
+      "title": "🧳 我的XX限定solo trip",
+      "aliases": [
+        "我的XX限定solo trip",
+        "我的暑期限定solo trip",
+        "XX限定solo trip"
+      ],
+      "canonical_phrase": "我的XX限定solo trip",
+      "platform": [
+        "douyin",
+        "bilibili",
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "把独自出发包装成“XX限定solo trip”，用地点、假期或人生阶段替换槽位，突出短暂、专属和自我陪伴感。",
+      "origin": "已验证：该身份7月31日首次上榜；8月1日抖音实时榜再次出现“我的暑期限定solotrip”，且当日活动晚于上次站内发布时间。现有证据不支持指定唯一首发者。",
+      "usage": "可改写成“周末限定solo trip”“下班后限定solo trip”“毕业前限定solo trip”，搭配路线、行李、吃住片段或第一视角转场。",
+      "fun_point": "“限定”给普通独行加上一层稀缺包装，像为自己发行一张只售几天的旅行通行证。",
+      "why_spread": "已验证：8月1日仍位列抖音实时榜前列，并有对应公开话题页；推测：XX槽位清晰、素材易拍，适合短假和城市漫游叙事。",
+      "lifecycle": "peak",
+      "brand_usage": "适合旅行、户外和生活方式内容发起轻量路线征集；应给出真实体验信息，避免把普通行程包装成虚假稀缺。",
+      "risk": {
+        "level": "low",
+        "note": "普通旅行表达；公开内容应避免展示可即时定位的行程细节，也不要制造独行等于冒险的压力。"
+      },
+      "days_on_list": 2,
+      "score": 88,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-08-01T06:28:55+08:00",
+          "captured_at": "2026-08-01T07:08:30+08:00",
+          "note": "页面标注8月1日06:28:55更新，“我的暑期限定solotrip”位列第9；活动晚于本站7月31日07:15:33的上次发布。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2590796",
+          "title": "抖音“我的暑期限定solotrip”公开话题页",
+          "captured_at": "2026-08-01T07:08:00+08:00",
+          "note": "与当日实时榜条目对应的公开话题入口，支持该表达继续作为可参与短视频主题存在。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=solo%20trip",
+          "title": "B站“solo trip”公开搜索结果",
+          "captured_at": "2026-08-01T07:08:10+08:00",
+          "note": "公开搜索呈现多个独自旅行记录，支持solo trip叙事脱离单一话题后仍可复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-31-x-yue-zoushangpo-lu",
+      "title": "📈 X月要走上坡路了",
+      "aliases": [
+        "X月要走上坡路了",
+        "八月要走上坡路了",
+        "下个月要走上坡路了"
+      ],
+      "canonical_phrase": "X月要走上坡路了",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "情绪梗",
+      "summary": "用“X月要走上坡路了”给新月份设置积极转折，把月份替换成自己的时间节点，表达告别低谷和重新起步。",
+      "origin": "已验证：该身份7月31日首次上榜；8月1日抖音实时榜再次出现“八月要走上坡路了”，且当日活动晚于上次站内发布时间。现有证据不支持指定唯一首发者。",
+      "usage": "可写“八月工作要走上坡路了”“下个月状态要走上坡路了”，配合清单、打卡、复盘或前后对比画面。",
+      "fun_point": "把日历翻页说成地形变化，仿佛跨进新月份，生活就切换到缓慢爬升的路线。",
+      "why_spread": "已验证：8月1日继续进入抖音实时榜并有独立公开话题页；推测：月份槽位简单、正向情绪明确，适合月初计划反复使用。",
+      "lifecycle": "peak",
+      "brand_usage": "适合学习、运动和效率内容发起新月打卡；应把“上坡”落到可验证的小目标，避免承诺无法保证的结果。",
+      "risk": {
+        "level": "low",
+        "note": "普通自我激励表达；不要把运势承诺写成事实，也避免借积极口号向个人施压。"
+      },
+      "days_on_list": 2,
+      "score": 82,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-08-01T06:28:55+08:00",
+          "captured_at": "2026-08-01T07:08:30+08:00",
+          "note": "页面标注8月1日06:28:55更新，“八月要走上坡路了”仍在榜；活动晚于本站7月31日07:15:33的上次发布。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2590356",
+          "title": "抖音“八月要走上坡路了”公开话题页",
+          "captured_at": "2026-08-01T07:08:15+08:00",
+          "note": "与当日实时榜条目对应的公开话题入口，支持该句式继续作为可参与内容主题存在。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-01-zhuda-yige-tingquan",
+      "title": "👂 主打一个听劝",
+      "aliases": [
+        "主打一个听劝",
+        "XX主打一个听劝",
+        "主打的就是一个听劝"
+      ],
+      "canonical_phrase": "主打一个听劝",
+      "platform": [
+        "douyin",
+        "bilibili",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "用“主打一个听劝”形容迅速采纳建议并立刻行动，把主语替换为个人、团队、产品或城市即可跨场景套用。",
+      "origin": "已验证：8月1日抖音实时榜出现“九江文旅主打一个听劝”；公开视频与报道长期把同一句式用于手工、汽车、产品和文旅，证明它已脱离单一事件复用。现有证据不支持指定唯一首发者。",
+      "usage": "可写“这个产品主打一个听劝”“评论区一说我就改，主打一个听劝”，配合改前改后对比、建议清单或快速回应。",
+      "fun_point": "“主打一个”本来像正式定位，接上口语化的“听劝”后，把认真采纳意见说得既郑重又带自嘲。",
+      "why_spread": "已验证：该句式8月1日进入抖音实时榜，且在不同品类公开内容中反复出现；推测：结构短、立场积极、主语替换成本低。",
+      "lifecycle": "rising",
+      "brand_usage": "适合产品迭代、城市服务和社区运营展示真实采纳反馈；必须呈现具体改动，避免只借口号制造虚假回应。",
+      "risk": {
+        "level": "low",
+        "note": "普通反馈型表达；品牌使用时应可核验地说明采纳了什么，不应暗示已解决尚未完成的问题。"
+      },
+      "days_on_list": 1,
+      "score": 80,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-08-01T06:28:55+08:00",
+          "captured_at": "2026-08-01T07:08:30+08:00",
+          "note": "页面标注8月1日06:28:55更新，“九江文旅主打一个听劝”位列第29，证明严格24小时内的当日活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2591209",
+          "title": "抖音“九江文旅主打一个听劝”公开话题页",
+          "captured_at": "2026-08-01T07:08:20+08:00",
+          "note": "与当日实时榜条目对应的公开话题入口，支持该句式作为可参与传播主题存在。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1e4mSYsEA7/",
+          "title": "B站视频：主打一个听劝",
+          "captured_at": "2026-08-01T07:08:25+08:00",
+          "note": "公开视频以同一句式用于手工改进，页面显示140.4万播放，支持该表达跨主体、跨场景复用。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
