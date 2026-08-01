@@ -50,7 +50,7 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
 - [x] Merge the rule release while preserving the active DeployKey-only main ruleset.
 - [x] Make the legacy-policy fallback regression self-contained so today's successful
   policy migration cannot invalidate the trusted publisher's full test run.
-- [ ] Rerun both 2026-08-01 feeds through exact one-file candidates and verify main, Pages,
+- [x] Rerun both 2026-08-01 feeds through exact one-file candidates and verify main, Pages,
   production content, counts, mix, and later-task no-op behavior.
 
 - [x] Fast-forward local `main` and prove local HEAD, remote `main`, latest Pages
@@ -92,8 +92,9 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
 - [x] Pass full local/governance validation and independent review for the dynamic gate.
 - [x] Merge the dynamic policy, update the server Scheduled Task prompts without
   changing their schedules, and read back all eight persistent task definitions.
-- [x] Update and read back all eight server Scheduled Task prompts so only
-  `published/partial + >=3` is terminal and fallback performs editorial recovery.
+- [x] Update and read back all eight server Scheduled Task prompts so terminal no-op
+  requires the exact current policy, editorial completion, three-to-ten valid items,
+  and fallback performs editorial recovery.
 - [x] Activate the domain/monitor/fallback gates, complete full verification, and prove
   local, GitHub main, Pages, and production agree.
 - [x] Run the complete local/governance/security suite and independent diff review;
@@ -125,8 +126,9 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
   path.
 - The active main ruleset exposes only `DeployKey` as an update bypass, the repository
   has one writable trusted publisher key, and a trusted fallback proves that path works.
-- Duplicate/catch-up/fallback behavior is a no-op only after a valid live envelope has
-  at least three evidence-qualified visible items.
+- Duplicate/catch-up/fallback behavior is a no-op only after a live envelope uses the
+  exact current policy, is editorially complete, has three to ten evidence-qualified
+  visible items with matching counts, and passes the complete feed contract.
   Fixed retries may still wake and spend one inexpensive live-main preflight, but must
   stop before research, writes, branches, or PRs. Real Web Scheduled no-ops and real
   candidate publications must both be evidenced.

@@ -58,17 +58,35 @@
   active state and schedule. Their final template performs the live completion
   preflight before loading editorial/schema/history context, so a completed primary
   run makes later triggers stop before research.
-- Final local checks passed both data validators, strict lint, typecheck, 257 tests,
+- Pre-publication rule-tree checks passed both data validators, strict lint, typecheck,
+  257 tests,
   a 194-page production build, strict governance gates, dependency audit with zero
   findings, target-code complexity with zero warnings, and `git diff --check`.
 
-## Release Pending
+## Release Acceptance
 
 - Rule PR #65 merged as `4a2849042eb7dd5efb2904cdc635232ba79a8be1`; main CI and
   Pages succeeded, and the active ruleset was read back with only its DeployKey bypass.
 - The first real v4 candidate exposed a test-fixture dependency on today's legacy
   production file. The regression now constructs its own explicit legacy-policy
-  envelope, so a successful migration remains compatible with the trusted full suite.
-- Replace both 2026-08-01 legacy envelopes through separate exact-file candidate PRs,
-  then verify trusted publication, main CI, Pages, cache-bypassed production, and
-  terminal cheap no-op classification.
+  envelope; fix PR #66 merged as `995c947843914cf300c8e8051ff3aed0c3fe9ef3`.
+- Trusted publisher run `30693058662` accepted exact meme candidate PR #67 and
+  published six strict qualifiers from 33 audited candidates at main
+  `198f7a443bb8d48492ef0c7a1351771fd9e81b1c`. Main CI `30693137149` and Pages
+  `30693137142` succeeded.
+- Trusted publisher run `30693387402` accepted exact news candidate PR #68 and
+  published five strict qualifiers from 40 audited candidates at main
+  `79a12fbda147b2c7252e1e9e5cf67e17cf7e3c4d`. All five are domestic and zero are
+  international; main CI `30693471863` and Pages `30693471858` succeeded.
+- Final local verification passed both validators, strict lint, typecheck, all 257
+  tests, a 197-page production build, strict governance gates, production audit with
+  zero findings, and `git diff --check`.
+- A cache-bypassed production request returned HTTP 200/cache miss and contained all
+  eleven accepted titles. Both exact live-main envelopes classify as current-policy,
+  editorially complete terminal states.
+- The meme and news catch-up ChatGPT Work Scheduled Tasks were then manually invoked
+  from the server task UI. Both returned `no-op` after the cheap completion preflight;
+  their reports explicitly recorded no research, file write, branch/PR/Issue change,
+  main merge, or task edit. GitHub readback confirmed unchanged main and unchanged
+  exact daily branch/closed-PR state, while the ruleset remained active with only its
+  DeployKey bypass.
