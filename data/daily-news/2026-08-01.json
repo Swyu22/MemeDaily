@@ -1,98 +1,890 @@
 {
   "schema_version": "1.0",
-  "policy_version": "v2-民生",
-  "rubric_version": "v2-2026",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-2026",
   "date": "2026-08-01",
-  "generated_at": "2026-08-01T07:19:17+08:00",
-  "published_at": "2026-08-01T07:19:17+08:00",
-  "status": "partial",
+  "generated_at": "2026-08-01T17:16:48+08:00",
+  "published_at": "2026-08-01T17:16:48+08:00",
+  "status": "published",
   "run_report": {
-    "candidates_scanned": 12,
-    "published": 3,
+    "candidates_scanned": 40,
+    "published": 5,
     "dropped_safety": {
-      "政治地缘": 2,
-      "政府色彩": 1,
-      "争议社会议题": 1
+      "minors": 2,
+      "privacy": 1,
+      "controversy": 1,
+      "public_safety": 1,
+      "harassment": 1,
+      "rumor": 1,
+      "propaganda": 1,
+      "politics": 1,
+      "celebrity_dispute": 1
     },
-    "dropped_low_confidence": 3,
+    "dropped_low_confidence": 25,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
     "sources": [
-      "official"
+      "official",
+      "state_media"
     ],
     "evidence_summary": {
-      "candidates_with_urls": 10,
-      "official_sources": 3,
-      "state_media_sources": 0,
+      "candidates_with_urls": 30,
+      "official_sources": 8,
+      "state_media_sources": 5,
       "major_media_sources": 0,
       "aggregator_sources": 0,
-      "dropped_insufficient_evidence": 3
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 20,
+        "relaxed_72h": 26
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 40,
+          "cumulative_unique_candidates": 40,
+          "source_scope": [
+            "金融监管与央行公开文件",
+            "国家统计与养老公报",
+            "国家标准全文平台",
+            "央视与新华社全国要闻",
+            "能源与医保官方数据",
+            "全国性会展和住房民生",
+            "公开热榜民生线索"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-01-personal-loan-cost-disclosure",
+          "story_identity": "cn-personal-loan-cost-disclosure-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-01-personal-loan-cost-disclosure",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-01-national-aging-report",
+          "story_identity": "cn-2025-national-aging-development-report-release",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T07:05:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-01-national-aging-report",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-01-livelihood-national-standards",
+          "story_identity": "cn-livelihood-national-standards-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-01-livelihood-national-standards",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-01-coal-power-share",
+          "story_identity": "cn-h1-2026-coal-power-generation-share-below-50",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T05:22:49+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-08-01-coal-power-share",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-01-ai-public-service-scenes",
+          "story_identity": "cn-ai-public-service-rollout-roundup-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T06:24:36+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-08-01-ai-public-service-scenes",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-06-renewable-share",
+          "story_identity": "cn-renewable-electricity-minimum-share-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 15
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "总分未达strict门槛，直接生活关联弱于入选项"
+        },
+        {
+          "candidate_key": "cand-07-solar-energy-label",
+          "story_identity": "cn-solar-water-system-energy-label-rule-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "单项热度不足，已由标准合集准确覆盖"
+        },
+        {
+          "candidate_key": "cand-08-solar-efficiency-standard",
+          "story_identity": "cn-solar-water-efficiency-gb26969-2025-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "单项热度不足，已由标准合集准确覆盖"
+        },
+        {
+          "candidate_key": "cand-09-ev-repair-standard",
+          "story_identity": "cn-ev-repair-safety-gbt47439-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "单项未达strict，合集呈现可减少碎片化"
+        },
+        {
+          "candidate_key": "cand-10-sms-signature-standard",
+          "story_identity": "cn-sms-signature-gbt47533-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "推荐性标准单项热度不足，合集已说明性质"
+        },
+        {
+          "candidate_key": "cand-11-app-platform-standard",
+          "story_identity": "cn-app-distribution-gbt47532-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "推荐性标准单项热度不足，合集已覆盖"
+        },
+        {
+          "candidate_key": "cand-12-senior-tour-standard",
+          "story_identity": "cn-senior-group-tour-standard-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "接近门槛但未达75，纳入合集避免拆成填充项"
+        },
+        {
+          "candidate_key": "cand-13-accessible-hotel-standard",
+          "story_identity": "cn-accessible-hotel-gbt47543-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "单项未达strict，纳入合集"
+        },
+        {
+          "candidate_key": "cand-14-health-service-general",
+          "story_identity": "cn-health-service-gbt30443-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "推荐性标准单项热度不足"
+        },
+        {
+          "candidate_key": "cand-15-health-service-classification",
+          "story_identity": "cn-health-service-gbt30444-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "仅达relaxed72，且直接可操作影响较弱"
+        },
+        {
+          "candidate_key": "cand-16-maternal-infant-service",
+          "story_identity": "cn-maternal-infant-health-gbt33855-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "单项未达strict，优先合集"
+        },
+        {
+          "candidate_key": "cand-17-health-supplies-safe-use",
+          "story_identity": "cn-health-supplies-gbt33355-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "单项未达strict，优先合集"
+        },
+        {
+          "candidate_key": "cand-18-health-supplies-after-sales",
+          "story_identity": "cn-health-supplies-gbt33354-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "仅达relaxed72，优先合集"
+        },
+        {
+          "candidate_key": "cand-19-passenger-message-priority",
+          "story_identity": "cn-passenger-message-gbt47045-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "专业性较强，普通读者直接关联有限"
+        },
+        {
+          "candidate_key": "cand-20-processed-food-terms",
+          "story_identity": "cn-processed-food-gbt15091-1-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "术语标准新闻价值有限"
+        },
+        {
+          "candidate_key": "cand-21-drug-procurement",
+          "story_identity": "cn-12th-drug-bulk-procurement-opening-2026-07-31",
+          "research_pass": 1,
+          "occurred_at": "2026-07-31T07:30:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 15,
+            "everyday_relevance": 23,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "已超过24小时，仅达relaxed48；只核实65种药开标，未采用未证实结果"
+        },
+        {
+          "candidate_key": "cand-22-chinajoy-opening",
+          "story_identity": "cn-chinajoy-2026-opening-2026-07-31",
+          "research_pass": 1,
+          "occurred_at": "2026-07-31T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 14,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "已超过24小时，仅达relaxed48"
+        },
+        {
+          "candidate_key": "cand-23-housing-provident-fund",
+          "story_identity": "cn-housing-provident-fund-adjustments-60-cities-h1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-07-31T08:11:08+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 14,
+            "everyday_relevance": 24,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "材料披露已超过24小时"
+        },
+        {
+          "candidate_key": "cand-24-humanoid-ai-rules",
+          "story_identity": "cn-humanoid-ai-ethics-rule-analysis-2026-07-31",
+          "research_pass": 1,
+          "occurred_at": "2026-07-31T07:41:24+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 14,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "报道已超过24小时，且规则此前已经施行"
+        },
+        {
+          "candidate_key": "cand-25-industrial-green-plan",
+          "story_identity": "cn-industrial-green-15th-five-year-plan-release-2026-07-31",
+          "research_pass": 1,
+          "occurred_at": "2026-07-31T14:39:34+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 13,
+            "everyday_relevance": 19,
+            "evidence": 15
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "总分仅达relaxed72，日常关联弱于入选项"
+        },
+        {
+          "candidate_key": "cand-26-hospital-security-standard",
+          "story_identity": "cn-hospital-security-gbt31458-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 14
+          },
+          "drop_reason": "低于65分下限"
+        },
+        {
+          "candidate_key": "cand-27-tourism-shopping-standard",
+          "story_identity": "cn-tourism-shopping-gbt26356-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 13
+          },
+          "drop_reason": "低于65分下限"
+        },
+        {
+          "candidate_key": "cand-28-ecommerce-supplier-standard",
+          "story_identity": "cn-ecommerce-supplier-gbt30698-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 13
+          },
+          "drop_reason": "低于65分下限"
+        },
+        {
+          "candidate_key": "cand-29-laundry-terms-standard",
+          "story_identity": "cn-laundry-terms-gbt33452-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 13
+          },
+          "drop_reason": "低于65分下限"
+        },
+        {
+          "candidate_key": "cand-30-health-standards-roundup",
+          "story_identity": "cn-five-health-service-standards-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "仅达relaxed72，且与已选标准合集重叠"
+        },
+        {
+          "candidate_key": "candidate-31",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-32",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-33",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-34",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-35",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-36",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-37",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-38",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-39",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-40",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        }
+      ]
     }
   },
   "items": [
     {
-      "id": "2026-08-01-who-world-breastfeeding-week",
-      "headline": "🤱世界母乳喂养周关注持续有效的支持方式",
-      "summary": "8月1日至7日是2026年世界母乳喂养周。世卫组织今年聚焦“巩固有效做法”，提出把经过验证的喂养咨询、爱婴医院、社区动员和职场支持扩大到更多家庭，并公布多项系统综述数据，供健康服务和家庭支持参考。",
+      "id": "2026-08-01-personal-loan-cost-disclosure",
+      "story_identity": "cn-personal-loan-cost-disclosure-effective-2026-08-01",
+      "headline": "💳 个人贷款综合融资成本今起须明示",
+      "summary": "个人贷款综合融资成本明示规定8月1日起施行，银行、消费金融等机构须以年化形式披露正常履约成本上限，并在签约前分项列明利息和费用；线上办理还要弹窗展示并设置强制阅读时间，方便借款人看清和比较真实融资成本。",
       "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 91,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 14
+      },
       "heat_rank": 1,
       "occurred_at": "2026-08-01T00:00:00+08:00",
       "risk": {
-        "level": "low",
-        "note": "内容来自世卫组织官方专题页；摘要只概述公共健康支持方向，不提供个体诊断或替代专业咨询的建议。"
+        "level": "safe",
+        "note": "仅陈述已生效的贷款成本披露规则，不构成借贷建议。"
       },
       "sources": [
         {
           "tier": "official",
-          "outlet": "世界卫生组织",
-          "url": "https://www.who.int/campaigns/world-breastfeeding-week/2026",
-          "title": "World Breastfeeding Week 2026",
-          "captured_at": "2026-08-01T07:16:22+08:00",
-          "note": "世卫组织专题页确认活动为8月1日至7日，并列出喂养咨询、爱婴医院、社区动员和职场支持等经研究验证的做法。"
+          "outlet": "上海市金融办",
+          "url": "https://jrj.sh.gov.cn/YWTBZCCX166/20260316/f3c5b0eb908d4d1385e69c7ddcf5366a.html",
+          "title": "国家金融监督管理总局 中国人民银行 公告",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "正文第十一条载明2026年8月1日施行，并列明年化综合成本、弹窗及强制阅读要求。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/20260724/184cca2db6b84c89afd262e5469c1f90/c.html",
+          "title": "财经深一度丨8月起，个人贷款息费将告别“糊涂账”",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "解释新规覆盖机构、签约前明示及线上办理流程。"
         }
       ],
       "published": true
     },
     {
-      "id": "2026-08-01-nasa-flight-dynamics-facility",
-      "headline": "✈️NASA启用四十多年来首座大型新风洞",
-      "summary": "NASA于7月31日在弗吉尼亚州兰利研究中心启用飞行动力学研究设施。这座2.5万平方英尺的新风洞可进行自由飞行和固定模型测试，覆盖飞机、无人机、降落伞和返回舱等对象，用于评估未来飞行器的安全与性能。",
-      "category": "国际",
+      "id": "2026-08-01-national-aging-report",
+      "story_identity": "cn-2025-national-aging-development-report-release",
+      "headline": "👵 2025年度国家老龄事业发展公报发布",
+      "summary": "《2025年度国家老龄事业发展公报》发布。央视披露，截至2025年末我国60周岁及以上人口已达3.2338亿；国家统计局数据显示其中65岁以上人口为2.2365亿，养老保障、服务供给和适老化建设需求进一步扩大。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
       "heat_rank": 2,
-      "occurred_at": "2026-07-31T00:00:00-04:00",
+      "occurred_at": "2026-08-01T07:05:00+08:00",
       "risk": {
         "level": "safe",
-        "note": "非政治国际航空科研设施信息；启用日期、设施规模和测试范围均来自NASA官方新闻稿。"
+        "note": "公报发布与人口数字分别由央视和国家统计局支持。"
       },
       "sources": [
         {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://tv.cctv.com/2026/08/01/VIDEGJUaH3Ab8nYNjYEdXDtf260801.shtml",
+          "title": "[新闻直播间]《2025年度国家老龄事业发展公报》发布 我国60周岁及以上老年人口超3.23亿人",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "同日07:05更新，支持公报发布及60周岁以上人口超过3.23亿。"
+        },
+        {
           "tier": "official",
-          "outlet": "NASA",
-          "url": "https://www.nasa.gov/news-release/nasa-opens-new-flight-dynamics-research-facility-in-virginia/",
-          "title": "NASA Opens New Flight Dynamics Research Facility in Virginia",
-          "captured_at": "2026-08-01T07:16:22+08:00",
-          "note": "NASA于7月31日确认设施启用，并说明其为四十多年来首座大型新风洞、占地2.5万平方英尺及主要测试能力。"
+          "outlet": "国家统计局",
+          "url": "https://www.stats.gov.cn/sj/zxfbhjd/202601/t20260119_1962338.html",
+          "title": "王萍萍：2025年全国人口总量为140489万人 人口高质量发展持续推进",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "载明60岁及以上32338万人、65岁以上22365万人。"
         }
       ],
       "published": true
     },
     {
-      "id": "2026-08-01-nasa-august-eclipse-coverage",
-      "headline": "🌘NASA公布8月日全食直播与科研安排",
-      "summary": "NASA于7月29日公布8月12日北半球日全食直播安排，观众可在线查看全食带沿线画面和专家解说。科研团队还将用高空飞机追踪月影，并由学生团队在冰岛和西班牙放飞气球，观察短时变暗对大气的影响。",
-      "category": "国际",
+      "id": "2026-08-01-livelihood-national-standards",
+      "story_identity": "cn-livelihood-national-standards-effective-2026-08-01",
+      "headline": "📋 一批民生相关国家标准今起实施",
+      "summary": "8月1日起，新能源汽车维修安全、短信发送方签名、应用商店上架巡查、老年团队游与饭店无障碍等国家标准陆续实施，为车辆维修、数字服务和出游住宿提供更清晰的操作与服务基准；其中多项为推荐性国标，并非一律强制。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
       "heat_rank": 3,
-      "occurred_at": "2026-07-29T00:00:00-04:00",
+      "occurred_at": "2026-08-01T00:00:00+08:00",
       "risk": {
         "level": "safe",
-        "note": "非政治国际天文科普与观测安排；可见区域、直播和科研活动均由NASA官方预告确认。"
+        "note": "摘要明确多项为推荐性国家标准，未误写为全部强制。"
       },
       "sources": [
         {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://tv.cctv.com/2026/08/01/VIDEPXKn8YFPluEIsbbz2lVe260801.shtml",
+          "title": "[新闻直播间]一批国家标准8月1日起实施",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "同日07:07更新，支持一批国家标准今起实施。"
+        },
+        {
           "tier": "official",
-          "outlet": "NASA",
-          "url": "https://www.nasa.gov/news-release/nasa-sets-coverage-for-august-northern-hemisphere-total-solar-eclipse/",
-          "title": "NASA Sets Coverage for August Northern Hemisphere Total Solar Eclipse",
-          "captured_at": "2026-08-01T07:16:22+08:00",
-          "note": "NASA于7月29日确认8月12日日全食可见区域、直播安排，以及高空飞机和学生气球项目的科研计划。"
+          "outlet": "市场监管总局",
+          "url": "https://www.samr.gov.cn/xw/sj/art/2026/art_034fe3a706604d9dbb1af89a7833b84d.html",
+          "title": "《新能源汽车维修作业安全要求》国家标准8月1日起实施",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "支持新能源汽车维修作业安全标准的实施日期和适用范围。"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家标准平台",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=2648A08E4D5142FCD3C97644953B1535",
+          "title": "GB/T 47533-2026 通信短信息服务内容提供者签名要求",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "页面载明实施日期为2026年8月1日，且为推荐性国家标准。"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家标准平台",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=85EF8CFE17EE38101C41045474DA8389",
+          "title": "GB/T 47532-2026 移动应用分发平台 服务和管理规范",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "页面载明实施日期为2026年8月1日，且为推荐性国家标准。"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家标准平台",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=7F4BA7BE53DE2EFCE9069D099DC33FD2",
+          "title": "GB/T 47540-2026 旅行社老年旅游服务要求",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "页面载明实施日期为2026年8月1日，且为推荐性国家标准。"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家标准平台",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=11FB862766387228085E1B8F974590D7",
+          "title": "GB/T 47543-2026 无障碍旅游服务规范 旅游饭店",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "页面载明实施日期为2026年8月1日，且为推荐性国家标准。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-01-coal-power-share",
+      "story_identity": "cn-h1-2026-coal-power-generation-share-below-50",
+      "headline": "🌱 上半年煤电发电量占比首次低于50%",
+      "summary": "国家能源局数据经央视8月1日披露，2026年前6个月我国煤电发电量约2.5万亿千瓦时，占全国总发电量49.7%，半年占比首次低于50%；同期太阳能和风电装机均保持两位数增长，电力结构继续向绿色低碳调整。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 14
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-01T05:22:49+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅陈述发电结构与装机数据，不外推电价或供电结论。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/01/ARTI8ktjgHbRz5DtYUbdkLs2260731.shtml",
+          "title": "煤电占比首次跌破50% 绿电如何持续壮大？",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "同日05:22:49发布，支持2.5万亿千瓦时、49.7%及首次低于50%。"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家能源局",
+          "url": "https://www.nea.gov.cn/20260722/3b678308556b4df0a574537b59a28731/c.html",
+          "title": "国家能源局发布2026年1-6月份全国电力统计数据",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "支持上半年全国电力以及风电、太阳能发电装机数据。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-01-ai-public-service-scenes",
+      "story_identity": "cn-ai-public-service-rollout-roundup-2026-08-01",
+      "headline": "🤖 智慧口岸、停车等AI应用场景加快落地",
+      "summary": "央视8月1日汇总多部门最新安排：43个重点口岸纳入智慧口岸工程，都市圈公路、停车引导和智慧寻车将加快数智化改造，普惠算力拟进一步面向中小企业，邮政无人机配送等场景也在推进。相关内容属于规划和试点进展，不等于已全面落地。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 18,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-01T06:24:36+08:00",
+      "risk": {
+        "level": "low",
+        "note": "多项内容属于规划或试点，摘要已明确不等于全面落地。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视新闻",
+          "url": "https://news.cctv.com/2026/08/01/ARTIiz5NKkmsqeju4a7u1n58260801.shtml",
+          "title": "信息量密集！围绕人工智能 多部门最新部署",
+          "captured_at": "2026-08-01T17:03:26+08:00",
+          "note": "同日06:24:36发布，支持43个重点口岸、智慧停车、普惠算力及无人机配送等场景。"
         }
       ],
       "published": true
