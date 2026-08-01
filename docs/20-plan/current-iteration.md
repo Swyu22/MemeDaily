@@ -47,7 +47,9 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
 - [x] Update the handoff, Cloud runbook, living prompts, project map, ADR, and session state.
 - [x] Update and read back all eight server Scheduled Task prompts without schedule changes.
 - [x] Pass focused tests, `npm run check`, governance checks, and independent review.
-- [ ] Merge the rule release while preserving the active DeployKey-only main ruleset.
+- [x] Merge the rule release while preserving the active DeployKey-only main ruleset.
+- [x] Make the legacy-policy fallback regression self-contained so today's successful
+  policy migration cannot invalidate the trusted publisher's full test run.
 - [ ] Rerun both 2026-08-01 feeds through exact one-file candidates and verify main, Pages,
   production content, counts, mix, and later-task no-op behavior.
 

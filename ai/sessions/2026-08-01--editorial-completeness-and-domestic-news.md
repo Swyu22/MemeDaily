@@ -64,8 +64,11 @@
 
 ## Release Pending
 
-- Merge the rule release after independent GO while preserving the active
-  DeployKey-only ruleset.
+- Rule PR #65 merged as `4a2849042eb7dd5efb2904cdc635232ba79a8be1`; main CI and
+  Pages succeeded, and the active ruleset was read back with only its DeployKey bypass.
+- The first real v4 candidate exposed a test-fixture dependency on today's legacy
+  production file. The regression now constructs its own explicit legacy-policy
+  envelope, so a successful migration remains compatible with the trusted full suite.
 - Replace both 2026-08-01 legacy envelopes through separate exact-file candidate PRs,
   then verify trusted publication, main CI, Pages, cache-bypassed production, and
   terminal cheap no-op classification.

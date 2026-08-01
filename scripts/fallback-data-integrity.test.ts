@@ -53,6 +53,34 @@ function writeUnderMinimumFixture(sourcePath: string, filePath: string): void {
   fs.writeFileSync(filePath, `${JSON.stringify(envelope, null, 2)}\n`);
 }
 
+function writeLegacyPolicyFixture(
+  sourcePath: string,
+  filePath: string,
+  policyVersion: string,
+): void {
+  const envelope = JSON.parse(fs.readFileSync(sourcePath, "utf8")) as {
+    date: string;
+    policy_version: string;
+    status: string;
+    run_report: { published: number; selection?: unknown };
+    items: Array<Record<string, unknown>>;
+  };
+  if (envelope.items.length < 3) {
+    throw new Error(`fixture ${sourcePath} needs at least 3 items`);
+  }
+
+  envelope.date = "2026-08-01";
+  envelope.policy_version = policyVersion;
+  envelope.status = "published";
+  envelope.run_report.published = 3;
+  delete envelope.run_report.selection;
+  envelope.items = envelope.items.slice(0, 3).map((item) => ({
+    ...item,
+    published: true,
+  }));
+  fs.writeFileSync(filePath, `${JSON.stringify(envelope, null, 2)}\n`);
+}
+
 afterEach(() => {
   for (const root of tempRoots.splice(0)) {
     fs.rmSync(root, { force: true, recursive: true });
@@ -183,24 +211,27 @@ it.each([
     variable: "MEMEDAILY_DATE",
     directory: "daily",
     fixture: "data/daily/2026-08-01.json",
+    legacyPolicy: "v3-dynamic-selection",
   },
   {
     script: "create-skipped-news-day.ts",
     variable: "DAILYNEWS_DATE",
     directory: "daily-news",
     fixture: "data/daily-news/2026-08-01.json",
+    legacyPolicy: "v2-民生",
   },
 ])("rejects a three-item legacy-policy day via $script", ({
   script,
   variable,
   directory,
   fixture,
+  legacyPolicy,
 }) => {
   const root = tempRoot();
   const targetDir = path.join(root, "data", directory);
   const filePath = path.join(targetDir, "2026-08-01.json");
   fs.mkdirSync(targetDir, { recursive: true });
-  fs.copyFileSync(path.join(repoRoot, fixture), filePath);
+  writeLegacyPolicyFixture(path.join(repoRoot, fixture), filePath, legacyPolicy);
 
   const result = runScript(script, root, { [variable]: "2026-08-01" });
 
