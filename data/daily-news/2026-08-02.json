@@ -1,0 +1,890 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-2026",
+  "date": "2026-08-02",
+  "generated_at": "2026-08-02T07:28:25+08:00",
+  "published_at": "2026-08-02T07:28:25+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 10,
+    "dropped_safety": {
+      "minors": 1,
+      "privacy": 1,
+      "controversy": 1,
+      "public_safety": 1,
+      "harassment": 1,
+      "rumor": 1,
+      "propaganda": 1,
+      "politics": 1,
+      "celebrity_dispute": 1,
+      "geopolitics": 1
+    },
+    "dropped_low_confidence": 10,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 18,
+      "state_media_sources": 2,
+      "major_media_sources": 5,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "relaxed_48h",
+      "qualified": {
+        "strict_24h": 0,
+        "relaxed_48h": 10,
+        "relaxed_72h": 17
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "国家发展改革与能源公开文件",
+            "市场监管和国家标准平台",
+            "民政部门规章",
+            "新华社与人民网全国报道",
+            "健康服务国家标准",
+            "食品质量国家标准",
+            "交通出行与数字服务标准",
+            "公开民生新闻线索"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-02-food-shelf-life-guide",
+          "story_identity": "cn-food-shelf-life-gbt47141-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-02-food-shelf-life-guide",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-02-renewable-share-rule",
+          "story_identity": "cn-renewable-consumption-minimum-share-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-08-02-renewable-share-rule",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 19,
+            "evidence": 15
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-02-social-awards-rule",
+          "story_identity": "cn-social-organization-awards-rule-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-02-social-awards-rule",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 19,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-02-maternal-health-standard",
+          "story_identity": "cn-maternal-infant-health-service-gbt33855-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-02-maternal-health-standard",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-02-social-branch-rule",
+          "story_identity": "cn-social-group-branch-rule-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-02-social-branch-rule",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-02-solar-energy-label",
+          "story_identity": "cn-solar-water-system-energy-label-rule-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-02-solar-energy-label",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-02-frozen-food-standards",
+          "story_identity": "cn-frozen-food-quality-standards-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-02-frozen-food-standards",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 19,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-02-health-service-standard",
+          "story_identity": "cn-health-service-gbt30443-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-02-health-service-standard",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 17,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-02-health-supplies-safe-use",
+          "story_identity": "cn-health-supplies-gbt33355-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-02-health-supplies-safe-use",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 17,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-02-wind-standards",
+          "story_identity": "cn-four-wind-power-standards-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-08-02-wind-standards",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "cand-13-health-service-classification",
+          "story_identity": "cn-health-service-gbt30444-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "总分仅达relaxed72，直接可操作信息有限"
+        },
+        {
+          "candidate_key": "cand-14-health-supplies-after-sales",
+          "story_identity": "cn-health-supplies-gbt33354-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "总分仅达relaxed72，公众热度不足"
+        },
+        {
+          "candidate_key": "cand-15-passenger-message-priority",
+          "story_identity": "cn-passenger-message-gbt47045-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 19,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "专业性较强，普通读者直接关联有限"
+        },
+        {
+          "candidate_key": "cand-16-processed-food-terms",
+          "story_identity": "cn-processed-food-gbt15091-1-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 17,
+            "everyday_relevance": 19,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "术语型标准新闻价值有限"
+        },
+        {
+          "candidate_key": "cand-17-industrial-green-plan",
+          "story_identity": "cn-industrial-green-plan-release-2026-07-31",
+          "research_pass": 1,
+          "occurred_at": "2026-07-31T14:39:34+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 13,
+            "everyday_relevance": 19,
+            "evidence": 15
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "日常关联弱于消费与服务类候选"
+        },
+        {
+          "candidate_key": "cand-18-self-storage-standard",
+          "story_identity": "cn-self-storage-gbt47529-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "drop_reason": "低于65分下限"
+        },
+        {
+          "candidate_key": "cand-19-tourism-shopping-standard",
+          "story_identity": "cn-tourism-shopping-gbt26356-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "drop_reason": "低于65分下限"
+        },
+        {
+          "candidate_key": "cand-20-laundry-terms-standard",
+          "story_identity": "cn-laundry-terms-gbt33452-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "drop_reason": "低于65分下限"
+        },
+        {
+          "candidate_key": "cand-21-telecom-online-hall",
+          "story_identity": "cn-telecom-online-hall-gbt47484-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "总分仅达relaxed72，公开报道热度不足"
+        },
+        {
+          "candidate_key": "cand-22-dried-red-dates",
+          "story_identity": "cn-dried-red-jujube-gbt5835-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 17,
+            "everyday_relevance": 19,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "仅达到relaxed72，单一品类热度有限"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-02-food-shelf-life-guide",
+      "story_identity": "cn-food-shelf-life-gbt47141-2026-effective",
+      "headline": "🥫 食品保质期确定有了新版国家指南",
+      "summary": "《食品保质期确定指南》国家标准自8月1日起实施，为食品生产经营环节确定保质期提供统一参考；消费者仍应以具体商品标签和储存条件为准。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 17,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "只介绍国家标准生效及适用边界，不替代具体食品标签和监管要求。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家标准全文公开系统",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=6C6D4ED69432036B79BACA0DFC74E5CA",
+          "title": "GB/T 47141-2026 食品保质期确定指南",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "页面载明标准名称、发布日期及2026年8月1日实施日期。"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家标准全文公开系统",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/nd?no=2661",
+          "title": "2026年第2号中国国家标准公告全文公开通知",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "公告清单再次列明该标准于2026年8月1日实施。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-renewable-share-rule",
+      "story_identity": "cn-renewable-consumption-minimum-share-effective-2026-08-01",
+      "headline": "🌱 可再生能源消费最低比重新规落地",
+      "summary": "可再生能源消费最低比重和电力消纳责任权重办法已于8月1日起施行，重点用能行业将按年度目标接受监测考核，并把绿氢、绿色甲醇等非电消费逐步纳入制度范围。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 74,
+      "score_breakdown": {
+        "heat": 23,
+        "freshness": 17,
+        "everyday_relevance": 19,
+        "evidence": 15
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "只说明已生效制度及其适用范围，不推演电价变化。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家发展改革委",
+          "url": "https://www.ndrc.gov.cn/xxgk/zcfb/fzggwl/202606/t20260612_1405837.html",
+          "title": "《可再生能源消费最低比重目标和可再生能源电力消纳责任权重制度实施办法》2026年第42号令",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "载明办法自2026年8月1日起施行。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.nea.gov.cn/20260626/fa52e425ad3743428c5088cde69d1712/c.html",
+          "title": "压实可再生能源消纳和消费责任 实施办法出台",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "说明制度覆盖省级区域和重点用能行业。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-social-awards-rule",
+      "story_identity": "cn-social-organization-awards-rule-effective-2026-08-01",
+      "headline": "🏅 社会组织评比表彰新规开始施行",
+      "summary": "社会组织评比表彰活动管理办法已于8月1日起施行，未经批准不得借峰会、论坛或展会违规颁奖，也不得向参评对象收取或变相收取费用，以减少乱评比、乱授牌。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 73,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 16,
+        "everyday_relevance": 19,
+        "evidence": 14
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "只概述公开办法中的禁止事项。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "河北省委社会工作部",
+          "url": "https://www.hbshgzb.gov.cn/2026-07/17/content_9536865.htm",
+          "title": "两部门发文明确社会组织评比表彰活动禁止情形",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "载明办法自2026年8月1日起施行及主要禁止事项。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "https://society.people.com.cn/n1/2026/0716/c1008-40762143.html",
+          "title": "两部门发文明确社会组织评比表彰活动禁止情形",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "报道不得违规收费、借活动颁奖等要求。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-maternal-health-standard",
+      "story_identity": "cn-maternal-infant-health-service-gbt33855-2026-effective",
+      "headline": "🤱 母婴保健服务机构通用要求施行",
+      "summary": "《母婴保健服务机构通用要求》国家标准自8月1日起实施，面向母婴保健服务机构提供统一服务要求参考，消费者可据此关注机构服务规范与信息透明度。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 73,
+      "score_breakdown": {
+        "heat": 22,
+        "freshness": 17,
+        "everyday_relevance": 20,
+        "evidence": 14
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅说明通用服务标准生效，不作机构资质、医疗效果或个体健康判断。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家标准全文公开系统",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=1FE063378481F42AC277D56E0D032F8F",
+          "title": "GB/T 33855-2026 母婴保健服务机构通用要求",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "页面载明标准于2026年8月1日实施，主管和归口部门为国家中医药局。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国经济网",
+          "url": "https://www.ce.cn/cysc/zljd/gd/202602/t20260205_2755043.shtml",
+          "title": "五项保健服务新国标集中发布 8月1日正式实施",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "报道母婴保健服务机构等五项保健服务标准的实施安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-social-branch-rule",
+      "story_identity": "cn-social-group-branch-rule-effective-2026-08-01",
+      "headline": "🏢 社会团体分支机构管理办法施行",
+      "summary": "社会团体分支机构、代表机构管理办法已于8月1日起施行，明确分支机构不具有法人资格，禁止设立地域性、姓氏宗亲等四类分支机构，并规范命名、收费和活动管理。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 72,
+      "score_breakdown": {
+        "heat": 22,
+        "freshness": 16,
+        "everyday_relevance": 20,
+        "evidence": 14
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅概述已经施行的部门规章。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "汉中市民政局",
+          "url": "https://mzj.hanzhong.gov.cn/hzmzjwz/fgwj/202607/d3842d82a32349fb91cb99668657fa7f.shtml",
+          "title": "社会团体分支机构、代表机构管理办法",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "刊载规章全文并载明2026年8月1日起施行。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "法治日报",
+          "url": "https://epaper.legaldaily.com.cn/fzrb/content/20260703/Articel08003GN.htm",
+          "title": "民政部公布《社会团体分支机构、代表机构管理办法》",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "报道办法的法律地位、设立要求和管理责任。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-solar-energy-label",
+      "story_identity": "cn-solar-water-system-energy-label-rule-effective-2026-08-01",
+      "headline": "☀️ 太阳能热水系统新版能效标识启用",
+      "summary": "家用太阳能热水系统新版能效标识实施规则已于8月1日起实行，更新产品能效信息展示要求；实施日前出厂或进口的产品可按规定延迟加施新版标识，消费者可据标签比较能效。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 72,
+      "score_breakdown": {
+        "heat": 21,
+        "freshness": 17,
+        "everyday_relevance": 20,
+        "evidence": 14
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "说明过渡期，避免把旧标识产品误写为违规。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "市场监管总局",
+          "url": "https://www.samr.gov.cn/xw/zj/art/2026/art_622696c3b0d24421b782e1ffd657dbeb.html",
+          "title": "能源效率标识的产品目录（2026年版）及相关实施规则",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "载明家用太阳能热水系统规则自2026年8月1日起实行及过渡安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-frozen-food-standards",
+      "story_identity": "cn-frozen-food-quality-standards-effective-2026-08-01",
+      "headline": "🥟 速冻面米食品和饺子新版质量通则施行",
+      "summary": "速冻面米食品与速冻饺子两项新版质量通则自8月1日起实施，分别更新对应产品的质量标准参考；消费者购买时仍应查看包装标签、储存温度与保质期。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 71,
+      "score_breakdown": {
+        "heat": 21,
+        "freshness": 17,
+        "everyday_relevance": 19,
+        "evidence": 14
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "只介绍推荐性国家标准生效，不作具体品牌或产品质量判断。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家标准全文公开系统",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=9BE9FC8D7955813AF94216DAC72C1256",
+          "title": "GB/T 47138-2026 速冻面米食品质量通则",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "页面载明标准于2026年8月1日实施。"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家标准全文公开系统",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=177D2A648160E54E2A87ED9FBBF543EA",
+          "title": "GB/T 23786-2026 速冻饺子质量通则",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "页面载明标准于2026年8月1日实施。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-health-service-standard",
+      "story_identity": "cn-health-service-gbt30443-2026-effective",
+      "headline": "🧾 保健服务通用要求新版标准施行",
+      "summary": "新版《保健服务通用要求》国家标准自8月1日起实施，进一步规范相关机构的人员、服务和管理要求；公众选择保健服务时仍应核验经营资质、服务范围与收费信息。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 70,
+      "score_breakdown": {
+        "heat": 19,
+        "freshness": 17,
+        "everyday_relevance": 20,
+        "evidence": 14
+      },
+      "heat_rank": 8,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "只说明通用服务标准生效，不为具体机构背书，也不提供医疗建议。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家标准全文公开系统",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=2269482A4B5E606B61B05D1F644A5739",
+          "title": "GB/T 30443-2026 保健服务通用要求",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "页面载明标准名称、发布日期及2026年8月1日实施日期。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国经济网",
+          "url": "https://www.ce.cn/cysc/zljd/gd/202602/t20260205_2755043.shtml",
+          "title": "五项保健服务新国标集中发布 8月1日正式实施",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "报道保健服务通用要求等五项国家标准的实施安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-health-supplies-safe-use",
+      "story_identity": "cn-health-supplies-gbt33355-2026-effective",
+      "headline": "🧰 保健服务用品安全使用规范施行",
+      "summary": "《保健服务用品用具安全使用规范》国家标准自8月1日起实施，为相关用品用具的安全使用提供统一参考；消费者仍需结合产品说明、服务资质和个人健康情况使用。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 70,
+      "score_breakdown": {
+        "heat": 19,
+        "freshness": 17,
+        "everyday_relevance": 20,
+        "evidence": 14
+      },
+      "heat_rank": 9,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅呈现安全使用标准，不替代产品说明、专业健康建议或监管要求。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家标准全文公开系统",
+          "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=D9E561CB447BF3EB40617E83E441C9F4",
+          "title": "GB/T 33355-2026 保健服务用品用具安全使用规范",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "页面载明标准于2026年8月1日实施，主管和归口部门为国家中医药局。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国经济网",
+          "url": "https://www.ce.cn/cysc/zljd/gd/202602/t20260205_2755043.shtml",
+          "title": "五项保健服务新国标集中发布 8月1日正式实施",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "报道保健服务用品用具安全使用等国家标准的实施安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-wind-standards",
+      "story_identity": "cn-four-wind-power-standards-effective-2026-08-01",
+      "headline": "🌬️ 四项风电国家标准开始实施",
+      "summary": "四项风电国家标准已于8月1日起实施，覆盖机组绿色拆除、塔架安全监测、制动系统和偏航系统，为老旧机组退役、运行维护及海上风电安全提供统一技术参考。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 70,
+      "score_breakdown": {
+        "heat": 23,
+        "freshness": 16,
+        "everyday_relevance": 17,
+        "evidence": 14
+      },
+      "heat_rank": 10,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅说明标准范围，不推演发电成本或电价。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "全国标准信息公共服务平台",
+          "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=511EBC5968E09318E06397BE0A0AFBD5",
+          "title": "GB/T 47555-2026 风力发电机组绿色拆除通用技术规范",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "页面载明标准于2026年8月1日实施。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "人民网",
+          "url": "https://finance.people.com.cn/n1/2026/0703/c1004-40753161.html",
+          "title": "四项风电新国标将实施 构建全生命周期标准体系",
+          "captured_at": "2026-08-02T07:16:16+08:00",
+          "note": "报道四项标准的实施日期和覆盖方向。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
