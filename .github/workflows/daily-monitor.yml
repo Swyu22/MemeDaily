@@ -25,7 +25,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Check today's three-item minimum and deployment
+      - name: Check today's editorial completion and deployment
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -62,15 +62,16 @@ jobs:
           FILE="data/daily/${DATE}.json"
 
           if git cat-file -e "FETCH_HEAD:${FILE}" 2>/dev/null; then
-            STATE="$(git show "FETCH_HEAD:${FILE}" 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{const e=JSON.parse(s);const st=String(e.status||"invalid");const v=["published","partial"].includes(st)&&Array.isArray(e.items)?e.items.filter(i=>i&&i.published!==false).length:0;const r=e.run_report?.published;process.stdout.write(`${st}\t${Number.isInteger(r)?r:-1}\t${v}`)}catch(e){process.stdout.write("invalid\t-1\t0")}})' || printf 'invalid\t-1\t0')"
+            STATE="$(git show "FETCH_HEAD:${FILE}" 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{const e=JSON.parse(s);const st=String(e.status||"invalid");const v=["published","partial"].includes(st)&&Array.isArray(e.items)?e.items.filter(i=>i&&i.published!==false).length:0;const r=e.run_report?.published;const p=String(e.policy_version||"missing");const c=e.run_report?.selection?.editorial_complete===true;process.stdout.write(`${st}\t${Number.isInteger(r)?r:-1}\t${v}\t${p}\t${c}`)}catch(e){process.stdout.write("invalid\t-1\t0\tinvalid\tfalse")}})' || printf 'invalid\t-1\t0\tinvalid\tfalse')"
           else
-            STATE=$'missing\t0\t0'
+            STATE=$'missing\t0\t0\tmissing\tfalse'
           fi
-          IFS=$'\t' read -r STATUS REPORTED VISIBLE <<< "$STATE"
-          echo "date=${DATE} status=${STATUS} reported=${REPORTED} visible=${VISIBLE} minimum=3"
+          IFS=$'\t' read -r STATUS REPORTED VISIBLE POLICY COMPLETE <<< "$STATE"
+          echo "date=${DATE} status=${STATUS} reported=${REPORTED} visible=${VISIBLE} minimum=3 policy=${POLICY} editorial_complete=${COMPLETE}"
 
           if { [ "$STATUS" = "published" ] || [ "$STATUS" = "partial" ]; } \
-            && [ "$REPORTED" -eq "$VISIBLE" ] && [ "$VISIBLE" -ge 3 ]; then
+            && [ "$REPORTED" -eq "$VISIBLE" ] && [ "$VISIBLE" -ge 3 ] \
+            && [ "$POLICY" = "v4-editorial-completeness" ] && [ "$COMPLETE" = "true" ]; then
             PAGES_RUN=""
             PAGES_CHECKED=false
             for attempt in 1 2 3; do
@@ -88,13 +89,13 @@ jobs:
             elif [ -z "$PAGES_RUN" ]; then
               open_deployment_issue "live main SHA ${LIVE_SHA} 尚无对应的成功 Pages run"
             else
-              echo "OK: today has ${VISIBLE}/3 visible memes and Pages run ${PAGES_RUN} covers live main ${LIVE_SHA}."
+              echo "OK: today is editorially complete with ${VISIBLE}/3..10 visible memes and Pages run ${PAGES_RUN} covers live main ${LIVE_SHA}."
             fi
             exit 0
           fi
 
           TITLE="MemeDaily 未发布告警: ${DATE} (${STATUS}, ${VISIBLE}/3)"
-          BODY="自动监控：\`data/daily/${DATE}.json\`（Asia/Shanghai）状态为 \`${STATUS}\`，报告 \`${REPORTED}\` 条、读者可见 \`${VISIBLE}/3\` 条，未达到每日最低三条。请检查 Codex Cloud 每日任务与候选 PR。"
+          BODY="自动监控：\`data/daily/${DATE}.json\`（Asia/Shanghai）状态为 \`${STATUS}\`，报告 \`${REPORTED}\` 条、读者可见 \`${VISIBLE}/3..10\` 条，策略 \`${POLICY}\`，编辑完成 \`${COMPLETE}\`。当天尚未通过完整研究与发布门禁，请检查 Codex Cloud 每日任务与候选 PR。"
           EXISTING="$(gh issue list --state open --json number,title --jq "[.[]|select(.title|contains(\"MemeDaily 未发布告警: ${DATE}\"))][0].number // empty")"
 
           if [ -n "$EXISTING" ]; then

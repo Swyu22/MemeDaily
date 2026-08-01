@@ -5,6 +5,8 @@
  */
 import { z } from "zod";
 
+export const MEME_EDITORIAL_POLICY_VERSION = "v4-editorial-completeness";
+
 export const PlatformSchema = z.enum([
   "weibo",
   "douyin",
@@ -123,7 +125,7 @@ const CandidateActivitySchema = z.object({
   observed_at: z.iso.datetime({ offset: true }),
 });
 
-const CandidateAuditSchema = z.object({
+export const CandidateAuditSchema = z.object({
   candidate_key: z.string().regex(/^[a-z0-9][a-z0-9-]{2,63}$/),
   canonical_phrase: z.string().min(1).max(48).optional(),
   outcome: CandidateOutcomeSchema,
@@ -135,6 +137,16 @@ const CandidateAuditSchema = z.object({
   score_breakdown: ScoreBreakdownSchema.optional(),
   activity: CandidateActivitySchema.optional(),
   drop_reason: z.string().min(1).max(48).optional(),
+  // Added in v4. Optional at the schema layer so committed v3 history remains readable;
+  // the dynamic policy requires and reconciles it for every v4 candidate.
+  research_pass: z.number().int().min(1).max(10).optional(),
+}).strict();
+
+const ResearchPassSchema = z.object({
+  pass: z.number().int().min(1).max(10),
+  candidates_added: z.number().int().min(1).max(100),
+  cumulative_unique_candidates: z.number().int().min(1).max(100),
+  sources_checked: z.array(PlatformSchema).min(1),
 });
 
 export const DailyEnvelopeSchema = z.object({
@@ -168,6 +180,10 @@ export const DailyEnvelopeSchema = z.object({
         tier: SelectionTierSchema,
         qualified: SelectionQualifiedSchema,
         candidate_audit: z.array(CandidateAuditSchema).min(30).max(100),
+        // v4 declarations stay optional for backward-compatible parsing. The
+        // deterministic gate requires and reconciles both fields for v4 data.
+        editorial_complete: z.boolean().optional(),
+        research_passes: z.array(ResearchPassSchema).min(1).max(10).optional(),
       })
       .optional(),
   }),

@@ -4,7 +4,9 @@
 
 Accepted. Effective for MemeDaily envelopes dated 2026-07-27 or later. It refines
 ADR-008's bounded meme recovery policy without changing the minimum-three terminal
-contract, the trusted publication boundary, or historical envelopes.
+contract, the trusted publication boundary, or historical envelopes. ADR-010
+extends this model from 2026-08-01 with explicit research passes and an editorial
+completeness marker while preserving this ADR's no-fixed-cross-day-quota rule.
 
 ## Context
 
@@ -64,9 +66,10 @@ highest scores, and any additional qualifiers become `dropped_capacity`. Every
 published/drop count in the run report must equal its audit outcome count.
 
 Safety rows deliberately minimize public data: they contain only an opaque
-`candidate-N` key, `dropped_safety`, and one primary categorical `drop_reason`.
-They must not contain the rejected phrase, subject, URL, item id, score,
-breakdown, or activity. Other outcomes do not use `drop_reason`.
+`candidate-N` key, `dropped_safety`, one primary categorical `drop_reason`, and
+the required `research_pass`. They must not contain the rejected phrase, subject,
+URL, item id, score, breakdown, activity, or any other private field. Other
+outcomes do not use `drop_reason`.
 
 ### Activity time is not capture time
 

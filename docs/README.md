@@ -35,3 +35,5 @@ Current automation decisions:
   output, bounded quality relaxation, and monotonic under-minimum repair).
 - `30-decisions/adr-009-dynamic-meme-selection.md` (evidence-based heat/freshness
   selection with no fixed cross-day quota).
+- `30-decisions/adr-010-editorial-completeness-and-domestic-majority.md` (current-policy
+  completion lock, exhaustive up-to-10 selection, and domestic-majority news scope).

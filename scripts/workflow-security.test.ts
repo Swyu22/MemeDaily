@@ -21,10 +21,17 @@ const NODE24_ACTIONS = new Map([
   ["actions/download-artifact", "3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c"],
 ]);
 
-it("confines Codex Cloud PR input to one dated JSON blob before any write token exists", () => {
+function publisherWorkflowSections(): { text: string; validate: string; publish: string } {
   const text = fs.readFileSync(path.join(WORKFLOWS, publisher), "utf8");
-  const validate = text.split("\n  publish:")[0] ?? "";
-  const publish = text.split("\n  publish:")[1] ?? "";
+  return {
+    text,
+    validate: text.split("\n  publish:")[0] ?? "",
+    publish: text.split("\n  publish:")[1] ?? "",
+  };
+}
+
+it("confines Codex Cloud PR input to one dated JSON blob before any write token exists", () => {
+  const { text, validate, publish } = publisherWorkflowSections();
 
   expect(text).toContain("pull_request_target:");
   expect(text).toContain("github.event.pull_request.head.repo.full_name == github.repository");
@@ -45,11 +52,13 @@ it("confines Codex Cloud PR input to one dated JSON blob before any write token 
   expect(publish).not.toContain("contents: write");
   expect(publish).toContain("actions/download-artifact@");
   expect(publish).toContain("npm run check");
-  expect(publish).toContain("live-under-minimum.json");
+  expect(publish).toContain("live-before-repair.json");
   expect(publish).toContain('classify-live "$TARGET" "$DATE" "$FEED"');
   expect(publish).toContain(
-    'preserve-repair codex-artifact/live-under-minimum.json "$TARGET" "$DATE" "$FEED"',
+    'preserve-repair codex-artifact/live-before-repair.json "$TARGET" "$DATE" "$FEED"',
   );
+  expect(publish).toContain("REPAIR_KIND");
+  expect(publish).toContain("editorially complete");
 });
 
 it("contains no active Anthropic publisher or GitHub cron after the Codex Cloud takeover", () => {

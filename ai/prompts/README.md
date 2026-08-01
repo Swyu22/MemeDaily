@@ -7,6 +7,7 @@ transport, idempotency, and trusted-publication rules stay in the cloud runbook.
 | File | Purpose |
 | --- | --- |
 | `CODEX_CLOUD_RUNBOOK.md` | Codex Cloud primary, catch-up, monitor, fallback, and PR handoff contract |
+| `CODEX_CLOUD_TASK_INSTRUCTIONS.md` | Auditable exact template and manifest for all eight server-hosted Scheduled Task prompts |
 | `CODEX_FULL_HANDOFF.md` | Full two-feed takeover and supervised recovery guide |
 | `MEMEDAILY_DAILY_AUTOMATION.md` | Living meme research, safety, evidence, and JSON rules |
 | `DAILYNEWS_DAILY_AUTOMATION.md` | Living news selection, safety, evidence, and JSON rules |

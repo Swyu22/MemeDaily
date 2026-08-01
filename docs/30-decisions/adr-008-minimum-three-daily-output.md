@@ -10,6 +10,9 @@ The minimum-three terminal contract and monotonic repair boundary remain active.
 For MemeDaily editorial selection dated 2026-07-27 or later, the generic
 carry-over wording below is refined and superseded by ADR-009's evidence-based
 dynamic heat/freshness model. ADR-009 deliberately sets no fixed cross-day quota.
+For both feeds dated 2026-08-01 or later, ADR-010 further requires an auditable
+complete search before a three-item result is terminal; count alone is no longer
+sufficient for the later tasks to stop.
 
 ## Context
 

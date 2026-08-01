@@ -1,16 +1,29 @@
 /**
  * input: one trusted live daily envelope, one candidate envelope, and the expected date
- * output: candidate acceptance, live terminal/repair classification, and monotonic repair checks
- * pos: deterministic minimum-three trust boundary used by the Codex daily publisher workflow
+ * output: candidate acceptance, editorial-complete live classification, and bounded repair checks
+ * pos: deterministic trust boundary used by the Codex daily publisher workflow
  */
 import fs from "node:fs";
 import { pathToFileURL } from "node:url";
-import { NewsEnvelopeSchema } from "../src/domain/dailynews/schema";
-import { DailyEnvelopeSchema } from "../src/domain/memedaily/schema";
+import {
+  NEWS_EDITORIAL_POLICY_VERSION,
+  NewsEnvelopeSchema,
+} from "../src/domain/dailynews/schema";
+import {
+  MEME_EDITORIAL_POLICY_VERSION,
+  DailyEnvelopeSchema,
+} from "../src/domain/memedaily/schema";
 
 type JsonRecord = Record<string, unknown>;
 type DailyStatus = "published" | "partial" | "skipped" | "held";
 type Feed = "meme" | "news";
+type RepairKind = "none" | "minimum" | "policy_migration";
+
+const EDITORIAL_COMPLETENESS_DATE = "2026-08-01";
+const CURRENT_POLICIES: Record<Feed, string> = {
+  meme: MEME_EDITORIAL_POLICY_VERSION,
+  news: NEWS_EDITORIAL_POLICY_VERSION,
+};
 
 export type EnvelopeFacts = {
   status: DailyStatus;
@@ -22,6 +35,7 @@ export type EnvelopeFacts = {
 
 export type LiveDecision = EnvelopeFacts & {
   action: "terminal" | "repair";
+  repairKind: RepairKind;
 };
 
 function isRecord(value: unknown): value is JsonRecord {
@@ -32,15 +46,32 @@ function readJson(file: string): unknown {
   return JSON.parse(fs.readFileSync(file, "utf8")) as unknown;
 }
 
-function requireItem(item: unknown, index: number): JsonRecord {
-  if (!isRecord(item)) throw new Error(`items[${index}] must be an object`);
-  if (typeof item.id !== "string" || item.id.length === 0) {
+function requireRecord(value: unknown, message: string): JsonRecord {
+  if (!isRecord(value)) throw new Error(message);
+  return value;
+}
+
+function requireItemId(item: JsonRecord, index: number): void {
+  if (typeof item.id !== "string") {
     throw new Error(`items[${index}].id must be a non-empty string`);
   }
-  if ("published" in item && typeof item.published !== "boolean") {
+  if (item.id.length === 0) {
+    throw new Error(`items[${index}].id must be a non-empty string`);
+  }
+}
+
+function requirePublishedFlag(item: JsonRecord, index: number): void {
+  if (!("published" in item)) return;
+  if (typeof item.published !== "boolean") {
     throw new Error(`items[${index}].published must be a boolean when present`);
   }
-  return item;
+}
+
+function requireItem(item: unknown, index: number): JsonRecord {
+  const record = requireRecord(item, `items[${index}] must be an object`);
+  requireItemId(record, index);
+  requirePublishedFlag(record, index);
+  return record;
 }
 
 function requireItems(envelope: JsonRecord): JsonRecord[] {
@@ -97,18 +128,57 @@ function requireMatchingCount(facts: EnvelopeFacts): void {
   }
 }
 
-export function validateCandidate(raw: unknown, expectedDate: string): EnvelopeFacts {
+function hasEditorialCompleteSelection(envelope: JsonRecord): boolean {
+  const report = envelope.run_report;
+  if (!isRecord(report)) return false;
+  const selection = report.selection;
+  if (!isRecord(selection)) return false;
+  return selection.editorial_complete === true;
+}
+
+function requireCurrentPolicy(envelope: JsonRecord, feed: Feed): void {
+  if (envelope.policy_version !== CURRENT_POLICIES[feed]) {
+    throw new Error(
+      `candidate policy_version must be ${CURRENT_POLICIES[feed]}; got ${String(envelope.policy_version)}`,
+    );
+  }
+}
+
+function requireEditorialComplete(raw: unknown, feed: Feed): void {
+  const envelope = requireRecord(raw, "envelope must be an object");
+  requireCurrentPolicy(envelope, feed);
+  if (!hasEditorialCompleteSelection(envelope)) {
+    throw new Error("candidate must declare run_report.selection.editorial_complete=true");
+  }
+}
+
+function requireCandidateStatus(status: DailyStatus): void {
+  if (status === "published") return;
+  if (status === "partial") return;
+  throw new Error(`candidate status must be published or partial; got ${status}`);
+}
+
+function requireNoHiddenRows(facts: EnvelopeFacts): void {
+  if (facts.rawItems.length === facts.rawPublished) return;
+  throw new Error("candidate must not contain unpublished or hidden rows");
+}
+
+function requireMinimumItems(facts: EnvelopeFacts): void {
+  if (facts.reported >= 3) return;
+  throw new Error(`candidate must contain at least 3 published items; got ${facts.reported}`);
+}
+
+export function validateCandidate(
+  raw: unknown,
+  expectedDate: string,
+  feed: Feed,
+): EnvelopeFacts {
   const facts = envelopeFacts(raw, expectedDate);
-  if (facts.status !== "published" && facts.status !== "partial") {
-    throw new Error(`candidate status must be published or partial; got ${facts.status}`);
-  }
-  if (facts.rawItems.length !== facts.rawPublished) {
-    throw new Error("candidate must not contain unpublished or hidden rows");
-  }
+  requireCandidateStatus(facts.status);
+  requireNoHiddenRows(facts);
   requireMatchingCount(facts);
-  if (facts.reported < 3) {
-    throw new Error(`candidate must contain at least 3 published items; got ${facts.reported}`);
-  }
+  requireMinimumItems(facts);
+  requireEditorialComplete(raw, feed);
   return facts;
 }
 
@@ -118,16 +188,75 @@ function requireValidSkipped(facts: EnvelopeFacts): void {
   }
 }
 
-export function classifyLive(raw: unknown, expectedDate: string): LiveDecision {
+function isCurrentEditorialComplete(raw: unknown, feed: Feed): boolean {
+  if (!isRecord(raw)) return false;
+  if (raw.policy_version !== CURRENT_POLICIES[feed]) return false;
+  return hasEditorialCompleteSelection(raw);
+}
+
+function repairDecision(facts: EnvelopeFacts, repairKind: RepairKind): LiveDecision {
+  return { ...facts, action: "repair", repairKind };
+}
+
+function terminalDecision(facts: EnvelopeFacts): LiveDecision {
+  return { ...facts, action: "terminal", repairKind: "none" };
+}
+
+function requireLiveNotHeld(facts: EnvelopeFacts): void {
+  if (facts.status !== "held") return;
+  throw new Error("held live envelope is an incident");
+}
+
+function requireSkippedShape(facts: EnvelopeFacts): void {
+  if (facts.status !== "skipped") return;
+  requireValidSkipped(facts);
+}
+
+function minimumDecision(facts: EnvelopeFacts): LiveDecision | undefined {
+  if (facts.reported >= 3) return undefined;
+  return repairDecision(facts, "minimum");
+}
+
+function policyMigrationDecision(
+  raw: unknown,
+  expectedDate: string,
+  feed: Feed,
+  facts: EnvelopeFacts,
+): LiveDecision | undefined {
+  if (expectedDate < EDITORIAL_COMPLETENESS_DATE) return undefined;
+  if (!isRecord(raw)) return undefined;
+  if (raw.policy_version === CURRENT_POLICIES[feed]) return undefined;
+  return repairDecision(facts, "policy_migration");
+}
+
+function requirePolicyMigrationEligible(raw: unknown, feed: Feed): void {
+  if (!isRecord(raw)) return;
+  if (raw.policy_version !== CURRENT_POLICIES[feed]) return;
+  throw new Error("current-policy live envelope is not editorially complete");
+}
+
+function completeDayDecision(
+  raw: unknown,
+  expectedDate: string,
+  feed: Feed,
+  facts: EnvelopeFacts,
+): LiveDecision {
+  if (expectedDate < EDITORIAL_COMPLETENESS_DATE) return terminalDecision(facts);
+  if (isCurrentEditorialComplete(raw, feed)) return terminalDecision(facts);
+  requirePolicyMigrationEligible(raw, feed);
+  return repairDecision(facts, "policy_migration");
+}
+
+export function classifyLive(raw: unknown, expectedDate: string, feed: Feed): LiveDecision {
   const facts = envelopeFacts(raw, expectedDate);
-  if (facts.status === "held") throw new Error("held live envelope is an incident");
-  if (facts.status === "skipped") {
-    requireValidSkipped(facts);
-    return { ...facts, action: "repair" };
-  }
+  requireLiveNotHeld(facts);
+  requireSkippedShape(facts);
   requireMatchingCount(facts);
-  const action = facts.reported >= 3 ? "terminal" : "repair";
-  return { ...facts, action };
+  const migration = policyMigrationDecision(raw, expectedDate, feed, facts);
+  if (migration) return migration;
+  const minimum = minimumDecision(facts);
+  if (minimum) return minimum;
+  return completeDayDecision(raw, expectedDate, feed, facts);
 }
 
 function requirePreservedPrefix(liveItems: JsonRecord[], candidateItems: JsonRecord[]): void {
@@ -145,11 +274,14 @@ export function preserveRepair(
   liveRaw: unknown,
   candidateRaw: unknown,
   expectedDate: string,
+  feed: Feed,
 ): void {
-  const live = classifyLive(liveRaw, expectedDate);
+  const live = classifyLive(liveRaw, expectedDate, feed);
   if (live.action !== "repair") throw new Error("live envelope is already terminal");
-  const candidate = validateCandidate(candidateRaw, expectedDate);
-  requirePreservedPrefix(live.visibleItems, candidate.visibleItems);
+  const candidate = validateCandidate(candidateRaw, expectedDate, feed);
+  if (live.repairKind === "minimum") {
+    requirePreservedPrefix(live.visibleItems, candidate.visibleItems);
+  }
 }
 
 function usage(): string {
@@ -174,9 +306,9 @@ function readFeedEnvelope(file: string, feed: Feed): unknown {
 }
 
 function classifyForCli(file: string, expectedDate: string, feed: Feed): void {
-  const result = classifyLive(readFeedEnvelope(file, feed), expectedDate);
+  const result = classifyLive(readFeedEnvelope(file, feed), expectedDate, feed);
   process.stdout.write(
-    `${result.action}\t${result.status}\t${result.reported}\t${result.rawPublished}\n`,
+    `${result.action}\t${result.status}\t${result.reported}\t${result.rawPublished}\t${result.repairKind}\n`,
   );
 }
 
@@ -184,27 +316,37 @@ function requireCliArgs(args: string[], count: number): void {
   if (args.length !== count) throw new Error(usage());
 }
 
+function cliArg(args: string[], index: number): string {
+  return args[index] ?? "";
+}
+
 function validateCandidateCli(args: string[]): void {
   requireCliArgs(args, 3);
-  const [file = "", expectedDate = "", feed = ""] = args;
-  const result = validateCandidate(readFeedEnvelope(file, requireFeed(feed)), expectedDate);
+  const file = cliArg(args, 0);
+  const expectedDate = cliArg(args, 1);
+  const parsedFeed = requireFeed(cliArg(args, 2));
+  const result = validateCandidate(readFeedEnvelope(file, parsedFeed), expectedDate, parsedFeed);
   process.stdout.write(`candidate-ok\t${result.status}\t${result.reported}\n`);
 }
 
 function classifyLiveCli(args: string[]): void {
   requireCliArgs(args, 3);
-  const [file = "", expectedDate = "", feed = ""] = args;
-  classifyForCli(file, expectedDate, requireFeed(feed));
+  const file = cliArg(args, 0);
+  const expectedDate = cliArg(args, 1);
+  classifyForCli(file, expectedDate, requireFeed(cliArg(args, 2)));
 }
 
 function preserveRepairCli(args: string[]): void {
   requireCliArgs(args, 4);
-  const [liveFile = "", candidateFile = "", expectedDate = "", rawFeed = ""] = args;
-  const feed = requireFeed(rawFeed);
+  const liveFile = cliArg(args, 0);
+  const candidateFile = cliArg(args, 1);
+  const expectedDate = cliArg(args, 2);
+  const feed = requireFeed(cliArg(args, 3));
   preserveRepair(
     readFeedEnvelope(liveFile, feed),
     readFeedEnvelope(candidateFile, feed),
     expectedDate,
+    feed,
   );
   process.stdout.write("repair-ok\n");
 }

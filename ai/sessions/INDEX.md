@@ -9,3 +9,4 @@
 | 2026-07-20 | `2026-07-20--publish-resilience-hardening.md` | DailyNews outage diagnosis, supervised recovery, catchup-retry + agent fail-fast/self-check hardening. |
 | 2026-07-25 | `2026-07-25--codex-cloud-publisher-takeover.md` | Three-end reconciliation, publisher hardening, and an attempted Cloud scheduler handoff later corrected on 2026-07-26. |
 | 2026-07-26 | `2026-07-26--server-scheduled-publishing-recovery.md` | Replaced local heartbeats with Web Scheduled Tasks, enforced a three-item daily minimum, repaired both feeds, and verified trusted publication plus server idempotency. |
+| 2026-08-01 | `2026-08-01--editorial-completeness-and-domestic-news.md` | Separates the three-item availability floor from editorial completion, restores domestic-majority news, updates eight Cloud tasks, and reruns both feeds end to end. |

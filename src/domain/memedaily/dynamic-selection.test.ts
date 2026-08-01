@@ -1,12 +1,16 @@
 import { describe, expect, it } from "vitest";
-import type { DailyEnvelope, MemeItem } from "./schema";
+import {
+  DailyEnvelopeSchema,
+  MEME_EDITORIAL_POLICY_VERSION,
+  type DailyEnvelope,
+  type MemeItem,
+} from "./schema";
 import { dynamicSelectionIssues } from "./dynamic-selection";
 
 type Selection = NonNullable<DailyEnvelope["run_report"]["selection"]>;
 type SelectionTier = Selection["tier"];
 type SelectionQualified = Selection["qualified"];
 type CandidateAudit = Selection["candidate_audit"][number];
-
 const firstDate = "2026-07-27";
 const secondDate = "2026-07-28";
 const defaultScore = {
@@ -185,6 +189,63 @@ function selectedDay(
     run_report: runReportFor(date, tier, items),
     items,
   };
+}
+
+function auditForCandidateCount(
+  date: string, items: MemeItem[], candidateCount: number,
+): CandidateAudit[] {
+  return [
+    ...items.map(selectedAuditRow),
+    ...Array.from(
+      { length: candidateCount - items.length },
+      (_, index) => droppedAuditRow(date, index),
+    ),
+  ];
+}
+
+function assignResearchPasses(
+  audit: CandidateAudit[],
+  passSizes: number[],
+): Selection["research_passes"] {
+  let offset = 0;
+  let cumulative = 0;
+  return passSizes.map((size, index) => {
+    const pass = index + 1;
+    for (const row of audit.slice(offset, offset + size)) row.research_pass = pass;
+    offset += size;
+    cumulative += size;
+    return {
+      pass,
+      candidates_added: size,
+      cumulative_unique_candidates: cumulative,
+      sources_checked: index === 0 ? ["douyin", "weibo"] : ["xiaohongshu", "bilibili"],
+    };
+  });
+}
+
+function editorialDay(items: MemeItem[], passSizes: number[]): DailyEnvelope {
+  const day = selectedDay(firstDate, "strict_24h", items);
+  const candidateCount = passSizes.reduce((sum, size) => sum + size, 0);
+  const audit = auditForCandidateCount(firstDate, items, candidateCount);
+  day.policy_version = MEME_EDITORIAL_POLICY_VERSION;
+  day.run_report.candidates_scanned = candidateCount;
+  day.run_report.dropped_low_confidence = candidateCount - items.length;
+  day.run_report.evidence_summary.candidates_with_urls = candidateCount;
+  day.run_report.selection!.candidate_audit = audit;
+  day.run_report.selection!.editorial_complete = true;
+  day.run_report.selection!.research_passes = assignResearchPasses(audit, passSizes);
+  return day;
+}
+
+function strictItems(count: number, prefix: string): MemeItem[] {
+  return Array.from({ length: count }, (_, index) =>
+    scoredItem(
+      firstDate,
+      `${firstDate}-strict-${index + 1}`,
+      `${prefix}表达${index + 1}`,
+      `${firstDate}T07:00:00+08:00`,
+    ),
+  );
 }
 
 function fullyRecurringBoardIssues(): string[] {
@@ -686,5 +747,54 @@ describe("dynamic selection keeps the highest-scoring qualified candidates", () 
   it("rejects dropping a hotter candidate for capacity", () => {
     const issues = hotterCapacityIssues();
     expect(issues.some((issue) => issue.includes("not the top-scoring"))).toBe(true);
+  });
+});
+
+describe("v4 editorial completeness search depth", () => {
+  it("accepts one complete 30-candidate pass when more than three qualify", () => {
+    const day = DailyEnvelopeSchema.parse(editorialDay(strictItems(4, "完整研究"), [30]));
+    expect(dynamicSelectionIssues([day])).toHaveLength(0);
+  });
+  it("requires a second pass and 45 unique candidates when exactly three qualify", () => {
+    const day = editorialDay(strictItems(3, "仅三条"), [30]);
+    const issues = dynamicSelectionIssues([day]);
+    expect(issues.some((issue) => issue.includes("require a second research pass"))).toBe(true);
+    expect(issues.some((issue) => issue.includes("require >=45 unique candidates"))).toBe(true);
+  });
+  it("accepts exactly three after a reconciled 30 plus 15 candidate search", () => {
+    const day = editorialDay(strictItems(3, "充分三条"), [30, 15]);
+    expect(dynamicSelectionIssues([day])).toHaveLength(0);
+  });
+  it("keeps v3 post-cutoff envelopes compatible without v4 research fields", () => {
+    const day = selectedDay(firstDate, "strict_24h", strictItems(4, "旧版"));
+    day.policy_version = "v3-dynamic-selection";
+    expect(dynamicSelectionIssues([day])).toHaveLength(0);
+  });
+});
+
+describe("v4 editorial completeness accounting", () => {
+  it("rejects a false editorial_complete declaration", () => {
+    const day = editorialDay(strictItems(4, "未完成"), [30]);
+    day.run_report.selection!.editorial_complete = false;
+    const issues = dynamicSelectionIssues([day]);
+    expect(issues.some((issue) => issue.includes("requires editorial_complete=true"))).toBe(true);
+  });
+  it("reconciles pass membership and cumulative candidate totals", () => {
+    const day = editorialDay(strictItems(3, "账本核对"), [30, 15]);
+    day.run_report.selection!.candidate_audit[44]!.research_pass = 1;
+    day.run_report.selection!.research_passes![1]!.cumulative_unique_candidates = 44;
+    const issues = dynamicSelectionIssues([day]);
+    expect(issues.some((issue) => issue.includes("research pass 1 candidates_added"))).toBe(true);
+    expect(issues.some((issue) => issue.includes("research pass 2 cumulative"))).toBe(true);
+    expect(issues.some((issue) => issue.includes("research final vs candidates_scanned"))).toBe(true);
+  });
+  it("does not allow a qualifying fourth candidate to be hidden as low confidence", () => {
+    const day = editorialDay(strictItems(3, "不可截断"), [30, 15]);
+    const hidden = day.run_report.selection!.candidate_audit[44]!;
+    hidden.score = 83;
+    hidden.score_breakdown = defaultScore;
+    const issues = dynamicSelectionIssues([day]);
+    expect(issues.some((issue) => issue.includes("selected qualified"))).toBe(true);
+    expect(issues.some((issue) => issue.includes("outcome does not match"))).toBe(true);
   });
 });

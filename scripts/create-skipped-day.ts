@@ -5,7 +5,10 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { DailyEnvelopeSchema } from "../src/domain/memedaily/schema";
+import {
+  MEME_EDITORIAL_POLICY_VERSION,
+  DailyEnvelopeSchema,
+} from "../src/domain/memedaily/schema";
 import { visibleItems } from "../src/domain/memedaily/rules";
 import { resolveFallbackTarget } from "./fallback-target";
 
@@ -43,18 +46,23 @@ if (!fs.existsSync(filePath)) {
 
 const envelope = DailyEnvelopeSchema.parse(JSON.parse(fs.readFileSync(filePath, "utf8")));
 const visible = visibleItems(envelope).length;
+const editorialComplete =
+  targetDate < "2026-08-01" ||
+  (envelope.policy_version === MEME_EDITORIAL_POLICY_VERSION &&
+    envelope.run_report.selection?.editorial_complete === true);
 const complete =
   envelope.date === targetDate &&
   (envelope.status === "published" || envelope.status === "partial") &&
   envelope.run_report.published === visible &&
-  visible >= 3;
+  visible >= 3 &&
+  editorialComplete;
 
 if (!complete) {
   throw new Error(
-    `[fallback] ${targetDate} is under minimum or malformed ` +
-      `(status=${envelope.status}, reported=${envelope.run_report.published}, visible=${visible}); ` +
-      "run editorial recovery to at least 3 verified items.",
+    `[fallback] ${targetDate} is under minimum, legacy-policy, or malformed ` +
+      `(status=${envelope.status}, reported=${envelope.run_report.published}, visible=${visible}, ` +
+      `editorial_complete=${editorialComplete}); run a complete editorial recovery.`,
   );
 }
 
-console.log(`[fallback] ${targetDate} is complete (${visible}/3); no action`);
+console.log(`[fallback] ${targetDate} is editorially complete (${visible}/3..10); no action`);

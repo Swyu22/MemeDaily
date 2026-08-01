@@ -7,7 +7,7 @@
   conservative publication gates, permanent archives, and unattended cloud publishing.
 - **Success standard:** trusted validation is the only path to publication; a failed or
   missing run leaves the last valid site online and opens an incident until that feed
-  reaches at least three evidence-qualified, reader-visible items for the day.
+  reaches a current-policy, editorially complete 3–10-item result for the day.
 
 ## Constraints
 - **Collection:** public web intelligence only. No login cookies, private-platform
@@ -37,7 +37,9 @@
 - `src/domain/memedaily/`: meme schema, loaders, evidence/safety/lifecycle gates, and
   deterministic history calculations. It has no UI or infrastructure dependency.
 - `src/domain/dailynews/`: news schema, loaders, labels, freshness, editorial gates, and
-  deterministic history calculations. It has no UI or infrastructure dependency.
+  deterministic history calculations. `README.md` indexes the module;
+  `editorial-policy.ts` owns v3 composition/selection reconciliation. It has no UI
+  or infrastructure dependency.
 - `scripts/`: validation, fail-closed minimum-output guards, trusted publish-time
   stamping, public hot-list prefetching, font generation, and governance checks.
 - `.github/workflows/`: CI, Pages, trusted Codex candidate ingestion, manual
@@ -73,6 +75,17 @@
   history (including held), canonical text is display-anchored, and a complete candidate
   ledger derives the strictest sufficient tier, Top-N/capacity, and every report count.
   Safety-drop ledger rows are opaque and content-free.
+- **Editorial completion (effective 2026-08-01):** three is the availability floor,
+  not a selection target. Both feeds publish every permitted chosen-tier qualifier up
+  to 10, declare completion only after reconciled research/audit accounting, and perform
+  a second pass to at least 45 candidates when exactly three qualify.
+- **News domestic-majority policy:** v3 requires domestic scope `>=ceil(0.75*N)` and
+  international scope `<=floor(0.25*N)`, with no international minimum. Routine local
+  news from any foreign country is excluded absent direct China-reader impact or global
+  representative significance; international authority alone is not heat evidence.
+  Qualification uses the later of score/event-age tiers, everyday relevance `>=15/25`,
+  stable story identity, and a real `occurred_at`. Canonical evidence URLs remove
+  fragments/tracking parameters but retain meaningful query identifiers.
 - **Trusted chronology:** publication jobs set `generated_at` and `published_at`; sources
   cannot claim capture after publication.
 - **News attribution:** every reader-visible DailyNews source has a required `outlet` label.
@@ -81,22 +94,23 @@
 ## Automation Map
 - Eight ChatGPT Work Web Scheduled Tasks: news runs at 06:00, hourly 07:15–12:15,
   14:45, and 21:30; memes run at 07:00, hourly 08:00–13:00, 14:30, and 21:20, all
-  in Asia/Shanghai. Durable behavior lives in `ai/prompts/CODEX_CLOUD_RUNBOOK.md`.
-- Fixed retries always start with one inexpensive live-main minimum preflight. Only a
-  valid `published`/`partial` envelope with at least three visible qualified items is
+  in Asia/Shanghai. Durable behavior lives in `ai/prompts/CODEX_CLOUD_RUNBOOK.md`; the
+  exact persistent Instructions template lives in `ai/prompts/CODEX_CLOUD_TASK_INSTRUCTIONS.md`.
+- Fixed retries always start with one inexpensive live-main completion preflight. Only a
+  current-policy `published`/`partial` envelope with 3–10 visible qualified items,
+  `selection.editorial_complete:true`, and a reconciled domain contract is
   terminal and stops before research, writes, branches, or PRs. The eight former Codex
   Desktop heartbeats were deleted; a local automation pointing at a Cloud context must
   never be described as a server schedule.
-- Meme authoring applies ADR-009's `strict_24h`, `relaxed_48h`, and `relaxed_72h`
-  score/activity tiers without a fixed cross-day count, and must submit the auditable
-  candidate/qualification/capacity ledger. Monitor behavior and terminal no-op semantics
-  are unchanged.
+- Meme authoring applies ADR-009/010's score/activity tiers without a fixed cross-day
+  count. News applies ADR-010's score tiers, domestic ratio, and international gate.
+  Monitors alert on legacy-policy/incomplete data as well as under-minimum data.
 - `codex-daily-pr-publish.yml`: same-repository exact-branch/one-JSON candidate
-  ingestion, explicit three-item candidate gate, serialized new/under-minimum publication,
-  and correlated Pages wait. A complete day remains immutable.
+  ingestion, explicit current-policy completion gate, serialized new/under-minimum or
+  one-time policy-migration publication, and correlated Pages wait. A complete day remains immutable.
 - `daily-{news-}fallback.yml`: manual-only fail-closed recovery guards; the server
   fallback tasks perform the editorial research.
-- `daily-{news-}monitor.yml`: manual-only minimum-count/live-main/Pages verification.
+- `daily-{news-}monitor.yml`: manual-only policy/completion/live-main/Pages verification.
 - `pages.yml`: build and deploy the static export after trusted changes.
 - `ci.yml`: source, data, governance, secret, type, test, and build gates.
 

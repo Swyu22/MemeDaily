@@ -2,6 +2,16 @@
 
 ## Iteration Goal
 
+On 2026-08-01, correct the newly observed minimum-count anchoring without weakening the
+three-item availability floor. Require both feeds to finish a bounded, auditable
+candidate search and publish every qualifying item up to ten. Restore DailyNews to a
+China-centered everyday-life mix with at least 75% domestic scope and at most 25%
+representative international coverage. Synchronize all eight persistent Cloud prompts
+and prove the corrected rules with a real same-day trusted publication and production
+readback.
+
+Historical takeover scope and completed acceptance evidence remain below.
+
 Align local, GitHub `main`, and production; repair confirmed reliability/security/data
 defects; then replace the stopped Anthropic publisher with fully cloud-hosted Codex
 primary, catch-up, monitor, and fallback schedules for both feeds. Correct the
@@ -25,6 +35,21 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
   extraction, paid model APIs in the product, and unrelated credential/account changes.
 
 ## Checklist
+
+### 2026-08-01 editorial-completeness correction
+
+- [x] Fast-forward local `main` to current GitHub `main` and preserve a clean baseline.
+- [x] Add backward-compatible editorial-completeness and research-pass contracts to both feeds.
+- [x] Require a second pass and at least 45 candidates before an exact-three result is terminal.
+- [x] Add independent DailyNews geography/topic fields, domestic/international ratio gates,
+  representative international evidence, and auditable Top-N selection.
+- [x] Add a one-time trusted migration from today's legacy policy envelopes to the new policy.
+- [x] Update the handoff, Cloud runbook, living prompts, project map, ADR, and session state.
+- [x] Update and read back all eight server Scheduled Task prompts without schedule changes.
+- [x] Pass focused tests, `npm run check`, governance checks, and independent review.
+- [ ] Merge the rule release while preserving the active DeployKey-only main ruleset.
+- [ ] Rerun both 2026-08-01 feeds through exact one-file candidates and verify main, Pages,
+  production content, counts, mix, and later-task no-op behavior.
 
 - [x] Fast-forward local `main` and prove local HEAD, remote `main`, latest Pages
   deployment, and production baseline agree.
@@ -111,4 +136,4 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
 
 ## Last Updated
 
-- 2026-07-26 20:46 +0800
+- 2026-08-01

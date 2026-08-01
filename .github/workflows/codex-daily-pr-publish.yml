@@ -6,9 +6,9 @@ name: codex-daily-pr-publish
 #   1. `validate` has read-only permissions, fetches only the JSON blob (never the PR tree),
 #      stamps it with a trusted clock, and runs the repository's full checks.
 #   2. `publish` downloads only the accepted JSON, revalidates against the latest trusted
-#      main tree, permits only a monotonic repair from an under-three live envelope to a
-#      compliant candidate, then receives the dedicated deploy-key credential only in its
-#      final step.
+#      main tree, permits a monotonic under-three repair or one current-policy migration to an
+#      editorially complete candidate, then receives the dedicated deploy-key credential only
+#      in its final step.
 #
 # The cloud task must use one of these exact branch names for today's Asia/Shanghai date:
 #   codex/daily-meme-YYYY-MM-DD
@@ -102,8 +102,8 @@ jobs:
             > codex-artifact/candidate.json
           cp codex-artifact/candidate.json "$TARGET"
 
-          # Candidate must contain at least 3 visible items; the helper also requires
-          # the raw published count to match run_report.published exactly.
+          # Candidate must contain 3..10 visible items, use the current feed policy, and declare
+          # reconciled editorial completion. Domain validation later proves the declaration.
           npx --no-install tsx scripts/daily-publish-gate.ts \
             validate-candidate "$TARGET" "$DATE" "$FEED"
 
@@ -178,25 +178,25 @@ jobs:
               npx --no-install tsx scripts/daily-publish-gate.ts \
                 classify-live "$TARGET" "$DATE" "$FEED"
             )"
-            IFS=$'\t' read -r LIVE_ACTION STATUS REPORTED PUBLISHED_ITEMS <<< "$LIVE_DECISION"
+            IFS=$'\t' read -r LIVE_ACTION STATUS REPORTED PUBLISHED_ITEMS REPAIR_KIND <<< "$LIVE_DECISION"
             if [ "$LIVE_ACTION" = "terminal" ]; then
-              echo "reason=live main already contains compliant ${TARGET} (${STATUS}, ${REPORTED} published)" >> "$GITHUB_OUTPUT"
+              echo "reason=live main already contains editorially complete ${TARGET} (${STATUS}, ${REPORTED} published)" >> "$GITHUB_OUTPUT"
               exit 0
             fi
-            COMMIT_ACTION="repair"
-            cp "$TARGET" codex-artifact/live-under-minimum.json
-            echo "Live ${TARGET} is under the three-item minimum (${STATUS}, reported=${REPORTED}, items=${PUBLISHED_ITEMS}); allowing one monotonic exact-file repair."
+            COMMIT_ACTION="$REPAIR_KIND"
+            cp "$TARGET" codex-artifact/live-before-repair.json
+            echo "Live ${TARGET} needs ${REPAIR_KIND} (${STATUS}, reported=${REPORTED}, items=${PUBLISHED_ITEMS}); validating one bounded exact-file repair."
           fi
 
           mkdir -p "$(dirname "$TARGET")"
           cp codex-artifact/candidate.json "$TARGET"
           npm run stamp:publish -- "$TARGET"
-          if [ -f codex-artifact/live-under-minimum.json ]; then
-            # Under-minimum repair must preserve existing visible item unchanged.
-            # The helper requires at least three items and exact report/count equality
-            # before either a terminal or repair decision.
+          if [ -f codex-artifact/live-before-repair.json ]; then
+            # Under-minimum repair preserves the exact visible prefix. A one-time policy
+            # migration may replace the legacy envelope; every candidate still must be
+            # current-policy, editorially complete, and domain-valid.
             npx --no-install tsx scripts/daily-publish-gate.ts \
-              preserve-repair codex-artifact/live-under-minimum.json "$TARGET" "$DATE" "$FEED"
+              preserve-repair codex-artifact/live-before-repair.json "$TARGET" "$DATE" "$FEED"
           fi
           npm run check
 
