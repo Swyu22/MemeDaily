@@ -48,14 +48,20 @@ one file only on the exact daily candidate branch, open a PR, and never merge or
   enrich the top picks (sources, usage,
   why-it-spreads). Strongly prefer memes corroborated across MULTIPLE independent sources.
   Spend the budget on breadth and quality; the only thing to avoid is needlessly re-fetching
-  identical pages. Keep only the best ~10 — quality and "梗-ness" over filling slots.
+  identical pages. After choosing the tier, publish every qualifying highest-scoring
+  candidate up to 10. Three is only the recovery floor, never a signal to stop research
+  or selection; quality and "梗-ness" still outrank filling weak slots.
 
-## Minimum daily output and dynamic selection (effective 2026-07-27)
+## Editorial completeness and dynamic selection (v4 effective 2026-08-01)
 Every current-day result must be `status: "published"` or `status: "partial"` with at least
 **3 visible items**. `skipped` or a 0–2 item envelope is not a terminal success and must
 trigger recovery rather than stop later catch-up/fallback runs. `held` specifically remains
 an operator-controlled emergency takedown: unattended
 automation must alert and stop, never turn its hidden items visible or overwrite it.
+Use `policy_version:"v4-editorial-completeness"`. A day is terminal only after the
+candidate ledger and research passes reconcile and
+`run_report.selection.editorial_complete:true`; a legacy three-item v3 envelope is work to
+migrate once, not a reason for later Cloud tasks to exit.
 
 Do **not** impose a fixed count or percentage on cross-day memes. A meme that is still rising
 or has a genuine second-wave surge should continue to rank; a brand-new but weak item must not
@@ -82,6 +88,14 @@ before selection, then use this ordered ladder:
 3. If still short, `relaxed_72h`: score ≥65 and verified activity within 72 hours. Publish
    with `status:"partial"`. Never lower the score below 65.
 
+Finish the full pool before selecting. Use the first tier whose count reaches three, then
+publish **all** of that tier's highest-scoring qualifiers up to 10—not exactly three. If the
+derived chosen-tier qualifier count is exactly three, perform a second, genuinely different
+source sweep. The second pass itself must add at least 15 unique candidates, list at least one
+`sources_checked` platform absent from pass one, and expand the reconciled audit to at least
+45 before declaring the day complete. This second pass may confirm that only three qualify;
+it must never invent a fourth.
+
 Record the selected tier in `run_report.selection.tier`. `captured_at` means only “the page
 was opened at this time”; it is not proof that the meme was active then. Every selected item
 must also provide at least one non-`origin` source (`popularity`, `usage_context`, or
@@ -101,6 +115,13 @@ Make the post-identity-deduped candidate pool auditable in `run_report`:
   candidate appears exactly once with one mutually exclusive `outcome`: `selected`,
   `dropped_safety`, `dropped_low_confidence`, `dropped_insufficient_evidence`, or
   `dropped_capacity`. Candidate keys are unique; non-safety canonical phrases are unique.
+- Every audit row records the `research_pass` that first introduced it. Record sequential
+  `selection.research_passes` entries with `pass`, `candidates_added`,
+  `cumulative_unique_candidates`, and the real `sources_checked`. Their counts must reconcile
+  exactly with the audit and `candidates_scanned`. Set `editorial_complete:true` only after
+  this accounting and the selected set have been rechecked. On an exactly-three day, pass two
+  itself adds at least 15 candidates and includes a `sources_checked` platform absent from pass
+  one; merely relabelling one same-scope candidate as a second pass fails.
 - `selection.qualified` records three cumulative counts derived from the audit:
   `{strict_24h, relaxed_48h, relaxed_72h}`. Use the first tier whose count reaches three;
   never declare a relaxed tier while a stricter one already has three.
@@ -110,9 +131,9 @@ Make the post-identity-deduped candidate pool auditable in `run_report`:
   `candidate_key == item_id` and must match that item's score, canonical identity, and source.
 - A `dropped_insufficient_evidence` row records its unique key, stable canonical phrase, and
   outcome. A `dropped_safety` row is deliberately private: use only an opaque `candidate-N`
-  key, the outcome, and one primary categorical `drop_reason`. Never commit its phrase,
-  person/topic, URL, item id, score, breakdown, or activity. Other outcomes have no
-  `drop_reason`.
+  key, the outcome, one primary categorical `drop_reason`, and the required `research_pass`.
+  Never commit its phrase, person/topic, URL, item id, score, breakdown, activity, or any other
+  private field. Other outcomes have no `drop_reason`.
 - `dropped_safety`, `dropped_low_confidence`,
   `evidence_summary.dropped_insufficient_evidence`, and `dropped_capacity` exactly match
   their audit outcomes. Qualified candidates beyond the 10-item display cap use
@@ -328,6 +349,9 @@ do not publish it — it never enters `items`, and the public page never shows a
   ids; repeated appearances of one canonical identity reuse its first id.
 - `items` hard-caps at 10. If more than 10 qualify, keep the 10 highest scores and record
   every remaining chosen-tier qualifier as `dropped_capacity`.
+- Current candidates use `policy_version:"v4-editorial-completeness"`; only a fully
+  reconciled `selection.editorial_complete:true` envelope is terminal for scheduled-task
+  idempotency.
 - For dates on or after `2026-07-26`, `items` and the visible evidence-qualified count must
   both be 3–10. `published` = at least 3 items selected at the normal bar. `partial` = at
   least 3 items after bounded recovery or with an honestly recorded source/platform
@@ -349,7 +373,10 @@ do not publish it — it never enters `items`, and the public page never shows a
   The report also includes `dropped_capacity`; `selection.tier`
   (`strict_24h|relaxed_48h|relaxed_72h`); cumulative `selection.qualified` counts for all
   three tiers; and the privacy-safe, mutually exclusive candidate ledger defined above.
-  Selected rows are the chosen tier's highest-scoring qualifying rows, capped at 10.
+  From v4 it also includes `editorial_complete:true`, reconciled `research_passes`, and a
+  `research_pass` on every audit row. Exactly three chosen-tier qualifiers require at least
+  two passes and 45 candidates. Selected rows are **all** the chosen tier's highest-scoring
+  qualifying rows, capped at 10.
 
 ## Workflow
 1. Read live GitHub `main`, `ai/prompts/CODEX_CLOUD_RUNBOOK.md`, `.cloud.md`,
@@ -366,16 +393,20 @@ do not publish it — it never enters `items`, and the public page never shows a
    recurrence merely because it appeared on a recent day.
 5. Rank new and recurring candidates together with the dynamic rubric. If fewer than three
    clear `strict_24h`, progress to `relaxed_48h`, then `relaxed_72h`. Use `partial` for
-   either relaxed tier; never terminate successfully with `skipped`, `held`, or 0–2 items.
+   either relaxed tier; select all chosen-tier qualifiers up to 10. If exactly three qualify,
+   complete the independent second pass: add at least 15 candidates, add a source platform not
+   checked in pass one, and reach a 45-candidate audit. Never terminate successfully with
+   `skipped`, `held`, or 0–2 items.
 6. Fill `run_report` honestly: `candidates_scanned`, `published`, `dropped_safety` (by
    category), `dropped_low_confidence`, `dropped_capacity`, `sources`,
-   `evidence_summary`, and the complete `selection.{tier,qualified,candidate_audit}` ledger.
+   `evidence_summary`, and the complete
+   `selection.{tier,qualified,editorial_complete,research_passes,candidate_audit}` ledger.
 7. In Codex Cloud, do not request shell access: the separate trusted workflow owns stamping,
    validation, `main`, and Pages. **无 shell 时的自检（Cloud agent 必做）**：你没有 validator 可跑，你留下的文件就是最终产物，一处
    JSON 语法错误就会让**整天发布失败**（真实事故已发生）。所以每次 Write/Edit 之后必须用 Read 重读完整
    文件，核对语法配平未截断、title ≤48、每条 published 项 ≥2 个**不同 URL** 信源且**至少 1 个 tier 为
    `platform_public` 或 `aggregator`**、run_report 计数与 items 一致、候选账本正好覆盖全部
-   `candidates_scanned` 且安全淘汰行不泄露内容；发现问题立即修复并再次重读。
+   `candidates_scanned` 且安全淘汰行只有匿名 key/outcome/drop_reason/research_pass、不泄露其他内容；发现问题立即修复并再次重读。
    **结束前的最后一个动作必须是一次核对通过的完整 Read。**
 8. In Codex Cloud, create/update only the exact candidate branch file and open the non-draft PR
    specified by the runbook; never merge. In trusted local recovery only, run

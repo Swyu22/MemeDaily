@@ -16,6 +16,10 @@ restrained everyday-life news digest. It is not a community, scraper, or private
 - One envelope per day: `data/daily/YYYY-MM-DD.json`.
 - From 2026-07-26 onward, every daily envelope exposes 3–10 evidence-qualified items and
   uses only `published` or `partial`.
+- From 2026-08-01 onward, a terminal meme envelope uses
+  `v4-editorial-completeness`, declares
+  `run_report.selection.editorial_complete:true`, and publishes every qualifier in the
+  chosen score tier up to ten. Three is a recovery floor, not a daily target.
 - Each published item has a stable `id`, title, platforms, type, reader-facing summary,
   origin, usage, fun point, spread reason, lifecycle, internal policy fields, and sources.
 - From 2026-07-27, every meme title begins with one semantic emoji chosen for that phrase;
@@ -37,6 +41,17 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   and evidence sources with outlet metadata.
 - The feed prioritizes genuinely fresh, everyday-life information and non-political
   international culture, science, technology, sports, or public-interest developments.
+- From 2026-08-01 onward, a terminal news envelope uses `v3-domestic-majority`, declares
+  `run_report.selection.editorial_complete:true`, and publishes every qualifier in the
+  chosen score tier up to ten. At least `ceil(0.75*N)` visible items are domestic and at
+  most `floor(0.25*N)` are international; zero international items is valid.
+- International selection is reserved for events with clear China relevance or
+  independently evidenced global significance. Routine local affairs whose effect remains
+  mainly inside any foreign country, city, or institution are excluded regardless of the
+  country involved. Space-agency and astronomy stories are capped rather than used as
+  filler, and every selected item must meet the everyday-relevance floor of 15/25.
+  Direct-China stories carry source-matched connection evidence; global-systemic stories
+  meet higher audience (20/25), heat (30/40), and evidence (12/15) floors.
 
 ### Envelope Integrity
 - Both envelopes include version fields, date, `generated_at`, optional `published_at`,
@@ -52,6 +67,16 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   total, derive all three cumulative tier counts, and prove chosen-tier Top-N/capacity
   ordering. Safety drops retain only an opaque counter key and primary category; rejected
   content, subjects, URLs, item ids, scores, and activity are not persisted.
+- From 2026-08-01, both feeds include auditable research passes. If exactly three items
+  qualify, a second pass must add at least 15 unique candidates from at least one new
+  source scope and expand the deduplicated pool from at least 30 to at least 45 candidates.
+  Each pass and each audit row records its pass identity. Candidate and source URLs are
+  canonicalized for independence checks by removing fragments/tracking parameters while
+  retaining meaningful query ids, and news candidates are also deduplicated by a
+  privacy-safe story identity. Exactly-three completion requires pass one itself to contain
+  at least 30 rows and pass two to introduce a source scope absent from pass one.
+  DailyNews safety rows retain only an opaque `candidate-N`, pass, outcome, and finite
+  primary category; category counts reconcile exactly and no content-derived field remains.
 - For current envelopes, `skipped` or fewer than three visible qualified items is an
   under-minimum incident to recover, not a successful terminal day. `held` is a separate
   safety incident. Historical envelopes before 2026-07-26 retain their recorded status.
@@ -59,14 +84,19 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   missing, skipped, or 0–2 item output, but may not clear `held` or re-expose its items.
 
 ## Evidence, Safety, And Recovery Gates
-- Publish only with at least two independent reachable HTTP(S) URLs.
-- At least one source must be `platform_public` or `aggregator`; third-tier-only evidence is
-  insufficient.
+- A meme item needs at least two independent reachable HTTP(S) URLs, including at least one
+  `platform_public` or `aggregator` source; third-tier-only meme evidence is insufficient.
+- News follows its feed-specific authority bar: a domestic item may qualify with one
+  `official`/`state_media` source (otherwise two URLs including `major_media`), while an
+  international item always needs two canonical-distinct URLs from two independent outlets,
+  including `state_media` or `major_media`.
 - Store URLs and short notes only. Do not store media, screenshots, comment dumps, login
   state, private account data, or long excerpts.
-- Drop politics, disasters/public-safety incidents, crimes/tragedies, celebrity disputes,
-  identifiable minors, privacy invasion, doxxing, harassment, attacks, explicit/illegal or
-  dangerous content, and harmful rumors.
+- For memes, drop politics, disasters/public-safety incidents, crimes/tragedies, celebrity
+  disputes, identifiable minors, privacy invasion, doxxing, harassment, attacks,
+  explicit/illegal or dangerous content, and harmful rumors. News instead follows its separate
+  restrained red-line and tone policy: a major disaster with broad public relevance may qualify,
+  but it must remain factual and non-sensational.
 - A candidate needs a reusable phrase, template, BGM, visual/action pattern, persona, or
   remix structure. A hot one-off news event is not a meme.
 - From 2026-07-27, rank at least 30 new and recurring meme candidates together. There is
@@ -80,9 +110,13 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   normalize to letters/numbers and match the current title or an alias. A held identity is
   never automatically re-exposed. An origin timestamp or recaptured old archive page is not
   evidence of renewed heat.
-- DailyNews may recover an under-three day with useful, still-current material from the
+- DailyNews assigns each candidate the later/weaker of its score tier and real event-age
+  tier, measured from required `occurred_at` against `published_at ?? generated_at`.
+  Future and older-than-72h events do not qualify; selected audit time/identity must match
+  the visible item. It may recover an under-three day with useful, still-current material from the
   previous 72 hours only when it has never been visibly published in an earlier news
-  envelope and still passes the normal authoritative-source gate.
+  envelope and still passes the normal authoritative-source, everyday-relevance, impact,
+  and domestic-majority gates.
 - Recovery may move the meme score floor from 75/24h to 70/48h and finally 65/72h, or
   lower DailyNews heat/freshness/editorial confidence only. Meme reusability remains at
   least 16/20 and evidence at least 7/10. Never fabricate, weaken safety/truth, relax
@@ -112,6 +146,11 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   content/fallback run may write only the exact dated JSON on the exact same-repository
   `codex/daily-{meme|news}-YYYY-MM-DD` branch and open one non-draft PR. It never updates
   or merges `main`; monitor mode is read-mostly and may only maintain its alert issue.
+- Every trigger performs only a cheap live-main preflight before research. It no-ops only
+  for a valid current-policy, editorially complete envelope. Any same-day legacy-policy
+  envelope is a one-time `policy_migration` target, including a legacy skipped or
+  under-minimum envelope; a current-policy 0–2 item envelope remains `under_minimum`, and
+  `held` always remains an unattended incident.
 - A read-only trusted workflow fetches only the candidate JSON blob, never checks out or
   executes the PR tree, stamps chronology, and validates all contracts. A separate job
   resets to live `main`, revalidates after rebase, and exposes the dedicated write deploy

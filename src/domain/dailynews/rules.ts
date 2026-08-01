@@ -3,30 +3,36 @@
  * output: deterministic publication gate decisions for the 日报 feed
  * pos: domain policy layer — evidence bar, red-line content gate, heat-rank invariant
  */
-import type { NewsEnvelope, NewsItem } from "./schema";
+import {
+  NEWS_EDITORIAL_POLICY_VERSION,
+  type NewsEnvelope,
+  type NewsItem,
+} from "./schema";
+import {
+  dailyNewsEditorialIssues,
+  hasNewsEvidence,
+  usesInternationalEvidence,
+  visibleNewsItems,
+} from "./editorial-policy";
 
 const MINIMUM_DAILY_PUBLICATION_DATE = "2026-07-26";
 const MINIMUM_VISIBLE_ITEMS = 3;
+
+function usesV3Policy(envelope: NewsEnvelope): boolean {
+  return envelope.policy_version === NEWS_EDITORIAL_POLICY_VERSION;
+}
 
 /**
  * News evidence bar (authority-weighted, stricter than memes — "未证实宁可不发"):
  * at least one `official`/`state_media` source IS enough; otherwise require >=2 distinct-URL
  * sources with at least one `major_media`. A lone `aggregator` (百度/微博热搜) never qualifies.
  */
-export function hasPublishableEvidence(item: NewsItem): boolean {
-  const uniqueUrls = new Set(item.sources.map((source) => source.url));
-  const hasAuthoritative = item.sources.some(
-    (source) => source.tier === "official" || source.tier === "state_media",
-  );
-  const hasMajorMedia = item.sources.some((source) => source.tier === "major_media");
-  return hasAuthoritative || (uniqueUrls.size >= 2 && hasMajorMedia);
+export function hasPublishableEvidence(item: NewsItem, policyVersion?: string): boolean {
+  return hasNewsEvidence(item, policyVersion);
 }
 
 export function visibleNews(envelope: NewsEnvelope): NewsItem[] {
-  if (envelope.status === "held" || envelope.status === "skipped") {
-    return [];
-  }
-  return envelope.items.filter((item) => item.published && hasPublishableEvidence(item));
+  return visibleNewsItems(envelope);
 }
 
 /**
@@ -35,22 +41,24 @@ export function visibleNews(envelope: NewsEnvelope): NewsItem[] {
  * state, not a successful publication. Only reader-visible, evidence-qualified items count.
  */
 export function minimumDailyPublicationIssues(envelope: NewsEnvelope): string[] {
-  if (
-    envelope.date < MINIMUM_DAILY_PUBLICATION_DATE ||
-    envelope.status === "held"
-  ) {
-    return [];
-  }
+  if (minimumPublicationExempt(envelope)) return [];
 
   const visibleCount = visibleNews(envelope).length;
-  const publishableStatus = envelope.status === "published" || envelope.status === "partial";
-  if (publishableStatus && visibleCount >= MINIMUM_VISIBLE_ITEMS) return [];
+  const publishableStatus = ["published", "partial"].includes(envelope.status);
+  if (!publishableStatus) return minimumPublicationIssue(envelope, visibleCount);
+  if (visibleCount < MINIMUM_VISIBLE_ITEMS) return minimumPublicationIssue(envelope, visibleCount);
 
+  return [];
+}
+function minimumPublicationExempt(envelope: NewsEnvelope): boolean {
+  if (envelope.date < MINIMUM_DAILY_PUBLICATION_DATE) return true;
+  return envelope.status === "held";
+}
+function minimumPublicationIssue(envelope: NewsEnvelope, visibleCount: number): string[] {
   return [
     `${envelope.date} requires status published/partial with at least ${MINIMUM_VISIBLE_ITEMS} visible items; got ${envelope.status} with ${visibleCount}`,
   ];
 }
-
 function normalizeHeadline(value: string): string {
   return Array.from(value.toLowerCase())
     .filter((ch) => /[\p{L}\p{N}]/u.test(ch))
@@ -67,9 +75,8 @@ function normalizeHeadline(value: string): string {
 //  - 灾难/事故 is NO LONGER a red line. 民生 news legitimately covers major events people care about
 //    (四川宜宾地震 was named as a WANTED example); the bucket is dropped. The tone discipline
 //    (factual, restrained, no casualty-sensationalism) is enforced via the PROMPT, not a keyword gate.
-//  - 政府政策 IS a new red line: 政策/政府部署 framing reads too "官方/政府色彩" — exclude it so the
-//    feed stays 民生. Government-organized LIFE events (高考/广交会/航天/体育) contain none of these
-//    terms and pass cleanly; only abstract policy/directive framing is caught.
+//  - Broad words such as 政策/出台/部委 are NOT red lines: they also occur in useful domestic
+//    livelihood reporting. Keep only high-signal political-propaganda and meeting framing here.
 const RED_LINE_BUCKETS: { label: string; terms: string[] }[] = [
   {
     label: "政治/地缘/冲突",
@@ -79,10 +86,10 @@ const RED_LINE_BUCKETS: { label: string; terms: string[] }[] = [
     ],
   },
   {
-    label: "政府/政策",
+    label: "政治宣传/会议",
     terms: [
-      "国务院", "政治局", "部委", "发改委", "印发", "出台", "规划纲要",
-      "会议精神", "政府部署", "战略部署", "中央部署", "政策",
+      "政治局", "会议精神", "政府部署", "战略部署", "中央部署",
+      "贯彻落实", "学习贯彻", "重要讲话精神",
     ],
   },
   {
@@ -149,11 +156,10 @@ export function heatRankIssues(envelope: NewsEnvelope): string[] {
   return [];
 }
 
-// SOFT coverage check (WARN, never fail — per user "强 prompt + 软校验"). The daily mix should
-// carry >=1 non-political 国际 item so the feed isn't 100% domestic 民生 bulletins. Returned
-// separately from envelopeIssueSummary so the validator can print it without failing the build:
-// a genuinely quiet international day shouldn't block publishing, but the gap gets surfaced.
+// Legacy-only warning. v3 deliberately has no international minimum: a three-item digest must be
+// entirely domestic, and international stories appear only when they satisfy the hard 25% cap.
 export function internationalCoverageWarnings(envelope: NewsEnvelope): string[] {
+  if (usesV3Policy(envelope)) return [];
   const visible = visibleNews(envelope);
   if (visible.length === 0) return [];
   const intl = visible.filter((item) => item.category === "国际").length;
@@ -162,61 +168,82 @@ export function internationalCoverageWarnings(envelope: NewsEnvelope): string[] 
   }
   return [];
 }
-
-export function envelopeIssueSummary(envelope: NewsEnvelope): string[] {
-  const issues: string[] = [];
-
-  issues.push(...minimumDailyPublicationIssues(envelope));
-
-  if (envelope.status === "published" && envelope.items.length === 0) {
-    issues.push("published envelope cannot have zero items");
+function publishedEmptyIssues(envelope: NewsEnvelope): string[] {
+  const emptyPublication = envelope.status === "published" && envelope.items.length === 0;
+  return emptyPublication ? ["published envelope cannot have zero items"] : [];
+}
+function evidenceRequirement(envelope: NewsEnvelope, item: NewsItem): string {
+  if (usesInternationalEvidence(item, envelope.policy_version)) {
+    return ">=2 independent URLs/outlets including state_media or major_media";
   }
-
-  for (const item of envelope.items) {
-    if (!hasPublishableEvidence(item)) {
-      issues.push(`${item.id} lacks publishable evidence (need >=1 official/state_media, or >=2 URLs incl. major_media)`);
-    }
-  }
-
-  if (envelope.run_report.published !== visibleNews(envelope).length) {
-    issues.push("run_report.published does not match visible item count");
-  }
-
-  // Temporal invariants use the trusted publish stamp when present. Agent-provided
-  // generated/captured times may never claim an event after the actual publish moment.
+  return ">=1 official/state_media, or >=2 URLs incl. major_media";
+}
+function itemEvidenceIssues(envelope: NewsEnvelope, item: NewsItem): string[] {
+  if (hasPublishableEvidence(item, envelope.policy_version)) return [];
+  return [`${item.id} lacks publishable evidence (need ${evidenceRequirement(envelope, item)})`];
+}
+function evidenceIssues(envelope: NewsEnvelope): string[] {
+  return envelope.items.flatMap((item) => itemEvidenceIssues(envelope, item));
+}
+function reportedCountIssues(envelope: NewsEnvelope): string[] {
+  return envelope.run_report.published === visibleNews(envelope).length
+    ? []
+    : ["run_report.published does not match visible item count"];
+}
+function generatedTimeIssues(envelope: NewsEnvelope, publishedMs: number | undefined): string[] {
   const generatedMs = Date.parse(envelope.generated_at);
-  const publishedMs = envelope.published_at ? Date.parse(envelope.published_at) : undefined;
-  if (publishedMs !== undefined && generatedMs > publishedMs) {
-    issues.push(`generated_at ${envelope.generated_at} is after published_at ${envelope.published_at}`);
-  }
+  if (publishedMs === undefined) return [];
+  return generatedMs > publishedMs
+    ? [`generated_at ${envelope.generated_at} is after published_at ${envelope.published_at}`]
+    : [];
+}
+function sourceTimeIssue(item: NewsItem, capturedAt: string, cutoff: number, label: string): string[] {
+  if (Date.parse(capturedAt) <= cutoff) return [];
+  return [`${item.id} source captured_at ${capturedAt} is after ${label}`];
+}
+function sourceTimeIssues(envelope: NewsEnvelope, publishedMs: number | undefined): string[] {
+  const generatedMs = Date.parse(envelope.generated_at);
   const sourceCutoffMs = publishedMs ?? generatedMs;
   const sourceCutoffLabel = publishedMs === undefined ? "generated_at" : "published_at";
-  for (const item of envelope.items) {
-    for (const source of item.sources) {
-      if (Date.parse(source.captured_at) > sourceCutoffMs) {
-        issues.push(
-          `${item.id} source captured_at ${source.captured_at} is after ${sourceCutoffLabel}`,
-        );
-      }
-    }
+  return envelope.items.flatMap((item) =>
+    item.sources.flatMap((source) =>
+      sourceTimeIssue(item, source.captured_at, sourceCutoffMs, sourceCutoffLabel)
+    )
+  );
+}
+function temporalIssues(envelope: NewsEnvelope): string[] {
+  const publishedMs = envelope.published_at ? Date.parse(envelope.published_at) : undefined;
+  return [
+    ...generatedTimeIssues(envelope, publishedMs),
+    ...sourceTimeIssues(envelope, publishedMs),
+  ];
+}
+function duplicateHeadlineIssue(item: NewsItem, seen: Map<string, string>): string[] {
+  const name = normalizeHeadline(item.headline);
+  if (!name) return [];
+  const prior = seen.get(name);
+  if (prior && prior !== item.id) {
+    return [`${item.id} duplicates headline "${name}" already published today by ${prior}`];
   }
-
-  // Same-day duplicate headlines (by normalized headline) within one envelope.
+  seen.set(name, item.id);
+  return [];
+}
+function duplicateHeadlineIssues(envelope: NewsEnvelope): string[] {
   const seen = new Map<string, string>();
-  for (const item of visibleNews(envelope)) {
-    const name = normalizeHeadline(item.headline);
-    if (!name) continue;
-    const prior = seen.get(name);
-    if (prior && prior !== item.id) {
-      issues.push(`${item.id} duplicates headline "${name}" already published today by ${prior}`);
-    } else {
-      seen.set(name, item.id);
-    }
-  }
+  return visibleNews(envelope).flatMap((item) => duplicateHeadlineIssue(item, seen));
+}
 
-  issues.push(...redLineIssues(envelope));
-  issues.push(...headlineCasualtyIssues(envelope));
-  issues.push(...heatRankIssues(envelope));
-
-  return issues;
+export function envelopeIssueSummary(envelope: NewsEnvelope): string[] {
+  return [
+    ...minimumDailyPublicationIssues(envelope),
+    ...publishedEmptyIssues(envelope),
+    ...evidenceIssues(envelope),
+    ...reportedCountIssues(envelope),
+    ...temporalIssues(envelope),
+    ...duplicateHeadlineIssues(envelope),
+    ...redLineIssues(envelope),
+    ...headlineCasualtyIssues(envelope),
+    ...heatRankIssues(envelope),
+    ...dailyNewsEditorialIssues(envelope),
+  ];
 }

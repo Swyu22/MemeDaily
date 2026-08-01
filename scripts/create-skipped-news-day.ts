@@ -5,7 +5,10 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { NewsEnvelopeSchema } from "../src/domain/dailynews/schema";
+import {
+  NEWS_EDITORIAL_POLICY_VERSION,
+  NewsEnvelopeSchema,
+} from "../src/domain/dailynews/schema";
 import { visibleNews } from "../src/domain/dailynews/rules";
 import { resolveFallbackTarget } from "./fallback-target";
 
@@ -43,18 +46,23 @@ if (!fs.existsSync(filePath)) {
 
 const envelope = NewsEnvelopeSchema.parse(JSON.parse(fs.readFileSync(filePath, "utf8")));
 const visible = visibleNews(envelope).length;
+const editorialComplete =
+  targetDate < "2026-08-01" ||
+  (envelope.policy_version === NEWS_EDITORIAL_POLICY_VERSION &&
+    envelope.run_report.selection?.editorial_complete === true);
 const complete =
   envelope.date === targetDate &&
   (envelope.status === "published" || envelope.status === "partial") &&
   envelope.run_report.published === visible &&
-  visible >= 3;
+  visible >= 3 &&
+  editorialComplete;
 
 if (!complete) {
   throw new Error(
-    `[news-fallback] ${targetDate} is under minimum or malformed ` +
-      `(status=${envelope.status}, reported=${envelope.run_report.published}, visible=${visible}); ` +
-      "run editorial recovery to at least 3 verified items.",
+    `[news-fallback] ${targetDate} is under minimum, legacy-policy, or malformed ` +
+      `(status=${envelope.status}, reported=${envelope.run_report.published}, visible=${visible}, ` +
+      `editorial_complete=${editorialComplete}); run a complete editorial recovery.`,
   );
 }
 
-console.log(`[news-fallback] ${targetDate} is complete (${visible}/3); no action`);
+console.log(`[news-fallback] ${targetDate} is editorially complete (${visible}/3..10); no action`);

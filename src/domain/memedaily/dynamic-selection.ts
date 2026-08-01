@@ -1,8 +1,9 @@
 /**
  * input: parsed MemeDaily envelopes dated 2026-07-27 or later
- * output: deterministic score, activity, identity, and tier-selection issues
+ * output: deterministic score, activity, identity, tier-selection, and completeness issues
  * pos: dynamic editorial-selection policy layered on the core meme evidence rules
  */
+import { editorialCompletenessIssues } from "./editorial-completeness";
 import type { DailyEnvelope, MemeItem } from "./schema";
 import { visibleItems } from "./rules";
 
@@ -23,11 +24,7 @@ type Selection = NonNullable<DailyEnvelope["run_report"]["selection"]>;
 type QualifiedCounts = Selection["qualified"];
 type CandidateAudit = Selection["candidate_audit"][number];
 type CandidateOutcome = CandidateAudit["outcome"];
-type Occurrence = {
-  date: string;
-  item: MemeItem;
-  publishedMs: number;
-};
+type Occurrence = { date: string; item: MemeItem; publishedMs: number };
 
 function normalizeName(value: string): string {
   return Array.from(value.toLowerCase())
@@ -664,6 +661,7 @@ function selectionAccountingIssues(
     ...capacitySelectionIssues(envelope, tier, derived),
     ...selectedOutcomeIssues(envelope, tier, audit),
     ...topSelectionIssues(envelope, audit),
+    ...editorialCompletenessIssues(envelope, derived[tier]),
   ];
 }
 

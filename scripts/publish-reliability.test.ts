@@ -181,7 +181,16 @@ it.each(["daily-monitor.yml", "daily-news-monitor.yml"])(
     expect(workflow).toContain("minimum=3");
     expect(workflow).toContain('[ "$REPORTED" -eq "$VISIBLE" ]');
     expect(workflow).toContain('[ "$VISIBLE" -ge 3 ]');
+    expect(workflow).toContain('editorial_complete=${COMPLETE}');
+    expect(workflow).toContain('[ "$COMPLETE" = "true" ]');
     expect(workflow).toContain("const r=e.run_report?.published");
     expect(workflow).not.toContain("Number(e.run_report?.published)");
   },
 );
+
+it("requires the current editorial policy in both live monitors", () => {
+  const meme = fs.readFileSync(path.join(WORKFLOWS, "daily-monitor.yml"), "utf8");
+  const news = fs.readFileSync(path.join(WORKFLOWS, "daily-news-monitor.yml"), "utf8");
+  expect(meme).toContain('[ "$POLICY" = "v4-editorial-completeness" ]');
+  expect(news).toContain('[ "$POLICY" = "v3-domestic-majority" ]');
+});
