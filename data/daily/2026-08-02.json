@@ -1,0 +1,959 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-2026",
+  "date": "2026-08-02",
+  "generated_at": "2026-08-02T07:13:49+08:00",
+  "published_at": "2026-08-02T07:13:49+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 7,
+    "dropped_safety": {
+      "政治时政": 1,
+      "灾害与公共安全": 1
+    },
+    "dropped_low_confidence": 20,
+    "dropped_capacity": 0,
+    "sources": [
+      "douyin",
+      "weibo",
+      "bilibili"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 27,
+      "platform_public_sources": 7,
+      "aggregator_sources": 27,
+      "search_media_sources": 0,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 7,
+        "relaxed_72h": 7
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-02-xx-ren-chidao-meishi-belike",
+          "canonical_phrase": "XX人吃到美食belike",
+          "outcome": "selected",
+          "item_id": "2026-08-02-xx-ren-chidao-meishi-belike",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 28,
+            "reusability": 19,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-02-zhiguan-ganshou-jiadao-zhongluo",
+          "canonical_phrase": "直观感受到什么是家道中落",
+          "outcome": "selected",
+          "item_id": "2026-08-02-zhiguan-ganshou-jiadao-zhongluo",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 27,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-02-youqian-jingzhong-ziji",
+          "canonical_phrase": "我一有钱就买嘢来敬重自己",
+          "outcome": "selected",
+          "item_id": "2026-08-02-youqian-jingzhong-ziji",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-02T07:01:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-02-hao-xiaozhong-de-cihui",
+          "canonical_phrase": "好小众的词汇",
+          "outcome": "selected",
+          "item_id": "2026-08-02-hao-xiaozhong-de-cihui",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-02-x-de-jintou-shi-y",
+          "canonical_phrase": "X的尽头是Y",
+          "outcome": "selected",
+          "item_id": "2026-08-02-x-de-jintou-shi-y",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 22,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-02-wo-de-x-zhi-dadao-dianfeng",
+          "canonical_phrase": "我的X值达到了巅峰",
+          "outcome": "selected",
+          "item_id": "2026-08-02-wo-de-x-zhi-dadao-dianfeng",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-02T07:01:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-07-22-belike-chabie",
+          "canonical_phrase": "Xbelike",
+          "outcome": "selected",
+          "item_id": "2026-07-22-belike-chabie",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-danren-zhuang",
+          "canonical_phrase": "这个淡人X没有对手",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 15,
+            "evidence": 0
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-02T07:01:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-ai-yishu",
+          "canonical_phrase": "AI生成的作品算艺术吗",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 15,
+            "evidence": 0
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-02T07:01:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-sihua-ruchang",
+          "canonical_phrase": "X丝滑入场",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 15,
+            "evidence": 1
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-02T07:01:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-song-ni-qiuqiu",
+          "canonical_phrase": "送你一片大球球",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 28,
+            "reusability": 15,
+            "evidence": 1
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-02T07:01:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-kuaile-yunduo",
+          "canonical_phrase": "把快乐装进云朵里",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 28,
+            "reusability": 15,
+            "evidence": 1
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-02T07:01:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-xiaomao-zhuzu",
+          "canonical_phrase": "总为路边小猫驻足",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 27,
+            "reusability": 15,
+            "evidence": 3
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-02T07:01:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-jinci-yici",
+          "canonical_phrase": "人生是仅此一次的体验",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 24,
+            "reusability": 15,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-zhuanqian-yingxiang",
+          "canonical_phrase": "赚钱方式对人影响很大",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 25,
+            "reusability": 15,
+            "evidence": 3
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-zhen-x-cai-dong",
+          "canonical_phrase": "只有真X才懂",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 15,
+            "evidence": 1
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-gongnengxing-de-ren",
+          "canonical_phrase": "远离只爱你功能性的人",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 26,
+            "reusability": 15,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shenxian-tiyan",
+          "canonical_phrase": "X是什么神仙体验",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 26,
+            "reusability": 15,
+            "evidence": 3
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-zhengzong-x-you-y",
+          "canonical_phrase": "正宗X有没有Y",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 26,
+            "reusability": 15,
+            "evidence": 2
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-lizhi-yiji",
+          "canonical_phrase": "X最励志的一集",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 15,
+            "evidence": 2
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-saibo-x-jiejiu-y",
+          "canonical_phrase": "赛博X解救Y",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 27,
+            "reusability": 15,
+            "evidence": 2
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-pingjia-liangji",
+          "canonical_phrase": "X为何评价两极",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 24,
+            "reusability": 15,
+            "evidence": 3
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-xin-zai-nali",
+          "canonical_phrase": "X新在哪里",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 15,
+            "evidence": 3
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-wanzi-chaijie",
+          "canonical_phrase": "万字拆解X",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 26,
+            "reusability": 15,
+            "evidence": 2
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-de-chengnuo",
+          "canonical_phrase": "这就是X的承诺",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 25,
+            "reusability": 15,
+            "evidence": 3
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-nianling-jinpai",
+          "canonical_phrase": "年龄不是免罪金牌",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 25,
+            "reusability": 15,
+            "evidence": 3
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-xiazheng-chengge",
+          "canonical_phrase": "X交响音乐现场",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 26,
+            "reusability": 15,
+            "evidence": 3
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-02T06:53:33+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "x-xianding-xinfase",
+          "canonical_phrase": "X限定新发色",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "douyin",
+            "weibo",
+            "bilibili"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-02-xx-ren-chidao-meishi-belike",
+      "title": "🍜 XX人吃到美食belike",
+      "aliases": [
+        "XX人吃到美食belike",
+        "X人吃到美食是什么梗",
+        "山东人吃到美食belike"
+      ],
+      "canonical_phrase": "XX人吃到美食belike",
+      "platform": [
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“XX人吃到美食belike”代入地域、职业或身份，配合夸张满足反应展示吃到心头好时的状态。",
+      "origin": "已验证：8月2日B站实时榜同时出现“XX人吃到美食是什么梗”和“山东人吃到美食belike”两个变体；现有证据不支持指定唯一首发者。",
+      "usage": "可写“广东人吃到糖水belike”“打工人吃到公司下午茶belike”，用表情、动作或前后反差承接身份槽位。",
+      "fun_point": "同一套满足反应换上不同身份标签后，会把群体饮食偏好压缩成一眼能懂的夸张小剧场。",
+      "why_spread": "已验证：两个同源变体在8月2日同榜出现；推测：XX身份槽位开放，且belike结构便于短视频模仿和评论区接龙。",
+      "lifecycle": "rising",
+      "brand_usage": "餐饮品牌可用真实顾客试吃或地域菜单替换XX；不要伪造评价，也避免把地域饮食差异写成贬损刻板印象。",
+      "risk": {
+        "level": "low",
+        "note": "普通美食模仿句式；注意避免地域歧视、身材羞辱和虚假试吃效果。"
+      },
+      "days_on_list": 1,
+      "score": 88,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 28,
+        "reusability": 19,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "bilibili",
+          "url": "https://hotflashnews.com/platform/bilibili",
+          "title": "B站实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-08-02T06:53:33+08:00",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "页面标注8月2日06:53:33更新，榜单第6位出现该句式，证明严格24小时内有当日活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=XX%E4%BA%BA%E5%90%83%E5%88%B0%E7%BE%8E%E9%A3%9F%E6%98%AF%E4%BB%80%E4%B9%88%E6%A2%97",
+          "title": "B站搜索：XX人吃到美食是什么梗",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "与实时榜条目对应的公开平台入口，支持该表达在当天被检索、参与和复用。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=%E5%B1%B1%E4%B8%9C%E4%BA%BA%E5%90%83%E5%88%B0%E7%BE%8E%E9%A3%9Fbelike",
+          "title": "B站搜索：山东人吃到美食belike",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "同一实时榜另收录地域替换变体，支持XX身份槽位已经被实际复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-zhiguan-ganshou-jiadao-zhongluo",
+      "title": "📉 直观感受到什么是家道中落",
+      "aliases": [
+        "直观感受到什么是家道中落",
+        "这下直观感受到家道中落了"
+      ],
+      "canonical_phrase": "直观感受到什么是家道中落",
+      "platform": [
+        "weibo"
+      ],
+      "type": "情绪梗",
+      "summary": "用“直观感受到什么是家道中落”调侃待遇、配置或存量突然缩水，把轻微落差说成家业衰败。",
+      "origin": "已验证：8月2日微博实时榜第1位出现该表达；它被用作对明显缩水或降级的夸张反应，现有证据不支持指定唯一首发者。",
+      "usage": "可配“零食柜从满层变成两包”“项目预算从豪华到自助”，用前后对比让“家道中落”落在日常小事上。",
+      "fun_point": "把预算减少、份量变小等普通落差抬高到家族兴衰，宏大词汇与琐碎场景的错位制造笑点。",
+      "why_spread": "已验证：该表达8月2日登上微博实时榜首；推测：前后对比门槛低，适合消费、职场和生活记录的反应字幕。",
+      "lifecycle": "rising",
+      "brand_usage": "适合做旧版与新版配置对比，但应如实说明价格、份量和活动周期，避免暗示竞品经营困难。",
+      "risk": {
+        "level": "low",
+        "note": "普通夸张反应语；避免影射真实个人破产、家庭变故或具体企业危机。"
+      },
+      "days_on_list": 1,
+      "score": 87,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 27,
+        "reusability": 16,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-08-02T06:53:33+08:00",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "页面标注8月2日06:53:33更新，该表达位列微博实时榜第1，证明严格24小时内有高位活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E7%9B%B4%E8%A7%82%E6%84%9F%E5%8F%97%E5%88%B0%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%B6%E9%81%93%E4%B8%AD%E8%90%BD",
+          "title": "微博搜索：直观感受到什么是家道中落",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "与实时榜条目对应的公开平台入口，支持该表达在当天被检索、参与和复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-youqian-jingzhong-ziji",
+      "title": "💸 我一有钱就买嘢来敬重自己",
+      "aliases": [
+        "我一有钱就买嘢来敬重自己",
+        "有钱就买东西敬重自己"
+      ],
+      "canonical_phrase": "我一有钱就买嘢来敬重自己",
+      "platform": [
+        "douyin"
+      ],
+      "type": "口头禅梗",
+      "summary": "用粤语感的“买嘢来敬重自己”包装即时消费，把买点喜欢的东西说成对自己的郑重礼遇。",
+      "origin": "已验证：8月2日抖音实时榜出现“我一有钱就买嘢来敬重自己”并提供公开话题入口；现有证据不支持指定唯一首发者。",
+      "usage": "可用于工资到账、买小物或点奶茶场景，如“奖金一到，先买束花敬重自己”，重点保留自我犒赏语气。",
+      "fun_point": "“敬重”通常用于正式礼仪，却被拿来描述随手消费，庄重措辞与日常买买买形成反差。",
+      "why_spread": "已验证：该完整句式8月2日进入抖音实时榜；推测：口语节奏鲜明、消费场景普遍，容易成为自拍视频字幕。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于小额自我犒赏内容，需明确价格与权益，避免诱导超前消费或把冲动购买包装成理财建议。",
+      "risk": {
+        "level": "low",
+        "note": "普通消费口头禅；注意避免鼓励负债、未成年人消费或虚假优惠。"
+      },
+      "days_on_list": 1,
+      "score": 83,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-08-02T07:01:58+08:00",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "页面标注8月2日07:01:58更新，该句式位列抖音实时榜第27，证明严格24小时内有当日活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2592993",
+          "title": "抖音话题：我一有钱就买嘢来敬重自己",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "与实时榜条目对应的公开平台入口，支持该表达在当天被检索、参与和复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-hao-xiaozhong-de-cihui",
+      "title": "🧾 好小众的词汇",
+      "aliases": [
+        "好小众的词汇",
+        "出现了好小众的词汇",
+        "X里出现了好小众的词汇"
+      ],
+      "canonical_phrase": "好小众的词汇",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "看到专业、生僻或场景外用语时，用“好小众的词汇”装作震惊，也可把普通词放进不相干场景制造反差。",
+      "origin": "已验证：8月2日微博实时榜出现“登机柜台出现了好小众词汇”；现有证据显示该表达依靠场景错位传播，不支持指定唯一首发者。",
+      "usage": "可写“团建群里出现了好小众的词汇：自愿”“厨房里出现了好小众的词汇：适量”，由场景决定反差。",
+      "fun_point": "把大家其实认识的词故意称作“小众”，暗示它在当前环境里罕见，含蓄吐槽比直接批评更有趣。",
+      "why_spread": "已验证：该变体8月2日进入微博实时榜；推测：模板只需替换场景和词语，适合评论区二改与截图传播。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于行业术语科普或场景反差海报；避免借“小众”嘲笑口音、学历、残障或真实服务失误。",
+      "risk": {
+        "level": "low",
+        "note": "普通反差句式；避免将其用于人身嘲讽或泄露票据、证件中的个人信息。"
+      },
+      "days_on_list": 1,
+      "score": 80,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 26,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-08-02T06:53:33+08:00",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "页面标注8月2日06:53:33更新，该变体位列微博实时榜第23，证明严格24小时内有当日活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E7%99%BB%E6%9C%BA%E6%9F%9C%E5%8F%B0%E5%87%BA%E7%8E%B0%E4%BA%86%E5%A5%BD%E5%B0%8F%E4%BC%97%E8%AF%8D%E6%B1%87",
+          "title": "微博搜索：登机柜台出现了好小众词汇",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "与实时榜条目对应的公开平台入口，支持该表达在当天被检索、参与和复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-x-de-jintou-shi-y",
+      "title": "🔚 X的尽头是Y",
+      "aliases": [
+        "X的尽头是Y",
+        "找对象的尽头是初高中同学"
+      ],
+      "canonical_phrase": "X的尽头是Y",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "用“X的尽头是Y”把某种长期选择归结到意外终点，适合关系、消费、学习和职业场景的戏谑总结。",
+      "origin": "已验证：8月2日微博实时榜第9位出现“找对象的尽头是初高中同学”；现有证据支持X/Y槽位传播，不支持指定唯一首发者。",
+      "usage": "可写“做饭的尽头是洗锅”“买收纳的尽头是收纳盒没处放”，让Y成为真实又出人意料的结论。",
+      "fun_point": "句式先摆出终极规律的气势，再用具体而琐碎的Y收尾，郑重判断与日常经验形成反差。",
+      "why_spread": "已验证：关系场景变体8月2日进入微博实时榜前十；推测：双槽位开放、结论式语气强，便于跨领域造句。",
+      "lifecycle": "rising",
+      "brand_usage": "适合用产品使用链路做轻量总结，但不要把复杂人生选择说成唯一答案，也避免制造婚恋焦虑。",
+      "risk": {
+        "level": "low",
+        "note": "普通总结句式；涉及关系、教育或职业时应避免绝对化和群体标签。"
+      },
+      "days_on_list": 1,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 22,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-08-02T06:53:33+08:00",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "页面标注8月2日06:53:33更新，该变体位列微博实时榜第9，证明严格24小时内有当日活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E6%89%BE%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B0%BD%E5%A4%B4%E6%98%AF%E5%88%9D%E9%AB%98%E4%B8%AD%E5%90%8C%E5%AD%A6",
+          "title": "微博搜索：找对象的尽头是初高中同学",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "与实时榜条目对应的公开平台入口，支持该表达在当天被检索、参与和复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-02-wo-de-x-zhi-dadao-dianfeng",
+      "title": "🌧️ 我的X值达到了巅峰",
+      "aliases": [
+        "我的X值达到了巅峰",
+        "其实我的忧郁值达到了巅峰"
+      ],
+      "canonical_phrase": "我的X值达到了巅峰",
+      "platform": [
+        "douyin"
+      ],
+      "type": "情绪梗",
+      "summary": "用“我的X值达到了巅峰”把困倦、尴尬、松弛等状态量化成虚构数值，以游戏面板口吻表达情绪。",
+      "origin": "已验证：8月2日抖音实时榜出现“其实我的忧郁值达到了巅峰”并提供公开话题入口；现有证据不支持指定唯一首发者。",
+      "usage": "可写“开会第三小时，我的放空值达到巅峰”“周五下班，松弛值达到巅峰”，让X对应当下状态。",
+      "fun_point": "没有刻度的情绪被说成可充值、可封顶的数值，严肃的状态描述因此带上游戏化和自嘲感。",
+      "why_spread": "已验证：忧郁变体8月2日进入抖音实时榜；推测：X槽位开放，字幕与表情、音乐和动作都容易配合。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于轻量情绪量表或场景字幕，但不要替代真实心理评估，也避免把疾病症状娱乐化。",
+      "risk": {
+        "level": "low",
+        "note": "普通情绪句式；涉及持续低落或心理健康时应避免诊断化和嘲弄。"
+      },
+      "days_on_list": 1,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-08-02T07:01:58+08:00",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "页面标注8月2日07:01:58更新，该变体位列抖音实时榜第28，证明严格24小时内有当日活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2592125",
+          "title": "抖音话题：其实我的忧郁值达到了巅峰",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "与实时榜条目对应的公开平台入口，支持该表达在当天被检索、参与和复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-22-belike-chabie",
+      "title": "🎬 X时belike",
+      "aliases": [
+        "Xbelike",
+        "X时belike",
+        "暑假无聊时belike",
+        "场景belike"
+      ],
+      "canonical_phrase": "Xbelike",
+      "platform": [
+        "bilibili"
+      ],
+      "type": "短视频梗",
+      "summary": "用“X时belike”给某个时刻配一段代表性反应画面，把无聊、赶工、放假等状态压缩成短小情景。",
+      "origin": "已验证：该身份最早于7月22日以“朋友圈和微博的差别belike”发布；8月2日B站实时榜新增“暑假无聊时belike”活动，现有证据不支持指定唯一首发者。",
+      "usage": "可写“周一早会时belike”“甲方说只改一点时belike”，搭配反应片段或动作复刻，X替换具体时刻。",
+      "fun_point": "belike像镜头提示词，观众看到X后会立刻等待夸张表演，预期与实际反应之间形成笑点。",
+      "why_spread": "已验证：暑假变体8月2日进入B站实时榜，活动晚于上次本站发布；推测：单槽位简单、视频结构明确，适配校园、职场和日常内容。",
+      "lifecycle": "rising",
+      "brand_usage": "适合做使用前后或场景化短剧，需使用自有或已授权素材，避免搬运影视片段造成版权风险。",
+      "risk": {
+        "level": "low",
+        "note": "普通反应模板；重点注意素材版权、肖像权与未成年人隐私。"
+      },
+      "days_on_list": 2,
+      "score": 76,
+      "score_breakdown": {
+        "heat": 22,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "bilibili",
+          "url": "https://hotflashnews.com/platform/bilibili",
+          "title": "B站实时热搜榜 - HotFlashNews",
+          "observed_at": "2026-08-02T06:53:33+08:00",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "页面标注8月2日06:53:33更新，该变体位列B站实时榜第29，证明严格24小时内有当日活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=%E6%9A%91%E5%81%87%E6%97%A0%E8%81%8A%E6%97%B6belike",
+          "title": "B站搜索：暑假无聊时belike",
+          "captured_at": "2026-08-02T07:08:12+08:00",
+          "note": "与实时榜条目对应的公开平台入口，支持该表达在当天被检索、参与和复用。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
