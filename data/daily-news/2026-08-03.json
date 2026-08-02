@@ -1,0 +1,681 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-2026",
+  "date": "2026-08-03",
+  "generated_at": "2026-08-03T06:08:50+08:00",
+  "published_at": "2026-08-03T06:08:50+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 5,
+    "dropped_safety": {
+      "minors": 1,
+      "privacy": 1,
+      "controversy": 1,
+      "public_safety": 1,
+      "harassment": 1,
+      "rumor": 1,
+      "propaganda": 1,
+      "politics": 1,
+      "celebrity_dispute": 1,
+      "geopolitics": 1
+    },
+    "dropped_low_confidence": 15,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 18,
+      "state_media_sources": 2,
+      "major_media_sources": 4,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "relaxed_72h",
+      "qualified": {
+        "strict_24h": 0,
+        "relaxed_48h": 0,
+        "relaxed_72h": 5
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "市场监管与强制产品认证",
+            "国家认监委与认证机构公告",
+            "国家卫生健康标准",
+            "退役军人就业创业法规",
+            "国家及地方标准平台",
+            "新华社与中央广播媒体",
+            "消费和民生服务标准",
+            "近七日已发布身份去重"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-03-ev-charger-ccc",
+          "story_identity": "cn-ev-supply-equipment-ccc-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-03-ev-charger-ccc",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 9,
+            "everyday_relevance": 23,
+            "evidence": 15
+          },
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "2026-08-03-home-appliance-safety",
+          "story_identity": "cn-home-appliance-safety-gbt4706-2024-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-03-home-appliance-safety",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 9,
+            "everyday_relevance": 23,
+            "evidence": 15
+          },
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "2026-08-03-veteran-employment-rule",
+          "story_identity": "cn-veteran-employment-entrepreneurship-regulation-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-03-veteran-employment-rule",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 9,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "2026-08-03-occupational-health-standard",
+          "story_identity": "cn-occupational-health-surveillance-gbz188-2025-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-03-occupational-health-standard",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 9,
+            "everyday_relevance": 23,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "2026-08-03-insulation-fire-standard",
+          "story_identity": "cn-building-insulation-fire-safety-gb46520-2025-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-03-insulation-fire-standard",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 9,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "cand-06-health-service-classification",
+          "story_identity": "cn-health-service-gbt30444-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 9,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "drop_reason": "时效衰减后低于65分，且直接可操作信息有限"
+        },
+        {
+          "candidate_key": "cand-07-health-supplies-after-sales",
+          "story_identity": "cn-health-supplies-gbt33354-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 9,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "drop_reason": "时效衰减后低于65分，公众热度不足"
+        },
+        {
+          "candidate_key": "cand-08-passenger-message-priority",
+          "story_identity": "cn-passenger-message-gbt47045-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 9,
+            "everyday_relevance": 19,
+            "evidence": 14
+          },
+          "drop_reason": "专业性较强，普通读者直接关联有限"
+        },
+        {
+          "candidate_key": "cand-09-processed-food-terms",
+          "story_identity": "cn-processed-food-gbt15091-1-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 9,
+            "everyday_relevance": 19,
+            "evidence": 14
+          },
+          "drop_reason": "术语型标准新闻价值有限且低于门槛"
+        },
+        {
+          "candidate_key": "cand-10-self-storage-standard",
+          "story_identity": "cn-self-storage-gbt47529-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 9,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "drop_reason": "使用人群较窄且低于65分"
+        },
+        {
+          "candidate_key": "cand-11-tourism-shopping-standard",
+          "story_identity": "cn-tourism-shopping-gbt26356-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 9,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "drop_reason": "公开报道热度不足且低于门槛"
+        },
+        {
+          "candidate_key": "cand-12-laundry-terms-standard",
+          "story_identity": "cn-laundry-terms-gbt33452-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 9,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "drop_reason": "术语型标准日常价值有限"
+        },
+        {
+          "candidate_key": "cand-13-telecom-online-hall",
+          "story_identity": "cn-telecom-online-hall-gbt47484-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 9,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "drop_reason": "公开报道热度不足，低于65分"
+        },
+        {
+          "candidate_key": "cand-14-dried-red-dates",
+          "story_identity": "cn-dried-red-jujube-gbt5835-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 9,
+            "everyday_relevance": 19,
+            "evidence": 14
+          },
+          "drop_reason": "单一食品品类热度有限"
+        },
+        {
+          "candidate_key": "cand-15-food-shelf-life-repeat",
+          "story_identity": "cn-food-shelf-life-gbt47141-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 9,
+            "everyday_relevance": 24,
+            "evidence": 14
+          },
+          "drop_reason": "近七日已发布同一故事身份，不重复入选"
+        },
+        {
+          "candidate_key": "cand-16-renewable-share-repeat",
+          "story_identity": "cn-renewable-consumption-minimum-share-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 9,
+            "everyday_relevance": 20,
+            "evidence": 15
+          },
+          "drop_reason": "近七日已发布同一故事身份，不重复入选"
+        },
+        {
+          "candidate_key": "cand-17-social-awards-repeat",
+          "story_identity": "cn-social-organization-awards-rule-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 9,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "drop_reason": "近七日已发布同一故事身份，不重复入选"
+        },
+        {
+          "candidate_key": "cand-18-maternal-health-repeat",
+          "story_identity": "cn-maternal-infant-health-service-gbt33855-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 9,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "drop_reason": "近七日已发布同一故事身份，不重复入选"
+        },
+        {
+          "candidate_key": "cand-19-social-branch-repeat",
+          "story_identity": "cn-social-group-branch-rule-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 9,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "drop_reason": "近七日已发布同一故事身份，不重复入选"
+        },
+        {
+          "candidate_key": "cand-20-solar-label-repeat",
+          "story_identity": "cn-solar-water-system-energy-label-rule-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 9,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "drop_reason": "近七日已发布同一故事身份，不重复入选"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-03-ev-charger-ccc",
+      "story_identity": "cn-ev-supply-equipment-ccc-effective-2026-08-01",
+      "headline": "🔌 电动汽车充电设备全面实施CCC认证",
+      "summary": "自8月1日起，未取得CCC认证并标注认证标志的电动汽车充电桩、随车充电设备等，不得出厂、销售、进口或用于经营活动；消费者可在购买和使用前核对认证标志。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 74,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 9,
+        "everyday_relevance": 23,
+        "evidence": 15
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅说明强制认证生效及适用范围，不评价具体品牌或存量设备。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "市场监管总局",
+          "url": "https://www.samr.gov.cn/xw/zj/art/2024/art_efd1b7251b164065a29003d3a3ed4d0e.html",
+          "title": "市场监管总局对电动汽车供电设备实施强制性产品认证",
+          "captured_at": "2026-08-03T06:04:30+08:00",
+          "note": "载明2026年8月1日起未获CCC认证的电动汽车供电设备不得出厂、销售、进口或用于经营活动。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.samr.gov.cn/xw/mtjj/art/2024/art_9c4a66dd6a1c4b54a726c4b72ffe3f84.html",
+          "title": "电动汽车供电设备将实施强制性产品认证管理",
+          "captured_at": "2026-08-03T06:04:30+08:00",
+          "note": "新华社报道覆盖固定充电桩、移动式和随车充电设备及关键安全测试。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-03-home-appliance-safety",
+      "story_identity": "cn-home-appliance-safety-gbt4706-2024-effective-2026-08-01",
+      "headline": "⚡ 家用电器安全新版标准正式实施",
+      "summary": "家用和类似用途电器安全新版通用标准及配套特殊要求自8月1日起实施，CCC认证开始依据新版标准受理和评价，覆盖电磁灶、冷风扇等常见产品。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 72,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 9,
+        "everyday_relevance": 23,
+        "evidence": 15
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "只说明认证标准换版，不将旧版证书产品笼统认定为不合格。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家认证认可监督管理委员会",
+          "url": "https://www.cnca.gov.cn/zwxx/gg/2024/art/2025/art_0d9e9f299fd84490b5cf25f0343bf146.html",
+          "title": "关于明确家用和类似用途设备强制性产品认证依据标准换版有关工作要求的公告",
+          "captured_at": "2026-08-03T06:04:30+08:00",
+          "note": "公告载明GB/T 4706.1—2024及配套标准于2026年8月1日实施。"
+        },
+        {
+          "tier": "official",
+          "outlet": "中国网络安全审查认证和市场监管大数据中心",
+          "url": "https://www.isccc.gov.cn/xxgk1/zxgg/202503/t20250324_9709.htm",
+          "title": "关于家用和类似用途设备强制性产品认证依据新版标准实施认证的通知",
+          "captured_at": "2026-08-03T06:04:30+08:00",
+          "note": "明确8月1日起仅依据新版标准受理认证申请并开展评价。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-03-veteran-employment-rule",
+      "story_identity": "cn-veteran-employment-entrepreneurship-regulation-effective-2026-08-01",
+      "headline": "🧑‍💼 退役军人就业创业促进条例施行",
+      "summary": "《退役军人就业创业促进条例》自8月1日起施行，明确学历教育优待资助、职业技能培训、招聘条件适当放宽以及创业税收、融资和信贷扶持等安排。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 71,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 9,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅概述公开条例中的适用支持措施，具体申请条件以主管部门执行口径为准。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "退役军人事务部",
+          "url": "https://www.mva.gov.cn/sy/xx/bnxx/202607/t20260701_546993.html",
+          "title": "公布《退役军人就业创业促进条例》",
+          "captured_at": "2026-08-03T06:04:30+08:00",
+          "note": "刊载新华社权威发布，载明条例8月1日起施行及教育培训、就业和创业支持要点。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://china.cnr.cn/news/sz/20260701/t20260701_527685068.shtml",
+          "title": "公布《退役军人就业创业促进条例》",
+          "captured_at": "2026-08-03T06:04:30+08:00",
+          "note": "中国之声报道条例共6章48条及主要就业创业支持安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-03-occupational-health-standard",
+      "story_identity": "cn-occupational-health-surveillance-gbz188-2025-effective-2026-08-01",
+      "headline": "🩺 职业健康监护新版强制标准施行",
+      "summary": "新版《职业健康监护技术规范》自8月1日起施行，更新接触职业病危害因素劳动者的检查项目、结论和周期要求，旧版GBZ 188—2014同时废止。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 69,
+      "score_breakdown": {
+        "heat": 23,
+        "freshness": 9,
+        "everyday_relevance": 23,
+        "evidence": 14
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "介绍国家职业卫生标准，不替代职业健康检查或个体医疗建议。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家卫生健康委员会",
+          "url": "https://www.nhc.gov.cn/wjw/pyl/202509/1e939d64e61a4ac6b9d31191c5569c34.shtml",
+          "title": "职业健康监护技术规范（代替GBZ 188—2014）",
+          "captured_at": "2026-08-03T06:04:30+08:00",
+          "note": "官方标准页载明GBZ 188—2025于2026年8月1日实施。"
+        },
+        {
+          "tier": "official",
+          "outlet": "淄博市疾病预防控制中心",
+          "url": "https://zbcdc.zibo.gov.cn/art/2026/4/28/art_19936_2999167.html",
+          "title": "解读GBZ 188-2025岗前体检内容变化",
+          "captured_at": "2026-08-03T06:04:30+08:00",
+          "note": "官方疾控科普说明新版标准新增检查因素、明确必检项目和体检结论。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-03-insulation-fire-standard",
+      "story_identity": "cn-building-insulation-fire-safety-gb46520-2025-effective-2026-08-01",
+      "headline": "🏗️ 建筑保温材料燃烧安全强制国标施行",
+      "summary": "建筑用绝热材料及制品燃烧性能安全强制国标自8月1日起实施，按材料类型明确最低燃烧等级、烟气毒性和燃烧滴落物要求，并强化产品标识和追溯。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 66,
+      "score_breakdown": {
+        "heat": 22,
+        "freshness": 9,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "只说明产品安全技术标准，不对具体建筑、材料或企业作安全判断。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "济南市市场监督管理局",
+          "url": "https://amr.jinan.gov.cn/col/col44373/art/2026/art_19667e8645e84679beed580964a6ff92.html",
+          "title": "《建筑用绝热材料及制品燃烧性能安全技术规范》强制性国家标准发布",
+          "captured_at": "2026-08-03T06:04:30+08:00",
+          "note": "载明GB 46520—2025于2026年8月1日实施及燃烧性能、烟气毒性和标识要求。"
+        },
+        {
+          "tier": "official",
+          "outlet": "辽宁省工业和信息化厅",
+          "url": "https://gxt.ln.gov.cn/gxt/zhzx/xyxx/2025110509094368995/index.shtml",
+          "title": "强制性国标《建筑用绝热材料及制品燃烧性能安全技术规范》发布",
+          "captured_at": "2026-08-03T06:04:30+08:00",
+          "note": "官方行业主管部门说明标准适用目标和实施日期。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
