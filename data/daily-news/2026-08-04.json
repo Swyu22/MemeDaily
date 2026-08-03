@@ -1,0 +1,802 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-2026",
+  "date": "2026-08-04",
+  "generated_at": "2026-08-04T07:21:12+08:00",
+  "published_at": "2026-08-04T07:21:12+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 45,
+    "published": 3,
+    "dropped_safety": {
+      "minors": 1,
+      "privacy": 1,
+      "controversy": 1,
+      "public_safety": 1,
+      "harassment": 1,
+      "rumor": 1,
+      "propaganda": 1,
+      "politics": 1,
+      "celebrity_dispute": 1,
+      "geopolitics": 1
+    },
+    "dropped_low_confidence": 25,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 35,
+      "official_sources": 18,
+      "state_media_sources": 9,
+      "major_media_sources": 15,
+      "aggregator_sources": 7,
+      "dropped_insufficient_evidence": 7
+    },
+    "selection": {
+      "tier": "relaxed_48h",
+      "qualified": {
+        "strict_24h": 1,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "国家与地方监管部门",
+            "新华社及中央媒体",
+            "金融监管与市场基础设施",
+            "政策实施与民生服务",
+            "近七日故事身份去重"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 45,
+          "source_scope": [
+            "公开聚合热榜新闻交叉核验",
+            "商业与科技行业媒体",
+            "消费与公共服务专题页面"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-04-hk-cgb-futures",
+          "story_identity": "cn-hk-five-year-cgb-futures-launch-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-08-04-hk-cgb-futures",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-04-chongqing-produce-rule",
+          "story_identity": "cn-chongqing-produce-market-seven-rules-effective-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-04-chongqing-produce-rule",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-04-runzhongfu-health",
+          "story_identity": "cn-runzhongfu-health-guidance-start-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-04-runzhongfu-health",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "cand-04-icao-annex-amendments",
+          "story_identity": "intl-icao-annex-amendments-effective-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T00:00:00+08:00",
+          "scope": "international",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 10,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "具体适用日期分散，缺少当日独立热度证据"
+        },
+        {
+          "candidate_key": "cand-05-shanghai-extra-trains",
+          "story_identity": "cn-shanghai-rail-extra-trains-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 10,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "区域性临客安排，代表性和全国关联不足"
+        },
+        {
+          "candidate_key": "cand-06-beijing-bus-comments",
+          "story_identity": "cn-beijing-seven-bus-route-comments-close-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "仍处征求意见阶段且影响范围较窄"
+        },
+        {
+          "candidate_key": "cand-07-hsk-results",
+          "story_identity": "cn-hsk-july-test-results-release-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "受众较窄，公众热度不足"
+        },
+        {
+          "candidate_key": "cand-08-shanghai-health-expo",
+          "story_identity": "cn-shanghai-health-expo-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "会展宣传信息多，独立报道不足"
+        },
+        {
+          "candidate_key": "cand-09-beijing-environment-expo",
+          "story_identity": "cn-beijing-environment-expo-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "行业会展对普通读者直接影响有限"
+        },
+        {
+          "candidate_key": "cand-10-pboc-reverse-repo",
+          "story_identity": "cn-pboc-overnight-reverse-repo-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 10,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "金融操作专业性强，日常关联不够"
+        },
+        {
+          "candidate_key": "cand-11-finance-cyber-comments",
+          "story_identity": "cn-financial-cybersecurity-comments-close-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 10,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "仅为征求意见截止，尚无最终制度变化"
+        },
+        {
+          "candidate_key": "cand-12-maplestory-classic",
+          "story_identity": "cn-maplestory-classic-launch-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "单一商业产品上线，不具代表性公共价值"
+        },
+        {
+          "candidate_key": "cand-13-douyin-ai-drama-rules",
+          "story_identity": "cn-douyin-ai-drama-rules-effective-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "仅见二次转载，缺少可核验一手公告"
+        },
+        {
+          "candidate_key": "cand-14-hk-cgb-preparation",
+          "story_identity": "cn-hk-cgb-futures-prelaunch-preparation-2026-07-27",
+          "research_pass": 1,
+          "occurred_at": "2026-07-27T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "与已选正式上市属同一事件链，不重复入选"
+        },
+        {
+          "candidate_key": "cand-15-permit-format-upcoming",
+          "story_identity": "cn-pollution-permit-format-update-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-06-04T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "尚未进入实施窗口且发布时间过旧"
+        },
+        {
+          "candidate_key": "cand-16-environment-code-upcoming",
+          "story_identity": "cn-ecological-environment-code-effective-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-03-12T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 10,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "距实施仍有十一天，不属于当日新进展"
+        },
+        {
+          "candidate_key": "cand-17-power-bank-standard",
+          "story_identity": "cn-power-bank-gb47372-2026-release",
+          "research_pass": 1,
+          "occurred_at": "2026-04-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "已于四月发布且明年才实施，时效不足"
+        },
+        {
+          "candidate_key": "cand-18-thailand-power-bank",
+          "story_identity": "intl-thailand-power-bank-rules-2026-06-05",
+          "research_pass": 1,
+          "occurred_at": "2026-06-05T18:32:00+08:00",
+          "scope": "international",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 12,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "外国常规出行规则且已过时效窗口"
+        },
+        {
+          "candidate_key": "cand-19-macau-power-bank",
+          "story_identity": "cn-macau-power-bank-rule-2026-03-29",
+          "research_pass": 1,
+          "occurred_at": "2026-03-29T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 13,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "已实施数月，没有当日新增活动"
+        },
+        {
+          "candidate_key": "cand-20-weather-2025-stale",
+          "story_identity": "cn-weather-warning-2025-08-03",
+          "research_pass": 1,
+          "occurred_at": "2025-08-03T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 7,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "检索结果为去年同日，明确排除"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "cand-31-china-energy-contracts",
+          "story_identity": "cn-china-energy-engineering-h1-contracts-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T19:16:11+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见公开聚合热榜转述，缺少可核验权威或主流媒体原文"
+        },
+        {
+          "candidate_key": "cand-32-xiaomi-mimo-openrouter",
+          "story_identity": "cn-xiaomi-mimo-v25-openrouter-ranking-2026-08-03",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T19:25:33+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见聚合榜单快讯，缺少独立来源支持榜单口径"
+        },
+        {
+          "candidate_key": "cand-33-kungfu-football-boxoffice",
+          "story_identity": "cn-kungfu-womens-football-boxoffice-2026-08-03",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T14:36:28+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见聚合榜单票房快讯，未找到独立票务或主流媒体确认"
+        },
+        {
+          "candidate_key": "cand-34-hsbc-hr-hongkong",
+          "story_identity": "intl-hsbc-hr-executive-relocation-2026-08-03",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T14:26:55+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见行业聚合快讯，且缺少中国公众直接影响证据"
+        },
+        {
+          "candidate_key": "cand-35-unilever-h1-revenue",
+          "story_identity": "intl-unilever-h1-revenue-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T14:30:03+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见聚合快讯，缺少两家独立媒体及中国读者关联证据"
+        },
+        {
+          "candidate_key": "cand-36-kospi-below-6000",
+          "story_identity": "intl-kospi-below-6000-2026-08-03",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T14:17:47+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见聚合市场快讯，属外国市场波动且无直接中国公众影响证明"
+        },
+        {
+          "candidate_key": "cand-37-yaocai-penalty",
+          "story_identity": "cn-hk-yaocai-securities-penalty-2026-08-03",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T19:25:33+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见商业聚合快讯，未找到监管原文与独立媒体交叉核验"
+        },
+        {
+          "candidate_key": "cand-38-ai-five-year-plan",
+          "story_identity": "cn-ai-five-year-plan-release-2026-03-05",
+          "research_pass": 2,
+          "occurred_at": "2026-03-05T09:38:10+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "发布时间已远超72小时窗口，仅作科技行业背景复核"
+        },
+        {
+          "candidate_key": "cand-39-ai-standards-old",
+          "story_identity": "cn-ai-standards-plan-release-2024-07-02",
+          "research_pass": 2,
+          "occurred_at": "2024-07-02T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 7,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "drop_reason": "2024年旧信息，不属于当日新进展"
+        },
+        {
+          "candidate_key": "cand-40-ai-manufacturing-opinion",
+          "story_identity": "cn-ai-manufacturing-opinion-2026-01-08",
+          "research_pass": 2,
+          "occurred_at": "2026-01-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "一月发布的行业政策，已远超时效窗口"
+        },
+        {
+          "candidate_key": "cand-41-elderly-consumption-study",
+          "story_identity": "cn-elderly-consumption-study-2026-03-30",
+          "research_pass": 2,
+          "occurred_at": "2026-03-30T08:51:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 7,
+            "everyday_relevance": 19,
+            "evidence": 13
+          },
+          "drop_reason": "银发消费专题已发布数月，没有当日新增活动"
+        },
+        {
+          "candidate_key": "cand-42-fuzhou-mayday-transport",
+          "story_identity": "cn-fuzhou-mayday-transport-2026-04-30",
+          "research_pass": 2,
+          "occurred_at": "2026-04-30T17:21:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "五一交通保障信息已经过期，不再具备当日服务价值"
+        },
+        {
+          "candidate_key": "cand-43-zhengzhou-qingming-traffic",
+          "story_identity": "cn-zhengzhou-qingming-traffic-2026-04-08",
+          "research_pass": 2,
+          "occurred_at": "2026-04-08T08:56:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "清明客运统计已过时效窗口"
+        },
+        {
+          "candidate_key": "cand-44-shenzhen-health-exam",
+          "story_identity": "cn-shenzhen-health-exam-notice-2025-12-03",
+          "research_pass": 2,
+          "occurred_at": "2025-12-03T18:10:21+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 7,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "drop_reason": "考试通知已于去年发布且考试结束，不具备当前提醒价值"
+        },
+        {
+          "candidate_key": "cand-45-nbd-hotlist-old",
+          "story_identity": "cn-nbd-daily-hotlist-2026-07-04",
+          "research_pass": 2,
+          "occurred_at": "2026-07-04T08:16:38+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 7,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "drop_reason": "一个月前的综合热榜页面，既不新鲜也非独立故事"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-04-hk-cgb-futures",
+      "story_identity": "cn-hk-five-year-cgb-futures-launch-2026-08-03",
+      "headline": "📈 香港首只5年期国债期货正式推出",
+      "summary": "香港市场8月3日推出首只5年期人民币国债期货，为境外投资者提供离岸利率风险管理工具，并与债券通、互换通共同扩充人民币固定收益产品体系。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 18,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-03T09:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅说明公开市场产品上线及其功能，不构成投资建议。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国证监会",
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7640111/content.shtml",
+          "title": "中国人民银行、中国证监会有关部门负责人就香港近期推出5年期人民币国债期货答记者问",
+          "captured_at": "2026-08-04T06:03:30+08:00",
+          "note": "官方说明支持产品正式推出及其人民币资产风险管理作用。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.gdhmo.gov.cn/xwzx/hzjl/jjjr/content/post_109400.html",
+          "title": "香港将推出5年期国债期货",
+          "captured_at": "2026-08-04T06:03:30+08:00",
+          "note": "新华社报道明确产品于2026年8月3日推出及其主要用途。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-04-chongqing-produce-rule",
+      "story_identity": "cn-chongqing-produce-market-seven-rules-effective-2026-08-03",
+      "headline": "🥬 重庆食用农产品销售“七个一律”施行",
+      "summary": "重庆食用农产品销售监管措施8月3日起施行，要求市场开办者落实入场查验、抽样检验、结果公示和信用记录，并对无合格凭证等情形同步调查责任。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 18,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-03T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "概述公开监管要求，不对具体市场、商户或商品作质量判断。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "市场监管总局",
+          "url": "https://www.samr.gov.cn/xw/df/art/2026/art_ffa6563d9129459db90b712d24a1620e.html",
+          "title": "重庆出台食用农产品销售“七个一律”监管措施",
+          "captured_at": "2026-08-04T06:03:30+08:00",
+          "note": "官方转载载明措施8月3日起施行及入场查验、抽检公示等要求。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-04-runzhongfu-health",
+      "story_identity": "cn-runzhongfu-health-guidance-start-2026-08-04",
+      "headline": "🌿 闰中伏开启，三伏贴需遵医嘱使用",
+      "summary": "2026年闰中伏自8月4日起持续10天。中国中医科学院提示，三伏贴只适用于特定人群，发热、急性感染或皮肤过敏者不宜贴敷，出现明显不适应及时处理。",
+      "category": "节日节气",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 73,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-04T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "健康提醒来自医疗机构，不替代诊断或个体化治疗建议。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国中医科学院",
+          "url": "https://www.cacms.ac.cn/comprehensive_news/detail/5358.html",
+          "title": "顺应天时养阳气，三伏贴敷正当时",
+          "captured_at": "2026-08-04T06:03:30+08:00",
+          "note": "官方说明闰中伏为8月4日至13日，并列出适用人群和注意事项。"
+        },
+        {
+          "tier": "official",
+          "outlet": "北京清华长庚医院",
+          "url": "https://www.btch.edu.cn/ksdh/zkb/zyk/jkjy_zyk/206dceb5df1749d5bb81f83f98475001.htm",
+          "title": "冬病夏治三伏综合治疗预约开启",
+          "captured_at": "2026-08-04T06:03:30+08:00",
+          "note": "医院页面复核闰中伏日期，并提示发热、孕妇及皮肤破损等禁忌。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
