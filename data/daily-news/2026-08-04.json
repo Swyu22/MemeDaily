@@ -3,7 +3,7 @@
   "policy_version": "v3-domestic-majority",
   "rubric_version": "v3-2026",
   "date": "2026-08-04",
-  "generated_at": "2026-08-04T06:04:30+08:00",
+  "generated_at": "2026-08-04T07:16:00+08:00",
   "status": "partial",
   "run_report": {
     "candidates_scanned": 45,
@@ -20,7 +20,7 @@
       "celebrity_dispute": 1,
       "geopolitics": 1
     },
-    "dropped_low_confidence": 32,
+    "dropped_low_confidence": 25,
     "dropped_quota": 0,
     "dropped_capacity": 0,
     "sources": [
@@ -33,8 +33,8 @@
       "official_sources": 18,
       "state_media_sources": 9,
       "major_media_sources": 15,
-      "aggregator_sources": 0,
-      "dropped_insufficient_evidence": 0
+      "aggregator_sources": 7,
+      "dropped_insufficient_evidence": 7
     },
     "selection": {
       "tier": "relaxed_48h",
@@ -62,11 +62,9 @@
           "candidates_added": 15,
           "cumulative_unique_candidates": 45,
           "source_scope": [
-            "医疗机构季节健康服务",
-            "铁路临客与公共交通",
-            "国际民航与境外规则",
-            "行业会展与教育考试",
-            "跨日旧闻复核"
+            "公开聚合热榜新闻交叉核验",
+            "商业与科技行业媒体",
+            "消费与公共服务专题页面"
           ]
         }
       ],
@@ -87,7 +85,7 @@
             "everyday_relevance": 16,
             "evidence": 14
           },
-          "qualification_tier": "relaxed_48h"
+          "qualification_tier": "strict_24h"
         },
         {
           "candidate_key": "2026-08-04-chongqing-produce-rule",
@@ -475,182 +473,82 @@
           "drop_reason": "geopolitics"
         },
         {
-          "candidate_key": "cand-31-ev-charger-repeat",
-          "story_identity": "cn-ev-supply-equipment-ccc-effective-2026-08-01",
+          "candidate_key": "cand-31-china-energy-contracts",
+          "story_identity": "cn-china-energy-engineering-h1-contracts-2026",
           "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 66,
-          "score_breakdown": {
-            "heat": 25,
-            "freshness": 10,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "近七日已发布同一故事身份"
-        },
-        {
-          "candidate_key": "cand-32-appliance-safety-repeat",
-          "story_identity": "cn-home-appliance-safety-gbt4706-2024-effective-2026-08-01",
-          "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 65,
-          "score_breakdown": {
-            "heat": 24,
-            "freshness": 10,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "近七日已发布同一故事身份"
-        },
-        {
-          "candidate_key": "cand-33-veteran-employment-repeat",
-          "story_identity": "cn-veteran-employment-entrepreneurship-regulation-effective-2026-08-01",
-          "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 64,
-          "score_breakdown": {
-            "heat": 23,
-            "freshness": 10,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "近七日已发布同一故事身份"
-        },
-        {
-          "candidate_key": "cand-34-occupational-health-repeat",
-          "story_identity": "cn-occupational-health-surveillance-gbz188-2025-effective-2026-08-01",
-          "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
-          "scope": "domestic",
-          "topic": "健康医疗",
-          "outcome": "dropped_low_confidence",
-          "score": 63,
-          "score_breakdown": {
-            "heat": 22,
-            "freshness": 10,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "近七日已发布同一故事身份"
-        },
-        {
-          "candidate_key": "cand-35-insulation-fire-repeat",
-          "story_identity": "cn-building-insulation-fire-safety-gb46520-2025-effective-2026-08-01",
-          "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
-          "scope": "domestic",
-          "topic": "民生服务",
-          "outcome": "dropped_low_confidence",
-          "score": 62,
-          "score_breakdown": {
-            "heat": 21,
-            "freshness": 10,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "近七日已发布同一故事身份"
-        },
-        {
-          "candidate_key": "cand-36-food-shelf-life-repeat",
-          "story_identity": "cn-food-shelf-life-gbt47141-2026-effective",
-          "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 64,
-          "score_breakdown": {
-            "heat": 23,
-            "freshness": 10,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "近七日已发布同一故事身份"
-        },
-        {
-          "candidate_key": "cand-37-renewable-share-repeat",
-          "story_identity": "cn-renewable-consumption-minimum-share-effective-2026-08-01",
-          "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "occurred_at": "2026-08-03T19:16:11+08:00",
           "scope": "domestic",
           "topic": "重大事件",
-          "outcome": "dropped_low_confidence",
-          "score": 62,
-          "score_breakdown": {
-            "heat": 21,
-            "freshness": 10,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "近七日已发布同一故事身份"
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见公开聚合热榜转述，缺少可核验权威或主流媒体原文"
         },
         {
-          "candidate_key": "cand-38-solar-label-repeat",
-          "story_identity": "cn-solar-water-system-energy-label-rule-effective-2026-08-01",
+          "candidate_key": "cand-32-xiaomi-mimo-openrouter",
+          "story_identity": "cn-xiaomi-mimo-v25-openrouter-ranking-2026-08-03",
           "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "occurred_at": "2026-08-03T19:25:33+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见聚合榜单快讯，缺少独立来源支持榜单口径"
+        },
+        {
+          "candidate_key": "cand-33-kungfu-football-boxoffice",
+          "story_identity": "cn-kungfu-womens-football-boxoffice-2026-08-03",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T14:36:28+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见聚合榜单票房快讯，未找到独立票务或主流媒体确认"
+        },
+        {
+          "candidate_key": "cand-34-hsbc-hr-hongkong",
+          "story_identity": "intl-hsbc-hr-executive-relocation-2026-08-03",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T14:26:55+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见行业聚合快讯，且缺少中国公众直接影响证据"
+        },
+        {
+          "candidate_key": "cand-35-unilever-h1-revenue",
+          "story_identity": "intl-unilever-h1-revenue-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T14:30:03+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见聚合快讯，缺少两家独立媒体及中国读者关联证据"
+        },
+        {
+          "candidate_key": "cand-36-kospi-below-6000",
+          "story_identity": "intl-kospi-below-6000-2026-08-03",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T14:17:47+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见聚合市场快讯，属外国市场波动且无直接中国公众影响证明"
+        },
+        {
+          "candidate_key": "cand-37-yaocai-penalty",
+          "story_identity": "cn-hk-yaocai-securities-penalty-2026-08-03",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T19:25:33+08:00",
           "scope": "domestic",
           "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 61,
-          "score_breakdown": {
-            "heat": 20,
-            "freshness": 10,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "近七日已发布同一故事身份"
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见商业聚合快讯，未找到监管原文与独立媒体交叉核验"
         },
         {
-          "candidate_key": "cand-39-frozen-food-repeat",
-          "story_identity": "cn-frozen-food-quality-standards-effective-2026-08-01",
+          "candidate_key": "cand-38-ai-five-year-plan",
+          "story_identity": "cn-ai-five-year-plan-release-2026-03-05",
           "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "occurred_at": "2026-03-05T09:38:10+08:00",
           "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 60,
-          "score_breakdown": {
-            "heat": 19,
-            "freshness": 10,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "近七日已发布同一故事身份"
-        },
-        {
-          "candidate_key": "cand-40-health-service-repeat",
-          "story_identity": "cn-health-service-gbt30443-2026-effective",
-          "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
-          "scope": "domestic",
-          "topic": "健康医疗",
-          "outcome": "dropped_low_confidence",
-          "score": 59,
-          "score_breakdown": {
-            "heat": 21,
-            "freshness": 7,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "近七日已发布同一故事身份"
-        },
-        {
-          "candidate_key": "cand-41-health-supplies-repeat",
-          "story_identity": "cn-health-supplies-gbt33355-2026-effective",
-          "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
-          "scope": "domestic",
-          "topic": "健康医疗",
+          "topic": "科技AI",
           "outcome": "dropped_low_confidence",
           "score": 58,
           "score_breakdown": {
@@ -659,66 +557,66 @@
             "everyday_relevance": 18,
             "evidence": 13
           },
-          "drop_reason": "近七日已发布同一故事身份"
+          "drop_reason": "发布时间已远超72小时窗口，仅作科技行业背景复核"
         },
         {
-          "candidate_key": "cand-42-wind-standards-repeat",
-          "story_identity": "cn-four-wind-power-standards-effective-2026-08-01",
+          "candidate_key": "cand-39-ai-standards-old",
+          "story_identity": "cn-ai-standards-plan-release-2024-07-02",
           "research_pass": 2,
-          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "occurred_at": "2024-07-02T12:00:00+08:00",
           "scope": "domestic",
-          "topic": "重大事件",
+          "topic": "科技AI",
           "outcome": "dropped_low_confidence",
-          "score": 57,
+          "score": 52,
           "score_breakdown": {
-            "heat": 19,
+            "heat": 16,
+            "freshness": 7,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "drop_reason": "2024年旧信息，不属于当日新进展"
+        },
+        {
+          "candidate_key": "cand-40-ai-manufacturing-opinion",
+          "story_identity": "cn-ai-manufacturing-opinion-2026-01-08",
+          "research_pass": 2,
+          "occurred_at": "2026-01-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 18,
             "freshness": 7,
             "everyday_relevance": 18,
             "evidence": 13
           },
-          "drop_reason": "近七日已发布同一故事身份"
+          "drop_reason": "一月发布的行业政策，已远超时效窗口"
         },
         {
-          "candidate_key": "cand-43-oregon-fire-stale",
-          "story_identity": "intl-oregon-wildfires-2026-07",
+          "candidate_key": "cand-41-elderly-consumption-study",
+          "story_identity": "cn-elderly-consumption-study-2026-03-30",
           "research_pass": 2,
-          "occurred_at": "2026-07-29T12:00:00+08:00",
-          "scope": "international",
-          "topic": "自然灾害",
+          "occurred_at": "2026-03-30T08:51:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
           "outcome": "dropped_low_confidence",
-          "score": 50,
+          "score": 61,
           "score_breakdown": {
-            "heat": 12,
+            "heat": 22,
             "freshness": 7,
-            "everyday_relevance": 18,
+            "everyday_relevance": 19,
             "evidence": 13
           },
-          "drop_reason": "外国地方事件且无直接中国读者影响"
+          "drop_reason": "银发消费专题已发布数月，没有当日新增活动"
         },
         {
-          "candidate_key": "cand-44-penguin-study-stale",
-          "story_identity": "intl-penguin-population-study-2026-07",
+          "candidate_key": "cand-42-fuzhou-mayday-transport",
+          "story_identity": "cn-fuzhou-mayday-transport-2026-04-30",
           "research_pass": 2,
-          "occurred_at": "2026-07-28T12:00:00+08:00",
-          "scope": "international",
-          "topic": "重大事件",
-          "outcome": "dropped_low_confidence",
-          "score": 49,
-          "score_breakdown": {
-            "heat": 11,
-            "freshness": 7,
-            "everyday_relevance": 18,
-            "evidence": 13
-          },
-          "drop_reason": "研究消息已过时效且日常关联有限"
-        },
-        {
-          "candidate_key": "cand-45-swift-black-hole-stale",
-          "story_identity": "intl-swift-black-hole-detection-2026-07",
-          "research_pass": 2,
-          "occurred_at": "2026-07-28T12:00:00+08:00",
-          "scope": "international",
-          "topic": "太空航天",
+          "occurred_at": "2026-04-30T17:21:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
           "outcome": "dropped_low_confidence",
           "score": 55,
           "score_breakdown": {
@@ -727,7 +625,58 @@
             "everyday_relevance": 18,
             "evidence": 13
           },
-          "drop_reason": "已过时效窗口，且缺少当日新增活动"
+          "drop_reason": "五一交通保障信息已经过期，不再具备当日服务价值"
+        },
+        {
+          "candidate_key": "cand-43-zhengzhou-qingming-traffic",
+          "story_identity": "cn-zhengzhou-qingming-traffic-2026-04-08",
+          "research_pass": 2,
+          "occurred_at": "2026-04-08T08:56:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "清明客运统计已过时效窗口"
+        },
+        {
+          "candidate_key": "cand-44-shenzhen-health-exam",
+          "story_identity": "cn-shenzhen-health-exam-notice-2025-12-03",
+          "research_pass": 2,
+          "occurred_at": "2025-12-03T18:10:21+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 7,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "drop_reason": "考试通知已于去年发布且考试结束，不具备当前提醒价值"
+        },
+        {
+          "candidate_key": "cand-45-nbd-hotlist-old",
+          "story_identity": "cn-nbd-daily-hotlist-2026-07-04",
+          "research_pass": 2,
+          "occurred_at": "2026-07-04T08:16:38+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 7,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "drop_reason": "一个月前的综合热榜页面，既不新鲜也非独立故事"
         }
       ]
     }
