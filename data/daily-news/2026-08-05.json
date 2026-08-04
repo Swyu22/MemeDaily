@@ -1,0 +1,587 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-2026",
+  "date": "2026-08-05",
+  "generated_at": "2026-08-05T06:09:27+08:00",
+  "published_at": "2026-08-05T06:09:27+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "minors": 1,
+      "privacy": 1,
+      "controversy": 1,
+      "public_safety": 1,
+      "harassment": 1,
+      "rumor": 1,
+      "propaganda": 1,
+      "politics": 1,
+      "celebrity_dispute": 1,
+      "geopolitics": 1
+    },
+    "dropped_low_confidence": 10,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 12,
+      "state_media_sources": 4,
+      "major_media_sources": 7,
+      "aggregator_sources": 6,
+      "dropped_insufficient_evidence": 6
+    },
+    "selection": {
+      "tier": "relaxed_48h",
+      "qualified": {
+        "strict_24h": 2,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "国家监管与司法机关",
+            "地方政府公共服务",
+            "新华社及中央媒体",
+            "健康交通与就业专题",
+            "主流媒体与气象服务",
+            "近七日故事身份去重"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-05-platform-cases",
+          "story_identity": "cn-supreme-court-platform-economy-cases-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T10:01:11+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-05-platform-cases",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-05-entry-exit-rules",
+          "story_identity": "cn-entry-exit-management-regulation-qa-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-05-entry-exit-rules",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-05-cargo-scam-warning",
+          "story_identity": "cn-cargo-driver-recruitment-scam-guidance-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T08:43:45+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-05-cargo-scam-warning",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-05-summer-travel-weather",
+          "story_identity": "cn-summer-disaster-weather-travel-guidance-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T13:52:09+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-05-summer-travel-weather",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-05-beijing-shared-ebike",
+          "story_identity": "cn-beijing-shared-ebike-operator-filing-deadline-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 15,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "drop_reason": "仅为经营者备案截止，尚无面向公众的实际投放进展"
+        },
+        {
+          "candidate_key": "cand-06-shanghai-medical-insurance",
+          "story_identity": "cn-shanghai-medical-insurance-clinic-public-notice-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "drop_reason": "单家诊所拟纳入医保的公示，影响范围和公众热度有限"
+        },
+        {
+          "candidate_key": "cand-07-beijing-civil-affairs-jobs",
+          "story_identity": "cn-beijing-civil-affairs-recruitment-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "drop_reason": "事业单位招聘受众较窄，不足以代表当日普遍民生变化"
+        },
+        {
+          "candidate_key": "cand-08-anda-rural-doctors",
+          "story_identity": "cn-anda-rural-doctor-recruitment-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 15,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "drop_reason": "县域专项招聘的地域和受众范围有限"
+        },
+        {
+          "candidate_key": "cand-09-chongqing-prenatal-list",
+          "story_identity": "cn-chongqing-prenatal-screening-staff-list-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "属于专业人员名单公示，没有广泛公众服务变化"
+        },
+        {
+          "candidate_key": "cand-10-county-hospital-training",
+          "story_identity": "cn-county-hospital-management-training-notice-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 13,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "行业培训通知对普通读者直接关联不足"
+        },
+        {
+          "candidate_key": "cand-11-nanjing-retail-report",
+          "story_identity": "cn-nanjing-h1-retail-consumption-report-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "drop_reason": "半年统计回顾缺少当日新增政策或服务变化"
+        },
+        {
+          "candidate_key": "cand-12-xinjiang-express-report",
+          "story_identity": "cn-xinjiang-h1-express-business-report-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "drop_reason": "区域行业统计的全国代表性和行动价值不足"
+        },
+        {
+          "candidate_key": "cand-13-yunnan-h1-review",
+          "story_identity": "cn-yunnan-h1-economic-social-review-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "drop_reason": "综合回顾信息分散，缺少单一明确的当日进展"
+        },
+        {
+          "candidate_key": "cand-14-chongqing-public-space",
+          "story_identity": "cn-chongqing-public-space-wall-removal-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "drop_reason": "页面正文信息不足，且主要影响限于中心城区"
+        },
+        {
+          "candidate_key": "cand-15-environment-daily-brief",
+          "story_identity": "cn-environment-daily-brief-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T07:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "检索页正文不可核验，无法确认具体事件与时间"
+        },
+        {
+          "candidate_key": "cand-16-medical-financing-daily",
+          "story_identity": "cn-medical-financing-daily-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T23:59:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见商业数据库汇总，缺少权威或独立媒体原文"
+        },
+        {
+          "candidate_key": "cand-17-medical-award-release",
+          "story_identity": "cn-jiahui-medical-sustainability-award-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅有企业新闻稿，缺少独立报道和公共影响证明"
+        },
+        {
+          "candidate_key": "cand-18-crocs-job-posting",
+          "story_identity": "cn-crocs-job-posting-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅有企业招聘页面，无法证明广泛就业热度"
+        },
+        {
+          "candidate_key": "cand-19-bank-deposit-notice",
+          "story_identity": "cn-bank-structured-deposit-maturity-notice-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅有单家机构产品公告，缺少独立报道及普遍影响"
+        },
+        {
+          "candidate_key": "cand-20-local-night-tour",
+          "story_identity": "cn-local-night-tour-promotion-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见单一宣传性页面，缺少可核验客流或公共服务数据"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-05-platform-cases",
+      "story_identity": "cn-supreme-court-platform-economy-cases-2026-08-03",
+      "headline": "🛒 最高法典型案例明确直播带货与平台责任",
+      "summary": "最高法发布5起平台经营典型案例，覆盖直播带货、商户保证金、平台交易和虚拟账号交易，明确平台、商家与推广方责任，为网络消费维权提供裁判指引。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 18,
+        "everyday_relevance": 18,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-03T10:01:11+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅概述公开典型案例及裁判规则，不对具体平台或商家作延伸判断。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "最高人民法院",
+          "url": "https://www.court.gov.cn/zixun/xiangqing/507731.html",
+          "title": "为平台经济新业态设“边界”划“底线”——最高法发布典型案例聚焦直播带货、虚假交易、虚拟财产等新业态纠纷",
+          "captured_at": "2026-08-05T06:01:07+08:00",
+          "note": "最高法页面载明5起典型案例及平台、商家和推广方责任边界。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://app.xinhuanet.com/news/article.html?articleId=2026080343b1e11cd7cd4d5a83e1d8e09b8e942f",
+          "title": "最高法发布典型案例规范平台经营保护消费者合法权益",
+          "captured_at": "2026-08-05T06:01:07+08:00",
+          "note": "新华社报道确认案例于8月3日发布，并概括其网络消费保护意义。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-05-entry-exit-rules",
+      "story_identity": "cn-entry-exit-management-regulation-qa-2026-08-04",
+      "headline": "🛂 出境入境管理新规细化安全提醒与中介备案",
+      "summary": "有关部门解读9月15日起施行的出境入境管理规定，涉及境外安全风险提醒、申请材料真实性、入境审查及出入境中介服务备案等事项。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 17,
+        "everyday_relevance": 18,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-04T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "概述公开行政规定及办事要求，不替代个案出入境咨询。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国政府网",
+          "url": "https://www.gov.cn/zhengce/content/202607/content_7077172.htm",
+          "title": "国务院关于出境入境管理的规定",
+          "captured_at": "2026-08-05T06:01:07+08:00",
+          "note": "国务院文件载明规定内容及2026年9月15日施行日期。"
+        },
+        {
+          "tier": "official",
+          "outlet": "普兰县政府",
+          "url": "https://pulan.gov.cn/info/2211/210151.htm",
+          "title": "司法部、公安部、国家移民局负责人就《国务院关于出境入境管理的规定》答记者问",
+          "captured_at": "2026-08-05T06:01:07+08:00",
+          "note": "公开问答说明安全提醒、申请审查和中介服务备案等制度要点。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-05-cargo-scam-warning",
+      "story_identity": "cn-cargo-driver-recruitment-scam-guidance-2026-08-04",
+      "headline": "🚚 货运求职“高薪保底”购车套路获司法警示",
+      "summary": "最高法网站刊文梳理“高薪保底、贷款购车、虚假货源、制造违约”等“套路运”手法，提醒求职司机核验运输资质、合同和收费项目，并介绍协同治理措施。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-04T08:43:45+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "风险提示依据司法机关公开材料，不针对任何未公开主体。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "最高人民法院",
+          "url": "https://www.court.gov.cn/zixun/xiangqing/507741.html",
+          "title": "斩断“套路运”链条 以司法之力守护货运民生",
+          "captured_at": "2026-08-05T06:01:07+08:00",
+          "note": "最高法网站刊文概括常见手法、司法处理与求职司机核验建议。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-05-summer-travel-weather",
+      "story_identity": "cn-summer-disaster-weather-travel-guidance-2026-08-04",
+      "headline": "⛈️ 中国气象局提醒暑期出游防范四类天气风险",
+      "summary": "中国气象局提醒暑期出游重点防范台风、强对流、强降雨次生灾害和持续高温；出行前应查预报，沿海、山区及自驾途中遇预警及时避险。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-04T13:52:09+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "基于气象部门公开提示提供一般性出行避险信息。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-04/10671670.shtml",
+          "title": "暑期灾害性天气多发，出游需防范哪些风险？中国气象局提醒",
+          "captured_at": "2026-08-05T06:01:07+08:00",
+          "note": "报道转述中国气象局8月4日发布会的四类出游风险与避险建议。"
+        },
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "https://news.weather.com.cn/2026/08/4746977.shtml",
+          "title": "7月全国平均气温为同期第二高 8月有2至3个台风登陆或影响我国",
+          "captured_at": "2026-08-05T06:01:07+08:00",
+          "note": "中国气象局公共气象服务页面确认8月台风、强降雨、强对流与高温风险。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
