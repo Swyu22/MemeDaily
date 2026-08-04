@@ -1,0 +1,725 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-04",
+  "generated_at": "2026-08-04T09:07:07+08:00",
+  "published_at": "2026-08-04T09:07:07+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "政治时政": 1,
+      "犯罪与争议": 1,
+      "灾害与公共安全": 1,
+      "隐私与未成年人": 1,
+      "人物与品牌争议": 1
+    },
+    "dropped_low_confidence": 16,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "platform_public_sources": 3,
+      "aggregator_sources": 5,
+      "search_media_sources": 2,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-07-22-belike-chabie",
+          "canonical_phrase": "Xbelike",
+          "outcome": "selected",
+          "item_id": "2026-07-22-belike-chabie",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 26,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-03-cong-hang-dao-la",
+          "canonical_phrase": "从夯到拉",
+          "outcome": "selected",
+          "item_id": "2026-08-03-cong-hang-dao-la",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 25,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-04-xiaoshihou-fengci-x",
+          "canonical_phrase": "小时候讽刺的X现在全理解了",
+          "outcome": "dropped_low_confidence",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 25,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-04-shuide-qingchun-lvxing",
+          "canonical_phrase": "谁的青春不想有场说走就走的旅行",
+          "outcome": "dropped_low_confidence",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 24,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-04-zheli-youren-bei-x-meiyun",
+          "canonical_phrase": "这里有人被X美晕了",
+          "outcome": "dropped_low_confidence",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 24,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-04-yidairen-you-yidairen-x",
+          "canonical_phrase": "一代人有一代人的X",
+          "outcome": "selected",
+          "item_id": "2026-08-04-yidairen-you-yidairen-x",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 24,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-04-x-jishigan-nanie",
+          "canonical_phrase": "X既视感拿捏住了",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 24,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-04-meiren-gaosu-wo-x-zheme-nan",
+          "canonical_phrase": "没人告诉我X这么难啊",
+          "outcome": "selected",
+          "item_id": "2026-08-04-meiren-gaosu-wo-x-zheme-nan",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 24,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shenmei-kaizhi",
+          "canonical_phrase": "审美开智后我就这样穿",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 24,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-renlei-duoxiao",
+          "canonical_phrase": "人类真的太小看自己的惰性和薄情了",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 24,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-guaibude-x-ren",
+          "canonical_phrase": "怪不得XX人晚上不睡觉",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 24,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-ren-wufa-jiezhu",
+          "canonical_phrase": "人无法接住自己没有的东西",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 24,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-houyi-dianhua",
+          "canonical_phrase": "谁有后羿电话帮我打一下",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 21,
+            "reusability": 15,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-tuyaren-heying",
+          "canonical_phrase": "和自己的超萌涂鸦人合影了",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 24,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-nianji-da-tiaozhan",
+          "canonical_phrase": "年纪大了挑战XX都心酸",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 22,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-chouxiang-dui-chouxiang",
+          "canonical_phrase": "抽象对抽象",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-yidi-yidi-citong",
+          "canonical_phrase": "一滴一滴刺痛我的心",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 23,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-fangman-maomijiao",
+          "canonical_phrase": "谁听过放慢版的猫咪叫声",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 23,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-mibu-shiwai-yihan",
+          "canonical_phrase": "弥补了X没有Y的遗憾",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 23,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-shikong-duihua",
+          "canonical_phrase": "X时空对话",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 23,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-04T07:31:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-jingmen-tiaozhan",
+          "canonical_phrase": "静门十级挑战",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-shandong-huifei",
+          "canonical_phrase": "山东人会飞",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-donggua-jiangwen",
+          "canonical_phrase": "冬瓜适合抱着降温吗",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-huqiang-maigua",
+          "canonical_phrase": "买瓜但摄影师是新手",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-huadonghua",
+          "canonical_phrase": "我给超级英雄画动画",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "bilibili",
+            "zhihu",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-07-22-belike-chabie",
+      "title": "🎬 X时belike",
+      "aliases": [
+        "Xbelike",
+        "X时belike"
+      ],
+      "canonical_phrase": "Xbelike",
+      "platform": [
+        "bilibili",
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "用“X时belike”给某类人或某种场景贴上即时反应标签，搭配视频、表情或对比画面即可复用。",
+      "origin": "已验证：该身份最早于7月22日以“朋友圈和微博的差别belike”发布，当时公开榜单已记录打工、社恐、考试等跨场景接龙；8月4日B站实时榜又出现“天津人吃到美食belike”，故沿用首次ID与稳定词形。",
+      "usage": "可写“周一开会时belike”“月底看余额时belike”，适合短视频标题、对比图和评论区接龙。",
+      "fun_point": "英文连接词与中文场景槽位混搭，几乎不用解释就能把具体画面压缩成一种可识别状态。",
+      "why_spread": "已验证：7月22日微博榜单记录多个无关场景的belike接龙，8月4日B站又出现新的地域美食变体；推测：单槽位短、搭配反应画面即可套用，适合校园、职场和日常内容。",
+      "lifecycle": "peak",
+      "brand_usage": "内容团队可用“用户看到更新时belike”做前后反应对比；避免借地域、身份或群体刻板印象制造冒犯。",
+      "risk": {
+        "level": "low",
+        "note": "普通场景模板；使用地域或群体槽位时避免刻板印象。"
+      },
+      "days_on_list": 3,
+      "score": 86,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 26,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "bilibili",
+          "url": "https://hotflashnews.com/platform/bilibili",
+          "title": "B站实时热搜榜",
+          "observed_at": "2026-08-04T07:31:57+08:00",
+          "captured_at": "2026-08-04T07:50:00+08:00",
+          "note": "8月4日07:31更新，榜单第9位为“天津人吃到美食belike”，证明首次站内发布后的新增活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E6%B4%A5%E4%BA%BA%E5%90%83%E5%88%B0%E7%BE%8E%E9%A3%9Fbelike",
+          "captured_at": "2026-08-04T07:50:00+08:00",
+          "note": "B站公开搜索入口对应当天榜单词条，支持该地域槽位变体正在平台传播。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://tophub.today/n/KqndgxeLl9",
+          "title": "今日热榜·微博热搜（2026-07-22）",
+          "captured_at": "2026-07-22T06:00:00+08:00",
+          "note": "历史榜单记录“[X]belike”评论区接龙覆盖打工人、社恐、考试等无关场景，证明句壳被实际填充复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-03-cong-hang-dao-la",
+      "title": "📊 从夯到拉",
+      "aliases": [
+        "从夯到拉",
+        "从夯到拉锐评",
+        "夯到拉排行榜"
+      ],
+      "canonical_phrase": "从夯到拉",
+      "platform": [
+        "bilibili",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "把同类对象按“夯—拉”排成由强到弱的评价梯度，用一句话完成榜单式锐评。",
+      "origin": "已验证：B站实时榜于8月4日出现“从夯到拉锐评剩饭”，且公开媒体此前已记录该评分壳在礼盒等无关对象上的使用；本站沿用8月3日首次身份。",
+      "usage": "可做“从夯到拉锐评办公室零食”“从夯到拉盘点周末计划”，适合榜单、测评和评论区投票。",
+      "fun_point": "把极简网络口语变成一套煞有介事的评分体系，评价跨度大、结论感强，天然带有锐评语气。",
+      "why_spread": "已验证：8月4日B站榜出现新的剩饭对象用法；推测：模板只需更换评测对象，视频盘点和图文榜单都能低成本复制。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于同类内容或功能的轻量分级，但应公开维度并避免贬损真实个人或影射竞品。",
+      "risk": {
+        "level": "low",
+        "note": "普通评价模板；避免用于人身排名、羞辱或恶意拉踩。"
+      },
+      "days_on_list": 2,
+      "score": 84,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 25,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "bilibili",
+          "url": "https://hotflashnews.com/platform/bilibili",
+          "title": "B站实时热搜榜",
+          "observed_at": "2026-08-04T07:31:57+08:00",
+          "captured_at": "2026-08-04T07:50:00+08:00",
+          "note": "8月4日07:31更新，榜单第21位出现“从夯到拉锐评剩饭”，证明前次发布后的新增对象用法。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=%E4%BB%8E%E5%A4%AF%E5%88%B0%E6%8B%89%E9%94%90%E8%AF%84%E5%89%A9%E9%A5%AD",
+          "captured_at": "2026-08-04T07:50:00+08:00",
+          "note": "B站公开搜索入口对应当天新的“剩饭”锐评对象，支持模板在平台继续复用。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32601061",
+          "title": "“从夯到拉”锐评21家大厂新春礼盒，开箱全是狠活",
+          "captured_at": "2026-08-04T07:50:00+08:00",
+          "note": "公开报道将“从夯到拉”用于礼盒测评，支持该评分句壳能迁移到无关对象。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-04-yidairen-you-yidairen-x",
+      "title": "📺 一代人有一代人的X",
+      "aliases": [
+        "一代人有一代人的公益广告",
+        "一代人有一代人的X"
+      ],
+      "canonical_phrase": "一代人有一代人的X",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "用“一代人有一代人的X”把不同年龄群体的广告、记忆、习惯或审美放进同一套代际对照。",
+      "origin": "已验证：8月4日抖音实时榜第20位出现“一代人有一代人的公益广告”；较早公开文章也独立使用“一代人有一代人的独特记忆”。",
+      "usage": "可写“一代人有一代人的童年零食”“一代人有一代人的上网方式”，适合年代盘点与评论区补充。",
+      "fun_point": "固定开头自带宏大语气，后接日常小事会形成反差，同时把个人回忆迅速变成群体认领。",
+      "why_spread": "已验证：当天抖音榜出现公益广告新槽位，且旧文章已有独立记忆槽位；推测：代际对比容易引发补充和争论。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可按年代展示同一需求的不同解法；避免把年龄群体简单标签化或制造代际对立。",
+      "risk": {
+        "level": "low",
+        "note": "普通代际模板；避免年龄歧视和刻板印象。"
+      },
+      "days_on_list": 1,
+      "score": 80,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 24,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-04T07:31:57+08:00",
+          "captured_at": "2026-08-04T07:50:00+08:00",
+          "note": "8月4日07:31更新，榜单第20位为“一代人有一代人的公益广告”。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://mt.sohu.com/20170531/n495162173.shtml",
+          "title": "谁的童年没被这些广告、歌曲洗脑过？附：佛山六一遛娃指南",
+          "captured_at": "2026-08-04T07:50:00+08:00",
+          "note": "公开文章使用“一代人有一代人的独特记忆”，支持该句壳能迁移到不同代际对象。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-04-meiren-gaosu-wo-x-zheme-nan",
+      "title": "🥚 没人告诉我X这么难啊",
+      "aliases": [
+        "没人告诉我打十个蛋这么难啊",
+        "没人告诉我X这么难啊",
+        "没人告诉我这游戏这么难啊"
+      ],
+      "canonical_phrase": "没人告诉我X这么难啊",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“没人告诉我X这么难啊”吐槽亲自尝试后才发现一件看似简单的小事门槛很高。",
+      "origin": "已验证：8月4日抖音实时榜出现“没人告诉我打十个蛋这么难啊”；B站较早公开视频也用同一句壳形容游戏上手困难。",
+      "usage": "可写“没人告诉我整理线材这么难啊”“没人告诉我第一次做饭这么难啊”，适合失败记录和新手体验。",
+      "fun_point": "先用“没人告诉我”甩出轻微委屈，再以具体任务制造预期落差，天然适合翻车画面。",
+      "why_spread": "已验证：8月4日抖音榜出现打蛋新对象，B站另有游戏对象复用；推测：新手场景普遍，X槽位几乎不限领域。",
+      "lifecycle": "rising",
+      "brand_usage": "教程内容可用该句式先展示常见失败，再给出真正有用的解决步骤；不要夸大难度制造焦虑。",
+      "risk": {
+        "level": "safe",
+        "note": "普通新手吐槽；涉及危险操作时必须保留安全提示。"
+      },
+      "days_on_list": 1,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 24,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-04T07:31:57+08:00",
+          "captured_at": "2026-08-04T07:50:00+08:00",
+          "note": "8月4日07:31更新，榜单第25位为“没人告诉我打十个蛋这么难啊”。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV17H4y1a7d7/",
+          "title": "新手玩第五人格 没人告诉我这游戏这么难啊啊啊啊",
+          "captured_at": "2026-08-04T07:50:00+08:00",
+          "note": "B站公开视频将同一句壳用于游戏新手体验，支持它能跨对象复用。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
