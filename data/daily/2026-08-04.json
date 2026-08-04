@@ -7,7 +7,7 @@
   "status": "published",
   "run_report": {
     "candidates_scanned": 30,
-    "published": 8,
+    "published": 4,
     "dropped_safety": {
       "政治时政": 1,
       "犯罪与争议": 1,
@@ -15,7 +15,7 @@
       "隐私与未成年人": 1,
       "人物与品牌争议": 1
     },
-    "dropped_low_confidence": 12,
+    "dropped_low_confidence": 16,
     "dropped_capacity": 0,
     "sources": [
       "weibo",
@@ -25,8 +25,8 @@
     ],
     "evidence_summary": {
       "candidates_with_urls": 20,
-      "platform_public_sources": 7,
-      "aggregator_sources": 8,
+      "platform_public_sources": 3,
+      "aggregator_sources": 5,
       "search_media_sources": 2,
       "spillover_sources": 0,
       "dropped_insufficient_evidence": 5
@@ -34,9 +34,9 @@
     "selection": {
       "tier": "strict_24h",
       "qualified": {
-        "strict_24h": 8,
-        "relaxed_48h": 8,
-        "relaxed_72h": 8
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
       },
       "editorial_complete": true,
       "research_passes": [
@@ -95,13 +95,12 @@
         {
           "candidate_key": "2026-08-04-xiaoshihou-fengci-x",
           "canonical_phrase": "小时候讽刺的X现在全理解了",
-          "outcome": "selected",
-          "item_id": "2026-08-04-xiaoshihou-fengci-x",
-          "score": 85,
+          "outcome": "dropped_low_confidence",
+          "score": 79,
           "score_breakdown": {
             "heat": 35,
             "freshness": 25,
-            "reusability": 18,
+            "reusability": 12,
             "evidence": 7
           },
           "activity": {
@@ -114,13 +113,12 @@
         {
           "candidate_key": "2026-08-04-shuide-qingchun-lvxing",
           "canonical_phrase": "谁的青春不想有场说走就走的旅行",
-          "outcome": "selected",
-          "item_id": "2026-08-04-shuide-qingchun-lvxing",
-          "score": 84,
+          "outcome": "dropped_low_confidence",
+          "score": 78,
           "score_breakdown": {
             "heat": 35,
             "freshness": 24,
-            "reusability": 18,
+            "reusability": 12,
             "evidence": 7
           },
           "activity": {
@@ -133,13 +131,12 @@
         {
           "candidate_key": "2026-08-04-zheli-youren-bei-x-meiyun",
           "canonical_phrase": "这里有人被X美晕了",
-          "outcome": "selected",
-          "item_id": "2026-08-04-zheli-youren-bei-x-meiyun",
-          "score": 83,
+          "outcome": "dropped_low_confidence",
+          "score": 77,
           "score_breakdown": {
             "heat": 34,
             "freshness": 24,
-            "reusability": 18,
+            "reusability": 12,
             "evidence": 7
           },
           "activity": {
@@ -171,13 +168,12 @@
         {
           "candidate_key": "2026-08-04-x-jishigan-nanie",
           "canonical_phrase": "X既视感拿捏住了",
-          "outcome": "selected",
-          "item_id": "2026-08-04-x-jishigan-nanie",
-          "score": 79,
+          "outcome": "dropped_low_confidence",
+          "score": 73,
           "score_breakdown": {
             "heat": 30,
             "freshness": 24,
-            "reusability": 18,
+            "reusability": 12,
             "evidence": 7
           },
           "activity": {
@@ -491,20 +487,19 @@
       "title": "🎬 X时belike",
       "aliases": [
         "Xbelike",
-        "X时belike",
-        "XX人吃到美食belike",
-        "天津人吃到美食belike"
+        "X时belike"
       ],
       "canonical_phrase": "Xbelike",
       "platform": [
-        "bilibili"
+        "bilibili",
+        "weibo"
       ],
       "type": "句式梗",
       "summary": "用“X时belike”给某类人或某种场景贴上即时反应标签，搭配视频、表情或对比画面即可复用。",
-      "origin": "已验证：B站实时榜于8月4日以“天津人吃到美食belike”再次出现该句壳；它在本站最早于7月22日以“Xbelike”身份收录，故沿用首次ID与稳定词形。",
+      "origin": "已验证：该身份最早于7月22日以“朋友圈和微博的差别belike”发布，当时公开榜单已记录打工、社恐、考试等跨场景接龙；8月4日B站实时榜又出现“天津人吃到美食belike”，故沿用首次ID与稳定词形。",
       "usage": "可写“周一开会时belike”“月底看余额时belike”，适合短视频标题、对比图和评论区接龙。",
       "fun_point": "英文连接词与中文场景槽位混搭，几乎不用解释就能把具体画面压缩成一种可识别状态。",
-      "why_spread": "已验证：8月4日B站实时榜第9位出现新的地域美食变体；推测：X槽位极短、画面适配度高，仍便于跨场景续写。",
+      "why_spread": "已验证：7月22日微博榜单记录多个无关场景的belike接龙，8月4日B站又出现新的地域美食变体；推测：单槽位短、搭配反应画面即可套用，适合校园、职场和日常内容。",
       "lifecycle": "peak",
       "brand_usage": "内容团队可用“用户看到更新时belike”做前后反应对比；避免借地域、身份或群体刻板印象制造冒犯。",
       "risk": {
@@ -537,6 +532,15 @@
           "url": "https://search.bilibili.com/all?keyword=%E5%A4%A9%E6%B4%A5%E4%BA%BA%E5%90%83%E5%88%B0%E7%BE%8E%E9%A3%9Fbelike",
           "captured_at": "2026-08-04T07:50:00+08:00",
           "note": "B站公开搜索入口对应当天榜单词条，支持该地域槽位变体正在平台传播。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://tophub.today/n/KqndgxeLl9",
+          "title": "今日热榜·微博热搜（2026-07-22）",
+          "captured_at": "2026-07-22T06:00:00+08:00",
+          "note": "历史榜单记录“[X]belike”评论区接龙覆盖打工人、社恐、考试等无关场景，证明句壳被实际填充复用。"
         }
       ],
       "published": true
@@ -606,166 +610,6 @@
       "published": true
     },
     {
-      "id": "2026-08-04-xiaoshihou-fengci-x",
-      "title": "🪞 小时候讽刺的X，现在全理解了",
-      "aliases": [
-        "小时候讽刺的现在全理解了",
-        "小时候不理解的现在全懂了"
-      ],
-      "canonical_phrase": "小时候讽刺的X现在全理解了",
-      "platform": [
-        "weibo"
-      ],
-      "type": "句式梗",
-      "summary": "用“小时候讽刺的X，现在全理解了”表达年龄增长后对旧角色、旧习惯或旧选择的反向共情。",
-      "origin": "已验证：8月4日微博实时榜第7位出现“小时候讽刺的现在全理解了”；现有公开证据不支持指定唯一首发者。",
-      "usage": "可写“小时候讽刺的早睡，现在全理解了”“小时候不懂的省钱习惯，现在全懂了”，适合成长对照。",
-      "fun_point": "把童年立场和成年处境放在同一句里反转，既有自嘲，也让不同年龄的人容易接上自己的答案。",
-      "why_spread": "已验证：该表达进入8月4日微博实时榜前十；推测：前后对照清晰、X槽位宽，能快速触发集体回忆和接龙。",
-      "lifecycle": "rising",
-      "brand_usage": "可围绕“以前不懂、现在懂了”制作代际对照内容；避免把真实困境轻率包装成怀旧笑料。",
-      "risk": {
-        "level": "low",
-        "note": "普通成长自嘲；涉及健康、贫困或家庭矛盾时保持克制。"
-      },
-      "days_on_list": 1,
-      "score": 85,
-      "score_breakdown": {
-        "heat": 35,
-        "freshness": 25,
-        "reusability": 18,
-        "evidence": 7
-      },
-      "sources": [
-        {
-          "tier": "aggregator",
-          "evidence_role": "popularity",
-          "platform": "weibo",
-          "url": "https://hotflashnews.com/platform/weibo",
-          "title": "微博实时热搜榜",
-          "observed_at": "2026-08-04T07:31:57+08:00",
-          "captured_at": "2026-08-04T07:50:00+08:00",
-          "note": "8月4日07:31更新，榜单第7位为“小时候讽刺的现在全理解了”。"
-        },
-        {
-          "tier": "platform_public",
-          "evidence_role": "usage_context",
-          "platform": "weibo",
-          "url": "https://s.weibo.com/weibo?q=%E5%B0%8F%E6%97%B6%E5%80%99%E8%AE%BD%E5%88%BA%E7%9A%84%E7%8E%B0%E5%9C%A8%E5%85%A8%E7%90%86%E8%A7%A3%E4%BA%86",
-          "captured_at": "2026-08-04T07:50:00+08:00",
-          "note": "微博公开搜索入口对应当天热榜表达，支持该句式在公开讨论中传播。"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-08-04-shuide-qingchun-lvxing",
-      "title": "🧳 谁的青春不想有场说走就走的旅行",
-      "aliases": [
-        "谁的青春不想有场说走就走的旅行",
-        "说走就走的旅行"
-      ],
-      "canonical_phrase": "谁的青春不想有场说走就走的旅行",
-      "platform": [
-        "douyin"
-      ],
-      "type": "情绪梗",
-      "summary": "用“谁的青春不想有场说走就走的旅行”给临时出发、逃离日常和青春愿望加上一层集体共鸣。",
-      "origin": "已验证：该完整表达于8月4日进入抖音实时榜第5位；它是可被不同旅行内容原样复用的情绪句壳。",
-      "usage": "适合临时出发vlog、周末短途和旅行回忆，也可轻改为“谁的X不想有场说走就走的Y”。",
-      "fun_point": "一句话把冲动、青春和旅行愿望捆在一起，既像宣言又像替观众找到了立即出发的理由。",
-      "why_spread": "已验证：8月4日抖音实时榜第5位展示该完整句式；推测：无需复杂背景，旅行画面、音乐和文案都能直接套用。",
-      "lifecycle": "rising",
-      "brand_usage": "旅行与生活方式内容可用它作为开场提问，再给出低门槛路线；不得制造过度消费或安全误导。",
-      "risk": {
-        "level": "safe",
-        "note": "普通旅行情绪表达；发布路线内容时补充必要安全信息。"
-      },
-      "days_on_list": 1,
-      "score": 84,
-      "score_breakdown": {
-        "heat": 35,
-        "freshness": 24,
-        "reusability": 18,
-        "evidence": 7
-      },
-      "sources": [
-        {
-          "tier": "aggregator",
-          "evidence_role": "popularity",
-          "platform": "douyin",
-          "url": "https://hotflashnews.com/platform/douyin",
-          "title": "抖音实时热搜榜",
-          "observed_at": "2026-08-04T07:31:57+08:00",
-          "captured_at": "2026-08-04T07:50:00+08:00",
-          "note": "8月4日07:31更新，榜单第5位为“谁的青春不想有场说走就走的旅行”。"
-        },
-        {
-          "tier": "platform_public",
-          "evidence_role": "usage_context",
-          "platform": "douyin",
-          "url": "https://www.douyin.com/hot/2595428",
-          "captured_at": "2026-08-04T07:50:00+08:00",
-          "note": "抖音公开热点入口对应当天榜单句式，支持它在旅行内容中被集中使用。"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-08-04-zheli-youren-bei-x-meiyun",
-      "title": "🏞️ 这里有人被X美晕了",
-      "aliases": [
-        "这里有人被新疆美晕了",
-        "这里有人被X美晕了",
-        "被X美晕了"
-      ],
-      "canonical_phrase": "这里有人被X美晕了",
-      "platform": [
-        "douyin"
-      ],
-      "type": "句式梗",
-      "summary": "用“这里有人被X美晕了”夸张表达被风景、造型、作品或某个细节击中的即时感受。",
-      "origin": "已验证：8月4日抖音实时榜第6位出现“这里有人被新疆美晕了”，形成可替换对象的赞叹句式。",
-      "usage": "可写“这里有人被晚霞美晕了”“这里有人被这组配色美晕了”，适合图文封面和短视频开场。",
-      "fun_point": "把普通的“好看”升级成身体失衡式夸张，语气直白、对象槽位清楚，也容易被评论区模仿。",
-      "why_spread": "已验证：地域风景变体进入8月4日抖音实时榜前十；推测：高情绪词与视觉内容天然匹配，替换X即可迁移。",
-      "lifecycle": "rising",
-      "brand_usage": "视觉内容可用该句式突出一个审美细节，再用画面解释“美晕”的原因；避免虚假滤镜承诺。",
-      "risk": {
-        "level": "safe",
-        "note": "一般审美赞叹；涉及地域时避免比较式贬低。"
-      },
-      "days_on_list": 1,
-      "score": 83,
-      "score_breakdown": {
-        "heat": 34,
-        "freshness": 24,
-        "reusability": 18,
-        "evidence": 7
-      },
-      "sources": [
-        {
-          "tier": "aggregator",
-          "evidence_role": "popularity",
-          "platform": "douyin",
-          "url": "https://hotflashnews.com/platform/douyin",
-          "title": "抖音实时热搜榜",
-          "observed_at": "2026-08-04T07:31:57+08:00",
-          "captured_at": "2026-08-04T07:50:00+08:00",
-          "note": "8月4日07:31更新，榜单第6位为“这里有人被新疆美晕了”。"
-        },
-        {
-          "tier": "platform_public",
-          "evidence_role": "usage_context",
-          "platform": "douyin",
-          "url": "https://www.douyin.com/hot/2595518",
-          "captured_at": "2026-08-04T07:50:00+08:00",
-          "note": "抖音公开热点入口对应当天“被X美晕了”地域风景变体。"
-        }
-      ],
-      "published": true
-    },
-    {
       "id": "2026-08-04-yidairen-you-yidairen-x",
       "title": "📺 一代人有一代人的X",
       "aliases": [
@@ -816,60 +660,6 @@
           "title": "谁的童年没被这些广告、歌曲洗脑过？附：佛山六一遛娃指南",
           "captured_at": "2026-08-04T07:50:00+08:00",
           "note": "公开文章使用“一代人有一代人的独特记忆”，支持该句壳能迁移到不同代际对象。"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-08-04-x-jishigan-nanie",
-      "title": "🎞️ X既视感拿捏住了",
-      "aliases": [
-        "MV既视感拿捏住了",
-        "X既视感拿捏住了",
-        "既视感拿捏住了"
-      ],
-      "canonical_phrase": "X既视感拿捏住了",
-      "platform": [
-        "douyin"
-      ],
-      "type": "句式梗",
-      "summary": "用“X既视感拿捏住了”概括某个画面精准复刻了特定影像、年代或氛围的观感。",
-      "origin": "已验证：8月4日抖音实时榜第21位出现“MV既视感拿捏住了”，显示“X既视感”与“拿捏住了”组合正在传播。",
-      "usage": "可写“千禧年既视感拿捏住了”“电影预告既视感拿捏住了”，适合造型、摄影和剪辑点评。",
-      "fun_point": "“既视感”负责快速归类，“拿捏住了”负责下结论，短句同时提供参照物和肯定语气。",
-      "why_spread": "已验证：该组合进入8月4日抖音实时榜；推测：视觉内容只需替换参照类型，就能形成统一的标题结构。",
-      "lifecycle": "rising",
-      "brand_usage": "视觉项目可用该句式点出参考氛围，再展示构图、色彩或剪辑依据；避免无依据碰瓷其他作品。",
-      "risk": {
-        "level": "safe",
-        "note": "普通视觉评价；注意素材版权和原创边界。"
-      },
-      "days_on_list": 1,
-      "score": 79,
-      "score_breakdown": {
-        "heat": 30,
-        "freshness": 24,
-        "reusability": 18,
-        "evidence": 7
-      },
-      "sources": [
-        {
-          "tier": "aggregator",
-          "evidence_role": "popularity",
-          "platform": "douyin",
-          "url": "https://hotflashnews.com/platform/douyin",
-          "title": "抖音实时热搜榜",
-          "observed_at": "2026-08-04T07:31:57+08:00",
-          "captured_at": "2026-08-04T07:50:00+08:00",
-          "note": "8月4日07:31更新，榜单第21位出现“MV既视感拿捏住了”。"
-        },
-        {
-          "tier": "platform_public",
-          "evidence_role": "usage_context",
-          "platform": "douyin",
-          "url": "https://www.douyin.com/hot/2595527",
-          "captured_at": "2026-08-04T07:50:00+08:00",
-          "note": "抖音公开热点入口对应当天“X既视感拿捏住了”用法。"
         }
       ],
       "published": true
