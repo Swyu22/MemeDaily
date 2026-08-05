@@ -1,0 +1,687 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-05",
+  "generated_at": "2026-08-05T08:07:41+08:00",
+  "published_at": "2026-08-05T08:07:41+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "政治时政": 2,
+      "灾害与公共安全": 2,
+      "犯罪与争议": 2,
+      "隐私与未成年人": 1,
+      "死亡与哀悼": 1,
+      "人物与品牌争议": 1,
+      "谣言与误导": 1
+    },
+    "dropped_low_confidence": 11,
+    "dropped_capacity": 0,
+    "sources": [
+      "douyin",
+      "weibo",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 15,
+      "platform_public_sources": 6,
+      "aggregator_sources": 15,
+      "search_media_sources": 2,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-03-quanguo-x-shenqing-chuzhan",
+          "canonical_phrase": "全国X申请出战",
+          "outcome": "selected",
+          "item_id": "2026-08-03-quanguo-x-shenqing-chuzhan",
+          "score": 94,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 29,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-05-shuidong-x-hanjinliang",
+          "canonical_phrase": "谁懂X的含金量",
+          "outcome": "selected",
+          "item_id": "2026-08-05-shuidong-x-hanjinliang",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 29,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-05-x-de-kuaile-shuidong",
+          "canonical_phrase": "X的快乐谁懂啊",
+          "outcome": "selected",
+          "item_id": "2026-08-05-x-de-kuaile-shuidong",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-05-xingfuzhe-tuirang-yuanze",
+          "canonical_phrase": "幸福者退让原则",
+          "outcome": "selected",
+          "item_id": "2026-08-05-xingfuzhe-tuirang-yuanze",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 29,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-xia-ri-lanse-jiangwen",
+          "canonical_phrase": "夏日蓝色系妆一眼降温",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 25,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-qiutian-diyishu-x",
+          "canonical_phrase": "秋天的第一束X",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 25,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-likai-shenghuo",
+          "canonical_phrase": "X能不能离开我的生活",
+          "outcome": "dropped_low_confidence",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 25,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-pangxie-xiaoying",
+          "canonical_phrase": "螃蟹效应",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 24,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shicha-x-sheying-dasai",
+          "canonical_phrase": "时差X摄影大赛",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 24,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-xin-sidamingzhu",
+          "canonical_phrase": "X新四大名著",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 25,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-meitian-x-jiuweile-y",
+          "canonical_phrase": "每天X就为了Y",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shang-nianji-xingwei",
+          "canonical_phrase": "上了年纪后的一些无意识行为",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 24,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-jianyi-mai-x-buyao-dazhong",
+          "canonical_phrase": "建议大家买X不要太大众",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shuiyou-x-dianhua",
+          "canonical_phrase": "谁有X电话帮我打一下",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 25,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-jishigan-nanie",
+          "canonical_phrase": "X既视感拿捏住了",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-05T07:03:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-x-zaixian-jiedan",
+          "canonical_phrase": "X申请在线接单",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-bieba-x-guandiao",
+          "canonical_phrase": "别把X关掉",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-x-dianying-er-shua",
+          "canonical_phrase": "X电影二刷全是细节",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-kanbing-zhenshi",
+          "canonical_phrase": "看病能在诊室待很久",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-shisui-x-weixin",
+          "canonical_phrase": "当十岁的X有了自己的微信",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-21",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-22",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-23",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "谣言与误导",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "douyin",
+            "weibo",
+            "bilibili",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-03-quanguo-x-shenqing-chuzhan",
+      "title": "🔥 全国X申请出战",
+      "aliases": [
+        "全国X申请出战",
+        "全国烤肉师傅申请出战",
+        "X申请出战",
+        "山西菜申请出战暑期美食展"
+      ],
+      "canonical_phrase": "全国X申请出战",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "用“全国X申请出战”召集某类人、技能或地方风味集体登场，把普通参与写成一场声势很大的应战。",
+      "origin": "已验证：该身份8月3日首次以“全国烤肉师傅申请出战”发布；8月5日抖音实时榜又出现新的地方菜变体，因此沿用首次ID与固定句壳。",
+      "usage": "可写“全国收纳高手申请出战”“全国早起困难户申请出战”，让X对应身份、技能或生活状态。",
+      "fun_point": "“申请出战”自带正式赛场感，换成日常身份或地方风味后，郑重动员与琐碎场景形成反差。",
+      "why_spread": "已验证：8月5日抖音实时榜第2位出现新的地方菜变体，且活动晚于本站首次发布；推测：单槽位开放、号召语气强，适合评论区接龙和短视频合拍。",
+      "lifecycle": "peak",
+      "brand_usage": "内容团队可邀请用户用X接龙展示真实技能或偏好；不要虚构资质、比赛结果或用户身份。",
+      "risk": {
+        "level": "low",
+        "note": "普通号召句式；避免代入受保护身份、制造地域对立或冒充专业人员。"
+      },
+      "days_on_list": 2,
+      "score": 94,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 29,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-05T07:03:51+08:00",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "8月5日07:03更新，榜单第2位出现新的“X申请出战”地方菜变体，证明首次发布后的新增活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2597316",
+          "observed_at": "2026-08-05T07:03:51+08:00",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "与当天实时榜条目对应的公开平台入口，支持该固定句壳继续被参与和复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-05-shuidong-x-hanjinliang",
+      "title": "💎 谁懂X的含金量",
+      "aliases": [
+        "谁懂X的含金量",
+        "谁懂奶油风OOTD的含金量",
+        "X的含金量谁懂"
+      ],
+      "canonical_phrase": "谁懂X的含金量",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "用“谁懂X的含金量”替某种选择、技能或体验盖章，既表达强烈认同，也邀请同好接话。",
+      "origin": "已验证：8月5日抖音实时榜第4位出现穿搭新槽位；较早的公开视频和公开文章已把同一句壳用于版型选择与同事关系，现有证据不支持指定唯一首发者。",
+      "usage": "可写“谁懂通勤十分钟的含金量”“谁懂提前备份的含金量”，让X替换成具体选择、习惯或体验。",
+      "fun_point": "把日常偏好抬高到“含金量”评估，夸张的价值认证与小事之间形成反差，还自带同好召集感。",
+      "why_spread": "已验证：当天抖音榜出现穿搭新槽位，且版型、同事等无关场景已有独立复用；推测：问句短、X槽位宽，适合标题和评论区认领。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可用“谁懂这个细节的含金量”突出真实体验；避免把主观偏好包装成没有依据的效果承诺。",
+      "risk": {
+        "level": "low",
+        "note": "普通认同句式；涉及效果、健康或财务判断时需明确证据边界。"
+      },
+      "days_on_list": 1,
+      "score": 92,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 29,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-05T07:03:51+08:00",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "8月5日07:03更新，榜单第4位出现新的穿搭槽位，证明严格24小时内有活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2596854",
+          "observed_at": "2026-08-05T07:03:51+08:00",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "与当天实时榜条目对应的公开平台入口，支持新槽位正在传播。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://jingxuan.douyin.com/m/video/7624507699078496874",
+          "title": "谁懂连衣裙版型选对的含金量？！",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "较早的公开视频把同一句壳用于版型选择，支持跨对象复用。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://finance.sina.com.cn/wm/2026-02-27/doc-inhpftik6701895.shtml",
+          "title": "谁懂“初代同事”的含金量！",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "公开文章将同一句壳用于同事关系，进一步证明模板不依赖单一内容。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-05-x-de-kuaile-shuidong",
+      "title": "🌞 X的快乐谁懂啊",
+      "aliases": [
+        "X的快乐谁懂啊",
+        "夏日无痛避暑的快乐谁懂啊",
+        "这种快乐谁懂啊"
+      ],
+      "canonical_phrase": "X的快乐谁懂啊",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“X的快乐谁懂啊”把某个小体验包装成需要同好才能秒懂的快乐，适合展示过程和成果。",
+      "origin": "已验证：8月5日抖音实时榜第14位出现避暑新槽位；较早的公开视频已把同一句壳用于写作、饮食和户外等无关场景。",
+      "usage": "可写“周五清空待办的快乐谁懂啊”“第一次种活小苗的快乐谁懂啊”，让X替换成具体体验。",
+      "fun_point": "“谁懂啊”把个人感受变成同好暗号，普通小事因此获得夸张的共享仪式感。",
+      "why_spread": "已验证：当天抖音榜出现避暑新槽位，B站多个无关场景已有复用；推测：情绪明确、槽位开放，画面和文字都能低成本套用。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可用真实体验填充X，并展示具体过程；避免用空泛情绪替代必要信息或效果说明。",
+      "risk": {
+        "level": "low",
+        "note": "普通体验表达；不要把高风险行为包装成轻松快乐。"
+      },
+      "days_on_list": 1,
+      "score": 86,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-05T07:03:51+08:00",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "8月5日07:03更新，榜单第14位出现新的避暑槽位，证明严格24小时内有活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2596842",
+          "observed_at": "2026-08-05T07:03:51+08:00",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "与当天实时榜条目对应的公开平台入口，支持新槽位正在传播。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV13m411C7Fc",
+          "title": "三天写完开题报告的快乐谁懂啊！毕业论文",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "较早的公开视频将同一句壳用于写作进度，支持它能跨场景复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-05-xingfuzhe-tuirang-yuanze",
+      "title": "🕊️ 幸福者退让原则",
+      "aliases": [
+        "幸福者退让原则",
+        "发朋友圈还要幸福者退让原则"
+      ],
+      "canonical_phrase": "幸福者退让原则",
+      "platform": [
+        "weibo",
+        "bilibili",
+        "other"
+      ],
+      "type": "情绪梗",
+      "summary": "把“幸福者退让原则”当作一种轻巧的社交自嘲：状态更好的一方先收一收表达，给低落情绪留出空间。",
+      "origin": "已验证：该表达较早已在公开视频中传播；8月5日微博实时榜又出现朋友圈新用法，现有证据不支持指定唯一首发者。",
+      "usage": "可在晒日常前自嘲“今天先遵守一下幸福者退让原则”，也可用于朋友间轻松提醒表达分寸。",
+      "fun_point": "把难以量化的社交体感说成一条正式“原则”，严肃命名与日常分享之间形成反差。",
+      "why_spread": "已验证：8月5日微博榜出现朋友圈新语境，较早公开视频和公开页面已有多种用法；推测：概念短、态度鲜明，容易被改写成社交观察。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可用作分享分寸的轻量话题，但不应据此评判他人情绪或要求用户压抑正常表达。",
+      "risk": {
+        "level": "low",
+        "note": "普通社交自嘲；避免把它变成对他人情绪的指责或道德要求。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 29,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-05T07:03:51+08:00",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "8月5日07:03更新，榜单第27位出现朋友圈新用法，证明严格24小时内有活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1A5QGYCELx/",
+          "title": "幸福者退让原则放到现在依旧适用",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "较早的公开视频独立使用该固定概念，支持它并非单一热搜标题。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.sina.cn/news/detail/5315931085471964.html",
+          "captured_at": "2026-08-05T07:18:00+08:00",
+          "note": "公开页面汇集该概念在不同社交语境中的使用，支持跨场景复用。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
