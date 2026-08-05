@@ -1,0 +1,632 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-2026",
+  "date": "2026-08-06",
+  "generated_at": "2026-08-06T06:11:12+08:00",
+  "published_at": "2026-08-06T06:11:12+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "minors": 1,
+      "privacy": 1,
+      "controversy": 1,
+      "public_safety": 1,
+      "harassment": 1,
+      "rumor": 1,
+      "propaganda": 1,
+      "politics": 1,
+      "celebrity_dispute": 1,
+      "geopolitics": 1
+    },
+    "dropped_low_confidence": 16,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 11,
+      "state_media_sources": 9,
+      "major_media_sources": 8,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "relaxed_48h",
+      "qualified": {
+        "strict_24h": 1,
+        "relaxed_48h": 4,
+        "relaxed_72h": 5
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "中央及地方交通主管部门",
+            "新华社与中央广播媒体",
+            "民航票价与铁路运行信息",
+            "医疗卫生与药品监管",
+            "消费和金融监管",
+            "地方公共服务公告",
+            "防汛防台风与出行安全",
+            "近七日已发布身份去重"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-06-flight-fuel-surcharge-cut",
+          "story_identity": "cn-domestic-flight-fuel-surcharge-cut-effective-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-06-flight-fuel-surcharge-cut",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 18,
+            "everyday_relevance": 24,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-06-metro-flood-typhoon-guide",
+          "story_identity": "cn-urban-rail-flood-typhoon-operation-guide-issued-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T14:05:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-06-metro-flood-typhoon-guide",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 17,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-08-06-yiwan-rail-service-adjustment",
+          "story_identity": "cn-yiwan-rail-weather-service-adjustment-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T16:21:50+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-06-yiwan-rail-service-adjustment",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 20,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-06-zhejiang-hospital-preparations",
+          "story_identity": "cn-zhejiang-hospital-preparation-industrialization-plan-effective-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-06-zhejiang-hospital-preparations",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "cand-05-national-day-rail-reservation",
+          "story_identity": "cn-jinghu-national-day-rail-reservation-open-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 10,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "仅达到72小时层级；48小时层级已达完整发布下限"
+        },
+        {
+          "candidate_key": "cand-06-private-medical-ad-warning",
+          "story_identity": "cn-private-channel-medical-ad-scam-warning-2026-07-31",
+          "research_pass": 1,
+          "occurred_at": "2026-07-31T10:19:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 5,
+            "everyday_relevance": 23,
+            "evidence": 12
+          },
+          "drop_reason": "事件已超72小时且与近期消费警示报道密集重复"
+        },
+        {
+          "candidate_key": "cand-07-financial-marketing-rule",
+          "story_identity": "cn-financial-product-online-marketing-rule-issued-2026-04-24",
+          "research_pass": 1,
+          "occurred_at": "2026-04-24T19:32:45+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 3,
+            "everyday_relevance": 23,
+            "evidence": 14
+          },
+          "drop_reason": "发布事件已过时，实施日在9月30日，当前无新增动作"
+        },
+        {
+          "candidate_key": "cand-08-boc-service-maintenance",
+          "story_identity": "cn-boc-system-service-pause-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "影响范围限于单一银行部分系统且信息细节不足"
+        },
+        {
+          "candidate_key": "cand-09-zhejiang-river-chief-rule",
+          "story_identity": "cn-zhejiang-river-lake-chief-rule-announced-2026-08-02",
+          "research_pass": 1,
+          "occurred_at": "2026-08-02T08:01:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 8,
+            "everyday_relevance": 19,
+            "evidence": 15
+          },
+          "drop_reason": "尚未施行且普通读者可操作信息有限"
+        },
+        {
+          "candidate_key": "cand-10-zhejiang-social-org-evaluation",
+          "story_identity": "cn-zhejiang-social-organization-evaluation-rule-announced-2026-08-02",
+          "research_pass": 1,
+          "occurred_at": "2026-08-02T08:01:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 8,
+            "everyday_relevance": 18,
+            "evidence": 15
+          },
+          "drop_reason": "适用群体窄且尚未施行"
+        },
+        {
+          "candidate_key": "cand-11-zhejiang-multimodal-rule",
+          "story_identity": "cn-zhejiang-multimodal-transport-opinion-effective-2026-08-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 6,
+            "everyday_relevance": 20,
+            "evidence": 15
+          },
+          "drop_reason": "实施已超72小时且偏产业规划"
+        },
+        {
+          "candidate_key": "cand-12-zhejiang-marine-typhoon-response",
+          "story_identity": "cn-zhejiang-marine-typhoon-response-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "drop_reason": "区域性临时响应且面向海上作业群体，未达65分"
+        },
+        {
+          "candidate_key": "cand-13-xian-rail-weather-adjustment",
+          "story_identity": "cn-xian-rail-weather-service-adjustment-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T19:53:30+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "drop_reason": "与入选的强降雨铁路运行调整高度相近，合并后不重复入选"
+        },
+        {
+          "candidate_key": "cand-14-jingning-mobile-medical-service",
+          "story_identity": "cn-jingning-mobile-medical-service-model-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T09:04:30+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "drop_reason": "地方经验报道，直接覆盖人群有限"
+        },
+        {
+          "candidate_key": "cand-15-qingdao-digital-transport",
+          "story_identity": "cn-qingdao-digital-transport-update-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "drop_reason": "地方行业进展，缺少全国性公众影响"
+        },
+        {
+          "candidate_key": "cand-16-green-fuel-report",
+          "story_identity": "cn-green-fuel-industry-report-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "行业报告为主，普通读者直接关联不足"
+        },
+        {
+          "candidate_key": "cand-17-heilongjiang-slaughter-subsidy",
+          "story_identity": "cn-heilongjiang-livestock-slaughter-subsidy-qa-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "drop_reason": "面向特定经营主体，受众较窄"
+        },
+        {
+          "candidate_key": "cand-18-heilongjiang-facility-agriculture",
+          "story_identity": "cn-heilongjiang-facility-agriculture-support-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "产业扶持信息，普通居民可操作性低"
+        },
+        {
+          "candidate_key": "cand-19-shanghai-auto-subsidy-list",
+          "story_identity": "cn-shanghai-auto-replacement-subsidy-list-batch9-2026-08-03",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 10,
+            "everyday_relevance": 19,
+            "evidence": 8
+          },
+          "drop_reason": "仅为地方名单公示且申报主体有限"
+        },
+        {
+          "candidate_key": "cand-20-weihai-product-sampling",
+          "story_identity": "cn-weihai-industrial-product-sampling-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "地方抽检信息细节不足，未形成广泛消费行动建议"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-06-flight-fuel-surcharge-cut",
+      "story_identity": "cn-domestic-flight-fuel-surcharge-cut-effective-2026-08-05",
+      "headline": "✈️ 国内航线燃油附加费再次下调",
+      "summary": "8月5日起购买的国内航线机票，800公里以上每位成人收70元、800公里及以下收40元，分别较此前下降30元和10元。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 18,
+        "everyday_relevance": 24,
+        "evidence": 11
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-05T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅说明统一收费标准及生效日期，实际订单金额以航空公司出票页面为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国经济网",
+          "url": "https://www.ce.cn/macro/more/202608/t20260805_3129418.shtml",
+          "title": "国内航线燃油附加费今起再次下调",
+          "captured_at": "2026-08-06T06:01:35+08:00",
+          "note": "转载央视新闻并给出8月5日起的新收费标准及降幅。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "长沙晚报",
+          "url": "https://www.icswb.com/h/163/20260805/990110.html",
+          "title": "国内航线燃油附加费今起再次下调",
+          "captured_at": "2026-08-06T06:01:35+08:00",
+          "note": "注明央视新闻客户端来源，确认距离分档和本轮降幅。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-06-metro-flood-typhoon-guide",
+      "story_identity": "cn-urban-rail-flood-typhoon-operation-guide-issued-2026-08-04",
+      "headline": "🚇 城市轨道交通防汛防台风指南出台",
+      "summary": "首份全国性城市轨道交通运营防汛防台风指南发布，要求落实预警响应、巡查和管控，必要时应停尽停、应关尽关、应撤尽撤。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 17,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-04T14:05:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "概述运营安全规范，不替代乘客所在地运营单位发布的实时停运和疏散信息。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "交通运输部",
+          "url": "https://www.mot.gov.cn/xinwen/jiaotongyaowen/202608/t20260805_4211120.html",
+          "title": "交通运输部印发城市轨道交通运营防汛防台风指南",
+          "captured_at": "2026-08-06T06:01:35+08:00",
+          "note": "官方页面说明指南覆盖准备、预警、处置、恢复和复盘全流程。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国交通报",
+          "url": "https://www.zgjtb.com/2026-08/05/content_531480.html",
+          "title": "交通运输部印发城市轨道交通运营防汛防台风指南",
+          "captured_at": "2026-08-06T06:01:35+08:00",
+          "note": "报道明确一站一方案及应停、应关、应撤要求。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-06-yiwan-rail-service-adjustment",
+      "story_identity": "cn-yiwan-rail-weather-service-adjustment-2026-08-05",
+      "headline": "🚆 宜万铁路部分列车临时停运或折返",
+      "summary": "受湖北西部强降雨影响，国铁武汉局8月5日对宜万铁路部分旅客列车采取停运或折返措施；旅客需以12306和车站最新公告为准。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 18,
+        "everyday_relevance": 20,
+        "evidence": 9
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-05T16:21:50+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "临时运行方案会动态变化，未罗列可能失效的具体车次，提醒以官方实时信息为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/local/20260805/349aaf23d69944cc8eb09f82ab174b79/c.html",
+          "title": "宜万铁路部分旅客列车临时停运",
+          "captured_at": "2026-08-06T06:01:35+08:00",
+          "note": "新华社报道国铁武汉局因强降雨采取停运或折返措施。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-06-zhejiang-hospital-preparations",
+      "story_identity": "cn-zhejiang-hospital-preparation-industrialization-plan-effective-2026-08-05",
+      "headline": "💊 浙江院内制剂产业化行动方案施行",
+      "summary": "浙江院内制剂产业化三年行动方案8月5日起施行，计划到2028年新增100个院内制剂批准文号、建设约5个区域性制剂中心。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 72,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 17,
+        "everyday_relevance": 18,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-05T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "说明省级产业与监管计划，不将院内制剂等同于已获国家批准上市的新药。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://zj.cnr.cn/zjyw/20260802/t20260802_527742141.shtml",
+          "title": "8月起，这些新规将影响浙江人的生活",
+          "captured_at": "2026-08-06T06:01:35+08:00",
+          "note": "载明行动方案8月5日起施行及2028年阶段目标。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "杭州网",
+          "url": "https://hznews.hangzhou.com.cn/chengshi/content/2026-08/02/content_9270206.htm",
+          "title": "个人贷款新规来了！8月起，这些将影响你我生活",
+          "captured_at": "2026-08-06T06:01:35+08:00",
+          "note": "再次核对施行日期、六项任务和制剂中心建设目标。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
