@@ -1,0 +1,614 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-2026",
+  "date": "2026-08-07",
+  "generated_at": "2026-08-07T06:04:33+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "minors": 1,
+      "privacy": 1,
+      "controversy": 1,
+      "public_safety": 1,
+      "harassment": 1,
+      "rumor": 1,
+      "propaganda": 1,
+      "politics": 1,
+      "celebrity_dispute": 1,
+      "geopolitics": 1
+    },
+    "dropped_low_confidence": 16,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 9,
+      "state_media_sources": 11,
+      "major_media_sources": 6,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "中央气象与自然资源预警",
+            "新华社与中央广播媒体",
+            "劳动权益与公共就业服务",
+            "消费维权与司法解释",
+            "健康医疗与药品采购",
+            "交通出行与地方公共服务",
+            "文旅消费与职业考试",
+            "近七日已发布身份去重"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-07-typhoon-bailang-warning",
+          "story_identity": "cn-typhoon-bailang-yellow-warning-east-china-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-07-typhoon-bailang-warning",
+          "score": 95,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 25,
+            "evidence": 15
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-07-property-fee-adjustment-rights",
+          "story_identity": "cn-property-fee-unilateral-increase-legal-explainer-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T17:00:51+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-07-property-fee-adjustment-rights",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 25,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-07-delivery-worker-rights",
+          "story_identity": "cn-new-employment-worker-rights-and-delivery-safety-update-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T08:03:17+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-07-delivery-worker-rights",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 24,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-07-youth-shop-employment-support",
+          "story_identity": "cn-youth-shop-employment-support-progress-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T18:21:50+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-07-youth-shop-employment-support",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-05-national-road-weather",
+          "story_identity": "cn-national-road-weather-forecast-issued-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T18:34:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "官方页面正文以图片呈现，公开文本不足以稳妥提炼受影响路段，且与台风预警范围部分重叠"
+        },
+        {
+          "candidate_key": "cand-06-tour-guide-exams",
+          "story_identity": "cn-tour-guide-exams-registration-announced-2026-07-31",
+          "research_pass": 1,
+          "occurred_at": "2026-07-31T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 7,
+            "everyday_relevance": 21,
+            "evidence": 15
+          },
+          "drop_reason": "公告已超72小时，报名开放时间晚于本轮生成时点"
+        },
+        {
+          "candidate_key": "cand-07-tourism-forced-consumption-cases",
+          "story_identity": "cn-tourism-forced-consumption-cases-batch5-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 19,
+            "evidence": 5
+          },
+          "drop_reason": "与近期旅游消费警示重复度较高，公开文本不足以形成新增行动建议"
+        },
+        {
+          "candidate_key": "cand-08-community-governance-feature",
+          "story_identity": "cn-community-governance-public-service-feature-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T14:30:35+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "drop_reason": "多地经验型报道，缺少全国统一的新政策或可操作入口"
+        },
+        {
+          "candidate_key": "cand-09-banking-data-export-list",
+          "story_identity": "cn-banking-data-export-negative-list-filing-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "主要影响金融机构合规流程，普通读者直接关联有限"
+        },
+        {
+          "candidate_key": "cand-10-ai-data-foundation",
+          "story_identity": "cn-ai-data-and-computing-foundation-update-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "偏行业发展综述，缺少当日公众行动或权益变化"
+        },
+        {
+          "candidate_key": "cand-11-national-procurement-drugs",
+          "story_identity": "cn-harbin-pharma-two-drugs-proposed-national-procurement-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 8,
+            "everyday_relevance": 20,
+            "evidence": 10
+          },
+          "drop_reason": "拟中选结果尚待确认，且事件已超72小时"
+        },
+        {
+          "candidate_key": "cand-12-medical-device-procurement-proposal",
+          "story_identity": "cn-medical-device-procurement-draft-consultation-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "仍处征求意见阶段，直接面向相关机构而非普通患者"
+        },
+        {
+          "candidate_key": "cand-13-shanghai-ev-charging-station",
+          "story_identity": "cn-shanghai-hongqiao-ev-fast-charging-station-opened-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T17:27:30+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "单一站点启用，区域覆盖和全国代表性不足"
+        },
+        {
+          "candidate_key": "cand-14-jiangsu-metro-amenities",
+          "story_identity": "cn-jiangsu-metro-station-public-amenities-feature-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 4
+          },
+          "drop_reason": "地方服务经验报道，未形成全省统一新规或全国影响"
+        },
+        {
+          "candidate_key": "cand-15-commercial-satellite-topics",
+          "story_identity": "cn-commercial-satellite-application-topics-call-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "科研课题征集，受众窄且普通读者直接关联低"
+        },
+        {
+          "candidate_key": "cand-16-cdc-monthly-risk-assessment",
+          "story_identity": "cn-cdc-august-public-health-risk-assessment-meeting-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 8,
+            "everyday_relevance": 19,
+            "evidence": 10
+          },
+          "drop_reason": "会议报道未公开具体风险结论和个人防护建议"
+        },
+        {
+          "candidate_key": "cand-17-services-trade-statistics",
+          "story_identity": "cn-services-trade-statistics-update-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "宏观统计为主，缺少直接民生动作"
+        },
+        {
+          "candidate_key": "cand-18-summer-consumption-feature",
+          "story_identity": "cn-summer-consumption-service-feature-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 4
+          },
+          "drop_reason": "综合性消费观察，未出现独立的新政策或全国统一优惠入口"
+        },
+        {
+          "candidate_key": "cand-19-central-bank-reverse-repo",
+          "story_identity": "cn-central-bank-reverse-repo-operation-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "金融市场流动性操作，普通居民即时可操作性不足"
+        },
+        {
+          "candidate_key": "cand-20-public-recruitment-events",
+          "story_identity": "cn-public-recruitment-events-aggregation-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 3
+          },
+          "drop_reason": "各地零散招聘会集合，缺少全国统一活动和可复核岗位规模"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-07-typhoon-bailang-warning",
+      "story_identity": "cn-typhoon-bailang-yellow-warning-east-china-2026-08-06",
+      "headline": "🌀 台风“白海豚”黄色预警发布",
+      "summary": "中央气象台8月6日18时发布台风黄色预警，“白海豚”预计7日移入东海并逐渐向华东沿海靠近；相关海域船舶、沿海居民和游客需持续关注最新预警。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 95,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 25,
+        "evidence": 15
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-06T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅转述权威预警和防御提示；路径与强度会变化，实际行动以中央气象台及属地部门最新信息为准。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "https://www.nmc.cn/publish/typhoon/warning_index.html",
+          "title": "台风预警",
+          "captured_at": "2026-08-07T06:04:33+08:00",
+          "note": "载明8月6日18时黄色预警、移动趋势、影响海域和防御指南。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/06/ARTIGyxV7RSLW8W4Legm9iF8260806.shtml",
+          "title": "“白海豚”可能在浙闽沿海登陆，台风预警升级为黄色",
+          "captured_at": "2026-08-07T06:04:33+08:00",
+          "note": "复核预警级别、发布时间和可能影响区域。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-07-delivery-worker-rights",
+      "story_identity": "cn-new-employment-worker-rights-and-delivery-safety-update-2026-08-06",
+      "headline": "🛵 配送员权益与骑行安全措施持续落地",
+      "summary": "多地正推进“等灯停表”、合理配送时限和骑手友好场景；新华社梳理显示，职业伤害保障试点已全面推开，部分平台同步提供社保补贴或保险。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 24,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-06T08:03:17+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "概述公开制度与多地实践，不把地方试点或单个平台措施表述为全国统一待遇；个人权益以所在地和平台规则为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://cq.news.cn/20260806/bbd421949c9840d9885d7d8d5f241237/c.html",
+          "title": "让“小哥”们的奔忙之路安全温暖、成就感满满",
+          "captured_at": "2026-08-07T06:04:33+08:00",
+          "note": "报道苏州等灯停表、北京配送安全要求、职业伤害保障试点和平台保障措施。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-07-property-fee-adjustment-rights",
+      "story_identity": "cn-property-fee-unilateral-increase-legal-explainer-2026-08-06",
+      "headline": "🏠 物业费单方上涨需遵循法定程序",
+      "summary": "新华社援引北京市第二中级人民法院说明，物业费定价与调整关系业主切身利益；物业公司未经业主共同决定单方上调收费时，业主可依法维护权益。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 25,
+        "evidence": 11
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-06T17:00:51+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "提供一般性法律信息，不替代针对具体合同、业主表决程序和属地规定的专业法律意见。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/20260806/88053252f4704573a6ecb3626f408b45/c.html",
+          "title": "小区物业费要上涨，谁说了算？",
+          "captured_at": "2026-08-07T06:04:33+08:00",
+          "note": "援引北京市第二中级人民法院讲解物业费调整程序及业主维权问题。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-07-youth-shop-employment-support",
+      "story_identity": "cn-youth-shop-employment-support-progress-2026-08-06",
+      "headline": "🧑‍💼 “青春小店”项目已服务创业青年超5万人次",
+      "summary": "新华社8月6日报道，“青春小店”项目已累计服务高校、城市和乡村创业青年超5万人次，多地通过资金、培训、市集和人才政策支持小微创业。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-06T18:21:50+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "全国报道汇总的是多地实践，具体认定、补贴和申请条件因地区而异，读者需查询属地团组织或人社部门。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/local/20260806/6c13d64cf20a4e8fb41083f732a61423/c.html",
+          "title": "稳就业促就业丨“青春小店”创业记",
+          "captured_at": "2026-08-07T06:04:33+08:00",
+          "note": "载明累计服务规模，并介绍济南、长沙、杭州等地的创业支持实践。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
