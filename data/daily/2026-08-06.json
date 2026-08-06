@@ -1,0 +1,693 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-06",
+  "generated_at": "2026-08-06T08:08:48+08:00",
+  "published_at": "2026-08-06T08:08:48+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "政治时政": 2,
+      "灾害与公共安全": 2,
+      "犯罪与争议": 2,
+      "隐私与未成年人": 1,
+      "死亡与哀悼": 1,
+      "人物与品牌争议": 1,
+      "谣言与误导": 1
+    },
+    "dropped_low_confidence": 11,
+    "dropped_capacity": 0,
+    "sources": [
+      "douyin",
+      "weibo",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 15,
+      "platform_public_sources": 7,
+      "aggregator_sources": 15,
+      "search_media_sources": 1,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-06-huanying-laidao-x-shijie",
+          "canonical_phrase": "欢迎来到X的世界",
+          "outcome": "selected",
+          "item_id": "2026-08-06-huanying-laidao-x-shijie",
+          "score": 93,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-06T04:55:19+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-06-x-zenme-keyi-congming",
+          "canonical_phrase": "X怎么可以聪明成这样",
+          "outcome": "selected",
+          "item_id": "2026-08-06-x-zenme-keyi-congming",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-06T06:52:54+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-06-wanwan-meixiangdao-x-zhewan",
+          "canonical_phrase": "万万没想到X还可以这么玩",
+          "outcome": "selected",
+          "item_id": "2026-08-06-wanwan-meixiangdao-x-zhewan",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 29,
+            "reusability": 19,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-06T06:52:54+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-06-zaozhidao-x-le",
+          "canonical_phrase": "早知道X了",
+          "outcome": "selected",
+          "item_id": "2026-08-06-zaozhidao-x-le",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 29,
+            "reusability": 19,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-06T06:52:54+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-chengnianren-timian",
+          "canonical_phrase": "成年人的体面是把X说得很自然",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 26,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-06T06:52:54+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-zhenti-huangle",
+          "canonical_phrase": "好震撼的角度，X一下就回来了",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 27,
+            "reusability": 6,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-06T06:52:54+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-ren-haishengzhang",
+          "canonical_phrase": "人还生长着，人生还长着",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 6,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-06T06:52:54+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shui-bukaiyan",
+          "canonical_phrase": "谁这么不开眼把X气这样",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-06T06:52:54+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-rensheng-xuanze-x",
+          "canonical_phrase": "假如人生可以选择一次X",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-06T04:55:19+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-ruiping-biaobaiqiang",
+          "canonical_phrase": "锐评X表白墙",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 25,
+            "reusability": 3,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-06T04:55:19+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-daxue-mingci",
+          "canonical_phrase": "大学所有名词解释",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 26,
+            "reusability": 6,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-06T04:55:19+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-yue-fanxiao",
+          "canonical_phrase": "X月份返校的Y",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 7,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-06T04:55:19+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-tianqingse-x",
+          "canonical_phrase": "天青色一出来X起来了",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 28,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-06T06:52:54+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shuibaobaobao",
+          "canonical_phrase": "X宝宝请问您刚刚Y了我们对吗",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 6,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-06T06:52:54+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-molilaibai",
+          "canonical_phrase": "X被X和Y背刺了",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 7,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-06T06:52:54+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-jian-guo-x-chuan-y",
+          "canonical_phrase": "见过X穿Y吗",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-x-yihu-bai-y",
+          "canonical_phrase": "X一呼百Y",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-zhongguoren-nengfei-x-ban",
+          "canonical_phrase": "中国人能飞X版",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-zhe-yimiao-x-be",
+          "canonical_phrase": "这一秒X全员be",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-jianyi-x-kankan-y",
+          "canonical_phrase": "建议X都去看看Y",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-21",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-22",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-23",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "谣言与误导",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "douyin",
+            "weibo",
+            "bilibili",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-06-huanying-laidao-x-shijie",
+      "title": "🌍 欢迎来到X的世界",
+      "aliases": [
+        "欢迎来到X的世界",
+        "欢迎来到研究生的世界",
+        "欢迎来到低智商的世界",
+        "欢迎来到门的世界"
+      ],
+      "canonical_phrase": "欢迎来到X的世界",
+      "platform": [
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“欢迎来到X的世界”把某种身份、状态或圈层包装成一个自带规则的新世界，常用于阶段切换和沉浸式介绍。",
+      "origin": "已验证：8月6日B站实时榜第1位出现“研究生”新槽位；较早公开视频已把同一句壳用于家庭日常、影视和兴趣圈层，现有证据不支持指定唯一首发者。",
+      "usage": "可写“欢迎来到项目收尾的世界”“欢迎来到养猫人的世界”，让X对应一种身份、阶段或日常状态。",
+      "fun_point": "一句“欢迎来到”像正式入场仪式，把普通生活状态说成完整世界观，郑重语气和琐碎场景形成反差。",
+      "why_spread": "已验证：当天B站榜首出现研究生新槽位，较早公开视频存在多个无关对象；推测：单槽位清晰、画面感强，适合系列化标题和评论区接龙。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可把真实用户阶段或产品场景填入X，并用后续内容解释这个“世界”的具体规则；避免虚构用户身份。",
+      "risk": {
+        "level": "low",
+        "note": "普通身份句式；避免把疾病、灾难或受保护身份娱乐化。"
+      },
+      "days_on_list": 1,
+      "score": 93,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "bilibili",
+          "url": "https://hotflashnews.com/platform/bilibili",
+          "title": "B站实时热搜榜",
+          "observed_at": "2026-08-06T04:55:19+08:00",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "8月6日04:55更新，榜单第1位出现“欢迎来到研究生的世界”，证明严格24小时内有高位活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E7%A0%94%E7%A9%B6%E7%94%9F%E7%9A%84%E4%B8%96%E7%95%8C",
+          "title": "欢迎来到研究生的世界",
+          "observed_at": "2026-08-06T04:55:19+08:00",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "与当天B站实时榜条目对应的公开平台入口，支持新槽位正在传播。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1qB4LzdEQq/",
+          "title": "欢迎来到低智商的世界！",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "较早公开视频把同一句壳用于家庭日常，与研究生场景无关，支持跨对象复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-06-x-zenme-keyi-congming",
+      "title": "🧠 X怎么可以聪明成这样",
+      "aliases": [
+        "X怎么可以聪明成这样",
+        "老祖宗怎么可以聪明成这样",
+        "人怎么可以聪明成这样"
+      ],
+      "canonical_phrase": "X怎么可以聪明成这样",
+      "platform": [
+        "weibo",
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“X怎么可以聪明成这样”对巧思、设计或解决办法进行夸张赞叹，X可以替换为人、群体或创作者。",
+      "origin": "已验证：8月6日微博实时榜第4位以“老祖宗”为槽位；较早的B站内容也把同一句壳用于创作者表现，现有证据不支持指定唯一首发者。",
+      "usage": "可写“收纳高手怎么可以聪明成这样”“产品经理怎么可以聪明成这样”，让X对应提出巧妙办法的人或群体。",
+      "fun_point": "把普通夸奖升级成带惊讶语气的反问，既真诚又有一点夸张，特别适合揭晓意外巧思的瞬间。",
+      "why_spread": "已验证：微博当天高位出现历史智慧语境，B站较早内容用于音乐创作；推测：称赞方向明确、槽位开放，容易适配知识、生活和创意内容。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可在真实功能或设计细节展示后使用该句式；应把可验证的巧思放在前面，避免空泛自夸。",
+      "risk": {
+        "level": "low",
+        "note": "普通赞叹句式；涉及历史或专业知识时需核实事实，避免制造群体优劣。"
+      },
+      "days_on_list": 1,
+      "score": 92,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-06T06:52:54+08:00",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "8月6日06:52更新，榜单第4位出现“老祖宗怎么可以聪明成这样”，证明严格24小时内有高位活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E8%80%81%E7%A5%96%E5%AE%97%E6%80%8E%E4%B9%88%E5%8F%AF%E4%BB%A5%E8%81%AA%E6%98%8E%E6%88%90%E8%BF%99%E6%A0%B7",
+          "title": "老祖宗怎么可以聪明成这样",
+          "observed_at": "2026-08-06T06:52:54+08:00",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "与当天微博实时榜条目对应的公开平台入口，支持当前语境正在传播。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV15jD7BAEhf/",
+          "title": "把历史融入喊麦，人怎么可以聪明成这样？",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "较早的公开视频把同一句壳用于音乐创作评价，支持跨对象复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-06-wanwan-meixiangdao-x-zhewan",
+      "title": "🍉 万万没想到X还可以这么玩",
+      "aliases": [
+        "万万没想到X还可以这么玩",
+        "万万没想到切水果还可以这么玩",
+        "原来X还可以这么玩"
+      ],
+      "canonical_phrase": "万万没想到X还可以这么玩",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "用“万万没想到X还可以这么玩”制造玩法反转：先承认常规认知，再揭晓一个意外操作或新组合。",
+      "origin": "已验证：8月6日抖音实时榜出现“切水果”新槽位；较早公开页面也把同一句壳用于冰壶挑战，现有证据不支持指定唯一首发者。",
+      "usage": "可写“万万没想到表格还可以这么玩”“万万没想到剩饭还可以这么玩”，让X对应被重新开发玩法的对象。",
+      "fun_point": "“万万没想到”先把预期压低，“还可以这么玩”再完成反转，天然形成前后两拍的惊喜节奏。",
+      "why_spread": "已验证：当天抖音榜出现切水果语境，较早公开页面用于冰壶挑战；推测：反转结构成熟、对象槽位很宽，适合教程、测评和整活视频。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可在展示真实新用法后用该句式收束；避免把常规功能包装成虚假突破，也不要鼓励危险玩法。",
+      "risk": {
+        "level": "low",
+        "note": "普通玩法句式；涉及工具、交通或挑战内容时必须强调安全边界。"
+      },
+      "days_on_list": 1,
+      "score": 87,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 29,
+        "reusability": 19,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-06T06:52:54+08:00",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "8月6日06:52更新，榜单第22位出现“万万没想到切水果还可以这么玩”，证明严格24小时内有活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2598289",
+          "title": "万万没想到切水果还可以这么玩",
+          "observed_at": "2026-08-06T06:52:54+08:00",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "与当天抖音实时榜条目对应的公开平台入口，支持新槽位正在传播。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.sina.cn/news/detail/5268397048726715.html",
+          "title": "万万没想到，原来冰壶挑战还可以这么玩",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "较早的公开页面把同一句壳用于冰壶挑战，与切水果场景无关，支持跨对象复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-06-zaozhidao-x-le",
+      "title": "🎒 早知道X了",
+      "aliases": [
+        "早知道X了",
+        "早知道报大连海事大学了",
+        "早知道豆汁这么好喝就打包了",
+        "早知道这样我也X了"
+      ],
+      "canonical_phrase": "早知道X了",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“早知道X了”事后补一句夸张后悔，把看到好体验后的羡慕、改主意或自嘲压缩成短促反应。",
+      "origin": "已验证：8月6日抖音实时榜出现报考新槽位；较早的B站视频已把“早知道”句壳用于饮食、选择和生活反应，现有证据不支持指定唯一首发者。",
+      "usage": "可写“早知道坐地铁了”“早知道先备份了”“早知道点这份了”，让X替换成事后觉得更优的选择。",
+      "fun_point": "它把完整的后悔过程压成一句“早知道”，省略的前因后果反而给观众留下补全笑点的空间。",
+      "why_spread": "已验证：当天抖音榜出现高校报考语境，较早公开视频存在饮食和其他选择语境；推测：句子短、情绪直给，适合看完反差结果后的即时评论。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可用真实对比结果引出“早知道X了”；不要借此制造焦虑、贬低个人选择或暗示无法验证的优势。",
+      "risk": {
+        "level": "low",
+        "note": "普通后悔句式；涉及升学、职业等重要选择时避免绝对化建议。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 29,
+        "reusability": 19,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-06T06:52:54+08:00",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "8月6日06:52更新，榜单第27位出现“早知道报大连海事大学了”，证明严格24小时内有活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2598133",
+          "title": "早知道报大连海事大学了",
+          "observed_at": "2026-08-06T06:52:54+08:00",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "与当天抖音实时榜条目对应的公开平台入口，支持新槽位正在传播。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1BS411K7A2/",
+          "title": "早知道豆汁这么好喝就打包回去给朋友了",
+          "captured_at": "2026-08-06T07:12:00+08:00",
+          "note": "较早的公开视频把“早知道”句壳用于饮食体验，与高校语境无关，支持跨场景复用。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
