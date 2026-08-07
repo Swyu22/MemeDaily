@@ -1,0 +1,614 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-2026",
+  "date": "2026-08-08",
+  "generated_at": "2026-08-08T06:18:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "minors": 1,
+      "privacy": 1,
+      "controversy": 1,
+      "public_safety": 1,
+      "harassment": 1,
+      "rumor": 1,
+      "propaganda": 1,
+      "politics": 1,
+      "celebrity_dispute": 1,
+      "geopolitics": 1
+    },
+    "dropped_low_confidence": 16,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 9,
+      "state_media_sources": 18,
+      "major_media_sources": 5,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "中央气象与能源主管部门",
+            "新华社及中央媒体",
+            "公安交管与交通主管部门",
+            "跨区域政务服务清单",
+            "医疗卫生与公共服务",
+            "消费就业与市场监管",
+            "地方应急和产业公告",
+            "近七日已发布身份去重"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-08-national-power-load-record",
+          "story_identity": "cn-national-power-load-fourth-summer-record-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T21:34:26+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-08-national-power-load-record",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 19,
+            "everyday_relevance": 23,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-08-typhoon-dolphin-yellow-warning",
+          "story_identity": "cn-typhoon-dolphin-yellow-warning-update-2026-08-07-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-08-typhoon-dolphin-yellow-warning",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 18,
+            "everyday_relevance": 24,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-08-private-car-safety-advisory",
+          "story_identity": "cn-private-car-multi-casualty-safety-advisory-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T11:50:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-08-private-car-safety-advisory",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 23,
+            "evidence": 7
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-08-chuanyu-cross-region-services",
+          "story_identity": "cn-chuanyu-2026-cross-region-service-list-expanded-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T08:08:30+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-08-chuanyu-cross-region-services",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 18,
+            "everyday_relevance": 22,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-05-fair-competition-cases",
+          "story_identity": "cn-fair-competition-review-ten-cases-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "面向监管执法的案例汇总，普通读者直接可操作信息有限"
+        },
+        {
+          "candidate_key": "cand-06-autonomous-driving-standard-explainer",
+          "story_identity": "cn-autonomous-driving-safety-standard-issued-2026-08-04",
+          "research_pass": 1,
+          "occurred_at": "2026-08-04T18:52:40+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 4,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "drop_reason": "标准发布事件已超过72小时，本轮解读没有新的生效动作"
+        },
+        {
+          "candidate_key": "cand-07-bingtuan-community-health",
+          "story_identity": "cn-bingtuan-primary-health-service-progress-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "drop_reason": "地方服务成效报道，缺少新的全国性政策或可普遍办理事项"
+        },
+        {
+          "candidate_key": "cand-08-wuhan-service-hall-reform",
+          "story_identity": "cn-wuhan-government-service-hall-reform-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T15:28:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "drop_reason": "城市级场所改革方案，当前直接覆盖范围有限"
+        },
+        {
+          "candidate_key": "cand-09-beijing-health-fair-preview",
+          "story_identity": "cn-beijing-health-services-fair-preview-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T08:23:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "展会尚未举行，现阶段主要是活动预告"
+        },
+        {
+          "candidate_key": "cand-10-hubei-livelihood-project-meeting",
+          "story_identity": "cn-hubei-livelihood-project-progress-meeting-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 12,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "drop_reason": "会议部署为主，缺少面向公众的新办理节点"
+        },
+        {
+          "candidate_key": "cand-11-water-source-protection-fund",
+          "story_identity": "cn-danjiangkou-water-source-protection-fund-launch-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "公益基金启动，普通读者即时影响较弱"
+        },
+        {
+          "candidate_key": "cand-12-chongqing-science-awards",
+          "story_identity": "cn-chongqing-science-award-project-review-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T09:43:47+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "drop_reason": "成果盘点偏行业回顾，缺少当日新增公共服务"
+        },
+        {
+          "candidate_key": "cand-13-baoshan-earthquake-alert-platform",
+          "story_identity": "cn-changning-earthquake-alert-platform-launch-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T18:08:11+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "县域应急平台覆盖面较窄，未达到日常关联门槛"
+        },
+        {
+          "candidate_key": "cand-14-jiangning-industry-chain",
+          "story_identity": "cn-jiangning-industry-chain-progress-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "产业园区进展，普通读者直接关联不足"
+        },
+        {
+          "candidate_key": "cand-15-chongqing-summer-consumption-map",
+          "story_identity": "cn-chongqing-summer-consumption-map-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "地方活动导览，区域性和商业推广属性较强"
+        },
+        {
+          "candidate_key": "cand-16-beijing-public-recruitment",
+          "story_identity": "cn-beijing-public-institution-recruitment-batch-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "多个单位分散招聘，缺少统一批次和全国性影响"
+        },
+        {
+          "candidate_key": "cand-17-transport-typhoon-response-repost",
+          "story_identity": "cn-transport-typhoon-response-republication-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T17:05:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "主要转述前一日防御响应，最新预警已由入选条目覆盖"
+        },
+        {
+          "candidate_key": "cand-18-beijing-reading-program",
+          "story_identity": "cn-beijing-reading-program-selection-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "典型选树通知，受众和即时公共影响有限"
+        },
+        {
+          "candidate_key": "cand-19-wuxi-industry-parks",
+          "story_identity": "cn-wuxi-industry-park-progress-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "地方产业园区成效盘点，不构成当日重要民生变化"
+        },
+        {
+          "candidate_key": "cand-20-beijing-talent-recruitment",
+          "story_identity": "cn-beijing-social-sciences-talent-recruitment-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "单一机构高端人才招聘，适用群体过窄"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-08-national-power-load-record",
+      "story_identity": "cn-national-power-load-fourth-summer-record-2026-08-07",
+      "headline": "🔌 全国用电负荷入夏以来第四次创新高",
+      "summary": "8月7日全国用电负荷达到15.57亿千瓦，较上一次纪录增加约480万千瓦；国家能源局要求加强薄弱地区运维抢修、重点用户供电保障和群众诉求响应。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 19,
+        "everyday_relevance": 23,
+        "evidence": 9
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-07T21:34:26+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "说明全国供电负荷与保障措施，不据此预测个别地区是否会限电；具体停电安排以当地电网通知为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260807/8452ad100bcd4e3abc5e8f587e0b3d78/c.html",
+          "title": "全国用电负荷入夏以来第四次创历史新高",
+          "captured_at": "2026-08-08T06:17:00+08:00",
+          "note": "新华社援引国家能源局数据，给出负荷纪录及迎峰度夏供电保障措施。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-08-typhoon-dolphin-yellow-warning",
+      "story_identity": "cn-typhoon-dolphin-yellow-warning-update-2026-08-07-18",
+      "headline": "🌀 台风“白海豚”黄色预警继续生效",
+      "summary": "中央气象台8月7日18时继续发布台风黄色预警，预计“白海豚”将于9日下午至10日早晨在浙江到福建北部沿海登陆，华东及后续可能受影响地区需防范强风、暴雨和次生灾害。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 18,
+        "everyday_relevance": 24,
+        "evidence": 9
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-07T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "台风路径和强度仍会调整，未列出易失效的逐小时位置；出行与避险应以中央气象台及属地最新预警为准。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "https://m.nmc.cn/publish/typhoon/warning_index.html",
+          "title": "台风预警",
+          "captured_at": "2026-08-08T06:17:00+08:00",
+          "note": "官方页面标注8月7日18时黄色预警，并给出登陆时段、风力和影响区域。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网客户端",
+          "url": "https://app.xinhuanet.com/news/article.html?articleId=20260807a56f2afdbe0a475e9e719369e66a8bae",
+          "title": "台风“白海豚”预计在浙闽沿海登陆，将带来哪些影响",
+          "captured_at": "2026-08-08T06:17:00+08:00",
+          "note": "新华社采访中央气象台首席预报员，解释华东及后续可能受影响区域。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-08-private-car-safety-advisory",
+      "story_identity": "cn-private-car-multi-casualty-safety-advisory-2026-08-07",
+      "headline": "🚗 公安交管部门发布私家车安全提示",
+      "summary": "针对近期多地私家车严重事故，公安部交管局8月7日提醒驾驶人不超速、不疲劳驾驶、不强超强会、不争道抢行、不分心、不酒驾，并掌握事故后的基本应急处置步骤。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 23,
+        "evidence": 7
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-07T11:50:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅提炼面向公众的驾驶与应急建议，不展开事故伤亡细节；实际道路情况和处置应服从交警指挥。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "https://society.people.com.cn/n1/2026/0807/c1008-40775862.html",
+          "title": "近期私家车肇事多发 公安部交管局发出提示",
+          "captured_at": "2026-08-08T06:17:00+08:00",
+          "note": "新华社稿件转述公安部交管局8月7日发布的“六不一会”安全提示。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-08-chuanyu-cross-region-services",
+      "story_identity": "cn-chuanyu-2026-cross-region-service-list-expanded-2026-08-07",
+      "headline": "📱 川渝357项高频事项实现跨省通办",
+      "summary": "川渝两地发布2026年版通办事项清单，整合形成357项高频服务并新增102项，覆盖出入境、交管、社保和企业经营等领域，部分证照可直接互认。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 18,
+        "everyday_relevance": 22,
+        "evidence": 9
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-07T08:08:30+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "服务适用范围和材料要求可能因事项不同而异，办理前应在川渝政务服务专区或属地窗口核对最新清单。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://cq.news.cn/20260807/fb03937bd0ac4daea9eb22f81a67f960/c.html",
+          "title": "居民从出生到养老 企业从开办到注销 357项“川渝通办”高频事项全覆盖",
+          "captured_at": "2026-08-08T06:17:00+08:00",
+          "note": "重庆日报经新华网刊发，列明357项总量、新增102项和线上线下办理渠道。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
