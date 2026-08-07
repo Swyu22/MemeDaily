@@ -1,0 +1,722 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-07",
+  "generated_at": "2026-08-07T08:09:02+08:00",
+  "published_at": "2026-08-07T08:09:02+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "政治时政": 0,
+      "灾害与公共安全": 2,
+      "犯罪与争议": 4,
+      "隐私与未成年人": 1,
+      "死亡与哀悼": 2,
+      "人物与品牌争议": 1
+    },
+    "dropped_low_confidence": 11,
+    "dropped_capacity": 0,
+    "sources": [
+      "douyin",
+      "weibo",
+      "bilibili",
+      "zhihu",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 15,
+      "platform_public_sources": 9,
+      "aggregator_sources": 15,
+      "search_media_sources": 2,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-07-huaiyi-ziji-x-mei-huaiyi-y",
+          "canonical_phrase": "怀疑自己X都没怀疑过Y",
+          "outcome": "selected",
+          "item_id": "2026-08-07-huaiyi-ziji-x-mei-huaiyi-y",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 29,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-07-ni-jiushuo-x-ke-bu-keai",
+          "canonical_phrase": "你就说X可不可爱嘛",
+          "outcome": "selected",
+          "item_id": "2026-08-07-ni-jiushuo-x-ke-bu-keai",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 29,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-07-ren-zai-wuyu-hui-xiaochusheng",
+          "canonical_phrase": "人在无语的时候真的会笑出声",
+          "outcome": "selected",
+          "item_id": "2026-08-07-ren-zai-wuyu-hui-xiaochusheng",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-07-ren-buneng-zhiyou-yige-jingshen-zhizhu",
+          "canonical_phrase": "人不能只有一个精神支柱",
+          "outcome": "selected",
+          "item_id": "2026-08-07-ren-buneng-zhiyou-yige-jingshen-zhizhu",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-yuanlai-bushangban",
+          "canonical_phrase": "原来不上班有这么多能做的事",
+          "outcome": "dropped_low_confidence",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 29,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-gongzuo-yangren",
+          "canonical_phrase": "工作其实是很养人的",
+          "outcome": "dropped_low_confidence",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 29,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shengcun-moshi",
+          "canonical_phrase": "不是脾气差是大脑进了生存模式",
+          "outcome": "dropped_low_confidence",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 29,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-chouxiang-dian",
+          "canonical_phrase": "抽象点怎么了",
+          "outcome": "dropped_low_confidence",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 29,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shijie-yousecai",
+          "canonical_phrase": "我让你的世界拥有色彩了吗",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 28,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-yanjing-pianai",
+          "canonical_phrase": "眼睛虽小但装得下偏爱",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 28,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-xiaoshihou-yaoyan",
+          "canonical_phrase": "小时候父母相信的离谱谣言",
+          "outcome": "dropped_low_confidence",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 29,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-07T03:53:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-laoyibei-shenmei",
+          "canonical_phrase": "用老一辈的审美看八仙",
+          "outcome": "dropped_low_confidence",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 29,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-07T03:53:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-sanben-youji",
+          "canonical_phrase": "西游记之外的三本游记有多离谱",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 29,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-07T03:53:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shendu-shenmei",
+          "canonical_phrase": "作品深度是新时代的审美谎言",
+          "outcome": "dropped_low_confidence",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 29,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-07T03:53:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-qiutian-naichafeng",
+          "canonical_phrase": "秋天的第一套奶茶风穿搭",
+          "outcome": "dropped_low_confidence",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 29,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T07:02:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-xingfu-konghuanxi",
+          "canonical_phrase": "幸福来得猝不及防到头是空欢喜",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-shijian-henman-liqiu",
+          "canonical_phrase": "总以为时间很慢可周五就要立秋了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-diaoru-naiyoufeng",
+          "canonical_phrase": "掉入奶油风治愈世界",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-waiguoren-yexiangfei",
+          "canonical_phrase": "外国人也想飞",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-naiwa-chuchu",
+          "canonical_phrase": "奶蛙出处确认",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-21",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-22",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-23",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "douyin",
+            "weibo",
+            "bilibili",
+            "zhihu",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-07-huaiyi-ziji-x-mei-huaiyi-y",
+      "title": "🪞 怀疑自己X都没怀疑过Y",
+      "aliases": [
+        "怀疑自己X都没怀疑过Y",
+        "怀疑自己比例不好都没怀疑过镜子",
+        "怀疑自己都没怀疑过他君哥"
+      ],
+      "canonical_phrase": "怀疑自己X都没怀疑过Y",
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "用“怀疑自己X都没怀疑过Y”把自我反省和意外真因放在一句话里，Y承担最后一拍的反转。",
+      "origin": "已验证：8月7日微博实时榜出现“比例不好／镜子”版本；较早百度公开视频结果出现“自己／他君哥”版本，现有证据不支持指定唯一首发者。",
+      "usage": "可写“怀疑自己不会拍照都没怀疑过灯光”“怀疑自己记性差都没怀疑过提醒没开”，让X写误判、Y写真因。",
+      "fun_point": "前半句像认真反省，后半句突然把责任转向被忽略的对象，靠归因翻转制造轻松自嘲。",
+      "why_spread": "已验证：当天微博榜出现镜子语境，较早公开视频用于人物互动；推测：双槽位明确、反转位置固定，适合生活吐槽和评论区改写。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可在真实排查过程后用该句式呈现误判与真因；不要用它甩锅用户或掩盖产品问题。",
+      "risk": {
+        "level": "low",
+        "note": "普通自嘲句式；避免用于外貌羞辱、疾病诊断或对具体个人的攻击。"
+      },
+      "days_on_list": 1,
+      "score": 91,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 29,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-07T07:02:52+08:00",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "8月7日07:02更新，榜单第16位出现“怀疑自己比例不好都没怀疑过镜子”，证明严格24小时内有活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E6%80%80%E7%96%91%E8%87%AA%E5%B7%B1%E6%AF%94%E4%BE%8B%E4%B8%8D%E5%A5%BD%E9%83%BD%E6%B2%A1%E6%80%80%E7%96%91%E8%BF%87%E9%95%9C%E5%AD%90",
+          "title": "怀疑自己比例不好都没怀疑过镜子",
+          "observed_at": "2026-08-07T07:02:52+08:00",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "与当天微博实时榜对应的公开搜索入口，支持镜子版本正在传播。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://m.baidu.com/vsearch/xsppage?word=%E5%BE%90%E5%BF%97%E8%83%9C%E6%80%80%E7%96%91%E8%87%AA%E5%B7%B1%E9%83%BD%E6%B2%A1%E6%80%80%E7%96%91%E8%BF%87%E4%BB%96%E5%90%9B%E5%93%A5",
+          "title": "徐志胜怀疑自己都没怀疑过他君哥",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "较早公开搜索结果把同一反转壳用于人物互动，与镜子语境无关，支持双槽位复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-07-ni-jiushuo-x-ke-bu-keai",
+      "title": "🐾 你就说X可不可爱嘛",
+      "aliases": [
+        "你就说X可不可爱嘛",
+        "你就说我小时候可不可爱嘛",
+        "你就说可不可爱吧",
+        "你就说萝莉可不可爱吧"
+      ],
+      "canonical_phrase": "你就说X可不可爱嘛",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“你就说X可不可爱嘛”跳过细节辩论，直接邀请观众对人、物或作品做一个带撒娇感的可爱判断。",
+      "origin": "已验证：8月7日抖音实时榜出现“我小时候”版本；较早B站公开视频已把同一句壳用于游戏角色、水果和头像，现有证据不支持指定唯一首发者。",
+      "usage": "可写“你就说这个小图标可不可爱嘛”“你就说我家猫这一步可不可爱嘛”，让X对应被展示的对象。",
+      "fun_point": "“你就说”假装把复杂评价压成一道选择题，尾音“嘛”又把强势追问变成撒娇，形成软硬反差。",
+      "why_spread": "已验证：当天抖音榜出现童年照片语境，较早B站视频用于角色、水果等无关对象；推测：对象槽位开放、互动门槛低，适合标题和评论区接话。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可在真实产品细节、宠物或作品展示后使用；避免替观众预设结论，也不要用在未成年人隐私素材上。",
+      "risk": {
+        "level": "low",
+        "note": "普通称赞句式；涉及儿童照片时必须有授权并避免披露身份信息。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 29,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-07T07:02:52+08:00",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "8月7日07:02更新，榜单第27位出现“你就说我小时候可不可爱嘛”，证明严格24小时内有活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2599531",
+          "title": "你就说我小时候可不可爱嘛",
+          "observed_at": "2026-08-07T07:02:52+08:00",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "与当天抖音实时榜对应的公开平台入口，支持童年照片版本正在传播。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1LN4y1h7sg/",
+          "title": "你就说可不可爱吧",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "较早公开视频把同一句壳用于游戏角色展示，与童年照片语境无关。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1venPzMEHs/",
+          "title": "你就说可不可爱？小小柚子轻松拿捏",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "较早公开视频把同一句壳用于水果礼盒，进一步支持对象槽位可替换。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-07-ren-zai-wuyu-hui-xiaochusheng",
+      "title": "😅 人在无语的时候真的会笑出声",
+      "aliases": [
+        "人在无语的时候真的会笑出声",
+        "人在无语的时候真的会笑出声啊"
+      ],
+      "canonical_phrase": "人在无语的时候真的会笑出声",
+      "platform": [
+        "weibo",
+        "douyin",
+        "other"
+      ],
+      "type": "情绪梗",
+      "summary": "用“人在无语的时候真的会笑出声”给离谱、尴尬或超出预期的场面做统一反应，笑意表达的其实是无奈。",
+      "origin": "已验证：8月7日微博实时榜出现完整句；较早抖音精选和TapTap帖子已把它用于盲盒、游戏与生活吐槽，现有证据不支持指定唯一首发者。",
+      "usage": "遇到荒诞价格、反复翻车或令人语塞的对话时，可直接用完整句作为标题、评论或画面后的反应字幕。",
+      "fun_point": "“笑出声”通常表示开心，这里却是无语到极点的生理反应，情绪错位本身就形成共鸣。",
+      "why_spread": "已验证：当天微博榜出现完整句，较早公开页面用于盲盒和游戏等无关场景；推测：固定句短、情绪识别快，能覆盖大量低风险吐槽场面。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可在展示真实的小失误或反差后自嘲使用；不要把消费者投诉、事故或他人受伤包装成笑料。",
+      "risk": {
+        "level": "low",
+        "note": "普通情绪表达；避免用于灾害、伤害、歧视或真实受害事件。"
+      },
+      "days_on_list": 1,
+      "score": 83,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-07T07:02:52+08:00",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "8月7日07:02更新，榜单第28位出现完整句，证明严格24小时内有活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E4%BA%BA%E5%9C%A8%E6%97%A0%E8%AF%AD%E7%9A%84%E6%97%B6%E5%80%99%E7%9C%9F%E7%9A%84%E4%BC%9A%E7%AC%91%E5%87%BA%E5%A3%B0",
+          "title": "人在无语的时候真的会笑出声",
+          "observed_at": "2026-08-07T07:02:52+08:00",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "与当天微博实时榜对应的公开搜索入口，支持完整句正在传播。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://jingxuan.douyin.com/m/video/7569554211202623220",
+          "title": "离谱盲盒开箱亏麻了，人在无语的时候真的会笑出声啊",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "较早公开视频把该句用于盲盒开箱，与当天热搜入口无关，支持跨场景复用。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.taptap.cn/moment/753080344663556518",
+          "title": "人在无语的时候真的会笑出声",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "较早公开论坛帖子把完整句用于游戏场景，支持固定情绪反应的复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-07-ren-buneng-zhiyou-yige-jingshen-zhizhu",
+      "title": "🧩 人不能只有一个精神支柱",
+      "aliases": [
+        "人不能只有一个精神支柱",
+        "追星是我的精神支柱",
+        "宠物是我的精神支柱"
+      ],
+      "canonical_phrase": "人不能只有一个精神支柱",
+      "platform": [
+        "weibo",
+        "bilibili",
+        "other"
+      ],
+      "type": "情绪梗",
+      "summary": "用“人不能只有一个精神支柱”提醒自己把快乐来源分散到多个爱好、关系或日常仪式里，也常带一点认真自嘲。",
+      "origin": "已验证：8月7日微博实时榜出现完整句；较早B站视频和公开报道分别把追星、宠物写作精神支柱，现有证据不支持指定当前句的唯一首发者。",
+      "usage": "可在分享多项爱好或生活清单时用作总标题，再列出音乐、运动、宠物、游戏等不同的情绪补给来源。",
+      "fun_point": "“精神支柱”原本很郑重，网络用法却常把零食、爱好和日常小事列成一排，庄重词与轻量对象形成反差。",
+      "why_spread": "已验证：当天微博榜出现完整判断，较早公开视频和报道展示精神支柱对象可从追星换到宠物；推测：易接清单、情绪友好，适合分享多元爱好。",
+      "lifecycle": "rising",
+      "brand_usage": "内容团队可邀请用户分享真实的多元爱好，不应暗示产品可以替代专业心理支持或真实的人际关系。",
+      "risk": {
+        "level": "low",
+        "note": "普通情绪表达；避免作心理治疗承诺，也不要贬低单一爱好或依赖关系。"
+      },
+      "days_on_list": 1,
+      "score": 83,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-07T07:02:52+08:00",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "8月7日07:02更新，榜单第28位出现“人不能只有一个精神支柱”，证明严格24小时内有活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E4%BA%BA%E4%B8%8D%E8%83%BD%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E7%B2%BE%E7%A5%9E%E6%94%AF%E6%9F%B1",
+          "title": "人不能只有一个精神支柱",
+          "observed_at": "2026-08-07T07:02:52+08:00",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "与当天微博实时榜对应的公开搜索入口，支持完整句正在传播。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV19RszzLEug/",
+          "title": "打工人自救指南：我的精神支柱是追星",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "较早公开视频把追星写作精神支柱，支持对象可替换。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://cn.chinadaily.com.cn/a/202001/03/WS5e0ecfe1a31099ab995f525b.html",
+          "title": "飞速发展的宠物经济，孤独的95后：宠物是我的精神支柱",
+          "captured_at": "2026-08-07T07:04:00+08:00",
+          "note": "较早公开报道把宠物写作精神支柱，与追星场景无关，支持多对象用法。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
