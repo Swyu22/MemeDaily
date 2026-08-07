@@ -1,0 +1,691 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-08",
+  "generated_at": "2026-08-08T07:13:13+08:00",
+  "published_at": "2026-08-08T07:13:13+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "政治时政": 1,
+      "灾害与公共安全": 2,
+      "犯罪与争议": 2,
+      "隐私与未成年人": 1,
+      "疾病与隐私": 1,
+      "人物与品牌争议": 1,
+      "死亡与哀悼": 1,
+      "谣言与误导": 1
+    },
+    "dropped_low_confidence": 11,
+    "dropped_capacity": 0,
+    "sources": [
+      "douyin",
+      "weibo",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 15,
+      "platform_public_sources": 4,
+      "aggregator_sources": 15,
+      "search_media_sources": 4,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-08-yuanlai-x-zhende-hui-yingxiang-yanzhi",
+          "canonical_phrase": "原来X真的会影响颜值",
+          "outcome": "selected",
+          "item_id": "2026-08-08-yuanlai-x-zhende-hui-yingxiang-yanzhi",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 29,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-08T07:02:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-08-x-caishi-zhende-npc-ba",
+          "canonical_phrase": "X才是真的NPC吧",
+          "outcome": "selected",
+          "item_id": "2026-08-08-x-caishi-zhende-npc-ba",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 29,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T23:13:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-08-x-de-y-kongpa-zaiwo-zhishang",
+          "canonical_phrase": "X的Y恐怕在我之上",
+          "outcome": "selected",
+          "item_id": "2026-08-08-x-de-y-kongpa-zaiwo-zhishang",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T23:13:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-08-turan-lijie-x-de-y-gan",
+          "canonical_phrase": "突然理解了X的Y感",
+          "outcome": "selected",
+          "item_id": "2026-08-08-turan-lijie-x-de-y-gan",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-08T07:02:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-kanwan-x-miaodong-y",
+          "canonical_phrase": "看完X秒懂Y",
+          "outcome": "dropped_low_confidence",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 29,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-08T07:02:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-waie-neie",
+          "canonical_phrase": "X外鹅版VS内鹅版",
+          "outcome": "dropped_low_confidence",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 29,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-08T07:02:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-meiyou-kongtiao-waijichengshi",
+          "canonical_phrase": "一个没有空调外挂机的城市",
+          "outcome": "dropped_low_confidence",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 29,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-08T07:02:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-shanshui-buhuizaixiangfeng",
+          "canonical_phrase": "山水不会再相逢人也不会再见",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 29,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-08T07:02:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-chaoyuqi",
+          "canonical_phrase": "X超预期",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 29,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-08T07:02:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-yousha-huilai",
+          "canonical_phrase": "X又杀回来了",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 28,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T23:13:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-caishi-zhenzheng-y",
+          "canonical_phrase": "X才是真正的Y",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 29,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T23:13:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-jianmo-bugou-x-lai-cou",
+          "canonical_phrase": "建模不够X来凑",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 29,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T23:13:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-ba-x-chichu-y-ganjue",
+          "canonical_phrase": "把X吃出Y感觉",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 29,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T23:13:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-yinggai-jiaowo",
+          "canonical_phrase": "X：应该是在叫我吧",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 29,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-07T23:13:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-diyuji-nandu-x",
+          "canonical_phrase": "地狱级难度X",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 29,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-07T20:50:59+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-laobeizi-qiutian-diyibei",
+          "canonical_phrase": "老辈子秋天的第一杯X",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-ba-x-yishigan-pengshouxin",
+          "canonical_phrase": "把X的仪式感捧在手心",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-shangxin-yao-x",
+          "canonical_phrase": "伤心也要X",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-dangni-bei-x-xuanzhong",
+          "canonical_phrase": "当你被一些X选中",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-chengshi-kong-yuanlai-x",
+          "canonical_phrase": "这城市那么空原来是X",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-21",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-22",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-23",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "疾病与隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "谣言与误导",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "douyin",
+            "weibo",
+            "bilibili",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-08-yuanlai-x-zhende-hui-yingxiang-yanzhi",
+      "title": "🏊 原来X真的会影响颜值",
+      "aliases": [
+        "原来X真的会影响颜值",
+        "原来戴泳帽真的会影响颜值",
+        "说X真的会影响颜值吗"
+      ],
+      "canonical_phrase": "原来X真的会影响颜值",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "把一个生活细节放进“原来X真的会影响颜值”，用半认真半调侃的口吻描述外观变化。",
+      "origin": "8月8日微博实时榜以“戴泳帽”为具体槽位登顶；公开页面里还出现方言、饮食与身体状态等不同槽位，形成可替换句壳。",
+      "usage": "可写“原来灯光真的会影响颜值”“原来发型真的会影响颜值”，X应是可观察的生活变量。",
+      "fun_point": "句子先像严肃结论，落到泳帽、发型或灯光等小事后，夸张因果与日常经验形成反差。",
+      "why_spread": "已验证：8月8日07:02微博实时榜第1位；跨页面可见多个不同X槽位。推测：结论明确、改写成本低，适合对比图和评论接龙。",
+      "lifecycle": "peak",
+      "brand_usage": "可让用户用真实前后对比填入X；不要把审美玩笑包装成医疗或功效结论。",
+      "risk": {
+        "level": "low",
+        "note": "普通外观话题；避免羞辱体貌、制造容貌焦虑或给出伪健康结论。"
+      },
+      "days_on_list": 1,
+      "score": 91,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 29,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-08T07:02:20+08:00",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "8月8日07:02更新，具体变体“原来戴泳帽真的会影响颜值”位列第1。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E5%8E%9F%E6%9D%A5%E6%88%B4%E6%B3%B3%E5%B8%BD%E7%9C%9F%E7%9A%84%E4%BC%9A%E5%BD%B1%E5%93%8D%E9%A2%9C%E5%80%BC",
+          "title": "微博话题公开入口",
+          "observed_at": "2026-08-08T07:02:20+08:00",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "与实时榜首条目对应的公开平台入口，支持当日热度。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1JE6bYREKJ/",
+          "title": "说河南话真的会影响颜值吗？",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "另一公开场景使用“X真的会影响颜值”句壳，支持跨槽位复用，不用于证明当日热度。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-08-x-caishi-zhende-npc-ba",
+      "title": "🎮 X才是真的NPC吧",
+      "aliases": [
+        "X才是真的NPC吧",
+        "我妈才是真的NPC吧",
+        "它才是真的NPC"
+      ],
+      "canonical_phrase": "X才是真的NPC吧",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "用“X才是真的NPC吧”形容某人或动物出现了像游戏角色一样机械、巧合或出其不意的行为。",
+      "origin": "8月7日晚抖音实时榜出现“我妈才是真的NPC吧”；更早公开报道中，宠物闯入密室也被网友称为“它才是真的NPC”。",
+      "usage": "可写“这位店员才是真的NPC吧”“我家猫才是真的NPC吧”，X应对应真实可见的重复动作或意外入镜。",
+      "fun_point": "把现实人物或动物突然套进游戏角色设定，现实行为与程序化NPC视角的错位制造笑点。",
+      "why_spread": "已验证：8月7日23:13抖音实时榜第11位，且旧场景已有“它才是真的NPC”用法。推测：主体槽位开放，适合生活片段快速套用。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于门店角色或宠物内容的轻量拟人化；不要冒充真实人物发言，也不要泄露顾客隐私。",
+      "risk": {
+        "level": "low",
+        "note": "普通游戏化比喻；避免对真实人物进行贬损、跟拍或未经同意的身份曝光。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 29,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-07T23:13:07+08:00",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "8月7日23:13更新，具体变体“我妈才是真的NPC吧”位列第11。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2600873",
+          "title": "抖音热点公开入口",
+          "observed_at": "2026-08-07T23:13:07+08:00",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "与实时榜条目对应的公开热点入口，支持当日活动。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://pets.udn.com/pets/story/122674/7773009",
+          "title": "宠物闯入密室，网友称它才是真的NPC",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "公开报道记录另一主体和场景中的“它才是真的NPC”用法，支持主体槽位复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-08-x-de-y-kongpa-zaiwo-zhishang",
+      "title": "🎭 X的Y恐怕在我之上",
+      "aliases": [
+        "X的Y恐怕在我之上",
+        "这个skill的美商恐怕在我之上",
+        "此人的忧郁程度恐怕在我之上",
+        "此人抗压恐怕在我之上"
+      ],
+      "canonical_phrase": "X的Y恐怕在我之上",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“X的Y恐怕在我之上”夸张比较某种能力、气质或状态，语气郑重，内容却常常很抽象。",
+      "origin": "8月7日晚抖音实时榜出现“这个skill的美商恐怕在我之上”；B站与抖音公开内容还出现忧郁、抗压等不同Y槽位。",
+      "usage": "可写“这家店的梗商恐怕在我之上”“这只猫的松弛感恐怕在我之上”，X和Y要与画面可见特征对应。",
+      "fun_point": "一本正经地承认“在我之上”，配上美商、梗商、忧郁或抗压等槽位，庄重比较和抽象指标形成反差。",
+      "why_spread": "已验证：8月7日23:13抖音实时榜第30位，且多个公开视频有不同Y槽位。推测：尾句固定、前部开放，适合标题和卡点视频。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于展示设计巧思、服务反应或用户创意；不要虚构专业能力、奖项或健康状态。",
+      "risk": {
+        "level": "low",
+        "note": "普通夸张比较；避免代入疾病、歧视标签或针对具体人物进行攻击。"
+      },
+      "days_on_list": 1,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-07T23:13:07+08:00",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "8月7日23:13更新，具体变体“这个skill的美商恐怕在我之上”位列第30。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2600755",
+          "title": "抖音热点公开入口",
+          "observed_at": "2026-08-07T23:13:07+08:00",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "与当晚实时榜条目对应的公开热点入口，支持最新活动。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1gGcRzoE68/",
+          "title": "牛顿的忧郁恐怕在我之上",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "B站公开内容使用不同主体与“忧郁”槽位，支持固定尾句跨场景套用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-08-turan-lijie-x-de-y-gan",
+      "title": "💡 突然理解了X的Y感",
+      "aliases": [
+        "突然理解了X的Y感",
+        "突然理解了大爷的绝望感",
+        "突然理解了说唱不止有diss"
+      ],
+      "canonical_phrase": "突然理解了X的Y感",
+      "platform": [
+        "weibo"
+      ],
+      "type": "情绪梗",
+      "summary": "用“突然理解了X的Y感”给一个瞬间补上迟来的共情，把旁观者视角改写成代入式感受。",
+      "origin": "8月8日微博实时榜出现“突然理解了大爷的绝望感”；公开报道的评论语境也出现“突然理解了说唱不止有diss”等迁移表达。",
+      "usage": "可写“突然理解了通勤人的疲惫感”“突然理解了收纳党的安全感”，X与Y应由具体画面或经历支撑。",
+      "fun_point": "“突然理解”把日常小事写成顿悟时刻，郑重的共情口吻与触发它的琐碎场景形成轻微反差。",
+      "why_spread": "已验证：8月8日07:02微博实时榜第28位；另有不同主题中的“突然理解了”迁移用法。推测：情绪槽位清晰，便于短叙事收尾。",
+      "lifecycle": "rising",
+      "brand_usage": "可围绕真实用户痛点做共情式收尾；不要替用户杜撰创伤、疾病或敏感经历。",
+      "risk": {
+        "level": "low",
+        "note": "普通共情句式；避免消费苦难、疾病、事故或对具体人物进行嘲弄。"
+      },
+      "days_on_list": 1,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 23,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-08T07:02:20+08:00",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "8月8日07:02更新，具体变体“突然理解了大爷的绝望感”位列第28。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E7%AA%81%E7%84%B6%E7%90%86%E8%A7%A3%E4%BA%86%E5%A4%A7%E7%88%B7%E7%9A%84%E7%BB%9D%E6%9C%9B%E6%84%9F",
+          "title": "微博话题公开入口",
+          "observed_at": "2026-08-08T07:02:20+08:00",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "与实时榜条目对应的公开平台入口，支持当日活动。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://ent.sina.cn/2026-07-06/detail-inifuxup1937051.d.html",
+          "title": "说唱节目讨论中的“突然理解了”表达",
+          "captured_at": "2026-08-08T07:04:25+08:00",
+          "note": "公开报道记录评论区在另一主题中使用“突然理解了说唱不止有diss”，支持语义迁移。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
