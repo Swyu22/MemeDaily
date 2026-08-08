@@ -1,0 +1,749 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-09",
+  "generated_at": "2026-08-09T07:13:02+08:00",
+  "published_at": "2026-08-09T07:13:02+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 45,
+    "published": 3,
+    "dropped_safety": {
+      "政治时政": 3,
+      "灾害与公共安全": 3,
+      "犯罪与争议": 3,
+      "隐私与未成年人": 2,
+      "疾病与隐私": 2,
+      "人物与品牌争议": 3,
+      "死亡与哀悼": 2,
+      "谣言与误导": 1,
+      "攻击与骚扰": 1
+    },
+    "dropped_low_confidence": 15,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "zhihu",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 18,
+      "platform_public_sources": 4,
+      "aggregator_sources": 18,
+      "search_media_sources": 2,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 7
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-09-diyipi-x-shouhaizhe-chuxian",
+          "canonical_phrase": "第一批X的受害者出现了",
+          "outcome": "selected",
+          "item_id": "2026-08-09-diyipi-x-shouhaizhe-chuxian",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-09T06:50:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-09-wo-zhishi-lai-diqiu-sanbu",
+          "canonical_phrase": "我只是来地球散步的",
+          "outcome": "selected",
+          "item_id": "2026-08-09-wo-zhishi-lai-diqiu-sanbu",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-09T07:03:01+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-07-22-belike-chabie",
+          "canonical_phrase": "Xbelike",
+          "outcome": "selected",
+          "item_id": "2026-07-22-belike-chabie",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 20,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-09T04:53:18+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-renzongzai-x-huiyi-y",
+          "canonical_phrase": "人总在X回忆Y",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 29,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T00:03:32+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-gei-x-de-lian-taiduo",
+          "canonical_phrase": "好像给X的脸太多了",
+          "outcome": "dropped_low_confidence",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 29,
+            "reusability": 11,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T01:47:42+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-faxian-x-kan-lianse",
+          "canonical_phrase": "发现X开始看自己脸色了",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 29,
+            "reusability": 12,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T00:47:15+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-yong-x-zhiliao-ziji",
+          "canonical_phrase": "用X治愈自己",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 29,
+            "reusability": 10,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T00:03:32+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-jiaohao-qucan-xuanxiu",
+          "canonical_phrase": "叫号取餐选秀大会",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 29,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T00:03:32+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-dang-x-fanguolai-wenni",
+          "canonical_phrase": "当X反过来问你问题",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 29,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T00:56:18+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-jiamenkou-x-ranqilai",
+          "canonical_phrase": "家门口X燃起来了",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 29,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T00:26:56+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-tiqian-yuxi-x",
+          "canonical_phrase": "提前预习X",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 29,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T00:03:32+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-xiayizi-buneng-yujian",
+          "canonical_phrase": "下辈子不一定还能遇见X",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 27,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T03:50:11+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-x-gehuo-ge-de",
+          "canonical_phrase": "X的梗各火各的",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 29,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T00:26:56+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-guaiwu-zhongde-wodi",
+          "canonical_phrase": "怪兽中出了一个卧底",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-donghua-shenmei-jiangji",
+          "canonical_phrase": "动画真的审美降级了吗",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-x-shijiao-tanmi-y",
+          "canonical_phrase": "从X视角探秘Y",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-x-yuyan-ban-y",
+          "canonical_phrase": "X语言版Y",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "insufficient-xiaoshihou-fashao-ganjue",
+          "canonical_phrase": "小时候发烧才有这种感觉",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-19",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-20",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-21",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-22",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-23",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "疾病与隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "谣言与误导",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "攻击与骚扰",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "low-youwu-hou-xintai",
+          "canonical_phrase": "有钱之后心态会怎么变",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 28,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T02:46:12+08:00"
+          },
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "low-zuihao-shi-kuan-youxi",
+          "canonical_phrase": "最好的十款单机游戏",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 29,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T06:46:27+08:00"
+          },
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "low-yongshenme-kan-xiaoshuo",
+          "canonical_phrase": "现在用什么软件看小说",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 28,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T03:17:14+08:00"
+          },
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "low-diaoyulao-zibei-kongtiao",
+          "canonical_phrase": "钓鱼佬自备空调",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 29,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T00:03:32+08:00"
+          },
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "low-zuozhe-lai-zhenghuo",
+          "canonical_phrase": "作者来整活",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 29,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-09",
+            "observed_at": "2026-08-09T00:23:18+08:00"
+          },
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "insufficient-chenggong-diyiyaosu",
+          "canonical_phrase": "成功的第一要素是什么",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "insufficient-qi-e-jiao-bu-leng",
+          "canonical_phrase": "企鹅的脚为什么不怕冷",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-38",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-39",
+          "outcome": "dropped_safety",
+          "drop_reason": "政治时政",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-40",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害与公共安全",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-41",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪与争议",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-42",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私与未成年人",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-43",
+          "outcome": "dropped_safety",
+          "drop_reason": "疾病与隐私",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-44",
+          "outcome": "dropped_safety",
+          "drop_reason": "人物与品牌争议",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-45",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡与哀悼",
+          "research_pass": 2
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "bilibili"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 45,
+          "sources_checked": [
+            "zhihu",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-09-diyipi-x-shouhaizhe-chuxian",
+      "title": "🧾 第一批X的受害者出现了",
+      "aliases": [
+        "第一批X的受害者出现了",
+        "X的受害者出现了",
+        "长期穿碳板鞋的受害者出现了",
+        "第一批爱喝咖啡的受害者出现了"
+      ],
+      "canonical_phrase": "第一批X的受害者出现了",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "把某种习惯、潮流或小失误的后果写成“第一批X的受害者出现了”，用新闻快报口吻制造反差。",
+      "origin": "已验证：8月9日微博榜出现鞋类使用变体，另有公开微博记录咖啡场景变体；现有证据支持X槽位复用，不支持指定唯一首发者。",
+      "usage": "可写“第一批熬夜追剧的受害者出现了”“第一批周末报复性打扫的受害者出现了”，让X对应无害的日常行为。",
+      "fun_point": "“受害者出现了”像严肃通报，却被用来描述黑眼圈、疲惫或买多了等轻微后果，语气落差形成笑点。",
+      "why_spread": "已验证：鞋类变体8月9日进入微博实时榜前列，公开微博还存在咖啡变体；推测：X槽位清楚、通报感强，适合日常翻车复盘。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于自有内容的轻量使用反馈或活动复盘，但应写清真实条件，不制造健康恐慌，也不要影射竞品质量。",
+      "risk": {
+        "level": "low",
+        "note": "适合无害日常自嘲；避免疾病诊断、事故伤害、具体人物遭遇和未经证实的产品安全结论。"
+      },
+      "days_on_list": 1,
+      "score": 92,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "observed_at": "2026-08-09T06:50:50+08:00",
+          "captured_at": "2026-08-09T07:08:20+08:00",
+          "note": "页面标注8月9日06:50:50更新，鞋类使用变体位列微博实时榜第4，证明严格24小时内有高位活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%23%E9%95%BF%E6%9C%9F%E7%A9%BF%E7%A2%B3%E6%9D%BF%E9%9E%8B%E7%9A%84%E5%8F%97%E5%AE%B3%E8%80%85%E5%87%BA%E7%8E%B0%E4%BA%86%23",
+          "captured_at": "2026-08-09T07:08:20+08:00",
+          "note": "与实时榜条目对应的微博公开话题入口，保留当日完整变体而不扩写来源标题。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "cross_platform",
+          "platform": "weibo",
+          "url": "https://www.weibo.com/5800736955/Q9fEjvBP2",
+          "captured_at": "2026-08-09T07:08:20+08:00",
+          "note": "公开微博记录“第一批爱喝咖啡的受害者出现了”，与当日鞋类变体共同支持X槽位的真实复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-09-wo-zhishi-lai-diqiu-sanbu",
+      "title": "🌍 我只是来地球散步的",
+      "aliases": [
+        "我只是来地球散步的",
+        "有目标的人才会迷路，我只是来地球散步的"
+      ],
+      "canonical_phrase": "我只是来地球散步的",
+      "platform": [
+        "douyin",
+        "weibo"
+      ],
+      "type": "情绪梗",
+      "summary": "用“我只是来地球散步的”把没目标、慢节奏或随性出门包装成轻盈的地球游客人设。",
+      "origin": "已验证：8月9日抖音榜出现完整句式，7月公开微博索引也记录了正文和个人简介中的独立使用；现有证据不支持指定唯一首发者。",
+      "usage": "适合散步、旅行、发呆或计划落空场景，如“别人赶行程，我只是来地球散步的”，重点保留松弛自嘲。",
+      "fun_point": "把普通人短暂说成来访地球的游客，既回避宏大目标，又用宇宙尺度化解眼前的忙乱。",
+      "why_spread": "已验证：完整句式8月9日进入抖音实时榜前十，并在不同微博账号的正文与简介中出现；推测：画面适配广、语气温和，便于旅行和日常记录套用。",
+      "lifecycle": "rising",
+      "brand_usage": "适合慢旅行、步行路线或休息日内容；不要把逃避现实包装成唯一生活答案，也避免虚构疗愈效果。",
+      "risk": {
+        "level": "safe",
+        "note": "普通松弛自嘲句；涉及心理困扰时保持轻量表达，不替代专业建议。"
+      },
+      "days_on_list": 1,
+      "score": 88,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "observed_at": "2026-08-09T07:03:01+08:00",
+          "captured_at": "2026-08-09T07:08:20+08:00",
+          "note": "页面标注8月9日07:03:01更新，完整句式位列抖音实时榜第8，证明严格24小时内有高位活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2600939",
+          "captured_at": "2026-08-09T07:08:20+08:00",
+          "note": "与实时榜条目对应的抖音公开话题入口，保留来源提供的完整句式。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "weibo",
+          "url": "https://www.sina.cn/media/7375982903",
+          "captured_at": "2026-08-09T07:08:20+08:00",
+          "note": "公开微博索引记录7月正文使用完整句式，支持其并非仅有当日榜单的一次性标题。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://www.sina.cn/media/5484956408",
+          "captured_at": "2026-08-09T07:08:20+08:00",
+          "note": "另一公开微博索引将完整句式用于个人简介，支持其在不同表达位置被独立复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-22-belike-chabie",
+      "title": "🎬 X时belike",
+      "aliases": [
+        "Xbelike",
+        "X时belike",
+        "大学刚毕业的我们belike",
+        "场景belike"
+      ],
+      "canonical_phrase": "Xbelike",
+      "platform": [
+        "bilibili"
+      ],
+      "type": "短视频梗",
+      "summary": "用“X时belike”给具体阶段或情境配一段代表性反应画面，把复杂状态压缩成可模仿的短视频提示词。",
+      "origin": "已验证：本站7月22日首次按同一身份收录；8月9日B站榜出现“大学刚毕业的我们belike”新变体，现有证据不支持指定唯一首发者。",
+      "usage": "可写“刚交完稿时belike”“周末醒来时belike”，再配与X状态高度对应的动作、表情或短情景。",
+      "fun_point": "belike像镜头提示词，观众看到X就会等待夸张表演；阶段描述与反应画面的落差制造笑点。",
+      "why_spread": "已验证：毕业场景变体8月9日进入B站实时榜，活动晚于上次本站发布；推测：单槽位简单、画面结构明确，能持续跨校园、职场和日常场景复用。",
+      "lifecycle": "rising",
+      "brand_usage": "适合自有素材的场景化短剧或使用前后对比；需确保画面、音乐和人物素材已获授权。",
+      "risk": {
+        "level": "low",
+        "note": "普通反应模板；重点注意素材版权、肖像权与隐私，不使用未成年人可识别画面。"
+      },
+      "days_on_list": 4,
+      "score": 79,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 27,
+        "reusability": 20,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "bilibili",
+          "url": "https://hotflashnews.com/platform/bilibili",
+          "observed_at": "2026-08-09T04:53:18+08:00",
+          "captured_at": "2026-08-09T07:08:20+08:00",
+          "note": "页面标注8月9日04:53:18更新，毕业场景变体位列B站实时榜第28，证明上次本站发布后出现新活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=%E5%A4%A7%E5%AD%A6%E5%88%9A%E6%AF%95%E4%B8%9A%E7%9A%84%E6%88%91%E4%BB%ACbelike",
+          "captured_at": "2026-08-09T07:08:20+08:00",
+          "note": "与实时榜条目对应的B站公开入口；当前毕业变体与本站历史中的社交、暑假等场景共同支持模板复用。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
