@@ -3,11 +3,11 @@
   "policy_version": "v3-domestic-majority",
   "rubric_version": "v3-2026",
   "date": "2026-08-09",
-  "generated_at": "2026-08-09T06:09:30+08:00",
+  "generated_at": "2026-08-09T09:18:51+08:00",
   "status": "published",
   "run_report": {
     "candidates_scanned": 30,
-    "published": 6,
+    "published": 4,
     "dropped_safety": {
       "minors": 1,
       "privacy": 1,
@@ -20,7 +20,7 @@
       "celebrity_dispute": 1,
       "geopolitics": 1
     },
-    "dropped_low_confidence": 14,
+    "dropped_low_confidence": 16,
     "dropped_quota": 0,
     "dropped_capacity": 0,
     "sources": [
@@ -39,7 +39,7 @@
     "selection": {
       "tier": "strict_24h",
       "qualified": {
-        "strict_24h": 6,
+        "strict_24h": 4,
         "relaxed_48h": 10,
         "relaxed_72h": 14
       },
@@ -88,8 +88,7 @@
           "occurred_at": "2026-08-08T08:49:00+08:00",
           "scope": "domestic",
           "topic": "交通出行",
-          "outcome": "selected",
-          "item_id": "2026-08-09-wenyu-high-speed-rail",
+          "outcome": "dropped_low_confidence",
           "score": 92,
           "score_breakdown": {
             "heat": 35,
@@ -97,7 +96,8 @@
             "everyday_relevance": 23,
             "evidence": 14
           },
-          "qualification_tier": "strict_24h"
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "按2026-08-09T09:18:51+08:00选择时钟已不属于strict_24h层级"
         },
         {
           "candidate_key": "2026-08-09-xinjiang-scenic-selfdrive-fees",
@@ -160,8 +160,7 @@
           "occurred_at": "2026-08-08T07:13:35+08:00",
           "scope": "domestic",
           "topic": "健康医疗",
-          "outcome": "selected",
-          "item_id": "2026-08-09-growth-hormone-warning",
+          "outcome": "dropped_low_confidence",
           "score": 79,
           "score_breakdown": {
             "heat": 28,
@@ -169,7 +168,8 @@
             "everyday_relevance": 21,
             "evidence": 11
           },
-          "qualification_tier": "strict_24h"
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "按2026-08-09T09:18:51+08:00选择时钟已不属于strict_24h层级"
         },
         {
           "candidate_key": "cand-07-smart-logistics-heat",
@@ -523,47 +523,6 @@
       "published": true
     },
     {
-      "id": "2026-08-09-wenyu-high-speed-rail",
-      "story_identity": "cn-hangtai-high-speed-rail-wenyu-section-opened-2026-08-08",
-      "headline": "🚄 杭台高铁温玉段开通，玉环迈入高铁时代",
-      "summary": "杭台高铁温岭至玉环段8月8日开通，运营初期每日开行16列动车组；玉环至杭州东最快1小时47分，台州实现县县通铁路。",
-      "category": "民生社会",
-      "scope": "domestic",
-      "topic": "交通出行",
-      "score": 92,
-      "score_breakdown": {
-        "heat": 35,
-        "freshness": 20,
-        "everyday_relevance": 23,
-        "evidence": 14
-      },
-      "heat_rank": 2,
-      "occurred_at": "2026-08-08T08:49:00+08:00",
-      "risk": {
-        "level": "safe",
-        "note": "开行数量和时刻可能按客流及天气调整，购票与实时车次以铁路12306为准。"
-      },
-      "sources": [
-        {
-          "tier": "state_media",
-          "outlet": "新华社",
-          "url": "https://www.cnr.cn/newscenter/native/gd/kx/20260808/t20260808_527753704.shtml",
-          "title": "杭台高铁温玉段开通运营",
-          "captured_at": "2026-08-09T06:08:59+08:00",
-          "note": "确认8月8日正式开通、线路长度及玉环结束不通铁路历史。"
-        },
-        {
-          "tier": "state_media",
-          "outlet": "央广网",
-          "url": "https://www.cnr.cn/zjfw/zjyw/20260808/t20260808_527753956.shtml",
-          "title": "杭台高铁温玉段开通运营，浙江台州实现“县县通铁路”",
-          "captured_at": "2026-08-09T06:08:59+08:00",
-          "note": "核对初期每日16列及玉环至沿线主要车站最快时间。"
-        }
-      ],
-      "published": true
-    },
-    {
       "id": "2026-08-09-xinjiang-scenic-selfdrive-fees",
       "story_identity": "cn-xinjiang-4a-scenic-selfdrive-fee-per-vehicle-rule-2026-08-08",
       "headline": "🚙 新疆4A级以上景区自驾服务费改按车收",
@@ -578,7 +537,7 @@
         "everyday_relevance": 23,
         "evidence": 13
       },
-      "heat_rank": 3,
+      "heat_rank": 2,
       "occurred_at": "2026-08-08T16:55:45+08:00",
       "risk": {
         "level": "safe",
@@ -619,7 +578,7 @@
         "everyday_relevance": 23,
         "evidence": 12
       },
-      "heat_rank": 4,
+      "heat_rank": 3,
       "occurred_at": "2026-08-08T10:27:00+08:00",
       "risk": {
         "level": "safe",
@@ -652,7 +611,7 @@
         "everyday_relevance": 21,
         "evidence": 13
       },
-      "heat_rank": 5,
+      "heat_rank": 4,
       "occurred_at": "2026-08-08T12:42:19+08:00",
       "risk": {
         "level": "safe",
@@ -666,39 +625,6 @@
           "title": "民生一件事｜体卫融合服务下沉 社区卫生服务中心为慢性病提供“运动处方”",
           "captured_at": "2026-08-09T06:08:59+08:00",
           "note": "确认社区运动健康中心试点及慢病人群运动处方服务。"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-08-09-growth-hormone-warning",
-      "story_identity": "cn-child-growth-hormone-prescription-misuse-warning-2026-08-08",
-      "headline": "💉 医生提醒：健康儿童不应把生长激素当增高针",
-      "summary": "针对暑期“增高针”咨询升温，医生提醒生长激素是治疗病理性矮小的处方药，健康儿童不能为单纯“拔高”自行使用，需先做规范评估。",
-      "category": "民生社会",
-      "scope": "domestic",
-      "topic": "健康医疗",
-      "score": 79,
-      "score_breakdown": {
-        "heat": 28,
-        "freshness": 19,
-        "everyday_relevance": 21,
-        "evidence": 11
-      },
-      "heat_rank": 6,
-      "occurred_at": "2026-08-08T07:13:35+08:00",
-      "risk": {
-        "level": "safe",
-        "note": "仅转述处方药使用边界和就医提醒，不提供剂量或个体治疗建议；如担忧生长发育应到正规医疗机构评估。"
-      },
-      "sources": [
-        {
-          "tier": "state_media",
-          "outlet": "工人日报",
-          "url": "https://news.cctv.com/2026/08/08/ARTIyssHeH21DYhuzaSaHX8O260808.shtml",
-          "title": "“增高针”热度升高 为孩子身高“买单”是真需要还是太焦虑？",
-          "captured_at": "2026-08-09T06:08:59+08:00",
-          "note": "核对医生关于适应证、处方属性及健康儿童不宜用于拔高的提醒。"
         }
       ],
       "published": true
