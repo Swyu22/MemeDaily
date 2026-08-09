@@ -1,0 +1,839 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-10",
+  "generated_at": "2026-08-10T06:12:38+08:00",
+  "published_at": "2026-08-10T06:12:38+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 45,
+    "published": 3,
+    "dropped_safety": {
+      "politics": 1,
+      "geopolitics": 1,
+      "propaganda": 1,
+      "public_safety": 1,
+      "privacy": 1,
+      "minors": 1,
+      "harassment": 1,
+      "illegal": 1,
+      "rumor": 1,
+      "celebrity_dispute": 1
+    },
+    "dropped_low_confidence": 29,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 35,
+      "official_sources": 4,
+      "state_media_sources": 9,
+      "major_media_sources": 17,
+      "aggregator_sources": 5,
+      "dropped_insufficient_evidence": 3
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "国家统计与中央媒体",
+            "全国交通与气象",
+            "主流财经与消费媒体",
+            "省市公共服务"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 45,
+          "source_scope": [
+            "省级教育考试与招生",
+            "地方人社与招聘",
+            "银行及景区服务",
+            "专业标准与铁路公告"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-10-july-cpi",
+          "story_identity": "cn-july-2026-consumer-price-index-release-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-10-july-cpi",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-10-zhejiang-rail-resume",
+          "story_identity": "cn-zhejiang-rail-service-resumption-after-baihaitun-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T20:09:51+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-10-zhejiang-rail-resume",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-10-typhoon-travel-refunds",
+          "story_identity": "cn-online-travel-platform-baihaitun-refund-support-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T20:50:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-10-typhoon-travel-refunds",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-04-logistics-index",
+          "story_identity": "cn-july-2026-logistics-prosperity-index-release",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T05:24:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "宏观行业指标对个人日常决策帮助有限"
+        },
+        {
+          "candidate_key": "cand-05-july-ppi",
+          "story_identity": "cn-july-2026-producer-price-index-release",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "工业出厂价格与当日居民使用场景联系较弱"
+        },
+        {
+          "candidate_key": "cand-06-renewable-share",
+          "story_identity": "cn-renewable-consumption-share-method-explainer-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T05:30:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "政策解读缺少当日个人服务变化"
+        },
+        {
+          "candidate_key": "cand-07-shanghai-summer",
+          "story_identity": "cn-shanghai-summer-consumption-campaign-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "地方促消费活动报道代表性不足"
+        },
+        {
+          "candidate_key": "cand-08-luotian-basketball",
+          "story_identity": "cn-luotian-summer-basketball-event-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 13,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "地方赛事影响范围有限"
+        },
+        {
+          "candidate_key": "cand-09-ganzi-fitness-run",
+          "story_identity": "cn-ganzi-national-fitness-run-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T16:12:23+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "地方赛事服务价值有限"
+        },
+        {
+          "candidate_key": "cand-10-guangdong-games",
+          "story_identity": "cn-guangdong-provincial-games-opening-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "省级赛事开幕缺少广泛民生影响"
+        },
+        {
+          "candidate_key": "cand-11-olympic-center-fitness",
+          "story_identity": "cn-national-olympic-center-fitness-day-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "活动已发生且全国代表性不足"
+        },
+        {
+          "candidate_key": "cand-12-macau-flights",
+          "story_identity": "cn-macau-airport-baihaitun-cancellations-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "区域航班信息已被更高分退改服务覆盖"
+        },
+        {
+          "candidate_key": "cand-13-hangzhou-airport",
+          "story_identity": "cn-hangzhou-airport-baihaitun-cancellations-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "航班取消信息已被更高分退改服务覆盖"
+        },
+        {
+          "candidate_key": "cand-14-shanghai-response",
+          "story_identity": "cn-shanghai-baihaitun-emergency-response-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T18:28:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "与前一日已发布台风响应故事高度重合"
+        },
+        {
+          "candidate_key": "cand-15-guangzhou-commute",
+          "story_identity": "cn-guangzhou-huanan-expressway-commute-guidance-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T21:24:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 13,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "仅涉及单一城市路段且热度有限"
+        },
+        {
+          "candidate_key": "cand-16-huadu-water",
+          "story_identity": "cn-huadu-water-pressure-notice-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 12,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 14
+          },
+          "drop_reason": "影响区域较小且公开证据覆盖有限"
+        },
+        {
+          "candidate_key": "cand-17-eastair-alert",
+          "story_identity": "cn-eastair-baihaitun-flight-adjustment-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "单一航司信息已被综合退改服务故事覆盖"
+        },
+        {
+          "candidate_key": "cand-18-hlj-admission",
+          "story_identity": "cn-heilongjiang-2026-college-admission-completion",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T12:57:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "未取得可直接核验的考试院原始页面"
+        },
+        {
+          "candidate_key": "cand-19-shanghai-drainage",
+          "story_identity": "cn-shanghai-baihaitun-drainage-progress-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "与当日台风应急报道重复度较高"
+        },
+        {
+          "candidate_key": "cand-20-wenzhou-weather",
+          "story_identity": "cn-wenzhou-post-baihaitun-weather-update-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "天气更新缺少独立于交通恢复的新增价值"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "cand-31-beijing-social-insurance",
+          "story_identity": "cn-beijing-2026-social-insurance-wage-declaration",
+          "research_pass": 2,
+          "occurred_at": "2026-06-10T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "主要申报期较早且当日仅为缴费窗口提醒"
+        },
+        {
+          "candidate_key": "cand-32-chaoyang-recruitment",
+          "story_identity": "cn-beijing-chaoyang-second-public-recruitment-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-05T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "公告已超过72小时且地域岗位有限"
+        },
+        {
+          "candidate_key": "cand-33-daxing-recruitment",
+          "story_identity": "cn-beijing-daxing-second-public-recruitment-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-05T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "公告已超过72小时且地域岗位有限"
+        },
+        {
+          "candidate_key": "cand-34-mentougou-recruitment",
+          "story_identity": "cn-beijing-mentougou-second-public-recruitment-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-05T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "公告已超过72小时且地域岗位有限"
+        },
+        {
+          "candidate_key": "cand-35-education-recruitment",
+          "story_identity": "cn-beijing-education-commission-public-recruitment-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-04T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "公告较早且仅服务特定求职者"
+        },
+        {
+          "candidate_key": "cand-36-dengzhou-school-admission",
+          "story_identity": "cn-dengzhou-compulsory-school-admission-notice-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-09T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "地方招生范围有限且全国代表性不足"
+        },
+        {
+          "candidate_key": "cand-37-hengqin-student-bus",
+          "story_identity": "cn-hengqin-macau-student-bus-application-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "申请已截止且发布时间超出72小时"
+        },
+        {
+          "candidate_key": "cand-38-hohhot-extra-trains",
+          "story_identity": "cn-hohhot-beijing-extra-trains-2026-08-10",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "公告发布时间较早且线路覆盖有限"
+        },
+        {
+          "candidate_key": "cand-39-suzhou-fund-resume",
+          "story_identity": "cn-suzhou-housing-fund-service-resumption-2026-08-10",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "系统维护公告发布时间超出严格窗口"
+        },
+        {
+          "candidate_key": "cand-40-sichuan-carwash",
+          "story_identity": "cn-ccb-sichuan-carwash-service-migration-2026-08-10",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T11:09:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "单一银行权益调整覆盖人群有限"
+        },
+        {
+          "candidate_key": "cand-41-climbing-league",
+          "story_identity": "cn-national-climbing-gym-league-2026-08-08",
+          "research_pass": 2,
+          "occurred_at": "2026-08-08T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 13,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "赛事报道日常服务价值不足"
+        },
+        {
+          "candidate_key": "cand-42-public-hygiene-draft",
+          "story_identity": "cn-public-place-hygiene-standard-draft-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-05T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅检索到标准编制材料，缺少当日正式发布证据"
+        },
+        {
+          "candidate_key": "cand-43-toll-lane-draft",
+          "story_identity": "cn-electronic-toll-lane-standard-draft-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅检索到征求意见编制材料，未形成正式生效事件"
+        },
+        {
+          "candidate_key": "cand-44-shanghai-disney-weather",
+          "story_identity": "cn-shanghai-disney-baihaitun-service-adjustment-2026-08-09",
+          "research_pass": 2,
+          "occurred_at": "2026-08-09T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "drop_reason": "单一景区服务调整覆盖范围有限"
+        },
+        {
+          "candidate_key": "cand-45-guangzhou-water-pressure",
+          "story_identity": "cn-guangzhou-huadu-water-pressure-week-2026-08-09",
+          "research_pass": 2,
+          "occurred_at": "2026-08-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 12,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 13
+          },
+          "drop_reason": "区域影响有限且缺少更广泛热度"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-10-july-cpi",
+      "story_identity": "cn-july-2026-consumer-price-index-release-2026-08-09",
+      "headline": "🧺 7月居民消费价格同比上涨0.5%",
+      "summary": "国家统计局发布7月物价数据：全国CPI同比上涨0.5%、环比下降0.1%；食品价格同比下降1.5%，服务价格上涨0.7%，暑期出行和医疗等服务价格环比有所上涨。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 91,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-09T09:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅概述国家统计局已发布的全国物价数据，不作个体消费或投资判断。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家统计局",
+          "url": "https://www.stats.gov.cn/sj/zxfb/202608/t20260809_1965008.html",
+          "title": "2026年7月份居民消费价格同比上涨0.5%",
+          "captured_at": "2026-08-10T06:03:00+08:00",
+          "note": "官方数据列明7月CPI同比、环比及食品、服务等分类价格变化。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/09/ARTIU8ueVCwahCBOpqmES6MQ260809.shtml",
+          "title": "从7月份居民消费价格指数透视物价向好态势 重要民生商品价格保持平稳",
+          "captured_at": "2026-08-10T06:03:00+08:00",
+          "note": "中央媒体结合统计数据说明民生商品与服务价格变化。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-10-zhejiang-rail-resume",
+      "story_identity": "cn-zhejiang-rail-service-resumption-after-baihaitun-2026-08-09",
+      "headline": "🚆 杭深铁路、杭台高铁部分列车今日陆续恢复",
+      "summary": "国铁上海局披露，杭深铁路杭州至宁波段计划10日10时起恢复部分旅客列车，杭台高铁及杭深铁路宁波至苍南段计划12时起陆续恢复；旅客仍需以12306和车站公告为准。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-09T20:09:51+08:00",
+      "risk": {
+        "level": "low",
+        "note": "列车恢复安排仍可能随风雨和线路条件动态调整，需以铁路实时信息为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://news.cnr.cn/native/gd/kx/20260809/t20260809_527755349.shtml",
+          "title": "杭深铁路、杭台高铁途经列车10日陆续恢复开行",
+          "captured_at": "2026-08-10T06:03:00+08:00",
+          "note": "转载央视新闻并引述国铁上海局，载明分线路恢复时间与查询提示。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "潮新闻",
+          "url": "https://tidenews.com.cn/news.html?id=3525254",
+          "title": "杭深铁路、杭台高铁途经列车8月10日陆续恢复开行",
+          "captured_at": "2026-08-10T06:03:00+08:00",
+          "note": "地方主流媒体报道同一恢复安排及动态调整提示。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-10-typhoon-travel-refunds",
+      "story_identity": "cn-online-travel-platform-baihaitun-refund-support-2026-08-09",
+      "headline": "🧳 多家平台为台风影响订单提供免费退改",
+      "summary": "飞猪、去哪儿和携程9日公布应急保障，对符合预订及入住时间条件的浙江、福建、安徽等地酒店订单提供免费取消或无损退改，并协助办理受影响航班客票的特殊退改。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-09T20:50:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "各平台适用地区、预订时间和入住日期不同，具体以订单页和平台客服核验为准。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "扬子晚报",
+          "url": "https://www.yzwb.net/news/txs/202608/t20260809_380997.html",
+          "title": "飞猪、去哪儿、携程同日宣布：多地酒店订单可免费取消",
+          "captured_at": "2026-08-10T06:03:00+08:00",
+          "note": "逐项列出三家平台的酒店及机票应急退改范围。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "四川在线",
+          "url": "https://focus.scol.com.cn/zgsz/202608/83302738.html",
+          "title": "飞猪、去哪儿、携程同日宣布：多地酒店订单可免费退改或取消",
+          "captured_at": "2026-08-10T06:03:00+08:00",
+          "note": "独立转载并核对各平台适用地区、日期与办理方式。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
