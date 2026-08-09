@@ -1,0 +1,584 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-10",
+  "generated_at": "2026-08-10T07:14:43+08:00",
+  "published_at": "2026-08-10T07:14:43+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 45,
+    "published": 3,
+    "dropped_safety": {
+      "灾害/公共安全": 9,
+      "时事政治": 4,
+      "隐私/未成年人": 1,
+      "死亡/伤害": 2
+    },
+    "dropped_low_confidence": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 45,
+      "platform_public_sources": 3,
+      "aggregator_sources": 3,
+      "search_media_sources": 4,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 26
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-03",
+          "canonical_phrase": "千亿方大气田项目投产",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-04",
+          "canonical_phrase": "X申请加入暑期美食展",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-05",
+          "canonical_phrase": "我在X站了一会",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-10-outfit-no-formula",
+          "canonical_phrase": "穿搭没有公式",
+          "outcome": "selected",
+          "item_id": "2026-08-10-outfit-no-formula",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2602751",
+            "observed_at": "2026-08-10T00:02:05+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-08",
+          "canonical_phrase": "决赛取消并列冠军",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-09",
+          "canonical_phrase": "身价暴涨X",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "门将身价暴涨",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "电竞赛果",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "未录满专业排行榜",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-16",
+          "canonical_phrase": "得不到的就更加爱舞蹈挑战",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-10-this-is-x-but-i-like-it",
+          "canonical_phrase": "这张是X但我喜欢",
+          "outcome": "selected",
+          "item_id": "2026-08-10-this-is-x-but-i-like-it",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 29,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2603018",
+            "observed_at": "2026-08-10T00:02:05+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-18",
+          "canonical_phrase": "横滨赛包揽冠军",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-19",
+          "canonical_phrase": "综艺完整阵容",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-20",
+          "canonical_phrase": "短剧获奖名单",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "冻结初遇那一天",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "老年妆完全没想到",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-7",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-8",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私/未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-25",
+          "canonical_phrase": "开学三件套全线暴涨",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-26",
+          "canonical_phrase": "运输船通过大桥",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-27",
+          "canonical_phrase": "看海宗师形态",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-9",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-10-jiangchengzi-template",
+          "canonical_phrase": "江城子·X",
+          "outcome": "selected",
+          "item_id": "2026-08-10-jiangchengzi-template",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2603023",
+            "observed_at": "2026-08-10T00:02:05+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-31",
+          "canonical_phrase": "不同画师眼中的X",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-10",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-11",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-03",
+          "canonical_phrase": "中国制造硬核瞬间",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-05",
+          "canonical_phrase": "百花奖",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-06",
+          "canonical_phrase": "怎么挑选眼镜框",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-07",
+          "canonical_phrase": "城市地铁",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-12",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-13",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-14",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-15",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-25",
+          "canonical_phrase": "X的Y未解之谜",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-34",
+          "canonical_phrase": "我每次陷入X的日常",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-16",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-45",
+          "canonical_phrase": "大家都走到职场哪一步了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-57",
+          "canonical_phrase": "成年人的友情不需要随时待命",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "douyin",
+            "bilibili",
+            "other"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 45,
+          "sources_checked": [
+            "weibo"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-10-outfit-no-formula",
+      "title": "👗 穿搭没有公式",
+      "aliases": [
+        "穿搭没有公式",
+        "穿衣没有公式"
+      ],
+      "canonical_phrase": "穿搭没有公式",
+      "platform": [
+        "douyin",
+        "bilibili",
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "用“没有公式”反对单一标准，把个人偏好、场合与舒适度放回穿搭判断。",
+      "origin": "2026年8月10日抖音热榜以“穿搭没有公式”聚合相关内容；更早的公开内容已把这句话当作个人风格表达，首发账号未能可靠确认。",
+      "usage": "可用于穿衣、妆容、拍照、布置等审美话题，强调没有唯一标准；常直接说“X没有公式”，再补一句自己的选择。",
+      "fun_point": "一本正经地否定“标准答案”，既能接教程，也能给随性选择找台阶，语气松弛而不对抗。",
+      "why_spread": "短句结构完整，替换成本低；抖音当日高位热榜提供即时热度，站外公开内容又证明它并非编辑临时造句。",
+      "lifecycle": "rising",
+      "brand_usage": "适合服饰、美妆和生活方式品牌做多风格并列展示；避免把“无公式”又包装成新的身材规训。",
+      "risk": {
+        "level": "low",
+        "note": "审美表达本身安全；避免借题评论具体个人外貌、身材或消费能力。"
+      },
+      "days_on_list": 1,
+      "score": 89,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2602751",
+          "title": "穿搭没有公式",
+          "observed_at": "2026-08-10T00:02:05+08:00",
+          "captured_at": "2026-08-10T07:04:00+08:00",
+          "note": "抖音当日话题页；聚合榜显示其于8月10日00:02位列热榜第6。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-10T00:02:05+08:00",
+          "captured_at": "2026-08-10T07:04:00+08:00",
+          "note": "HotFlashNews当日榜单记录“穿搭没有公式”排名第6。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1rc411N7pS/",
+          "title": "复古风｜条纹衬衫会显胖？我不信！胖子条纹衣服该怎么穿",
+          "captured_at": "2026-08-10T07:04:00+08:00",
+          "note": "较早公开视频把同一句式用于个人穿搭选择，证明真实复用而非编辑推演。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-10-jiangchengzi-template",
+      "title": "📜 江城子·X",
+      "aliases": [
+        "江城子 夏天出门没关空调",
+        "江城子·破大防",
+        "江城子改写"
+      ],
+      "canonical_phrase": "江城子·X",
+      "platform": [
+        "douyin",
+        "bilibili",
+        "other"
+      ],
+      "type": "二创梗",
+      "summary": "把古词牌“江城子”改写成现代生活小崩溃，用古典腔包裹空调、上班等日常。",
+      "origin": "2026年8月10日抖音热榜出现“江城子 夏天出门没关空调”；网络改写“江城子”的传统更早已形成，难以归于单一首发者。",
+      "usage": "保留词牌名和铺陈语气，把X换成忘关空调、破防、加班或其他生活困境；重点是古典形式与现代琐事的反差。",
+      "fun_point": "把一件小失误写出千古愁绪，语言规格远高于事件本身，反差就是笑点。",
+      "why_spread": "有现成词牌骨架、填空门槛低，历史上已有多轮公开仿写；当日抖音新变体又提供明确的二次升温信号。",
+      "lifecycle": "rising",
+      "brand_usage": "适合空调、家电、办公和出行内容做轻量仿写；应保持生活小事尺度，避开灾情、疾病或真实受害经历。",
+      "risk": {
+        "level": "low",
+        "note": "改写形式安全；避免套用灾害、公共安全事故或具体个人遭遇。"
+      },
+      "days_on_list": 1,
+      "score": 82,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2603023",
+          "title": "江城子 夏天出门没关空调",
+          "observed_at": "2026-08-10T00:02:05+08:00",
+          "captured_at": "2026-08-10T07:04:00+08:00",
+          "note": "抖音当日话题页；聚合榜显示该变体于8月10日00:02位列热榜第25。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-10T00:02:05+08:00",
+          "captured_at": "2026-08-10T07:04:00+08:00",
+          "note": "HotFlashNews当日榜单记录“江城子 夏天出门没关空调”。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1qT411x7po/",
+          "title": "《江城子·破大防》",
+          "captured_at": "2026-08-10T07:04:00+08:00",
+          "note": "公开高传播改写把同一词牌壳用于另一种情绪场景，证明跨场景复用。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.chinanews.com.cn/sh/2011/02-28/2872292.shtml",
+          "title": "网友恶搞古诗词：十年生死两茫茫 要开学 泪两行",
+          "captured_at": "2026-08-10T07:04:00+08:00",
+          "note": "媒体记录多种“江城子”网络仿写，支持该语言壳长期可套用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-10-this-is-x-but-i-like-it",
+      "title": "🎬 这张是X但我喜欢",
+      "aliases": [
+        "这张是烂片但我喜欢",
+        "不是神作但我喜欢"
+      ],
+      "canonical_phrase": "这张是X但我喜欢",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "先承认作品可能不够好，再用“但我喜欢”保住个人偏爱，适合低成本表达逆风审美。",
+      "origin": "2026年8月10日抖音热榜出现“这张是烂片但我喜欢”；公开影评语境中早已有“不是神作但我喜欢”的相近表达，具体首发不可考。",
+      "usage": "把X换成烂片、冷门歌、旧游戏或小众单品，前半句承认主流评价，后半句给个人喜好留位置。",
+      "fun_point": "主动替反方把缺点说完，再理直气壮保留喜欢，形成一种免战牌式幽默。",
+      "why_spread": "句式只有一个槽位，评论区和清单内容都容易套用；当日抖音热榜提供活跃证据，公开讨论也显示相同转折表达被反复使用。",
+      "lifecycle": "rising",
+      "brand_usage": "适合影视、音乐和复古产品做“有缺点也真喜欢”的用户共创；不要借此攻击创作者或煽动评分对立。",
+      "risk": {
+        "level": "low",
+        "note": "主观偏好表达风险较低；避免指名羞辱创作者、演员或普通用户。"
+      },
+      "days_on_list": 1,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 29,
+        "reusability": 16,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2603018",
+          "title": "这张是烂片但我喜欢",
+          "observed_at": "2026-08-10T00:02:05+08:00",
+          "captured_at": "2026-08-10T07:04:00+08:00",
+          "note": "抖音当日话题页；聚合榜显示其于8月10日00:02位列热榜第15。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-10T00:02:05+08:00",
+          "captured_at": "2026-08-10T07:04:00+08:00",
+          "note": "HotFlashNews当日榜单记录“这张是烂片但我喜欢”。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.sina.cn/media/3564060545",
+          "title": "心脏补时的微博",
+          "captured_at": "2026-08-10T07:04:00+08:00",
+          "note": "2026年2月公开微博使用“作品有瑕疵，而我可以说我喜欢它”的同类转折表达，支持真实语境复用。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
