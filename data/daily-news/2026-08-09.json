@@ -1,0 +1,634 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-2026",
+  "date": "2026-08-09",
+  "generated_at": "2026-08-09T09:20:38+08:00",
+  "published_at": "2026-08-09T09:20:38+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "minors": 1,
+      "privacy": 1,
+      "controversy": 1,
+      "public_safety": 1,
+      "harassment": 1,
+      "rumor": 1,
+      "propaganda": 1,
+      "politics": 1,
+      "celebrity_dispute": 1,
+      "geopolitics": 1
+    },
+    "dropped_low_confidence": 16,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 6,
+      "state_media_sources": 17,
+      "major_media_sources": 7,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 10,
+        "relaxed_72h": 14
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "中央气象、水利与交通运行信息",
+            "中央与地方公共服务公告",
+            "新华社、央视与央广新闻",
+            "铁路开通及客运调整",
+            "消费收费与景区服务规则",
+            "基层医疗和健康风险提示",
+            "教育就业与社会救助",
+            "国际重大新闻及中国读者相关性",
+            "近七日已发布身份去重"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-09-zhejiang-typhoon-response",
+          "story_identity": "cn-typhoon-baihaitun-zhejiang-flood-response-and-rail-adjustment-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-09-zhejiang-typhoon-response",
+          "score": 96,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 20,
+            "everyday_relevance": 24,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-09-wenyu-high-speed-rail",
+          "story_identity": "cn-hangtai-high-speed-rail-wenyu-section-opened-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T08:49:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "按2026-08-09T09:18:51+08:00选择时钟已不属于strict_24h层级"
+        },
+        {
+          "candidate_key": "2026-08-09-xinjiang-scenic-selfdrive-fees",
+          "story_identity": "cn-xinjiang-4a-scenic-selfdrive-fee-per-vehicle-rule-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T16:55:45+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-09-xinjiang-scenic-selfdrive-fees",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-09-convenience-living-circles",
+          "story_identity": "cn-15-minute-convenience-living-circle-progress-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T10:27:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-09-convenience-living-circles",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-09-community-exercise-prescriptions",
+          "story_identity": "cn-community-health-centers-exercise-prescription-service-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T12:42:19+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-09-community-exercise-prescriptions",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-09-growth-hormone-warning",
+          "story_identity": "cn-child-growth-hormone-prescription-misuse-warning-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T07:13:35+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "按2026-08-09T09:18:51+08:00选择时钟已不属于strict_24h层级"
+        },
+        {
+          "candidate_key": "cand-07-smart-logistics-heat",
+          "story_identity": "cn-smart-logistics-heatwave-supply-transport-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T09:27:52+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "报道聚焦物流技术与行业运行，普通读者直接行动价值不足，未达严格层75分"
+        },
+        {
+          "candidate_key": "cand-08-business-entity-structure",
+          "story_identity": "cn-national-business-entity-structure-data-h1-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T12:27:49+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "宏观经营主体数据虽具代表性，但与普通读者当日生活关联较弱，未达严格层75分"
+        },
+        {
+          "candidate_key": "cand-09-national-fitness-review",
+          "story_identity": "cn-national-fitness-day-public-service-review-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T19:39:49+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "综述性内容与入选的社区运动健康服务高度相近，且缺少新的可操作政策节点"
+        },
+        {
+          "candidate_key": "cand-10-beijing-school-discipline-rule",
+          "story_identity": "cn-beijing-school-discipline-implementation-rule-disclosed-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T09:58:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 19,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "已超过24小时严格窗口，且适用范围限于北京市中小学"
+        },
+        {
+          "candidate_key": "cand-11-shijiazhuang-recruitment-fair",
+          "story_identity": "cn-shijiazhuang-zhengding-recruitment-fair-5000-jobs-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "单场地方招聘会覆盖面有限，未达到全国日报严格层分数"
+        },
+        {
+          "candidate_key": "cand-12-qinghai-social-assistance-lists",
+          "story_identity": "cn-qinghai-tiered-social-assistance-policy-lists-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "省级救助清单受众明确但地域范围有限，且已超过24小时"
+        },
+        {
+          "candidate_key": "cand-13-hainan-transport-investment-plan",
+          "story_identity": "cn-hainan-five-year-road-waterway-investment-plan-disclosed-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "长期区域投资规划缺少当日可执行的公众出行变化"
+        },
+        {
+          "candidate_key": "cand-14-jiangxi-power-load-record",
+          "story_identity": "cn-jiangxi-power-load-record-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T13:22:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "区域负荷纪录未伴随新的居民限电或服务安排，直接民生影响不足"
+        },
+        {
+          "candidate_key": "cand-15-flood-safety-public-video",
+          "story_identity": "cn-flood-safety-public-video-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T15:52:44+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "drop_reason": "公益短片为常识性提醒，缺少新的事实或政策动作"
+        },
+        {
+          "candidate_key": "cand-16-shandong-port-group-review",
+          "story_identity": "cn-shandong-world-class-port-group-review-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T20:42:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "产业综述篇幅较长，普通居民直接关联与可操作性有限"
+        },
+        {
+          "candidate_key": "cand-17-us-jobs-july",
+          "story_identity": "us-july-employment-decline-disclosed-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T20:30:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "属于外国常规经济数据，未证明对中国读者的直接影响或代表性全球意义"
+        },
+        {
+          "candidate_key": "cand-18-nepal-chinese-vocational-training",
+          "story_identity": "np-chinese-plus-vocational-training-feature-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T05:49:00+08:00",
+          "scope": "international",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "外国地方教育项目报道，缺少广泛全球意义和中国读者直接关联"
+        },
+        {
+          "candidate_key": "cand-19-croatia-train-collision",
+          "story_identity": "hr-train-collision-20-injured-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T18:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "外国单一交通事故，不具中国读者直接影响或足够代表性全球意义"
+        },
+        {
+          "candidate_key": "cand-20-service-consumption-feature",
+          "story_identity": "cn-service-consumption-expansion-feature-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T11:16:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "宏观宣传性综述缺少可核验的新政策节点和具体个人行动信息"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-09-zhejiang-typhoon-response",
+      "story_identity": "cn-typhoon-baihaitun-zhejiang-flood-response-and-rail-adjustment-2026-08-08",
+      "headline": "🌧️ 浙江防洪响应升至Ⅲ级，长三角列车调整",
+      "summary": "水利部8月8日20时将浙江洪水防御响应升至Ⅲ级；受台风“白海豚”影响，长三角多条铁路8月9日至11日部分区段和时段将临时停运。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 96,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 20,
+        "everyday_relevance": 24,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-08T20:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "列车方案会随台风路径动态调整；具体车次以12306和车站公告为准，停运票可按铁路规定免手续费退票。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视新闻客户端",
+          "url": "https://www.cnr.cn/newscenter/native/gd/20260808/t20260808_527754028.shtml",
+          "title": "受台风“白海豚”影响 长三角铁路进一步调整列车开行方案",
+          "captured_at": "2026-08-09T06:08:59+08:00",
+          "note": "核对受影响线路、日期范围、动态调整和免手续费退票安排。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33745912",
+          "title": "水利部针对浙江省洪水防御应急响应提升至Ⅲ级，工作组已抵达防御一线",
+          "captured_at": "2026-08-09T06:08:59+08:00",
+          "note": "核对8月8日20时响应升级及重点转移避险区域。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-09-xinjiang-scenic-selfdrive-fees",
+      "story_identity": "cn-xinjiang-4a-scenic-selfdrive-fee-per-vehicle-rule-2026-08-08",
+      "headline": "🚙 新疆4A级以上景区自驾服务费改按车收",
+      "summary": "新疆4A级及以上涉收费景区将自驾服务费统一改为按车计费：5座及以下不超过120元；原按人收费景区新方案最晚8月20日起执行。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 89,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-08T16:55:45+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "这是服务费上限与切换期限，具体景区价格和启用日期仍以各景区随后公布的新方案为准。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "新疆维吾尔自治区文化和旅游厅",
+          "url": "https://wlt.xinjiang.gov.cn/wlt/tzgg/202608/f771af03c6804b4693ba6bb35e57153a.shtml",
+          "title": "关于优化调整新疆维吾尔自治区旅游景区内自驾服务费的通报",
+          "captured_at": "2026-08-09T06:08:59+08:00",
+          "note": "官方通报确认适用景区、按车计费与各车型价格上限。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/local/20260808/2905a5d9128240a7b0bb7a4546e9df4a/c.html",
+          "title": "新疆4A级及以上景区自驾服务费均改为按车收费",
+          "captured_at": "2026-08-09T06:08:59+08:00",
+          "note": "核对发布时间、执行切换安排及游客关注事项。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-09-convenience-living-circles",
+      "story_identity": "cn-15-minute-convenience-living-circle-progress-2026-08-08",
+      "headline": "🏪 一刻钟便民生活圈覆盖超九成地级城市",
+      "summary": "商务部最新数据显示，全国超过90%的地级以上城市开展便民生活圈建设；试点地区已建9156个生活圈，服务社区居民约1.89亿人。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-08T10:27:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "数据反映试点总体进展，不代表每个社区均已覆盖；具体网点与服务以所在地公开信息为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/08/ARTII7GtqwmRqnkbUKsvRTAT260808.shtml",
+          "title": "民生一件事｜“数”说一刻钟便民生活圈全面扩围升级 切实提升幸福感",
+          "captured_at": "2026-08-09T06:08:59+08:00",
+          "note": "核对覆盖城市比例、生活圈数量及服务居民规模。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-09-community-exercise-prescriptions",
+      "story_identity": "cn-community-health-centers-exercise-prescription-service-2026-08-08",
+      "headline": "🏃 社区卫生中心试点为慢病患者开运动处方",
+      "summary": "多地试点把体卫融合服务下沉到社区卫生服务中心，由专业人员为慢性病人群评估并提供个性化运动建议，探索运动促进健康的新服务。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-08T12:42:19+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "运动处方需结合个人疾病、用药和身体状况由专业人员评估，不可据新闻自行替代诊疗或盲目加量。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/08/ARTIyatnpjPlquFhMWzKELEO260808.shtml",
+          "title": "民生一件事｜体卫融合服务下沉 社区卫生服务中心为慢性病提供“运动处方”",
+          "captured_at": "2026-08-09T06:08:59+08:00",
+          "note": "确认社区运动健康中心试点及慢病人群运动处方服务。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
