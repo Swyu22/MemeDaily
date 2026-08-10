@@ -118,6 +118,9 @@ it("requires canonical checks and successful correlated Pages dispatches", () =>
   const pages = fs.readFileSync(path.join(WORKFLOWS, "pages.yml"), "utf8");
   const ci = fs.readFileSync(path.join(WORKFLOWS, "ci.yml"), "utf8");
   const codex = fs.readFileSync(path.join(WORKFLOWS, "codex-daily-pr-publish.yml"), "utf8");
+  const packageJson = JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), "package.json"), "utf8"),
+  ) as { scripts?: Record<string, string> };
   const buildJob = pages.split("\n  build:")[1]?.split("\n  deploy:")[0] ?? "";
   const deployJob = pages.split("\n  deploy:")[1] ?? "";
   expect(pages).toContain("npm run check");
@@ -128,8 +131,14 @@ it("requires canonical checks and successful correlated Pages dispatches", () =>
   expect(buildJob).not.toContain("pages: write");
   expect(deployJob).toContain("pages: write");
   expect(deployJob).toContain("id-token: write");
-  expect(ci).toContain("npm audit --omit=dev --audit-level=high");
-  expect(pages).toContain("npm audit --omit=dev --audit-level=high");
+  expect(packageJson.scripts?.["audit:prod"]).toBe(
+    "npm audit --omit=dev --audit-level=high",
+  );
+  expect(packageJson.scripts?.check).toContain("npm run audit:prod");
+  expect(ci).toContain("npm run audit:prod");
+  expect(buildJob).toContain("npm run check");
+  expect(codex.split("\n  publish:")[0]).toContain("npm run check");
+  expect(codex.split("\n  publish:")[1]).toContain("npm run check");
   expect(codex).toContain('bash scripts/dispatch-pages.sh "$SHA"');
   expect(codex).toContain('bash scripts/dispatch-pages.sh "$LIVE_SHA"');
   expect(codex).toContain("Pages success was verified for live main");

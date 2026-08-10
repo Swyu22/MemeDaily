@@ -10,3 +10,4 @@
 | 2026-07-25 | `2026-07-25--codex-cloud-publisher-takeover.md` | Three-end reconciliation, publisher hardening, and an attempted Cloud scheduler handoff later corrected on 2026-07-26. |
 | 2026-07-26 | `2026-07-26--server-scheduled-publishing-recovery.md` | Replaced local heartbeats with Web Scheduled Tasks, enforced a three-item daily minimum, repaired both feeds, and verified trusted publication plus server idempotency. |
 | 2026-08-01 | `2026-08-01--editorial-completeness-and-domestic-news.md` | Separates the three-item availability floor from editorial completion, restores domestic-majority news, updates eight Cloud tasks, and reruns both feeds end to end. |
+| 2026-08-10 | `2026-08-10--pages-security-gate-recovery.md` | Diagnoses a new dependency advisory that blocked Pages for three days, aligns trusted pre-push audit parity, and restores independent deployment monitoring. |

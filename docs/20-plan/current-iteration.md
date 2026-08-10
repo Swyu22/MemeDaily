@@ -2,6 +2,12 @@
 
 ## Iteration Goal
 
+On 2026-08-10, restore the production site after three days of Pages failures,
+make the production dependency audit part of every trusted pre-push release gate,
+and separate deployment freshness alerts from content-contract incidents. Reconcile
+the latest dual-feed `main` data with a successful Pages deployment and production
+readback, then clean up the candidate PRs left open by the failed deploy waits.
+
 On 2026-08-01, correct the newly observed minimum-count anchoring without weakening the
 three-item availability floor. Require both feeds to finish a bounded, auditable
 candidate search and publish every qualifying item up to ten. Restore DailyNews to a
@@ -35,6 +41,23 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
   extraction, paid model APIs in the product, and unrelated credential/account changes.
 
 ## Checklist
+
+### 2026-08-10 deployment recovery
+
+- [x] Reproduce the stale production site and prove the eight server tasks continued
+  creating daily candidates.
+- [x] Isolate the shared CI/Pages blocker to the newly disclosed high-severity
+  `nanoid <3.3.17` advisory and refresh the lock to a fixed transitive release.
+- [x] Put the production audit inside the canonical `npm run check` path used by every
+  trusted writer before protected-main push.
+- [x] Make both deterministic and Cloud monitors check Pages freshness independently
+  from feed editorial validity, with regression coverage.
+- [ ] Merge the repair under the protected-main maintenance procedure, restore the
+  DeployKey-only ruleset, and pass main CI plus Pages.
+- [ ] Verify cache-bypassed production exposes the latest heat-meme and DailyNews data,
+  then resolve stale candidate PRs and deployment alerts.
+- [ ] Read back all eight server Scheduled Tasks with the monitor-specific deployment
+  preflight wording and unchanged schedules/active states.
 
 ### 2026-08-01 editorial-completeness correction
 
@@ -140,4 +163,4 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
 
 ## Last Updated
 
-- 2026-08-01
+- 2026-08-10

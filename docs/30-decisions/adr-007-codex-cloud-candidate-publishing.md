@@ -179,3 +179,27 @@ Recovery PR #40 remains immutable historical evidence that the earlier contract
 accepted a zero-item `skipped` meme envelope. The new policy repairs the current
 `data/daily/2026-07-26.json` through a later audited exact-file change; it does not
 amend, force-push, or conceal PR #40 or its commits.
+
+## 2026-08-10 Amendment: Release-Audit Parity and Independent Deploy Health
+
+On 2026-08-07 a newly published high-severity advisory made the locked production
+dependency tree fail `npm audit --omit=dev --audit-level=high`. CI and Pages enforced
+that gate, but the trusted candidate publisher only ran `npm run check`. It therefore
+advanced `main` before Pages rejected the same tree, leaving valid later daily data in
+git while production remained on the last deployable commit.
+
+The release boundary is amended as follows:
+
+- `npm run check` includes the production high-severity audit, so candidate validation,
+  live-tip preparation, post-rebase validation, manual fallback writers, CI, and Pages
+  all evaluate the same dependency-security contract before any protected-main push;
+- the lockfile is refreshed to a non-vulnerable transitive version rather than weakening
+  or bypassing the advisory gate;
+- monitor tasks and deterministic monitor workflows treat content validity and deploy
+  freshness as independent health axes. They check whether a successful Pages run covers
+  live `main` even when the feed also has a content incident, and maintain a separate
+  deployment alert until production is current.
+
+This preserves fail-closed security while preventing a known-undeployable tree from
+entering `main` through a trusted writer and preventing editorial alerts from masking a
+stale public site.

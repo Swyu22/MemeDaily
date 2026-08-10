@@ -115,6 +115,10 @@ Before any mutation:
 4. Inspect open pull requests and recent same-repository pull requests for the
    exact branch. Never create a second branch for the same feed/date.
 
+For `monitor`, a terminal content preflight is not the end of the invocation. Continue
+to section 4 and independently verify the live-main Pages deployment and production
+surface. Primary, catch-up, and fallback may still use terminal as their cheap no-op.
+
 An open candidate whose trusted workflow is queued or running is already in
 progress: report it and stop. If it failed, inspect its workflow jobs/comments.
 Repair the JSON only when the failure is a candidate/schema/content failure. For
@@ -224,27 +228,35 @@ the PR `synchronize` event will retrigger trusted validation.
 ## 4. Monitor mode
 
 Monitor is data-read-only and never creates, edits, or repairs a data candidate.
-Its only permitted write is creating or updating the single deduplicated alert
-issue described below.
+Its only permitted write is creating, updating, or closing the deduplicated content
+and deployment alert issues described below.
 
-1. Apply the scope/idempotency reads from section 2.
-2. Only for a current-policy, editorially complete terminal envelope, select distinctive reader-visible titles and
-   fetch `https://memedaily.fun/` with cache bypass when the tool supports it.
-   Verify HTTP success and that production exposes at least three of today's
-   qualified visible items.
-3. Treat a missing target, `skipped`, zero-to-two items, count mismatch, legacy
+1. Apply the scope/idempotency reads from section 2, but do not return early for a
+   terminal envelope.
+2. Independently resolve the live `main` SHA and inspect successful `pages.yml` runs.
+   If no successful Pages run covers that SHA, create or update
+   `Pages 部署核验告警: YYYY-MM-DD` even when the feed also has a content-contract
+   incident. Editorial validity and deployment freshness are separate health axes;
+   one alert must never suppress the other.
+3. For a current-policy, editorially complete terminal envelope, select distinctive
+   reader-visible titles and fetch `https://memedaily.fun/` with cache bypass when the
+   tool supports it. Verify HTTP success and that production exposes at least three of
+   today's qualified visible items. A successful workflow record does not replace this
+   production readback when public HTTP access is available.
+4. Treat a missing target, `skipped`, zero-to-two items, count mismatch, legacy
    policy, missing/false completion marker, or fewer than three items on production
    as unhealthy. Treat `held` as
    an unhealthy operator safety incident that automation must not clear.
-4. Inspect today's exact candidate PR and its trusted workflow status whenever
+5. Inspect today's exact candidate PR and its trusted workflow status whenever
    the main envelope is missing or under minimum.
-5. If healthy, close any matching open alert as completed. If unhealthy, create
+6. If healthy, close any matching open content alert as completed. If unhealthy, create
    or update one GitHub issue using:
    - `MemeDaily 未发布告警: YYYY-MM-DD (<status>)`, or
    - `DailyNews 未发布告警: YYYY-MM-DD (<status>)`.
-6. If main is healthy but production does not expose it, use
+7. If Pages or production is stale, use the separate
    `Pages 部署核验告警: YYYY-MM-DD` and include the feed, main evidence, production
-   evidence, and candidate PR/workflow status.
+   evidence, and candidate PR/workflow status. Close it only after a successful Pages
+   run covers live main and production readback is current.
 
 Do not create duplicate issues. Never claim exact Pages-SHA correlation unless a
 connected tool actually returned that evidence.
