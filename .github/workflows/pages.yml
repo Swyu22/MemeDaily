@@ -30,7 +30,6 @@ jobs:
           cache: npm
 
       - run: npm ci
-      - run: npm audit --omit=dev --audit-level=high
       # Deployment runs the canonical gate, so Pages cannot race ahead of a CI rejection.
       - run: npm run check
 

@@ -59,6 +59,26 @@ jobs:
             exit 0
           fi
 
+          # Deployment freshness is independent of editorial validity. Always surface a
+          # stale production SHA even when the feed also has a content-contract incident.
+          PAGES_RUN=""
+          PAGES_CHECKED=false
+          for attempt in 1 2 3; do
+            if PAGES_RUN="$(gh run list --workflow=pages.yml --status=success --limit=40 \
+              --json databaseId,headSha \
+              --jq "[.[] | select(.headSha == \"${LIVE_SHA}\")][0].databaseId // empty")"; then
+              PAGES_CHECKED=true
+              break
+            fi
+            echo "Pages run-list attempt ${attempt}/3 failed."
+            if [ "$attempt" -lt 3 ]; then sleep $((attempt * 10)); fi
+          done
+          if [ "$PAGES_CHECKED" != "true" ]; then
+            open_deployment_issue "无法读取成功 Pages runs；live main SHA ${LIVE_SHA} 的部署状态未知"
+          elif [ -z "$PAGES_RUN" ]; then
+            open_deployment_issue "live main SHA ${LIVE_SHA} 尚无对应的成功 Pages run"
+          fi
+
           FILE="data/daily/${DATE}.json"
 
           if git cat-file -e "FETCH_HEAD:${FILE}" 2>/dev/null; then
@@ -72,23 +92,7 @@ jobs:
           if { [ "$STATUS" = "published" ] || [ "$STATUS" = "partial" ]; } \
             && [ "$REPORTED" -eq "$VISIBLE" ] && [ "$VISIBLE" -ge 3 ] \
             && [ "$POLICY" = "v4-editorial-completeness" ] && [ "$COMPLETE" = "true" ]; then
-            PAGES_RUN=""
-            PAGES_CHECKED=false
-            for attempt in 1 2 3; do
-              if PAGES_RUN="$(gh run list --workflow=pages.yml --status=success --limit=40 \
-                --json databaseId,headSha \
-                --jq "[.[] | select(.headSha == \"${LIVE_SHA}\")][0].databaseId // empty")"; then
-                PAGES_CHECKED=true
-                break
-              fi
-              echo "Pages run-list attempt ${attempt}/3 failed."
-              if [ "$attempt" -lt 3 ]; then sleep $((attempt * 10)); fi
-            done
-            if [ "$PAGES_CHECKED" != "true" ]; then
-              open_deployment_issue "无法读取成功 Pages runs；live main SHA ${LIVE_SHA} 的部署状态未知"
-            elif [ -z "$PAGES_RUN" ]; then
-              open_deployment_issue "live main SHA ${LIVE_SHA} 尚无对应的成功 Pages run"
-            else
+            if [ "$PAGES_CHECKED" = "true" ] && [ -n "$PAGES_RUN" ]; then
               echo "OK: today is editorially complete with ${VISIBLE}/3..10 visible memes and Pages run ${PAGES_RUN} covers live main ${LIVE_SHA}."
             fi
             exit 0

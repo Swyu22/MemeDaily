@@ -17,7 +17,8 @@
     "test": "vitest run",
     "validate": "tsx scripts/validate-data.ts",
     "validate:news": "tsx scripts/validate-news.ts",
-    "check": "npm run validate && npm run validate:news && npm run lint && npm run typecheck && npm test && npm run build",
+    "audit:prod": "npm audit --omit=dev --audit-level=high",
+    "check": "npm run audit:prod && npm run validate && npm run validate:news && npm run lint && npm run typecheck && npm test && npm run build",
     "fallback:skipped": "tsx scripts/create-skipped-day.ts",
     "fallback:skipped:news": "tsx scripts/create-skipped-news-day.ts",
     "stamp:publish": "tsx scripts/stamp-publish-time.ts"

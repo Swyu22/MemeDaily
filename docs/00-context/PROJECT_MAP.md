@@ -104,15 +104,20 @@
   never be described as a server schedule.
 - Meme authoring applies ADR-009/010's score/activity tiers without a fixed cross-day
   count. News applies ADR-010's score tiers, domestic ratio, and international gate.
-  Monitors alert on legacy-policy/incomplete data as well as under-minimum data.
+  Monitors alert on legacy-policy/incomplete data as well as under-minimum data, and
+  independently alert when no successful Pages deployment covers live main so a
+  content incident cannot hide a stale production build.
 - `codex-daily-pr-publish.yml`: same-repository exact-branch/one-JSON candidate
   ingestion, explicit current-policy completion gate, serialized new/under-minimum or
   one-time policy-migration publication, and correlated Pages wait. A complete day remains immutable.
 - `daily-{news-}fallback.yml`: manual-only fail-closed recovery guards; the server
   fallback tasks perform the editorial research.
 - `daily-{news-}monitor.yml`: manual-only policy/completion/live-main/Pages verification.
-- `pages.yml`: build and deploy the static export after trusted changes.
-- `ci.yml`: source, data, governance, secret, type, test, and build gates.
+- `pages.yml`: run the canonical release gate, build, and deploy the static export
+  after trusted changes.
+- `ci.yml`: source, data, governance, secret, production dependency audit, type, test,
+  and build gates. The same production audit is part of `npm run check`, so every
+  trusted writer fails before pushing a tree that Pages cannot accept.
 
 ## Reading Path
 - **Bug fix:** `.cloud.md` -> target module README -> target and adjacent files.

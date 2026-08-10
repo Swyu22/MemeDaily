@@ -47,7 +47,7 @@ jobs:
         run: npm ci
 
       - name: 生产依赖高危漏洞门禁
-        run: npm audit --omit=dev --audit-level=high
+        run: npm run audit:prod
 
       - name: 应用层 lint / typecheck / test
         run: |
