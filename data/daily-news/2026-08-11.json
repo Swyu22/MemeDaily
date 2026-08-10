@@ -1,0 +1,606 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-11",
+  "generated_at": "2026-08-11T06:02:58+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "politics": 1,
+      "geopolitics": 1,
+      "propaganda": 1,
+      "public_safety": 1,
+      "privacy": 1,
+      "minors": 1,
+      "harassment": 1,
+      "illegal": 1,
+      "rumor": 1,
+      "celebrity_dispute": 1
+    },
+    "dropped_low_confidence": 15,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 6,
+      "state_media_sources": 13,
+      "major_media_sources": 8,
+      "aggregator_sources": 3,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 10,
+        "relaxed_72h": 14
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "中央媒体与部委政策",
+            "省级公共服务与教育资助",
+            "住房公积金与就业服务",
+            "主流地方媒体与聚合榜单"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-11-employment-services",
+          "story_identity": "cn-employment-support-and-public-service-expansion-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T07:57:22+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-11-employment-services",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-11-museum-access",
+          "story_identity": "cn-museum-no-reservation-and-access-service-expansion-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T10:21:04+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-11-museum-access",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-11-student-loans",
+          "story_identity": "cn-xinjiang-corps-student-origin-loan-intake-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T16:55:44+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-08-11-student-loans",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-11-liuzhou-housing-fund",
+          "story_identity": "cn-liuzhou-commercial-to-housing-fund-loan-optimization-effective-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-11-liuzhou-housing-fund",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-05-guangchang-utilities",
+          "story_identity": "cn-guangchang-utility-discount-auto-enrollment-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T05:08:04+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "超过严格24小时窗口，且仅覆盖单县困难群众",
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "cand-06-jiangxi-tcm-insurance",
+          "story_identity": "cn-jiangxi-tcm-granules-insurance-policy-explainer-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T05:07:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "drop_reason": "政策8月1日已实施，报道时已超过严格24小时窗口",
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "cand-07-henan-special-medicines",
+          "story_identity": "cn-henan-special-medicine-cross-city-settlement-2026-08-06",
+          "research_pass": 1,
+          "occurred_at": "2026-08-06T14:48:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "drop_reason": "发生时间超过72小时，未进入当前候选层"
+        },
+        {
+          "candidate_key": "cand-08-qingdao-no-certificates",
+          "story_identity": "cn-qingdao-no-certificate-service-scenes-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T10:28:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "原始披露早于严格窗口，且主要是既有建设进展",
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "cand-09-changdu-rider-services",
+          "story_identity": "cn-changdu-rider-community-observers-and-rest-stations-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T09:13:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "drop_reason": "报道为多年累计做法，缺少当日新启动节点",
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "cand-10-disaster-finance",
+          "story_identity": "cn-disaster-recovery-financial-service-roundup-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T07:57:26+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "drop_reason": "核心举措多发生于7月，8月10日主要为回顾性综述",
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "cand-11-shaanxi-employment",
+          "story_identity": "cn-shaanxi-employment-support-progress-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T08:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "drop_reason": "省域进展被更高分全国就业服务故事覆盖",
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "cand-12-datong-public-services",
+          "story_identity": "cn-datong-county-public-service-progress-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T18:06:19+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "drop_reason": "县域综合性工作总结缺少可立即办理的单一事项",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "cand-13-yixing-employment-events",
+          "story_identity": "cn-yixing-campus-county-employment-events-2026-08-09",
+          "research_pass": 1,
+          "occurred_at": "2026-08-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "drop_reason": "活动覆盖特定县域和参会高校，普遍受众效用有限",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "cand-14-fengtai-health-recruitment",
+          "story_identity": "cn-beijing-fengtai-health-recruitment-third-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "drop_reason": "岗位地域和专业限制较强，代表性不足",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "cand-15-mentougou-health-recruitment",
+          "story_identity": "cn-beijing-mentougou-health-recruitment-second-half-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "drop_reason": "岗位地域和专业限制较强，且与同类招聘重复",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "cand-16-suzhou-water-outage",
+          "story_identity": "cn-suzhou-shangyunyuan-water-outage-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "drop_reason": "仅影响一个小区且停水事项已结束"
+        },
+        {
+          "candidate_key": "cand-17-shaanxi-hongkong-jobs",
+          "story_identity": "cn-shaanxi-hongkong-talent-job-event-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T16:17:51+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "drop_reason": "高端岗位面向特定人才群体，日常普遍性不足"
+        },
+        {
+          "candidate_key": "cand-18-chongqing-electronics-contest",
+          "story_identity": "cn-chongqing-student-electronics-contest-2026-08-05",
+          "research_pass": 1,
+          "occurred_at": "2026-08-05T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 13
+          },
+          "drop_reason": "赛事已于8月5日结束，且服务人群较窄"
+        },
+        {
+          "candidate_key": "cand-19-xinjiang-fitness-facilities",
+          "story_identity": "cn-xinjiang-fitness-facility-inventory-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T18:22:16+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "drop_reason": "设施盘点缺少当天新增开放或预约变化"
+        },
+        {
+          "candidate_key": "cand-20-guizhou-elderly-service-case",
+          "story_identity": "cn-guizhou-mobile-elderly-service-case-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅有企业案例报道，缺少独立公共服务证据"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-11-employment-services",
+      "story_identity": "cn-employment-support-and-public-service-expansion-2026-08-10",
+      "headline": "💼 稳岗扩岗与青年就业服务继续加力",
+      "summary": "多地推进稳岗返还、技能培训和困难群体就业帮扶；高校毕业生等青年就业服务攻坚行动已启动，新就业形态职业伤害保障试点向全国推开。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-10T07:57:22+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "概述已公开的全国就业政策与服务进展，不承诺个体岗位或待遇结果。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/fortune/20260810/b0aa5e22867647f896cfc6d198093e82/c.html",
+          "title": "推动高质量充分就业取得新进展",
+          "captured_at": "2026-08-11T06:02:30+08:00",
+          "note": "人民日报报道经新华网发布，列明稳岗扩岗、技能培训、青年就业和新就业形态保障进展。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-11-museum-access",
+      "story_identity": "cn-museum-no-reservation-and-access-service-expansion-2026-08-10",
+      "headline": "🏛️ 多地博物馆优化预约并延长开放",
+      "summary": "具备承载能力的场馆原则上取消预约限制；南京、重庆、深圳等地通过刷证入馆、免预约、延时开放和人工窗口等方式，降低暑期观展门槛。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-10T10:21:04+08:00",
+      "risk": {
+        "level": "low",
+        "note": "不同场馆仍可能保留预约或临时限流，参观前需核对场馆实时公告。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260810/b375b92796db489dbeb445472577de8e/c.html",
+          "title": "新华网民生观察丨让文博“随心逛”走向常态",
+          "captured_at": "2026-08-11T06:02:30+08:00",
+          "note": "新华网汇总国家文物局要求及多地免预约、延时开放和人工服务安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-11-student-loans",
+      "story_identity": "cn-xinjiang-corps-student-origin-loan-intake-2026-08-10",
+      "headline": "🎓 兵团启动生源地助学贷款集中受理",
+      "summary": "续贷可通过线上系统或国家助学贷款APP办理，首贷保留线下窗口，并支持共同借款人远程授权；本专科生每年最高可贷2万元，研究生2.5万元。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-10T16:55:44+08:00",
+      "risk": {
+        "level": "low",
+        "note": "申请资格、额度与受理时间以当地学生资助部门及国家助学贷款系统为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://bt.news.cn/20260810/3c0a87b4e8f74b6cb8be9d7b456ec782/c.html",
+          "title": "兵团启动生源地助学贷款受理工作",
+          "captured_at": "2026-08-11T06:02:30+08:00",
+          "note": "兵团日报经新华网发布，列明线上续贷、线下首贷、远程授权及年度最高贷款额度。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-11-liuzhou-housing-fund",
+      "story_identity": "cn-liuzhou-commercial-to-housing-fund-loan-optimization-effective-2026-08-11",
+      "headline": "🏠 柳州优化“商转公”贷款受理条件",
+      "summary": "柳州取消“不动产权证出证未满一年”的受理限制，并改为先预约后办理；新安排自8月11日起施行，有效期一年，符合条件的缴存人可预约申请。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-11T00:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "具体资格、额度、预约和联办银行要求以柳州市住房公积金管理中心办理口径为准。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "柳州公积金",
+          "url": "https://zfgjj.liuzhou.gov.cn/xwzx/tzgg/202608/t20260810_3782644.shtml",
+          "title": "柳房金〔2026〕9号关于优化商业住房按揭贷款转住房公积金贷款业务的通知",
+          "captured_at": "2026-08-11T06:02:30+08:00",
+          "note": "官方通知明确取消出证时间限制、实行预约办理，并自2026年8月11日起施行。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
