@@ -52,12 +52,31 @@ must not be repaired by fabricating historical timestamps.
 - `npm run check`: both data validators, strict lint, typecheck, 257 tests, and a
   232-page static build passed.
 
-## Release Pending
+## Release Acceptance
 
-- Merge the maintenance PR while temporarily suspending only the protected-main
-  ruleset required for code maintenance, then restore and reverify the ruleset.
-- Require successful main CI and Pages for the repaired commit.
-- Verify cache-bypassed production exposes the 2026-08-10 dual-feed content and detail
-  routes, then close stale data PRs whose files are already in main.
-- Synchronize and read back the eight server Scheduled Task prompts without changing
-  title, active state, timezone, or recurrence.
+- Recovery PR #96 merged under the bounded protected-main maintenance procedure at
+  `20ab8d3931cf0f240e8a520fe3e2056b99832427`. Main CI `31357545712` and Pages
+  `31357545705` succeeded; the ruleset was restored active with only its DeployKey
+  bypass.
+- Data-only PR #95 then corrected the three 2026-08-10 meme `why_spread` explanations
+  at `08ec7b566a95eabac4c2c316f0124856433fea79`. It preserved item identity,
+  evidence, scores, order, counts, and timestamps. Final main CI `31357640258` and
+  Pages `31357640237` succeeded.
+- Cache-bypassed production returned HTTP 200/MISS with a 2026-08-10
+  `Last-Modified`, all three current meme titles, all three current DailyNews
+  headlines, and HTTP 200 for every current meme detail route.
+- Deterministic monitor runs `31357738935` (meme) and `31357741553` (news) both
+  succeeded against exact final main/Pages `08ec7b5`, classifying each current-policy
+  three-item envelope as terminal.
+- Daily PRs #86, #89, #90, #92, and #93, whose data had already reached `main`, were
+  closed after the Pages descendant deployed. Rejected historical PRs #82 and #85
+  were closed with their integrity failures recorded rather than inventing backdated
+  evidence. Editorial incident #94 was closed after the corrected production readback.
+- Local `main`, `origin/main`, and GitHub `main` matched `08ec7b5` before this
+  documentation-only closeout. The active ruleset exposes only DeployKey as a bypass,
+  and the sole repository deploy key is verified, enabled, and writable.
+- Dated candidate branches, PRs, and publisher runs prove the eight server schedules
+  continued during the outage; they were not the failed component and no schedule was
+  changed. The monitor contract was updated in the live runbook/template that every
+  invocation rereads. An additional eight-task UI prompt readback was not claimed
+  because the available browser session was not authenticated.
