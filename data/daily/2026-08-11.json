@@ -1,0 +1,721 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-11",
+  "generated_at": "2026-08-11T07:12:24+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 45,
+    "published": 3,
+    "dropped_safety": {
+      "灾害/公共安全": 1,
+      "具体人物/隐私": 1,
+      "时事政治": 1,
+      "隐私/未成年人": 1,
+      "死亡/伤害": 1
+    },
+    "dropped_low_confidence": 12,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 45,
+      "platform_public_sources": 5,
+      "aggregator_sources": 3,
+      "search_media_sources": 1,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 25
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-04-meiren-gaosu-wo-x-zheme-nan",
+          "canonical_phrase": "没人告诉我X这么难啊",
+          "outcome": "selected",
+          "item_id": "2026-08-04-meiren-gaosu-wo-x-zheme-nan",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 26,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2604575",
+            "observed_at": "2026-08-10T18:38:21+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-11-x-tiancai-yijiu-wending-fahui",
+          "canonical_phrase": "X天才依旧稳定发挥",
+          "outcome": "selected",
+          "item_id": "2026-08-11-x-tiancai-yijiu-wending-fahui",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 24,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2604130",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-11-x-yan-wo-shangban",
+          "canonical_phrase": "X演我上班",
+          "outcome": "selected",
+          "item_id": "2026-08-11-x-yan-wo-shangban",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "reusability": 20,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%23%E5%88%BA%E6%BF%80%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%98%8E%E6%98%9F%E6%BC%94%E6%88%91%E4%B8%8A%E7%8F%AD%23",
+            "observed_at": "2026-08-10T22:37:08+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-04",
+          "canonical_phrase": "夏天结束前再漂亮一次",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 23,
+            "reusability": 10,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-05",
+          "canonical_phrase": "X给我虚晃了一枪",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 22,
+            "reusability": 12,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-06",
+          "canonical_phrase": "原来这才是X的正确打开方式",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 12,
+            "reusability": 19,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-07",
+          "canonical_phrase": "经常X的人都有一个共性",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "reusability": 14,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-08",
+          "canonical_phrase": "这是最容易睡着的工作吧",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 21,
+            "reusability": 10,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-09",
+          "canonical_phrase": "这次X惊到我了",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 22,
+            "reusability": 10,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-10",
+          "canonical_phrase": "X好吃到停不下来",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 19,
+            "reusability": 12,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "用X打开Y",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "reusability": 16,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-12",
+          "canonical_phrase": "X穿出松弛感",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "reusability": 12,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "戴上X召唤你的本命Y",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 21,
+            "reusability": 10,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "X的快乐谁懂啊",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "reusability": 16,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-15",
+          "canonical_phrase": "X才是最Y的吧",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "reusability": 13,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-11T06:45:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-16",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-17",
+          "outcome": "dropped_safety",
+          "drop_reason": "具体人物/隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-18",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-19",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私/未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-20",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "蹦沙卡拉卡反差转场",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "半脸动漫特效",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-23",
+          "canonical_phrase": "海盐星星妆",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-24",
+          "canonical_phrase": "甲乙丙丁转场",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-25",
+          "canonical_phrase": "本命猫咪面具",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-26",
+          "canonical_phrase": "通勤松弛感穿搭",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-27",
+          "canonical_phrase": "小眼睛睫毛特效",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-28",
+          "canonical_phrase": "公瑾爆蛋",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-29",
+          "canonical_phrase": "万达现状",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-30",
+          "canonical_phrase": "金项链戴法",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p2-01",
+          "canonical_phrase": "食贫道讲述墨西哥后世界杯时代",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-02",
+          "canonical_phrase": "TI2026首日对阵前瞻",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-03",
+          "canonical_phrase": "TES五连胜比赛语音",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-04",
+          "canonical_phrase": "假面骑士祥子",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-05",
+          "canonical_phrase": "原神阿罗夏角色预告",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-06",
+          "canonical_phrase": "UP主自制明日方舟动画",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-07",
+          "canonical_phrase": "歌剧老师锐评歌王之战",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-08",
+          "canonical_phrase": "欢迎来龙餐馆观后感",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-09",
+          "canonical_phrase": "锐评内娱古偶男主演技",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-10",
+          "canonical_phrase": "和平精英刺激之夜回放",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-11",
+          "canonical_phrase": "科学史上的遗憾",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-12",
+          "canonical_phrase": "适度的懒是不是保护机制",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-13",
+          "canonical_phrase": "一次传送1KB给三年前的自己",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-14",
+          "canonical_phrase": "怎样快速提高认知",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-15",
+          "canonical_phrase": "猪肝怎么炒嫩",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "weibo",
+            "douyin"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 45,
+          "sources_checked": [
+            "bilibili",
+            "zhihu",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-04-meiren-gaosu-wo-x-zheme-nan",
+      "title": "🥚 没人告诉我X这么难啊",
+      "aliases": [
+        "没人告诉我X这么难啊",
+        "没人告诉我打十个蛋这么难啊",
+        "没人告诉我这游戏这么难啊",
+        "没人告诉我烤十个猪脚这么难啊"
+      ],
+      "canonical_phrase": "没人告诉我X这么难啊",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“没人告诉我X这么难啊”吐槽亲自上手后，才发现一件看似简单的小事门槛很高。",
+      "origin": "已验证：该句式8月4日以“打十个蛋”首次入库；8月10日晚抖音热点又换成“烤十个猪脚”，形成本站发布后的新一轮复用。",
+      "usage": "可写“没人告诉我整理线材这么难啊”“没人告诉我第一次做饭这么难啊”，适合新手体验和翻车记录。",
+      "fun_point": "“没人告诉我”先制造轻微委屈，再让具体任务暴露真实难度，画面与文字之间容易形成反差。",
+      "why_spread": "已验证：抖音在打蛋、烤猪脚两个不同任务中重复使用同一句壳，B站另有游戏场景复用；推测：X槽位几乎不限领域，失败瞬间又天然有画面。",
+      "lifecycle": "rising",
+      "brand_usage": "教程内容可先展示真实失败，再用该句式引出解决步骤；不要故意夸大难度或省略安全提示。",
+      "risk": {
+        "level": "safe",
+        "note": "普通新手吐槽；涉及工具、烹饪等操作时保留必要的安全说明。"
+      },
+      "days_on_list": 2,
+      "score": 83,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 26,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2604575",
+          "observed_at": "2026-08-10T18:38:21+08:00",
+          "captured_at": "2026-08-11T07:12:00+08:00",
+          "note": "抖音热点页对应“没人告诉我烤十个猪脚这么难啊”，是发布后的新对象复用。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/archive/2026-08-10",
+          "title": "2026年8月10日 全网热搜汇总",
+          "observed_at": "2026-08-10T18:38:21+08:00",
+          "captured_at": "2026-08-11T07:12:00+08:00",
+          "note": "归档在抖音区记录该变体第17位，给出可核对的观察时间。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV17H4y1a7d7/",
+          "title": "新手玩第五人格 没人告诉我这游戏这么难啊啊啊啊",
+          "observed_at": "2024-02-17T22:54:41+08:00",
+          "captured_at": "2026-08-11T07:12:00+08:00",
+          "note": "B站公开视频把同一句壳用于游戏新手体验，证明跨任务复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-11-x-tiancai-yijiu-wending-fahui",
+      "title": "🧠 X天才依旧稳定发挥",
+      "aliases": [
+        "X天才依旧稳定发挥",
+        "穿搭天才依旧稳定发挥",
+        "搞笑天才依旧稳定发挥"
+      ],
+      "canonical_phrase": "X天才依旧稳定发挥",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "用“X天才依旧稳定发挥”夸张表扬某人在熟悉领域持续输出，也可反向调侃稳定制造笑点。",
+      "origin": "已验证：8月11日抖音热点出现“穿搭天才依旧稳定发挥”；较早公开视频已用“搞笑天才依旧稳定发挥”描述另一类内容。",
+      "usage": "可替换成“省钱天才依旧稳定发挥”“迟到天才依旧稳定发挥”，搭配连续成功或连续翻车的片段。",
+      "fun_point": "“天才”给普通小事抬高规格，“稳定发挥”又像赛后点评；夸奖和反讽都能成立。",
+      "why_spread": "已验证：穿搭与搞笑两个无关场景使用同一评价句式，且穿搭变体进入抖音热点；推测：X槽位短、语气像盖章，适合评论区快速接梗。",
+      "lifecycle": "peak",
+      "brand_usage": "适合连续栏目或系列案例，用真实表现承接“稳定发挥”；不要把普通体验包装成虚假功效。",
+      "risk": {
+        "level": "safe",
+        "note": "普通评价句式；用于反讽时避免指向具体普通人的外貌或能力。"
+      },
+      "days_on_list": 1,
+      "score": 81,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 24,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-11T06:45:50+08:00",
+          "captured_at": "2026-08-11T07:12:00+08:00",
+          "note": "榜单第5位为“穿搭天才依旧稳定发挥”，显示当日高位活动。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2604130",
+          "observed_at": "2026-08-11T06:45:50+08:00",
+          "captured_at": "2026-08-11T07:12:00+08:00",
+          "note": "抖音公开热点入口对应“穿搭天才依旧稳定发挥”这一新场景。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://jingxuan.douyin.com/m/video/7614523380981925617",
+          "title": "搞笑天才依旧稳定发挥！Kpop舞蹈传递 第十期",
+          "observed_at": "2026-03-07T00:00:00+08:00",
+          "captured_at": "2026-08-11T07:12:00+08:00",
+          "note": "较早公开视频在搞笑舞蹈场景使用同一句壳，支持跨对象复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-11-x-yan-wo-shangban",
+      "title": "💼 X演我上班",
+      "aliases": [
+        "X演我上班",
+        "X演我上班状态",
+        "简直演我上班",
+        "根本演我上班"
+      ],
+      "canonical_phrase": "X演我上班",
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "职场梗",
+      "summary": "看到角色、动物或现场反应像极了自己的工作状态时，用“X演我上班”快速认领共鸣。",
+      "origin": "已验证：8月10日晚微博出现“刺激之夜全明星演我上班”；7月公开报道又以“根本演我上班”描述剧中记者的营业反差。",
+      "usage": "可写“这只猫演我周一上班”“这个表情根本演我开会”，重点是画面确实对应疲惫、营业或摸鱼状态。",
+      "fun_point": "把别人的一个瞬间说成自己的职场纪录片，既完成自嘲，也让不同职业的人共享同一种班味。",
+      "why_spread": "已验证：电竞活动与影视角色两个无关场景都用“演我上班”归纳职场状态，最新变体进入微博热榜；推测：四到六字即可完成代入，评论区复用成本很低。",
+      "lifecycle": "peak",
+      "brand_usage": "可用于团队日常或幕后花絮，但应尊重员工意愿，避免把真实超时劳动包装成趣味内容。",
+      "risk": {
+        "level": "low",
+        "note": "职场自嘲风险低；避免借梗羞辱具体员工或淡化真实劳动权益问题。"
+      },
+      "days_on_list": 1,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 18,
+        "reusability": 20,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%23%E5%88%BA%E6%BF%80%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%98%8E%E6%98%9F%E6%BC%94%E6%88%91%E4%B8%8A%E7%8F%AD%23",
+          "observed_at": "2026-08-10T22:37:08+08:00",
+          "captured_at": "2026-08-11T07:12:00+08:00",
+          "note": "微博公开搜索入口对应“刺激之夜全明星演我上班”，归档时位列第25。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/archive/2026-08-10",
+          "title": "2026年8月10日 全网热搜汇总",
+          "observed_at": "2026-08-10T22:37:08+08:00",
+          "captured_at": "2026-08-11T07:12:00+08:00",
+          "note": "归档保留该微博话题的排名与观察时间，支持24小时内活动判定。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://stars.udn.com/star/story/10091/9632576",
+          "title": "一喊 Cut 秒冷臉！惠利「變臉演技」　網直呼：根本演我上班",
+          "observed_at": "2026-07-16T19:48:00+08:00",
+          "captured_at": "2026-08-11T07:12:00+08:00",
+          "note": "公开报道把同一句壳用于影视记者角色，构成与电竞活动无关的复用场景。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
