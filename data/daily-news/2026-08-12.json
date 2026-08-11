@@ -1,0 +1,609 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-12",
+  "generated_at": "2026-08-12T06:09:24+08:00",
+  "published_at": "2026-08-12T06:09:24+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "politics": 1,
+      "geopolitics": 1,
+      "propaganda": 1,
+      "public_safety": 1,
+      "privacy": 1,
+      "minors": 1,
+      "harassment": 1,
+      "illegal": 1,
+      "rumor": 1,
+      "celebrity_dispute": 1
+    },
+    "dropped_low_confidence": 15,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 4,
+      "state_media_sources": 14,
+      "major_media_sources": 2,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 12,
+        "relaxed_72h": 17
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "中央媒体与部委发布",
+            "国家级健康与应急信息",
+            "省级民生服务",
+            "主流地方媒体与公开榜单"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-12-august-health",
+          "story_identity": "cn-cdc-august-2026-health-protection-guidance-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T14:04:43+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-12-august-health",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-12-flood-response",
+          "story_identity": "cn-white-dolphin-multi-province-flood-response-update-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T22:43:28+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-12-flood-response",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-12-beijing-traffic",
+          "story_identity": "cn-beijing-rain-emergency-traffic-adjustments-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T15:38:47+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-12-beijing-traffic",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-12-disaster-insurance",
+          "story_identity": "cn-white-dolphin-insurance-claims-payment-update-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T20:01:43+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-12-disaster-insurance",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-05-xinjiang-elder-finance",
+          "story_identity": "cn-xinjiang-eldercare-finance-progress-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T20:04:36+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "省域半年进展总结，缺少当日面向个人的新申办节点"
+        },
+        {
+          "candidate_key": "cand-06-tianjin-elder-subsidy",
+          "story_identity": "cn-tianjin-eldercare-consumption-subsidy-progress-2026-08-10",
+          "research_pass": 1,
+          "occurred_at": "2026-08-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "核心统计截至8月10日上午，已超出严格24小时窗口"
+        },
+        {
+          "candidate_key": "cand-07-green-travel-campaign",
+          "story_identity": "cn-green-travel-public-transport-campaign-notice-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "活动将在9月启动，当前即时效用与热度不足"
+        },
+        {
+          "candidate_key": "cand-08-taihu-flood-numbering",
+          "story_identity": "cn-taihu-first-numbered-flood-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T14:43:19+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "已被覆盖范围更广的多省防汛响应条目吸收"
+        },
+        {
+          "candidate_key": "cand-09-zhejiang-recovery-fund",
+          "story_identity": "cn-ndrc-zhejiang-disaster-recovery-investment-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "资金安排与入选防汛响应属于同一灾害进展，避免重复"
+        },
+        {
+          "candidate_key": "cand-10-shenyang-supermarkets",
+          "story_identity": "cn-shenyang-supermarket-consumption-scene-report-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T17:26:54+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "城市消费观察缺少可普遍适用的新政策或办理信息"
+        },
+        {
+          "candidate_key": "cand-11-inbound-tourism-shaanxi",
+          "story_identity": "cn-shaanxi-inbound-tourism-experience-feature-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T10:50:48+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "趋势性特写缺少当日服务规则变化"
+        },
+        {
+          "candidate_key": "cand-12-ai-animation-expo",
+          "story_identity": "cn-ai-animation-expo-market-review-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T21:30:05+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "展会已结束，产业观察对普通读者即时效用有限"
+        },
+        {
+          "candidate_key": "cand-13-movie-consumption",
+          "story_identity": "cn-hundred-flowers-awards-movie-consumption-review-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "活动总结性强，缺少全国统一的新消费措施"
+        },
+        {
+          "candidate_key": "cand-14-qixi-xingtai",
+          "story_identity": "cn-national-qixi-cultural-event-xingtai-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "活动地域集中且尚未开始，普遍受众效用有限"
+        },
+        {
+          "candidate_key": "cand-15-zhejiang-common-prosperity",
+          "story_identity": "cn-zhejiang-common-prosperity-progress-feature-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "综合成就报道缺少当天个人可操作事项"
+        },
+        {
+          "candidate_key": "cand-16-changsha-tourism-consumption",
+          "story_identity": "cn-changsha-tourism-consumption-scenes-feature-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "消费场景报道缺少明确惠民规则变化"
+        },
+        {
+          "candidate_key": "cand-17-rmb-midpoint",
+          "story_identity": "cn-rmb-central-parity-rates-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T10:00:41+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "例行汇价发布，缺少超出日常波动的显著变化"
+        },
+        {
+          "candidate_key": "cand-18-hong-kong-stocks",
+          "story_identity": "cn-hong-kong-stock-market-close-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T17:16:17+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "例行收盘数据且缺少广泛民生影响"
+        },
+        {
+          "candidate_key": "cand-19-jilin-wild-rice",
+          "story_identity": "cn-jilin-saline-land-wild-rice-feature-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T20:32:03+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "农业案例为长期探索，缺少当日新节点"
+        },
+        {
+          "candidate_key": "cand-20-brent-oil",
+          "story_identity": "global-brent-oil-above-90-2026-08-11",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T16:35:24+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见单一通讯社快讯，缺少独立媒体热度证据与中国读者影响说明"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-12-august-health",
+      "story_identity": "cn-cdc-august-2026-health-protection-guidance-2026-08-11",
+      "headline": "🩺 中国疾控发布8月健康防护提示",
+      "summary": "8月需重点防范蚊媒传染病、食物中毒和高温中暑；主汛期受灾地区还应注意饮水、食品和环境消毒，出现发热、腹泻等症状及时就医。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-11T14:04:43+08:00",
+      "risk": {
+        "level": "low",
+        "note": "为公共健康防护提示，不替代个体诊断和治疗；身体不适应及时就医。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/health/20260811/c40d58b9ee5a465785278b77f19712b7/c.html",
+          "title": "2026年8月健康防护提示",
+          "captured_at": "2026-08-12T06:03:00+08:00",
+          "note": "转载中国疾控中心提示，列出蚊媒传染病、食物中毒、高温和洪涝卫生防护建议。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-12-flood-response",
+      "story_identity": "cn-white-dolphin-multi-province-flood-response-update-2026-08-11",
+      "headline": "🌧️ 多省升级防汛防台风响应",
+      "summary": "浙江等地维持防汛防台风响应，北京、天津启动四级响应；未来三天多地仍有强降雨，公众应避开山洪沟道和涉山涉水活动，服从转移与交通管制。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-11T22:43:28+08:00",
+      "risk": {
+        "level": "low",
+        "note": "预警与响应可能动态调整，具体以属地应急、气象和交通部门最新通知为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260811/6b58d4236c0846ab9f7c8604a55c30e2/c.html",
+          "title": "积极防汛防台风 各地多措并举筑牢安全堤坝",
+          "captured_at": "2026-08-12T06:03:00+08:00",
+          "note": "新华社汇总多省响应、转移安置、停航停工和未来强降雨风险。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-12-beijing-traffic",
+      "story_identity": "cn-beijing-rain-emergency-traffic-adjustments-2026-08-11",
+      "headline": "🚗 北京临时调整暴雨期间出行措施",
+      "summary": "北京12日至13日全天临时开放公交专用道供社会车辆通行，并开放避险停车道路和停车场；部分市郊铁路停运，红色预警区域非必要不出行。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-11T15:38:47+08:00",
+      "risk": {
+        "level": "low",
+        "note": "措施受实时雨情和交通管制影响，出行前需查看北京交通部门及车站最新公告。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/local/20260811/7298b9df85b1401bb4cfc5c58273d354/c.html",
+          "title": "北京临时开放公交专用道供社会车辆通行",
+          "captured_at": "2026-08-12T06:03:00+08:00",
+          "note": "新华社报道公交专用道、避险停车、市郊铁路停运和暴雨出行安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-12-disaster-insurance",
+      "story_identity": "cn-white-dolphin-insurance-claims-payment-update-2026-08-11",
+      "headline": "🧾 台风相关保险已赔付3409万元",
+      "summary": "截至11日12时，浙江、上海、江苏、江西等地保险机构接报案近10万件，已赔付或预赔付3409万元；受灾投保人可按保险机构指引及时报案并留存损失材料。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-11T20:01:43+08:00",
+      "risk": {
+        "level": "low",
+        "note": "实际理赔范围和金额取决于保单责任及查勘结果，具体以承保机构审核为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/fortune/20260811/b3b92274945a4ce1ab6c97decb5c4727/c.html",
+          "title": "保险业快速应对台风“白海豚” 已赔付3409万元",
+          "captured_at": "2026-08-12T06:03:00+08:00",
+          "note": "新华社援引金融监管总局，披露报案件数、估损和赔付进展。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
