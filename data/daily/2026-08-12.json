@@ -1,0 +1,733 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-12",
+  "generated_at": "2026-08-12T07:11:53+08:00",
+  "published_at": "2026-08-12T07:11:53+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 45,
+    "published": 3,
+    "dropped_safety": {
+      "灾害/公共安全": 1,
+      "具体人物/隐私": 1,
+      "时事政治": 1,
+      "隐私/未成年人": 1,
+      "死亡/伤害": 1
+    },
+    "dropped_low_confidence": 12,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "zhihu",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 45,
+      "platform_public_sources": 6,
+      "aggregator_sources": 3,
+      "search_media_sources": 1,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 25
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-12-gei-x-yidian-y-xiaozhenhan",
+          "canonical_phrase": "给X一点Y的小震撼",
+          "outcome": "selected",
+          "item_id": "2026-08-12-gei-x-yidian-y-xiaozhenhan",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 26,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2605459",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-12-huifu-shengmingli-dichengben-aihao",
+          "canonical_phrase": "恢复生命力只需要一些低成本爱好",
+          "outcome": "selected",
+          "item_id": "2026-08-12-huifu-shengmingli-dichengben-aihao",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 25,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%E6%81%A2%E5%A4%8D%E7%94%9F%E5%91%BD%E5%8A%9B%E5%8F%AA%E9%9C%80%E8%A6%81%E4%B8%80%E4%BA%9B%E4%BD%8E%E6%88%90%E6%9C%AC%E7%88%B1%E5%A5%BD",
+            "observed_at": "2026-08-12T06:55:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-12-shiwangxing-qinggan-geli",
+          "canonical_phrase": "失望性情感隔离",
+          "outcome": "selected",
+          "item_id": "2026-08-12-shiwangxing-qinggan-geli",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 23,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%E5%A4%B1%E6%9C%9B%E6%80%A7%E6%83%85%E6%84%9F%E9%9A%94%E7%A6%BB",
+            "observed_at": "2026-08-12T06:55:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-04",
+          "canonical_phrase": "夏天结束前再漂亮一次",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 25,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-05",
+          "canonical_phrase": "X穿出松弛感",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 22,
+            "reusability": 12,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-06",
+          "canonical_phrase": "AI打开了我童年记忆的百宝箱",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 24,
+            "reusability": 9,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-07",
+          "canonical_phrase": "原来X也曾是少年",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 22,
+            "reusability": 14,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-08",
+          "canonical_phrase": "需要多少X才能Y",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 22,
+            "reusability": 12,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-09",
+          "canonical_phrase": "走路带风拿捏自信气场",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 23,
+            "reusability": 10,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-10",
+          "canonical_phrase": "用AI重返那年相遇的青涩夏天",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 24,
+            "reusability": 9,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "这次X惊到我了",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 23,
+            "reusability": 12,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-12",
+          "canonical_phrase": "X可太有意思了",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 22,
+            "reusability": 12,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "建议不要在网上过度分享",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "reusability": 11,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-12T06:55:57+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "一块X如何通关Y",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 20,
+            "reusability": 12,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-15",
+          "canonical_phrase": "把X投放到现代社会能活多久",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 22,
+            "reusability": 12,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-12T06:59:28+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-16",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-17",
+          "outcome": "dropped_safety",
+          "drop_reason": "具体人物/隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-18",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-19",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私/未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-20",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "我的本命清凉应援motd",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "走进宫崎骏的夏天",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-23",
+          "canonical_phrase": "谐音梗取名被喜灰玩明白了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-24",
+          "canonical_phrase": "贵州抓猪大赛",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-25",
+          "canonical_phrase": "半脸动漫特效",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-26",
+          "canonical_phrase": "拼布热",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-27",
+          "canonical_phrase": "UP主自制赛博家居",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-28",
+          "canonical_phrase": "如果C罗办中式婚礼",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-29",
+          "canonical_phrase": "首届新三国only展",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-30",
+          "canonical_phrase": "欢迎来龙餐馆后劲太大",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p2-01",
+          "canonical_phrase": "当你遇上了奇葩家长",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-02",
+          "canonical_phrase": "万人后室生存大挑战",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-03",
+          "canonical_phrase": "日全食巧遇英仙座流星雨",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-04",
+          "canonical_phrase": "锐评数学中的逻辑谬误",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-05",
+          "canonical_phrase": "红警蜘蛛机器人走进现实",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-06",
+          "canonical_phrase": "为什么游戏招式名中西差异很大",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-07",
+          "canonical_phrase": "年轻人还有没有必要主动考驾照",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-08",
+          "canonical_phrase": "麻辣烫和自助小火锅价格差异",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-09",
+          "canonical_phrase": "曾经的钢琴为雅",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-10",
+          "canonical_phrase": "适度的懒是不是保护机制",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-11",
+          "canonical_phrase": "拼豆之后拼布火了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-12",
+          "canonical_phrase": "东北被低估的城市爆发了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-13",
+          "canonical_phrase": "台风天车牌被水冲走怎么办",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-14",
+          "canonical_phrase": "北京雨燕原来飞南非",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "p2-15",
+          "canonical_phrase": "一次性内裤穿上只剩裤带",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "bilibili"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 45,
+          "sources_checked": [
+            "bilibili",
+            "zhihu",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-12-gei-x-yidian-y-xiaozhenhan",
+      "title": "🫨 给X一点Y的小震撼",
+      "aliases": [
+        "给AI时代一点手搓实拍的小震撼",
+        "给世界一点小小的震撼",
+        "给老外一点中国式震撼"
+      ],
+      "canonical_phrase": "给X一点Y的小震撼",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“给X一点Y的小震撼”给作品、技能或反差成果加一层半认真半玩笑的高能预告。",
+      "origin": "已验证：8月12日抖音热榜以“给AI时代一点手搓实拍的小震撼”进入前十；更早的B站内容已把同一句壳用于游戏操作与其他展示场景。",
+      "usage": "可写“给甲方一点手绘草图的小震撼”“给周一一点准时下班的小震撼”，适合成果展示、反差演示和技能整活。",
+      "fun_point": "一本正经地宣布“震撼”，却把X、Y换成具体小事；夸张语气与日常对象形成反差。",
+      "why_spread": "已验证：抖音当前热点和B站历史公开视频都在替换受众与震撼来源；推测：双槽位结构清楚，画面结果又容易承接夸张预告。",
+      "lifecycle": "rising",
+      "brand_usage": "品牌可把X写成受众、Y写成产品的真实功能亮点，并用实拍结果兑现；避免空喊性能或制造虚假对比。",
+      "risk": {
+        "level": "safe",
+        "note": "普通夸张句式；用于产品传播时应确保演示和效果可复核。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 26,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2605459",
+          "observed_at": "2026-08-12T06:59:28+08:00",
+          "captured_at": "2026-08-12T07:08:00+08:00",
+          "note": "抖音公开热点页对应“给AI时代一点手搓实拍的小震撼”，当时位列实时榜第7。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-12T06:59:28+08:00",
+          "captured_at": "2026-08-12T07:08:00+08:00",
+          "note": "公开聚合榜记录该话题第7位并给出可核对的更新时间。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV13X4y1875N/",
+          "title": "让古烈给世界一点小小的震撼",
+          "observed_at": "2023-06-02T13:11:56+08:00",
+          "captured_at": "2026-08-12T07:08:00+08:00",
+          "note": "B站公开视频把同一句壳用于游戏操作展示，证明可跨对象复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-12-huifu-shengmingli-dichengben-aihao",
+      "title": "🌱 恢复生命力只需要一些低成本爱好",
+      "aliases": [
+        "低成本爱好恢复生命力",
+        "40个低成本高能量爱好",
+        "用小爱好恢复生命力"
+      ],
+      "canonical_phrase": "恢复生命力只需要一些低成本爱好",
+      "platform": [
+        "weibo",
+        "bilibili"
+      ],
+      "type": "生活方式梗",
+      "summary": "把画画、散步、整理等不昂贵的小爱好概括成“恢复生命力”的日常补给，强调低门槛自我充电。",
+      "origin": "已验证：8月12日该固定表达进入微博实时热搜前十；B站此前已有低成本爱好清单获得较高播放与收藏。",
+      "usage": "适合分享散步、拼图、做饭、手账等低成本兴趣，也可列出自己的“下班复活清单”。",
+      "fun_point": "把很小的兴趣说成“恢复生命力”，既有情绪价值，又把宏大的自我修复落到可执行小事上。",
+      "why_spread": "已验证：微博当前热榜与B站长期清单内容共同指向低成本兴趣；推测：人人都能补充自己的爱好，清单化表达也便于转发收藏。",
+      "lifecycle": "rising",
+      "brand_usage": "可围绕免费或低门槛体验征集用户清单；不要把普通爱好包装成医疗或心理治疗方案。",
+      "risk": {
+        "level": "low",
+        "note": "属于生活方式表达，不代表医学或心理疗效；避免向处于困境的人承诺“治愈”。"
+      },
+      "days_on_list": 1,
+      "score": 82,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 25,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E6%81%A2%E5%A4%8D%E7%94%9F%E5%91%BD%E5%8A%9B%E5%8F%AA%E9%9C%80%E8%A6%81%E4%B8%80%E4%BA%9B%E4%BD%8E%E6%88%90%E6%9C%AC%E7%88%B1%E5%A5%BD",
+          "observed_at": "2026-08-12T06:55:57+08:00",
+          "captured_at": "2026-08-12T07:08:00+08:00",
+          "note": "微博公开搜索入口对应完整话题；同一时点的实时榜记录其排名第9。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-12T06:55:57+08:00",
+          "captured_at": "2026-08-12T07:08:00+08:00",
+          "note": "公开聚合榜记录完整话题第9位并标注更新时间。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV11Z421N7PJ/",
+          "title": "40个低成本高能量爱好，恢复生命力悄悄变强",
+          "observed_at": "2024-07-26T18:30:00+08:00",
+          "captured_at": "2026-08-12T07:08:00+08:00",
+          "note": "B站公开视频以40种爱好展开同一表达，显示固定说法可承载不同兴趣清单。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-12-shiwangxing-qinggan-geli",
+      "title": "🧊 失望性情感隔离",
+      "aliases": [
+        "什么是失望性情感隔离",
+        "情感隔离",
+        "失望后的情感隔离"
+      ],
+      "canonical_phrase": "失望性情感隔离",
+      "platform": [
+        "weibo",
+        "bilibili"
+      ],
+      "type": "情绪梗",
+      "summary": "用“失望性情感隔离”描述反复落空后逐渐减少表达、期待和情绪投入的网络情绪标签。",
+      "origin": "已验证：该词在2024年的音乐标题与视频内容中已出现；2026年8月12日再次进入微博实时热搜。",
+      "usage": "可用于描述关系或合作里从积极沟通转为降低期待的感受，但应明确它是网络表达，不是专业诊断。",
+      "fun_point": "把难以概括的“不是突然离开，而是慢慢撤回期待”压缩成一个看似专业的固定词组。",
+      "why_spread": "已验证：微博当前热榜、微博公开内容与B站历史视频均使用同一词组；推测：高度概括的标签方便用户代入并讲述自身经历。",
+      "lifecycle": "rising",
+      "brand_usage": "不建议用作商品功效或诊断标签；情绪类内容可讨论沟通与边界，并附上“非专业诊断”的提醒。",
+      "risk": {
+        "level": "medium",
+        "note": "网络情绪标签并非公认临床诊断；避免给他人贴标签、替代专业求助或煽动关系对立。"
+      },
+      "days_on_list": 1,
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 23,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E5%A4%B1%E6%9C%9B%E6%80%A7%E6%83%85%E6%84%9F%E9%9A%94%E7%A6%BB",
+          "observed_at": "2026-08-12T06:55:57+08:00",
+          "captured_at": "2026-08-12T07:08:00+08:00",
+          "note": "微博公开搜索入口对应完整词组；同一时点的实时榜记录其排名第27。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-12T06:55:57+08:00",
+          "captured_at": "2026-08-12T07:08:00+08:00",
+          "note": "公开聚合榜记录该词组第27位并标注更新时间。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://www.sina.cn/news/detail/5310804702267253.html",
+          "title": "失望性情感隔离",
+          "observed_at": "2026-06-17T14:32:00+08:00",
+          "captured_at": "2026-08-12T07:08:00+08:00",
+          "note": "新浪公开微博镜像展示该词组在情绪叙事中的完整用法。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV15WsxeSEcy/",
+          "title": "跟父母不亲原来在心理学上叫失望性情感隔离",
+          "observed_at": "2024-08-27T17:10:02+08:00",
+          "captured_at": "2026-08-12T07:08:00+08:00",
+          "note": "B站公开视频提供较早传播实例；标题的心理学表述仅用于追溯，不作为临床依据。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
