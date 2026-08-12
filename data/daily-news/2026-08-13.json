@@ -1,0 +1,607 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-13",
+  "generated_at": "2026-08-13T06:14:53+08:00",
+  "published_at": "2026-08-13T06:14:53+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "politics": 1,
+      "geopolitics": 1,
+      "propaganda": 1,
+      "public_safety": 1,
+      "privacy": 1,
+      "minors": 1,
+      "harassment": 1,
+      "illegal": 1,
+      "rumor": 1,
+      "celebrity_dispute": 1
+    },
+    "dropped_low_confidence": 15,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 0,
+      "state_media_sources": 20,
+      "major_media_sources": 0,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 9,
+        "relaxed_72h": 17
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "新华社与国家级媒体",
+            "中央部门与行业发布",
+            "全国交通气象与产业信息",
+            "主流地方公开报道"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-13-rainfall-risk",
+          "story_identity": "cn-white-dolphin-rainfall-risk-update-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T20:19:49+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-13-rainfall-risk",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-13-c919-route",
+          "story_identity": "cn-c919-first-international-route-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T22:04:51+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-13-c919-route",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-13-nev-share",
+          "story_identity": "cn-nev-sales-share-over-60pct-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T14:02:46+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-13-nev-share",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-13-pinglu-trial",
+          "story_identity": "cn-pinglu-canal-vessel-trials-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T10:24:51+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-13-pinglu-trial",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-05-national-standards",
+          "story_identity": "cn-338-national-standards-approved-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T07:06:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "标准覆盖面广，但具体实施节点和个人即时操作信息有限"
+        },
+        {
+          "candidate_key": "cand-06-online-recruitment",
+          "story_identity": "cn-special-recruitment-80000-needs-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T07:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与前一日就业服务主题接近，跨日复用价值不足"
+        },
+        {
+          "candidate_key": "cand-07-monetary-report",
+          "story_identity": "cn-pboc-q2-monetary-policy-report-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T20:33:55+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "宏观政策报告缺少面向普通读者的当日办理或价格变化"
+        },
+        {
+          "candidate_key": "cand-08-short-track-coach",
+          "story_identity": "cn-wu-dajing-short-track-head-coach-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T14:20:32+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "体育人事节点关注度较高，但日常生活影响有限"
+        },
+        {
+          "candidate_key": "cand-09-artist-memorial",
+          "story_identity": "cn-guo-lanying-memorial-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T20:12:11+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "文化纪念意义突出，但缺少读者当日可行动信息"
+        },
+        {
+          "candidate_key": "cand-10-emerging-industries",
+          "story_identity": "cn-emerging-industries-national-observation-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T00:22:37+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "产业综合观察缺少当天面向个人的新产品或服务节点"
+        },
+        {
+          "candidate_key": "cand-11-urban-renewal",
+          "story_identity": "cn-urban-renewal-progress-feature-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "多地建设进展为趋势性报道，缺少统一的新申办信息"
+        },
+        {
+          "candidate_key": "cand-12-enterprise-5a",
+          "story_identity": "cn-enterprise-intelligence-5a-framework-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T15:40:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "企业转型框架偏行业端，普通读者即时效用较弱"
+        },
+        {
+          "candidate_key": "cand-13-quality-lab",
+          "story_identity": "cn-retail-quality-lab-feature-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T15:20:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "单一企业探访缺少可验证的全行业规则变化"
+        },
+        {
+          "candidate_key": "cand-14-yellow-river-flow",
+          "story_identity": "cn-yellow-river-uninterrupted-flow-27-years-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T23:04:15+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "生态治理长期成就缺少当日公众行动或服务变化"
+        },
+        {
+          "candidate_key": "cand-15-summer-grid",
+          "story_identity": "cn-grid-peak-summer-power-supply-feature-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T22:38:15+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "保供专题为机制性介绍，未出现新的居民用电安排"
+        },
+        {
+          "candidate_key": "cand-16-land-resilience-role",
+          "story_identity": "cn-su-yiming-land-resilience-role-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T23:49:16+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "公益角色任命传播性较强，但民生实用信息不足"
+        },
+        {
+          "candidate_key": "cand-17-dunhuang-watermelon",
+          "story_identity": "cn-dunhuang-free-watermelon-tourism-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T20:39:32+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "单一景区活动地域性较强，代表性不足"
+        },
+        {
+          "candidate_key": "cand-18-elephant-birthday",
+          "story_identity": "cn-rescued-elephant-birthday-feature-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T20:38:22+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "图片故事温度较高，但不构成全国性重要资讯"
+        },
+        {
+          "candidate_key": "cand-19-traditional-incense",
+          "story_identity": "cn-traditional-incense-craft-feature-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T18:53:40+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "文化特写缺少新事件节点和广泛即时影响"
+        },
+        {
+          "candidate_key": "cand-20-london-stocks",
+          "story_identity": "global-london-stock-close-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T01:25:54+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "例行外国市场收盘信息缺少中国读者直接影响和独立热度证据"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-13-rainfall-risk",
+      "story_identity": "cn-white-dolphin-rainfall-risk-update-2026-08-12",
+      "headline": "🌧️ 台风残余环流仍带来多省暴雨风险",
+      "summary": "中央气象台继续发布暴雨橙色预警，河南、湖北、安徽、江苏、上海、浙江等地仍有强降雨；山区、河谷和低洼地区需警惕山洪、滑坡与积水风险。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 89,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-12T20:19:49+08:00",
+      "risk": {
+        "level": "low",
+        "note": "预警和降雨范围会滚动调整，具体以属地气象、应急和交通部门最新通知为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260812/7bea93d93fb24588b25d6045b8297e57/c.html",
+          "title": "“白海豚”停编影响仍在 警惕降水叠加风险",
+          "captured_at": "2026-08-13T06:08:00+08:00",
+          "note": "新华社援引中央气象台预警与专家研判，列出强降雨区域和次生灾害风险。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-13-c919-route",
+      "story_identity": "cn-c919-first-international-route-2026-08-12",
+      "headline": "✈️ C919首条国际航线正式开通",
+      "summary": "国航C919执飞北京至乌兰巴托航班并顺利抵达，这是该机型首条国际商业航线；目前国内三家航司运营的C919已累计开通58条航线。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-12T22:04:51+08:00",
+      "risk": {
+        "level": "low",
+        "note": "具体班期、票价和机型安排可能调整，出行前应以航空公司实时信息为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/world/20260812/c5cde5a7dcae483fba5a4c1bfd617014/c.html",
+          "title": "C919首条国际航线开通",
+          "captured_at": "2026-08-13T06:08:00+08:00",
+          "note": "新华社核实航班抵达、航线开通及C919运营航线和运送旅客规模。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-13-nev-share",
+      "story_identity": "cn-nev-sales-share-over-60pct-2026-08-12",
+      "headline": "🚗 新能源汽车月度销量占比首超60%",
+      "summary": "中汽协会数据显示，7月新能源汽车新车销量占比首次超过60%，累计占比首次超过50%；新能源车已成为汽车市场主流，纯电车型增长明显。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-12T14:02:46+08:00",
+      "risk": {
+        "level": "low",
+        "note": "数据反映行业整体销量结构，不代表具体品牌、车型的价格或购买建议。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/fortune/20260812/56986a184f9044b399603d4c85643ede/c.html",
+          "title": "新能源汽车月度新车销量占比首超60%",
+          "captured_at": "2026-08-13T06:08:00+08:00",
+          "note": "新华社援引中国汽车工业协会数据，说明月度、累计销量占比及产销变化。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-13-pinglu-trial",
+      "story_identity": "cn-pinglu-canal-vessel-trials-2026-08-12",
+      "headline": "🚢 平陆运河启动实船试验",
+      "summary": "平陆运河开始使用多种吨级船舶测试航道、船闸、锚地和夜间通航等工况，为9月通航做准备；工程将打通西江至北部湾的江海直连通道。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-12T10:24:51+08:00",
+      "risk": {
+        "level": "low",
+        "note": "当前处于试验阶段，正式通航时间和运行安排以主管部门后续公告为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260812/43003647a1ba4497b846455a6687a9c4/c.html",
+          "title": "平陆运河实船试验正式启动",
+          "captured_at": "2026-08-13T06:08:00+08:00",
+          "note": "新华社报道试验启动、船型与科目，并说明为9月通航开展适配性验证。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
