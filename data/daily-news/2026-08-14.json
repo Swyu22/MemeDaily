@@ -1,0 +1,616 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-14",
+  "generated_at": "2026-08-14T06:10:51+08:00",
+  "published_at": "2026-08-14T06:10:51+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "politics": 1,
+      "geopolitics": 1,
+      "propaganda": 1,
+      "public_safety": 1,
+      "privacy": 1,
+      "minors": 1,
+      "harassment": 1,
+      "illegal": 1,
+      "rumor": 1,
+      "celebrity_dispute": 1
+    },
+    "dropped_low_confidence": 15,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 2,
+      "state_media_sources": 18,
+      "major_media_sources": 0,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 10,
+        "relaxed_72h": 17
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "新华社与国家级媒体",
+            "中央部门与政府门户",
+            "主流地方公开报道",
+            "交通医疗气象与消费信息"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-14-relief-funds",
+          "story_identity": "cn-central-disaster-relief-funds-three-provinces-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T18:14:05+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-14-relief-funds",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-14-info-protection",
+          "story_identity": "cn-personal-information-leakage-warning-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T18:25:39+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-14-info-protection",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-14-shenzhen-medical",
+          "story_identity": "cn-shenzhen-resident-medical-insurance-cycle-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T12:03:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-14-shenzhen-medical",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-14-chongqing-bedside",
+          "story_identity": "cn-chongqing-hospital-bedside-settlement-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T08:43:26+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-14-chongqing-bedside",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-05-xiongxin-rail",
+          "story_identity": "cn-xiongxin-high-speed-rail-track-complete-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T16:40:26+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "铺轨完成距正式开通仍有间隔，普通旅客暂无即时可用班次"
+        },
+        {
+          "candidate_key": "cand-06-cihuai-diversion",
+          "story_identity": "cn-cihuai-new-river-flood-diversion-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T12:27:06+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与中央救灾资金同属本轮灾情，信息范围更窄且主题重复"
+        },
+        {
+          "candidate_key": "cand-07-reverse-repo",
+          "story_identity": "cn-pboc-one-trillion-reverse-repo-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T19:40:27+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "流动性操作为宏观金融信息，普通读者当日可执行影响有限"
+        },
+        {
+          "candidate_key": "cand-08-gansu-employment",
+          "story_identity": "cn-gansu-unemployment-insurance-job-support-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T09:02:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "政策较实用但首次披露已接近48小时边界，且地域范围有限"
+        },
+        {
+          "candidate_key": "cand-09-jiangsu-services",
+          "story_identity": "cn-jiangsu-government-service-reform-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "改革部署尚未给出统一上线日期或具体新增办理入口"
+        },
+        {
+          "candidate_key": "cand-10-qinghai-care",
+          "story_identity": "cn-qinghai-major-disease-local-care-progress-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "医疗能力进展重要，但为阶段性总结且受益范围较地域化"
+        },
+        {
+          "candidate_key": "cand-11-lixiang-rail",
+          "story_identity": "cn-lixiang-rail-passenger-volume-milestone-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T19:34:13+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "客流里程碑没有新增车次、票价或旅客办理变化"
+        },
+        {
+          "candidate_key": "cand-12-detian-waterfall",
+          "story_identity": "cn-detian-waterfall-high-water-tourism-feature-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T18:57:10+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "旅游特写地域性较强，缺少景区通行或票务新安排"
+        },
+        {
+          "candidate_key": "cand-13-changde-heritage",
+          "story_identity": "cn-changde-river-street-intangible-heritage-feature-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T18:45:52+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "文化街区观察缺少当日新开放活动和跨地区代表性"
+        },
+        {
+          "candidate_key": "cand-14-hebei-waste",
+          "story_identity": "cn-wuan-industrial-waste-recycling-feature-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T11:09:24+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "治理成效为长期专题，缺少新的公众服务或申办节点"
+        },
+        {
+          "candidate_key": "cand-15-suzhou-biomed",
+          "story_identity": "cn-suzhou-biomedicine-industry-feature-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T18:12:28+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "产业人才专题信息密度高，但面向患者的即时可用信息不足"
+        },
+        {
+          "candidate_key": "cand-16-dongying-care",
+          "story_identity": "cn-dongying-medical-reform-observation-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "地方医改观察缺少当天新增覆盖范围或统一办理通知"
+        },
+        {
+          "candidate_key": "cand-17-jinan-clinics",
+          "story_identity": "cn-jinan-startup-zone-clinic-upgrade-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "基层医疗升级覆盖区域较小，代表性和即时行动价值不足"
+        },
+        {
+          "candidate_key": "cand-18-film-set",
+          "story_identity": "cn-welcome-dragon-restaurant-film-set-feature-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T20:25:03+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "影视幕后特写热度可见，但不构成更优先的公共资讯"
+        },
+        {
+          "candidate_key": "cand-19-gansu-drought",
+          "story_identity": "cn-gansu-thirty-day-drought-risk-forecast-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T08:39:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "农业旱情预测地域集中，且首次预测时间已超过严格窗口"
+        },
+        {
+          "candidate_key": "cand-20-london-stocks",
+          "story_identity": "global-london-stock-close-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T01:25:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "例行外国市场收盘缺少中国读者直接影响及独立热度证据"
+        },
+        {
+          "candidate_key": "candidate-21",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-14-relief-funds",
+      "story_identity": "cn-central-disaster-relief-funds-three-provinces-2026-08-13",
+      "headline": "🌧️ 两部门预拨8000万元支持三省救灾",
+      "summary": "财政部、应急管理部预拨中央自然灾害救灾资金，支持河南、湖北、安徽开展抢险、安置、隐患排查和民房修复；受影响地区居民仍需留意属地预警与转移安排。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 91,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-13T18:14:05+08:00",
+      "risk": {
+        "level": "low",
+        "note": "救灾进度和风险范围会动态变化，公众应以属地应急、气象部门最新信息为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260813/addfa8fe21e841c6a4756f4551c8725d/c.html",
+          "title": "两部门紧急预拨8000万元中央自然灾害救灾资金",
+          "captured_at": "2026-08-14T06:06:30+08:00",
+          "note": "新华社核实预拨金额、支持省份及资金重点用途。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-14-info-protection",
+      "story_identity": "cn-personal-information-leakage-warning-2026-08-13",
+      "headline": "🔐 警方披露三类个人信息泄露套路",
+      "summary": "公安部网安局公布典型案例，涉及网购订单破解、共享充电宝合作套取住客信息和行业内部人员倒卖资料；公众应减少非必要信息填写，谨慎授权应用权限并及时举报线索。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-13T18:25:39+08:00",
+      "risk": {
+        "level": "low",
+        "note": "防护建议为一般性提醒；发现信息泄露时应通过公安机关或有关部门正规渠道举报。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260813/c1c95fb2991a4c509eff29781557c304/c.html",
+          "title": "新华调查丨典型案例揭示个人信息泄露套路",
+          "captured_at": "2026-08-14T06:06:30+08:00",
+          "note": "新华社依据公安部网安局典型案例归纳泄露场景并提供官方防护提示。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-14-shenzhen-medical",
+      "story_identity": "cn-shenzhen-resident-medical-insurance-cycle-2026-08-13",
+      "headline": "🏥 深圳居民医保缴费周期9月起调整",
+      "summary": "深圳居民医保自9月1日起调整集中参保期和待遇等待期；2026年9月至12月同时作为过渡期和2027年度集中参保期，符合条件者可线上办理，职工及退休人员不受影响。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-13T12:03:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "参保资格和等待期按个人情况认定，办理前应核对深圳医保官方细则。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "深圳市人民政府",
+          "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_12934719.html",
+          "title": "深圳市居民医保参保缴费模式调整 9月1日起实施",
+          "captured_at": "2026-08-14T06:06:30+08:00",
+          "note": "深圳政府门户明确实施日期、适用人群、集中参保期、过渡安排和线上渠道。"
+        },
+        {
+          "tier": "official",
+          "outlet": "深圳市医保局",
+          "url": "https://hsa.sz.gov.cn/gkmlpt/content/12/12932/post_12932403.html",
+          "title": "深圳市居民医保参保缴费模式调整",
+          "captured_at": "2026-08-14T06:06:30+08:00",
+          "note": "医保部门官方解读补充政策衔接与待遇等待期规则。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-14-chongqing-bedside",
+      "story_identity": "cn-chongqing-hospital-bedside-settlement-2026-08-13",
+      "headline": "🧾 重庆多家医院推行床旁出入院结算",
+      "summary": "重庆已有至少10家医院推行床旁建档、预交金缴费和出院结算等服务，患者可在病区完成手续；当地还在扩大医保移动支付等便捷支付场景。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-13T08:43:26+08:00",
+      "risk": {
+        "level": "low",
+        "note": "不同医院、院区和科室覆盖情况可能不同，就医前应向医院确认可用结算方式。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网重庆频道",
+          "url": "https://cq.news.cn/20260813/6bcd7044d5d74f6fb9bf69f722ea5fa1/c.html",
+          "title": "出入院预交结算“床旁”办理 重庆一批医院解决缴费来回跑问题",
+          "captured_at": "2026-08-14T06:06:30+08:00",
+          "note": "新华网转载重庆日报报道，列明医院覆盖、办理方式和医保移动支付进展。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
