@@ -1,0 +1,683 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-13",
+  "generated_at": "2026-08-13T08:07:22+08:00",
+  "published_at": "2026-08-13T08:07:22+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 40,
+    "published": 4,
+    "dropped_safety": {
+      "时事政治": 3,
+      "灾害/公共安全": 3,
+      "死亡/伤害": 2,
+      "具体人物/隐私": 2,
+      "未成年人/隐私": 1,
+      "犯罪/悲剧": 2
+    },
+    "dropped_low_confidence": 9,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 40,
+      "platform_public_sources": 4,
+      "aggregator_sources": 4,
+      "search_media_sources": 0,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 14
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 5,
+        "relaxed_72h": 5
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-13-xren-douyou-de-yizhang-zhaopian",
+          "canonical_phrase": "X人都有的一张照片",
+          "outcome": "selected",
+          "item_id": "2026-08-13-xren-douyou-de-yizhang-zhaopian",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2606244",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-13-x-gaibian-huanjing",
+          "canonical_phrase": "X改变环境",
+          "outcome": "selected",
+          "item_id": "2026-08-13-x-gaibian-huanjing",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 26,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2606975",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-13-meiyou-x-yikaishi-jiushi-y",
+          "canonical_phrase": "没有X一开始就是Y",
+          "outcome": "selected",
+          "item_id": "2026-08-13-meiyou-x-yikaishi-jiushi-y",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 26,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2607357",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-13-shijie-shi-caotaibanzi-dan-ni-de-x-bushi",
+          "canonical_phrase": "世界是草台班子但你的X不是",
+          "outcome": "selected",
+          "item_id": "2026-08-13-shijie-shi-caotaibanzi-dan-ni-de-x-bushi",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 25,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%E4%B8%96%E7%95%8C%E6%98%AF%E8%8D%89%E5%8F%B0%E7%8F%AD%E5%AD%90%E4%BD%86%E4%BD%A0%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%8D%E6%98%AF",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-05",
+          "canonical_phrase": "第一批X的受害者出现了",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%23%E9%95%BF%E6%9C%9F%E9%A5%A5%E4%B8%80%E9%A1%BF%E9%A5%B1%E4%B8%80%E9%A1%BF%E7%9A%84%E5%8F%97%E5%AE%B3%E8%80%85%E5%87%BA%E7%8E%B0%E4%BA%86%23",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-06",
+          "canonical_phrase": "喜欢穿X的人天塌了",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 25,
+            "reusability": 10,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%23%E5%96%9C%E6%AC%A2%E7%A9%BF%E6%B4%9E%E6%B4%9E%E9%9E%8B%E7%9A%84%E4%BA%BA%E5%A4%A9%E5%A1%8C%E4%BA%86%23",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-07",
+          "canonical_phrase": "这下X你总满意了吧",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2607256",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-08",
+          "canonical_phrase": "唱最X的歌做最Y的事",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 24,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2606712",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-09",
+          "canonical_phrase": "X的不可能三角定律",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 23,
+            "reusability": 15,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%23%E5%91%98%E5%B7%A5%E7%9A%84%E4%B8%8D%E5%8F%AF%E8%83%BD%E4%B8%89%E8%A7%92%E5%AE%9A%E5%BE%8B%23",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-10",
+          "canonical_phrase": "这段话缓解了我的X",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 23,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%23%E8%BF%99%E6%AE%B5%E8%AF%9D%E7%BC%93%E8%A7%A3%E4%BA%86%E6%88%91%E7%9A%84%E7%84%A6%E8%99%91%23",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "X有多爽",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 23,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%23%E6%81%8B%E7%88%B1%E4%B8%AD%E6%94%B6%E5%88%B0%E5%AE%9E%E7%94%A8%E5%9E%8B%E7%A4%BC%E7%89%A9%E6%9C%89%E5%A4%9A%E7%88%BD%23",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-12",
+          "canonical_phrase": "走进X的夏天",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 23,
+            "reusability": 14,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2607331",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "送X要送有溢价的东西",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 22,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%23%E9%80%81%E7%A4%BC%E8%A6%81%E9%80%81%E6%9C%89%E6%BA%A2%E4%BB%B7%E7%9A%84%E4%B8%9C%E8%A5%BF%23",
+            "observed_at": "2026-08-13T05:59:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "向流星许个愿",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-15",
+          "canonical_phrase": "眉钉火焰特效谁用谁痞帅",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-16",
+          "canonical_phrase": "就把我的吉他带走吧",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-17",
+          "canonical_phrase": "新老同人环境的异同",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-18",
+          "canonical_phrase": "大学一个月要多少生活费",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-19",
+          "canonical_phrase": "这盘棋分明是老叟戏顽童",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-20",
+          "canonical_phrase": "硬核运镜闯8D重庆",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "手瓦莲花套",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "万万没想到飞刀之神这么好当",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-23",
+          "canonical_phrase": "谁是凌玲多国语言版",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-24",
+          "canonical_phrase": "顽童戏老叟",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-25",
+          "canonical_phrase": "唱最拽的歌吐最萌的泡泡",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-26",
+          "canonical_phrase": "流星雨许愿",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-27",
+          "canonical_phrase": "中国网文文化输出扛把子",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-31",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-32",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-33",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-34",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-35",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-36",
+          "outcome": "dropped_safety",
+          "drop_reason": "具体人物/隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-37",
+          "outcome": "dropped_safety",
+          "drop_reason": "具体人物/隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-38",
+          "outcome": "dropped_safety",
+          "drop_reason": "未成年人/隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-39",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪/悲剧",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-40",
+          "outcome": "dropped_safety",
+          "drop_reason": "犯罪/悲剧",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 40,
+          "cumulative_unique_candidates": 40,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "bilibili",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-13-xren-douyou-de-yizhang-zhaopian",
+      "title": "🥾 X人都有的一张照片",
+      "aliases": [
+        "徒步人都有的一张照片",
+        "打工人都有的一张照片",
+        "养猫人都有的一张照片"
+      ],
+      "canonical_phrase": "X人都有的一张照片",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "用“X人都有的一张照片”晒出某类人几乎都会留下的标志性画面，靠群体共识制造秒懂感。",
+      "origin": "已验证：8月13日“徒步人都有的一张照片”进入抖音实时热榜第6位，公开热点页与聚合榜可交叉核对。",
+      "usage": "可写“打工人都有的一张照片：凌晨电脑屏幕”“养猫人都有的一张照片：相册全是同一只猫”，适合职业、兴趣与生活方式共鸣。",
+      "fun_point": "先用“都有”放大群体默契，再用一张具体照片完成自证，既能认领身份，也方便评论区接龙。",
+      "why_spread": "已验证：该表达进入抖音前十；推测：X槽位开放、配图门槛低，用户能迅速替换群体身份并复刻。",
+      "lifecycle": "rising",
+      "brand_usage": "可邀请用户晒出“本品牌用户都有的一张照片”，但要给出真实、可参与的场景，避免虚构群体共识。",
+      "risk": {
+        "level": "safe",
+        "note": "普通群体共鸣句式；避免拿疾病、地域或弱势身份做刻板化替换。"
+      },
+      "days_on_list": 1,
+      "score": 88,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2606244",
+          "observed_at": "2026-08-13T05:59:52+08:00",
+          "captured_at": "2026-08-13T07:14:00+08:00",
+          "note": "抖音公开热点页对应完整话题。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-13T05:59:52+08:00",
+          "captured_at": "2026-08-13T07:14:00+08:00",
+          "note": "聚合榜记录该话题排名第6，并标注更新时间。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-13-x-gaibian-huanjing",
+      "title": "🪄 X改变环境",
+      "aliases": [
+        "穿搭改变环境",
+        "发型改变环境",
+        "滤镜改变环境"
+      ],
+      "canonical_phrase": "X改变环境",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "用“X改变环境”夸张描述造型、布置或镜头元素把普通场景整体带出新氛围。",
+      "origin": "已验证：8月13日“穿搭改变环境”进入抖音实时热榜第14位，公开热点页与聚合榜同时可核对。",
+      "usage": "可写“发型改变环境”“灯光改变环境”“桌搭改变环境”，适合前后对比、改造展示和氛围感内容。",
+      "fun_point": "把本应由环境衬托人的关系反过来，说成某个细节直接改写周围世界，夸张但直观。",
+      "why_spread": "已验证：该句进入抖音热榜；推测：前后对比画面容易兑现夸张表达，X也能替换成多种造型或布置元素。",
+      "lifecycle": "rising",
+      "brand_usage": "适合服饰、家居、影像品牌做真实前后对比；不要通过过度修图或虚假效果支撑“改变环境”。",
+      "risk": {
+        "level": "safe",
+        "note": "普通夸张表达；涉及产品效果时需保证画面与说明真实。"
+      },
+      "days_on_list": 1,
+      "score": 83,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 26,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2606975",
+          "observed_at": "2026-08-13T05:59:52+08:00",
+          "captured_at": "2026-08-13T07:14:00+08:00",
+          "note": "抖音公开热点页对应完整话题。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-13T05:59:52+08:00",
+          "captured_at": "2026-08-13T07:14:00+08:00",
+          "note": "聚合榜记录该话题排名第14，并标注更新时间。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-13-meiyou-x-yikaishi-jiushi-y",
+      "title": "🌱 没有X一开始就是Y",
+      "aliases": [
+        "没有花一开始就是一朵花",
+        "没有人一开始就是高手",
+        "没有作品一开始就是成品"
+      ],
+      "canonical_phrase": "没有X一开始就是Y",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "用“没有X一开始就是Y”给初期笨拙留出成长空间，把成品与起点并置成温和鼓励。",
+      "origin": "已验证：8月13日“没有花一开始就是一朵花”进入抖音实时热榜第16位，公开热点页与聚合榜可交叉核对。",
+      "usage": "可写“没有人一开始就是高手”“没有方案一开始就是终稿”，适合学习记录、作品迭代与成长叙事。",
+      "fun_point": "把显而易见的成长过程说成一句有画面的反常识提醒，既能自我安慰，也能自然改写。",
+      "why_spread": "已验证：原句进入抖音热榜；推测：X、Y双槽位可覆盖人、作品和技能，鼓励意味也便于配合成长前后对比。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于展示产品、创作者或用户的迭代过程，重点保留真实起点与变化，不要制造虚假“逆袭”。",
+      "risk": {
+        "level": "safe",
+        "note": "普通成长表达；避免用来淡化需要专业支持的困境。"
+      },
+      "days_on_list": 1,
+      "score": 81,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 26,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2607357",
+          "observed_at": "2026-08-13T05:59:52+08:00",
+          "captured_at": "2026-08-13T07:14:00+08:00",
+          "note": "抖音公开热点页对应完整话题。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-13T05:59:52+08:00",
+          "captured_at": "2026-08-13T07:14:00+08:00",
+          "note": "聚合榜记录该话题排名第16，并标注更新时间。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-13-shijie-shi-caotaibanzi-dan-ni-de-x-bushi",
+      "title": "🎭 世界是草台班子但你的X不是",
+      "aliases": [
+        "世界是草台班子但你的人生不是",
+        "世界是草台班子但你的作品不是",
+        "世界是草台班子但你的选择不是"
+      ],
+      "canonical_phrase": "世界是草台班子但你的X不是",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "在“世界是草台班子”的松弛调侃后加一句“但你的X不是”，把摆烂语气翻转成对个人选择的认真提醒。",
+      "origin": "已验证：8月13日“世界是草台班子但你的人生不是”进入微博实时热榜第21位，公开搜索入口与聚合榜可交叉核对。",
+      "usage": "可写“世界是草台班子但你的作品不是”“世界是草台班子但你的睡眠不是”，用于从自嘲切回认真。",
+      "fun_point": "前半句负责卸压，后半句突然收紧价值判断；同一句里完成躺平与清醒的反差。",
+      "why_spread": "已验证：完整句进入微博热榜；推测：借用高识别度旧表达再加反转，X槽位又能承接人生、作品或具体选择。",
+      "lifecycle": "rising",
+      "brand_usage": "适合强调认真打磨的产品、服务或创作过程；避免居高临下训诫用户，也不要贬低行业从业者。",
+      "risk": {
+        "level": "low",
+        "note": "普通网络隐喻；注意避免把具体职业或群体直接称为“草台班子”。"
+      },
+      "days_on_list": 1,
+      "score": 76,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 25,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E4%B8%96%E7%95%8C%E6%98%AF%E8%8D%89%E5%8F%B0%E7%8F%AD%E5%AD%90%E4%BD%86%E4%BD%A0%E7%9A%84%E4%BA%BA%E7%94%9F%E4%B8%8D%E6%98%AF",
+          "observed_at": "2026-08-13T05:59:52+08:00",
+          "captured_at": "2026-08-13T07:14:00+08:00",
+          "note": "微博公开搜索入口对应完整话题。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-13T05:59:52+08:00",
+          "captured_at": "2026-08-13T07:14:00+08:00",
+          "note": "聚合榜记录该话题排名第21，并标注更新时间。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
