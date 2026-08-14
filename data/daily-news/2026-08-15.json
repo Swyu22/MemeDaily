@@ -1,0 +1,683 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-15",
+  "generated_at": "2026-08-15T06:03:10+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 6,
+    "dropped_safety": {
+      "politics": 1,
+      "geopolitics": 1,
+      "propaganda": 1,
+      "public_safety": 1,
+      "privacy": 1,
+      "minors": 1,
+      "illegal": 1,
+      "rumor": 1,
+      "celebrity_dispute": 1
+    },
+    "dropped_low_confidence": 14,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 21,
+      "official_sources": 0,
+      "state_media_sources": 6,
+      "major_media_sources": 0,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 13,
+        "relaxed_72h": 18
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "新华社与国家级媒体",
+            "中央部门与政府公开信息",
+            "医疗交通消费与气象专题",
+            "国内地方公开报道"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-15-medical-lab-pricing",
+          "story_identity": "cn-medical-lab-service-pricing-guide-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T14:25:45+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-15-medical-lab-pricing",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-15-cdc-respiratory",
+          "story_identity": "cn-cdc-respiratory-surveillance-week32-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T17:55:24+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-15-cdc-respiratory",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-15-henan-recovery",
+          "story_identity": "cn-henan-flood-recovery-investment-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T20:40:53+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-15-henan-recovery",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-15-parcel-packaging",
+          "story_identity": "cn-express-packaging-standard-followup-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T15:30:31+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-15-parcel-packaging",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-15-old-elevators",
+          "story_identity": "cn-residential-elevator-renewal-progress-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T09:12:49+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-15-old-elevators",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-15-postal-volume",
+          "story_identity": "cn-postal-delivery-volume-january-july-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T18:36:28+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-15-postal-volume",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-07-red-light-pause",
+          "story_identity": "cn-beijing-delivery-red-light-timer-pilot-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "协商结果实用但事件发生已超过严格窗口，且9月仅在北京部分区域试运行"
+        },
+        {
+          "candidate_key": "cand-08-personal-loan-rules",
+          "story_identity": "cn-personal-loan-hidden-fee-rules-2026-08-13",
+          "research_pass": 1,
+          "occurred_at": "2026-08-13T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "个贷规则与消费者相关，但首次生效报道已超过严格24小时窗口"
+        },
+        {
+          "candidate_key": "cand-09-autumn-allergy",
+          "story_identity": "cn-autumn-pollen-allergy-guidance-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T21:10:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "健康科普有季节性价值，但缺少新的全国性预警或就诊政策变化"
+        },
+        {
+          "candidate_key": "cand-10-central-flood-supplies",
+          "story_identity": "cn-henan-central-flood-supplies-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T21:26:33+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与河南灾后恢复投资同属一组救灾进展，主题重复且读者行动信息更少"
+        },
+        {
+          "candidate_key": "cand-11-taihu-response",
+          "story_identity": "cn-taihu-flood-response-level-three-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T20:17:06+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "防汛响应重要，但与当日已选灾害主题重叠且缺少统一公众办理事项"
+        },
+        {
+          "candidate_key": "cand-12-river-dike-closure",
+          "story_identity": "cn-jiaxian-river-dike-breach-closed-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T20:20:39+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "抢险节点已核实，但地域范围窄且与河南灾后恢复主题重复"
+        },
+        {
+          "candidate_key": "cand-13-environment-cases",
+          "story_identity": "cn-environment-resource-crime-cases-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T18:00:28+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "案件统计具有公共价值，但对普通读者当日生活决策的直接帮助较弱"
+        },
+        {
+          "candidate_key": "cand-14-autumn-diet",
+          "story_identity": "cn-autumn-diet-health-guidance-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "季节饮食提醒较实用，但属于常规科普且没有新的权威政策节点"
+        },
+        {
+          "candidate_key": "cand-15-current-account",
+          "story_identity": "cn-current-account-surplus-h1-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T17:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "宏观收支数据真实但对居民当日可执行决策影响有限"
+        },
+        {
+          "candidate_key": "cand-16-intercity-bus",
+          "story_identity": "cn-intercity-bus-ridership-feature-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "出行趋势观察缺少全国统一的新线路、票价或办理变化"
+        },
+        {
+          "candidate_key": "cand-17-open-source-ai",
+          "story_identity": "cn-open-source-ai-competition-feature-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "行业观察重要但缺少普通用户立即可用的新产品或服务入口"
+        },
+        {
+          "candidate_key": "cand-18-future-science-prize",
+          "story_identity": "cn-future-science-prize-laureates-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "奖项名单具有科学价值，但面向普通读者的即时生活关联较弱"
+        },
+        {
+          "candidate_key": "cand-19-weight-control",
+          "story_identity": "cn-weight-control-health-explainer-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "体重管理为常规健康科普，没有新的监测结果或公共服务安排"
+        },
+        {
+          "candidate_key": "cand-20-rail-tourism",
+          "story_identity": "cn-summer-rail-tourism-products-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "文旅趋势较分散，缺少跨地区统一的新班次、票务或退改安排"
+        },
+        {
+          "candidate_key": "cand-21-foreign-train",
+          "story_identity": "global-uk-train-derailment-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T02:00:00+08:00",
+          "scope": "international",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "外国例行事故缺少对中国读者的直接影响、全球代表性和独立热度证据"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-15-medical-lab-pricing",
+      "story_identity": "cn-medical-lab-service-pricing-guide-2026-08-14",
+      "headline": "🧪 医疗检验收费将按项目全国统一规范",
+      "summary": "国家医保局发布检验类医疗服务价格项目指南，血常规、尿常规等项目将按检验指标统一立项；多指标联检按数量实行折扣，各省将据此测算落地价格。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 92,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-14T14:25:45+08:00",
+      "risk": {
+        "level": "low",
+        "note": "各省具体价格和实施时间仍待落地，患者应以当地医保部门和医疗机构公示为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260814/0eee04176ad043dbabdf91d667346c15/c.html",
+          "title": "新华鲜报丨全国“一把尺” 医疗检验收费同检同价",
+          "captured_at": "2026-08-15T06:03:00+08:00",
+          "note": "新华社核实指南发布时间、统一立项规则、联检折扣与后续省级落地安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-15-cdc-respiratory",
+      "story_identity": "cn-cdc-respiratory-surveillance-week32-2026-08-14",
+      "headline": "😷 中疾控更新呼吸道传染病监测结果",
+      "summary": "全国第32周哨点监测显示，新冠处于本轮波动高峰平台期、总体为中流行水平，部分省份已下降；流感活动处于低流行水平波动。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 89,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-14T17:55:24+08:00",
+      "risk": {
+        "level": "low",
+        "note": "监测为全国总体情况，个人症状和地区流行强度不同；不适时应按当地卫生部门指引就医。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260814/be51d4f63ca443cca62f1e4e5fb49423/c.html",
+          "title": "中疾控：新冠在部分省份已出现下降趋势",
+          "captured_at": "2026-08-15T06:03:00+08:00",
+          "note": "新华社转述中国疾控中心第32周哨点监测，明确流行水平、趋势与其他病原体情况。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-15-henan-recovery",
+      "story_identity": "cn-henan-flood-recovery-investment-2026-08-14",
+      "headline": "🌧️ 3000万元支持河南灾后应急恢复",
+      "summary": "国家发展改革委安排中央预算内投资3000万元，重点支持河南受损道路、水利、学校和医院等设施应急恢复，推动当地恢复正常生产生活秩序。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-14T20:40:53+08:00",
+      "risk": {
+        "level": "low",
+        "note": "灾后恢复进度和风险点会动态变化，受影响居民应继续留意属地应急、气象和交通信息。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260814/323972dc24da40b59cbb0164aacde028/c.html",
+          "title": "国家发展改革委安排3000万元支持河南暴雨洪涝灾害灾后应急恢复",
+          "captured_at": "2026-08-15T06:03:00+08:00",
+          "note": "新华社核实资金规模、支持地区以及道路、水利、学校和医院等重点用途。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-15-parcel-packaging",
+      "story_identity": "cn-express-packaging-standard-followup-2026-08-14",
+      "headline": "📦 快递过度包装新国标落地满月",
+      "summary": "《限制快递过度包装要求》7月起实施，明确包装层数和胶带用量等限值；多家快递企业正通过尺寸匹配、原包装直发和自动推荐箱型减少重复包装。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-14T15:30:31+08:00",
+      "risk": {
+        "level": "low",
+        "note": "不同商品的防护要求存在差异，易碎及特殊物品仍应以安全运输和现行标准为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260814/10384e355ec649289008acbc9e3e8185/c.html",
+          "title": "新华视点｜快递包装“瘦身”进展如何",
+          "captured_at": "2026-08-15T06:03:00+08:00",
+          "note": "新华社调查新国标实施一个月后的平台、网点和包装流程变化及执行难点。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-15-old-elevators",
+      "story_identity": "cn-residential-elevator-renewal-progress-2026-08-14",
+      "headline": "🛗 今年国债资金支持更新住宅电梯19.7万台",
+      "summary": "住建部最新统计显示，今年已安排约309亿元超长期特别国债资金，支持各地更新住宅老旧电梯19.7万台；各地将继续建立台账并加强项目质量监管。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-14T09:12:49+08:00",
+      "risk": {
+        "level": "low",
+        "note": "具体小区是否纳入计划及业主分担方式由属地确定，居民应向街道、社区或住建部门核实。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/tech/20260814/2c3a1061a0ef4504bdc7b32057e97731/c.html",
+          "title": "合力推动老旧小区电梯更新改造",
+          "captured_at": "2026-08-15T06:03:00+08:00",
+          "note": "经济日报公开报道住建部最新统计、资金规模、更新数量和后续监管要求。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-15-postal-volume",
+      "story_identity": "cn-postal-delivery-volume-january-july-2026-08-14",
+      "headline": "🚚 前7个月寄递业务量同比增长4.2%",
+      "summary": "国家邮政局数据显示，前7个月邮政行业寄递业务量累计1274.4亿件，同比增长4.2%；其中快递业务量1174.7亿件，同比增长4.8%。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 11
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-14T18:36:28+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "数据为全国行业累计统计，不代表单个平台、地区或个人收入与服务体验。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/fortune/20260814/b250ab8be74a4962ac23198811983100/c.html",
+          "title": "前7个月邮政行业寄递业务量同比增长4.2%",
+          "captured_at": "2026-08-15T06:03:00+08:00",
+          "note": "新华社依据国家邮政局数据核实寄递、快递及分业务类型的累计规模和同比变化。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
