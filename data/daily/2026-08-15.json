@@ -1,0 +1,724 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-15",
+  "generated_at": "2026-08-15T07:12:02+08:00",
+  "published_at": "2026-08-15T07:12:02+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "时事政治": 2,
+      "灾害/公共安全": 2,
+      "具体人物/隐私": 2,
+      "品牌/商业": 1
+    },
+    "dropped_low_confidence": 15,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "platform_public_sources": 5,
+      "aggregator_sources": 4,
+      "search_media_sources": 2,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 4
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-15-tangzai-meiyou-tianhuaban-de-difang",
+          "canonical_phrase": "躺在没有天花板的地方",
+          "outcome": "selected",
+          "item_id": "2026-08-15-tangzai-meiyou-tianhuaban-de-difang",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 29,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2609789",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-15-x-chuanda-dashang",
+          "canonical_phrase": "X穿搭大赏",
+          "outcome": "selected",
+          "item_id": "2026-08-15-x-chuanda-dashang",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 29,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2609310",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-15-quanmin-jinru-chun-guorizi-shidai",
+          "canonical_phrase": "全民进入纯过日子时代",
+          "outcome": "selected",
+          "item_id": "2026-08-15-quanmin-jinru-chun-guorizi-shidai",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 29,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%E5%85%A8%E6%B0%91%E8%BF%9B%E5%85%A5%E7%BA%AF%E8%BF%87%E6%97%A5%E5%AD%90%E6%97%B6%E4%BB%A3",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-14-yong-ai-gei-x-zuo-y",
+          "canonical_phrase": "用AI给X做Y",
+          "outcome": "selected",
+          "item_id": "2026-08-14-yong-ai-gei-x-zuo-y",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2608882",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-05",
+          "canonical_phrase": "想和你一起去X看Y",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-06",
+          "canonical_phrase": "你总认为X很贵",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2609760",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-07",
+          "canonical_phrase": "七夕我就这样发朋友圈",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 26,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-08",
+          "canonical_phrase": "我的X超能力觉醒了",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.douyin.com/hot/2609442",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-09",
+          "canonical_phrase": "朋友圈永远不会有二次编辑功能",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 25,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-10",
+          "canonical_phrase": "幸福其实很简单",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 25,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "一定要远离给你搅局的人",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-12",
+          "canonical_phrase": "命好的人本质是主体性强",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "每说一个X字文明就倒退",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "秋雨冲刷走落叶残留我的思念",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 23,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-15",
+          "canonical_phrase": "七夕约会怎么穿",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 23,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-16",
+          "canonical_phrase": "粉丝们给熊出没的回信",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 23,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-17",
+          "canonical_phrase": "全网帮去你的岛重写结局",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 22,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-18",
+          "canonical_phrase": "报名参加X演绎大赛",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 22,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-19",
+          "canonical_phrase": "青风吹又生改妆",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 21,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-15T07:04:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-20",
+          "canonical_phrase": "清华博士勇闯城中村",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "摸鱼事务所开箱TI15周边",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "UP主发现微缩版河流地貌",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-23",
+          "canonical_phrase": "高中生自制蛛丝发射器",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "具体人物/隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "具体人物/隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "品牌/商业",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "douyin",
+            "weibo",
+            "bilibili",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-15-tangzai-meiyou-tianhuaban-de-difang",
+      "title": "⛺ 躺在没有天花板的地方",
+      "aliases": [
+        "躺在没有天花板的地方",
+        "人就应该躺在没有天花板的地方",
+        "躺在没有天花板的地方听浪花"
+      ],
+      "canonical_phrase": "躺在没有天花板的地方",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "把户外休息说成“躺在没有天花板的地方”，用空间反差替露营、草地和海边场景加一层松弛感。",
+      "origin": "已验证：8月15日该完整短语进入抖音实时热榜第9位；公开政务活动文案与行业方案此前也使用过同一句表达。",
+      "usage": "适合露营、草地、海边和公园内容直接沿用，也可接“听浪花”“看晚霞”等具体户外动作。",
+      "fun_point": "不直接说“去户外”，而把天空描述成消失的天花板，既有画面感，也带一点认真躺平的幽默。",
+      "why_spread": "已验证：完整短语进入抖音前十，且在不同户外文案中重复出现；推测：句子短、场景开放，照片和视频都容易复刻。",
+      "lifecycle": "rising",
+      "brand_usage": "适合户外、文旅与生活方式品牌展示真实场景；注意露营地规则、天气和水边安全，不鼓励进入危险区域。",
+      "risk": {
+        "level": "low",
+        "note": "普通户外表达；发布时需提示场地、天气与水边安全。"
+      },
+      "days_on_list": 1,
+      "score": 87,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 29,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2609789",
+          "observed_at": "2026-08-15T07:04:06+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "抖音公开热点页对应当前完整话题，实时榜排名第9。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-15T07:04:06+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "聚合榜在7:04记录该话题排名第9。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://ybslgjkq.sczwfw.gov.cn/art/2025/9/30/art_42395_297414.html",
+          "title": "国庆假期年轻人都跑去“枕星听浪”了？",
+          "observed_at": "2025-09-30T10:43:00+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "公开活动文案使用“躺在没有天花板的地方”，验证短语跨内容复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-15-x-chuanda-dashang",
+      "title": "🖤 X穿搭大赏",
+      "aliases": [
+        "娃圈黑色穿搭大赏",
+        "韩系女主一周穿搭大赏",
+        "和平本地人穿搭大赏"
+      ],
+      "canonical_phrase": "X穿搭大赏",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "用“X穿搭大赏”给某个圈层、主题或风格做集中展示，把普通搭配合集包装成轻量评选现场。",
+      "origin": "已验证：8月15日“娃圈黑色穿搭大赏”进入抖音实时热榜第10位；公开短视频中还存在韩系、游戏圈等不同填槽实例。",
+      "usage": "可写“通勤人穿搭大赏”“雨天穿搭大赏”“游戏角色穿搭大赏”，适合多人合辑、前后对照和主题征集。",
+      "fun_point": "“大赏”把日常穿衣夸张成颁奖礼，既方便围观比较，也让参与者自然接龙自己的版本。",
+      "why_spread": "已验证：当前实例进入抖音前十，公开页面还能核对不同X值的穿搭大赏；推测：X槽位可换圈层、天气与风格，参与成本低。",
+      "lifecycle": "rising",
+      "brand_usage": "适合服饰与社区品牌做主题征集或用户合辑；避免身材羞辱、未经授权搬运和把审美差异做成攻击。",
+      "risk": {
+        "level": "low",
+        "note": "普通穿搭模板；注意肖像授权并避免外貌或身材羞辱。"
+      },
+      "days_on_list": 1,
+      "score": 86,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 29,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2609310",
+          "observed_at": "2026-08-15T07:04:06+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "抖音公开热点页对应“娃圈黑色穿搭大赏”，实时榜排名第10。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-15T07:04:06+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "聚合榜在7:04记录该话题排名第10。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://jingxuan.douyin.com/m/video/7529344060965211407",
+          "title": "韩系女主一周穿搭大赏",
+          "observed_at": "2025-07-21T00:00:00+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "公开短视频使用“韩系女主一周穿搭大赏”，验证X槽位的既有复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-15-quanmin-jinru-chun-guorizi-shidai",
+      "title": "🫖 全民进入纯过日子时代",
+      "aliases": [
+        "全民进入纯过日子时代",
+        "#全民进入纯过日子时代#",
+        "纯过日子时代"
+      ],
+      "canonical_phrase": "全民进入纯过日子时代",
+      "platform": [
+        "weibo"
+      ],
+      "type": "情绪梗",
+      "summary": "用“全民进入纯过日子时代”概括降低表演感、专注吃饭睡觉与日常节奏的集体情绪。",
+      "origin": "已验证：该完整话题从8月14日晚进入微博热榜，并在8月15日7:04仍位列第11，形成跨日持续热度。",
+      "usage": "适合配朴素三餐、散步、收拾房间或早睡记录，直接用原句表达“先把生活过明白”的阶段感。",
+      "fun_point": "把个人想安稳过日子的念头说成“全民进入一个时代”，宏大口吻与琐碎日常形成反差。",
+      "why_spread": "已验证：完整话题跨日晚间与清晨持续上榜，微博搜索页承载同题讨论；推测：原句无需解释，容易配合多种低刺激日常内容复用。",
+      "lifecycle": "rising",
+      "brand_usage": "适合家居、食品与生活服务品牌呈现真实小日常；不要把节俭、低消费或个人生活选择贴成统一价值标准。",
+      "risk": {
+        "level": "safe",
+        "note": "普通生活态度表达；避免贬低不同消费和生活选择。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 29,
+        "reusability": 16,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E5%85%A8%E6%B0%91%E8%BF%9B%E5%85%A5%E7%BA%AF%E8%BF%87%E6%97%A5%E5%AD%90%E6%97%B6%E4%BB%A3",
+          "observed_at": "2026-08-15T07:04:06+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "微博公开搜索页对应完整话题，当前实时榜排名第11。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-15T07:04:06+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "聚合榜在7:04记录该话题排名第11，并可与前一晚归档交叉核对。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-14-yong-ai-gei-x-zuo-y",
+      "title": "🤖 用AI给X做Y",
+      "aliases": [
+        "用AI给小时候的自己做头像",
+        "用AI给朋友做个专属小游戏",
+        "用AI给宠物做头像"
+      ],
+      "canonical_phrase": "用AI给X做Y",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "把“用AI给X做Y”当成创作任务模板，替换对象与成果，让同一结构继续覆盖头像、小游戏和纪念内容。",
+      "origin": "已验证：该句式8月14日首次入选后，“用AI给小时候的自己做头像”在8月15日7:04仍进入抖音实时榜，证据晚于昨日站点发布。",
+      "usage": "可写“用AI给宠物做证件照”“用AI给同事做下班小游戏”，适合展示提示词、生成前后和收到成品时的反应。",
+      "fun_point": "把小脑洞郑重交给AI执行，对象越熟悉、成果越出其不意，越容易形成可复制的惊喜。",
+      "why_spread": "已验证：不同X、Y实例已有公开热点页，且头像实例在站点发布后继续上榜；推测：双槽位开放，用户能直接替换关系与成品。",
+      "lifecycle": "peak",
+      "brand_usage": "适合工具、创意与互动产品发起模板挑战；须标注AI生成，并避免上传未经许可的人像或隐私材料。",
+      "risk": {
+        "level": "low",
+        "note": "普通创作句式；注意肖像授权、隐私和AI生成标识。"
+      },
+      "days_on_list": 2,
+      "score": 83,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 27,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2608882",
+          "observed_at": "2026-08-15T07:04:06+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "抖音公开热点页对应头像实例，7:04仍在实时榜且证据晚于昨日发布。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2608715",
+          "observed_at": "2026-08-14T07:03:00+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "抖音另一公开热点页对应“用AI给朋友做个专属小游戏”，验证双槽位复用。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-15T07:04:06+08:00",
+          "captured_at": "2026-08-15T07:07:30+08:00",
+          "note": "聚合榜在7:04记录头像实例排名第24。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
