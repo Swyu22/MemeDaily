@@ -1,0 +1,724 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-16",
+  "generated_at": "2026-08-16T06:07:49+08:00",
+  "published_at": "2026-08-16T06:07:49+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 7,
+    "dropped_safety": {
+      "politics": 1,
+      "geopolitics": 1,
+      "propaganda": 1,
+      "public_safety": 1,
+      "privacy": 1,
+      "minors": 1,
+      "illegal": 1,
+      "rumor": 1,
+      "celebrity_dispute": 1
+    },
+    "dropped_low_confidence": 13,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 21,
+      "official_sources": 0,
+      "state_media_sources": 8,
+      "major_media_sources": 0,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 12,
+        "relaxed_72h": 17
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "新华社与中央广播电视总台",
+            "中央部门与行业公开信息",
+            "医疗交通消费文旅专题",
+            "国内地方公开报道"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-16-flood-response",
+          "story_identity": "cn-east-central-flood-response-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T20:08:21+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-16-flood-response",
+          "score": 93,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-16-green-consumption-guide",
+          "story_identity": "cn-consumers-association-green-guide-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T10:24:45+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-16-green-consumption-guide",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-16-worker-health-van",
+          "story_identity": "cn-guangdong-worker-mobile-health-exams-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T16:09:36+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-16-worker-health-van",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-16-robot-rental",
+          "story_identity": "cn-robot-rental-demand-expansion-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T12:43:38+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-08-16-robot-rental",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-16-community-services",
+          "story_identity": "cn-complete-community-elderly-services-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T10:58:48+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-16-community-services",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-16-rail-passengers",
+          "story_identity": "cn-railway-passengers-january-july-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T10:41:29+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-16-rail-passengers",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-16-summer-box-office",
+          "story_identity": "cn-summer-movie-box-office-9-5b-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T11:02:23+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-16-summer-box-office",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-08-ecology-code",
+          "story_identity": "cn-ecology-environment-code-effective-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 18,
+            "everyday_relevance": 22,
+            "evidence": 15
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "法典正式施行具有长期影响，但生效时点已超过严格24小时窗口"
+        },
+        {
+          "candidate_key": "cand-09-inbound-tax-refund",
+          "story_identity": "cn-inbound-tourism-tax-refund-growth-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "入境消费数据真实，但对大多数国内读者的当日生活决策关联有限"
+        },
+        {
+          "candidate_key": "cand-10-delivery-supply-chain",
+          "story_identity": "cn-express-supply-chain-expansion-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T12:44:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "行业变化可核实，但与前一日邮政寄递主题接近且消费者行动信息较少"
+        },
+        {
+          "candidate_key": "cand-11-environment-compensation",
+          "story_identity": "cn-environment-damage-compensation-cases-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T14:38:55+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "典型案例具有公共价值，但普通读者可立即采取的行动有限"
+        },
+        {
+          "candidate_key": "cand-12-nature-classroom",
+          "story_identity": "cn-nanjing-zoo-online-nature-classroom-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "自然教育入口有实用性，但地域和合作平台范围较窄"
+        },
+        {
+          "candidate_key": "cand-13-arctic-express",
+          "story_identity": "cn-arctic-express-tour-route-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "特色旅游线路受众有限，票务和常态化班次信息不足"
+        },
+        {
+          "candidate_key": "cand-14-corn-conference",
+          "story_identity": "cn-asian-corn-conference-chengdu-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T23:32:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "产业会议有专业价值，但对普通读者的即时生活关联较弱"
+        },
+        {
+          "candidate_key": "cand-15-tech-legislation",
+          "story_identity": "cn-sichuan-chongqing-tech-legislation-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "区域协同立法重要，但尚缺面向普通用户的具体服务变化"
+        },
+        {
+          "candidate_key": "cand-16-lifelong-learning",
+          "story_identity": "cn-ningxia-lifelong-learning-week-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "学习活动面向当地且持续时间有限，全国读者可用入口不足"
+        },
+        {
+          "candidate_key": "cand-17-gold-risk-warning",
+          "story_identity": "cn-gold-trading-risk-warning-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T19:13:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "投资风险提醒有参考价值，但证据层级和普适行动信息弱于入选条目"
+        },
+        {
+          "candidate_key": "cand-18-medical-pricing-duplicate",
+          "story_identity": "cn-medical-lab-service-pricing-guide-2026-08-14",
+          "research_pass": 1,
+          "occurred_at": "2026-08-14T14:25:45+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "与前一日已发布医疗检验价格指南为同一事件，禁止跨日重复"
+        },
+        {
+          "candidate_key": "cand-19-nev-feature-duplicate",
+          "story_identity": "cn-nev-market-feature-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "行业特写与近期新能源汽车市场份额条目高度重合，新增生活信息有限"
+        },
+        {
+          "candidate_key": "cand-20-employment-plan-feature",
+          "story_identity": "cn-employment-services-plan-feature-2026-06",
+          "research_pass": 1,
+          "occurred_at": "2026-06-30T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 10,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "drop_reason": "文章为既有规划的后续解读，底层事件已超出72小时窗口且近期就业主题已覆盖"
+        },
+        {
+          "candidate_key": "cand-21-indonesia-quake",
+          "story_identity": "global-indonesia-earthquake-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T13:10:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅核实到单一媒体链路，尚不足以满足国际条目两家独立媒体和中国读者影响证明"
+        },
+        {
+          "candidate_key": "candidate-22",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-23",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-16-flood-response",
+      "story_identity": "cn-east-central-flood-response-2026-08-15",
+      "headline": "🌧️ 多地升级防汛响应应对强降雨",
+      "summary": "国家防总15日将江苏防汛应急响应提升至三级，并启动浙江四级响应；江苏、浙江、河南、安徽等地加紧排涝抢险和人员转移。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 93,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-15T20:08:21+08:00",
+      "risk": {
+        "level": "low",
+        "note": "雨情、水情和交通管制会动态变化，相关地区居民应以属地气象、应急和交通部门最新通知为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/15/ARTIKQI0i3kRAklvjS651z6Z260815.shtml",
+          "title": "多地出现强降雨天气 防汛救灾加紧进行",
+          "captured_at": "2026-08-16T05:56:00+08:00",
+          "note": "央视新闻核实国家防总响应级别调整、重点地区雨情及各地抢险转移进展。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260815/ee581daac4ff45f3af18d9f76c6791ff/c.html",
+          "title": "多地防汛抗洪工作加紧进行",
+          "captured_at": "2026-08-16T05:56:00+08:00",
+          "note": "新华社独立报道多地强降雨影响、排涝抢险和群众转移安置情况。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-16-green-consumption-guide",
+      "story_identity": "cn-consumers-association-green-guide-2026-08-15",
+      "headline": "♻️ 中消协发布50条绿色消费建议",
+      "summary": "中国消费者协会发布2026版绿色消费指南，围绕饮食、出行、用能和日用品提出50条行动建议，包括减少一次性餐具、优先公共交通和按需购买。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-15T10:24:45+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "指南属于消费倡议，不替代产品标准、合同条款或具体商品的安全使用说明。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/15/ARTIsH5ZiGIueStHCtyKc26g260815.shtml",
+          "title": "中消协发布绿色消费指南 涵盖四大领域50条行动建议",
+          "captured_at": "2026-08-16T05:56:00+08:00",
+          "note": "央视新闻核实指南发布主体、四大领域、50条建议及主要行动示例。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-16-worker-health-van",
+      "story_identity": "cn-guangdong-worker-mobile-health-exams-2026-08-15",
+      "headline": "🩺 广东流动体检服务覆盖逾1.2万名职工",
+      "summary": "广东“健康大篷车”将免费体检送进工厂和园区，面向产业工人、灵活就业人员等提供常规检查、女性两癌筛查和心理评估，累计服务超过1.2万人。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-15T16:09:36+08:00",
+      "risk": {
+        "level": "low",
+        "note": "服务地区、对象和预约方式由属地工会及承办机构安排，个体诊疗仍应遵循专业医疗建议。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260815/2bb2c57b8f764a0f935d5beb8582e73e/c.html",
+          "title": "“健康大篷车”开进工厂",
+          "captured_at": "2026-08-16T05:56:00+08:00",
+          "note": "新华社核实服务对象、项目组合、覆盖城市及累计免费体检人数。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-16-robot-rental",
+      "story_identity": "cn-robot-rental-demand-expansion-2026-08-15",
+      "headline": "🤖 机器人租赁进入商场文旅和家庭场景",
+      "summary": "机器人租赁需求从展会演出扩展到商场、文旅和家庭陪伴，部分陪伴机器人月租约200至300元；业内称今年订单增长，租赁正降低短期使用门槛。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-15T12:43:38+08:00",
+      "risk": {
+        "level": "low",
+        "note": "租金、押金、保险和售后因产品与平台而异，租用前应核验合同、隐私权限和责任条款。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/15/ARTI6bOIWTXddRIlVfF3uUsS260815.shtml",
+          "title": "机器人租赁市场持续火热 应用场景不断拓展",
+          "captured_at": "2026-08-16T05:56:00+08:00",
+          "note": "央视财经报道租赁价格、订单变化及商场、文旅、家庭等新增使用场景。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-16-community-services",
+      "story_identity": "cn-complete-community-elderly-services-2026-08-15",
+      "headline": "🏘️ 多地改造完整社区补齐养老服务",
+      "summary": "多地通过完整社区建设推进老旧小区改造，把助餐、日间照料、健康服务和适老设施嵌入社区，探索解决高龄居民就餐、照护和出行难题。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-15T10:58:48+08:00",
+      "risk": {
+        "level": "low",
+        "note": "具体服务项目、收费和覆盖范围因地区与社区而异，居民应以街道、社区公开信息为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/15/ARTIdhkzmgZSvYtvNkJFOAnD260815.shtml",
+          "title": "创新举措击破城市管理、老旧小区改造、养老服务民生痛点",
+          "captured_at": "2026-08-16T05:56:00+08:00",
+          "note": "央视新闻汇总多地完整社区、老旧小区和养老服务的公开实践及居民反馈。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-16-rail-passengers",
+      "story_identity": "cn-railway-passengers-january-july-2026-08-15",
+      "headline": "🚄 前7个月全国铁路发送旅客28亿人次",
+      "summary": "国铁集团数据显示，前7个月全国铁路发送旅客28亿人次，同比增长4.1%；铁路部门同步加强列车停运、晚点和恢复开行信息发布。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 11
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-15T10:41:29+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "累计客流不代表具体线路余票情况，出行安排应以铁路12306实时车次和通知为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/15/ARTIL9Giqdb2mRt3Hz3J9LtO260815.shtml",
+          "title": "1至7月全国铁路发送旅客28亿人次",
+          "captured_at": "2026-08-16T05:56:00+08:00",
+          "note": "央视新闻依据国铁集团数据核实客流规模、同比增幅与运输信息服务安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-16-summer-box-office",
+      "story_identity": "cn-summer-movie-box-office-9-5b-2026-08-15",
+      "headline": "🎬 暑期档电影总票房突破95亿元",
+      "summary": "截至15日上午，2026年暑期档电影总票房突破95亿元，国产影片继续贡献主要票房，影院消费和暑期文化市场热度延续。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 11
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-08-15T11:02:23+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "票房为实时累计数据，后续会继续变化；具体排片和购票价格以影院及票务平台为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/15/ARTIJioXbFgXbxMXTHax2VgN260815.shtml",
+          "title": "2026暑期档电影总票房突破95亿元",
+          "captured_at": "2026-08-16T05:56:00+08:00",
+          "note": "央视新闻核实票房突破时间、累计规模和国产影片市场表现。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
