@@ -1,0 +1,715 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-16",
+  "generated_at": "2026-08-16T07:10:56+08:00",
+  "published_at": "2026-08-16T07:10:56+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "时事政治": 2,
+      "灾害/公共安全": 2,
+      "具体人物/隐私": 2,
+      "品牌/商业": 1
+    },
+    "dropped_low_confidence": 14,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "zhihu",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "platform_public_sources": 4,
+      "aggregator_sources": 4,
+      "search_media_sources": 3,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-16-x-juxianghua",
+          "canonical_phrase": "X具象化",
+          "outcome": "selected",
+          "item_id": "2026-08-16-x-juxianghua",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%E6%9B%B9%E9%AA%8F%E4%B8%AD%E5%9B%BD%E4%BA%BA%E4%BC%9A%E9%A3%9E%E5%85%B7%E8%B1%A1%E5%8C%96",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-16-zhishi-yi-hen-tong-de-fangshi-jinru-danao",
+          "canonical_phrase": "知识以很痛的方式进入了大脑",
+          "outcome": "selected",
+          "item_id": "2026-08-16-zhishi-yi-hen-tong-de-fangshi-jinru-danao",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%E7%9F%A5%E8%AF%86%E4%BB%A5%E5%BE%88%E7%97%9B%E7%9A%84%E6%96%B9%E5%BC%8F%E8%BF%9B%E5%85%A5%E4%BA%86%E5%A4%A7%E8%84%91",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-16-zhe-he-qinsheng-de-you-shenme-qubie",
+          "canonical_phrase": "这和亲生的有什么区别",
+          "outcome": "selected",
+          "item_id": "2026-08-16-zhe-he-qinsheng-de-you-shenme-qubie",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 26,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://s.weibo.com/weibo?q=%E8%BF%99%E5%92%8C%E4%BA%B2%E7%94%9F%E7%9A%84%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-07-15-hanjinliang-zai-shang-sheng",
+          "canonical_phrase": "X的含金量还在上升",
+          "outcome": "selected",
+          "item_id": "2026-07-15-hanjinliang-zai-shang-sheng",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 25,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.toutiao.com/trending/7674235529379692563/",
+            "observed_at": "2026-08-15T23:45:55+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-05",
+          "canonical_phrase": "太干净的饭总有一种没吃的错觉",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-06",
+          "canonical_phrase": "秋冬上衣裤子搭配公式",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-07",
+          "canonical_phrase": "七夕约会怎么穿",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-08",
+          "canonical_phrase": "七夕我就这样发朋友圈",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 26,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-09",
+          "canonical_phrase": "童年动画三巨头集体在抖音写信",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-10",
+          "canonical_phrase": "熊出没收到了00后们的回信",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 25,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "巴啦啦小魔仙给00后的一封信",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-12",
+          "canonical_phrase": "给喜羊羊的回信",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "致所有00后蛋仔的一封信",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "看似吃个大鸡排其实就吃了个鸡蛋",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 23,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-15",
+          "canonical_phrase": "直观看见了女儿奴的诞生",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 23,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-16",
+          "canonical_phrase": "生活中如何分辨善妒的人",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 22,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-17",
+          "canonical_phrase": "早八人必备的韩系上镜妆",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 22,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-18",
+          "canonical_phrase": "万万没想到手机倒过来秒当首富",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 21,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-16T06:31:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-19",
+          "canonical_phrase": "60岁AI动画赛道新人",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-20",
+          "canonical_phrase": "这是你的专属双生小猫",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "当有人问我七夕想要什么",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "当我有一个快递到了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-23",
+          "canonical_phrase": "豆包进化到能学我唱歌了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "具体人物/隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "具体人物/隐私",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "品牌/商业",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "bilibili",
+            "zhihu",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-16-x-juxianghua",
+      "title": "🧩 X具象化",
+      "aliases": [
+        "中国人会飞具象化",
+        "大国重器硬实力具象化",
+        "X具象化"
+      ],
+      "canonical_phrase": "X具象化",
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "把抽象判断压缩成“X具象化”，用一个具体人物、动作或画面证明某种特质真的被看见了。",
+      "origin": "已验证：8月16日“曹骏中国人会飞具象化”进入微博实时榜第16位；公开媒体此前也用“硬实力具象化了”承接不同主题。",
+      "usage": "可写“周一困倦具象化”“执行力具象化”“松弛感具象化”，再配一张或一段能把抽象概念落到实处的画面。",
+      "fun_point": "它把一本正经的抽象概念突然变成肉眼可见的证据，标题越宏大、画面越具体，反差越强。",
+      "why_spread": "已验证：当前实例进入微博榜单，且公开媒体存在不同X值的复用；推测：单槽位清晰，人物、宠物、职场和生活场景都能接。",
+      "lifecycle": "rising",
+      "brand_usage": "适合品牌把抽象卖点落到产品细节或用户动作；避免借具体人物做未经授权的代言式表达。",
+      "risk": {
+        "level": "low",
+        "note": "普通句式模板；涉及具体人物时应注意肖像、语境和授权。"
+      },
+      "days_on_list": 1,
+      "score": 84,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E6%9B%B9%E9%AA%8F%E4%B8%AD%E5%9B%BD%E4%BA%BA%E4%BC%9A%E9%A3%9E%E5%85%B7%E8%B1%A1%E5%8C%96",
+          "observed_at": "2026-08-16T06:31:10+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "微博公开搜索页对应当前实例；聚合榜快照记录其排名第16。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-16T06:31:10+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "聚合榜在6:31记录“曹骏中国人会飞具象化”排名第16。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.chinanews.com.cn/cj/2026/06-08/10636143.shtml",
+          "title": "大国重器硬实力，在抖音具象化了",
+          "observed_at": "2026-06-08T10:51:49+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "公开媒体以另一主题复用“X具象化”结构，验证槽位可替换。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-16-zhishi-yi-hen-tong-de-fangshi-jinru-danao",
+      "title": "🧠 知识以很痛的方式进入了大脑",
+      "aliases": [
+        "知识以很痛的方式进入了大脑",
+        "知识用很痛的方式进入大脑",
+        "很痛地学会了"
+      ],
+      "canonical_phrase": "知识以很痛的方式进入了大脑",
+      "platform": [
+        "weibo"
+      ],
+      "type": "情绪梗",
+      "summary": "把踩坑、碰壁后才学会的道理说成知识“很痛地进入大脑”，用于自嘲代价过高但终于记住了。",
+      "origin": "已验证：8月16日该完整短语进入微博实时榜第26位，公开搜索页与实时榜快照可相互核对。",
+      "usage": "适合考试失误、做饭翻车、通勤踩坑或项目复盘，配上“这次真的记住了”的具体前因后果。",
+      "fun_point": "把无形的学习过程写成一次带痛感的物理输入，夸张地承认自己不是听懂的，而是撞懂的。",
+      "why_spread": "已验证：完整短语当日上榜；推测：情绪明确、无需固定画面，个人踩坑故事都能直接套用。",
+      "lifecycle": "rising",
+      "brand_usage": "适合教育、工具和服务品牌做轻量避坑内容；不要拿真实伤害、疾病或事故制造笑点。",
+      "risk": {
+        "level": "low",
+        "note": "普通自嘲表达；避免与真实伤病或公共事故拼接。"
+      },
+      "days_on_list": 1,
+      "score": 82,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 28,
+        "reusability": 16,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E7%9F%A5%E8%AF%86%E4%BB%A5%E5%BE%88%E7%97%9B%E7%9A%84%E6%96%B9%E5%BC%8F%E8%BF%9B%E5%85%A5%E4%BA%86%E5%A4%A7%E8%84%91",
+          "observed_at": "2026-08-16T06:31:10+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "微博公开搜索页对应完整短语；聚合榜快照记录其排名第26。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/archive/2026-08-16",
+          "title": "2026-08-16 全平台热榜归档",
+          "observed_at": "2026-08-16T05:54:20+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "当日归档保留该完整短语及首次观察时间，用于核对当前传播语境。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-16-zhe-he-qinsheng-de-you-shenme-qubie",
+      "title": "🐾 这和亲生的有什么区别",
+      "aliases": [
+        "这和亲生的有什么区别",
+        "跟亲生的有什么区别",
+        "这不就是亲生的吗"
+      ],
+      "canonical_phrase": "这和亲生的有什么区别",
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "口头禅梗",
+      "summary": "用反问句形容宠物、朋友或物件被照顾得过分上心，明知不是亲生关系，待遇却已经完全拉满。",
+      "origin": "已验证：8月16日该完整短语进入微博实时榜第25位；今年3月的公开短视频标题也使用过同一句话。",
+      "usage": "适合宠物黏人、朋友互相照顾、给植物或设备精细保养等内容，用一句反问强调投入已经像家人。",
+      "fun_point": "表面在追问关系，实际是在夸张待遇；一本正经的亲缘判断让日常偏爱显得更好笑。",
+      "why_spread": "已验证：同一句话在不同时间的公开内容中重复出现，并于当日上榜；推测：反问结构短，评论区和配图都容易复用。",
+      "lifecycle": "peak",
+      "brand_usage": "适合宠物、家居和会员服务展示被认真照料的体验；不要影射真实亲子关系或消费他人隐私。",
+      "risk": {
+        "level": "low",
+        "note": "普通关系类反问；避免用于真实亲子纠纷或未经同意的私人关系。"
+      },
+      "days_on_list": 1,
+      "score": 80,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 26,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E8%BF%99%E5%92%8C%E4%BA%B2%E7%94%9F%E7%9A%84%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB",
+          "observed_at": "2026-08-16T06:31:10+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "微博公开搜索页对应完整短语；聚合榜快照记录其排名第25。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-16T06:31:10+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "聚合榜在6:31记录该完整短语排名第25。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://kandian.sina.cn/article_7879923693_m1d5ae17ed03301ndp8.html?from=mood",
+          "title": "这和亲生的有什么区别",
+          "observed_at": "2026-03-11T00:56:26+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "新浪公开短视频以同一句话作标题，验证该表达并非单次榜单文案。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-15-hanjinliang-zai-shang-sheng",
+      "title": "📈 X的含金量还在上升",
+      "aliases": [
+        "港星的含金量还在上升",
+        "佛得角的含金量还在上升",
+        "X的含金量还在上升"
+      ],
+      "canonical_phrase": "X的含金量还在上升",
+      "platform": [
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "当后续结果不断抬高旧表现或旧判断的价值时，用“X的含金量还在上升”给前情追加一轮认证。",
+      "origin": "已验证：8月15日晚“港星的含金量还在上升”进入头条热榜第13位；公开内容中还存在体育、城市与游戏等不同X值。",
+      "usage": "适合旧预测被验证、早期作品被重估、曾经的对手后来连胜等场景，把X换成那件不断被后续抬价的事。",
+      "fun_point": "它把抽象评价写成贵金属行情，好像每出现一个新结果，旧事件就自动涨价一次。",
+      "why_spread": "已验证：当前实例进入头条榜单，跨领域公开标题持续复用同一结构；推测：因果链越长，越适合反复回帖更新。",
+      "lifecycle": "rising",
+      "brand_usage": "适合复盘长期价值、经典产品或早期判断；避免把未经证实的效果、投资回报或价格走势包装成事实。",
+      "risk": {
+        "level": "low",
+        "note": "普通评价句式；商业语境需避免收益承诺和误导性背书。"
+      },
+      "days_on_list": 4,
+      "score": 79,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 25,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://www.toutiao.com/trending/7674235529379692563/",
+          "observed_at": "2026-08-15T23:45:55+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "头条公开热榜入口对应“余文乐 港星的含金量还在上升”，榜单排名第13。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://hotflashnews.com/platform/toutiao",
+          "title": "头条实时热搜榜",
+          "observed_at": "2026-08-15T23:45:55+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "聚合榜在8月15日23:45记录当前实例排名第13，仍处严格24小时窗口。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://ent.china.com/movie/newszh/11005281/20260715/49610836.html",
+          "title": "佛得角的含金量还在上升",
+          "observed_at": "2026-07-15T10:50:44+08:00",
+          "captured_at": "2026-08-16T07:08:00+08:00",
+          "note": "公开媒体以不同主体复用相同句式，验证X槽位的跨语境适配。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
