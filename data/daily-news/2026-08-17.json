@@ -1,0 +1,618 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-17",
+  "generated_at": "2026-08-17T06:07:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "politics": 1,
+      "geopolitics": 1,
+      "propaganda": 1,
+      "public_safety": 1,
+      "privacy": 1,
+      "minors": 1,
+      "rumor": 1
+    },
+    "dropped_low_confidence": 14,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 23,
+      "official_sources": 0,
+      "state_media_sources": 3,
+      "major_media_sources": 2,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 10,
+        "relaxed_72h": 18
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "中央广播电视总台与央广网",
+            "中国新闻网与持牌媒体",
+            "公共机构与行业组织",
+            "国内地方服务信息"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-17-air-ticket-refunds",
+          "story_identity": "cn-air-ticket-refund-disclosure-investigation-2026-08-16",
+          "research_pass": 1,
+          "occurred_at": "2026-08-16T14:44:40+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-17-air-ticket-refunds",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-17-drug-label-trademarks",
+          "story_identity": "cn-drug-packaging-original-consistency-trademark-investigation-2026-08-16",
+          "research_pass": 1,
+          "occurred_at": "2026-08-16T14:38:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-17-drug-label-trademarks",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-17-south-east-sea-fishing",
+          "story_identity": "cn-south-sea-east-sea-fishing-moratorium-end-2026-08-16",
+          "research_pass": 1,
+          "occurred_at": "2026-08-16T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-17-south-east-sea-fishing",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-17-cold-chain-logistics",
+          "story_identity": "cn-food-cold-chain-first-half-data-release-2026-08-16",
+          "research_pass": 1,
+          "occurred_at": "2026-08-16T14:59:55+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-17-cold-chain-logistics",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-05-aircraft-change",
+          "story_identity": "cn-aircraft-seat-service-change-rights-2026-08-16",
+          "occurred_at": "2026-08-16T15:54:07+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与机票退票信息披露条目主题重叠，且单独公共热度未达到严格档",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-06-summer-boxoffice",
+          "story_identity": "cn-summer-movie-box-office-100b-2026-08-16",
+          "occurred_at": "2026-08-16T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与前一日已发布暑期档票房条目为同一持续事件，新增门槛变化不足",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-07-river-breach-closure",
+          "story_identity": "cn-qingyi-river-breach-closure-2026-08-15",
+          "occurred_at": "2026-08-15T23:56:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "属于连续洪涝事件的修复进展，最近日报已多次覆盖同一灾情主线",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-08-embodied-ai-training",
+          "story_identity": "cn-hangzhou-embodied-ai-training-certification-2026-08-16",
+          "occurred_at": "2026-08-16T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "培训体系具有行业价值，但覆盖范围和普通读者即时可用入口有限",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-09-rural-tourism",
+          "story_identity": "cn-rural-tourism-800m-visits-summer-2026-08-16",
+          "occurred_at": "2026-08-16T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "趋势报道覆盖面广，但缺少当日统一口径的可操作服务变化",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-10-july-finance-data",
+          "story_identity": "cn-july-financial-data-analysis-2026-08-14",
+          "occurred_at": "2026-08-14T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 12,
+            "everyday_relevance": 18,
+            "evidence": 15
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "底层金融数据在8月14日已披露，文章为后续解读且即时生活关联偏弱",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-11-hainan-environment-cases",
+          "story_identity": "cn-hainan-solid-waste-environment-cases-2026-08-16",
+          "occurred_at": "2026-08-16T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "典型案例具有公共价值，但地域性较强且普通读者行动信息有限",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-12-inner-mongolia-games",
+          "story_identity": "cn-inner-mongolia-games-venues-public-opening-2026-08-16",
+          "occurred_at": "2026-08-16T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "场馆惠民信息主要服务当地居民，全国性和即时决策价值不足",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-13-seafood-rail-guidance",
+          "story_identity": "cn-fishing-season-seafood-rail-carry-guidance-2026-08-16",
+          "occurred_at": "2026-08-16T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "携带提示实用但与开渔主条目高度相关，避免同一事件拆分占位",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-14-rainfall-forecast",
+          "story_identity": "cn-next-ten-day-rainfall-risk-update-2026-08-16",
+          "occurred_at": "2026-08-16T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "预报有提醒价值，但近期强降雨与防汛主题已连续覆盖",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-15-environment-code-case",
+          "story_identity": "cn-ecology-code-first-case-hearing-2026-08-15",
+          "occurred_at": "2026-08-15T14:30:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "首案具有制度意义，但已超过严格窗口且对日常服务的直接影响有限",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-16-hulun-lake-birds",
+          "story_identity": "cn-hulun-lake-summer-bird-monitoring-2026-08-16",
+          "occurred_at": "2026-08-16T09:41:48+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "生态监测结果真实，但普通读者即时行动和全国代表性有限",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-17-beidou-platform",
+          "story_identity": "cn-changsha-beidou-spacetime-platform-launch-2026-08-16",
+          "occurred_at": "2026-08-16T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "产业平台落地属专业领域消息，对普通用户短期可感知变化较少",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-18-haining-home-textile",
+          "story_identity": "cn-haining-home-textile-fair-2026-08-15",
+          "occurred_at": "2026-08-15T19:39:37+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "行业展会规模较大，但主要面向采购商且公众服务信息不足",
+          "research_pass": 1,
+          "outcome": "dropped_low_confidence"
+        },
+        {
+          "candidate_key": "cand-19-ai-personal-assistant",
+          "story_identity": "cn-ai-personal-empowerment-book-forum-2026-08-16",
+          "occurred_at": "2026-08-16T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "drop_reason": "仅有单一媒体活动报道，缺少独立热度或公共服务证据",
+          "research_pass": 1,
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "cand-20-youth-community-services",
+          "story_identity": "cn-hunan-youth-community-service-feature-2026-08-16",
+          "occurred_at": "2026-08-16T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "drop_reason": "单一专题报道难以证明当日新增政策或广泛公共影响",
+          "research_pass": 1,
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "cand-21-shandong-xinjiang-industry",
+          "story_identity": "cn-shandong-xinjiang-industry-matchmaking-2026-08-16",
+          "occurred_at": "2026-08-16T20:35:10+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "drop_reason": "仅核实到单一活动报道，且尚无可验证的落地成果",
+          "research_pass": 1,
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "cand-22-indonesia-earthquake",
+          "story_identity": "global-indonesia-earthquake-rescue-update-2026-08-16",
+          "occurred_at": "2026-08-16T18:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "drop_reason": "未取得两家独立媒体及面向中国读者的结构化影响证据",
+          "research_pass": 1,
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "cand-23-china-cars-africa",
+          "story_identity": "global-chinese-car-brands-africa-feature-2026-08-16",
+          "occurred_at": "2026-08-16T10:58:28+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "drop_reason": "专题报道主要反映当地产业，缺少中国公众直接影响和独立热度证据",
+          "research_pass": 1,
+          "outcome": "dropped_insufficient_evidence"
+        },
+        {
+          "candidate_key": "candidate-24",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-25",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-26",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-27",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-28",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-29",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-30",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-17-air-ticket-refunds",
+      "story_identity": "cn-air-ticket-refund-disclosure-investigation-2026-08-16",
+      "headline": "✈️ 央视调查机票退票“小字陷阱”",
+      "summary": "总台调查发现，部分平台将严苛退票规则藏在不醒目的小字中；专家提醒，关键退改条款应显著提示，消费者购票时应保存页面、规则和沟通记录。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 89,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-16T14:44:40+08:00",
+      "risk": {
+        "level": "low",
+        "note": "不同航司、票价和销售渠道的退改条件不一，个案处理应以合同、票规和监管渠道答复为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://news.cnr.cn/native/gd/20260816/t20260816_527764677.shtml",
+          "title": "每周质量报告丨机票买错为何不给退？商家小字隐藏退款规则逃避责任",
+          "captured_at": "2026-08-17T06:06:30+08:00",
+          "note": "总台调查核实多平台退票提示方式、相关投诉数据，并援引法律专家说明显著告知义务。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-17-drug-label-trademarks",
+      "story_identity": "cn-drug-packaging-original-consistency-trademark-investigation-2026-08-16",
+      "headline": "💊 多款非原研药包装使用“原研一致”商标",
+      "summary": "媒体调查发现，红霉素软膏、开塞露等多款非原研药包装印有“原研一致”商标，但这不等于通过国家仿制药一致性评价；购药时应认准官方评价标识或咨询药师。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-16T14:38:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "报道涉及监管核查与企业回应，后续结论以市场监管和药品监管部门正式信息为准。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/m/jk/2026/08-16/10678590.shtml",
+          "title": "民生调查局｜“心机商标”盯上药品，多款非原研药印“原研一致”商标",
+          "captured_at": "2026-08-17T06:06:30+08:00",
+          "note": "原创调查核实多款药品包装、电商页面、商标登记及企业回应，并说明官方一致性评价标识区别。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "华商网",
+          "url": "https://news.hsw.cn/system/2026/0816/1952365.shtml",
+          "title": "“原研一致”成药品商标 上海监管部门通报：涉嫌恶意注册",
+          "captured_at": "2026-08-17T06:06:30+08:00",
+          "note": "主流媒体补充监管部门核查进展及商标使用可能造成消费者误认的风险。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-17-south-east-sea-fishing",
+      "story_identity": "cn-south-sea-east-sea-fishing-moratorium-end-2026-08-16",
+      "headline": "🐟 南海及东海部分海域结束伏季休渔",
+      "summary": "16日12时，南海和东海部分海域结束三个半月伏季休渔，广东、海南等地渔船陆续出海；首批渔获将经冷链进入市场，北琼航线受海况影响临时调整。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-16T12:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "渔获上市时间、海上交通和客滚航线可能随天气海况变化，出行与采购信息以属地最新通知为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://tv.cctv.com/2026/08/16/VIDEC30aUZN1EX6TomV6Rjqh260816.shtml",
+          "title": "南海海域和东海部分海域今天开渔",
+          "captured_at": "2026-08-17T06:06:30+08:00",
+          "note": "央视新闻联播核实休渔结束时间、各地渔船出海、首批渔获流通及北琼航线临时调整。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-17-cold-chain-logistics",
+      "story_identity": "cn-food-cold-chain-first-half-data-release-2026-08-16",
+      "headline": "🧊 上半年食品冷链需求量同比增长4.7%",
+      "summary": "中国物流与采购联合会发布数据：上半年食品冷链物流需求量约2亿吨，服务企业收入同比增长3.7%；新能源冷藏车渗透率提升，二季度首次超过传统燃料车型。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-16T14:59:55+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "行业数据反映总体趋势，不等同于具体地区生鲜价格、配送时效或个别企业经营表现。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/16/ARTIzyRusGvfeuUAh5bskRQS260816.shtml",
+          "title": "稳中有进、结构优化、转型升级 上半年冷链物流保持稳步发展态势",
+          "captured_at": "2026-08-17T06:06:30+08:00",
+          "note": "央视报道引用行业组织数据，核实冷链需求、企业收入、新能源冷藏车和冷库容量变化。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
