@@ -1,0 +1,759 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-17",
+  "generated_at": "2026-08-17T07:10:31+08:00",
+  "published_at": "2026-08-17T07:10:31+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "时事政治": 2,
+      "灾害/公共安全": 2,
+      "隐私/未成年人": 1,
+      "人身攻击/违法谣言": 1,
+      "品牌/商业": 1
+    },
+    "dropped_low_confidence": 14,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "zhihu",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 23,
+      "platform_public_sources": 8,
+      "aggregator_sources": 4,
+      "search_media_sources": 3,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 9,
+        "relaxed_72h": 14
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-17-gei-x-de-yi-feng-xin",
+          "canonical_phrase": "给X的一封信",
+          "outcome": "selected",
+          "item_id": "2026-08-17-gei-x-de-yi-feng-xin",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 29,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-17-x-you-zhong-jingji-shangxing-de-mei",
+          "canonical_phrase": "X有种经济上行的美",
+          "outcome": "selected",
+          "item_id": "2026-08-17-x-you-zhong-jingji-shangxing-de-mei",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 27,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-16T22:26:29+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-17-x-zheng-shi-cang-bu-zhu-shi-de-nianji",
+          "canonical_phrase": "X正是藏不住事的年纪",
+          "outcome": "selected",
+          "item_id": "2026-08-17-x-zheng-shi-cang-bu-zhu-shi-de-nianji",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 26,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-16T21:17:40+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-17-x-shi-hen-canren-de-dongxi",
+          "canonical_phrase": "X是很残忍的东西",
+          "outcome": "selected",
+          "item_id": "2026-08-17-x-shi-hen-canren-de-dongxi",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-16T20:32:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-05",
+          "canonical_phrase": "情绪有出口那一定是登机口",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 24,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-06",
+          "canonical_phrase": "人人都是美食艺术家",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 24,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-07",
+          "canonical_phrase": "这个秋天我要做个帅女",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 23,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-08",
+          "canonical_phrase": "幸福是和同频的人一起看世界",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 23,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-09",
+          "canonical_phrase": "现在的小学生都进化成这样了吗",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 23,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-16T19:50:38+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-10",
+          "canonical_phrase": "建议大家减少对日常琐事的决策时间",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 23,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-16T21:55:41+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "X降维打击",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 22,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-16T21:55:41+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-12",
+          "canonical_phrase": "就让这山风不语抚平我所有的焦虑",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 22,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "好好吃饭不只是嘱托",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 21,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "有自己的心愿便利贴",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 21,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-16T15:49:34+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-15",
+          "canonical_phrase": "手瓦莲花套上线",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-16",
+          "canonical_phrase": "一起相约浪漫七夕",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-17",
+          "canonical_phrase": "再见太难",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-18",
+          "canonical_phrase": "AI演绎时间焦虑",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-17T00:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-19",
+          "canonical_phrase": "所有人感受青春系",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-20",
+          "canonical_phrase": "底妆不卡粉",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "你嫣然一笑如含苞待放",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "最后一个吃到自己的瓜",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-23",
+          "canonical_phrase": "小学生进化观察",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私/未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "人身攻击/违法谣言",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "品牌/商业",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "bilibili",
+            "zhihu",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-17-gei-x-de-yi-feng-xin",
+      "title": "💌 给X的一封信",
+      "aliases": [
+        "给00后的一封信",
+        "给童年动画伙伴的回信",
+        "给X的一封信"
+      ],
+      "canonical_phrase": "给X的一封信",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "把熟悉角色或事物写成跨时空来信，用“给X的一封信”回应成长、告别或共同记忆，收信人可以替换。",
+      "origin": "已验证：8月17日抖音榜同时出现“给童年动画伙伴的回信”“媒体评给00后的信走红”“铠甲勇士给00后的一封信”等多个实例，形成同一书信模板的集中接龙。",
+      "usage": "可写“给十年前自己的信”“给第一份工作的信”“给旧手机的一封信”，用固定书信壳承接回忆、感谢或告别。",
+      "fun_point": "严肃书信格式被交给动画角色、物件和人生阶段，既有跨时空对话感，也方便不同圈层认领自己的收信人。",
+      "why_spread": "已验证：同一时段至少三个不同角色或主题实例进入抖音榜；推测：收信人槽位清晰，怀旧、品牌IP和个人故事都能直接套用。",
+      "lifecycle": "rising",
+      "brand_usage": "适合品牌周年、经典产品回归或用户故事征集；应确保所用角色、形象和素材具有相应授权。",
+      "risk": {
+        "level": "low",
+        "note": "普通书信模板；涉及既有角色和作品时注意版权与授权边界。"
+      },
+      "days_on_list": 1,
+      "score": 92,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 29,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-17T00:01:53+08:00",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "榜单第7、9、17及23位出现不同动画角色或主题的“信/回信”实例，显示集中接龙。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2611541",
+          "title": "给童年动画伙伴的回信",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "抖音公开热点入口对应当前“给童年动画伙伴的回信”实例。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "cross_platform",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2611925",
+          "title": "铠甲勇士给00后的一封信",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "另一抖音公开热点入口以不同角色复用同一书信结构。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-17-x-you-zhong-jingji-shangxing-de-mei",
+      "title": "✨ X有种经济上行的美",
+      "aliases": [
+        "张柏芝有种经济上行的美",
+        "这首歌有种经济上行的美",
+        "X有种经济上行的美"
+      ],
+      "canonical_phrase": "X有种经济上行的美",
+      "platform": [
+        "weibo",
+        "bilibili",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "用“X有种经济上行的美”形容某个人、作品或场景明亮、舒展、舍得投入，像带着繁荣时期的气场。",
+      "origin": "已验证：8月16日晚“张柏芝有种经济上行的美”进入微博榜第15位；此前歌曲、电影、穿搭和城市生活等不同对象已长期复用该句式。",
+      "usage": "可写“这版包装有种经济上行的美”“周五下班有种经济上行的美”，把X换成任何显得热烈、松弛或不计成本的对象。",
+      "fun_point": "它把宏观经济词汇变成审美滤镜，一句看似严肃的判断，实际是在夸某个对象昂扬、华丽又有生命力。",
+      "why_spread": "已验证：当前人物实例上榜，公开文章和视频已将该结构套用于歌曲、烂片、穿搭等无关对象；推测：评价槽位宽，天然适合评论区接龙。",
+      "lifecycle": "peak",
+      "brand_usage": "适合视觉焕新、复古企划和高能量内容；不要把审美描述包装成真实经济走势或收益判断。",
+      "risk": {
+        "level": "low",
+        "note": "普通审美句式；使用人物素材时注意肖像和语境授权。"
+      },
+      "days_on_list": 1,
+      "score": 87,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 27,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-16T22:26:29+08:00",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "聚合榜记录“张柏芝有种经济上行的美”排名第15。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E5%BC%A0%E6%9F%8F%E8%8A%9D%E6%9C%89%E7%A7%8D%E7%BB%8F%E6%B5%8E%E4%B8%8A%E8%A1%8C%E7%9A%84%E7%BE%8E",
+          "title": "张柏芝有种经济上行的美",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "微博公开搜索入口对应当前人物实例；排名与活动时间由实时聚合榜核对。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://cbgc.scol.com.cn/news/6532402",
+          "title": "当「经济上行」变成一种审美奇观",
+          "observed_at": "2025-07-20T23:15:00+08:00",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "公开文章梳理该表达在穿搭与生活场景中的广泛复用。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1WBNRePE83/",
+          "title": "这首歌有种经济上行的美",
+          "observed_at": "2025-02-10T19:00:00+08:00",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "B站公开视频把同一句式套用于歌曲，验证跨对象使用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-17-x-zheng-shi-cang-bu-zhu-shi-de-nianji",
+      "title": "🙈 X正是藏不住事的年纪",
+      "aliases": [
+        "沈佳润还是藏不住事的年纪",
+        "86岁正是藏不住事的年纪",
+        "X正是藏不住事的年纪"
+      ],
+      "canonical_phrase": "X正是藏不住事的年纪",
+      "platform": [
+        "weibo",
+        "bilibili",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "看到某人表情、眼神或行动过于诚实时，用“X正是藏不住事的年纪”调侃心思已经全写在脸上。",
+      "origin": "已验证：8月16日晚“沈佳润还是藏不住事的年纪”进入微博榜第26位；公开内容曾把不同年龄和人物代入同一结构。",
+      "usage": "可写“新同事正是藏不住事的年纪”“猫咪两岁正是藏不住罐头的年纪”，用年龄或身份制造一本正经的调侃。",
+      "fun_point": "它把明显情绪解释成年龄阶段，好像任何露馅都有发展心理学依据；年龄越意外，反差越好笑。",
+      "why_spread": "已验证：当前实例上榜，公开视频和媒体文本出现86岁、二十多岁等不同年龄版本；推测：人物、宠物和职场场景都能替换X。",
+      "lifecycle": "rising",
+      "brand_usage": "适合表情观察、宠物内容和轻职场文案；避免把真实私人关系或敏感情绪当作营销噱头。",
+      "risk": {
+        "level": "low",
+        "note": "普通调侃句式；涉及具体人物时避免过度揣测私人情感。"
+      },
+      "days_on_list": 1,
+      "score": 81,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 26,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-16T21:17:40+08:00",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "聚合榜记录“沈佳润还是藏不住事的年纪”排名第26。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%23%E6%B2%88%E4%BD%B3%E6%B6%A6%E8%BF%98%E6%98%AF%E8%97%8F%E4%B8%8D%E4%BD%8F%E4%BA%8B%E7%9A%84%E5%B9%B4%E7%BA%AA%23",
+          "title": "沈佳润还是藏不住事的年纪",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "微博公开搜索入口对应当前实例；活动时间由实时聚合榜核对。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1rvm8Y7Esb/",
+          "title": "86岁正是藏不住事的年纪",
+          "observed_at": "2024-11-12T17:05:36+08:00",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "B站公开视频把该结构套用于不同年龄，验证年龄槽位可替换。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://k.sina.com.cn/article_7096020439_1a6f4add706801hy48.html",
+          "title": "27岁真实性情显“藏不住事”年龄获共鸣",
+          "observed_at": "2025-06-28T13:15:00+08:00",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "公开报道记录另一人物与年龄版本，佐证持续复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-17-x-shi-hen-canren-de-dongxi",
+      "title": "🎯 X是很残忍的东西",
+      "aliases": [
+        "天资是很残忍的东西",
+        "大小周是很残忍的东西",
+        "X是很残忍的东西"
+      ],
+      "canonical_phrase": "X是很残忍的东西",
+      "platform": [
+        "weibo",
+        "bilibili",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "把某种差距、规则或现实代入“X是很残忍的东西”，用夸张的郑重语气吐槽它让人无从辩解。",
+      "origin": "已验证：8月16日晚“鹿晗天资是很残忍的东西”进入微博榜第28位；公开讨论还出现大小周、裁员等不同X值。",
+      "usage": "可写“早起是很残忍的东西”“审美差距是很残忍的东西”，把X换成让人瞬间认清现实的因素。",
+      "fun_point": "句式像沉重的人生结论，却可以被塞进极小的日常烦恼；宏大语气和琐碎对象形成反差。",
+      "why_spread": "已验证：当前“天资”实例上榜，公开帖子已主动替换成工作制度等无关对象；推测：单槽位短、判断明确，适合评论区续写。",
+      "lifecycle": "rising",
+      "brand_usage": "适合轻吐槽和产品痛点对比；不要借该结构羞辱个体能力或制造不实焦虑。",
+      "risk": {
+        "level": "low",
+        "note": "普通吐槽句式；应避免针对具体个人做能力贬损。"
+      },
+      "days_on_list": 1,
+      "score": 80,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 26,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-16T20:32:00+08:00",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "聚合榜记录“鹿晗天资是很残忍的东西”排名第28。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%23%E9%B9%BF%E6%99%97%E5%A4%A9%E8%B5%84%E6%98%AF%E5%BE%88%E6%AE%8B%E5%BF%8D%E7%9A%84%E4%B8%9C%E8%A5%BF%23",
+          "title": "鹿晗天资是很残忍的东西",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "微博公开搜索入口对应当前实例；活动时间由实时聚合榜核对。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.sina.cn/news/detail/5289744506552710.html",
+          "title": "大小周和35岁裁员很残忍",
+          "observed_at": "2026-04-20T11:47:00+08:00",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "公开帖子将X替换为多种职场现实，直接证明模板式改写。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1NvVc6LEW1/",
+          "title": "天资是很残忍的东西",
+          "observed_at": "2026-05-26T13:57:20+08:00",
+          "captured_at": "2026-08-17T07:06:00+08:00",
+          "note": "B站公开视频使用同一核心表达，佐证跨平台传播。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
