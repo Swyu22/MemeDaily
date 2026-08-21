@@ -9,6 +9,7 @@
 import type { NewsEnvelope } from "../src/domain/dailynews/schema";
 import { newsJsonFiles, loadNewsEnvelope } from "../src/domain/dailynews/data";
 import { envelopeIssueSummary, internationalCoverageWarnings } from "../src/domain/dailynews/rules";
+import { dateContinuityIssues } from "./data-continuity";
 
 const files = newsJsonFiles();
 
@@ -19,6 +20,15 @@ if (files.length === 0) {
 
 let failureCount = 0;
 let latest: { file: string; envelope: NewsEnvelope } | null = null;
+const continuityIssues = dateContinuityIssues(files);
+
+if (continuityIssues.length > 0) {
+  failureCount += continuityIssues.length;
+  console.error("[validate-news] archive continuity issues");
+  for (const issue of continuityIssues) console.error(`  - ${issue}`);
+} else {
+  console.log("[validate-news] ok archive continuity");
+}
 
 for (const file of files) {
   try {
@@ -30,9 +40,7 @@ for (const file of files) {
     if (issues.length > 0) {
       failureCount += issues.length;
       console.error(`[validate-news] ${file}`);
-      for (const issue of issues) {
-        console.error(`  - ${issue}`);
-      }
+      console.error(issues.map((issue) => `  - ${issue}`).join("\n"));
     } else {
       console.log(`[validate-news] ok ${file}`);
     }

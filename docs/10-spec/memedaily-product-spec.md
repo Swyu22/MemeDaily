@@ -65,6 +65,10 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   must not be later than `generated_at` or `published_at`. Selection uses it instead of
   falsifying the real later publication time. Same-day candidates must omit this
   historical-only override.
+- From 2026-07-26 through each feed's own maximum committed date, every calendar date must
+  have an archive file. This continuity gate is feed-local and does not require an envelope
+  through today, so the normal DailyNews/MemeDaily publication stagger cannot create a
+  false failure.
 - Invalid JSON, schema failures, policy failures, or accounting mismatches block publication.
 - From 2026-07-27, a meme report includes `dropped_capacity` and
   `selection.{tier,qualified,candidate_audit}`. The 30–100 post-identity-deduped audit rows

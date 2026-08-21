@@ -12,6 +12,7 @@ import {
   platformDiversityWarnings,
 } from "../src/domain/memedaily/rules";
 import type { DailyEnvelope } from "../src/domain/memedaily/schema";
+import { dateContinuityIssues } from "./data-continuity";
 
 const files = dailyJsonFiles();
 
@@ -22,6 +23,15 @@ if (files.length === 0) {
 
 let failureCount = 0;
 const envelopes: DailyEnvelope[] = [];
+const continuityIssues = dateContinuityIssues(files);
+
+if (continuityIssues.length > 0) {
+  failureCount += continuityIssues.length;
+  console.error("[validate-data] archive continuity issues");
+  for (const issue of continuityIssues) console.error(`  - ${issue}`);
+} else {
+  console.log("[validate-data] ok archive continuity");
+}
 
 for (const file of files) {
   try {
@@ -32,9 +42,7 @@ for (const file of files) {
     if (issues.length > 0) {
       failureCount += issues.length;
       console.error(`[validate-data] ${file}`);
-      for (const issue of issues) {
-        console.error(`  - ${issue}`);
-      }
+      console.error(issues.map((issue) => `  - ${issue}`).join("\n"));
     } else {
       console.log(`[validate-data] ok ${file}`);
     }

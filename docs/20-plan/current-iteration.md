@@ -6,6 +6,9 @@ On 2026-08-21, restore every missing MemeDaily and DailyNews archive caused by t
 publishing interruption. First add a create-only historical path to the trusted one-file
 publisher and separate target-day editorial evaluation from truthful current publication;
 then submit, deploy, and verify every absent feed/date without overwriting existing archives.
+Add a feed-local continuity gate so any future internal date omission fails CI once a later
+date exists, without requiring either feed to publish through today or align its maximum
+with the other feed.
 
 On 2026-08-10, restore the production site after three days of Pages failures,
 make the production dependency audit part of every trusted pre-push release gate,
@@ -37,7 +40,7 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
 
 - **In:** repository/production reconciliation, dependency and CI/Pages security,
   create-only historical publication, evaluation/publication clock separation, full
-  missing-date inventory and backfill,
+  missing-date inventory and backfill, feed-local archive continuity validation,
   trusted candidate ingestion, publish/deploy correlation, fallback/monitor
   reliability, public data minimization, metadata, cloud prompts, all eight cloud
   schedules, retirement of all eight local heartbeats, 2026-07-26 dual-feed recovery,
@@ -60,7 +63,11 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
   historical recurrence ordering, and keep real current trusted publication timestamps.
 - [x] Pass focused chronology/security regressions, full `npm run check`, governance,
   workflow Bash/YAML parsing, and independent review.
-- [ ] Merge the support release and reverify active DeployKey-only branch protection.
+- [x] Add one shared 2026-07-26 continuity rule to both validators, bounded by each
+  feed's own latest file, with gap/cutoff/continuous/independence unit coverage.
+- [x] Rebase the continuity gate onto the completed backfill and pass the canonical
+  release/governance checks with no archive gaps.
+- [x] Merge the support release and reverify active DeployKey-only branch protection.
 - [ ] Publish the ten exact missing feed/date candidates and correlate each accepted main
   commit with successful Pages deployment.
 - [ ] Verify production archive/detail surfaces and close all candidate/incident records.
