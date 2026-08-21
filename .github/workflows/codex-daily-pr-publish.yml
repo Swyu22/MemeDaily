@@ -10,9 +10,10 @@ name: codex-daily-pr-publish
 #      editorially complete candidate, then receives the dedicated deploy-key credential only
 #      in its final step.
 #
-# The cloud task must use one of these exact branch names for today's Asia/Shanghai date:
+# The cloud task must use one exact branch whose date is within the approved range:
 #   codex/daily-meme-YYYY-MM-DD
 #   codex/daily-news-YYYY-MM-DD
+# Historical dates are create-only: the target must still be absent from trusted main.
 
 on:
   pull_request_target:
@@ -44,6 +45,7 @@ jobs:
       artifact: ${{ steps.scope.outputs.artifact }}
       date: ${{ steps.scope.outputs.date }}
       feed: ${{ steps.scope.outputs.feed }}
+      historical: ${{ steps.scope.outputs.historical }}
       target: ${{ steps.scope.outputs.target }}
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
@@ -70,22 +72,39 @@ jobs:
           REPOSITORY: ${{ github.repository }}
         run: |
           set -euo pipefail
-          DATE="$(TZ=Asia/Shanghai date +%F)"
+          TODAY="$(TZ=Asia/Shanghai date +%F)"
+          MINIMUM_DATE="2026-07-26"
 
-          case "$BRANCH" in
-            "codex/daily-meme-${DATE}")
-              FEED="meme"
-              TARGET="data/daily/${DATE}.json"
-              ;;
-            "codex/daily-news-${DATE}")
-              FEED="news"
-              TARGET="data/daily-news/${DATE}.json"
-              ;;
-            *)
-              echo "::error::Branch must match today's exact Codex Cloud branch name; got ${BRANCH}."
+          if [[ "$BRANCH" =~ ^codex/daily-(meme|news)-([0-9]{4}-[0-9]{2}-[0-9]{2})$ ]]; then
+            FEED="${BASH_REMATCH[1]}"
+            DATE="${BASH_REMATCH[2]}"
+          else
+            echo "::error::Branch must match an exact Codex Cloud daily branch; got ${BRANCH}."
+            exit 1
+          fi
+          if [ "$(date -d "$DATE" +%F 2>/dev/null || true)" != "$DATE" ]; then
+            echo "::error::Candidate branch contains an invalid calendar date: ${DATE}."
+            exit 1
+          fi
+          if [[ "$DATE" < "$MINIMUM_DATE" || "$DATE" > "$TODAY" ]]; then
+            echo "::error::Candidate date must be within ${MINIMUM_DATE}..${TODAY}; got ${DATE}."
+            exit 1
+          fi
+
+          if [ "$FEED" = "meme" ]; then
+            TARGET="data/daily/${DATE}.json"
+          else
+            TARGET="data/daily-news/${DATE}.json"
+          fi
+
+          HISTORICAL="false"
+          if [ "$DATE" != "$TODAY" ]; then
+            HISTORICAL="true"
+            if git cat-file -e "HEAD:${TARGET}" 2>/dev/null; then
+              echo "::error::Historical publication is create-only; ${TARGET} already exists on main."
               exit 1
-              ;;
-          esac
+            fi
+          fi
 
           mapfile -t CHANGED_FILES < <(
             gh api "repos/${REPOSITORY}/pulls/${PR_NUMBER}/files" --paginate --jq '.[].filename'
@@ -105,12 +124,13 @@ jobs:
           # Candidate must contain 3..10 visible items, use the current feed policy, and declare
           # reconciled editorial completion. Domain validation later proves the declaration.
           npx --no-install tsx scripts/daily-publish-gate.ts \
-            validate-candidate "$TARGET" "$DATE" "$FEED"
+            validate-candidate "$TARGET" "$DATE" "$FEED" "$TODAY"
 
           ARTIFACT="codex-${FEED}-${DATE}-${HEAD_SHA}"
           echo "artifact=${ARTIFACT}" >> "$GITHUB_OUTPUT"
           echo "date=${DATE}" >> "$GITHUB_OUTPUT"
           echo "feed=${FEED}" >> "$GITHUB_OUTPUT"
+          echo "historical=${HISTORICAL}" >> "$GITHUB_OUTPUT"
           echo "target=${TARGET}" >> "$GITHUB_OUTPUT"
 
       - name: Stamp and validate the candidate with trusted code
@@ -165,6 +185,7 @@ jobs:
         env:
           DATE: ${{ needs.validate.outputs.date }}
           FEED: ${{ needs.validate.outputs.feed }}
+          HISTORICAL: ${{ needs.validate.outputs.historical }}
           TARGET: ${{ needs.validate.outputs.target }}
         run: |
           set -euo pipefail
@@ -173,7 +194,20 @@ jobs:
 
           git fetch --quiet origin main
           git reset --hard FETCH_HEAD
-          if [ -f "$TARGET" ]; then
+          LIVE_TODAY="$(TZ=Asia/Shanghai date +%F)"
+          if [[ "$DATE" < "$LIVE_TODAY" ]]; then
+            HISTORICAL="true"
+          elif [[ "$DATE" > "$LIVE_TODAY" ]]; then
+            echo "::error::Candidate date ${DATE} is after live Shanghai date ${LIVE_TODAY}."
+            exit 1
+          fi
+          if [ "$HISTORICAL" = "true" ]; then
+            COMMIT_ACTION="backfill"
+            if [ -f "$TARGET" ]; then
+              echo "::error::Historical publication is create-only; ${TARGET} appeared on live main."
+              exit 1
+            fi
+          elif [ -f "$TARGET" ]; then
             LIVE_DECISION="$(
               npx --no-install tsx scripts/daily-publish-gate.ts \
                 classify-live "$TARGET" "$DATE" "$FEED"
@@ -190,6 +224,8 @@ jobs:
 
           mkdir -p "$(dirname "$TARGET")"
           cp codex-artifact/candidate.json "$TARGET"
+          npx --no-install tsx scripts/daily-publish-gate.ts \
+            validate-candidate "$TARGET" "$DATE" "$FEED" "$LIVE_TODAY"
           npm run stamp:publish -- "$TARGET"
           if [ -f codex-artifact/live-before-repair.json ]; then
             # Under-minimum repair preserves the exact visible prefix. A one-time policy

@@ -86,8 +86,11 @@
   Qualification uses the later of score/event-age tiers, everyday relevance `>=15/25`,
   stable story identity, and a real `occurred_at`. Canonical evidence URLs remove
   fragments/tracking parameters but retain meaningful query identifiers.
-- **Trusted chronology:** publication jobs set `generated_at` and `published_at`; sources
-  cannot claim capture after publication.
+- **Trusted chronology:** publication jobs set real `generated_at` and `published_at`;
+  sources cannot claim capture after publication. An authorized missing-date backfill uses
+  `selection.evaluated_at` for target-day score/activity windows while preserving the real
+  later publication clock; that evaluation time must fall on the envelope date and precede
+  both trusted clocks.
 - **News attribution:** every reader-visible DailyNews source has a required `outlet` label.
 - **Runtime:** static files only; there is no backend API.
 
@@ -108,8 +111,10 @@
   independently alert when no successful Pages deployment covers live main so a
   content incident cannot hide a stale production build.
 - `codex-daily-pr-publish.yml`: same-repository exact-branch/one-JSON candidate
-  ingestion, explicit current-policy completion gate, serialized new/under-minimum or
-  one-time policy-migration publication, and correlated Pages wait. A complete day remains immutable.
+  ingestion, explicit current-policy completion gate, serialized current-day
+  new/under-minimum or one-time policy-migration publication, create-only missing-date
+  backfill from 2026-07-26 through today, and correlated Pages wait. Every existing
+  historical day remains immutable.
 - `daily-{news-}fallback.yml`: manual-only fail-closed recovery guards; the server
   fallback tasks perform the editorial research.
 - `daily-{news-}monitor.yml`: manual-only policy/completion/live-main/Pages verification.

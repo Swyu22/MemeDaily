@@ -38,11 +38,12 @@ it("confines Codex Cloud PR input to one dated JSON blob before any write token 
   expect(text).toContain("github.event.pull_request.base.ref == 'main'");
   expect(text).toContain("github.event.pull_request.draft == false");
   expect(text).toContain("types: [opened, reopened, synchronize, ready_for_review]");
-  expect(text).toContain('"codex/daily-meme-${DATE}"');
-  expect(text).toContain('"codex/daily-news-${DATE}"');
+  expect(text).toContain("^codex/daily-(meme|news)-([0-9]{4}-[0-9]{2}-[0-9]{2})$");
+  expect(text).toContain('MINIMUM_DATE="2026-07-26"');
+  expect(text).toContain('git cat-file -e "HEAD:${TARGET}"');
   expect(text).toContain('"${#CHANGED_FILES[@]}" -ne 1');
   expect(text).toContain("codex-artifact/candidate.json");
-  expect(validate).toContain('validate-candidate "$TARGET" "$DATE" "$FEED"');
+  expect(validate).toContain('validate-candidate "$TARGET" "$DATE" "$FEED" "$TODAY"');
   expect(text).toContain("ref: main");
   expect(text).not.toContain("ref: ${{ github.event.pull_request.head.sha }}");
   expect(validate).toContain("contents: read");

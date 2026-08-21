@@ -37,3 +37,5 @@ Current automation decisions:
   selection with no fixed cross-day quota).
 - `30-decisions/adr-010-editorial-completeness-and-domestic-majority.md` (current-policy
   completion lock, exhaustive up-to-10 selection, and domestic-majority news scope).
+- `30-decisions/adr-011-create-only-historical-backfill.md` (bounded missing-date
+  publication with separate editorial-evaluation and truthful live-publication clocks).

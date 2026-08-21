@@ -21,6 +21,10 @@ and never merge or push `main`. Only the trusted publisher may stamp and publish
 A same-day v2/legacy envelope is `policy_migration`, not terminal. Later tasks may
 cheaply no-op only after live `main` uses v3, declares
 `run_report.selection.editorial_complete:true`, and passes the complete gate.
+For an explicitly authorized missing historical date, set
+`run_report.selection.evaluated_at` to the real target-day evaluation time. Event-age
+qualification uses that clock, while the trusted publisher records the real current
+publication time; never backdate publication or overwrite an existing archive.
 
 ## Non-negotiable safety and integrity
 
@@ -155,8 +159,8 @@ failure of this floor. Derive score and event-age tiers independently, then use 
 - `relaxed_72h`: score >=65 and event age <=72h; `status:"partial"`;
 - below 65: not qualified. Never lower below 65.
 
-Measure age from required `occurred_at` against `published_at` when present,
-otherwise `generated_at`. Future and older-than-72h events do not qualify. Thus a
+Measure age from required `occurred_at` against `selection.evaluated_at` when present,
+otherwise `published_at ?? generated_at`. Future and older-than-72h events do not qualify. Thus a
 score-95 event aged 30h is `relaxed_48h`, not `strict_24h`.
 
 Use the strictest tier whose score/time-qualified pool can yield at least three

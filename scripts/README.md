@@ -9,8 +9,9 @@ route components.
 | `validate-news.ts` | Validate every news envelope and editorial policy |
 | `stamp-publish-time.ts` | Apply trusted acceptance time and reject future source captures |
 | `stamp-publish-time.test.ts` | Regression coverage for both feed timestamp contracts |
-| `daily-publish-gate.ts` | Require current-policy editorial completion, classify live/migration states, and bound repairs |
+| `daily-publish-gate.ts` | Require completion and historical evaluation clocks, classify live/migration states, and bound repairs |
 | `daily-publish-gate.test.ts` | Regression coverage for completion, migration, incident, and visible-prefix repair semantics |
+| `historical-backfill.test.ts` | Historical create-only publisher and split evaluation/publication-clock regressions |
 | `pwa-surface.test.ts` | Installed-app light surface and opaque top-chrome regression contract |
 | `accessibility-contract.test.ts` | Clipboard announcement and search-affordance accessibility regressions |
 | `web-performance.test.ts` | Prevent eager prefetch of the large archive route |

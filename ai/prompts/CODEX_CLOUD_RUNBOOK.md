@@ -38,10 +38,22 @@ publisher deploy key may update `main`. If a tool claims that rule is absent or
 bypassed, stop as an incident
 instead of attempting another publication path.
 
-## 2. Resolve today's scope
+## 2. Resolve the target scope
 
 Use the calendar date in `Asia/Shanghai`, regardless of runner location. Let it be
 `YYYY-MM-DD`.
+
+Ordinary Scheduled Task runs always target that Shanghai date. An explicitly
+operator-authorized historical recovery may instead provide one target date from
+`2026-07-26` through Shanghai today. Historical publication is create-only: continue
+only when that exact feed/date file is absent from live `main`; never use backfill to
+replace, repair, migrate, or reinterpret an existing archive. Use the same exact branch
+and one-file PR boundary. A historical candidate must set
+`run_report.selection.evaluated_at` to a real ISO 8601 evaluation time falling on the
+envelope date. Selection windows use that clock, while `generated_at` remains a real
+current candidate time and the trusted publisher stamps the real current
+`generated_at`/`published_at`. The evaluation clock may not be later than either trusted
+clock.
 
 For both feeds, the minimum-output floor is effective from `2026-07-26`; the
 editorial-completeness terminal contract is effective from `2026-08-01`:
@@ -104,6 +116,8 @@ private field.
 Before any mutation:
 
 1. Fetch the target from `main`.
+   For an authorized historical target, stop if the file exists; no historical
+   overwrite or repair is allowed.
 2. Classify it using the terminal contract above. Only a current-policy,
    editorially complete envelope is an idempotent no-op.
 3. Treat a missing target, a safely classified `under_minimum` target, or a legacy
@@ -199,7 +213,9 @@ Then:
    `partial`. Hard safety and evidence gates remain unchanged.
 3. Produce one complete JSON envelope for the exact target. `generated_at` must be
    a real current ISO 8601 time with offset; `published_at` may be omitted because
-   trusted publication stamps both clocks.
+   trusted publication stamps both clocks. For a historical target, preserve the
+   target-day editorial frame in required `selection.evaluated_at`; never backdate
+   `generated_at`, `published_at`, or source capture times.
 4. Self-check JSON syntax, every schema limit, source independence, safety,
    chronological plausibility, item counts/ranks, and `run_report` consistency.
    For memes, also recheck the all-history identity result, canonical/display

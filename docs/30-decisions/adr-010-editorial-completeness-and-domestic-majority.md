@@ -84,7 +84,8 @@ News candidates use a 100-point score: heat 40, freshness 20, everyday relevance
 25, and evidence 15. Scores of at least 75, 70, and 65 map respectively to
 strict-24h, relaxed-48h, and relaxed-72h score tiers, with everyday relevance at
 least 15. Actual qualification is the later/weaker of score and event-age tiers,
-using `occurred_at` against `published_at ?? generated_at`; future and older-than-72h
+using `occurred_at` against
+`selection.evaluated_at ?? published_at ?? generated_at`; future and older-than-72h
 events do not qualify. Stable story identity deduplicates the audit, selected
 identity/time matches its item, and safety drops use only opaque `candidate-N`
 keys plus a finite category—no identity, time, scope/topic, score, item id, URL,

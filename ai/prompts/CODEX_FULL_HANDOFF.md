@@ -110,6 +110,8 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重 / 最低产出协�
 `skipped|held` 只为历史数据兼容及人工安全下架保留在 schema 中；`2026-07-26` 起它们不是当天发布成功或
 自动化终态，其中 `held` 必须人工判断后解除，任何无人值守任务不得自动改回可见。
 `generated_at` / `published_at` 会在提交前由 `npm run stamp:publish -- <文件>` 用可信本机时钟统一写入；
+经人工明确授权的缺失历史日期另在 `run_report.selection.evaluated_at` 记录目标日真实评选时钟，评分窗口使用
+该字段，但真实上线时间仍按当前可信时钟写入，禁止回填伪造的 `published_at`；
 来源时间晚于该时刻时也会被压到发布上界，避免生成内容声称“未来取证”。
 
 **校验命令（提交前必须全过）**：
