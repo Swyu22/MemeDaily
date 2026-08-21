@@ -3,42 +3,33 @@
   "policy_version": "v3-domestic-majority",
   "rubric_version": "v3-100point-domestic-majority",
   "date": "2026-08-21",
-  "generated_at": "2026-08-21T12:12:13+08:00",
-  "published_at": "2026-08-21T12:12:13+08:00",
-  "status": "partial",
+  "generated_at": "2026-08-21T12:24:44+08:00",
+  "status": "published",
   "run_report": {
     "candidates_scanned": 30,
     "published": 4,
-    "dropped_safety": {
-      "politics": 1,
-      "geopolitics": 1,
-      "public_safety": 1,
-      "privacy": 1,
-      "rumor": 1
-    },
-    "dropped_low_confidence": 16,
+    "dropped_safety": {},
+    "dropped_low_confidence": 0,
     "dropped_quota": 0,
     "dropped_capacity": 0,
     "sources": [
-      "major_media",
-      "aggregator",
-      "state_media",
-      "official"
+      "official",
+      "major_media"
     ],
     "evidence_summary": {
-      "candidates_with_urls": 25,
-      "official_sources": 3,
-      "state_media_sources": 4,
-      "major_media_sources": 22,
-      "aggregator_sources": 8,
-      "dropped_insufficient_evidence": 5
+      "candidates_with_urls": 30,
+      "official_sources": 4,
+      "state_media_sources": 0,
+      "major_media_sources": 4,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 26
     },
     "selection": {
-      "tier": "relaxed_48h",
+      "tier": "strict_24h",
       "qualified": {
-        "strict_24h": 1,
+        "strict_24h": 4,
         "relaxed_48h": 4,
-        "relaxed_72h": 10
+        "relaxed_72h": 4
       },
       "editorial_complete": true,
       "research_passes": [
@@ -47,454 +38,396 @@
           "candidates_added": 30,
           "cumulative_unique_candidates": 30,
           "source_scope": [
-            "全国实时热榜与历史归档",
-            "中央及国家部门公开信息",
-            "新华社、央视及主流持牌媒体",
-            "国内消费就业与交通服务信息",
-            "国际独立媒体与医疗科技报道"
+            "中央部委与政府公开信息",
+            "新华社人民日报央视",
+            "中新网国内滚动",
+            "公共服务与消费保障"
           ]
         }
       ],
       "candidate_audit": [
         {
-          "candidate_key": "2026-08-21-consumption-finance",
-          "story_identity": "cn-fiscal-financial-consumption-support-update-2026-08-21",
+          "candidate_key": "2026-08-21-childcare-subsidy-progress",
+          "story_identity": "cn-childcare-subsidy-25m-families-update-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-21T11:10:39+08:00",
+          "occurred_at": "2026-08-21T11:24:43+08:00",
           "scope": "domestic",
-          "topic": "消费就业",
+          "topic": "民生服务",
           "outcome": "selected",
-          "item_id": "2026-08-21-consumption-finance",
-          "score": 88,
+          "item_id": "2026-08-21-childcare-subsidy-progress",
+          "score": 91,
           "score_breakdown": {
-            "heat": 34,
+            "heat": 36,
             "freshness": 20,
-            "everyday_relevance": 21,
+            "everyday_relevance": 22,
             "evidence": 13
           },
           "qualification_tier": "strict_24h"
         },
         {
-          "candidate_key": "2026-08-21-self-driving-routes",
-          "story_identity": "cn-national-scenic-self-driving-road-network-plan-2026-08-20",
+          "candidate_key": "2026-08-21-consumer-trade-in-reach",
+          "story_identity": "cn-consumer-trade-in-178m-beneficiary-update-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-20T11:47:00+08:00",
-          "scope": "domestic",
-          "topic": "交通出行",
-          "outcome": "selected",
-          "item_id": "2026-08-21-self-driving-routes",
-          "score": 81,
-          "score_breakdown": {
-            "heat": 29,
-            "freshness": 19,
-            "everyday_relevance": 20,
-            "evidence": 13
-          },
-          "qualification_tier": "relaxed_48h"
-        },
-        {
-          "candidate_key": "2026-08-21-minimum-wages",
-          "story_identity": "cn-multiple-provinces-minimum-wage-adjustments-2026-08-19",
-          "research_pass": 1,
-          "occurred_at": "2026-08-19T20:54:00+08:00",
+          "occurred_at": "2026-08-21T11:28:51+08:00",
           "scope": "domestic",
           "topic": "消费就业",
           "outcome": "selected",
-          "item_id": "2026-08-21-minimum-wages",
-          "score": 78,
+          "item_id": "2026-08-21-consumer-trade-in-reach",
+          "score": 88,
           "score_breakdown": {
-            "heat": 29,
-            "freshness": 18,
-            "everyday_relevance": 20,
-            "evidence": 11
-          },
-          "qualification_tier": "relaxed_48h"
-        },
-        {
-          "candidate_key": "2026-08-21-mrna-melanoma-trial",
-          "story_identity": "global-personalized-mrna-melanoma-phase3-positive-2026-08-19",
-          "research_pass": 1,
-          "occurred_at": "2026-08-19T12:45:00+08:00",
-          "scope": "international",
-          "topic": "健康医疗",
-          "outcome": "selected",
-          "item_id": "2026-08-21-mrna-melanoma-trial",
-          "score": 76,
-          "score_breakdown": {
-            "heat": 31,
-            "freshness": 18,
-            "everyday_relevance": 15,
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 22,
             "evidence": 12
           },
-          "qualification_tier": "relaxed_48h"
+          "qualification_tier": "strict_24h"
         },
         {
-          "candidate_key": "cand-05-trade-in",
-          "story_identity": "cn-consumer-trade-in-178m-update-2026-08-21",
+          "candidate_key": "2026-08-21-new-student-rail-tickets",
+          "story_identity": "cn-college-new-student-rail-ticket-rules-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-21T11:15:12+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 69,
-          "score_breakdown": {
-            "heat": 26,
-            "freshness": 20,
-            "everyday_relevance": 15,
-            "evidence": 8
-          },
-          "drop_reason": "与促消费贴息主条目同属当日财政消费政策信息，避免把同一政策主线拆分占位",
-          "qualification_tier": "relaxed_72h"
-        },
-        {
-          "candidate_key": "cand-06-county-consumption",
-          "story_identity": "cn-county-consumption-support-discussion-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T10:51:00+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 68,
-          "score_breakdown": {
-            "heat": 27,
-            "freshness": 20,
-            "everyday_relevance": 14,
-            "evidence": 7
-          },
-          "drop_reason": "公共热度较高，但未取得足够独立政策原文与实施范围证据",
-          "qualification_tier": "relaxed_72h"
-        },
-        {
-          "candidate_key": "cand-07-rail-extra-seat",
-          "story_identity": "cn-railway-extra-seat-use-discussion-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T02:27:33+08:00",
+          "occurred_at": "2026-08-21T08:04:36+08:00",
           "scope": "domestic",
           "topic": "交通出行",
-          "outcome": "dropped_low_confidence",
-          "score": 67,
+          "outcome": "selected",
+          "item_id": "2026-08-21-new-student-rail-tickets",
+          "score": 84,
           "score_breakdown": {
-            "heat": 26,
+            "heat": 31,
             "freshness": 20,
-            "everyday_relevance": 14,
-            "evidence": 7
+            "everyday_relevance": 21,
+            "evidence": 12
           },
-          "drop_reason": "服务规则讨论具有实用性，但缺少全国性新增制度变化",
-          "qualification_tier": "relaxed_72h"
+          "qualification_tier": "strict_24h"
         },
         {
-          "candidate_key": "cand-08-industrial-momentum",
-          "story_identity": "cn-industrial-new-momentum-data-resurface-2026-08-21",
+          "candidate_key": "2026-08-21-medical-security-law-review",
+          "story_identity": "cn-medical-security-law-third-review-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-17T15:59:00+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 66,
-          "score_breakdown": {
-            "heat": 25,
-            "freshness": 10,
-            "everyday_relevance": 16,
-            "evidence": 15
-          },
-          "drop_reason": "底层统计数据已于8月17日披露，当日热榜传播不构成新的严格时效事件",
-          "qualification_tier": "relaxed_72h"
-        },
-        {
-          "candidate_key": "cand-09-marriage-registration",
-          "story_identity": "cn-marriage-registration-service-scenarios-2026-08-20",
-          "research_pass": 1,
-          "occurred_at": "2026-08-20T23:37:00+08:00",
-          "scope": "domestic",
-          "topic": "民生服务",
-          "outcome": "dropped_low_confidence",
-          "score": 65,
-          "score_breakdown": {
-            "heat": 26,
-            "freshness": 20,
-            "everyday_relevance": 13,
-            "evidence": 6
-          },
-          "drop_reason": "多地服务场景报道有关注度，但全国覆盖和权威汇总证据不足",
-          "qualification_tier": "relaxed_72h"
-        },
-        {
-          "candidate_key": "cand-10-ai-traditional-culture",
-          "story_identity": "cn-ai-traditional-culture-feature-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T10:54:35+08:00",
-          "scope": "domestic",
-          "topic": "科技AI",
-          "outcome": "dropped_low_confidence",
-          "score": 65,
-          "score_breakdown": {
-            "heat": 25,
-            "freshness": 20,
-            "everyday_relevance": 12,
-            "evidence": 8
-          },
-          "drop_reason": "专题传播热度较高，但缺少可核验的新产品、新政策或公共服务变化",
-          "qualification_tier": "relaxed_72h"
-        },
-        {
-          "candidate_key": "cand-11-flood-control",
-          "story_identity": "cn-water-departments-flood-control-observation-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T10:51:00+08:00",
-          "scope": "domestic",
-          "topic": "自然灾害",
-          "outcome": "dropped_low_confidence",
-          "score": 64,
-          "score_breakdown": {
-            "heat": 27,
-            "freshness": 20,
-            "everyday_relevance": 10,
-            "evidence": 7
-          },
-          "drop_reason": "近期日报已连续覆盖防汛主线，本条新增信息不足以再次占位"
-        },
-        {
-          "candidate_key": "cand-12-chengdu-auto-show",
-          "story_identity": "cn-chengdu-auto-show-opening-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T10:51:00+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 63,
-          "score_breakdown": {
-            "heat": 24,
-            "freshness": 20,
-            "everyday_relevance": 11,
-            "evidence": 8
-          },
-          "drop_reason": "行业展会开幕具有消费关注度，但车型与服务变化仍在陆续披露"
-        },
-        {
-          "candidate_key": "cand-13-robot-commercialization",
-          "story_identity": "cn-humanoid-robot-commercialization-cycle-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T10:13:05+08:00",
-          "scope": "domestic",
-          "topic": "科技AI",
-          "outcome": "dropped_low_confidence",
-          "score": 62,
-          "score_breakdown": {
-            "heat": 23,
-            "freshness": 20,
-            "everyday_relevance": 11,
-            "evidence": 8
-          },
-          "drop_reason": "行业趋势报道较多，缺少当日统一口径的可用产品或公共服务变化"
-        },
-        {
-          "candidate_key": "cand-14-driving-vision-test",
-          "story_identity": "cn-driving-licence-color-vision-test-discussion-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T03:28:50+08:00",
-          "scope": "domestic",
-          "topic": "交通出行",
-          "outcome": "dropped_low_confidence",
-          "score": 61,
-          "score_breakdown": {
-            "heat": 23,
-            "freshness": 20,
-            "everyday_relevance": 12,
-            "evidence": 6
-          },
-          "drop_reason": "网络测试话题热度有限，不能替代法定体检标准和专业诊断"
-        },
-        {
-          "candidate_key": "cand-15-gold-price",
-          "story_identity": "cn-retail-gold-price-jump-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T08:12:52+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 60,
-          "score_breakdown": {
-            "heat": 24,
-            "freshness": 20,
-            "everyday_relevance": 10,
-            "evidence": 6
-          },
-          "drop_reason": "短时零售金价波动明显，但不同品牌与地区价格差异大且持续变化"
-        },
-        {
-          "candidate_key": "cand-16-stroke-warning",
-          "story_identity": "cn-stroke-symptom-health-explainer-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T11:48:10+08:00",
+          "occurred_at": "2026-08-21T10:17:40+08:00",
           "scope": "domestic",
           "topic": "健康医疗",
-          "outcome": "dropped_low_confidence",
-          "score": 59,
+          "outcome": "selected",
+          "item_id": "2026-08-21-medical-security-law-review",
+          "score": 80,
           "score_breakdown": {
-            "heat": 22,
+            "heat": 30,
             "freshness": 20,
-            "everyday_relevance": 12,
-            "evidence": 5
+            "everyday_relevance": 19,
+            "evidence": 11
           },
-          "drop_reason": "健康科普有用，但缺少当日新指南或权威临床共识发布"
+          "qualification_tier": "strict_24h"
         },
         {
-          "candidate_key": "cand-17-unemployment-discussion",
-          "story_identity": "cn-flexible-employment-public-discussion-2026-08-21",
+          "candidate_key": "2026-08-21-cns-10681599",
+          "story_identity": "cn-zhejiang-cultural-clock-public-screens-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-21T11:45:09+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 58,
-          "score_breakdown": {
-            "heat": 23,
-            "freshness": 20,
-            "everyday_relevance": 11,
-            "evidence": 4
-          },
-          "drop_reason": "观点型讨论热度较高，但缺少新政策、数据或可操作服务入口"
-        },
-        {
-          "candidate_key": "cand-18-consumer-robot-damage",
-          "story_identity": "cn-consumer-robot-furniture-damage-dispute-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T10:54:35+08:00",
-          "scope": "domestic",
-          "topic": "消费就业",
-          "outcome": "dropped_low_confidence",
-          "score": 57,
-          "score_breakdown": {
-            "heat": 22,
-            "freshness": 20,
-            "everyday_relevance": 10,
-            "evidence": 5
-          },
-          "drop_reason": "单一消费纠纷尚无权威裁判或监管结论，不宜扩大为行业判断"
-        },
-        {
-          "candidate_key": "cand-19-tourism-route-local",
-          "story_identity": "cn-local-tourism-route-followup-2026-08-21",
-          "research_pass": 1,
-          "occurred_at": "2026-08-21T11:02:32+08:00",
+          "occurred_at": "2026-08-21T11:40:00+08:00",
           "scope": "domestic",
           "topic": "文化体育",
-          "outcome": "dropped_low_confidence",
-          "score": 56,
-          "score_breakdown": {
-            "heat": 21,
-            "freshness": 20,
-            "everyday_relevance": 10,
-            "evidence": 5
-          },
-          "drop_reason": "与国家级自驾公路主条目高度重叠，属地方路线跟进信息"
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "cand-20-maternal-room",
-          "story_identity": "cn-maternal-room-access-incident-2026-08-21",
+          "candidate_key": "2026-08-21-cns-10681598",
+          "story_identity": "cn-guangdong-pangolin-population-recovery-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-21T10:19:49+08:00",
+          "occurred_at": "2026-08-21T11:36:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681581",
+          "story_identity": "cn-hainan-local-fruit-drink-business-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:34:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681575",
+          "story_identity": "cn-hainan-heavy-rain-tropical-depression-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:22:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681594",
+          "story_identity": "cn-young-consumers-cake-tasting-groups-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:21:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681591",
+          "story_identity": "cn-durian-logistics-consumer-supply-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:18:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681568",
+          "story_identity": "cn-chengdu-chongqing-convenience-bus-route-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:16:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681584",
+          "story_identity": "cn-domestic-innovation-vitality-observation-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:12:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681576",
+          "story_identity": "cn-rail-extra-seat-refusal-response-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:07:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681565",
+          "story_identity": "cn-breakfast-shop-child-patient-kindness-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:01:00+08:00",
           "scope": "domestic",
           "topic": "民生服务",
-          "outcome": "dropped_low_confidence",
-          "score": 55,
-          "score_breakdown": {
-            "heat": 23,
-            "freshness": 20,
-            "everyday_relevance": 8,
-            "evidence": 4
-          },
-          "drop_reason": "个案公共设施管理问题尚无独立调查结论和可推广制度变化"
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "cand-21-bakery-labels",
-          "story_identity": "cn-wuhan-bakery-expiry-label-claim-2026-08-21",
+          "candidate_key": "2026-08-21-cns-10681561",
+          "story_identity": "cn-guangdong-worker-mutual-insurance-coverage-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-21T11:18:33+08:00",
+          "occurred_at": "2026-08-21T10:58:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681554",
+          "story_identity": "cn-beijing-youth-football-finals-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:56:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681538",
+          "story_identity": "cn-early-rice-output-six-year-stability-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:55:00+08:00",
           "scope": "domestic",
           "topic": "消费就业",
           "outcome": "dropped_insufficient_evidence",
-          "drop_reason": "仅有热榜线索和商户相关说法，监管核查与完整证据链尚未公开"
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "cand-22-online-fruit-scam",
-          "story_identity": "cn-online-fruit-shopping-scam-claim-2026-08-21",
+          "candidate_key": "2026-08-21-cns-10681550",
+          "story_identity": "cn-fiscal-finance-policy-enterprise-reach-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-21T08:45:18+08:00",
+          "occurred_at": "2026-08-21T10:53:00+08:00",
           "scope": "domestic",
           "topic": "消费就业",
           "outcome": "dropped_insufficient_evidence",
-          "drop_reason": "未取得权威案件通报及可验证的统一诈骗模式证据"
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "cand-23-medical-refund",
-          "story_identity": "cn-medical-refund-consumer-dispute-2026-08-21",
+          "candidate_key": "2026-08-21-cns-10681547",
+          "story_identity": "cn-end-of-heat-season-food-guidance-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-21T08:25:52+08:00",
+          "occurred_at": "2026-08-21T10:50:00+08:00",
           "scope": "domestic",
           "topic": "健康医疗",
           "outcome": "dropped_insufficient_evidence",
-          "drop_reason": "网络讨论缺少监管部门、医疗机构和患者多方核实"
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "cand-24-saltcity-boom",
-          "story_identity": "cn-yancheng-boom-report-2026-08-21",
+          "candidate_key": "2026-08-21-cns-10681523",
+          "story_identity": "cn-shanghai-urumqi-air-express-route-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-21T09:13:10+08:00",
+          "occurred_at": "2026-08-21T10:50:00+08:00",
           "scope": "domestic",
-          "topic": "重大事件",
+          "topic": "交通出行",
           "outcome": "dropped_insufficient_evidence",
-          "drop_reason": "来源仅为实时榜关键词，缺少权威原因说明和影响范围核验"
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "cand-25-child-screen-study",
-          "story_identity": "global-child-screen-cognition-study-discussion-2026-08-21",
+          "candidate_key": "2026-08-21-cns-10681442",
+          "story_identity": "cn-east-juyan-lake-continuous-water-2026-08-21",
           "research_pass": 1,
-          "occurred_at": "2026-08-21T08:12:52+08:00",
-          "scope": "international",
+          "occurred_at": "2026-08-21T10:47:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681519",
+          "story_identity": "cn-healthy-beverage-market-trend-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:46:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681546",
+          "story_identity": "cn-water-law-price-mechanism-revision-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:46:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681535",
+          "story_identity": "cn-livestream-qixi-gold-sales-traps-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:45:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681534",
+          "story_identity": "cn-western-integrated-transport-network-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:44:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-21-cns-10681494",
+          "story_identity": "cn-heart-attack-emergency-pathway-research-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:44:00+08:00",
+          "scope": "domestic",
           "topic": "健康医疗",
           "outcome": "dropped_insufficient_evidence",
-          "drop_reason": "未核验原始论文、样本设计和独立媒体评价，无法判断全球代表性"
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "candidate-26",
+          "candidate_key": "2026-08-21-cns-10681532",
+          "story_identity": "cn-enterprise-bankruptcy-law-second-review-2026-08-21",
           "research_pass": 1,
-          "outcome": "dropped_safety",
-          "drop_reason": "politics"
+          "occurred_at": "2026-08-21T10:42:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "candidate-27",
+          "candidate_key": "2026-08-21-cns-10681484",
+          "story_identity": "cn-chengdu-chongqing-highspeed-rail-catenary-2026-08-21",
           "research_pass": 1,
-          "outcome": "dropped_safety",
-          "drop_reason": "geopolitics"
+          "occurred_at": "2026-08-21T10:33:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "candidate-28",
+          "candidate_key": "2026-08-21-cns-10681502",
+          "story_identity": "cn-underground-pipeline-domestic-technology-2026-08-21",
           "research_pass": 1,
-          "outcome": "dropped_safety",
-          "drop_reason": "public_safety"
+          "occurred_at": "2026-08-21T10:29:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "candidate-29",
+          "candidate_key": "2026-08-21-cns-10681499",
+          "story_identity": "cn-farmland-construction-fund-protection-2026-08-21",
           "research_pass": 1,
-          "outcome": "dropped_safety",
-          "drop_reason": "privacy"
-        },
-        {
-          "candidate_key": "candidate-30",
-          "research_pass": 1,
-          "outcome": "dropped_safety",
-          "drop_reason": "rumor"
+          "occurred_at": "2026-08-21T10:27:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         }
       ]
     }
   },
   "items": [
     {
-      "id": "2026-08-21-consumption-finance",
-      "story_identity": "cn-fiscal-financial-consumption-support-update-2026-08-21",
-      "headline": "💳 促消费贴息政策扩大覆盖范围",
-      "summary": "财政金融协同促内需政策进一步优化，个人消费、服务业经营主体和设备更新等贴息范围与经办渠道继续扩展，相关实施细则由经办机构和地方部门落实。",
+      "id": "2026-08-21-childcare-subsidy-progress",
+      "story_identity": "cn-childcare-subsidy-25m-families-update-2026-08-21",
+      "headline": "👶 年度育儿补贴已覆盖超2500万名婴幼儿",
+      "summary": "财政部披露，2026年度育儿补贴已惠及超过2500万名婴幼儿及其家庭；中央财政已下达999亿元补助资金，符合条件的家庭可通过线上系统办理。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 91,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-21T11:24:43+08:00",
+      "risk": {
+        "level": "low",
+        "note": "申请期限、审核状态和发放批次以所在地卫生健康部门及申领平台提示为准。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/08-21/10681587.shtml",
+          "title": "财政部：超2500万名婴幼儿及其家庭领到2026年度育儿补贴",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "中新网记录财政部当日上午披露的覆盖进展。"
+        },
+        {
+          "tier": "official",
+          "outlet": "财政部",
+          "url": "https://m.mof.gov.cn/czxw/202606/t20260602_3991021.htm",
+          "title": "中央财政下达育儿补贴补助资金999亿元支持实施育儿补贴制度",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "财政部公开中央补助资金规模、发放节奏和部门职责。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-21-consumer-trade-in-reach",
+      "story_identity": "cn-consumer-trade-in-178m-beneficiary-update-2026-08-21",
+      "headline": "♻️ 消费品以旧换新已惠及1.78亿人次",
+      "summary": "财政部披露，今年以来消费品以旧换新政策已惠及1.78亿人次，支持汽车、家电和数码产品等更新消费；具体补贴范围与申领渠道仍按各地规则执行。",
       "category": "民生社会",
       "scope": "domestic",
       "topic": "消费就业",
@@ -502,162 +435,113 @@
       "score_breakdown": {
         "heat": 34,
         "freshness": 20,
-        "everyday_relevance": 21,
-        "evidence": 13
+        "everyday_relevance": 22,
+        "evidence": 12
       },
-      "heat_rank": 1,
-      "occurred_at": "2026-08-21T11:10:39+08:00",
+      "heat_rank": 2,
+      "occurred_at": "2026-08-21T11:28:51+08:00",
       "risk": {
         "level": "low",
-        "note": "具体可申请范围、额度、期限和办理流程以财政部门、地方主管部门及经办机构正式规则为准。"
+        "note": "各地区补贴额度、可用名额、产品范围及截止时间可能动态调整。"
       },
       "sources": [
         {
           "tier": "major_media",
-          "outlet": "36氪",
-          "url": "https://www.36kr.com/newsflashes/3948701974035848",
-          "title": "财政部发布《关于进一步做好财政金融协同促内需政策有关工作的通知》",
-          "captured_at": "2026-08-21T12:10:00+08:00",
-          "note": "持牌财经媒体快讯核实财政部最新通知发布及促内需政策优化方向。"
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/08-21/10681585.shtml",
+          "title": "今年以来消费品以旧换新政策惠及1.78亿人次",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "中新网记录财政部当日发布的最新受益人次口径。"
         },
         {
-          "tier": "aggregator",
-          "outlet": "HotFlashNews",
-          "url": "https://hotflashnews.com/archive/2026-08-21",
-          "title": "2026年8月21日全网热搜汇总",
-          "captured_at": "2026-08-21T12:10:00+08:00",
-          "note": "公开热榜归档记录财政金融促内需政策在多平台进入当日公共议题。"
+          "tier": "official",
+          "outlet": "国家发展改革委",
+          "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202512/t20251230_1402851.html",
+          "title": "关于2026年实施大规模设备更新和消费品以旧换新政策的通知",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "国家发展改革委公开2026年度以旧换新支持范围和实施依据。"
         }
       ],
       "published": true
     },
     {
-      "id": "2026-08-21-self-driving-routes",
-      "story_identity": "cn-national-scenic-self-driving-road-network-plan-2026-08-20",
-      "headline": "🚗 国家级自驾旅游公路将形成“三环四横五纵”",
-      "summary": "交通运输部印发实施方案，提出构建约6万公里“三环、四横、五纵”精品自驾旅游公路主骨架，并完善沿线服务设施和旅游体验。",
+      "id": "2026-08-21-new-student-rail-tickets",
+      "story_identity": "cn-college-new-student-rail-ticket-rules-2026-08-21",
+      "headline": "🎫 2026级大学新生可预约购买学生票",
+      "summary": "铁路12306为2026级新生提供入学预约购票，新生可凭录取通知书购买一次家庭居住地至学校所在地的单程学生优惠票，并按要求完成身份和材料核验。",
       "category": "民生社会",
       "scope": "domestic",
       "topic": "交通出行",
-      "score": 81,
-      "score_breakdown": {
-        "heat": 29,
-        "freshness": 19,
-        "everyday_relevance": 20,
-        "evidence": 13
-      },
-      "heat_rank": 2,
-      "occurred_at": "2026-08-20T11:47:00+08:00",
-      "risk": {
-        "level": "low",
-        "note": "方案为全国路网建设导向，具体线路开放、通行条件和配套服务仍以交通运输部门及属地公告为准。"
-      },
-      "sources": [
-        {
-          "tier": "major_media",
-          "outlet": "经济观察网",
-          "url": "https://www.eeo.com.cn/2026/0820/1004369.shtml",
-          "title": "国家级自驾游路线重磅上新！三环四横五纵 触摸立体中国",
-          "captured_at": "2026-08-21T12:10:00+08:00",
-          "note": "财经媒体据央视新闻核实交通运输部方案、约6万公里主骨架及重点路线。"
-        },
-        {
-          "tier": "major_media",
-          "outlet": "广西新闻网",
-          "url": "https://lz.gxnews.com.cn/staticpages/20260820/newgx6a8678b5-21983167.shtml",
-          "title": "串联广西多地！国家级自驾游路线重磅上新",
-          "captured_at": "2026-08-21T12:10:00+08:00",
-          "note": "地方重点新闻网站独立转述方案并列明三环四横五纵的路线构成。"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-08-21-minimum-wages",
-      "story_identity": "cn-multiple-provinces-minimum-wage-adjustments-2026-08-19",
-      "headline": "💼 多地上调最低工资标准",
-      "summary": "广东、山西、新疆等地陆续调整月最低工资和非全日制小时最低工资标准；广东新标准自9月1日起实施，广州为每月2680元、深圳为2700元。",
-      "category": "民生社会",
-      "scope": "domestic",
-      "topic": "消费就业",
-      "score": 78,
-      "score_breakdown": {
-        "heat": 29,
-        "freshness": 18,
-        "everyday_relevance": 20,
-        "evidence": 11
-      },
-      "heat_rank": 3,
-      "occurred_at": "2026-08-19T20:54:00+08:00",
-      "risk": {
-        "level": "low",
-        "note": "各地档位、适用区域和生效日期不同，劳动者与用人单位应以所在地人社或政府正式通知为准。"
-      },
-      "sources": [
-        {
-          "tier": "major_media",
-          "outlet": "经济观察网",
-          "url": "https://www.eeo.com.cn/2026/0819/1004260.shtml",
-          "title": "多地宣布：调整最低工资标准",
-          "captured_at": "2026-08-21T12:10:00+08:00",
-          "note": "财经媒体汇总多地调整进展并列明广东分档标准和实施时间。"
-        },
-        {
-          "tier": "major_media",
-          "outlet": "每日经济新闻",
-          "url": "https://www.nbd.com.cn/articles/2026-08-13/4541196.html",
-          "title": "广州2680元/月，深圳2700元/月 广东提高最低工资标准",
-          "captured_at": "2026-08-21T12:10:00+08:00",
-          "note": "持牌财经媒体核实广东政府通知、三类地区标准与小时最低工资。"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-08-21-mrna-melanoma-trial",
-      "story_identity": "global-personalized-mrna-melanoma-phase3-positive-2026-08-19",
-      "headline": "🧬 个体化mRNA黑色素瘤疗法三期试验达标",
-      "summary": "Moderna与Merck称，个体化mRNA疗法联合Keytruda在1137名高风险黑色素瘤患者的三期试验中达到无复发生存和远处转移终点；完整数据仍待公布与监管审评。",
-      "category": "科技向善",
-      "scope": "international",
-      "topic": "健康医疗",
-      "primary_organization": "Moderna / Merck",
-      "audience_relevance": {
-        "basis": "global_major_event",
-        "impact_scale": "global_systemic",
-        "china_connection": "这是个体化mRNA肿瘤疗法首次取得阳性三期结果，对全球肿瘤免疫研究及中国相关研发方向具有代表性参考价值。",
-        "everyday_impact": "疗法目前仍属试验阶段，尚不能替代现有诊疗；患者可关注完整数据、监管审批和未来可及性变化。",
-        "score": 22
-      },
-      "score": 76,
+      "score": 84,
       "score_breakdown": {
         "heat": 31,
-        "freshness": 18,
-        "everyday_relevance": 15,
+        "freshness": 20,
+        "everyday_relevance": 21,
         "evidence": 12
       },
-      "heat_rank": 4,
-      "occurred_at": "2026-08-19T12:45:00+08:00",
+      "heat_rank": 3,
+      "occurred_at": "2026-08-21T08:04:36+08:00",
       "risk": {
         "level": "low",
-        "note": "公司只公布了中期阳性结论，完整三期数据、适应证、获批时间、价格和长期安全性仍存在不确定性。"
+        "note": "预约日期、可选席别和核验方式以铁路12306实时页面及车站通知为准。"
       },
       "sources": [
         {
           "tier": "major_media",
-          "outlet": "Reuters",
-          "url": "https://www.reuters.com/legal/litigation/merck-moderna-say-melanoma-skin-cancer-vaccine-meets-goals-large-trial-2026-08-19/",
-          "title": "Moderna, Merck vaccine cuts recurrence and spread of melanoma, raising new treatment hope",
-          "captured_at": "2026-08-21T12:10:00+08:00",
-          "note": "路透独立报道试验设计、1137名受试者、主要终点和监管进展，并提示完整数据尚待披露。"
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-21/10681385.shtml",
+          "title": "开学提醒！大学新生买学生票有新变化，购票乘车攻略",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "中新网转引央视新闻整理2026级新生预约、购票和进站流程。"
         },
         {
+          "tier": "official",
+          "outlet": "铁路12306",
+          "url": "https://kyfw.12306.cn/otn/gonggao/student.html",
+          "title": "学生票购票说明",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "铁路12306官方说明核对新生凭证、优惠区间、购票次数和核验要求。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-21-medical-security-law-review",
+      "story_identity": "cn-medical-security-law-third-review-2026-08-21",
+      "headline": "🏥 医疗保障法草案将细化异地就医结算",
+      "summary": "医疗保障法草案拟进行第三次审议，进一步细化异地就医医药费用结算要求，并继续规范医保基金使用与经办服务，后续以正式审议文本为准。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-21T10:17:40+08:00",
+      "risk": {
+        "level": "low",
+        "note": "当前仍处于草案审议阶段，条文可能继续调整，不等同于已生效规则。"
+      },
+      "sources": [
+        {
           "tier": "major_media",
-          "outlet": "Investor's Business Daily",
-          "url": "https://www.investors.com/news/technology/moderna-merck-cancer-vaccine/",
-          "title": "Moderna And Merck's Cancer Vaccine: Are Investors Putting The Cart Before The Horse?",
-          "captured_at": "2026-08-21T12:10:00+08:00",
-          "note": "独立媒体核实三期结果的全球市场反响，同时援引分析人士说明数据与商业化仍有不确定性。"
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/08-21/10681480.shtml",
+          "title": "医疗保障法草案将三审 拟细化异地就医医药费用结算要求",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "中新网报道草案下一次审议安排及异地结算相关修改方向。"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家医保局",
+          "url": "https://www.nhsa.gov.cn/art/2026/3/31/art_14_20081.html",
+          "title": "《医疗保障基金使用监督管理条例实施细则》新闻发布会实录",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "国家医保局公开现行基金监管与异地就医服务背景，辅助核对制度语境。"
         }
       ],
       "published": true
