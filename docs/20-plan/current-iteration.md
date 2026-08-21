@@ -68,9 +68,9 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
 - [x] Rebase the continuity gate onto the completed backfill and pass the canonical
   release/governance checks with no archive gaps.
 - [x] Merge the support release and reverify active DeployKey-only branch protection.
-- [ ] Publish the ten exact missing feed/date candidates and correlate each accepted main
+- [x] Publish the ten exact missing feed/date candidates and correlate each accepted main
   commit with successful Pages deployment.
-- [ ] Verify production archive/detail surfaces and close all candidate/incident records.
+- [x] Verify production archive/detail surfaces and close all candidate/incident records.
 
 ### 2026-08-10 deployment recovery
 
