@@ -1,0 +1,544 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "2026-07-27-dynamic-100",
+  "date": "2026-08-18",
+  "generated_at": "2026-08-21T12:37:39+08:00",
+  "published_at": "2026-08-21T12:37:39+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 45,
+    "published": 3,
+    "dropped_safety": {},
+    "dropped_low_confidence": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "zhihu",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 3,
+      "platform_public_sources": 1,
+      "aggregator_sources": 3,
+      "search_media_sources": 2,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 42
+    },
+    "selection": {
+      "evaluated_at": "2026-08-18T23:52:08+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 3,
+        "relaxed_72h": 3
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-17-gei-x-de-yi-feng-xin",
+          "canonical_phrase": "给X的一封信",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-01-wanwu-jieke-baogai-x",
+          "canonical_phrase": "万物皆可爆改X",
+          "outcome": "selected",
+          "item_id": "2026-08-01-wanwu-jieke-baogai-x",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 28,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "cross_platform",
+            "url": "https://hotflashnews.com/archive/2026-08-18",
+            "observed_at": "2026-08-18T22:57:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-18-x-neng-quxiao-ma",
+          "canonical_phrase": "X能取消吗",
+          "outcome": "selected",
+          "item_id": "2026-08-18-x-neng-quxiao-ma",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-18",
+            "observed_at": "2026-08-18T21:36:31+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-18-x-chishang-zhengbasai",
+          "canonical_phrase": "X吃商争霸赛",
+          "outcome": "selected",
+          "item_id": "2026-08-18-x-chishang-zhengbasai",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-18",
+            "observed_at": "2026-08-18T17:29:44+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "qixi",
+          "canonical_phrase": "七夕",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "kejie-zhuangruozhi",
+          "canonical_phrase": "装弱智赢AI围棋",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhenxin-xihuan-yigeren",
+          "canonical_phrase": "真心喜欢一个人是什么样",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yitaitou-yiwei-x",
+          "canonical_phrase": "一抬头以为X",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "renzao-kongcheng-fuhuo",
+          "canonical_phrase": "人造空城复活",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "daxue-meina-nuobei",
+          "canonical_phrase": "大学没拿诺贝尔奖怎么办",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "laosou-xi-wantong",
+          "canonical_phrase": "老叟戏顽童",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "laosou-pi-wantong",
+          "canonical_phrase": "老叟劈顽童",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "wode-qixi-dazi",
+          "canonical_phrase": "我的七夕搭子",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "qixi-zhongshi-langman",
+          "canonical_phrase": "七夕才是中式顶级浪漫",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "qixi-bichi-piaoliangfan",
+          "canonical_phrase": "七夕必吃漂亮饭",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "chaoshan-xiandao-shangtou",
+          "canonical_phrase": "潮汕海上餐厅鲜到上头",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "fanchazhuanchang",
+          "canonical_phrase": "你终于开了口反差转场",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "haoxiang-qiutian-xiyang",
+          "canonical_phrase": "好像那是一个秋天夕阳西下",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "dawang-jiaowo-xunshan",
+          "canonical_phrase": "大王叫我来巡山",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "kanzheni-mubuzhuanjing",
+          "canonical_phrase": "我在看着你目不转睛",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "shixiong-tai-wenjian",
+          "canonical_phrase": "师兄太稳健",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "jiadian-chongwu-huayuan",
+          "canonical_phrase": "家电宠物化",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "rensheng-bushiqun",
+          "canonical_phrase": "人生不是群聊",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "gongzuo-moren-jiejue",
+          "canonical_phrase": "工作困难默默解决",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "haoyun-lai-qiaomen",
+          "canonical_phrase": "好运来敲门",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yongyou-ziji-jiezou",
+          "canonical_phrase": "拥有自己的节奏",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "qixi-xianhua-xinyi",
+          "canonical_phrase": "七夕鲜花新意",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "kpop-duanju",
+          "canonical_phrase": "KPOP短剧",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yishijie-shengwu",
+          "canonical_phrase": "现实收集游戏生物",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "gaozhongsheng-qiangfan",
+          "canonical_phrase": "高中生抢饭第一视角",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "zhenzheng-jueiding-zouduoyuan",
+          "canonical_phrase": "决定一个人走多远的能力",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "gongjijin-qiangzhi-jiaona",
+          "canonical_phrase": "公积金强制缴纳",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "wutang-weishenme-tian",
+          "canonical_phrase": "无糖为何尝起来甜",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "daxue-jiachang-qun",
+          "canonical_phrase": "大学未开学家长群先建",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "chengxuyuan-tongqin-wuxiaoshi",
+          "canonical_phrase": "程序员通勤五小时",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "kuli-shengya-jinghua",
+          "canonical_phrase": "库里生涯精华三十五佳球",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "jiachang-fanyou-fennu",
+          "canonical_phrase": "家长的反游愤怒",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "yuanshen-zhidong-eluo-si",
+          "canonical_phrase": "原神至冬在俄罗斯引热议",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "zhanmusi-shili",
+          "canonical_phrase": "詹姆斯实力到底多强",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "heishenhua-jieju",
+          "canonical_phrase": "重新解读黑神话悟空结局",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "geju-laoshi-ruiping",
+          "canonical_phrase": "歌剧老师锐评舞台",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "niuwa-mendian-xinren",
+          "canonical_phrase": "牛蛙门店信任崩塌",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "santi-zhounian-jiyu",
+          "canonical_phrase": "三体二十周年寄语",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "ditu-guilian",
+          "canonical_phrase": "地图上发现的鬼脸",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "yishijie-yisheng-moyu",
+          "canonical_phrase": "医师节医生教上班摸鱼",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "zhihu",
+            "other"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 45,
+          "sources_checked": [
+            "bilibili"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-01-wanwu-jieke-baogai-x",
+      "title": "🛠️ 万物皆可爆改X",
+      "aliases": [
+        "万物皆可爆改X",
+        "爆改X",
+        "X爆改成Y"
+      ],
+      "canonical_phrase": "万物皆可爆改X",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "用“爆改”把普通空间或物件改造成反差极大的新用途，标题可直接替换改造对象。",
+      "origin": "8月1日本站首次收录；8月18日榜单同时出现4S店爆改大排档、健身房、汽车手办盒和人造空城爆改复活，证明该句壳在不同对象上继续活跃。",
+      "usage": "可写“爆改工位成午休舱”“万物皆可爆改收纳区”，前后对比必须展示具体变化。",
+      "fun_point": "“爆改”把微小布置夸张成改造工程，越是用途错位，前后反差越有记忆点。",
+      "why_spread": "已验证：百度与抖音榜在同日给出多个互不相同的爆改对象；推测：前后对照易拍、标题只需换一个名词，适合门店、家居和个人创作持续接龙。",
+      "lifecycle": "peak",
+      "brand_usage": "用真实前后镜头制作“爆改X”系列，并列出材料和成本，避免只做概念图。",
+      "risk": {
+        "level": "low",
+        "note": "涉及门店或公共空间时说明改造是否为临时布景，避免误导。"
+      },
+      "days_on_list": 2,
+      "score": 91,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 28,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://hotflashnews.com/archive/2026-08-18",
+          "title": "2026年8月18日全网热搜汇总",
+          "observed_at": "2026-08-18T22:57:52+08:00",
+          "captured_at": "2026-08-21T12:05:00+08:00",
+          "note": "同日归档记录4S店爆改大排档健身房、汽车手办盒等多个对象。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2614139",
+          "title": "4S店爆改汽车手办盒",
+          "observed_at": "2026-08-18T16:19:08+08:00",
+          "captured_at": "2026-08-21T12:05:00+08:00",
+          "note": "与8月18日归档条目对应的公开抖音入口，支持另一爆改对象正在传播。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-18-x-neng-quxiao-ma",
+      "title": "🗓️ X能取消吗",
+      "aliases": [
+        "X能取消吗",
+        "七夕能取消吗",
+        "这个能取消吗"
+      ],
+      "canonical_phrase": "X能取消吗",
+      "platform": [
+        "douyin",
+        "weibo"
+      ],
+      "type": "情绪梗",
+      "summary": "面对自己没有参与感或不想面对的节点，用“X能取消吗”发出一本正经的撤回申请。",
+      "origin": "8月18日抖音热榜出现“七夕能取消吗”，随后公开讨论把它解释为无参与感人群的调侃式呼吁，而非真实主张。",
+      "usage": "可替换为“周一能取消吗”“早八能取消吗”“这个需求能取消吗”，配合无奈场景表达逃避情绪。",
+      "fun_point": "把无法撤销的时间或制度当成可点取消的订单，荒诞的产品化口吻制造反差。",
+      "why_spread": "已验证：该句当晚进入抖音榜，次日公开文章继续讨论其网络调侃语义；推测：X位替换成本极低，节日、职场和学习场景都能快速迁移。",
+      "lifecycle": "rising",
+      "brand_usage": "可做“加班能取消吗—可以，今晚准点下班”的反转海报，但不要借公共服务或严肃事件玩梗。",
+      "risk": {
+        "level": "low",
+        "note": "节日语境容易被理解为否定传统文化，文案应明确是个人情绪调侃。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/archive/2026-08-18",
+          "title": "2026年8月18日全网热搜汇总",
+          "observed_at": "2026-08-18T21:36:31+08:00",
+          "captured_at": "2026-08-21T12:05:00+08:00",
+          "note": "抖音榜记录“七夕能取消吗”，当晚排名16。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://k.sina.com.cn/article_7879848901_1d5acf3c506801vdok.html?from=cul",
+          "title": "七夕取消的可能性有多大？",
+          "captured_at": "2026-08-21T12:05:00+08:00",
+          "note": "文章明确区分网友调侃式呼吁与现实议题，并描述无参与感语境。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-18-x-chishang-zhengbasai",
+      "title": "🍜 X吃商争霸赛",
+      "aliases": [
+        "X吃商争霸赛",
+        "火鸡面吃商争霸赛",
+        "吃商段位赛"
+      ],
+      "canonical_phrase": "X吃商争霸赛",
+      "platform": [
+        "douyin",
+        "weibo"
+      ],
+      "type": "短视频梗",
+      "summary": "把吃相、速度和食物驾驭能力包装成“吃商”竞技，可替换食物发起低门槛挑战。",
+      "origin": "8月18日抖音榜出现“火鸡面吃商争霸赛”，随后多篇公开页面记录网友、高校和团建场景中的比赛化玩法。",
+      "usage": "可写“梭子蟹吃商争霸赛”“自助餐吃商段位赛”，重点展示不同选手的吃法而非鼓励过量。",
+      "fun_point": "把日常吃饭套上电竞段位和正式赛制，体面与狼狈的反差天然适合剪辑和评论区评审。",
+      "why_spread": "已验证：抖音榜记录该挑战，公开页面还列出校园、团建和网友自发赛制；推测：规则简单、反应直观、评论区可判段位，推动不同食物版本继续复制。",
+      "lifecycle": "rising",
+      "brand_usage": "餐饮品牌可做小份试吃和“吃商评分卡”，必须控制份量并提示过敏和刺激风险。",
+      "risk": {
+        "level": "medium",
+        "note": "不要鼓励暴食、竞速吞咽或极端吃辣；挑战应采用小份并设置退出机制。"
+      },
+      "days_on_list": 1,
+      "score": 83,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/archive/2026-08-18",
+          "title": "2026年8月18日全网热搜汇总",
+          "observed_at": "2026-08-18T17:29:44+08:00",
+          "captured_at": "2026-08-21T12:05:00+08:00",
+          "note": "抖音榜记录“火鸡面吃商争霸赛”，当时排名12。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://k.sina.com.cn/article_7879922980_1d5ae152406801js6k.html",
+          "title": "火鸡面吃商争霸赛走红",
+          "captured_at": "2026-08-21T12:05:00+08:00",
+          "note": "页面记录校园、公司团建和社交挑战中的真实参与场景。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
