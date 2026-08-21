@@ -43,3 +43,19 @@ publication cadence.
 
 This branch changes validation and documentation only. It does not create or modify any
 daily envelope, publish to GitHub, or alter Cloud schedules.
+
+## Final Release Acceptance
+
+- Backfill data parent `03b3db9abb18d7c2622a6f8081ee9a1a9dfd8860` contains all ten
+  restored feed/date files. Continuity PR #123 then merged at accepted data-and-gate main
+  `39dc7604f3de88f0cf9ef5a064699481db2d6f21`.
+- Main CI `32450237750` and Pages `32450237637` succeeded on that exact SHA. A final local
+  `npm run check` also passed with zero production-audit findings, both continuous
+  validators, strict lint/typecheck, 270/270 tests, and a 263-page build.
+- Mechanical inventory found 27/27 dates and zero gaps per feed for 2026-07-26..2026-08-21.
+  Restored MemeDaily counts are 3, 3, 4, 4; restored DailyNews counts are 4, 4, 5, 4, 4,
+  4, with every restored news item classified domestic and `民生社会`.
+- Cache-bypassed production returned HTTP 200 for home, archive, and the stable cross-day
+  meme route, with current titles present. The superseded identity route returned 404.
+- The repository ruleset was read back as active with DeployKey as its sole bypass, no
+  `codex/daily-*` PR remained open, and local/GitHub main matched before this closeout.
