@@ -177,6 +177,9 @@ export const DailyEnvelopeSchema = z.object({
     }),
     selection: z
       .object({
+        // Optional historical editorial clock. Trusted publication still stamps the real
+        // generated_at/published_at; deterministic selection uses this clock when present.
+        evaluated_at: z.iso.datetime({ offset: true }).optional(),
         tier: SelectionTierSchema,
         qualified: SelectionQualifiedSchema,
         candidate_audit: z.array(CandidateAuditSchema).min(30).max(100),
@@ -195,6 +198,48 @@ export type Lifecycle = z.infer<typeof LifecycleSchema>;
 export type MemeItem = z.infer<typeof MemeItemSchema>;
 export type DailyEnvelope = z.infer<typeof DailyEnvelopeSchema>;
 export type EvidenceTier = z.infer<typeof EvidenceTierSchema>;
+
+export function memeSelectionClock(envelope: DailyEnvelope): string {
+  return envelope.run_report.selection?.evaluated_at
+    ?? envelope.published_at
+    ?? envelope.generated_at;
+}
+
+export function memeSelectionClockMs(envelope: DailyEnvelope): number {
+  return Date.parse(memeSelectionClock(envelope));
+}
+
+function shanghaiCalendarDate(timestamp: string): string {
+  return new Date(Date.parse(timestamp) + 8 * 60 * 60 * 1_000).toISOString().slice(0, 10);
+}
+
+function clockMismatchIssue(mismatch: boolean, message: string): string[] {
+  return mismatch ? [message] : [];
+}
+
+function laterThanIssue(value: string, upperBound: string | undefined, message: string): string[] {
+  if (!upperBound) return [];
+  return clockMismatchIssue(Date.parse(value) > Date.parse(upperBound), message);
+}
+
+export function memeSelectionClockIssues(envelope: DailyEnvelope): string[] {
+  const evaluatedAt = envelope.run_report.selection?.evaluated_at;
+  if (!evaluatedAt) return [];
+  return [
+    ...clockMismatchIssue(
+      shanghaiCalendarDate(evaluatedAt) !== envelope.date,
+      `${envelope.date} selection evaluated_at must fall on the envelope date`,
+    ),
+    ...laterThanIssue(
+      evaluatedAt, envelope.generated_at,
+      `${envelope.date} selection evaluated_at is after generated_at`,
+    ),
+    ...laterThanIssue(
+      evaluatedAt, envelope.published_at,
+      `${envelope.date} selection evaluated_at is after published_at`,
+    ),
+  ];
+}
 
 // Reader-facing projection sent to client components. Excluding brand_usage/risk here prevents
 // those editorial fields from being serialized into homepage/archive payloads. This is a browser

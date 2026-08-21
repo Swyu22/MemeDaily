@@ -152,6 +152,31 @@ function requireEditorialComplete(raw: unknown, feed: Feed): void {
   }
 }
 
+function requireEvaluationClock(
+  raw: unknown,
+  expectedDate: string,
+  publisherDate: string,
+): void {
+  const envelope = requireRecord(raw, "envelope must be an object");
+  const report = requireRecord(envelope.run_report, "run_report must be an object");
+  const selection = requireRecord(report.selection, "run_report.selection must be an object");
+  const evaluatedAt = selection.evaluated_at;
+  if (expectedDate < publisherDate) {
+    requireHistoricalClock(evaluatedAt);
+    return;
+  }
+  if (expectedDate > publisherDate) {
+    throw new Error("candidate date must not be after the trusted publisher date");
+  }
+  if (evaluatedAt === undefined) return;
+  throw new Error("current-day candidate must not declare run_report.selection.evaluated_at");
+}
+
+function requireHistoricalClock(value: unknown): void {
+  if (typeof value === "string") return;
+  throw new Error("historical candidate must declare run_report.selection.evaluated_at");
+}
+
 function requireCandidateStatus(status: DailyStatus): void {
   if (status === "published") return;
   if (status === "partial") return;
@@ -172,6 +197,7 @@ export function validateCandidate(
   raw: unknown,
   expectedDate: string,
   feed: Feed,
+  publisherDate = expectedDate,
 ): EnvelopeFacts {
   const facts = envelopeFacts(raw, expectedDate);
   requireCandidateStatus(facts.status);
@@ -179,7 +205,21 @@ export function validateCandidate(
   requireMatchingCount(facts);
   requireMinimumItems(facts);
   requireEditorialComplete(raw, feed);
+  requireEvaluationClock(raw, expectedDate, publisherDate);
   return facts;
+}
+
+export function requireFinalPublishDate(
+  candidateDate: string,
+  publisherDate: string,
+  historical: boolean,
+): void {
+  if (candidateDate > publisherDate) {
+    throw new Error("candidate crossed or contradicts the trusted Shanghai date boundary");
+  }
+  const shouldBeHistorical = candidateDate < publisherDate;
+  if (historical === shouldBeHistorical) return;
+  throw new Error("candidate crossed or contradicts the trusted Shanghai date boundary");
 }
 
 function requireValidSkipped(facts: EnvelopeFacts): void {
@@ -287,7 +327,8 @@ export function preserveRepair(
 function usage(): string {
   return [
     "Usage:",
-    "  tsx scripts/daily-publish-gate.ts validate-candidate <candidate.json> <YYYY-MM-DD> <feed>",
+    "  tsx scripts/daily-publish-gate.ts validate-candidate <candidate.json> <YYYY-MM-DD> <feed> [publisher-date]",
+    "  tsx scripts/daily-publish-gate.ts validate-final-date <candidate-date> <publisher-date> <true|false>",
     "  tsx scripts/daily-publish-gate.ts classify-live <live.json> <YYYY-MM-DD> <feed>",
     "  tsx scripts/daily-publish-gate.ts preserve-repair <live.json> <candidate.json> <YYYY-MM-DD> <feed>",
   ].join("\n");
@@ -321,11 +362,17 @@ function cliArg(args: string[], index: number): string {
 }
 
 function validateCandidateCli(args: string[]): void {
-  requireCliArgs(args, 3);
+  if (args.length !== 3 && args.length !== 4) throw new Error(usage());
   const file = cliArg(args, 0);
   const expectedDate = cliArg(args, 1);
   const parsedFeed = requireFeed(cliArg(args, 2));
-  const result = validateCandidate(readFeedEnvelope(file, parsedFeed), expectedDate, parsedFeed);
+  const publisherDate = cliArg(args, 3) || expectedDate;
+  const result = validateCandidate(
+    readFeedEnvelope(file, parsedFeed),
+    expectedDate,
+    parsedFeed,
+    publisherDate,
+  );
   process.stdout.write(`candidate-ok\t${result.status}\t${result.reported}\n`);
 }
 
@@ -334,6 +381,14 @@ function classifyLiveCli(args: string[]): void {
   const file = cliArg(args, 0);
   const expectedDate = cliArg(args, 1);
   classifyForCli(file, expectedDate, requireFeed(cliArg(args, 2)));
+}
+
+function validateFinalDateCli(args: string[]): void {
+  requireCliArgs(args, 3);
+  const historical = cliArg(args, 2);
+  if (historical !== "true" && historical !== "false") throw new Error(usage());
+  requireFinalPublishDate(cliArg(args, 0), cliArg(args, 1), historical === "true");
+  process.stdout.write("final-date-ok\n");
 }
 
 function preserveRepairCli(args: string[]): void {
@@ -353,6 +408,7 @@ function preserveRepairCli(args: string[]): void {
 
 const CLI_HANDLERS = new Map<string, (args: string[]) => void>([
   ["validate-candidate", validateCandidateCli],
+  ["validate-final-date", validateFinalDateCli],
   ["classify-live", classifyLiveCli],
   ["preserve-repair", preserveRepairCli],
 ]);

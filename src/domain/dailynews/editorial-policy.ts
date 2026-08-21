@@ -5,6 +5,8 @@
  */
 import {
   NEWS_EDITORIAL_POLICY_VERSION,
+  newsSelectionClockIssues,
+  newsSelectionClockMs,
   type NewsEnvelope,
   type NewsItem,
 } from "./schema";
@@ -735,7 +737,7 @@ function selectionHeaderIssues(envelope: NewsEnvelope, selection: Selection): st
   ];
 }
 function v3SelectionDetailIssues(envelope: NewsEnvelope, selection: Selection): string[] {
-  const clockMs = Date.parse(envelope.published_at ?? envelope.generated_at);
+  const clockMs = newsSelectionClockMs(envelope);
   return [
     ...selection.candidate_audit.flatMap((row) => auditRowIssues(row, clockMs)),
     ...qualifiedCountIssues(selection),
@@ -773,6 +775,7 @@ function v3HeatOrderingIssues(envelope: NewsEnvelope): string[] {
 export function dailyNewsEditorialIssues(envelope: NewsEnvelope): string[] {
   if (!usesV3Policy(envelope)) return [];
   return [
+    ...newsSelectionClockIssues(envelope),
     ...headlineEmojiIssues(envelope),
     ...v3ItemMetadataIssues(envelope),
     ...domesticMajorityIssues(envelope),

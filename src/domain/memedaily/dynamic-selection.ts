@@ -4,7 +4,12 @@
  * pos: dynamic editorial-selection policy layered on the core meme evidence rules
  */
 import { editorialCompletenessIssues } from "./editorial-completeness";
-import type { DailyEnvelope, MemeItem } from "./schema";
+import {
+  memeSelectionClockIssues,
+  memeSelectionClockMs,
+  type DailyEnvelope,
+  type MemeItem,
+} from "./schema";
 import { visibleItems } from "./rules";
 
 const DYNAMIC_SELECTION_DATE = "2026-07-27";
@@ -24,7 +29,7 @@ type Selection = NonNullable<DailyEnvelope["run_report"]["selection"]>;
 type QualifiedCounts = Selection["qualified"];
 type CandidateAudit = Selection["candidate_audit"][number];
 type CandidateOutcome = CandidateAudit["outcome"];
-type Occurrence = { date: string; item: MemeItem; publishedMs: number };
+type Occurrence = { date: string; item: MemeItem; selectionMs: number };
 
 function normalizeName(value: string): string {
   return Array.from(value.toLowerCase())
@@ -138,10 +143,6 @@ function sourceObservationMs(
   return observedMs;
 }
 
-function publicationMs(envelope: DailyEnvelope): number {
-  return Date.parse(envelope.published_at ?? envelope.generated_at);
-}
-
 function isInsideObservationWindow(ageHours: number, tier: SelectionTier): boolean {
   return ageHours >= 0 && ageHours <= SELECTION_RULES[tier].maximumAgeHours;
 }
@@ -153,7 +154,7 @@ function observationWindowIssues(
   observed: number[],
 ): string[] {
   if (observed.length === 0) return [`${item.id} has no observed_at evidence`];
-  const ageHours = (publicationMs(envelope) - Math.max(...observed)) / 3_600_000;
+  const ageHours = (memeSelectionClockMs(envelope) - Math.max(...observed)) / 3_600_000;
   if (isInsideObservationWindow(ageHours, tier)) return [];
   return [`${item.id} latest observed activity is outside ${tier}`];
 }
@@ -211,7 +212,7 @@ function auditHasTierActivity(
 ): boolean {
   if (!row.activity) return false;
   const ageHours =
-    (publicationMs(envelope) - Date.parse(row.activity.observed_at)) / 3_600_000;
+    (memeSelectionClockMs(envelope) - Date.parse(row.activity.observed_at)) / 3_600_000;
   return isInsideObservationWindow(ageHours, tier);
 }
 
@@ -261,8 +262,8 @@ function auditActivityChronologyIssues(
   envelope: DailyEnvelope,
 ): string[] {
   if (!row.activity) return [];
-  if (Date.parse(row.activity.observed_at) <= publicationMs(envelope)) return [];
-  return [`${row.candidate_key} audit activity is after publication`];
+  if (Date.parse(row.activity.observed_at) <= memeSelectionClockMs(envelope)) return [];
+  return [`${row.candidate_key} audit activity is after the selection clock`];
 }
 
 function auditCanonicalIssues(row: CandidateAudit): string[] {
@@ -708,15 +709,15 @@ function listCountIssues(item: MemeItem, matches: Occurrence[]): string[] {
 }
 
 function recurrenceActivityIssues(item: MemeItem, matches: Occurrence[]): string[] {
-  const lastPublishedMs = Math.max(...matches.map((row) => row.publishedMs));
+  const lastSelectionMs = Math.max(...matches.map((row) => row.selectionMs));
   const hasNewActivity = item.sources.some(
     (source) =>
       source.evidence_role !== "origin" &&
       source.observed_at &&
-      Date.parse(source.observed_at) > lastPublishedMs,
+      Date.parse(source.observed_at) > lastSelectionMs,
   );
   if (hasNewActivity) return [];
-  return [`${item.id} recurrence lacks post-publication activity`];
+  return [`${item.id} recurrence lacks post-selection activity`];
 }
 
 function recurrenceIssues(
@@ -763,7 +764,7 @@ function occurrenceFor(envelope: DailyEnvelope, item: MemeItem): Occurrence {
   return {
     date: envelope.date,
     item,
-    publishedMs: publicationMs(envelope),
+    selectionMs: memeSelectionClockMs(envelope),
   };
 }
 
@@ -778,7 +779,7 @@ function appendHeldHistory(
 /**
  * Dynamic selection has no fixed cross-day quota. New and recurring language
  * units compete on the same score and evidence window. A recurrence remains
- * eligible only when a source proves activity after its prior publication.
+ * eligible only when a source proves activity after its prior selection clock.
  */
 export function dynamicSelectionIssues(envelopes: DailyEnvelope[]): string[] {
   const issues: string[] = [];
@@ -786,6 +787,7 @@ export function dynamicSelectionIssues(envelopes: DailyEnvelope[]): string[] {
   const heldHistory: Occurrence[] = [];
   const byDateAsc = [...envelopes].sort((a, b) => a.date.localeCompare(b.date));
   for (const envelope of byDateAsc) {
+    issues.push(...memeSelectionClockIssues(envelope));
     issues.push(...dynamicEnvelopeIssues(envelope));
     const tier = selectionTier(envelope);
     for (const item of visibleItems(envelope)) {

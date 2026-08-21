@@ -2,6 +2,11 @@
 
 ## Iteration Goal
 
+On 2026-08-21, restore every missing MemeDaily and DailyNews archive caused by the
+publishing interruption. First add a create-only historical path to the trusted one-file
+publisher and separate target-day editorial evaluation from truthful current publication;
+then submit, deploy, and verify every absent feed/date without overwriting existing archives.
+
 On 2026-08-10, restore the production site after three days of Pages failures,
 make the production dependency audit part of every trusted pre-push release gate,
 and separate deployment freshness alerts from content-contract incidents. Reconcile
@@ -31,6 +36,8 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
 ## Scope
 
 - **In:** repository/production reconciliation, dependency and CI/Pages security,
+  create-only historical publication, evaluation/publication clock separation, full
+  missing-date inventory and backfill,
   trusted candidate ingestion, publish/deploy correlation, fallback/monitor
   reliability, public data minimization, metadata, cloud prompts, all eight cloud
   schedules, retirement of all eight local heartbeats, 2026-07-26 dual-feed recovery,
@@ -41,6 +48,22 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
   extraction, paid model APIs in the product, and unrelated credential/account changes.
 
 ## Checklist
+
+### 2026-08-21 full historical backfill
+
+- [x] Inventory every feed/date from 2026-07-26 through 2026-08-21 and identify four
+  missing meme envelopes plus six missing news envelopes.
+- [x] Accept exact historical candidate branches only within 2026-07-26..Shanghai-today.
+- [x] Require the target to be absent from `main` in both publisher jobs; preserve the
+  same-repository, non-draft, one-file, full-check, and final-step DeployKey boundary.
+- [x] Add optional `selection.evaluated_at`, use it for meme/news qualification and
+  historical recurrence ordering, and keep real current trusted publication timestamps.
+- [x] Pass focused chronology/security regressions, full `npm run check`, governance,
+  workflow Bash/YAML parsing, and independent review.
+- [ ] Merge the support release and reverify active DeployKey-only branch protection.
+- [ ] Publish the ten exact missing feed/date candidates and correlate each accepted main
+  commit with successful Pages deployment.
+- [ ] Verify production archive/detail surfaces and close all candidate/incident records.
 
 ### 2026-08-10 deployment recovery
 
@@ -165,4 +188,4 @@ auditable heat/freshness score that deliberately has no fixed cross-day quota.
 
 ## Last Updated
 
-- 2026-08-10
+- 2026-08-21

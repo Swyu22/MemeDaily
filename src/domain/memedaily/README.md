@@ -6,7 +6,7 @@ module must not import UI, Next.js, workflows, or infrastructure code.
 | File | Responsibility |
 | --- | --- |
 | `README.md` | Module boundary and file index |
-| `schema.ts` | Backward-compatible JSON envelope, item, and v4 research-pass contracts |
+| `schema.ts` | Backward-compatible envelope, item, v4 research-pass, and optional historical evaluation-clock contracts |
 | `data.ts` | Static envelope loading and archive access |
 | `labels.ts` | Reader-facing labels and presentation-safe projections |
 | `labels.test.ts` | Heat/freshness component sorting and historical fallback regressions |
@@ -14,7 +14,7 @@ module must not import UI, Next.js, workflows, or infrastructure code.
 | `rules.test.ts` | Core evidence, safety, lifecycle, and historical-policy regressions |
 | `editorial-completeness.ts` | v4 research-pass reconciliation and exactly-three second-pass gate |
 | `editorial-completeness.test.ts` | v4 second-pass depth and independent-source adversarial regressions |
-| `dynamic-selection.ts` | Score, audit, tier, identity, recurrence, and v4 editorial-completeness gates |
+| `dynamic-selection.ts` | Score, audit, tier, identity, recurrence, evaluation-clock, and v4 completeness gates |
 | `dynamic-selection.test.ts` | Score, activity, identity, tier, recurrence, and research-pass regressions |
 
 Policy `v4-editorial-completeness` requires a reconciled `editorial_complete=true`

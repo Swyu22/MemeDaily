@@ -219,6 +219,9 @@ export const NewsEnvelopeSchema = z.object({
     }),
     selection: z
       .object({
+        // Optional historical editorial clock. The trusted publisher keeps this value while
+        // stamping generated_at/published_at with the real acceptance time.
+        evaluated_at: z.iso.datetime({ offset: true }).optional(),
         tier: NewsSelectionTierSchema,
         qualified: NewsSelectionQualifiedSchema,
         editorial_complete: z.boolean(),
@@ -237,6 +240,48 @@ export type NewsScope = z.infer<typeof NewsScopeSchema>;
 export type NewsTopic = z.infer<typeof NewsTopicSchema>;
 export type NewsItem = z.infer<typeof NewsItemSchema>;
 export type NewsEnvelope = z.infer<typeof NewsEnvelopeSchema>;
+
+export function newsSelectionClock(envelope: NewsEnvelope): string {
+  return envelope.run_report.selection?.evaluated_at
+    ?? envelope.published_at
+    ?? envelope.generated_at;
+}
+
+export function newsSelectionClockMs(envelope: NewsEnvelope): number {
+  return Date.parse(newsSelectionClock(envelope));
+}
+
+function shanghaiCalendarDate(timestamp: string): string {
+  return new Date(Date.parse(timestamp) + 8 * 60 * 60 * 1_000).toISOString().slice(0, 10);
+}
+
+function clockMismatchIssue(mismatch: boolean, message: string): string[] {
+  return mismatch ? [message] : [];
+}
+
+function laterThanIssue(value: string, upperBound: string | undefined, message: string): string[] {
+  if (!upperBound) return [];
+  return clockMismatchIssue(Date.parse(value) > Date.parse(upperBound), message);
+}
+
+export function newsSelectionClockIssues(envelope: NewsEnvelope): string[] {
+  const evaluatedAt = envelope.run_report.selection?.evaluated_at;
+  if (!evaluatedAt) return [];
+  return [
+    ...clockMismatchIssue(
+      shanghaiCalendarDate(evaluatedAt) !== envelope.date,
+      `${envelope.date} selection evaluated_at must fall on the envelope date`,
+    ),
+    ...laterThanIssue(
+      evaluatedAt, envelope.generated_at,
+      `${envelope.date} selection evaluated_at is after generated_at`,
+    ),
+    ...laterThanIssue(
+      evaluatedAt, envelope.published_at,
+      `${envelope.date} selection evaluated_at is after published_at`,
+    ),
+  ];
+}
 
 // Reader-facing projection sent to the client: the internal editorial fields
 // (wechat_bridge / filter_pass / risk) are deliberately EXCLUDED so they never reach the

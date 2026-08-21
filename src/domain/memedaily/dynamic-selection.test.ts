@@ -480,7 +480,7 @@ describe("dynamic selection cross-day eligibility", () => {
       2,
       `${firstDate}T07:30:00+08:00`,
     );
-    expect(issues.some((issue) => issue.includes("post-publication activity"))).toBe(true);
+    expect(issues.some((issue) => issue.includes("post-selection activity"))).toBe(true);
   });
 
   it("rejects changing the original id", () => {

@@ -55,11 +55,16 @@ restrained everyday-life news digest. It is not a community, scraper, or private
 
 ### Envelope Integrity
 - Both envelopes include version fields, date, `generated_at`, optional `published_at`,
-  status, run report, and items.
+  status, run report, and items. Current selection contracts may include optional
+  `selection.evaluated_at` for an authorized historical backfill.
 - Trusted automation stamps pipeline acceptance time after the model artifact is produced;
   the live Pages deployment may complete a few minutes later.
 - `generated_at` and every source `captured_at` must not be later than `published_at`.
   `observed_at` must not be later than its source `captured_at`.
+- A historical `selection.evaluated_at` must fall on `envelope.date` in Asia/Shanghai and
+  must not be later than `generated_at` or `published_at`. Selection uses it instead of
+  falsifying the real later publication time. Same-day candidates must omit this
+  historical-only override.
 - Invalid JSON, schema failures, policy failures, or accounting mismatches block publication.
 - From 2026-07-27, a meme report includes `dropped_capacity` and
   `selection.{tier,qualified,candidate_audit}`. The 30–100 post-identity-deduped audit rows
@@ -105,13 +110,15 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   `relaxed_72h` thresholds.
 - A recurring meme may continue for as many days as its verified activity warrants, but it
   must be resolved across all meme history, retain the original id/canonical, use the exact
-  visible-appearance count, and cite activity observed after its previous site publication
+  visible-appearance count, and cite activity observed after its previous selection clock
+  (`selection.evaluated_at` for a historical backfill, otherwise trusted publication)
   from a popularity, usage-context, or cross-platform source. Canonical identity must
   normalize to letters/numbers and match the current title or an alias. A held identity is
   never automatically re-exposed. An origin timestamp or recaptured old archive page is not
   evidence of renewed heat.
 - DailyNews assigns each candidate the later/weaker of its score tier and real event-age
-  tier, measured from required `occurred_at` against `published_at ?? generated_at`.
+  tier, measured from required `occurred_at` against
+  `selection.evaluated_at ?? published_at ?? generated_at`.
   Future and older-than-72h events do not qualify; selected audit time/identity must match
   the visible item. It may recover an under-three day with useful, still-current material from the
   previous 72 hours only when it has never been visibly published in an earlier news
@@ -155,6 +162,9 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   executes the PR tree, stamps chronology, and validates all contracts. A separate job
   resets to live `main`, revalidates after rebase, and exposes the dedicated write deploy
   key only to its final `HEAD:main` push.
+- Explicitly authorized historical candidates are bounded to 2026-07-26 through Shanghai
+  today and are accepted only when the exact target is absent on `main`. Both workflow jobs
+  recheck that create-only condition; existing archives cannot be repaired or overwritten.
 - The active `codex-trusted-main` ruleset blocks ordinary users and connected apps from
   updating or merging `main`; its sole bypass type is the trusted publisher DeployKey.
 - Publication completes only after a Pages run covering the accepted SHA (or descendant)

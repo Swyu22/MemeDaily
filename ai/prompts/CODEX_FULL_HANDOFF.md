@@ -42,7 +42,7 @@
 
 - **云端任务**：每次都从 GitHub `main` 重读
   `ai/prompts/CODEX_CLOUD_RUNBOOK.md`、对应活规则、schema 与近期数据语境；热梗 finalist 的身份、
-  首次 id/canonical、出现次数、上次发布时间和 held 状态必须再查全部历史。只使用连接的 GitHub 工具和
+  首次 id/canonical、出现次数、上次评选时钟（历史 `evaluated_at`，否则可信发布时间）和 held 状态必须再查全部历史。只使用连接的 GitHub 工具和
   公开网页。云端机房 IP 打不开平台原页时，改用可读聚合榜与公开媒体交叉印证，绝不伪装已直读。
 - **本地恢复的 IP 优势（热梗）**：本地中国 IP 下微博 / 抖音 / 小红书公开页通常更易读，可优先平台
   原页，再用聚合榜单 + 墨鱼词典交叉印证。日报仍优先权威媒体原页。
@@ -110,6 +110,8 @@ cron-job.org 与 GitHub `schedule:` 已退出。固定去重 / 最低产出协�
 `skipped|held` 只为历史数据兼容及人工安全下架保留在 schema 中；`2026-07-26` 起它们不是当天发布成功或
 自动化终态，其中 `held` 必须人工判断后解除，任何无人值守任务不得自动改回可见。
 `generated_at` / `published_at` 会在提交前由 `npm run stamp:publish -- <文件>` 用可信本机时钟统一写入；
+经人工明确授权的缺失历史日期另在 `run_report.selection.evaluated_at` 记录目标日真实评选时钟，评分窗口使用
+该字段，但真实上线时间仍按当前可信时钟写入，禁止回填伪造的 `published_at`；
 来源时间晚于该时刻时也会被压到发布上界，避免生成内容声称“未来取证”。
 
 **校验命令（提交前必须全过）**：
@@ -347,10 +349,10 @@ git push                                 # 真实 push → pages.yml 部署；�
 1. `cd` 到仓库（路径含空格，加引号）→ `git pull --ff-only`。
 2. 算今天 Asia/Shanghai 日期；按第 3 节**去重锁**决定每条线是否要发。
 3. 读 `.cloud.md` + 对应 schema + 近期同线 `*.json` 作语境；所有热梗 finalist 再扫描全部
-   `data/daily/*.json`（含 held），确定首次 id/canonical、精确出现次数与上次发布时间。
+   `data/daily/*.json`（含 held），确定首次 id/canonical、精确出现次数与上次评选时钟（历史 `evaluated_at`，否则可信发布时间）。
 4. 研究取源：热梗按 5.2（平台原页优先）、日报按 6.4（权威多源）；广撒网、交叉印证。
 5. 套用红线 + 证据门禁，生成今天 JSON；热梗将至少 30 个新 / 连续候选同池评分，按
-   `strict_24h → relaxed_48h → relaxed_72h` 选择，跨日不限数量但逐条要求上次发布后的新活动；
+   `strict_24h → relaxed_48h → relaxed_72h` 选择，跨日不限数量但逐条要求上次评选时钟后的新活动；
    日报按同样分层、国内 75%/国际 25% 及国际代表性门禁恢复。选择所选层全部合格项至 10；恰好 3 条时
    完成第二轮：本轮新增至少 15 条、至少新增一个来源范围、总账扩至至少 45 候选。至少 3 条合格后才能提交；使用软偏好放宽时标 `partial`，绝不凑数/编造。
 6. 诚实填 `run_report`（尤其 `published` 等式、`evidence_summary` 字段名精确；热梗还要完整候选
@@ -403,7 +405,7 @@ git push                                 # 真实 push → pages.yml 部署；�
   （微信站长认证 token 文件，必须一直在线）。
 - 校验：`npm run validate`（热梗）、`npm run validate:news`（日报）、`npm run check`（全量门禁）。
 - 最低产出：两条线均至少 3 条但绝不固定为 3；热梗至少 30 个身份去重候选同池动态评分，无固定跨日配额，连续梗须有
-  上次发布后的新活动证据并查全历史身份；候选账本派生最严格足量 tier 并全选至 10；日报国内至少 75%、
+  上次评选时钟后的新活动证据并查全历史身份；候选账本派生最严格足量 tier 并全选至 10；日报国内至少 75%、
   国际至多 25%，排除任何外国普通本地新闻；恰好 3 条时第二轮自身新增至少 15 条、扩来源范围并达到至少 45 候选；
   zero-item / `skipped` generator 不得用于当前日发布。
 - Cloud 协议：`ai/prompts/CODEX_CLOUD_RUNBOOK.md`；活规则：
