@@ -7,30 +7,31 @@
   "status": "published",
   "run_report": {
     "candidates_scanned": 30,
-    "published": 4,
+    "published": 5,
     "dropped_safety": {},
     "dropped_low_confidence": 0,
     "dropped_quota": 0,
     "dropped_capacity": 0,
     "sources": [
       "official",
-      "state_media"
+      "state_media",
+      "major_media"
     ],
     "evidence_summary": {
       "candidates_with_urls": 30,
       "official_sources": 3,
       "state_media_sources": 1,
-      "major_media_sources": 0,
+      "major_media_sources": 2,
       "aggregator_sources": 0,
-      "dropped_insufficient_evidence": 26
+      "dropped_insufficient_evidence": 25
     },
     "selection": {
       "evaluated_at": "2026-08-18T23:59:00+08:00",
       "tier": "strict_24h",
       "qualified": {
-        "strict_24h": 4,
-        "relaxed_48h": 4,
-        "relaxed_72h": 4
+        "strict_24h": 5,
+        "relaxed_48h": 5,
+        "relaxed_72h": 5
       },
       "editorial_complete": true,
       "research_passes": [
@@ -260,14 +261,22 @@
           "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
         },
         {
-          "candidate_key": "2026-08-18-cns-10679908",
-          "story_identity": "cn-yunnan-low-price-tour-investigation-2026-08-18",
+          "candidate_key": "2026-08-18-yunnan-low-price-tour",
+          "story_identity": "cn-yunnan-low-price-tour-enforcement-2026-08-18",
           "research_pass": 1,
-          "occurred_at": "2026-08-18T21:40:00+08:00",
+          "occurred_at": "2026-08-18T19:59:00+08:00",
           "scope": "domestic",
           "topic": "消费就业",
-          "outcome": "dropped_insufficient_evidence",
-          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+          "outcome": "selected",
+          "item_id": "2026-08-18-yunnan-low-price-tour",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
         },
         {
           "candidate_key": "2026-08-18-cns-10679906",
@@ -417,6 +426,47 @@
       "published": true
     },
     {
+      "id": "2026-08-18-yunnan-low-price-tour",
+      "story_identity": "cn-yunnan-low-price-tour-enforcement-2026-08-18",
+      "headline": "🧳 云南通报低价团：4家旅行社、3名导游拟被吊证",
+      "summary": "云南公布央视曝光低价团调查进展，拟吊销4家旅行社经营许可和3名导游证，8家涉事购物场所已全部停业整改。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 91,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-18T19:59:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "通报所列吊证措施均为拟处罚，最终处罚决定将依照法定程序作出。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33805425?commTag=true",
+          "title": "“低价团”导游胁迫游客消费？云南通报调查处理情况",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "澎湃新闻当晚完整转载云南省文化和旅游厅通报，列明拟吊证对象及停业整改情况。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-18/10679908.shtml",
+          "title": "云南通报“低价团”调查进展：4家旅行社、3名导游拟被吊销证件",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "中新网当日交叉核对4家旅行社、3名导游拟被吊证及8家购物场所停业整改。"
+        }
+      ],
+      "published": true
+    },
+    {
       "id": "2026-08-18-county-consumption-measures",
       "story_identity": "cn-county-consumption-eighteen-measures-2026-08-18",
       "headline": "🛍️ 九部门推出18项县域消费举措",
@@ -431,7 +481,7 @@
         "everyday_relevance": 21,
         "evidence": 13
       },
-      "heat_rank": 2,
+      "heat_rank": 3,
       "occurred_at": "2026-08-18T08:01:00+08:00",
       "risk": {
         "level": "low",
@@ -464,7 +514,7 @@
         "everyday_relevance": 21,
         "evidence": 12
       },
-      "heat_rank": 3,
+      "heat_rank": 4,
       "occurred_at": "2026-08-18T21:00:00+08:00",
       "risk": {
         "level": "low",
@@ -497,7 +547,7 @@
         "everyday_relevance": 20,
         "evidence": 11
       },
-      "heat_rank": 4,
+      "heat_rank": 5,
       "occurred_at": "2026-08-18T17:30:00+08:00",
       "risk": {
         "level": "low",
