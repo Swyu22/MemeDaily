@@ -1,0 +1,570 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-18",
+  "generated_at": "2026-08-21T12:53:00+08:00",
+  "published_at": "2026-08-21T12:53:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 5,
+    "dropped_safety": {},
+    "dropped_low_confidence": 0,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "official_sources": 3,
+      "state_media_sources": 1,
+      "major_media_sources": 2,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 25
+    },
+    "selection": {
+      "evaluated_at": "2026-08-18T23:59:00+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 5,
+        "relaxed_72h": 5
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "中央部委与政府公开信息",
+            "新华社人民日报央视",
+            "中新网国内滚动",
+            "公共服务与消费保障"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-18-housing-provident-fund-rules",
+          "story_identity": "cn-housing-provident-fund-regulation-update-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T17:03:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-18-housing-provident-fund-rules",
+          "score": 93,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-18-county-consumption-measures",
+          "story_identity": "cn-county-consumption-eighteen-measures-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T08:01:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-18-county-consumption-measures",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-18-community-jobs-graduates",
+          "story_identity": "cn-community-jobs-graduate-employment-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-18-community-jobs-graduates",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-18-scale-anti-cheating",
+          "story_identity": "cn-electronic-scale-anti-cheating-governance-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T17:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-18-scale-anti-cheating",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679955",
+          "story_identity": "cn-diverse-high-quality-travel-demand-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T23:02:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679957",
+          "story_identity": "cn-late-summer-dampness-health-advice-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T22:35:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679952",
+          "story_identity": "cn-german-agri-machinery-tianjin-expansion-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T22:03:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679946",
+          "story_identity": "cn-guangzhou-urban-ecological-restoration-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T22:01:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679944",
+          "story_identity": "cn-guangxi-qixi-traditional-crafts-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679943",
+          "story_identity": "cn-hainan-outbound-investment-alliance-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:59:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679947",
+          "story_identity": "cn-macao-youth-innovation-competition-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T22:02:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679928",
+          "story_identity": "cn-beijing-yizhuang-ai-talent-measures-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:46:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679933",
+          "story_identity": "cn-power-industry-emergency-rescuer-skills-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:45:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679934",
+          "story_identity": "cn-sichuan-earthquake-risk-ai-model-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:44:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679924",
+          "story_identity": "cn-ai-cultural-industry-export-paths-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:43:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679921",
+          "story_identity": "cn-bamboo-plastic-substitution-industry-fair-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:41:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679910",
+          "story_identity": "cn-southern-xinjiang-fruit-cold-chain-train-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:41:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679909",
+          "story_identity": "cn-zhejiang-green-power-trading-volume-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:40:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-yunnan-low-price-tour",
+          "story_identity": "cn-yunnan-low-price-tour-enforcement-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T19:59:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-18-yunnan-low-price-tour",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679906",
+          "story_identity": "cn-xizhao-expressway-section-completion-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:39:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679903",
+          "story_identity": "cn-fujian-fishing-season-first-catch-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:19:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679913",
+          "story_identity": "cn-child-talent-gene-test-fact-check-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:18:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679897",
+          "story_identity": "cn-china-laos-border-passenger-volume-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:17:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679896",
+          "story_identity": "cn-macao-five-year-development-plan-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T21:01:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679895",
+          "story_identity": "cn-guangdong-government-ai-application-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T20:58:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679891",
+          "story_identity": "cn-zhejiang-county-crossborder-ecommerce-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T20:58:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679890",
+          "story_identity": "cn-europe-arctic-express-first-vessel-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T20:56:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679889",
+          "story_identity": "cn-guangxi-primary-medical-capacity-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T20:56:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679869",
+          "story_identity": "cn-trade-secret-enforcement-cases-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T20:35:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-18-cns-10679858",
+          "story_identity": "cn-yancheng-lng-terminal-throughput-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T19:39:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-18-housing-provident-fund-rules",
+      "story_identity": "cn-housing-provident-fund-regulation-update-2026-08-18",
+      "headline": "🏠 住房公积金使用范围进一步拓宽",
+      "summary": "修订后的住房公积金管理条例将租房提取、住房改造和物业费等更多居住支出纳入支持范围，并推动信息共享与异地服务，相关规定自9月20日起施行。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 93,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-18T17:03:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "具体提取项目、额度和办理材料仍以当地公积金中心实施细则为准。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国政府网",
+          "url": "https://big5.www.gov.cn/gate/big5/www.gov.cn/yaowen/liebiao/202608/content_7078483.htm",
+          "title": "公布《国务院关于修改〈住房公积金管理条例〉的决定》",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "中国政府网发布条例修改决定及施行日期，构成一手政策依据。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-18-yunnan-low-price-tour",
+      "story_identity": "cn-yunnan-low-price-tour-enforcement-2026-08-18",
+      "headline": "🧳 云南通报低价团：4家旅行社、3名导游拟被吊证",
+      "summary": "云南公布央视曝光低价团调查进展，拟吊销4家旅行社经营许可和3名导游证，8家涉事购物场所已全部停业整改。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 91,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-18T19:59:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "通报所列吊证措施均为拟处罚，最终处罚决定将依照法定程序作出。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33805425?commTag=true",
+          "title": "“低价团”导游胁迫游客消费？云南通报调查处理情况",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "澎湃新闻当晚完整转载云南省文化和旅游厅通报，列明拟吊证对象及停业整改情况。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-18/10679908.shtml",
+          "title": "云南通报“低价团”调查进展：4家旅行社、3名导游拟被吊销证件",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "中新网当日交叉核对4家旅行社、3名导游拟被吊证及8家购物场所停业整改。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-18-county-consumption-measures",
+      "story_identity": "cn-county-consumption-eighteen-measures-2026-08-18",
+      "headline": "🛍️ 九部门推出18项县域消费举措",
+      "summary": "商务部等九部门提出完善县域商业网点、物流配送和便民服务等18项措施，强调因地制宜发展特色商业，改善县乡居民购物和服务可及性。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 89,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-18T08:01:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "各地落地节奏、支持品类和经营主体申报条件会有差异。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "商务部",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_39e326e1c5a44c16b7b18f5ec6c62baf.html",
+          "title": "商务部等9部门关于进一步激发下沉市场活力 活跃县域消费的意见",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "商务部公开九部门文件全文，明确18项具体任务。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-18-community-jobs-graduates",
+      "story_identity": "cn-community-jobs-graduate-employment-2026-08-18",
+      "headline": "🎓 社区新增岗位原则上面向高校毕业生开放",
+      "summary": "三部门优化城乡社区岗位吸纳高校毕业生就业安排，明确新开发岗位原则上向毕业生开放，并提出完善招聘、培训和职业发展支持。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-18T21:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "岗位数量、专业要求和招聘时间由各地用人单位另行公布。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://big5.www.gov.cn/gate/big5/www.gov.cn/lianbo/202608/content_7078508.htm",
+          "title": "三部门发文优化城乡社区岗位吸纳高校毕业生就业",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "新华社经中国政府网发布三部门通知的核心安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-18-scale-anti-cheating",
+      "story_identity": "cn-electronic-scale-anti-cheating-governance-2026-08-18",
+      "headline": "⚖️ 电子计价秤防作弊监管再加码",
+      "summary": "市场监管部门要求把防篡改、锁机和身份识别融入电子秤生产、销售、维修和执法全链条，严禁预留作弊改装通道，消费者可继续通过12315反映线索。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-18T17:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "普通消费者现场复核仍应使用合格公平秤，并保存票据和称重记录。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "市场监管总局",
+          "url": "https://www.samr.gov.cn/xw/sj/art/2026/art_20907635f23d44078405474d0416081b.html",
+          "title": "市场监管总局强化电子计价秤全链条防作弊治理",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "总局发布行政指导要求，覆盖生产、经销、维修和线上销售环节。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
