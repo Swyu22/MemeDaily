@@ -39,3 +39,5 @@ Current automation decisions:
   completion lock, exhaustive up-to-10 selection, and domestic-majority news scope).
 - `30-decisions/adr-011-create-only-historical-backfill.md` (bounded missing-date
   publication with separate editorial-evaluation and truthful live-publication clocks).
+- `30-decisions/adr-012-feed-local-archive-continuity.md` (hard per-feed internal-gap
+  validation bounded by the feed's own latest committed date rather than wall-clock today).

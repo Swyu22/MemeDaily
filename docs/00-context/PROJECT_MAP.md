@@ -67,6 +67,10 @@
   `published`/`partial` plus at least three evidence-qualified, reader-visible items.
   Heat, freshness, and editorial confidence may be relaxed through the documented
   recovery pool; safety, truth, chronology, and source gates may not.
+- **Archive continuity (effective 2026-07-26):** each feed independently has one file for
+  every date from the cutoff through its own maximum committed date. Validation does not
+  require today and never borrows the other feed's maximum, preserving the staggered daily
+  schedule while blocking silent internal gaps.
 - **Meme dynamic selection (effective 2026-07-27):** at least 30 new and recurring
   candidates compete on current heat, freshness, demonstrated reusability, and evidence.
   There is no fixed cross-day quota. Recurrence requires stable identity/list count and

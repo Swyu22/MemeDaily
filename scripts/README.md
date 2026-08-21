@@ -5,8 +5,10 @@ route components.
 
 | File | Responsibility |
 | --- | --- |
-| `validate-data.ts` | Validate every meme envelope, cross-day lifecycle, and dynamic selection policy |
-| `validate-news.ts` | Validate every news envelope and editorial policy |
+| `validate-data.ts` | Validate every meme envelope, archive continuity, cross-day lifecycle, and dynamic selection policy |
+| `validate-news.ts` | Validate every news envelope, archive continuity, and editorial policy |
+| `data-continuity.ts` | Find feed-local archive gaps from 2026-07-26 through that feed's own latest date |
+| `data-continuity.test.ts` | Cutoff, gap, continuous-range, and feed-independence regressions |
 | `stamp-publish-time.ts` | Apply trusted acceptance time and reject future source captures |
 | `stamp-publish-time.test.ts` | Regression coverage for both feed timestamp contracts |
 | `daily-publish-gate.ts` | Require completion and historical evaluation clocks, classify live/migration states, and bound repairs |
