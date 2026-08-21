@@ -7,6 +7,8 @@ ADR-008's bounded meme recovery policy without changing the minimum-three termin
 contract, the trusted publication boundary, or historical envelopes. ADR-010
 extends this model from 2026-08-01 with explicit research passes and an editorial
 completeness marker while preserving this ADR's no-fixed-cross-day-quota rule.
+ADR-011 further defines the prior-activity boundary as the previous selection clock:
+historical `selection.evaluated_at` when present, otherwise trusted publication.
 
 ## Context
 
@@ -88,7 +90,7 @@ discovery context, not an identity or recurrence limit. The canonical phrase mus
 normalize to letters/numbers, match the normalized current title or an alias, and
 remain anchored to its earliest identity. A held identity is never automatically
 re-exposed. At least one current source must have `observed_at` later than the
-meme's previous site publication. That source must demonstrate popularity, usage
+meme's previous selection clock. That source must demonstrate popularity, usage
 context, or cross-platform activity; an `origin` timestamp alone is insufficient.
 Otherwise the recurrence fails even if its URL still loads.
 
@@ -104,7 +106,7 @@ relax to reach the daily minimum.
 - Domain validation hard-requires them from 2026-07-27, verifies the score,
   tier/status/age window, candidate ledger and privacy, strictest sufficient
   tier, Top-N/capacity accounting, stable full-history identity/list count, and
-  post-publication activity for recurrence.
+  post-selection activity for recurrence.
 - Reader sorting uses the `heat` component for heat and the `freshness` component
   for freshness; historical data without breakdowns keeps its lifecycle/list-day
   fallback. A genuinely fresh recurrence can therefore outrank a weaker new item.
@@ -141,7 +143,7 @@ relax to reach the daily minimum.
 ## Verification Requirements
 
 - A regression test accepts a board made entirely of recurring memes when every
-  item has qualifying post-publication activity.
+  item has qualifying post-selection activity.
 - Tests reject stale recurrence, changed/empty/unanchored canonical identity,
   wrong list count, held re-exposure, invalid score/tier/status, fewer than 30
   audited candidates, mismatched outcome/qualification totals, unjustified

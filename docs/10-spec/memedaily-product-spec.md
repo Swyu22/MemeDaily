@@ -63,7 +63,8 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   `observed_at` must not be later than its source `captured_at`.
 - A historical `selection.evaluated_at` must fall on `envelope.date` in Asia/Shanghai and
   must not be later than `generated_at` or `published_at`. Selection uses it instead of
-  falsifying the real later publication time.
+  falsifying the real later publication time. Same-day candidates must omit this
+  historical-only override.
 - Invalid JSON, schema failures, policy failures, or accounting mismatches block publication.
 - From 2026-07-27, a meme report includes `dropped_capacity` and
   `selection.{tier,qualified,candidate_audit}`. The 30–100 post-identity-deduped audit rows
@@ -109,7 +110,8 @@ restrained everyday-life news digest. It is not a community, scraper, or private
   `relaxed_72h` thresholds.
 - A recurring meme may continue for as many days as its verified activity warrants, but it
   must be resolved across all meme history, retain the original id/canonical, use the exact
-  visible-appearance count, and cite activity observed after its previous site publication
+  visible-appearance count, and cite activity observed after its previous selection clock
+  (`selection.evaluated_at` for a historical backfill, otherwise trusted publication)
   from a popularity, usage-context, or cross-platform source. Canonical identity must
   normalize to letters/numbers and match the current title or an alias. A held identity is
   never automatically re-exposed. An origin timestamp or recaptured old archive page is not

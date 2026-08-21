@@ -31,17 +31,20 @@ archive replacement.
   present. Trusted stamping preserves it while recording the real current publication time.
 - Same-repository, non-draft, one-file, current-policy completion, full checks, post-rebase
   checks, Pages correlation, and final-step DeployKey confinement are unchanged.
+- Pre-merge independent review found three gaps. The gate now rejects same-day
+  `evaluated_at`; the credential-bearing step rechecks Shanghai date and the rebased parent;
+  living rules now call recurrence activity relative to the prior selection clock.
 
 ## Local Verification
 
-- Focused historical publisher, gate, and workflow security suite: 54 tests passed.
+- Focused historical publisher, gate, and workflow security suite: 66 tests passed.
 - `npm run check`: production audit found zero vulnerabilities; both full data validators,
-  strict lint, typecheck, all 263 tests, and the 253-page static build passed.
+  strict lint, typecheck, all 266 tests, and the 253-page static build passed.
 - Strict file-size, key-header, import-boundary, secret, state-freshness, complexity,
   whitespace, workflow Bash-block, and workflow YAML checks passed.
-- Independent workflow review accepted the fail-closed/create-only historical boundary,
-  including valid dates no later than Shanghai today, two live-main absence checks,
-  same-day terminal no-op preservation, and unchanged credential confinement.
+- Final staged governance and workflow YAML checks passed. Independent re-review returned
+  GO after exercising the final-date state machine and a real two-day historical recurrence
+  fixture in the focused 66/66 suite.
 
 ## Release Pending
 

@@ -53,7 +53,8 @@ and one-file PR boundary. A historical candidate must set
 envelope date. Selection windows use that clock, while `generated_at` remains a real
 current candidate time and the trusted publisher stamps the real current
 `generated_at`/`published_at`. The evaluation clock may not be later than either trusted
-clock.
+clock. Ordinary same-day candidates must omit `selection.evaluated_at`; their selection
+clock is the trusted same-day publication clock.
 
 For both feeds, the minimum-output floor is effective from `2026-07-26`; the
 editorial-completeness terminal contract is effective from `2026-08-01`:
@@ -90,7 +91,8 @@ For meme envelopes dated 2026-07-27 or later, “relaxation” means the dynamic
 selection tiers in the living rule, not a fixed carry-over quota. Rank at least
 30 unique post-identity-deduped new and recurring candidates together. A
 cross-day meme is eligible whenever it clears the selected score/evidence window
-and has source `observed_at` activity after its previous site publication; the
+and has source `observed_at` activity after its previous selection clock (historical
+`selection.evaluated_at`, otherwise trusted publication); the
 qualifying source must demonstrate popularity, usage, or cross-platform activity
 rather than merely restate origin. Merely changing `captured_at` is invalid.
 There is no recurrence count, ratio, or age cap.
@@ -171,7 +173,7 @@ Always fetch from `main` and read completely:
 Recent envelopes are discovery/editorial context, not a meme identity horizon.
 Before scoring any meme finalist, resolve its id, normalized title/aliases,
 canonical phrase, first visible identity, exact visible-appearance count, latest
-site publication time, and any operator-held match across **all**
+selection clock, and any operator-held match across **all**
 `data/daily/*.json`. A canonical phrase must normalize to letters/numbers and
 match the current title or one current alias. Keep the first id and canonical for
 a recurrence; never automatically re-expose an identity found in held history.
@@ -192,7 +194,7 @@ Then:
      rule's 100-point rubric. Start at `strict_24h` (score >=75), then
      `relaxed_48h` (>=70), then `relaxed_72h` (>=65). There is no fixed cross-day
      count: a recurrence keeps its first id and exact list count, and qualifies
-     only with activity observed after its prior site publication. Populate the
+     only with activity observed after its prior selection clock. Populate the
      full candidate ledger, derive cumulative tier counts from it, and stop at
      the first tier with at least three, then keep all its qualifiers up to 10;
    - for `news`, use the same score floors (`strict_24h >=75`,

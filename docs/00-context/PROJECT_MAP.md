@@ -70,7 +70,8 @@
 - **Meme dynamic selection (effective 2026-07-27):** at least 30 new and recurring
   candidates compete on current heat, freshness, demonstrated reusability, and evidence.
   There is no fixed cross-day quota. Recurrence requires stable identity/list count and
-  non-origin observed activity after the previous site publication; origin or page capture
+  non-origin observed activity after the previous selection clock (historical evaluation
+  clock when present, otherwise trusted publication); origin or page capture
   time alone is not renewed-activity evidence. Finalist identity is resolved across all
   history (including held), canonical text is display-anchored, and a complete candidate
   ledger derives the strictest sufficient tier, Top-N/capacity, and every report count.

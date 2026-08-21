@@ -263,13 +263,22 @@ jobs:
         env:
           DATE: ${{ needs.validate.outputs.date }}
           FEED: ${{ needs.validate.outputs.feed }}
+          HISTORICAL: ${{ needs.validate.outputs.historical }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_DEPLOY_KEY: ${{ secrets.CODEX_PUBLISH_DEPLOY_KEY }}
           PUBLISH_REPOSITORY: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           REPOSITORY: ${{ github.repository }}
+          TARGET: ${{ needs.validate.outputs.target }}
         run: |
           set -euo pipefail
+          FINAL_TODAY="$(TZ=Asia/Shanghai date +%F)"
+          npx --no-install tsx scripts/daily-publish-gate.ts \
+            validate-final-date "$DATE" "$FINAL_TODAY" "$HISTORICAL"
+          if [ "$HISTORICAL" = "true" ] && git cat-file -e "HEAD^:${TARGET}" 2>/dev/null; then
+            echo "::error::Historical publication is create-only; ${TARGET} exists in the rebased main parent."
+            exit 1
+          fi
           bash scripts/push-main-with-deploy-key.sh
           SHA="$(git rev-parse HEAD)"
           bash scripts/dispatch-pages.sh "$SHA"

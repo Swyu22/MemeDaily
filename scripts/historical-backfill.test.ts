@@ -20,7 +20,7 @@ import {
   memeSelectionClockIssues,
   type DailyEnvelope,
 } from "../src/domain/memedaily/schema";
-import { validateCandidate } from "./daily-publish-gate";
+import { requireFinalPublishDate, validateCandidate } from "./daily-publish-gate";
 import { normalizePublishTimes } from "./stamp-publish-time";
 
 const ROOT = process.cwd();
@@ -32,6 +32,11 @@ const REAL_PUBLISH_TIME = `${PUBLISHER_DATE}T12:00:00+08:00`;
 
 function readMeme(): DailyEnvelope {
   const file = path.join(ROOT, "data/daily", `${HISTORICAL_DATE}.json`);
+  return DailyEnvelopeSchema.parse(JSON.parse(fs.readFileSync(file, "utf8")));
+}
+
+function readMemeDate(date: string): DailyEnvelope {
+  const file = path.join(ROOT, "data/daily", `${date}.json`);
   return DailyEnvelopeSchema.parse(JSON.parse(fs.readFileSync(file, "utf8")));
 }
 
@@ -83,6 +88,16 @@ it("uses evaluated_at for historical meme and news qualification", () => {
   expect(dailyNewsEditorialIssues(news).some((issue) => issue.includes("qualification_tier"))).toBe(true);
 });
 
+it("uses evaluated_at for chronological recurrence across backfilled meme days", () => {
+  const days = [readMemeDate("2026-08-13"), readMemeDate("2026-08-14")];
+  for (const day of days) {
+    day.run_report.selection!.evaluated_at = day.published_at;
+    day.generated_at = REAL_PUBLISH_TIME;
+    day.published_at = REAL_PUBLISH_TIME;
+  }
+  expect(dynamicSelectionIssues(days)).toEqual([]);
+});
+
 it("requires the evaluation clock to match the envelope date and precede trusted clocks", () => {
   const meme = historicalMeme();
   const news = historicalNews();
@@ -119,6 +134,24 @@ it("requires evaluated_at for a historical publisher candidate", () => {
   )).not.toThrow();
 });
 
+it("rejects an untrusted evaluated_at override on a current-day candidate", () => {
+  expect(() => validateCandidate(
+    gateEnvelope(`${HISTORICAL_DATE}T00:01:00+08:00`),
+    HISTORICAL_DATE,
+    "meme",
+    HISTORICAL_DATE,
+  )).toThrow("current-day candidate must not declare run_report.selection.evaluated_at");
+});
+
+it("fails a same-day candidate closed after crossing Shanghai midnight", () => {
+  expect(() => requireFinalPublishDate("2026-08-21", "2026-08-21", false)).not.toThrow();
+  expect(() => requireFinalPublishDate("2026-08-21", "2026-08-22", false))
+    .toThrow("trusted Shanghai date boundary");
+  expect(() => requireFinalPublishDate("2026-08-21", "2026-08-22", true)).not.toThrow();
+  expect(() => requireFinalPublishDate("2026-08-21", "2026-08-21", true))
+    .toThrow("trusted Shanghai date boundary");
+});
+
 it("keeps the existing three-argument validate-candidate CLI compatible", () => {
   const file = path.join(ROOT, "data/daily", `${HISTORICAL_DATE}.json`);
   const result = spawnSync(
@@ -140,6 +173,9 @@ it("confines historical branches to valid missing dates without widening trust",
   expect(workflow).toContain('validate-candidate "$TARGET" "$DATE" "$FEED" "$TODAY"');
   expect(workflow).toContain('LIVE_TODAY="$(TZ=Asia/Shanghai date +%F)"');
   expect(workflow).toContain('validate-candidate "$TARGET" "$DATE" "$FEED" "$LIVE_TODAY"');
+  expect(workflow).toContain('FINAL_TODAY="$(TZ=Asia/Shanghai date +%F)"');
+  expect(workflow).toContain('validate-final-date "$DATE" "$FINAL_TODAY" "$HISTORICAL"');
+  expect(workflow).toContain('git cat-file -e "HEAD^:${TARGET}"');
   expect(workflow).toContain('"${#CHANGED_FILES[@]}" -ne 1');
   expect(workflow).not.toContain("contents: write");
 });

@@ -25,7 +25,8 @@ operator to falsify publication timestamps.
   full `npm run check`, post-rebase recheck, and final-step DeployKey constraints unchanged.
 - Add optional `run_report.selection.evaluated_at` to both current selection contracts.
   Historical candidates must provide it. It must resolve to `envelope.date` in
-  Asia/Shanghai and must not be later than `generated_at` or `published_at`.
+  Asia/Shanghai and must not be later than `generated_at` or `published_at`. Same-day
+  candidates must omit it so untrusted input cannot move the ordinary selection clock.
 - Meme activity windows, meme recurrence publication ordering, and DailyNews event-age
   qualification use `evaluated_at` when present, falling back to
   `published_at ?? generated_at` for existing archives and normal same-day candidates.
@@ -39,6 +40,8 @@ operator to falsify publication timestamps.
   a valid current-policy envelope.
 - A race that creates the target after read-only validation fails closed at the trusted
   live-tip recheck before any commit or publication credential is exposed.
+- The final credential-bearing step rechecks the Shanghai date. A same-day candidate that
+  crosses midnight fails instead of rewriting a now-historical target.
 - Editorial qualification describes what was timely on the target date; reader-facing
   publication metadata truthfully describes when the backfill actually went live.
 - All feed evidence, safety, candidate-ledger, minimum-three, Top-N, and domestic-majority

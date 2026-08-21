@@ -717,7 +717,7 @@ function recurrenceActivityIssues(item: MemeItem, matches: Occurrence[]): string
       Date.parse(source.observed_at) > lastSelectionMs,
   );
   if (hasNewActivity) return [];
-  return [`${item.id} recurrence lacks post-publication activity`];
+  return [`${item.id} recurrence lacks post-selection activity`];
 }
 
 function recurrenceIssues(
@@ -779,7 +779,7 @@ function appendHeldHistory(
 /**
  * Dynamic selection has no fixed cross-day quota. New and recurring language
  * units compete on the same score and evidence window. A recurrence remains
- * eligible only when a source proves activity after its prior publication.
+ * eligible only when a source proves activity after its prior selection clock.
  */
 export function dynamicSelectionIssues(envelopes: DailyEnvelope[]): string[] {
   const issues: string[] = [];
