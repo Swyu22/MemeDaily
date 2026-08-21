@@ -1,0 +1,754 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21T12:02:30+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {
+      "时事政治": 1,
+      "灾害/公共安全": 2,
+      "死亡/伤害": 1,
+      "隐私/未成年人": 1
+    },
+    "dropped_low_confidence": 16,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "bilibili",
+      "zhihu",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 25,
+      "platform_public_sources": 8,
+      "aggregator_sources": 20,
+      "search_media_sources": 4,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 9,
+        "relaxed_72h": 14
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-21-mei-zhe-jian-shi-wo-zhi-quyue-ziji",
+          "canonical_phrase": "X这件事我只取悦自己",
+          "outcome": "selected",
+          "item_id": "2026-08-21-mei-zhe-jian-shi-wo-zhi-quyue-ziji",
+          "score": 93,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T00:27:15+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-21-ai-buquan-le-wo-dui-x-de-suoyou-weizhi",
+          "canonical_phrase": "AI补全了我对X的所有未知",
+          "outcome": "selected",
+          "item_id": "2026-08-21-ai-buquan-le-wo-dui-x-de-suoyou-weizhi",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T00:01:44+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-21-zhuimeng-zhe-jian-shi-zhiyao-kaishi-jiu-bu-wan",
+          "canonical_phrase": "X这件事只要开始就不晚",
+          "outcome": "selected",
+          "item_id": "2026-08-21-zhuimeng-zhe-jian-shi-zhiyao-kaishi-jiu-bu-wan",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T00:01:44+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-21-x-pao-chu-y-jishigan",
+          "canonical_phrase": "X跑出Y既视感",
+          "outcome": "selected",
+          "item_id": "2026-08-21-x-pao-chu-y-jishigan",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T00:01:44+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-05",
+          "canonical_phrase": "好看的头像这不就有了吗",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 23,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T01:18:09+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-06",
+          "canonical_phrase": "X诡异得像AI生成",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 23,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-21T08:12:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-07",
+          "canonical_phrase": "生是为了证明爱存在的痕迹",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 23,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T00:01:44+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-08",
+          "canonical_phrase": "X申请出战",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 23,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T00:01:44+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-09",
+          "canonical_phrase": "外貌红利人高马大",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 22,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-21T10:54:35+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-10",
+          "canonical_phrase": "男孩子见到相亲对象瞬间",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 22,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-21T11:02:32+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "X售后夯爆了",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 22,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T01:18:09+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-12",
+          "canonical_phrase": "万万没想到X我不靠Y",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 22,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T10:13:05+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "用五官展现你的love",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 21,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T05:54:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "小沈阳披哥头巾教程",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 21,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T04:54:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-15",
+          "canonical_phrase": "秋天的主场是燕麦格雷",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T00:01:44+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-16",
+          "canonical_phrase": "娃圈总动员全体开动",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-21T06:12:03+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-17",
+          "canonical_phrase": "阿星阿奇饽饽山经典回归",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-20",
+            "observed_at": "2026-08-20T18:12:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-18",
+          "canonical_phrase": "打扰大金毛睡觉的小狗狗",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-21T05:59:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-19",
+          "canonical_phrase": "我上网就是为了看这些",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-20",
+            "observed_at": "2026-08-20T21:19:11+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-20",
+          "canonical_phrase": "钟馗撞碎了没关系我们帮你们捡",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-20",
+            "observed_at": "2026-08-20T21:19:11+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "扎气球挑战都谁通关了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "在宛若仙境的地方钓鱼是什么体验",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-23",
+          "canonical_phrase": "398一杯的芋圆葡萄",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-24",
+          "canonical_phrase": "这是上班还是坐牢",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-25",
+          "canonical_phrase": "明白小孩为什么爱看小猪佩奇了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私/未成年人",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "bilibili",
+            "zhihu",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-21-mei-zhe-jian-shi-wo-zhi-quyue-ziji",
+      "title": "💄 美这件事我只取悦自己",
+      "aliases": [
+        "美这件事我只取悦自己",
+        "X这件事我只取悦自己",
+        "穿搭这件事我只取悦自己",
+        "审美这件事我只取悦自己"
+      ],
+      "canonical_phrase": "X这件事我只取悦自己",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "句式梗",
+      "summary": "用“X这件事我只取悦自己”把审美、穿搭或生活选择从外界评价中抽离，强调由自己定义标准。",
+      "origin": "已验证：8月21日“美这件事我只取悦自己”位列抖音实时榜第1；B站既有内容也以“不取悦他人、最美的自己”表达同类自我审美语义。",
+      "usage": "可写“穿搭这件事我只取悦自己”“周末这件事我只取悦自己”，适合个人选择、生活方式与审美态度内容。",
+      "fun_point": "把常被他人打分的事情改写成只向自己交卷，语气坚定又不咄咄逼人，X槽位也很容易替换。",
+      "why_spread": "已验证：新变体进入抖音实时榜首；推测：它承接自我关怀情绪，同时有明确的“X这件事”结构，便于不同内容直接套用。",
+      "lifecycle": "peak",
+      "brand_usage": "适合美妆、服饰和生活方式品牌强调个体选择；不要借自我表达制造新的外貌焦虑或暗示单一审美标准。",
+      "risk": {
+        "level": "low",
+        "note": "普通自我表达句式；注意避免转化为外貌羞辱或消费施压。"
+      },
+      "days_on_list": 1,
+      "score": 93,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-21T00:27:15+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "HotFlashNews 记录该话题位列抖音实时榜第1，页面于8月21日11:10更新。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2615472",
+          "title": "美这件事我只取悦自己",
+          "observed_at": "2026-08-21T00:27:15+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "抖音公开热点入口对应榜首新变体，固定了“X这件事我只取悦自己”的表达结构。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV16KrKYtEeU/",
+          "title": "《Try》你不必取悦他人，你就是最美的自己",
+          "observed_at": "2025-01-05T18:33:34+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "B站公开视频用“最美的自己”承接“不取悦他人”，支持该句的跨平台自我审美语义。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-21-ai-buquan-le-wo-dui-x-de-suoyou-weizhi",
+      "title": "🧩 AI补全了我对X的所有未知",
+      "aliases": [
+        "AI补全了我对长辈的所有未知",
+        "AI补全了我对X的所有未知",
+        "补全了我对X的所有未知"
+      ],
+      "canonical_phrase": "AI补全了我对X的所有未知",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "借AI修复、生成或还原旧影像，把对某个人、年代或物件的空白想象成被“补全”的未知。",
+      "origin": "已验证：8月20日晚该句以“AI补全了我对长辈的所有未知”进入抖音榜第6，8月21日继续升至实时榜第2。",
+      "usage": "可写“AI补全了我对旧照片的所有未知”“这段录音补全了我对童年的所有未知”，重点是呈现从空白到具象的变化。",
+      "fun_point": "把信息缺口说成一个等待填充的拼图，既有技术感也有情绪重量；X可替换为人物、时代或记忆对象。",
+      "why_spread": "已验证：话题跨夜从第6升至第2；推测：旧影像与代际记忆自带叙事张力，句壳又能迁移到不同档案和回忆内容。",
+      "lifecycle": "rising",
+      "brand_usage": "适合档案整理、影像修复与家族故事征集；必须标注生成或修复边界，不把合成画面冒充真实记录。",
+      "risk": {
+        "level": "low",
+        "note": "涉及家族影像时应取得授权并清楚标注AI处理，避免误导和隐私暴露。"
+      },
+      "days_on_list": 1,
+      "score": 91,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-21T00:01:44+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "HotFlashNews 记录该话题8月21日位列抖音实时榜第2。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2617078",
+          "title": "AI补全了我对长辈的所有未知",
+          "observed_at": "2026-08-21T00:01:44+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "抖音公开热点入口对应当前长辈影像变体。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://hotflashnews.com/archive/2026-08-20",
+          "title": "2026年8月20日全网热搜汇总",
+          "observed_at": "2026-08-20T21:52:41+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "前一日晚间归档记录该话题位列抖音第6，证明跨夜持续活动。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-21-zhuimeng-zhe-jian-shi-zhiyao-kaishi-jiu-bu-wan",
+      "title": "🏃 追梦这件事只要开始就不晚",
+      "aliases": [
+        "追梦这件事只要开始就不晚",
+        "X这件事只要开始就不晚",
+        "只要开始就不晚"
+      ],
+      "canonical_phrase": "X这件事只要开始就不晚",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "情绪梗",
+      "summary": "用“X这件事只要开始就不晚”给迟到的计划松绑，把年龄、进度或犹豫转成可以立即行动的起点。",
+      "origin": "已验证：8月20日晚该句以“追梦”版本位列抖音第7，8月21日继续升至第4；B站既有独立游戏版本使用同一核心句壳。",
+      "usage": "可写“学画画这件事只要开始就不晚”“整理房间这件事只要开始就不晚”，适合行动记录与迟到开局。",
+      "fun_point": "先承认“开始得晚”的心理负担，再用一句话把时间焦虑翻成行动许可，X槽位覆盖兴趣、技能和生活任务。",
+      "why_spread": "已验证：话题跨夜保持高位，并有B站不同任务的既有复用；推测：它同时提供情绪安慰和行动号召，评论区接龙成本低。",
+      "lifecycle": "rising",
+      "brand_usage": "适合课程、运动与创作者计划展示真实起步过程；避免用空泛激励掩盖时间、费用或能力门槛。",
+      "risk": {
+        "level": "safe",
+        "note": "普通行动激励句式；品牌使用时应避免制造不切实际的成功承诺。"
+      },
+      "days_on_list": 1,
+      "score": 89,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-21T00:01:44+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "HotFlashNews 记录该话题位列抖音实时榜第4。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2617187",
+          "title": "追梦这件事只要开始就不晚",
+          "observed_at": "2026-08-21T00:01:44+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "抖音公开热点入口对应当前“追梦”变体。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1M6bbzSEw9/",
+          "title": "30多岁从零学做独立游戏？只要开始就不晚！",
+          "observed_at": "2025-08-13T21:00:00+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "B站公开视频把核心句用于独立游戏开发，支持跨任务复用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-21-x-pao-chu-y-jishigan",
+      "title": "🤖 X跑出Y既视感",
+      "aliases": [
+        "机器人跑出凌波微步既视感",
+        "X跑出Y既视感",
+        "凌波微步既视感"
+      ],
+      "canonical_phrase": "X跑出Y既视感",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "短视频梗",
+      "summary": "把人物、动物或机器的运动姿态概括成“X跑出Y既视感”，用熟悉的武侠、游戏或影视意象描述视觉反差。",
+      "origin": "已验证：8月21日“机器人跑出凌波微步既视感”位列抖音实时榜第7；B站更早已有舞蹈内容使用“凌波微步既视感”。",
+      "usage": "可写“小猫跑出轻功既视感”“行李箱跑出赛车既视感”，最好让动作轨迹与Y意象确实相似。",
+      "fun_point": "现实动作被套进夸张的类型片参照，机器人和武侠轻功尤其形成跨时代反差；X、Y两个槽位都能替换。",
+      "why_spread": "已验证：当前机器人变体进入抖音前十，且“凌波微步既视感”曾用于舞蹈；推测：动作画面直观，替换对象后仍能成立。",
+      "lifecycle": "rising",
+      "brand_usage": "适合运动、机器人和产品动态演示；确保画面真实，不用剪辑误导产品性能或暗示危险模仿。",
+      "risk": {
+        "level": "safe",
+        "note": "普通视觉类比；涉及设备性能时需避免夸大和危险示范。"
+      },
+      "days_on_list": 1,
+      "score": 86,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-21T00:01:44+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "HotFlashNews 记录该话题位列抖音实时榜第7。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.douyin.com/hot/2616835",
+          "title": "机器人跑出凌波微步既视感",
+          "observed_at": "2026-08-21T00:01:44+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "抖音公开热点入口对应当前机器人变体。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1dN4y167qm/",
+          "title": "凌波微步既视感舞蹈",
+          "observed_at": "2023-11-03T16:16:05+08:00",
+          "captured_at": "2026-08-21T12:02:30+08:00",
+          "note": "B站公开视频把“凌波微步既视感”用于街舞，支持跨对象复用。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
