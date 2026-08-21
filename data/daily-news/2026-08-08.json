@@ -6,7 +6,7 @@
   "generated_at": "2026-08-08T06:18:00+08:00",
   "status": "published",
   "run_report": {
-    "candidates_scanned": 30,
+    "candidates_scanned": 45,
     "published": 4,
     "dropped_safety": {
       "minors": 1,
@@ -20,7 +20,7 @@
       "celebrity_dispute": 1,
       "geopolitics": 1
     },
-    "dropped_low_confidence": 16,
+    "dropped_low_confidence": 31,
     "dropped_quota": 0,
     "dropped_capacity": 0,
     "sources": [
@@ -29,9 +29,9 @@
       "major_media"
     ],
     "evidence_summary": {
-      "candidates_with_urls": 20,
-      "official_sources": 9,
-      "state_media_sources": 18,
+      "candidates_with_urls": 35,
+      "official_sources": 11,
+      "state_media_sources": 32,
       "major_media_sources": 5,
       "aggregator_sources": 0,
       "dropped_insufficient_evidence": 0
@@ -41,8 +41,8 @@
       "tier": "strict_24h",
       "qualified": {
         "strict_24h": 4,
-        "relaxed_48h": 4,
-        "relaxed_72h": 4
+        "relaxed_48h": 6,
+        "relaxed_72h": 8
       },
       "editorial_complete": true,
       "research_passes": [
@@ -59,6 +59,18 @@
             "消费就业与市场监管",
             "地方应急和产业公告",
             "近七日已发布身份去重"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 45,
+          "source_scope": [
+            "航司原始客票规则与消费者权益",
+            "国家灾害风险月度研判",
+            "新华社财经文旅与区域发展补扫",
+            "中央媒体消费健康与公益行动",
+            "第二轮独立故事身份去重"
           ]
         }
       ],
@@ -119,13 +131,12 @@
         },
         {
           "candidate_key": "2026-08-08-chuanyu-cross-region-services",
-          "story_identity": "cn-chuanyu-2026-cross-region-service-list-expanded-2026-08-07",
+          "story_identity": "cn-chuanyu-2026-cross-region-service-list-expanded-2026-08-06",
           "research_pass": 1,
-          "occurred_at": "2026-08-07T08:08:30+08:00",
+          "occurred_at": "2026-08-06T16:15:00+08:00",
           "scope": "domestic",
           "topic": "民生服务",
-          "outcome": "selected",
-          "item_id": "2026-08-08-chuanyu-cross-region-services",
+          "outcome": "dropped_low_confidence",
           "score": 78,
           "score_breakdown": {
             "heat": 29,
@@ -133,7 +144,8 @@
             "everyday_relevance": 22,
             "evidence": 9
           },
-          "qualification_tier": "strict_24h"
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "8月7日新华网页面为次日转发，重庆市政府最早可核公开时间为8月6日16:15；在评估时钟下已超过24小时，不能按严格层入选"
         },
         {
           "candidate_key": "cand-05-fair-competition-cases",
@@ -408,6 +420,265 @@
           "drop_reason": "单一机构高端人才招聘，适用群体过窄"
         },
         {
+          "candidate_key": "pass2-01-eastern-airlines-refund-rule",
+          "story_identity": "cn-eastern-airlines-domestic-ticket-refund-rule-effective-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 10,
+            "everyday_relevance": 25,
+            "evidence": 15
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "东航官网规则明确8月6日起适用，但未提供可核精确发布时间；按保守的8月6日零时计已超过48小时，不能包装为当日严格层新闻"
+        },
+        {
+          "candidate_key": "pass2-02-august-national-disaster-risk",
+          "story_identity": "cn-august-national-natural-disaster-risk-outlook-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "全国月度风险研判覆盖面广，但属于阶段性展望且与已入选台风预警高度重叠，严格层得分不足"
+        },
+        {
+          "candidate_key": "pass2-03-beijing-heavy-rain-alerts",
+          "story_identity": "cn-beijing-heavy-rain-multiple-alerts-2026-08-07-09",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "北京市级短时强降水预警具有地方行动价值，但全国代表性有限且被全国台风天气条目部分覆盖"
+        },
+        {
+          "candidate_key": "pass2-04-seven-month-foreign-trade-data",
+          "story_identity": "cn-seven-month-goods-trade-data-release-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T10:32:14+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "宏观外贸数据重要但与普通读者当日生活的直接关联不足"
+        },
+        {
+          "candidate_key": "pass2-05-industrial-growth-feature",
+          "story_identity": "cn-industrial-growth-curve-feature-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T17:22:03+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "工业发展综述没有当日新增公共政策或居民可操作事项"
+        },
+        {
+          "candidate_key": "pass2-06-petrochina-summer-energy-supply",
+          "story_identity": "cn-petrochina-summer-energy-supply-feature-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T10:35:47+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "drop_reason": "企业保供进展与入选的全国用电负荷及保供措施重叠，独立新增价值不足"
+        },
+        {
+          "candidate_key": "pass2-07-energy-policy-weekly",
+          "story_identity": "cn-energy-policy-industry-weekly-roundup-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T16:46:41+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "周度行业汇总混合多日事件，无法作为单一当日民生新闻入选"
+        },
+        {
+          "candidate_key": "pass2-08-huanggang-rural-revitalization",
+          "story_identity": "cn-huanggang-rural-revitalization-feature-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T10:59:04+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "黄冈地方产业与文旅成效特写，缺少可推广的当日新政策或全国影响"
+        },
+        {
+          "candidate_key": "pass2-09-rural-science-teacher-program",
+          "story_identity": "cn-rural-science-teacher-study-program-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T12:01:33+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "公益研学活动仅覆盖19名项目教师，受众和公共影响有限"
+        },
+        {
+          "candidate_key": "pass2-10-summer-consumption-crossover",
+          "story_identity": "cn-summer-consumption-cross-sector-feature-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T17:58:51+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "多地文旅消费案例合集，没有独立的新政策、统一优惠入口或权益变化"
+        },
+        {
+          "candidate_key": "pass2-11-shanghai-inbound-tourism",
+          "story_identity": "cn-shanghai-inbound-tourism-consumption-feature-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T07:39:17+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "上海入境游消费趋势报道，区域性较强且未形成面向国内公众的新行动"
+        },
+        {
+          "candidate_key": "pass2-12-china-cool-inbound-tourism",
+          "story_identity": "cn-china-cool-inbound-summer-tourism-video-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T16:11:33+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "入境避暑游视频观察以趋势展示为主，缺少可核的当日政策变化"
+        },
+        {
+          "candidate_key": "pass2-13-summer-cooling-consumption",
+          "story_identity": "cn-summer-cooling-consumption-market-feature-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T10:18:06+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "drop_reason": "夏季家电、防晒和文旅消费趋势具有生活关联，但不是独立的新事件或权益变化"
+        },
+        {
+          "candidate_key": "pass2-14-drink-cup-recycling-campaign",
+          "story_identity": "cn-drink-cup-recycling-campaign-2026-08-07",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T18:00:18+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "drop_reason": "企业联合回收活动含优惠推广属性，缺少公共政策层面的广泛代表性"
+        },
+        {
+          "candidate_key": "2026-08-08-yibin-gaoxian-earthquake-response",
+          "story_identity": "cn-sichuan-yibin-gaoxian-earthquake-response-2026-08-07-1308",
+          "research_pass": 2,
+          "occurred_at": "2026-08-07T13:08:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-08-08-yibin-gaoxian-earthquake-response",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 24,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
           "candidate_key": "candidate-21",
           "research_pass": 1,
           "outcome": "dropped_safety",
@@ -472,6 +743,39 @@
   },
   "items": [
     {
+      "id": "2026-08-08-yibin-gaoxian-earthquake-response",
+      "story_identity": "cn-sichuan-yibin-gaoxian-earthquake-response-2026-08-07-1308",
+      "headline": "🏚️ 四川宜宾高县地震救援与排查持续进行",
+      "summary": "四川宜宾高县8月7日13时8分发生4.9级地震；截至16时30分，地震造成1人死亡、6人受伤，无主体房屋倒塌，救援力量已赶赴震区，供电、通信、燃气和供水设施运行正常。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 90,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 24,
+        "evidence": 11
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-07T13:08:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "仅采用抗震救灾指挥部截至16时30分的公开数据，避免渲染伤亡；后续灾情以当地权威更新为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260807/267b821da62f4c208345bc59ad431eb2/c.html",
+          "title": "四川宜宾市高县7日地震已造成1人死亡6人受伤",
+          "captured_at": "2026-08-08T06:17:00+08:00",
+          "note": "新华社援引宜宾市抗震救灾指挥部，给出地震时刻、伤亡、救援力量和基础设施状态。"
+        }
+      ],
+      "published": true
+    },
+    {
       "id": "2026-08-08-national-power-load-record",
       "story_identity": "cn-national-power-load-fourth-summer-record-2026-08-07",
       "headline": "🔌 全国用电负荷入夏以来第四次创新高",
@@ -486,7 +790,7 @@
         "everyday_relevance": 23,
         "evidence": 9
       },
-      "heat_rank": 1,
+      "heat_rank": 2,
       "occurred_at": "2026-08-07T21:34:26+08:00",
       "risk": {
         "level": "safe",
@@ -519,7 +823,7 @@
         "everyday_relevance": 24,
         "evidence": 9
       },
-      "heat_rank": 2,
+      "heat_rank": 3,
       "occurred_at": "2026-08-07T18:00:00+08:00",
       "risk": {
         "level": "safe",
@@ -560,7 +864,7 @@
         "everyday_relevance": 23,
         "evidence": 7
       },
-      "heat_rank": 3,
+      "heat_rank": 4,
       "occurred_at": "2026-08-07T17:40:28+08:00",
       "risk": {
         "level": "safe",
@@ -569,44 +873,19 @@
       "sources": [
         {
           "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260807/3cfcdfb337094d0c8c23ee5fccdeabf0/c.html",
+          "title": "近期私家车肇事多发 公安部交管局发出提示",
+          "captured_at": "2026-08-08T06:17:00+08:00",
+          "note": "新华社原稿于8月7日17:40:28发布，直接转述公安部交管局当日披露的“六不一会”提示。"
+        },
+        {
+          "tier": "state_media",
           "outlet": "人民网",
           "url": "https://society.people.com.cn/n1/2026/0807/c1008-40775862.html",
           "title": "近期私家车肇事多发 公安部交管局发出提示",
           "captured_at": "2026-08-08T06:17:00+08:00",
           "note": "新华社稿件转述公安部交管局8月7日发布的“六不一会”安全提示。"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-08-08-chuanyu-cross-region-services",
-      "story_identity": "cn-chuanyu-2026-cross-region-service-list-expanded-2026-08-07",
-      "headline": "📱 川渝357项高频事项实现跨省通办",
-      "summary": "川渝两地发布2026年版通办事项清单，整合形成357项高频服务并新增102项，覆盖出入境、交管、社保和企业经营等领域，部分证照可直接互认。",
-      "category": "民生社会",
-      "scope": "domestic",
-      "topic": "民生服务",
-      "score": 78,
-      "score_breakdown": {
-        "heat": 29,
-        "freshness": 18,
-        "everyday_relevance": 22,
-        "evidence": 9
-      },
-      "heat_rank": 4,
-      "occurred_at": "2026-08-07T08:08:30+08:00",
-      "risk": {
-        "level": "safe",
-        "note": "服务适用范围和材料要求可能因事项不同而异，办理前应在川渝政务服务专区或属地窗口核对最新清单。"
-      },
-      "sources": [
-        {
-          "tier": "state_media",
-          "outlet": "新华网",
-          "url": "https://cq.news.cn/20260807/fb03937bd0ac4daea9eb22f81a67f960/c.html",
-          "title": "居民从出生到养老 企业从开办到注销 357项“川渝通办”高频事项全覆盖",
-          "captured_at": "2026-08-08T06:17:00+08:00",
-          "note": "重庆日报经新华网刊发，列明357项总量、新增102项和线上线下办理渠道。"
         }
       ],
       "published": true
