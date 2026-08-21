@@ -6,7 +6,7 @@
   "generated_at": "2026-08-07T06:04:33+08:00",
   "status": "published",
   "run_report": {
-    "candidates_scanned": 30,
+    "candidates_scanned": 45,
     "published": 4,
     "dropped_safety": {
       "minors": 1,
@@ -20,7 +20,7 @@
       "celebrity_dispute": 1,
       "geopolitics": 1
     },
-    "dropped_low_confidence": 16,
+    "dropped_low_confidence": 31,
     "dropped_quota": 0,
     "dropped_capacity": 0,
     "sources": [
@@ -29,9 +29,9 @@
       "major_media"
     ],
     "evidence_summary": {
-      "candidates_with_urls": 20,
-      "official_sources": 9,
-      "state_media_sources": 11,
+      "candidates_with_urls": 35,
+      "official_sources": 11,
+      "state_media_sources": 25,
       "major_media_sources": 6,
       "aggregator_sources": 0,
       "dropped_insufficient_evidence": 0
@@ -41,8 +41,8 @@
       "tier": "strict_24h",
       "qualified": {
         "strict_24h": 4,
-        "relaxed_48h": 4,
-        "relaxed_72h": 4
+        "relaxed_48h": 6,
+        "relaxed_72h": 6
       },
       "editorial_complete": true,
       "research_passes": [
@@ -59,6 +59,18 @@
             "交通出行与地方公共服务",
             "文旅消费与职业考试",
             "近七日已发布身份去重"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 45,
+          "source_scope": [
+            "川渝两地政府联合发文与便民解读",
+            "新华社地方频道补扫",
+            "中央媒体财经科技与健康补扫",
+            "地方市场监管与区域交通进展",
+            "第二轮独立故事身份去重"
           ]
         }
       ],
@@ -101,13 +113,12 @@
         },
         {
           "candidate_key": "2026-08-07-delivery-worker-rights",
-          "story_identity": "cn-new-employment-worker-rights-and-delivery-safety-update-2026-08-06",
+          "story_identity": "cn-new-employment-worker-rights-and-delivery-safety-update-2026-08-05",
           "research_pass": 1,
-          "occurred_at": "2026-08-06T08:03:17+08:00",
+          "occurred_at": "2026-08-05T20:35:17+08:00",
           "scope": "domestic",
           "topic": "消费就业",
-          "outcome": "selected",
-          "item_id": "2026-08-07-delivery-worker-rights",
+          "outcome": "dropped_low_confidence",
           "score": 88,
           "score_breakdown": {
             "heat": 32,
@@ -115,7 +126,8 @@
             "everyday_relevance": 24,
             "evidence": 12
           },
-          "qualification_tier": "strict_24h"
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "重庆频道8月6日页面为转发，新华社原稿最早可核时间为8月5日20:35:17；在评估时钟下已超过24小时，不能按严格层入选"
         },
         {
           "candidate_key": "2026-08-07-youth-shop-employment-support",
@@ -408,6 +420,263 @@
           "drop_reason": "各地零散招聘会集合，缺少全国统一活动和可复核岗位规模"
         },
         {
+          "candidate_key": "2026-08-07-chuanyu-cross-region-services",
+          "story_identity": "cn-chuanyu-2026-cross-region-service-list-expanded-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T16:15:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-07-chuanyu-cross-region-services",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "pass2-02-multi-region-drought-flood-response",
+          "story_identity": "cn-multi-region-heat-drought-flood-livelihood-response-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T17:15:36+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "多地抗旱防汛保供的综合见闻，缺少独立于当日台风预警的全国统一新动作，严格层得分不足"
+        },
+        {
+          "candidate_key": "pass2-03-anhui-flexible-market-enforcement",
+          "story_identity": "cn-anhui-flexible-market-regulation-enforcement-progress-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T22:42:55+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "安徽省级执法成效盘点，主要面向经营主体，缺少全国适用的新办理或维权入口"
+        },
+        {
+          "candidate_key": "pass2-04-hong-kong-market-close",
+          "story_identity": "cn-hong-kong-stock-market-close-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T18:49:20+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "例行市场收盘数据，普通读者日常关联不足且不构成独立民生变化"
+        },
+        {
+          "candidate_key": "pass2-05-ai-higher-education-feature",
+          "story_identity": "cn-ai-higher-education-training-feature-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T14:24:35+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "高等教育与人工智能人才培养的趋势报道，没有当日生效的招生、就业或公共服务政策"
+        },
+        {
+          "candidate_key": "pass2-06-technology-study-tour-market",
+          "story_identity": "cn-technology-study-tour-market-feature-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T17:44:44+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "drop_reason": "暑期科技研学趋势报道，缺少全国统一价格、准入或消费者权益新规"
+        },
+        {
+          "candidate_key": "pass2-07-dajiuhu-tourism-coupons",
+          "story_identity": "cn-shennongjia-dajiuhu-tourism-coupons-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T17:36:53+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "单一乡镇文旅消费券，适用地域和受众较窄，代表性不足"
+        },
+        {
+          "candidate_key": "pass2-08-hayi-high-speed-rail-trial",
+          "story_identity": "cn-harbin-yichun-high-speed-rail-timetable-trial-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T14:01:44+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "线路仍处运行试验阶段，尚未公布正式开通日期和面向旅客的售票安排"
+        },
+        {
+          "candidate_key": "pass2-09-glueball-discovery",
+          "story_identity": "cn-glueball-experimental-confirmation-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T08:01:11+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "基础物理成果具有科研价值，但与普通读者当日生活和行动的直接关联不足"
+        },
+        {
+          "candidate_key": "pass2-10-frozen-food-storage-explainer",
+          "story_identity": "cn-frozen-meat-refrigerator-storage-health-explainer-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T16:45:56+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 5
+          },
+          "drop_reason": "实用健康科普但不对应当日新事件或新公共卫生提示，热度证据不足"
+        },
+        {
+          "candidate_key": "pass2-11-start-of-autumn-health-tea",
+          "story_identity": "cn-start-of-autumn-health-tea-explainer-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T10:21:44+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 5
+          },
+          "drop_reason": "节气养生建议受众较广但属于常规科普，缺少新增公共卫生行动"
+        },
+        {
+          "candidate_key": "pass2-12-ecology-code-judicial-interpretation",
+          "story_identity": "cn-ecological-environment-code-time-effect-judicial-interpretation-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T10:02:30+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "司法解释主要解决案件新旧法衔接，普通读者即时可操作信息有限"
+        },
+        {
+          "candidate_key": "pass2-13-quanzhou-talent-week",
+          "story_identity": "cn-quanzhou-talent-activity-week-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T12:39:32+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "泉州城市级人才活动，岗位和政策适用范围有限，缺少全国代表性"
+        },
+        {
+          "candidate_key": "pass2-14-foreign-institutions-economy-outlook",
+          "story_identity": "cn-foreign-institutions-china-economy-outlook-feature-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T21:40:36+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 5
+          },
+          "drop_reason": "宏观观点汇总，未提供面向居民的新增政策、价格或就业行动"
+        },
+        {
+          "candidate_key": "pass2-15-hongshan-culture-conference",
+          "story_identity": "cn-hongshan-culture-conference-observation-2026-08-06",
+          "research_pass": 2,
+          "occurred_at": "2026-08-06T21:37:44+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 20,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "文化考古会议观察，缺少当日对公众开放的新服务或重大新发现"
+        },
+        {
           "candidate_key": "candidate-21",
           "research_pass": 1,
           "outcome": "dropped_safety",
@@ -513,39 +782,6 @@
       "published": true
     },
     {
-      "id": "2026-08-07-delivery-worker-rights",
-      "story_identity": "cn-new-employment-worker-rights-and-delivery-safety-update-2026-08-06",
-      "headline": "🛵 配送员权益与骑行安全措施持续落地",
-      "summary": "多地正推进“等灯停表”、合理配送时限和骑手友好场景；新华社梳理显示，职业伤害保障试点已全面推开，部分平台同步提供社保补贴或保险。",
-      "category": "民生社会",
-      "scope": "domestic",
-      "topic": "消费就业",
-      "score": 88,
-      "score_breakdown": {
-        "heat": 32,
-        "freshness": 20,
-        "everyday_relevance": 24,
-        "evidence": 12
-      },
-      "heat_rank": 2,
-      "occurred_at": "2026-08-06T08:03:17+08:00",
-      "risk": {
-        "level": "safe",
-        "note": "概述公开制度与多地实践，不把地方试点或单个平台措施表述为全国统一待遇；个人权益以所在地和平台规则为准。"
-      },
-      "sources": [
-        {
-          "tier": "state_media",
-          "outlet": "新华社",
-          "url": "https://cq.news.cn/20260806/bbd421949c9840d9885d7d8d5f241237/c.html",
-          "title": "让“小哥”们的奔忙之路安全温暖、成就感满满",
-          "captured_at": "2026-08-07T06:04:33+08:00",
-          "note": "报道苏州等灯停表、北京配送安全要求、职业伤害保障试点和平台保障措施。"
-        }
-      ],
-      "published": true
-    },
-    {
       "id": "2026-08-07-property-fee-adjustment-rights",
       "story_identity": "cn-property-fee-unilateral-increase-legal-explainer-2026-08-06",
       "headline": "🏠 物业费单方上涨需遵循法定程序",
@@ -560,7 +796,7 @@
         "everyday_relevance": 25,
         "evidence": 11
       },
-      "heat_rank": 3,
+      "heat_rank": 2,
       "occurred_at": "2026-08-06T17:00:51+08:00",
       "risk": {
         "level": "safe",
@@ -574,6 +810,47 @@
           "title": "小区物业费要上涨，谁说了算？",
           "captured_at": "2026-08-07T06:04:33+08:00",
           "note": "援引北京市第二中级人民法院讲解物业费调整程序及业主维权问题。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-07-chuanyu-cross-region-services",
+      "story_identity": "cn-chuanyu-2026-cross-region-service-list-expanded-2026-08-06",
+      "headline": "📱 川渝357项高频事项实现跨省通办",
+      "summary": "川渝两地8月6日发布2026年版通办事项清单，整合形成357项服务，覆盖出入境、交管、社保和企业经营等领域，并提供线上专区与线下专窗。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 11
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-06T16:15:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "服务适用范围和材料要求因事项而异，办理前应在川渝政务服务专区或属地窗口核对最新清单。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "重庆市人民政府",
+          "url": "https://cq.gov.cn/ywdt/bmts/202608/t20260806_15901803.html",
+          "title": "公积金互认、户口迁移、社保接续……川渝通办“上新”啦！",
+          "captured_at": "2026-08-07T06:04:33+08:00",
+          "note": "8月6日16:15发布的便民解读，列明357项总量、事项分类和覆盖领域。"
+        },
+        {
+          "tier": "official",
+          "outlet": "重庆市人民政府",
+          "url": "https://www.cq.gov.cn/zwgk/zfxxgkml/szfwj/cylhfw/202608/t20260806_15902086.html",
+          "title": "四川省人民政府办公厅 重庆市人民政府办公厅关于印发《“川渝通办”事项清单（2026年版）》的通知",
+          "captured_at": "2026-08-07T06:04:33+08:00",
+          "note": "联合发文原文及清单附件，发布日期为8月6日。"
         }
       ],
       "published": true
