@@ -1,0 +1,544 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-19",
+  "generated_at": "2026-08-21T12:24:44+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {},
+    "dropped_low_confidence": 0,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "official_sources": 1,
+      "state_media_sources": 1,
+      "major_media_sources": 5,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 26
+    },
+    "selection": {
+      "evaluated_at": "2026-08-19T23:59:00+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 4,
+        "relaxed_72h": 4
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "source_scope": [
+            "中央部委与政府公开信息",
+            "新华社人民日报央视",
+            "中新网国内滚动",
+            "公共服务与消费保障"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-19-medical-insurance-plan",
+          "story_identity": "cn-national-medical-insurance-fifteenth-plan-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T11:56:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-19-medical-insurance-plan",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-19-south-china-heavy-rain-response",
+          "story_identity": "cn-south-china-tropical-depression-rain-response-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:56:29+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-19-south-china-heavy-rain-response",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-19-physician-workforce",
+          "story_identity": "cn-physician-workforce-529m-release-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T07:18:41+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "529万人等核心数据已在2月统计公报披露，8月19日报道主要为旧数据再包装，不计作当日新披露"
+        },
+        {
+          "candidate_key": "2026-08-19-qixi-registration-services",
+          "story_identity": "cn-qixi-marriage-registration-service-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T15:19:30+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-19-qixi-registration-services",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680699",
+          "story_identity": "cn-healthy-weight-waist-guidance-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T23:40:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680700",
+          "story_identity": "cn-ai-era-content-system-expansion-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T23:46:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680697",
+          "story_identity": "cn-embodied-ai-data-commercialization-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T22:41:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-shanghai-women-children-plan",
+          "story_identity": "cn-shanghai-women-children-family-plan-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T22:01:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-19-shanghai-women-children-plan",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680689",
+          "story_identity": "cn-lung-cancer-early-prevention-focus-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T22:01:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680683",
+          "story_identity": "cn-hangzhou-grand-canal-group-wedding-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:59:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680681",
+          "story_identity": "cn-national-tibetan-medicine-center-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:59:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680684",
+          "story_identity": "cn-doctors-day-care-profile-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:59:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680686",
+          "story_identity": "cn-tibet-disability-support-funding-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:58:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680678",
+          "story_identity": "cn-haikou-education-system-plan-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:57:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680677",
+          "story_identity": "cn-guangdong-minority-water-festival-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:57:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680673",
+          "story_identity": "cn-home-service-robot-applications-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:56:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680672",
+          "story_identity": "cn-pingnan-scenic-marriage-registration-site-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:55:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680666",
+          "story_identity": "cn-museum-exhibition-review-rules-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:42:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680662",
+          "story_identity": "cn-shanghai-6g-commercial-planning-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:32:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680658",
+          "story_identity": "cn-guangxi-dragon-boat-league-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680657",
+          "story_identity": "cn-cross-strait-youth-table-tennis-camp-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680652",
+          "story_identity": "cn-qixi-rice-wine-cultural-observation-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:27:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680650",
+          "story_identity": "cn-ai-old-photo-memory-exhibition-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:26:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680647",
+          "story_identity": "cn-robotics-vocational-education-zone-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:25:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680643",
+          "story_identity": "cn-beijing-robot-new-product-showcase-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:24:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680638",
+          "story_identity": "cn-hainan-smart-education-island-plan-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:19:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680640",
+          "story_identity": "cn-cross-strait-couples-qixi-registration-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T21:18:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680628",
+          "story_identity": "cn-guangzhou-europe-arctic-shipping-route-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T20:55:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680626",
+          "story_identity": "cn-ai-reputation-rights-court-cases-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T20:54:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        },
+        {
+          "candidate_key": "2026-08-19-cns-10680621",
+          "story_identity": "cn-primate-brain-longevity-research-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T20:50:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中新网当日滚动页可追溯，但尚未补齐独立权威来源，未进入发布池"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-19-medical-insurance-plan",
+      "story_identity": "cn-national-medical-insurance-fifteenth-plan-2026-08-19",
+      "headline": "🏥 全民医保“十五五”规划发布",
+      "summary": "规划面向2030年完善基本医保、长期护理保险和多层次保障，推进异地就医直接结算、支付方式改革与数字化服务，关系参保、看病和购药等日常需求。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 92,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-19T11:56:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "规划目标仍需各地配套政策转化，具体待遇以参保地医保部门口径为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "人民日报",
+          "url": "https://www.peopleapp.com/column/30052963794-500007657516",
+          "title": "全民医保“十五五”规划来了",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "人民日报梳理规划面向2030年的主要医保服务与制度安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-19-south-china-heavy-rain-response",
+      "story_identity": "cn-south-china-tropical-depression-rain-response-2026-08-19",
+      "headline": "🌧️ 南海热带低压生成，多地防强降雨",
+      "summary": "南海热带低压生成后，中国气象局启动暴雨四级应急响应并发布预警，海南、广东、广西等地需关注强降雨、海上大风和出行调整。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 89,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-19T21:56:29+08:00",
+      "risk": {
+        "level": "low",
+        "note": "热带系统路径和强度变化较快，出行与停航信息以气象、海事及交通部门最新通知为准。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-19/10680682.shtml",
+          "title": "南海热带低压生成 中国气象局启动暴雨四级应急响应",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "中新网转述中国气象局当晚应急响应、预警和影响区域。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "广州日报",
+          "url": "https://news.dayoo.com/society/202608/19/140000_54992661.htm",
+          "title": "南海热带低压生成 中国气象局启动暴雨四级应急响应",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "广州日报大洋网同步援引中国气象局信息，独立网址交叉核对。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-19-shanghai-women-children-plan",
+      "story_identity": "cn-shanghai-women-children-family-plan-2026-08-19",
+      "headline": "👪 上海妇女儿童家庭“十五五”规划发布",
+      "summary": "上海发布妇女儿童家庭发展规划，覆盖女性就业和健康、儿童医疗教育与权益保障，并提出生育友好岗、家庭教育服务圈等措施。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-19T22:01:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "规划适用于上海，具体项目、资格和实施时间以各主管部门后续细则为准。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "上海市政府",
+          "url": "https://www.shanghai.gov.cn/nw12344/20260819/bb2dd04f49d7494687c6fcc979a749f1.html?siteId=1",
+          "title": "市政府新闻发布会介绍《上海市妇女儿童发展“十五五”规划》有关情况",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "上海市政府新闻办当日发布规划目标、26项指标及妇女、儿童、家庭三大板块举措。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-19/10680687.shtml",
+          "title": "“十五五”上海把数智赋能嵌入妇女儿童家庭发展具体服务场景",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "中新网当晚报道发布会，交叉核对生育友好、家庭教育、儿童健康和数智服务安排。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-19-qixi-registration-services",
+      "story_identity": "cn-qixi-marriage-registration-service-2026-08-19",
+      "headline": "💍 七夕婚姻登记迎高峰，多地延时服务",
+      "summary": "七夕当天多地登记预约量上升，部分婚姻登记机关增加现场轮候、午间不休和延时办理，并把婚检、备孕指导等服务接入同一办理点。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-19T15:19:30+08:00",
+      "risk": {
+        "level": "low",
+        "note": "各地开放名额、现场轮候和延时安排不同，办理前应查询当地民政部门通知。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "中新网",
+          "url": "https://bjlove02.chinanews.com.cn/sh/2026/08-19/10680346.shtml",
+          "title": "多地七夕婚姻登记预约火爆，游船、医院也能登记",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "中新网当日汇总多个城市的预约、延时和便民登记点情况。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33797962",
+          "title": "不办完不打烊，多地婚姻登记机关宣布七夕延时服务",
+          "captured_at": "2026-08-21T12:24:44+08:00",
+          "note": "澎湃新闻提前核验多地民政部门发布的连续和延时服务安排。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
