@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "2026-07-27-dynamic-100",
+  "date": "2026-08-20",
+  "generated_at": "2026-08-21T12:15:32+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 30,
+    "published": 4,
+    "dropped_safety": {},
+    "dropped_low_confidence": 0,
+    "dropped_capacity": 0,
+    "sources": ["weibo", "douyin", "bilibili", "zhihu", "other"],
+    "evidence_summary": {
+      "candidates_with_urls": 4,
+      "platform_public_sources": 4,
+      "aggregator_sources": 4,
+      "search_media_sources": 4,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 26
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "evaluated_at": "2026-08-20T23:57:20+08:00",
+      "qualified": { "strict_24h": 4, "relaxed_48h": 4, "relaxed_72h": 4 },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 30,
+          "cumulative_unique_candidates": 30,
+          "sources_checked": ["weibo", "douyin", "bilibili", "zhihu", "other"]
+        }
+      ],
+      "candidate_audit": [
+        { "candidate_key": "2026-08-03-quanguo-x-shenqing-chuzhan", "canonical_phrase": "全国X申请出战", "outcome": "selected", "item_id": "2026-08-03-quanguo-x-shenqing-chuzhan", "score": 87, "score_breakdown": { "heat": 34, "freshness": 28, "reusability": 17, "evidence": 8 }, "activity": { "evidence_role": "popularity", "url": "https://hotflashnews.com/archive/2026-08-20", "observed_at": "2026-08-20T18:42:23+08:00" }, "research_pass": 1 },
+        { "candidate_key": "2026-08-20-zhe-shi-x-haishi-y", "canonical_phrase": "这是X还是Y", "outcome": "selected", "item_id": "2026-08-20-zhe-shi-x-haishi-y", "score": 83, "score_breakdown": { "heat": 31, "freshness": 27, "reusability": 17, "evidence": 8 }, "activity": { "evidence_role": "popularity", "url": "https://hotflashnews.com/archive/2026-08-20", "observed_at": "2026-08-20T22:19:10+08:00" }, "research_pass": 1 },
+        { "candidate_key": "2026-08-20-x-zhe-bu-jiu-youle-ma", "canonical_phrase": "X这不就有了吗", "outcome": "selected", "item_id": "2026-08-20-x-zhe-bu-jiu-youle-ma", "score": 82, "score_breakdown": { "heat": 30, "freshness": 27, "reusability": 17, "evidence": 8 }, "activity": { "evidence_role": "popularity", "url": "https://hotflashnews.com/archive/2026-08-20", "observed_at": "2026-08-20T16:28:04+08:00" }, "research_pass": 1 },
+        { "candidate_key": "2026-08-20-zhiyao-kaishi-jiu-buwan", "canonical_phrase": "只要开始就不晚", "outcome": "selected", "item_id": "2026-08-20-zhiyao-kaishi-jiu-buwan", "score": 80, "score_breakdown": { "heat": 29, "freshness": 27, "reusability": 16, "evidence": 8 }, "activity": { "evidence_role": "popularity", "url": "https://hotflashnews.com/archive/2026-08-20", "observed_at": "2026-08-20T19:22:59+08:00" }, "research_pass": 1 },
+        { "candidate_key": "sanjibaba-yuyuan-putao", "canonical_phrase": "398一杯的芋圆葡萄", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "huakai-jinxiu", "canonical_phrase": "花开锦绣", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "bin-lianbu-bianhua", "canonical_phrase": "Bin脸部变化细节", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "bin-shouxiu-shili", "canonical_phrase": "Bin回归首秀失利", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "diwu-renge", "canonical_phrase": "第五人格", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "liuyuning-xiaozuowen", "canonical_phrase": "没发开推四小作文", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "jiazhao-semang-tu", "canonical_phrase": "驾照体检色盲图", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "yangmi-kaichang-xiuchang", "canonical_phrase": "开场走成秀场", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "yinhe-zuoan-yinyuejie", "canonical_phrase": "银河左岸音乐节阵容", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "huyu-shanghaihua", "canonical_phrase": "互飙上海话", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "lianjia-wen", "canonical_phrase": "脸颊吻", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "fuqin-liting-nver", "canonical_phrase": "父亲力挺女儿", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "yiyuan-ban-jiehunzheng", "canonical_phrase": "医院能办结婚证了", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "jinzu-bei-huanjiao", "canonical_phrase": "进组被换角始末", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "weiluo-you", "canonical_phrase": "喂菠萝油", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "shanghai-ditie-tiaojia", "canonical_phrase": "上海地铁调价", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "lihun-tongzu-yanchu", "canonical_phrase": "离婚后同剧组演戏", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "suozixie-geweishu", "canonical_phrase": "梭子蟹单只降至个位数", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "zuihong-shi-pianchou", "canonical_phrase": "最红时片酬最低", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "baling-jiuling-lingling-tui", "canonical_phrase": "809000后退休时间", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "bupai-hunshazhao", "canonical_phrase": "补拍婚纱照", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "datiqin-zhuanmai-mantou", "canonical_phrase": "大提琴老师转行卖馒头", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "xuezhenzhu-fanhong", "canonical_phrase": "薛甄珠翻红", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "fayan-tai-yougeng", "canonical_phrase": "发言太有梗", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "nianhui-wuxianliu", "canonical_phrase": "年会无限流", "outcome": "dropped_insufficient_evidence", "research_pass": 1 },
+        { "candidate_key": "woshangwang-kan-zhexie", "canonical_phrase": "我上网就是为了看这些", "outcome": "dropped_insufficient_evidence", "research_pass": 1 }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-03-quanguo-x-shenqing-chuzhan",
+      "title": "🔥 全国X申请出战",
+      "aliases": ["全国X申请出战", "X申请出战", "潮汕开海美食申请出战", "地方美食申请出战"],
+      "canonical_phrase": "全国X申请出战",
+      "platform": ["douyin", "other"],
+      "type": "句式梗",
+      "summary": "用“申请出战”召集一种身份、技能或地方风味集体登场，把普通参与写成正式应战。",
+      "origin": "该身份8月3日本站首次收录、8月5日出现地方菜变体；8月20日抖音榜又出现“潮汕开海美食申请出战”，是第三次可见板单活动。",
+      "usage": "可写“全国收纳高手申请出战”“全国早起困难户申请出战”，让X对应真实身份、技能或生活状态。",
+      "fun_point": "“申请出战”自带正式赛场感，换成日常身份或地方味道后，郑重动员与生活小事形成反差。",
+      "why_spread": "已验证：8月20日抖音榜出现新的潮汕美食变体，且政务公开页曾以青岛美食复用“申请出战”；推测：开海季给旧句壳增加新地域对象，推动第三波传播。",
+      "lifecycle": "peak",
+      "brand_usage": "地方文旅或兴趣社群可邀请用户用X接龙并展示真实特色，不要虚构比赛、资质或地域代表性。",
+      "risk": { "level": "low", "note": "避免用地域接龙制造优劣对立，涉及食材时说明季节和来源。" },
+      "days_on_list": 3,
+      "score": 87,
+      "score_breakdown": { "heat": 34, "freshness": 28, "reusability": 17, "evidence": 8 },
+      "sources": [
+        { "tier": "aggregator", "evidence_role": "popularity", "platform": "douyin", "url": "https://hotflashnews.com/archive/2026-08-20", "title": "2026年8月20日全网热搜汇总", "observed_at": "2026-08-20T18:42:23+08:00", "captured_at": "2026-08-21T12:15:00+08:00", "note": "抖音榜记录“潮汕开海美食申请出战”，当时排名24。" },
+        { "tier": "platform_public", "evidence_role": "usage_context", "platform": "douyin", "url": "https://www.douyin.com/hot/2616823", "title": "潮汕开海美食申请出战", "observed_at": "2026-08-20T18:42:23+08:00", "captured_at": "2026-08-21T12:15:00+08:00", "note": "与当天热榜对应的公开抖音入口，支持新地域对象正在传播。" },
+        { "tier": "search_media", "evidence_role": "cross_platform", "platform": "other", "url": "https://www.qingdao.gov.cn/zwgk/xxgk/whly/gkml/gzxx/202507/t20250729_9934025.shtml", "title": "青岛美食申请出战", "captured_at": "2026-08-21T12:15:00+08:00", "note": "政务公开页曾以另一地方美食复用“申请出战”，支持句壳跨地域迁移。" }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-20-zhe-shi-x-haishi-y",
+      "title": "⛓️ 这是X还是Y",
+      "aliases": ["这是X还是Y", "这是上班还是坐牢", "这是工作还是渡劫"],
+      "canonical_phrase": "这是X还是Y",
+      "platform": ["other"],
+      "type": "职场梗",
+      "summary": "用“这是X还是Y”把正常名称与夸张处境并列，吐槽某件事已经越过合理边界。",
+      "origin": "8月20日百度榜出现“这是上班还是坐牢”；更早的公开职场文章也原样使用该问句批评不合理规定，现有证据不支持指定唯一首发者。",
+      "usage": "可写“这是开会还是答辩”“这是团建还是拉练”，X填正常活动，Y填夸张但可理解的处境。",
+      "fun_point": "二选一问题看似认真，第二个选项却把日常不适夸张到极端，直接说出打工人的越界感。",
+      "why_spread": "已验证：“这是上班还是坐牢”8月20日晚进入百度榜，旧职场文章也独立使用同句；推测：X/Y双槽位清楚，适合把各类不合理体验压缩成一句反问。",
+      "lifecycle": "rising",
+      "brand_usage": "可用“这是售后还是闯关”引出流程优化，但品牌应给出真实改法，不要只放大用户抱怨。",
+      "risk": { "level": "low", "note": "“坐牢”是夸张表达，避免对真实服刑经历、强迫劳动或具体受害者进行类比。" },
+      "days_on_list": 1,
+      "score": 83,
+      "score_breakdown": { "heat": 31, "freshness": 27, "reusability": 17, "evidence": 8 },
+      "sources": [
+        { "tier": "aggregator", "evidence_role": "popularity", "platform": "other", "url": "https://hotflashnews.com/archive/2026-08-20", "title": "2026年8月20日全网热搜汇总", "observed_at": "2026-08-20T22:19:10+08:00", "captured_at": "2026-08-21T12:15:00+08:00", "note": "百度榜记录“这是上班还是坐牢”，当晚排名12。" },
+        { "tier": "platform_public", "evidence_role": "usage_context", "platform": "other", "url": "https://www.baidu.com/s?wd=%E8%BF%99%E6%98%AF%E4%B8%8A%E7%8F%AD%E8%BF%98%E6%98%AF%E5%9D%90%E7%89%A2", "title": "百度搜索：这是上班还是坐牢", "observed_at": "2026-08-20T22:19:10+08:00", "captured_at": "2026-08-21T12:15:00+08:00", "note": "与归档条目对应的公开检索入口，支持当天话题可被检索。" },
+        { "tier": "search_media", "evidence_role": "cross_platform", "platform": "other", "url": "https://cloud.tencent.com/developer/news/518478", "title": "朋友圈屏蔽同事罚款引争议", "captured_at": "2026-08-21T12:15:00+08:00", "note": "较早公开文章原样使用“这是上班还是坐牢”评价另一职场规定，支持跨事件复用。" }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-20-x-zhe-bu-jiu-youle-ma",
+      "title": "🖼️ 好看的X这不就有了吗",
+      "aliases": ["X这不就有了吗", "好看的X这不就有了吗", "好看的头像这不就有了吗", "氛围这不就有了吗"],
+      "canonical_phrase": "X这不就有了吗",
+      "platform": ["douyin", "weibo", "other"],
+      "type": "句式梗",
+      "summary": "在展示一个现成解法或成品后，用“X这不就有了吗”作得意收尾，X可替换成想要的效果。",
+      "origin": "8月20日抖音榜出现“好看的头像这不就有了吗”；较早微博与游戏社区页面还分别用于过年氛围、圣诞氛围，证明句壳不只属于头像内容。",
+      "usage": "可写“午休角这不就有了吗”“旅行氛围这不就有了吗”，先展示操作或结果，再用句式收束。",
+      "fun_point": "它把费力得到的成果说成顺手解决，前面的展示与轻描淡写的收尾形成小小炫耀感。",
+      "why_spread": "已验证：头像变体8月20日进入抖音榜，公开页面还出现过节日氛围等无关对象；推测：先展示、后收尾的节奏适合教程、改造和图片评论区反复套用。",
+      "lifecycle": "rising",
+      "brand_usage": "在真实展示改造步骤后用“X这不就有了吗”收尾，不能用生成图冒充实际效果。",
+      "risk": { "level": "low", "note": "普通展示句式；使用头像、设计或图片素材时注意版权和肖像授权。" },
+      "days_on_list": 1,
+      "score": 82,
+      "score_breakdown": { "heat": 30, "freshness": 27, "reusability": 17, "evidence": 8 },
+      "sources": [
+        { "tier": "aggregator", "evidence_role": "popularity", "platform": "douyin", "url": "https://hotflashnews.com/archive/2026-08-20", "title": "2026年8月20日全网热搜汇总", "observed_at": "2026-08-20T16:28:04+08:00", "captured_at": "2026-08-21T12:15:00+08:00", "note": "抖音榜记录“好看的头像这不就有了吗”，当时排名30。" },
+        { "tier": "platform_public", "evidence_role": "usage_context", "platform": "douyin", "url": "https://www.douyin.com/hot/2616834", "title": "好看的头像这不就有了吗", "observed_at": "2026-08-20T16:28:04+08:00", "captured_at": "2026-08-21T12:15:00+08:00", "note": "与当天热榜条目对应的公开抖音入口，支持头像对象版本正在传播。" },
+        { "tier": "search_media", "evidence_role": "cross_platform", "platform": "other", "url": "https://www.taptap.cn/moment/621098852757277850", "title": "浓浓的圣诞氛围这不就有了吗", "captured_at": "2026-08-21T12:15:00+08:00", "note": "游戏社区公开页把同句壳用于圣诞氛围，与头像无关，支持跨对象复用。" }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-20-zhiyao-kaishi-jiu-buwan",
+      "title": "🚀 只要开始就不晚",
+      "aliases": ["只要开始就不晚", "追梦只要开始就不晚", "梦想只要开始就不晚"],
+      "canonical_phrase": "只要开始就不晚",
+      "platform": ["douyin", "other"],
+      "type": "情绪梗",
+      "summary": "用“只要开始就不晚”为拖延后的第一步打气，可原样用于学习、运动、创作和人生转向。",
+      "origin": "8月20日抖音榜出现“追梦这件事只要开始就不晚”；公开书评与随笔页也在不同主题中原样复用，现有证据不支持指定唯一首发者。",
+      "usage": "可在第一次跑步、重学外语或重新写作时配文“只要开始就不晚”，重点展示已经完成的第一步。",
+      "fun_point": "它不承诺马上成功，只把门槛压低到“开始”，给拖延和年龄焦虑一个简单有力的出口。",
+      "why_spread": "已验证：该句8月20日以追梦版本进入抖音榜，公开书评和随笔也用于其他人生议题；推测：语义完整、无需解释，适合短视频前后对比和自我鼓励转发。",
+      "lifecycle": "rising",
+      "brand_usage": "课程、运动或创作产品可配合用户真实第一步使用，避免把复杂处境简化成“你只是不肯开始”。",
+      "risk": { "level": "low", "note": "不要用励志口号归咎处于疾病、失业或经济困境的人。" },
+      "days_on_list": 1,
+      "score": 80,
+      "score_breakdown": { "heat": 29, "freshness": 27, "reusability": 16, "evidence": 8 },
+      "sources": [
+        { "tier": "aggregator", "evidence_role": "popularity", "platform": "douyin", "url": "https://hotflashnews.com/archive/2026-08-20", "title": "2026年8月20日全网热搜汇总", "observed_at": "2026-08-20T19:22:59+08:00", "captured_at": "2026-08-21T12:15:00+08:00", "note": "抖音榜记录“追梦这件事只要开始就不晚”，当时排名7。" },
+        { "tier": "platform_public", "evidence_role": "usage_context", "platform": "douyin", "url": "https://www.douyin.com/hot/2617187", "title": "追梦这件事只要开始就不晚", "observed_at": "2026-08-20T19:22:59+08:00", "captured_at": "2026-08-21T12:15:00+08:00", "note": "与当天热榜对应的公开抖音入口，支持该完整表达正在传播。" },
+        { "tier": "search_media", "evidence_role": "cross_platform", "platform": "other", "url": "https://book.douban.com/subject/35985591/reviews", "title": "《后浪》书评", "captured_at": "2026-08-21T12:15:00+08:00", "note": "公开书评把“梦想只要开始就不晚”用于阅读与奋斗主题，支持跨场景原样复用。" }
+      ],
+      "published": true
+    }
+  ]
+}
