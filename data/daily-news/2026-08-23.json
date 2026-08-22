@@ -1,0 +1,929 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-23",
+  "generated_at": "2026-08-23T06:55:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 42,
+    "published": 6,
+    "dropped_safety": {
+      "controversy": 1,
+      "geopolitics": 2,
+      "politics": 1,
+      "privacy": 1,
+      "propaganda": 1,
+      "rumor": 1
+    },
+    "dropped_low_confidence": 26,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 42,
+      "official_sources": 0,
+      "state_media_sources": 6,
+      "major_media_sources": 5,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 3
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 8,
+        "relaxed_72h": 13
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 42,
+          "cumulative_unique_candidates": 42,
+          "source_scope": [
+            "百度热搜实时榜",
+            "知乎热榜",
+            "新华社中新网央视网",
+            "广州日报新快报潮新闻等持牌媒体",
+            "政府部门与官方机构网站"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-23-robot-games-opening",
+          "story_identity": "cn-humanoid-robot-games-opening-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-08-23-robot-games-opening",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-23-flood-red-alert",
+          "story_identity": "cn-guangxi-flood-red-alert-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-23-flood-red-alert",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-23-rail-typhoon-suspension",
+          "story_identity": "cn-guangzhou-rail-typhoon-suspension-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-23-rail-typhoon-suspension",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-23-u18-basketball-final",
+          "story_identity": "cn-u18-basketball-asia-final-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-23-u18-basketball-final",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-23-women-volleyball-opener",
+          "story_identity": "cn-women-volleyball-asian-opener-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-23-women-volleyball-opener",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-23-chushu-late-chufu",
+          "story_identity": "cn-chushu-solar-term-late-chufu-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-23-chushu-late-chufu",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-01-deceased-accounts",
+          "story_identity": "cn-deceased-financial-account-query-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 15,
+            "everyday_relevance": 20,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "三部门8月21日发文在全国推广已故人士金融账户查询试点经验，服务价值高，但发文时点已超24小时严格窗口"
+        },
+        {
+          "candidate_key": "cand-02-car-recall",
+          "story_identity": "cn-car-emergency-handle-recall-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 21,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "多家车企因应急机械拉手隐患召回，涉及面广，但市场监管总局公告时点在24小时窗口外，具体车型清单以公告为准"
+        },
+        {
+          "candidate_key": "cand-03-flood-response",
+          "story_identity": "cn-flood-control-response-qiongguiyue-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 15,
+            "everyday_relevance": 18,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "国家防总、应急管理部8月21日20时对琼桂粤启动防汛防台风四级应急响应，时点超24小时窗口，最新进展以22日红色山洪预警呈现"
+        },
+        {
+          "candidate_key": "cand-04-robot-conference",
+          "story_identity": "cn-world-robot-conference-yizhuang-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 12,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "drop_reason": "2026世界机器人大会8月19日在亦庄开幕，已超72小时窗口，且与所选运动会题材部分重叠"
+        },
+        {
+          "candidate_key": "cand-05-badminton-doubles",
+          "story_identity": "cn-badminton-womens-doubles-final-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "刘圣书/谭宁晋级世锦赛女双决赛，前日已发布羽毛球世锦赛题材，半决赛阶段信息留待决赛结果"
+        },
+        {
+          "candidate_key": "cand-06-jianlawi-landing",
+          "story_identity": "cn-typhoon-jianlawi-zhejiang-landing-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T23:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 5
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "第20号台风“简拉维”22日夜间至23日凌晨登陆浙江沿海，与“紫檀”属同一台风影响家族，避免同题材过度集中"
+        },
+        {
+          "candidate_key": "cand-07-cabbage-comment",
+          "story_identity": "cn-cabbage-formaldehyde-peoples-comment-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "人民日报评论要求处置甲醛白菜从速从严，前日已发布张家口调查进展，评论文章无新事实增量"
+        },
+        {
+          "candidate_key": "cand-08-train-snack",
+          "story_identity": "cn-train-three-tickets-snack-response-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "两女孩买三张火车票放零食一事与21日铁路成都局席位规则通报属同一事件，个案讨论情绪化，规则信息已报道"
+        },
+        {
+          "candidate_key": "cand-09-jiaxing-scam",
+          "story_identity": "cn-jiaxing-savings-scam-case-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 14,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "浙江嘉兴男子积蓄被骗为个体遭遇个案，涉及个人财务细节，公共警示价值有限"
+        },
+        {
+          "candidate_key": "cand-10-dreame-layoffs",
+          "story_identity": "cn-dreame-car-layoffs-report-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "单一企业造车业务裁员走访报道，公司未正式回应，证据以匿名信源为主"
+        },
+        {
+          "candidate_key": "cand-11-pangdonglai-queue",
+          "story_identity": "cn-pangdonglai-store-queue-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "胖东来单店排队客流现象，近日已连续出现同类题材，无新信息增量"
+        },
+        {
+          "candidate_key": "cand-12-wolf-boy",
+          "story_identity": "cn-spain-wolf-boy-death-2026-08-15",
+          "research_pass": 1,
+          "occurred_at": "2026-08-15T18:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 12,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "西班牙“狼孩”8月15日去世，已超72小时窗口，且与中国读者日常关联弱"
+        },
+        {
+          "candidate_key": "cand-13-korea-dog-meat",
+          "story_identity": "cn-korea-dog-meat-ban-2027-02",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T09:00:00+08:00",
+          "scope": "international",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "韩国禁食狗肉法案2027年2月生效，属外国地方事务，对中国读者无直接影响"
+        },
+        {
+          "candidate_key": "cand-14-manutd-loss",
+          "story_identity": "cn-man-united-hull-loss-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T23:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 4,
+            "evidence": 3
+          },
+          "drop_reason": "英格兰足球联赛常规赛事结果，与中国读者日常关联弱"
+        },
+        {
+          "candidate_key": "cand-15-paredes-ban",
+          "story_identity": "cn-fifa-paredes-ban-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T20:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "国际足联对阿根廷球员的纪律处罚属外国体育事务，与中国读者日常关联弱"
+        },
+        {
+          "candidate_key": "cand-16-female-soldier",
+          "story_identity": "cn-sergeant-college-admission-story-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "女兵军士专升本为个体升学故事，面向普通读者的公共信息增量有限"
+        },
+        {
+          "candidate_key": "cand-17-metal-wire",
+          "story_identity": "cn-metal-atomic-chain-breakthrough-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 11
+          },
+          "drop_reason": "单原子直径金属线成果发表于《科学》，属基础科研突破，距日常生活应用较远"
+        },
+        {
+          "candidate_key": "cand-18-hpv-rumor",
+          "story_identity": "cn-hpv-vaccine-enrollment-rumor-2026-08-18",
+          "research_pass": 1,
+          "occurred_at": "2026-08-18T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 11,
+            "everyday_relevance": 21,
+            "evidence": 8
+          },
+          "drop_reason": "国家疾控局8月18日已辟谣“没打HPV疫苗不能入学”，时点超出72小时窗口"
+        },
+        {
+          "candidate_key": "cand-19-el-nino",
+          "story_identity": "cn-uk-met-el-nino-forecast-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T12:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "英国气象局厄尔尼诺预测为单一机构研判，对读者暂无直接行动指引"
+        },
+        {
+          "candidate_key": "cand-20-pingyao-photo",
+          "story_identity": "cn-pingyao-photo-festival-press-2026-08-20",
+          "research_pass": 1,
+          "occurred_at": "2026-08-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 14,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "平遥国际摄影大展9月19日才开幕，8月20日发布会时点已超48小时，临近开幕再评估"
+        },
+        {
+          "candidate_key": "cand-21-shanxi-skill-cert",
+          "story_identity": "cn-shanxi-skill-cert-mutual-recognition-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "山西职业技能证书互通互认为省级政策，时点表述模糊，影响面限于本省"
+        },
+        {
+          "candidate_key": "cand-22-wernicke-zhihu",
+          "story_identity": "cn-wernicke-case-zhihu-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "失业男子患病为个体极端病例，隐私与科普价值不平衡，前日已作同类评估"
+        },
+        {
+          "candidate_key": "cand-23-student-travel",
+          "story_identity": "cn-summer-travel-student-peak-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 20,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "暑运返程学生客流高峰为周期性服务提示，与所选列车停运条目同属交通题材，信息增量有限"
+        },
+        {
+          "candidate_key": "cand-24-climate-plan",
+          "story_identity": "cn-climate-service-plan-2030-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "气候业务高质量发展实施方案为框架性规划文件，无即时服务变化"
+        },
+        {
+          "candidate_key": "cand-25-wangfei-naying",
+          "story_identity": "cn-wangfei-naying-flower-basket-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "演唱会送花篮互动为娱乐花絮，无公共信息增量"
+        },
+        {
+          "candidate_key": "cand-26-variety-show",
+          "story_identity": "cn-variety-show-stage-moments-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 4,
+            "evidence": 2
+          },
+          "drop_reason": "综艺公演舞台花絮类内容，无公共信息增量"
+        },
+        {
+          "candidate_key": "cand-27-protein-survey",
+          "story_identity": "cn-protein-intake-survey-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "优质蛋白摄入话题热度高，但核心数据来自行业调研文章，未见权威机构原始发布"
+        },
+        {
+          "candidate_key": "cand-28-physician-exam",
+          "story_identity": "cn-physician-licensing-exam-weekend-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "医师资格综合笔试本周末举行，但仅见培训机构时间表，未见权威考务报道"
+        },
+        {
+          "candidate_key": "cand-29-rider-search",
+          "story_identity": "cn-rider-game-award-search-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "外卖骑手全网寻人趣闻仍在发酵，但以平台与自媒体信息为主，缺权威报道"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-23-robot-games-opening",
+      "story_identity": "cn-humanoid-robot-games-opening-2026-08-22",
+      "headline": "🤖 第二届世界人形机器人运动会在京开幕",
+      "summary": "8月22日晚，第二届世界人形机器人运动会在北京国家速滑馆“冰丝带”开幕。来自六大洲16个国家的666支队伍、2056台机器人参赛，共设置51个项目、1301场比赛，赛期持续至8月26日，参赛队伍数量较首届增长138%。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 90,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-22T20:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "赛事日程、成绩与观赛安排以组委会官方发布为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/tech/20260822/1f62f563c72241cbae252030caeabc5d/c.html",
+          "title": "新华鲜报丨加速跑 世界人形机器人运动会启幕",
+          "captured_at": "2026-08-23T06:36:00+08:00",
+          "note": "新华社8月22日报道运动会当晚启幕，16国666支队伍、2056台机器人、1301场比赛。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/22/ARTI8zadYrBTUGwUbWrAhkH3260821.shtml",
+          "title": "第二届世界人形机器人运动会赛项、亮点抢先看",
+          "captured_at": "2026-08-23T06:36:00+08:00",
+          "note": "央视网报道本届运动会8月22日至26日举行，51个项目共1301场比赛，赛项较首届翻番。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-23-flood-red-alert",
+      "story_identity": "cn-guangxi-flood-red-alert-2026-08-22",
+      "headline": "🌧️ 两部门联合发布红色山洪灾害气象预警",
+      "summary": "水利部和中国气象局8月22日18时联合发布红色山洪灾害气象预警：预计22日20时至23日20时，广西西南部部分地区发生山洪灾害可能性大，局地可能性很大。受台风“紫檀”影响，水利部已对广东、广西、海南启动洪水防御Ⅳ级应急响应，提醒各地做好监测预警和转移避险。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 89,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-22T18:00:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "台风路径与强度仍可能调整，预警范围和防御措施以当地三防、气象部门最新发布为准。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/roll/2026-08-22/doc-inipeyik0525593.shtml",
+          "title": "水利部和中国气象局8月22日18时联合发布红色山洪灾害气象预警",
+          "captured_at": "2026-08-23T06:38:00+08:00",
+          "note": "转自中国气象局，发布红色山洪灾害气象预警全文，明确广西西南部风险等级与防御要求。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网",
+          "url": "https://i.ifeng.com/c/8vnnAjRhp8K",
+          "title": "水利部和中国气象局8月22日18时联合发布红色山洪灾害气象预警",
+          "captured_at": "2026-08-23T06:38:00+08:00",
+          "note": "人民财讯8月22日电，独立转载同一预警，与新浪财经来源相互独立。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-23-rail-typhoon-suspension",
+      "story_identity": "cn-guangzhou-rail-typhoon-suspension-2026-08-22",
+      "headline": "🚄 受台风“紫檀”影响，国铁广州局部分列车停运",
+      "summary": "受第19号台风“紫檀”和西南季风共同影响，海南岛、广西南部、广东等地部分地区有大到暴雨，局地大暴雨。为确保旅客列车运行安全，国铁广州局动态调整开行方案：预计8月23日20时至24日8时，甬广高铁部分列车停运；8月24日8时至25日2时，海南高铁西环段部分列车停运。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-22T21:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "停运区段与恢复时间以铁路部门公告和12306信息为准，出行前请留意车次状态。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "广州日报",
+          "url": "https://news.dayoo.com/guangzhou/202608/22/139995_54993797.htm",
+          "title": "受台风“紫檀”影响，国铁广州局23日起部分列车停运",
+          "captured_at": "2026-08-23T06:40:00+08:00",
+          "note": "广州日报大洋网8月22日报道甬广高铁、海南高铁西环段部分列车停运时段安排。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新快报",
+          "url": "https://www.xkb.com.cn/articleDetail/518585",
+          "title": "受台风“紫檀”影响，国铁广州局部分列车将停运",
+          "captured_at": "2026-08-23T06:40:00+08:00",
+          "note": "新快网8月22日独立报道同一停运方案，与广州日报来源相互独立。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-23-u18-basketball-final",
+      "story_identity": "cn-u18-basketball-asia-final-2026-08-22",
+      "headline": "🏀 中国U18男篮时隔12年再进亚洲杯决赛",
+      "summary": "北京时间8月22日，2026年国际篮联U18男篮亚洲杯半决赛在印度艾哈迈达巴德进行，中国队以79比66战胜新西兰队，继2014年后时隔12年再次闯入该项赛事决赛。中国队此前已锁定2027年U19男篮世界杯参赛席位，决赛将于23日晚举行。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-22T21:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "决赛对阵与赛果以国际篮联官方发布为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://app.xinhuanet.com/news/article.html?articleId=20260822abd5292db4ac4f8986275e19a0ef46d5",
+          "title": "时隔12年中国队再进U18男篮亚洲杯决赛",
+          "captured_at": "2026-08-23T06:42:00+08:00",
+          "note": "新华网客户端8月22日报道中国队79比66战胜新西兰队、时隔12年再进决赛。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/08-22/10682492.shtml",
+          "title": "中国队击败新西兰队 晋级U18男篮亚洲杯决赛",
+          "captured_at": "2026-08-23T06:42:00+08:00",
+          "note": "中新社北京8月22日电，报道半决赛赛果及中国队已获2027年U19世界杯席位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-23-women-volleyball-opener",
+      "story_identity": "cn-women-volleyball-asian-opener-2026-08-22",
+      "headline": "🏐 中国女排亚锦赛首战3比0胜伊拉克",
+      "summary": "8月22日晚，2026年亚洲女排锦标赛小组赛在天津继续进行，中国女排首次亮相，直落三局以3比0战胜伊拉克队，取得开门红。本届亚锦赛冠军将直接锁定2028年洛杉矶奥运会参赛资格，中国女排小组赛还将对阵伊朗队和中国台北队。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-22T21:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "后续赛程与奥运资格归属以亚排联官方信息为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网体育",
+          "url": "https://sports.cctv.com/2026/08/22/VIDEy6ndvsSMZIEf1Q81oK2d260822.shtml",
+          "title": "[排球]亚洲女排锦标赛小组赛：中国VS伊拉克集锦",
+          "captured_at": "2026-08-23T06:44:00+08:00",
+          "note": "央视网体育8月22日发布比赛集锦，确认中国队3比0战胜伊拉克队。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "潮新闻",
+          "url": "https://tidenews.com.cn/news.html?id=3537595",
+          "title": "亚锦赛开门红！中国女排3-0横扫伊拉克，全力冲击奥运直通席位",
+          "captured_at": "2026-08-23T06:44:00+08:00",
+          "note": "潮新闻8月22日报道三局比分与本届赛事奥运资格规则，来源独立。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-23-chushu-late-chufu",
+      "story_identity": "cn-chushu-solar-term-late-chufu-2026-08-23",
+      "headline": "🍂 今日处暑逢末伏收官，40天三伏将落幕",
+      "summary": "北京时间8月23日10时19分将迎来处暑节气。民俗专家介绍，今年处暑恰逢末伏最后一天，长达40天的三伏天即将落幕；出伏在处暑之后，属于“晚出伏”。处暑标志着暑气开始消退，我国大部地区逐渐进入气象意义上的秋天。",
+      "category": "节日节气",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 11
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-22T16:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "节气时刻为天文测算，各地入秋进度与天气变化以气象部门监测为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260822/089afa6725f14abb96bc8dc4f1a19412/c.html",
+          "title": "节令之美丨处暑逢末伏收官 迎来晚出伏",
+          "captured_at": "2026-08-23T06:46:00+08:00",
+          "note": "新华社天津8月22日电，报道23日10时19分迎处暑、今年出伏在8月24日属晚出伏。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
