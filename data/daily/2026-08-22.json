@@ -1,0 +1,1135 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-22",
+  "generated_at": "2026-08-22T14:19:29+08:00",
+  "published_at": "2026-08-22T14:19:29+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 36,
+    "published": 9,
+    "dropped_safety": {
+      "时事政治": 2,
+      "灾害/公共安全": 2,
+      "死亡/伤害": 1,
+      "违法/低俗": 2,
+      "隐私/未成年人": 1
+    },
+    "dropped_low_confidence": 14,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "zhihu",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 23,
+      "platform_public_sources": 3,
+      "aggregator_sources": 38,
+      "search_media_sources": 7,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 9,
+        "relaxed_48h": 11,
+        "relaxed_72h": 11
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-22-shaonxinshi-huanyoushijie",
+          "canonical_phrase": "真正的少女心事是X",
+          "outcome": "selected",
+          "item_id": "2026-08-22-shaonxinshi-huanyoushijie",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-22T00:02:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-22-yang-zhuantou",
+          "canonical_phrase": "养砖头",
+          "outcome": "selected",
+          "item_id": "2026-08-22-yang-zhuantou",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://tophub.today/n/mproPpoq6O",
+            "observed_at": "2026-08-22T13:49:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-22-jujiabangong-fazhan",
+          "canonical_phrase": "X都发展成这样了",
+          "outcome": "selected",
+          "item_id": "2026-08-22-jujiabangong-fazhan",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-22T13:09:02+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-22-shouzhi-fangxiang-ziyou",
+          "canonical_phrase": "手指的方向是自由",
+          "outcome": "selected",
+          "item_id": "2026-08-22-shouzhi-fangxiang-ziyou",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-22T00:02:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-22-wufa-dui-beizi-qumei",
+          "canonical_phrase": "无法对X祛魅",
+          "outcome": "selected",
+          "item_id": "2026-08-22-wufa-dui-beizi-qumei",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-22T09:25:17+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-19-danzi-zhen-shi-feidudu-de",
+          "canonical_phrase": "胆子真是肥嘟嘟的",
+          "outcome": "selected",
+          "item_id": "2026-08-19-danzi-zhen-shi-feidudu-de",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-22T02:20:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-22-woyao-shengqila",
+          "canonical_phrase": "我要生气啦",
+          "outcome": "selected",
+          "item_id": "2026-08-22-woyao-shengqila",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-22T00:02:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-07-28-shoucao-xx",
+          "canonical_phrase": "手搓XX",
+          "outcome": "selected",
+          "item_id": "2026-07-28-shoucao-xx",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-22T13:32:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-07-22-belike-chabie",
+          "canonical_phrase": "Xbelike",
+          "outcome": "selected",
+          "item_id": "2026-07-22-belike-chabie",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 26,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-22T13:24:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-10",
+          "canonical_phrase": "于是我打开相册回忆X",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 27,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-22T00:02:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "总有人要X，为什么不能是我呢",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 16,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-22T00:02:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-12",
+          "canonical_phrase": "怀疑X是AI",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 25,
+            "reusability": 16,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-22T07:32:55+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "原来我也适合X风",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-22T00:02:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "一斤X能买一斤Y一斤Z",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 24,
+            "reusability": 13,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-22T11:57:26+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-15",
+          "canonical_phrase": "东北文旅的兵已到达X",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 24,
+            "reusability": 13,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-22T10:14:36+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-16",
+          "canonical_phrase": "早秋一周不露腿穿搭",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 24,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-22T08:49:48+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-17",
+          "canonical_phrase": "X的权威我后知后觉",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 23,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-22T00:02:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-18",
+          "canonical_phrase": "第一批用上微信按住转文字的人",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 22,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-08-21",
+            "observed_at": "2026-08-21T22:25:19+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-19",
+          "canonical_phrase": "霸总开着劳斯莱斯吃路边小馆",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 22,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-22T11:26:41+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-20",
+          "canonical_phrase": "看完X的后遗症",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 22,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-22T00:26:17+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "写给8090的信",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 21,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-08-22T13:43:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "妈妈知道女儿离婚点鞭炮欢迎回家",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 21,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-22T08:02:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-23",
+          "canonical_phrase": "九门只死了一只鸟",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 21,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-22T12:12:50+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-24",
+          "canonical_phrase": "白居易式旅居",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-25",
+          "canonical_phrase": "拼接遗憾2.0",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-26",
+          "canonical_phrase": "白泽杯S3开赛",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-27",
+          "canonical_phrase": "生是为了证明爱存在的痕迹",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-28",
+          "canonical_phrase": "荷兰弟演蜘蛛侠最担心的事",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-31",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-32",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-33",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-34",
+          "outcome": "dropped_safety",
+          "drop_reason": "违法/低俗",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-35",
+          "outcome": "dropped_safety",
+          "drop_reason": "违法/低俗",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-36",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私/未成年人",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 36,
+          "cumulative_unique_candidates": 36,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "zhihu",
+            "bilibili",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-22-shaonxinshi-huanyoushijie",
+      "title": "🗺️ 真正的少女心事是环游世界",
+      "aliases": [
+        "真正的少女心事是环游世界",
+        "真正的少女心事是X",
+        "真正的少女心事从来不是爱恨情仇"
+      ],
+      "canonical_phrase": "真正的少女心事是X",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "把“少女心事”从情爱叙事改写成对远方与自我实现的向往，句式“真正的少女心事是X”可自由填空。",
+      "origin": "已验证：8月22日该话题位列抖音实时榜第9，8月21日晚已列第10；巨量算数已收录其抖音指数词条，媒体检索可见“真正的少女心事从来不是爱恨情仇”等变体讨论。",
+      "usage": "可写“真正的少女心事是搞钱”“真正的少女心事是上岸”，用于旅行、储蓄、学习等自我实现主题的视频文案与评论区接龙。",
+      "fun_point": "把惯常指向情爱的“少女心事”突然换成环游世界，预期违背带来共鸣；X槽位可换成任何认真想要的东西。",
+      "why_spread": "已验证：话题跨夜保持在抖音榜前十，并有媒体跟进变体句；推测：它给“想要更好的生活”提供了一个不矫情的中文说法，转发门槛低。",
+      "lifecycle": "peak",
+      "brand_usage": "适合旅行与泛生活方式品牌做“真正想要的是X”填空互动；避免把女性自我实现窄化为消费清单。",
+      "risk": {
+        "level": "low",
+        "note": "常见情绪句式；避免贩卖焦虑或把个体选择说成唯一正确答案。"
+      },
+      "days_on_list": 1,
+      "score": 89,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-22T00:02:13+08:00",
+          "captured_at": "2026-08-22T13:46:00+08:00",
+          "note": "HotFlashNews 8月22日记录该话题位列抖音实时榜第9。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://hotflashnews.com/archive/2026-08-21",
+          "title": "2026年8月21日全网热搜汇总",
+          "observed_at": "2026-08-21T23:19:38+08:00",
+          "captured_at": "2026-08-22T13:56:00+08:00",
+          "note": "前一日归档记录该话题位列抖音第10，证明跨夜持续在榜。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://trendinsight.oceanengine.com/arithmetic-index/hot?topic_name=%E7%9C%9F%E6%AD%A3%E7%9A%84%E5%B0%91%E5%A5%B3%E5%BF%83%E4%BA%8B%E6%98%AF%E7%8E%AF%E6%B8%B8%E4%B8%96%E7%95%8C&source=oceanengine",
+          "title": "抖音指数：真正的少女心事是环游世界",
+          "captured_at": "2026-08-22T14:02:00+08:00",
+          "note": "搜索结果确认巨量算数已收录该话题的抖音指数词条（约941万热度）。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-22-yang-zhuantou",
+      "title": "🧱 养砖头",
+      "aliases": [
+        "养砖头",
+        "上班搬砖下班养砖",
+        "不养猫不养狗养砖头"
+      ],
+      "canonical_phrase": "养砖头",
+      "platform": [
+        "zhihu",
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "捡一块旧砖回家喷水养苔藓，被称为“养砖头”，并衍生出自嘲“上班搬砖，下班养砖”。",
+      "origin": "已验证：8月22日“年轻人开始流行养砖头”位列知乎热榜第12（约169万热度）；中国新闻网、央广网等8月21日报道该爱好在年轻人中流行。",
+      "usage": "可写“不养猫不养狗，我养砖头”“上班搬砖，下班养砖”，用于零成本爱好、工位布置与治愈系内容。",
+      "fun_point": "把最没有生命力的建筑材料当成宠物来养，“养”字错位制造荒诞治愈感，还天然接上“搬砖”的打工人自嘲。",
+      "why_spread": "已验证：知乎热榜在榜且多家媒体同日报道；推测：零成本、零门槛、可晒图，给“想养点什么但养不起”的情绪一个出口。",
+      "lifecycle": "peak",
+      "brand_usage": "适合家居、绿植、办公好物做“低成本治愈”选题；不要借机兜售高价“治愈税”产品。",
+      "risk": {
+        "level": "safe",
+        "note": "普通生活方式话题；提醒捡砖注意来源合法与安全即可。"
+      },
+      "days_on_list": 1,
+      "score": 88,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "zhihu",
+          "url": "https://tophub.today/n/mproPpoq6O",
+          "title": "知乎热榜 · 今日热榜",
+          "observed_at": "2026-08-22T13:49:00+08:00",
+          "captured_at": "2026-08-22T13:49:00+08:00",
+          "note": "今日热榜镜像记录“年轻人开始流行养砖头”位列知乎热榜第12，热度约169万。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-21/10681411.shtml",
+          "title": "不养猫不养狗 年轻人为何开始流行“养砖头”？",
+          "observed_at": "2026-08-21T10:12:00+08:00",
+          "captured_at": "2026-08-22T14:02:00+08:00",
+          "note": "中国新闻网8月21日报道“养砖头”的做法与流行原因。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://www.cnr.cn/newscenter/native/gd/kx/20260821/t20260821_527784828.shtml",
+          "title": "不养猫不养狗，年轻人开始流行“养砖头”（央广网）",
+          "captured_at": "2026-08-22T14:02:00+08:00",
+          "note": "央广网同日报道同一现象，与中新网互为独立传播链路。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-22-jujiabangong-fazhan",
+      "title": "🏠 居家办公都发展成这样了",
+      "aliases": [
+        "居家办公都发展成这样了",
+        "X都发展成这样了"
+      ],
+      "canonical_phrase": "X都发展成这样了",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "看到居家办公的新花样后感叹“都发展成这样了”，句式“X都发展成这样了”可套到任何超出想象的进化现场。",
+      "origin": "已验证：8月22日该话题位列微博实时榜第4；新浪收录页面显示8月21日起多名网友以该句转发讨论居家办公场景。",
+      "usage": "可写“工位都发展成这样了”“自习室都发展成这样了”，用于围观某行业、某场景超出预期的升级现场。",
+      "fun_point": "句尾的“这样”刻意留白，靠配图或上下文补足惊讶程度，用陈述句说出了惊叹的语气。",
+      "why_spread": "已验证：话题进入微博实时榜前五；推测：远程办公议题自带打工人基本盘，句式又能迁移到任何“开眼界”时刻。",
+      "lifecycle": "rising",
+      "brand_usage": "适合办公、家居、数码品牌展示产品进化前后的反差；避免贩卖加班文化或暗示居家就应无限待命。",
+      "risk": {
+        "level": "low",
+        "note": "普通职场生活话题；注意不要把个案包装成行业普遍福利。"
+      },
+      "days_on_list": 1,
+      "score": 87,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-22T13:09:02+08:00",
+          "captured_at": "2026-08-22T13:46:00+08:00",
+          "note": "HotFlashNews 8月22日记录该话题位列微博实时榜第4。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.sina.cn/news/detail/5334675845286526.html",
+          "title": "居家办公都发展成这样了（新浪收录页）",
+          "observed_at": "2026-08-22T08:00:00+08:00",
+          "captured_at": "2026-08-22T14:07:00+08:00",
+          "note": "新浪收录页显示8月21-22日多名网友以该句转发讨论，为真实使用语境。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E5%B1%85%E5%AE%B6%E5%8A%9E%E5%85%AC%E9%83%BD%E5%8F%91%E5%B1%95%E6%88%90%E8%BF%99%E6%A0%B7%E4%BA%86",
+          "title": "微博搜索：居家办公都发展成这样了",
+          "captured_at": "2026-08-22T14:07:00+08:00",
+          "note": "公开微博检索入口，可复核该表达的实时讨论。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-22-shouzhi-fangxiang-ziyou",
+      "title": "👉 手指的方向是自由",
+      "aliases": [
+        "手指的方向是自由",
+        "X的方向是自由"
+      ],
+      "canonical_phrase": "手指的方向是自由",
+      "platform": [
+        "douyin"
+      ],
+      "type": "情绪梗",
+      "summary": "抬手指向远方配一句“手指的方向是自由”，成为表达想出发、想逃离现状的通用画面文案。",
+      "origin": "已验证：8月22日该话题位列抖音实时榜第7，8月21日傍晚已列第9；今日热榜镜像记录其位列抖音热点榜第9，热度约943万。",
+      "usage": "指向窗外、地图或路口拍照配文即可使用；也可改写“外卖的方向是自由”等反转型玩梗。",
+      "fun_point": "一个手势加一句短文案就把“想走”具象化，中二但真诚，谁都能立刻复刻。",
+      "why_spread": "已验证：话题跨夜保持在抖音榜前十；推测：动作零门槛、画面统一，适合暑期尾声出走情绪的集中释放。",
+      "lifecycle": "rising",
+      "brand_usage": "适合旅行、户外、交通类内容做“指向目的地”互动；避免鼓励危险拍摄或盲目远行。",
+      "risk": {
+        "level": "safe",
+        "note": "普通情绪表达；提醒拍摄注意交通安全即可。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 28,
+        "reusability": 16,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-22T00:02:13+08:00",
+          "captured_at": "2026-08-22T13:46:00+08:00",
+          "note": "HotFlashNews 8月22日记录该话题位列抖音实时榜第7。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://hotflashnews.com/archive/2026-08-21",
+          "title": "2026年8月21日全网热搜汇总",
+          "observed_at": "2026-08-21T17:53:29+08:00",
+          "captured_at": "2026-08-22T13:56:00+08:00",
+          "note": "前一日归档记录该话题位列抖音第9，证明跨夜持续在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "douyin",
+          "url": "https://tophub.today/n/K7GdaMgdQy",
+          "title": "抖音热点榜 · 今日热榜",
+          "observed_at": "2026-08-22T14:02:00+08:00",
+          "captured_at": "2026-08-22T14:05:00+08:00",
+          "note": "今日热榜镜像8月22日记录该话题位列抖音热点榜第9，热度约943万。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-22-wufa-dui-beizi-qumei",
+      "title": "🥤 无法对小时候的杯子祛魅",
+      "aliases": [
+        "无法对小时候的杯子祛魅",
+        "无法对X祛魅",
+        "对童年的杯子无法祛魅"
+      ],
+      "canonical_phrase": "无法对X祛魅",
+      "platform": [
+        "weibo"
+      ],
+      "type": "情绪梗",
+      "summary": "明知旧水杯早已不实用却始终舍不得丢——“无法对X祛魅”用来坦白对旧物与旧时光的放不下。",
+      "origin": "已验证：8月22日该话题进入微博实时榜（另一镜像源记录最高约第7、51万热度量级）；新浪收录多篇网友晒童年水杯的讨论。",
+      "usage": "可写“无法对老街的早餐祛魅”“无法对中学操场祛魅”，用于怀旧、物件故事与家乡记忆内容。",
+      "fun_point": "“祛魅”本是理性克制词，前面加上“无法”直接投降，用理性词讲感性事，反差出梗。",
+      "why_spread": "已验证：话题8月21-22日在微博持续发酵并有媒体转述；推测：人人都有放不下的一件旧物，晒图即可参与。",
+      "lifecycle": "rising",
+      "brand_usage": "适合怀旧向品牌与复刻款营销；避免利用怀旧情绪兜售伪复古或夸大情怀溢价。",
+      "risk": {
+        "level": "safe",
+        "note": "普通怀旧情绪表达，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 84,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-22T09:25:17+08:00",
+          "captured_at": "2026-08-22T13:46:00+08:00",
+          "note": "HotFlashNews 8月22日记录该话题位列微博实时榜第20。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://k.sina.com.cn/article_7879922980_1d5ae152406801jzqc.html",
+          "title": "如何用正确的方式保存有纪念意义的童年物品？",
+          "observed_at": "2026-08-22T09:00:00+08:00",
+          "captured_at": "2026-08-22T14:07:00+08:00",
+          "note": "新浪文章8月22日记录“无法对小时候的杯子祛魅”登上微博热搜、网友集体晒童年水杯。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E6%97%A0%E6%B3%95%E5%AF%B9%E5%B0%8F%E6%97%B6%E5%80%99%E7%9A%84%E6%9D%AF%E5%AD%90%E7%A5%9B%E9%AD%9A",
+          "title": "微博搜索：无法对小时候的杯子祛魅",
+          "captured_at": "2026-08-22T14:07:00+08:00",
+          "note": "公开微博检索入口，可复核该表达的实时讨论。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-19-danzi-zhen-shi-feidudu-de",
+      "title": "🐹 胆子真是肥嘟嘟的",
+      "aliases": [
+        "胆子真是肥嘟嘟的",
+        "你的胆子真是肥嘟嘟的",
+        "我的胆子没有那么肥嘟嘟"
+      ],
+      "canonical_phrase": "胆子真是肥嘟嘟的",
+      "platform": [
+        "bilibili",
+        "other"
+      ],
+      "type": "口头禅梗",
+      "summary": "把“胆子很大”改写成软乎乎的“肥嘟嘟”，用于吐槽别人敢做离谱事，也可反向自嘲自己胆小。",
+      "origin": "已验证：该句8月19日进入微博热榜后被本站收录；8月22日凌晨B站实时榜收录“胆子真是肥嘟嘟的是什么梗”（第47位），多家媒体8月20-21日连续发布梗解释，证明二次扩散仍在进行。",
+      "usage": "看到离谱操作可回“你的胆子真是肥嘟嘟的”，自己不敢尝试时可写“我的胆子还没肥嘟嘟起来”。",
+      "fun_point": "“肥嘟嘟”通常形容可爱外形，拿来修饰抽象的胆子，把责备瞬间说成撒娇式吐槽。",
+      "why_spread": "已验证：B站出现“什么梗”式检索词条、媒体连续两日解释出处，属发布后的新一波科普扩散；推测：语气软、零门槛，评论区复用成本极低。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于轻松提醒用户尝试新品，如“胆子肥嘟嘟，先点小份试试”，不要用来淡化安全规范。",
+      "risk": {
+        "level": "low",
+        "note": "避免对真实危险行为叫好，也不要用于霸凌或羞辱特定个体。"
+      },
+      "days_on_list": 2,
+      "score": 82,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "bilibili",
+          "url": "https://hotflashnews.com/platform/bilibili",
+          "title": "B站实时热搜榜",
+          "observed_at": "2026-08-22T02:20:58+08:00",
+          "captured_at": "2026-08-22T13:51:00+08:00",
+          "note": "HotFlashNews 8月22日记录B站实时榜第47位“胆子真是肥嘟嘟的是什么梗”。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.sina.cn/news/detail/5334343955776190.html",
+          "title": "“胆子真是肥嘟嘟的”梗解释",
+          "observed_at": "2026-08-21T12:00:00+08:00",
+          "captured_at": "2026-08-22T14:05:00+08:00",
+          "note": "新浪收录页8月21日展示网友问答式梗解释与外卖对话出处。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://m.ali213.net/news/gl2608/1801443.html",
+          "title": "胆子真是肥嘟嘟的是什么梗-梗介绍",
+          "observed_at": "2026-08-20T18:00:00+08:00",
+          "captured_at": "2026-08-22T14:05:00+08:00",
+          "note": "游侠手游8月20日发布该梗出处与用法介绍，佐证跨平台科普扩散。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-22-woyao-shengqila",
+      "title": "😤 我要生气啦",
+      "aliases": [
+        "我要生气啦",
+        "我要生气了哦"
+      ],
+      "canonical_phrase": "我要生气啦",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "口头禅梗",
+      "summary": "用奶凶的“我要生气啦”代替真发火，提前预告情绪、给对方台阶，常见于评论区的撒娇式抗议。",
+      "origin": "已验证：8月22日该话题位列抖音实时榜第21，8月21日晚列第18；另一聚合归档tgmeng同日收录其第19位，跨源一致。",
+      "usage": "朋友迟到、奶茶洒了、更新太慢都可回“我要生气啦”，语气越认真越好笑，适合弹幕与评论区接龙。",
+      "fun_point": "把“生气”当成需要预告的仪式，凶狠值归零，只留下可爱的威胁感。",
+      "why_spread": "已验证：话题连续两日留在抖音榜且两个聚合源记录一致；推测：五个字零理解成本，可直接复制到任何吐槽场景。",
+      "lifecycle": "rising",
+      "brand_usage": "适合客服与官方账号用“我要生气啦”卖萌式催反馈；不要用于真实的投诉与对抗场景。",
+      "risk": {
+        "level": "safe",
+        "note": "普通情绪口头禅，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 79,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-22T00:02:13+08:00",
+          "captured_at": "2026-08-22T13:46:00+08:00",
+          "note": "HotFlashNews 8月22日记录该话题位列抖音实时榜第21。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://hotflashnews.com/archive/2026-08-21",
+          "title": "2026年8月21日全网热搜汇总",
+          "observed_at": "2026-08-21T20:01:59+08:00",
+          "captured_at": "2026-08-22T13:56:00+08:00",
+          "note": "前一日归档记录该话题位列抖音第18，证明跨夜持续在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://tgmeng.com/archive/2026-08-21/media",
+          "title": "2026-08-21 媒体热榜归档",
+          "captured_at": "2026-08-22T14:07:00+08:00",
+          "note": "tgmeng 归档同样收录该话题8月21日抖音第19位，跨聚合源互证。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-28-shoucao-xx",
+      "title": "🛠️ 手搓XX",
+      "aliases": [
+        "手搓XX",
+        "手搓万物",
+        "手搓一个X"
+      ],
+      "canonical_phrase": "手搓XX",
+      "platform": [
+        "bilibili",
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "用“手搓XX”夸张描述靠个人、小团队或简易工具把复杂东西做出来，既能夸动手能力，也能表达低成本实现。",
+      "origin": "已验证：该词7月28日因“手搓超薄卫星”等新用法被收录；8月22日B站实时榜第11位的练习室内容再以“手搓”自称，8月21日贴吧榜出现“大爷手搓AI打破日漫壁垒”，均为无关场景的新增复用。",
+      "usage": "可改写成“周末手搓一个收纳架”“临时手搓一套流程”，用于手作、工作流、创意原型或低成本解决方案。",
+      "fun_point": "把高门槛产物说成像徒手揉出来一样轻松，技术难度与口语动作之间的反差很强。",
+      "why_spread": "已验证：过去24小时内B站与贴吧榜各自出现不同领域的新用法；推测：对象槽位几乎无限，教程与整活内容都接得住。",
+      "lifecycle": "rising",
+      "brand_usage": "教程或创意账号可用“手搓一个XX”展示从零到一过程；不得夸大安全性、性能或省略必要风险提示。",
+      "risk": {
+        "level": "low",
+        "note": "一般动手与创意表达；涉及机械、电气、医疗或飞行器时需保留专业安全边界。"
+      },
+      "days_on_list": 2,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "bilibili",
+          "url": "https://hotflashnews.com/platform/bilibili",
+          "title": "B站实时热搜榜",
+          "observed_at": "2026-08-22T13:32:43+08:00",
+          "captured_at": "2026-08-22T13:51:00+08:00",
+          "note": "HotFlashNews 8月22日记录B站实时榜第11位，相关练习室内容以“手搓”自称。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://hotflashnews.com/archive/2026-08-21",
+          "title": "2026年8月21日全网热搜汇总",
+          "observed_at": "2026-08-21T11:48:10+08:00",
+          "captured_at": "2026-08-22T13:56:00+08:00",
+          "note": "前一日归档贴吧榜收录“大爷手搓AI打破日漫壁垒”，为另一领域的复用实例。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-07-22-belike-chabie",
+      "title": "🎭 我对生理期的态度belike",
+      "aliases": [
+        "我对生理期的态度belike",
+        "我对X的态度belike",
+        "Xbelike"
+      ],
+      "canonical_phrase": "Xbelike",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "“belike”句壳的新变体：用一组图或一段话演示“我对某事的态度”，本期落在生理期自嘲。",
+      "origin": "已验证：该句壳自7月22日起多次上榜；8月22日微博实时榜第22位收录变体“我对生理期的态度belike”，新浪收录页显示该变体8月20日晚已有数十次转发。",
+      "usage": "可写“我对周一的态度belike”“我对钱包的态度belike”，配图或排比句演示态度，评论区极易接龙。",
+      "fun_point": "英文碎词belike当中文句子的展示开关，前面任意命题、后面交给画面，半英语半表情包的混血结构自带喜感。",
+      "why_spread": "已验证：新变体今日进入微博实时榜，且8月20日起已有真实转发；推测：句壳成熟、替换命题即可参与，复用成本极低。",
+      "lifecycle": "rising",
+      "brand_usage": "适合品牌官号用“我们对X的态度belike”做自黑式海报；避免蹭生理健康等私密话题做硬广。",
+      "risk": {
+        "level": "low",
+        "note": "女性健康自嘲属正常表达；品牌借用时避免猎奇化或说教。"
+      },
+      "days_on_list": 5,
+      "score": 76,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 26,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-22T13:24:06+08:00",
+          "captured_at": "2026-08-22T13:46:00+08:00",
+          "note": "HotFlashNews 8月22日记录该话题位列微博实时榜第22。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.sina.cn/news/detail/5327205221793986.html",
+          "title": "生理期水肿抱怨 - 新浪",
+          "observed_at": "2026-08-20T19:40:45+08:00",
+          "captured_at": "2026-08-22T14:07:00+08:00",
+          "note": "新浪收录页显示“我对生理期的态度belike”微博8月20日晚发布并获数十次转发。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
