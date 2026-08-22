@@ -1,0 +1,1003 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-22",
+  "generated_at": "2026-08-22T14:22:59+08:00",
+  "published_at": "2026-08-22T14:22:59+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 49,
+    "published": 6,
+    "dropped_safety": {
+      "politics": 2,
+      "geopolitics": 1,
+      "propaganda": 1,
+      "celebrity_dispute": 1,
+      "privacy": 1,
+      "controversy": 1,
+      "rumor": 1
+    },
+    "dropped_low_confidence": 25,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 49,
+      "official_sources": 1,
+      "state_media_sources": 3,
+      "major_media_sources": 8,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 10
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 12,
+        "relaxed_72h": 17
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 49,
+          "cumulative_unique_candidates": 49,
+          "source_scope": [
+            "百度热搜实时榜",
+            "知乎热榜",
+            "新华社人民网央视网",
+            "澎湃新京报凤凰等持牌媒体",
+            "政府部门与官方机构网站"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-22-typhoon-narra-alerts",
+          "story_identity": "cn-typhoon-narra-blue-alerts-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-22-typhoon-narra-alerts",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-22-cabbage-formaldehyde-probe",
+          "story_identity": "cn-zhangjiakou-cabbage-formaldehyde-probe-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-22-cabbage-formaldehyde-probe",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-22-huoxiang-safety-warning",
+          "story_identity": "cn-huoxiang-zhengqi-medication-safety-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-22-huoxiang-safety-warning",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-22-drink-rumor-detained",
+          "story_identity": "cn-shanghai-398-drink-rumor-detention-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-22-drink-rumor-detained",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-22-linyi-explosion-response",
+          "story_identity": "cn-linyi-courtyard-explosion-response-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-08-22-linyi-explosion-response",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-22-wang-zhiyi-semifinal",
+          "story_identity": "cn-wang-zhiyi-badminton-worlds-semifinal-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-22-wang-zhiyi-semifinal",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cand-01-leukemia-briefing",
+          "story_identity": "cn-leukemia-treatable-nhc-briefing-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 16,
+            "everyday_relevance": 24,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "国家卫健委发布会称白血病已可治可控，信息价值高，但发布会时点距评估时钟已超24小时严格窗口"
+        },
+        {
+          "candidate_key": "cand-02-railway-seat-rules",
+          "story_identity": "cn-railway-unchecked-ticket-seat-rules-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:30:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 16,
+            "everyday_relevance": 20,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "西南铁路通报明确未检票上车视为放弃席位使用权，规则实用，但通报时点已超24小时窗口"
+        },
+        {
+          "candidate_key": "cand-03-graduates-city-tier",
+          "story_identity": "cn-graduates-prefer-lower-tier-cities-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 16,
+            "everyday_relevance": 20,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "麦可思数据显示本科毕业生向二三线城市就业集中，有参考价值，但报道时点已超24小时窗口"
+        },
+        {
+          "candidate_key": "cand-04-gree-tech-school",
+          "story_identity": "cn-gree-technical-school-8000-applicants-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 16,
+            "everyday_relevance": 19,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "格力技校招300人超8000人报名反映职教热度，但属单一学校个案且时点已超24小时窗口"
+        },
+        {
+          "candidate_key": "cand-05-duck-snack-earnings",
+          "story_identity": "cn-braised-duck-trio-interim-earnings-2026-08-20",
+          "research_pass": 1,
+          "occurred_at": "2026-08-20T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 14,
+            "everyday_relevance": 20,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "卤味三巨头8月20日晚披露中报显示主业承压，属48小时层消费行业信息"
+        },
+        {
+          "candidate_key": "cand-06-weidongyi-workbook",
+          "story_identity": "cn-wei-dongyi-math-workbook-sales-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "韦东奕主编练习册销量数据来自店铺客服与社交账号，缺少独立权威核实"
+        },
+        {
+          "candidate_key": "cand-07-donghao-letter",
+          "story_identity": "cn-dong-hao-letter-to-8090-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 4
+          },
+          "drop_reason": "主持人心声长文引发共鸣，但公共信息增量有限"
+        },
+        {
+          "candidate_key": "cand-08-elderly-mother",
+          "story_identity": "cn-yiwu-62-year-old-mother-birth-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 4
+          },
+          "drop_reason": "超高龄产妇顺利分娩为个案，对普通读者的行动价值有限"
+        },
+        {
+          "candidate_key": "cand-09-pangdonglai-store",
+          "story_identity": "cn-pangdonglai-xuchang-store-closure-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 4
+          },
+          "drop_reason": "单店租约到期不再续约属个案，情绪化讨论较多，证据以单方说法为主"
+        },
+        {
+          "candidate_key": "cand-10-minsheng-life-rumor",
+          "story_identity": "cn-minsheng-life-layoff-rumor-response-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 4
+          },
+          "drop_reason": "网传裁员说法已被公司否认并进行证据保全，公共信息增量低"
+        },
+        {
+          "candidate_key": "cand-11-rice-cooker-fraud",
+          "story_identity": "cn-jiangyin-elder-telecom-fraud-stop-2026-08-12",
+          "research_pass": 1,
+          "occurred_at": "2026-08-12T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 12,
+            "everyday_relevance": 19,
+            "evidence": 4
+          },
+          "drop_reason": "反诈拦截案例有提醒价值，但事发8月12日已超出72小时窗口"
+        },
+        {
+          "candidate_key": "cand-12-screen-share-fraud",
+          "story_identity": "cn-guangzhou-screen-share-fraud-stop-2026-08-07",
+          "research_pass": 1,
+          "occurred_at": "2026-08-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 12,
+            "everyday_relevance": 19,
+            "evidence": 4
+          },
+          "drop_reason": "屏幕共享诈骗拦截事发8月7日，远超72小时窗口"
+        },
+        {
+          "candidate_key": "cand-13-india-cliff-fall",
+          "story_identity": "cn-india-family-cliff-fall-iphone-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T12:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "外国家庭悲剧属地方社会新闻，与中国读者日常关联弱"
+        },
+        {
+          "candidate_key": "cand-14-mrna-cancer-vaccine",
+          "story_identity": "cn-mrna-cancer-vaccine-phase-three-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T20:00:00+08:00",
+          "scope": "international",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 14,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "个性化mRNA癌症疫苗Ⅲ期结果积极，但距中国读者可及性仍远，且已近72小时窗口边界"
+        },
+        {
+          "candidate_key": "cand-15-forklift-exports",
+          "story_identity": "cn-forklift-sales-export-surge-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "叉车产销与出口数据偏宏观产业面，与日常生活直接关联有限"
+        },
+        {
+          "candidate_key": "cand-16-robot-commercialization",
+          "story_identity": "cn-robot-scale-commercialization-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "机器人规模化商用为行业趋势信息，缺少具体公共服务落点"
+        },
+        {
+          "candidate_key": "cand-17-lv-guizhou-exit",
+          "story_identity": "cn-lv-exits-guizhou-market-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "奢侈品牌区域门店调整，影响面窄"
+        },
+        {
+          "candidate_key": "cand-18-county-consumption",
+          "story_identity": "cn-13-counties-consumption-first-tier-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "与8月18日县域消费举措题材重复，数据解读缺乏新落点"
+        },
+        {
+          "candidate_key": "cand-19-fishing-season-reopen",
+          "story_identity": "cn-south-china-sea-fishing-reopen-2026-08-16",
+          "research_pass": 1,
+          "occurred_at": "2026-08-16T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 12,
+            "everyday_relevance": 20,
+            "evidence": 4
+          },
+          "drop_reason": "南海开渔题材8月17日已发布，且事发已超出72小时窗口"
+        },
+        {
+          "candidate_key": "cand-20-popmart-earnings",
+          "story_identity": "cn-pop-mart-interim-earnings-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "潮玩公司中报业绩与日常民生关联有限"
+        },
+        {
+          "candidate_key": "cand-21-unitree-stock",
+          "story_identity": "cn-unitree-stock-pullback-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 4
+          },
+          "drop_reason": "个股上市后短期波动，非民生服务信息"
+        },
+        {
+          "candidate_key": "cand-22-ymtc-ipo",
+          "story_identity": "cn-yangtze-memory-ipo-accepted-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 5
+          },
+          "drop_reason": "企业IPO受理属资本市场信息，民生关联弱"
+        },
+        {
+          "candidate_key": "cand-23-wernicke-case",
+          "story_identity": "cn-unemployed-man-wernicke-encephalopathy-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "个体极端病例，隐私与科普价值不平衡"
+        },
+        {
+          "candidate_key": "cand-24-rider-game-award",
+          "story_identity": "cn-delivery-rider-game-award-search-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "暖心趣闻但证据单薄，公共价值不足"
+        },
+        {
+          "candidate_key": "cand-25-pangdonglai-exconvict",
+          "story_identity": "cn-pangdonglai-hiring-ex-convicts-response-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "企业用工政策个案，讨论易情绪化"
+        },
+        {
+          "candidate_key": "cand-26-memory-price-surge",
+          "story_identity": "cn-memory-chip-price-surge-laptop-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "存储涨价推高购机成本的现象存在，但具体涨幅数字主要来自自媒体测算，缺权威报道"
+        },
+        {
+          "candidate_key": "cand-27-meet-xiaomian-price",
+          "story_identity": "cn-meet-xiaomian-price-cut-profit-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "降价增收数据见于财报讨论帖，未获独立权威来源确认"
+        },
+        {
+          "candidate_key": "cand-28-cinema-nap-service",
+          "story_identity": "cn-xian-cinema-nap-monthly-pass-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "影院午休服务走红，但报道以自媒体为主，缺少持牌媒体核实"
+        },
+        {
+          "candidate_key": "cand-29-women-volleyball-asian",
+          "story_identity": "cn-women-volleyball-asian-championship-tianjin-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "女排亚锦赛天津开赛信息多为赛前自媒体前瞻，权威赛果报道未补齐"
+        },
+        {
+          "candidate_key": "cand-30-task-group-fraud",
+          "story_identity": "cn-qingdao-task-group-fraud-53-2026-08-20",
+          "research_pass": 1,
+          "occurred_at": "2026-08-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "刷单诈骗个案仅见聚合平台转述，缺权威来源"
+        },
+        {
+          "candidate_key": "cand-31-cheap-crab-bbq",
+          "story_identity": "cn-wuhan-bbq-cheap-crab-promo-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "单店促销走红，疑为引流营销，缺独立报道"
+        },
+        {
+          "candidate_key": "cand-32-airline-paid-meals",
+          "story_identity": "cn-airlines-paid-meal-trend-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "航司付费餐趋势信息来源分散，缺权威汇总报道"
+        },
+        {
+          "candidate_key": "cand-33-skater-injury",
+          "story_identity": "cn-heilongjiang-skater-injury-rumor-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "运动员受伤信息来自网络流传，未经官方或家属确认"
+        },
+        {
+          "candidate_key": "cand-34-game-helmet-bike",
+          "story_identity": "cn-woman-game-helmet-ebike-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "头盔安全提醒有价值，但事件仅见短视频转述，缺权威报道"
+        },
+        {
+          "candidate_key": "cand-35-norway-potato-stall",
+          "story_identity": "cn-guiyang-woman-norway-potato-stall-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T11:00:00+08:00",
+          "scope": "international",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "海外摆摊趣闻，仅见聚合平台内容"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-22-typhoon-narra-alerts",
+      "story_identity": "cn-typhoon-narra-blue-alerts-2026-08-22",
+      "headline": "🌀 台风“紫檀”来袭，华南沿海迎强降雨",
+      "summary": "中央气象台8月22日6时发布台风蓝色预警和暴雨蓝色预警，中国气象局8时30分启动台风、暴雨四级应急响应。今年第19号台风“紫檀”将在北部湾回旋加强，24日趋向雷州半岛西侧至广西南部沿海，未来三天华南、浙闽沿海有明显降雨。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 92,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-22T06:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "台风路径和强度仍可能调整，沿海居民出行与停航停运信息以当地预警和官方通知为准。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "https://www.nmc.cn/publish/typhoon/warning.html",
+          "title": "台风公报：今年第19号台风“紫檀”将在北部湾回旋少动",
+          "captured_at": "2026-08-22T13:47:00+08:00",
+          "note": "中央气象台台风公报给出“紫檀”22日10时位置、强度与回旋打转预报。"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://society.people.com.cn/n1/2026/0822/c1008-40784287.html",
+          "title": "台风、暴雨双预警 中国气象局启动四级应急响应",
+          "captured_at": "2026-08-22T13:47:00+08:00",
+          "note": "新华社北京8月22日电，报道双预警发布与应急响应调整及未来三天降雨范围。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-22-cabbage-formaldehyde-probe",
+      "story_identity": "cn-zhangjiakou-cabbage-formaldehyde-probe-2026-08-22",
+      "headline": "🥬 张家口回应“大白菜蘸甲醛保鲜”：多部门调查",
+      "summary": "8月22日有博主发布视频称，河北张家口康保县屯垦镇多辆大货车在装车前将大白菜蘸取甲醛溶液保鲜。张家口市市场监管部门回应澎湃新闻称已关注到相关情况，多部门已展开调查，结果以官方通报为准。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-22T09:30:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "网传内容尚在调查阶段，是否属实及涉事范围以监管部门最终通报为准，报道仅呈现官方已介入。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33831555",
+          "title": "河北张家口市场监管局回应“博主曝光大白菜装车前蘸甲醛保鲜”",
+          "captured_at": "2026-08-22T13:56:00+08:00",
+          "note": "澎湃新闻8月22日报道博主曝光内容及张家口市场监管部门“多部门已展开调查”的回应。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新蓝网",
+          "url": "https://www.cztv.com/newsDetail/897245",
+          "title": "河北张家口一地被指“大白菜装车前蘸甲醛保鲜”",
+          "captured_at": "2026-08-22T13:56:00+08:00",
+          "note": "浙江广电新蓝网同日报道该事件与监管回应，与澎湃新闻相互独立。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-22-huoxiang-safety-warning",
+      "story_identity": "cn-huoxiang-zhengqi-medication-safety-2026-08-22",
+      "headline": "💊 国家应急广播：藿香正气水别随便喝",
+      "summary": "国家应急广播8月22日刊文提醒，藿香正气水含40%至50%酒精，与头孢类药物同服可能引发“双硫仑样反应”，严重时可危及生命；它并非“万能解暑药”，使用前应咨询专业医生或药师。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-22T08:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "用药安全提示为通用科普，具体用药请遵医嘱或说明书。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/22/ARTICmnZM4mPESTmiuPBfNIA260822.shtml",
+          "title": "藿香正气水千万别随便喝！赶紧告诉家里人",
+          "captured_at": "2026-08-22T13:52:00+08:00",
+          "note": "央视网8月22日转载国家应急广播提醒，说明酒精含量、头孢同服风险与就诊建议。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "厦门网",
+          "url": "https://news.xmnn.cn/shxw/202608/t20260822_446185.html",
+          "title": "藿香正气水千万别随便喝！赶紧告诉家里人",
+          "captured_at": "2026-08-22T13:52:00+08:00",
+          "note": "厦门网同日报道国家应急广播的用药提醒，来源独立。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-22-drink-rumor-detained",
+      "story_identity": "cn-shanghai-398-drink-rumor-detention-2026-08-22",
+      "headline": "🥤 “398元一杯芋圆葡萄”系编造，造谣者被行拘",
+      "summary": "针对“上海一饭店将蜜雪冰城饮品倒入高脚杯后以398元一杯出售”的网传信息，上海市公安局静安分局8月22日通报：26岁男子沈某某为博取关注张冠李戴编造不实信息，已被依法行政拘留。警方提示网络不是法外之地。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-22T10:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "涉案细节与后续处理以警方通报为准。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.163.com/dy/article/L4UF0UII0512D3VJ.html",
+          "title": "上海一饭店蜜雪冰城倒进高脚杯卖398元？警方：不实，造谣者已行拘",
+          "captured_at": "2026-08-22T13:49:00+08:00",
+          "note": "新京报贝壳财经8月22日报道静安警方通报全文与饭店此前回应。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/wm/2026-08-22/doc-inipeimv1251587.shtml",
+          "title": "上海一饭店将蜜雪冰城倒进高脚杯卖398元？警方：不实，造谣者已行拘",
+          "captured_at": "2026-08-22T13:49:00+08:00",
+          "note": "新浪财经8月22日报道同一警方通报，与新京报报道相互独立。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-22-linyi-explosion-response",
+      "story_identity": "cn-linyi-courtyard-explosion-response-2026-08-21",
+      "headline": "🧯 临沂一院落发生爆炸，多部门联合救援",
+      "summary": "8月21日15时38分，山东临沂沂河新区王桥社区一处独立平房院落发生爆炸。当地联合工作组当晚通报：事故造成1人死亡、2人失联，其余伤者已送医救治；初步排查疑似租户非法储存捕鱼爆炸物引发，周边居民楼住户均已妥善安置。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-21T22:00:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "事故原因仍在调查，伤亡与责任认定以联合工作组后续通报为准；报道聚焦官方通报与救援安置进展。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网",
+          "url": "https://i.ifeng.com/c/8vmLgnOzltY",
+          "title": "山东一社区爆炸致1死2失联，疑租户非法储存捕鱼爆炸物引发",
+          "captured_at": "2026-08-22T13:58:00+08:00",
+          "note": "凤凰网8月21日刊发沂河新区联合工作组通报全文（总台记者报道）。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "封面新闻",
+          "url": "https://m.thecover.cn/video_details.html?eid=gSqrbIKAnCGH90qSdq8Jkw==",
+          "title": "山东临沂一平房发生爆炸 官方最新通报：已致1死2失联",
+          "captured_at": "2026-08-22T13:58:00+08:00",
+          "note": "封面新闻8月21日23时报道爆炸事故与官方通报，来源独立。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-22-wang-zhiyi-semifinal",
+      "story_identity": "cn-wang-zhiyi-badminton-worlds-semifinal-2026-08-21",
+      "headline": "🏸 王祉怡晋级羽毛球世锦赛女单四强",
+      "summary": "北京时间8月21日，2026年世界羽毛球锦标赛在新德里结束女单1/4决赛，中国选手王祉怡战胜丹麦选手克里斯托弗森晋级四强。本届世锦赛国羽除男单外，其余单项均有选手进入四强。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-21T20:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "后续赛程与赛果以赛事官方发布为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://tv.cctv.com/2026/08/21/VIDE2o41YkQfu7rlvJg3ACgY260821.shtml",
+          "title": "[羽毛球]王祉怡晋级世锦赛女单四强",
+          "captured_at": "2026-08-22T14:01:00+08:00",
+          "note": "央视网8月21日发布赛果视频，确认王祉怡晋级女单四强。"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "搜狐体育",
+          "url": "https://m.sohu.com/a/1066067606_114977",
+          "title": "羽毛球世锦赛：“梁王”组合挺进四强凤凰组合首进半决赛",
+          "captured_at": "2026-08-22T14:01:00+08:00",
+          "note": "搜狐体育转新华社新德里8月21日电，报道国羽各单项四强席位。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
