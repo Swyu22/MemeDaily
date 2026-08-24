@@ -1,0 +1,1086 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-25",
+  "generated_at": "2026-08-25T06:21:07+08:00",
+  "published_at": "2026-08-25T06:21:07+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 48,
+    "published": 7,
+    "dropped_safety": {
+      "politics": 1,
+      "propaganda": 1,
+      "geopolitics": 1,
+      "celebrity_dispute": 1,
+      "harassment": 1,
+      "rumor": 1,
+      "illegal": 1
+    },
+    "dropped_low_confidence": 30,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 41,
+      "official_sources": 1,
+      "state_media_sources": 6,
+      "major_media_sources": 7,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 4
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 9,
+        "relaxed_72h": 10
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 48,
+          "cumulative_unique_candidates": 48,
+          "source_scope": [
+            "百度热搜实时榜",
+            "新华网人民网央广网中新网等央媒",
+            "国家卫生健康委官网",
+            "新京报澎湃新闻极目新闻财联社等持牌媒体",
+            "地方应急与防汛部门发布",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-25-guangxi-flood-red-alert",
+          "story_identity": "cn-guangxi-flood-red-alert-chongzuo-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-25-guangxi-flood-red-alert",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-25-vet-drug-crackdown",
+          "story_identity": "cn-vet-drug-no-prescription-crackdown-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-25-vet-drug-crackdown",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-25-indian-ocean-ship-sar",
+          "story_identity": "intl-indian-ocean-ocean-winner-sar-china-crew-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T19:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-08-25-indian-ocean-ship-sar",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-25-family-doctor-expansion",
+          "story_identity": "cn-family-doctor-contract-service-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-25-family-doctor-expansion",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 15
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-25-elder-help-no-liability",
+          "story_identity": "cn-qidong-elder-help-no-liability-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-25-elder-help-no-liability",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-25-gold-price-1000",
+          "story_identity": "cn-gold-price-1000-bank-accumulation-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T10:15:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-25-gold-price-1000",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-25-child-train-travel-answer",
+          "story_identity": "cn-railway-child-travel-alone-answer-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T08:30:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-25-child-train-travel-answer",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-volleyball-iran-win",
+          "story_identity": "cn-china-women-volleyball-iran-win-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与昨日女排首战题材重复，分数未达strict_24h线"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-xiaomi-xring-o3",
+          "story_identity": "cn-xiaomi-xring-o3-chip-briefing-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "企业芯片技术沟通会，分数未达strict_24h线"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-u18-basketball-final",
+          "story_identity": "cn-u18-basketball-asia-final-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "决赛结果距今超24小时，仅达relaxed_72h层，未被strict_24h层选中"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-zhaoxintong-wuhan-open",
+          "story_identity": "cn-zhaoxintong-wuhan-open-advance-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "单站赛事轮次结果，受众面有限"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-robot-100m-record",
+          "story_identity": "cn-robot-games-100m-record-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 12,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "赛事纪录发生超72小时，且前两日已覆盖机器人运动会"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-unitree-market-cap",
+          "story_identity": "cn-unitree-market-cap-second-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 9
+          },
+          "drop_reason": "公司市值排名波动，与日常生活关联弱"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-pboc-overnight-rr",
+          "story_identity": "cn-pboc-overnight-reverse-repo-2026-08-25",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T00:54:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 20,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "公开市场操作安排，普通读者关联有限"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-ymtc-ipo-accepted",
+          "story_identity": "cn-ymtc-star-market-ipo-accepted-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 4,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "IPO受理日距今超72小时，超出所有资格层"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-medical-insurance-same-disease",
+          "story_identity": "cn-medical-insurance-primary-disease-list-2026-08-17",
+          "research_pass": 1,
+          "occurred_at": "2026-08-17T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 0,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "drop_reason": "政策解读发布日距今超72小时，超出时效窗"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-kitchen-towel-recall",
+          "story_identity": "cn-kitchen-towel-acrylamide-recall-2026-08-20",
+          "research_pass": 1,
+          "occurred_at": "2026-08-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 6,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "drop_reason": "召回公告发布距今超72小时，超出时效窗"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-chengdu-auto-show-ev",
+          "story_identity": "cn-chengdu-auto-show-budget-ev-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "车展趋势稿，新闻增量有限"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-fanzhendong-cinema-live",
+          "story_identity": "cn-fanzhendong-bundesliga-cinema-live-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "球迷线下观赛活动，公共信息增量有限"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-shanghai-elder-dive",
+          "story_identity": "cn-shanghai-elder-high-dive-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "危险行为个案，不宜放大传播"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-yunnan-pet-campus",
+          "story_identity": "cn-yunnan-college-pet-friendly-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "单所高校举措，代表性有限"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-long-movies-debate",
+          "story_identity": "cn-summer-long-movies-discussion-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "文化评论话题，非当日事件新闻"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-a-share-drop",
+          "story_identity": "cn-a-share-index-drop-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "单日市场波动，增量有限"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-blood-products-earnings",
+          "story_identity": "cn-blood-products-midyear-earnings-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 8
+          },
+          "drop_reason": "行业财报汇总，读者面窄"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-shenyang-mirage",
+          "story_identity": "cn-shenyang-river-mirage-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T07:30:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "局部天气现象，公共影响有限"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-mosquito-hiv-rumor-refuted",
+          "story_identity": "cn-mosquito-hiv-rumor-refuted-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "常态化健康辟谣，时效与权威性一般"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-sleep-before-23-health",
+          "story_identity": "cn-sleep-before-23-health-tip-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "科普提示稿，非当日新事"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-goods-restaurant-trend",
+          "story_identity": "cn-goods-themed-restaurant-trend-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 14,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "商业观察稿，非当日新事"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-deceased-deposit-query",
+          "story_identity": "cn-deceased-bank-account-query-nationwide-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 1,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "drop_reason": "通知发布日距今超72小时，超出所有资格层"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-man-city-premier",
+          "story_identity": "cn-man-city-premier-league-opener-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T23:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 9
+          },
+          "drop_reason": "外国联赛常规赛，与中国读者关联弱"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-norway-king-hospital",
+          "story_identity": "cn-norway-king-hospitalized-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T20:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 16,
+            "everyday_relevance": 6,
+            "evidence": 9
+          },
+          "drop_reason": "外国王室健康消息，无中国读者关联"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-barca-la-liga",
+          "story_identity": "cn-barca-la-liga-opener-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T05:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 7,
+            "evidence": 8
+          },
+          "drop_reason": "外国联赛常规赛，与中国读者关联弱"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-fifa-president-response",
+          "story_identity": "cn-fifa-president-trust-response-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T22:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 8
+          },
+          "drop_reason": "国际体育组织治理动态，与中国读者关联弱"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-songdandan-concert",
+          "story_identity": "cn-songdandan-naying-concert-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 8,
+            "evidence": 7
+          },
+          "drop_reason": "文娱花絮，无公共信息增量"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-wangfei-imitation",
+          "story_identity": "cn-wangfei-imitation-response-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 12,
+            "everyday_relevance": 8,
+            "evidence": 7
+          },
+          "drop_reason": "综艺花絮，无公共信息增量"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-zhangshaohan-concert-health",
+          "story_identity": "cn-zhangshaohan-concert-health-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T23:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 12,
+            "everyday_relevance": 9,
+            "evidence": 7
+          },
+          "drop_reason": "艺人演出身体状况，公共信息增量有限"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-chenweiting-event",
+          "story_identity": "cn-chenweiting-tima-event-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 43,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 12,
+            "everyday_relevance": 8,
+            "evidence": 6
+          },
+          "drop_reason": "盛典表演花絮，无公共信息增量"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-new-major-hotlist",
+          "story_identity": "cn-college-new-major-hotlist-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "榜单发布主体与数据来源报道不一，缺少权威机构原文"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-night-market-stall-rent",
+          "story_identity": "cn-night-market-stall-rent-270k-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "网络话题讨论，缺少权威部门或持牌媒体核实"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-bank-manager-loan-missing",
+          "story_identity": "cn-henan-bank-manager-loan-missing-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见当事人单方叙述转载，缺少警方或银行权威通报"
+        },
+        {
+          "candidate_key": "2026-08-25-cand-sam-egg-price",
+          "story_identity": "cn-sams-egg-price-increase-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "调价信息仅见社交转载且时效已过"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-25-guangxi-flood-red-alert",
+      "story_identity": "cn-guangxi-flood-red-alert-chongzuo-2026-08-24",
+      "headline": "🌊 广西继续发布洪水红色预警，崇左提醒非必要不外出",
+      "summary": "受台风“紫檀”残余环流影响，广西多地持续强降雨。自治区水文中心24日8时继续发布洪水红色预警，15条河流20个站点水位超警；崇左市防汛抗旱指挥部发布紧急公告，提醒市民非必要不外出，宁明、龙州、凭祥等重点区域加强防范，及时避险。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 90,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-24T14:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "汛情服务信息，以官方预警与公告为准，不渲染灾情"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/local/20260824/adeed386d99f4e67ac5e36ef4e79a9e2/c.html",
+          "title": "广西继续发布洪水红色预警 15条河流20个站超警",
+          "captured_at": "2026-08-25T06:07:00+08:00",
+          "note": "自治区水文中心24日8时继续发布洪水红色预警，提请崇左、南宁、贵港等市沿江区域加强防范"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国网",
+          "url": "http://news.china.com.cn/2026-08/24/content_118661413.shtml",
+          "title": "广西继续发布洪水红色预警 15条河流20个站超警",
+          "captured_at": "2026-08-25T06:07:30+08:00",
+          "note": "24日8时广西仍有明江等多条河流水位超警，崇左市防汛抗旱指挥部发布紧急公告"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-25-vet-drug-crackdown",
+      "story_identity": "cn-vet-drug-no-prescription-crackdown-2026-08-24",
+      "headline": "💊 央视曝光兽药无处方销售乱象，多地通报立案调查",
+      "summary": "总台《财经调查》23日晚曝光多地兽药无处方销售乱象。24日，石家庄市联合调查组通报，初步核查8家兽药门店涉嫌未凭兽医处方销售兽用处方药，已依法立案调查；长春、沈阳、济南等地相关部门也相继通报立案调查，并在辖区开展兽药市场专项整治。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-24T12:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "监管处置进展报道，以各地官方通报为准"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/newscenter/native/gd/20260824/t20260824_527789250.shtml",
+          "title": "河北石家庄通报兽药无处方销售问题：8家涉事门店被立案调查",
+          "captured_at": "2026-08-25T06:11:00+08:00",
+          "note": "石家庄市联合调查组24日发布情况通报，8家门店涉嫌违法被立案调查"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-24/10683128.shtml",
+          "title": "河北石家庄通报兽药无处方销售问题：8家门店被立案调查",
+          "captured_at": "2026-08-25T06:11:30+08:00",
+          "note": "中新网24日报道石家庄通报内容，多部门组成联合调查组现场调查"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-25-indian-ocean-ship-sar",
+      "story_identity": "intl-indian-ocean-ocean-winner-sar-china-crew-2026-08-24",
+      "headline": "🚢 印度洋一货轮沉没多名中国船员失联，福建海事局派船搜救",
+      "summary": "印度当地时间8月21日，散货轮“海洋胜利者”号在印度东部帕拉迪普港外约240海里处沉没，船上24名船员中20人为中国籍，另有缅甸、孟加拉国籍船员，目前已有两名中国船员获救。记者24日从福建海事局指挥中心获悉，已成立协调搜救组并派船参与搜救。",
+      "category": "国际",
+      "scope": "international",
+      "topic": "重大事件",
+      "primary_organization": "福建海事局",
+      "audience_relevance": {
+        "basis": "direct_china_impact",
+        "impact_scale": "direct_china_public",
+        "china_connection": "沉船事故涉及20名中国籍船员，福建海事局已成立协调搜救组派船参与搜救，直接关系中国船员家庭与国内海事部门行动",
+        "everyday_impact": "涉及中国公民海外遇险与跨国搜救进展，船员家属及出海务工群体高度关注，公众需了解权威搜救动态",
+        "score": 20,
+        "connection_evidence": {
+          "url": "https://www.bjnews.com.cn/detail/1787569727168981.html",
+          "note": "新京报记者24日从福建海事局指挥中心获悉已成立协调搜救组并派船参与搜救"
+        }
+      },
+      "score": 87,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-24T19:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "海难搜救报道保持克制，人数信息以海事部门与持牌媒体核实为准"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1787569727168981.html",
+          "title": "印度洋发生沉船事故，多名中国船员失联，福建海事局派船参与搜救",
+          "captured_at": "2026-08-25T06:11:20+08:00",
+          "note": "24日记者从福建海事局指挥中心获悉，已成立协调搜救组派船参与搜救"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网",
+          "url": "https://news.ifeng.com/c/8vrANQsbXc0",
+          "title": "印度洋发生沉船事故，18名中国船员失联",
+          "captured_at": "2026-08-25T06:11:50+08:00",
+          "note": "引述印媒与印度海岸警卫队消息报道沉船及搜救情况"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-25-family-doctor-expansion",
+      "story_identity": "cn-family-doctor-contract-service-2026-08-24",
+      "headline": "🩺 三部门推进家庭医生签约服务，二三级医院医生将参与",
+      "summary": "国家卫生健康委等三部门近日印发《关于印发进一步深化“六个拓展”做实家庭医生签约服务若干措施的通知》。通知提出，到2026年底，基层机构临床类别内科、儿科和中医类别执业医师均应作为家庭医生开展签约服务；到2027年底推动二、三级公立医院医生参与，支持个人签约和灵活签约。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 15
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-24T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "主管部门文件发布，医疗服务民生信息"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家卫生健康委",
+          "url": "https://www.nhc.gov.cn/jws/c100073/202608/b42e53e6d1f54bb293a9b6d8ed25de1e.shtml",
+          "title": "关于印发进一步深化“六个拓展”做实家庭医生签约服务若干措施的通知",
+          "captured_at": "2026-08-25T06:08:00+08:00",
+          "note": "三部门联合印发通知原文，明确2026年底与2027年底阶段目标"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://health.people.com.cn/n1/2026/0824/c14739-40785284.html",
+          "title": "三部门发文推进家庭医生签约服务",
+          "captured_at": "2026-08-25T06:08:30+08:00",
+          "note": "人民网24日报道通知主要内容与签约服务拓展安排"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-25-elder-help-no-liability",
+      "story_identity": "cn-qidong-elder-help-no-liability-2026-08-24",
+      "headline": "🤝 官方确认帮扶老人店主不担责，当地司法局介入调查",
+      "summary": "湖南祁东一老人8月17日进店休息后晕倒，店主帮扶送医后老人不幸离世，家属索赔10万元。经有关部门调解，24日确认店主没有过错、不承担法律责任；店主出于人道主义关怀一次性帮扶家属1.9万元。祁东县司法局表示已介入调查，当地企业24日上门送上2万元慰问金鼓励善举。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-24T16:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "凡人善举与法律责任厘清报道，语调克制，以官方调解结论为准"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1787583213129954.html",
+          "title": "“店主帮扶老人被索赔1.9万元”后续：女店主无过错，家属索赔因质疑救助不当",
+          "captured_at": "2026-08-25T06:09:30+08:00",
+          "note": "24日据红网消息，有关部门调解确认店主无过错，不承担法律责任"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "极目新闻",
+          "url": "https://www.ctdsb.net/c1716_202608/2839271.html",
+          "title": "官方确认“帮扶老人遭索赔”事件中店主不承担法律责任",
+          "captured_at": "2026-08-25T06:10:00+08:00",
+          "note": "祁东县司法局表示已就店主帮扶老人遭索赔一事介入调查"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-25-gold-price-1000",
+      "story_identity": "cn-gold-price-1000-bank-accumulation-2026-08-24",
+      "headline": "💰 国内金价重回千元，多家银行积存金克价破1000元",
+      "summary": "8月24日，多家银行积存金克价涨破1000元：工商银行积存金报1005.69元/克，中国银行报1022.29元/克；上海黄金交易所Au99.99报1006元/克。国内金价时隔约三个月重回千元关口，近期国际金价连续上行，上周涨幅约5%。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 83,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-24T10:15:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "行情信息报道，不含投资建议"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "财联社",
+          "url": "https://www.cls.cn/detail/2462017",
+          "title": "国内金价重回千元 多家银行积存金克价涨破1000元",
+          "captured_at": "2026-08-25T06:11:00+08:00",
+          "note": "截至24日上午10时15分，工行、建行、农行、中行积存金报价均破千元"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网",
+          "url": "https://finance.ifeng.com/c/8vqmyHoojmX",
+          "title": "国内金价，重回1000元",
+          "captured_at": "2026-08-25T06:11:30+08:00",
+          "note": "24日多家银行积存金克价破千，上海金交所Au99.99最高报1006.6元/克"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-25-child-train-travel-answer",
+      "story_identity": "cn-railway-child-travel-alone-answer-2026-08-24",
+      "headline": "🚄 铁路部门解答：未满14周岁儿童原则上不单独乘车",
+      "summary": "针对暑期儿童乘车热点问题，铁路部门24日解答：按照国铁集团客规，除日常火车通勤上学的学生、经铁路运输企业特殊同意并确认可途中监护的儿童外，未满14周岁未成年人原则上需随同成年旅客出行；乘务人员不具备一对一全程看护条件，不存在“自动托管”服务。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-08-24T08:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "铁路出行服务信息，以国铁集团客规为准"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "国际在线",
+          "url": "https://news.cri.cn/20260824/16eab272-103d-2697-3805-403de28c4008.html",
+          "title": "儿童是否能单独乘火车出行？铁路官方解答",
+          "captured_at": "2026-08-25T06:12:00+08:00",
+          "note": "国铁集团客规明确未满14周岁未成年人原则上需随同成年旅客出行"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新湖南",
+          "url": "https://m.voc.com.cn/xhn/news/202608/33563235.html",
+          "title": "铁路部门解答儿童乘车热点问题，未满14周岁原则上不得单独乘车",
+          "captured_at": "2026-08-25T06:12:30+08:00",
+          "note": "同时明确免费乘车儿童申明与儿童优惠票购买规则"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
