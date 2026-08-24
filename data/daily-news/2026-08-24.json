@@ -1,0 +1,920 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24T11:45:11+08:00",
+  "published_at": "2026-08-24T11:45:11+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 45,
+    "published": 6,
+    "dropped_safety": {
+      "politics": 1,
+      "propaganda": 1,
+      "geopolitics": 3,
+      "celebrity_dispute": 5,
+      "rumor": 1,
+      "illegal": 1
+    },
+    "dropped_low_confidence": 22,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 45,
+      "official_sources": 1,
+      "state_media_sources": 6,
+      "major_media_sources": 5,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 9,
+        "relaxed_72h": 11
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 45,
+          "cumulative_unique_candidates": 45,
+          "source_scope": [
+            "百度热搜实时榜",
+            "新华网人民网央视网光明网等央媒",
+            "中国载人航天工程办公室官网",
+            "中央气象台与地方气象发布",
+            "澎湃新闻极目新闻川观新闻等持牌媒体",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-24-cabbage-formaldehyde-probe",
+          "story_identity": "cn-kangbao-cabbage-formaldehyde-probe-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-24-cabbage-formaldehyde-probe",
+          "score": 93,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-24-fengqing-mudslide-rescue",
+          "story_identity": "cn-yunnan-fengqing-mudslide-landslide-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-24-fengqing-mudslide-rescue",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-24-cet-scores-query-open",
+          "story_identity": "cn-cet-h1-2026-scores-query-open-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-08-24-cet-scores-query-open",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-24-change7-launch-postponed",
+          "story_identity": "cn-change7-launch-window-postponed-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "太空航天",
+          "outcome": "selected",
+          "item_id": "2026-08-24-change7-launch-postponed",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-24-liangwang-badminton-title",
+          "story_identity": "cn-liangwang-badminton-world-title-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-24-liangwang-badminton-title",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-24-journalist-tang-shizeng-obit",
+          "story_identity": "cn-journalist-tang-shizeng-obit-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-24-journalist-tang-shizeng-obit",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-auto-export-ships",
+          "story_identity": "cn-auto-export-ro-ro-shortage-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "披露时点距今超24小时，仅达relaxed_48h层，未被strict_24h层选中"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-typhoon-narra-turn",
+          "story_identity": "cn-typhoon-narra-turn-north-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "台风续报未达strict_24h分数线，前两日已覆盖台风题材"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-chufu-autumn-fatigue",
+          "story_identity": "cn-chufu-seasonal-service-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "节气服务提醒与前日末伏题材重复，分数未达strict_24h线"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-deceased-account-query",
+          "story_identity": "cn-deceased-bank-account-query-nationwide-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 2,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "drop_reason": "通知发布日距今超72小时，超出所有资格层"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-nev-door-handle-recall",
+          "story_identity": "cn-nev-door-handle-recall-2026-08-21",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 3,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "drop_reason": "召回公告日距今超72小时，超出所有资格层"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-train-seat-comment",
+          "story_identity": "cn-train-seat-snack-commentary-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 14,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "媒体评论类题材，新闻增量有限"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-museum-robot-injury",
+          "story_identity": "cn-museum-robot-child-injury-2025-11",
+          "research_pass": 1,
+          "occurred_at": "2025-11-15T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 2,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "drop_reason": "事发九个多月前，赔偿纠纷未有权威结论"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-summer-car-rental",
+          "story_identity": "cn-summer-car-rental-price-drop-2026-08-20",
+          "research_pass": 1,
+          "occurred_at": "2026-08-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 5,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "drop_reason": "暑期市场趋势稿，非当日新事"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-dongfeng-nissan-apology",
+          "story_identity": "cn-dongfeng-nissan-app-outage-apology-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "单一企业故障致歉，影响面有限"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-robot-rescue-stretcher",
+          "story_identity": "cn-robot-games-rescue-stretcher-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 12,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "机器人运动会花絮，昨日已覆盖主题材"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-wearable-flight-suit",
+          "story_identity": "cn-wearable-manned-flight-suit-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 10,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "展会展品报道，与前日机器人题材重复"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-robot-jobs-expert",
+          "story_identity": "cn-robot-jobs-expert-view-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "专家观点稿，新闻增量有限"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-formaldehyde-veg-tips",
+          "story_identity": "cn-formaldehyde-vegetable-tips-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "科普服务稿，与正选甲醛白菜题材重复"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-older-freshman-story",
+          "story_identity": "cn-39-year-old-freshman-story-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 10,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "人物稿非当日新事"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-tyl-valorant-title",
+          "story_identity": "cn-tyl-valorant-cn-title-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "电竞赛事受众面较窄"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-ding-junhui-exit",
+          "story_identity": "cn-ding-junhui-wuhan-open-exit-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 9
+          },
+          "drop_reason": "单站赛事首轮出局，重要性有限"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-bayern-supercup",
+          "story_identity": "cn-bayern-supercup-win-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T02:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 9
+          },
+          "drop_reason": "外国足球赛事，与中国读者关联弱"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-fan-zhendong-bundesliga",
+          "story_identity": "cn-fan-zhendong-bundesliga-debut-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T01:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "海外联赛常规赛，重要性有限"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-us-teen-shooting",
+          "story_identity": "cn-us-detroit-teen-shooting-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T15:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 12,
+            "everyday_relevance": 6,
+            "evidence": 8
+          },
+          "drop_reason": "外国地方治安事件，无中国读者关联"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-europe-heatwave",
+          "story_identity": "cn-europe-heatwave-review-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T10:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 41,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 0,
+            "everyday_relevance": 10,
+            "evidence": 9
+          },
+          "drop_reason": "半月前旧闻，超出时效"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-starbucks-decline",
+          "story_identity": "cn-starbucks-china-share-decline-2026-08-20",
+          "research_pass": 1,
+          "occurred_at": "2026-08-20T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 4,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "商业趋势回顾稿，非当日新事"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-hair-treatment-dispute",
+          "story_identity": "cn-suzhou-hair-treatment-refund-dispute-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "地方消费纠纷个案，权威处置结论未出"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-deepseek-pricing",
+          "story_identity": "cn-deepseek-api-pricing-adjust-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见开发者社区转载，缺少持牌媒体独立报道"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-cinema-live-fan",
+          "story_identity": "cn-cinema-live-fan-zhendong-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "预售信息仅单一路演方来源，无法交叉核验"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-sam-egg-price",
+          "story_identity": "cn-sams-egg-price-increase-2026-08-19",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "调价通知时效已过且仅见社交转载"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-train-buffet",
+          "story_identity": "cn-jinan-shenzhen-train-buffet-2026-08-22",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见自媒体汇编，缺少铁路部门或持牌媒体来源"
+        },
+        {
+          "candidate_key": "2026-08-24-cand-sanitation-burial",
+          "story_identity": "cn-rizhao-sanitation-waste-burial-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见地方回应转载，缺少权威媒体原文"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-11",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-12",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-24-cabbage-formaldehyde-probe",
+      "story_identity": "cn-kangbao-cabbage-formaldehyde-probe-2026-08-23",
+      "headline": "🥬 三部门指导查处“甲醛白菜”，追查流向并全国排查",
+      "summary": "针对河北张家口康保县“白菜收购环节蘸取甲醛溶液”问题，国务院食安办、农业农村部、市场监管总局23日晚指导属地调查核实，依法从严从快处置，追查涉事白菜流向，并组织各地开展白菜等易腐蔬菜专项抽检和市场排查。属地此前通报，初步核查网传情况属实。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 93,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-23T20:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "食品安全事件，监管已介入处置，报道以官方通报为准"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/legal/20260823/101591fdd7a9401d8e416abc715f48a2/c.html",
+          "title": "国务院食安办、农业农村部、市场监管总局指导地方快速处置“白菜收购环节蘸取甲醛溶液”问题",
+          "captured_at": "2026-08-24T07:44:00+08:00",
+          "note": "三部门指导属地调查核实，追查涉事白菜流向并部署专项抽检排查"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://finance.people.com.cn/n1/2026/0824/c1004-40785021.html",
+          "title": "三部门指导地方快速处置“白菜收购环节蘸取甲醛溶液”问题",
+          "captured_at": "2026-08-24T07:44:30+08:00",
+          "note": "人民网北京8月24日电，报道23日三部门处置部署与排查要求"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-24-fengqing-mudslide-rescue",
+      "story_identity": "cn-yunnan-fengqing-mudslide-landslide-2026-08-23",
+      "headline": "🌧️ 云南凤庆强降雨引发泥石流滑坡，搜救持续",
+      "summary": "8月23日凌晨，云南临沧凤庆县凤山镇遭遇持续性强降雨，安石村、水箐村分别诱发泥石流和滑坡。截至23日17时，灾害造成2人遇难、4人失联，搜救仍在紧张进行。自然资源部已于23日14时对云南启动地质灾害防御Ⅳ级响应，并派工作组赴现场指导抢险救援。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-23T21:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "灾害报道保持克制，伤亡数字仅见简述，侧重救援与服务信息"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260823/bd086066931c46d5bc419ddb14ec3c3a/c.html",
+          "title": "云南凤庆发生泥石流和滑坡灾害致2人遇难4人失联",
+          "captured_at": "2026-08-24T06:17:00+08:00",
+          "note": "新华社23日晚报道县政府通报，截至23日17时2人遇难4人失联"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://news.cnr.cn/native/gd/kx/20260823/t20260823_527788376.shtml",
+          "title": "云南凤庆泥石流和滑坡致2死4失联",
+          "captured_at": "2026-08-24T06:17:30+08:00",
+          "note": "央广网23日晚报道，持续性强降雨诱发灾害，搜救仍在进行"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-24-cet-scores-query-open",
+      "story_identity": "cn-cet-h1-2026-scores-query-open-2026-08-24",
+      "headline": "🎓 四六级成绩今早6时开通查询，四种官方渠道",
+      "summary": "2026年上半年全国大学英语四、六级考试成绩查询服务于8月24日上午6时开通。考生可通过中国教育考试网及其微信、支付宝、百度小程序查询成绩，无需准考证；8月31日9时起可免费查询、下载本次考试电子成绩报告单。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-24T06:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "考试服务信息，来源为考试主管机构发布安排"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://difang.gmw.cn/2026-08/21/content_38956496.htm",
+          "title": "2026年上半年四六级成绩查询时间公布 8月24日6时可查",
+          "captured_at": "2026-08-24T06:15:00+08:00",
+          "note": "成绩查询服务8月24日上午6时开通，含四种查询渠道"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新蓝网",
+          "url": "https://www.cztv.com/newsDetail/896987",
+          "title": "2026年上半年全国大学英语四六级考试成绩8月24日可查",
+          "captured_at": "2026-08-24T06:15:30+08:00",
+          "note": "中国教育考试网安排，网页与微信、支付宝、百度小程序可查"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-24-change7-launch-postponed",
+      "story_identity": "cn-change7-launch-window-postponed-2026-08-23",
+      "headline": "🌙 嫦娥七号不满足发射条件，今年预定窗口取消",
+      "summary": "记者23日从中国载人航天工程办公室获悉，本着稳妥可靠、万无一失的原则，经综合研判，嫦娥七号任务不满足发射条件，不能在今年预定窗口实施。嫦娥七号是我国探月工程四期关键任务之一，由着陆器、轨道器、巡视器、飞跃器和中继卫星等组成，主要对月球极区开展科学探测。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "太空航天",
+      "score": 83,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 14
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-23T14:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "官方发布为准，不揣测推迟原因"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国载人航天工程办公室",
+          "url": "https://www.cmse.gov.cn/xwzx/202608/t20260823_57750.html",
+          "title": "嫦娥七号任务不满足发射条件 不能在今年预定窗口实施",
+          "captured_at": "2026-08-24T06:16:00+08:00",
+          "note": "官方23日发布综合研判结论"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/08/23/90090777.shtml",
+          "title": "嫦娥七号任务不满足发射条件",
+          "captured_at": "2026-08-24T06:16:30+08:00",
+          "note": "记者23日从中国载人航天工程办公室了解到"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-24-liangwang-badminton-title",
+      "story_identity": "cn-liangwang-badminton-world-title-2026-08-23",
+      "headline": "🏸 梁伟铿王昶首夺羽毛球世锦赛男双冠军",
+      "summary": "北京时间8月23日，2026年世界羽毛球锦标赛男双决赛在印度新德里举行，中国组合梁伟铿/王昶直落两局，2比0战胜马来西亚组合谢定峰/苏伟译，首次夺得世锦赛男双冠军，终结了国羽男双长达八年的世锦赛金牌荒。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-23T22:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事结果报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://sports.cctv.com/2026/08/23/ARTIFy2frlhcBQM0LYiOShXl260823.shtml",
+          "title": "梁伟铿/王昶组合首夺羽毛球世锦赛男双冠军",
+          "captured_at": "2026-08-24T07:45:00+08:00",
+          "note": "央视网23日报道决赛直落两局获胜"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "川观新闻",
+          "url": "https://cbgc.scol.com.cn/news/7880412",
+          "title": "2026羽毛球世锦赛：中国组合梁伟铿/王昶获得男双金牌",
+          "captured_at": "2026-08-24T07:45:30+08:00",
+          "note": "新德里决赛2比0战胜马来西亚组合"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-24-journalist-tang-shizeng-obit",
+      "story_identity": "cn-journalist-tang-shizeng-obit-2026-08-23",
+      "headline": "📷 著名战地记者唐师曾逝世，享年65岁",
+      "summary": "8月23日，知名战地记者唐师曾在北京逝世。唐师曾1961年生于江苏无锡，1986年考入新华社，上世纪90年代长期在中东从事战地报道，曾采访卡扎菲、阿拉法特、曼德拉等人，代表作有《重返巴格达》《我的诺曼底》《一个人的远行》等。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-23T18:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "人物逝世报道，语调克制，不渲染病情细节"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "极目新闻",
+          "url": "https://www.ctdsb.net/c1476_202608/2838087.html",
+          "title": "著名战地记者唐师曾逝世，享年65岁",
+          "captured_at": "2026-08-24T06:26:00+08:00",
+          "note": "澎湃新闻记者从唐师曾多位友人处获悉"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国吉林网",
+          "url": "https://news.cnjiwang.com/gn/202608/4074811.html",
+          "title": "著名战地记者唐师曾逝世",
+          "captured_at": "2026-08-24T06:26:30+08:00",
+          "note": "23日在北京逝世，曾任新华社记者，长期在中东战地报道"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
