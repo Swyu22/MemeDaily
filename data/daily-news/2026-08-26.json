@@ -1,0 +1,824 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T06:41:50+08:00",
+  "published_at": "2026-08-26T06:41:50+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 40,
+    "published": 5,
+    "dropped_safety": {
+      "politics": 1,
+      "geopolitics": 3,
+      "controversy": 3,
+      "celebrity_dispute": 1,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 21,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 31,
+      "official_sources": 2,
+      "state_media_sources": 2,
+      "major_media_sources": 6,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 9,
+        "relaxed_72h": 10
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 40,
+          "cumulative_unique_candidates": 40,
+          "source_scope": [
+            "百度热搜与知乎热榜公开榜单",
+            "新华社央视网央广网等央媒",
+            "中央气象台与北京市应急管理局等官方机构",
+            "新京报封面新闻北京日报大众网闪电新闻等持牌媒体",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-26-typhoon-saudel-six-alerts",
+          "story_identity": "cma-six-weather-alerts-typhoon-saudel-2026-08-25",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-26-typhoon-saudel-six-alerts",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 19,
+            "everyday_relevance": 24,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-26-road-traffic-law-draft",
+          "story_identity": "road-traffic-safety-law-revision-first-review-2026-08-25",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T09:41:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-26-road-traffic-law-draft",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 18,
+            "everyday_relevance": 24,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-26-beijing-rainstorm-alert-lifted",
+          "story_identity": "beijing-rainstorm-yellow-alert-issue-and-lift-2026-08-25",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-26-beijing-rainstorm-alert-lifted",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-26-summer-box-office-117",
+          "story_identity": "summer-2026-box-office-11-7b-46-day-streak",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-26-summer-box-office-117",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-26-zheng-qinwen-us-open-win",
+          "story_identity": "zheng-qinwen-us-open-qualifying-first-win-450-days",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T11:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-26-zheng-qinwen-us-open-win",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "edu-stage-transition-qa",
+          "story_identity": "moe-kindergarten-primary-transition-qa-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 13,
+            "everyday_relevance": 24,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "发布于8月24日，时效层仅达relaxed_48h，未入strict_24h遴选层"
+        },
+        {
+          "candidate_key": "henan-farmers-forced-loans",
+          "story_identity": "henan-nanyang-farmers-forced-loans-investigation",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 10,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "事件8月23日披露，时效层仅达relaxed_72h"
+        },
+        {
+          "candidate_key": "typhoon-podul-south-coast-landfall",
+          "story_identity": "typhoon-podul-approaching-guangdong-guangxi-coast",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与入选的多预警条目同轮天气过程，独立热度与证据不足"
+        },
+        {
+          "candidate_key": "family-doctor-six-expansions",
+          "story_identity": "family-doctor-contract-service-six-expansions-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 13,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "昨日已入选同题政策，今日仅作背景跟踪"
+        },
+        {
+          "candidate_key": "gold-price-4700-record",
+          "story_identity": "international-gold-price-above-4700-usd",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T14:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "金价题材昨日已报道国内金价，今日不重复"
+        },
+        {
+          "candidate_key": "xinjiang-student-3500km-sendoff",
+          "story_identity": "family-3500km-sendoff-to-xinjiang-medical-school",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T21:50:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 12,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "drop_reason": "单个家庭故事，评分低于65分合格线"
+        },
+        {
+          "candidate_key": "consumption-loan-subsidy-rules",
+          "story_identity": "banks-update-personal-consumption-loan-subsidy-rules",
+          "research_pass": 1,
+          "occurred_at": "2026-08-22T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 6,
+            "everyday_relevance": 21,
+            "evidence": 11
+          },
+          "drop_reason": "细则8月22日发布，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "nhsa-pathology-cloud-index-spec",
+          "story_identity": "nhsa-pathology-cloud-index-coding-spec-2026-08-25",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 12
+          },
+          "drop_reason": "专业编码规范，日常相关性低于15分下限"
+        },
+        {
+          "candidate_key": "moc-outbound-investment-top3",
+          "story_identity": "china-outbound-investment-stock-global-top3-nine-years",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 10
+          },
+          "drop_reason": "宏观数据，与读者日常决策相关性有限"
+        },
+        {
+          "candidate_key": "east-buy-fiscal-year-results",
+          "story_identity": "east-buy-new-fiscal-year-earnings-2026-08-25",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "企业财报话题，日常相关性不足"
+        },
+        {
+          "candidate_key": "pangdonglai-three-reform-measures",
+          "story_identity": "yudonglai-pangdonglai-reform-three-measures",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "证据以热榜讨论为主，权威报道不足"
+        },
+        {
+          "candidate_key": "shein-valuation-shrink",
+          "story_identity": "shein-ipo-valuation-cut-to-27-billion",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T09:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "跨境企业估值话题，与国内读者日常关联弱"
+        },
+        {
+          "candidate_key": "intl-crude-oil-price-drop",
+          "story_identity": "international-crude-oil-fell-two-percent-2026-08-25",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T17:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "下一轮国内调价窗口在8月28日，当日影响有限"
+        },
+        {
+          "candidate_key": "xpeng-q2-earnings",
+          "story_identity": "xpeng-2026-q2-earnings-report",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "企业财报，热度与日常相关性均偏低"
+        },
+        {
+          "candidate_key": "luxury-car-brand-sales-drop",
+          "story_identity": "luxury-car-brand-china-sales-slump-2026-08-25",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "行业销量分析，日常相关性有限"
+        },
+        {
+          "candidate_key": "ding-junhui-first-round-exit",
+          "story_identity": "ding-junhui-another-first-round-exit-comment",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "选手表态类话题，日常相关性不足且低于65分"
+        },
+        {
+          "candidate_key": "gpt-plus-five-hour-limit",
+          "story_identity": "gpt-plus-subscription-five-hour-cap-discussion",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T16:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "海外产品讨论，缺国内权威报道佐证"
+        },
+        {
+          "candidate_key": "sony-digital-game-license",
+          "story_identity": "sony-digital-games-license-not-own-debate",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T14:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "平台条款讨论，证据与相关性不足"
+        },
+        {
+          "candidate_key": "nolan-odyssey-box-office",
+          "story_identity": "nolan-odyssey-highest-grossing-r-rated-film",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T10:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "海外票房纪录，国内读者日常相关性弱"
+        },
+        {
+          "candidate_key": "france-brain-tissue-robot-hand",
+          "story_identity": "france-ex-vivo-brain-tissue-controls-robotic-hand",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T09:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "前沿实验讨论，日常相关性不足"
+        },
+        {
+          "candidate_key": "egg-price-multi-region-rise",
+          "story_identity": "egg-prices-rise-in-multiple-regions-2026-08-24",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 11,
+            "everyday_relevance": 16,
+            "evidence": 7
+          },
+          "drop_reason": "区域性行情汇总，无权威统一信源"
+        },
+        {
+          "candidate_key": "duck-neck-price-inversion",
+          "story_identity": "duck-neck-beef-price-inversion-discussion",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅热榜与自媒体讨论，缺持牌媒体原创报道"
+        },
+        {
+          "candidate_key": "ai-bloggers-mass-hiatus",
+          "story_identity": "multiple-ai-bloggers-suspend-updates-discussion",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅平台讨论帖，无权威媒体核实"
+        },
+        {
+          "candidate_key": "foreign-hotel-rebadge-cooling",
+          "story_identity": "foreign-brand-rebadged-hotels-lose-appeal-discussion",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "消费讨论话题，缺原创报道支撑"
+        },
+        {
+          "candidate_key": "golden-eagle-award-nominations",
+          "story_identity": "2026-golden-eagle-award-nominations-announced",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "检索未见主办方或权威媒体正式提名名单"
+        },
+        {
+          "candidate_key": "france-condom-compliance-issue",
+          "story_identity": "france-noncompliant-condom-products-reported",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T09:00:00+08:00",
+          "scope": "international",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅单一转载来源，不满足国际条双源要求"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-26-typhoon-saudel-six-alerts",
+      "story_identity": "cma-six-weather-alerts-typhoon-saudel-2026-08-25",
+      "headline": "🌀 中央气象台六预警齐发，台风“沙德尔”逼近浙闽沿海",
+      "summary": "8月25日18时，中央气象台继续发布暴雨黄色、台风橙色、强对流天气蓝色预警，并与多部门联合发布橙色山洪、橙色地质灾害气象风险预警和渍涝风险预报。强台风“沙德尔”预计27日夜间至28日上午在浙江象山到福建福清一带沿海登陆，华东、华南多地有大到暴雨，请注意防范。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 92,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 19,
+        "everyday_relevance": 24,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-25T18:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "气象预警服务信息，无伤亡数字渲染；提示防范即可。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/25/ARTI9K2y8Ppdu4axcLGrpWtx260825.shtml",
+          "title": "暴雨+台风+山洪 中央气象台6预警齐发",
+          "captured_at": "2026-08-26T06:29:00+08:00",
+          "note": "中央气象台8月25日18时相继发布6条气象预警，含暴雨黄色、台风橙色等"
+        },
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "https://www.nmc.cn/publish/typhoon/warning_index.html",
+          "title": "台风预警",
+          "captured_at": "2026-08-26T06:26:00+08:00",
+          "note": "中央气象台台风预警页：强台风“沙德尔”25日17时位于浙闽交界偏东约920公里洋面"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-road-traffic-law-draft",
+      "story_identity": "road-traffic-safety-law-revision-first-review-2026-08-25",
+      "headline": "🛵 道路交通安全法修订草案初审：电动自行车限速拟提至20公里",
+      "summary": "8月25日，道路交通安全法修订草案提请全国人大常委会初次审议，共9章170条。草案拟将电动自行车在非机动车道内最高时速由15公里调整为20公里，并要求骑乘佩戴安全头盔；新增自动驾驶汽车专章，明确自动驾驶状态下交通违法由车企接受处理，并聚焦“醉驾”“盲驾”“暴走团”治理。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 89,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 18,
+        "everyday_relevance": 24,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-25T09:41:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "立法进程民生报道，表述限于草案公开内容，不含政治宣传框架。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://news.cnr.cn/native/gd/kx/20260825/t20260825_527790573.shtml",
+          "title": "道路交通安全法修订草案提请审议 涉及自动驾驶、电动车限速等",
+          "captured_at": "2026-08-26T06:31:00+08:00",
+          "note": "央广网报道草案初审，含电动自行车限速15公里调整为20公里等条款"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "封面新闻",
+          "url": "https://www.thecover.cn/news/Z94bnP5mKROH90qSdq8Jkw==",
+          "title": "道路交通安全法修订草案提请审议 涉及自动驾驶、电动车限速等",
+          "captured_at": "2026-08-26T06:28:00+08:00",
+          "note": "封面新闻转新华社8月25日09:41稿件，佐证发布时间与草案要点"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-beijing-rainstorm-alert-lifted",
+      "story_identity": "beijing-rainstorm-yellow-alert-issue-and-lift-2026-08-25",
+      "headline": "🌧️ 北京解除暴雨黄色预警，夜间仍有分散性阵雨",
+      "summary": "北京市气象台8月25日9时发布暴雨黄色预警，预计午后至夜间自西向东有雷阵雨，大部分地区小时雨量可达50毫米以上，全市同步启动防汛三级应急响应。随着强降雨云团减弱，预警于当日20时30分解除；25日夜间北京仍有分散性阵雨或雷阵雨。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 19,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-25T20:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "城市天气服务信息，含预警解除时点，无伤亡数字。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "北京市应急管理局",
+          "url": "https://yjglj.beijing.gov.cn/art/2026/8/25/art_2472_693092.html",
+          "title": "北京市气象台2026年8月25日20时30分解除暴雨黄色预警信号",
+          "captured_at": "2026-08-26T06:31:00+08:00",
+          "note": "官方发布：强降雨云团减弱，20时30分解除预警，夜间仍有分散性阵雨"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://peking.bjd.com.cn/content/s6a8d1725e4b03fa51a835992.html",
+          "title": "局地暴雨！伴有雷电+7级左右阵风！北京启动防汛三级应急响应",
+          "captured_at": "2026-08-26T06:22:00+08:00",
+          "note": "北京日报客户端报道25日9时预警发布与防汛三级应急响应启动"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-summer-box-office-117",
+      "story_identity": "summer-2026-box-office-11-7b-46-day-streak",
+      "headline": "🎬 暑期档票房突破117亿元，连续46天单日破亿",
+      "summary": "据网络平台数据，截至8月25日，2026年暑期档电影总票房（含预售）突破117亿元，连续46天单日票房过亿元，观影人次与放映场次双双刷新历史纪录；2026年度全国电影总票房（含预售）已超过275亿元，超百部中外影片正在上映。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 18,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-25T20:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "市场数据报道，来源为网络平台公开统计，无夸大表述。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6a8db063e4b03fa51a836147.html",
+          "title": "2026年度电影总票房突破275亿！《欢迎来龙餐馆》公布全球上映计划",
+          "captured_at": "2026-08-26T06:37:00+08:00",
+          "note": "北京日报客户端报道暑期档票房超117亿、连续46天单日破亿"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "闪电新闻",
+          "url": "https://sdxw.iqilu.com/share/YS0yMS0xNzM2NjI5Nw.html",
+          "title": "2026年度电影总票房突破275亿！《欢迎来龙餐馆》公布全球上映计划",
+          "captured_at": "2026-08-26T06:37:00+08:00",
+          "note": "山东广电闪电新闻独立转载同一组票房数据，交叉佐证"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-zheng-qinwen-us-open-win",
+      "story_identity": "zheng-qinwen-us-open-qualifying-first-win-450-days",
+      "headline": "🎾 郑钦文美网资格赛开门红，时隔450天再赢大满贯",
+      "summary": "北京时间8月25日结束的2026年美网女单资格赛首轮上演“中国德比”，郑钦文以6比3、6比2战胜同胞尤晓迪，晋级资格赛次轮。这是她时隔14个月、450天再度在大满贯赛场赢球，也终结了个人单打三连败，下一轮将对阵法国选手布蕾尔。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 17,
+        "everyday_relevance": 18,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-25T11:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "比赛于北京时间25日凌晨结束，occurred_at取25日中午主流媒体集中披露时段；赛事结果报道，无争议。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "大众网",
+          "url": "https://www.dzwww.com/news/wtxw/202608/t20260825_18051014.htm",
+          "title": "郑钦文时隔450天大满贯再赢球，能否上演“王者归来”？",
+          "captured_at": "2026-08-26T06:25:00+08:00",
+          "note": "大众网25日报道郑钦文美网资格赛6-3/6-2胜尤晓迪"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "直播吧",
+          "url": "https://m.zhibo8.cc/news/web/other/2026-08-25/6a8cde2fc8d34native.htm",
+          "title": "整整450天！郑钦文时隔14个月再次在大满贯取胜",
+          "captured_at": "2026-08-26T06:25:00+08:00",
+          "note": "直播吧25日快讯佐证比分与“时隔450天”口径"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
