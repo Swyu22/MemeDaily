@@ -1,0 +1,1457 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T07:24:37+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 58,
+    "published": 10,
+    "dropped_safety": {
+      "时事政治": 5,
+      "灾害/公共安全": 4,
+      "社会事件/争议": 5,
+      "死亡/伤害": 3,
+      "隐私/未成年人": 1
+    },
+    "dropped_low_confidence": 22,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "zhihu",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 32,
+      "platform_public_sources": 5,
+      "aggregator_sources": 17,
+      "search_media_sources": 8,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 8
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 10,
+        "relaxed_48h": 10,
+        "relaxed_72h": 10
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-26-zhiyou-wo-shangban-luanchuan",
+          "canonical_phrase": "原来只有我上班在乱穿",
+          "outcome": "selected",
+          "item_id": "2026-08-26-zhiyou-wo-shangban-luanchuan",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-26-jinzhi-ouda-guke",
+          "canonical_phrase": "禁止殴打顾客除非忍不住",
+          "outcome": "selected",
+          "item_id": "2026-08-26-jinzhi-ouda-guke",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-08-26T07:15:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-26-yexiao-shujia-weiba",
+          "canonical_phrase": "用一顿夜宵抓住暑假的尾巴",
+          "outcome": "selected",
+          "item_id": "2026-08-26-yexiao-shujia-weiba",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-26-suzhu-youxi-moniqi",
+          "canonical_phrase": "宿主请领取你的游戏模拟器",
+          "outcome": "selected",
+          "item_id": "2026-08-26-suzhu-youxi-moniqi",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/douyin/hot-search",
+            "observed_at": "2026-08-26T07:12:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-26-tianxuan-zhongdiren",
+          "canonical_phrase": "原来这种身材是天选种地人",
+          "outcome": "selected",
+          "item_id": "2026-08-26-tianxuan-zhongdiren",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/weibo/hot-search",
+            "observed_at": "2026-08-26T07:15:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-04-yidairen-you-yidairen-x",
+          "canonical_phrase": "一代人有一代人的X",
+          "outcome": "selected",
+          "item_id": "2026-08-04-yidairen-you-yidairen-x",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-26-gongbi-xiaoxiang-wenrou",
+          "canonical_phrase": "被自己的工笔肖像温柔住了",
+          "outcome": "selected",
+          "item_id": "2026-08-26-gongbi-xiaoxiang-wenrou",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/douyin/hot-search",
+            "observed_at": "2026-08-26T07:12:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-19-danzi-zhen-shi-feidudu-de",
+          "canonical_phrase": "胆子真是肥嘟嘟的",
+          "outcome": "selected",
+          "item_id": "2026-08-19-danzi-zhen-shi-feidudu-de",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-26-zhedui-wenzi-gongpingma",
+          "canonical_phrase": "这对蚊子来说公平吗",
+          "outcome": "selected",
+          "item_id": "2026-08-26-zhedui-wenzi-gongpingma",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/zhihu",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-26-fangzhi-bei-taohua",
+          "canonical_phrase": "原来大家都是这样防止被套话的",
+          "outcome": "selected",
+          "item_id": "2026-08-26-fangzhi-bei-taohua",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 26,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "usage_context",
+            "url": "https://weibo.com/a/hot/cc2d8f207a95fccb_0.html?type=grab",
+            "observed_at": "2026-08-25T17:33:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-01",
+          "canonical_phrase": "秋天一起做燕麦系女孩",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 15,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/douyin/hot-search",
+            "observed_at": "2026-08-26T07:12:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-02",
+          "canonical_phrase": "看着你的笑我好像就足够",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 26,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-03",
+          "canonical_phrase": "老一辈的我要找到你就是带劲",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 26,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/douyin/hot-search",
+            "observed_at": "2026-08-26T07:12:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-04",
+          "canonical_phrase": "谁能借我一壶酒",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 25,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-05",
+          "canonical_phrase": "一张用光签名的拍立得",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 25,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-06",
+          "canonical_phrase": "内娱养成系追星有多抽象",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 24,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-07",
+          "canonical_phrase": "云南交警官方玩梗",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/bilibili",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-08",
+          "canonical_phrase": "不要反复咀嚼不舒服的人和事",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-09",
+          "canonical_phrase": "人真是环境的产物",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 23,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-10",
+          "canonical_phrase": "过得好的人最明显的标志",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 22,
+            "reusability": 10,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/weibo/hot-search",
+            "observed_at": "2026-08-26T07:15:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "我愿意一直这样",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 23,
+            "reusability": 10,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-12",
+          "canonical_phrase": "你是不是傻喜欢些胆小鬼",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 22,
+            "reusability": 10,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "这就是我引以为傲的写轮眼",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 22,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/douyin/hot-search",
+            "observed_at": "2026-08-26T07:12:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "是这样的话下周我再来测一次",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 21,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/douyin/hot-search",
+            "observed_at": "2026-08-26T07:12:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-15",
+          "canonical_phrase": "安安摇手势舞挑战",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 21,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-16",
+          "canonical_phrase": "沈阳小作坊动物园还是太超前了",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 21,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/douyin",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-17",
+          "canonical_phrase": "这份卤肉教程堪比一篇论文",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 20,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/weibo/hot-search",
+            "observed_at": "2026-08-26T07:15:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-18",
+          "canonical_phrase": "考公女子在星巴克撑伞备考",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 20,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/weibo/hot-search",
+            "observed_at": "2026-08-26T07:15:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-19",
+          "canonical_phrase": "高铁站来了两只小狗乘客",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 20,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/weibo/hot-search",
+            "observed_at": "2026-08-26T07:15:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-20",
+          "canonical_phrase": "内娱十年前真的很流行谈恋爱和结婚",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 19,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.rebang.vip/weibo/hot-search",
+            "observed_at": "2026-08-26T07:15:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "金鹰奖提名名单",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 18,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "何以悬空寺爆火",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/platform/weibo",
+            "observed_at": "2026-08-26T07:08:22+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-23",
+          "canonical_phrase": "一般很难直接被机器人帅到除非",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-24",
+          "canonical_phrase": "飞到我心上定档",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-25",
+          "canonical_phrase": "舞蹈新风暴首播",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-26",
+          "canonical_phrase": "爱情公寓网传名单没有陈赫王传君金世佳",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-27",
+          "canonical_phrase": "我眼中的医生",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-28",
+          "canonical_phrase": "6张网建设进度条刷新",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-29",
+          "canonical_phrase": "白泽杯复活投票开启",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-30",
+          "canonical_phrase": "唐朝为什么管阿拉伯叫大食",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-31",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-32",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-33",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-34",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-35",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-36",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-37",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-38",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-39",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-40",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-41",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-42",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-43",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-44",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-45",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-46",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-47",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-48",
+          "outcome": "dropped_safety",
+          "drop_reason": "隐私/未成年人",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 58,
+          "cumulative_unique_candidates": 58,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "zhihu",
+            "bilibili",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-26-zhiyou-wo-shangban-luanchuan",
+      "title": "👕 原来只有我上班在乱穿",
+      "aliases": [
+        "原来只有我上班在乱穿",
+        "原来只有我乱穿",
+        "原来只有我X"
+      ],
+      "canonical_phrase": "原来只有我上班在乱穿",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "打工人集体自嘲：以为全办公室只有自己T恤洞洞鞋摆烂上班，结果发现人人都一样，「原来只有我上班在乱穿」成为职场舒适穿搭的接头暗号。",
+      "origin": "已验证：微博话题#原来只有我上班在乱穿#8月24日起发酵，8月26日07:08快照位列微博实时榜第15位（另一聚合榜第14位、热度约10万）；话题页下8月24-25日大量网友晒出自己的乱穿日常。",
+      "usage": "晒自己上班摆烂穿搭时配文「原来只有我上班在乱穿」；句式可迁移到任何「以为只有我这样」的场景——「原来只有我上班在摸鱼」「原来只有我减肥在乱吃」。",
+      "fun_point": "「以为只有我不体面」的错觉被戳破的瞬间最解压，人人都是那个灰头土脸的同事，自嘲里带着找到组织的欣慰。",
+      "why_spread": "已验证：话题登微博热搜，媒体8月26日跟进解读为职场人的集体共鸣；推测：开学开工节点叠加「精致通勤」疲劳，低门槛晒图人人都能参与。",
+      "lifecycle": "peak",
+      "brand_usage": "适合服饰、鞋履、通勤好物做「舒服才是正经事」的反向精致营销；不要嘲讽任何职业群体的真实着装要求。",
+      "risk": {
+        "level": "safe",
+        "note": "自我调侃向表达，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 87,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-26T07:08:22+08:00",
+          "captured_at": "2026-08-26T07:11:00+08:00",
+          "note": "HotFlashNews 8月26日07:08快照记录该话题位列微博实时榜第15位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://www.rebang.vip/weibo/hot-search",
+          "title": "新浪微博热搜榜-今日热榜24小时热搜聚合",
+          "observed_at": "2026-08-26T07:15:00+08:00",
+          "captured_at": "2026-08-26T07:15:00+08:00",
+          "note": "热榜聚合8月26日07:15打开时该话题位列微博榜第14位、热度约10万。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://weibo.com/a/hot/84dac5926af9b5ac_0.html?type=grab",
+          "title": "原来只有我上班在乱穿_微博",
+          "observed_at": "2026-08-25T21:45:00+08:00",
+          "captured_at": "2026-08-26T07:21:00+08:00",
+          "note": "微博话题公开页，可见8月24-25日大量网友晒出T恤洞洞鞋等上班乱穿日常。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://k.sina.com.cn/article_7879923125_1d5ae15b5068028zl6.html",
+          "title": "制定一份低压力的小行动清单",
+          "captured_at": "2026-08-26T07:23:00+08:00",
+          "note": "新浪8月26日解读该热搜：乱穿不是个例而是集体共鸣，职场穿搭正从精致体面转向舒适至上。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-jinzhi-ouda-guke",
+      "title": "🚫 禁止殴打顾客，除非忍不住",
+      "aliases": [
+        "禁止殴打顾客，除非忍不住",
+        "禁止殴打顾客除非忍不住",
+        "禁止X除非忍不住"
+      ],
+      "canonical_phrase": "禁止殴打顾客除非忍不住",
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "长沙一家餐馆门口贴出「禁止殴打顾客，除非忍不住」的奇葩警示语走红，「禁止X，除非忍不住」成为给任何底线附加人情味例外的万能句式。",
+      "origin": "已验证：8月25日媒体核实长沙嘉雨路一餐馆门口张贴该创意贴纸并标注「最终解释权归本店所有」；8月26日07:15该词条位列百度热搜榜第5位（热搜指数约742万）。",
+      "usage": "套用句式给规则留「人性化后门」：「禁止熬夜，除非忍不住」「禁止喝奶茶，除非忍不住」「禁止在办公室笑出声，除非忍不住」。",
+      "fun_point": "把服务业底线说得像随时会破功，括号里的「除非忍不住」瞬间泄气，正经告示秒变段子，反差感拉满。",
+      "why_spread": "已验证：词条登百度热搜前列，媒体8月25日报道店家称只想营造趣味氛围并会考虑更换；推测：告示体本身可无限改写，任何场景都能套一个「忍不住」的例外。",
+      "lifecycle": "rising",
+      "brand_usage": "适合餐饮、零售做幽默店招/海报文案二创（如「禁止夸我们好吃，除非忍不住」）；注意原标语已被当地部门提醒有歧义，商用需避开暴力暗示。",
+      "risk": {
+        "level": "low",
+        "note": "原始标语因表述歧义被提醒整改；二创应去掉暴力语境，只保留句式结构。"
+      },
+      "days_on_list": 1,
+      "score": 86,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "热搜榜 - 百度",
+          "observed_at": "2026-08-26T07:15:00+08:00",
+          "captured_at": "2026-08-26T07:15:00+08:00",
+          "note": "百度热搜8月26日07:15打开时该词条位列第5位、热搜指数约742万。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://news.ycwb.com/ikimvkctin/content_54278587.htm",
+          "title": "长沙一餐厅贴「禁止殴打顾客，除非忍不住」标语：想营造趣味氛围",
+          "captured_at": "2026-08-26T07:21:00+08:00",
+          "note": "金羊网8月25日报道：店家回应称标语为网购创意贴纸，当地部门认为表述有歧义将督促更换。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-yexiao-shujia-weiba",
+      "title": "🍢 用一顿夜宵抓住暑假的尾巴",
+      "aliases": [
+        "用一顿夜宵抓住暑假的尾巴",
+        "用一顿X抓住Y的尾巴"
+      ],
+      "canonical_phrase": "用一顿夜宵抓住暑假的尾巴",
+      "platform": [
+        "douyin"
+      ],
+      "type": "情绪梗",
+      "summary": "暑假倒计时，全网约好「用一顿夜宵抓住暑假的尾巴」，把告别假期落实到一顿大排档上，句式可套用到任何告别仪式。",
+      "origin": "已验证：8月26日07:08快照该话题位列抖音实时榜第4位（另一聚合榜约923万热度），蝉妈妈数据页记录其热度指数约1136万；媒体8月25日已出现同款标题的创作指南。",
+      "usage": "开学/开工前最后一聚直接用它做标题；模板迁移：「用一顿火锅抓住冬天的尾巴」「用一场旅行抓住夏天的尾巴」，任何「快结束了」的节点都能套用。",
+      "fun_point": "把抽象的「假期结束了」翻译成具体的烤串和碰杯，悲伤瞬间变成食欲，谁都能照着执行一次。",
+      "why_spread": "已验证：话题登上抖音榜前列并被数据平台收录；推测：8月底暑假尾声是确定性情绪节点，「吃一顿」是成本最低的告别仪式，天然适合视频标题与评论区接龙。",
+      "lifecycle": "peak",
+      "brand_usage": "适合餐饮、夜宵外卖、饮品做「假期收尾」主题套餐与话题互动；避免渲染暴饮暴食。",
+      "risk": {
+        "level": "safe",
+        "note": "季节性情绪表达，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 28,
+        "reusability": 16,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-26T07:08:22+08:00",
+          "captured_at": "2026-08-26T07:12:00+08:00",
+          "note": "HotFlashNews 8月26日07:08快照记录该话题位列抖音实时榜第4位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.rebang.vip/douyin/hot-search",
+          "title": "抖音热搜榜-今日热榜24小时热搜聚合",
+          "observed_at": "2026-08-26T07:12:00+08:00",
+          "captured_at": "2026-08-26T07:12:00+08:00",
+          "note": "热榜聚合8月26日07:12打开时该话题位列抖音榜第6位、热度约923万。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://cj.sina.cn/articles/view/7879922980/1d5ae152406801k7mq",
+          "title": "如何写出一篇有感染力的暑假尾声夜宵文章？",
+          "captured_at": "2026-08-26T07:22:00+08:00",
+          "note": "新浪8月25日创作指南以「用一顿夜宵抓住暑假的尾巴」为收束句，称其抓住的是此刻身边的人。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://www.chanmama.com/creationInsights/realTime?hotTitle=%E7%8E%84%E6%88%92O100%E5%8E%9F%E5%9E%8B%E6%9C%BA%E7%8E%B0%E5%9C%BA%E4%BD%93%E9%AA%8C&hotIndex=2&hotType=1&hotInnerType=1",
+          "title": "抖音平台实时热点数据查询-蝉妈妈",
+          "captured_at": "2026-08-26T07:16:00+08:00",
+          "note": "蝉妈妈数据页8月25日收录该抖音热点，热度指数约1136万。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-suzhu-youxi-moniqi",
+      "title": "🎮 宿主请领取你的游戏模拟器",
+      "aliases": [
+        "宿主请领取你的游戏模拟器",
+        "宿主请领取你的X",
+        "宿主液体不达标"
+      ],
+      "canonical_phrase": "宿主请领取你的游戏模拟器",
+      "platform": [
+        "douyin",
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "AI文字模拟器游戏里系统对玩家的机械称呼「宿主请领取你的游戏模拟器」走红，配合「宿主液体不达标」等无厘头台词，成为万物皆可模拟器的二创模板。",
+      "origin": "已验证：该梗出自一批AI文字互动模拟器的系统台词，6月起在微博、抖音持续发酵；8月26日07:08快照位列抖音实时榜第16位（另一聚合榜约820万热度）；新浪8月26日专文梳理其走红路径。",
+      "usage": "模仿系统口吻给任何事下指令：「宿主请领取你的开学礼包」「宿主本周KPI不达标，请重新提取」；也可用「宿主」自称吐槽被生活硬控的瞬间。",
+      "fun_point": "冷冰冰的系统提示音配上荒唐的任务内容，正经与无厘头的反差让每条对话截图都像段子，截图即可参与。",
+      "why_spread": "已验证：话题登抖音热榜，媒体称其已成为AI模拟器品类的集体记忆符号；推测：截图二创零门槛，「系统文」叙事模板在网文与二次元圈有现成受众。",
+      "lifecycle": "rising",
+      "brand_usage": "适合游戏、工具类App做「系统提示」式推送文案（如「宿主请领取你的新人礼包」）；避免暗示对用户的控制感或诱导沉迷。",
+      "risk": {
+        "level": "low",
+        "note": "注意不点名具体产品、不引导未成年人充值消费。"
+      },
+      "days_on_list": 1,
+      "score": 83,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-26T07:08:22+08:00",
+          "captured_at": "2026-08-26T07:12:00+08:00",
+          "note": "HotFlashNews 8月26日07:08快照记录该话题位列抖音实时榜第16位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.rebang.vip/douyin/hot-search",
+          "title": "抖音热搜榜-今日热榜24小时热搜聚合",
+          "observed_at": "2026-08-26T07:12:00+08:00",
+          "captured_at": "2026-08-26T07:12:00+08:00",
+          "note": "热榜聚合8月26日07:12打开时该话题位列抖音榜第23位、热度约820万。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://k.sina.com.cn/article_7880068207_1d5b04c6f06801q2du.html",
+          "title": "宿主请领取你的游戏模拟器这个梗是怎么火起来的？",
+          "captured_at": "2026-08-26T07:21:00+08:00",
+          "note": "新浪8月26日专文：该梗源于AI文字模拟器的系统称呼，荒诞台词引发模仿与二创热潮。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-tianxuan-zhongdiren",
+      "title": "🌾 原来这种身材是天选种地人",
+      "aliases": [
+        "原来这种身材是天选种地人",
+        "天选种地人",
+        "天选X"
+      ],
+      "canonical_phrase": "原来这种身材是天选种地人",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "网友自嘲五五分、腿短腰长的身材是「刻在基因里的农耕配置」，「天选种地人」把身材焦虑改写成血脉觉醒，「天选X」句式再度出圈。",
+      "origin": "已验证：微博话题#原来这种身材是天选种地人#8月25日登热搜，8月26日07:08快照仍列微博实时榜第26位（另一聚合榜第46位）；话题页下网友晒「城里天选打工人、回乡天选种地人」的双重身份。",
+      "usage": "自嘲身材或技能点时套用：「原来这种身材是天选种地人」「原来我这种熬夜脸是天选守夜人」；也可顺势认领「我爱玩种田游戏也是种地血脉」。",
+      "fun_point": "把审美短板翻译成「演化优势」，一本正经地给身材找农耕文明的理由，自嘲瞬间变成自豪，谁都想去认领一个「天选」身份。",
+      "why_spread": "已验证：话题登微博热搜并有多家媒体8月25日解读；推测：「天选打工人」句式有现成群众基础，换个后缀就能再生一个梗，接龙成本极低。",
+      "lifecycle": "rising",
+      "brand_usage": "适合运动户外、农产品、田园文旅做「天选体质」玩梗海报；避免真的评价他人体型或制造身材对立。",
+      "risk": {
+        "level": "low",
+        "note": "身材话题敏感，使用时锚定自我调侃而非评价他人。"
+      },
+      "days_on_list": 1,
+      "score": 82,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://hotflashnews.com/platform/weibo",
+          "title": "微博实时热搜榜",
+          "observed_at": "2026-08-26T07:08:22+08:00",
+          "captured_at": "2026-08-26T07:11:00+08:00",
+          "note": "HotFlashNews 8月26日07:08快照记录该话题位列微博实时榜第26位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://www.rebang.vip/weibo/hot-search",
+          "title": "新浪微博热搜榜-今日热榜24小时热搜聚合",
+          "observed_at": "2026-08-26T07:15:00+08:00",
+          "captured_at": "2026-08-26T07:15:00+08:00",
+          "note": "热榜聚合8月26日07:15打开时该话题位列微博榜第46位、热度约5万。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://weibo.com/a/hot/70fc55aa3d19a9cc_0.html?type=grab",
+          "title": "原来这种身材是天选种地人_微博",
+          "observed_at": "2026-08-25T21:11:00+08:00",
+          "captured_at": "2026-08-26T07:21:00+08:00",
+          "note": "微博话题公开页，可见8月25日大量网友以该句自嘲身材并联想到种田游戏。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://k.sina.com.cn/article_7880068200_1d5b04c6806801mvt2.html",
+          "title": "爱看种田文和种地身材有关吗",
+          "captured_at": "2026-08-26T07:19:00+08:00",
+          "note": "新浪8月25日解读：网友调侃五分身形是「刻在基因里的农耕配置」，并把爱看种田文归因于「天选老农命」。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-04-yidairen-you-yidairen-x",
+      "title": "🎒 一代人有一代人的开学神装",
+      "aliases": [
+        "一代人有一代人的开学神装",
+        "一代人有一代人的开学装备",
+        "一代人有一代人的X"
+      ],
+      "canonical_phrase": "一代人有一代人的X",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "开学季网友晒出各年代的「开学神装」对比，「一代人有一代人的X」模板再次刷屏，从校服到文具盒全是年代眼泪。",
+      "origin": "已验证：该句式8月4日首次被本站收录；8月26日07:08快照「一代人有一代人的开学神装」位列抖音实时榜第27位，网易8月25日发布同主题视频「一代人有一代人的开学装备」。",
+      "usage": "任何代际对比场景直接套用：「一代人有一代人的开学神装」「一代人有一代人的下班仪式」；晒老物件、晒新旧对比图时做标题。",
+      "fun_point": "同一句话让每代人都能往里塞自己的时代记忆，70后到10后各晒各的，评论区自动变成年代博物馆。",
+      "why_spread": "已验证：开学季变体登抖音热榜并有媒体视频跟进；推测：9月开学是固定节点，模板自带怀旧属性，每年都有一次确定性回潮。",
+      "lifecycle": "rising",
+      "brand_usage": "适合文具、箱包、3C做「你的开学神装是哪一年」的互动话题；避免制造装备攀比或指向特定消费焦虑。",
+      "risk": {
+        "level": "safe",
+        "note": "怀旧向表达，无争议点。"
+      },
+      "days_on_list": 2,
+      "score": 81,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-26T07:08:22+08:00",
+          "captured_at": "2026-08-26T07:12:00+08:00",
+          "note": "HotFlashNews 8月26日07:08快照记录「一代人有一代人的开学神装」位列抖音实时榜第27位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.rebang.vip/douyin/hot-search",
+          "title": "抖音热搜榜-今日热榜24小时热搜聚合",
+          "observed_at": "2026-08-26T07:12:00+08:00",
+          "captured_at": "2026-08-26T07:12:00+08:00",
+          "note": "热榜聚合8月26日07:12打开时该话题位列抖音榜第45位附近。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://www.163.com/v/video/VZ482L3LC.html",
+          "title": "一代人有一代人的开学装备：从统一校服款式到九零年代运动会",
+          "observed_at": "2026-08-25T09:18:17+08:00",
+          "captured_at": "2026-08-26T07:22:00+08:00",
+          "note": "网易公开视频页8月25日发布同主题内容，回顾各年代开学装备变迁。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-gongbi-xiaoxiang-wenrou",
+      "title": "🖼️ 被自己的工笔肖像温柔住了",
+      "aliases": [
+        "被自己的工笔肖像温柔住了",
+        "被自己的X温柔住了"
+      ],
+      "canonical_phrase": "被自己的工笔肖像温柔住了",
+      "platform": [
+        "douyin"
+      ],
+      "type": "情绪梗",
+      "summary": "网友晒出画师为自己画的工笔肖像，称「被自己的工笔肖像温柔住了」，被认真描摹的自己成为新的自我疗愈仪式，句式可套到任何「被自己打动」的瞬间。",
+      "origin": "已验证：8月26日07:08快照该话题位列抖音实时榜第25位（另一聚合榜约800万热度），巨量算数抖音指数页收录该词条；媒体8月25日解读其为缓解容貌焦虑的新方式。",
+      "usage": "收到任何「被认真对待」的产物都可套用：「被自己的年终总结温柔住了」「被自己的旧日记温柔住了」；也可直接晒画像参与话题。",
+      "fun_point": "平时对自己百般挑剔的人，被一幅画里的自己轻轻接住，「温柔住」三个字把那种愣住的感动说得又好笑又心酸。",
+      "why_spread": "已验证：话题登抖音热榜并被指数页收录，媒体跟进解读；推测：容貌焦虑是长期情绪底色，「被自己治愈」的叙事配晒图天然适合短视频传播。",
+      "lifecycle": "rising",
+      "brand_usage": "适合文创、影像、美妆做「看见自己」主题活动；避免放大容貌焦虑或诱导过度消费画像服务。",
+      "risk": {
+        "level": "safe",
+        "note": "自我关怀向表达，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 79,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 27,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://www.rebang.vip/douyin/hot-search",
+          "title": "抖音热搜榜-今日热榜24小时热搜聚合",
+          "observed_at": "2026-08-26T07:12:00+08:00",
+          "captured_at": "2026-08-26T07:12:00+08:00",
+          "note": "热榜聚合8月26日07:12打开时该话题位列抖音榜第26位、热度约800万。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/platform/douyin",
+          "title": "抖音实时热搜榜",
+          "observed_at": "2026-08-26T07:08:22+08:00",
+          "captured_at": "2026-08-26T07:12:00+08:00",
+          "note": "HotFlashNews 8月26日07:08快照记录该话题位列抖音实时榜第25位。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://k.sina.com.cn/article_7879995946_1d5af322a06801p7s0.html",
+          "title": "工笔肖像画，为何成为治愈自己的新方式？",
+          "captured_at": "2026-08-26T07:22:00+08:00",
+          "note": "新浪8月25日解读：被工笔细细描摹的自己会以温柔的方式将人接住，成为独特的自我疗愈方式。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-19-danzi-zhen-shi-feidudu-de",
+      "title": "🐹 胆子真是肥嘟嘟的",
+      "aliases": [
+        "胆子真是肥嘟嘟的",
+        "你的胆子真是肥嘟嘟的",
+        "我的胆子没有那么肥嘟嘟"
+      ],
+      "canonical_phrase": "胆子真是肥嘟嘟的",
+      "platform": [
+        "bilibili",
+        "weibo"
+      ],
+      "type": "口头禅梗",
+      "summary": "把「胆子很大」改写成软乎乎的「肥嘟嘟」，用于吐槽别人敢做离谱事，也可反向自嘲自己胆小。",
+      "origin": "已验证：该句8月19日进入微博热榜后被本站收录；8月26日07:08快照「你的胆子真是肥嘟嘟的」仍列B站实时榜第18位，梗百科二创视频延续传播。",
+      "usage": "看到离谱操作可回「你的胆子真是肥嘟嘟的」，自己不敢尝试时可写「我的胆子还没肥嘟嘟起来」。",
+      "fun_point": "「肥嘟嘟」通常形容可爱外形，拿来修饰抽象的胆子，把责备瞬间说成撒娇式吐槽。",
+      "why_spread": "已验证：该句8月26日仍在B站实时榜前20；推测：语气软、零门槛，评论区复用成本极低，二创视频给了它持续曝光。",
+      "lifecycle": "rising",
+      "brand_usage": "可用于轻松提醒用户尝试新品，如「胆子肥嘟嘟，先点小份试试」，不要用来淡化安全规范。",
+      "risk": {
+        "level": "low",
+        "note": "避免对真实危险行为叫好，也不要用于羞辱特定个体。"
+      },
+      "days_on_list": 5,
+      "score": 79,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "bilibili",
+          "url": "https://hotflashnews.com/platform/bilibili",
+          "title": "B站实时热搜榜",
+          "observed_at": "2026-08-26T07:08:22+08:00",
+          "captured_at": "2026-08-26T07:13:00+08:00",
+          "note": "HotFlashNews 8月26日07:08快照记录「你的胆子真是肥嘟嘟的」位列B站实时榜第18位。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://s.weibo.com/weibo?q=%E8%83%86%E5%AD%90%E7%9C%9F%E6%98%AF%E8%82%A5%E5%98%9F%E5%98%9F%E7%9A%84",
+          "title": "微博搜索：胆子真是肥嘟嘟的",
+          "captured_at": "2026-08-26T07:23:00+08:00",
+          "note": "公开微博检索入口，可复核该表达的实时讨论。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-zhedui-wenzi-gongpingma",
+      "title": "🦟 这对蚊子来说公平吗",
+      "aliases": [
+        "这对蚊子来说公平吗",
+        "蚊子只是叮了人一下，人就要蚊子的命",
+        "这对X来说公平吗"
+      ],
+      "canonical_phrase": "这对蚊子来说公平吗",
+      "platform": [
+        "zhihu"
+      ],
+      "type": "句式梗",
+      "summary": "知乎抽象提问「蚊子只是叮了人一下，人就要蚊子的命，这对蚊子来说公平吗？」走红，「这对X来说公平吗」成为替万物喊冤的辩护体。",
+      "origin": "已验证：该知乎问题8月22日创建，8月26日07:08快照位列知乎热榜第6位（另一聚合榜同列第6位，热度约137万），回答区一本正经地从生存斗争角度论证「这很公平」。",
+      "usage": "替任何「弱势群体」发出灵魂拷问：「闹钟只是响了一下，人就要关掉它，这对闹钟来说公平吗？」；越是一本正经辩护，节目效果越足。",
+      "fun_point": "把人人喊打的蚊子当成需要法律援助的原告，问题越离谱、回答越严肃，反差越好笑。",
+      "why_spread": "已验证：问题连续多日停留在知乎热榜前列并被多个聚合榜收录；推测：「替X主持公道」的抽象体创作门槛极低，任何物件都能被拉来当原告。",
+      "lifecycle": "rising",
+      "brand_usage": "适合品牌拟人化玩梗（「用户只是看了一眼就走，这对新品来说公平吗？」）；避免套用真实争议事件做辩护体。",
+      "risk": {
+        "level": "low",
+        "note": "抽象玩梗注意别迁移到真实伤害事件上。"
+      },
+      "days_on_list": 1,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 26,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "zhihu",
+          "url": "https://hotflashnews.com/platform/zhihu",
+          "title": "知乎实时热搜榜",
+          "observed_at": "2026-08-26T07:08:22+08:00",
+          "captured_at": "2026-08-26T07:14:00+08:00",
+          "note": "HotFlashNews 8月26日07:08快照记录该问题位列知乎热榜第6位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "zhihu",
+          "url": "https://www.rebang.vip/zhihu/hot-search",
+          "title": "知乎热门内容榜-今日热榜24小时热搜聚合",
+          "observed_at": "2026-08-26T07:22:00+08:00",
+          "captured_at": "2026-08-26T07:22:00+08:00",
+          "note": "热榜聚合8月26日07:22打开时该问题仍列知乎榜第6位，回答区玩梗活跃。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://tophub.today/n/mproPpoq6O",
+          "title": "知乎热榜今日热榜官网",
+          "captured_at": "2026-08-26T07:20:00+08:00",
+          "note": "今日热榜知乎节点8月26日收录该问题，显示热度约137万（经搜索快照确认）。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-26-fangzhi-bei-taohua",
+      "title": "🤐 原来大家都是这样防止被套话的",
+      "aliases": [
+        "原来大家都是这样防止被套话的",
+        "原来大家都是这样X的",
+        "防止被套话万能公式"
+      ],
+      "canonical_phrase": "原来大家都是这样防止被套话的",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "网友接龙分享「不接招、不给准话、不评价」的防套话话术，「原来大家都是这样防止被套话的」成为社恐打工人的沟通接头暗号。",
+      "origin": "已验证：微博话题#原来大家都是这样防止被套话的#8月17日起发酵，8月24-25日再度升温登榜，话题页下网友总结出「你猜」万能回复与「把问题抛回去」等防守话术；媒体8月25日跟进解读。",
+      "usage": "被试探隐私时甩出万能公式「你猜」；话题句式可迁移：「原来大家都是这样拒绝加班的」「原来大家都是这样应付亲戚的」。",
+      "fun_point": "人人都以为自己嘴笨，结果发现全网都在用同一套糊弄学，接头成功的瞬间比话术本身还好笑。",
+      "why_spread": "已验证：话题两度登微博热搜，媒体解读其为守住信息边界的防守型沟通；推测：开学返工节点社交密度上升，「不主动交底」的共鸣天然适合接龙晒话术。",
+      "lifecycle": "rising",
+      "brand_usage": "适合职场、社交类内容做「万能回复公式」互动；避免教人欺骗或用于逃避正当信息披露义务的场景。",
+      "risk": {
+        "level": "low",
+        "note": "沟通技巧向表达；避免引申为对具体群体的不信任煽动。"
+      },
+      "days_on_list": 1,
+      "score": 76,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 26,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://weibo.com/a/hot/cc2d8f207a95fccb_0.html?type=grab",
+          "title": "原来大家都是这样防止被套话的 - 微博",
+          "observed_at": "2026-08-25T17:33:00+08:00",
+          "captured_at": "2026-08-26T07:22:00+08:00",
+          "note": "微博话题公开页，可见8月24-25日网友持续接龙分享防套话话术。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://cj.sina.cn/articles/view/7879776816/1d5abda3006801lwru",
+          "title": "职场防套话秘籍：如何巧妙守住信息边界",
+          "captured_at": "2026-08-26T07:22:00+08:00",
+          "note": "新浪8月25日解读该热搜：网友总结出「不接招、不给准话、不评价」的防守型沟通策略。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
