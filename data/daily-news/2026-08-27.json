@@ -1,0 +1,896 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T06:30:40+08:00",
+  "published_at": "2026-08-27T06:30:40+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 41,
+    "published": 7,
+    "dropped_safety": {
+      "politics": 3,
+      "geopolitics": 3,
+      "controversy": 2,
+      "celebrity_dispute": 1,
+      "minors": 1,
+      "public_safety": 1,
+      "privacy": 1,
+      "rumor": 1
+    },
+    "dropped_low_confidence": 19,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 27,
+      "official_sources": 1,
+      "state_media_sources": 4,
+      "major_media_sources": 7,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 10,
+        "relaxed_72h": 10
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 41,
+          "cumulative_unique_candidates": 41,
+          "source_scope": [
+            "百度热搜公开榜单",
+            "新华社央视网中新网央广网等央媒",
+            "应急管理部国家防总等官方机构发布",
+            "新京报北京日报中国新闻周刊等持牌媒体",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-27-jilong-mudslide-rescue",
+          "story_identity": "xizang-jilong-port-mudslide-rescue-2026-08-26",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-27-jilong-mudslide-rescue",
+          "score": 93,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 19,
+            "everyday_relevance": 23,
+            "evidence": 15
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-27-typhoon-saudel-emergency-upgrade",
+          "story_identity": "typhoon-saudel-zhejiang-fujian-emergency-response-upgrade",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-27-typhoon-saudel-emergency-upgrade",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 19,
+            "everyday_relevance": 23,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-27-dichlorvos-sanitation-supervision",
+          "story_identity": "xiamen-dichlorvos-restaurant-sanitation-state-council-supervision",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-27-dichlorvos-sanitation-supervision",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-27-flight-refund-standard",
+          "story_identity": "china-aviation-association-ticket-refund-group-standard-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-27-flight-refund-standard",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 18,
+            "everyday_relevance": 24,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-27-covid-variant-rumor-debunked",
+          "story_identity": "cdc-debunks-august-covid-variant-rumor-2026-08-26",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T18:46:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-27-covid-variant-rumor-debunked",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 17,
+            "everyday_relevance": 23,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-27-robot-games-100m-final-record",
+          "story_identity": "humanoid-robot-games-closing-100m-final-8-64s-record",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-08-27-robot-games-100m-final-record",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-27-women-volleyball-asian-quarterfinal",
+          "story_identity": "china-women-volleyball-asian-championship-group-first-quarterfinal",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-27-women-volleyball-asian-quarterfinal",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 19,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-11",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-12",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-13",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "chongzuo-zuojiang-historical-flood-peak",
+          "story_identity": "zuojiang-chongzuo-flood-peak-record-since-1955",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T03:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 15,
+            "everyday_relevance": 24,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "洪峰26日凌晨过境，时效层为relaxed_48h未入strict_24h遴选层；昨日已报道广西洪水预警"
+        },
+        {
+          "candidate_key": "mof-livelihood-spending-childcare-subsidy",
+          "story_identity": "mof-jan-jul-fiscal-report-childcare-subsidy-25m",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 10,
+            "everyday_relevance": 24,
+            "evidence": 15
+          },
+          "drop_reason": "数据发布于8月21日国新办发布会，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "road-traffic-law-draft-walking-groups",
+          "story_identity": "road-traffic-safety-law-revision-first-review-2026-08-25",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T09:41:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 12,
+            "everyday_relevance": 24,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "昨日已入选同一草案初审报道，不重复"
+        },
+        {
+          "candidate_key": "ding-ming-82yo-hurdles-world-title",
+          "story_identity": "ding-ming-world-masters-athletics-m80-hurdles-record",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 13,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "赛事8月25日在韩国大邱举行，时效层relaxed_48h"
+        },
+        {
+          "candidate_key": "chengdu-south-station-smoke-response",
+          "story_identity": "chengdu-south-railway-station-smoke-incident-response",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "局部车站短时烟雾事件，公共影响有限"
+        },
+        {
+          "candidate_key": "school-start-anxiety-somatization-tips",
+          "story_identity": "henan-doctor-school-anxiety-somatization-advice",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 6
+          },
+          "drop_reason": "季节性健康提醒，无权威统一发布"
+        },
+        {
+          "candidate_key": "braised-duck-chains-earnings-slump",
+          "story_identity": "zhouheiya-juewei-huangshanghuang-midyear-earnings-decline",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "行业财报话题，日常相关性一般"
+        },
+        {
+          "candidate_key": "ice-cup-market-pricing-debate",
+          "story_identity": "china-edible-ice-cup-market-60-billion-growth",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "消费现象讨论，权威数据支撑有限"
+        },
+        {
+          "candidate_key": "woman-takeout-diet-heart-failure-case",
+          "story_identity": "henan-woman-long-term-takeout-heart-failure-case",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 12,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "个案健康报道，无普遍服务信息"
+        },
+        {
+          "candidate_key": "la-chinese-night-market-food-street",
+          "story_identity": "los-angeles-chinese-night-market-food-street-boom",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T12:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 12,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "海外摆摊趣闻，属常规国外地方话题"
+        },
+        {
+          "candidate_key": "sichuan-woman-police-station-fugitive-check",
+          "story_identity": "rongxian-woman-verify-fugitive-scam-call-at-police",
+          "research_pass": 1,
+          "occurred_at": "2026-08-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 6,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "8月20日个案，时效与相关性不足"
+        },
+        {
+          "candidate_key": "guiyang-retiree-flexible-employment-pension-case",
+          "story_identity": "guiyang-bus-worker-retiree-flexible-employment-pension-case",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "drop_reason": "个案纠纷，制度层面无新进展"
+        },
+        {
+          "candidate_key": "yunnan-forager-bear-attack-death",
+          "story_identity": "yunnan-luoji-elderly-mushroom-forager-bear-attack",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 3
+          },
+          "drop_reason": "山区个案悲剧，无公共服务增量"
+        },
+        {
+          "candidate_key": "evergrande-debt-99-yuan-auction",
+          "story_identity": "evergrande-related-debts-auctioned-cheap-alibaba-assets",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "资产处置趣闻，日常相关性低"
+        },
+        {
+          "candidate_key": "think-tank-2050-china-report",
+          "story_identity": "ruc-chongyang-global-perception-2050-report-release",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 5
+          },
+          "drop_reason": "智库报告发布，与日常决策相关性弱"
+        },
+        {
+          "candidate_key": "man-utd-signs-baleba",
+          "story_identity": "manchester-united-signs-carlos-baleba-from-brighton",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T07:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "欧洲足坛转会，属国外常规体育新闻"
+        },
+        {
+          "candidate_key": "sinopec-second-entrepreneurship-plan",
+          "story_identity": "sinopec-chairman-second-entrepreneurship-midyear-briefing",
+          "research_pass": 1,
+          "occurred_at": "2026-08-24T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 11,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "央企经营表态，8月24日发布且民生关联弱"
+        },
+        {
+          "candidate_key": "railway-summer-travel-return-peak",
+          "story_identity": "railway-summer-transport-return-peak-student-ticket-services",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "周期性暑运返程提醒，新增硬信息有限"
+        },
+        {
+          "candidate_key": "yuan-yue-us-open-first-round-win",
+          "story_identity": "yuan-yue-us-open-womens-singles-first-round-win-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "比赛结束时间贴近24小时边界且热度一般，稳健起见不入选"
+        },
+        {
+          "candidate_key": "fuel-price-window-aug-28-expected-hike",
+          "story_identity": "refined-oil-price-adjustment-window-2026-08-28-expected-rise",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "机构测算上调约390元/吨为主，持牌媒体原创报道不足，最终以发改委公布为准"
+        },
+        {
+          "candidate_key": "mid-autumn-national-day-travel-boom",
+          "story_identity": "qing-3-xiu-13-holiday-travel-booking-surge",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "出游平台热度数据为主，缺权威媒体独立报道"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-27-jilong-mudslide-rescue",
+      "story_identity": "xizang-jilong-port-mudslide-rescue-2026-08-26",
+      "headline": "🏔️ 西藏吉隆口岸发生泥石流，多方力量全力救援",
+      "summary": "8月26日10时30分许，因尼泊尔一侧发生泥石流，西藏日喀则市吉隆县吉隆口岸道路、通信中断，有建筑被埋，截至当日20时初步核实已致3人遇难、265人失联。国家启动二级救灾应急响应并预拨1.2亿元救灾资金，各方力量正全力搜救失联人员、转移安置受灾群众。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 93,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 19,
+        "everyday_relevance": 23,
+        "evidence": 15
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-26T10:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "灾害报道聚焦救援进展与服务信息，伤亡数字仅置于正文，表述克制。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/leaders/20260827/12e59c7860f34d0880c5603578e631d3/c.html",
+          "title": "贯彻落实习近平总书记重要指示精神 各方协力开展西藏吉隆县泥石流灾害救援",
+          "captured_at": "2026-08-27T06:11:00+08:00",
+          "note": "新华社报道：截至26日20时初步核实3人遇难、265人失联，各方开展救援"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1787748003129371.html",
+          "title": "西藏吉隆泥石流灾害西部战区迅速响应",
+          "captured_at": "2026-08-27T06:12:00+08:00",
+          "note": "新京报转新华社消息：8月26日10时30分许吉隆口岸发生泥石流灾害"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-27-typhoon-saudel-emergency-upgrade",
+      "story_identity": "typhoon-saudel-zhejiang-fujian-emergency-response-upgrade",
+      "headline": "🌀 台风“沙德尔”进入24小时警戒线，浙闽应急响应升级",
+      "summary": "今年第18号台风“沙德尔”（强台风级）已进入24小时警戒线，预计27日夜间至28日上午在浙江象山到福建连江一带沿海登陆。国家防总26日11时将针对浙江、福建的防汛防台风应急响应提升至三级，浙江省12时将防台风应急响应提升至Ⅱ级，27日至30日多地将迎强降雨。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 90,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 19,
+        "everyday_relevance": 23,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-26T11:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "台风防御服务信息，无伤亡渲染；路径与强度以中央气象台滚动预报为准。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "应急管理部",
+          "url": "https://www.mem.gov.cn/xw/yjyw/202608/t20260826_708669.shtml",
+          "title": "国家防总、应急管理部组织多部门联合会商 调度部署台风“沙德尔”防范应对工作 提升防汛防台风应急响应至三级",
+          "captured_at": "2026-08-27T06:13:00+08:00",
+          "note": "官方发布：26日11时针对浙江、福建应急响应由四级提升至三级"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-26/10684686.shtml",
+          "title": "迎战“沙德尔” 浙江提升防台风应急响应至Ⅱ级",
+          "captured_at": "2026-08-27T06:14:00+08:00",
+          "note": "中新社报道：26日12时浙江省防台风应急响应提升至Ⅱ级，预计27日夜至28日上午登陆"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-27-dichlorvos-sanitation-supervision",
+      "story_identity": "xiamen-dichlorvos-restaurant-sanitation-state-council-supervision",
+      "headline": "🍽️ 国务院食安办挂牌督办厦门“敌敌畏消杀”事件",
+      "summary": "针对舆论关注的厦门“消杀公司违规使用敌敌畏为餐饮门店消杀”事件，国务院食安办8月26日决定挂牌督办，会同市场监管总局、国家疾控局成立联合工作组赴当地督促案件查办，依法严惩重处违法违规行为，并举一反三开展风险排查。此前厦门湖里区已成立联合调查组并对涉事企业消杀用品抽检取证。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-26T20:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "食品安全监管报道，限于官方督办信息，不含未证实细节。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1787743699129281.html",
+          "title": "国务院食安办对“违规使用敌敌畏为餐饮门店消杀”事件挂牌督办",
+          "captured_at": "2026-08-27T06:14:00+08:00",
+          "note": "新京报报道：国务院食安办挂牌督办并成立联合工作组赴实地督促查办"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6a8ed5bae4b0e45f3fd68826.html",
+          "title": "国务院食安办对“消杀公司违规使用敌敌畏为餐饮门店消杀”事件挂牌督办",
+          "captured_at": "2026-08-27T06:15:00+08:00",
+          "note": "北京日报转央视新闻8月26日报道，交叉佐证"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-27-flight-refund-standard",
+      "story_identity": "china-aviation-association-ticket-refund-group-standard-2026",
+      "headline": "✈️ “机票天价退改费”有人管了，退改团体标准年内出台",
+      "summary": "据人民日报8月26日报道，中国航协已牵头推进机票退改服务升级优化，正在制定机票退改专项团体标准，计划年内发布实施。标准将要求所有售票平台和航司官方渠道在旅客支付前，通过醒目字体、弹窗强制提示等方式主动公示退改费率、限制条件和免费退改场景，回应“天价退改费”痛点。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 18,
+        "everyday_relevance": 24,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-26T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "消费服务政策报道，团体标准尚待发布，以正式文本为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-26/10684306.shtml",
+          "title": "机票退票手续费为何这么高？机票退改新标准计划年内出台",
+          "captured_at": "2026-08-27T06:15:00+08:00",
+          "note": "中新网报道：中国航协牵头制定机票退改专项团体标准，计划年内发布实施"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20260826A09X6P00",
+          "title": "“机票天价退改费”有人管了！平台须弹窗强制提示",
+          "captured_at": "2026-08-27T06:16:00+08:00",
+          "note": "转载人民日报8月26日报道，佐证公示退改费率等要求"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-27-covid-variant-rumor-debunked",
+      "story_identity": "cdc-debunks-august-covid-variant-rumor-2026-08-26",
+      "headline": "😷 中疾控回应：“8月新冠有变异毒株”不实",
+      "summary": "针对社交平台“8月新冠是新毒株、非常强”的说法，全国网络辟谣平台8月26日发文澄清：国家卫生健康委发布会上中国疾控中心研究员表示，本轮疫情为周期性波动，8月中上旬达高峰平台期后已现下降趋势，以轻症为主，监测未发现可能引发重大公共卫生风险的变异株。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 17,
+        "everyday_relevance": 23,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-26T18:46:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "权威辟谣信息，occurred_at取辟谣平台8月26日发布时点；表述限于中疾控公开发布会口径。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1787743431129276.html",
+          "title": "网传“8月新冠很严重并有变异毒株”不实（2026·08·26）",
+          "captured_at": "2026-08-27T06:16:00+08:00",
+          "note": "新京报转全国网络辟谣平台8月26日辟谣：疫情已过高峰平台期，未发现高危变异株"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "扬子晚报",
+          "url": "https://www.yzwb.net/news/txs/202608/t20260826_386467.html",
+          "title": "网传“8月新冠很严重并有变异毒株”不实（2026·08·26）",
+          "captured_at": "2026-08-27T06:17:00+08:00",
+          "note": "扬子晚报网同步刊发全国网络辟谣内容，交叉佐证"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-27-robot-games-100m-final-record",
+      "story_identity": "humanoid-robot-games-closing-100m-final-8-64s-record",
+      "headline": "🤖 人形机器人运动会闭幕，百米决赛8.64秒夺冠",
+      "summary": "8月26日晚，第二届世界人形机器人运动会在北京国家速滑馆“冰丝带”闭幕。压轴的大型组100米决赛中，北京人形机器人创新中心的天工Ultra以8.64秒夺冠，继开幕式9.39秒、复赛8.86秒后再次刷新赛会纪录。本届赛事吸引16个国家666支队伍、2056台机器人参赛。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-26T20:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "科技赛事报道，成绩以赛会公布为准。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1787751442129435.html",
+          "title": "视频丨8.64秒！机器人百米决赛诞生新纪录",
+          "captured_at": "2026-08-27T06:17:00+08:00",
+          "note": "新京报报道：8月26日晚运动会闭幕，百米决赛8.64秒创赛会新成绩"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "IT之家",
+          "url": "https://www.ithome.com/0/994/751.htm",
+          "title": "8.64 秒！天工Ultra 机器人再破人类百米世界纪录",
+          "captured_at": "2026-08-27T06:18:00+08:00",
+          "note": "IT之家报道：天工Ultra以8.64秒夺冠，继9.39秒、8.86秒后再超人类纪录"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-27-women-volleyball-asian-quarterfinal",
+      "story_identity": "china-women-volleyball-asian-championship-group-first-quarterfinal",
+      "headline": "🏐 中国女排3比0胜中国台北，小组第一晋级亚锦赛八强",
+      "summary": "北京时间8月26日，2026年女排亚锦赛小组赛第三轮在天津进行，中国女排以25比17、25比16、25比7战胜中国台北女排，取得三连胜并以小组第一晋级八强，8月28日19时30分将在1/4决赛对阵越南女排。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 18,
+        "everyday_relevance": 19,
+        "evidence": 13
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-08-26T19:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果报道，无争议；occurred_at取26日晚比赛进行时段。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://sports.cctv.com/2026/08/26/ARTIToiB5fUlKkssPdBDcZrK260826.shtml",
+          "title": "女排亚锦赛 中国女排3-0战胜中国台北晋级八强",
+          "captured_at": "2026-08-27T06:19:00+08:00",
+          "note": "央视网体育8月26日报道：中国女排3-0胜中国台北，小组第一晋级八强，1/4决赛战越南"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
