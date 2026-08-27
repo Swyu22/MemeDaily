@@ -1,0 +1,1024 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-28",
+  "generated_at": "2026-08-28T06:30:32+08:00",
+  "published_at": "2026-08-28T06:30:32+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 51,
+    "published": 6,
+    "dropped_safety": {
+      "politics": 3,
+      "geopolitics": 2,
+      "minors": 3,
+      "celebrity_dispute": 3,
+      "controversy": 1,
+      "rumor": 1
+    },
+    "dropped_low_confidence": 29,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 35,
+      "official_sources": 1,
+      "state_media_sources": 5,
+      "major_media_sources": 6,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 3
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 8,
+        "relaxed_72h": 11
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 51,
+          "cumulative_unique_candidates": 51,
+          "source_scope": [
+            "百度热搜公开榜单",
+            "新华社央视网人民日报等央媒",
+            "中央气象台与地方应急部门等官方机构发布",
+            "澎湃新闻界面新闻川观新闻经济观察网等持牌媒体",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-28-jilong-mudslide-rescue-briefing",
+          "story_identity": "xizang-jilong-mudslide-rescue-briefing-2026-08-27",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-28-jilong-mudslide-rescue-briefing",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-28-typhoon-saudel-red-alert",
+          "story_identity": "typhoon-saudel-red-alert-landfall-forecast-2026-08-27",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-28-typhoon-saudel-red-alert",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 19,
+            "everyday_relevance": 23,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-28-seven-day-return-notice",
+          "story_identity": "cca-seven-day-no-reason-return-consumer-notice",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-28-seven-day-return-notice",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 24,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-28-zhao-xintong-world-no1",
+          "story_identity": "zhao-xintong-wuhan-open-semifinal-world-no1-2026-08-27",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-28-zhao-xintong-world-no1",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-28-lianyuan-mine-rescue-complete",
+          "story_identity": "hunan-lianyuan-yangmeishan-mine-accident-rescue-complete",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-08-28-lianyuan-mine-rescue-complete",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-28-golden-eagle-postponed",
+          "story_identity": "golden-eagle-awards-postponed-2026-08-27",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T19:55:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-28-golden-eagle-postponed",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-11",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-12",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-13",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "zhejiang-typhoon-level1-response",
+          "story_identity": "zhejiang-anti-typhoon-emergency-response-level1-2026-08-27",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与入选的台风红色预警条目为同一防御事件，合并报道不重复入选"
+        },
+        {
+          "candidate_key": "wuhan-open-china-three-quarterfinalists",
+          "story_identity": "wuhan-open-three-chinese-players-quarterfinals-2026-08-26",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 15,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "前一日八强赛果，内容已被赵心童登顶世界第一条目覆盖"
+        },
+        {
+          "candidate_key": "zheng-qinwen-us-open-qualifying-r2",
+          "story_identity": "zheng-qinwen-us-open-qualifying-second-round-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 15,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "美网资格赛次轮于北京时间26日夜结束，资格层仅达relaxed_72h，未入strict_24h遴选层"
+        },
+        {
+          "candidate_key": "miracle-cure-health-fraud-case",
+          "story_identity": "shanghai-pudong-health-product-fraud-prosecution-90m",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 19,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "保健品诈骗公诉案披露时点表述为近日，司法个案稳健起见不入选"
+        },
+        {
+          "candidate_key": "consumption-loan-subsidy-bank-rules",
+          "story_identity": "six-major-banks-consumption-loan-subsidy-rules-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 14,
+            "everyday_relevance": 22,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "六大行贴息执行细则自8月24日起陆续发布，时效层relaxed_48h未入strict_24h遴选层"
+        },
+        {
+          "candidate_key": "typhoon-aita-generated",
+          "story_identity": "typhoon-aita-22nd-named-storm-formed-2026-08-27",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "第22号台风艾涛新生成，路径对我国近海影响尚待观察，低于65分合格线"
+        },
+        {
+          "candidate_key": "luzhou-wildfire-rumor-debunked",
+          "story_identity": "sichuan-luzhou-wildfire-video-rumor-debunked-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 6
+          },
+          "drop_reason": "地方性谣言澄清，原视频发布时点不明，热度有限"
+        },
+        {
+          "candidate_key": "baidu-hk-primary-listing",
+          "story_identity": "baidu-hong-kong-dual-primary-listing-effective-2026-09-01",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "企业上市地位转换属资本市场事项，与日常生活相关性有限"
+        },
+        {
+          "candidate_key": "yuan-yue-us-open-qualifying-r2",
+          "story_identity": "yuan-yue-us-open-qualifying-second-round-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T23:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "资格赛次轮赛果，热度与日常相关性一般"
+        },
+        {
+          "candidate_key": "zhoukou-rescue-team-farewell",
+          "story_identity": "zhoukou-residents-farewell-aneng-rescue-team-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "地域性温情送行报道，公共服务增量有限"
+        },
+        {
+          "candidate_key": "chongqing-cycling-lane-barrier",
+          "story_identity": "chongqing-beibin-road-cycling-lane-barrier-response",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "市政设施争议的地方回应，影响范围有限"
+        },
+        {
+          "candidate_key": "nvidia-q2-earnings-call",
+          "story_identity": "nvidia-fy2027-q2-earnings-data-center-revenue",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T05:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 8
+          },
+          "drop_reason": "海外企业财报话题，与国内读者日常决策关联弱"
+        },
+        {
+          "candidate_key": "storage-battery-overseas-orders",
+          "story_identity": "china-storage-battery-overseas-orders-h1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "行业订单数据，日常生活相关性一般"
+        },
+        {
+          "candidate_key": "cupeijun-scholarship-live-giveaway",
+          "story_identity": "cuipeijun-1-5m-scholarship-live-giveaway-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "企业主个人助学行为，披露时点表述为近日"
+        },
+        {
+          "candidate_key": "short-drama-actor-daily-pay",
+          "story_identity": "short-drama-actor-200-yuan-daily-pay-discussion",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 4
+          },
+          "drop_reason": "从业者个案说法，行业片酬缺乏权威数据"
+        },
+        {
+          "candidate_key": "xinjiang-wedding-strangers",
+          "story_identity": "xinjiang-shache-wedding-300-strangers-2026-08-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 8,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "婚礼发生于8月8日，远超72小时时效窗"
+        },
+        {
+          "candidate_key": "openai-huggingface-agent-report",
+          "story_identity": "openai-huggingface-ai-agent-intrusion-report-2026-08-26",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T04:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 6
+          },
+          "drop_reason": "海外平台安全报告，日常相关性不足"
+        },
+        {
+          "candidate_key": "tianchi-stainless-steel-pool",
+          "story_identity": "chongqing-wulingshan-tianchi-stainless-structure-response",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "景区设施趣闻，无公共服务增量"
+        },
+        {
+          "candidate_key": "mengniu-h1-earnings",
+          "story_identity": "mengniu-2026-h1-earnings-report",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 13,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "企业财报话题，日常相关性有限"
+        },
+        {
+          "candidate_key": "apple-september-event-preview",
+          "story_identity": "apple-september-2026-event-preview",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T08:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 15,
+            "everyday_relevance": 8,
+            "evidence": 6
+          },
+          "drop_reason": "海外产品发布前瞻，属常规科技话题"
+        },
+        {
+          "candidate_key": "uefa-infantino-complaint",
+          "story_identity": "uefa-considers-criminal-complaint-against-infantino",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T09:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 6
+          },
+          "drop_reason": "国际体育组织治理个案，属国外机构新闻"
+        },
+        {
+          "candidate_key": "xiangpiaopiao-heir-vice-chair",
+          "story_identity": "xiangpiaopiao-jiang-xiaoying-vice-chair-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 13,
+            "everyday_relevance": 9,
+            "evidence": 6
+          },
+          "drop_reason": "企业人事变动，日常相关性低"
+        },
+        {
+          "candidate_key": "man-sells-houses-stock-scam",
+          "story_identity": "man-sells-two-houses-7m-stock-scam-case-2024",
+          "research_pass": 1,
+          "occurred_at": "2024-04-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 8,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "案件发生于2024年，时效远超窗口，仅作警示背景"
+        },
+        {
+          "candidate_key": "us-student-wrong-door-shot",
+          "story_identity": "pennsylvania-student-wrong-door-police-shooting",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T09:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 7,
+            "evidence": 7
+          },
+          "drop_reason": "美国地方治安个案，属常规外国地方新闻"
+        },
+        {
+          "candidate_key": "elevator-aircon-chair-block",
+          "story_identity": "anhui-resident-blocks-elevator-door-for-aircon",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "小区琐事个案，无普遍服务信息"
+        },
+        {
+          "candidate_key": "stone-skip-video-global-views",
+          "story_identity": "stone-skipping-video-120m-overseas-views",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T11:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 41,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 6,
+            "evidence": 5
+          },
+          "drop_reason": "海外趣闻视频，相关性不足"
+        },
+        {
+          "candidate_key": "gold-jewelry-theft-search-history",
+          "story_identity": "shanghai-roommate-gold-theft-search-history-clue",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 12,
+            "everyday_relevance": 7,
+            "evidence": 5
+          },
+          "drop_reason": "个案盗窃报道，无普遍意义"
+        },
+        {
+          "candidate_key": "bike-theft-return-then-resteal",
+          "story_identity": "jinshan-woman-bike-theft-return-resteal-case",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 38,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 11,
+            "everyday_relevance": 7,
+            "evidence": 5
+          },
+          "drop_reason": "轻微治安个案"
+        },
+        {
+          "candidate_key": "boy-toothpick-car-scratch",
+          "story_identity": "boy-toothpick-car-scratch-parent-indifference",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 36,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 11,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "邻里琐事，公共性不足"
+        },
+        {
+          "candidate_key": "fuel-price-window-aug28-forecast",
+          "story_identity": "refined-oil-price-window-2026-08-28-forecast",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "目前仅为机构测算上调约360元/吨，发改委调价公告尚未发布，以官方公布为准"
+        },
+        {
+          "candidate_key": "zhongyuan-festival-folk-customs",
+          "story_identity": "zhongyuan-festival-customs-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "民俗内容以榜单与自媒体梳理为主，缺持牌媒体原创报道"
+        },
+        {
+          "candidate_key": "quadruplet-birth-father-reaction",
+          "story_identity": "woman-quadruplet-birth-husband-reaction-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "家庭趣闻，仅见热点聚合与视频传播，缺权威报道"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-28-jilong-mudslide-rescue-briefing",
+      "story_identity": "xizang-jilong-mudslide-rescue-briefing-2026-08-27",
+      "headline": "🏔️ 西藏吉隆泥石流救援指挥部通报灾情，多方力量驰援",
+      "summary": "8月27日上午，西藏日喀则市召开新闻发布会通报：26日10时30分许吉隆县发生泥石流灾害，截至27日8时已救出2人，3人遇难、558人失联（含外籍人员260人）。运-20搭载西部战区指导组紧急驰援，多方救援力量正全力搜救，水利部门提示相关堰塞湖存在溃泄风险。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 92,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 19,
+        "everyday_relevance": 22,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-27T10:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "灾害报道聚焦官方通报与救援进展，伤亡失联数字仅置于正文，表述克制。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/local/20260827/c80eca2cd35a443489c76d00193e11e3/c.html",
+          "title": "西藏吉隆泥石流灾害搜救出2人，遇难3人、失联558人",
+          "captured_at": "2026-08-28T06:10:00+08:00",
+          "note": "新华社8月27日电：日喀则市新闻发布会通报灾情与救援进展"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33955319",
+          "title": "西藏吉隆泥石流灾害成功搜救2人，已造成3人遇难558人失联",
+          "captured_at": "2026-08-28T06:11:00+08:00",
+          "note": "澎湃新闻转新华社客户端消息，并引央视新闻报道交叉佐证"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-28-typhoon-saudel-red-alert",
+      "story_identity": "typhoon-saudel-red-alert-landfall-forecast-2026-08-27",
+      "headline": "🌀 台风红色预警发布，“沙德尔”28日早晨至中午登陆浙闽沿海",
+      "summary": "中央气象台8月27日18时发布台风红色预警：今年第18号台风“沙德尔”27日中午再次加强为强台风级，预计28日早晨至中午在浙江温岭到福建霞浦一带沿海登陆（12至14级）。浙江已于27日20时将防台风应急响应提升至一级，27日至30日浙闽等地有强降雨，请注意防范。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 91,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 19,
+        "everyday_relevance": 23,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-27T18:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "台风防御服务信息，无伤亡渲染；路径强度以中央气象台滚动预报为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/27/ARTIWeMsgLmrd0zzGssGYAEu260827.shtml",
+          "title": "台风红色预警：“沙德尔”将于28日早晨至中午登陆",
+          "captured_at": "2026-08-28T06:12:00+08:00",
+          "note": "中央气象台27日18时发布台风红色预警，预计28日早晨至中午登陆浙闽沿海"
+        },
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "https://www.nmc.cn/publish/typhoon/warning_index.html",
+          "title": "台风预警",
+          "captured_at": "2026-08-28T06:13:00+08:00",
+          "note": "中央气象台台风预警页滚动更新“沙德尔”强度与登陆预报"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-28-seven-day-return-notice",
+      "story_identity": "cca-seven-day-no-reason-return-consumer-notice",
+      "headline": "🛍️ 中消协明确：“七天无理由退货”从收到商品之日起算",
+      "summary": "中国消费者协会8月27日发布消费提示：“七天无理由退货”自消费者收到商品之日起算；消费者个人原因退货仅适用网络等远程购物场景，商品拆封、商家称“超过七天”等理由不能一概拒退；因质量问题退货不区分线上线下，法定期限最低为收到商品之日起7日。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 24,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-27T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "消费维权服务信息，表述限于中消协公开提示与消法条文。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/27/ARTIv5qrcJqdsIDX5NeFZDPd260827.shtml",
+          "title": "“七天无理由”从哪天算起？拆封影响二次销售吗？中消协发布消费提示",
+          "captured_at": "2026-08-28T06:14:00+08:00",
+          "note": "央视网8月27日报道中消协消费提示要点"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.cn/2026-08-27/detail-iniptnux8977150.d.html",
+          "title": "“七天无理由”从哪天算起？拆封影响二次销售吗？中消协提示",
+          "captured_at": "2026-08-28T06:15:00+08:00",
+          "note": "新浪财经27日同步报道，交叉佐证提示发布时间与内容"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-28-zhao-xintong-world-no1",
+      "story_identity": "zhao-xintong-wuhan-open-semifinal-world-no1-2026-08-27",
+      "headline": "🎱 赵心童晋级武汉公开赛四强，登顶斯诺克世界第一",
+      "summary": "8月27日晚，2026斯诺克武汉公开赛1/4决赛，赵心童打出两杆破百（106、113）和一杆50+，以5比1战胜罗伯逊晋级四强。凭借本场胜利，赵心童锁定世界第一排名，成为继丁俊晖之后第二位登顶世界第一的中国选手，也是斯诺克历史上第13位世界第一。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 83,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-27T21:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果报道，无争议；occurred_at取27日晚比赛结束时段。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "人民日报客户端",
+          "url": "https://www.peopleapp.com/column/30053031935-500007671067",
+          "title": "赵心童闯入斯诺克武汉公开赛四强，将登顶世界第一",
+          "captured_at": "2026-08-28T06:16:00+08:00",
+          "note": "人民日报客户端27日报道：赵心童5比1胜罗伯逊晋级四强并登顶世界第一"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "川观新闻",
+          "url": "https://cbgc.scol.com.cn/news/7894945",
+          "title": "中国斯诺克选手赵心童即时排名升至世界第一",
+          "captured_at": "2026-08-28T06:17:00+08:00",
+          "note": "川观新闻报道：赵心童成为丁俊晖之后第二位世界第一的中国选手"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-28-lianyuan-mine-rescue-complete",
+      "story_identity": "hunan-lianyuan-yangmeishan-mine-accident-rescue-complete",
+      "headline": "⛑️ 湖南涟源煤矿事故搜救结束，6名责任人被采取刑事强制措施",
+      "summary": "湖南省涟源市“8·14”事故救援指挥部8月27日通报：截至27日17时，杨梅山煤矿瓦斯突出事故7名失联人员遗体均已找到，1名伤者恢复良好，现场搜救结束。公安机关已对煤矿实际控制人、安全生产负责人等6名责任人采取刑事强制措施，善后处置与原因调查正在推进。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-27T17:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "事故通报报道，遇难人数仅置于正文，聚焦善后与追责进展，表述克制。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/local/20260827/3f66ac8e84be4ffbb1d3bbceb730c08a/c.html",
+          "title": "湖南涟源杨梅山煤矿事故搜救结束 7人遇难",
+          "captured_at": "2026-08-28T06:18:00+08:00",
+          "note": "新华社长沙8月27日电：截至27日17时搜救结束，7名失联人员遗体均已找到"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "经济观察网",
+          "url": "http://www.eeo.com.cn/2026/0827/1013510.shtml",
+          "title": "湖南涟源杨梅山煤矿事故搜救结束 6名责任人被采取刑事强制措施",
+          "captured_at": "2026-08-28T06:19:00+08:00",
+          "note": "经济观察网据央视新闻客户端消息报道，交叉佐证责任人处置进展"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-28-golden-eagle-postponed",
+      "story_identity": "golden-eagle-awards-postponed-2026-08-27",
+      "headline": "📺 第33届金鹰奖颁奖活动延期，原定8月28日至30日举行",
+      "summary": "中国金鹰电视艺术节组委会8月27日晚发布公告：经研究决定，原定8月28日至30日举办的第33届中国电视金鹰奖颁奖活动暨第16届中国金鹰电视艺术节延期举行，具体时间另行通知。公告表示“人民至上、生命至上”，文艺工作者永远和人民同呼吸、共命运。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-27T19:55:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "文化活动调整公告，限于组委会公开发布内容，不猜测延期原因。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "界面新闻",
+          "url": "https://www.jiemian.com/article/15010487.html",
+          "title": "第33届中国电视金鹰奖颁奖活动延期举行",
+          "captured_at": "2026-08-28T06:20:00+08:00",
+          "note": "界面新闻报道组委会8月27日宣布金鹰奖颁奖活动延期"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/politics/2026_08_27_828922.shtml",
+          "title": "金鹰奖宣布延期：人民至上、生命至上",
+          "captured_at": "2026-08-28T06:21:00+08:00",
+          "note": "观察者网刊发组委会公告全文，交叉佐证"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
