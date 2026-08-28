@@ -1,0 +1,971 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-29",
+  "generated_at": "2026-08-29T06:23:21+08:00",
+  "published_at": "2026-08-29T06:23:21+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 39,
+    "published": 8,
+    "dropped_safety": {
+      "politics": 2,
+      "geopolitics": 1,
+      "controversy": 2,
+      "celebrity_dispute": 2,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 22,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 31,
+      "official_sources": 1,
+      "state_media_sources": 4,
+      "major_media_sources": 11,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 8,
+        "relaxed_48h": 10,
+        "relaxed_72h": 12
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 39,
+          "cumulative_unique_candidates": 39,
+          "source_scope": [
+            "百度热搜公开榜单",
+            "新华社央视网央广网等央媒",
+            "国家卫健委国家消防救援局等官方机构发布",
+            "澎湃新闻新京报财新中国新闻网等持牌媒体",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-29-housing-sales-reform-package",
+          "story_identity": "housing-sales-system-and-mortgage-reform-package-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-08-29-housing-sales-reform-package",
+          "score": 95,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 25,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-29-jilong-rescue-core-area",
+          "story_identity": "xizang-jilong-mudslide-rescue-core-area-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-29-jilong-rescue-core-area",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-29-birth-population-2025-bulletin",
+          "story_identity": "nhc-2025-health-statistics-bulletin-births-792m",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-08-29-birth-population-2025-bulletin",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-29-typhoon-saudel-dual-landfall",
+          "story_identity": "typhoon-saudel-yuhuan-wenzhou-landfalls-weakening-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-29-typhoon-saudel-dual-landfall",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-29-neijiang-longchang-earthquake",
+          "story_identity": "sichuan-neijiang-longchang-m5-1-earthquake-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T13:13:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-29-neijiang-longchang-earthquake",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-29-zheng-qinwen-us-open-main-draw",
+          "story_identity": "zheng-qinwen-us-open-qualifying-final-round-main-draw-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T23:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-29-zheng-qinwen-us-open-main-draw",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-29-golden-deer-awards-announced",
+          "story_identity": "changchun-film-festival-golden-deer-awards-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-29-golden-deer-awards-announced",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-29-li-weikang-obit",
+          "story_identity": "peking-opera-artist-li-weikang-obit-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-29-li-weikang-obit",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "linhai-primary-parent-info-notice",
+          "story_identity": "linhai-primary-school-parent-education-info-notice-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "教育局通报与致歉发布于27日，时效层未入strict_24h遴选层"
+        },
+        {
+          "candidate_key": "zhao-xintong-wuhan-final-berth",
+          "story_identity": "zhao-xintong-wuhan-open-semifinal-win-final-berth-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与昨日赵心童登顶世界第一条目为同一赛事链，半决赛晋级增量有限，决赛29日才举行"
+        },
+        {
+          "candidate_key": "china-women-volleyball-qf-win",
+          "story_identity": "china-women-volleyball-asian-championship-quarterfinal-vietnam-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "女排亚锦赛赛果近日已连续入选，阶段性晋级增量有限，日常相关性不足15分"
+        },
+        {
+          "candidate_key": "egg-price-decade-high",
+          "story_identity": "china-egg-wholesale-price-decade-high-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 15,
+            "everyday_relevance": 20,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "价格趋势报道基于8月25日批发价数据，非单日新事件，未入strict_24h遴选层"
+        },
+        {
+          "candidate_key": "banglang-typhoon-generated",
+          "story_identity": "typhoon-banglang-23rd-named-storm-formed-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "第23号台风班朗在远洋生成，路径向东北远离，近期对我国无影响"
+        },
+        {
+          "candidate_key": "norway-king-harald-v-death",
+          "story_identity": "norway-king-harald-v-death-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T13:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 8
+          },
+          "drop_reason": "外国元首讣闻，与国内读者日常生活关联有限，未达国际条目相关性门槛"
+        },
+        {
+          "candidate_key": "south-korea-births-record",
+          "story_identity": "south-korea-h1-2026-births-seven-year-high",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T09:00:00+08:00",
+          "scope": "international",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 11,
+            "evidence": 9
+          },
+          "drop_reason": "韩国人口数据发布，属常规海外新闻，对中国读者直接关联弱"
+        },
+        {
+          "candidate_key": "hainan-missing-grad-student",
+          "story_identity": "hainan-university-missing-graduate-student-confirmed-dead",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "个人悲剧个案，涉及逝者隐私从严处理，无公共服务增量"
+        },
+        {
+          "candidate_key": "qidong-shopkeeper-donates-120k",
+          "story_identity": "qidong-shopkeeper-elderly-help-case-donation-120k-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "帮扶老人被索赔事件后续捐赠，前期已报道，增量有限"
+        },
+        {
+          "candidate_key": "gaokao-592-vocational-choice",
+          "story_identity": "chengdu-student-592-chooses-railway-vocational-college-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 13,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "考生个人选择个案，报道表述为近日，披露时点模糊"
+        },
+        {
+          "candidate_key": "master-degree-retake-gaokao-30",
+          "story_identity": "30-year-old-double-985-master-retakes-gaokao-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "个人重新高考个案，无普遍教育政策信息"
+        },
+        {
+          "candidate_key": "supermarket-barefoot-rice",
+          "story_identity": "guangxi-yulin-supermarket-barefoot-bulk-rice-2026-08-26",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 13,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "网友爆料个案，截至撰稿未见监管部门权威处置通报"
+        },
+        {
+          "candidate_key": "flight-widebody-narrowbody-swap",
+          "story_identity": "passenger-widebody-a350-ticket-narrowbody-a321-swap-complaint",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "机型更换消费投诉个案，航司处理结果未见通报"
+        },
+        {
+          "candidate_key": "interview-tea-fee-1000-yuan",
+          "story_identity": "chongqing-job-candidate-receives-1000-yuan-tea-fee-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "职场温情个案，无普遍就业服务信息"
+        },
+        {
+          "candidate_key": "undergraduate-majors-catalog-38",
+          "story_identity": "moe-2026-undergraduate-catalog-38-new-majors",
+          "research_pass": 1,
+          "occurred_at": "2026-04-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 6,
+            "everyday_relevance": 21,
+            "evidence": 9
+          },
+          "drop_reason": "本科专业目录已于4月28日发布，开学季报道为回顾性内容，远超72小时时效窗"
+        },
+        {
+          "candidate_key": "qingtongxia-dam-discharge-rumor-debunk",
+          "story_identity": "qingtongxia-dam-discharge-video-rumor-debunked-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "地方水务部门辟谣，影响范围有限，无普遍服务信息"
+        },
+        {
+          "candidate_key": "hong-kong-living-will-rule",
+          "story_identity": "hong-kong-advance-medical-directive-rule-effective-2026-07",
+          "research_pass": 1,
+          "occurred_at": "2026-07-01T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 8,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "drop_reason": "香港预立医疗指示规定7月已生效，近期报道为解读性内容，超出时效窗"
+        },
+        {
+          "candidate_key": "dongda-freshman-11-years-photo",
+          "story_identity": "xiamen-student-11-year-old-photo-dongda-enrollment-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T08:30:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "新生报到温情个案，无公共信息增量"
+        },
+        {
+          "candidate_key": "xizang-border-pass-suspension",
+          "story_identity": "nia-suspends-electronic-border-pass-to-xigaze-2026-08-27",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "吉隆灾害关联的边境通行证管制措施，受众面窄，且发布于27日"
+        },
+        {
+          "candidate_key": "changchun-subway-line7-opened",
+          "story_identity": "changchun-rail-transit-line-7-phase1-initial-operation-2026-08-26",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T08:08:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 13,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "drop_reason": "地方轨道交通开通消息，时效近72小时窗口边缘，影响面限于长春本地"
+        },
+        {
+          "candidate_key": "konka-voluntary-delisting",
+          "story_identity": "konka-group-plans-voluntary-delisting-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 9,
+            "evidence": 6
+          },
+          "drop_reason": "企业资本市场运作事项，与日常生活相关性低"
+        },
+        {
+          "candidate_key": "xiangpiaopiao-vice-chair",
+          "story_identity": "xiangpiaopiao-jiang-xiaoying-elected-vice-chair-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 14,
+            "everyday_relevance": 9,
+            "evidence": 6
+          },
+          "drop_reason": "企业人事变动，日常相关性低"
+        },
+        {
+          "candidate_key": "ai-actress-cosmo-cover",
+          "story_identity": "ai-actress-fang-taozi-cosmo-cover-2026-08-27",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见时尚杂志封面预告与聚合传播，缺持牌媒体原创报道支撑"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-29-housing-sales-reform-package",
+      "story_identity": "housing-sales-system-and-mortgage-reform-package-2026-08-28",
+      "headline": "🏠 三部门发文推行商品住房现房销售，个人住房贷款期限最长40年",
+      "summary": "8月28日，住房城乡建设部、自然资源部、金融监管总局联合印发《关于完善商品住房销售制度的通知》：新出让土地项目优先现房销售，预售须单体建筑主体结构封顶，购房款全部纳入监管账户。央行与金融监管总局同日明确个人住房贷款期限最长不超过40年，月房贷支出与收入比控制在50%以下。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 95,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 25,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-28T15:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "住房销售与信贷制度调整，直接关乎购房人权益，表述限于公开发布内容。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/rdjj/house/jdt/20260828/t20260828_527796561.shtml",
+          "title": "住建部等三部门联合印发《关于完善商品住房销售制度的通知》",
+          "captured_at": "2026-08-29T06:09:00+08:00",
+          "note": "央广网8月28日报道：三部门联合印发通知，部署推行商品住房现房销售"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://www.caixin.com/2026-08-28/102479488.html",
+          "title": "三部门提高商品住房预售门槛 新出让土地优先现房销售",
+          "captured_at": "2026-08-29T06:10:00+08:00",
+          "note": "财新网8月28日报道预售门槛与现房销售安排，另有同日央行信贷意见报道佐证"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-29-jilong-rescue-core-area",
+      "story_identity": "xizang-jilong-mudslide-rescue-core-area-2026-08-28",
+      "headline": "🏔️ 吉隆泥石流救援：中国救援队抵达口岸核心区，堰塞湖转入自然过流",
+      "summary": "西藏吉隆“8·26”泥石流救援28日持续推进：截至当日15时灾害已致5人遇难、558人失联；17时中国救援队前突小组抵达受灾核心位置展开排查搜救，消防救援队伍共681人、113车到场，“水陆空”并进作业。上游堰塞湖出现溢流后转入自然过流，水位有所下降，专家正对堰塞体持续监测研判。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-28T17:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "灾害救援进展报道，伤亡失联数字仅置于正文，聚焦救援与排险，表述克制。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260829/a0f794d9f15044da80c39a135450ff7c/c.html",
+          "title": "西藏吉隆泥石流灾害救援进行时",
+          "captured_at": "2026-08-29T06:11:00+08:00",
+          "note": "新华社记者28日随队报道：17时前突小组抵达核心区，堰塞湖自然过流、水位下降"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国科技网",
+          "url": "https://www.stdaily.com/web/gdxw/2026-08/28/content_571437.html",
+          "title": "“水陆空”并进持续开展西藏吉隆泥石流抢险搜救工作",
+          "captured_at": "2026-08-29T06:12:00+08:00",
+          "note": "科技日报网站转新华社8月28日电：截至28日10时共调派681人、113车到场救援"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-29-birth-population-2025-bulletin",
+      "story_identity": "nhc-2025-health-statistics-bulletin-births-792m",
+      "headline": "👶 国家卫健委公报：2025年全国出生人口792万，出生率5.63‰",
+      "summary": "国家卫健委8月28日发布《2025年我国卫生健康事业发展统计公报》：2025年末全国人口140489万人，全年出生人口792万人，出生率5.63‰；死亡人口1131万人，自然增长率-2.41‰。公报同时显示人均预期寿命、孕产妇死亡率等健康指标持续改善，“一老一小”健康服务供给继续加大。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 19,
+        "everyday_relevance": 22,
+        "evidence": 14
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-28T11:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "官方统计公报数据发布，表述限于公报原文与持牌媒体报道。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家卫健委",
+          "url": "https://www.nhc.gov.cn/guihuaxxs/c100133/202608/1b45959033524f48867d90e822be5394/files/2025%E5%B9%B4%E6%88%91%E5%9B%BD%E5%8D%AB%E7%94%9F%E5%81%A5%E5%BA%B7%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5-20260828105402342.pdf?browser=yes",
+          "title": "2025年我国卫生健康事业发展统计公报",
+          "captured_at": "2026-08-29T06:13:00+08:00",
+          "note": "国家卫健委官网8月28日发布公报全文：出生人口792万、出生率5.63‰"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/wm/2026-08-28/doc-inipwhrt5778060.shtml",
+          "title": "国家卫健委：2025年中国新生儿792万",
+          "captured_at": "2026-08-29T06:14:00+08:00",
+          "note": "新浪财经28日报道公报要点，交叉佐证发布时间与数据"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-29-typhoon-saudel-dual-landfall",
+      "story_identity": "typhoon-saudel-yuhuan-wenzhou-landfalls-weakening-2026-08-28",
+      "headline": "🌀 台风“沙德尔”两度登陆浙江后减弱，强降雨将波及9省区",
+      "summary": "今年第18号台风“沙德尔”28日8时05分在浙江玉环坎门街道沿海登陆，9时10分在温州龙湾区再次登陆，10时减弱为强热带风暴级。中央气象台28日10时发布台风黄色预警和暴雨黄色预警：浙闽局地有特大暴雨，后期“沙德尔”深入内陆，强降雨或波及江西、湖南、湖北、广东、广西、贵州、云南等9省区。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 19,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-28T10:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "台风登陆实况与防御服务信息，无伤亡渲染；后续路径以中央气象台滚动预报为准。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/28/ARTIYSKpzJt4eCGExJ0P0VhK260828.shtml",
+          "title": "台风黄色预警！“沙德尔”将致浙江福建江西局地特大暴雨",
+          "captured_at": "2026-08-29T06:15:00+08:00",
+          "note": "中央气象台28日10时发布台风黄色预警与暴雨黄色预警，两次登陆后减弱"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_33964911",
+          "title": "台风“沙德尔”在浙江玉环登陆，强降雨时间长影响将波及9省区",
+          "captured_at": "2026-08-29T06:15:30+08:00",
+          "note": "澎湃新闻28日报道登陆详情与后续风雨影响范围"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-29-neijiang-longchang-earthquake",
+      "story_identity": "sichuan-neijiang-longchang-m5-1-earthquake-2026-08-28",
+      "headline": "🌋 四川内江隆昌发生5.1级地震，应急响应启动，暂无伤亡报告",
+      "summary": "中国地震台网正式测定：8月28日13时13分，四川内江市隆昌市发生5.1级地震，震源深度13公里。中国地震局迅速启动三级应急响应，四川省地震局派出现场工作队赶赴震区；消防救援力量前突排查，震中及周边乡镇电力、通信、交通正常。截至28日晚，暂未接到人员伤亡和房屋倒塌报告。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-28T13:13:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "地震速报与应急处置报道，标题不含伤亡数字，聚焦响应与排查进展。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/scfw/scpd/jdt/20260828/t20260828_527796208.shtml",
+          "title": "四川省地震局启动四川隆昌5.1级地震三级应急响应",
+          "captured_at": "2026-08-29T06:16:00+08:00",
+          "note": "央广网28日报道：四川省地震局启动三级应急响应，先期工作组赶赴现场"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1787899670129584.html",
+          "title": "四川隆昌发生5.1级地震未接到人员伤亡报告",
+          "captured_at": "2026-08-29T06:16:30+08:00",
+          "note": "新京报据新华社成都8月28日电报道：暂未接到人员伤亡报告"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-29-zheng-qinwen-us-open-main-draw",
+      "story_identity": "zheng-qinwen-us-open-qualifying-final-round-main-draw-2026",
+      "headline": "🎾 郑钦文资格赛三连胜突围，晋级美网女单正赛",
+      "summary": "北京时间8月28日晚，2026年美国网球公开赛女单资格赛决胜轮补赛，中国选手郑钦文以2比1战胜普里丹金娜，决胜盘送出6比0，连赢三场锁定正赛门票。这场比赛原定27日进行，因降雨两度暂停后推迟至28日续赛。郑钦文由此重返大满贯正赛舞台。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-28T23:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果报道，无争议；occurred_at取北京时间28日晚补赛结束时段。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_33970181",
+          "title": "连赢三场成功突围，郑钦文进入美网正赛",
+          "captured_at": "2026-08-29T06:17:00+08:00",
+          "note": "澎湃新闻报道：北京时间28日晚决胜轮2比1获胜，锁定正赛门票"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6a91b544e4b0e45f3fd6a326.html",
+          "title": "6比0拿下决胜盘，郑钦文晋级美网女单正赛",
+          "captured_at": "2026-08-29T06:17:30+08:00",
+          "note": "北京日报客户端28日晚报道决胜轮补赛结果，新华社纽约28日电交叉佐证"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-29-golden-deer-awards-announced",
+      "story_identity": "changchun-film-festival-golden-deer-awards-2026-08-28",
+      "headline": "🏆 长春电影节金鹿奖揭晓：《得闲谨制》获最佳影片，最佳男演员开出“双黄蛋”",
+      "summary": "8月28日晚，第二十一届中国长春电影节闭幕，金鹿奖十大奖项揭晓：《得闲谨制》获最佳影片奖，《给阿嬷的情书》获评委会大奖；袁和平凭《镖人：风起大漠》获最佳导演奖；蒋奇明、檀健次分别凭《飞行家》《震耳欲聋》同获最佳男演员奖，李思潼凭《给阿嬷的情书》获最佳女演员奖。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-08-28T21:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "电影节奖项结果报道，聚焦作品与奖项归属，不涉及艺人私生活话题。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/cul/2026/08-28/10686239.shtml",
+          "title": "第二十一届中国长春电影节闭幕《给阿嬷的情书》获评委会大奖",
+          "captured_at": "2026-08-29T06:18:00+08:00",
+          "note": "中新社28日报道：金鹿奖揭晓，最佳影片、导演、男女演员奖项归属"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪娱乐",
+          "url": "https://ent.sina.cn/2026-08-28/detail-inipwtfp5779632.d.html",
+          "title": "第21届长春电影节金鹿奖揭晓，蒋奇明檀健次同获最佳男演员",
+          "captured_at": "2026-08-29T06:18:30+08:00",
+          "note": "新浪娱乐28日发布完整获奖名单，交叉佐证奖项归属"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-29-li-weikang-obit",
+      "story_identity": "peking-opera-artist-li-weikang-obit-2026-08-28",
+      "headline": "🎭 著名京剧表演艺术家李维康逝世，享年79岁",
+      "summary": "记者28日从国家京剧院获悉：著名京剧表演艺术家、国家级非物质文化遗产项目京剧代表性传承人李维康，8月28日因病在北京去世，享年79岁。她12岁登台，融梅、程、张等流派声腔于一炉，有“金嗓”之誉，曾获首届中国戏剧梅花奖，代表剧目有《蝶恋花》《秦香莲》《霸王别姬》等。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 8,
+      "occurred_at": "2026-08-28T14:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "讣闻报道，信息以国家京剧院确认与权威媒体报道为准，表述克制；occurred_at取28日媒体披露时段。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1787910243129840.html",
+          "title": "著名京剧表演艺术家李维康逝世 享年79岁",
+          "captured_at": "2026-08-29T06:19:00+08:00",
+          "note": "新京报据央视新闻消息报道：国家京剧院证实李维康28日在京病逝"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "极目新闻",
+          "url": "https://www.ctdsb.net/c1716_202608/2843075.html",
+          "title": "“青衣名家”李维康去世，享年79岁，她11岁从艺，多次登上央视春晚",
+          "captured_at": "2026-08-29T06:19:30+08:00",
+          "note": "极目新闻记者28日从国家京剧院获悉李维康去世，院方将发布讣告"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
