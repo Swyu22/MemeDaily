@@ -1,0 +1,912 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-30",
+  "generated_at": "2026-08-30T07:29:26+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 39,
+    "published": 7,
+    "dropped_safety": {
+      "politics": 3,
+      "geopolitics": 1,
+      "minors": 1,
+      "privacy": 1,
+      "celebrity_dispute": 2,
+      "controversy": 2
+    },
+    "dropped_low_confidence": 22,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 19,
+      "official_sources": 0,
+      "state_media_sources": 4,
+      "major_media_sources": 10,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 8,
+        "relaxed_72h": 10
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 39,
+          "cumulative_unique_candidates": 39,
+          "source_scope": [
+            "百度热搜公开榜单",
+            "新华社央视网央广网等央媒",
+            "政府机构与部门官方发布",
+            "澎湃新闻新京报中国新闻网等持牌媒体",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-30-yunnan-mohan-reservoir-overtop",
+          "story_identity": "yunnan-mohan-yantang-reservoir-overtop-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T20:10:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-30-yunnan-mohan-reservoir-overtop",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 24,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-30-gyirong-g216-rescue-progress",
+          "story_identity": "gyirong-mudslide-g216-rescue-progress-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-30-gyirong-g216-rescue-progress",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 19,
+            "everyday_relevance": 23,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-30-lijiang-tour-guide-penalty",
+          "story_identity": "lijiang-guide-coercion-license-revoked-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T21:57:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-30-lijiang-tour-guide-penalty",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-30-song-yadong-ufc-shanghai-ko",
+          "story_identity": "song-yadong-ko-umar-ufc-shanghai-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T22:10:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-30-song-yadong-ufc-shanghai-ko",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-30-china-women-volleyball-final-berth",
+          "story_identity": "china-women-volleyball-asian-semifinal-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-30-china-women-volleyball-final-berth",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-30-g116-seat-swap-12306-response",
+          "story_identity": "g116-train-swap-no-seat-12306-response-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T16:47:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-30-g116-seat-swap-12306-response",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 22,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-30-tianjin-cruise-sea-tour-debut",
+          "story_identity": "tianjin-cruise-no-destination-first-sailing-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T16:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-30-tianjin-cruise-sea-tour-debut",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "typhoon-saldear-inland-rain",
+          "story_identity": "typhoon-saldear-remnant-inland-rain-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T13:32:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 20,
+            "evidence": 10
+          },
+          "drop_reason": "台风残余环流深入内陆降雨提示，与昨日“强降雨波及9省区”条目题材重复",
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "fan-zhendong-german-cup-loss",
+          "story_identity": "fan-zhendong-german-cup-round16-loss-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T23:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "drop_reason": "海外俱乐部赛事单场失利，分数未达strict_24h遴选线",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "student-phone-campus-legislation",
+          "story_identity": "multi-region-school-phone-legislation-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 20,
+            "evidence": 8
+          },
+          "drop_reason": "人民日报报道多地既有立法、重庆条例9月1日施行，当日增量与时效有限",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "neijiang-longchang-quake-followup",
+          "story_identity": "neijiang-longchang-m51-earthquake-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T13:13:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 12,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "drop_reason": "昨日已刊发地震主消息，29日排查无实质新进展"
+        },
+        {
+          "candidate_key": "summer-boxoffice-122-billion",
+          "story_identity": "summer-2026-boxoffice-milestone-122b-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "与26日“暑期档破117亿”题材重复，122亿里程碑增量有限"
+        },
+        {
+          "candidate_key": "private-education-reshuffle",
+          "story_identity": "private-school-count-decline-feature-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 12,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "drop_reason": "基于7月教育事业统计公报的盘点稿，缺乏当日新进展"
+        },
+        {
+          "candidate_key": "china-life-interim-results",
+          "story_identity": "china-life-2026-interim-results-profit-surge",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 13,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "险企中报业绩披露，与普通读者日常生活关联较弱"
+        },
+        {
+          "candidate_key": "longterm-care-insurance-guideline",
+          "story_identity": "longterm-care-insurance-payment-guideline-2026-08-26",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 9,
+            "everyday_relevance": 21,
+            "evidence": 9
+          },
+          "drop_reason": "长护险支付管理指导意见发布于26日，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "ic-export-surge",
+          "story_identity": "china-ic-exports-first-seven-months-surge-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 12,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "行业出口数据解读，日常相关性不足15分下限"
+        },
+        {
+          "candidate_key": "bride-price-governance",
+          "story_identity": "rural-high-bride-price-governance-ruichang-2026-08-26",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 8,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "drop_reason": "经验交流会召开于26日，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "gas-turbine-export-kazakhstan",
+          "story_identity": "domestic-f-class-gas-turbine-export-kazakhstan-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T21:36:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "重型燃机整机出口快讯，民生相关性有限"
+        },
+        {
+          "candidate_key": "tricycle-lhasa-vendor",
+          "story_identity": "hunan-man-tricycle-stall-roadtrip-lhasa-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "个体旅行摆摊人物稿，公共信息增量低"
+        },
+        {
+          "candidate_key": "home-robots-timeline",
+          "story_identity": "household-robot-adoption-timeline-debate-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 11,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "行业时间表分歧综述，非当日事件"
+        },
+        {
+          "candidate_key": "shaoxing-gourd-grandpa",
+          "story_identity": "shaoxing-gourd-vine-grandpa-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "地方生活趣闻，相关性不足"
+        },
+        {
+          "candidate_key": "school-opening-preparation",
+          "story_identity": "schools-prepare-new-semester-photo-feature-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "迎开学图片报道，信息量有限"
+        },
+        {
+          "candidate_key": "benz-moldy-garage",
+          "story_identity": "benz-parked-two-years-moldy-interior-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 15,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "个例车辆受潮趣闻，无普遍消费提示价值"
+        },
+        {
+          "candidate_key": "copper-foil-demand",
+          "story_identity": "ai-server-copper-foil-demand-surge-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 13,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "产业链上游需求测算，与读者日常生活距离远"
+        },
+        {
+          "candidate_key": "pangdonglai-scenic-free-tickets",
+          "story_identity": "xixia-dinosaur-park-xuchang-free-entry-2026-08-23",
+          "research_pass": 1,
+          "occurred_at": "2026-08-23T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 6,
+            "everyday_relevance": 16,
+            "evidence": 7
+          },
+          "drop_reason": "景区免票回馈发生于23日，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "hardtech-malls",
+          "story_identity": "hardtech-stores-enter-shopping-malls-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-21T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 4,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "硬科技进商场观察稿，事件发生于21日，超出时效窗"
+        },
+        {
+          "candidate_key": "us-navy-sailor-discipline",
+          "story_identity": "us-navy-lincoln-sailor-discipline-report-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T09:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 8,
+            "everyday_relevance": 8,
+            "evidence": 9
+          },
+          "drop_reason": "外军内部处分消息，属常规外国新闻，无中国读者直接影响"
+        },
+        {
+          "candidate_key": "cfa-antonio-renewal-denial",
+          "story_identity": "cfa-denies-antonio-contract-rumor-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "足协辟谣网传不续约消息，属传闻澄清，日常相关性不足15分"
+        },
+        {
+          "candidate_key": "japan-volleyball-semifinal-upset",
+          "story_identity": "japan-women-volleyball-semifinal-loss-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T21:30:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "同赛事中国视角已入选，日本队出局不单列"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-30-yunnan-mohan-reservoir-overtop",
+      "story_identity": "yunnan-mohan-yantang-reservoir-overtop-2026-08-29",
+      "headline": "🌊 云南磨憨强降雨引发洪涝，盐塘水库漫坝昆明启动重大级响应",
+      "summary": "8月28日下午至29日上午，西双版纳勐腊县磨憨镇24小时最大降雨量187.5毫米引发洪涝，磨龙村盐塘水库出现漫坝险情。昆明市启动防汛重大级（Ⅱ级）应急响应，截至29日16时已转移6个村（社区）2200余人，三部门调拨1万件中央救灾物资支持安置。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 91,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 24,
+        "evidence": 11
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-29T20:10:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "灾害险情报道，限于官方通报事实，转移人数只放摘要，聚焦响应与安置。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260829/380aeb37b8924ca6845274ecbfe120d4/c.html",
+          "title": "云南磨憨强降雨引发洪涝灾害 盐塘水库存在溃坝风险",
+          "captured_at": "2026-08-30T07:17:00+08:00",
+          "note": "新华社昆明8月29日电：磨憨镇24小时最大降雨量187.5毫米，盐塘水库漫坝，昆明启动防汛重大级（Ⅱ级）应急响应"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/08-29/10686561.shtml",
+          "title": "云南磨憨强降雨致水库漫坝 超2200人紧急转移",
+          "captured_at": "2026-08-30T07:17:30+08:00",
+          "note": "中新网8月29日报道：截至29日16时磨龙等6个村（社区）转移2200余人"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-30-gyirong-g216-rescue-progress",
+      "story_identity": "gyirong-mudslide-g216-rescue-progress-2026-08-29",
+      "headline": "🏔️ 吉隆泥石流救援持续：G216国道已抢通2.5公里",
+      "summary": "吉隆口岸泥石流抢险进入第四天：29日中国安能投入60名技术骨干、28台套装备全力抢通G216国道损毁路段，已抢通2.5公里；消防救援等力量挺进口岸核心区拉网式搜救，上游堰塞湖风险可控，边坡雷达与无人机24小时不间断监测排险。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 19,
+        "everyday_relevance": 23,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-29T15:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "重大灾害救援进展，标题不含伤亡失联数字，聚焦抢通与搜救行动。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/29/ARTIRTIkLEPM8GTRRLe2ud96260829.shtml",
+          "title": "多方合力，全力救援！直击西藏日喀则市吉隆县泥石流灾害抢险救援一线",
+          "captured_at": "2026-08-30T07:19:00+08:00",
+          "note": "央视网8月29日报道：多方工程救援力量已抢通道路2.5公里，中国安能28台套装备抢通G216"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中工网",
+          "url": "http://www.workercn.cn/c/2026-08-29/8881086.shtml",
+          "title": "西藏吉隆灾后72小时抢险救援现场直击",
+          "captured_at": "2026-08-30T07:19:30+08:00",
+          "note": "中工网8月29日报道：灾后72小时，中国安能投入60名骨干持续开展道路抢通作业"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-30-lijiang-tour-guide-penalty",
+      "story_identity": "lijiang-guide-coercion-license-revoked-2026-08-29",
+      "headline": "⚖️ 丽江通报“导游威胁游客”：吊销旅行社许可证和导游证",
+      "summary": "丽江市文旅局8月29日通报：经查两起“不参加指定付费项目被导游威胁”报道系同一旅行团、同一行程，万山旅行社导游王某东存在欺骗、胁迫游客消费的违法行为。涉事旅行社业务经营许可证与导游证被依法吊销，玉龙县公安局对王某东作出行政拘留处罚。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 10
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-29T21:57:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "文旅部门正式通报的消费维权处置结果，涉事人使用通报中的姓氏代称。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/29/ARTIRF43SGfPDcW0XPWPh2hF260829.shtml",
+          "title": "丽江文旅局通报“不参加指定付费项目被导游威胁”等相关问题",
+          "captured_at": "2026-08-30T07:23:00+08:00",
+          "note": "央视网8月29日报道丽江市文旅局通报全文"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33973790",
+          "title": "丽江通报“不参加付费项目被导游威胁”：吊销其导游证并拘留",
+          "captured_at": "2026-08-30T07:23:30+08:00",
+          "note": "澎湃新闻8月29日报道：吊销旅行社业务经营许可证、吊销导游证，导游被行政拘留"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-30-song-yadong-ufc-shanghai-ko",
+      "story_identity": "song-yadong-ko-umar-ufc-shanghai-2026-08-29",
+      "headline": "🥊 UFC上海站：宋亚东第二回合KO乌马尔，冠军挑战权在望",
+      "summary": "8月29日晚，UFC格斗之夜上海站在东方体育中心举行，中国选手宋亚东在头条主赛第二回合KO雏量级排名第三的乌马尔，有望锁定冠军挑战权。本场入场16188人，创UFC在亚洲举办格斗之夜的观众纪录。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-29T22:10:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "本土举行的国际体育赛事结果，事实性报道。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33973649",
+          "title": "宋亚东KO击败乌马尔！距离梦想中的冠军战又近一步",
+          "captured_at": "2026-08-30T07:26:00+08:00",
+          "note": "澎湃新闻8月29日报道：宋亚东第二回合KO雏量级排名第三的乌马尔"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "上观新闻",
+          "url": "https://www.shobserver.com/news/detail?id=1168250",
+          "title": "宋亚东、刘策均KO获胜，1.6万人观看格斗之夜上海站，创造UFC亚洲纪录",
+          "captured_at": "2026-08-30T07:26:30+08:00",
+          "note": "上观新闻报道：UFC官方确认入场16188人，创亚洲格斗之夜纪录"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-30-china-women-volleyball-final-berth",
+      "story_identity": "china-women-volleyball-asian-semifinal-2026-08-29",
+      "headline": "🏐 中国女排3比0完胜伊朗，一局未失晋级亚锦赛决赛",
+      "summary": "8月29日晚，2026年女排亚锦赛半决赛在天津进行，中国女排以25比22、25比12、25比19击败伊朗队，本届赛事一局未失晋级决赛。决赛将于30日18时45分对阵泰国队，本届冠军将直接获得2028年洛杉矶奥运会参赛资格。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 13
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-29T21:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国内举行的亚锦赛赛果与观赛信息，事实性报道。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/sports/20260829/fc19f87b38a6423d9c831c2f871e06a0/c.html",
+          "title": "中国女排再次完胜伊朗队晋级亚锦赛决赛",
+          "captured_at": "2026-08-30T07:25:00+08:00",
+          "note": "新华社天津8月29日电：中国女排25:22、25:12、25:19击败伊朗队晋级决赛"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "潮新闻",
+          "url": "https://tidenews.com.cn/news.html?id=3543998",
+          "title": "奥运门票触手可及了！女排亚锦赛，中国队3-0横扫伊朗队晋级决赛",
+          "captured_at": "2026-08-30T07:25:30+08:00",
+          "note": "潮新闻8月29日报道：东道主中国女排3比0完胜伊朗挺进决赛，冠军直通洛杉矶奥运"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-30-g116-seat-swap-12306-response",
+      "story_identity": "g116-train-swap-no-seat-12306-response-2026-08-29",
+      "headline": "🚄 列车临时换型致二等座变无座，12306回应可原价退票",
+      "summary": "8月28日G116次列车（长春西至沈阳北）由复兴号临时调整为和谐号，13号车厢座位排数减少，部分持二等座票乘客无座站立，有孕妇站立逾一小时；有乘客称发车后才收到退票提醒短信。12306回应称属临时调整、暂无赔偿政策，可办理原价退票。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 18,
+        "everyday_relevance": 22,
+        "evidence": 9
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-29T16:47:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "消费服务纠纷报道，乘客均为匿名化表述，聚焦铁路方回应与退改规则。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "极目新闻",
+          "url": "https://www.163.com/dy/article/L5GVJU76053469LG.html",
+          "title": "高铁列车复兴号调整为和谐号，部分乘客二等座变无座，12306：应为临时调整，无赔偿政策",
+          "captured_at": "2026-08-30T07:24:00+08:00",
+          "note": "极目新闻8月29日原创报道（官方网易号发布）：乘客反映G116换型致无座，12306回应可原价退票"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "黄河新闻网",
+          "url": "https://www.163.com/dy/article/L5H0177H05149E7M.html",
+          "title": "高铁列车复兴号调整为和谐号，部分乘客二等座变无座",
+          "captured_at": "2026-08-30T07:24:30+08:00",
+          "note": "黄河新闻网8月29日报道：G116次复兴号13车厢定员83名、16排座位，换型后部分乘客无座"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-30-tianjin-cruise-sea-tour-debut",
+      "story_identity": "tianjin-cruise-no-destination-first-sailing-2026-08-29",
+      "headline": "🚢 北方首条邮轮无目的地海上游航线在天津首航",
+      "summary": "8月29日，10.5万吨级邮轮“理想”号搭载2700余名游客从天津国际邮轮母港启航，开启3天2晚无目的地海上游，创该港今年单日旅客运载量新高。航线采用“天津始发、原港返航”模式，中途不靠泊任何港口，旅客无需办理出境签证，首批设8月29日、31日两个航次。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 19,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-08-29T16:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "文旅消费新供给首航报道，事实性表述。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/cj/2026/08-29/10686533.shtml",
+          "title": "中国北方首条邮轮无目的地海上游航线开通",
+          "captured_at": "2026-08-30T07:28:00+08:00",
+          "note": "中新社天津8月29日电：“理想”号搭载2700余名游客启航，系北方首个邮轮无目的地海上游试点航线"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北青网",
+          "url": "https://www.163.com/dy/article/L5H18CR00514R9KQ.html",
+          "title": "天津开启邮轮无目的地海上游",
+          "captured_at": "2026-08-30T07:28:30+08:00",
+          "note": "北青网8月29日报道（经网易转载，配新华社图片）：该航次创今年天津国际邮轮母港单日旅客运载量新高"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
