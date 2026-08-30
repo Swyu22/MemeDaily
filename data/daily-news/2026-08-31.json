@@ -1,0 +1,901 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-08-31",
+  "generated_at": "2026-08-31T06:16:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 40,
+    "published": 6,
+    "dropped_safety": {
+      "politics": 2,
+      "geopolitics": 1,
+      "controversy": 1,
+      "celebrity_dispute": 1,
+      "rumor": 1,
+      "minors": 1,
+      "privacy": 1
+    },
+    "dropped_low_confidence": 24,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 1,
+      "state_media_sources": 6,
+      "major_media_sources": 5,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 8,
+        "relaxed_72h": 13
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 40,
+          "cumulative_unique_candidates": 40,
+          "source_scope": [
+            "百度热搜与微博热搜公开榜单",
+            "新华社央视网央广网人民网等央媒",
+            "政府机构与部门官方发布",
+            "澎湃新闻北京日报南方网新华报业网等持牌媒体",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-08-31-gyirong-mudslide-cause-identified",
+          "story_identity": "gyirong-mudslide-cause-briefing-2026-08-30",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T11:30:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-31-gyirong-mudslide-cause-identified",
+          "score": 93,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 20,
+            "everyday_relevance": 24,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-31-china-women-volleyball-final-loss",
+          "story_identity": "china-women-volleyball-asian-final-thailand-2026-08-30",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-08-31-china-women-volleyball-final-loss",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-31-cctv-commemorative-coin-scam",
+          "story_identity": "cctv-exposes-commemorative-coin-scam-2026-08-30",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T20:27:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-08-31-cctv-commemorative-coin-scam",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-31-mohan-reservoir-risk-controlled",
+          "story_identity": "mohan-yantang-reservoir-risk-controlled-2026-08-30",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-08-31-mohan-reservoir-risk-controlled",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-31-new-textbooks-full-rollout",
+          "story_identity": "compulsory-education-new-textbooks-full-rollout-2026-fall",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-08-31-new-textbooks-full-rollout",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 22,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-08-31-summer-travel-season-wrapup",
+          "story_identity": "summer-travel-season-2026-wrapup-records",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T14:22:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-08-31-summer-travel-season-wrapup",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "medical-security-law-passed",
+          "story_identity": "medical-security-law-adopted-2026-08-28",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 13,
+            "everyday_relevance": 25,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "医疗保障法8月28日表决通过、2027年施行，事件年龄超24小时严格窗"
+        },
+        {
+          "candidate_key": "chang-bingyu-wuhan-open-title",
+          "story_identity": "chang-bingyu-beats-zhao-wuhan-open-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "武汉公开赛决赛29日晚收官，超24小时窗；当日体育焦点由女排决赛承担"
+        },
+        {
+          "candidate_key": "housing-existing-sales-followup",
+          "story_identity": "commercial-housing-existing-sales-policy-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 14,
+            "everyday_relevance": 22,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "现房销售政策昨日已入选，无实质新增量"
+        },
+        {
+          "candidate_key": "summer-boxoffice-final-123b",
+          "story_identity": "summer-2026-boxoffice-final-1234b-2026-08-30",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "与26日“暑期档破117亿”条目题材重复，收官数字增量有限"
+        },
+        {
+          "candidate_key": "cma-rainstorm-warning-31",
+          "story_identity": "cma-rainstorm-warning-jianghuai-jiangnan-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "常规暴雨预警提示，无重大新增灾情"
+        },
+        {
+          "candidate_key": "birth-population-followup",
+          "story_identity": "national-birth-population-2025-bulletin-followup",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 20,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "出生人口公报前日已入选，无新进展"
+        },
+        {
+          "candidate_key": "lijiang-guide-penalty-followup",
+          "story_identity": "lijiang-guide-coercion-license-revoked-followup-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T21:57:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 19,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "丽江导游处置通报昨日已入选，无新进展"
+        },
+        {
+          "candidate_key": "typhoon-saldear-remnant-rain",
+          "story_identity": "typhoon-saldear-remnant-rain-9-provinces-2026-08-29",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T13:32:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 19,
+            "evidence": 8
+          },
+          "drop_reason": "台风残余降雨影响与前两日条目题材重复"
+        },
+        {
+          "candidate_key": "changchun-film-festival-followup",
+          "story_identity": "changchun-film-festival-golden-deer-followup-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 15,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "drop_reason": "金鹿奖揭晓前日已入选，无新进展"
+        },
+        {
+          "candidate_key": "zheng-qinwen-usopen-round1-pending",
+          "story_identity": "zheng-qinwen-usopen-main-draw-round1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T23:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "美网正赛首轮尚未开打，结果未定"
+        },
+        {
+          "candidate_key": "usopen-chinese-players-day1",
+          "story_identity": "usopen-2026-main-draw-chinese-players-day1",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T23:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "美网首日中国选手赛果陆续进行中，尚不确定"
+        },
+        {
+          "candidate_key": "freshman-group-scam-warning",
+          "story_identity": "universities-warn-freshman-group-scams-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "drop_reason": "60余所高校新生群防骗提醒，属重复性季节性提示"
+        },
+        {
+          "candidate_key": "employment-stabilization-actions",
+          "story_identity": "job-stabilization-expansion-quality-action-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 18,
+            "evidence": 5
+          },
+          "drop_reason": "稳岗扩容提质行动综述稿，当日具体增量有限"
+        },
+        {
+          "candidate_key": "tianjin-cruise-second-sailing",
+          "story_identity": "tianjin-cruise-no-destination-second-sailing-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T16:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "邮轮第二航次31日才启航，当日仅首航报道延续"
+        },
+        {
+          "candidate_key": "robot-100m-record-886",
+          "story_identity": "humanoid-robot-100m-record-8-86s-2026-08-26",
+          "research_pass": 1,
+          "occurred_at": "2026-08-26T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 10,
+            "everyday_relevance": 13,
+            "evidence": 12
+          },
+          "drop_reason": "人形机器人百米纪录发生于26日，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "baiyun-airport-t3-first-summer",
+          "story_identity": "baiyun-airport-t3-first-summer-season-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "暑运收官稿组成部分，不单列"
+        },
+        {
+          "candidate_key": "xian-north-air-rail-intermodal",
+          "story_identity": "xian-north-station-air-rail-intermodal-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "暑运收官稿组成部分，不单列"
+        },
+        {
+          "candidate_key": "neighborhood-committee-feature",
+          "story_identity": "neighborhood-committee-power-list-feature-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-25T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 7,
+            "everyday_relevance": 20,
+            "evidence": 9
+          },
+          "drop_reason": "居委会组织法1月1日施行的盘点稿，非当日事件且超时效窗"
+        },
+        {
+          "candidate_key": "shenbai-hsr-first-summer",
+          "story_identity": "shenbai-hsr-first-summer-season-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "暑运收官稿组成部分，不单列"
+        },
+        {
+          "candidate_key": "japan-iran-volleyball-bronze",
+          "story_identity": "japan-iran-volleyball-bronze-match-2026-08-30",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T17:30:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "日本伊朗季军战为常规国际赛事，中国视角已由决赛条目覆盖"
+        },
+        {
+          "candidate_key": "anthropic-music-lawsuit",
+          "story_identity": "anthropic-music-publishers-copyright-lawsuit-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T09:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 13,
+            "everyday_relevance": 9,
+            "evidence": 6
+          },
+          "drop_reason": "海外版权诉讼，无中国读者直接影响"
+        },
+        {
+          "candidate_key": "zigong-sodium-battery-project",
+          "story_identity": "zigong-sodium-battery-project-landing-2026-08-30",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "地方产业项目落地，日常相关性不足"
+        },
+        {
+          "candidate_key": "nasdaq-etf-jiashi-suspension",
+          "story_identity": "nasdaq-etf-jiashi-intraday-suspension-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 16,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "单一基金溢价停牌提示，受众面窄"
+        },
+        {
+          "candidate_key": "musk-gas-turbine-blades",
+          "story_identity": "musk-self-developed-gas-turbine-blades-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T10:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 12,
+            "everyday_relevance": 7,
+            "evidence": 5
+          },
+          "drop_reason": "海外企业技术动向，属常规外国新闻"
+        },
+        {
+          "candidate_key": "consumer-subsidy-voucher-rumor",
+          "story_identity": "local-consumer-subsidy-voucher-rumor-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "网传地方消费补贴消息仅见聚合平台与自媒体，无权威来源证实"
+        },
+        {
+          "candidate_key": "celebrity-endorsement-rumor",
+          "story_identity": "celebrity-endorsement-livestream-rumor-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见自媒体转载，无持牌媒体或官方证实"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-08-31-gyirong-mudslide-cause-identified",
+      "story_identity": "gyirong-mudslide-cause-briefing-2026-08-30",
+      "headline": "🏔️ 西藏吉隆泥石流灾害原因查明：系尼泊尔冰川断裂冰岩崩",
+      "summary": "8月30日西藏自治区新闻发布会通报：吉隆“8·26”泥石流灾害原因查明，系尼泊尔境内蓝塘里壤峰北侧冰川断裂引发冰岩崩所致；截至29日18时灾害造成16人遇难、546人失联。当地公布两部24小时家属服务热线，堰塞体已溢流泄洪，整体溃决可能性较小。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 93,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 20,
+        "everyday_relevance": 24,
+        "evidence": 12
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-08-30T11:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "重大灾害权威通报，伤亡失联数字只放摘要，聚焦原因查明、家属热线与风险研判，措辞克制。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/newscenter/native/gd/20260830/t20260830_527798602.shtml",
+          "title": "西藏吉隆泥石流灾害已致16人遇难546人失联 灾害原因已查明",
+          "captured_at": "2026-08-31T06:08:00+08:00",
+          "note": "央广网8月30日报道发布会：截至29日18时16人遇难、546人失联，公布两部家属服务热线"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国日报网",
+          "url": "http://china.chinadaily.com.cn/a/202608/30/WS6a93c392e4b09a165c786ce4.html",
+          "title": "吉隆泥石流灾害原因查明",
+          "captured_at": "2026-08-31T06:08:30+08:00",
+          "note": "中国日报网转新华社8月30日稿：灾害系尼泊尔蓝塘里壤峰北侧冰川断裂发生冰岩崩所致"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-31-china-women-volleyball-final-loss",
+      "story_identity": "china-women-volleyball-asian-final-thailand-2026-08-30",
+      "headline": "🏐 中国女排2比3惜败泰国获亚锦赛亚军，无缘直通洛杉矶奥运会",
+      "summary": "8月30日晚，2026年女排亚锦赛决赛在天津进行，中国女排苦战五局2比3不敌泰国队，获得亚军，未能在第一时间锁定2028年洛杉矶奥运会入场券。泰国队卫冕夺冠并直通奥运；中、泰、日三队获得2027年女排世界杯参赛资格。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-08-30T21:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国内举行的亚锦赛决赛结果，事实性报道，不涉及对立。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/08/30/11939020.shtml",
+          "title": "2比3！中国女排亚锦赛决赛负泰国队，无缘直通洛杉矶奥运会",
+          "captured_at": "2026-08-31T06:09:00+08:00",
+          "note": "北京日报客户端8月30日21时报道决赛结果"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网",
+          "url": "https://news.ifeng.com/c/8w1Lpzn4ZAJ",
+          "title": "亚洲女排锦标赛：中国队获得亚军",
+          "captured_at": "2026-08-31T06:09:30+08:00",
+          "note": "凤凰网8月30日刊发新华社稿件：中国队2比3负泰国队获得亚军"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-31-cctv-commemorative-coin-scam",
+      "story_identity": "cctv-exposes-commemorative-coin-scam-2026-08-30",
+      "headline": "🪙 央视曝光纪念币收藏骗局：专坑老人，“含金”实为镀金",
+      "summary": "总台《财经调查》8月30日曝光“纪念币收藏骗局”：有商家打着“央行发行”“限量绝版”旗号向老年人高价兜售所谓纪念币，宣称“含金打造”实为镀金工艺，有直播间开播一小时成交400余套。报道提醒通过正规渠道购买，警惕高收益话术。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 10
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-30T20:27:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "央视调查性报道的消费防骗提示，未点名可识别个人，聚焦手法与提醒。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视财经",
+          "url": "https://3g.163.com/news/article/L5JUGJ8Q0519814N.html",
+          "title": "纪念币骗局触碰法律红线！专坑老人！总台《财经调查》曝光",
+          "captured_at": "2026-08-31T06:10:00+08:00",
+          "note": "央视财经官方网易号8月30日20时27分发布《财经调查》曝光报道"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "南方网",
+          "url": "https://news.southcn.com/node_08203b6b14/dce9e15877.shtml",
+          "title": "专坑老人！检测证书1元1张，央视曝光“纪念币收藏骗局”",
+          "captured_at": "2026-08-31T06:10:30+08:00",
+          "note": "南方网8月30日报道骗局灰色产业链细节"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-31-mohan-reservoir-risk-controlled",
+      "story_identity": "mohan-yantang-reservoir-risk-controlled-2026-08-30",
+      "headline": "🌊 云南磨憨盐塘水库漫坝险情基本得到控制",
+      "summary": "8月30日上午记者从磨憨—磨丁合作区获悉，盐塘水库漫坝险情已基本得到控制；磨憨镇已紧急组织转移8115人，集中安置点生活物资保障到位。云南省紧急下达1000万元省级救灾资金支持险情处置与救灾，勐腊县气象台30日7时11分继续发布暴雨红色预警，防汛救灾仍在持续。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 83,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 19,
+        "everyday_relevance": 22,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-08-30T09:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "灾害抢险进展报道，转移人数只放摘要，聚焦险情控制与救助保障。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/yn/gstjyn/20260830/t20260830_527798675.shtml",
+          "title": "云南磨憨强降雨引发洪涝 盐塘水库漫坝险情基本得到控制",
+          "captured_at": "2026-08-31T06:11:00+08:00",
+          "note": "央广网昆明8月30日消息：险情已基本控制，暴雨红色预警持续"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/local/20260830/ab9b3348849d41a6938a1a5ea515a538/c.html",
+          "title": "云南磨憨紧急组织转移8115人",
+          "captured_at": "2026-08-31T06:11:30+08:00",
+          "note": "新华社昆明8月30日电：磨憨镇已紧急组织转移8115人，物资保障到位"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-31-new-textbooks-full-rollout",
+      "story_identity": "compulsory-education-new-textbooks-full-rollout-2026-fall",
+      "headline": "📚 开学在即：义务教育新教材秋季学期全面完成替换",
+      "summary": "2026年秋季学期，全国义务教育阶段各年级全面启用依据2022年版课程标准修订的新教材，三年替换计划收官，九年级语文等最后一批年级启用新改版教材。江苏等多地中小学8月31日报到、9月1日正式上课，教育部门提醒家长留意报到与上课时间差异。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 18,
+        "everyday_relevance": 22,
+        "evidence": 10
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-08-30T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "开学季教材替换的权威报道与地方政府开学提示，服务性信息。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新华报业网",
+          "url": "http://www.xhby.net/content/s6a942832e4b0b3294d7a66ab.html",
+          "title": "新学期中小学全面启用新教材，有何不同？",
+          "captured_at": "2026-08-31T06:12:00+08:00",
+          "note": "新华报业网8月30日报道：全国初中三个年级全部使用新修订语文教材"
+        },
+        {
+          "tier": "official",
+          "outlet": "苏州市政府",
+          "url": "http://www.suzhou.gov.cn/szsrmzf/mszx/202608/15cfa67e4d9841128e27d99d4e344ea6.shtml",
+          "title": "2026年秋季学期中小学开学及新教材启用提示",
+          "captured_at": "2026-08-31T06:12:30+08:00",
+          "note": "苏州市政府提示：江苏中小学8月31日报到、9月1日正式上课"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-31-summer-travel-season-wrapup",
+      "story_identity": "summer-travel-season-2026-wrapup-records",
+      "headline": "🚄 2026年暑运今天收官：62天全国铁路预计发送10.1亿人次",
+      "summary": "2026年暑运8月31日结束，为期62天，全国铁路预计发送旅客10.1亿人次。暑运尾声多地数据亮眼：国铁沈阳局预计发送4336万人次，大连机场单日客流8.04万人次刷新纪录，广州白云机场T3航站楼经历首个暑运大考，铁路学生客流同比增长44.6%。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 18,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-08-30T14:22:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "暑运收官事实性盘点，数据均出自央媒报道。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/08/30/ARTI9Vzk6BoA1e14CiE4Cneh260830.shtml",
+          "title": "4336万人次、2.8万架次、155批次 多维度“数”看暑运新亮点、新变化",
+          "captured_at": "2026-08-31T06:13:00+08:00",
+          "note": "央视网8月30日报道暑运尾声各地成绩单与新服务"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "湖北日报",
+          "url": "https://news.hubeidaily.net/pc/z_853695.html",
+          "title": "暑运进入尾声 多项出行数据刷新历史纪录",
+          "captured_at": "2026-08-31T06:13:30+08:00",
+          "note": "湖北日报8月30日报道：暑运8月31日结束，热门省份客流高位运行"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
