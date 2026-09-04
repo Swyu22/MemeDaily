@@ -1,0 +1,1074 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-04",
+  "generated_at": "2026-09-05T02:38:12+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 48,
+    "published": 7,
+    "dropped_safety": {
+      "controversy": 2,
+      "geopolitics": 3,
+      "minors": 1,
+      "politics": 3,
+      "propaganda": 1,
+      "public_safety": 2
+    },
+    "dropped_low_confidence": 25,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 36,
+      "official_sources": 6,
+      "state_media_sources": 20,
+      "major_media_sources": 10,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 4
+    },
+    "selection": {
+      "evaluated_at": "2026-09-04T21:00:00+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 14,
+        "relaxed_72h": 18
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 48,
+          "cumulative_unique_candidates": 48,
+          "source_scope": [
+            "新华社人民网央视网中新网央广网等央媒",
+            "财新澎湃新闻界面新闻新京报等持牌媒体",
+            "国家医保局国家发展改革委水利部中国地震局等官方发布",
+            "中央气象台中国天气网与福建省级媒体滚动核实",
+            "中新社地方分社报道与地方党媒",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-04-putian-record-rainfall-rescue",
+          "story_identity": "putian-record-rainfall-rescue-2026-09-04",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T07:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-04-putian-record-rainfall-rescue",
+          "score": 93,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-04-nhsa-ltc-insurance-2028",
+          "story_identity": "nhsa-ltc-insurance-2028-full-coverage-briefing",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-04-nhsa-ltc-insurance-2028",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 24,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-04-ganjiang-first-flood-2026",
+          "story_identity": "ganjiang-2026-first-flood-jian-station",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T05:05:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-04-ganjiang-first-flood-2026",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-04-qinghai-haixi-m51-quake",
+          "story_identity": "qinghai-haixi-m51-earthquake-2026-09-04",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T01:04:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-04-qinghai-haixi-m51-quake",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-04-zheng-qinwen-usopen-r32",
+          "story_identity": "zheng-qinwen-usopen-second-round-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T05:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-04-zheng-qinwen-usopen-r32",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-04-konka-voluntary-delisting",
+          "story_identity": "konka-voluntary-delisting-trading-halt-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-04-konka-voluntary-delisting",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-04-spp-nhsa-fraud-cases",
+          "story_identity": "spp-nhsa-medical-insurance-fraud-cases-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-09-04-spp-nhsa-fraud-cases",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "hanjiang-first-flood-2026",
+          "story_identity": "hanjiang-2026-first-flood-gaopi",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "韩江2026年第1号洪水于3日18时编号，距评估时钟约27小时，评分与时效均未达当日严格线"
+        },
+        {
+          "candidate_key": "cma-typhoon-blue-warning-sep4",
+          "story_identity": "cma-typhoon-blue-warning-2026-09-04",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "中央气象台4日18时继续发布台风蓝色预警，属滚动预警服务信息，已并入莆田主条目"
+        },
+        {
+          "candidate_key": "orange-geo-hazard-warning-sep4",
+          "story_identity": "orange-geological-hazard-warning-2026-09-04",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "自然资源部与中国气象局4日18时联合发布橙色地质灾害气象风险预警，程序性滚动发布"
+        },
+        {
+          "candidate_key": "china-cdc-flu-uptick-week35",
+          "story_identity": "china-cdc-week35-flu-uptick-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 19,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "中疾控第35周监测显示流感活动小幅上升，具健康提示价值，评分未达严格线"
+        },
+        {
+          "candidate_key": "guangzhou-school-uniform-autonomy",
+          "story_identity": "guangzhou-school-uniform-self-purchase-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "广州取消校服统一订购落地首个开学季，央广网3日走访报道，时效落48小时档"
+        },
+        {
+          "candidate_key": "sme-15th-fiveyear-plan",
+          "story_identity": "sme-development-15th-fiveyear-plan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "drop_reason": "十部门印发《促进中小企业发展“十五五”规划》，印发时间为9月1日，超出72小时窗口"
+        },
+        {
+          "candidate_key": "silver-travel-september-report",
+          "story_identity": "silver-travelers-september-off-peak-report",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "50岁以上游客成9月错峰游主力为平台数据报告，公共增量有限"
+        },
+        {
+          "candidate_key": "anyang-fire-drill-details",
+          "story_identity": "anyang-fire-investigation-drill-details",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "河南安阳火灾细节披露为旧案调查报道，具警示价值但评分未达严格线"
+        },
+        {
+          "candidate_key": "nepal-mudslide-toll-1290",
+          "story_identity": "nepal-mudslide-toll-update-1290",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T12:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "尼泊尔泥石流遇难人数更新为前日入选条目的同源跟进，评分未达严格线"
+        },
+        {
+          "candidate_key": "china-aid-nepal-third-batch",
+          "story_identity": "china-third-batch-aid-nepal-arrived",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T11:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "中国第三批紧急援助物资运抵加德满都，与前日入选条目同源"
+        },
+        {
+          "candidate_key": "super-el-nino-2026-threat",
+          "story_identity": "super-el-nino-2026-record-threat",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 10
+          },
+          "drop_reason": "超强厄尔尼诺趋势警告为延续性议题，与国内读者直接关联有限"
+        },
+        {
+          "candidate_key": "ai-model-updates-september",
+          "story_identity": "global-ai-model-updates-september-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T22:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "多家科技公司模型更新为行业动态汇总，单一事件性弱"
+        },
+        {
+          "candidate_key": "auto-export-compliance-response",
+          "story_identity": "automakers-export-compliance-responses-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "车企响应汽车出海合规指引为9月1日政策的后续表态，增量有限"
+        },
+        {
+          "candidate_key": "li-moubo-50year-fugitive-caught",
+          "story_identity": "li-moubo-fugitive-caught-after-50-years",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "潜逃50年命案嫌犯落网为法治个案报道，日常相关性低"
+        },
+        {
+          "candidate_key": "beijing-fake-calligraphy-livestream",
+          "story_identity": "beijing-livestream-fake-calligraphy-case",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "北京警方破获直播间售假字画案为个案通报，公共增量有限"
+        },
+        {
+          "candidate_key": "beijing-2027-livelihood-solicitation",
+          "story_identity": "beijing-2027-livelihood-project-solicitation",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "北京征集2027年民生实事建议为程序性公告，无当日实质事件"
+        },
+        {
+          "candidate_key": "medical-insurance-negotiation-preview",
+          "story_identity": "national-medical-insurance-negotiation-sep5-preview",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "2026年医保国谈将于9月5日举行，当日仅有预告信息"
+        },
+        {
+          "candidate_key": "train-suspension-typhoon-sep34",
+          "story_identity": "typhoon-saldear-train-suspensions-sep3-4",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "甬广高铁等线路9月3日至4日部分列车停运为台风运输调整，已并入灾情条目"
+        },
+        {
+          "candidate_key": "ciftis-2026-sep9-preview",
+          "story_identity": "ciftis-2026-opening-sep9-preview",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "服贸会9月9日开幕，当日仅有预告信息，非当日事件"
+        },
+        {
+          "candidate_key": "ashare-sep4-close",
+          "story_identity": "ashare-daily-close-2026-09-04",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "A股单日行情属例行信息，无制度性变化"
+        },
+        {
+          "candidate_key": "dongzheng-reservoir-discharge",
+          "story_identity": "putian-dongzheng-reservoir-discharge-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "东圳水库泄洪为莆田灾情组成部分，已并入主条目"
+        },
+        {
+          "candidate_key": "minchao-putian-match-postponed",
+          "story_identity": "minchao-putian-division-match-postponed",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "闽超莆田赛区比赛延期为区域性赛事调整"
+        },
+        {
+          "candidate_key": "jiangxi-flood-response-level4",
+          "story_identity": "water-ministry-jiangxi-flood-response-level4",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "水利部对江西启动洪水防御Ⅳ级响应为程序性应急启动，已并入赣江条目"
+        },
+        {
+          "candidate_key": "national-science-month-continuation",
+          "story_identity": "national-science-month-2026-continuation",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "全国科普月9月1日启动并已入选当日信封，无实质新增量"
+        },
+        {
+          "candidate_key": "jingkai-health-recruitment",
+          "story_identity": "beijing-jingkai-health-recruitment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 16,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "北京经开区卫健系统招聘公告为区域性例行信息"
+        },
+        {
+          "candidate_key": "oil-price-adjustment-forecast",
+          "story_identity": "refined-oil-price-window-selfmedia-forecast",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "油价调整窗口预测为自媒体按原油变化率测算，非发改委调价发布"
+        },
+        {
+          "candidate_key": "typhoon-korowan-landfall-rumor",
+          "story_identity": "typhoon-korowan-landfall-online-rumor",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "网传台风“科罗旺”登陆说法仅为路径猜测，气象部门未发布登陆预报"
+        },
+        {
+          "candidate_key": "putian-casualty-figures-unverified",
+          "story_identity": "putian-casualty-figures-unverified-online",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "网传莆田受灾具体伤亡数字未经官方通报证实，仅采用权威口径"
+        },
+        {
+          "candidate_key": "medical-insurance-drug-list-rumor",
+          "story_identity": "medical-insurance-negotiation-drug-list-rumor",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "网传医保国谈药品名单未获官方证实"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-11",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-12",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-04-putian-record-rainfall-rescue",
+      "story_identity": "putian-record-rainfall-rescue-2026-09-04",
+      "headline": "🌧️ 福建莆田特大暴雨破纪录，当地启动“三停一休”全力抢险",
+      "summary": "受台风“沙德尔”残余环流影响，9月3日至4日福建莆田持续特大暴雨，莆田国家站4日7时逐小时降水量41.4毫米居全国第一，多地内涝、山体滑坡、堤防塌方。当地已将防暴雨应急响应提升为Ⅰ级并实行“三停一休”，消防连夜疏散转移被困群众；国家发展改革委4日追加1亿元中央预算内投资支持福建灾后应急恢复。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 93,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-04T07:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "台风暴雨灾害事实报道，聚焦降雨数据与抢险响应，转移安置情况置于简述，标题不含伤亡数字，措辞克制。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://fj.people.com.cn/n2/2026/0904/c181466-41687419.html",
+          "title": "视频直击福建莆田救援现场：抢修、群众转移工作仍在进行中",
+          "captured_at": "2026-09-05T02:20:00+08:00",
+          "note": "人民网莆田9月4日电：记者4日下午在华亭镇采访，356国道十余米山体滑坡正抢修，受困群众陆续转移"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/09-04/10690298.shtml",
+          "title": "福建莆田遭遇持续强降雨 当地启动“三停一休”全力抢险",
+          "captured_at": "2026-09-05T02:21:00+08:00",
+          "note": "中新网莆田9月4日电：4日7时莆田站逐小时降水量41.4毫米位列全国第一，当地启动“三停一休”"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34010217",
+          "title": "福建莆田遭强降雨多处出现险情，消防已疏散转移三千余人",
+          "captured_at": "2026-09-05T02:22:00+08:00",
+          "note": "澎湃新闻9月4日报道：莆田消防不分昼夜抢险，已疏散转移三千余人"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家发展改革委",
+          "url": "https://www.ndrc.gov.cn/fggz/202609/t20260904_1407421.html",
+          "title": "国家发展改革委追加安排1亿元支持福建做好台风灾害灾后应急恢复",
+          "captured_at": "2026-09-05T02:23:00+08:00",
+          "note": "国家发展改革委9月4日：在前期工作基础上追加安排1亿元中央预算内投资，支持福建灾后应急恢复"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-04-nhsa-ltc-insurance-2028",
+      "story_identity": "nhsa-ltc-insurance-2028-full-coverage-briefing",
+      "headline": "🏥 国家医保局：2028年底长护险制度在全国基本全覆盖",
+      "summary": "国务院新闻办公室9月4日举行“开局起步‘十五五’”系列主题新闻发布会，国家医保局介绍，长期护理保险制度将从加快建制转向全面推行，到2028年底在全国基本实现全面覆盖；医保基金监管将推进七个“全覆盖”，并推进医保与医药企业直接结算、集采中选药品进基层，扩大群众可及范围。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 24,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-04T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国新办发布会民生保障政策信息，服务性强，措辞客观。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/09-04/10690154.shtml",
+          "title": "国家医保局：2028年底长护险制度在全国基本上全面覆盖",
+          "captured_at": "2026-09-05T02:24:00+08:00",
+          "note": "中新网9月4日报道：国家医保局副局长王文君在国新办发布会上介绍长护险制度2028年底基本覆盖全国"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家医疗保障局",
+          "url": "http://www.nhsa.gov.cn/art/2026/9/4/art_14_22007.html",
+          "title": "国新办举行推进医保高质量发展、更好服务中国式现代化建设有关情况新闻发布会",
+          "captured_at": "2026-09-05T02:25:00+08:00",
+          "note": "国家医保局官网9月4日发布国新办新闻发布会实录"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/gn/2026/09-04/10690166.shtml",
+          "title": "国家医保局：医保基金监管将实现七个“全覆盖”",
+          "captured_at": "2026-09-05T02:26:00+08:00",
+          "note": "中新网9月4日报道：国家医保局介绍医保基金监管七个“全覆盖”安排"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-04-ganjiang-first-flood-2026",
+      "story_identity": "ganjiang-2026-first-flood-jian-station",
+      "headline": "🌊 赣江发生2026年第1号洪水，水利部提前启动防御响应",
+      "summary": "受9月1日至4日持续强降雨影响，赣江中游吉安水文站4日5时5分水位涨至警戒水位50.50米，依据主要江河洪水编号规定，此次洪水编号为“赣江2026年第1号洪水”。水利部滚动会商并提前针对江西启动洪水防御Ⅳ级应急响应，督促地方落实防御措施、提前转移危险区群众。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-04T05:05:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "江河洪水编号与防御响应服务信息，客观陈述水位与响应措施。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.xinhuanet.com/20260904/944b365e689a4a8d96de9a1ea22b1bed/c.html",
+          "title": "赣江发生2026年第1号洪水",
+          "captured_at": "2026-09-05T02:27:00+08:00",
+          "note": "新华社南昌9月4日电：赣江吉安站水位4日5时15分涨至50.51米，超警戒0.01米"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/09-04/10690088.shtml",
+          "title": "赣江发生2026年第1号洪水",
+          "captured_at": "2026-09-05T02:28:00+08:00",
+          "note": "中新网9月4日电：据“中国水利”微信公众号消息，吉安水文站4日5时5分水位涨至警戒水位"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/newscenter/kuaixun/20260904/t20260904_527804340.shtml",
+          "title": "赣江发生2026年第1号洪水",
+          "captured_at": "2026-09-05T02:29:00+08:00",
+          "note": "央广网9月4日转引央视新闻：水利部提前针对江西启动洪水防御Ⅳ级应急响应"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-04-qinghai-haixi-m51-quake",
+      "story_identity": "qinghai-haixi-m51-earthquake-2026-09-04",
+      "headline": "🌏 青海海西州直辖区凌晨发生5.1级地震，启动四级应急响应",
+      "summary": "中国地震台网正式测定，9月4日1时04分在青海海西州直辖区（北纬37.84度、东经95.59度）发生5.1级地震，震源深度10千米。地震发生后，中国地震局迅即启动四级应急响应，开展应急处置、震情监测和趋势研判工作。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-04T01:04:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "地震速报权威测定信息，聚焦响应处置，无渲染表述。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://society.people.com.cn/n1/2026/0904/c1008-40792076.html",
+          "title": "青海海西州发生5.1级地震",
+          "captured_at": "2026-09-05T02:30:00+08:00",
+          "note": "人民网转新华社快讯：9月4日1时04分青海海西州直辖区发生5.1级地震，震源深度10公里"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34004170",
+          "title": "青海海西州直辖区发生5.1级地震，震源深度10千米",
+          "captured_at": "2026-09-05T02:31:00+08:00",
+          "note": "澎湃新闻9月4日报道中国地震台网正式测定结果"
+        },
+        {
+          "tier": "official",
+          "outlet": "甘肃省地震局",
+          "url": "https://www.gsdzj.gov.cn/info/1025/29955.htm",
+          "title": "中国地震局迅即开展青海海西州直辖区5.1级地震应急处置工作",
+          "captured_at": "2026-09-05T02:32:00+08:00",
+          "note": "甘肃省地震局网站9月4日：中国地震局启动四级应急响应开展处置"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-04-zheng-qinwen-usopen-r32",
+      "story_identity": "zheng-qinwen-usopen-second-round-2026",
+      "headline": "🎾 郑钦文三盘力克普丁塞娃，时隔15个月重返大满贯32强",
+      "summary": "北京时间9月4日凌晨，2026年美国网球公开赛女单第二轮，从资格赛突围的中国选手郑钦文以6:4、2:6、6:1战胜哈萨克斯坦选手普丁塞娃，取得五连胜，时隔15个月重返大满贯女单32强；另一位中国选手布云朝克特止步男单第二轮。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-04T05:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事结果报道，客观陈述比分与晋级情况。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://app.xinhuanet.com/news/article.html?articleId=2026090425b864aa46434b66a519d2cfaf77b3c4",
+          "title": "郑钦文挺进美网32强 布云朝克特出局",
+          "captured_at": "2026-09-05T02:33:00+08:00",
+          "note": "新华社纽约9月3日电：郑钦文6:4、2:6、6:1击败普丁塞娃，时隔15个月重返大满贯女单32强"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-04/10690242.shtml",
+          "title": "中国选手郑钦文晋级美网女单32强",
+          "captured_at": "2026-09-05T02:33:30+08:00",
+          "note": "中新社纽约9月3日电：郑钦文2:1战胜普丁塞娃，时隔两年重返美网32强"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-04-konka-voluntary-delisting",
+      "story_identity": "konka-voluntary-delisting-trading-halt-2026",
+      "headline": "📺 昔日“彩电一哥”康佳拟主动退市，股票4日起停牌",
+      "summary": "*ST康佳公告，拟以股东会决议方式主动撤回A股、B股在深交所的上市交易，股票自9月4日开市起停牌，退市后拟转入全国股转系统退市板块；公司将于9月14日召开临时股东会审议相关议案。康佳上市34年，近四年累计亏损约200亿元，因2025年末经审计净资产为负已被实施退市风险警示。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 10
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-04T09:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "上市公司主动退市财经报道，客观陈述公告事实，不含投资建议。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://mini.caixin.com/2026-09-04/102481605.html",
+          "title": "财新闻｜昔日“彩电一哥”康佳公告主动退市，今起停牌",
+          "captured_at": "2026-09-05T02:34:00+08:00",
+          "note": "财新网9月4日报道：康佳公告拟主动撤回A、B股上市交易，4日起停牌"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "东方财富网",
+          "url": "http://wap.eastmoney.com/a/202609033864161884.html",
+          "title": "*ST康佳A：公司股票自9月4日起停牌",
+          "captured_at": "2026-09-05T02:34:10+08:00",
+          "note": "东方财富网9月3日报道：公司股票自9月4日开市起停牌，直至深交所摘牌决定后摘牌"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "金融界",
+          "url": "https://m.jrj.com.cn/madapter/finance/2026/09/04124858350411.shtml",
+          "title": "康佳拟主动退市，A、B股停牌转新三板",
+          "captured_at": "2026-09-05T02:34:20+08:00",
+          "note": "金融界9月4日报道：康佳集团A、B股股票9月4日开市起停牌，拟转入退市板块"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-04-spp-nhsa-fraud-cases",
+      "story_identity": "spp-nhsa-medical-insurance-fraud-cases-2026",
+      "headline": "⚖️ 最高检、国家医保局联合发布6件医保骗保犯罪典型案例",
+      "summary": "9月4日，最高人民检察院、国家医疗保障局联合发布6件依法从严惩治医保骗保犯罪典型案例，涵盖定点医疗机构骗保、“回流药”倒卖等重点领域和新型手段。其中西藏林芝某医院利用精神病患者骗保案7人获刑，另一起“回流药”案涉案41人；两部门提醒群众警惕骗保新套路，守护医保基金安全。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 9
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-04T09:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "司法机关与医保部门联合发布的典型案例通报，含警示服务信息，措辞客观。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://legal.gmw.cn/2026-09/04/content_38985277.htm",
+          "title": "警惕骗保新套路 两部门联合发布惩治医保骗保犯罪典型案例",
+          "captured_at": "2026-09-05T02:34:30+08:00",
+          "note": "光明网9月4日报道：最高检、国家医保局联合发布典型案例，涵盖骗保高发领域和新型手段"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://china.caixin.com/2026-09-04/102481905.html",
+          "title": "利用精神病患者骗保 西藏一专科医院7人获刑",
+          "captured_at": "2026-09-05T02:34:40+08:00",
+          "note": "财新网9月4日报道：最高检、国家医保局联合发布惩治医保骗保犯罪典型案例"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
