@@ -1,0 +1,1180 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-03",
+  "generated_at": "2026-09-05T01:15:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 47,
+    "published": 9,
+    "dropped_safety": {
+      "controversy": 3,
+      "geopolitics": 2,
+      "minors": 1,
+      "politics": 3,
+      "propaganda": 1,
+      "public_safety": 2
+    },
+    "dropped_low_confidence": 23,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 27,
+      "official_sources": 0,
+      "state_media_sources": 19,
+      "major_media_sources": 8,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 3
+    },
+    "selection": {
+      "evaluated_at": "2026-09-03T21:00:00+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 9,
+        "relaxed_48h": 15,
+        "relaxed_72h": 18
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 47,
+          "cumulative_unique_candidates": 47,
+          "source_scope": [
+            "新华社人民网央视网央广网中新网等央媒",
+            "财新澎湃新京报观察者网经济观察网等持牌媒体",
+            "政府机构与部门官方发布（应急管理部水利部国家疾控局国新办地方教委市场监管局）",
+            "财新每日要闻汇总与地方媒体滚动核实",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-03-typhoon-saldear-third-landfall",
+          "story_identity": "typhoon-saldear-third-landfall-zhangpu-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T06:30:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-03-typhoon-saldear-third-landfall",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-03-beichuan-m48-earthquake",
+          "story_identity": "sichuan-beichuan-m48-earthquake-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T19:39:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-03-beichuan-m48-earthquake",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-03-nepal-mudslide-toll-china-aid",
+          "story_identity": "nepal-mudslide-toll-update-china-aid-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T12:15:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-03-nepal-mudslide-toll-china-aid",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-03-student-myopia-rate-decline",
+          "story_identity": "national-student-myopia-rate-five-year-decline-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-09-03-student-myopia-rate-decline",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 24,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-03-central-relief-supplies-fujian",
+          "story_identity": "central-relief-supplies-5000-fujian-floods-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-03-central-relief-supplies-fujian",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-03-haikou-restaurant-fire",
+          "story_identity": "haikou-xiuying-restaurant-fire-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T14:45:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-09-03-haikou-restaurant-fire",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-03-sports-venue-2030-target",
+          "story_identity": "national-sports-venue-2030-target-presser-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-03-sports-venue-2030-target",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-03-yongchuan-tray-washing-fee-halted",
+          "story_identity": "yongchuan-primary-tray-washing-fee-halted-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-09-03-yongchuan-tray-washing-fee-halted",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-03-buyunchaokete-us-open-win",
+          "story_identity": "buyunchaokete-us-open-first-slam-win-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T05:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-03-buyunchaokete-us-open-win",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "water-ministry-jiangxi-flood-response",
+          "story_identity": "water-ministry-jiangxi-flood-defense-level4-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "程序性应急响应启动，与台风主条目同灾同源，评分未达当日严格线"
+        },
+        {
+          "candidate_key": "kerchin-beef-guar-gum-case",
+          "story_identity": "kerchin-sliced-beef-guar-gum-investigation",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "地方监管部门对单一企业抽检问题立案调查，程序性进展，评分未达严格线"
+        },
+        {
+          "candidate_key": "wmo-super-el-nino-alert",
+          "story_identity": "wmo-el-nino-super-event-warning-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T15:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "国际气象机构通报厄尔尼诺将发展为超强级别，国内公共热度中等，评分未达严格线"
+        },
+        {
+          "candidate_key": "cma-qinghai-tibet-glacier-instability",
+          "story_identity": "cma-presser-qinghai-tibet-glacier-dynamic-instability",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "中国气象局9月2日发布会内容，距评估时钟约30小时，落48小时档"
+        },
+        {
+          "candidate_key": "jilong-port-power-restored",
+          "story_identity": "tibet-jilong-port-core-area-power-restored-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "吉隆灾情为恢复性进展，同题在近一周信封中已多次入选，避免题材重复"
+        },
+        {
+          "candidate_key": "china-women-basketball-worldcup-roster",
+          "story_identity": "china-women-basketball-2026-worldcup-12-roster",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "女篮世界杯12人名单9月2日晚公布，李月汝因护照遗失缺席，赛前名单信息未达严格线"
+        },
+        {
+          "candidate_key": "beijing-student-football-injury-case",
+          "story_identity": "beijing-highschool-football-injury-lawsuit-dismissed",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T23:17:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "高三学生踢球受伤诉同学学校被驳回，个案普法信息，社会热度有限"
+        },
+        {
+          "candidate_key": "guangxi-one-student-first-grade",
+          "story_identity": "guangxi-guanyang-village-school-one-student-grade1",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "村教学点一年级仅一名学生为9月1日开学日事件，3日为跟进发酵报道，时效落72小时档"
+        },
+        {
+          "candidate_key": "cma-typhoon-yellow-warning-sep3",
+          "story_identity": "cma-typhoon-yellow-warning-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "中央气象台例行台风预警滚动发布，服务信息已并入台风主条目"
+        },
+        {
+          "candidate_key": "wu-yibing-us-open-r3",
+          "story_identity": "wu-yibing-us-open-third-round-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "吴易昺晋级美网32强，与布云朝克特条目同源报道，热度次之"
+        },
+        {
+          "candidate_key": "september-national-disaster-risk-outlook",
+          "story_identity": "september-2026-national-disaster-risk-assessment",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "多部门9月全国自然灾害风险形势为月度例行会商，程序性信息"
+        },
+        {
+          "candidate_key": "spot-gold-4400-surge",
+          "story_identity": "spot-gold-breaks-4400-usd-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T15:30:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 9,
+            "evidence": 8
+          },
+          "drop_reason": "现货黄金重返4400美元关口属国际市场行情波动，对国内读者日常决策影响间接"
+        },
+        {
+          "candidate_key": "fuding-post-flood-recovery",
+          "story_identity": "fuding-post-flood-water-power-recovery-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "福鼎灾后抢修供水供电恢复为地方恢复性进展，已并入台风主条目"
+        },
+        {
+          "candidate_key": "taizhou-dual-fuel-carrier-dockout",
+          "story_identity": "taizhou-dual-fuel-container-ships-dockout-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "江苏泰州两艘超大型双燃料集装箱船相继出坞，造船工业进展报道，日常相关性有限"
+        },
+        {
+          "candidate_key": "xingyu-graduate-contract-termination",
+          "story_identity": "xingyu-107-fresh-graduates-contract-termination",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "everyday_relevance": 9,
+            "evidence": 7
+          },
+          "drop_reason": "单一企业应届生解约争议，多方回应尚未有定论，日常相关性低"
+        },
+        {
+          "candidate_key": "ashare-sep3-flat-close",
+          "story_identity": "ashare-flat-close-2026-09-03",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 8,
+            "evidence": 6
+          },
+          "drop_reason": "A股单日缩量震荡收平属例行行情信息，无制度性变化"
+        },
+        {
+          "candidate_key": "maoming-new-campus-odor",
+          "story_identity": "maoming-xianghe-new-campus-odor-response",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 19,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "茂名新校区气味问题由地方教育局通报核查整改、国庆后启用，区域性事项"
+        },
+        {
+          "candidate_key": "hotel-electrocution-verdict",
+          "story_identity": "hotel-guest-electrocution-verdict-compensation",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "旅馆住客电击身亡五年后鉴定判赔，个案判决报道，公共增量有限"
+        },
+        {
+          "candidate_key": "yanxue-protected-animal-release",
+          "story_identity": "yanxue-agency-protected-animal-release-response",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 18,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "研学机构误捕保护动物经辨认已原地放生，官方回应影响面窄"
+        },
+        {
+          "candidate_key": "mid-autumn-ticket-sale-reminder",
+          "story_identity": "mid-autumn-national-day-ticket-sale-reminder-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 6,
+            "evidence": 3
+          },
+          "drop_reason": "中秋国庆假期购票日历提醒，无实质增量事件"
+        },
+        {
+          "candidate_key": "ciftis-2026-opening-preview",
+          "story_identity": "ciftis-2026-sep9-opening-preview",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 3
+          },
+          "drop_reason": "服贸会9月9日开幕，当日仅有预告信息，非当日事件"
+        },
+        {
+          "candidate_key": "beijing-nanny-will-invalid-case",
+          "story_identity": "beijing-elderly-nanny-will-invalid-case",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "老人与保姆结婚遗嘱被判无效，个案普法报道"
+        },
+        {
+          "candidate_key": "mistaken-transfer-26-billion-case",
+          "story_identity": "mistaken-transfer-264-billion-consumption-verdict",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 17,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "误到账巨额资金挥霍后被判退还，奇闻式个案，公共增量低"
+        },
+        {
+          "candidate_key": "sun-yingsha-textbook-inclusion",
+          "story_identity": "sun-yingsha-fifth-grade-pe-textbook-inclusion",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "孙颖莎入选五年级体育教材多为聚合账号转载，未见权威媒体独立首发报道"
+        },
+        {
+          "candidate_key": "oil-price-sep11-hike-forecast",
+          "story_identity": "refined-oil-price-sep11-hike-selfmedia-forecast",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "油价上调为自媒体按原油变化率测算的预测，非发改委调价事件"
+        },
+        {
+          "candidate_key": "chengdu-airport-expansion-analysis",
+          "story_identity": "chengdu-airport-expansion-selfmedia-analysis",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T11:52:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "成都机场扩容为自媒体分析文章，无权威部门发布"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-11",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-12",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-03-typhoon-saldear-third-landfall",
+      "story_identity": "typhoon-saldear-third-landfall-zhangpu-2026-09-03",
+      "headline": "🌀 台风“沙德尔”第三次登陆福建漳浦，闽粤沿海暴雨持续",
+      "summary": "今年第18号台风“沙德尔”（热带风暴级）中心于9月3日6时30分前后在福建漳州漳浦古雷沿海第三次登陆，登陆时中心附近最大风力9级。受其影响福建持续强降雨，截至3日6时全省6市22条河流26站发生超警洪水，全省累计转移海上、陆上危险区域人员8.37万人，多地停课。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 92,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-03T06:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "台风灾害事实性报道，聚焦登陆事实与防御响应，转移人数仅置于简述，标题不含伤亡数字，措辞克制。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://fj.people.com.cn/BIG5/n2/2026/0903/c181466-41685747.html",
+          "title": "台风“沙德尔”在福建漳浦第三次登陆 多地通知停课",
+          "captured_at": "2026-09-05T00:58:00+08:00",
+          "note": "人民网福州9月3日电：台风“沙德尔”中心于3日6时30分前后在福建省漳州市漳浦古雷沿海第三次登陆"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_33997954",
+          "title": "台风“沙德尔”在福建漳州漳浦古雷沿海第三次登陆",
+          "captured_at": "2026-09-05T00:58:30+08:00",
+          "note": "澎湃新闻9月3日报道：登陆时中心附近最大风力9级（23米/秒），中心最低气压985百帕"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://photos.caixin.com/2026-09-03/102481389.html",
+          "title": "图集｜福建持续强降雨致22条河流超警 台风“沙德尔”再度登陆",
+          "captured_at": "2026-09-05T00:59:00+08:00",
+          "note": "财新网9月3日图集：截至3日6时福建6市22条河流26站发生超警洪水，全省累计转移危险区域人员8.37万人"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-03-beichuan-m48-earthquake",
+      "story_identity": "sichuan-beichuan-m48-earthquake-2026-09-03",
+      "headline": "🌏 四川绵阳北川发生4.8级地震，暂未收到伤损报告",
+      "summary": "中国地震台网正式测定，9月3日19时39分在四川绵阳市北川县（北纬31.91度、东经104.43度）发生4.8级地震，震源深度10千米，川陕甘渝多地有震感。记者从北川县、震中附近江油市等地了解到，当地县城均有震感，目前暂未收到人员伤亡和损失报告，民众生活秩序正常。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-03T19:39:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "地震速报权威测定事实信息，明确暂无伤损报告，无渲染表述。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://app.xinhuanet.com/news/article.html?articleId=2026090374a0b1cc3ea54506b6ddd72227a6e5a4",
+          "title": "新华社快讯：四川绵阳市北川县发生4.8级地震",
+          "captured_at": "2026-09-05T01:00:00+08:00",
+          "note": "新华社快讯：中国地震台网正式测定9月3日19时39分四川绵阳市北川县发生4.8级地震，震源深度10公里"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/03/ARTIETACCwvzCraHOorlsFY7260903.shtml",
+          "title": "四川绵阳市北川县发生4.8级地震，震源深度10千米",
+          "captured_at": "2026-09-05T01:00:30+08:00",
+          "note": "央视网9月3日19时55分消息：中国地震台网正式测定北川4.8级地震"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/09-03/10689856.shtml",
+          "title": "四川绵阳北川县发生4.8级地震 暂未收到伤损报告",
+          "captured_at": "2026-09-05T01:01:00+08:00",
+          "note": "中新社成都9月3日电：据北川县委宣传部消息，目前当地暂未收到伤损报告，民众生活一切正常"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-03-nepal-mudslide-toll-china-aid",
+      "story_identity": "nepal-mudslide-toll-update-china-aid-2026-09-03",
+      "headline": "⛰️ 尼泊尔泥石流灾情持续，中国第三批紧急援助物资启运",
+      "summary": "尼泊尔警方9月3日通报，截至当地时间当天10时，该国8月26日发生的特大泥石流灾害已发现1252具遇难者遗体，另有4875人失联，救援与搜寻仍在进行。该灾害发源于尼泊尔一侧并冲毁中尼边境吉隆口岸。中国同批紧急人道主义援助物资于3日上午启运，并将派出第二批DNA鉴定专家。",
+      "category": "国际",
+      "scope": "international",
+      "topic": "自然灾害",
+      "primary_organization": "尼泊尔警方",
+      "audience_relevance": {
+        "basis": "direct_china_impact",
+        "impact_scale": "direct_china_public",
+        "china_connection": "该泥石流发源于尼泊尔一侧，8月26日冲毁中尼边境西藏吉隆口岸并造成中方人员重大伤亡失联，中国持续向尼泊尔启运紧急援助物资",
+        "everyday_impact": "直接关系边境口岸安全、受灾同胞搜救与中尼边境通商恢复，读者需通过权威渠道了解灾情与救援进展",
+        "score": 17,
+        "connection_evidence": {
+          "url": "https://world.people.com.cn/n1/2026/0903/c1002-40791943.html",
+          "note": "人民网国际频道9月3日报道尼泊尔警方公布的遇难与失联最新数据"
+        }
+      },
+      "score": 85,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-03T12:15:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "境外重大灾害事实报道，伤亡失联数据仅置于简述，聚焦灾情数据与救援进展，无渲染表述。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/20260903/ab65d8bb3cca438485c1fc186817c502/c.html",
+          "title": "尼泊尔泥石流已致1252人死亡 4875人失联",
+          "captured_at": "2026-09-05T01:02:00+08:00",
+          "note": "新华社加德满都9月3日电：尼泊尔警方称截至当地时间3日上午10时已发现1252具遇难者遗体，另有4875人失联"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "https://world.people.com.cn/n1/2026/0903/c1002-40791943.html",
+          "title": "尼泊尔泥石流已致1252人死亡 4875人失联",
+          "captured_at": "2026-09-05T01:02:30+08:00",
+          "note": "人民网国际频道9月3日转载新华社报道：尼泊尔警方3日在社交媒体发文公布最新灾情数据"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33999966",
+          "title": "尼泊尔泥石流灾害遇难人数升至1252人",
+          "captured_at": "2026-09-05T01:03:00+08:00",
+          "note": "澎湃新闻转引央视新闻报道：8月26日尼泊尔北部热索瓦地区发生大规模泥石流，灾区被划为灾害危机地区"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-03-student-myopia-rate-decline",
+      "story_identity": "national-student-myopia-rate-five-year-decline-2026-09-03",
+      "headline": "👁️ 国家疾控局：全国学生总体近视率近五年连续下降",
+      "summary": "国家疾控局9月3日举行新闻发布会介绍，监测结果显示，2025年全国学生总体近视率为49.9%，较2018年的53.6%累计下降3.7个百分点，近五年呈连续下降态势。疾控部门将持续强化学生常见病同因共管、多病共防，会同相关部门分类指导各地各学校落实全方位健康干预措施。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 24,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-03T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "部委新闻发布会公共健康监测数据，服务性信息，措辞客观。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "http://www.news.cn/politics/20260903/cc1796f0e34a400fa541c1dbc0782956/c.html",
+          "title": "全国学生总体近视率近五年连续下降",
+          "captured_at": "2026-09-05T01:04:00+08:00",
+          "note": "新华社北京9月3日电：国家疾控局卫生免疫司副司长费佳在新闻发布会上介绍2025年全国学生总体近视率49.9%"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://health.people.com.cn/n1/2026/0903/c14739-40791963.html",
+          "title": "全国学生总体近视率近五年连续下降",
+          "captured_at": "2026-09-05T01:04:30+08:00",
+          "note": "人民网健康频道9月3日报道：2025年全国学生总体近视率较2018年累计下降3.7个百分点"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34000724",
+          "title": "国家疾控局：全国学生总体近视率近5年连续下降",
+          "captured_at": "2026-09-05T01:05:00+08:00",
+          "note": "澎湃新闻9月3日报道：国家疾控局将强化学生常见病同因共管、多病共防"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-03-central-relief-supplies-fujian",
+      "story_identity": "central-relief-supplies-5000-fujian-floods-2026-09-03",
+      "headline": "🛟 三部门调拨5000件中央救灾物资，支持福建救灾救助",
+      "summary": "9月3日，国家防灾减灾救灾委员会办公室、应急管理部针对近期福建暴雨洪涝灾害影响，根据灾区群众避险转移和安置救助需要，会同国家粮食和物资储备局调拨折叠床、夏凉被、家庭应急包等5000件中央救灾物资，支持灾区做好救灾救助工作。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-03T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国家级救灾物资调拨安置服务信息，客观陈述，含物资种类与用途。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.xinhuanet.com/20260903/cd9620be8bc94c04b69aa8ddca072395/c.html",
+          "title": "三部门调拨中央救灾物资支持福建做好救灾救助工作",
+          "captured_at": "2026-09-05T01:06:00+08:00",
+          "note": "新华社北京9月3日电：记者从应急管理部获悉三部门会同调拨中央救灾物资支持福建"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/03/ARTIp3UvKKGqMNnrhkkkN45L260903.shtml",
+          "title": "三部门调拨5000件中央救灾物资 支持福建做好救灾救助工作",
+          "captured_at": "2026-09-05T01:06:30+08:00",
+          "note": "央视网9月3日报道：调拨折叠床、夏凉被、家庭应急包等5000件中央救灾物资"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/gn/2026/09-03/10689726.shtml",
+          "title": "三部门调拨5000件中央救灾物资 支持福建做好救灾救助工作",
+          "captured_at": "2026-09-05T01:07:00+08:00",
+          "note": "中新网9月3日电：据应急管理部网站消息，物资用于灾区群众避险转移和安置救助需要"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-03-haikou-restaurant-fire",
+      "story_identity": "haikou-xiuying-restaurant-fire-2026-09-03",
+      "headline": "🔥 海口一装修餐厅突发火灾，明火已扑灭、原因调查中",
+      "summary": "9月3日14时45分，海口市消防救援局指挥中心接报，位于秀英大道东侧一家正在装修的餐厅发生火灾。消防部门第一时间调集力量赶赴现场处置，15时23分明火被扑灭，现场已完成三轮搜救。火灾造成6人死亡、3人受伤，伤者生命体征平稳，火灾原因正在调查中。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 10
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-03T14:45:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "突发公共安全事件权威通报，伤亡数字仅置于简述，聚焦处置进展与原因调查，无渲染表述。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://big5.cctv.com/gate/big5/news.cctv.cn/2026/09/03/ARTIGjVniJuRZrAgFCLkf5o0260903.shtml",
+          "title": "海南海口一餐厅发生火灾 消防通报：已造成6人死亡3人受伤",
+          "captured_at": "2026-09-05T01:08:00+08:00",
+          "note": "央视网9月3日报道：海口市消防救援局通报14时45分接报、15时23分明火扑灭，已完成三轮搜救"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/ChengShi/2026_09_03_829875.shtml",
+          "title": "海南海口一餐厅突发火灾，致6死3伤",
+          "captured_at": "2026-09-05T01:08:30+08:00",
+          "note": "观察者网9月3日报道：起火餐厅位于海口市秀英大道东侧，正在装修，火灾原因正在调查中"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "经济观察网",
+          "url": "http://www.eeo.com.cn/2026/0903/1022563.shtml",
+          "title": "海南海口一装修餐厅起火致6人死亡3人受伤",
+          "captured_at": "2026-09-05T01:09:00+08:00",
+          "note": "经济观察网9月3日报道：伤者目前生命体征平稳，火灾造成6人死亡、3人受伤"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-03-sports-venue-2030-target",
+      "story_identity": "national-sports-venue-2030-target-presser-2026-09-03",
+      "headline": "🏟️ 国家体育总局：2030年人均体育场地面积将达4平方米左右",
+      "summary": "国务院新闻办9月3日举行“开局起步‘十五五’”系列主题新闻发布会，国家体育总局介绍“十五五”时期体育强国建设情况：到2030年实现人均体育场地面积4平方米左右、经常参加体育锻炼人数比例40%左右，将新建或改扩建5000个以上小（微）型体育公园、小型健身中心、多功能运动场及群众滑冰场。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 10
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-03T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国新办发布会全民健身公共服务量化目标，直接关联群众身边健身场地供给，措辞客观。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/gn/2026/09-03/10689311.shtml",
+          "title": "到2030年实现人均体育场地面积达到4平方米左右",
+          "captured_at": "2026-09-05T01:10:00+08:00",
+          "note": "中新网9月3日报道：国新办发布会介绍将实施群众运动空间扩容计划，新建改扩建5000个以上小微场地"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国日报网",
+          "url": "http://cn.chinadaily.com.cn/a/202609/04/WS6a9a3567e4b09a165c787fd9.html",
+          "title": "到2030年实现人均体育场地面积达4平方米左右 坚持办人民群众可感可及的体育",
+          "captured_at": "2026-09-05T01:10:30+08:00",
+          "note": "中国日报网报道：9月3日国新办“开局起步‘十五五’”系列主题新闻发布会介绍体育强国建设情况"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国经济网",
+          "url": "http://www.ce.cn/xwzx/gnsz/gdxw/202609/t20260903_3191397.shtml",
+          "title": "到2030年实现人均体育场地面积达到4平方米左右",
+          "captured_at": "2026-09-05T01:11:00+08:00",
+          "note": "中国经济网9月3日报道：经常参加体育锻炼人数比例达到40%左右等量化目标"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-03-yongchuan-tray-washing-fee-halted",
+      "story_identity": "yongchuan-primary-tray-washing-fee-halted-2026-09-03",
+      "headline": "🍽️ 重庆永川一小学拟收“餐盘清洗费”被叫停",
+      "summary": "重庆市永川区教育委员会9月3日通报：针对网民反映的区一小学校拟收取“餐盘清洗费”问题，经核查，该校于今年秋期开学时面向家长征求意见、未实际收取费用，该服务收费不符合相关要求，已责令学校立即停止、不得实施，并将在全区中小学开展食堂管理与教育收费专项检查，严防各类乱收费行为。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 9
+      },
+      "heat_rank": 8,
+      "occurred_at": "2026-09-03T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "地方教委权威通报与监管整改，涉教育收费民生回应，未实际收费事实明确。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/03/ARTIR3o5zm2pnPHgRu0cDIs4260903.shtml",
+          "title": "一小学拟收取“餐盘清洗费”，重庆永川区教委通报",
+          "captured_at": "2026-09-05T01:12:00+08:00",
+          "note": "央视网9月3日消息：永川区教委通报称该服务收费不符合相关要求，已责令学校立即停止"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/09-03/10689418.shtml",
+          "title": "重庆永川一小学拟收“餐盘清洗费”，当地教委通报",
+          "captured_at": "2026-09-05T01:12:30+08:00",
+          "note": "中新网9月3日电：据“永川教委”微信公众号消息，该校征求意见阶段未实际收取费用"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34000334",
+          "title": "一小学收取“餐盘清洗费”每学期45元，当地通报",
+          "captured_at": "2026-09-05T01:13:00+08:00",
+          "note": "澎湃新闻9月3日报道：永川区教委将在全区中小学开展食堂管理与教育收费专项检查"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-03-buyunchaokete-us-open-win",
+      "story_identity": "buyunchaokete-us-open-first-slam-win-2026",
+      "headline": "🎾 布云朝克特美网爆冷淘汰12号种子，收获大满贯正赛首胜",
+      "summary": "北京时间9月3日凌晨，2026年美国网球公开赛男单首轮，以“幸运落败者”身份递补入围正赛的中国选手布云朝克特直落三盘，以6比2、6比1、6比1爆冷淘汰赛会12号种子、西班牙选手霍达尔，收获职业生涯大满贯单打正赛首胜。另一位中国选手吴易昺同日直落三盘晋级男单32强。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 9
+      },
+      "heat_rank": 9,
+      "occurred_at": "2026-09-03T05:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际赛事中国选手赛果事实报道，比分信息来自权威通讯社。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "http://xinhuanet.com/sports/20260903/79d35e498fbc429c8e50b2ceff30cca4/c.html",
+          "title": "美网综合：布云朝克特获大满贯单打首胜 吴易昺晋级32强",
+          "captured_at": "2026-09-05T01:14:00+08:00",
+          "note": "新华社纽约9月2日电：布云朝克特直落三盘淘汰赛会12号种子霍达尔，吴易昺晋级32强"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://tv.cctv.com/2026/09/03/VIDEt0iMCi21BSy8s2iHpdkB260903.shtml",
+          "title": "[美网]爆大冷！布云朝克特收获生涯大满贯正赛首胜",
+          "captured_at": "2026-09-05T01:14:30+08:00",
+          "note": "央视网9月3日报道：北京时间9月3日美网男单第1轮布云朝克特3比0战胜霍达尔"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-03/10689419.shtml",
+          "title": "中国选手布云朝克特晋级美网男单第二轮 吴易昺晋级第三轮",
+          "captured_at": "2026-09-05T01:15:00+08:00",
+          "note": "中新社纽约9月2日电：布云朝克特以“幸运落败者”身份入围正赛取得大满贯单打正赛首胜"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
