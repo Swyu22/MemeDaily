@@ -1,0 +1,864 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-01",
+  "generated_at": "2026-09-04T23:43:42+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 40,
+    "published": 5,
+    "dropped_safety": {
+      "politics": 4,
+      "geopolitics": 1,
+      "minors": 1,
+      "privacy": 2,
+      "controversy": 1
+    },
+    "dropped_low_confidence": 24,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 12,
+      "official_sources": 0,
+      "state_media_sources": 7,
+      "major_media_sources": 5,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "evaluated_at": "2026-09-01T21:00:00+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 11,
+        "relaxed_72h": 14
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 40,
+          "cumulative_unique_candidates": 40,
+          "source_scope": [
+            "百度热搜与微博热搜公开榜单",
+            "新华社人民网央视网央广网光明网中国新闻网等央媒",
+            "政府机构与部门官方发布",
+            "北京日报新京报澎湃新闻观察者网等持牌媒体",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-01-typhoon-saldear-restrengthens",
+          "story_identity": "typhoon-saldear-restrengthens-south-china-sea-2026-09-01",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-01-typhoon-saldear-restrengthens",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-01-first-class-2026-broadcast",
+          "story_identity": "first-class-2026-long-march-theme-cctv-sep1",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-09-01-first-class-2026-broadcast",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-01-china-basketball-lebanon-89-87",
+          "story_identity": "china-basketball-89-87-lebanon-worldcup-qualifier-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T21:40:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-01-china-basketball-lebanon-89-87",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-01-cyberspace-rules-effective-sep1",
+          "story_identity": "three-cyberspace-regulations-effective-2026-09-01",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-01-cyberspace-rules-effective-sep1",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-01-zheng-qinwen-usopen-round1-win",
+          "story_identity": "zheng-qinwen-usopen-round1-comeback-win-2026-09-01",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T05:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-01-zheng-qinwen-usopen-round1-win",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "tcm-marketing-crackdown",
+          "story_identity": "tcm-online-illegal-marketing-crackdown-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "国家中医药管理局通报为8月31日事件，距评估时钟超24小时严格窗，落48小时档"
+        },
+        {
+          "candidate_key": "baicheng-recruitment-score-gap-probe",
+          "story_identity": "baicheng-institution-recruitment-score-gap-probe-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "白城市政府通报发布于8月31日20时，距评估时钟约25小时，超出24小时严格窗，落48小时档"
+        },
+        {
+          "candidate_key": "chongqing-paraquat-rumor-debunked",
+          "story_identity": "chongqing-delivery-paraquat-rumor-debunk-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "辟谣通报为8月31日中午事件，距评估时钟约33小时，落48小时档"
+        },
+        {
+          "candidate_key": "aigc-drama-hou-xiyouji-premiere",
+          "story_identity": "aigc-drama-hou-xiyouji-premiere-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "剧集开播为8月31日18时事件，距评估时钟约27小时，落48小时档"
+        },
+        {
+          "candidate_key": "wu-yibing-usopen-round2",
+          "story_identity": "wu-yibing-usopen-round1-win-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T04:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "美网首轮31日凌晨结束，距发布已超24小时严格窗；当日体育焦点由男篮绝杀承担"
+        },
+        {
+          "candidate_key": "wuxi-elderly-21-teeth-extraction-response",
+          "story_identity": "wuxi-elderly-teeth-extraction-health-commission-response-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "个体口腔诊疗纠纷，区卫健委已责令整改，权威媒体纵深报道有限"
+        },
+        {
+          "candidate_key": "wang-xinyu-usopen-round2",
+          "story_identity": "wang-xinyu-usopen-round1-win-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T02:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "美网首轮31日凌晨进行，超24小时严格窗；单日体育条目由男篮承担"
+        },
+        {
+          "candidate_key": "tibet-mudslide-rumor-cases",
+          "story_identity": "tibet-gyirong-mudslide-rumor-typical-cases-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "涉吉隆泥石流谣言处置通报，与近五日泥石流条目题材重复"
+        },
+        {
+          "candidate_key": "micro-drama-regulation-effective",
+          "story_identity": "micro-drama-development-management-rules-effective-2026-09-01",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "微短剧发展管理办法7月31日已公布，9月1日施行为程序性节点，当日增量有限"
+        },
+        {
+          "candidate_key": "universities-ai-orientation",
+          "story_identity": "universities-ai-agent-orientation-2026-fall",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "drop_reason": "高校AI迎新为开学季综述，无单一权威事件源；昨日已有开学条目"
+        },
+        {
+          "candidate_key": "chengdu-ai-regulation-effective",
+          "story_identity": "chengdu-ai-industry-regulation-effective-2026-09-01",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "地方产业规章施行，普通读者日常相关性有限"
+        },
+        {
+          "candidate_key": "songjiang-man-stops-bleeding-rescue",
+          "story_identity": "songjiang-camper-stops-bleeding-elderly-rescue-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 7
+          },
+          "drop_reason": "凡人善举个案，事发时间为“近日”不精确，权威来源有限"
+        },
+        {
+          "candidate_key": "micro-major-trend",
+          "story_identity": "university-micro-major-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "drop_reason": "微专业为趋势性报道，非当日具体事件"
+        },
+        {
+          "candidate_key": "qingdao-first-graders-enrollment",
+          "story_identity": "qingdao-107k-first-graders-enrollment-2026-fall",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "地方开学数据，全国性增量有限；昨日已有开学条目"
+        },
+        {
+          "candidate_key": "zhongan-liuzu-reboot-premiere",
+          "story_identity": "zhongan-liuzu-missing-badge-premiere-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "经典IP剧集开播属娱乐资讯，讨论集中于选角话题"
+        },
+        {
+          "candidate_key": "donghai-crystal-livestream-county",
+          "story_identity": "donghai-crystal-livestream-economy-feature-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "县域直播经济特写，非当日事件"
+        },
+        {
+          "candidate_key": "sams-club-million-members-9-months",
+          "story_identity": "sams-club-china-third-million-members-2026-08-20",
+          "research_pass": 1,
+          "occurred_at": "2026-08-20T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 10,
+            "everyday_relevance": 18,
+            "evidence": 7
+          },
+          "drop_reason": "数据出自8月20日沃尔玛财报，超72小时时效窗，热搜系二次传播"
+        },
+        {
+          "candidate_key": "carmakers-profit-analysis",
+          "story_identity": "carmakers-2026-h1-profit-analysis",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "车企半年报盘点属行业分析，日常相关性一般"
+        },
+        {
+          "candidate_key": "shanghai-grandchild-care-fee-case",
+          "story_identity": "shanghai-songjiang-grandchild-care-fee-case-2026-04",
+          "research_pass": 1,
+          "occurred_at": "2026-04-30T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 6,
+            "everyday_relevance": 22,
+            "evidence": 7
+          },
+          "drop_reason": "案件已于4月审结，系旧闻再度传播"
+        },
+        {
+          "candidate_key": "wuhan-olympic-babies-freshmen",
+          "story_identity": "wuhan-university-38-olympic-babies-freshmen-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-30T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 4
+          },
+          "drop_reason": "迎新趣闻，公共信息量有限"
+        },
+        {
+          "candidate_key": "hangzhou-durian-370-price-dispute",
+          "story_identity": "hangzhou-fruit-store-durian-370-price-dispute-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 3
+          },
+          "drop_reason": "个体消费价格质疑，店方已回应，公共增量有限"
+        },
+        {
+          "candidate_key": "yu-donglai-supports-han-hong",
+          "story_identity": "yu-donglai-post-supports-han-hong-2026-08-31",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 18,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "企业家个人社交平台发文，公共信息增量有限"
+        },
+        {
+          "candidate_key": "foreigner-dividend-tax-2026",
+          "story_identity": "foreigner-dividend-tax-exemption-ended-2026-09-01",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 13,
+            "evidence": 12
+          },
+          "drop_reason": "财政部、税务总局9月1日公告取消外籍个人股息红利免税，影响面主要为外籍个人与外商投资企业，日常相关性未达15分门槛"
+        },
+        {
+          "candidate_key": "national-quality-month-2026-launch",
+          "story_identity": "national-quality-month-2026-launch-sep1",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 20,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "全国“质量月”为例行年度宣传活动启动，当日面向普通读者的具体服务增量有限"
+        },
+        {
+          "candidate_key": "back-to-school-homework-viral-videos",
+          "story_identity": "viral-homework-cramming-videos-before-school-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "网传赶作业视频盘点仅见聚合平台与自媒体，无权威来源证实具体事件"
+        },
+        {
+          "candidate_key": "repeated-refund-only-dispute",
+          "story_identity": "takeaway-repeated-refund-only-dispute-2026-08",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "商家自述纠纷仅见短视频平台内容，无持牌媒体核实"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-01-typhoon-saldear-restrengthens",
+      "story_identity": "typhoon-saldear-restrengthens-south-china-sea-2026-09-01",
+      "headline": "🌀 台风“沙德尔”停编后在南海“复活”，暴雨黄色预警继续",
+      "summary": "今年第18号台风“沙德尔”8月30日停编后，其残余涡旋移入南海，9月1日凌晨再度加强为热带风暴级台风，中央气象台维持原名与编号，6时发布台风蓝色预警、18时继续发布暴雨黄色预警；9月1日夜间至2日广东东部、福建、浙江等地有大到暴雨，局地特大暴雨，需防范山洪和地质灾害。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 90,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-01T06:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "台风停编后残余涡旋再度加强属罕见气象事件，报道聚焦预警信息与防御提示，无伤亡数字，措辞克制。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/local/20260901/2abe87d5411e47968e14963cfc71ec55/c.html",
+          "title": "台风“沙德尔”复活 中央气象台发布台风蓝色预警",
+          "captured_at": "2026-09-04T23:37:00+08:00",
+          "note": "新华社9月1日电：残余涡旋1日凌晨在南海西北部再度加强为台风，维持原名与编号"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/01/ARTIpdNEs1bYvXNxwUWvAvMj260901.shtml",
+          "title": "暴雨黄色预警：7省有大到暴雨广东福建浙江台湾岛局地特大暴雨",
+          "captured_at": "2026-09-04T23:37:30+08:00",
+          "note": "中央气象台9月1日18时继续发布暴雨黄色预警"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://m.gmw.cn/2026-09/01/content_1304557521.htm",
+          "title": "多预警齐发！浙江福建需防范山洪和地质灾害局地有特大暴雨",
+          "captured_at": "2026-09-04T23:38:00+08:00",
+          "note": "光明网9月1日报道：暴雨、台风、山洪、地质灾害等多预警齐发"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-01-first-class-2026-broadcast",
+      "story_identity": "first-class-2026-long-march-theme-cctv-sep1",
+      "headline": "🎓 2026年《开学第一课》9月1日晚播出，主题“我们的长征路”",
+      "summary": "由中央宣传部、教育部、中央广播电视总台联合主办的公益节目2026年《开学第一课》9月1日20时在央视综合频道播出，央视频、国家中小学智慧教育平台等同步直播。今年是红军长征胜利90周年，节目以“我们的长征路”为主题，通过经典诗词朗诵、歌曲合唱等形式讲述长征故事。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-01T20:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "年度公益节目播出的事实性服务信息，面向学生家庭，仅述主题与收看方式。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "人民日报",
+          "url": "https://paper.people.com.cn/rmrb/pc/content/202609/01/content_30178392.html",
+          "title": "2026年《开学第一课》聚焦“我们的长征路”主题",
+          "captured_at": "2026-09-04T23:38:30+08:00",
+          "note": "人民日报9月1日报道节目主题与播出安排"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/01/ARTIDfinq4PdrnviH3jIXo0u260901.shtml",
+          "title": "我们的长征路！《开学第一课》9月1日开播",
+          "captured_at": "2026-09-04T23:39:00+08:00",
+          "note": "央视网9月1日报道：节目9月1日20时在CCTV-1等平台播出"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-01-china-basketball-lebanon-89-87",
+      "story_identity": "china-basketball-89-87-lebanon-worldcup-qualifier-2026-08-31",
+      "headline": "🏀 杨瀚森上篮准绝杀，中国男篮89比87险胜黎巴嫩",
+      "summary": "8月31日晚，2027年男篮世界杯亚洲区预选赛第二阶段比赛在浙江诸暨进行，中国男篮主场89比87险胜小组头名黎巴嫩队，终场前杨瀚森上篮完成准绝杀，全场贡献19分9篮板。中国队以两连胜收官本窗口期，战绩升至5胜3负，掌握出线主动权。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-08-31T21:40:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际赛事主场赛果的事实性报道，不涉及对立争议。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-01/10687581.shtml",
+          "title": "中国男篮险胜黎巴嫩队世预赛第二阶段收获两连胜",
+          "captured_at": "2026-09-04T23:36:00+08:00",
+          "note": "中新社诸暨8月31日电：中国男篮89比87战胜黎巴嫩队"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1788182152129564.html",
+          "title": "男篮世预赛：杨瀚森准绝杀 中国男篮89比87险胜黎巴嫩",
+          "captured_at": "2026-09-04T23:36:30+08:00",
+          "note": "新京报8月31日报道：据央视体育消息，杨瀚森准绝杀助中国队主场取胜"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/sports/2026_08_31_829432.shtml",
+          "title": "杨瀚森准绝杀！中国男篮89比87险胜黎巴嫩队",
+          "captured_at": "2026-09-04T23:39:30+08:00",
+          "note": "观察者网8月31日报道比赛结果与本窗口期两连胜"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-01-cyberspace-rules-effective-sep1",
+      "story_identity": "three-cyberspace-regulations-effective-2026-09-01",
+      "headline": "🔐 三部网信新规9月1日起施行，小微企业个人信息保护有了简化细则",
+      "summary": "9月1日起，《促进和规范电子单证应用规定》《互联网信息内容多渠道分发服务管理规定》《小型个人信息处理者个人信息保护简化措施规定》三部网信领域规定正式施行，分别涉及货物贸易运输数字化、信息内容多渠道分发秩序，以及在守牢个人信息安全底线的同时降低小微企业合规成本。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 10
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-01T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "部门规章施行的事实性梳理，服务中小企业与普通用户，无宣传化表述。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/08/31/11939599.shtml",
+          "title": "《网信新规速递》带您速览网信领域政策新动向",
+          "captured_at": "2026-09-04T23:35:00+08:00",
+          "note": "北京日报8月31日转载网信中国：三部规定自2026年9月1日起施行"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqfkkm4588211.shtml",
+          "title": "《网信新规速递》带您速览网信领域政策新动向",
+          "captured_at": "2026-09-04T23:35:30+08:00",
+          "note": "新浪财经8月31日同载网信中国新规施行速览"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-01-zheng-qinwen-usopen-round1-win",
+      "story_identity": "zheng-qinwen-usopen-round1-comeback-win-2026-09-01",
+      "headline": "🎾 郑钦文美网首轮逆转16岁新星，时隔两年再取美网正赛胜利",
+      "summary": "北京时间9月1日凌晨，2026年美国网球公开赛女单首轮，从资格赛突围的郑钦文以4比6、6比3、6比1逆转俄罗斯16岁新星柳托娃，晋级第二轮。这是她自2025年法网后的首场大满贯正赛胜利，本届美网她已连赢四场；郑钦文赛后表示近期身体不在最佳状态，这场胜利意义非凡。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-01T05:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛果事实性报道，聚焦复出进程，无争议内容。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-01/10687761.shtml",
+          "title": "中国选手郑钦文晋级美网女单第二轮",
+          "captured_at": "2026-09-04T23:40:00+08:00",
+          "note": "中新社纽约8月31日电：郑钦文2比1逆转柳托娃晋级第二轮"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/sports/2026_09_02_829754.shtml",
+          "title": "喊“牛来”真的有用？吴易昺郑钦文双双晋级美网第二轮",
+          "captured_at": "2026-09-04T23:40:30+08:00",
+          "note": "观察者网报道：北京时间9月1日凌晨郑钦文逆转取胜，从资格赛起四连胜"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
