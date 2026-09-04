@@ -1,0 +1,861 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-02",
+  "generated_at": "2026-09-05T00:26:10+08:00",
+  "published_at": "2026-09-05T00:26:10+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 40,
+    "published": 4,
+    "dropped_safety": {
+      "politics": 3,
+      "geopolitics": 2,
+      "propaganda": 1
+    },
+    "dropped_low_confidence": 28,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 11,
+      "official_sources": 0,
+      "state_media_sources": 3,
+      "major_media_sources": 8,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "evaluated_at": "2026-09-02T21:00:00+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 8,
+        "relaxed_72h": 12
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 40,
+          "cumulative_unique_candidates": 40,
+          "source_scope": [
+            "新华社人民网央视网央广网光明网中国新闻网等央媒",
+            "财新界面澎湃新京报浙江在线大洋网等持牌媒体",
+            "政府机构与部门官方发布",
+            "台风暴雨相关地方预警与应急通报",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-02-cangnan-record-rain-drone-relief",
+          "story_identity": "cangnan-record-rainfall-school-drone-relief-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-02-cangnan-record-rain-drone-relief",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-02-jilong-mudslide-briefing",
+          "story_identity": "tibet-jilong-mudslide-sep2-briefing",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-02-jilong-mudslide-briefing",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-02-enflame-ipo-subscription",
+          "story_identity": "enflame-technology-star-market-ipo-subscription-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-02-enflame-ipo-subscription",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-02-cma-september-typhoon-outlook",
+          "story_identity": "cma-september-2026-typhoon-outlook-presser",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-02-cma-september-typhoon-outlook",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "nio-q2-earnings-profitable",
+          "story_identity": "nio-2026-q2-earnings-third-profitable-quarter",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "蔚来二季度财报披露于9月1日晚，距评估时钟约25小时，超出24小时严格窗，落48小时档"
+        },
+        {
+          "candidate_key": "guangdong-typhoon-defense-reminder",
+          "story_identity": "typhoon-saldear-guangdong-defense-reminder-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与当日苍南暴雨条目同属台风“沙德尔”影响链，增量为程序性防御提醒，评分落48小时档"
+        },
+        {
+          "candidate_key": "li-mega-home-launch",
+          "story_identity": "li-auto-new-mega-home-launch-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "新一代理想MEGA上市受众偏窄，热度评分未达当日严格线，落48小时档"
+        },
+        {
+          "candidate_key": "xiapu-flood-peak-above-guarantee",
+          "story_identity": "xiapu-yangjiaxi-flood-peak-above-guarantee-level-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "福建霞浦杨家溪洪峰超保证水位，同属“沙德尔”降雨链区域汛情，公共增量由苍南条目承担"
+        },
+        {
+          "candidate_key": "cma-typhoon-blue-warning-sep2",
+          "story_identity": "cma-typhoon-blue-rainstorm-warnings-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "中央气象台例行预警滚动发布，服务信息已并入当日台风相关条目"
+        },
+        {
+          "candidate_key": "three-airlines-h1-loss",
+          "story_identity": "three-major-airlines-2026-h1-loss-8-billion",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "三大航半年报披露于8月31日，距评估时钟超48小时，且为行业汇总信息"
+        },
+        {
+          "candidate_key": "badminton-china-masters-mixed-doubles",
+          "story_identity": "china-badminton-masters-cheng-zhang-advance-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "中国羽毛球大师赛单项早轮次晋级，公共热度有限"
+        },
+        {
+          "candidate_key": "cangnan-lingxi-residential-rescue",
+          "story_identity": "cangnan-lingxi-songqiao-tingyuan-rescue-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "苍南灵溪镇小区积水救援，与主条目同灾同源，属局部救援细节"
+        },
+        {
+          "candidate_key": "xiamen-landslide-risk-averted",
+          "story_identity": "xiamen-geological-hazard-early-averted-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "厦门单点地灾险情提前规避，无人员伤亡，权威纵深报道有限"
+        },
+        {
+          "candidate_key": "zheng-qinwen-r2-opponent-confirmed",
+          "story_identity": "zheng-qinwen-usopen-r2-opponent-putintseva-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T05:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "美网赛前对阵信息，比赛结果尚未产生；前一日已有美网条目"
+        },
+        {
+          "candidate_key": "ashare-sep2-close-lower",
+          "story_identity": "ashare-close-lower-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "单日行情波动属例行市场信息，无重大制度性变化"
+        },
+        {
+          "candidate_key": "shenzhen-rail-partial-suspension",
+          "story_identity": "shenzhen-rail-partial-suspension-typhoon-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "深圳铁路部分列车因台风临时停运，影响面局部，权威滚动信息有限"
+        },
+        {
+          "candidate_key": "mid-autumn-train-ticket-calendar",
+          "story_identity": "mid-autumn-holiday-train-ticket-sale-calendar-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "中秋假期车票9月11日才开售，当日仅为购票日历提示，无实际增量事件"
+        },
+        {
+          "candidate_key": "putian-rainstorm-blue-warning",
+          "story_identity": "putian-licheng-rainstorm-blue-warning-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "区级常规暴雨预警信号，已并入台风降雨整体条目"
+        },
+        {
+          "candidate_key": "buaa-freshmen-digital-orientation",
+          "story_identity": "buaa-2026-freshmen-digital-orientation",
+          "research_pass": 1,
+          "occurred_at": "2026-08-28T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "drop_reason": "北航新生报到为8月28日事件，9月2日为回顾性报道；近日已有开学条目"
+        },
+        {
+          "candidate_key": "hunan-special-pharmacy-health-station",
+          "story_identity": "hunan-special-pharmacy-health-station-pilot-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "湖南特药药房“健康驿站”为地方行业协会通报的试点探索，公共增量有限"
+        },
+        {
+          "candidate_key": "guangdong-bridge-closure-typhoon",
+          "story_identity": "guangdong-bridge-closure-typhoon-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 19,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "个别桥梁因台风临时封桥通告，影响面窄"
+        },
+        {
+          "candidate_key": "li-auto-q2-loss-stale",
+          "story_identity": "li-auto-2026-q2-operating-loss",
+          "research_pass": 1,
+          "occurred_at": "2026-08-27T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 10,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "理想汽车二季度财报为8月27日信息，超72小时时效窗"
+        },
+        {
+          "candidate_key": "xingyu-share-buyback-response",
+          "story_identity": "xingyu-share-price-drop-buyback-response-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "单一公司股价异动回应，日常相关性低"
+        },
+        {
+          "candidate_key": "ciftis-sep9-opening-preview",
+          "story_identity": "ciftis-2026-opening-sep9-preview",
+          "research_pass": 1,
+          "occurred_at": "2026-08-29T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "服贸会9月9日开幕，当前仅有预告信息，非当日事件"
+        },
+        {
+          "candidate_key": "us-open-china-day1-recap",
+          "story_identity": "usopen-2026-day1-china-players-recap",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "自媒体美网首日复盘盘点，无新增事实"
+        },
+        {
+          "candidate_key": "jiaxing-uni-freshmen-registration",
+          "story_identity": "jiaxing-university-freshmen-registration-sep2-3",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 18,
+            "everyday_relevance": 7,
+            "evidence": 3
+          },
+          "drop_reason": "单校新生报到日程，例行开学安排"
+        },
+        {
+          "candidate_key": "sohu-typhoon-landing-selfmedia-summary",
+          "story_identity": "selfmedia-typhoon-saldear-landing-summary",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "自媒体对台风登陆信息的转述汇总，无增量事实"
+        },
+        {
+          "candidate_key": "nanchang-uni-ceremony-postponed",
+          "story_identity": "nanchang-university-opening-ceremony-postponed-sep2",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 6,
+            "evidence": 3
+          },
+          "drop_reason": "单校开学典礼顺延通知，公共价值低"
+        },
+        {
+          "candidate_key": "toutiao-sep2-finance-rollup",
+          "story_identity": "selfmedia-sep2-finance-news-rollup",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "自媒体财经要闻汇总，无原创事实增量"
+        },
+        {
+          "candidate_key": "caas-grad-orientation-sep2",
+          "story_identity": "caas-2026-grad-orientation-sep2",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "院所新生入学教育日程通知，影响面窄"
+        },
+        {
+          "candidate_key": "usst-autumn-teaching-notice",
+          "story_identity": "usst-autumn-2026-teaching-arrangement-notice",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 41,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 2
+          },
+          "drop_reason": "单校秋季教学安排通知，例行事务"
+        },
+        {
+          "candidate_key": "mee-project-publicity-period",
+          "story_identity": "mee-eia-publicity-period-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 18,
+            "everyday_relevance": 4,
+            "evidence": 2
+          },
+          "drop_reason": "环评受理公示为例行程序性信息"
+        },
+        {
+          "candidate_key": "weibo-oil-price-broadcast-sep2",
+          "story_identity": "selfmedia-oil-price-broadcast-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅为自媒体油价播报，无调价事件与权威来源证实"
+        },
+        {
+          "candidate_key": "selfmedia-li-mega-price-speculation",
+          "story_identity": "selfmedia-li-mega-price-speculation-2026-09-02",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T04:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "自媒体发布前预测售价与官方公布不符，属未经证实的价格猜测"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-02-cangnan-record-rain-drone-relief",
+      "story_identity": "cangnan-record-rainfall-school-drone-relief-2026-09-02",
+      "headline": "🌧️ 温州苍南单日雨量破历史极值，被困学校师生获无人机空投物资",
+      "summary": "受台风“沙德尔”外围环流与季风共同影响，9月1日夜间起浙江温州苍南县遭遇特大暴雨，单日面雨量打破当地观测史纪录，温州市2日上午将防汛应急响应提升至Ⅰ级。苍南县职业中等专业学校因地势低洼积水严重，2500余名师生被困，当地调配中大型无人机空投食品、饮用水等物资，截至2日16时30分已投送11.3吨。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 90,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 12
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-02T09:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "极端降雨灾害事实性报道，聚焦预警响应与救援保障，被困人数与物资数据仅置于简述，标题不含伤亡数字，措辞克制。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_33994083",
+          "title": "暴雨致温州苍南县一学校积水严重，2500余名师生被困，无人机空投物资救援",
+          "captured_at": "2026-09-05T00:13:00+08:00",
+          "note": "澎湃新闻9月2日报道：苍南县职业中等专业学校2500余名师生被困，2日上午9点多当地调配中大型吊运无人机空投物资"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "浙江在线",
+          "url": "http://zjnews.zjol.com.cn/yc/qmt/202609/t20260902_31886419.shtml",
+          "title": "温州多地暴雨红色预警！苍南单日面雨量打破历史极值",
+          "captured_at": "2026-09-05T00:13:30+08:00",
+          "note": "浙江在线9月2日报道：温州多地暴雨红色预警，苍南单日面雨量打破历史极值，灵溪镇部分群众被困后获消防救援"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新蓝网",
+          "url": "http://wap.cztv.com/articles/index.html?pubId=2947041",
+          "title": "浙南多地持续强降雨全力筑牢安全防线",
+          "captured_at": "2026-09-05T00:14:00+08:00",
+          "note": "新蓝网报道：温州市于9月2日上午将防汛应急响应提升至Ⅰ级"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://m.gmw.cn/2026-09/03/content_1304558452.htm",
+          "title": "有学校2500多名师生被困，无人机紧急吊运，空投物资救援",
+          "captured_at": "2026-09-05T00:14:30+08:00",
+          "note": "光明网报道：截至9月2日16时30分已向校园投送八宝粥、饮用水等物资11.3吨"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-02-jilong-mudslide-briefing",
+      "story_identity": "tibet-jilong-mudslide-sep2-briefing",
+      "headline": "🏔️ 西藏吉隆泥石流灾害举行新闻发布会，通报灾情与次生灾害防范",
+      "summary": "9月2日，西藏吉隆“8·26”泥石流灾害新闻发布会在吉隆镇举行。发布会通报，截至2日12时灾害已致21人遇难、541人失联；现场统筹多方力量，运用边坡雷达、无人机航测、泥水位和气象等多要素监测设备，严密防范持续降水和高温可能引发的次生泥石流灾害。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-02T12:00:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "重大灾害权威通报，伤亡与失联数字仅置于简述，聚焦发布会事实与次生灾害防范，无渲染表述。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "大洋网",
+          "url": "https://news.dayoo.com/society/202609/02/140000_54999198.htm",
+          "title": "西藏吉隆泥石流灾害已致21人遇难541人失联",
+          "captured_at": "2026-09-05T00:15:00+08:00",
+          "note": "广州日报大洋网9月2日报道：吉隆“8·26”泥石流灾害新闻发布会通报，截至9月2日12时灾害已致21人遇难、541人失联"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://mini.caixin.com/2026-09-02/102480878.html",
+          "title": "财新闻｜西藏吉隆泥石流灾害已致21人遇难 541人失联",
+          "captured_at": "2026-09-05T00:15:30+08:00",
+          "note": "财新网9月2日报道：现场携带边坡雷达、无人机航测、泥水位、气象等多要素监测设备防范次生泥石流灾害"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-02-enflame-ipo-subscription",
+      "story_identity": "enflame-technology-star-market-ipo-subscription-2026-09-02",
+      "headline": "💻 国产GPU企业燧原科技开启科创板申购，发行价142.18元/股",
+      "summary": "9月2日，上海燧原科技股份有限公司开启科创板IPO网上网下申购，股票代码688801，发行价142.18元/股，预计募集资金总额61.19亿元，为年内第三只百元新股。该公司主营云端AI芯片，被视作国产算力代表企业之一，网上发行有效申购户数超过700万户。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 10
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-02T09:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "新股发行事实性信息，仅述发行安排与公司主业，不构成投资建议，无收益承诺表述。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "界面新闻",
+          "url": "https://www.jiemian.com/article/15036704.html",
+          "title": "燧原科技科创板IPO发行价格定为142.18元/股",
+          "captured_at": "2026-09-05T00:16:00+08:00",
+          "note": "界面新闻报道：燧原科技发行价142.18元/股，发行数量4303.5173万股，网上网下申购日为9月2日"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "东方财富",
+          "url": "https://finance.eastmoney.com/a/202609023861955559.html",
+          "title": "发行价142.18元！燧原科技今日申购 中一签能赚多少？",
+          "captured_at": "2026-09-05T00:16:30+08:00",
+          "note": "东方财富9月2日报道：燧原科技为年内第三只百元股，9月2日开启科创板申购，股票代码688801"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网财经",
+          "url": "https://finance.ifeng.com/c/8w36Ukr2t4R",
+          "title": "142.18元，燧原科技发行价确定",
+          "captured_at": "2026-09-05T00:17:00+08:00",
+          "note": "凤凰网财经报道：按发行价预估上市市值约611.87亿元，预计募集资金总额61.19亿元"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-02-cma-september-typhoon-outlook",
+      "story_identity": "cma-september-2026-typhoon-outlook-presser",
+      "headline": "🌀 中国气象局：预计9月有2至3个台风登陆或明显影响我国",
+      "summary": "中国气象局9月2日举行新闻发布会介绍，预计9月西北太平洋和南海海域有5至7个台风生成，接近常年同期到偏多；有2至3个台风登陆或明显影响我国，较常年同期偏多，强度总体偏强，主要影响华东和华南沿海地区，存在较强台风北上影响我国北方地区的风险，提醒相关地区防范山洪和城市积涝。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 9
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-02T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国家级气象部门发布会的气候趋势预测服务信息，措辞客观，含防御提示。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/gn/2026/09-02/10688578.shtml",
+          "title": "中国气象局：预计9月有2至3个台风登陆或明显影响我国",
+          "captured_at": "2026-09-05T00:12:00+08:00",
+          "note": "中新网9月2日电：国家气候中心副主任高荣在新闻发布会上介绍9月台风趋势预测"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://society.people.com.cn/n1/2026/0902/c1008-40791209.html",
+          "title": "9月将有2到3个台风登陆或明显影响我国",
+          "captured_at": "2026-09-05T00:12:30+08:00",
+          "note": "人民网9月2日报道：预计9月有2到3个台风登陆或明显影响我国，较常年同期偏多"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
