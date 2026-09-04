@@ -1,0 +1,1949 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-09-01",
+  "generated_at": "2026-09-05T00:02:45+08:00",
+  "published_at": "2026-09-05T00:02:45+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 93,
+    "published": 10,
+    "dropped_safety": {
+      "时事政治": 6,
+      "灾害/公共安全": 8,
+      "社会事件/争议": 6,
+      "死亡/伤害": 3,
+      "未成年人": 2,
+      "明星争议": 3
+    },
+    "dropped_low_confidence": 45,
+    "dropped_capacity": 2,
+    "sources": [
+      "weibo",
+      "douyin",
+      "zhihu",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 57,
+      "platform_public_sources": 2,
+      "aggregator_sources": 21,
+      "search_media_sources": 5,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 8
+    },
+    "selection": {
+      "evaluated_at": "2026-09-01T21:00:00+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 12,
+        "relaxed_48h": 14,
+        "relaxed_72h": 14
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-01-quan-beijing-douzai-zhao-luke",
+          "canonical_phrase": "全北京都在找Luke",
+          "outcome": "selected",
+          "item_id": "2026-09-01-quan-beijing-douzai-zhao-luke",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-01-yinianyidu-baoshupi-you-kaishile",
+          "canonical_phrase": "一年一度的包书皮又开始了",
+          "outcome": "selected",
+          "item_id": "2026-09-01-yinianyidu-baoshupi-you-kaishile",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-01-shui-de-kaixue-jinxingqu-xiangle",
+          "canonical_phrase": "谁的开学进行曲响了",
+          "outcome": "selected",
+          "item_id": "2026-09-01-shui-de-kaixue-jinxingqu-xiangle",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T06:39:39+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-24-yaya-yao",
+          "canonical_phrase": "呀吖摇",
+          "outcome": "selected",
+          "item_id": "2026-08-24-yaya-yao",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/b1e586fdccdf0d4faed9d59c70427ed94923e79e/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T11:56:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-13-meiyou-x-yikaishi-jiushi-y",
+          "canonical_phrase": "没有X一开始就是Y",
+          "outcome": "selected",
+          "item_id": "2026-08-13-meiyou-x-yikaishi-jiushi-y",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-08-31-kaixue-xin-renshe",
+          "canonical_phrase": "开学新人设",
+          "outcome": "selected",
+          "item_id": "2026-08-31-kaixue-xin-renshe",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-01-meiyou-guanzhao-x-de-yiwu",
+          "canonical_phrase": "没有惯着X的义务",
+          "outcome": "selected",
+          "item_id": "2026-09-01-meiyou-guanzhao-x-de-yiwu",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T17:16:16+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-01-yanmaixi-chuanda",
+          "canonical_phrase": "燕麦系",
+          "outcome": "selected",
+          "item_id": "2026-09-01-yanmaixi-chuanda",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T17:16:16+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-01-woletan",
+          "canonical_phrase": "我了叹",
+          "outcome": "selected",
+          "item_id": "2026-09-01-woletan",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T06:35:55+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-01-x-de-quanwei-wo-houzhihoujue",
+          "canonical_phrase": "X的权威我后知后觉",
+          "outcome": "selected",
+          "item_id": "2026-09-01-x-de-quanwei-wo-houzhihoujue",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T17:16:16+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-11",
+          "canonical_phrase": "我和漫画里的自己一起开学",
+          "outcome": "dropped_capacity",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-12",
+          "canonical_phrase": "想一万次不如做一次",
+          "outcome": "dropped_capacity",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 27,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-13",
+          "canonical_phrase": "回到紧身裤烟熏妆时代女生版",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-14",
+          "canonical_phrase": "我做了一张超萌大头贴壁纸",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 27,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T17:16:16+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-15",
+          "canonical_phrase": "预习我的早秋穿搭",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 27,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/b1e586fdccdf0d4faed9d59c70427ed94923e79e/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T11:56:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-16",
+          "canonical_phrase": "开学第一天",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 28,
+            "reusability": 6,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T17:16:16+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-17",
+          "canonical_phrase": "从夯到拉评省会城市旅游",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 26,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T02:32:21+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-18",
+          "canonical_phrase": "穿成想成为的样子",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 27,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T00:01:40+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-19",
+          "canonical_phrase": "初秋叠穿我想好了",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T17:16:16+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-20",
+          "canonical_phrase": "开学这天你是认真的吗",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-21",
+          "canonical_phrase": "接下来干啥都顺",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 26,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-22",
+          "canonical_phrase": "分别总是在九月 回忆是思念的愁",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 6,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T17:16:16+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-23",
+          "canonical_phrase": "人们常在开学前一天回忆假期",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-24",
+          "canonical_phrase": "开学与家人临别那一刻",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 26,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T00:01:40+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-25",
+          "canonical_phrase": "魔性扭扭摇我先跳了",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-26",
+          "canonical_phrase": "开学互助指南",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 26,
+            "reusability": 8,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T17:16:16+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-27",
+          "canonical_phrase": "多款手机正式涨价",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 2,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T17:16:16+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-28",
+          "canonical_phrase": "天聋地哑孤独怎么会是惩罚",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 6,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/b1e586fdccdf0d4faed9d59c70427ed94923e79e/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T11:56:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-29",
+          "canonical_phrase": "开学前最后一条视频",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 26,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-30",
+          "canonical_phrase": "又到一年退伍季",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 26,
+            "reusability": 6,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/b1e586fdccdf0d4faed9d59c70427ed94923e79e/archives/2026-09-01.md",
+            "observed_at": "2026-09-01T11:56:58+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-31",
+          "canonical_phrase": "幼儿园的开学第一天",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 26,
+            "reusability": 7,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-32",
+          "canonical_phrase": "光绘镜头签",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 26,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-33",
+          "canonical_phrase": "你怎么舍得让我的泪流向海",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 5,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T01:10:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-34",
+          "canonical_phrase": "梅西宣布从阿根廷国家队退役",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 2,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T00:16:56+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-35",
+          "canonical_phrase": "8月的最后一天许个愿吧",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 24,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T00:01:40+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-36",
+          "canonical_phrase": "开学非标准建议请查收",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-37",
+          "canonical_phrase": "我看开学未必有我忧郁",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/bilibili/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:11+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-38",
+          "canonical_phrase": "幸福和快乐是结局",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 4,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T01:10:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-39",
+          "canonical_phrase": "人会在自然里长出生命力",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-40",
+          "canonical_phrase": "跟着杨玉环一起挑战琵琶cos",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-41",
+          "canonical_phrase": "杨瀚森绝杀",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 26,
+            "reusability": 2,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T00:01:40+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-42",
+          "canonical_phrase": "学功夫练武术",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 6,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-43",
+          "canonical_phrase": "用20万颗拼豆手搓20秒动画",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 25,
+            "reusability": 5,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-44",
+          "canonical_phrase": "写给00后的一封信英文版",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 6,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T00:16:56+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-45",
+          "canonical_phrase": "全世界最爱开学之人",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 25,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/bilibili/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:11+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-46",
+          "canonical_phrase": "开学补作业现状",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 25,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/bilibili/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:11+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-47",
+          "canonical_phrase": "细把眉眼描摹",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 26,
+            "reusability": 4,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T02:36:59+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-48",
+          "canonical_phrase": "多所高校宣布中秋国庆连放13天",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 25,
+            "reusability": 4,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T03:38:26+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-49",
+          "canonical_phrase": "中式早餐包罗万味",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 5,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T00:01:40+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-50",
+          "canonical_phrase": "沈腾回应关晓彤无米版徐福烩饭",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 5,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T01:10:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-51",
+          "canonical_phrase": "天地之大 困住你的是什么",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 6,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-52",
+          "canonical_phrase": "大连开海仪式太震撼了",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 4,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-53",
+          "canonical_phrase": "首批“20后”开始上小学啦",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 5,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-54",
+          "canonical_phrase": "小红书发日常可设三天可见",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 5,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T02:10:38+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-55",
+          "canonical_phrase": "90元一桶的炸鸡代排费150",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 4,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T04:07:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-56",
+          "canonical_phrase": "一个超好用的情绪控制技巧",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 4,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-09-01",
+            "observed_at": "2026-09-01T01:10:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-57",
+          "canonical_phrase": "王者荣耀给00后的一封信",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 4,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+            "observed_at": "2026-09-01T20:11:13+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-58",
+          "canonical_phrase": "开学的味道我知道",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-59",
+          "canonical_phrase": "开学第一课",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-60",
+          "canonical_phrase": "你的学校中秋和国庆连休吗",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-61",
+          "canonical_phrase": "宋亚东连麦阵容有“亿”点夯",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-62",
+          "canonical_phrase": "韩剧爽文的风吹到了AI界",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-63",
+          "canonical_phrase": "生逢其时定档9月3日",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-64",
+          "canonical_phrase": "雷霆音乐这次旅游时间非常充裕",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "p1-65",
+          "canonical_phrase": "请继续不完美的人生",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-66",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-67",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-68",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-69",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-70",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-71",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-72",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-73",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-74",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-75",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-76",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-77",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-78",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-79",
+          "outcome": "dropped_safety",
+          "drop_reason": "灾害/公共安全",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-80",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-81",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-82",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-83",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-84",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-85",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-86",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-87",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-88",
+          "outcome": "dropped_safety",
+          "drop_reason": "死亡/伤害",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-89",
+          "outcome": "dropped_safety",
+          "drop_reason": "未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-90",
+          "outcome": "dropped_safety",
+          "drop_reason": "未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-91",
+          "outcome": "dropped_safety",
+          "drop_reason": "明星争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-92",
+          "outcome": "dropped_safety",
+          "drop_reason": "明星争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-93",
+          "outcome": "dropped_safety",
+          "drop_reason": "明星争议",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 93,
+          "cumulative_unique_candidates": 93,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "zhihu",
+            "bilibili",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-01-quan-beijing-douzai-zhao-luke",
+      "title": "🔍 全北京都在找Luke",
+      "aliases": [
+        "全北京都在找Luke",
+        "全X都在找Y",
+        "全抖音都在找luke"
+      ],
+      "canonical_phrase": "全北京都在找Luke",
+      "platform": [
+        "douyin",
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "都市剧里的理想精英形象引发全民玩梗，「全北京都在找Luke」成打工人自嘲理想与现实差距的寻人句式。",
+      "origin": "已验证：新浪9月1日报道该梗随热播都市剧出圈，剧中CBD精英角色Luke被称「全北京最有腔调的男人」；「全抖音都在找luke」9月1日11:56、17:16、20:11三个热榜归档快照均在抖音热榜；梗词典站点9月1日收录该词条。",
+      "usage": "「全X都在找Y」自由换城换对象：全上海都在找甲方、全公司都在找不加班的人；评论区用来调侃理想化人设与日常的落差。",
+      "fun_point": "把「找不到理想型/理想工作」写成全城寻人启事，正经的寻人语气配上谁都懂的自嘲，反差感强。",
+      "why_spread": "已验证：话题8月30日起在微博发酵、9月1日登抖音热榜并见媒体报道，还有网友线下到国贸打卡寻人；推测：剧集热度叠加打工人共鸣，句式零门槛可套到任何城市与职业。",
+      "lifecycle": "peak",
+      "brand_usage": "招聘、通勤、咖啡、写字楼相关品牌可借「全X都在找Y」做寻人海报互动；避免影射具体真人或贩卖焦虑。",
+      "risk": {
+        "level": "low",
+        "note": "虚构角色衍生的自嘲句式，使用时不要指向具体真实个人。"
+      },
+      "days_on_list": 1,
+      "score": 89,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（20:11 快照）",
+          "observed_at": "2026-09-01T20:11:13+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "热榜归档9月1日20:11快照「全抖音都在找luke」在抖音热榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（17:16 快照）",
+          "observed_at": "2026-09-01T17:16:16+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "抖音热榜归档17:16快照该话题在榜。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "weibo",
+          "url": "https://k.sina.com.cn/article_7857263936_1d454554006801r2f6.html",
+          "title": "全北京都在找Luke：都市剧角色火出圈，打工人情绪释放",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "新浪9月1日报道：该梗随剧集出圈，评论区随处可见「全北京都在找Luke」式留言。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.dancihu.com/liuxingyu/q17120.html",
+          "title": "全北京都在找Luke是什么意思",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "梗词典站点9月1日收录：网友专程到商圈打卡、在社交平台分享打卡经历。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-01-yinianyidu-baoshupi-you-kaishile",
+      "title": "📚 一年一度的包书皮又开始了",
+      "aliases": [
+        "一年一度的包书皮又开始了",
+        "一年一度的X又开始了",
+        "包书皮"
+      ],
+      "canonical_phrase": "一年一度的包书皮又开始了",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "开学日家长集体开工包书皮，「一年一度的包书皮又开始了」成开学季固定吐槽仪式，登抖音、快手热榜。",
+      "origin": "已验证：该话题9月1日在抖音热榜全天在榜（11:56、17:16、20:11快照均在，22:36快照升至第4位），同日进入快手热榜；网易9月2日报道家长「包书皮包到快要崩溃」的开学仪式。",
+      "usage": "「一年一度的X又开始了」套给任何周期性回归的事：一年一度的抢票又开始了、一年一度的减肥又开始了；包书皮现场则晒手忙脚乱的包法。",
+      "fun_point": "包书皮是家长躲不掉的开学「大考」，气泡、褶皱、包歪的封面人人有共鸣，一年一度的仪式感里全是笑料。",
+      "why_spread": "已验证：9月1日开学当天登抖音、快手双平台热榜并有媒体跟进；推测：开学季家长集体行动，晒图门槛低，周期性话题每年固定回归。",
+      "lifecycle": "peak",
+      "brand_usage": "文具、图书、打印品牌可做「包书皮教程/神器」互动；避免制造家长焦虑或暗示学校强制要求。",
+      "risk": {
+        "level": "safe",
+        "note": "开学季亲子向常态话题，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 86,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（20:11 快照）",
+          "observed_at": "2026-09-01T20:11:13+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "热榜归档9月1日20:11快照「一年一度的包书皮又开始了」列抖音热榜第4位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/kuaishou/2026-09-01.md",
+          "title": "2026-09-01 快手热榜归档（20:11 快照）",
+          "observed_at": "2026-09-01T20:11:13+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "热榜归档9月1日20:11快照该话题在快手热榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/6c58b2d9eb050192036e03b72eaafbb633837968/archives/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（22:36 快照）",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "抖音热榜归档22:36快照该话题升至第4位（晚于评估时钟，仅作存档佐证）。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.163.com/v/video/VE4TB4VKL.html",
+          "title": "一年一度的开学仪式又来了，爸爸包书皮包到快要崩溃了",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "网易9月2日报道家长开学季包书皮的集体崩溃现场。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-01-shui-de-kaixue-jinxingqu-xiangle",
+      "title": "🎵 谁的开学进行曲响了",
+      "aliases": [
+        "谁的开学进行曲响了",
+        "开学进行曲",
+        "X进行曲我先用了"
+      ],
+      "canonical_phrase": "谁的开学进行曲响了",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "开学日网友给返校视频配节奏感BGM卡点，「谁的开学进行曲响了」「X进行曲我先用了」成开学整活句式。",
+      "origin": "已验证：「谁的开学进行曲响了」9月1日06:39起登抖音热榜（早间归档第22位），11:56与20:11快照持续在榜；同族话题「进行曲我先用了」「进行曲音乐起」同日在榜。",
+      "usage": "给任何出场画面配鼓点BGM并喊「谁的X进行曲响了」：开学进行曲、早八进行曲、下班进行曲；也可说「X进行曲我先用了」抢占BGM。",
+      "fun_point": "「进行曲」把普通出场包装成检阅式登场，仪式感拉满又中二，谁都能给自己配一首。",
+      "why_spread": "已验证：相关话题9月1日全天多个快照在抖音热榜；推测：开学日学生集中拍返校视频，卡点模板即拿即用、易接龙。",
+      "lifecycle": "peak",
+      "brand_usage": "运动、服饰、文具品牌可做「X进行曲」卡点挑战；避免使用有版权争议的BGM做商业投放。",
+      "risk": {
+        "level": "safe",
+        "note": "开学季BGM卡点玩法，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 84,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/archive/2026-09-01",
+          "title": "2026年9月1日全平台热搜归档",
+          "observed_at": "2026-09-01T06:39:39+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "聚合归档9月1日06:39快照「谁的开学进行曲响了」列抖音榜第22位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/b1e586fdccdf0d4faed9d59c70427ed94923e79e/archives/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（11:56 快照）",
+          "observed_at": "2026-09-01T11:56:58+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "抖音热榜归档11:56快照该话题在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（20:11 快照）",
+          "observed_at": "2026-09-01T20:11:13+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "热榜归档9月1日20:11快照该话题仍在抖音热榜，同族「进行曲我先用了」「进行曲音乐起」同日在榜。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-24-yaya-yao",
+      "title": "🕺 呀吖摇开学季再上榜",
+      "aliases": [
+        "呀吖摇",
+        "呀吖摇开学季再上榜",
+        "拍了呀吖摇太权威了",
+        "呀吖摇卡点变装挑战"
+      ],
+      "canonical_phrase": "呀吖摇",
+      "platform": [
+        "douyin"
+      ],
+      "type": "短视频梗",
+      "summary": "手势舞「呀吖摇」开学季持续发酵，9月1日艺人跟跳话题登抖音热榜，衍生「开学版」玩法。",
+      "origin": "已验证：含呀吖摇跟跳的话题9月1日11:56、20:11两个热榜归档快照均在抖音热榜；财经科技媒体8月30日分析「开学版呀吖摇」在开学节点集中爆发。该梗8月24日首登本站，源自直播即兴手势舞。",
+      "usage": "跟跳呀吖摇配固定BGM卡点，评论区点名接力；开学版把场景搬进教室宿舍，「X版呀吖摇」可套任何场景。",
+      "fun_point": "动作魔性、上手零门槛，「呀吖」拟声自带喜感，版本翻新不断。",
+      "why_spread": "已验证：9月1日相关话题仍挂抖音热榜（本轮由艺人跟跳视频带动）；推测：点名接力机制叠加开学场景，二创空间大。",
+      "lifecycle": "peak",
+      "brand_usage": "舞蹈、运动、服饰类账号可发起翻跳挑战；公开传播以舞蹈动作为主。",
+      "risk": {
+        "level": "low",
+        "note": "原曲歌词带暗示意味，传播以舞蹈动作为主即可。"
+      },
+      "days_on_list": 4,
+      "score": 80,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/b1e586fdccdf0d4faed9d59c70427ed94923e79e/archives/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（11:56 快照）",
+          "observed_at": "2026-09-01T11:56:58+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "抖音热榜归档11:56快照「拍了呀吖摇太权威了」话题在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（20:11 快照）",
+          "observed_at": "2026-09-01T20:11:13+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "热榜归档9月1日20:11快照该跟跳话题仍在抖音热榜。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://cj.sina.cn/articles/view/7879923111/1d5ae15a706801e8pa",
+          "title": "开学版呀吖摇会发展成长期流行梗吗？",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "媒体8月30日分析开学版呀吖摇在开学节点集中爆发、被新一轮挑战更替的可能。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-13-meiyou-x-yikaishi-jiushi-y",
+      "title": "🌱 没有X一开始就是Y",
+      "aliases": [
+        "没有X一开始就是Y",
+        "没有花一开始就是一朵花",
+        "没有人一开始就是高手"
+      ],
+      "canonical_phrase": "没有X一开始就是Y",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "「没有X一开始就是Y」开学季再热，变体「没有花一开始就是一朵花」9月1日登抖音热榜，给新手期留成长空间。",
+      "origin": "已验证：「没有花一开始就是一朵花」9月1日20:11快照列抖音热榜、22:36快照第31位；该句式8月13日首登本站，用于给初期笨拙留成长空间的温和鼓励。",
+      "usage": "「没有X一开始就是Y」自由填空：没有学霸一开始就是学霸、没有大厨一开始就是大厨，配成长对比图或开学寄语。",
+      "fun_point": "把「菜是原罪」反转成「菜是起点」，一句留白让任何人都能填自己的故事。",
+      "why_spread": "已验证：变体9月1日在抖音热榜；推测：开学季新生集中入学，鼓励向句式适配开学寄语场景。",
+      "lifecycle": "rising",
+      "brand_usage": "教育、文具、运动品牌可做「没有X一开始就是Y」成长向海报；避免贩卖起跑线焦虑。",
+      "risk": {
+        "level": "safe",
+        "note": "鼓励向通用句式，无争议点。"
+      },
+      "days_on_list": 3,
+      "score": 79,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（20:11 快照）",
+          "observed_at": "2026-09-01T20:11:13+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "热榜归档9月1日20:11快照「没有花一开始就是一朵花」列抖音热榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/6c58b2d9eb050192036e03b72eaafbb633837968/archives/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（22:36 快照）",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "抖音热榜归档22:36快照该变体列第31位（晚于评估时钟，仅作存档佐证）。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-08-31-kaixue-xin-renshe",
+      "title": "🎭 开学新人设",
+      "aliases": [
+        "开学新人设",
+        "开学立个新人设",
+        "新学期新人设"
+      ],
+      "canonical_phrase": "开学新人设",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "开学当天「开学新人设」持续在榜，网友给自己立影视角色人设迎接新学期。",
+      "origin": "已验证：「开学新人设」9月1日20:11快照仍在抖音热榜；梗释义页显示该玩法2022年开学季已在抖音流行，此后每年开学季周期性回热。",
+      "usage": "「开学新人设：XX」代入任何角色的名台词回应老师提问；可延伸到「职场新人设」「复工新人设」。",
+      "fun_point": "把影视角色的腔调平移到教室，人设越离谱越好笑，是零成本的角色扮演接龙。",
+      "why_spread": "已验证：话题9月1日晚间仍在抖音热榜；推测：9月1日开学当天学生集中玩梗，模板零门槛可无限换角色。",
+      "lifecycle": "rising",
+      "brand_usage": "文具、图书、教育类品牌可做「新学期新人设」互动话题；避免暗示学生课堂顶撞老师。",
+      "risk": {
+        "level": "safe",
+        "note": "开学季角色扮演梗，无争议点。"
+      },
+      "days_on_list": 2,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（20:11 快照）",
+          "observed_at": "2026-09-01T20:11:13+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "热榜归档9月1日20:11快照「开学新人设」在抖音热榜。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://www.jishuoshuo.com/geng/32764.html",
+          "title": "开学新人设是什么意思?",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "梗释义页说明该梗指开学季给自己立影视角色人设的玩法，2022年起在抖音流行。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-01-meiyou-guanzhao-x-de-yiwu",
+      "title": "🙅 没有惯着X的义务",
+      "aliases": [
+        "没有惯着X的义务",
+        "没有惯着你的义务"
+      ],
+      "canonical_phrase": "没有惯着X的义务",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "追剧网友造出「没有惯着X的义务」，一句划清边界的拒绝句式走红，衍生到职场与日常场景。",
+      "origin": "已验证：含该句式的话题9月1日17:16（约第20位）、20:11两个热榜归档快照均在抖音热榜，22:36快照仍在榜；源自热播剧观众对剧中角色的集体「不惯着」表态。",
+      "usage": "「没有惯着X的义务」套给任何想拒绝的场景：没有惯着甲方的义务、没有惯着熊孩子的义务，表态即划界。",
+      "fun_point": "把「忍很久了」包装成义务清单，客气又硬气，拒绝别人时自带理直气壮。",
+      "why_spread": "已验证：相关话题9月1日午后至晚间持续在抖音热榜；推测：观剧情绪外溢到职场生活场景，句式立场鲜明易转发。",
+      "lifecycle": "rising",
+      "brand_usage": "服务类品牌可反向玩「惯着你」的宠溺营销；避免用于煽动对立或指向具体群体。",
+      "risk": {
+        "level": "low",
+        "note": "拒绝向句式带情绪，使用时避免指向具体个人或群体对立。"
+      },
+      "days_on_list": 1,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（17:16 快照）",
+          "observed_at": "2026-09-01T17:16:16+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "抖音热榜归档17:16快照含该句式的话题列约第20位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（20:11 快照）",
+          "observed_at": "2026-09-01T20:11:13+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "热榜归档9月1日20:11快照该句式话题仍在抖音热榜。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-01-yanmaixi-chuanda",
+      "title": "🌾 开学穿燕麦系淡淡的顺顺的",
+      "aliases": [
+        "燕麦系",
+        "开学穿燕麦系淡淡的顺顺的",
+        "穿燕麦系的男生是理想型",
+        "燕麦系穿搭"
+      ],
+      "canonical_phrase": "燕麦系",
+      "platform": [
+        "douyin"
+      ],
+      "type": "生活方式梗",
+      "summary": "「燕麦系」成开学季穿搭热词，「开学穿燕麦系淡淡的顺顺的」「穿燕麦系的男生是理想型」双话题同日在抖音热榜。",
+      "origin": "已验证：「开学穿燕麦系淡淡的顺顺的」「穿燕麦系的男生是理想型」9月1日17:16、20:11快照双双在抖音热榜，22:36快照仍在榜；以燕麦色系的柔和浅色穿搭为核心。",
+      "usage": "「燕麦系」可修饰一切柔和低饱和审美：燕麦系穿搭、燕麦系妆容、燕麦系宿舍；也可自嘲「我不是燕麦系，我是杂粮系」。",
+      "fun_point": "把配色审美说成一种「人格」，淡淡的、顺顺的自带治愈感，风格标签即身份宣言。",
+      "why_spread": "已验证：双话题9月1日午后至晚间同在抖音热榜；推测：开学换新装节点叠加早秋穿搭内容高峰，标签简单好跟。",
+      "lifecycle": "rising",
+      "brand_usage": "服饰、美妆、家居品牌可直接借「燕麦系」做色系内容；避免硬凑无关品类。",
+      "risk": {
+        "level": "safe",
+        "note": "穿搭审美向标签，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 28,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（17:16 快照）",
+          "observed_at": "2026-09-01T17:16:16+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "抖音热榜归档17:16快照「开学穿燕麦系淡淡的顺顺的」「穿燕麦系的男生是理想型」双话题在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（20:11 快照）",
+          "observed_at": "2026-09-01T20:11:13+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "热榜归档9月1日20:11快照两个燕麦系话题仍在抖音热榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/6c58b2d9eb050192036e03b72eaafbb633837968/archives/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（22:36 快照）",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "抖音热榜归档22:36快照两话题仍在榜（晚于评估时钟，仅作存档佐证）。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-01-woletan",
+      "title": "😮‍💨 我了叹",
+      "aliases": [
+        "我了叹",
+        "我了叮",
+        "我了叹音效"
+      ],
+      "canonical_phrase": "我了叹",
+      "platform": [
+        "bilibili"
+      ],
+      "type": "口头禅梗",
+      "summary": "手游音效空耳「我了叹」走红，网友用它给叹气时刻配音，梗科普视频登B站热门。",
+      "origin": "已验证：「我了叹是什么梗」9月1日06:35快照列B站热门榜第21位；梗科普视频8月31日在B站发布，解释其源自手游对局音效的空耳，与「我了叮」等音效同族。",
+      "usage": "无奈叹气时发一句「我了叹」代替「哎」；也可给视频里的叹气瞬间配该音效，「我了X」可接其他语气词。",
+      "fun_point": "把一声叹气空耳成正经「台词」，丧得字正腔圆，评论区接龙毫无门槛。",
+      "why_spread": "已验证：9月1日清晨登B站热门榜，相关二创与纯享版剪辑可见；推测：游戏玩家基数大，音效短平快易截图配音。",
+      "lifecycle": "rising",
+      "brand_usage": "游戏、二次元向账号可借音效做叹气合集互动；品牌慎用丧气语境。",
+      "risk": {
+        "level": "safe",
+        "note": "游戏音效空耳梗，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "bilibili",
+          "url": "https://hotflashnews.com/archive/2026-09-01",
+          "title": "2026年9月1日全平台热搜归档",
+          "observed_at": "2026-09-01T06:35:55+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "聚合归档9月1日06:35快照「我了叹是什么梗」列B站榜第21位。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "origin",
+          "platform": "bilibili",
+          "url": "https://www.bilibili.com/video/BV1A1t86wExG/",
+          "title": "我了叹是什么梗【梗指南】",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "B站梗科普视频（8月31日发布）解释该梗源自手游对局音效的空耳。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "bilibili",
+          "url": "https://search.bilibili.com/all?keyword=%E6%88%91%E4%BA%86%E5%8F%B9",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "B站公开搜索页可见「我了叹一小时纯享版」等网友二创剪辑。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-01-x-de-quanwei-wo-houzhihoujue",
+      "title": "😮 X的权威我后知后觉",
+      "aliases": [
+        "X的权威我后知后觉",
+        "的权威我后知后觉"
+      ],
+      "canonical_phrase": "X的权威我后知后觉",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "「X的权威我后知后觉」成热门口吻：起初不信，用完才承认对方是真权威，9月1日被套用到美食博主而登抖音热榜。",
+      "origin": "已验证：套用该句式的话题9月1日17:16（约第15位）、20:11快照均在抖音热榜；该句式今夏已先后被套用到追星站子、歌手等对象上，本轮落在一位教做饭的美食博主身上。",
+      "usage": "「X的权威我后知后觉」：某某教程的权威我后知后觉、泡脚的权威我后知后觉——先嘴硬后真香的一切场景都能用。",
+      "fun_point": "「后知后觉」把真香现场写得体面又嘴硬，承认了权威还保留一点倔强，自嘲感拉满。",
+      "why_spread": "已验证：该句式话题9月1日午后至晚间在抖音热榜；推测：「真香」是常青情绪，句式可套到任何被验证的推荐上。",
+      "lifecycle": "rising",
+      "brand_usage": "好物测评、教程类账号可自黑玩「权威后知后觉」；避免拉踩具体同行。",
+      "risk": {
+        "level": "safe",
+        "note": "自嘲真香向句式，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/65e2349371f425dd6befe594f16288453dc5ec9f/archives/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（17:16 快照）",
+          "observed_at": "2026-09-01T17:16:16+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "抖音热榜归档17:16快照套用该句式的话题列约第15位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/58599b68472f282c331e394af54874a68093fef0/archives/douyin/2026-09-01.md",
+          "title": "2026-09-01 抖音热榜归档（20:11 快照）",
+          "observed_at": "2026-09-01T20:11:13+08:00",
+          "captured_at": "2026-09-04T23:45:00+08:00",
+          "note": "热榜归档9月1日20:11快照该句式话题仍在抖音热榜。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
