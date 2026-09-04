@@ -1,0 +1,1262 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-05",
+  "generated_at": "2026-09-05T06:31:49+08:00",
+  "published_at": "2026-09-05T06:31:49+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 55,
+    "published": 10,
+    "dropped_safety": {
+      "controversy": 2,
+      "geopolitics": 6,
+      "politics": 4,
+      "privacy": 1,
+      "propaganda": 1,
+      "public_safety": 2
+    },
+    "dropped_low_confidence": 25,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 39,
+      "official_sources": 5,
+      "state_media_sources": 8,
+      "major_media_sources": 12,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 4
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 10,
+        "relaxed_48h": 11,
+        "relaxed_72h": 16
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 55,
+          "cumulative_unique_candidates": 55,
+          "source_scope": [
+            "新华社新华网人民网央视网中新网央广网等央媒",
+            "财联社第一财经新京报澎湃新闻川观新闻齐鲁晚报等持牌媒体",
+            "教育部民政部市场监管总局国家医保局中国证监会国家能源局等官方发布",
+            "百度热搜公开榜单热度佐证",
+            "福州新闻网等福建地方媒体滚动核实",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-05-moe-teacher-rights-presser",
+          "story_identity": "moe-teacher-rights-clarification-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-09-05-moe-teacher-rights-presser",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-05-putian-ends-three-stops-rain-eases",
+          "story_identity": "putian-rain-response-downgrade-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-05-putian-ends-three-stops-rain-eases",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-05-peace-hotel-coconut-juice-price",
+          "story_identity": "peace-hotel-beverage-price-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-05-peace-hotel-coconut-juice-price",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-05-elderly-care-mandatory-standards",
+          "story_identity": "elderly-care-mandatory-gb-standards-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-05-elderly-care-mandatory-standards",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 24,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-05-asian-games-china-delegation",
+          "story_identity": "asian-games-20th-china-delegation-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-05-asian-games-china-delegation",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-05-medical-catalog-negotiation-opens",
+          "story_identity": "medical-insurance-negotiation-kickoff-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-09-05-medical-catalog-negotiation-opens",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 23,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-05-power-safety-regulation-revised",
+          "story_identity": "power-safety-regulation-revision-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-05-power-safety-regulation-revised",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-05-csrc-yuandao-fraud-penalty",
+          "story_identity": "yuandao-fraud-administrative-penalty-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-05-csrc-yuandao-fraud-penalty",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-05-national-time-use-survey-begins",
+          "story_identity": "national-time-use-survey-fieldwork-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-05-national-time-use-survey-begins",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-05-eleventh-china-charity-day",
+          "story_identity": "china-charity-day-11th-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-05-eleventh-china-charity-day",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "chuzhou-loud-boom-sonic-boom-sep4",
+          "story_identity": "chuzhou-sky-boom-sonic-boom-report",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T20:10:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "滁州上空巨响经应急部门排查初步判定为高空音爆，属地方应急处置通报，公共增量有限"
+        },
+        {
+          "candidate_key": "guizhou-autumn-break-rumor-debunked",
+          "story_identity": "guizhou-autumn-break-13days-rumor-debunk",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "贵州中小学秋假连休13天经教育部门核实为不实消息，属例行辟谣服务信息"
+        },
+        {
+          "candidate_key": "wechat-ai-remix-video-cleanup",
+          "story_identity": "wechat-ai-remix-video-governance-august",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "微信平台AI魔改视频阶段性治理公告属平台例行治理动作"
+        },
+        {
+          "candidate_key": "hard-seat-business-trip-firing-case",
+          "story_identity": "shanghai-hard-seat-trip-dismissal-arbitration",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "员工拒通宵硬座出差被开除案为劳动仲裁个案报道，制度性增量有限"
+        },
+        {
+          "candidate_key": "tunnel-construction-safety-arrangement",
+          "story_identity": "state-council-tunnel-construction-safety-work",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "国务院安委办联合多部门加强隧道施工安全工作为程序性工作安排，无具体新规落地"
+        },
+        {
+          "candidate_key": "west-aerospace-superfactory-tender",
+          "story_identity": "xian-west-aerospace-superfactory-plan",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 2
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "西安商业航天超级工厂项目招标计划为产业投资动态，与日常生活关联度一般"
+        },
+        {
+          "candidate_key": "yibin-gaoxian-m31-quake-sep4",
+          "story_identity": "yibin-gaoxian-m31-earthquake-2026-09-04",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T18:44:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "宜宾高县3.1级地震震级轻微，无损失报告，公共影响小"
+        },
+        {
+          "candidate_key": "zhangxue-wsbk-france-pole",
+          "story_identity": "zhangxue-wsbk-france-worldssp-pole",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T23:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 9,
+            "evidence": 6
+          },
+          "drop_reason": "中国车手在世界超级摩托车锦标赛法国站夺杆为小众赛事成绩"
+        },
+        {
+          "candidate_key": "weng-hongyang-china-masters-qf-exit",
+          "story_identity": "weng-hongyang-china-masters-quarterfinal-loss",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "中国羽毛球大师赛男单独苗止步八强为单项赛事进程"
+        },
+        {
+          "candidate_key": "beijing-culture-forum-sep22-preview",
+          "story_identity": "beijing-culture-forum-2026-dates-announced",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "2026北京文化论坛9月22日至23日举办为会展预告信息"
+        },
+        {
+          "candidate_key": "summer-travel-railway-954m-final",
+          "story_identity": "railway-summer-travel-954-million-final",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "全国铁路暑运累计发送旅客9.54亿人次为收官数据，8月31日已报道暑运收官"
+        },
+        {
+          "candidate_key": "barrier-free-environment-progress",
+          "story_identity": "barrier-free-environment-construction-progress",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "无障碍环境建设加速推进为综述性进展报道，无单一当日事件"
+        },
+        {
+          "candidate_key": "six-networks-project-library",
+          "story_identity": "six-networks-project-library-construction",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "加快建设六张网项目库为宏观规划类信息，日常相关性一般"
+        },
+        {
+          "candidate_key": "jidian-beijing-daan-power-project",
+          "story_identity": "jidian-rujing-daan-peak-shaving-project",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "吉电入京大安火电调峰项目启动为区域性能源工程动态"
+        },
+        {
+          "candidate_key": "software-revenue-jan-jul-data",
+          "story_identity": "software-business-revenue-jan-jul-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "前7个月软件业务收入同比增长9.2%为例行行业数据发布"
+        },
+        {
+          "candidate_key": "apec-sme-ministerial-guangzhou",
+          "story_identity": "apec-sme-ministerial-meeting-guangzhou-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 5
+          },
+          "drop_reason": "第32次APEC中小企业部长会议在广州举行，属会议议程类信息"
+        },
+        {
+          "candidate_key": "caexpo-nanning-preview-sep4",
+          "story_identity": "caexpo-23rd-nanning-upcoming-preview",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "第23届中国东盟博览会将于近期在南宁举行，当日仅为筹备介绍"
+        },
+        {
+          "candidate_key": "hk-director-wage-default-conviction",
+          "story_identity": "hk-company-director-wage-default-convicted",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "香港一公司董事因未按时发工资被定罪为区域性执法个案"
+        },
+        {
+          "candidate_key": "boiled-water-microplastic-study",
+          "story_identity": "boiled-vs-bottled-water-microplastic-study",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "烧水喝与桶装水微塑料摄入对比为科普软新闻，时效性弱"
+        },
+        {
+          "candidate_key": "fuding-baoxi-reservoir-drainage",
+          "story_identity": "fuding-baoxi-reservoir-drainage-progress",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 18,
+            "evidence": 6
+          },
+          "drop_reason": "福鼎宝溪水库排水加固为9月2日抢险进展，时效与评分均未达当日线"
+        },
+        {
+          "candidate_key": "jilong-veteran-soldiers-volunteer",
+          "story_identity": "jilong-rescue-veteran-soldiers-volunteer",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "吉隆泥石流救援中22名临退伍士兵主动请战为感人细节报道，灾情已有连续报道"
+        },
+        {
+          "candidate_key": "jilong-g216-hazard-screening",
+          "story_identity": "jilong-g216-rescue-route-hazard-screening",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "吉隆口岸G216救援通道地灾隐患排查截至9月2日数据，时效接近窗口边缘"
+        },
+        {
+          "candidate_key": "ningbo-98yo-donor-charity-award",
+          "story_identity": "ningbo-98-year-old-donor-charity-award",
+          "research_pass": 1,
+          "occurred_at": "2026-09-01T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 12,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "drop_reason": "98岁老党员25年捐款近6000万元事迹表彰发生于9月1日，超出72小时时效窗口"
+        },
+        {
+          "candidate_key": "variety-show-captain-stage-ranking",
+          "story_identity": "variety-show-captain-stage-vote-result",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 3,
+            "evidence": 3
+          },
+          "drop_reason": "综艺节目队长秀票数结果为娱乐动态，非民生新闻"
+        },
+        {
+          "candidate_key": "lionel-richie-icu-hospitalization",
+          "story_identity": "lionel-richie-icu-hospitalization-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T20:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 3,
+            "evidence": 4
+          },
+          "drop_reason": "美国歌手莱昂纳尔里奇送医为海外艺人健康消息，与国内读者日常无关"
+        },
+        {
+          "candidate_key": "gpt6-astra-release-claims",
+          "story_identity": "openai-gpt6-astra-release-claims",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T22:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "GPT-6发布及能力说法仅见热榜与自媒体转述，缺少持牌媒体权威报道佐证"
+        },
+        {
+          "candidate_key": "gpt6-math-benchmark-claims",
+          "story_identity": "gpt6-math-problem-benchmark-claims",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T22:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "AI模型解出数学难题说法来自自媒体汇总，无权威来源支撑具体表述"
+        },
+        {
+          "candidate_key": "putian-casualty-figures-unverified-sep5",
+          "story_identity": "putian-casualty-figures-unverified-online-v2",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "网传莆田灾情具体伤亡数字未经官方通报证实，仅采用权威口径"
+        },
+        {
+          "candidate_key": "typhoon-korowan-landfall-guess-sep5",
+          "story_identity": "typhoon-korowan-landfall-online-guess-v2",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "网传台风科罗旺登陆说法仅为路径猜测，气象部门未发布登陆预报"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-11",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-12",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-13",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-14",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-15",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-16",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-05-moe-teacher-rights-presser",
+      "story_identity": "moe-teacher-rights-clarification-2026",
+      "headline": "🧑‍🏫 教育部：涉师不实举报将及时澄清正名，恶意诽谤严肃处理",
+      "summary": "9月4日，教育部举行新闻发布会，介绍教师队伍建设有关情况和第42个教师节宣传庆祝活动。教育部教师工作司表示，将规范涉师投诉处理程序，畅通教师法律咨询和援助渠道，对涉及教师的不实举报及时澄清、正名；对捏造事实、恶意诽谤教师的行为，将联合相关部门依法严肃处理。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 89,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-04T15:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "教育部新闻发布会权益保护举措，措辞客观，标题与简述避开涉争表述。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260904/cd66e9a0187d4c30bdd49b41a9597cb8/c.html",
+          "title": "教育部：将规范涉师争议投诉处理程序",
+          "captured_at": "2026-09-05T06:20:00+08:00",
+          "note": "新华社北京9月4日电：教育部4日举行新闻发布会，介绍将规范涉师投诉处理程序、畅通教师法律咨询和援助渠道"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1788509994129294.html",
+          "title": "教育部答新京报：对涉及教师的不实举报，将及时为老师澄清、正名",
+          "captured_at": "2026-09-05T06:20:30+08:00",
+          "note": "新京报9月4日报道：教育部教师工作司司长王磊在发布会上回应记者提问"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-05-putian-ends-three-stops-rain-eases",
+      "story_identity": "putian-rain-response-downgrade-2026",
+      "headline": "🌤️ 莆田结束“三停一休”，南方强降雨5日起明显减弱",
+      "summary": "9月4日19时，莆田市防指将防暴雨应急响应调整为Ⅲ级、终止防台风Ⅳ级应急响应，在全市范围内结束“三停一休”，福州等多地也相继下调响应。本轮强降雨中，莆田城厢区华亭镇西湖村已转移52户171人，抢险排涝仍在继续；气象部门预计5日起南方强降雨明显减弱、基本停歇。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-04T19:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "台风残涡灾情后续处置报道，聚焦响应调整与雨势减弱，转移人数置于简述，标题不含伤亡数字。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "福州新闻网",
+          "url": "https://news.fznews.com.cn/dsxw/20260904/0ppbrSO121.shtml",
+          "title": "莆田结束“三停一休”",
+          "captured_at": "2026-09-05T06:21:00+08:00",
+          "note": "福州新闻网9月4日发布莆田市防指通知：4日19时调整防暴雨应急响应为Ⅲ级并终止防台风Ⅳ级应急响应，结束“三停一休”"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260904/1fb2ada3c0864d07802fce9006be82f5/c.html",
+          "title": "福建莆田遭连日暴雨有人员失联",
+          "captured_at": "2026-09-05T06:21:30+08:00",
+          "note": "新华社福州9月4日电：莆田华亭镇有人员失联、房屋倒塌一百多间，西湖村已转移52户171人"
+        },
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "http://www.weather.com.cn/video/2026/09/4781975.shtml",
+          "title": "“沙德尔”残涡继续“洒水”",
+          "captured_at": "2026-09-05T06:22:00+08:00",
+          "note": "中国天气网9月4日预报：5日起福建等地降雨明显减弱，强降雨天气基本停歇"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-05-peace-hotel-coconut-juice-price",
+      "story_identity": "peace-hotel-beverage-price-response-2026",
+      "headline": "🥥 上海和平饭店回应“一杯椰汁50元”，市监部门称明码标价合规",
+      "summary": "有网友发视频称在上海和平饭店点两罐椰汁，被按每杯50元收费。9月4日店方回应：可乐、椰汁、雪碧等罐装饮料一罐即一杯、每杯50元；消费者自带酒水饮料的，按每瓶300元收取服务费。黄浦区市场监督管理部门表示，相关饮品价格属市场调节价，商家明码标价并在消费前履行告知义务即为合规。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 9
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-04T19:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "消费价格热议事件，完整呈现店方回应与监管部门口径，不做倾向性评判。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "齐鲁晚报",
+          "url": "https://www.qlwb.com.cn/detail/28062332.html",
+          "title": "上海和平饭店回应一杯椰汁50元：可乐、椰汁、雪碧都是50元一罐",
+          "captured_at": "2026-09-05T06:22:30+08:00",
+          "note": "齐鲁晚报9月4日报道：店方称自带酒水按每瓶300元收服务费，黄浦区市监局称明码标价即合规"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://www.sina.cn/news/detail/5339511493755692.html",
+          "title": "上海和平饭店一杯椰汁50元",
+          "captured_at": "2026-09-05T06:23:00+08:00",
+          "note": "新浪财经9月4日报道：和平饭店回应称店内饮料按杯计价，自带酒水按瓶收费"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-05-elderly-care-mandatory-standards",
+      "story_identity": "elderly-care-mandatory-gb-standards-2026",
+      "headline": "🏠 养老机构两项强制性国家标准发布，2027年8月起实施",
+      "summary": "市场监管总局（国家标准委）近日批准发布《养老机构基本规范》和《养老机构重大事故隐患判定准则》两项强制性国家标准，9月4日会同民政部召开专题新闻发布会介绍。两项标准一个管“基本规范”、一个管“重大隐患”，明确养老机构设立、运营到退出全周期要求和安全红线，将于2027年8月1日起实施。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 24,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-04T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "养老服务强制性标准发布，直接关联老年人照护安全，措辞客观。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://finance.cnr.cn/ycbd/20260904/t20260904_527804780.shtml",
+          "title": "两项强制性国标为养老机构立规矩、查风险",
+          "captured_at": "2026-09-05T06:23:30+08:00",
+          "note": "央广网9月4日报道：市场监管总局标准技术司介绍两项强制性国家标准获批发布"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/cj/2026/09-04/10690514.shtml",
+          "title": "事关养老！两项强制性标准为养老机构运营划定红线",
+          "captured_at": "2026-09-05T06:24:00+08:00",
+          "note": "中新网9月4日报道：标准明确养老机构全周期必备条件与管理要求"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1788517034129410.html",
+          "title": "划清安全底线，养老机构两项强制性国标出台",
+          "captured_at": "2026-09-05T06:24:30+08:00",
+          "note": "新京报9月4日报道：《养老机构基本规范》《养老机构重大事故隐患判定准则》将于2027年8月1日起实施"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-05-asian-games-china-delegation",
+      "story_identity": "asian-games-20th-china-delegation-2026",
+      "headline": "🏅 第二十届亚运会中国体育代表团成立，815名运动员参赛",
+      "summary": "第二十届亚运会中国体育代表团9月4日在北京正式成立，代表团共1274人，其中运动员815人，将参加38个大项、369个小项比赛；运动员平均年龄24岁，“05后”占27%，548人首次参加亚运会，36名奥运冠军在列。本届亚运会将于9月19日至10月4日在日本爱知县和名古屋市举行。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 13
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-04T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育代表团成立事实报道，客观陈述规模与赛程。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://tv.cctv.com/2026/09/04/VIDEn8L1xwKXxHVBfu3F9UhG260904.shtml",
+          "title": "第二十届亚运会中国体育代表团今天成立",
+          "captured_at": "2026-09-05T06:18:30+08:00",
+          "note": "央视网新闻联播9月4日报道：代表团1274人组成，其中运动员815人，参加38个大项、369个小项"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国日报网",
+          "url": "https://cn.chinadaily.com.cn/a/202609/04/WS6a9a287ae4b09a165c787f58.html",
+          "title": "第20届亚运会中国体育代表团成立",
+          "captured_at": "2026-09-05T06:19:00+08:00",
+          "note": "中国日报网9月4日报道：运动员815人，其中女子404人、男子411人"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "上观新闻",
+          "url": "https://www.shobserver.com/news/detail?id=1171164",
+          "title": "第二十届亚运会中国体育代表团成立，36位奥运冠军在列",
+          "captured_at": "2026-09-05T06:19:30+08:00",
+          "note": "上观新闻9月4日报道：代表团中36名奥运会冠军，年龄最大41岁、最小为滑板运动员"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-05-medical-catalog-negotiation-opens",
+      "story_identity": "medical-insurance-negotiation-kickoff-2026",
+      "headline": "💊 2026年医保目录现场谈判今启动，商保创新药目录同步协商",
+      "summary": "2026年国家基本医保药品目录谈判竞价及商保创新药目录价格协商9月5日在全国人大会议中心启动，预计为期4至5天。今年基本医保目录申报涉及664个药品通用名、601个通过形式审查，商保创新药目录58个通过；无论谈判成功与否均现场确认结果，新版目录预计11月下旬公布。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 23,
+        "evidence": 10
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-05T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "医保目录年度谈判启动信息，关联群众用药负担，客观陈述安排与流程。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "第一财经",
+          "url": "https://www.yicai.com/news/103347827.html",
+          "title": "盘前必读丨2026医保国谈将于9月5日举行",
+          "captured_at": "2026-09-05T06:24:30+08:00",
+          "note": "第一财经9月4日报道：2026年医保目录谈判竞价及商保创新药目录价格协商9月5日在全国人大会议中心启动"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财联社",
+          "url": "https://www.cls.cn/detail/2473398",
+          "title": "2026医保国谈将于9月5日举行",
+          "captured_at": "2026-09-05T06:25:00+08:00",
+          "note": "财联社9月3日电：记者从多家药企处获悉谈判将于9月5日启动，预计为期4至5天"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家医疗保障局",
+          "url": "http://www.nhsa.gov.cn/art/2026/7/14/art_109_21421.html",
+          "title": "关于公布通过2026年国家基本医疗保险、生育保险和工伤保险药品目录及商业健康保险创新药品目录调整形式审查的申报药品名单的公告",
+          "captured_at": "2026-09-05T06:25:30+08:00",
+          "note": "国家医保局7月14日公告：基本医保目录601个通用名、商保创新药目录58个通用名通过形式审查"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-05-power-safety-regulation-revised",
+      "story_identity": "power-safety-regulation-revision-2026",
+      "headline": "⚡ 新修订《电力安全事故应急处置和调查处理条例》公布",
+      "summary": "新修订的《电力安全事故应急处置和调查处理条例》日前公布，自2027年1月1日起施行。条例共38条，明确电力企业、电力用户等应当服从统一调度、严格执行有关标准和技术规范、加强事故隐患排查，并对事故分级、应急处置和调查处理作出规定；司法部、国家发展改革委、国家能源局负责人就修订有关问题回答了记者提问。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-04T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "行政法规修订发布，关系用电安全与供电可靠性，简述不出现签署人职务表述。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.xinhuanet.com/20260904/6fc0343a2c8144be92a123fb3b508c8a/c.html",
+          "title": "受权发布丨电力安全事故应急处置和调查处理条例",
+          "captured_at": "2026-09-05T06:25:30+08:00",
+          "note": "新华网9月4日受权发布条例全文：2011年国务院令第599号公布，2026年8月30日第845号国务院令修订"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家能源局",
+          "url": "https://www.nea.gov.cn/20260904/ca6405163b6a4141bfeb71d848254e3e/c.html",
+          "title": "李强签署国务院令 公布修订后的《电力安全事故应急处置和调查处理条例》",
+          "captured_at": "2026-09-05T06:26:00+08:00",
+          "note": "国家能源局网站9月4日转发新华社消息：条例自2027年1月1日起施行，共38条"
+        },
+        {
+          "tier": "official",
+          "outlet": "国家发展改革委",
+          "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202609/t20260904_1407428.html",
+          "title": "司法部、国家发展改革委、国家能源局负责人就《电力安全事故应急处置和调查处理条例》修订答记者问",
+          "captured_at": "2026-09-05T06:26:10+08:00",
+          "note": "国家发展改革委网站9月4日发布三部门负责人答记者问，介绍修订背景与主要内容"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-05-csrc-yuandao-fraud-penalty",
+      "story_identity": "yuandao-fraud-administrative-penalty-2026",
+      "headline": "📉 证监会严惩财务造假：元道通信被罚约2.39亿元",
+      "summary": "证监会9月4日开出行政处罚决定书：元道通信因在证券发行文件中编造重大虚假内容、2022年年度报告存在虚假记载，被责令改正、给予警告，并处以约2.39亿元罚款；时任董事长、财务总监、董事会秘书等合计被罚1650万元。公司此前已触及重大违法强制退市情形。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 11
+      },
+      "heat_rank": 8,
+      "occurred_at": "2026-09-04T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "证券监管执法处罚报道，客观陈述处罚决定，不含投资建议。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://m.bjnews.com.cn/detail/1788517462129419.html",
+          "title": "元道通信虚增营收，证监会对其开出2.55亿元巨额罚单",
+          "captured_at": "2026-09-05T06:25:00+08:00",
+          "note": "新京报贝壳财经9月4日报道：证监会开出行政处罚决定书，对公司罚款2.39亿元、对责任人合计罚款1650万元"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "东方财富网",
+          "url": "https://finance.eastmoney.com/a/202609043865682225.html",
+          "title": "证监会出手！元道通信被罚没约2.39亿元",
+          "captured_at": "2026-09-05T06:25:30+08:00",
+          "note": "东方财富网9月4日报道：证监会决定对元道通信责令改正、给予警告并处以约2.39亿元罚款"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-05-national-time-use-survey-begins",
+      "story_identity": "national-time-use-survey-fieldwork-2026",
+      "headline": "📋 全国时间利用调查今起入户，9月25日前请配合填报",
+      "summary": "国家统计局9月5日至25日组织开展2026年全国时间利用调查现场调查，这是继2008年、2018年、2024年之后的第四次全国时间利用调查。调查从居民时间利用视角采集活动信息，主要通过微信小程序自主填报、调查员入户辅助填报两种方式进行，请被抽中的调查户积极配合。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 11
+      },
+      "heat_rank": 9,
+      "occurred_at": "2026-09-05T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国家统计调查入户服务提醒信息，含参与方式说明，措辞客观。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34001845",
+          "title": "9月5日起，入户调查！聊聊您的24小时",
+          "captured_at": "2026-09-05T06:19:00+08:00",
+          "note": "澎湃新闻9月3日报道：9月5日至25日国家统计局组织开展2026年全国时间利用调查现场调查"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "川观新闻",
+          "url": "https://cbgc.scol.com.cn/news/7917905",
+          "title": "9月5日起，入户调查！",
+          "captured_at": "2026-09-05T06:19:30+08:00",
+          "note": "川观新闻9月4日报道：这是第四次全国时间利用调查，采集居民特定时段活动信息"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-05-eleventh-china-charity-day",
+      "story_identity": "china-charity-day-11th-2026",
+      "headline": "❤️ 第十一个“中华慈善日”：弘扬慈善文化，践行慈善惠民",
+      "summary": "9月5日是第十一个“中华慈善日”。民政部以“弘扬慈善文化 践行慈善惠民”为主题组织开展主题宣传活动，深化慈善文化“进机关、进企业、进乡村、进社区、进家庭”，引导慈善组织、爱心企业和爱心人士参与普惠性、基础性、兜底性民生建设，各地将开展慈善宣传周等多样化活动。",
+      "category": "节日节气",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 23,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 13
+      },
+      "heat_rank": 10,
+      "occurred_at": "2026-09-05T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "法定慈善日主题宣传信息，公益导向，措辞平实。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "民政部",
+          "url": "https://www.mca.gov.cn/n152/n165/c1662004999980012293/content.html",
+          "title": "民政部办公厅关于组织开展第十一个“中华慈善日”主题宣传活动的通知",
+          "captured_at": "2026-09-05T06:20:00+08:00",
+          "note": "民政部民办函〔2026〕51号：以“弘扬慈善文化 践行慈善惠民”为主题开展第十一个中华慈善日宣传"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国网",
+          "url": "http://zw.china.com.cn/2026-08/06/content_118635719.shtml",
+          "title": "民政部部署开展第十一个“中华慈善日”主题宣传活动",
+          "captured_at": "2026-09-05T06:20:30+08:00",
+          "note": "中国网8月6日报道：民政部部署慈善文化五进活动，引导慈善力量参与民生建设"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
