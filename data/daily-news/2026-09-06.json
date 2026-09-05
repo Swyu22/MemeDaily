@@ -1,0 +1,967 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-06",
+  "generated_at": "2026-09-06T06:28:41+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 44,
+    "published": 6,
+    "dropped_safety": {
+      "celebrity_dispute": 3,
+      "controversy": 2,
+      "geopolitics": 1,
+      "minors": 1,
+      "politics": 1,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 25,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 35,
+      "official_sources": 1,
+      "state_media_sources": 5,
+      "major_media_sources": 7,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 4
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 8,
+        "relaxed_72h": 9
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 44,
+          "cumulative_unique_candidates": 44,
+          "source_scope": [
+            "新华社央视网央广网中新网等央媒",
+            "澎湃新闻界面新闻封面新闻财联社北京日报新浪财经凤凰网等持牌媒体",
+            "中央气象台中国天气网及地方防汛指挥部官方通报",
+            "百度热搜公开榜单热度佐证",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-06-suichuan-mudslide-level1-response",
+          "story_identity": "suichuan-gaoping-mudslide-disaster-2026-09-05",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-06-suichuan-mudslide-level1-response",
+          "score": 94,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-06-typhoon-korowan-blue-alert",
+          "story_identity": "typhoon-korowan-blue-alert-2026-09-05",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-06-typhoon-korowan-blue-alert",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-06-nepal-mudslide-chinese-rescued",
+          "story_identity": "nepal-mudslide-chinese-citizen-rescued-2026-09-05",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T16:30:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-06-nepal-mudslide-chinese-rescued",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-06-feng-huang-first-mixed-final",
+          "story_identity": "feng-huang-china-masters-mixed-final-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-06-feng-huang-first-mixed-final",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-06-putian-kayak-stranger-rescue",
+          "story_identity": "putian-qibu-kayak-family-rescue-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-06-putian-kayak-stranger-rescue",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-06-ai-models-tmall-flagship-stores",
+          "story_identity": "llm-vendors-tmall-token-stores-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-06-ai-models-tmall-flagship-stores",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "nhsa-155-insurance-plan-coverage",
+          "story_identity": "nhsa-155-medical-insurance-briefing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T08:16:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与9月5日已发布长护险条目源自同一场国新办发布会，避免同题材连续重复"
+        },
+        {
+          "candidate_key": "zhangxue-wsbk-france-ssp-podium",
+          "story_identity": "zhangxue-wsbk-france-worldssp-podium",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "中国摩托车制造商在法国站WorldSSP组别获季军为小众赛事成绩"
+        },
+        {
+          "candidate_key": "automakers-battery-stakes-sunwoda",
+          "story_identity": "automakers-sunwoda-battery-stakes-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "车企增资动力电池企业为产业投资动态，日常生活关联一般"
+        },
+        {
+          "candidate_key": "el-nino-super-strong-wmo-bulletin",
+          "story_identity": "el-nino-super-strong-wmo-bulletin-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T18:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 12,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "世界气象组织厄尔尼诺公报发布已超72小时时效窗口"
+        },
+        {
+          "candidate_key": "shanghai-professor-fall-rumor-debunk",
+          "story_identity": "shanghai-professor-fall-cash-rumor-debunk",
+          "research_pass": 1,
+          "occurred_at": "2026-09-02T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 10,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "drop_reason": "上海网络辟谣信息发布于9月2日，超出72小时时效窗口"
+        },
+        {
+          "candidate_key": "battery-retirement-tide-2030-talk",
+          "story_identity": "battery-retirement-tide-2030-discussion",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 14,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "动力电池退役潮预测为既有行业数据再讨论，无当日新进展"
+        },
+        {
+          "candidate_key": "chenzhou-guidong-heavy-rain-deaths",
+          "story_identity": "chenzhou-guidong-heavy-rain-2026-09-05",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "郴州桂东强降雨为区域性灾情报道，权威增量有限"
+        },
+        {
+          "candidate_key": "dongguan-student-archive-recovered",
+          "story_identity": "dongguan-student-archive-trash-recovery",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "准大学生档案被误扔后找回为个体事件，公共增量小"
+        },
+        {
+          "candidate_key": "night-light-myopia-science-answer",
+          "story_identity": "night-light-myopia-genetics-science-qa",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "小夜灯与近视关系为常规健康科普问答"
+        },
+        {
+          "candidate_key": "hangzhou-400k-rental-deposit-dispute",
+          "story_identity": "hangzhou-400k-rental-furniture-dispute",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 5
+          },
+          "drop_reason": "高额租房退租纠纷为民事个案"
+        },
+        {
+          "candidate_key": "huluwa-grandpa-snake-visit-shaoxing",
+          "story_identity": "huluwa-grandpa-snake-cosplay-visit",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "网红拜访动画原型老人为趣闻，非民生新闻"
+        },
+        {
+          "candidate_key": "shanghai-elderly-burglary-case",
+          "story_identity": "shanghai-fengxian-elderly-burglary-case",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "入室盗窃个案报道，公共信息增量有限"
+        },
+        {
+          "candidate_key": "jaw-surgery-settlement-statement",
+          "story_identity": "jaw-surgery-dispute-settlement-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "医疗纠纷当事人声明和解为个案收尾"
+        },
+        {
+          "candidate_key": "liangzhu-film-release-pulled",
+          "story_identity": "liangzhu-butterfly-film-release-change",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 6,
+            "evidence": 3
+          },
+          "drop_reason": "影片调档为影视行业动态"
+        },
+        {
+          "candidate_key": "zhongan-liuzu-prequel-response",
+          "story_identity": "zhongan-liuzu-prequel-director-response",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "剧集前传导演回应为娱乐话题"
+        },
+        {
+          "candidate_key": "real-madrid-first-loss-laliga",
+          "story_identity": "real-madrid-laliga-first-loss-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T03:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "西甲联赛常规轮次结果属外国常规体育动态"
+        },
+        {
+          "candidate_key": "jaguar-land-rover-layoffs-plan",
+          "story_identity": "jaguar-land-rover-layoffs-2026-plan",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T10:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "英国车企裁员计划对中国读者直接日常影响不明确"
+        },
+        {
+          "candidate_key": "us-sailors-pattaya-brawl",
+          "story_identity": "us-sailors-pattaya-incident-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T20:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "泰国地方治安事件与中国读者日常无关"
+        },
+        {
+          "candidate_key": "tesla-cybercab-unveil-report",
+          "story_identity": "tesla-cybercab-unveil-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T06:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 8,
+            "evidence": 6
+          },
+          "drop_reason": "海外车企产品发布，国内可用性与读者日常关联有限"
+        },
+        {
+          "candidate_key": "zenghui-off-key-stage-clip",
+          "story_identity": "zenghui-off-key-performance-clip",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 2,
+            "evidence": 1
+          },
+          "drop_reason": "综艺舞台演唱片段为娱乐花絮"
+        },
+        {
+          "candidate_key": "xiaoshenyang-sketch-stage-talk",
+          "story_identity": "xiaoshenyang-stage-sketch-performance",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 4,
+            "evidence": 2
+          },
+          "drop_reason": "综艺舞台表演讨论为娱乐动态"
+        },
+        {
+          "candidate_key": "xianhua-stage-criticism-talk",
+          "story_identity": "xianhua-stage-performance-feedback",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 43,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 3,
+            "evidence": 1
+          },
+          "drop_reason": "综艺舞台评价为娱乐话题"
+        },
+        {
+          "candidate_key": "pijiang-gege-second-round-ranking",
+          "story_identity": "pijiang-gege-round2-ranking-result",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 2,
+            "evidence": 1
+          },
+          "drop_reason": "综艺节目排名结果为娱乐动态"
+        },
+        {
+          "candidate_key": "zhangyaqi-haoshao8-cut-talk",
+          "story_identity": "zhangyaqi-haoshao8-scene-cut-talk",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "综艺镜头剪接讨论为娱乐话题"
+        },
+        {
+          "candidate_key": "zhangjiaqi-diving-earnings-talk",
+          "story_identity": "zhangjiaqi-diving-earnings-variety-talk",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "运动员综艺节目自述收入为娱乐内容"
+        },
+        {
+          "candidate_key": "shanghai-sunset-glow-photos",
+          "story_identity": "shanghai-sunset-glow-social-photos",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见热榜与市民晒图传播，无权威媒体独立报道支撑公共增量"
+        },
+        {
+          "candidate_key": "contraceptive-pill-embolism-case",
+          "story_identity": "contraceptive-pill-embolism-travel-case",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "个案就诊内容仅见自媒体转述，缺少持牌媒体核实报道"
+        },
+        {
+          "candidate_key": "clam-pearls-qingdao-find",
+          "story_identity": "qingdao-clam-pearls-find-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "吃出珍珠趣闻仅见热榜聚合，无持牌媒体原文"
+        },
+        {
+          "candidate_key": "slippers-missing-child-tags",
+          "story_identity": "slippers-missing-child-tags-response",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "拖鞋挂寻子吊牌企业回应仅见短视频与转述，缺少权威报道佐证"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-06-suichuan-mudslide-level1-response",
+      "story_identity": "suichuan-gaoping-mudslide-disaster-2026-09-05",
+      "headline": "🏔️ 江西遂川突发泥石流灾害，当地启动救灾一级应急响应",
+      "summary": "受台风“沙德尔”残余环流带来的连日强降雨影响，9月5日凌晨，吉安市遂川县高坪镇明坑村石下组发生泥石流灾害，12栋房屋受损。当地已启动救灾一级应急响应，多部门救援力量全力搜救；5日晚新闻发布会通报，已救出3人、其中1人不幸遇难，安全转移39名被困村民，失联人员搜救仍在进行。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 94,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-05T22:30:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "突发灾害事实报道，伤亡与转移数据仅置于简述，聚焦响应与救援进展，标题不含人数。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/09-05/10691082.shtml",
+          "title": "江西遂川发生泥石流灾害 救援人员赶往现场全力抢通通道",
+          "captured_at": "2026-09-06T06:25:00+08:00",
+          "note": "中新网9月5日电：受台风沙德尔连日强降雨影响，遂川县高坪镇明坑村石下组5日凌晨发生泥石流，抢险部门全力打通进场通道"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34014502",
+          "title": "泥石流灾害后江西遂川启动救灾一级应急响应 正全力搜救被困人员",
+          "captured_at": "2026-09-06T06:25:30+08:00",
+          "note": "澎湃新闻9月5日报道：遂川县防汛抗旱指挥部通报灾情，应急消防等多方力量全力搜救"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "界面新闻",
+          "url": "https://www.jiemian.com/article/15059097.html",
+          "title": "江西遂川县高坪镇发生泥石流灾害",
+          "captured_at": "2026-09-06T06:26:00+08:00",
+          "note": "界面新闻9月5日报道：灾害造成12栋房屋受损，消防已调派力量赶赴现场处置"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-06-typhoon-korowan-blue-alert",
+      "story_identity": "typhoon-korowan-blue-alert-2026-09-05",
+      "headline": "🌀 台风“科罗旺”蓝色预警继续发布，东海及沿海将有大风",
+      "summary": "中央气象台9月5日18时继续发布台风蓝色预警：今年第24号台风“科罗旺”（热带风暴级）中心位于琉球群岛那霸市偏南方向洋面，强度变化不大，将向东南方向移动。受其和冷空气共同影响，东海大部、黄海东南部及长江口区、浙江沿海等有6至7级风、阵风8至9级，海上作业与沿海出行需注意防范。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-05T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "气象预警服务信息，客观转述官方预报与防范提示。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "https://www.weather.com.cn/video/2026/09/4782665.shtml",
+          "title": "中央气象台9月5日6时继续发布台风蓝色预警",
+          "captured_at": "2026-09-06T06:26:30+08:00",
+          "note": "中国天气网9月5日发布中央气象台台风蓝色预警：科罗旺位于东海东部海面，强度变化不大"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/newscenter/kuaixun/20260905/t20260905_527805099.shtml",
+          "title": "台风蓝色预警：“科罗旺”将向偏南方向移动强度变化不大",
+          "captured_at": "2026-09-06T06:27:00+08:00",
+          "note": "央广网9月5日报道大风预报：东海大部及长江口区、浙江沿海将有6至7级风、阵风8至9级"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财联社",
+          "url": "https://www.cls.cn/detail/2474849",
+          "title": "中央气象台继续发布台风蓝色预警",
+          "captured_at": "2026-09-06T06:27:30+08:00",
+          "note": "财联社9月5日电：中央气象台9月5日06时继续发布台风蓝色预警"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-06-nepal-mudslide-chinese-rescued",
+      "story_identity": "nepal-mudslide-chinese-citizen-rescued-2026-09-05",
+      "headline": "⛰️ 尼泊尔泥石流灾区一名中国公民获救，身体状况稳定",
+      "summary": "当地时间9月5日，一名受困于尼泊尔北部热索瓦泥石流灾区的中国公民成功获救，目前已转运至医院，身体状况稳定，中国驻尼泊尔大使前往探望。该国8月26日发生的特大泥石流灾害搜救仍在继续，灾区部分地方行政单位已被划为灾害危机地区。",
+      "category": "国际",
+      "scope": "international",
+      "topic": "自然灾害",
+      "primary_organization": "尼泊尔警方",
+      "audience_relevance": {
+        "basis": "direct_china_impact",
+        "impact_scale": "direct_china_public",
+        "china_connection": "该泥石流灾害发源于尼泊尔一侧并冲毁中尼边境吉隆口岸，本次有受困中国公民获救，直接关系海外同胞安全与领事关注",
+        "everyday_impact": "涉及在尼中国公民人身安全和使领馆领事保护动态，读者需通过权威渠道了解救援进展",
+        "score": 17,
+        "connection_evidence": {
+          "url": "https://xinwen.bjd.com.cn/content/s6a9be308e4b0e42f8effe6bb.html",
+          "note": "北京日报客户端9月5日报道：当地时间9月5日，1名受困中国公民在尼泊尔北部热索瓦泥石流受灾地区获救"
+        }
+      },
+      "score": 81,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-05T16:30:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "境外灾害涉中国公民获救的事实报道，不展开灾情细节渲染。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "凤凰新闻",
+          "url": "https://news.ifeng.com/c/8wAq6baKFQg",
+          "title": "尼泊尔泥石流灾害中1名受困中国公民获救",
+          "captured_at": "2026-09-06T06:28:00+08:00",
+          "note": "凤凰新闻9月5日转央视新闻报道：当地时间9月5日1名受困中国公民在热索瓦泥石流受灾地区获救"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6a9be308e4b0e42f8effe6bb.html",
+          "title": "尼泊尔泥石流灾害中，1名受困中国公民获救",
+          "captured_at": "2026-09-06T06:28:20+08:00",
+          "note": "北京日报客户端9月5日报道中国公民获救及尼泊尔警方灾情通报"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-06-feng-huang-first-mixed-final",
+      "story_identity": "feng-huang-china-masters-mixed-final-2026",
+      "headline": "🏸 “凤凰组合”首进中国羽毛球大师赛混双决赛",
+      "summary": "9月5日，2026中国羽毛球大师赛在深圳进行半决赛，头号种子冯彦哲/黄东萍2比0击败马来西亚组合吴埙阀/赖洁敏，职业生涯首次打入该项赛事混双决赛；另一对中国组合朱一珺/李茜止步四强。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-05T20:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国内赛事赛果报道，客观陈述比分与晋级结果。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网体育",
+          "url": "https://sports.cctv.com/2026/09/05/ARTITEiH5Q0kkuYTJKSPBcYu260905.shtml",
+          "title": "冯彦哲/黄东萍闯入中国羽毛球大师赛混双决赛",
+          "captured_at": "2026-09-06T06:28:40+08:00",
+          "note": "央视网9月5日消息：冯彦哲/黄东萍2比0击败马来西亚组合，职业生涯首次打入该赛事混双决赛"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://app.xinhuanet.com/news/article.html?articleId=20260905ee7756f4ee574036ba23f0196555aee3",
+          "title": "中国羽毛球大师赛：国羽锁定女双决赛席位",
+          "captured_at": "2026-09-06T06:28:41+08:00",
+          "note": "新华社客户端9月5日报道：头号种子冯彦哲/黄东萍鏖战取胜，国羽混双夺得决赛席位"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-06-putian-kayak-stranger-rescue",
+      "story_identity": "putian-qibu-kayak-family-rescue-2026",
+      "headline": "🛶 莆田洪水中陌生男子划皮划艇救出被困一家",
+      "summary": "9月4日，福建莆田荔城区拱辰街道七步村一栋三层民房被洪水围困，屋内水位一度涨至胸口。一名外镇男子闻讯徒步赶来，借一艘破旧皮划艇与家人合力，将一家六口分批转移至安全区域。9月5日积水渐退，受助家庭已回家清理。",
+      "category": "科技向善",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 10
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-05T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "凡人善举报道，事实来自持牌媒体采访，不渲染灾情。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "封面新闻",
+          "url": "https://www.thecover.cn/news/hhlMSiaqioWH90qSdq8Jkw==",
+          "title": "福建莆田洪水中 陌生大哥救下被困一家6口",
+          "captured_at": "2026-09-06T06:25:00+08:00",
+          "note": "封面新闻9月5日报道：莆田七步村一家六口被洪水围困，陌生男子借皮划艇将其转移至安全区域"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://cj.sina.com.cn/articles/view/1496814565/v593793e50200250ry",
+          "title": "福建莆田洪水中陌生大哥救下被困一家6口",
+          "captured_at": "2026-09-06T06:25:20+08:00",
+          "note": "新浪财经9月5日转载报道：9月4日莆田荔城区拱辰街道七步村洪水围困事件经过"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-06-ai-models-tmall-flagship-stores",
+      "story_identity": "llm-vendors-tmall-token-stores-2026",
+      "headline": "🤖 多家大模型厂商将入驻天猫，开官方旗舰店售Token",
+      "summary": "据财联社9月5日报道，继智谱电商平台首店落地后，Kimi、MiniMax、阶跃星辰等多家大模型厂商正与天猫接洽，将入驻开设官方旗舰店，开售Token订阅套餐。此前天猫已于9月3日上线Token充值中心，接入多家国产大模型厂商的订阅服务。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 11
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-05T13:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国产大模型电商渠道动态，客观陈述报道内容。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/wm/2026-09-05/doc-iniquccs3663111.shtml",
+          "title": "独家！Kimi、MiniMax即将在天猫开店",
+          "captured_at": "2026-09-06T06:26:00+08:00",
+          "note": "新浪财经9月5日刊发财联社独家：多家大模型厂商与天猫接洽，将入驻开设官方旗舰店开售Token订阅套餐"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网",
+          "url": "https://i.ifeng.com/c/8w7Powb3yT0",
+          "title": "天猫上线AI Token充值中心",
+          "captured_at": "2026-09-06T06:26:20+08:00",
+          "note": "凤凰网9月3日报道：天猫上线Token充值中心，集合多家国内头部大模型厂商订阅服务"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
