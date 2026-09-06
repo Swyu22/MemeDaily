@@ -1,0 +1,953 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-07",
+  "generated_at": "2026-09-07T06:32:30+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 45,
+    "published": 6,
+    "dropped_safety": {
+      "celebrity_dispute": 4,
+      "geopolitics": 1,
+      "illegal": 1,
+      "politics": 2,
+      "privacy": 1,
+      "propaganda": 1
+    },
+    "dropped_low_confidence": 27,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 35,
+      "official_sources": 1,
+      "state_media_sources": 3,
+      "major_media_sources": 7,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 10,
+        "relaxed_72h": 11
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 45,
+          "cumulative_unique_candidates": 45,
+          "source_scope": [
+            "新华社新华网央视网央广网中新网光明网等央媒",
+            "澎湃新闻封面新闻新京报时代周报北京日报上观新闻大众网等持牌媒体",
+            "财政部中国气象局中国天气网等官方发布",
+            "百度热搜公开榜单热度佐证",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-07-nanping-nev-garage-ban",
+          "story_identity": "nanping-nev-underground-garage-ban-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-07-nanping-nev-garage-ban",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-07-central-financial-capital-increase",
+          "story_identity": "eight-central-financial-firms-capital-increase-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-07-central-financial-capital-increase",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-07-zhenshiming-eye-drop-recall",
+          "story_identity": "zhenshiming-tobramycin-dexamethasone-recall-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-09-07-zhenshiming-eye-drop-recall",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-07-environment-monitoring-fraud-exposed",
+          "story_identity": "cctv-caijingdiaocha-environment-monitoring-fraud",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-09-07-environment-monitoring-fraud-exposed",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-07-china-women-basketball-czech-win",
+          "story_identity": "china-women-basketball-czech-overtime-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T22:35:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-07-china-women-basketball-czech-win",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-07-bailu-solar-term",
+          "story_identity": "bailu-solar-term-2026-09-07",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-07-bailu-solar-term",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "zheng-qinwen-keys-comeback-usopen-r3",
+          "story_identity": "zheng-qinwen-usopen-round3-keys-comeback",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T05:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "赛事于北京时间9月6日凌晨结束，超出24小时严格时效档；郑钦文美网进展9月1日与4日已两次入选，当日严格档优先安排更贴近民生的题材"
+        },
+        {
+          "candidate_key": "dajiale-apology-panyu-food-illness",
+          "story_identity": "dajiale-panyu-tianhecheng-food-illness-apology",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T23:56:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "企业情况说明发布于9月5日深夜，超出24小时严格时效档；最终调查结论仍以政府部门通报为准"
+        },
+        {
+          "candidate_key": "fuding-soaked-tea-destruction",
+          "story_identity": "fuding-diantou-soaked-tea-destruction-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "泡水茶集中销毁发生于9月5日下午，属台风沙德尔灾后善后，超出24小时严格时效档"
+        },
+        {
+          "candidate_key": "cold-air-north-cooling-rain",
+          "story_identity": "north-china-cold-air-cooling-2026-09-06",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "中央气象台预报发布于9月5日，降温过程主要影响6日至9日，时效分层为48小时档"
+        },
+        {
+          "candidate_key": "helanshan-six-new-species",
+          "story_identity": "helanshan-second-scientific-survey-new-species",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 12,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "科考成果发布会举行于9月4日，接近72小时时效窗口边缘且当日严格档名额已满"
+        },
+        {
+          "candidate_key": "suichuan-mudslide-rescue-continues",
+          "story_identity": "suichuan-gaoping-mudslide-rescue-continues-09-06",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 10
+          },
+          "drop_reason": "与9月6日已发布的遂川泥石流头条属同一事件延续，救援持续推进无重大事实增量，避免同题材连续重复"
+        },
+        {
+          "candidate_key": "xichang-labor-education-commentary",
+          "story_identity": "xichang-school-cleaning-fee-labor-education",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "家长群集资请保洁为校园个案，媒体评论刊发但当地教体局核查尚无结论，公共处置增量有限"
+        },
+        {
+          "candidate_key": "old-phone-gold-rumor-recirculated",
+          "story_identity": "one-ton-phone-200g-gold-rumor-recirculation",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 10,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "该辟谣核心内容为今年4月新华社旧稿，9月6日为重新热传，无当日新权威增量"
+        },
+        {
+          "candidate_key": "suichuan-woman-hundreds-calls",
+          "story_identity": "suichuan-mudslide-woman-calls-family",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "遂川泥石流灾区个人寻亲花絮，与昨日头条同事件且公共增量小"
+        },
+        {
+          "candidate_key": "pregnancy-pay-cut-dispute",
+          "story_identity": "luo-pregnancy-pay-cut-8000-to-3000",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "孕期降薪为劳动纠纷个案，双方各执一词尚待权威调查结论"
+        },
+        {
+          "candidate_key": "putian-opera-troupe-typhoon-response",
+          "story_identity": "putian-opera-troupe-rain-performance-response",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 7
+          },
+          "drop_reason": "台风期间戏班冒雨演出的地方官方回应，属三停一休执行个案"
+        },
+        {
+          "candidate_key": "tengwangge-lifetime-free-ticket-boy",
+          "story_identity": "tengwangge-boy-lifetime-free-ticket",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "男孩背诵免票趣闻，景区免票政策为既有规则，无新公共信息"
+        },
+        {
+          "candidate_key": "nfc-brick-phone-detox",
+          "story_identity": "nfc-plastic-brick-phone-detox-400-yuan",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "戒手机小产品走红为社交平台消费趣闻，无监管或质量新进展"
+        },
+        {
+          "candidate_key": "ctgu-same-name-freshmen",
+          "story_identity": "ctgu-same-name-same-birthday-freshmen",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T08:30:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "高校新生同名同姓巧遇为趣闻，非公共事务"
+        },
+        {
+          "candidate_key": "young-people-forgetting-typing",
+          "story_identity": "young-people-voice-input-typing-decline",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "语音输入替代打字的趋势讨论，无当日新闻事件"
+        },
+        {
+          "candidate_key": "anhui-industry-landmarks",
+          "story_identity": "anhui-new-five-industrial-landmarks",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 12,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "地方产业成就综合报道，当日无具体民生增量"
+        },
+        {
+          "candidate_key": "girl-rice-harvest-help",
+          "story_identity": "guangdong-girl-rice-harvest-rain-help",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "孩童抢收稻谷获邻里帮忙为暖心短视频，公共信息增量有限"
+        },
+        {
+          "candidate_key": "police-broken-english-drunk-foreigner",
+          "story_identity": "police-broken-english-foreigner-ambulance",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "民警英语口语救助醉酒人员为警务花絮趣闻"
+        },
+        {
+          "candidate_key": "dongshan-painting-shanghai-museum",
+          "story_identity": "shenzhou-dongshan-painting-shanghai-museum",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "馆藏古画与东山再起典故为文化科普内容，非当日新闻事件"
+        },
+        {
+          "candidate_key": "microplastics-daily-items",
+          "story_identity": "microplastics-ten-daily-items-health",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T07:30:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 13,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "微塑料日用品盘点引用2023年旧研究，无当日新增量"
+        },
+        {
+          "candidate_key": "anticancer-blogger-passing",
+          "story_identity": "zhuzhai-anticancer-blogger-passing-24",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "个人病逝讣告，公共增量有限且涉及逝者隐私分寸"
+        },
+        {
+          "candidate_key": "rewatching-old-dramas",
+          "story_identity": "young-people-rewatching-old-dramas-trend",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "老剧重审为文化现象讨论，无当日新闻事件"
+        },
+        {
+          "candidate_key": "huluwa-grandparents-tears",
+          "story_identity": "shaoxing-huluwa-grandparents-comments-tears",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "失独老人看网友评论落泪为网红后续花絮，且9月6日候选已评估过同源题材"
+        },
+        {
+          "candidate_key": "uric-acid-porridge-tips",
+          "story_identity": "high-uric-acid-three-porridge-tips",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T07:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "食疗粥方为常规健康科普，无当日新闻增量"
+        },
+        {
+          "candidate_key": "mosquito-blood-type-myth",
+          "story_identity": "mosquito-o-blood-type-myth-experts",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 15,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "血型招蚊子辟谣为常规科普问答"
+        },
+        {
+          "candidate_key": "puppy-love-parenting-discussion",
+          "story_identity": "puppy-love-parenting-expert-discussion",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 15,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "青春期情感教育话题讨论，无当日新闻事件"
+        },
+        {
+          "candidate_key": "pig-milk-question",
+          "story_identity": "why-nobody-drinks-pig-milk",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "猪奶冷知识为趣味科普，无公共增量"
+        },
+        {
+          "candidate_key": "ganzhou-dibao-concert-claim",
+          "story_identity": "ganzhou-dibao-family-concert-hk-claim",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "网传低保资格取消一事赣州民政部门表示正在核查、尚未确认具体情况，核心事实未获证实"
+        },
+        {
+          "candidate_key": "shunyi-street-vendor-relocation",
+          "story_identity": "shunyi-guangming-street-vendor-relocation",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "游商疏导整治目前仅见北京日报单篇报道，缺少独立权威来源交叉印证"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-07-nanping-nev-garage-ban",
+      "story_identity": "nanping-nev-underground-garage-ban-2026",
+      "headline": "🚗 福建南平一小区禁止新能源车进地库，律师支招业主维权",
+      "summary": "9月6日，福建南平一小区业主反映，业委会表决通过禁止新能源汽车驶入地下车库的决定，要求已停车辆10日内移出，物业称系担心电池起火风险。律师表示，此类“一刀切”禁令涉嫌侵犯业主合法权益，业主可诉请法院撤销该决定，或要求物业升级消防设施后科学管理。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-06T10:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "小区管理分歧报道，客观呈现业委会、物业与律师三方说法，不鼓动对抗。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "封面新闻",
+          "url": "https://m.thecover.cn/news_details.html?eid=bJ1vEhfL7PeH90qSdq8Jkw==",
+          "title": "福建一小区“一刀切”禁止新能源汽车进地库 律师解读",
+          "captured_at": "2026-09-07T06:23:00+08:00",
+          "note": "封面新闻9月6日报道：南平一小区业委会表决禁止新能源车进地库，物业确认执行该决定"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中华网",
+          "url": "https://news.china.com/socialgd/10000169/20260906/49722582.html",
+          "title": "小区禁止新能源汽车进地库 律师解读业主权益",
+          "captured_at": "2026-09-07T06:23:30+08:00",
+          "note": "中华网9月6日报道：业主购有人防车位20年使用权，律师称可诉请法院撤销该决定"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-07-central-financial-capital-increase",
+      "story_identity": "eight-central-financial-firms-capital-increase-2026",
+      "headline": "🏦 财政部拟发3000亿元特别国债，8家中央金融企业将增资",
+      "summary": "9月6日，财政部宣布将于近期发行3000亿元特别国债，支持8家中央金融企业补充核心一级资本；工商银行、农业银行、进出口银行、中国人保、中国人寿集团等8家企业同日披露增资计划，合计拟增资3600亿元。业内称此举有助于增强机构稳健经营、抵御风险和服务实体经济能力。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-06T19:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "财政金融政策事实报道，源自新华社与央广网权威发布。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.xinhuanet.com/fortune/20260906/2247a7afb8a84de59f29551aa6cdaab7/c.html",
+          "title": "8家中央金融企业拟增资3600亿元用于补充资本",
+          "captured_at": "2026-09-07T06:25:00+08:00",
+          "note": "新华社北京9月6日电：8家中央金融企业分别发布增资计划，合计拟增资3600亿元"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/jingji/ycbd/20260906/t20260906_527806245.shtml",
+          "title": "财政部拟发行3000亿元特别国债 为8家中央金融企业补充核心一级资本",
+          "captured_at": "2026-09-07T06:25:30+08:00",
+          "note": "央广网9月6日消息：财政部将于近期发行3000亿元特别国债支持8家中央金融企业"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-07-zhenshiming-eye-drop-recall",
+      "story_identity": "zhenshiming-tobramycin-dexamethasone-recall-2026",
+      "headline": "💊 珍视明回应滴眼液抽检不合格：已停产封存并完成召回",
+      "summary": "9月6日晚间，珍视明药业召开线上说明会，回应旗下妥布霉素地塞米松滴眼液被国家药监局通报抽检不合格一事：公司4月10日接通知后即停止生产、封存全部库存，截至5月30日已完成召回，目前无不合格批次在售；初步判断不合格与运输低温及放置方式有关。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 83,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-06T21:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "药品抽检企业回应的客观报道，不构成用药建议，处方药使用遵医嘱。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34021095",
+          "title": "珍视明回应滴眼液抽检不合格：或与物流运输因素有关，召回所有在售同款产品",
+          "captured_at": "2026-09-07T06:26:00+08:00",
+          "note": "澎湃新闻9月6日报道：珍视明线上记者会回应国家药监局第30号通告，推测与运输放置方式有关"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/wm/2026-09-06/doc-iniqxchs6713321.shtml",
+          "title": "珍视明回应滴眼液抽检不合格",
+          "captured_at": "2026-09-07T06:26:30+08:00",
+          "note": "界面新闻9月6日报道：珍视明称接通知后已停产封存，截至5月30日完成召回"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-07-environment-monitoring-fraud-exposed",
+      "story_identity": "cctv-caijingdiaocha-environment-monitoring-fraud",
+      "headline": "🔍 央视《财经调查》曝光环境监测造假：采样摆拍、数据编造",
+      "summary": "9月6日，总台《财经调查》曝光多地环境监测机构弄虚作假：有检测公司采样员摆拍照片伪造采样流程，用办公室白噪声替代工地现场噪声，甚至取用村民饮用水冒充地下水样出具合格报告。今年1月起施行的《生态环境监测条例》已明确对弄虚作假的罚则，相关线索已引发关注。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-06T20:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "媒体调查报道客观转述，聚焦行业乱象与法规罚则，不点名扩大揣测。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网",
+          "url": "https://i.ifeng.com/c/8wCsfePx9z6",
+          "title": "起底生态环境监测造假：白噪音替代工地噪声，7个监测点无一真实水样",
+          "captured_at": "2026-09-07T06:27:00+08:00",
+          "note": "凤凰网9月6日转总台《财经调查》报道：环境监测机构从采样到报告出具处处作假"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "大众网",
+          "url": "https://hb.dzwww.com/p/pekFChdJbG8.html",
+          "title": "采样摆拍、数据编造！央视曝光环境监测报告弄虚作假",
+          "captured_at": "2026-09-07T06:27:30+08:00",
+          "note": "大众网9月6日转载：环境检测公司出具虚假合格监测报告，给环境治理埋下隐患"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-07-china-women-basketball-czech-win",
+      "story_identity": "china-women-basketball-czech-overtime-2026",
+      "headline": "🏀 中国女篮加时逆转捷克，74比70拿下世界杯小组赛首胜",
+      "summary": "北京时间9月6日晚，2026年国际篮联女篮世界杯小组赛在德国柏林进行，中国女篮在一度落后10分的情况下将比赛拖入加时，最终74比70逆转捷克队，取得小组赛首胜。两轮过后中国队一胜一负，重新掌握晋级八强的主动权。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-06T22:35:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际赛事中国队赛果报道，客观陈述比分与出线形势。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/sports/20260906/9a83cef143694ab2bc4d517eed4baa83/c.html",
+          "title": "女篮世界杯：中国队加时逆转捷克队迎首胜",
+          "captured_at": "2026-09-07T06:28:00+08:00",
+          "note": "新华社柏林9月6日电：中国队一度落后10分拖入加时，最终74比70逆转捷克队"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "上观新闻",
+          "url": "https://www.shobserver.com/staticsg/res/html/web/newsDetail.html?id=1172203&sid=11",
+          "title": "女篮世界杯中国女篮加时力克捷克队，赢得小组出线关键战",
+          "captured_at": "2026-09-07T06:28:30+08:00",
+          "note": "上观新闻9月6日报道：中国女篮末节顽强追平，加时取胜，重新掌握晋级八强主动权"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-07-bailu-solar-term",
+      "story_identity": "bailu-solar-term-2026-09-07",
+      "headline": "🍂 今日迎白露节气：昼夜温差加大，注意添衣保暖",
+      "summary": "9月7日进入白露节气（交节时刻约为22时41分）。白露是秋季第三个节气，此后昼夜温差进一步加大，夜间凉意渐生。气象部门提醒，北方多地本周有降雨降温过程，公众早晚出行注意添衣；老人儿童及心脑血管疾病患者不宜盲目“秋冻”。",
+      "category": "节日节气",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 10
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-07T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "节气生活服务提示，交节时刻取自公开节气历，健康养生建议为通用提示。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "https://www.weather.com.cn/zt/jqzt/index.shtml",
+          "title": "24节气专题：2026年9月7日至22日是白露节气",
+          "captured_at": "2026-09-07T06:29:00+08:00",
+          "note": "中国天气网节气专题显示2026年白露为9月7日至22日，多地闷热消减、早晚趋凉"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
