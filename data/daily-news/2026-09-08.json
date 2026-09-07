@@ -1,0 +1,864 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-08",
+  "generated_at": "2026-09-08T06:27:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 43,
+    "published": 5,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 1,
+      "geopolitics": 3,
+      "illegal": 1,
+      "minors": 1,
+      "politics": 2,
+      "propaganda": 1,
+      "public_safety": 1,
+      "rumor": 1
+    },
+    "dropped_low_confidence": 23,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 31,
+      "official_sources": 3,
+      "state_media_sources": 0,
+      "major_media_sources": 8,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 3
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 7,
+        "relaxed_72h": 8
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 43,
+          "cumulative_unique_candidates": 43,
+          "source_scope": [
+            "新华社新华网央视网央广网中国新闻网等央媒",
+            "澎湃新闻新京报北京日报封面新闻财新等持牌媒体",
+            "中央气象台中国天气网及政府部门网站等官方发布",
+            "百度热搜公开榜单热度佐证",
+            "综合搜索交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-08-zheng-qinwen-swiatek-usopen-qf",
+          "story_identity": "zheng-qinwen-usopen-r4-swiatek-comeback-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T02:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-08-zheng-qinwen-swiatek-usopen-qf",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-08-xiaomi-18-fold-launch",
+          "story_identity": "xiaomi-18-fold-launch-2026-autumn",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-08-xiaomi-18-fold-launch",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-08-jiangxi-flood-rumors-refuted",
+          "story_identity": "jiangxi-suichuan-wanan-flood-rumor-refute-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-08-jiangxi-flood-rumors-refuted",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-08-huawei-mate-xt2-harmonyos7",
+          "story_identity": "huawei-mate-xt2-harmonyos7-launch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T14:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-08-huawei-mate-xt2-harmonyos7",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-08-typhoon-korowan-stop-numbering",
+          "story_identity": "typhoon-korowan-numbering-stopped-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-08-typhoon-korowan-stop-numbering",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "shenzhen-car-subsidy-court-case",
+          "story_identity": "shenzhen-nanshan-car-subsidy-court-case",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "北京日报、央广网9月6日已首发报道该案，事件披露超出24小时严格时效档"
+        },
+        {
+          "candidate_key": "ding-junhui-english-open-r1",
+          "story_identity": "ding-junhui-english-open-2026-first-round",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "英格兰公开赛首轮胜利热度与民生关联有限，综合评分未达75分严格档"
+        },
+        {
+          "candidate_key": "zhang-jiang-usopen-doubles-r2",
+          "story_identity": "zhang-shuai-jiang-xinyu-usopen-doubles-r2",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T05:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "美网女双次轮晋级公共热度有限"
+        },
+        {
+          "candidate_key": "sams-salmon-sushi-parasite",
+          "story_identity": "sams-club-salmon-sushi-parasite-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 14,
+            "everyday_relevance": 18,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "消费者9月5日曝光、山姆确认异物，事件落入72小时宽松时效档，且无监管新进展"
+        },
+        {
+          "candidate_key": "kunshan-nev-battery-rental-case",
+          "story_identity": "kunshan-nev-battery-rental-court-case",
+          "research_pass": 1,
+          "occurred_at": "2026-09-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 12,
+            "everyday_relevance": 19,
+            "evidence": 9
+          },
+          "drop_reason": "昆山法院近日审结，但行业媒体9月3日已首发报道，超出72小时时效窗口"
+        },
+        {
+          "candidate_key": "wutai-summit-hiking-ban-sept",
+          "story_identity": "wutaishan-summit-hiking-ban-sept-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "drop_reason": "五台山管委会公告发布于9月5日，超出72小时时效窗口"
+        },
+        {
+          "candidate_key": "recycling-industry-5-trillion",
+          "story_identity": "china-recycling-industry-5-trillion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "资源循环产业综述引用2025年数据，当日增量有限"
+        },
+        {
+          "candidate_key": "bank-deposit-rate-repricing",
+          "story_identity": "banks-high-interest-deposit-maturity-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 18,
+            "evidence": 6
+          },
+          "drop_reason": "银行中报季分析稿，无当日具体新闻事件"
+        },
+        {
+          "candidate_key": "mango-ai-drama-stock-surge",
+          "story_identity": "hunan-tv-ai-drama-mango-stock-surge",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 12,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "股价上涨统计截至9月4日收盘，超出72小时时效窗口"
+        },
+        {
+          "candidate_key": "feidachu-master-title-removal",
+          "story_identity": "feidachu-master-chef-title-removal-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 12,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "门店换牌行动8月底已完成，报道为回顾性内容，时效不足"
+        },
+        {
+          "candidate_key": "citic-independent-director-case",
+          "story_identity": "citic-haizhi-independent-director-removal",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 9
+          },
+          "drop_reason": "上市公司治理个案公告，与读者日常生活关联有限"
+        },
+        {
+          "candidate_key": "tesla-cybercab-unveiling",
+          "story_identity": "tesla-cybercab-unveiling-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T08:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 11,
+            "evidence": 9
+          },
+          "drop_reason": "美国企业产品动态对中国读者直接关联弱，且发布于9月5日超出时效窗口"
+        },
+        {
+          "candidate_key": "women-basketball-turnovers-talk",
+          "story_identity": "china-women-basketball-czech-turnovers-commentary",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 7
+          },
+          "drop_reason": "与9月6日已发布的女篮胜捷克条目同一赛事，评论稿无新事实增量"
+        },
+        {
+          "candidate_key": "wide-foldable-phone-trend",
+          "story_identity": "wide-foldable-phone-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 5
+          },
+          "drop_reason": "折叠屏行业趋势分析稿，无当日新闻事件"
+        },
+        {
+          "candidate_key": "arsenal-chelsea-derby",
+          "story_identity": "arsenal-chelsea-premier-league-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-06T23:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 7
+          },
+          "drop_reason": "海外联赛常规赛事，属外国本地体育新闻，日常关联有限"
+        },
+        {
+          "candidate_key": "aokang-shoes-decline",
+          "story_identity": "aokang-international-decline-analysis",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "企业经营分析稿，非当日新闻事件"
+        },
+        {
+          "candidate_key": "sugar-free-label-myth",
+          "story_identity": "sugar-free-label-national-standard-explainer",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "食品标签常规科普，无当日新闻事件"
+        },
+        {
+          "candidate_key": "dragon-restaurant-overseas",
+          "story_identity": "welcome-to-dragon-restaurant-overseas-release",
+          "research_pass": 1,
+          "occurred_at": "2026-09-05T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 13,
+            "everyday_relevance": 11,
+            "evidence": 7
+          },
+          "drop_reason": "影片海外发行消息发布于9月5日，超出72小时时效窗口"
+        },
+        {
+          "candidate_key": "andy-lau-huawei-event",
+          "story_identity": "andy-lau-age-anxiety-huawei-launch",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 16,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "发布会嘉宾感言花絮，与主条目同源不再重复选用"
+        },
+        {
+          "candidate_key": "nev-market-daily-roundup",
+          "story_identity": "nev-market-daily-roundup-2026-09-07",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 13,
+            "evidence": 4
+          },
+          "drop_reason": "新能源市场日报综述，无具体当日事件"
+        },
+        {
+          "candidate_key": "huluwa-coffee-shop-reviews",
+          "story_identity": "shaoxing-huluwa-grandpa-coffee-shop-reviews",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "网红老人邻里后续花絮，公共信息增量小"
+        },
+        {
+          "candidate_key": "liu-mintao-cada-speech",
+          "story_identity": "liu-mintao-cada-opening-ceremony-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 15,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "明星出席开学典礼花絮，非公共事务"
+        },
+        {
+          "candidate_key": "zhangxue-wsbk-france-pole",
+          "story_identity": "zhangxue-wsbk-france-pole-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-04T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 12,
+            "everyday_relevance": 8,
+            "evidence": 7
+          },
+          "drop_reason": "摩托车赛事热度有限且发生于9月4日，超出72小时时效窗口"
+        },
+        {
+          "candidate_key": "bawang-chaji-tea-eggs",
+          "story_identity": "bawang-chaji-shanghai-tea-eggs-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见品牌区域账号发布的信息，缺少独立媒体核实"
+        },
+        {
+          "candidate_key": "boy-cooking-firewood-chicken",
+          "story_identity": "viral-boy-cooking-firewood-chicken-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "短视频平台内容，无权威媒体核实来源"
+        },
+        {
+          "candidate_key": "saic-audi-rings-plan",
+          "story_identity": "saic-audi-four-rings-brand-plan",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见单一媒体独家报道，企业未官方确认，缺少独立印证"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-11",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-12",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-08-zheng-qinwen-swiatek-usopen-qf",
+      "story_identity": "zheng-qinwen-usopen-r4-swiatek-comeback-2026",
+      "headline": "🎾 郑钦文0比5落后翻盘斯瓦泰克，第三次跻身美网八强",
+      "summary": "北京时间9月8日凌晨，2026年美网女单第四轮，从资格赛突围的郑钦文在首盘0比5落后的情况下连胜7局，以7比5、6比3逆转8号种子斯瓦泰克，携一波七连胜职业生涯第三次跻身美网八强，追平个人美网最佳战绩。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-08T02:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际赛事中国选手赛果报道，客观陈述比分与晋级形势。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网",
+          "url": "https://news.ifeng.com/c/8wErl9VWGcN",
+          "title": "再次惊天逆转！郑钦文晋级美网8强",
+          "captured_at": "2026-09-08T06:17:00+08:00",
+          "note": "凤凰网9月8日报道：郑钦文7比5、6比3战胜8号种子斯瓦泰克，携七连胜晋级美网八强"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-09-08/doc-iniqzsvr0039121.shtml",
+          "title": "视频丨追平美网最佳战绩！郑钦文逆转斯瓦泰克晋级女单8强",
+          "captured_at": "2026-09-08T06:17:30+08:00",
+          "note": "新浪财经9月8日报道：郑钦文首盘克服0比5落后连胜7局，追平个人美网最佳战绩"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-08-xiaomi-18-fold-launch",
+      "story_identity": "xiaomi-18-fold-launch-2026-autumn",
+      "headline": "📱 小米18 Fold发布：首款“中折叠”手机，10999元起售",
+      "summary": "9月7日晚，小米秋季旗舰新品发布会在北京举行，首款“中折叠”手机小米18 Fold正式发布：首发搭载自研玄戒O3芯片，闭合厚10.68毫米、重219克，12GB+256GB版售价10999元起，9月10日10时正式开售，为小米迄今最贵手机。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 83,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-07T19:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "消费电子产品发布事实报道，价格为官方公布信息，不构成购买建议。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "北京商报",
+          "url": "https://www.bbtnews.com.cn/2026/0907/604991.shtml",
+          "title": "小米18 Fold折叠屏手机发布，起售价10999元",
+          "captured_at": "2026-09-08T06:19:00+08:00",
+          "note": "北京商报9月7日报道：小米18 Fold首发搭载玄戒O3芯片，售价区间10999元至14999元"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/t/2026-09-07/doc-iniqzhfq9534630.shtml",
+          "title": "小米迄今为止最强折叠屏18 Fold发布：搭载玄戒O3，售价10999元起",
+          "captured_at": "2026-09-08T06:19:30+08:00",
+          "note": "新浪财经9月7日报道：小米18 Fold将于9月10日10点开售，闭合厚度10.68毫米、重219克"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-08-jiangxi-flood-rumors-refuted",
+      "story_identity": "jiangxi-suichuan-wanan-flood-rumor-refute-2026",
+      "headline": "📢 江西遂川、万安涉灾信息不实，多名造谣网民被依法处置",
+      "summary": "9月7日，江西网络辟谣专栏通报：网传“遂川泉江防洪堤溃决”“万安南卜州电站水坝被洪水冲垮”等涉汛信息均为不实内容，当地网信、公安部门已依法处置多名造谣网民。提醒公众汛情信息以水利、应急部门官方通报为准，不信谣、不传谣。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-07T12:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "辟谣处置报道以官方通报口径为准，不展开传言细节，不点名被处置网民。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://m.bjnews.com.cn/detail/1788774445129868.html",
+          "title": "江西遂川、万安这些涉灾信息不实（2026·09·07）",
+          "captured_at": "2026-09-08T06:21:00+08:00",
+          "note": "新京报9月7日转载辟谣专栏：网传溃堤、溃坝等内容均无事实依据，警方依法对造谣者作出行政处罚"
+        },
+        {
+          "tier": "official",
+          "outlet": "西藏自治区发改委",
+          "url": "https://drc.xizang.gov.cn/xwzx/daod/202609/t20260907_557098.html",
+          "title": "江西遂川、万安这些涉灾信息不实（2026·09·07）",
+          "captured_at": "2026-09-08T06:21:30+08:00",
+          "note": "西藏自治区发展改革委网站9月7日转载同日辟谣专栏全文，含遂川、万安涉汛谣言核查处置情况"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-08-huawei-mate-xt2-harmonyos7",
+      "story_identity": "huawei-mate-xt2-harmonyos7-launch-2026",
+      "headline": "📲 华为Mate XT 2三折叠发布，鸿蒙HarmonyOS 7正式亮相",
+      "summary": "9月7日下午，华为举行HarmonyOS 7｜HUAWEI Mate XT 2及全场景新品发布会：新一代三折叠Mate XT 2非凡大师首发麒麟9050 Pro芯片、预装HarmonyOS 7，售价19999元起，9月12日开售；阔直板Pura X View、WATCH 6系列等新品同日亮相。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-07T14:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "企业新品发布事实报道，信息源自公开发布会与行业媒体报道，不构成购买建议。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "C114通信网",
+          "url": "https://m.c114.com.cn/w3542-1317069.html",
+          "title": "19999元起售！华为Mate XT 2正式发布：三折叠从炫技走向日用，麒麟芯片时隔六年回归",
+          "captured_at": "2026-09-08T06:23:00+08:00",
+          "note": "C114通信网9月7日报道：华为Mate XT 2改用U型三折叠结构，售价19999元起"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "通信世界网",
+          "url": "https://www.cww.net.cn/article?id=613348",
+          "title": "多项重磅新品亮相9月7日华为全场景新品发布会",
+          "captured_at": "2026-09-08T06:23:30+08:00",
+          "note": "通信世界网9月7日报道：HarmonyOS 7、Pura X View、MatePad Air、WATCH 6等同日发布"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "赛迪网",
+          "url": "https://www.ccidnet.com/news/1125749.jhtml",
+          "title": "多项重磅新品亮相9月7日华为全场景新品发布会",
+          "captured_at": "2026-09-08T06:24:00+08:00",
+          "note": "赛迪网9月7日报道：Pura X View搭载XMAGE 2亿红枫影像系统，Mate XT 2首发麒麟9050 Pro"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-08-typhoon-korowan-stop-numbering",
+      "story_identity": "typhoon-korowan-numbering-stopped-2026",
+      "headline": "🌀 台风“科罗旺”减弱停编，对我国海域影响趋于结束",
+      "summary": "中央气象台消息，今年第24号台风“科罗旺”9月7日上午在琉球群岛以东洋面减弱为热带低压，随后进一步减弱、难以确定环流中心，中央气象台于7日11时对其停止编号。“科罗旺”未登陆我国，东海等海域大风影响逐渐减弱结束。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 14
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-07T11:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "气象部门权威信息，客观陈述台风减弱停编事实，无灾害渲染。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台台风网",
+          "url": "https://typhoon.nmc.cn/web.html",
+          "title": "台风网：“科罗旺”于7日11时停止编号",
+          "captured_at": "2026-09-08T06:25:00+08:00",
+          "note": "中央气象台台风网显示“科罗旺”于9月7日11时停止编号"
+        },
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "http://news.weather.com.cn/2026/09/4784429.shtml",
+          "title": "台风“科罗旺”向北偏东方向移动 强度逐渐减弱",
+          "captured_at": "2026-09-08T06:25:30+08:00",
+          "note": "中国天气网9月7日报道：“科罗旺”7日早晨位于琉球群岛那霸市偏东约400公里洋面，强度逐渐减弱"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
