@@ -3,18 +3,18 @@
   "policy_version": "v3-domestic-majority",
   "rubric_version": "v3-100point-domestic-majority",
   "date": "2026-09-09",
-  "generated_at": "2026-09-09T06:18:35+08:00",
+  "generated_at": "2026-09-09T15:15:53+08:00",
   "status": "published",
   "run_report": {
-    "candidates_scanned": 40,
-    "published": 8,
+    "candidates_scanned": 55,
+    "published": 3,
     "dropped_safety": {
       "celebrity_dispute": 1,
       "controversy": 1,
       "geopolitics": 3,
       "politics": 2
     },
-    "dropped_low_confidence": 22,
+    "dropped_low_confidence": 42,
     "dropped_quota": 0,
     "dropped_capacity": 0,
     "sources": [
@@ -23,7 +23,7 @@
       "major_media"
     ],
     "evidence_summary": {
-      "candidates_with_urls": 34,
+      "candidates_with_urls": 49,
       "official_sources": 2,
       "state_media_sources": 3,
       "major_media_sources": 11,
@@ -33,7 +33,7 @@
     "selection": {
       "tier": "strict_24h",
       "qualified": {
-        "strict_24h": 8,
+        "strict_24h": 3,
         "relaxed_48h": 9,
         "relaxed_72h": 10
       },
@@ -50,6 +50,17 @@
             "武汉市卫健委及中国互联网联合辟谣平台等官方机构通报",
             "36氪IT之家等行业媒体与综合搜索交叉验证"
           ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 55,
+          "source_scope": [
+            "地方日报与广电每日要闻汇总页交叉检索",
+            "国家预警信息发布中心与地方气象台预警通报",
+            "国家统计局海关总署等月度数据发布",
+            "高校消协行业协会等机构回应与整改通报"
+          ]
         }
       ],
       "candidate_audit": [
@@ -60,8 +71,7 @@
           "occurred_at": "2026-09-08T14:00:00+08:00",
           "scope": "domestic",
           "topic": "民生服务",
-          "outcome": "selected",
-          "item_id": "2026-09-09-shanghai-maternity-cost-zero",
+          "outcome": "dropped_low_confidence",
           "score": 91,
           "score_breakdown": {
             "heat": 37,
@@ -69,7 +79,8 @@
             "everyday_relevance": 22,
             "evidence": 13
           },
-          "qualification_tier": "strict_24h"
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "事件发生于9月8日14时，按发布后受信时钟年龄已超过24小时，仅达relaxed_48h宽松档，未入选strict_24h严格档"
         },
         {
           "candidate_key": "2026-09-09-samr-rest-assured-consumption",
@@ -78,8 +89,7 @@
           "occurred_at": "2026-09-08T09:30:00+08:00",
           "scope": "domestic",
           "topic": "消费就业",
-          "outcome": "selected",
-          "item_id": "2026-09-09-samr-rest-assured-consumption",
+          "outcome": "dropped_low_confidence",
           "score": 85,
           "score_breakdown": {
             "heat": 33,
@@ -87,7 +97,8 @@
             "everyday_relevance": 20,
             "evidence": 13
           },
-          "qualification_tier": "strict_24h"
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "通知于9月8日09:30发布，按当前时钟事件年龄超24小时，仅符合relaxed_48h档而落选"
         },
         {
           "candidate_key": "2026-09-09-wuhan-illegal-art-lab-sealed",
@@ -150,8 +161,7 @@
           "occurred_at": "2026-09-08T09:00:00+08:00",
           "scope": "domestic",
           "topic": "健康医疗",
-          "outcome": "selected",
-          "item_id": "2026-09-09-halometasone-shortage-price-surge",
+          "outcome": "dropped_low_confidence",
           "score": 79,
           "score_breakdown": {
             "heat": 30,
@@ -159,7 +169,8 @@
             "everyday_relevance": 19,
             "evidence": 12
           },
-          "qualification_tier": "strict_24h"
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "厂家回应于9月8日09:00披露，按当前时钟超24小时时效，仅达relaxed_48h档而落选"
         },
         {
           "candidate_key": "2026-09-09-xinjiang-zhongkao-rumor-refuted",
@@ -168,8 +179,7 @@
           "occurred_at": "2026-09-08T15:00:00+08:00",
           "scope": "domestic",
           "topic": "教育考试",
-          "outcome": "selected",
-          "item_id": "2026-09-09-xinjiang-zhongkao-rumor-refuted",
+          "outcome": "dropped_low_confidence",
           "score": 76,
           "score_breakdown": {
             "heat": 27,
@@ -177,7 +187,8 @@
             "everyday_relevance": 18,
             "evidence": 13
           },
-          "qualification_tier": "strict_24h"
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "辟谣信息于9月8日15时发布，按发布后受信时钟超过24小时，仅达relaxed_48h档而落选"
         },
         {
           "candidate_key": "2026-09-09-deepseek-v41-flash-beta",
@@ -186,8 +197,7 @@
           "occurred_at": "2026-09-08T14:30:00+08:00",
           "scope": "domestic",
           "topic": "科技AI",
-          "outcome": "selected",
-          "item_id": "2026-09-09-deepseek-v41-flash-beta",
+          "outcome": "dropped_low_confidence",
           "score": 76,
           "score_breakdown": {
             "heat": 28,
@@ -195,7 +205,8 @@
             "everyday_relevance": 16,
             "evidence": 14
           },
-          "qualification_tier": "strict_24h"
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "内测于9月8日14:30开启，按当前时钟事件年龄超24小时，仅符合relaxed_48h档而落选"
         },
         {
           "candidate_key": "autumn-grain-key-yield-period",
@@ -644,93 +655,266 @@
           "research_pass": 1,
           "outcome": "dropped_safety",
           "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "stats-cpi-august-2026",
+          "story_identity": "stats-cpi-august-2026-yoy-release",
+          "research_pass": 2,
+          "occurred_at": "2026-09-09T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "月度例行数据发布，8月CPI同比0.8%属平稳运行，无新增政策信号"
+        },
+        {
+          "candidate_key": "customs-trade-jan-aug-2026",
+          "story_identity": "china-goods-trade-jan-aug-up-17pt6",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "前8个月进出口同比增17.6%为宏观数据汇总，与读者当日生活决策关联有限"
+        },
+        {
+          "candidate_key": "flexible-workers-medical-insurance",
+          "story_identity": "flexible-employment-basic-medical-expansion-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "多部门扩大灵活就业人员医保参保规模为方向性发文，尚无具体经办细则落地"
+        },
+        {
+          "candidate_key": "three-dept-eye-health-services",
+          "story_identity": "three-departments-eye-health-services-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "三部门眼健康服务文件属行业指导性安排，公众即时信息增量有限"
+        },
+        {
+          "candidate_key": "lg-carrier-88000m3-completed",
+          "story_identity": "first-88000m3-liquefied-gas-carrier-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 7
+          },
+          "drop_reason": "首制超大型液化气体运输船完工属重大装备工程进展，与日常消费决策距离较远"
+        },
+        {
+          "candidate_key": "dianzhong-water-haidong-tunnel",
+          "story_identity": "dianzhong-water-diversion-haidong-tunnel-through",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "滇中引水大理海东隧洞贯通为工程节点进展，供水效益待后续显现"
+        },
+        {
+          "candidate_key": "badminton-association-chair-2026",
+          "story_identity": "china-badminton-association-chair-zhangxin-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "羽毛球协会换届属行业组织动态，公共信息增量有限"
+        },
+        {
+          "candidate_key": "zheng-qinwen-china-open-entry",
+          "story_identity": "zheng-qinwen-2026-china-open-main-draw-entry",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "中网参赛确认属赛事预告动态，与昨日条目同选手，信息增量有限"
+        },
+        {
+          "candidate_key": "wipo-innovation-clusters-2026",
+          "story_identity": "global-innovation-clusters-top100-china-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "全球创新集群百强榜属年度报告类信息，即时民生关联有限"
+        },
+        {
+          "candidate_key": "jiangxi-suichuan-mudslide-2026",
+          "story_identity": "jiangxi-suichuan-gaoping-mudslide-toll-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 7
+          },
+          "drop_reason": "县域泥石流灾情为地方突发处置通报，服务性信息有限，保持关注不展开"
+        },
+        {
+          "candidate_key": "airline-overbooking-rectification",
+          "story_identity": "jjj-consumer-assoc-airline-overbooking-fix-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "京津冀消协通报机票超售整改为阶段性结果汇总，未见新服务规则同步落地"
+        },
+        {
+          "candidate_key": "hlj-athlete-titles-revoked",
+          "story_identity": "heilongjiang-32-athlete-title-revocations-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "省级赛事运动员技术等级称号撤销属行业管理个案"
+        },
+        {
+          "candidate_key": "swjtu-xiwang-sitting-rule-repealed",
+          "story_identity": "swjtu-xiwang-college-teacher-sitting-rule-repealed",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "高校考核坐班制度调整为校内管理议题，公共外溢影响有限"
+        },
+        {
+          "candidate_key": "shanghai-bridge-tactile-paving",
+          "story_identity": "shanghai-bridge-tactile-paving-peeled-rectification",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "大桥盲道脱落已有部门回应整改追责，属市政设施个案处置"
+        },
+        {
+          "candidate_key": "adult-college-exam-enrollment-2026",
+          "story_identity": "national-adult-college-entrance-enrollment-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "成人高校招生工作通知为年度例行安排，各省报名此前已陆续启动"
         }
       ]
     }
   },
   "items": [
-    {
-      "id": "2026-09-09-shanghai-maternity-cost-zero",
-      "story_identity": "shanghai-maternity-cost-zero-2026",
-      "headline": "🍼 上海10月起生育医疗费用个人“无自付”，产检享4500元定额补贴",
-      "summary": "9月8日，上海市医保局印发生育医疗费用保障新政：10月1日起，合规生育医疗费用实现个人“无自付”，产前检查享4500元定额补贴、超额部分由生育保险全额兜底，住院分娩政策范围内费用全额报销，并打通异地生育结算。",
-      "category": "民生社会",
-      "scope": "domestic",
-      "topic": "民生服务",
-      "score": 91,
-      "score_breakdown": {
-        "heat": 37,
-        "freshness": 19,
-        "everyday_relevance": 22,
-        "evidence": 13
-      },
-      "heat_rank": 1,
-      "occurred_at": "2026-09-08T14:00:00+08:00",
-      "risk": {
-        "level": "safe",
-        "note": "地方医保新政事实报道，以官方文件与主流媒体口径为准。"
-      },
-      "sources": [
-        {
-          "tier": "major_media",
-          "outlet": "上观新闻",
-          "url": "https://www.shobserver.com/news/detail?id=1172735",
-          "title": "孕妈注意！上海生育保障新政：10月起个人实现“无自付”",
-          "captured_at": "2026-09-09T06:13:30+08:00",
-          "note": "上观新闻9月8日报道：上海市医保局印发通知，10月1日起施行生育医疗费用保障新政"
-        },
-        {
-          "tier": "major_media",
-          "outlet": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/bxjj/2026-09-08/doc-inircrns9268730.shtml",
-          "title": "上海重磅宣布：10月1日起生娃个人“不花钱”",
-          "captured_at": "2026-09-09T06:14:00+08:00",
-          "note": "新浪财经9月8日报道：产检4500元定额补贴、超额由生育保险兜底，住院分娩政策内费用全报销"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-09-09-samr-rest-assured-consumption",
-      "story_identity": "samr-rest-assured-consumption-zones-2030",
-      "headline": "🛍️ 市场监管总局：2030年建成5000个以上放心消费集聚区",
-      "summary": "市场监管总局9月8日印发《关于全面开展放心消费单元和集聚区培育的通知》并召开专题发布会：到2030年全国放心消费集聚区达5000个以上，将打造放心消费地图，实现一键查阅、一键导航、一键和解，推动消费维权从事后处置转向事前预防。",
-      "category": "民生社会",
-      "scope": "domestic",
-      "topic": "消费就业",
-      "score": 85,
-      "score_breakdown": {
-        "heat": 33,
-        "freshness": 19,
-        "everyday_relevance": 20,
-        "evidence": 13
-      },
-      "heat_rank": 2,
-      "occurred_at": "2026-09-08T09:30:00+08:00",
-      "risk": {
-        "level": "safe",
-        "note": "部委消费政策发布报道，客观陈述文件目标与机制。"
-      },
-      "sources": [
-        {
-          "tier": "state_media",
-          "outlet": "央广网",
-          "url": "https://www.cnr.cn/jingji/ycbd/20260908/t20260908_527807993.shtml",
-          "title": "到2030年我国将建立5000多个放心消费集聚区",
-          "captured_at": "2026-09-09T06:14:30+08:00",
-          "note": "央广网9月8日报道：市场监管总局正式印发通知，全面启动放心消费主体培育工作"
-        },
-        {
-          "tier": "major_media",
-          "outlet": "中国新闻网",
-          "url": "https://www.chinanews.com.cn/cj/2026/09-08/10692658.shtml",
-          "title": "市场监管总局：到2030年培育放心消费集聚区5000个以上",
-          "captured_at": "2026-09-09T06:15:00+08:00",
-          "note": "中新网9月8日报道：通知共六章，明确培育对象、内容与机制，同步制定培育指引"
-        }
-      ],
-      "published": true
-    },
     {
       "id": "2026-09-09-wuhan-illegal-art-lab-sealed",
       "story_identity": "wuhan-illegal-art-lab-sealed-2026",
@@ -746,7 +930,7 @@
         "everyday_relevance": 18,
         "evidence": 14
       },
-      "heat_rank": 3,
+      "heat_rank": 1,
       "occurred_at": "2026-09-08T16:30:00+08:00",
       "risk": {
         "level": "low",
@@ -787,7 +971,7 @@
         "everyday_relevance": 19,
         "evidence": 13
       },
-      "heat_rank": 4,
+      "heat_rank": 2,
       "occurred_at": "2026-09-08T20:00:00+08:00",
       "risk": {
         "level": "safe",
@@ -828,7 +1012,7 @@
         "everyday_relevance": 16,
         "evidence": 12
       },
-      "heat_rank": 5,
+      "heat_rank": 3,
       "occurred_at": "2026-09-08T19:00:00+08:00",
       "risk": {
         "level": "safe",
@@ -850,129 +1034,6 @@
           "title": "赵松源以高中生身份入选中国男足",
           "captured_at": "2026-09-09T06:16:00+08:00",
           "note": "北京日报客户端9月8日报道：赵松源所属球队标注为清华附中，是30人中唯一不在职业俱乐部的球员"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-09-09-halometasone-shortage-price-surge",
-      "story_identity": "halometasone-shortage-price-surge-2026",
-      "headline": "💊 皮肤科常用药“卤米松”原研药断货涨价，厂家回应原因",
-      "summary": "近日，皮肤科处方药新适确得（卤米松/三氯生乳膏）因持续断货、价格从约30元涨至数百元引发关注。9月8日，该药境内责任人朗生医药回应称，药品为原研进口药，因原料供应商变更自上半年起断货，恢复时间待定，建议患者在医生指导下换用其他药品。",
-      "category": "民生社会",
-      "scope": "domestic",
-      "topic": "健康医疗",
-      "score": 79,
-      "score_breakdown": {
-        "heat": 30,
-        "freshness": 18,
-        "everyday_relevance": 19,
-        "evidence": 12
-      },
-      "heat_rank": 6,
-      "occurred_at": "2026-09-08T09:00:00+08:00",
-      "risk": {
-        "level": "low",
-        "note": "药品供应与价格报道，提示遵医嘱换药，不构成用药建议。"
-      },
-      "sources": [
-        {
-          "tier": "major_media",
-          "outlet": "红星资本局",
-          "url": "https://finance.sina.com.cn/tech/roll/2026-09-08/doc-inircmes6008275.shtml",
-          "title": "“卤米松”原研药从30元涨到800元！厂家：原料供应商变更致断货",
-          "captured_at": "2026-09-09T06:16:10+08:00",
-          "note": "红星资本局9月8日报道：厂家称断货因原料供应商变更，上海、广州多家药房无货"
-        },
-        {
-          "tier": "major_media",
-          "outlet": "现代快报",
-          "url": "https://news.qq.com/rain/a/20260902A0745C00",
-          "title": "30元皮肤药膏卖到近800元，厂家回应",
-          "captured_at": "2026-09-09T06:16:20+08:00",
-          "note": "现代快报9月2日调查：江苏多家三甲医院及药店均表示该药已断货较长时间"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-09-09-xinjiang-zhongkao-rumor-refuted",
-      "story_identity": "xinjiang-zhongkao-adjustment-rumor-refuted",
-      "headline": "📢 “新疆中考科目及分值重大调整”不实，教育部门辟谣",
-      "summary": "近日，网传“新疆2027年中考科目及分值重大调整”引发家长关注。中国互联网联合辟谣平台9月8日核实：该信息为谣言，自治区教育厅、昌吉州教育局均未发布任何关于2027年中考科目及分值调整的官方文件。提醒家长和学生以教育部门官方发布为准，勿轻信网传消息。",
-      "category": "民生社会",
-      "scope": "domestic",
-      "topic": "教育考试",
-      "score": 76,
-      "score_breakdown": {
-        "heat": 27,
-        "freshness": 18,
-        "everyday_relevance": 18,
-        "evidence": 13
-      },
-      "heat_rank": 7,
-      "occurred_at": "2026-09-08T15:00:00+08:00",
-      "risk": {
-        "level": "safe",
-        "note": "辟谣信息以联合辟谣平台与教育部门口径为准，不展开传言内容。"
-      },
-      "sources": [
-        {
-          "tier": "official",
-          "outlet": "互联网联合辟谣平台",
-          "url": "https://www.piyao.org.cn/20260908/6ed365574c404d77ae3a23aa335a0123/c.html",
-          "title": "新疆2027年中考科目及分值重大调整？官方回应来了",
-          "captured_at": "2026-09-09T06:16:30+08:00",
-          "note": "中国互联网联合辟谣平台9月8日核实：相关消息为谣言，教育部门未发布调整文件"
-        },
-        {
-          "tier": "major_media",
-          "outlet": "深圳新闻网",
-          "url": "https://www.sznews.com/zhuanti/content/2026-09/08/content_32167010.htm",
-          "title": "“新疆2027年中考科目及分值重大调整”不实（2026·09·08）",
-          "captured_at": "2026-09-09T06:16:40+08:00",
-          "note": "深圳新闻网9月8日转载辟谣专栏：昌吉州教育局9月7日已发布辟谣声明"
-        }
-      ],
-      "published": true
-    },
-    {
-      "id": "2026-09-09-deepseek-v41-flash-beta",
-      "story_identity": "deepseek-v41-flash-limited-beta",
-      "headline": "🤖 DeepSeek开启V4.1 Flash限时内测：新架构、原生多模态",
-      "summary": "9月8日下午，DeepSeek在官方交流群开启V4.1 Flash中间版本限时内测：采用新模型结构、原生支持多模态，能力更强、速度更快、成本更低，内测至9月10日截止、到期接口下线。目前该版本尚未在官网与API文档正式发布，开发者可提前体验。",
-      "category": "科技AI",
-      "scope": "domestic",
-      "topic": "科技AI",
-      "score": 76,
-      "score_breakdown": {
-        "heat": 28,
-        "freshness": 18,
-        "everyday_relevance": 16,
-        "evidence": 14
-      },
-      "heat_rank": 8,
-      "occurred_at": "2026-09-08T14:30:00+08:00",
-      "risk": {
-        "level": "safe",
-        "note": "国产大模型产品动态事实报道，注明限时内测性质，不构成使用推荐。"
-      },
-      "sources": [
-        {
-          "tier": "major_media",
-          "outlet": "36氪",
-          "url": "http://www.36kr.com/p/3974654461604357",
-          "title": "DeepSeek V4.1 Flash开始限时内测：新架构、原生多模态",
-          "captured_at": "2026-09-09T06:16:50+08:00",
-          "note": "36氪9月8日报道：V4.1 Flash为中间版本内测，采用新模型结构"
-        },
-        {
-          "tier": "major_media",
-          "outlet": "IT之家",
-          "url": "https://www.ithome.com/0/999/795.htm",
-          "title": "DeepSeek V4.1 Flash 中间版本内测：新模型结构",
-          "captured_at": "2026-09-09T06:17:00+08:00",
-          "note": "IT之家9月8日报道：DeepSeek在官方交流群发布内测通知，原生多模态支持"
         }
       ],
       "published": true
