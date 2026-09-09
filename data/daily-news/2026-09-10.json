@@ -1,0 +1,991 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-10",
+  "generated_at": "2026-09-10T06:34:18+08:00",
+  "published_at": "2026-09-10T06:34:18+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 50,
+    "published": 4,
+    "dropped_safety": {
+      "controversy": 2,
+      "geopolitics": 3,
+      "minors": 2,
+      "privacy": 1,
+      "propaganda": 1,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 35,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 40,
+      "official_sources": 2,
+      "state_media_sources": 2,
+      "major_media_sources": 9,
+      "aggregator_sources": 2,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 6,
+        "relaxed_72h": 7
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 34,
+          "cumulative_unique_candidates": 34,
+          "source_scope": [
+            "百度热搜公开榜单热度佐证",
+            "央视网央广网等央媒发布",
+            "第一财经澎湃新闻界面新闻等持牌媒体原创报道",
+            "中国天气网及政府部门站点预警与通报",
+            "综合搜索对候选事件的交叉验证"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 16,
+          "cumulative_unique_candidates": 50,
+          "source_scope": [
+            "财联社7x24电报隔夜要闻滚动",
+            "东方财富与新浪财经行情快讯页",
+            "部委专项活动与行业协会公开信息补充检索"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-10-iphone-duo-china-launch",
+          "story_identity": "apple-iphone-duo-china-launch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T02:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-10-iphone-duo-china-launch",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-10-jiyuan-m36-earthquake",
+          "story_identity": "henan-jiyuan-m36-earthquake-2026-09-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T18:51:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-10-jiyuan-m36-earthquake",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-10-xinjiuning-first-prescription",
+          "story_identity": "xinjiuning-first-prescription-tianjin-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-09-10-xinjiuning-first-prescription",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-10-rainstorm-blue-alert-southwest",
+          "story_identity": "cma-rainstorm-blue-alert-2026-09-09-18",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-10-rainstorm-blue-alert-southwest",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "wtt-macau-team-china-first-round-losses",
+          "story_identity": "wtt-macau-champions-china-r1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "国乒三人止步WTT澳门冠军赛首轮，赛事动态属性强，72分未达75分严格档"
+        },
+        {
+          "candidate_key": "sushiro-frozen-shrimp-response",
+          "story_identity": "sushiro-shijiazhuang-frozen-shrimp-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T21:10:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "寿司郎公司回应与全部门店排查于9月8日晚披露，按受信打戳时钟事件年龄约34小时，超出24小时严格时效档"
+        },
+        {
+          "candidate_key": "spc-ai-personality-rights-opinion",
+          "story_identity": "spc-ai-personality-protection-opinion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "最高法人格权司法意见发布于9月7日，按当前时钟已接近48小时，且68分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "peoples-daily-dibao-fairness-comment",
+          "story_identity": "peoples-daily-dibao-family-assessment-comment",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T11:40:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "低保认定政策评论缘起网络个案发酵，以制度解读为主，事件性公共信息增量有限"
+        },
+        {
+          "candidate_key": "alibaba-sf-express-strategic-cooperation",
+          "story_identity": "alibaba-sf-strategic-cooperation-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "阿里巴巴与顺丰战略合作官宣，对普通读者当日生活决策直接关联有限"
+        },
+        {
+          "candidate_key": "shanghai-union-mutual-aid-sms",
+          "story_identity": "shanghai-union-mutual-aid-sms-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T11:35:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "上海职工互助保障参保短信提醒稿，与8月下旬同主题提醒内容重复度高"
+        },
+        {
+          "candidate_key": "fuel-price-sep11-window-preview",
+          "story_identity": "fuel-price-adjustment-window-sep11-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "下一轮成品油调价窗口为9月11日24时，当前仅为上调预期，以发改委正式通知为准"
+        },
+        {
+          "candidate_key": "wantai-pcv20-project-halt",
+          "story_identity": "wantai-bio-pcv20-project-termination",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 14,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "万泰生物终止20价肺炎疫苗产业化项目为单一公司公告，公众关联有限"
+        },
+        {
+          "candidate_key": "pig-prices-historic-low",
+          "story_identity": "china-pig-prices-low-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "生猪价格低位运行为持续性市场行情，无单日政策或事件增量"
+        },
+        {
+          "candidate_key": "congo-ebola-outbreak-update",
+          "story_identity": "congo-ebola-outbreak-sep2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T20:00:00+08:00",
+          "scope": "international",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "刚果（金）埃博拉疫情通报更新，与中国读者日常生活无直接关联"
+        },
+        {
+          "candidate_key": "teachers-day-2026-weather-map",
+          "story_identity": "teachers-day-2026-weather-service",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T16:31:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "教师节天气地图为节日例行服务信息，无新增公共政策"
+        },
+        {
+          "candidate_key": "qiwei-ai-drama-trailer-venice",
+          "story_identity": "qiwei-ai-drama-trailer-venice-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "艺人AI漫剧预告亮相电影节，属娱乐新作动态"
+        },
+        {
+          "candidate_key": "kangkang-grandpa-obituary",
+          "story_identity": "kangkang-grandpa-passing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 6,
+            "evidence": 5
+          },
+          "drop_reason": "博主家人发布的个人讣告，公共新闻属性有限"
+        },
+        {
+          "candidate_key": "yuminhong-strongest-worker-profile",
+          "story_identity": "dongfang-zhenxuan-sunjin-profile-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "企业高管人物叙事稿，非当日新闻事件"
+        },
+        {
+          "candidate_key": "man-city-porto-ucl-result",
+          "story_identity": "mancity-porto-ucl-league-phase-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T03:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "欧冠联赛阶段常规轮次赛果，属外国赛事常规动态"
+        },
+        {
+          "candidate_key": "hotel-towel-foreign-item-claim",
+          "story_identity": "xuzhou-hotel-towel-foreign-item-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "单体酒店客诉花絮，酒店已回应洗涤流程，未见监管部门介入"
+        },
+        {
+          "candidate_key": "xiangcunji-hkex-third-attempt",
+          "story_identity": "xiangcunji-hkex-filing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "餐饮企业上市进程动态，日常消费关联有限"
+        },
+        {
+          "candidate_key": "dilraba-enamel-basin-hat",
+          "story_identity": "dilraba-enamel-basin-hat-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 4,
+            "evidence": 3
+          },
+          "drop_reason": "艺人居家随拍花絮，非公共新闻"
+        },
+        {
+          "candidate_key": "us-stocks-close-lower-sep9",
+          "story_identity": "us-stocks-close-lower-2026-09-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T04:30:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 4,
+            "evidence": 4
+          },
+          "drop_reason": "美股常规行情波动，无系统性影响"
+        },
+        {
+          "candidate_key": "instant-noodles-comeback-topic",
+          "story_identity": "instant-noodles-frugal-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 13,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "方便面消费话题稿，无当日具体事件"
+        },
+        {
+          "candidate_key": "nicolas-cage-driveway-collapse",
+          "story_identity": "nicolas-cage-malibu-driveway-collapse",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T08:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 12,
+            "everyday_relevance": 4,
+            "evidence": 4
+          },
+          "drop_reason": "海外艺人房产意外花絮"
+        },
+        {
+          "candidate_key": "deepseek-star-market-ipo-rumor",
+          "story_identity": "deepseek-star-market-ipo-rumor-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T21:38:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "DeepSeek拟登陆科创板仅为“消息称”，无公司或监管方证实"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "brent-crude-settles-above-100",
+          "story_identity": "brent-crude-100-settlement-2026-09-09",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T03:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "国际油价受海外局势驱动大涨，国内成品油调价以发改委正式通知为准，直接民生增量待落地"
+        },
+        {
+          "candidate_key": "mohrss-job-service-campaign",
+          "story_identity": "mohrss-job-service-campaign-2026-09",
+          "research_pass": 2,
+          "occurred_at": "2026-09-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "人社部门就业服务专项活动启动，具体岗位与政策增量待落地"
+        },
+        {
+          "candidate_key": "sichuan-heatwave-ending-sep10",
+          "story_identity": "sichuan-heatwave-ends-2026-09-10",
+          "research_pass": 2,
+          "occurred_at": "2026-09-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "四川高温10日结束属天气过程预报，与已选暴雨预警同源同期"
+        },
+        {
+          "candidate_key": "gold-etf-record-inflows-august",
+          "story_identity": "gold-etf-record-inflows-aug-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-09T21:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 6,
+            "evidence": 3
+          },
+          "drop_reason": "全球黄金ETF月度流入数据为市场统计"
+        },
+        {
+          "candidate_key": "korea-google-privacy-lawsuit",
+          "story_identity": "korea-google-data-leak-lawsuit-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-09T18:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 43,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "韩国政府拟起诉谷歌属海外监管动态，与中国读者无直接关联"
+        },
+        {
+          "candidate_key": "openai-cuts-adobe-ad-access",
+          "story_identity": "openai-adobe-ads-access-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T05:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 41,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 4,
+            "evidence": 1
+          },
+          "drop_reason": "海外AI公司广告合作策略调整"
+        },
+        {
+          "candidate_key": "fed-september-rate-hold-odds",
+          "story_identity": "cme-fedwatch-september-2026-odds",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T06:13:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 18,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "美联储利率概率为海外市场常规数据"
+        },
+        {
+          "candidate_key": "europe-stocks-decline-sep9",
+          "story_identity": "europe-stocks-decline-2026-09-09",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T00:30:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 38,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 17,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "欧洲股市常规行情波动"
+        },
+        {
+          "candidate_key": "us-treasury-buyback-start",
+          "story_identity": "us-treasury-buyback-expanded-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-09T22:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 37,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 16,
+            "everyday_relevance": 4,
+            "evidence": 2
+          },
+          "drop_reason": "美国财政部国债回购操作，海外市场常规动态"
+        },
+        {
+          "candidate_key": "saudi-refinery-rebuild-plan",
+          "story_identity": "saudi-cef-refinery-plan-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-09T20:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 35,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 15,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "沙特炼油产能重建计划，海外行业动态"
+        },
+        {
+          "candidate_key": "us-august-budget-deficit",
+          "story_identity": "us-budget-deficit-aug-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-09T21:30:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 34,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 16,
+            "everyday_relevance": 3,
+            "evidence": 1
+          },
+          "drop_reason": "美国月度财政赤字数据"
+        },
+        {
+          "candidate_key": "motorola-buyback-expansion",
+          "story_identity": "motorola-buyback-2b-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T04:12:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 33,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 15,
+            "everyday_relevance": 3,
+            "evidence": 1
+          },
+          "drop_reason": "海外公司股票回购"
+        },
+        {
+          "candidate_key": "enbridge-tallgrass-acquisition",
+          "story_identity": "enbridge-tallgrass-deal-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T04:16:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 32,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 15,
+            "everyday_relevance": 2,
+            "evidence": 1
+          },
+          "drop_reason": "加拿大能源企业并购交易"
+        },
+        {
+          "candidate_key": "amazon-gbp-bond-debut",
+          "story_identity": "amazon-gbp-bond-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-09T19:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 31,
+          "score_breakdown": {
+            "heat": 13,
+            "freshness": 15,
+            "everyday_relevance": 2,
+            "evidence": 1
+          },
+          "drop_reason": "海外公司英镑债券发行"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 2,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 2,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-10-iphone-duo-china-launch",
+      "story_identity": "apple-iphone-duo-china-launch-2026",
+      "headline": "📱 苹果发布首款折叠屏iPhone Duo，国行15999元起",
+      "summary": "北京时间9月10日凌晨，苹果公司举行2026年秋季新品发布会，推出iPhone 18 Pro系列及首款折叠屏手机iPhone Duo。iPhone Duo国行起售价15999元，10月16日晚开启预购、10月23日正式发售；iPhone 18 Pro系列9月12日开启预购、9月18日发售。",
+      "category": "科技AI",
+      "scope": "international",
+      "topic": "科技AI",
+      "primary_organization": "苹果公司",
+      "audience_relevance": {
+        "basis": "direct_china_impact",
+        "impact_scale": "direct_china_public",
+        "china_connection": "国行售价、预购与发售时间直接对应中国消费者购机决策，中国为苹果全球最大市场之一",
+        "everyday_impact": "计划换机的国内消费者可据此比较国行定价与发售节奏，渠道供货与以旧换新安排随之明确",
+        "score": 18,
+        "connection_evidence": {
+          "url": "https://www.cls.cn/detail/2478764",
+          "note": "财联社发布会速览列明iPhone Duo国行15999元起、各存储版本售价及10月16日预购安排"
+        }
+      },
+      "score": 88,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-10T02:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "企业新品发布与国行定价信息，以苹果官网与持牌媒体报道为准，不延伸评价。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "财联社",
+          "url": "https://www.cls.cn/detail/2478764",
+          "title": "苹果发布首款折叠屏iPhone Duo 国行售价15999元起",
+          "captured_at": "2026-09-10T06:16:30+08:00",
+          "note": "财联社9月10日凌晨发布会速览：iPhone Duo国行15999元起，10月16日预购、10月23日发售"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-09-10/doc-inirhmik3337355.shtml",
+          "title": "苹果折叠屏手机iPhone Duo国行售价15999元起，10月16日开启预购",
+          "captured_at": "2026-09-10T06:17:10+08:00",
+          "note": "新浪财经9月10日报道国行各版本售价与预购、发售时间，并注明仅支持eSIM"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-10-jiyuan-m36-earthquake",
+      "story_identity": "henan-jiyuan-m36-earthquake-2026-09-09",
+      "headline": "🌏 河南济源发生3.6级地震，郑州安阳等地有震感",
+      "summary": "中国地震台网正式测定：9月9日18时51分，河南济源市（北纬35.07度、东经112.24度）发生3.6级地震，震源深度9千米。济源及郑州、安阳等多地网友表示有震感，目前暂未见灾情和伤损报告。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-09T18:51:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "地震速报以台网正式测定口径为准，不渲染灾情。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "安徽省地震局",
+          "url": "https://www.ahdzj.gov.cn/content/detail/6aa13b25868e059817ab1c0d.html",
+          "title": "中国地震台网正式测定：2026年09月09日18时51分38秒在河南济源市发生3.6级地震",
+          "captured_at": "2026-09-10T06:18:20+08:00",
+          "note": "安徽省地震局网站转载中国地震台网正式测定：震级3.6级，震源深度9千米"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/09/ARTI3YMkNUtaiv8MIPxuMaFG260909.shtml",
+          "title": "河南济源市发生3.6级地震 震源深度9千米",
+          "captured_at": "2026-09-10T06:18:50+08:00",
+          "note": "央视网9月9日报道台网测定结果，并提及郑州、安阳等多地网友有震感"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-10-xinjiuning-first-prescription",
+      "story_identity": "xinjiuning-first-prescription-tianjin-2026",
+      "headline": "💊 降价140万元后，国产基因疗法药物开出全国首张处方",
+      "summary": "9月9日，第一财经记者从研发厂家信念医药获悉，治疗中重度血友病B的基因疗法药物信玖凝（波哌达可基注射液）近日在天津开出全国首张处方，迎来首位使用患者。该药2025年4月在国内获批上市，曾以279万元一针成为国内最贵药物，今年6月降价140万元。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 19,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-09T20:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "罕见病药物可及性报道，以厂家与持牌媒体口径为准，不作疗效延伸。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "第一财经",
+          "url": "https://www.163.com/dy/article/L6E3BOGO0519DDQ2.html",
+          "title": "这款药降价140万元",
+          "captured_at": "2026-09-10T06:19:40+08:00",
+          "note": "第一财经9月9日报道：信玖凝近日在天津开出全国首张处方，迎来首位使用患者"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://k.sina.com.cn/article_5953190046_162d6789e06703rlf0.html",
+          "title": "天价基因疗法药物中国降价140万元后，终于有患者用了",
+          "captured_at": "2026-09-10T06:20:10+08:00",
+          "note": "新浪财经9月9日转载报道：该药2025年4月获批上市，今年6月降价140万元"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-10-rainstorm-blue-alert-southwest",
+      "story_identity": "cma-rainstorm-blue-alert-2026-09-09-18",
+      "headline": "🌧️ 中央气象台续发暴雨蓝色预警，四川盆地贵州云南局地大暴雨",
+      "summary": "中央气象台9月9日18时继续发布暴雨蓝色预警：预计9日20时至10日20时，青海、甘肃、陕西南部及四川盆地、贵州、云南、广西、广东中东部等地部分地区有大雨或暴雨，四川盆地南部、贵州西北部、云南东北部局地有大暴雨，并伴有短时强降水，相关地区需注意防范次生灾害。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-09T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "气象预警服务信息，提示防范、不渲染。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "https://www.163.com/news/article/L6DFOBC600019K82.html",
+          "title": "暴雨蓝色预警：四川盆地贵州云南等局部地区有大暴雨",
+          "captured_at": "2026-09-10T06:21:30+08:00",
+          "note": "中国天气网讯：中央气象台9月9日18时继续发布暴雨蓝色预警，列明落区与量级"
+        },
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "https://news.weather.com.cn/",
+          "title": "资讯 - 中国天气网",
+          "captured_at": "2026-09-10T06:22:20+08:00",
+          "note": "中国天气网资讯页列示该预警于9月9日18时发布，同期另有山洪、地质灾害气象风险预警"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
