@@ -57,3 +57,8 @@ jobs:
           npm run typecheck --if-present
           npm test --if-present
           npm run build --if-present
+
+      # 构建会重写 next-env.d.ts 等已跟踪生成文件；若 PR 未提交最新结果，
+      # 受信发布管线会在 check 后的 git pull --rebase 处失败（exit 128）。
+      - name: 生成文件一致性（构建后工作区须干净）
+        run: git diff --exit-code
