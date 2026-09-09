@@ -1,0 +1,1043 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-09",
+  "generated_at": "2026-09-09T15:38:23+08:00",
+  "published_at": "2026-09-09T15:38:23+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 55,
+    "published": 3,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 1,
+      "geopolitics": 3,
+      "politics": 2
+    },
+    "dropped_low_confidence": 42,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 49,
+      "official_sources": 2,
+      "state_media_sources": 3,
+      "major_media_sources": 11,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 3
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 3,
+        "relaxed_48h": 9,
+        "relaxed_72h": 10
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 40,
+          "cumulative_unique_candidates": 40,
+          "source_scope": [
+            "百度热搜公开榜单热度佐证",
+            "新华社央广网央视网光明网等央媒发布",
+            "澎湃新闻新京报北京日报上观新闻等持牌媒体原创报道",
+            "武汉市卫健委及中国互联网联合辟谣平台等官方机构通报",
+            "36氪IT之家等行业媒体与综合搜索交叉验证"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 15,
+          "cumulative_unique_candidates": 55,
+          "source_scope": [
+            "地方日报与广电每日要闻汇总页交叉检索",
+            "国家预警信息发布中心与地方气象台预警通报",
+            "国家统计局海关总署等月度数据发布",
+            "高校消协行业协会等机构回应与整改通报"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-09-shanghai-maternity-cost-zero",
+          "story_identity": "shanghai-maternity-cost-zero-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 91,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "事件发生于9月8日14时，按发布后受信时钟年龄已超过24小时，仅达relaxed_48h宽松档，未入选strict_24h严格档"
+        },
+        {
+          "candidate_key": "2026-09-09-samr-rest-assured-consumption",
+          "story_identity": "samr-rest-assured-consumption-zones-2030",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "通知于9月8日09:30发布，按当前时钟事件年龄超24小时，仅符合relaxed_48h档而落选"
+        },
+        {
+          "candidate_key": "2026-09-09-wuhan-illegal-art-lab-sealed",
+          "story_identity": "wuhan-illegal-art-lab-sealed-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T16:30:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-09-09-wuhan-illegal-art-lab-sealed",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-09-black-gas-stations-crackdown",
+          "story_identity": "focus-report-black-gas-stations-crackdown-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-09-black-gas-stations-crackdown",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 18,
+            "everyday_relevance": 19,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-09-china-mnt-squad-zhao-songyuan",
+          "story_identity": "china-mnt-30-man-squad-zhao-songyuan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-09-china-mnt-squad-zhao-songyuan",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-09-halometasone-shortage-price-surge",
+          "story_identity": "halometasone-shortage-price-surge-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "厂家回应于9月8日09:00披露，按当前时钟超24小时时效，仅达relaxed_48h档而落选"
+        },
+        {
+          "candidate_key": "2026-09-09-xinjiang-zhongkao-rumor-refuted",
+          "story_identity": "xinjiang-zhongkao-adjustment-rumor-refuted",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "辟谣信息于9月8日15时发布，按发布后受信时钟超过24小时，仅达relaxed_48h档而落选"
+        },
+        {
+          "candidate_key": "2026-09-09-deepseek-v41-flash-beta",
+          "story_identity": "deepseek-v41-flash-limited-beta",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T14:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "内测于9月8日14:30开启，按当前时钟事件年龄超24小时，仅符合relaxed_48h档而落选"
+        },
+        {
+          "candidate_key": "autumn-grain-key-yield-period",
+          "story_identity": "autumn-grain-yield-formation-period-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "秋粮产量形成关键期属季节性生产综述，与读者当日决策直接关联有限，未达75分严格档"
+        },
+        {
+          "candidate_key": "nepal-mudslide-toll-update",
+          "story_identity": "nepal-mudslide-death-toll-revised-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T22:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 12
+          },
+          "drop_reason": "尼泊尔泥石流遇难人数修正为同一事件延续更新，近日档案已多次选用该灾条目，不再重复"
+        },
+        {
+          "candidate_key": "qixian-hospital-low-window",
+          "story_identity": "qixian-hospital-service-window-rectification",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "杞县人民医院窗口问题已现场整改，属地方个案且披露于9月7日，超出24小时严格时效档"
+        },
+        {
+          "candidate_key": "zhiji-steering-wheel-free-teaser",
+          "story_identity": "zhiji-no-steering-wheel-concept-teaser",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "企业概念视频营销预告，无实际产品发布与公共服务增量"
+        },
+        {
+          "candidate_key": "chunfeng-us-tariff-refund",
+          "story_identity": "cfmoto-us-tariff-refund-366m-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 10
+          },
+          "drop_reason": "单一上市公司关税退税公告，对普通读者日常生活直接影响有限"
+        },
+        {
+          "candidate_key": "travel-frog-china-shutdown",
+          "story_identity": "travel-frog-china-tour-shutdown-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "游戏停运公告属情怀向消费信息，民生关联与公共热度有限"
+        },
+        {
+          "candidate_key": "li-tuchun-obituary",
+          "story_identity": "taizinai-founder-li-tuchun-obituary",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 8
+          },
+          "drop_reason": "企业家讣闻，公共信息增量与日常关联有限"
+        },
+        {
+          "candidate_key": "ig-lgd-lpl-playoffs",
+          "story_identity": "ig-beat-lgd-lpl-lower-bracket-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 8
+          },
+          "drop_reason": "电竞季后赛常规赛果，公共热度有限"
+        },
+        {
+          "candidate_key": "scalabot-heron-world-model",
+          "story_identity": "songyan-scalabot-heron-world-model",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "企业具身智能技术品牌发布，公众认知度与日常关联有限"
+        },
+        {
+          "candidate_key": "gucci-china-price-cut",
+          "story_identity": "gucci-china-price-reduction-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "奢侈品牌调价属消费花絮，对大众日常消费影响有限"
+        },
+        {
+          "candidate_key": "zhao-xintong-english-open-r1",
+          "story_identity": "zhao-xintong-english-open-first-round-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T02:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 7
+          },
+          "drop_reason": "斯诺克英格兰公开赛首轮赛果，热度与民生关联有限"
+        },
+        {
+          "candidate_key": "cooking-robot-restaurant-trend",
+          "story_identity": "cooking-robot-restaurant-rollout-trend",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "餐饮机器人行业趋势稿，无具体当日新闻事件"
+        },
+        {
+          "candidate_key": "zheng-qinwen-forbes-income",
+          "story_identity": "zheng-qinwen-forbes-tennis-income-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 15,
+            "everyday_relevance": 8,
+            "evidence": 8
+          },
+          "drop_reason": "运动员收入榜单内容，与昨日郑钦文赛事条目同选手且非新闻事件"
+        },
+        {
+          "candidate_key": "dragon-restaurant-hk-premiere",
+          "story_identity": "dragon-restaurant-hongkong-premiere-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 7
+          },
+          "drop_reason": "影片香港首映礼属娱乐动态，内地读者日常关联有限"
+        },
+        {
+          "candidate_key": "foldable-phones-comparison-talk",
+          "story_identity": "huawei-xiaomi-foldable-comparison-discussion",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "与9月8日已发布的华为、小米发布会条目同一事件，不再重复选用"
+        },
+        {
+          "candidate_key": "sleeping-position-health-science",
+          "story_identity": "sleeping-position-health-explainer-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 13,
+            "everyday_relevance": 14,
+            "evidence": 3
+          },
+          "drop_reason": "睡姿健康科普稿，无当日新闻事件"
+        },
+        {
+          "candidate_key": "kids-first-phone-age-advice",
+          "story_identity": "kids-first-phone-age-expert-advice",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 13,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "医院专家科普建议稿，非当日新闻事件"
+        },
+        {
+          "candidate_key": "college-experiential-internships",
+          "story_identity": "college-students-experiential-internship-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "开学季暑期实践观察稿，无具体当日新闻事件"
+        },
+        {
+          "candidate_key": "pin-dou-beads-trend-review",
+          "story_identity": "pin-dou-beads-consumption-trend-review",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 12,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "拼豆消费趋势回顾稿，无当日事件增量"
+        },
+        {
+          "candidate_key": "car-alone-time-effect",
+          "story_identity": "car-alone-20-minutes-effect-topic",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 13,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "车内独处生活方式话题稿，无新闻事件"
+        },
+        {
+          "candidate_key": "huangbo-collarbone-response",
+          "story_identity": "huangbo-collarbone-fracture-response",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 14,
+            "everyday_relevance": 6,
+            "evidence": 5
+          },
+          "drop_reason": "演员个人伤情回应花絮，非公共事务"
+        },
+        {
+          "candidate_key": "chen-he-lumbar-condition",
+          "story_identity": "chen-he-lumbar-spondylolisthesis-disclosure",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 5,
+            "evidence": 5
+          },
+          "drop_reason": "艺人个人健康自述花絮，非公共新闻事件"
+        },
+        {
+          "candidate_key": "xian-well-suspicious-object",
+          "story_identity": "xian-datang-pedestrian-street-well-object",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅为网友反映的街头可疑行为，无官方或持牌媒体核实"
+        },
+        {
+          "candidate_key": "changsha-organ-donation-farewell",
+          "story_identity": "changsha-young-man-organ-donation-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "温情内容主要来自短视频传播，缺少权威媒体独立核实"
+        },
+        {
+          "candidate_key": "xinjiang-qiegao-campus-sharing",
+          "story_identity": "xinjiang-student-qiegao-campus-sharing",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "校园分享花絮仅见社交平台自发内容，无持牌媒体报道"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "stats-cpi-august-2026",
+          "story_identity": "stats-cpi-august-2026-yoy-release",
+          "research_pass": 2,
+          "occurred_at": "2026-09-09T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "月度例行数据发布，8月CPI同比0.8%属平稳运行，无新增政策信号"
+        },
+        {
+          "candidate_key": "customs-trade-jan-aug-2026",
+          "story_identity": "china-goods-trade-jan-aug-up-17pt6",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "前8个月进出口同比增17.6%为宏观数据汇总，与读者当日生活决策关联有限"
+        },
+        {
+          "candidate_key": "flexible-workers-medical-insurance",
+          "story_identity": "flexible-employment-basic-medical-expansion-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "多部门扩大灵活就业人员医保参保规模为方向性发文，尚无具体经办细则落地"
+        },
+        {
+          "candidate_key": "three-dept-eye-health-services",
+          "story_identity": "three-departments-eye-health-services-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "三部门眼健康服务文件属行业指导性安排，公众即时信息增量有限"
+        },
+        {
+          "candidate_key": "lg-carrier-88000m3-completed",
+          "story_identity": "first-88000m3-liquefied-gas-carrier-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 7
+          },
+          "drop_reason": "首制超大型液化气体运输船完工属重大装备工程进展，与日常消费决策距离较远"
+        },
+        {
+          "candidate_key": "dianzhong-water-haidong-tunnel",
+          "story_identity": "dianzhong-water-diversion-haidong-tunnel-through",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "滇中引水大理海东隧洞贯通为工程节点进展，供水效益待后续显现"
+        },
+        {
+          "candidate_key": "badminton-association-chair-2026",
+          "story_identity": "china-badminton-association-chair-zhangxin-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "羽毛球协会换届属行业组织动态，公共信息增量有限"
+        },
+        {
+          "candidate_key": "zheng-qinwen-china-open-entry",
+          "story_identity": "zheng-qinwen-2026-china-open-main-draw-entry",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "中网参赛确认属赛事预告动态，与昨日条目同选手，信息增量有限"
+        },
+        {
+          "candidate_key": "wipo-innovation-clusters-2026",
+          "story_identity": "global-innovation-clusters-top100-china-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "全球创新集群百强榜属年度报告类信息，即时民生关联有限"
+        },
+        {
+          "candidate_key": "jiangxi-suichuan-mudslide-2026",
+          "story_identity": "jiangxi-suichuan-gaoping-mudslide-toll-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 7
+          },
+          "drop_reason": "县域泥石流灾情为地方突发处置通报，服务性信息有限，保持关注不展开"
+        },
+        {
+          "candidate_key": "airline-overbooking-rectification",
+          "story_identity": "jjj-consumer-assoc-airline-overbooking-fix-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "京津冀消协通报机票超售整改为阶段性结果汇总，未见新服务规则同步落地"
+        },
+        {
+          "candidate_key": "hlj-athlete-titles-revoked",
+          "story_identity": "heilongjiang-32-athlete-title-revocations-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "省级赛事运动员技术等级称号撤销属行业管理个案"
+        },
+        {
+          "candidate_key": "swjtu-xiwang-sitting-rule-repealed",
+          "story_identity": "swjtu-xiwang-college-teacher-sitting-rule-repealed",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "高校考核坐班制度调整为校内管理议题，公共外溢影响有限"
+        },
+        {
+          "candidate_key": "shanghai-bridge-tactile-paving",
+          "story_identity": "shanghai-bridge-tactile-paving-peeled-rectification",
+          "research_pass": 2,
+          "occurred_at": "2026-09-08T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "大桥盲道脱落已有部门回应整改追责，属市政设施个案处置"
+        },
+        {
+          "candidate_key": "adult-college-exam-enrollment-2026",
+          "story_identity": "national-adult-college-entrance-enrollment-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "成人高校招生工作通知为年度例行安排，各省报名此前已陆续启动"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-09-wuhan-illegal-art-lab-sealed",
+      "story_identity": "wuhan-illegal-art-lab-sealed-2026",
+      "headline": "🚨 武汉通报查封非法辅助生殖地下实验室，8名涉案人员被控制",
+      "summary": "武汉市卫健委9月8日通报：针对网络平台反映武湖街道存在非法辅助生殖地下实验室的问题，市卫健委联合公安等部门第一时间开展现场核查，已对涉案场所予以查封，8名涉案人员由公安机关依法控制，正在进一步调查取证，将依法依规从严查处。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 83,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-08T16:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "以武汉市卫健委官方通报口径为准，不展开操作细节，不渲染。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "武汉市卫健委",
+          "url": "https://wjw.wuhan.gov.cn/gsgg/202609/t20260908_2844983.shtml",
+          "title": "情况通报",
+          "captured_at": "2026-09-09T06:15:10+08:00",
+          "note": "武汉市卫健委网站9月8日16:30发布通报：涉案场所已查封，8名涉案人员被依法控制"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34030571",
+          "title": "武汉通报：非法辅助生殖地下实验室已查封",
+          "captured_at": "2026-09-09T06:15:20+08:00",
+          "note": "澎湃新闻9月8日转载武汉市卫健委情况通报全文"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-09-black-gas-stations-crackdown",
+      "story_identity": "focus-report-black-gas-stations-crackdown-2026",
+      "headline": "⛽ 《焦点访谈》曝光黑加油点死灰复燃，豫皖两地连夜核查",
+      "summary": "9月8日晚，总台《焦点访谈》播出《黑加油点：死灰因何易复燃》，曝光安徽淮南、河南濮阳范县等地存在销售不符合国家标准车用燃料的黑加油点。节目播出后，范县、淮南连夜成立联合调查组赶赴现场核查，责令涉事企业停产停销，并部署全面排查整治。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 18,
+        "everyday_relevance": 19,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-08T20:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "央视曝光与地方核查处置的事实报道，关注消费安全与治理响应。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/newscenter/native/gd/20260908/t20260908_527808379.shtml",
+          "title": "总台报道有反馈丨排查整治黑加油站问题 河南范县成立调查组",
+          "captured_at": "2026-09-09T06:15:30+08:00",
+          "note": "央广网9月8日报道：焦点访谈播出后范县组成联合调查组，责令企业停产停销并全县排查"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20260908A0E6SA00",
+          "title": "央视曝光后，安徽省淮南市、河南省范县连夜成立联合调查组",
+          "captured_at": "2026-09-09T06:15:40+08:00",
+          "note": "腾讯新闻9月8日报道：淮南市与范县当晚分别成立联合调查组开展核查"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-09-china-mnt-squad-zhao-songyuan",
+      "story_identity": "china-mnt-30-man-squad-zhao-songyuan-2026",
+      "headline": "⚽ 国足新一期30人集训名单公布，17岁高中生赵松源入选",
+      "summary": "中国足协9月8日晚公布男足国家队2026年第四期30人集训名单。由于多名主力将随男足亚运队参加亚运会，名单明显年轻化：来自清华大学附属中学的17岁前锋赵松源成为职业化以来首位以在读高中生身份入选成年国足的球员，布尼亚明等多名新人同批入围。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 18,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-08T19:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育名单公布事实报道，客观陈述人选与背景，不作前景预测。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://m.gmw.cn/2026-09/08/content_1304561368.htm",
+          "title": "国足公布最新30人集训名单，新生力量引人关注",
+          "captured_at": "2026-09-09T06:15:50+08:00",
+          "note": "光明网9月8日报道：本期名单趋于年轻化，17岁高中生赵松源跳级入选"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6a9ff23ce4b0e42f8f000847.html",
+          "title": "赵松源以高中生身份入选中国男足",
+          "captured_at": "2026-09-09T06:16:00+08:00",
+          "note": "北京日报客户端9月8日报道：赵松源所属球队标注为清华附中，是30人中唯一不在职业俱乐部的球员"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
