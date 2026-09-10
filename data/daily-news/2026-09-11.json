@@ -1,0 +1,1022 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-11",
+  "generated_at": "2026-09-11T06:23:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 46,
+    "published": 6,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 1,
+      "geopolitics": 4,
+      "minors": 1,
+      "politics": 1
+    },
+    "dropped_low_confidence": 32,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 38,
+      "official_sources": 2,
+      "state_media_sources": 6,
+      "major_media_sources": 14,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 8,
+        "relaxed_72h": 9
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 34,
+          "cumulative_unique_candidates": 34,
+          "source_scope": [
+            "百度热搜公开实时榜单热度佐证",
+            "新华社人民网央视网央广网等央媒发布",
+            "澎湃新闻财新网新京报等持牌媒体原创报道",
+            "综合搜索对候选事件的交叉验证"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 12,
+          "cumulative_unique_candidates": 46,
+          "source_scope": [
+            "财联社7x24电报隔夜要闻滚动",
+            "中央气象台及部委联合预警发布页",
+            "全国网络辟谣平台稿件及其媒体转载",
+            "定向补充检索"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-11-qingdao-shipyard-ship-fire",
+          "story_identity": "qingdao-beihai-shipyard-vessel-fire-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T11:15:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-09-11-qingdao-shipyard-ship-fire",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-11-china-women-basketball-qf-exit",
+          "story_identity": "china-women-basketball-france-qf-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-11-china-women-basketball-qf-exit",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-11-deepseek-v41-flash-price-cut",
+          "story_identity": "deepseek-v41-flash-release-price-cut-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-11-deepseek-v41-flash-price-cut",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-11-exit-entry-rule-misread-clarified",
+          "story_identity": "exit-entry-regulation-misread-clarified-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T17:45:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-11-exit-entry-rule-misread-clarified",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-11-rainstorm-yellow-alert-south",
+          "story_identity": "cma-rainstorm-yellow-alert-2026-09-10-18",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-11-rainstorm-yellow-alert-south",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-11-grandma-beauty-300w-regulator",
+          "story_identity": "shanghai-grandma-beauty-300w-regulator-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-11-grandma-beauty-300w-regulator",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "zheng-qinwen-rybakina-usopen-qf-2026",
+          "story_identity": "zheng-qinwen-usopen-qf-rybakina-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T04:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "比赛于9月10日凌晨结束，按打戳时钟事件年龄约26小时，超出24小时严格档；且近一周已两次选用郑钦文美网条目"
+        },
+        {
+          "candidate_key": "ciftis-2026-opening-shougang",
+          "story_identity": "ciftis-2026-shougang-opening",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "2026年服贸会9月9日在首钢园开幕，事件年龄约45小时，72分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "cmg-robot-taishan-race-presser",
+          "story_identity": "cmg-world-robot-taishan-race-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 11
+          },
+          "drop_reason": "首届CMG世界机器人登泰山大赛10月29日才举办，当前为发布会信息，且日常关联分未达15分资格下限"
+        },
+        {
+          "candidate_key": "zhejiang-state-capital-100b-fund",
+          "story_identity": "zhejiang-state-capital-scitech-fund-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "浙江省国资公司宣布千亿科创投入并签约基金项目，与普通读者当日生活直接关联有限，64分未达65分线"
+        },
+        {
+          "candidate_key": "china-mens-volleyball-korea-qf",
+          "story_identity": "china-mens-volleyball-asian-qf-korea-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "男排亚锦赛不敌韩国止步八强，65分仅达72小时宽松档，且与已选女篮同为出局赛事，控制单日体育条目"
+        },
+        {
+          "candidate_key": "flagship-phone-luxury-price-talk",
+          "story_identity": "flagship-phone-luxury-pricing-discussion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "旗舰手机定价破万为市场讨论话题稿，无单一事件增量"
+        },
+        {
+          "candidate_key": "teachers-day-shuxiu-gifts",
+          "story_identity": "teachers-day-shuxiu-rites-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "教师节学生复刻束脩之礼为节日软性花絮，公共信息增量有限"
+        },
+        {
+          "candidate_key": "huashao-s8-views-record",
+          "story_identity": "huashao-s8-premiere-views-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "综艺首播播放量纪录，属娱乐动态"
+        },
+        {
+          "candidate_key": "wunvzhou-water-spray-npc",
+          "story_identity": "wunvzhou-water-spray-npc-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 8,
+            "evidence": 3
+          },
+          "drop_reason": "景区喷水NPC走红花絮"
+        },
+        {
+          "candidate_key": "yangzhou-storks-crab-pond",
+          "story_identity": "yangzhou-storks-crab-pond-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 9,
+            "evidence": 3
+          },
+          "drop_reason": "养殖户东方白鹳组团蹭饭趣闻，软性花絮"
+        },
+        {
+          "candidate_key": "hangzhou-trash-sidejob",
+          "story_identity": "hangzhou-trash-drop-sidejob-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 3
+          },
+          "drop_reason": "个人代丢垃圾副业个案，公共新闻属性有限"
+        },
+        {
+          "candidate_key": "familymart-bento-cigarette",
+          "story_identity": "familymart-bento-cigarette-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "便利店便当异物为单店客诉，已与当事人协商赔偿，未见监管部门介入"
+        },
+        {
+          "candidate_key": "shaanxi-pig-survivor-mudslide",
+          "story_identity": "shaanxi-pig-survivor-mudslide-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "商洛泥石流埋猪36天生还为软性灾后趣闻"
+        },
+        {
+          "candidate_key": "korea-smilegate-divorce",
+          "story_identity": "korea-smilegate-founder-divorce-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T15:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 4,
+            "evidence": 5
+          },
+          "drop_reason": "韩国企业家离婚财产分割，属外国本地事务，与中国读者无直接关联"
+        },
+        {
+          "candidate_key": "japan-centenarian-tractor-accident",
+          "story_identity": "japan-centenarian-tractor-accident-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T11:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 3,
+            "evidence": 3
+          },
+          "drop_reason": "日本地方交通事故，属外国常规本地新闻"
+        },
+        {
+          "candidate_key": "japan-syphilis-penicillin-shortage",
+          "story_identity": "japan-penicillin-shortage-syphilis-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-08T10:00:00+08:00",
+          "scope": "international",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 43,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "日本医药供应与用药倡议，外国本地公共卫生事务"
+        },
+        {
+          "candidate_key": "actor-wangxinfang-passing",
+          "story_identity": "actor-wangxinfang-passing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "草根演员个人讣闻，公共新闻属性有限"
+        },
+        {
+          "candidate_key": "zhaozhaoyi-asthma-variety",
+          "story_identity": "zhaozhaoyi-asthma-variety-show-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "艺人录制节目时突发身体状况，属娱乐花絮"
+        },
+        {
+          "candidate_key": "rogers-china-stocks-daughters",
+          "story_identity": "rogers-china-stocks-daughters-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T19:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 15,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "投资人物访谈观点，无当日事件增量"
+        },
+        {
+          "candidate_key": "us-tech-stocks-open-lower",
+          "story_identity": "us-megacap-stocks-open-lower-2026-09-10",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T04:30:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 38,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 17,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "美股科技板块常规行情波动"
+        },
+        {
+          "candidate_key": "barcelona-feyenoord-ucl",
+          "story_identity": "barcelona-feyenoord-ucl-2026-09-10",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T03:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 4,
+            "evidence": 3
+          },
+          "drop_reason": "欧冠常规轮次赛果，外国赛事动态"
+        },
+        {
+          "candidate_key": "duolingo-iphone-duo-nameplay",
+          "story_identity": "duolingo-iphone-duo-nameplay-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T09:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 4,
+            "evidence": 3
+          },
+          "drop_reason": "品牌撞名调侃花絮，依附苹果发布会话题"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "liverpool-atletico-ucl",
+          "story_identity": "liverpool-atletico-ucl-2026-09-10",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T03:30:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 43,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 17,
+            "everyday_relevance": 4,
+            "evidence": 3
+          },
+          "drop_reason": "欧冠常规轮次赛果，外国赛事动态"
+        },
+        {
+          "candidate_key": "iphone-duo-crease-flexible-tech",
+          "story_identity": "iphone-duo-crease-flexible-electronics-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T07:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "折叠屏折痕技术解读依附苹果发布会，与昨日已选iPhone条目同源"
+        },
+        {
+          "candidate_key": "csrc-capital-market-directions",
+          "story_identity": "csrc-fiveyear-capital-market-directions-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "证监会未来五年资本市场改革方向为发布会政策取向，具体举措待落地，63分未达65分线"
+        },
+        {
+          "candidate_key": "fuel-price-window-sep11-preview",
+          "story_identity": "fuel-price-adjustment-window-sep11-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "成品油调价窗口9月11日24时才开启，当前仅为上调预期，以发改委正式通知为准"
+        },
+        {
+          "candidate_key": "cuba-power-crisis-un",
+          "story_identity": "cuba-power-crisis-un-appeal-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-10T22:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 37,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 16,
+            "everyday_relevance": 3,
+            "evidence": 3
+          },
+          "drop_reason": "古巴电力危机与联合国人道呼吁，与中国读者无直接关联"
+        },
+        {
+          "candidate_key": "us-stocks-close-lower-sep10",
+          "story_identity": "us-stocks-close-lower-2026-09-10",
+          "research_pass": 2,
+          "occurred_at": "2026-09-11T04:30:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 39,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 18,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "美股隔夜常规收跌"
+        },
+        {
+          "candidate_key": "wti-crude-rises-104",
+          "story_identity": "wti-crude-104-2026-09-11",
+          "research_pass": 2,
+          "occurred_at": "2026-09-11T06:03:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 43,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "国际油价受海外局势驱动上涨，对国内民生的直接影响待传导"
+        },
+        {
+          "candidate_key": "microsoft-datacenter-expansion",
+          "story_identity": "microsoft-datacenter-triple-2026",
+          "research_pass": 2,
+          "occurred_at": "2026-09-11T05:01:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 35,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 16,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "海外企业数据中心扩容计划"
+        },
+        {
+          "candidate_key": "us-diesel-price-6usd",
+          "story_identity": "us-diesel-6usd-2026-09-11",
+          "research_pass": 2,
+          "occurred_at": "2026-09-11T04:28:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 35,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 16,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "美国柴油价格行情，海外市场动态"
+        },
+        {
+          "candidate_key": "gold-price-drop-overnight",
+          "story_identity": "gold-silver-drop-2026-09-11",
+          "research_pass": 2,
+          "occurred_at": "2026-09-11T05:04:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 37,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 17,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "国际金银隔夜下跌，市场行情波动"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 2,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 2,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-11-qingdao-shipyard-ship-fire",
+      "story_identity": "qingdao-beihai-shipyard-vessel-fire-2026",
+      "headline": "🚢 青岛一外籍货轮检修时起火，救援处置全面展开",
+      "summary": "9月10日11时15分许，中国船舶集团青岛北海造船有限公司一艘靠港检修的外籍货轮发生火情，船上共42人，其中12人安全撤出、5人受伤送医且生命体征平稳；明火于当日14时30分左右扑灭，截至17时30分已搜救出20名失联人员，均无生命体征。山东省和青岛市已启动应急处置机制，全力开展救援。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-10T11:15:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "重大事故报道以新华社通稿口径为准，聚焦事件与救援处置进展，伤亡信息仅置摘要，不渲染、不延伸。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国军网",
+          "url": "http://www.81.cn/ss_208539/16484904.html",
+          "title": "青岛一货轮起火已致20人遇难",
+          "captured_at": "2026-09-11T06:19:30+08:00",
+          "note": "中国军网转新华社济南9月10日电：载42人外籍货船检修时起火，12人撤出、5人受伤，明火14时30分扑灭，截至17时30分搜救出20名失联人员均无生命体征"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.xinhuanet.com/politics/leaders/20260910/acf0818e7c18495ebd5cfc4dfc51d982/c.html",
+          "title": "习近平对山东青岛市北海造船厂一货轮火灾事故作出重要指示",
+          "captured_at": "2026-09-11T06:17:20+08:00",
+          "note": "新华网9月10日通稿确认事发时间、地点与重大人员伤亡情况，并要求排查整治火灾隐患"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-11-china-women-basketball-qf-exit",
+      "story_identity": "china-women-basketball-france-qf-2026",
+      "headline": "🏀 中国女篮不敌法国队，止步女篮世界杯八强",
+      "summary": "北京时间9月10日晚，2026年女篮世界杯四分之一决赛在德国柏林进行，中国女篮61比90不敌世界排名第二的法国队，止步八强。韩旭贡献21分9篮板，杨舒予得到19分5助攻。中国队当日凌晨刚以75比72险胜波多黎各晋级，两场比赛间隔不足20小时。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-10T22:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国家队赛事赛果报道，以新华社口径为准，不作延伸评价。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.news.cn/sports/20260910/b374865304974e8c94474f22bf34abc4/c.html",
+          "title": "中国女篮大比分不敌法国队 无缘世界杯四强",
+          "captured_at": "2026-09-11T06:17:50+08:00",
+          "note": "新华社柏林9月10日电：中国女篮61比90不敌法国队止步八强，队长杨舒予称这是非常有价值的比赛"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://news.cnr.cn/native/gd/20260911/t20260911_527810475.shtml",
+          "title": "女篮世界杯：韩旭21+9杨舒予19分中国不敌法国止步八强",
+          "captured_at": "2026-09-11T06:18:10+08:00",
+          "note": "央广网报道赛果与韩旭、杨舒予个人数据，确认中国队结束本届世界杯之旅"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-11-deepseek-v41-flash-price-cut",
+      "story_identity": "deepseek-v41-flash-release-price-cut-2026",
+      "headline": "🤖 DeepSeek发布V4.1 Flash模型，API定价同步下调",
+      "summary": "9月10日，DeepSeek正式发布V4.1 Flash模型，具备原生多模态视觉理解能力，官方称其性能、费用、速度全面超越V4 Pro并将有序替代；自当日12时起Flash系列定价下调，空闲时段输入缓存命中单价降至0.02元/百万Token，降幅60%。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-10T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国产大模型产品发布与定价调整，以官方公告与持牌媒体报道为准，不作性能背书延伸。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34044160",
+          "title": "DeepSeek V4.1 Flash发布：具备原生多模态视觉理解能力，下调API定价",
+          "captured_at": "2026-09-11T06:17:00+08:00",
+          "note": "澎湃新闻9月10日报道V4.1 Flash发布、多模态能力与API迁移安排"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://www.caixin.com/2026-09-10/102483549.html",
+          "title": "DeepSeek发V4.1-Flash取代V4-Pro 价格下调",
+          "captured_at": "2026-09-11T06:17:10+08:00",
+          "note": "财新网9月10日报道新模型基准表现与V4 Pro下线、定价下调安排"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-11-exit-entry-rule-misread-clarified",
+      "story_identity": "exit-entry-regulation-misread-clarified-2026",
+      "headline": "🛂 “普通人出境变难”系误读，三部门明确正常出境不受影响",
+      "summary": "《国务院关于出境入境管理的规定》将于9月15日施行。针对网传“未来出境将全面收紧、普通人出境变难”，司法部、公安部、国家移民管理局负责人答记者问明确：上述说法系误读。公民因旅游、探亲、经商、留学等正当理由申请出境，符合法定条件的可正常办理证件，正常出境活动不受影响。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-10T17:45:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "出入境法规辟谣服务信息，以三部门答记者问权威口径为准，不展开解读。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://m.bjnews.com.cn/detail/1789033331129320.html",
+          "title": "“出境将全面收紧，普通人出境变难”系误读新规",
+          "captured_at": "2026-09-11T06:18:00+08:00",
+          "note": "新京报9月10日转载全国网络辟谣稿件，列明《规定》9月15日施行及三部门答记者问澄清内容"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "封面新闻",
+          "url": "https://www.thecover.cn/news/QgLYZLcvYoKH90qSdq8Jkw==",
+          "title": "“出境将全面收紧，普通人出境变难”系误读新规（2026·09·10）",
+          "captured_at": "2026-09-11T06:18:20+08:00",
+          "note": "封面新闻9月10日17时48分发布辟谣稿，明确正常出境活动不受影响"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-11-rainstorm-yellow-alert-south",
+      "story_identity": "cma-rainstorm-yellow-alert-2026-09-10-18",
+      "headline": "🌧️ 暴雨黄色预警继续发布，广西广东海南等地有大暴雨",
+      "summary": "中央气象台9月10日18时继续发布暴雨黄色预警：预计10日20时至11日20时，广西东南部、广东中西部偏南、海南岛及陕西南部、四川北部和盆地西南部、湖北北部、河南南部等地部分地区有大到暴雨，广西东南部沿海局地特大暴雨（250～280毫米）；同期还发布地质灾害气象风险黄色预警和山洪灾害蓝色预警。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-10T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "气象预警服务信息，提示防范、不渲染；与前日蓝色预警相比级别上调、落区南移，属实质性新信息。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "http://www.nmc.cn/",
+          "title": "中央气象台",
+          "captured_at": "2026-09-11T06:19:00+08:00",
+          "note": "中央气象台官网列示9月10日18时暴雨黄色预警及同期地质灾害、山洪灾害联合预警"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财联社",
+          "url": "https://m.cls.cn/detail/1459530",
+          "title": "中央气象台9月10日18时继续发布暴雨黄色预警",
+          "captured_at": "2026-09-11T06:19:10+08:00",
+          "note": "财联社9月10日18时03分电报列明预警落区与广西东南部沿海局地特大暴雨量级"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-11-grandma-beauty-300w-regulator",
+      "story_identity": "shanghai-grandma-beauty-300w-regulator-2026",
+      "headline": "💇 上海七旬阿婆美容花掉300万，市监部门介入",
+      "summary": "上海一位75岁阿婆2016年以来在美容机构累计消费近300万元，耗尽养老积蓄。事件经媒体报道后，上海市监部门回应称已介入监管并将处理门店问题，涉事门店已暂停营业；经调解，商家与老人及家属达成和解，退回部分未消费费用。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 11
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-10T16:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "老年消费维权报道，当事人以姓氏代称、不暴露隐私，以市监部门回应与和解结果为准。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "看看新闻",
+          "url": "https://www.kankanews.com/detail/6Y2DW7Nadw1",
+          "title": "上海阿婆美容花掉300万女儿发现时养老钱已掏空",
+          "captured_at": "2026-09-11T06:18:40+08:00",
+          "note": "看看新闻9月9日起连续报道俞阿婆美容消费近300万元经过"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "光明网",
+          "url": "https://m.gmw.cn/2026-09/10/content_1304561988.htm",
+          "title": "上海75岁阿婆做美容花掉300万！掏空养老钱，连房租都付不起了…",
+          "captured_at": "2026-09-11T06:18:50+08:00",
+          "note": "光明网9月10日报道事件细节与调解进展，市监部门已介入、涉事门店暂停营业"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
