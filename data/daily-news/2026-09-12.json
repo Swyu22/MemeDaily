@@ -1,0 +1,817 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T06:31:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 37,
+    "published": 5,
+    "dropped_safety": {
+      "celebrity_dispute": 2,
+      "controversy": 2,
+      "geopolitics": 2,
+      "minors": 1,
+      "politics": 1
+    },
+    "dropped_low_confidence": 24,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 29,
+      "official_sources": 0,
+      "state_media_sources": 5,
+      "major_media_sources": 16,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 8,
+        "relaxed_72h": 9
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 37,
+          "cumulative_unique_candidates": 37,
+          "source_scope": [
+            "百度热搜公开实时榜单热度佐证",
+            "央视网新华网央广网中国新闻网等央媒发布",
+            "澎湃新闻中国证券报齐鲁晚报中国经济网新浪财经中国工业新闻网等持牌媒体原创报道",
+            "中央气象台天气公报与公开预报信息",
+            "综合搜索对候选事件的交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-12-fuel-price-temp-control",
+          "story_identity": "fuel-price-temp-control-sep11-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-12-fuel-price-temp-control",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-12-nev-15th-fiveyear-plan",
+          "story_identity": "nev-industry-15th-fiveyear-plan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-12-nev-15th-fiveyear-plan",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-12-ding-junhui-english-open-semifinal",
+          "story_identity": "ding-junhui-english-open-semifinal-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-12-ding-junhui-english-open-semifinal",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-12-ctrip-hotel-markup-response",
+          "story_identity": "ctrip-custom-tour-hotel-markup-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-12-ctrip-hotel-markup-response",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-12-tianlong3-yao1-review-closed",
+          "story_identity": "tianlong3-yao1-flight-review-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "太空航天",
+          "outcome": "selected",
+          "item_id": "2026-09-12-tianlong3-yao1-review-closed",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 15
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "xiaomi-pengcheng-delivery-sep12",
+          "story_identity": "xiaomi-pengcheng-delivery-75cities-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "小米澎程9月12日开启全国交付为企业交付动态，且与已选汽车产业规划条目题材重叠，74分未达75分严格档"
+        },
+        {
+          "candidate_key": "kunming-flower-cake-rumor-detained",
+          "story_identity": "kunming-flower-cake-rumor-detention-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "昆明警方9月10日上午通报鲜花饼谣言案，按打戳时钟事件年龄约45小时，72分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "lvliang-qikou-toilet-fee-response",
+          "story_identity": "lvliang-qikou-toilet-fee-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "吕梁碛口景区公厕停水与村民私厕收费为地方单点事件，71分未达75分严格档"
+        },
+        {
+          "candidate_key": "china-diabetes-233m-stat",
+          "story_identity": "china-diabetes-233m-stat-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "糖尿病患病人数为既有研究统计的再传播，当日无权威机构新发布，68分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "copernicus-hottest-august-2026",
+          "story_identity": "copernicus-hottest-august-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T15:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "欧盟气候机构月度公报称8月为有记录以来最热月份，对中国读者当日生活直接关联有限，63分未达65分线"
+        },
+        {
+          "candidate_key": "south-china-rain-forecast-sep11",
+          "story_identity": "south-china-rain-forecast-sep11-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 6
+          },
+          "drop_reason": "华南降雨预报与前日已选暴雨预警条目同源，未新发更高级别预警，64分未达65分线"
+        },
+        {
+          "candidate_key": "qingdao-ship-fire-cabin-probe",
+          "story_identity": "qingdao-ship-fire-cabin-probe-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 8
+          },
+          "drop_reason": "青岛失火货轮船舱探访为昨日已选事件的延续报道，调查结论待官方发布"
+        },
+        {
+          "candidate_key": "ciftis-xiongan-digital-forum",
+          "story_identity": "ciftis-xiongan-digital-forum-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "服贸会雄安数字贸易大会开幕为会展动态，具体成果尚未发布"
+        },
+        {
+          "candidate_key": "honor-lockscreen-poster-clarified",
+          "story_identity": "honor-lockscreen-poster-clarified-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T15:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "锁屏画报风波当事人已澄清系误解，事件平息，无进一步公共信息增量"
+        },
+        {
+          "candidate_key": "baxian-film-key-extension",
+          "story_identity": "baxian-film-key-extension-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "动画电影二次密钥延期为影市常规操作"
+        },
+        {
+          "candidate_key": "foldable-phone-store-penetration",
+          "story_identity": "foldable-phone-store-penetration-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 5
+          },
+          "drop_reason": "折叠屏门店销售冷热为行业观察话题稿，无单一事件增量"
+        },
+        {
+          "candidate_key": "xiamen-company-long-holiday",
+          "story_identity": "xiamen-company-long-holiday-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "厦门一公司中秋国庆连放13.5天为单个企业安排，软性花絮"
+        },
+        {
+          "candidate_key": "hotpot-franchise-loss-case",
+          "story_identity": "hotpot-franchise-loss-case-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "火锅加盟亏损为个人投资纠纷个案，未见监管部门结论"
+        },
+        {
+          "candidate_key": "earth-rotation-shorter-day",
+          "story_identity": "earth-rotation-shorter-day-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T09:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "地球自转加快一天不足24小时为科普话题稿，无当日事件增量"
+        },
+        {
+          "candidate_key": "zhuyu-korea-hit",
+          "story_identity": "zhuyu-korea-hit-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T10:30:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "国产剧在韩国走红为行业综述报道，无当日事件增量"
+        },
+        {
+          "candidate_key": "iphone-duo-dual-video-pause",
+          "story_identity": "iphone-duo-dual-video-pause-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T08:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "iPhone Duo双视频播放讨论依附前日发布会话题，功能反馈未经官方确认"
+        },
+        {
+          "candidate_key": "iphone-duo-daigou-premium",
+          "story_identity": "iphone-duo-daigou-premium-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T12:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 6,
+            "evidence": 3
+          },
+          "drop_reason": "iPhone Duo代购溢价为二级市场炒作现象，非正式渠道价格信息"
+        },
+        {
+          "candidate_key": "sep11-25th-anniversary",
+          "story_identity": "sep11-25th-anniversary-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T20:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "911事件25周年为纪念日综述，与中国读者当日生活关联有限"
+        },
+        {
+          "candidate_key": "dage-2026-wangjunkai-stage",
+          "story_identity": "dage-2026-wangjunkai-stage",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T20:40:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 2
+          },
+          "drop_reason": "直播打歌综艺舞台为娱乐动态"
+        },
+        {
+          "candidate_key": "lululemon-china-sales-slowdown",
+          "story_identity": "lululemon-china-sales-slowdown-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T09:30:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 3
+          },
+          "drop_reason": "运动品牌经营分析稿，无当日事件增量"
+        },
+        {
+          "candidate_key": "ciftis-haidian-night",
+          "story_identity": "ciftis-haidian-night-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 6,
+            "evidence": 3
+          },
+          "drop_reason": "服贸会海淀之夜为区域商务交流活动"
+        },
+        {
+          "candidate_key": "daolang-xuziyao-talk",
+          "story_identity": "daolang-xuziyao-talk-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 5,
+            "evidence": 2
+          },
+          "drop_reason": "刀郎线上音乐会预热对话为娱乐花絮"
+        },
+        {
+          "candidate_key": "zaochunqinglang-fanmeet-788",
+          "story_identity": "zaochunqinglang-fanmeet-788-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T11:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 4,
+            "evidence": 2
+          },
+          "drop_reason": "剧集见面会售票规则为粉丝向活动安排"
+        },
+        {
+          "candidate_key": "panweibo-noodle-comment",
+          "story_identity": "panweibo-noodle-comment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T14:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 38,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 15,
+            "everyday_relevance": 4,
+            "evidence": 2
+          },
+          "drop_reason": "艺人评论区互动花絮"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-12-fuel-price-temp-control",
+      "story_identity": "fuel-price-temp-control-sep11-2026",
+      "headline": "⛽ 国内油价今起上调，国家调控后每吨少涨约四成",
+      "summary": "9月11日国家发展改革委通知，自11日24时起国内汽、柴油（标准品）最高零售价格每吨分别上调260元、250元。按现行价格机制本轮应上调435元、420元，为减缓国际油价上涨对国内的冲击、减轻下游用户负担，国家实施临时调控，调控后少涨约四成，消费者可通过12315平台举报价格违法行为。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 89,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-12T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "成品油价格调整以国家发展改革委通知与央视网报道口径为准，聚焦调价幅度与调控安排，不延伸国际市场成因。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/11/ARTIZ1Z8vYB4r8FpkUCwYvyO260911.shtml",
+          "title": "2026年9月11日国家对成品油价格实施调控",
+          "captured_at": "2026-09-12T06:18:30+08:00",
+          "note": "央视网报道：按现行机制汽柴油每吨应上调435元、420元，临时调控后实际上调260元、250元，11日24时起执行"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34050794",
+          "title": "今日24时油价上调：国家实施成品油价格调控，少涨约40%",
+          "captured_at": "2026-09-12T06:13:40+08:00",
+          "note": "澎湃新闻9月11日报道调价生效时点与调控减负安排，与央视网口径一致"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-12-nev-15th-fiveyear-plan",
+      "story_identity": "nev-industry-15th-fiveyear-plan-2026",
+      "headline": "🚗 九部门印发新能源汽车“十五五”规划，2030年建设汽车强国",
+      "summary": "工业和信息化部等九部门9月11日印发《智能网联新能源汽车产业发展“十五五”规划》，提出到2030年我国智能网联新能源汽车全产业链优势进一步巩固、进入世界汽车强国行列，新能源乘用车、商用车在各自领域新车总销量占比分别达到70%、40%，具备自动驾驶功能的汽车实现规模应用。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-11T09:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "产业规划发布以九部门联合印发文件与央视网报道为准，只述目标内容，不作投资导向延伸。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/11/ARTInAXtFXGqQvtbPt2cjRgi260911.shtml",
+          "title": "事关智能网联新能源汽车产业 工信部等九部门发文",
+          "captured_at": "2026-09-12T06:25:10+08:00",
+          "note": "央视网9月11日报道规划“1+4”目标结构：2030年进入世界汽车强国行列、新能源乘用车与商用车新车销量占比70%与40%"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国工业新闻网",
+          "url": "https://www.cinn.cn/bw/2026/09-11/zDPpjJRD.html",
+          "title": "工信部等九部门印发《智能网联新能源汽车产业发展“十五五”规划》",
+          "captured_at": "2026-09-12T06:25:20+08:00",
+          "note": "中国工业新闻网9月11日报道规划乘用车燃料消耗量、电耗与自动驾驶规模应用等细分目标"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-12-ding-junhui-english-open-semifinal",
+      "story_identity": "ding-junhui-english-open-semifinal-2026",
+      "headline": "🎱 丁俊晖6比2战胜威尔逊，晋级斯诺克英格兰公开赛四强",
+      "summary": "北京时间9月11日晚，2026斯诺克英格兰公开赛1/4决赛中，中国选手丁俊晖全场打出四杆50+，以6比2战胜世界排名第八的凯伦·威尔逊，晋级四强。两人此前18次交锋丁俊晖8胜10负，本场他在防守大战中拿下关键第六局，并以单杆76分率先拿到赛点。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-11T22:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果报道以央广网、新华网口径为准，只述赛况，不作延伸评价。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/newscenter/native/gd/kx/20260912/t20260912_527811500.shtml",
+          "title": "斯诺克英格兰公开赛：丁俊晖战胜凯伦·威尔逊 晋级四强",
+          "captured_at": "2026-09-12T06:25:40+08:00",
+          "note": "央广网报道丁俊晖打出四杆50+、6比2获胜晋级四强的完整赛况"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/sports/20260912/f96efd290c6841bcaf42e3e7efb64eec/c.html",
+          "title": "斯诺克英格兰公开赛：丁俊晖晋级四强",
+          "captured_at": "2026-09-12T06:25:50+08:00",
+          "note": "新华网9月12日报道丁俊晖开局连胜三局、最终6比2击败凯伦·威尔逊"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-12-ctrip-hotel-markup-response",
+      "story_identity": "ctrip-custom-tour-hotel-markup-2026",
+      "headline": "🏨 500元酒店定制游报价1520元，携程回应称差价为服务费",
+      "summary": "郑州张女士花19600元在携程定制呼伦贝尔8日游，行程单中一家酒店按1520元一晚计价，入住后发现条件不及快捷酒店；同一酒店散客价约500元、其他平台报价589元，另一定制师报价仅750元。旅行社称千元差价为定制服务费，张女士已向平台申请退还差价，事件引发对定制游报价透明的关注。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-11T14:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "消费维权报道，当事人以姓氏代称，表述以媒体核实与平台回应为准，不预设责任结论。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国经济网",
+          "url": "http://finance.ce.cn/stock/gsgdbd/202609/t20260911_3208116.shtml",
+          "title": "500元酒店定制卖1520 女子称花豪华酒店的钱住的不如快捷",
+          "captured_at": "2026-09-12T06:26:20+08:00",
+          "note": "中国经济网9月11日报道定制游行程单酒店计价与散客价、其他平台价的差价细节"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://www.sina.cn/news/detail/5341921426020643.html",
+          "title": "携程定制旅行酒店报价被指虚高",
+          "captured_at": "2026-09-12T06:26:30+08:00",
+          "note": "新浪财经9月11日报道携程方面回应称差价为定制服务费用、当事人已申请退还差价"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-12-tianlong3-yao1-review-closed",
+      "story_identity": "tianlong3-yao1-flight-review-2026",
+      "headline": "🚀 天龙三号首飞失利原因查明，火箭完成故障归零",
+      "summary": "9月11日，天兵科技公布天龙三号遥一运载火箭飞行试验任务归零情况说明：今年4月首飞失利的原因定位为飞行中排放的液氧被抽吸至箭底，引发二次燃烧并造成结构烧蚀。经归零专家组质询评议，认定问题定位准确、机理清楚、改进措施有效，可以归零，后续将按安排推进复飞准备。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "太空航天",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 15
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-11T19:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "商业航天企业官方说明与持牌媒体报道为准，聚焦故障结论与整改，不作技术夸大。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "中证金牛座",
+          "url": "https://jnz.cs.com.cn/app/html/jnz/133101.html",
+          "title": "天兵科技：天龙三号遥一运载火箭飞行试验任务完成归零",
+          "captured_at": "2026-09-12T06:26:05+08:00",
+          "note": "中国证券报·中证金牛座9月11日报道归零评审结论：问题定位准确、机理清楚、改进措施有效"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "齐鲁晚报",
+          "url": "https://www.qlwb.com.cn/detail/28088196.html",
+          "title": "天龙三号遥一火箭飞行失利原因查明",
+          "captured_at": "2026-09-12T06:26:10+08:00",
+          "note": "齐鲁晚报9月11日报道失利原因定位：排放液氧被抽吸至火箭底部引发二次燃烧"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
