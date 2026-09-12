@@ -1,0 +1,762 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-13",
+  "generated_at": "2026-09-13T06:23:30+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 36,
+    "published": 4,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 2,
+      "geopolitics": 4,
+      "politics": 1
+    },
+    "dropped_low_confidence": 24,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 28,
+      "official_sources": 5,
+      "state_media_sources": 6,
+      "major_media_sources": 16,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 11,
+        "relaxed_72h": 13
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 36,
+          "cumulative_unique_candidates": 36,
+          "source_scope": [
+            "财新网每日财新闻摘要与百度热搜微博热搜公开热度佐证",
+            "央视网新华网央广网中国新闻网人民网等央媒发布",
+            "澎湃新闻观察者网新浪财经川观新闻经济观察网等持牌媒体原创报道",
+            "中央网信办国家移民管理局北京市卫健委等官方机构公开发布",
+            "综合搜索对候选事件的交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-13-jingxiong-express-trial-run",
+          "story_identity": "jingxiong-express-full-trial-run-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-09-13-jingxiong-express-trial-run",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-13-alipay-fake-app-response",
+          "story_identity": "alipay-fake-app-security-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-13-alipay-fake-app-response",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-13-university-dorm-commercial-housing",
+          "story_identity": "universities-buy-commercial-housing-dorms-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-13-university-dorm-commercial-housing",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-13-jintan-caes-units-startup",
+          "story_identity": "jintan-cavern-caes-units-startup-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-13-jintan-caes-units-startup",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "wlv-tourism-coercion-cases-6th",
+          "story_identity": "wlv-tourism-coercion-cases-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 19,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "文旅部第六批旅游市场强制消费典型案例9月11日晚公布，按打戳时钟事件年龄约33小时，74分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "agri-insurance-2030-plan",
+          "story_identity": "agri-insurance-multilevel-2030-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T17:30:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 19,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "四部门农业保险高质量发展实施方案9月11日公布，按打戳时钟约37小时，73分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "digital-rural-action-plan",
+          "story_identity": "digital-rural-action-plan-2026-2030",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T18:30:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "数字乡村行动计划与农业保险方案同为三农政策发布，71分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "shennongjia-albino-pika",
+          "story_identity": "shennongjia-albino-qinling-pika-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T15:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "神农架白化秦岭鼠兔为科研发现动态，9月11日下午发布，70分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "birth-defect-prevention-day-2026",
+          "story_identity": "national-birth-defect-prevention-day-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "中国预防出生缺陷日为年度宣传节点，各地义诊为常规活动安排，73分未达75分严格档"
+        },
+        {
+          "candidate_key": "police-impersonation-farmer-case",
+          "story_identity": "beijing-impersonation-defaming-farmers-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "冒充高校学生诋毁农民案9月11日晚由警方通报，按打戳时钟约34小时，72分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "blind-box-typical-cases",
+          "story_identity": "samr-blind-box-typical-cases-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "盲盒经营违法典型案例与消费维权题材部分重叠，9月11日下午公布，71分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "immigration-stats-8months",
+          "story_identity": "border-crossing-499m-jan-aug-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "出入境统计数据9月10日发布，按打戳时钟约69小时，68分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "csrc-st-zhuoran-fraud-case",
+          "story_identity": "csrc-st-zhuoran-financial-fraud-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "上市公司严重财务造假查处为个股个案，投资者之外影响面有限，66分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "csrc-blogger-chen-fine",
+          "story_identity": "csrc-blogger-chen-guanghua-fine-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "证监会对自媒体博主个人传播虚假信息罚款，影响面有限，63分未达65分线"
+        },
+        {
+          "candidate_key": "france-train-derailment",
+          "story_identity": "france-rouen-caen-train-derailment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T23:00:00+08:00",
+          "scope": "international",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "法国地方列车脱轨为常规外国地方新闻，对中国读者无直接关联"
+        },
+        {
+          "candidate_key": "nepal-landslide-toll-update",
+          "story_identity": "nepal-landslide-toll-update-sep2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T09:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 8
+          },
+          "drop_reason": "尼泊尔泥石流遇难人数更新与9月6日已选事件同源，无新的中国关联增量"
+        },
+        {
+          "candidate_key": "school-rain-short-speech",
+          "story_identity": "university-opening-rain-short-speech-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 5
+          },
+          "drop_reason": "开学典礼突降暴雨校长简短讲话为校园花絮，公共信息增量有限"
+        },
+        {
+          "candidate_key": "jiajiahyi-gift-refund",
+          "story_identity": "parent-committee-gift-fee-refund-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 7
+          },
+          "drop_reason": "家委会私自收费送礼已由学校全额退款了结，为单校通报个案"
+        },
+        {
+          "candidate_key": "douyin-ex-employee-suit",
+          "story_identity": "douyin-ex-employee-lawsuit-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "平台拟起诉前员工夸大身份为企业人事纠纷，公共相关性低"
+        },
+        {
+          "candidate_key": "mxgp-zhang-qingtian-debut",
+          "story_identity": "mxgp-shanghai-zhang-qingtian-debut-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "青少年车手国际赛事首秀为赛前动态，成绩尚未产生"
+        },
+        {
+          "candidate_key": "gold-price-4400",
+          "story_identity": "spot-gold-back-above-4400-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "现货黄金重回4400美元为市场行情波动，非事件性新闻"
+        },
+        {
+          "candidate_key": "shiziyang-channel-progress",
+          "story_identity": "shiziyang-channel-girder-progress-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "狮子洋通道节段梁拼装为工程节点进展，64分未达65分线"
+        },
+        {
+          "candidate_key": "ciftis-shijingshan-robot-center",
+          "story_identity": "ciftis-embodied-ai-training-center-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "石景山具身智能训练中心升级为区域产业动态"
+        },
+        {
+          "candidate_key": "usa-diesel-record-price",
+          "story_identity": "usa-diesel-retail-record-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T08:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "美国柴油零售价创新高为海外市场行情，与中国读者日常关联有限"
+        },
+        {
+          "candidate_key": "seychelles-zero-tariff",
+          "story_identity": "china-seychelles-zero-tariff-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T09:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "对塞舌尔实施零关税为双边贸易安排，读者日常关联有限"
+        },
+        {
+          "candidate_key": "brics-chairmanship-2027",
+          "story_identity": "china-brics-chairmanship-2027",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T09:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "接任金砖主席国为机制性任职安排，当日生活关联有限"
+        },
+        {
+          "candidate_key": "anthropic-ipo-nvidia-talk",
+          "story_identity": "anthropic-ipo-nvidia-investment-talk-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T07:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 6
+          },
+          "drop_reason": "海外AI企业IPO引进核心投资者为洽谈阶段信息，未经证实"
+        },
+        {
+          "candidate_key": "moonshot-rumor-denial",
+          "story_identity": "moonshot-founder-rumor-denial-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "月之暗面辟谣创始人及员工相关信息为企业澄清声明，原信息系网络谣言"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-13-jingxiong-express-trial-run",
+      "story_identity": "jingxiong-express-full-trial-run-2026",
+      "headline": "🚄 京雄快线全线贯通试运行，公交化运营一票通达",
+      "summary": "9月12日，京雄快线正式启动全线贯通试运行。线路起自雄安城际站，全长约86公里，是国内首条设计时速200公里、采用公交化运营模式的轨道快线，接入北京地铁大兴机场线后可贯通运营至北京草桥站，待丽泽站开通后进一步延伸，“轨道上的京津冀”加速成形。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-12T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "线路试运行信息以央视新闻客户端、新华网报道为准，只述线路走向与运营安排，不承诺正式开通时间。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/12/ARTIZX1nX6l5QzSJ0lnyBDKq260912.shtml",
+          "title": "京雄快线开启全线贯通试运行",
+          "captured_at": "2026-09-13T06:16:00+08:00",
+          "note": "央视网9月12日报道全线贯通试运行启动，线路全长约86公里、设计时速200公里、公交化运营"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260912/01a9817ad1464fb0b71e54bbf601e005/c.html",
+          "title": "京雄快线开启全线贯通试运行",
+          "captured_at": "2026-09-13T06:16:20+08:00",
+          "note": "新华网9月12日报道贯通运营至北京草桥站，待丽泽站开通后进一步延伸"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-13-alipay-fake-app-response",
+      "story_identity": "alipay-fake-app-security-response-2026",
+      "headline": "📱 1.8元可伪造上亿转账截图，支付宝回应“假APP”",
+      "summary": "9月12日，“支付宝 假APP”话题登上热搜第一：网上售卖的山寨应用仅1.8元即可伪造上亿转账截图，甚至暗藏木马。支付宝安全中心发文提醒：认准官方渠道下载应用，勿轻信网传金额截图，商家交易以实际到账金额为准，可开通语音提醒，平台将持续配合相关部门打击网络诈骗。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 11
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-12T14:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "消费安全提醒类报道，以支付宝安全中心发文与持牌媒体报道为准，不展示伪造手法与售卖渠道细节。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/ZhengZhi/2026_09_12_900334.shtml",
+          "title": "“支付宝假APP”热搜第一，1.8元即可伪造上亿转账截图",
+          "captured_at": "2026-09-13T06:17:00+08:00",
+          "note": "观察者网9月12日报道假APP伪造转账截图上热搜及支付宝客服回应"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-09-12/doc-inirpyzh6622915.shtml",
+          "title": "1.8元即可伪造上亿转账截图，支付宝回应“假APP”",
+          "captured_at": "2026-09-13T06:17:20+08:00",
+          "note": "新浪财经9月12日报道支付宝安全中心提醒辨别截图、认准官方渠道下载"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-13-university-dorm-commercial-housing",
+      "story_identity": "universities-buy-commercial-housing-dorms-2026",
+      "headline": "🏠 多所高校买商品房当学生宿舍，双人间一年1320元",
+      "summary": "近期多所高校购置存量商品房改造为学生宿舍引发关注。湖北大学收购武汉城建·水岸小区352套房源，改造后可新增2800个床位，双人间每年住宿费1320元，空调热水齐全，步行约5分钟可达教学区；深圳大学、合肥工业大学等多所高校也在推进，既补宿舍短板，也助力盘活存量商品房。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-12T09:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "报道以中国新闻网、中国青年报口径为准，聚焦住宿条件与收费标准，不延伸房地产市场评价。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/09-12/10695255.shtml",
+          "title": "高校买商品房当学生宿舍：空调洗衣机齐全 双人间一年1320元",
+          "captured_at": "2026-09-13T06:18:00+08:00",
+          "note": "中国新闻网9月12日报道湖北大学等多所高校购置存量房源改造学生宿舍"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中青在线",
+          "url": "http://news.cyol.com/gb/shenghuo/articles/2026-09/11/content_PbOlnZf23m.html",
+          "title": "高校买商品房当学生宿舍：空调洗衣机齐全，双人间一年1320元",
+          "captured_at": "2026-09-13T06:18:20+08:00",
+          "note": "中国青年报9月11日报道学生公寓配置与双人间每年1320元住宿费标准"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-13-jintan-caes-units-startup",
+      "story_identity": "jintan-cavern-caes-units-startup-2026",
+      "headline": "🔋 世界最大盐穴压缩空气储能项目两台机组整组启动",
+      "summary": "9月12日，世界最大盐穴压缩空气储能项目两台机组在江苏金坛完成整组启动，单台容量350兆瓦，总装机规模居世界盐穴压缩空气储能项目之首，标志着我国在大容量盐穴压缩空气储能关键核心技术和系统集成能力上实现重要突破，将为电网调峰和新能源消纳提供支撑。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 14
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-12T09:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "项目进展以科技日报、北京日报报道为准，只述工程节点与装机规模，不作能效与前景夸大。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "中国科技网",
+          "url": "https://www.stdaily.com/web/gdxw/2026-09/12/content_579808.html",
+          "title": "总装机规模世界最大 我国这一储能项目实现两项突破",
+          "captured_at": "2026-09-13T06:19:00+08:00",
+          "note": "科技日报9月12日报道两台机组完成整组启动、总装机规模居世界之首"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "京报网",
+          "url": "https://news.bjd.com.cn/2026/09/12/11956063.shtml",
+          "title": "世界最大盐穴压缩空气储能项目机组启动",
+          "captured_at": "2026-09-13T06:19:20+08:00",
+          "note": "北京日报9月12日报道单台容量350兆瓦与关键核心技术突破"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
