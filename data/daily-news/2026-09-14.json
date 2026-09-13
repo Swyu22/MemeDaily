@@ -1,0 +1,891 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-14",
+  "generated_at": "2026-09-14T06:26:29+08:00",
+  "published_at": "2026-09-14T06:26:29+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 36,
+    "published": 7,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 2,
+      "geopolitics": 1,
+      "politics": 1,
+      "privacy": 1,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 21,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 29,
+      "official_sources": 3,
+      "state_media_sources": 4,
+      "major_media_sources": 12,
+      "aggregator_sources": 10,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 9,
+        "relaxed_72h": 11
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 36,
+          "cumulative_unique_candidates": 36,
+          "source_scope": [
+            "百度热搜微博热搜公开热榜与民生话题佐证",
+            "新华社央视网央广网中国新闻网等央媒发布",
+            "澎湃新闻财新网第一财经新京报极目新闻等持牌媒体原创报道",
+            "中央气象台工信部等政府机构公开发布",
+            "综合搜索对候选事件的多源交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-14-jing-yidan-obituary",
+          "story_identity": "jing-yidan-obituary-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T09:06:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-14-jing-yidan-obituary",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-14-ciftis-closing-results",
+          "story_identity": "ciftis-2026-closing-results",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-14-ciftis-closing-results",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 15
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-14-state-banks-recruitment-cut",
+          "story_identity": "state-banks-autumn-recruitment-cut-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-14-state-banks-recruitment-cut",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-14-rural-sewage-probe-response",
+          "story_identity": "cctv-rural-sewage-idle-xuzhou-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-14-rural-sewage-probe-response",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-14-wtt-macau-chen-yi-silver",
+          "story_identity": "wtt-macau-chen-yi-runner-up-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-14-wtt-macau-chen-yi-silver",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 15
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-14-zhoushan-fisherman-survival",
+          "story_identity": "zhoushan-fisherman-11days-survival-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-14-zhoushan-fisherman-survival",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-14-talkshow-ticket-scalping-case",
+          "story_identity": "shanghai-talkshow-ticket-scalping-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-14-talkshow-ticket-scalping-case",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "xiamen-firm-13-5-day-holiday",
+          "story_identity": "xiamen-firm-13-5-day-holiday-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 19,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "厦门一公司中秋国庆连放13.5天为单个企业福利个案，9月11日报道，按打戳时钟约66小时，73分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "hainan-rainstorm-mountain-torrent-alert",
+          "story_identity": "hainan-rainstorm-orange-torrent-alert-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "暴雨与山洪预警题材9月10日、11日已连续两日入选，本次海南强降雨无重大新增量，72分未达严格档"
+        },
+        {
+          "candidate_key": "quzhou-exam-ecg-disqualification",
+          "story_identity": "quzhou-exam-first-ecg-disqualify-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "考公考编体检争议目前主要为考生家属单方讲述与专家观点，缺少招录机关或体检机构正式回应，71分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "miit-ai-software-action-plan",
+          "story_identity": "miit-ai-software-action-plan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "工信部人工智能加软件专项行动方案9月11日集中报道，按打戳时钟约69小时，68分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "lpl-al-first-title-2026",
+          "story_identity": "lpl-al-beats-blg-first-title-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "电竞赛事结果受众相对垂直，66分且日常相关性未达15分门槛，不满足入选条件"
+        },
+        {
+          "candidate_key": "hengduan-tourist-short-drama",
+          "story_identity": "hengduan-tourist-short-drama-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "drop_reason": "横店游客付费拍短剧为文旅新业态观察，项目8月已上线，64分未达65分线"
+        },
+        {
+          "candidate_key": "jiangsu-student-cooking-major",
+          "story_identity": "jiangsu-554-student-cooking-major-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "drop_reason": "高分考生弃本从专为开学季个案，63分未达65分线"
+        },
+        {
+          "candidate_key": "earth-rotation-day-shorter",
+          "story_identity": "earth-rotation-day-under-24h-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "一天不足24小时为科普热词再热，非新发生事件，62分未达65分线"
+        },
+        {
+          "candidate_key": "splash-ad-regulation-discussion",
+          "story_identity": "splash-ad-governance-discussion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "开屏广告治理为评论性讨论，暂无新监管动作落地，61分未达65分线"
+        },
+        {
+          "candidate_key": "xiangpiaopiao-offline-stores",
+          "story_identity": "xiangpiaopiao-nine-offline-stores-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "香飘飘筹备9家线下门店为单一企业经营动态，60分未达65分线"
+        },
+        {
+          "candidate_key": "ji-hotel-cockroach-complaint",
+          "story_identity": "ji-hotel-cockroach-complaint-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "酒店卫生投诉为单店纠纷且双方仍在协商，58分未达65分线"
+        },
+        {
+          "candidate_key": "indonesia-ferry-sinking",
+          "story_identity": "indonesia-java-sea-ferry-sinking-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T17:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 8
+          },
+          "drop_reason": "印尼客轮沉没为外国地方海难且确认无中国公民，对中国读者无直接日常关联，属常规国际地方新闻"
+        },
+        {
+          "candidate_key": "suining-student-opening-speech",
+          "story_identity": "suining-freshman-opening-speech-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "新生代表发言为开学季温情花絮，公共信息增量有限，57分未达65分线"
+        },
+        {
+          "candidate_key": "huizhou-tidal-toilet-adjustment",
+          "story_identity": "huizhou-tidal-toilet-adjustment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "景区潮汐厕所标识争议已完成整改，属地方小尺度服务改进，56分未达65分线"
+        },
+        {
+          "candidate_key": "heze-zoo-lion-response",
+          "story_identity": "heze-zoo-thin-lion-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 9,
+            "evidence": 6
+          },
+          "drop_reason": "园方回应狮子体态为网传质疑的澄清，日常关联低，55分未达65分线"
+        },
+        {
+          "candidate_key": "disposable-outfit-trend",
+          "story_identity": "disposable-outfit-travel-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "次抛衣走红为消费现象观察，无事件性进展，54分未达65分线"
+        },
+        {
+          "candidate_key": "curry-guangdong-ba-allstar",
+          "story_identity": "curry-guangdong-village-ba-allstar-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 6
+          },
+          "drop_reason": "球星亮相地方篮球活动为文体花絮，53分未达65分线"
+        },
+        {
+          "candidate_key": "atour-job-title-discussion",
+          "story_identity": "atour-hotel-job-title-discussion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "酒店内部职务称谓讨论为企业文化趣闻，公共相关性有限，52分未达65分线"
+        },
+        {
+          "candidate_key": "celebrity-scenic-npc-trend",
+          "story_identity": "celebrity-scenic-npc-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 6
+          },
+          "drop_reason": "演员担任景区NPC为文旅营销现象，50分未达65分线"
+        },
+        {
+          "candidate_key": "zhengzhou-nephew-uncle-college",
+          "story_identity": "zhengzhou-nephew-sends-uncle-college-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "侄子送叔叔上大学为开学趣闻，公共价值有限，47分未达65分线"
+        },
+        {
+          "candidate_key": "anhui-4a-scenic-delisting",
+          "story_identity": "anhui-4a-scenic-delisting-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 12,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "drop_reason": "安徽集中清退4A级景区发生于9月7日，已超出72小时时效窗口"
+        },
+        {
+          "candidate_key": "hk-iphone-card-fraud",
+          "story_identity": "hk-iphone-preorder-card-fraud-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "香港市民未预定新iPhone遭信用卡盗刷目前主要为网民反映与热榜聚合，缺少权威媒体正式报道与银行调查结论原文"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-14-jing-yidan-obituary",
+      "story_identity": "jing-yidan-obituary-2026",
+      "headline": "🕯️ 央视主持人敬一丹逝世，享年71岁",
+      "summary": "9月13日，中央广播电视总台播音指导、主持人敬一丹因病医治无效在北京逝世，享年71岁，其女儿通过“敬一丹”微信公众号发布讣告。敬一丹1988年入职央视，先后主持《经济半小时》《焦点访谈》《东方时空》《感动中国》等节目，三度荣获金话筒奖，多位主持人和观众发文悼念。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-13T09:06:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "讣闻以家属讣告、央视新闻与财新报道为准，只述生平与悼念事实，不涉及隐私细节与病因猜测。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34060628",
+          "title": "央视发文送别敬一丹：斯人已逝，音容犹存",
+          "captured_at": "2026-09-14T06:12:00+08:00",
+          "note": "澎湃新闻9月13日转引央视新闻消息，敬一丹因病医治无效于9月13日凌晨5时在北京逝世，享年71岁"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://www.caixin.com/2026-09-13/102484475.html",
+          "title": "主持人敬一丹去世：“感谢这世界让我走过”｜讣闻",
+          "captured_at": "2026-09-14T06:12:30+08:00",
+          "note": "财新网9月13日讣闻报道其女通过公众号发布讣告及敬一丹主持生涯"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-14-ciftis-closing-results",
+      "story_identity": "ciftis-2026-closing-results",
+      "headline": "🤝 2026年服贸会闭幕，达成1200余项成果",
+      "summary": "9月13日，2026年中国国际服务贸易交易会在北京首钢园闭幕。本届服贸会共达成7类1200余项成果，举办200场论坛会议及洽谈推介活动，吸引90个国家和地区、国际组织设展办会；截至13日中午，核心活动区入场近42万人次，同比增长36.6%。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 15
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-13T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "成果与客流数据以新华社、解放日报报道为准，只述展会规模与成交结果，不作经贸政策延伸解读。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/fortune/20260913/b253bbc1aee9417486be9d4b91863e3e/c.html",
+          "title": "2026年服贸会达成各类成果1200余项",
+          "captured_at": "2026-09-14T06:13:00+08:00",
+          "note": "新华社9月13日报道服贸会闭幕，达成7类共1200余项成果，举办200场论坛会议及洽谈推介活动"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "解放日报",
+          "url": "https://www.shobserver.cn/news/detail?id=1176094",
+          "title": "2026年服贸会闭幕，达成1200余项成果",
+          "captured_at": "2026-09-14T06:13:30+08:00",
+          "note": "解放日报9月13日报道核心区入场近42万人次、同比增长36.6%，473家世界500强和行业龙头企业参展"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-14-state-banks-recruitment-cut",
+      "story_identity": "state-banks-autumn-recruitment-cut-2026",
+      "headline": "🏦 四大国有银行秋招缩招7000余人，科技岗成标配",
+      "summary": "进入9月，工行、农行、中行、建行四大国有银行陆续发布2027年度校园招聘公告，合计放出约6.4万个岗位，较去年缩减7000余人，秋招规模近年连续回落。与此同时，科技岗越来越成为银行校招标配，多家银行强调培养能把科技转化为业务价值的复合型人才。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 11
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-13T16:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "岗位规模为媒体不完全统计口径，如实标注“约”“较去年”，不断言银行减员动机。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/wm/2026-09-13/doc-inirsqqa5509436.shtml",
+          "title": "四大国有行今年“秋招”缩招7000余人",
+          "captured_at": "2026-09-14T06:14:00+08:00",
+          "note": "第一财经9月13日报道四大国有行2027年度校招共放出约6.4万个岗位，较去年缩减7000余人"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "海报新闻",
+          "url": "https://hb.dzwww.com/p/p5gmNznQe.html",
+          "title": "银行集体开启“秋招模式”，四大国有行今年缩招7000余人",
+          "captured_at": "2026-09-14T06:14:30+08:00",
+          "note": "大众网海报新闻9月13日报道四大行秋招岗位2025年度7.76万个、2026年度7.15万个、2027年度6.4万个"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-14-rural-sewage-probe-response",
+      "story_identity": "cctv-rural-sewage-idle-xuzhou-2026",
+      "headline": "🚧 央视曝光农村治污工程闲置，徐州铜山连夜成立联合调查组",
+      "summary": "9月13日晚，总台央视财经频道《财经调查》曝光江苏徐州铜山区等地部分农村污水治理工程存在设备空转、污水直排、数百万元设施闲置等问题。节目播出后，铜山区第一时间成立由生态环境、水务、农业农村等部门组成的联合调查组，工作人员当晚已抵达现场开展调查和整改整治。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-13T21:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "以央广网、北京日报报道为准，聚焦问题曝光与地方整改响应，未经调查结论不点名具体责任方。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://news.cnr.cn/native/gd/20260913/t20260913_527812903.shtml",
+          "title": "设备空转，污水倒灌！数百万元治污工程闲置！总台《财经调查》曝光个别地区农村治污乱象",
+          "captured_at": "2026-09-14T06:15:00+08:00",
+          "note": "央广网9月13日报道总台《财经调查》曝光徐州铜山区等地农村污水治理工程闲置与直排问题"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6aa6cb46e4b0e42f8f00423c.html",
+          "title": "徐州铜山区成立联合调查组！",
+          "captured_at": "2026-09-14T06:15:30+08:00",
+          "note": "北京日报9月13日报道节目播出后铜山区成立多部门联合调查组，工作人员13日晚已抵达现场"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-14-wtt-macau-chen-yi-silver",
+      "story_identity": "wtt-macau-chen-yi-runner-up-2026",
+      "headline": "🏓 WTT澳门冠军赛：陈熠鏖战七局获女单亚军",
+      "summary": "9月13日晚，WTT澳门冠军赛女单决赛在澳门结束，中国选手陈熠与日本选手张本美和打满七局，以3比4惜败获得亚军，创造个人在WTT冠军赛的历史最好成绩；张本美和实现冠军赛三连冠。男单决赛中，瑞典选手莫雷加德4比1战胜巴西选手雨果夺冠。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 15
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-13T22:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛果以新华社、新京报报道为准，只述比分与名次，不评价运动员与教练表现。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/sports/20260913/2b08cae1e16c40b498955b0d9408be01/c.html",
+          "title": "WTT澳门冠军赛陈熠获女单亚军",
+          "captured_at": "2026-09-14T06:16:00+08:00",
+          "note": "新华社9月13日报道陈熠3比4负于张本美和获得女单亚军"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1789312478129570.html",
+          "title": "WTT澳门冠军赛：莫雷加德、张本美和夺冠",
+          "captured_at": "2026-09-14T06:16:30+08:00",
+          "note": "新京报9月13日报道男女单打决赛结果及七局比分进程"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-14-zhoushan-fisherman-survival",
+      "story_identity": "zhoushan-fisherman-11days-survival-2026",
+      "headline": "🎣 舟山渔民落水失踪11天后奇迹生还，已平安回家",
+      "summary": "9月3日，浙江舟山螺门一名60岁渔民在拖虾船上不慎落水失踪，家属与多方寻找11天无果，已为其办了后事。9月13日，该渔民奇迹般生还回到家中，面色良好，除皮肤晒黑外身体无大碍，其落水后漂流与获救的详细经过仍在进一步了解中。",
+      "category": "科技向善",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 11
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-13T16:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "以澎湃新闻、极目新闻报道为准，隐去当事人全名与住址细节，只述生还事实与平安结局。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34063142",
+          "title": "浙江60岁渔民落水失踪11天，家人已办完后事，本人竟奇迹生还回家",
+          "captured_at": "2026-09-14T06:17:00+08:00",
+          "note": "澎湃新闻9月13日报道舟山螺门渔民落水失踪11天后于13日生还回家"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "极目新闻",
+          "url": "https://www.ctdsb.net/c1476_202609/2855796.html",
+          "title": "舟山60岁渔民落水失踪11天，家人已办完后事",
+          "captured_at": "2026-09-14T06:17:30+08:00",
+          "note": "极目新闻9月13日报道渔民9月3日落水失踪、9月13日平安返家的经过"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-14-talkshow-ticket-scalping-case",
+      "story_identity": "shanghai-talkshow-ticket-scalping-2026",
+      "headline": "🎫 上海警方通报脱口秀门票倒卖案，6人被依法处置",
+      "summary": "9月13日晚，上海市公安局静安分局就脱口秀演员付航演出专场部分观众无法通过实名验证入场一事发布通报：3名嫌疑人网上收购后加价倒卖门票104张、非法牟利1.8万余元，被采取刑事强制措施；另有3人加价倒卖门票8张，被行政处罚。警方同时澄清“八成观众无法入场”为不实信息。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-13T20:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "涉案人数与金额以警方通报原文为准，不传播嫌疑人个人信息，不延伸粉圈讨论。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6aa6fae6e4b0e42f8f00423c.html",
+          "title": "上海警方发布警情通报",
+          "captured_at": "2026-09-14T06:18:00+08:00",
+          "note": "北京日报9月13日刊发静安分局通报全文：3人被采取刑事强制措施、3人被行政处罚"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "青岛日报",
+          "url": "https://m.guanhai.com.cn/p/472909.html",
+          "title": "付航脱口秀演出专场部分观众无法通过实名验证入场，上海警方发布警情通报",
+          "captured_at": "2026-09-14T06:18:30+08:00",
+          "note": "青岛日报观海新闻9月13日报道演出检票受阻经过与倒卖门票查处细节"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
