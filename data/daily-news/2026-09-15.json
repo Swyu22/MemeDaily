@@ -1,0 +1,989 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-15",
+  "generated_at": "2026-09-15T06:41:04+08:00",
+  "published_at": "2026-09-15T06:41:04+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 36,
+    "published": 9,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 1,
+      "geopolitics": 1,
+      "politics": 1,
+      "propaganda": 1,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 20,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "official_sources": 3,
+      "state_media_sources": 5,
+      "major_media_sources": 15,
+      "aggregator_sources": 7,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 9,
+        "relaxed_48h": 14,
+        "relaxed_72h": 16
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 36,
+          "cumulative_unique_candidates": 36,
+          "source_scope": [
+            "百度热搜公开热榜与民生话题佐证",
+            "新华社央视网央广网人民网等央媒发布",
+            "澎湃新闻新京报界面新闻财新网等持牌媒体原创报道",
+            "中央气象台中国地震台网国家药监局中央网信办等政府机构公开发布",
+            "综合搜索对候选事件的多源交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-15-typhoon-bebinca-orange-alert",
+          "story_identity": "typhoon-bebinca-orange-alert-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-15-typhoon-bebinca-orange-alert",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-15-nhc-plain-water-health-plan",
+          "story_identity": "nhc-healthy-china-briefing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-09-15-nhc-plain-water-health-plan",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-15-wang-manyu-first-world-no1",
+          "story_identity": "wang-manyu-first-wtt-world-no1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-15-wang-manyu-first-world-no1",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 15
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-15-puer-m45-earthquake",
+          "story_identity": "puer-mojiang-m45-quake-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T17:07:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-15-puer-m45-earthquake",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-15-brain-computer-ai-standard",
+          "story_identity": "nmpa-brain-computer-ai-standard-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-15-brain-computer-ai-standard",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-15-csrc-payment-period-rule",
+          "story_identity": "csrc-sme-payment-period-governance-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-15-csrc-payment-period-rule",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-15-jiangsu-autumn-break-schedule",
+          "story_identity": "jiangsu-first-autumn-break-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-09-15-jiangsu-autumn-break-schedule",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-15-hunan-medical-insurance-death-error",
+          "story_identity": "xinhua-county-insurance-death-flag-error-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-15-hunan-medical-insurance-death-error",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 19,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-15-cybersecurity-week-jinan-opening",
+          "story_identity": "cybersecurity-week-2026-jinan-opening",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-15-cybersecurity-week-jinan-opening",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 20,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "nazha-auto-restructuring-taiyi",
+          "story_identity": "nazha-auto-restructuring-taiyi-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "哪吒汽车重整投资方拟出资30亿元属企业经营与资本市场动态，对普通读者日常直接影响有限，74分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "lvmengyang-espanyol-youth",
+          "story_identity": "lvmengyang-espanyol-juvenilb-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "17岁徐州小将9月14日官宣加盟西班牙人青年B队，为青训梯队动态，受众偏足球垂直圈，73分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "luzhou-east-station-renaming",
+          "story_identity": "luzhou-east-station-renaming-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "泸州东站距市区约30公里致旅客买错票、官方回应站名由来，出行提示区域性较强，72分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "venus-moon-conjunction-sep14",
+          "story_identity": "venus-moon-conjunction-2026-09-14",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "金星伴月天象9月14日傍晚上演，观赏性强但属周期性天象，公共信息增量有限，71分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "mid-autumn-national-day-schedule-reminder",
+          "story_identity": "mid-autumn-national-day-schedule-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "中秋国庆调休节奏提醒为周期性服务信息，放假安排早前已公布，无实质新增量，70分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "multi-city-property-price-bundling",
+          "story_identity": "multi-city-property-discount-recall-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "多城楼盘收回折扣属房企营销动作，折算涨幅多在1%至3%，对购房者实质影响有限，69分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "mooncake-top-seller-queue",
+          "story_identity": "mooncake-top-seller-queue-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "老字号月饼门店日售4万个为中秋前单品类消费现象，68分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "heze-bbq-116-complaints",
+          "story_identity": "heze-bbq-repeat-complaints-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 10
+          },
+          "drop_reason": "菏泽烧烤店被同一人集中投诉116次一事当地仍在核查，涉举报对抗情节，日常相关性13分未达15分门槛，谨慎不选"
+        },
+        {
+          "candidate_key": "92yo-high-jump-champion",
+          "story_identity": "92yo-high-jump-champion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 12
+          },
+          "drop_reason": "92岁老人跳出2.05米为人物特写稿，日常相关性14分未达15分门槛"
+        },
+        {
+          "candidate_key": "zhangshuai-asian-games-over-china-open",
+          "story_identity": "zhangshuai-asian-games-choice-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 11
+          },
+          "drop_reason": "张帅为出战亚运会放弃中网单打为选手个人参赛选择，日常相关性14分未达门槛"
+        },
+        {
+          "candidate_key": "nongfu-spring-guochi-trademark-suit",
+          "story_identity": "nongfu-spring-guochi-trademark-suit-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 10,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "drop_reason": "农夫山泉诉国赤山泉索赔15万元一审于9月10日开庭未宣判，按打戳时钟已超72小时窗口，64分未达65分线"
+        },
+        {
+          "candidate_key": "nev-taxi-fleet-auction",
+          "story_identity": "nev-taxi-fleet-auction-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "150辆新能源网约车拍卖成交为资产处置个案，62分未达65分线"
+        },
+        {
+          "candidate_key": "kindergarten-grandparent-breakfast",
+          "story_identity": "kindergarten-grandparent-breakfast-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "幼儿园向接送老人提供免费早餐为单园举措，61分未达65分线"
+        },
+        {
+          "candidate_key": "master-rejected-over-first-degree",
+          "story_identity": "master-rejected-first-degree-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "硕士因大专出身求职被拒为个案叙述，60分未达65分线"
+        },
+        {
+          "candidate_key": "zhejiang-air-raid-siren-drill",
+          "story_identity": "zhejiang-air-raid-siren-drill-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T10:40:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "浙江防空警报试鸣为年度例行安排预告，60分未达65分线"
+        },
+        {
+          "candidate_key": "slow-car-governance-commentary",
+          "story_identity": "slow-car-governance-commentary-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T07:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "整治龟速车为媒体评论议题，暂无新管理措施落地，59分未达65分线"
+        },
+        {
+          "candidate_key": "foshan-ji-hotel-cockroach",
+          "story_identity": "foshan-ji-hotel-cockroach-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "佛山全季酒店蟑螂为单店住客投诉，双方仍在协商，58分未达65分线"
+        },
+        {
+          "candidate_key": "aba-lixian-m30-quake",
+          "story_identity": "aba-lixian-m30-quake-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T14:53:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "四川阿坝理县3.0级地震震级较小且无灾情报告，57分未达65分线"
+        },
+        {
+          "candidate_key": "taidong-sea-m41-quake",
+          "story_identity": "taidong-sea-m41-quake-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T06:44:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 19,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "台湾台东海域4.1级地震无影响报告，56分未达65分线"
+        },
+        {
+          "candidate_key": "shanghai-greenland-goose-catchers",
+          "story_identity": "shanghai-greenland-goose-catchers-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "上海市中心绿地抓大鹅为市民纠纷花絮，管理方已介入，55分未达65分线"
+        },
+        {
+          "candidate_key": "shanghai-aircraft-delivery-static",
+          "story_identity": "shanghai-static-aircraft-delivery-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "“这架飞机却永远无法飞上天”式总装交付报道标题信息模糊，未能核实具体机型与交付机构的权威发布，证据不足"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-15-typhoon-bebinca-orange-alert",
+      "story_identity": "typhoon-bebinca-orange-alert-2026",
+      "headline": "🌀 台风“贝碧嘉”逼近华东，中央气象台发布橙色预警",
+      "summary": "中央气象台9月14日18时发布台风橙色预警：今年第13号台风“贝碧嘉”当天下午5时位于浙江舟山东偏南约760公里海面，中心最大风力11级，预计强度逐渐增强，15日夜间至16日上午在浙江台州到江苏启东一带沿海登陆，浙沪苏沿海将有大风暴雨，提醒公众减少外出、注意防范。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-14T18:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "预警信息以中央气象台发布为准，只述台风动态与防御提示，不渲染灾情。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "界面新闻",
+          "url": "https://m.jiemian.com/article/11723147_microcontent.html",
+          "title": "中央气象台9月14日18时发布台风橙色预警",
+          "captured_at": "2026-09-15T06:25:00+08:00",
+          "note": "界面新闻9月14日刊发中央气象台18时台风橙色预警全文，预计贝碧嘉15日夜间至16日上午在浙江台州到江苏启东一带沿海登陆"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "界面新闻",
+          "url": "https://m.jiemian.com/article/11720865.html",
+          "title": "中央气象台9月14日06时发布台风黄色预警",
+          "captured_at": "2026-09-15T06:25:30+08:00",
+          "note": "14日06时台风黄色预警：贝碧嘉位于舟山东偏南约1090公里海面，强度逐渐增强并向华东沿海靠近"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-15-nhc-plain-water-health-plan",
+      "story_identity": "nhc-healthy-china-briefing-2026",
+      "headline": "🥛 国家卫健委提倡多喝白开水淡茶水，少喝含糖饮料",
+      "summary": "9月14日，国新办举行“开局起步‘十五五’”系列主题新闻发布会介绍健康中国建设进展。国家卫健委主任雷海潮提醒，一瓶500毫升含糖饮料含糖量或达25克，超出每日推荐摄入量，提倡大家多喝白开水、淡茶水，并介绍到2030年人均预期寿命达到80岁的目标。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-14T10:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "以国新办发布会报道与央视网为准，只述健康饮食建议与规划目标，不作医疗建议延伸。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/14/ARTImlUQOVLgchJtV4Xkoc9u260914.shtml",
+          "title": "国家卫健委主任：提倡大家多喝白开水、淡茶水",
+          "captured_at": "2026-09-15T06:26:00+08:00",
+          "note": "央视网9月14日报道国新办发布会，国家卫健委主任雷海潮提倡多喝白开水、淡茶水，防控慢性病"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6aa78288e4b0e42f8f0046d6.html",
+          "title": "国家卫健委：一瓶饮料含糖量或已达到25克，提倡大家多喝白开水淡茶水",
+          "captured_at": "2026-09-15T06:26:30+08:00",
+          "note": "北京日报9月14日报道发布会控糖控油建议与健康中国目标"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-15-wang-manyu-first-world-no1",
+      "story_identity": "wang-manyu-first-wtt-world-no1-2026",
+      "headline": "🏓 王曼昱超越孙颖莎，首登乒乓球女单世界第一",
+      "summary": "9月14日，国际乒联公布2026年第38周世界排名，中国选手王曼昱以9115分超越队友孙颖莎，首次登上女单世界第一。孙颖莎此前连续四年多稳居榜首，本期因去年同期赛事积分到期被扣除，以140分之差让出第一。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 15
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-14T11:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "排名信息以国际乒联公布与新华社电为准，只述积分与名次变化，不评价运动员个人。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "川观新闻",
+          "url": "https://cbgc.scol.com.cn/news/7954363",
+          "title": "王曼昱首登乒乓球女单世界第一",
+          "captured_at": "2026-09-15T06:27:00+08:00",
+          "note": "川观新闻9月14日转引新华社电：国际乒联14日公布最新一期世界排名，王曼昱超越孙颖莎首次登顶女单世界第一"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国吉林网",
+          "url": "https://news.cnjiwang.com/gn/202609/4081166.html",
+          "title": "国际乒联最新世界排名：女单王曼昱9115分排第一，超孙颖莎140分",
+          "captured_at": "2026-09-15T06:27:30+08:00",
+          "note": "中国吉林网9月14日报道WTT世界乒联发布2026年第38周世界排名，王曼昱9115分位列女单第一"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-15-puer-m45-earthquake",
+      "story_identity": "puer-mojiang-m45-quake-2026-09",
+      "headline": "🌏 云南普洱墨江发生4.5级地震，中老铁路部分列车晚点",
+      "summary": "中国地震台网正式测定，9月14日17时07分在云南普洱市墨江县发生4.5级地震，震源深度10千米。为确保旅客列车运行安全，中老铁路部分旅客列车出现晚点，铁路部门对相关区段采取行车限制措施并组织排查。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-14T17:07:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "震情参数以中国地震台网测定为准，只述测定结果与铁路行车影响，不含伤亡信息，不渲染灾情。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.cn/2026/09/14/ARTIAGbPAAEnAQGe7TaCJWNV260914.shtml",
+          "title": "云南普洱市墨江县发生4.5级地震，震源深度10千米",
+          "captured_at": "2026-09-15T06:28:00+08:00",
+          "note": "央视网9月14日报道中国地震台网正式测定，14日17时07分普洱墨江发生4.5级地震，震源深度10千米"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/yn/gstjyn/20260914/t20260914_527813641.shtml",
+          "title": "云南普洱市墨江县发生4.5级地震 中老铁路部分旅客列车晚点",
+          "captured_at": "2026-09-15T06:28:30+08:00",
+          "note": "央广网9月14日报道地震发生后铁路部门采取安全措施，中老铁路部分旅客列车晚点"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-15-brain-computer-ai-standard",
+      "story_identity": "nmpa-brain-computer-ai-standard-2026",
+      "headline": "🧠 我国发布全球首个AI脑机接口医疗器械标准",
+      "summary": "9月14日，国家药监局批准发布YY/T 2029—2026《脑机接口医疗器械 用于人工智能算法的脑电数据集质量要求与评价方法》医疗器械行业标准。这是我国第三个脑机接口医疗器械标准，也是全球首个采用人工智能技术处理脑电数据的脑机接口医疗器械产品标准，将于2027年9月1日起施行。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 14
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-14T15:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "标准编号与施行日期以国家药监局公告为准，只述标准发布事实，不作医疗疗效暗示。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/tech/20260914/62dffc640f86476f9cbfa19f8c69a064/c.html",
+          "title": "全球首个人工智能+脑机接口标准中国首发",
+          "captured_at": "2026-09-15T06:29:00+08:00",
+          "note": "新华网9月14日报道国家药监局批准发布YY/T 2029—2026脑机接口医疗器械行业标准"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "科学网",
+          "url": "https://news.sciencenet.cn/htmlnews/2026/9/571421.shtm",
+          "title": "全球首个人工智能+脑机接口标准在我国发布",
+          "captured_at": "2026-09-15T06:29:30+08:00",
+          "note": "科学网9月14日报道该标准为我国第三个脑机接口医疗器械标准、全球首个AI处理脑电数据产品标准"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-15-csrc-payment-period-rule",
+      "story_identity": "csrc-sme-payment-period-governance-2026",
+      "headline": "💼 证监会：引导上市公司压缩账期，及时支付中小企业款项",
+      "summary": "国新办9月14日下午举行国务院政策例行吹风会，介绍加强中小企业回款难问题治理有关情况。证监会上市公司监管司司长郭瑞明表示，将细化披露要求，引导上市公司压缩账期、及时支付中小企业款项，存在逾期支付的公司需通过国家企业信用信息公示系统公开，同时加大走访上市公司力度。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-14T15:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "以国新办吹风会发布内容为准，只述监管措施，不作股市投资建议。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://finance.cnr.cn/ycbd/20260914/t20260914_527813622.shtml",
+          "title": "证监会：引导上市公司压缩账期，及时支付中小企业款项",
+          "captured_at": "2026-09-15T06:30:00+08:00",
+          "note": "央广网9月14日报道国新办政策例行吹风会，证监会将引导上市公司压缩账期、及时支付中小企业款项"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34066543",
+          "title": "证监会：引导上市公司压缩账期，及时支付中小企业款项",
+          "captured_at": "2026-09-15T06:30:30+08:00",
+          "note": "澎湃新闻9月14日报道郭瑞明介绍细化披露要求与走访上市公司等“两手抓”安排"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-15-jiangsu-autumn-break-schedule",
+      "story_identity": "jiangsu-first-autumn-break-2026",
+      "headline": "🏫 江苏13个设区市首个秋假时间全部排定，均在11月中下旬",
+      "summary": "随着镇江市教育局9月14日发布消息，江苏13个设区市今年中小学秋假日期全部排定，均安排在11月中下旬并与双休日衔接，形成5天连休。其中南京、苏州等地秋假为11月16日至18日，与11月14日、15日周末相连，享受对象为义务教育阶段学生。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 11
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-14T16:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "秋假安排以江苏各市教育局发布为准，只述时间与衔接安排，不作补课培训引导。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34066676",
+          "title": "江苏各设区市首个秋假时间排定：均在11月中下旬，与周末衔接",
+          "captured_at": "2026-09-15T06:31:00+08:00",
+          "note": "澎湃新闻9月14日报道江苏13个设区市中小学秋假日期全部排定，均在11月中下旬并与双休日衔接"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国江苏网",
+          "url": "https://jsnews.jschina.com.cn/jsyw/202609/t20260914_s6aa7b764e4b086d2d5fec4db.shtml",
+          "title": "定了！江苏13市中小学秋假时间全部明确",
+          "captured_at": "2026-09-15T06:31:30+08:00",
+          "note": "中国江苏网9月14日列出各市秋假具体安排，南京、苏州等为11月16日至18日连休5天"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-15-hunan-medical-insurance-death-error",
+      "story_identity": "xinhua-county-insurance-death-flag-error-2026",
+      "headline": "🏥 看病发现医保被登记“死亡”，湖南新化通报：已恢复并将追责",
+      "summary": "湖南新化县奉先生9月14日向媒体反映，他因扭伤到医院就诊时发现医保系统将自己登记为“死亡”，无法正常就医，且不止一人遇到类似情况。当地随即成立联合调查组，核查系村干部在医保信息核实时出错。截至14日17时，奉先生医保已恢复正常参保状态，当地通报将全面核查并依规处理相关责任人。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 19,
+        "everyday_relevance": 19,
+        "evidence": 11
+      },
+      "heat_rank": 8,
+      "occurred_at": "2026-09-14T17:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "以官方通报与新京报报道为准，隐去当事人就诊细节，不猜测责任动机。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://m.bjnews.com.cn/detail/1789383108129158.html",
+          "title": "男子看病发现医保被登记“死亡”后续：已恢复为正常参保状态",
+          "captured_at": "2026-09-15T06:32:00+08:00",
+          "note": "新京报9月14日报道，截至14日17时奉先生医保已恢复为正常参保状态"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/ZhengZhi/2026_09_14_900610.shtml",
+          "title": "男子被登记“死亡”难享医保？联合调查组通报",
+          "captured_at": "2026-09-15T06:32:30+08:00",
+          "note": "观察者网9月14日报道新化县成立联合调查组，将全面核查并依规处理相关责任人"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-15-cybersecurity-week-jinan-opening",
+      "story_identity": "cybersecurity-week-2026-jinan-opening",
+      "headline": "🛡️ 2026年国家网络安全宣传周开幕，主场活动落地济南",
+      "summary": "2026年国家网络安全宣传周于9月14日至20日在全国范围内统一举行，开幕式等重要活动在山东济南举办。本届网安周由中央宣传部、中央网信办等十部门联合举办，主题为“网络安全为人民，网络安全靠人民——智能时代网安护航”，期间将举办技术高峰论坛、专题分论坛、安全应用体验区和人才招聘会。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 18,
+        "everyday_relevance": 20,
+        "evidence": 13
+      },
+      "heat_rank": 9,
+      "occurred_at": "2026-09-14T14:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "举办时间与主题以中央网信办发布为准，只述活动安排与公众参与信息。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家网信办",
+          "url": "https://www.cac.gov.cn/2026-09/01/c_1790011556066214.htm",
+          "title": "2026年国家网络安全宣传周将于9月14日至20日在全国范围举行",
+          "captured_at": "2026-09-15T06:33:00+08:00",
+          "note": "国家网信办9月1日发布，2026年网安周9月14日至20日举行，开幕式等重要活动在山东济南举办"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/bj/oiue/20260901/t20260901_527801628.shtml",
+          "title": "国家网络安全宣传周将于9月14日开幕",
+          "captured_at": "2026-09-15T06:33:30+08:00",
+          "note": "央广网9月1日报道本届网安周主题与济南开幕式、高峰论坛、体验区等活动安排"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
