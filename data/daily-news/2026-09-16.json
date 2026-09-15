@@ -1,0 +1,863 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-16",
+  "generated_at": "2026-09-16T06:33:58+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 36,
+    "published": 6,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 1,
+      "geopolitics": 1,
+      "politics": 1,
+      "privacy": 1,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 23,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 30,
+      "official_sources": 2,
+      "state_media_sources": 6,
+      "major_media_sources": 17,
+      "aggregator_sources": 5,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 10,
+        "relaxed_72h": 14
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 36,
+          "cumulative_unique_candidates": 36,
+          "source_scope": [
+            "百度热搜公开热榜与民生话题佐证",
+            "新华社央视网央广网人民网等央媒发布",
+            "澎湃新闻新京报界面新闻财新网等持牌媒体原创报道",
+            "国家统计局民航中南局深圳市龙华区政府等政府机构公开发布",
+            "综合搜索对候选事件的多源交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-16-pinglu-canal-six-highlights",
+          "story_identity": "pinglu-canal-six-highlights-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-09-16-pinglu-canal-six-highlights",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-16-zhuque2-y7-ten-satellites",
+          "story_identity": "zhuque2-y7-qianfan-19-launch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T14:26:00+08:00",
+          "scope": "domestic",
+          "topic": "太空航天",
+          "outcome": "selected",
+          "item_id": "2026-09-16-zhuque2-y7-ten-satellites",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-16-august-70city-home-prices",
+          "story_identity": "stats-70city-aug-home-price-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-16-august-70city-home-prices",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-16-wulei-haigang-acl-win",
+          "story_identity": "wulei-haigang-acl-6-4-ratchaburi-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-16-wulei-haigang-acl-win",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-16-wahaha-housing-fund-seizure",
+          "story_identity": "wahaha-hulin-housing-fund-seizure-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-16-wahaha-housing-fund-seizure",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-16-shenzhen-longhua-airport",
+          "story_identity": "shenzhen-longhua-airport-naming-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-09-16-shenzhen-longhua-airport",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "guoan-3-1-pohang-acl",
+          "story_identity": "guoan-pohang-acl-opener-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "北京国安9月15日晚3比1击败韩国浦项铁人同为亚冠精英联赛首轮，与已选海港一战题材重复，为控制同题材密度未取，74分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "shanghai-medical-insurance-vaccine-pay",
+          "story_identity": "shanghai-yibao-vaccine-account-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 22,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "上海职工医保个人账户9月15日起可支付非免疫规划疫苗费用，通知9月14日印发披露，按打戳时钟超24小时窗口，74分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "exit-entry-agency-filing-rule",
+          "story_identity": "exit-entry-agency-filing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "出境入境中介备案管理办法9月14日发布公告、9月15日起施行，公告时点超24小时窗口，74分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "free-egg-device-scam-investigation",
+          "story_identity": "dongguan-device-elderly-scam-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "媒体调查东莞部分医疗器械门店以免费鸡蛋诱导老人购买高价理疗仪，涉地域与门店范围有限，72分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "holiday-train-ticket-peak",
+          "story_identity": "autumn-holiday-ticket-peak-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "中秋国庆假期9月15日迎售票高峰属周期性服务信息，购票日历早前已公布，实质新增量有限，69分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "ios-27-official-release",
+          "story_identity": "apple-ios-27-release-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T01:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "苹果iOS 27正式版9月15日凌晨推送，核心Siri AI功能中国大陆暂未开放，证据以科技媒体为主、缺少权威媒体独立报道支撑热度，68分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "e-bike-headlight-governance",
+          "story_identity": "ebike-headlight-governance-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "多地集中整治电动自行车改装强光灯为常规执法行动，暂无统一新规落地，68分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "holiday-price-warning-notices",
+          "story_identity": "holiday-price-warning-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "多地市场监管部门发布中秋国庆价格提醒告诫为节前例行预防性提示，无实质处罚案例落地，67分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "30-year-forgotten-deposit-ruling",
+          "story_identity": "forgotten-deposit-court-ruling-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 10
+          },
+          "drop_reason": "男子30年前1万元定期存单遗忘后起诉银行获判个案，普遍指导性有限，日常相关性13分未达15分门槛"
+        },
+        {
+          "candidate_key": "paederus-north-china-alert",
+          "story_identity": "paederus-dermatitis-north-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "北方多地出现隐翅虫为季节性昆虫提示，专家处置建议属常识性内容，日常相关性14分未达15分门槛"
+        },
+        {
+          "candidate_key": "wang-chuqin-asian-games-three-events",
+          "story_identity": "wang-chuqin-asiad-three-events-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "王楚钦表态亚运会身兼三项为出征前采访，赛事尚未开始，日常相关性12分未达15分门槛"
+        },
+        {
+          "candidate_key": "university-13day-holiday-rumor-response",
+          "story_identity": "university-holiday-rumor-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "网传一地所有高校不允许连放13天假系对网传说法的澄清回应，涉及一地个案，64分未达65分线"
+        },
+        {
+          "candidate_key": "deepseek-engineer-ai-essay",
+          "story_identity": "deepseek-engineer-ai-impact-essay-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "DeepSeek工程师发长文谈AI对职业冲击为个人观点讨论，无实质产品或政策增量，64分未达65分线"
+        },
+        {
+          "candidate_key": "japan-syphilis-surge",
+          "story_identity": "japan-syphilis-surge-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T08:00:00+08:00",
+          "scope": "international",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "日本梅毒感染人数上升为日本国内公共卫生话题，对中国读者日常决策直接影响有限，63分未达65分线"
+        },
+        {
+          "candidate_key": "robot-vacuum-points-scam",
+          "story_identity": "points-exchange-toy-vacuum-scam-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "积分兑换短信诱导购买玩具扫地机为消费骗局个案提醒，日常相关性14分未达15分门槛"
+        },
+        {
+          "candidate_key": "courier-robot-traffic-complaints",
+          "story_identity": "unmanned-courier-vehicle-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-12T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "郑州洛阳等地无人快递车街头接驳引发讨论发生于9月12日，属地方交通花絮，62分未达65分线"
+        },
+        {
+          "candidate_key": "space-tourism-5m-ticket",
+          "story_identity": "virgin-galactic-ticket-ctrip-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "510万元太空旅游线路在线旅游平台上架，受众极窄，61分未达65分线"
+        },
+        {
+          "candidate_key": "companion-photography-trend",
+          "story_identity": "paid-companion-photography-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "付费陪拍成为年轻游客新选择为新消费现象观察，60分未达65分线"
+        },
+        {
+          "candidate_key": "guangdong-fashion-week-autumn",
+          "story_identity": "guangdong-fashion-week-autumn-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "2026广东时装周秋季9月15日启幕为行业展会动态，日常相关性12分未达15分门槛"
+        },
+        {
+          "candidate_key": "brick-raising-youth-trend",
+          "story_identity": "brick-raising-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "年轻人零成本养砖头为社交媒体生活现象，58分未达65分线"
+        },
+        {
+          "candidate_key": "bank-teller-mantou-shop",
+          "story_identity": "bank-teller-mantou-startup-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "前银行柜员辞职开馒头店为个人职业选择自述个案，57分未达65分线"
+        },
+        {
+          "candidate_key": "xiaoqilingtong-farewell",
+          "story_identity": "xiaoqilingtong-farewell-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "绍剧表演艺术家小七龄童告别仪式9月15日举行，为地方戏曲人物动态，59分未达65分线"
+        },
+        {
+          "candidate_key": "wanwan-fashion-sales-million",
+          "story_identity": "wanwan-brand-first-month-sales-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 11,
+            "evidence": 7
+          },
+          "drop_reason": "初代网红女装品牌首月销售额破千万为网红商业个案且伴舆论争议，55分未达65分线"
+        },
+        {
+          "candidate_key": "china-u23-asiad-opener",
+          "story_identity": "china-u23-asiad-opener-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中国男足亚运队9月15日名古屋亚运会小组赛首战，未能从新华社央视等权威来源核实确切比分与赛况，证据不足"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-16-pinglu-canal-six-highlights",
+      "story_identity": "pinglu-canal-six-highlights-2026",
+      "headline": "🚢 平陆运河9月16日建成通航，西南出海航程缩短560公里",
+      "summary": "新华社9月15日报道平陆运河六大看点。平陆运河9月16日建成通航，全长134.2公里、总投资约727亿元，是新中国成立以来首条国家层面统筹建设的通江达海运河，可通航5000吨级船舶，西南地区货物经运河出海较传统路径缩短内河航程560公里以上。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-15T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "工程参数与通航时间以新华社报道和广西政府发布会为准，只述工程事实与物流便利，不作投资引导。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20260915/b50347222dcf4185a2b2212103b15216/c.html",
+          "title": "新华视点丨世纪工程平陆运河六大看点",
+          "captured_at": "2026-09-16T06:24:00+08:00",
+          "note": "新华社9月15日推出新华视点报道，梳理平陆运河重塑广西经济地理格局等六大看点"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国日报网",
+          "url": "https://cn.chinadaily.com.cn/a/202609/15/WS6aa948d7e4b09a165c78a48c.html",
+          "title": "经济观察｜平陆运河为中国内陆开放注入新动能",
+          "captured_at": "2026-09-16T06:24:30+08:00",
+          "note": "中国日报9月15日报道平陆运河9月16日建成通航，将改变企业对运输路线、物流成本和市场半径的考量"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-16-zhuque2-y7-ten-satellites",
+      "story_identity": "zhuque2-y7-qianfan-19-launch-2026",
+      "headline": "🚀 朱雀二号一箭十星，民营火箭首次组网大型星座",
+      "summary": "9月15日14时26分，朱雀二号改进型遥七运载火箭在东风商业航天创新试验区发射升空，将搭载的千帆极轨19组共10颗卫星顺利送入预定轨道。这是朱雀二号系列运载火箭第9次飞行，也是中国民营火箭公司首次承担大型卫星互联网星座组网任务。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "太空航天",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-15T14:26:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "发射时间与任务性质以新华社和中新社报道为准，只述发射事实，不作商业前景渲染。"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.news.cn/tech/20260915/51fb2f57596d4b03b44aae6c4cbdc3b3/c.html",
+          "title": "一箭十星 朱雀二号改进型遥七运载火箭发射成功",
+          "captured_at": "2026-09-16T06:25:00+08:00",
+          "note": "新华社酒泉9月15日电，朱雀二号改进型遥七14时26分发射，将千帆极轨19组10颗卫星送入预定轨道"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/gn/2026/09-15/10696872.shtml",
+          "title": "一箭十星 中国民营火箭首次承担大型卫星互联网星座组网任务",
+          "captured_at": "2026-09-16T06:25:30+08:00",
+          "note": "中新社9月15日报道，此次任务为朱雀二号系列第9次飞行，系中国民营火箭公司首次承担大型星座组网任务"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-16-august-70city-home-prices",
+      "story_identity": "stats-70city-aug-home-price-2026",
+      "headline": "🏠 8月70城房价出炉：一线城市新房环比转涨",
+      "summary": "国家统计局9月15日发布8月份70个大中城市住宅销售价格数据：一线城市新建商品住宅销售价格环比由上月持平转为上涨0.1%，其中上海上涨0.4%；一线城市二手住宅环比上涨0.1%，连续第六个月上涨，二三线城市环比降幅总体收窄，同比降幅继续收窄。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-15T09:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "房价数据以国家统计局发布为准，只述数据变化，不作购房投资建议。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://www.caixin.com/2026-09-15/102485106.html",
+          "title": "一线城市二手房价连续六月环比上涨 70城中62城仍环比下跌",
+          "captured_at": "2026-09-16T06:26:00+08:00",
+          "note": "财新网9月15日报道，国家统计局披露8月一线城市二手住宅环比上涨0.1%连续第六个月上涨，70城中62城二手房价环比下跌"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国网",
+          "url": "http://news.china.com.cn/2026-09/15/content_118697343.shtml",
+          "title": "8月份70城房价数据显示房地产市场保持稳的态势",
+          "captured_at": "2026-09-16T06:26:30+08:00",
+          "note": "中国网9月15日报道，8月一线城市新建商品住宅销售价格环比由持平转为上涨0.1%，二三线环比降幅总体收窄"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-16-wulei-haigang-acl-win",
+      "story_identity": "wulei-haigang-acl-6-4-ratchaburi-2026",
+      "headline": "⚽ 武磊传射建功，上海海港6比4客胜迎亚冠开门红",
+      "summary": "9月15日晚，2026-27赛季亚冠精英联赛首轮，上海海港客场6比4战胜泰国拉查武里，终结跨赛季亚冠连续13场不胜。武磊贡献一传一射，时隔近两年再度在亚冠赛场进球，外援安佩姆上演帽子戏法，全场两队合计打入10球。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-15T22:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛果与进球信息以北京日报等报道为准，只述比赛事实，不评价球员与球队管理。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6aa93acbe4b0e42f8f005786.html",
+          "title": "补时6分钟两队打进3球海港队6比4为中超赢得亚冠开门红",
+          "captured_at": "2026-09-16T06:27:00+08:00",
+          "note": "北京日报9月15日报道，武磊第51分钟传射建功时隔近2年再次在亚冠进球，海港6比4客胜拉查武里"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "新浪体育",
+          "url": "https://sports.sina.cn/2026-09-15/detail-inirxpin8396878.d.html",
+          "title": "新浪体育热点小时报丨2026年09月15日21时",
+          "captured_at": "2026-09-16T06:27:30+08:00",
+          "note": "新浪体育9月15日21时热点小时报：海港6比4击败拉查武里终结连续13场不胜，上一次亚冠取胜为2024年10月22日"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-16-wahaha-housing-fund-seizure",
+      "story_identity": "wahaha-hulin-housing-fund-seizure-2026",
+      "headline": "⚖️ 欠缴公积金200余万，娃哈哈原虎林工厂房产被查封",
+      "summary": "9月15日媒体报道，黑龙江省鸡西市鸡冠区人民法院近日公告查封虎林市宏胜饮料有限公司（原娃哈哈虎林工厂）名下一处房产，查封期限三年。当地住房公积金管理部门确认查封系追缴所致：工厂关停前百余名员工共被欠缴住房公积金200余万元，追缴工作正在推进。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-15T17:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "以法院公告与界面新闻、观察者网报道为准，隐去员工个人信息，不猜测企业经营状况。"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "界面新闻",
+          "url": "https://finance.sina.com.cn/jjxw/2026-09-15/doc-inirxhzu3716167.shtml",
+          "title": "娃哈哈因拖欠员工公积金被查封办公楼",
+          "captured_at": "2026-09-16T06:28:00+08:00",
+          "note": "界面新闻9月15日报道，虎林市宏胜饮料名下房产被鸡西市鸡冠区人民法院查封，查封期2026年8月20日至2029年8月20日"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/CaiJing/2026_09_15_900742.shtml",
+          "title": "欠缴超200万公积金？娃哈哈原虎林工厂房产被查封",
+          "captured_at": "2026-09-16T06:28:30+08:00",
+          "note": "观察者网9月15日报道，95名职工信访投诉后公积金管理部门发起追缴，工厂关停前百余名员工被欠缴200余万元"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-16-shenzhen-longhua-airport",
+      "story_identity": "shenzhen-longhua-airport-naming-2026",
+      "headline": "✈️ 深圳第二个机场定名：南头直升机场迁建深圳龙华机场",
+      "summary": "9月15日消息，民航中南地区管理局日前正式批复：原深圳南头直升机场迁建到龙华樟坑径后，标准名称确定为“深圳龙华机场”，机场类别为A1类通用机场。项目总投资约10亿元，规划800米跑道和26个停机坪，预计2027年底建成投用。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-15T15:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "批复信息与建设进度以深圳市龙华区政府发布和财联社报道为准，只述机场命名与规划事实。"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "龙华政府在线",
+          "url": "https://www.szlhq.gov.cn/gkmlpt/content/12/12982/post_12982043.html",
+          "title": "深圳龙华机场，来了！",
+          "captured_at": "2026-09-16T06:29:00+08:00",
+          "note": "深圳市龙华区政府9月15日发布，项目8月底取得民航中南地区管理局命名批复，预计2027年底建成投用"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财联社",
+          "url": "https://www.cls.cn/detail/2483987",
+          "title": "深圳即将迎来第二个机场",
+          "captured_at": "2026-09-16T06:29:30+08:00",
+          "note": "财联社9月15日电，民航中南地区管理局批复原南头直升机场迁建龙华樟坑径后标准名称确定为深圳龙华机场"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
