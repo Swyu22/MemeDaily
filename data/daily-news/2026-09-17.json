@@ -1,0 +1,1060 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-17",
+  "generated_at": "2026-09-17T06:29:09+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 41,
+    "published": 8,
+    "dropped_safety": {
+      "controversy": 1,
+      "geopolitics": 2,
+      "minors": 1,
+      "politics": 1,
+      "privacy": 1,
+      "public_safety": 2
+    },
+    "dropped_low_confidence": 21,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 11,
+      "official_sources": 1,
+      "state_media_sources": 3,
+      "major_media_sources": 7,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 4
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 8,
+        "relaxed_48h": 13,
+        "relaxed_72h": 18
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 41,
+          "cumulative_unique_candidates": 41,
+          "source_scope": [
+            "百度热搜公开热榜与民生话题佐证",
+            "新华社央视网人民网中新网等央媒发布",
+            "北京日报北京商报界面新闻财联社羊城晚报等持牌媒体原创报道",
+            "国铁集团民政部中央气象台等政府机构公开发布",
+            "财经媒体对美联储决议与消费市场动态的多源交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-17-fed-hikes-25bp-to-4pct",
+          "story_identity": "fed-fomc-sep-2026-rate-hike-25bp",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T02:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-09-17-fed-hikes-25bp-to-4pct",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-17-china-basketball-asian-games-semifinal",
+          "story_identity": "china-men-basketball-asian-games-qf-saudi-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T17:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-17-china-basketball-asian-games-semifinal",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-17-u23-football-win-dprk-opener",
+          "story_identity": "china-u23-football-dprk-2-1-asian-games-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-17-u23-football-win-dprk-opener",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-17-national-day-train-tickets-sale",
+          "story_identity": "national-day-2026-train-tickets-presale-sep17",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-09-17-national-day-train-tickets-sale",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-17-huabei-baitiao-payment-separation",
+          "story_identity": "huabei-baitiao-yuefu-payment-option-separation-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-17-huabei-baitiao-payment-separation",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-17-lixiang-i9-launch-price",
+          "story_identity": "li-auto-i9-launch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-17-lixiang-i9-launch-price",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-17-doubao-navix-ultra-on-sale",
+          "story_identity": "nubia-navix-ultra-doubao-phone-sale-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T15:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-17-doubao-navix-ultra-on-sale",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-17-zhaojiaju-tor330-champion",
+          "story_identity": "zhaojiaju-tor330-2026-champion-record",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-17-zhaojiaju-tor330-champion",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "pinglu-canal-dividend-coverage",
+          "story_identity": "pinglu-canal-opening-benefits-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "平陆运河通航已于9月16日作为头条刊发，今日红利解读属同一事件延伸，控制题材重复未选，74分仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "rogue-apps-elderly-phone",
+          "story_identity": "sichuan-elderly-phone-130-rogue-apps-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "老人手机被流氓软件攻陷为个案报道，工信部既有规定重申，服务增量有限，74分未达严格档"
+        },
+        {
+          "candidate_key": "ministry-pension-scam-denial",
+          "story_identity": "mca-guosheng-minan-pension-scam-warning-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 10,
+            "everyday_relevance": 25,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "民政部9月14日发布风险提示，至评估时已逾48小时，仅达72小时宽松档，未选"
+        },
+        {
+          "candidate_key": "pingyao-film-festival-lineup",
+          "story_identity": "pingyao-film-festival-10th-lineup-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "平遥国际电影展片单公布属影展常规节点，热度与民生相关性不及入选条目"
+        },
+        {
+          "candidate_key": "geo-hazard-rain-warning",
+          "story_identity": "geo-hazard-mountain-torrent-warning-hubei-hunan-2026-09-16",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "近一周已多次刊发暴雨台风预警，此次地灾山洪黄色预警范围有限，控制预警题材重复"
+        },
+        {
+          "candidate_key": "wang-manyu-no1-response",
+          "story_identity": "wang-manyu-world-no1-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "王曼昱登顶女单世界第一已于9月15日刊发，9月16日回应属同一事件后续，未重复选取"
+        },
+        {
+          "candidate_key": "nagoya-airport-stranded-delegations",
+          "story_identity": "nagoya-airport-asian-games-delegations-stranded-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T12:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "名古屋机场系统故障致多国代表团滞留属当地交通事件，中国代表团已自行解决，代表性不足"
+        },
+        {
+          "candidate_key": "nezha-auto-restructuring",
+          "story_identity": "nezha-auto-restructuring-30b-yuan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "哪吒汽车重整草案9月11日披露、相关澄清9月15日作出，已过48小时窗口，仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "zhongxuegao-price-cut-comeback",
+          "story_identity": "zhongxuegao-price-cut-comeback-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "钟薛高降价复出为单一企业商业动态，公共性一般，66分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "supersonic-passenger-plane-outlook",
+          "story_identity": "supersonic-passenger-plane-beijing-shanghai-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "超音速客机为航空科技大会发布的议题展望，无量产或航线时间表，65分仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "county-consumption-ranking",
+          "story_identity": "top-county-consumption-retail-2025-ranking",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "drop_reason": "县域社零总额排行属年度数据盘点，时效与新意不足，64分不达线"
+        },
+        {
+          "candidate_key": "jilin-school-tiger-sighting",
+          "story_identity": "jilin-school-tiger-sighting-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "drop_reason": "老虎出没地点距校区约10公里，校方称暂不影响校内安全，事件性弱"
+        },
+        {
+          "candidate_key": "zhang-yiming-asia-richest",
+          "story_identity": "zhang-yiming-asia-richest-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "富豪榜变动与日常民生关联弱，日常相关性未达15分底线"
+        },
+        {
+          "candidate_key": "mycos-freshman-living-cost",
+          "story_identity": "mycos-freshman-living-cost-1744-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "drop_reason": "大学生生活费为机构调查数据发布，无新政策变化，62分不达线"
+        },
+        {
+          "candidate_key": "zhang-meie-scenic-npc-rejob",
+          "story_identity": "zhang-meie-hengdian-scenic-npc-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "drop_reason": "75岁演员应聘景区NPC为温暖个案，公共增量有限，61分不达线"
+        },
+        {
+          "candidate_key": "anyue-school-lunch-umbrella",
+          "story_identity": "sichuan-anyue-school-lunch-umbrella-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "drop_reason": "乡村小学就餐场所问题校方已回应解释，待整改结果再跟踪，60分不达线"
+        },
+        {
+          "candidate_key": "xinyang-station-car-7-years",
+          "story_identity": "xinyang-station-car-parked-7-years-fee-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "drop_reason": "小车停放高铁站7年欠费为猎奇个案，无普遍服务信息"
+        },
+        {
+          "candidate_key": "iphone17-vendor-hoarding",
+          "story_identity": "zhengzhou-vendor-iphone17-promax-hoarding-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "手机商囤货看涨属市场个例，日常相关性未达15分底线"
+        },
+        {
+          "candidate_key": "ibaraki-m48-quake",
+          "story_identity": "japan-ibaraki-m48-quake-2026-09-17",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T23:07:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 19,
+            "everyday_relevance": 8,
+            "evidence": 8
+          },
+          "drop_reason": "日本茨城县4.8级地震无重大损失报告，属常规地方事件，日常相关性低"
+        },
+        {
+          "candidate_key": "young-man-rare-leukemia",
+          "story_identity": "sichuan-young-man-rare-leukemia-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "个体罕见病遭遇，公共性弱，不消费个人苦难"
+        },
+        {
+          "candidate_key": "caribbean-conch-pearl-find",
+          "story_identity": "caribbean-conch-pearl-find-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T14:00:00+08:00",
+          "scope": "international",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 6,
+            "evidence": 8
+          },
+          "drop_reason": "游客买海螺开出珍珠为个人奇闻，无公共影响，日常相关性远低于底线"
+        },
+        {
+          "candidate_key": "nicholas-tse-cross-industry",
+          "story_identity": "nicholas-tse-cross-industry-anxiety-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅聚合热榜与综艺片段佐证，缺乏持牌媒体独立报道支撑"
+        },
+        {
+          "candidate_key": "ni-hongjie-variety-moment",
+          "story_identity": "ni-hongjie-yan-ni-variety-moment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "综艺花絮话题，仅热榜佐证，无独立报道"
+        },
+        {
+          "candidate_key": "shentan-film-oct1-release",
+          "story_identity": "shentan-trace-film-oct1-release-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "影片定档消息仅片方与热榜渠道，缺乏独立报道佐证热度"
+        },
+        {
+          "candidate_key": "noodle-shop-egg-promo",
+          "story_identity": "jiangsu-noodle-shop-egg-promo-30plus-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "面馆营销活动引发讨论，仅热榜佐证，无持牌媒体跟进"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-17-fed-hikes-25bp-to-4pct",
+      "story_identity": "fed-fomc-sep-2026-rate-hike-25bp",
+      "headline": "💱 美联储加息25个基点，基准利率升至3.75%至4%",
+      "summary": "北京时间9月17日凌晨，美联储结束为期两天的议息会议，以12比0通过加息25个基点，联邦基金利率目标区间升至3.75%—4%，为2023年7月以来首次加息。声明称通胀仍处高位，美元指数应声站上100关口。",
+      "category": "国际",
+      "scope": "international",
+      "topic": "重大事件",
+      "primary_organization": "美国联邦储备委员会",
+      "audience_relevance": {
+        "basis": "global_major_event",
+        "impact_scale": "global_systemic",
+        "china_connection": "美元基准利率上行牵动人民币汇率、跨境资本流动与大宗商品价格，与国内读者的资产和物价间接相连",
+        "everyday_impact": "留学换汇、出境游和海淘成本可能上升，黄金与理财收益波动加大，有房贷和投资的读者需关注后续变化",
+        "score": 21
+      },
+      "score": 88,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-17T02:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "宏观金融事件，表述限于决议事实与市场即时反应，不涉及投资建议"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/wm/2026-09-17/doc-inisaawv0453212.shtml",
+          "title": "重磅！美联储，加息25个基点！",
+          "captured_at": "2026-09-17T06:24:00+08:00",
+          "note": "北京时间9月17日凌晨2点，美联储宣布加息25个基点至3.75%—4.00%，为2023年7月以来首次加息"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国基金报",
+          "url": "https://zijing.com.cn/web/article/1549968889263370240/web/content_1549968889263370240.html",
+          "title": "美联储9月16日宣布加息25个基点，将联邦基金利率目标区间上调至3.75%-4%",
+          "captured_at": "2026-09-17T06:24:00+08:00",
+          "note": "FOMC以12比0一致通过加息决议，声明称经济稳健扩张、通胀仍处高位"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "微博热搜",
+          "url": "https://weibo.com/a/hot/f15087ae33df32c5_0.html",
+          "captured_at": "2026-09-17T06:24:00+08:00",
+          "note": "“美联储宣布加息25个基点”登上微博热搜，佐证公共关注度"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-17-china-basketball-asian-games-semifinal",
+      "story_identity": "china-men-basketball-asian-games-qf-saudi-2026",
+      "headline": "🏀 中国男篮87比78力克沙特，挺进亚运会四强",
+      "summary": "9月16日，爱知·名古屋亚运会男篮1/4决赛，中国队以87比78战胜沙特阿拉伯队，晋级四强，半决赛将对阵日本队。廖三宁砍下全场最高的30分，余嘉豪贡献16分9篮板，小组赛中国队三战全胜。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-16T17:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果报道，央媒与持牌媒体多源一致"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-16/10697633.shtml",
+          "title": "拼到最后！中国男篮击败沙特队晋级亚运会四强",
+          "captured_at": "2026-09-17T06:20:00+08:00",
+          "note": "当地时间9月16日1/4决赛，中国队87比78力克沙特队晋级四强"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://sports.cctv.com/2026/09/16/VIDEqESxmaos5D9ne03WP5AH260916.shtml",
+          "title": "[亚运会]男篮1/4决赛：中国VS沙特",
+          "captured_at": "2026-09-17T06:20:00+08:00",
+          "note": "央视体育播出比赛并确认中国87比78战胜沙特"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/09/16/11961335.shtml",
+          "title": "拒绝被逆转 力克沙特队 中国男篮闯入名古屋亚运会四强",
+          "captured_at": "2026-09-17T06:20:00+08:00",
+          "note": "中国队小组赛三战全胜净胜128分，半决赛将对阵日本队"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-17-u23-football-win-dprk-opener",
+      "story_identity": "china-u23-football-dprk-2-1-asian-games-2026",
+      "headline": "⚽ 亚运男足2比1逆转朝鲜队，中国队取得开门红",
+      "summary": "9月16日晚，名古屋亚运会男足小组赛首轮，以U23球员为班底的中国队在先丢一球的情况下，凭借吴曦与张玉宁的传射配合2比1逆转朝鲜队，取得开门红。中国队小组赛第二轮将于9月20日进行。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 14
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-16T20:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果报道，央媒多源一致"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/20260916/bd31269bcc7b43cf848deea37966ac7f/c.html",
+          "title": "中国男足战胜朝鲜队取得亚运会“开门红”",
+          "captured_at": "2026-09-17T06:22:00+08:00",
+          "note": "新华社名古屋9月16日电，中国队2比1战胜朝鲜队"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://sports.cctv.com/2026/09/16/VIDEGY083kU6LoxeDa2h5SXY260916.shtml",
+          "title": "[亚运会]男足小组赛：中国2-1朝鲜集锦",
+          "captured_at": "2026-09-17T06:22:00+08:00",
+          "note": "央视体育播出中国2比1战胜朝鲜的比赛集锦"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "极目新闻",
+          "url": "https://m.163.com/dy/article/L6VPKT7F053469LG.html",
+          "title": "中国男足亚运队2比1逆转战胜朝鲜队，收获名古屋亚运会开门红",
+          "captured_at": "2026-09-17T06:22:00+08:00",
+          "note": "吴曦与张玉宁两次连线传射建功，中国队先丢一球后完成逆转"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-17-national-day-train-tickets-sale",
+      "story_identity": "national-day-2026-train-tickets-presale-sep17",
+      "headline": "🚄 国庆假期首日火车票今日开售，购票日历请收好",
+      "summary": "按照火车票15天预售期安排，9月17日起旅客可通过铁路12306购买国庆假期首日（10月1日）火车票。2026年铁路中秋国庆假期运输自9月23日启动至10月8日结束，共16天，10月1日为客流最高峰日，铁路部门建议用好候补购票功能。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-17T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "铁路售票服务信息，与国铁集团公布方案一致"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/government/20260910/b6317083a452476181399a03dba65faa/c.html",
+          "title": "中秋国庆假期运输火车票开始发售",
+          "captured_at": "2026-09-17T06:18:00+08:00",
+          "note": "国铁集团：假期运输自9月23日至10月8日共16天，10月1日为客流最高峰日，按15天预售期9月17日可购10月1日车票"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://society.people.com.cn/n1/2026/0909/c1008-40795534.html",
+          "title": "中秋国庆假期运输火车票开始发售",
+          "captured_at": "2026-09-17T06:18:00+08:00",
+          "note": "新华社报道假期运输方案与车票预售安排"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "厦门晚报",
+          "url": "https://news.xmnn.cn/xmxw/202609/t20260910_450119.html",
+          "title": "中秋车票明日开抢 9月17日可购买10月1日的车票",
+          "captured_at": "2026-09-17T06:18:00+08:00",
+          "note": "9月17日可购买10月1日车票，建议旅客使用起售提醒与候补购票功能"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-17-huabei-baitiao-payment-separation",
+      "story_identity": "huabei-baitiao-yuefu-payment-option-separation-2026",
+      "headline": "💳 花呗、白条、月付9月30日起退出常规支付选项",
+      "summary": "《金融产品网络营销管理办法》9月30日起施行，支付工具与金融产品须强制区隔，花呗、白条、月付等信贷产品将退出常规支付选项，与余额、银行卡分区展示，且不得再诱导营销。多家平台回应称目前业务正常开展；网传零钱通、余额宝不能付款系误读。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 19,
+        "everyday_relevance": 22,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-16T15:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "监管新规落地报道，附平台回应与误读澄清，表述限于公开信息"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "北京商报",
+          "url": "https://www.bbtnews.com.cn/2026/0916/606149.shtml",
+          "title": "月付将退出支付选项？记者实测各大互联网平台",
+          "captured_at": "2026-09-17T06:23:00+08:00",
+          "note": "9月30日为最终整改节点，届时所有支付场景将全部实现区隔展示"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "看看新闻",
+          "url": "https://finance.sina.com.cn/stock/t/2026-09-16/doc-inirxtrk8333274.shtml",
+          "title": "9月30日起！花呗白条月付等将退出常规支付选项",
+          "captured_at": "2026-09-17T06:23:00+08:00",
+          "note": "《金融产品网络营销管理办法》今年4月颁布，9月30日起支付工具与金融产品强制区隔"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "同花顺财经",
+          "url": "http://field.10jqka.com.cn/20260916/c679942060.shtml",
+          "captured_at": "2026-09-17T06:23:00+08:00",
+          "note": "澄清“零钱通、余额宝不能用于消费付款”系误读，两家平台功能不受影响"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-17-lixiang-i9-launch-price",
+      "story_identity": "li-auto-i9-launch-2026",
+      "headline": "🚗 理想i9正式上市：纯电六座SUV售价36.98万元",
+      "summary": "9月16日晚，理想汽车发布纯电旗舰SUV理想i9，仅推出Home一个版本，全国统一零售价36.98万元，本周内开启交付。新车基于第二代纯电平台，标配101千瓦时电池与双电机四驱，CLTC续航705公里。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 14
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-16T20:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "新车上市消费信息，价格与配置以官方发布为准"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-09-16/doc-inirzwqx0503583.shtml",
+          "title": "36.98万元，理想i9上市！",
+          "captured_at": "2026-09-17T06:19:00+08:00",
+          "note": "9月16日晚理想i9正式上市，仅推出Home版本，售价36.98万元"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网",
+          "url": "https://auto.ifeng.com/c/8wTbVoADRHe",
+          "title": "理想i9正式上市售价36.98万元",
+          "captured_at": "2026-09-17T06:19:00+08:00",
+          "note": "理想汽车宣布纯电大型SUV理想i9上市，官方指导价36.98万元"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "IT之家",
+          "url": "https://www.ithome.com/1/003/280.htm",
+          "title": "全新理想 i9 Home 六座 SUV 发布：第二代纯电平台的首发旗舰，36.98 万元",
+          "captured_at": "2026-09-17T06:19:00+08:00",
+          "note": "全系标配101千瓦时5C超充电池与双电机四驱，CLTC综合续航705公里"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-17-doubao-navix-ultra-on-sale",
+      "story_identity": "nubia-navix-ultra-doubao-phone-sale-2026",
+      "headline": "📱 豆包手机二代开售：努比亚NaviX Ultra售5499元起",
+      "summary": "9月16日，搭载豆包手机助手消费者版的努比亚NaviX Ultra正式上市开售，12GB+512GB版售价5999元，叠加国补后5499元起。官方称其为全球首款AI智能体手机，可通过语音指令让AI跨应用办事。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-16T15:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "数码产品开售信息，多源报道一致"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "界面新闻",
+          "url": "https://www.jiemian.com/article/15103043.html",
+          "title": "“豆包手机”努比亚NaviX Ultra上市开售，售价5499元起",
+          "captured_at": "2026-09-17T06:21:00+08:00",
+          "note": "9月16日努比亚NaviX Ultra正式上市，12GB+512GB版5999元、国补后5499元起"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/09/16/11961138.shtml",
+          "title": "AI智能体手机上市，努比亚NaviX Ultra搭载豆包手机助手",
+          "captured_at": "2026-09-17T06:21:00+08:00",
+          "note": "AI智能体手机从工程样机迈入规模化量产商用阶段"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财联社",
+          "url": "https://www.cls.cn/detail/2485030",
+          "title": "5000多元就能买到智能体手机？豆包二代手机努比亚NaviX Ultra今天正式开售",
+          "captured_at": "2026-09-17T06:21:00+08:00",
+          "note": "科创板日报报道发布会价格与即时开售情况"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-17-zhaojiaju-tor330-champion",
+      "story_identity": "zhaojiaju-tor330-2026-champion-record",
+      "headline": "🏃 赵家驹65小时55分夺巨人之旅330公里冠军创历史",
+      "summary": "9月16日，意大利巨人之旅330公里越野赛落幕，中国选手赵家驹以65小时55分22秒夺冠，将赛道纪录缩短13分钟，成为该赛事史上首位中国籍、也是首位亚洲冠军。他曾是一名外卖骑手，去年在同赛事退赛后立志再来。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 18,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 8,
+      "occurred_at": "2026-09-16T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事突破报道，多家媒体交叉一致"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "看看新闻",
+          "url": "https://www.kankanews.com/detail/kDwmvNA432l",
+          "title": "赵家驹赢得巨人之旅330中国首冠",
+          "captured_at": "2026-09-17T06:25:00+08:00",
+          "note": "65小时55分22秒完赛，刷新赛道纪录13分钟，成为赛事首位中国冠军"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网",
+          "url": "https://sports.ifeng.com/c/8wSd7cHDWW3",
+          "title": "世界最艰难的越野跑，中国选手赵家驹破纪录夺冠",
+          "captured_at": "2026-09-17T06:25:00+08:00",
+          "note": "北京时间9月16日夺冠并打破赛会纪录，创造亚洲历史"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "懂球帝",
+          "url": "https://www.dongqiudi.com/article/6353529",
+          "title": "突破极限，中国选手赵家驹330公里越野跑破纪录夺冠",
+          "captured_at": "2026-09-17T06:25:00+08:00",
+          "note": "意大利当地时间9月16日凌晨冲线，打破66小时08分22秒的赛事纪录"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
