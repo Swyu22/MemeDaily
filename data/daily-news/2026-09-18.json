@@ -1,0 +1,929 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-18",
+  "generated_at": "2026-09-18T06:30:20+08:00",
+  "published_at": "2026-09-18T06:30:20+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 42,
+    "published": 7,
+    "dropped_safety": {
+      "celebrity_dispute": 2,
+      "controversy": 1,
+      "geopolitics": 2,
+      "illegal": 2,
+      "minors": 1,
+      "politics": 2,
+      "privacy": 1,
+      "propaganda": 1,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 18,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 17,
+      "official_sources": 0,
+      "state_media_sources": 11,
+      "major_media_sources": 6,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 4
+    },
+    "selection": {
+      "tier": "relaxed_48h",
+      "qualified": {
+        "strict_24h": 2,
+        "relaxed_48h": 7,
+        "relaxed_72h": 9
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 42,
+          "cumulative_unique_candidates": 42,
+          "source_scope": [
+            "百度热搜公开热榜与民生话题佐证",
+            "新华社新华网人民网央视网中国新闻网等央媒发布",
+            "21世纪经济报道经济观察网财联社北京日报昆明信息港等持牌媒体原创报道",
+            "国家医保局国家粮食和物资储备局国家统计局等政府机构公开发布",
+            "东方财富新浪财经证券时报等财经媒体对消费与市场动态的交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-18-medical-insurance-catalog-13types",
+          "story_identity": "nhsa-medical-service-catalog-13-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-09-18-medical-insurance-catalog-13types",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 24,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-09-18-summer-grain-purchase-100m-tons",
+          "story_identity": "summer-grain-purchase-100m-tons-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-18-summer-grain-purchase-100m-tons",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-09-18-u20-women-penalty-loss-italy",
+          "story_identity": "china-u20-women-italy-penalty-r16-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T02:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-18-u20-women-penalty-loss-italy",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-09-18-yujing-worm-fossil-found",
+          "story_identity": "yujing-worm-fossil-chengjiang-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-18-yujing-worm-fossil-found",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-18-double-holiday-travel-boom",
+          "story_identity": "mid-autumn-national-day-travel-booking-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-18-double-holiday-travel-boom",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-18-yunnan-durian-harvest",
+          "story_identity": "yunnan-jinghong-durian-harvest-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-18-yunnan-durian-harvest",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-09-18-iphone-duo-wechat-response",
+          "story_identity": "iphone-duo-wechat-dual-support-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-18-iphone-duo-wechat-response",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "nbs-secondhand-home-data",
+          "story_identity": "nbs-secondhand-online-signing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "二手房网签数据9月15日发布，距评估打戳约70小时，仅达72小时宽松档，未选"
+        },
+        {
+          "candidate_key": "huayi-restructuring",
+          "story_identity": "st-huayi-chinese-culture-restructuring-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 12
+          },
+          "drop_reason": "影视公司重整为资本市场个案，日常相关性未达15分底线"
+        },
+        {
+          "candidate_key": "lantu-taishan-x8-faults",
+          "story_identity": "lantu-taishan-x8-owner-rights-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 12
+          },
+          "drop_reason": "新车故障个案维权，厂商暂无明确回应，日常相关性未达15分底线"
+        },
+        {
+          "candidate_key": "china-basketball-semifinal-preview",
+          "story_identity": "china-men-basketball-asian-games-semifinal-japan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T00:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "半决赛预告属昨日晋级报道同一赛事延伸，69分未达70分档线"
+        },
+        {
+          "candidate_key": "oct2-train-tickets",
+          "story_identity": "national-day-2026-train-tickets-presale",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "假期车票预售为连续性服务信息，昨日已刊发首日开售，今日10月2日票开售属同一事件延续"
+        },
+        {
+          "candidate_key": "teacher-postgrad-860k",
+          "story_identity": "primary-secondary-teacher-postgrad-860k-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "教师队伍学历统计为数据盘点，无新政策变化，63分不达线"
+        },
+        {
+          "candidate_key": "cash-home-buyers",
+          "story_identity": "guangshen-secondhand-full-cash-buyers-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "drop_reason": "广深全款购房占比与二手房存量时代题材重叠，属区域市场结构数据，62分不达线"
+        },
+        {
+          "candidate_key": "minimalist-wedding",
+          "story_identity": "shanxi-minimalist-wedding-299-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "drop_reason": "极简婚礼为个体个案，公共增量有限，58分不达线"
+        },
+        {
+          "candidate_key": "shanghai-mooncake-queue",
+          "story_identity": "shanghai-fresh-meat-mooncake-queue-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "中秋前月饼排队属节庆景象，服务信息增量有限，日常相关性未达底线"
+        },
+        {
+          "candidate_key": "sun-yingsha-cruise",
+          "story_identity": "sun-yingsha-cruise-interview-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "运动员邮轮访谈为花絮内容，新闻性弱，55分不达线"
+        },
+        {
+          "candidate_key": "yiwu-flying-saucer",
+          "story_identity": "yiwu-manned-flying-saucer-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "商户自制载人飞碟为新奇个案，特许飞行未定，公共性弱"
+        },
+        {
+          "candidate_key": "man-declared-dead-returns",
+          "story_identity": "man-declared-dead-returns-8-years-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 9
+          },
+          "drop_reason": "宣告死亡后归来为法律个案，无普遍服务信息"
+        },
+        {
+          "candidate_key": "contraceptive-thrombosis-case",
+          "story_identity": "zhejiang-woman-contraceptive-thrombosis-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "drop_reason": "个案诊疗经历，用药风险提示增量有限，61分不达线"
+        },
+        {
+          "candidate_key": "hyrox-athlete-apology",
+          "story_identity": "hyrox-athlete-apology-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T12:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 19,
+            "everyday_relevance": 7,
+            "evidence": 7
+          },
+          "drop_reason": "海外健身赛事选手道歉属地方赛事花絮，代表性不足"
+        },
+        {
+          "candidate_key": "guangdong-intercity-discount",
+          "story_identity": "guangdong-intercity-new-diagram-discount-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 19,
+            "evidence": 9
+          },
+          "drop_reason": "广东城际票价优惠9月15日公布且限定局部线路，时效偏弱，64分不达线"
+        },
+        {
+          "candidate_key": "fed-market-reaction",
+          "story_identity": "fed-hike-rmb-a-share-reaction-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T09:15:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 11
+          },
+          "drop_reason": "人民币中间价调升为昨日美联储加息同一事件后续，不重复选取"
+        },
+        {
+          "candidate_key": "jing-yidan-farewell",
+          "story_identity": "jing-yidan-farewell-ceremony-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T07:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "告别仪式为9月14日讣告同一事件后续，69分未达档线"
+        },
+        {
+          "candidate_key": "chen-jianzhou-surgery",
+          "story_identity": "chen-jianzhou-surgery-photo-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 19,
+            "everyday_relevance": 8,
+            "evidence": 7
+          },
+          "drop_reason": "艺人术后动态属个人近况，公共性弱"
+        },
+        {
+          "candidate_key": "mexico-city-ufo",
+          "story_identity": "mexico-city-ufo-sighting-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T08:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅有飞行员与市民拍摄画面转述，未获官方证实，缺乏权威报道"
+        },
+        {
+          "candidate_key": "qi-wei-digital-avatar",
+          "story_identity": "qi-wei-ai-digital-avatar-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "艺人数字分身受访内容仅访谈与热榜佐证，无独立新闻报道"
+        },
+        {
+          "candidate_key": "island-comfort-drama",
+          "story_identity": "island-comfort-drama-popularity-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "剧集热度话题仅热榜佐证，无持牌媒体独立报道"
+        },
+        {
+          "candidate_key": "iphone-duo-crease-test",
+          "story_identity": "iphone-duo-crease-display-test-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "折叠屏折痕实测与入选条目同属iPhone Duo话题，且仅测评片段佐证"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-10",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "illegal"
+        },
+        {
+          "candidate_key": "candidate-11",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-12",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-13",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-18-medical-insurance-catalog-13types",
+      "story_identity": "nhsa-medical-service-catalog-13-2026",
+      "headline": "🏥 全国统一医保医疗服务项目目录首次制定，首批覆盖13类",
+      "summary": "国家医保局9月16日正式印发工作方案，我国将首次制定全国统一的医保医疗服务项目目录，首批覆盖心血管、呼吸、眼科、妇科、放疗、麻醉、护理、康复、口腔种植、辅助生殖等13个类别，中医暂不纳入。目录将率先应用于跨省异地就医结算，再逐步与各省支付范围衔接。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 18,
+        "everyday_relevance": 24,
+        "evidence": 12
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-16T09:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "医保部门正式方案发布，央媒与财经媒体多源一致，表述限于公开方案内容"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/gn/2026/09-16/10697167.shtml",
+          "title": "全国统一医保医疗服务项目目录首次制定 首批覆盖13个类别",
+          "captured_at": "2026-09-18T06:17:00+08:00",
+          "note": "央视新闻：国家医保局9月16日印发工作方案，首批覆盖13个类别"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "21世纪经济报道",
+          "url": "https://www.21jingji.com/article/20260917/herald/35f05b697375df7d69edce505a124b91.html",
+          "title": "首批目录13类，中医暂不纳入：医疗服务项目医保支付加快全国统一",
+          "captured_at": "2026-09-18T06:17:00+08:00",
+          "note": "正式方案由征求意见稿11类调整为13类，中医相关类别暂时移出"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "经济观察网",
+          "url": "http://www.eeo.com.cn/2026/0917/1039889.shtml",
+          "title": "首批目录13类，中医暂不纳入：医疗服务项目医保支付加快全国统一",
+          "captured_at": "2026-09-18T06:17:00+08:00",
+          "note": "目录将率先应用于跨省异地就医结算，再与各省支付范围衔接"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-18-summer-grain-purchase-100m-tons",
+      "story_identity": "summer-grain-purchase-100m-tons-2026",
+      "headline": "🌾 夏粮旺季收购接近尾声，全国累计收购小麦1亿吨",
+      "summary": "国家粮食和物资储备局9月16日发布数据：夏粮旺季收购接近尾声，全国累计收购小麦1亿吨、早籼稻1200万吨，进度略快于上年；河南、安徽已启动小麦最低收购价执行预案。秋粮收购仓容、资金、人员、器材准备基本就绪，预计旺季收购量约3.5亿吨。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 18,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-16T16:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "粮食收购官方数据发布，新华社与人民网一致"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260916/55bb772347b14677884fb0b72905e51c/c.html",
+          "title": "夏粮旺季收购基本结束 全国累计收购小麦1亿吨",
+          "captured_at": "2026-09-18T06:18:00+08:00",
+          "note": "国家粮食和物资储备局：小麦1亿吨、早籼稻1200万吨，预计秋粮旺季收购量约3.5亿吨"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://finance.people.com.cn/n1/2026/0916/c1004-40799984.html",
+          "title": "夏粮收购接近尾声 秋粮收购准备基本就绪",
+          "captured_at": "2026-09-18T06:18:00+08:00",
+          "note": "河南、安徽启动小麦最低收购价执行预案，江西、湖南启动早籼稻预案"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-18-u20-women-penalty-loss-italy",
+      "story_identity": "china-u20-women-italy-penalty-r16-2026",
+      "headline": "⚽ U20女足点球惜败意大利，无缘世界杯八强",
+      "summary": "北京时间9月17日凌晨，2026年U20女足世界杯16强赛在波兰索斯诺维茨举行，中国队120分钟内与意大利队战成1比1，点球大战4比5惜败，无缘八强。中国队小组赛1胜1平1负晋级，时隔八年重返该项赛事淘汰赛。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-17T02:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果报道，新华社央视多源一致"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.xinhuanet.com/sports/20260917/34ae1b6a0886499e9ea1fddcabe61e3c/c.html",
+          "title": "点球大战惜败意大利 中国U20女足无缘世界杯八强",
+          "captured_at": "2026-09-18T06:19:00+08:00",
+          "note": "新华社华沙9月16日电：中国队1比1战平意大利，点球4比5惜败"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-17/10698091.shtml",
+          "title": "U20女足世界杯：中国队点球大战惜败意大利无缘八强",
+          "captured_at": "2026-09-18T06:19:00+08:00",
+          "note": "中国队小组赛1胜1平1负以成绩较好的小组第三晋级16强"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://tv.cctv.com/2026/09/17/VIDEcl7NAoxCGCebx5xQH8fd260917.shtml",
+          "title": "[女足]中国U20女足点球大战负于意大利 无缘八强",
+          "captured_at": "2026-09-18T06:19:00+08:00",
+          "note": "央视播出比赛报道，确认总比分5比6告负"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-18-yujing-worm-fossil-found",
+      "story_identity": "yujing-worm-fossil-chengjiang-2026",
+      "headline": "🔬 澄江生物群发现5.18亿年前“玉净虫”化石",
+      "summary": "西北大学韩健研究员团队联合国内外学者，在距今约5.18亿年的云南澄江生物群中发现步带动物新物种“胶膜玉净虫”，4件化石完整保留圆柱形躯干、U形肠道与附肢结构，为破解海星、海百合等动物的早期演化之谜提供关键实物证据。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-17T09:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "科研成果发布，新华社人民网科技日报多源一致"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/tech/20260917/73cb7683da4142a4933f4fad0512d8b3/c.html",
+          "title": "科研人员发现5.18亿年前步带动物胶膜玉净虫化石",
+          "captured_at": "2026-09-18T06:20:00+08:00",
+          "note": "记者9月17日从西北大学了解到该发现，成果发表于《当代生物学》"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://sn.people.com.cn/n2/2026/0917/c226647-41699083.html",
+          "title": "全球罕见！我国科学家发现5.18亿年前胶膜玉净虫化石",
+          "captured_at": "2026-09-18T06:20:00+08:00",
+          "note": "4件标本产自云南昆明寒武纪第三期澄江化石库"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "科技日报",
+          "url": "https://www.stdaily.com/web/gdxw/2026-09/17/content_583046.html",
+          "title": "西北大学发现“胶膜玉净虫” 步带动物共祖有了关键证据",
+          "captured_at": "2026-09-18T06:20:00+08:00",
+          "note": "该化石为已知最接近现生步带动物共同祖先的干群化石之一"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-18-double-holiday-travel-boom",
+      "story_identity": "mid-autumn-national-day-travel-booking-2026",
+      "headline": "🧳 “请3休13”拼假带火双节出游，机票酒店预订攀升",
+      "summary": "今年中秋与国庆假期仅相隔三天，9月28日至30日“请3休13”的拼假方案形成全年最长出游窗口。多家出行平台数据显示，机票、酒店预订进入高峰，美团平台双节机票预订量同比增长44%，国内文旅市场进入节前预订旺季。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-17T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假期出行消费趋势报道，平台数据与央媒报道一致"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.news.cn/fortune/20260917/d779a14cd3864b068575cb37ef515cdb/c.html",
+          "title": "“双节”出游预订火爆 旅游市场有望结构性改善",
+          "captured_at": "2026-09-18T06:21:00+08:00",
+          "note": "“请3休13”拼假打造全年最长出游窗口，消费者提前规划行程"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "21世纪经济报道",
+          "url": "https://www.21jingji.com/article/20260917/herald/ec7fcd853ed50e26ff1f83dbc0a58e14.html",
+          "title": "“双节”文旅市场前瞻：超长假期催热出游消费市场",
+          "captured_at": "2026-09-18T06:21:00+08:00",
+          "note": "国庆首日火车票9月17日开售，各平台搜索与预订数据快速上升"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-18-yunnan-durian-harvest",
+      "story_identity": "yunnan-jinghong-durian-harvest-2026",
+      "headline": "🍈 国产榴莲迎丰收：西双版纳金枕单株挂果34个",
+      "summary": "9月16日，云南西双版纳景洪市勐罕镇国产榴莲迎来集中开采，310亩示范基地金枕榴莲丰产，单株最高挂果34个，单果平均重约3.7公斤，标志我国榴莲本土化种植技术迈上新台阶。目前国产榴莲产量仍然有限，市场上以精品路线为主。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 18,
+        "everyday_relevance": 18,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-16T09:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "农产品丰收报道，央视与地方媒体一致"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/17/ARTIX3HaytFLC3lncK9p6b2g260917.shtml",
+          "title": "国产榴莲，大丰收！",
+          "captured_at": "2026-09-18T06:21:00+08:00",
+          "note": "9月16日景洪市勐罕镇国产榴莲集中开采，单株最高挂果34个"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "昆明信息港",
+          "url": "https://www.kunming.cn/news/c/2026-09-16/14073989.shtml",
+          "title": "单果最重达8公斤 云南景洪榴莲熟了",
+          "captured_at": "2026-09-18T06:21:00+08:00",
+          "note": "云南省林业和草原科学院榴莲研究团队现场测产"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-18-iphone-duo-wechat-response",
+      "story_identity": "iphone-duo-wechat-dual-support-response-2026",
+      "headline": "📱 苹果客服回应iPhone Duo微信双开：需微信专门适配",
+      "summary": "针对首款折叠屏手机iPhone Duo无法像部分安卓折叠屏那样微信双开、暂不支持平板模式的问题，苹果客服9月17日回应称该机搭载手机iOS系统，相关功能需微信针对设备尺寸、分辨率和系统接口专门适配；腾讯客服表示将留意后续版本更新。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 74,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 9
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-17T11:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "消费电子产品适配说明，表述限于客服回应与公开实测，避免夸大"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "东方财富",
+          "url": "https://finance.eastmoney.com/a/202609173877453093.html",
+          "title": "iPhone Duo不支持微信平板模式？客服回应",
+          "captured_at": "2026-09-18T06:22:00+08:00",
+          "note": "苹果客服称微信双开及平板模式需微信方面适配"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪数码",
+          "url": "https://k.sina.com.cn/article_7879777296_1d5abdc1006801e3f4.html",
+          "title": "iPhone Duo为何不支持微信双开：苹果客服回应揭开折叠屏适配困局",
+          "captured_at": "2026-09-18T06:22:00+08:00",
+          "note": "腾讯客服表示将留意后续版本更新，官方暂无适配时间表"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
