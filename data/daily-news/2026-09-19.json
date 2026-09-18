@@ -1,0 +1,875 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-19",
+  "generated_at": "2026-09-19T06:32:06+08:00",
+  "published_at": "2026-09-19T06:32:06+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 38,
+    "published": 6,
+    "dropped_safety": {
+      "controversy": 1,
+      "geopolitics": 2,
+      "minors": 2,
+      "politics": 1,
+      "privacy": 2,
+      "propaganda": 1
+    },
+    "dropped_low_confidence": 18,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 26,
+      "official_sources": 0,
+      "state_media_sources": 6,
+      "major_media_sources": 12,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 5
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 8,
+        "relaxed_72h": 10
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 38,
+          "cumulative_unique_candidates": 38,
+          "source_scope": [
+            "百度热搜公开热榜与民生话题佐证",
+            "新华社新华网中新网人民网央视网光明网等央媒发布",
+            "新京报极目新闻封面新闻澎湃新闻观察者网界面财联社等持牌媒体原创报道",
+            "新湖南西部网华商网北京日报等地方主流媒体原创报道",
+            "钛媒体中国基金报新浪财经i黑马等财经科技媒体交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-19-china-basketball-semifinal-loss-japan",
+          "story_identity": "china-men-basketball-japan-semifinal-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-19-china-basketball-semifinal-loss-japan",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-19-shangzhaoyao-qin-tomb-huayang",
+          "story_identity": "shangzhaoyao-qin-tomb-huayang-taihou-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-19-shangzhaoyao-qin-tomb-huayang",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-19-iphone18-pro-first-sale",
+          "story_identity": "iphone18-pro-china-first-day-sale-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-19-iphone18-pro-first-sale",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-19-healthy-mooncake-trend",
+          "story_identity": "healthy-low-sugar-mooncake-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-19-healthy-mooncake-trend",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 19,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-19-exam-cheating-ring-probe",
+          "story_identity": "chengdu-university-exam-cheating-ring-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-09-19-exam-cheating-ring-probe",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-19-buffett-steps-down-chairman",
+          "story_identity": "buffett-berkshire-chairman-retirement-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T18:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-09-19-buffett-steps-down-chairman",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "us-returns-64-cultural-relics",
+          "story_identity": "us-returns-tianlongshan-relics-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "纽约第二批交接完成于北京时间9月18日凌晨，距评估打戳约31小时，仅达48小时宽松档，未进24小时严格档"
+        },
+        {
+          "candidate_key": "ai-drama-industry-400b",
+          "story_identity": "ai-short-drama-industry-500k-jobs-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "AI短剧产业趋势报道，72分未达75分严格线"
+        },
+        {
+          "candidate_key": "xiaomi-mimo-v26-live-training",
+          "story_identity": "xiaomi-mimo-v26-rl-live-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T00:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "9月17日凌晨披露，距打戳约54小时仅达72小时宽松档，且71分未达75分严格线"
+        },
+        {
+          "candidate_key": "asian-games-flag-bearers",
+          "story_identity": "hu-mingxuan-wu-yu-flag-bearers-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 14,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "旗手人选9月16日宣布，距打戳约60小时，仅达72小时宽松档；开幕式今晚举行属未来事件不打提前量"
+        },
+        {
+          "candidate_key": "ronaldo-portugal-call-up-41",
+          "story_identity": "ronaldo-portugal-callup-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T09:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 9,
+            "evidence": 7
+          },
+          "drop_reason": "海外球星入选名单属日常体育动态，对中国读者普遍代表性不足"
+        },
+        {
+          "candidate_key": "holiday-expressway-reminder",
+          "story_identity": "mid-autumn-expressway-no-free-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-13T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 10,
+            "everyday_relevance": 19,
+            "evidence": 9
+          },
+          "drop_reason": "假期通行提示9月13日已广泛报道，超出72小时窗且无实质新增量"
+        },
+        {
+          "candidate_key": "autumn-harvest-four-regions",
+          "story_identity": "autumn-harvest-yanan-beian-meizhou-liuzhou-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 19,
+            "everyday_relevance": 8,
+            "evidence": 7
+          },
+          "drop_reason": "丰收主题集合报道，面向普通读者的具体服务增量有限"
+        },
+        {
+          "candidate_key": "foshan-rope-cut-incident",
+          "story_identity": "foshan-highrise-rope-cut-elderly-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 6
+          },
+          "drop_reason": "高空作业绳被剪个案已经物业调解，无普遍服务信息"
+        },
+        {
+          "candidate_key": "shantou-sunken-manholes",
+          "story_identity": "shantou-300m-26-sunken-manholes-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "地方道路设施个案，公共增量弱"
+        },
+        {
+          "candidate_key": "fangji-fine-clarification",
+          "story_identity": "fangji-weed-burning-fine-clarify-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 6
+          },
+          "drop_reason": "镇政府初步通报未作罚款决定，事件仍待核查，公共增量有限"
+        },
+        {
+          "candidate_key": "shehong-fire-elevator-claim",
+          "story_identity": "shehong-fire-elevator-access-claim-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 6,
+            "evidence": 5
+          },
+          "drop_reason": "火灾与加装电梯关系尚在核实，单一网帖主张不足以成稿"
+        },
+        {
+          "candidate_key": "mianyang-pig-farm-rumor",
+          "story_identity": "mianyang-pig-deaths-rumor-refuted-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 7
+          },
+          "drop_reason": "地方农业农村局澄清性通报，新闻增量弱"
+        },
+        {
+          "candidate_key": "super-slow-jogging-trend",
+          "story_identity": "super-slow-jogging-expert-advice-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 18,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "健康方式科普软稿，无具体新闻事件"
+        },
+        {
+          "candidate_key": "asian-games-cardboard-beds",
+          "story_identity": "asian-games-village-cardboard-beds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T12:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "运动员晒亚运村房间属赛事花絮，新闻性弱"
+        },
+        {
+          "candidate_key": "asian-games-anthem-mixup",
+          "story_identity": "asian-games-korea-anthem-mixup-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T15:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 6,
+            "evidence": 5
+          },
+          "drop_reason": "组委会播放失误属赛场插曲，涉邻国关系不宜放大"
+        },
+        {
+          "candidate_key": "mid-autumn-film-slate",
+          "story_identity": "mid-autumn-national-day-film-slate-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-14T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 13,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "档期前瞻9月14日报道，时效偏弱且增量有限"
+        },
+        {
+          "candidate_key": "china-basketball-bronze-preview",
+          "story_identity": "china-iran-bronze-game-preview-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 7
+          },
+          "drop_reason": "铜牌战为9月20日未来赛事，与半决赛失利同属一事件延续"
+        },
+        {
+          "candidate_key": "table-tennis-asian-games-preview",
+          "story_identity": "china-table-tennis-asian-games-start-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "乒乓项目9月20日开赛，赛前展望无新事实"
+        },
+        {
+          "candidate_key": "wangtui-law-firm-undercover",
+          "story_identity": "changsha-law-firm-online-promotion-probe-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅潇湘晨报一家原创暗访，转载不构成独立来源，且长沙约谈9月10日已发生"
+        },
+        {
+          "candidate_key": "fuel-price-sept24-forecast",
+          "story_identity": "fuel-price-adjustment-forecast-0924-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅为机构测算上调预期，发改委未发布正式调价信息"
+        },
+        {
+          "candidate_key": "qinqiang-anwan-xianyang",
+          "story_identity": "qinqiang-anwan-119k-xianyang-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "11.9万人观演数据仅自媒体与热榜佐证，无持牌媒体独立核实"
+        },
+        {
+          "candidate_key": "china-battery-brand-report",
+          "story_identity": "china-power-battery-brand-survey-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "品牌心智排行来自商业研究报告，缺乏权威媒体独立报道"
+        },
+        {
+          "candidate_key": "pension-adjustment-rumor-watch",
+          "story_identity": "pension-adjustment-notice-pending-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "养老金年度调整通知尚未发布，自媒体猜测不构成新闻事实"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-19-china-basketball-semifinal-loss-japan",
+      "story_identity": "china-men-basketball-japan-semifinal-2026",
+      "headline": "🏀 中国男篮77比97不敌日本，无缘亚运会决赛",
+      "summary": "北京时间9月18日晚，爱知·名古屋亚运会男篮半决赛，中国队77比97不敌东道主日本队，连续两届无缘决赛，20日将与伊朗队争夺铜牌。胡金秋得到全队最高的16分，日本队金近廉砍下19分。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-18T20:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果报道，新华社与多家媒体一致，表述限于比分与赛程事实"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.xinhuanet.com/20260918/df41f7687b134ae1a26f9d76caf7d2bc/c.html",
+          "title": "亚运会丨中国男篮无缘亚运会决赛",
+          "captured_at": "2026-09-19T06:14:30+08:00",
+          "note": "新华社日本名古屋9月18日电：中国队不敌日本队无缘决赛，20日铜牌战对伊朗"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6aad2983e4b039a8e2f141f1.html",
+          "title": "中国男篮不敌日本队无缘亚运会决赛",
+          "captured_at": "2026-09-19T06:14:30+08:00",
+          "note": "新华社电：半决赛中国队失利，胡金秋16分为全队最高"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "封面新闻",
+          "url": "https://m.thecover.cn/news_details.html?eid=9qxxQYo6usyH90qSdq8Jkw==",
+          "title": "中国男篮77-97不敌东道主日本无缘亚运会男篮决赛",
+          "captured_at": "2026-09-19T06:14:30+08:00",
+          "note": "官方修正后比分为77比97，日本队金近廉19分、柯克15分12篮板"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-19-shangzhaoyao-qin-tomb-huayang",
+      "story_identity": "shangzhaoyao-qin-tomb-huayang-taihou-2026",
+      "headline": "⛏️ 陕西发现战国秦王级大墓，墓主或为秦始皇祖母",
+      "summary": "陕西省考古研究院9月18日公布咸阳上召窑秦陵考古成果：这座“亚”字形大墓确认为战国晚期秦王级别墓葬，是咸阳原上发现的第四座秦陵园，出土玉器、铜器等文物，专家推测墓主或为秦始皇嫡祖母华阳太后。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-18T10:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "考古成果正式发布，中新网与地方主流媒体多源一致，墓主身份按“推测”表述"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/09-18/10699118.shtml",
+          "title": "陕西发现一秦王级别陵墓 墓主推测为秦始皇祖母华阳太后",
+          "captured_at": "2026-09-19T06:15:00+08:00",
+          "note": "中新社西安9月18日电：上召窑秦陵为咸阳原第四座秦陵园，整体呈“回”字形布局"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/09/18/11964335.shtml",
+          "title": "秦始皇祖母陵墓或现世，陕西公布上召窑秦陵考古成果",
+          "captured_at": "2026-09-19T06:15:00+08:00",
+          "note": "陕西省考古研究院18日公布，墓葬位于咸阳市渭城区，墓主推测为华阳太后"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "华商网",
+          "url": "https://news.hsw.cn/system/2026/0918/1960841.shtml",
+          "title": "咸阳上召窑发现秦王级别陵墓 墓主或为秦始皇嫡祖母华阳太后",
+          "captured_at": "2026-09-19T06:15:00+08:00",
+          "note": "出土铜鼎“宋氏”铭文、玉印等，碳十四测年为公元前389年至前208年"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-19-iphone18-pro-first-sale",
+      "story_identity": "iphone18-pro-china-first-day-sale-2026",
+      "headline": "📱 iPhone 18 Pro系列开售：门店排队取机，黄牛加价明显收窄",
+      "summary": "iPhone 18 Pro系列9月18日正式开售，北京、上海、杭州、武汉等地苹果门店一早就排起取机长队，Pro Max大容量与新配色最受追捧；多名黄牛称加价幅度明显收窄、部分版本接近原价，门店现货预计10月后才宽松。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-18T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "消费电子首发报道，多家持牌媒体现场走访一致，价格动态如实表述"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/CaiJing/2026_09_18_901192.shtml",
+          "title": "iPhone18 Pro开售即破发，黄牛称“没人要”",
+          "captured_at": "2026-09-19T06:16:30+08:00",
+          "note": "9月18日iPhone 18 Pro系列开售，上海陆家嘴直营店外百余人排队"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "界面新闻",
+          "url": "https://m.jiemian.com/video/AGUCMQhuB28BPFVi.html",
+          "title": "iPhone 18 Pro首发日门店长队规模不如往年，顶配溢价比去年少一半",
+          "captured_at": "2026-09-19T06:16:30+08:00",
+          "note": "黄牛称价差主要集中在Pro Max大容量新配色版本"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国基金报",
+          "url": "https://www.chnfund.com/article/AR0856aae2-75c1-6a6c-aded-3a23c66f08f2",
+          "title": "iPhone 18 Pro系列正式开售，首批现货普遍加价",
+          "captured_at": "2026-09-19T06:16:30+08:00",
+          "note": "深圳罗湖万象城Apple零售店外消费者排队取机"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-19-healthy-mooncake-trend",
+      "story_identity": "healthy-low-sugar-mooncake-trend-2026",
+      "headline": "🥮 低糖低GI成主流，今年中秋月饼刮起“养生风”",
+      "summary": "中秋临近，记者走访西安、北京等地市场发现，低糖、低GI、高纤、药食同源等健康概念月饼密集上新成为今年主流；电商平台“低糖月饼”搜索量同比大幅攀升，部分减糖月饼销量增长约2倍，健康化从加分项变为必选项。",
+      "category": "节日节气",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 19,
+        "everyday_relevance": 19,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-18T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "节日消费趋势报道，地方主流媒体走访与平台数据一致"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新湖南",
+          "url": "https://m.voc.com.cn/xhn/news/202609/33790235.html",
+          "title": "今年的月饼变得很“养生”",
+          "captured_at": "2026-09-19T06:18:00+08:00",
+          "note": "低糖、低GI、药食同源概念受消费者欢迎，部分减糖月饼销量飙升2倍"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "西部网",
+          "url": "http://m.cnwest.com/bwyc/a/2026/09/15/23433944.html",
+          "title": "“低糖”“高纤”唱“主角” 记者走访西安中秋月饼市场",
+          "captured_at": "2026-09-19T06:18:00+08:00",
+          "note": "西安多家商超低糖、高纤、杂粮等健康概念月饼密集上新"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-19-exam-cheating-ring-probe",
+      "story_identity": "chengdu-university-exam-cheating-ring-2026",
+      "headline": "📝 开考9分钟试卷外传：高校考试作弊群调查引关注",
+      "summary": "新京报记者暗访发现，成都理工大学期末考试开考仅9分钟试卷即被传出，40分钟后答案传回考场，校外团伙按人收费组织答题已形成多年链条；学校称对校外组织者没有调查处置权，成都警方9月16日已介入调查。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-18T11:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "调查报道事实以新京报暗访与校方回应为限，警方进展仅表述已介入"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1789688009168458.html",
+          "title": "打不掉的高校考试作弊群：校外答题按人收费，一科百人“上车”",
+          "captured_at": "2026-09-19T06:22:00+08:00",
+          "note": "开考9分钟试卷外泄、40分钟后答案回传，成都警方9月16日介入"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "极目新闻",
+          "url": "https://www.ctdsb.net/c1476_202609/2859470.html",
+          "title": "“开考9分钟试卷被传出，40分钟后答案传回考场”，打不掉的高校考试作弊群",
+          "captured_at": "2026-09-19T06:22:00+08:00",
+          "note": "成都理工大学称已增设信号屏蔽、加强巡考，对校外团伙无处置手段"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-19-buffett-steps-down-chairman",
+      "story_identity": "buffett-berkshire-chairman-retirement-2026",
+      "headline": "💼 96岁巴菲特卸任伯克希尔董事长，长子霍华德接任",
+      "summary": "伯克希尔·哈撒韦9月18日宣布，96岁的沃伦·巴菲特卸任董事长、出任名誉董事长并留任董事，其71岁长子霍华德·巴菲特接任董事长。巴菲特今年1月已卸任CEO，至此完成交接彻底退休，他在致股东信中称“现在正是完成过渡的合适时机”。",
+      "category": "国际",
+      "scope": "international",
+      "topic": "重大事件",
+      "primary_organization": "伯克希尔·哈撒韦",
+      "audience_relevance": {
+        "basis": "global_major_event",
+        "impact_scale": "global_systemic",
+        "china_connection": "巴菲特是全球价值投资标志性人物，伯克希尔持仓与动向长期被中国内地投资者和财经读者密集跟踪，其彻底退休是全球资本市场年度标志性事件",
+        "everyday_impact": "对关注基金、股票与长期投资的普通读者有直接认知价值，多家中文财经媒体头条报道并解读其对全球市场的影响",
+        "score": 21,
+        "connection_evidence": {
+          "url": "https://www.cls.cn/detail/2487351",
+          "note": "财联社快讯单条阅读量超26万，国内主要财经门户同步头条报道"
+        }
+      },
+      "score": 76,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 15,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-18T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "公司公告事实报道，表述限于声明与公开履历"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/09/18/90092180.shtml",
+          "title": "沃伦·巴菲特卸任伯克希尔-哈撒韦董事长",
+          "captured_at": "2026-09-19T06:20:00+08:00",
+          "note": "当地时间9月18日公司声明：巴菲特卸任董事长"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财联社",
+          "url": "https://www.cls.cn/detail/2487351",
+          "title": "伯克希尔·哈撒韦任命巴菲特为名誉董事长",
+          "captured_at": "2026-09-19T06:20:00+08:00",
+          "note": "财联社9月18日电，任命即刻生效，巴菲特继续担任董事会成员"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/wm/2026-09-18/doc-inisfyev3248694.shtml",
+          "title": "巴菲特宣布卸任伯克希尔哈撒韦董事长一职",
+          "captured_at": "2026-09-19T06:20:00+08:00",
+          "note": "其子霍华德·巴菲特按既定长期接班计划接任董事长"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
