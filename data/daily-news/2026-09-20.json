@@ -1,0 +1,786 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-20",
+  "generated_at": "2026-09-20T06:19:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 35,
+    "published": 5,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 1,
+      "geopolitics": 1,
+      "privacy": 1,
+      "propaganda": 1
+    },
+    "dropped_low_confidence": 21,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 18,
+      "official_sources": 0,
+      "state_media_sources": 5,
+      "major_media_sources": 14,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 4
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 6,
+        "relaxed_72h": 8
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 35,
+          "cumulative_unique_candidates": 35,
+          "source_scope": [
+            "百度热搜公开热榜与民生话题佐证",
+            "新华社新华网央视网光明网人民网央广网等央媒发布",
+            "澎湃新闻观察者网新京报证券时报新华报业网等持牌媒体原创报道",
+            "北京日报现代快报南方都市报荔枝新闻等地方主流媒体原创报道",
+            "新浪财经快科技新浪汽车等门户与财经科技媒体交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-20-asian-games-opening-nagoya",
+          "story_identity": "aichi-nagoya-asian-games-opening-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T17:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-20-asian-games-opening-nagoya",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-20-suchao-regular-season-top8",
+          "story_identity": "suchao-2026-regular-season-final-eight",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T21:40:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-20-suchao-regular-season-top8",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-20-zhuomuniao-refund-compensation",
+          "story_identity": "zhuomuniao-2800-switch-refund-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-20-zhuomuniao-refund-compensation",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-20-xibei-closure-rumor-response",
+          "story_identity": "xibei-closure-rumor-denied-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-20-xibei-closure-rumor-response",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-20-shenzhen-teacher-class-speech",
+          "story_identity": "shenzhen-teacher-liujie-class-speech-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-09-20-shenzhen-teacher-class-speech",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "sports-industry-meeting-policy",
+          "story_identity": "state-council-sports-event-policy-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "9月18日国务院常务会议研究推动体育赛事健康发展，距打戳超24小时仅达48小时宽松档，且落地细则未出"
+        },
+        {
+          "candidate_key": "wenwan-corn-cctv-expose",
+          "story_identity": "cctv-wenwan-corn-market-expose-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 14,
+            "everyday_relevance": 19,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "央视9月17日曝光文玩玉米市场染色注胶乱象，距打戳约60小时，仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "pengzhou-snake-rumor-refuted",
+          "story_identity": "pengzhou-snake-rumor-police-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 17,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "彭州公安9月18日辟谣山区蛇患传言并处置造谣者，地方辟谣个案且分数仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "chengdu-police-night-snack-thieves",
+          "story_identity": "pengzhou-police-overhear-thieves-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T03:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "民警夜宵偶遇小偷复盘系趣闻个案，事发9月17日凌晨已超72小时窗"
+        },
+        {
+          "candidate_key": "shanghai-contract-recycled-recovered",
+          "story_identity": "shanghai-shop-contract-scrap-paper-recovered-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "商铺合同被当废纸卖掉后寻回系市井个案，公共信息增量弱"
+        },
+        {
+          "candidate_key": "ningbo-watermelon-compensation",
+          "story_identity": "ningbo-watermelon-stand-compensation-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "西瓜砸人事件经警方调解获赔系治安个案进展，无普遍服务信息"
+        },
+        {
+          "candidate_key": "zhengzhou-girl-face-recognition-books",
+          "story_identity": "zhengzhou-first-grader-face-recognition-books-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "一年级女孩识封面认课本属育儿趣闻，新闻增量有限"
+        },
+        {
+          "candidate_key": "asian-games-cruise-accommodation",
+          "story_identity": "nagoya-asian-games-cruise-hotel-debate-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T10:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "运动员入住邮轮属境外赛事组委会住宿安排，对中国读者日常影响有限，网络讨论偏吐槽情绪"
+        },
+        {
+          "candidate_key": "asian-games-first-gold-day-preview",
+          "story_identity": "nagoya-asian-games-first-gold-day-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 7
+          },
+          "drop_reason": "9月20日首个金牌日31金前瞻属未来赛程，不打提前量"
+        },
+        {
+          "candidate_key": "china-basketball-bronze-game-preview",
+          "story_identity": "china-iran-asian-games-bronze-game-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "中伊铜牌战为9月20日晚未来赛事，与19日半决赛报道属同一事件延续"
+        },
+        {
+          "candidate_key": "xu-song-fengxi-marriage",
+          "story_identity": "xu-song-fengxi-marriage-announcement-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 7,
+            "evidence": 5
+          },
+          "drop_reason": "歌手婚讯属娱乐名人动态，民生相关性不足"
+        },
+        {
+          "candidate_key": "wang-sulong-guiyang-concert",
+          "story_identity": "wang-sulong-guiyang-concert-interaction-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "演唱会现场互动玩梗属演出花絮"
+        },
+        {
+          "candidate_key": "wang-heye-dance-variety",
+          "story_identity": "wang-heye-dance-variety-show-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "综艺节目舞台表现讨论属娱乐花絮"
+        },
+        {
+          "candidate_key": "mubuzhuanjing-box-office",
+          "story_identity": "mubuzhuanjing-film-box-office-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "单片票房遇冷属影市个案，公共增量有限"
+        },
+        {
+          "candidate_key": "china-dairy-h1-results",
+          "story_identity": "yili-mengniu-h1-2026-results",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 10,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "乳业半年报为8月底旧闻，远超72小时窗且无新进展"
+        },
+        {
+          "candidate_key": "aunt-tumor-30cm-health-case",
+          "story_identity": "postmenopausal-abdominal-tumor-health-case-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 18,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "个案健康提醒类科普，无公共新闻事件"
+        },
+        {
+          "candidate_key": "cola-can-teapot-student",
+          "story_identity": "student-cola-can-teapot-craft-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 16,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "学生手工趣闻，不构成新闻"
+        },
+        {
+          "candidate_key": "script-kill-industry-criticism",
+          "story_identity": "jubensha-industry-vulgar-content-criticism-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "剧本杀行业乱象评论稿，无具体新闻事件或监管进展支撑"
+        },
+        {
+          "candidate_key": "beida-fudan-ai-warning",
+          "story_identity": "university-presidents-ai-dependency-warning-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "多所高校校长开学季谈AI依赖系观点集合报道，无单一新政策或事件时点"
+        },
+        {
+          "candidate_key": "ai-host-whitepaper-lenovo-idc",
+          "story_identity": "lenovo-idc-ai-host-whitepaper-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "企业联合白皮书属商业品类发布，公共新闻性弱"
+        },
+        {
+          "candidate_key": "mid-autumn-travel-forecast",
+          "story_identity": "mid-autumn-national-day-travel-forecast-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "双节出行预订攀升与昨日拼假题材重复，无实质新增量"
+        },
+        {
+          "candidate_key": "luxury-car-price-drop",
+          "story_identity": "traditional-luxury-car-price-cut-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "豪车降价幅度主要来自经销商口径与汽车自媒体，缺权威媒体对终端价的独立核实"
+        },
+        {
+          "candidate_key": "milk-tea-depression-study",
+          "story_identity": "milk-tea-depression-anxiety-study-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "奶茶与抑郁焦虑关联为旧研究经自媒体翻红，无持牌媒体新报道核实"
+        },
+        {
+          "candidate_key": "fuel-price-0924-forecast",
+          "story_identity": "fuel-price-adjustment-forecast-0924-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "9月24日调价窗仅为机构测算预期，发改委未发布正式调价信息"
+        },
+        {
+          "candidate_key": "pension-adjustment-watch",
+          "story_identity": "pension-adjustment-notice-pending-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "养老金年度调整通知尚未发布，自媒体猜测不构成新闻事实"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-20-asian-games-opening-nagoya",
+      "story_identity": "aichi-nagoya-asian-games-opening-2026",
+      "headline": "🏅 第20届亚运会在名古屋开幕，中国体育代表团入场",
+      "summary": "当地时间9月19日，第20届亚洲运动会开幕式在日本名古屋瑞穗公园田径场举行。中国体育代表团第14次亮相亚运会开幕式，男篮运动员胡明轩、女子拳击运动员吴愉担任旗手；代表团共1274人，其中815名运动员将参加38个大项、369个小项的比赛。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-19T17:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事开幕事实报道，新华社与央视新闻口径一致，表述限于代表团构成与赛程事实"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/sports/20260919/0f3daa0f6b59469cbe60930ba2e9805c/c.html",
+          "title": "亚运会丨第二十届亚洲运动会在日本名古屋开幕",
+          "captured_at": "2026-09-20T06:14:00+08:00",
+          "note": "新华社报道本届亚运会在名古屋开幕，中国代表团815名运动员参加38个大项369个小项"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6aae5fcfe4b0e42f8f008609.html",
+          "title": "爱知·名古屋亚运会开幕式举行 中国体育代表团入场",
+          "captured_at": "2026-09-20T06:14:00+08:00",
+          "note": "据央视新闻：开幕式9月19日举行，胡明轩、吴愉担任旗手，代表团共1274人"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-20-suchao-regular-season-top8",
+      "story_identity": "suchao-2026-regular-season-final-eight",
+      "headline": "⚽ “苏超”常规赛收官，八强名单出炉",
+      "summary": "9月19日晚，2026年江苏省城市足球联赛“苏超”常规赛收官战6场比赛同步开球并全部结束，八强席位随之落定，无锡队锁定常规赛头名，南通队晋级八强。淘汰赛将于10月打响，1/4决赛和半决赛采取主客场两回合制。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-19T21:40:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "联赛赛果报道，央视网与新华报业一致，表述限于排名与赛制事实"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://local.cctv.com/2026/09/19/ARTINrrDkAEdJPyBBRxEplRR260919.shtml",
+          "title": "“苏超”第22周战报｜常规赛收官八强诞生",
+          "captured_at": "2026-09-20T06:15:00+08:00",
+          "note": "央视网9月19日消息：常规赛收官战19:40六场同开，八强名单落定"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新华报业网",
+          "url": "https://www.xhby.net/content/s6aae9ea4e4b0f4e7e4b4bd55.html",
+          "title": "不是“逆袭”，是“回归”！写在南通队晋级“苏超”八强之际",
+          "captured_at": "2026-09-20T06:15:00+08:00",
+          "note": "南通队与常规赛头名无锡队战平晋级八强，收官战9月19日晚结束"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-20-zhuomuniao-refund-compensation",
+      "story_identity": "zhuomuniao-2800-switch-refund-2026",
+      "headline": "🔧 换一个开关收费2800元，啄木鸟平台全额退费并赔偿",
+      "summary": "南京一名独居老人家中电路跳闸，在啄木鸟家庭维修平台预约上门，师傅更换一只市价几十元的漏电开关后收费2800元，投诉后平台最初仅愿退800元。经媒体报道，9月18日至19日平台态度反转：全额退还2800元维修费并额外赔偿2000元，同时向家属出具维修报价单明细。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 11
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-19T13:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "消费维权报道以澎湃新闻与观察者网核实为限，平台整改结论仅表述已退费赔偿"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34103493",
+          "title": "独居老人换1个开关，被啄木鸟收2800元，最新进展：全额退还2800元维修费，并额外赔偿2000元",
+          "captured_at": "2026-09-20T06:16:00+08:00",
+          "note": "澎湃9月19日报道：家属确认平台全额退费并额外赔偿2000元，报价单列明检测费1680元等明细"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/ChengShi/2026_09_19_901262.shtml",
+          "title": "“换1个开关收费2800，平台只愿退款800”，啄木鸟态度反转",
+          "captured_at": "2026-09-20T06:16:00+08:00",
+          "note": "据荔枝新闻，媒体报道次日平台处理态度明显转变，全额退款并赔偿"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-20-xibei-closure-rumor-response",
+      "story_identity": "xibei-closure-rumor-denied-2026",
+      "headline": "🍜 西贝回应“彻底倒闭”传闻：全国门店均正常运营",
+      "summary": "9月19日，“西贝被曝将彻底倒闭”的话题登上热搜，有网传消息称其将在两三个月内关闭大部分门店。西贝方面当天回应多家媒体：相关内容非官方消息，目前全国门店均正常运营，将继续做好产品与服务，并呼吁消费者理性看待网络信息。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-19T14:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "企业回应传闻的事实报道，表述限于公司回应与门店运营现状，不引申经营状况判断"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://m.gmw.cn/2026-09/19/content_1304565601.htm",
+          "title": "西贝回应彻底倒闭传闻",
+          "captured_at": "2026-09-20T06:17:00+08:00",
+          "note": "光明网9月19日报道：西贝称目前全国门店均正常运营，网传内容非官方消息"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "证券时报",
+          "url": "https://www.stcn.com/article/detail/4191805.html",
+          "title": "西贝内部人士回应倒闭传闻",
+          "captured_at": "2026-09-20T06:17:00+08:00",
+          "note": "西贝内部人士对证券时报记者表示门店正常运营，将继续坚守品质"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-20-shenzhen-teacher-class-speech",
+      "story_identity": "shenzhen-teacher-liujie-class-speech-2026",
+      "headline": "👩‍🏫 深圳女教师班会课讲话走红：人生没有错误，要么学到要么得到",
+      "summary": "近日，深圳外国语学校致远高中教师刘洁的一段班会课讲话视频在网络走红，播放量突破百万。她引导学生牢记成长心态：“我们的人生没有失败，要么成功，要么成长；人生没有错误，要么学到，要么得到。”不少网友留言表示这段话同样治愈成年人。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 10
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-19T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "正能量校园报道，表述限于公开视频内容与媒体核实，不涉学生个人信息"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34105902",
+          "title": "“我们的人生没有错误”！高中女老师上课讲话爆火",
+          "captured_at": "2026-09-20T06:18:00+08:00",
+          "note": "澎湃9月19日报道刘洁班会课讲话视频走红及讲话原文内容"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "南方都市报",
+          "url": "https://www.163.com/dy/article/L7400OR805129QAF.html",
+          "title": "深圳一高中老师班会视频获百万播放！走心发言打动全网成年人",
+          "captured_at": "2026-09-20T06:18:00+08:00",
+          "note": "南都报道（网易转载）：视频由刘洁个人账号发布，抖音播放量突破百万"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
