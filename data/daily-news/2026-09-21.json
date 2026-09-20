@@ -1,0 +1,993 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-21",
+  "generated_at": "2026-09-21T06:31:27+08:00",
+  "published_at": "2026-09-21T06:31:27+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 38,
+    "published": 8,
+    "dropped_safety": {
+      "geopolitics": 1,
+      "politics": 1,
+      "propaganda": 1,
+      "rumor": 1
+    },
+    "dropped_low_confidence": 23,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 20,
+      "official_sources": 1,
+      "state_media_sources": 13,
+      "major_media_sources": 14,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 3
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 8,
+        "relaxed_48h": 12,
+        "relaxed_72h": 14
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 38,
+          "cumulative_unique_candidates": 38,
+          "source_scope": [
+            "百度热搜与微博公开热榜（热度佐证）",
+            "新华社新华网人民网央视网央视频等央媒发布",
+            "澎湃新闻新京报封面新闻极目新闻上观新闻北京日报大众日报等持牌媒体原创报道",
+            "国务院及部委发布、国新办发布会、地方政府与气象农业部门预警等官方渠道",
+            "财新第一财经证券时报中国基金报等财经持牌媒体交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-21-asian-games-day1-11-golds",
+          "story_identity": "nagoya-asian-games-day1-china-11-golds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-21-asian-games-day1-11-golds",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-21-housing-fund-rules-effective",
+          "story_identity": "housing-provident-fund-regulation-2026-effective",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-21-housing-fund-rules-effective",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-21-first-degree-screening-critique",
+          "story_identity": "peoples-daily-first-degree-hiring-comment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-21-first-degree-screening-critique",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 19,
+            "everyday_relevance": 19,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-21-harvest-rain-risk-warning",
+          "story_identity": "moha-cma-autumn-harvest-rain-warning-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-21-harvest-rain-risk-warning",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-21-china-basketball-fourth",
+          "story_identity": "china-basketball-bronze-loss-iran-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-21-china-basketball-fourth",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-21-lijan-y18-nine-satellites",
+          "story_identity": "lijian-1-y18-nine-satellite-launch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T12:03:00+08:00",
+          "scope": "domestic",
+          "topic": "太空航天",
+          "outcome": "selected",
+          "item_id": "2026-09-21-lijan-y18-nine-satellites",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-21-market-regulation-briefing",
+          "story_identity": "samr-15th-five-year-market-regulation-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-21-market-regulation-briefing",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-21-chaozhou-manhole-response",
+          "story_identity": "chaozhou-beishan-road-manhole-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-21-chaozhou-manhole-response",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "yuzidi-200fly-gold",
+          "story_identity": "yuzidi-200m-butterfly-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T16:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "13岁于子迪200蝶破纪录夺金属游泳首日高光，已并入首日金牌总览条目，单独成条增量有限"
+        },
+        {
+          "candidate_key": "swim-team-six-gold-day",
+          "story_identity": "china-swim-day1-six-golds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "游泳队首日6金1银2铜已并入首日金牌总览条目，避免同题材堆叠"
+        },
+        {
+          "candidate_key": "rsv-zhong-nanshan-reminder",
+          "story_identity": "rsv-season-zhong-nanshan-reminder-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "钟南山提醒秋冬RSV防控为央视财经9月19日报道，核心信息距打戳超24小时，仅达48小时宽松档"
+        },
+        {
+          "candidate_key": "liulichang-pentathlon-gold",
+          "story_identity": "li-liuchang-modern-pentathlon-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "现代五项男子个人金牌已并入首日金牌总览条目"
+        },
+        {
+          "candidate_key": "table-tennis-team-day1",
+          "story_identity": "china-table-tennis-team-day1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "国乒男女团小组赛首日双胜出线属赛程常规进展，分数仅达72小时宽松档"
+        },
+        {
+          "candidate_key": "games-medal-table-fix",
+          "story_identity": "asian-games-medal-table-correction-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T17:40:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "亚运会官网漏算中国队首金后更正属榜单勘误插曲"
+        },
+        {
+          "candidate_key": "women-basketball-opening-win",
+          "story_identity": "china-women-basketball-opening-win-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "女篮小组赛首胜属常规赛程，新闻增量有限"
+        },
+        {
+          "candidate_key": "triathlon-zhang-silver",
+          "story_identity": "zhang-xirui-triathlon-silver-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "铁人三项银牌为中国队首枚奖牌，已被首日金牌总览覆盖"
+        },
+        {
+          "candidate_key": "typhoon-duguan-asian-games",
+          "story_identity": "typhoon-duguan-asian-games-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T12:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 8
+          },
+          "drop_reason": "台风“杜鹃”对亚运赛程影响尚不确定，属境外赛事天气插曲"
+        },
+        {
+          "candidate_key": "mazzola-obituary",
+          "story_identity": "sandro-mazzola-obituary-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T20:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 8
+          },
+          "drop_reason": "国际足坛名宿讣闻，与中国读者日常关联弱"
+        },
+        {
+          "candidate_key": "cuba-nationwide-blackout",
+          "story_identity": "cuba-nationwide-blackout-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T08:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 7
+          },
+          "drop_reason": "古巴全国停电为外国民生事件，对中国读者无直接影响，代表性不足"
+        },
+        {
+          "candidate_key": "holiday-rail-transport-plan",
+          "story_identity": "railway-holiday-transport-plan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 8,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "drop_reason": "中秋国庆铁路假期运输方案为9月9日旧闻，远超72小时窗且无新增量"
+        },
+        {
+          "candidate_key": "computer-rank-exam-sept",
+          "story_identity": "ncre-exam-september-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 6
+          },
+          "drop_reason": "全国计算机等级考试9月19日至21日举行系例行考试，无实质新增信息"
+        },
+        {
+          "candidate_key": "kunshan-lantern-festival",
+          "story_identity": "kunshan-mid-autumn-lantern-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "昆山中秋灯会9月17日亮灯，距打戳已超72小时窗"
+        },
+        {
+          "candidate_key": "hk-lantern-carnival",
+          "story_identity": "hk-mid-autumn-lantern-carnival-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T18:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 14,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "香港国际中秋彩灯汇9月17日启动，时效已弱且地域性强"
+        },
+        {
+          "candidate_key": "shanghai-insurance-vaccine",
+          "story_identity": "shanghai-medical-insurance-vaccine-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-15T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 12,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "上海职工医保个账支付非免疫规划疫苗9月15日已实施，属旧闻"
+        },
+        {
+          "candidate_key": "uk-electricity-vat-cut",
+          "story_identity": "uk-electricity-vat-cut-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-07-21T10:00:00+08:00",
+          "scope": "international",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 8,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "英国电费增值税减免为7月旧闻，且属外国民生常规政策"
+        },
+        {
+          "candidate_key": "ace-combat-8-release",
+          "story_identity": "ace-combat-8-release-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "游戏发售资讯属娱乐消费动态，公共新闻性弱"
+        },
+        {
+          "candidate_key": "zhang-zhou-stage-linkage",
+          "story_identity": "zhang-ruoyun-zhou-shen-stage-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "明星台上台下联动属娱乐花絮，无公共信息增量"
+        },
+        {
+          "candidate_key": "wuhan-athlete-interview",
+          "story_identity": "wuhan-hongshan-athlete-interview-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "武汉洪山区引进退役运动员面试属地方招聘例行安排"
+        },
+        {
+          "candidate_key": "zhangxue-hair-topic",
+          "story_identity": "zhang-xue-hair-topic-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 38,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 17,
+            "everyday_relevance": 3,
+            "evidence": 2
+          },
+          "drop_reason": "艺人外貌话题无公共信息增量"
+        },
+        {
+          "candidate_key": "tianjin-calligraphy-signup",
+          "story_identity": "tianjin-calligraphy-exam-signup-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-17T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 38,
+          "score_breakdown": {
+            "heat": 13,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 3
+          },
+          "drop_reason": "书画等级考试报名属例行考务提醒"
+        },
+        {
+          "candidate_key": "wuhan-xuanpin-deadline",
+          "story_identity": "wuhan-xuanpin-application-deadline-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 37,
+          "score_breakdown": {
+            "heat": 12,
+            "freshness": 14,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "选聘生报名节点属地方例行考务"
+        },
+        {
+          "candidate_key": "gaoling-zhanglei-rumor",
+          "story_identity": "gaoling-zhang-lei-rumor-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "投资机构人物话题源自自媒体评论文章，无持牌媒体独立核实"
+        },
+        {
+          "candidate_key": "zcode-opensource-delay",
+          "story_identity": "zcode-opensource-delay-discussion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "开源跳票讨论仅见问答社区单一平台，无媒体报道核实"
+        },
+        {
+          "candidate_key": "tesla-china-update-rumor",
+          "story_identity": "tesla-china-update-rumor-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "特斯拉“重磅更新”仅见自媒体爆料，无官方公告或持牌媒体核实"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-21-asian-games-day1-11-golds",
+      "story_identity": "nagoya-asian-games-day1-china-11-golds-2026",
+      "headline": "🥇 亚运首个金牌日中国队揽11金领跑，游泳队夺6金五破纪录",
+      "summary": "9月20日，爱知·名古屋亚运会首个金牌日产生31金，中国代表团收获11金6银3铜暂居榜首。游泳队首日夺6金1银2铜、五次刷新四项赛会纪录：13岁小将于子迪2分05秒08破纪录摘得女子200米蝶泳金牌，成为亚运会最年轻游泳冠军；唐钱婷、徐嘉余、潘展乐、李冰洁等亦夺冠。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-20T19:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事成绩事实报道，新华社与持牌媒体口径一致，表述限于奖牌数与赛果事实"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/sports/20260920/07b4c84e40764635a451d224dd37345c/c.html",
+          "title": "亚运会丨于子迪获女子200米蝶泳金牌",
+          "captured_at": "2026-09-21T06:17:00+08:00",
+          "note": "新华社9月20日电：于子迪获女子200米蝶泳金牌，系中国队当日游泳首金"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "封面新闻",
+          "url": "https://m.thecover.cn/news_details.html?eid=aH/t5gzQxaiH90qSdq8Jkw==",
+          "title": "6金1银2铜！中国游泳队亚运首日五次改写赛会纪录",
+          "captured_at": "2026-09-21T06:21:00+08:00",
+          "note": "封面新闻9月20日报道：游泳首个金牌日中国队6金1银2铜，单日五次打破四项赛会纪录"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "大众日报",
+          "url": "https://k.sina.com.cn/article_5953190046_162d6789e06703slww.html",
+          "title": "一天11枚金牌！亚运会首个比赛日中国队暂列金牌榜第一",
+          "captured_at": "2026-09-21T06:18:00+08:00",
+          "note": "大众日报9月20日报道（新浪转载）：首个比赛日中国代表团夺得11枚金牌，截至19时暂列金牌榜第一"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-21-housing-fund-rules-effective",
+      "story_identity": "housing-provident-fund-regulation-2026-effective",
+      "headline": "🏠 住房公积金新条例施行：装修、物业费也能提取了",
+      "summary": "新修订的《住房公积金管理条例》9月20日起施行。提取情形由6种扩至9种：装修自住住房、支付自住住房物业费均可提取，租房提取取消收入比例门槛；个体工商户、外卖骑手等灵活就业人员可自愿缴存；提取无需单位盖章出证明，贷款审批时限由15日缩短至10日，异地互认互贷更便捷。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 10
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-20T10:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "行政法规施行报道，以国务院令第844号与新华社解读为限，不引申房价走势判断"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260920/41f50f1e87a440db91b2708fe253554a/c.html",
+          "title": "新华网民生观察丨“安居钱”越来越好用了",
+          "captured_at": "2026-09-21T06:19:00+08:00",
+          "note": "新华网9月20日解读：提取情形由6种扩至9种，灵活就业人员可自愿缴存，贷款审批缩至10日"
+        },
+        {
+          "tier": "official",
+          "outlet": "苏州市人民政府",
+          "url": "http://www.suzhou.gov.cn/szsrmzf/zwgg/202609/3e8bfcebdb1747a2803ac27198e1c5a8.shtml",
+          "title": "新修订的《住房公积金管理条例》9月20日起施行",
+          "captured_at": "2026-09-21T06:15:00+08:00",
+          "note": "苏州市政府9月20日公告：条例9月20日起施行，住建部负责人介绍“十五五”四项重点工作"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-21-first-degree-screening-critique",
+      "story_identity": "peoples-daily-first-degree-hiring-comment-2026",
+      "headline": "📚 人民日报锐评：别用“第一学历”给求职者划线",
+      "summary": "一名“双一流”高校硕士通过某头部互联网公司五轮面试后，因“第一学历”为专科被取消录用，引发热议。人民日报客户端9月20日刊发人民锐评，指“第一学历”是未获官方认可的伪概念，学历认定以最高学历为准；教育部等八部门2026年“国聘行动”已明确不得将毕业院校、学习方式作为限制招聘条件。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 19,
+        "everyday_relevance": 19,
+        "evidence": 10
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-20T11:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "就业公平评论报道，表述限于人民日报评论与教育部公开口径，不点名涉事企业与当事人"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "上观新闻",
+          "url": "https://www.jfdaily.com/news/detail?id=1180598",
+          "title": "人民锐评：用“第一学历”筛选人才，这是啥逻辑",
+          "captured_at": "2026-09-21T06:20:00+08:00",
+          "note": "上观新闻9月20日刊发人民日报客户端人民锐评：所谓“第一学历”是生造的伪概念"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6aafc431e4b0e42f8f008fb6.html",
+          "title": "锐评：用“第一学历”筛选人才，这是啥逻辑",
+          "captured_at": "2026-09-21T06:16:00+08:00",
+          "note": "北京日报9月20日同刊该锐评：教育部明确政策文件中没有“第一学历”概念"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-21-harvest-rain-risk-warning",
+      "story_identity": "moha-cma-autumn-harvest-rain-warning-2026",
+      "headline": "🌾 两部门发布秋收连阴雨风险预警，建议抓住降水间隙抢收",
+      "summary": "农业农村部、中国气象局9月20日联合发布秋收连阴雨灾害风险预警：预计9月21日至28日，西北地区东南部、西南地区东部、江汉、黄淮西部及安徽北部降雨频繁；其中23日至27日四川东北部、重庆中北部、陕西东南部、河南南部等地有暴雨、局地大暴雨。两部门建议抓住降水间隙及时抢收，注意通风储存、烘干入仓。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 10
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-20T18:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "灾害风险预警服务信息，表述限于两部门预警原文，不含伤亡数字与灾情渲染"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6aafbe2be4b0e42f8f008f7a.html",
+          "title": "农业农村部和中国气象局发布秋收连阴雨灾害风险预警",
+          "captured_at": "2026-09-21T06:20:00+08:00",
+          "note": "北京日报9月20日报道两部门联合预警全文，含分区域降雨时段与抢收建议"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260920/a557408aead24f4eade24a7e88f9a9d8/c.html",
+          "title": "河南发布秋收期连阴雨灾害风险预警",
+          "captured_at": "2026-09-21T06:16:00+08:00",
+          "note": "新华社郑州9月20日电：河南省气象局、农业农村厅联合发布省级预警并公布烘干点位"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-21-china-basketball-fourth",
+      "story_identity": "china-basketball-bronze-loss-iran-2026",
+      "headline": "🏀 中国男篮70比79不敌伊朗，获亚运会第四名",
+      "summary": "9月20日，爱知·名古屋亚运会男篮季军争夺战中，中国队以70比79不敌伊朗队，无缘铜牌，最终排名第四。庞峥麟得到全场最高的22分，李弘权贡献12分。主教练郭士强赛后表示球队年轻队员偏多、大赛经验不足；队员赛后将返回各自俱乐部备战CBA联赛，国家队还将出战世预赛第五、第六窗口期比赛。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 19,
+        "everyday_relevance": 15,
+        "evidence": 9
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-20T19:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛果事实报道，以新华社与央视网口径为限，表述限于比分与赛后表态，不作情绪化归因"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.xinhuanet.com/sports/20260920/286c75f42e03499d8f3722331d39b8b5/c.html",
+          "title": "亚运会丨中国男篮不敌伊朗队无缘铜牌",
+          "captured_at": "2026-09-21T06:18:00+08:00",
+          "note": "新华社日本名古屋9月20日电：中国队70比79不敌伊朗队，庞峥麟22分"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网体育",
+          "url": "https://sports.cctv.com/2026/09/20/VIDExZWH8eZ2TOra75zV5FUo260920.shtml",
+          "title": "[亚运会]男篮铜牌赛：中国VS伊朗集锦",
+          "captured_at": "2026-09-21T06:18:00+08:00",
+          "note": "央视网9月20日消息：亚运男篮铜牌赛中国男篮70比79不敌伊朗队"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-21-lijan-y18-nine-satellites",
+      "story_identity": "lijian-1-y18-nine-satellite-launch-2026",
+      "headline": "🚀 力箭一号遥十八一箭9星发射成功，商业航天一周六箭",
+      "summary": "9月20日12时03分，我国在东风商业航天创新试验区使用力箭一号遥十八运载火箭，以“一箭9星”方式将秦岭卫星01、02星、“超智算一号”等9颗卫星送入预定轨道，主要用于空间环境监测、防灾减灾和科学试验。这是力箭一号第16次飞行；9月15日至20日我国一周完成六次航天发射，低轨星座组网明显提速。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "太空航天",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 15,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-20T12:03:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "航天发射事实报道，以人民网与发射方口径为限，不涉及载荷敏感参数"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://finance.people.com.cn/n1/2026/0920/c1004-40802112.html",
+          "title": "一箭九星！力箭一号遥十八运载火箭成功发射",
+          "captured_at": "2026-09-21T06:19:00+08:00",
+          "note": "人民网北京9月20日电：12时03分发射，9颗卫星顺利进入预定轨道"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6aaf6ba4e4b0e42f8f008b8e.html",
+          "title": "成功发射“一箭9星”！力箭一号发射任务已排到2027年下半年",
+          "captured_at": "2026-09-21T06:16:00+08:00",
+          "note": "北京日报9月20日报道：力箭一号16次发射已将119颗卫星送入太空，排期至2027年下半年"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-21-market-regulation-briefing",
+      "story_identity": "samr-15th-five-year-market-regulation-2026",
+      "headline": "🛒 市场监管总局：整治“内卷式”竞争，规范直播带货让维权少跑腿",
+      "summary": "国务院新闻办公室9月20日举行发布会。市场监管总局表示将综合整治“内卷式”竞争，引导市场从“拼价格”转向“拼质量”；加快修改电子商务法，规范网络销售、直播带货，推动在线消费纠纷解决机制覆盖主要平台；原料药、水电气暖等民生领域将成反垄断执法重点。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 10
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-20T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "部委发布会事实报道，表述限于新华社通稿中的消费维权与平台监管举措"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/fortune/20260920/790d4ba31ea6456b9ff4f31d73ebb4ed/c.html",
+          "title": "国新办发布会聚焦“十五五”时期市场监管工作",
+          "captured_at": "2026-09-21T06:20:00+08:00",
+          "note": "新华社9月20日报道：整治内卷式竞争、加快修改电子商务法、畅通消费维权渠道"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国基金报",
+          "url": "https://www.chnfund.com/article/102e35ab-ccce-907e-85ae-3a23cee7062b",
+          "title": "市场监管总局：加快构建适配超大规模市场的监管体系",
+          "captured_at": "2026-09-21T06:17:00+08:00",
+          "note": "中国基金报9月20日报道国新办发布会：加快构建与超大规模市场相匹配的监管体系"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-21-chaozhou-manhole-response",
+      "story_identity": "chaozhou-beishan-road-manhole-response-2026",
+      "headline": "🚧 潮州“5公里路面500个井盖”引关注，当地住建局回应",
+      "summary": "近日，有网友自发标记广东潮州北山路沉陷井盖，称约5公里路面分布约500个井盖，影响出行体验，相关话题登上热搜。潮州市湘桥区住建局工作人员9月20日回应澎湃新闻：北山路工程已经完成，关于井盖密度的情况“没办法更改了”。城市井盖多头管理、沉降反复的问题再度引发讨论。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 9
+      },
+      "heat_rank": 8,
+      "occurred_at": "2026-09-20T15:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "城市治理报道，表述限于澎湃核实的部门回应，不引申追责与舆情定性"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34108128",
+          "title": "“自发标记沉陷井盖”网友称潮州5公里路面500个井盖，当地住建局回应",
+          "captured_at": "2026-09-21T06:17:00+08:00",
+          "note": "澎湃新闻9月20日报道：湘桥区住建局称北山路工程已完成，井盖密度没办法更改了"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "百度热搜",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "captured_at": "2026-09-21T06:14:00+08:00",
+          "note": "“住建局回应5公里路面500个井盖”9月20日登上百度热搜前列，佐证公共关注度"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
