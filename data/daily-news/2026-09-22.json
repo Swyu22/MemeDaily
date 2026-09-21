@@ -1,0 +1,1046 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-22",
+  "generated_at": "2026-09-22T06:29:30+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 43,
+    "published": 7,
+    "dropped_safety": {
+      "geopolitics": 2,
+      "politics": 1,
+      "propaganda": 1
+    },
+    "dropped_low_confidence": 30,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 34,
+      "official_sources": 1,
+      "state_media_sources": 12,
+      "major_media_sources": 16,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 11,
+        "relaxed_72h": 14
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 43,
+          "cumulative_unique_candidates": 43,
+          "source_scope": [
+            "百度热搜公开热榜（热度佐证）",
+            "新华社新华网央视网人民网等央媒发布",
+            "新京报澎湃极目齐鲁晚报第一财经界面21经济网等持牌媒体原创报道",
+            "上海市政府珠海市政府门户与官方机构发布",
+            "财联社观察者网凤凰网财经等持牌网络媒体交叉验证"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-22-asian-games-day2-12-golds",
+          "story_identity": "nagoya-asian-games-day2-china-12-golds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-22-asian-games-day2-12-golds",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-22-worldskills-shanghai-opens",
+          "story_identity": "worldskills-48-shanghai-2026-opening",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-09-22-worldskills-shanghai-opens",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-22-zhuhai-housing-ticket",
+          "story_identity": "zhuhai-anju-fangpiao-policy-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-22-zhuhai-housing-ticket",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-22-lung-nodule-study",
+          "story_identity": "zhong-nanshan-team-lung-nodule-study-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T11:56:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "selected",
+          "item_id": "2026-09-22-lung-nodule-study",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 19,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-22-xian-byd-hiring",
+          "story_identity": "xian-byd-hiring-8000-workers-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T21:02:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-22-xian-byd-hiring",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-22-cambodia-scam-park-exposed",
+          "story_identity": "cambodia-scam-park-8-media-tour-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T15:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-09-22-cambodia-scam-park-exposed",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-22-low-speed-ev-production-ban",
+          "story_identity": "low-speed-ev-production-restriction-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-09-22-low-speed-ev-production-ban",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "ghost-takeaway-regulation",
+          "story_identity": "samr-ghost-takeaway-rectification-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "幽灵外卖整治出自9月20日国新办市场监管总局发布会，昨日已选同场发布会条目，避免同源重复"
+        },
+        {
+          "candidate_key": "zhang-boheng-allaround-gold",
+          "story_identity": "zhang-boheng-gymnastics-allaround-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "张博恒卫冕体操男子全能已并入亚运次日总览条目，单独成条增量有限"
+        },
+        {
+          "candidate_key": "sheng-lihao-shooting-double-gold",
+          "story_identity": "sheng-lihao-10m-air-rifle-double-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "盛李豪射击双金并破世界纪录已并入亚运次日总览条目"
+        },
+        {
+          "candidate_key": "men-4x200-relay-comeback",
+          "story_identity": "china-men-4x200-freestyle-relay-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "男子4×200米自由泳接力逆转夺冠已并入亚运次日总览条目"
+        },
+        {
+          "candidate_key": "yuzidi-200im-gold",
+          "story_identity": "yu-zidi-200m-medley-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "于子迪200米个人混合泳破亚洲纪录夺冠已并入亚运次日总览条目"
+        },
+        {
+          "candidate_key": "hk-shen-xiaoyu-wushu-gold",
+          "story_identity": "shen-xiaoyu-wushu-hk-first-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "中国香港代表团武术首金已并入亚运次日总览条目，单独成条增量有限"
+        },
+        {
+          "candidate_key": "gong-li-karate-gold",
+          "story_identity": "gong-li-karate-61kg-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "龚莉空手道卫冕已并入亚运次日总览条目"
+        },
+        {
+          "candidate_key": "women-volleyball-final-preview",
+          "story_identity": "china-japan-women-volleyball-final-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "女排决赛尚未进行，前瞻信息已并入亚运次日总览条目"
+        },
+        {
+          "candidate_key": "marriage-cash-incentives",
+          "story_identity": "multi-region-marriage-cash-reward-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 6,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "drop_reason": "多地结婚补贴政策集中在7至8月，话题再上热榜但72小时窗内无实质新进展"
+        },
+        {
+          "candidate_key": "consumer-goods-upgrade-opinion",
+          "story_identity": "seven-dept-consumer-goods-upgrade-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-31T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 5,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "drop_reason": "7部门商品消费扩容升级意见8月31日发布，当前为解读稿再热，远超72小时窗"
+        },
+        {
+          "candidate_key": "china-basketball-recovery-comment",
+          "story_identity": "china-men-basketball-review-comment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "男篮赛后评论稿，赛果昨日已报道，无新事实增量"
+        },
+        {
+          "candidate_key": "first-degree-comment-followup",
+          "story_identity": "peoples-daily-first-degree-hiring-comment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "人民日报“第一学历”锐评昨日已入选发布，今日仅为话题延续"
+        },
+        {
+          "candidate_key": "leijun-hotdrynoodle-response",
+          "story_identity": "lei-jun-wuhan-noodle-livestream-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "企业家直播回应个人话题，公共信息增量低"
+        },
+        {
+          "candidate_key": "sister-sendoff-brother-army",
+          "story_identity": "maanshan-sister-sendoff-brother-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 6,
+            "evidence": 3
+          },
+          "drop_reason": "车站送别暖闻，公共新闻性弱"
+        },
+        {
+          "candidate_key": "giant-fish-catch",
+          "story_identity": "chongqing-giant-fish-catch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 4,
+            "evidence": 2
+          },
+          "drop_reason": "垂钓趣闻，无公共信息增量"
+        },
+        {
+          "candidate_key": "chen-jianzhou-discharge",
+          "story_identity": "chen-jianzhou-hospital-discharge-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 4,
+            "evidence": 2
+          },
+          "drop_reason": "艺人就医及道歉动态，不具公共新闻性"
+        },
+        {
+          "candidate_key": "sun-shengbo-moto-champion",
+          "story_identity": "sun-shengbo-talent-cup-champion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T19:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 6,
+            "evidence": 3
+          },
+          "drop_reason": "西班牙青年组摩托车赛事夺冠，受众面窄"
+        },
+        {
+          "candidate_key": "intel-stock-surge",
+          "story_identity": "intel-share-price-surge-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T21:30:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "美股个股盘中大涨，与中国读者日常决策关联弱"
+        },
+        {
+          "candidate_key": "amd-trillion-market-cap",
+          "story_identity": "amd-market-cap-trillion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T22:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "美股半导体公司市值里程碑，属海外财经行情，日常关联弱"
+        },
+        {
+          "candidate_key": "engineai-t800-robot-boxing",
+          "story_identity": "engineai-t800-boxing-demo-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T10:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "机器人格斗展示视频发布于美国，属科技趣闻，公共实用性低"
+        },
+        {
+          "candidate_key": "iphone18-restart-response",
+          "story_identity": "iphone18-restart-complaint-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "个别机型故障吐槽与商家回应属售后个案，无权威检测结论"
+        },
+        {
+          "candidate_key": "online-loan-fraud-reminder",
+          "story_identity": "online-loan-fraud-official-reminder-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "网贷反诈为常态化提醒，无具体新事件支撑"
+        },
+        {
+          "candidate_key": "old-phone-data-safety",
+          "story_identity": "old-phone-data-wipe-tips-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 16,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "民警科普旧手机数据清理，属例行服务提示"
+        },
+        {
+          "candidate_key": "shanghai-balcony-python",
+          "story_identity": "shanghai-baoshan-balcony-python-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 9,
+            "evidence": 7
+          },
+          "drop_reason": "上海居民阳台发现蟒蛇属地方趣闻，消防已妥善处置，时效偏弱"
+        },
+        {
+          "candidate_key": "japan-beached-whale-risk",
+          "story_identity": "japan-chiba-beached-whale-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-19T09:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 14,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "日本地方海滩鲸鱼尸体处置，与中国读者关联弱"
+        },
+        {
+          "candidate_key": "lv-mengyang-spain-u19-goal",
+          "story_identity": "lv-mengyang-espanyol-u19-goal-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T17:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "西班牙青少年联赛进球，受众面窄"
+        },
+        {
+          "candidate_key": "iran-basketball-military-exemption",
+          "story_identity": "iran-basketball-military-exemption-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T21:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 17,
+            "everyday_relevance": 5,
+            "evidence": 3
+          },
+          "drop_reason": "他国兵役奖励花絮，与中国读者无直接关联"
+        },
+        {
+          "candidate_key": "refugee-team-asian-games",
+          "story_identity": "refugee-team-asian-games-debut-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T18:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "难民代表队亮相属人文花絮，对中国读者代表性不足"
+        },
+        {
+          "candidate_key": "chongqing-15th-five-livelihood",
+          "story_identity": "chongqing-15th-five-year-livelihood-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "重庆民生规划综述以“十四五”回顾为主，24小时内具体新举措有限"
+        },
+        {
+          "candidate_key": "cai-tianfeng-trial",
+          "story_identity": "hong-kong-cai-tianfeng-trial-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 4,
+            "evidence": 2
+          },
+          "drop_reason": "香港刑事案件开审，猎奇性强，日常公共信息增量低"
+        },
+        {
+          "candidate_key": "openai-new-feature-rumor",
+          "story_identity": "openai-new-feature-rumor-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T08:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅“知情人士”爆料，无官方确认或持牌媒体独立核实"
+        },
+        {
+          "candidate_key": "guangzhou-village-marriage-reward-rumor",
+          "story_identity": "guangzhou-village-marriage-reward-rumor-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "“初婚最高奖8万”细节仅见自媒体盘点，无当地官方或持牌媒体核实"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-22-asian-games-day2-12-golds",
+      "story_identity": "nagoya-asian-games-day2-china-12-golds-2026",
+      "headline": "🥇 亚运次日中国队再揽12金，23金领跑金牌榜",
+      "summary": "9月21日，爱知·名古屋亚运会第二个比赛日，中国队单日收获12金4银2铜，以23金10银5铜领跑金牌榜。张博恒力克两名日本奥运冠军卫冕体操男子全能；男子4×200米自由泳接力逆转日本队夺冠；盛李豪射击个人、团体双金，团体打破世界纪录。女排3比2战胜泰国，将与日本队争夺冠军。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-21T21:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事成绩事实报道，以新华社综合稿与央视网口径为限，表述限于奖牌数与赛果"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://xinhuanet.com/sports/20260921/9efc903f634640408d3bd82012d9cf5c/c.html",
+          "title": "亚运综合｜张博恒“虎口拔牙” 泳军惊天逆转",
+          "captured_at": "2026-09-22T06:17:00+08:00",
+          "note": "新华社9月21日电：第二比赛日中国队12金4银2铜，两日累计23金10银5铜领跑"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网体育",
+          "url": "https://sports.cctv.com/2026/09/21/PHOAodmfJRzoOMkoD0YCcvwX260921.shtml",
+          "title": "[图]张博恒夺得亚运会体操男子个人全能金牌",
+          "captured_at": "2026-09-22T06:26:00+08:00",
+          "note": "央视网9月21日消息：张博恒夺得体操男子个人全能金牌"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-worldskills-shanghai-opens",
+      "story_identity": "worldskills-48-shanghai-2026-opening",
+      "headline": "🛠️ 第48届世界技能大赛今晚在上海开幕",
+      "summary": "9月22日至27日，第48届世界技能大赛在上海举行，今晚举行开幕式。本届大赛竞赛项目首次达到64个，新增无人机系统、智慧安防技术、软件测试等7个紧贴新兴产业的项目；68个国家和地区的1385名选手参赛，参赛国家和地区数、选手人数创历届之最，中国代表团71名选手覆盖全部赛项。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 11
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-21T21:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际赛事开幕报道，以新华社预热稿与上海市政府发布为限，表述限于赛程与参赛规模"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/tech/20260922/4ae8f162eac74770930db626ac7237ae/c.html",
+          "title": "共赴技能之约 同筑匠心之基——写在第48届世界技能大赛开幕之际",
+          "captured_at": "2026-09-22T06:23:00+08:00",
+          "note": "新华社9月21日电：68个国家和地区1385名选手参赛，竞赛项目首次达64个"
+        },
+        {
+          "tier": "official",
+          "outlet": "上海市人民政府",
+          "url": "https://www.shanghai.gov.cn/nw4411/20260921/cd98df854567481883a95966c4b50296.html",
+          "title": "第48届世界技能大赛明晚将在上海开幕 开幕式各项准备基本就绪",
+          "captured_at": "2026-09-22T06:16:00+08:00",
+          "note": "上海市政府门户9月21日发布：开幕式各项准备基本就绪"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-zhuhai-housing-ticket",
+      "story_identity": "zhuhai-anju-fangpiao-policy-2026",
+      "headline": "🏠 珠海发放“安居房票”：购房补贴1%，大学生可领5万元",
+      "summary": "《珠海市关于促进置业安居的若干措施》9月21日印发实施：至今年12月31日，在珠购买新建商品住房可按成交总价1%获购房补贴、单套最高3万元；在珠创业就业人员、在珠高校全日制在校大学生可分别按3万元、5万元申领“安居房票”抵扣购房款，急需紧缺人才最高20万元。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 10
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-21T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "地方住房新政报道，以政府措施全文与持牌财经媒体报道为限，不引申房价走势判断"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "21经济网",
+          "url": "https://www.21jingji.com/article/20260921/herald/f928df87b9c92631983311de016bfa1a.html",
+          "title": "珠海官宣：实施阶段性购房补贴，单套最高3万元",
+          "captured_at": "2026-09-22T06:18:00+08:00",
+          "note": "21经济网9月21日刊发措施全文：购房补贴1%、安居房票最高20万元"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "珠海网",
+          "url": "https://pub-zhtb.hizh.cn/a/202609/21/AP6ab13185e4b0814cee315c0e.html",
+          "title": "珠海重磅新政发布：购房有补贴！",
+          "captured_at": "2026-09-22T06:27:00+08:00",
+          "note": "珠海传媒集团9月21日报道：八条举措构建“补贴＋房票＋公积金＋生活服务”体系"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-lung-nodule-study",
+      "story_identity": "zhong-nanshan-team-lung-nodule-study-2026",
+      "headline": "🫁 钟南山团队研究：超七成肺结节患者从不吸烟",
+      "summary": "人民日报健康客户端9月21日报道，钟南山团队8月在《癌症科学进展》发表研究：对全国16个省份23家医院一万余名偶发肺结节者随访2至3年发现，71.34%从不吸烟；73.20%的肺癌病例出现在非高危人群。研究提示筛查不应只看吸烟和职业暴露，日常做饭开油烟机、远离二手烟。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "健康医疗",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 19,
+        "everyday_relevance": 19,
+        "evidence": 10
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-21T11:56:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "健康研究报道，数据限于人民日报健康客户端转述口径，提示语不构成医疗建议"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "极目新闻",
+          "url": "https://www.ctdsb.net/c1716_202609/2861642.html",
+          "title": "钟南山团队发现：71%肺结节患者从不吸烟；约73%肺癌病例不在传统“高危名单”里",
+          "captured_at": "2026-09-22T06:20:00+08:00",
+          "note": "极目新闻9月21日转引人民日报健康客户端报道，含研究数据与筛查提示"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/ZhengZhi/2026_09_21_901624.shtml",
+          "title": "钟南山团队发现：偶发肺结节中女性占多数",
+          "captured_at": "2026-09-22T06:28:00+08:00",
+          "note": "观察者网9月21日综合人民日报健康客户端、深圳卫健委报道"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-xian-byd-hiring",
+      "story_identity": "xian-byd-hiring-8000-workers-2026",
+      "headline": "🏭 比亚迪西安多厂区招工超8000人，入职最高奖励6000元",
+      "summary": "第一财经9月21日报道，西安市人社局、西安市高新区人力资源行业协会等近日在官方平台发布比亚迪西安基地大规模招工信息：涉及多个事业部，规模超8000人，以焊装、涂装、总装技工为主，最高月薪1万元，入职最高奖励6000元。大规模招工对应产线调整后的产能爬坡与出口订单激增。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 9
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-21T21:02:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "企业招工报道，以第一财经与界面新闻报道为限，不含就业承诺与薪资担保"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "界面新闻",
+          "url": "https://www.jiemian.com/article/15123871.html",
+          "title": "西安比亚迪急招近万工人，应聘最高奖励6000元",
+          "captured_at": "2026-09-22T06:20:00+08:00",
+          "note": "界面新闻9月21日报道（第一财经记者核实）：招工规模达数千人"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "凤凰网财经",
+          "url": "https://original.ifeng.com/c/8wbmlhTNppQ",
+          "title": "西安比亚迪急招近万工人，应聘最高奖励6000元",
+          "captured_at": "2026-09-22T06:28:00+08:00",
+          "note": "凤凰网财经9月21日转引第一财经报道：技工为主，最高月薪1万元"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-cambodia-scam-park-exposed",
+      "story_identity": "cambodia-scam-park-8-media-tour-2026",
+      "headline": "🚨 柬埔寨“8号电诈园区”内部曝光：可容纳2万人",
+      "summary": "9月21日，柬埔寨政府带领39家国内外媒体实地走访波罗勉省“8号电诈园区”。该园区占地约120公顷，办公、住宿、餐饮等设施齐全，可容纳约2万人，外籍人员以中国、巴基斯坦、印度籍居多，今年2月已被执法部门查处关闭。境外“高薪招聘”多为电诈诱骗，求职务必经正规渠道核实。",
+      "category": "国际",
+      "scope": "international",
+      "topic": "重大事件",
+      "primary_organization": "柬埔寨政府",
+      "audience_relevance": {
+        "basis": "direct_china_impact",
+        "impact_scale": "direct_china_public",
+        "china_connection": "园区外籍人员以中国籍居多，内部悬挂中文标语，电诈作业面向中文人群，直接关联中国公民人身财产安全",
+        "everyday_impact": "为读者提供识别境外电诈“高薪招聘”诱骗的具体警示，关乎求职与人身安全决策",
+        "score": 17,
+        "connection_evidence": {
+          "url": "https://m.bjnews.com.cn/detail/1789982418129860.html",
+          "note": "新京报报道园区内挂有中文标语、设门禁闸机与编号手机袋，显示其诈骗作业面向中文人群"
+        }
+      },
+      "score": 75,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 9
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-21T15:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "跨境电诈园区曝光报道，表述限于持牌媒体走访事实，落脚于求职防骗提醒"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://m.bjnews.com.cn/detail/1789982418129860.html",
+          "title": "国际｜柬埔寨太子集团“8号电诈园区”内部曝光",
+          "captured_at": "2026-09-22T06:18:00+08:00",
+          "note": "新京报9月21日报道：柬埔寨政府带媒体走访，园区2月已被查处关闭"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34118932",
+          "title": "惊心｜“8号电诈园区”，内部曝光！",
+          "captured_at": "2026-09-22T06:27:00+08:00",
+          "note": "澎湃新闻9月22日刊发：园区占地约120公顷，可容纳约2万人"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-low-speed-ev-production-ban",
+      "story_identity": "low-speed-ev-production-restriction-2026",
+      "headline": "🛺 多地禁产“老头乐”：低速四轮车停产，配件厂订单缩水",
+      "summary": "齐鲁晚报9月21日报道，江苏徐州和鲁西南部分地区的低速电动四轮车厂家已被限制生产：下游座椅配件厂订单减少约三分之一，保险杠厂订单下降20%至30%。监管从道路通行延伸至生产、销售环节，保有量约2200万辆的“老头乐”行业面临洗牌，从业者呼吁国家层面明确生产准入与产品标准。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 19,
+        "everyday_relevance": 18,
+        "evidence": 9
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-21T14:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "行业治理调查报道，以齐鲁晚报实地调查为限，含从业者诉求，不预判政策走向"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "齐鲁晚报",
+          "url": "https://www.163.com/dy/article/L7BJDGUP0530WJIN.html",
+          "title": "果然调查｜多地禁止生产“老头乐”，配件厂喊“冷”，行业面临洗牌",
+          "captured_at": "2026-09-22T06:23:00+08:00",
+          "note": "齐鲁晚报·齐鲁壹点9月21日调查报道：徐州、鲁西南厂家被限制生产低速四轮车"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "百度热搜",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "captured_at": "2026-09-22T06:13:00+08:00",
+          "note": "“多地禁产老头乐”9月21日晚登上百度热搜前列，佐证公共关注度"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
