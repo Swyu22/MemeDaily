@@ -1,0 +1,1390 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-09-22",
+  "generated_at": "2026-09-22T07:51:01+08:00",
+  "published_at": "2026-09-22T07:51:01+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 60,
+    "published": 9,
+    "dropped_safety": {
+      "时事政治": 4,
+      "社会事件/争议": 3,
+      "明星争议": 2,
+      "涉及具体人物": 1,
+      "涉及具体品牌公司": 1,
+      "纯体育赛事结果": 1
+    },
+    "dropped_low_confidence": 25,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "zhihu",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 34,
+      "platform_public_sources": 2,
+      "aggregator_sources": 16,
+      "search_media_sources": 6,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 14
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 9,
+        "relaxed_48h": 9,
+        "relaxed_72h": 9
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-22-quanti-meishi-chaochang-shidai",
+          "canonical_phrase": "全体美食进入超长时代",
+          "outcome": "selected",
+          "item_id": "2026-09-22-quanti-meishi-chaochang-shidai",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 29,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-22-kaishi-qidai-guoqing-yanhua",
+          "canonical_phrase": "开始期待国庆烟花了",
+          "outcome": "selected",
+          "item_id": "2026-09-22-kaishi-qidai-guoqing-yanhua",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-21-baishatang-huangei-women",
+          "canonical_phrase": "把配料表中的白砂糖还给我们",
+          "outcome": "selected",
+          "item_id": "2026-09-21-baishatang-huangei-women",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://tophub.today/n/mproPpoq6O",
+            "observed_at": "2026-09-22T07:24:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-22-shui-faming-hunli-damianbang",
+          "canonical_phrase": "谁发明的婚礼大棉棒",
+          "outcome": "selected",
+          "item_id": "2026-09-22-shui-faming-hunli-damianbang",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-22.md",
+            "observed_at": "2026-09-22T04:51:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-22-tanshui-pei-tanshui",
+          "canonical_phrase": "碳水配碳水",
+          "outcome": "selected",
+          "item_id": "2026-09-22-tanshui-pei-tanshui",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-22.md",
+            "observed_at": "2026-09-22T04:51:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-21-pingfan-yitian-mingchangmian",
+          "canonical_phrase": "把平凡的一天拍出名场面",
+          "outcome": "selected",
+          "item_id": "2026-09-21-pingfan-yitian-mingchangmian",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-22-emoji-dongwuyao",
+          "canonical_phrase": "emoji动物摇",
+          "outcome": "selected",
+          "item_id": "2026-09-22-emoji-dongwuyao",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-20-chaochang-danta-dangaojie",
+          "canonical_phrase": "超长蛋挞的风吹到蛋糕界了",
+          "outcome": "selected",
+          "item_id": "2026-09-20-chaochang-danta-dangaojie",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 26,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-22-zhanshi-xinxue-shanshenbu",
+          "canonical_phrase": "展示我新学的闪身步",
+          "outcome": "selected",
+          "item_id": "2026-09-22-zhanshi-xinxue-shanshenbu",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 26,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "nuomen-lingshi-dasai",
+          "canonical_phrase": "首届糯门零食大赛",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "tiaozhan-nzhong-fangshi-chuangda",
+          "canonical_phrase": "挑战N种方式到创大",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 28,
+            "reusability": 7,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "qianwodeshou-haoma",
+          "canonical_phrase": "牵我的手好吗",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 26,
+            "reusability": 9,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhongqiu-you-chengkan",
+          "canonical_phrase": "中秋游呈坎一生无坎",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 26,
+            "reusability": 6,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yikou-zhongqiu-xieweixian",
+          "canonical_phrase": "一口中秋蟹味鲜",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 26,
+            "reusability": 6,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "jinnian-zhongqiu-zouyue",
+          "canonical_phrase": "今年中秋一起走月吗",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 26,
+            "reusability": 7,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "jubei-yaomingyue-mengshu",
+          "canonical_phrase": "举杯邀明月对影成萌叔",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 6,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://tophub.today/n/K7GdaMgdQy",
+            "observed_at": "2026-09-22T07:24:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "buhuabanshu-yanxian",
+          "canonical_phrase": "不画扮熟的眼线不用涂抹粉底液",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 6,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "kanxingkong-buru-yanmou",
+          "canonical_phrase": "看星空看日落不如看我的眼眸",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 5,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "qiuni-ai-dengdai-qigai",
+          "canonical_phrase": "求你爱总是等待像个乞丐",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 25,
+            "reusability": 5,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhongqiu-yueliangchuan",
+          "canonical_phrase": "中秋一起登上杭州月亮船",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 25,
+            "reusability": 4,
+            "evidence": 1
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhunbei-daka-guoqing-dahualan",
+          "canonical_phrase": "准备打卡北京国庆大花篮",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 4,
+            "evidence": 2
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "chiji-shoushiwu-tiaozhan",
+          "canonical_phrase": "吃鸡手势舞挑战",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 24,
+            "reusability": 4,
+            "evidence": 2
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "dangni-2026-zaitingdao-zheshouge",
+          "canonical_phrase": "当你在2026年再次听到这首歌",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 24,
+            "reusability": 10,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://tophub.today/n/DpQvNABoNE",
+            "observed_at": "2026-09-22T07:24:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "houlanpi-xiaogou-xianshoushoushijie",
+          "canonical_phrase": "厚脸皮小狗先享受世界了",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 24,
+            "reusability": 11,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://tophub.today/n/DpQvNABoNE",
+            "observed_at": "2026-09-22T07:24:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "chifanlemei-meichi-chiwoyiquan",
+          "canonical_phrase": "吃饭了没没吃吃我一拳",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 24,
+            "reusability": 9,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://tophub.today/n/DpQvNABoNE",
+            "observed_at": "2026-09-22T07:24:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "renhao-maohuai",
+          "canonical_phrase": "人好猫坏",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 24,
+            "reusability": 9,
+            "evidence": 4
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://tophub.today/n/DpQvNABoNE",
+            "observed_at": "2026-09-22T07:24:20+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "guoqing-zhongqiu-qingjia-jiaocheng",
+          "canonical_phrase": "国庆中秋请假教程来了",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 5,
+            "evidence": 3
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://tophub.today/n/K7GdaMgdQy",
+            "observed_at": "2026-09-22T07:24:00+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "shenti-queshenme-xianlu",
+          "canonical_phrase": "你身体缺什么其实早就显露出来了",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 22,
+            "reusability": 2,
+            "evidence": 1
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-22.md",
+            "observed_at": "2026-09-22T04:51:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "jianchi-he-niunai-vs",
+          "canonical_phrase": "坚持喝牛奶vs从不喝牛奶",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 20,
+            "reusability": 1,
+            "evidence": 1
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-22.md",
+            "observed_at": "2026-09-22T04:51:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "mianbao-mantou-jiankang",
+          "canonical_phrase": "面包和馒头经常吃哪个更健康",
+          "outcome": "dropped_low_confidence",
+          "score": 41,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 21,
+            "reusability": 1,
+            "evidence": 1
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://tophub.today/n/KqndgxeLl9",
+            "observed_at": "2026-09-22T07:23:30+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "wugeyue-jianzhong-15jin",
+          "canonical_phrase": "五个月坚持下来减重15斤",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 21,
+            "reusability": 1,
+            "evidence": 1
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-22.md",
+            "observed_at": "2026-09-22T04:51:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "guiyang-cuisha-chaofan-tiancai",
+          "canonical_phrase": "贵阳街头10元脆哨炒饭发明人是天才",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 24,
+            "reusability": 6,
+            "evidence": 3
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-22.md",
+            "observed_at": "2026-09-22T04:51:43+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "nvxing-qipao-zhubao-shidai",
+          "canonical_phrase": "女明星严肃进入旗袍珠宝时代",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 24,
+            "reusability": 3,
+            "evidence": 2
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+            "observed_at": "2026-09-22T04:52:07+08:00"
+          },
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "28sui-shanghai-dubo-mangran",
+          "canonical_phrase": "28岁上海读博的我迷茫了",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 23,
+            "reusability": 3,
+            "evidence": 2
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-22.md",
+            "observed_at": "2026-09-22T04:51:43+08:00"
+          },
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "xiaomianao-nuanxin-zhufu",
+          "canonical_phrase": "来自小棉袄的暖心祝福",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "laoyou-juhui-shangci-zhemeqi",
+          "canonical_phrase": "老友聚会上次这么齐是多少年前",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "minjin-zhuaren-mian-xianshangzhuo",
+          "canonical_phrase": "民警准备吃完饭去抓人结果面先上桌了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "xuesheng-touka-xuexiao-zhalan",
+          "canonical_phrase": "学生头卡学校栅栏",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yangshi-mianyangrong-mianyangmao",
+          "canonical_phrase": "央视起底绵羊绒实为绵羊毛",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhongqiu-jiaozi-yuebing",
+          "canonical_phrase": "中秋限定版饺子月饼",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "guaboqun-duanlie-zouguang",
+          "canonical_phrase": "挂脖裙第一次穿就断裂走光",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "jiqiren-tifan-quanshou",
+          "canonical_phrase": "机器人一脚踢翻人类拳手",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "aini-laoji-mingtianjian",
+          "canonical_phrase": "爱你老己明天见",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "yongjiuyue-dakai-jiuyue",
+          "canonical_phrase": "用九月底打开我的九月底",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "yidao-qiekai-dushi-anjing",
+          "canonical_phrase": "一刀切开赌石的瞬间安静了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "guzao-ju-tucao-rechao",
+          "canonical_phrase": "古早影视剧吐槽热潮",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "shouji-yuyan-shewei-english",
+          "canonical_phrase": "把手机电脑系统语言设置成英文",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "zhongqiu-shaiyueliang-dasai",
+          "canonical_phrase": "中秋晒月亮大赛",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-7",
+          "outcome": "dropped_safety",
+          "drop_reason": "明星争议",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-8",
+          "outcome": "dropped_safety",
+          "drop_reason": "明星争议",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-9",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-10",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-11",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 2
+        },
+        {
+          "candidate_key": "candidate-12",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 2
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 46,
+          "cumulative_unique_candidates": 46,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "zhihu",
+            "other"
+          ]
+        },
+        {
+          "pass": 2,
+          "candidates_added": 14,
+          "cumulative_unique_candidates": 60,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-22-quanti-meishi-chaochang-shidai",
+      "title": "🍜 全体美食进入超长时代",
+      "aliases": [
+        "全体美食进入超长时代",
+        "美食进入超长时代",
+        "X进入超长时代"
+      ],
+      "canonical_phrase": "全体美食进入超长时代",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "超长蛋挞之后，美食圈集体「拉长」：超长薯条、超长披萨、超长糖葫芦轮番上阵，评论区统一刷屏「全体美食进入超长时代」。",
+      "origin": "已验证：抖音热榜归档2026-09-22 04:52快照该词条列第5位；今日热榜抖音热点榜07:24打开快照列第6位；搜索引擎可见巨量算数抖音指数约1081万。同一波浪潮里「超长蛋挞爆火出圈」「藏在超长长长长长蛋挞里的惊喜」也在榜上。",
+      "usage": "任何食物做长了都能套：「XX正式进入超长时代」；美食测评、探店、食堂吐槽视频的标题模板；评论区接龙报菜名式「下一个超长的是谁」。",
+      "fun_point": "一个「超长」把所有美食串成连续剧，越离谱越长越好笑；它给普通食物一个荒诞的统一度量衡，万物皆可拉长。",
+      "why_spread": "已验证：09-22凌晨起挂抖音热榜前列且关联词条多点在榜；推测：超长蛋挞先打样，「拉长」操作简单、视觉冲击强，商家与素人都能低成本跟拍。",
+      "lifecycle": "rising",
+      "brand_usage": "餐饮烘焙可做「本店也进入超长时代」跟拍；零食品牌可做长条包装联动；通用句式「X进入超长时代」适合追热点标题。",
+      "risk": {
+        "level": "safe",
+        "note": "美食玩梗无争议点；避免借梗做虚假宣传即可。"
+      },
+      "days_on_list": 1,
+      "score": 87,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 29,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-22",
+          "observed_at": "2026-09-22T04:52:07+08:00",
+          "captured_at": "2026-09-22T07:21:30+08:00",
+          "note": "抖音热榜归档09-22 04:52快照：「全体美食进入超长时代」列第5位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://tophub.today/n/K7GdaMgdQy",
+          "title": "抖音热点榜今日热榜官网",
+          "observed_at": "2026-09-22T07:24:00+08:00",
+          "captured_at": "2026-09-22T07:24:00+08:00",
+          "note": "今日热榜抖音热点榜07:24打开快照：该词条列第6位。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://trendinsight.oceanengine.com/arithmetic-index?source=seo",
+          "title": "抖音指数",
+          "captured_at": "2026-09-22T07:35:00+08:00",
+          "note": "搜索引擎可见巨量算数抖音指数页：该词条指数约1081万。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-kaishi-qidai-guoqing-yanhua",
+      "title": "🎆 开始期待国庆烟花了",
+      "aliases": [
+        "开始期待国庆烟花了",
+        "开始期待X了"
+      ],
+      "canonical_phrase": "开始期待国庆烟花了",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "国庆倒计时，网友用「开始期待国庆烟花了」集中发往年烟花视频和许愿文案，把期待感提前拉满。",
+      "origin": "已验证：抖音热榜归档09-22 04:52快照该词条列第6位；今日热榜抖音热点榜07:24打开快照在榜（约769万热度）；搜索引擎可见的抖音热榜落地页快照显示其一度列第10位（约940万）。",
+      "usage": "万能期待句式：「开始期待XX了」（开始期待国庆小长假了、开始期待发工资了）；烟花/晚霞/旅行视频的统一配文；节前许愿楼评论区接龙。",
+      "fun_point": "一句大白话把「等放假」的心情具象成烟花画面，期待感可以被所有人零成本复制到自己的目标上。",
+      "why_spread": "已验证：节前一周抖音多榜在榜且热度仍在爬升；推测：国庆+中秋连休窗口临近，烟花是全民无门槛的浪漫符号，句式越朴素越容易被搬运。",
+      "lifecycle": "rising",
+      "brand_usage": "文旅、景区可接「开始期待XX的烟花了」；情绪向账号可做「你最期待国庆的什么」互动；烟花属许可商品，注意合规表达。",
+      "risk": {
+        "level": "safe",
+        "note": "节日期许向内容，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 85,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-22",
+          "observed_at": "2026-09-22T04:52:07+08:00",
+          "captured_at": "2026-09-22T07:21:30+08:00",
+          "note": "抖音热榜归档09-22 04:52快照：「开始期待国庆烟花了」列第6位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://tophub.today/n/K7GdaMgdQy",
+          "title": "抖音热点榜今日热榜官网",
+          "observed_at": "2026-09-22T07:24:00+08:00",
+          "captured_at": "2026-09-22T07:24:00+08:00",
+          "note": "今日热榜抖音热点榜07:24打开快照：该词条在榜，约769万热度。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://so-landing.douyin.com/landings/hotlist",
+          "captured_at": "2026-09-22T07:36:00+08:00",
+          "note": "搜索引擎可见的抖音热榜落地页快照：该词条一度列第10位，约940万热度。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-21-baishatang-huangei-women",
+      "title": "🧂 把配料表中的白砂糖还给我们",
+      "aliases": [
+        "把配料表中的白砂糖还给我们",
+        "把白砂糖还给我们",
+        "把XX还给我们"
+      ],
+      "canonical_phrase": "把配料表中的白砂糖还给我们",
+      "platform": [
+        "weibo",
+        "zhihu"
+      ],
+      "type": "句式梗",
+      "summary": "「把配料表中的白砂糖还给我们」进入第二天：喊话从微博热搜蔓延到知乎，知乎相关问题登上知乎热榜第1位。",
+      "origin": "已验证：今日热榜知乎热榜07:24打开快照中「网友呼吁归还配料表中的白砂糖，它为啥重回白月光？」列第1位；该梗昨日以微博热搜第1位身份首次上榜本站。",
+      "usage": "维权式造句模板继续扩散：「把XX还给我们」（把双休还给我们、把下班后的晚上还给我们）；配料表科普、食品测评内容的标题与弹幕常驻句式。",
+      "fun_point": "把「看不懂配料表」的憋屈变成集体喊话，句式短、对象可替换，任何行业的槽点都能往里装。",
+      "why_spread": "已验证：昨日微博热搜第1位后，今日知乎热榜第1位接力，跨平台二次发酵；推测：中秋食品消费高峰叠加配料表焦虑，知乎式追问给梗续了讨论深度。",
+      "lifecycle": "rising",
+      "brand_usage": "科普/生活方式账号可做「一分钟看懂配料表」；通用模板「把XX还给我们」适合情绪向互动话题；食品品牌慎用以免被对号入座。",
+      "risk": {
+        "level": "low",
+        "note": "消费情绪向喊话，不点名具体品牌即可。"
+      },
+      "days_on_list": 2,
+      "score": 82,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "zhihu",
+          "url": "https://tophub.today/n/mproPpoq6O",
+          "title": "知乎热榜今日热榜官网",
+          "observed_at": "2026-09-22T07:24:10+08:00",
+          "captured_at": "2026-09-22T07:24:10+08:00",
+          "note": "今日热榜知乎热榜07:24打开快照：「网友呼吁归还配料表中的白砂糖，它为啥重回白月光？」列第1位。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "zhihu",
+          "url": "https://www.zhihu.com/question/2085265745911309783",
+          "captured_at": "2026-09-22T07:24:10+08:00",
+          "note": "经今日热榜收录的知乎问题页：讨论食品饮料为何用果葡糖浆替代白砂糖、白砂糖为何重回白月光。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-shui-faming-hunli-damianbang",
+      "title": "🎊 谁发明的婚礼大棉棒",
+      "aliases": [
+        "谁发明的婚礼大棉棒",
+        "婚礼大棉棒"
+      ],
+      "canonical_phrase": "谁发明的婚礼大棉棒",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "新娘掏出一根巨型棉棒精准吸泪不花妆，全网惊叹「谁发明的婚礼大棉棒」——一句调侃式追问把小道具送上热搜。",
+      "origin": "已验证：微博热搜归档09-22 04:51快照该词条列第33位（热度129004）；微博文章页详述其走红时间线：5月起被称「哭包新娘的婚礼救星」，9月山东一场婚礼视频后全网模仿；搜索结果可见新浪热榜09-21快照列第16位（约275万）。",
+      "usage": "惊叹式追问模板「谁发明的XX」：任何离谱又好用的东西都能这么问；备婚攻略、好物分享、整活视频的标题；评论区自动变成「我结婚也要备一根」接龙。",
+      "fun_point": "巨大棉棒与庄重婚礼的反差自带画面感，「谁发明的」式装傻追问比直接夸更好笑，明知没有答案也要问。",
+      "why_spread": "已验证：连续两天挂微博热搜与新浪热榜；推测：婚礼旺季+备婚人群庞大，道具便宜易模仿，问句式标题天然勾点击。",
+      "lifecycle": "rising",
+      "brand_usage": "婚庆、美妆、摄影行业可接「婚礼应急神器」选题；日用好物账号可做「谁发明的XX」系列；注意别硬编发明人故事。",
+      "risk": {
+        "level": "safe",
+        "note": "婚庆好物向调侃，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 82,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 28,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-22.md",
+          "title": "微博热搜归档 2026-09-22（04:51 快照）",
+          "observed_at": "2026-09-22T04:51:43+08:00",
+          "captured_at": "2026-09-22T07:21:40+08:00",
+          "note": "微博热搜归档09-22 04:51快照：「谁发明的婚礼大棉棒」列第33位，热度129004。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://weibo.com/2/detail/5345752794530396",
+          "title": "婚礼大棉棒：吸附泪水防妆容晕染的婚礼应急网红物品 - 微博",
+          "captured_at": "2026-09-22T07:33:30+08:00",
+          "note": "微博文章详述婚礼大棉棒用途与走红时间线：源自普通用户分享，9月婚礼视频后引发全网模仿与二次传播。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://sinanews.sina.cn/h5/top_news_list.d.html",
+          "title": "新浪热榜",
+          "captured_at": "2026-09-22T07:36:30+08:00",
+          "note": "搜索结果可见新浪热榜09-21快照：该词条列第16位，约275万热度，属两日持续热点。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-tanshui-pei-tanshui",
+      "title": "🍚 碳水配碳水",
+      "aliases": [
+        "碳水配碳水",
+        "碳水叠碳水",
+        "X配X"
+      ],
+      "canonical_phrase": "碳水配碳水",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "初中生早餐「碳水配碳水」上热搜：红薯稀饭配黏玉米配包子，全网开始用这四个字盘点一切主食叠主食的组合。",
+      "origin": "已验证：微博热搜归档09-22 04:51快照「初中生早餐 碳水配碳水」列第23位（热度156734）；微博话题页多条网友微博讨论全碳早餐搭配与「晕碳」体验。",
+      "usage": "万物皆可「X配X」式自嘲：包子配粥、米饭配饺子、面条配烧饼都能叫碳水配碳水；食堂吐槽、带饭记录、减脂话题的评论区高频句式。",
+      "fun_point": "四个字把中国人餐桌上的主食叠叠乐精准命名，人人都中枪，自嘲门槛为零，谁都能晒出自己的碳水配碳水。",
+      "why_spread": "已验证：微博热搜与话题页双重在榜，讨论从初中生早餐扩散到全民早餐盘点；推测：话题兼有营养讨论与自嘲玩梗两层，家长群体与打工人都能代入。",
+      "lifecycle": "rising",
+      "brand_usage": "餐饮、食品账号可玩「今天也是碳水配碳水」自嘲海报；健康营养账号可顺势做搭配科普；避免贩卖身材焦虑。",
+      "risk": {
+        "level": "safe",
+        "note": "饮食自嘲梗，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 80,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-22.md",
+          "title": "微博热搜归档 2026-09-22（04:51 快照）",
+          "observed_at": "2026-09-22T04:51:43+08:00",
+          "captured_at": "2026-09-22T07:21:40+08:00",
+          "note": "微博热搜归档09-22 04:51快照：「初中生早餐 碳水配碳水」列第23位，热度156734。"
+        },
+        {
+          "tier": "platform_public",
+          "evidence_role": "usage_context",
+          "platform": "weibo",
+          "url": "https://weibo.com/a/hot/2408bd5eda112746_0.html?type=grab",
+          "title": "#初中生早餐 碳水配碳水#_微博",
+          "captured_at": "2026-09-22T07:28:30+08:00",
+          "note": "微博话题页多条讨论：红薯稀饭+黏玉米+包子的全碳搭配引共鸣，网友接力晒自己的碳水配碳水。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-21-pingfan-yitian-mingchangmian",
+      "title": "🎬 把平凡的一天拍出名场面",
+      "aliases": [
+        "把平凡的一天拍出名场面",
+        "把平凡的XX拍出名场面"
+      ],
+      "canonical_phrase": "把平凡的一天拍出名场面",
+      "platform": [
+        "douyin"
+      ],
+      "type": "二创梗",
+      "summary": "「把平凡的一天拍出名场面」第二天仍在抖音热榜：用电影感剪辑把吃饭通勤遛狗拍成大片，模板还在持续被跟拍。",
+      "origin": "已验证：抖音热榜归档09-22 04:52快照该词条仍在榜；今日热榜抖音热点榜07:24打开快照列第20位；昨日首次上榜本站时列抖音热点榜第12位。",
+      "usage": "普通人 vlog 标题模板：「把平凡的XX拍出名场面」（把平凡的通勤拍出名场面）；适配早餐、下班路、逛超市等一切日常素材。",
+      "fun_point": "越普通的一天配上大片运镜越有一种一本正经的幽默感，「日常」与「名场面」的反差就是爽点。",
+      "why_spread": "已验证：连续多日挂抖音热点榜腰部以上位置；推测：创作门槛只剩一套剪辑模板，平台生活记录流量正中该题材。",
+      "lifecycle": "rising",
+      "brand_usage": "影像/手机/生活服务类内容可做「平凡名场面」挑战；餐饮可拍「把平凡的一餐拍出名场面」。",
+      "risk": {
+        "level": "safe",
+        "note": "生活记录模板，无争议点。"
+      },
+      "days_on_list": 2,
+      "score": 79,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-22",
+          "observed_at": "2026-09-22T04:52:07+08:00",
+          "captured_at": "2026-09-22T07:21:30+08:00",
+          "note": "抖音热榜归档09-22 04:52快照：「把平凡的一天拍出名场面」仍在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://tophub.today/n/K7GdaMgdQy",
+          "title": "抖音热点榜今日热榜官网",
+          "observed_at": "2026-09-22T07:24:00+08:00",
+          "captured_at": "2026-09-22T07:24:00+08:00",
+          "note": "今日热榜抖音热点榜07:24打开快照：该词条列第20位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-emoji-dongwuyao",
+      "title": "🐾 emoji动物摇",
+      "aliases": [
+        "emoji动物摇",
+        "动物摇",
+        "emoji动物摇舞蹈挑战"
+      ],
+      "canonical_phrase": "emoji动物摇",
+      "platform": [
+        "douyin"
+      ],
+      "type": "短视频梗",
+      "summary": "跟着 emoji 动物节奏摇摆的模仿舞：宿舍、卧室、办公室里人人都在来一段「emoji动物摇」，还外溢到了 TikTok。",
+      "origin": "已验证：抖音热榜归档09-22 04:52快照该词条在榜；今日热榜抖音热点榜07:24打开快照列第26位；公开视频页显示09-12起持续有大量跟拍，单条最高点赞超百万；搜索引擎可见 TikTok 已出现同名话题标签页。",
+      "usage": "合拍模仿模板：任何人都能跟着节奏来一段；宿舍破冰、朋友合体、萌宠出镜的万能背景舞；标题挂「#emoji动物摇#」即参与挑战。",
+      "fun_point": "动作简单抽象、配乐魔性，跳得好不好都能出效果，翻车版反而更好笑，参与门槛约等于零。",
+      "why_spread": "已验证：09-12起跟拍不断，今日仍在抖音热点榜；推测：舞蹈挑战赛机制+合拍功能放大传播，已从国内平台外溢到海外短视频平台。",
+      "lifecycle": "rising",
+      "brand_usage": "轻快品牌可发起 mascot 版动物摇；线下活动可做模仿快闪；严肃调性品牌不宜。",
+      "risk": {
+        "level": "safe",
+        "note": "抽象舞蹈挑战，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 27,
+        "reusability": 16,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-22",
+          "observed_at": "2026-09-22T04:52:07+08:00",
+          "captured_at": "2026-09-22T07:21:30+08:00",
+          "note": "抖音热榜归档09-22 04:52快照：「emoji动物摇」在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://tophub.today/n/K7GdaMgdQy",
+          "title": "抖音热点榜今日热榜官网",
+          "observed_at": "2026-09-22T07:24:00+08:00",
+          "captured_at": "2026-09-22T07:24:00+08:00",
+          "note": "今日热榜抖音热点榜07:24打开快照：「emoji动物摇」列第26位。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://www.tiktok.com/tag/emoji%E5%8A%A8%E7%89%A9%E6%91%87",
+          "captured_at": "2026-09-22T07:37:00+08:00",
+          "note": "搜索引擎可见 TikTok 已出现 #emoji动物摇 话题标签页，舞蹈挑战外溢海外。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-20-chaochang-danta-dangaojie",
+      "title": "🥧 超长蛋挞的风吹到蛋糕界了",
+      "aliases": [
+        "超长蛋挞的风吹到蛋糕界了",
+        "超长蛋挞",
+        "超长长长长长蛋挞"
+      ],
+      "canonical_phrase": "超长蛋挞的风吹到蛋糕界了",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "超长蛋挞第三天还在出圈：「超长蛋挞爆火出圈」「藏在超长长长长长蛋挞里的惊喜」双双在榜，风继续往整个烘焙界吹。",
+      "origin": "已验证：抖音热榜归档09-22 04:52快照「超长蛋挞爆火出圈」「藏在超长长长长长蛋挞里的惊喜」同时在榜；今日热榜抖音热点榜07:24打开快照亦收录；该梗09-20首登本站。",
+      "usage": "「超长」二字成了美食夸张化通用前缀：超长长长长长XX 随意加长；探店标题「XX的风吹到了XX界」句式持续套用；晒单与复刻视频不断。",
+      "fun_point": "长度即正义的荒诞感，「长」字本身可以无限叠加玩梗，一个蛋挞长成什么样完全取决于想象力。",
+      "why_spread": "已验证：连续三天抖音榜上有名且衍生词条多点开花；推测：实物造型视觉冲击强、商家跟进快，已从单品梗升级为美食「超长时代」的源头。",
+      "lifecycle": "rising",
+      "brand_usage": "烘焙甜品店可做超长款产品与「超长长长」标题挑战；内容账号可做长度对比测评；注意食品分量描述真实。",
+      "risk": {
+        "level": "safe",
+        "note": "美食玩梗，无争议点。"
+      },
+      "days_on_list": 3,
+      "score": 76,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 26,
+        "reusability": 16,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-22",
+          "observed_at": "2026-09-22T04:52:07+08:00",
+          "captured_at": "2026-09-22T07:21:30+08:00",
+          "note": "抖音热榜归档09-22 04:52快照：「超长蛋挞爆火出圈」「藏在超长长长长长蛋挞里的惊喜」同时在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://tophub.today/n/K7GdaMgdQy",
+          "title": "抖音热点榜今日热榜官网",
+          "observed_at": "2026-09-22T07:24:00+08:00",
+          "captured_at": "2026-09-22T07:24:00+08:00",
+          "note": "今日热榜抖音热点榜07:24打开快照：「藏在超长长长长长蛋挞里的惊喜」等关联词条在榜。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-zhanshi-xinxue-shanshenbu",
+      "title": "🕺 展示我新学的闪身步",
+      "aliases": [
+        "展示我新学的闪身步",
+        "闪身步",
+        "师父教我闪身步"
+      ],
+      "canonical_phrase": "展示我新学的闪身步",
+      "platform": [
+        "douyin"
+      ],
+      "type": "短视频梗",
+      "summary": "「学功夫练武术，师父教我闪身步」：网友跟练魔性闪身步并发视频交作业，配文统一是「展示我新学的闪身步」，连狗都学会了。",
+      "origin": "已验证：抖音热榜归档09-22 04:52快照「汪也学会闪身步了」列第17位；今日热榜抖音总榜07:24打开快照中「师父教我闪身步」教学跟拍视频在榜（带话题 #展示我新学的闪身步 #一学就会系列）；搜索可见09-16的跟拍视频已获数千万点赞。",
+      "usage": "跟拍交作业模板：学完任何东西都能「展示我新学的XX」；宠物、小孩、爸妈版闪身步是评论区常客；「一学就会」系列固定开头。",
+      "fun_point": "身法一本正经地滑稽，人宠同框版本格外抽象；「展示我新学的」这个交作业语气让每个人都想晒一下自己的学习成果。",
+      "why_spread": "已验证：教学视频登抖音总榜、衍生词条进热榜，跟拍持续一周以上；推测：动作分解简单、宠物版自带流量，「交作业」格式天然适配合拍机制。",
+      "lifecycle": "rising",
+      "brand_usage": "运动、服饰品牌可做闪身步挑战；宠物账号可直接复用宠物版；技能教学类内容可借「展示我新学的XX」开头。",
+      "risk": {
+        "level": "safe",
+        "note": "健身向模仿梗，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 75,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 26,
+        "reusability": 16,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-22.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-22",
+          "observed_at": "2026-09-22T04:52:07+08:00",
+          "captured_at": "2026-09-22T07:21:30+08:00",
+          "note": "抖音热榜归档09-22 04:52快照：「汪也学会闪身步了」列第17位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://tophub.today/n/DpQvNABoNE",
+          "title": "抖音总榜 - 今日热榜",
+          "observed_at": "2026-09-22T07:24:20+08:00",
+          "captured_at": "2026-09-22T07:24:20+08:00",
+          "note": "今日热榜抖音总榜07:24打开快照：「学功夫练武术 师父教我闪身步」跟拍视频在榜，带话题 #展示我新学的闪身步。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "douyin",
+          "url": "https://www.sina.cn/news/detail/5344838417384865.html",
+          "captured_at": "2026-09-22T07:38:00+08:00",
+          "note": "新浪09-19收录网友跟练内容：「嘴上说着上网能学新东西，转身就练了个闪身步」。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
