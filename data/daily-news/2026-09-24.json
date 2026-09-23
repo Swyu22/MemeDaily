@@ -1,0 +1,867 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-24",
+  "generated_at": "2026-09-24T06:35:29+08:00",
+  "published_at": "2026-09-24T06:35:29+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 38,
+    "published": 5,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "geopolitics": 2,
+      "politics": 2
+    },
+    "dropped_low_confidence": 27,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 33,
+      "official_sources": 1,
+      "state_media_sources": 7,
+      "major_media_sources": 2,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 11,
+        "relaxed_72h": 16
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 38,
+          "cumulative_unique_candidates": 38,
+          "source_scope": [
+            "百度热搜与今日热榜公开热榜（热度佐证）",
+            "新华社央视网人民网中新网等央媒发布",
+            "北京日报观察者网等持牌媒体原创报道",
+            "国新办发布会与中央部委官方信息披露",
+            "中国天气网中央气象台等公共机构服务信息"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-24-asian-games-day4-china-16-golds",
+          "story_identity": "nagoya-asian-games-day4-china-16-golds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-24-asian-games-day4-china-16-golds",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-24-higher-education-population-270m",
+          "story_identity": "china-higher-education-population-270m-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-09-24-higher-education-population-270m",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-24-civil-affairs-elderly-care-law",
+          "story_identity": "civil-affairs-elderly-care-law-15th-five-year-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-24-civil-affairs-elderly-care-law",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 19,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-24-china-gymnastics-team-gold-sweep",
+          "story_identity": "china-gymnastics-teams-asian-games-sweep-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-24-china-gymnastics-team-gold-sweep",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-24-mid-autumn-holiday-weather-map",
+          "story_identity": "mid-autumn-holiday-weather-map-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-09-24-mid-autumn-holiday-weather-map",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "antihypertensive-vaccine-phase1-progress",
+          "story_identity": "huajiyuan-antihypertensive-vaccine-phase1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-22T08:30:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 17,
+            "everyday_relevance": 21,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "企业9月9日宣布降压疫苗I期研究达预设终点，媒体集中报道在9月22日，超出24小时严格时效窗"
+        },
+        {
+          "candidate_key": "mooncake-market-divergence-2026",
+          "story_identity": "mooncake-market-high-end-cold-pangdonglai-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-22T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "“月饼卖不动”9月22日已登热搜第一，话题披露始于前一日，超出24小时严格时效窗"
+        },
+        {
+          "candidate_key": "tiananmen-national-day-flower-basket",
+          "story_identity": "tiananmen-national-day-flower-basket-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-22T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "天安门广场国庆花篮主体9月22日晨已合拢亮相，预计9月25日正式完工，超出24小时严格时效窗"
+        },
+        {
+          "candidate_key": "mid-autumn-moon-17-full-2026",
+          "story_identity": "mid-autumn-moon-17-full-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "新华社9月21日已披露“十五的月亮十七圆”赏月信息，9月22日科普栏与9月23日音视频版为同一内容再传播，首曝超24小时窗"
+        },
+        {
+          "candidate_key": "xu-jiayu-15th-asian-games-gold",
+          "story_identity": "xu-jiayu-15-asian-games-golds-record-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "徐嘉余个人第15枚亚运金牌已并入亚运第四日总览条目，单独成条增量有限"
+        },
+        {
+          "candidate_key": "yu-zidi-third-gold-400im",
+          "story_identity": "yu-zidi-400im-third-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "于子迪女子400米混合泳第三金已并入亚运第四日总览条目，教育部发布会点赞并入教育条目"
+        },
+        {
+          "candidate_key": "satellite-internet-group-26-launch",
+          "story_identity": "satellite-internet-leo-group-26-launch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T21:32:00+08:00",
+          "scope": "domestic",
+          "topic": "太空航天",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "长征八号甲发射卫星互联网低轨26组卫星渐趋常态化，对读者日常直接增量有限，未达当日严格档分数线"
+        },
+        {
+          "candidate_key": "athletics-200th-gold-race-walk",
+          "story_identity": "china-athletics-200th-asian-games-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "石升吉竞走夺中国田径亚运第200金已并入总览条目"
+        },
+        {
+          "candidate_key": "shooting-jiang-yiting-skeet-defend",
+          "story_identity": "jiang-yiting-skeet-defend-world-record-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "江伊婷女子双向飞碟平世界纪录卫冕及团体金牌已并入总览条目"
+        },
+        {
+          "candidate_key": "harvest-festival-national-venue-zaoyang",
+          "story_identity": "farmers-harvest-festival-zaoyang-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "中国农民丰收节为年度例行节庆，全国主场活动以成果展示与为农服务为主，公共增量有限"
+        },
+        {
+          "candidate_key": "beijing-marathon-10k-registration",
+          "story_identity": "beijing-marathon-10k-registration-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 3
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "北马10公里报名信源以赛事官网与本地服务号为主，权威媒体覆盖不足，属区域性报名信息"
+        },
+        {
+          "candidate_key": "wushu-six-athletes-all-gold",
+          "story_identity": "wushu-taolu-six-golds-asian-games-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 3
+          },
+          "drop_reason": "武术套路收官六人全部登顶已并入总览条目"
+        },
+        {
+          "candidate_key": "tt-badminton-team-finals-preview",
+          "story_identity": "tt-badminton-team-finals-vs-japan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 3
+          },
+          "drop_reason": "乒羽团体半决赛晋级，决赛9月24日才对日本队，今日结果并入总览"
+        },
+        {
+          "candidate_key": "worldskills-second-competition-day",
+          "story_identity": "worldskills-shanghai-2026-second-day",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 3
+          },
+          "drop_reason": "世界技能大赛进行中尚无奖牌结果，开幕已于9月22日入选"
+        },
+        {
+          "candidate_key": "yunqi-conference-day2",
+          "story_identity": "yunqi-conference-2026-day2",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 3
+          },
+          "drop_reason": "云栖大会次日以分论坛为主，芯片主新闻昨日已入选"
+        },
+        {
+          "candidate_key": "huatian-equestrian-title-defense",
+          "story_identity": "huatian-equestrian-eventing-defense-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 10,
+            "evidence": 3
+          },
+          "drop_reason": "华天马术三项赛卫冕受众较窄，已并入总览条目"
+        },
+        {
+          "candidate_key": "west-china-autumn-rain-alert",
+          "story_identity": "west-china-autumn-rain-september-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 2
+          },
+          "drop_reason": "华西秋雨为例行天气提示，假期出行天气已单独成条"
+        },
+        {
+          "candidate_key": "qualcomm-snapdragon-2nm-launch",
+          "story_identity": "qualcomm-snapdragon-8-gen6-2nm-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T06:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "海外芯片平台发布，国内终端机型搭载尚需时日，与读者日常决策关联弱"
+        },
+        {
+          "candidate_key": "billy-jean-king-cup-china-qf-preview",
+          "story_identity": "billy-jean-king-cup-china-italy-qf-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 9,
+            "evidence": 3
+          },
+          "drop_reason": "比利·简·金杯中国队四分之一决赛今日傍晚才进行，属前瞻性质"
+        },
+        {
+          "candidate_key": "mid-autumn-film-presale-box-office",
+          "story_identity": "mid-autumn-film-presale-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 14,
+            "everyday_relevance": 13,
+            "evidence": 3
+          },
+          "drop_reason": "中秋档预售票房数据首发于9月20日，今日仅自媒体跟进，超出72小时窗"
+        },
+        {
+          "candidate_key": "ren-zhengfei-huawei-public-remarks",
+          "story_identity": "ren-zhengfei-huawei-remarks-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 3
+          },
+          "drop_reason": "企业家公开言论登热搜，公共信息增量低"
+        },
+        {
+          "candidate_key": "snacks-queue-youth-consumption-topic",
+          "story_identity": "youth-queue-for-snacks-topic-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 2
+          },
+          "drop_reason": "年轻人排队买零食属消费话题讨论，公共信息增量低"
+        },
+        {
+          "candidate_key": "wuhan-open-qualifying-list",
+          "story_identity": "wuhan-open-qualifying-list-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-24T05:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 5,
+            "evidence": 2
+          },
+          "drop_reason": "武汉网球公开赛资格赛名单公布，公共增量有限"
+        },
+        {
+          "candidate_key": "yuebao-lingqiantong-payment-rumor",
+          "story_identity": "yuebao-lingqiantong-payment-rumor-debunk-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-11T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 5,
+            "everyday_relevance": 21,
+            "evidence": 10
+          },
+          "drop_reason": "“9月30日起不能直接付款”权威辟谣首发于9月11日，远超72小时窗，今日热搜为旧闻回热"
+        },
+        {
+          "candidate_key": "housing-provident-fund-regulation-followup",
+          "story_identity": "housing-provident-fund-new-regulation-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 13,
+            "everyday_relevance": 18,
+            "evidence": 5
+          },
+          "drop_reason": "住房公积金新条例施行已于9月21日入选，今日为话题延续且无新进展"
+        },
+        {
+          "candidate_key": "cambodia-scam-park-followup",
+          "story_identity": "cambodia-scam-park-8-media-tour-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T15:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "柬埔寨电诈园区走访9月22日已入选，今日无实质新进展"
+        },
+        {
+          "candidate_key": "xian-byd-hiring-followup",
+          "story_identity": "xian-byd-hiring-8000-workers-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "比亚迪西安招工9月22日已入选，今日无实质新进展"
+        },
+        {
+          "candidate_key": "oil-price-adjustment-window-0924",
+          "story_identity": "refined-oil-price-adjustment-2026-09-24",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "成品油调价窗口9月24日24时开启，目前仅有机构测算上调幅度，发改委尚未发布正式调价通知"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-24-asian-games-day4-china-16-golds",
+      "story_identity": "nagoya-asian-games-day4-china-16-golds-2026",
+      "headline": "🥇 亚运第四日中国队单日揽16金，48金领跑奖牌榜",
+      "summary": "9月23日爱知·名古屋亚运会第四个比赛日，中国代表团在游泳、田径、体操等项目全面开花，单日收获16金7银2铜，以48金20银10铜稳居奖牌榜首位。徐嘉余随队夺得男女4×100米混合泳接力冠军，个人亚运金牌数达15枚，超越王义夫成为获得亚运金牌最多的中国运动员。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-23T22:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事综合报道，以新华社全天综合稿与北京日报口径为限，表述限于奖牌数据与赛果"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/sports/20260924/4df78dff26024575a4dec6c56ed90c71/c.html",
+          "title": "亚运综合｜中国队单日16金体操团体包揽",
+          "captured_at": "2026-09-24T06:27:00+08:00",
+          "note": "新华社名古屋9月23日电：中国队单日16金7银2铜，48金20银10铜稳居奖牌榜首位"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/09/23/11971490.shtml",
+          "title": "每日亚运｜中国泳军势不可挡体操团体包揽乒羽团体全进决赛",
+          "captured_at": "2026-09-24T06:29:00+08:00",
+          "note": "北京日报9月23日报道：第四比赛日产生40枚金牌，中国队单日16金7银2铜"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-24-higher-education-population-270m",
+      "story_identity": "china-higher-education-population-270m-2026",
+      "headline": "🎓 教育部：我国接受过高等教育人口达2.7亿",
+      "summary": "9月23日国新办“开局起步‘十五五’”系列发布会上，教育部介绍：我国已建成世界上规模最大且有质量的教育体系，接受过高等教育的人口达2.7亿；学前教育毛入园率达92.9%，义务教育巩固率达96.1%；中小学生每天综合体育活动2小时、课间15分钟全面推行，学生总体近视率连续5年下降。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-23T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "部委发布会事实报道，以央视网与新华网口径为限，表述限于发布数据"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/23/ARTI157cHG32pZckHmWPncjF260923.shtml",
+          "title": "教育部：我国接受过高等教育的人口达2.7亿",
+          "captured_at": "2026-09-24T06:28:00+08:00",
+          "note": "央视网9月23日报道：基础教育达到高收入国家平均水平，每天综合体育活动2小时全面推行"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20260923/c314373f226b460884d49f0a858b1d15/c.html",
+          "title": "办好人民满意的教育——国新办发布会聚焦“十五五”时期教育强国建设",
+          "captured_at": "2026-09-24T06:24:00+08:00",
+          "note": "新华网9月23日报道：发布会聚焦教育强国建设，将启动教师发展国家行动"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-24-civil-affairs-elderly-care-law",
+      "story_identity": "civil-affairs-elderly-care-law-15th-five-year-2026",
+      "headline": "🧓 民政部：“十五五”将推动制定养老服务法",
+      "summary": "9月23日下午国新办发布会上，民政部介绍“十五五”时期将推动制定养老服务法、修订老年人权益保障法，健全分级分类、普惠可及、覆盖城乡、持续发展的养老服务体系；同时统筹推进社会救助法相关法规立改废释，完善儿童福利、残疾人保障等制度，加强普惠性、基础性、兜底性民生建设。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 19,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-23T15:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "部委发布会事实报道，以央视网与新华社通稿口径为限，不引申政策效果预测"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/23/ARTINybluzYKyiI4sJVHQ9xa260923.shtml",
+          "title": "民政部：“十五五”时期将推动制定养老服务法",
+          "captured_at": "2026-09-24T06:28:00+08:00",
+          "note": "央视网9月23日报道：民政部从五个方面制定和完善民政法规制度体系"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://society.people.com.cn/n1/2026/0923/c1008-40804450.html",
+          "title": "“十五五”时期民政部将推动制定养老服务法",
+          "captured_at": "2026-09-24T06:24:00+08:00",
+          "note": "新华社北京9月23日电：推动修订老年人权益保障法，加强老龄领域法治保障"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-24-china-gymnastics-team-gold-sweep",
+      "story_identity": "china-gymnastics-teams-asian-games-sweep-2026",
+      "headline": "🤸 中国体操包揽亚运团体金牌：男团三连冠，女团14连冠",
+      "summary": "9月23日亚运会体操团体决赛，由邹敬园、张博恒、兰星宇、孙炜、田昊组成的中国男队以255.095分力克东道主日本队，实现亚运三连冠，第13次夺得亚运男团金牌；中国女队同日夺得女子团体冠军，实现自1974年以来的亚运团体14连冠，中国队包揽本届亚运会体操团体金牌。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-23T20:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果事实报道，以新华社与中新网口径为限，表述限于比分与赛果"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.xinhuanet.com/sports/20260923/24848ea1f0b84fa2bad579b1f54cb20a/c.html",
+          "title": "亚运会丨三连冠！中国队夺得体操男子团体冠军",
+          "captured_at": "2026-09-24T06:29:00+08:00",
+          "note": "新华社名古屋9月23日电：中国男队夺得体操男团冠军，实现亚运会三连冠"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-23/10702478.shtml",
+          "title": "（爱知·名古屋亚运会）中国体操男团收获亚运会三连冠",
+          "captured_at": "2026-09-24T06:29:00+08:00",
+          "note": "中新社9月23日电：中国男团255.095分收获金牌，实现亚运会三连冠"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-24-mid-autumn-holiday-weather-map",
+      "story_identity": "mid-autumn-holiday-weather-map-2026",
+      "headline": "🌦️ 中秋假期天气地图出炉：西北西南宜出行，中东部有雨",
+      "summary": "中国天气网9月23日发布2026全国中秋假期天气地图：9月25日至27日假期期间，西北、西南多地天气晴朗利于出行；中东部多地及华西一带有雨水，江苏、安徽、河南等地公众外出需带好雨具；四川、重庆、陕西前期降雨频繁，需警惕降雨叠加引发次生灾害，避免前往山区、沟谷等地质灾害易发地带。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-23T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假期出行气象服务信息，以中国天气网发布与北京日报转载口径为限"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "https://m.weather.com.cn/news/2026/09/4801338.shtml",
+          "title": "人月两团圆！2026全国中秋假期天气地图出炉 看看哪里适宜出行",
+          "captured_at": "2026-09-24T06:28:00+08:00",
+          "note": "中国天气网9月23日发布：假期西北西南多地晴朗，中东部及华西有雨水来扰"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6ab38d8de4b039a8e2f17912.html",
+          "title": "2026全国中秋假期天气地图出炉，看看哪里适宜出行",
+          "captured_at": "2026-09-24T06:28:00+08:00",
+          "note": "北京日报9月23日转载：华西秋雨频繁，公众避免前往山区沟谷等地质灾害易发地带"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
