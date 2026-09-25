@@ -1,0 +1,934 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-26",
+  "generated_at": "2026-09-26T06:25:19+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 36,
+    "published": 7,
+    "dropped_safety": {
+      "politics": 1,
+      "propaganda": 1
+    },
+    "dropped_low_confidence": 25,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 32,
+      "official_sources": 2,
+      "state_media_sources": 9,
+      "major_media_sources": 7,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 8,
+        "relaxed_72h": 11
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 36,
+          "cumulative_unique_candidates": 36,
+          "source_scope": [
+            "新华社央视网人民网光明网等央媒发布",
+            "政府部门与公共机构官网及发布会信息",
+            "北京日报澎湃新闻潮新闻川观新闻等持牌媒体原创报道",
+            "公共热榜与社交平台热度佐证",
+            "气象铁路民航等公共服务信息"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-26-asian-games-day6-china-98-golds",
+          "story_identity": "asian-games-day6-china-98-golds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-26-asian-games-day6-china-98-golds",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-26-china-swimming-30-golds-record",
+          "story_identity": "china-swimming-30-golds-record-nagoya-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-26-china-swimming-30-golds-record",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-26-mid-autumn-day1-travel-peak",
+          "story_identity": "mid-autumn-holiday-day1-travel-peak-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-09-26-mid-autumn-day1-travel-peak",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-26-chen-yujie-womens-100m-gold",
+          "story_identity": "chen-yujie-womens-100m-asian-games-record-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-26-chen-yujie-womens-100m-gold",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-26-cmg-mid-autumn-gala-huainan",
+          "story_identity": "cmg-mid-autumn-gala-huainan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-26-cmg-mid-autumn-gala-huainan",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-26-china-women-basketball-semifinal",
+          "story_identity": "china-women-basketball-loss-korea-semifinal-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-26-china-women-basketball-semifinal",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-26-fast-telescope-10th-anniversary",
+          "story_identity": "fast-telescope-10th-anniversary-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-26-fast-telescope-10th-anniversary",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "shooting-50m-rifle-team-gold",
+          "story_identity": "shooting-50m-rifle-3pos-team-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "男子50米步枪三姿团体金牌已并入亚运第六日总览条目，单独成条增量有限"
+        },
+        {
+          "candidate_key": "gymnastics-final-zou-jingyuan",
+          "story_identity": "gymnastics-final-day-zou-jingyuan-three-peat-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "体操收官日邹敬园双杠三连冠、田昊单杠夺冠已并入总览条目"
+        },
+        {
+          "candidate_key": "weightlifting-yang-liuyue-world-record",
+          "story_identity": "yang-liuyue-61kg-world-record-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "杨柳月举重女子61公斤级破世界纪录夺冠已并入总览条目"
+        },
+        {
+          "candidate_key": "canoe-sprint-three-golds",
+          "story_identity": "canoe-sprint-three-golds-china-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "皮划艇静水中国队3金已并入总览条目"
+        },
+        {
+          "candidate_key": "equestrian-dressage-team-gold",
+          "story_identity": "equestrian-dressage-team-first-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "马术盛装舞步团体历史首金已并入总览条目"
+        },
+        {
+          "candidate_key": "women-epee-team-gold",
+          "story_identity": "women-epee-team-gold-first-fencing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "女子重剑团体胜韩国夺金已并入总览条目"
+        },
+        {
+          "candidate_key": "women-football-quarterfinal-vietnam",
+          "story_identity": "women-football-extra-time-win-vietnam-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T23:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "女足加时1比0胜越南晋级四强为阶段性赛果，半决赛尚未进行"
+        },
+        {
+          "candidate_key": "table-tennis-mixed-doubles-final-berth",
+          "story_identity": "tt-mixed-doubles-all-china-final-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 4
+          },
+          "drop_reason": "国乒混双会师决赛属阶段性赛果，决赛尚未进行"
+        },
+        {
+          "candidate_key": "mid-autumn-rain-weather-warning",
+          "story_identity": "mid-autumn-holiday-persistent-rain-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "中秋假期天气服务信息9月24日已入选，今日降雨预报为同一话题延续更新"
+        },
+        {
+          "candidate_key": "suchao-knockout-schedule",
+          "story_identity": "suchao-2026-knockout-schedule-announced",
+          "research_pass": 1,
+          "occurred_at": "2026-09-24T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "苏超淘汰赛10月才开赛，日程公布属早知道信息，即时公共增量有限"
+        },
+        {
+          "candidate_key": "yangtze-delta-rail-418m",
+          "story_identity": "yangtze-delta-rail-mid-autumn-418m-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "长三角单日客流为区域性数据，已并入中秋假期首日出行条目"
+        },
+        {
+          "candidate_key": "daxing-airport-holiday-travel",
+          "story_identity": "daxing-airport-holiday-daily-170k-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "大兴机场双节预测客流已并入假期出行条目"
+        },
+        {
+          "candidate_key": "qiantang-tidal-train",
+          "story_identity": "qiantang-tidal-bore-train-c408-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-24T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 3
+          },
+          "drop_reason": "钱塘江观潮专列属区域特色服务，已并入假期出行条目"
+        },
+        {
+          "candidate_key": "mid-autumn-celebration-roundup",
+          "story_identity": "nationwide-mid-autumn-celebrations-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 3
+          },
+          "drop_reason": "全国各地欢度中秋为综合特写，非单一新闻事件"
+        },
+        {
+          "candidate_key": "taiwan-mid-autumn-feature",
+          "story_identity": "taiwan-mid-autumn-festival-feature-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 3
+          },
+          "drop_reason": "台湾中秋氛围特写公共信息增量有限，两岸题材谨慎处理"
+        },
+        {
+          "candidate_key": "worldskills-day3-drone-event",
+          "story_identity": "worldskills-shanghai-2026-day3-drone",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 4
+          },
+          "drop_reason": "世界技能大赛第三比赛日尚无奖牌结果，开幕式已于9月22日入选"
+        },
+        {
+          "candidate_key": "satellite-tv-galas",
+          "story_identity": "satellite-tv-mid-autumn-galas-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 3
+          },
+          "drop_reason": "各卫视中秋晚会属同质内容，总台秋晚已单独成条"
+        },
+        {
+          "candidate_key": "holiday-overtime-pay-reminder",
+          "story_identity": "holiday-overtime-pay-300pct-reminder-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-23T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 3
+          },
+          "drop_reason": "假期加班工资计发为周期性普法提醒，无实质新信息"
+        },
+        {
+          "candidate_key": "gold-price-daily-move",
+          "story_identity": "gold-price-daily-uptick-2026-09-25",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 3
+          },
+          "drop_reason": "金价日常行情波动，与普通读者直接决策关联弱"
+        },
+        {
+          "candidate_key": "pbc-overnight-reverse-repo",
+          "story_identity": "pbc-overnight-reverse-repo-2026-09",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 3
+          },
+          "drop_reason": "央行公开市场隔夜逆回购属常规操作，日常关联弱"
+        },
+        {
+          "candidate_key": "thailand-mens-100m-gold",
+          "story_identity": "thailand-boonsong-mens-100m-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T21:30:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "泰国选手百米夺冠为外国运动员赛果，对国内读者直接关联有限，已在陈妤颉条目中带及"
+        },
+        {
+          "candidate_key": "asian-games-day7-preview",
+          "story_identity": "asian-games-day7-preview-2026-09-26",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T23:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 3
+          },
+          "drop_reason": "第七比赛日看点为赛程前瞻，非已发生事件"
+        },
+        {
+          "candidate_key": "mooncake-craft-feature",
+          "story_identity": "mooncake-old-craft-new-schedule-feature-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 3
+          },
+          "drop_reason": "月饼老手艺特写为节前消费话题，月饼市场报道此前已入选"
+        },
+        {
+          "candidate_key": "pinglu-canal-holiday-cruise",
+          "story_identity": "pinglu-canal-first-holiday-cruises-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 8,
+            "everyday_relevance": 20,
+            "evidence": 8
+          },
+          "drop_reason": "平陆运河9月16日建成通航，假期游船为延续信息，远超72小时时效窗"
+        },
+        {
+          "candidate_key": "mid-autumn-moon-timing",
+          "story_identity": "mid-autumn-moon-fullest-time-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 15,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "drop_reason": "赏月时刻信息9月21日首曝且此前已入选，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "mid-autumn-boxoffice-first-day",
+          "story_identity": "mid-autumn-boxoffice-day1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-25T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "中秋档首日票房截至检索仅有票务平台数据与自媒体引用，无权威媒体核实披露"
+        },
+        {
+          "candidate_key": "shenzhen-mooncake-one-bite",
+          "story_identity": "shenzhen-company-mooncake-one-bite-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-24T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "深圳公司发月饼一人一口为自媒体视频热议，无持牌媒体原创核实"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-26-asian-games-day6-china-98-golds",
+      "story_identity": "asian-games-day6-china-98-golds-2026",
+      "headline": "🥇 亚运第六日中国队再添18金，98金继续领跑奖牌榜",
+      "summary": "9月25日中秋佳节，名古屋亚运会第六个比赛日，中国代表团在田径、游泳、体操、皮划艇、举重、射击、马术、击剑等项目多点夺金：陈妤颉女子百米破纪录夺冠，游泳队以30金收官，邹敬园双杠三连冠，杨柳月举重打破世界纪录。六个比赛日后，中国队以98金37银24铜继续领跑金牌榜、奖牌榜。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-25T22:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事综合报道，以新华社全天综合稿口径为限，表述限于赛果与奖牌数据"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "http://www.news.cn/sports/20260926/1716c17bb005400b929f15c769f57dea/c.html",
+          "title": "亚运综合｜陈妤颉加冕“女飞人” 游泳队“打包”30金",
+          "captured_at": "2026-09-26T06:23:00+08:00",
+          "note": "新华社名古屋9月25日电：第六比赛日中国队多点夺金，六个比赛日后以98金37银24铜继续领跑金牌榜、奖牌榜"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "金羊网",
+          "url": "https://sports.ycwb.com/ikimvkbtin/content_54306483.htm",
+          "title": "完美收官！中国泳军30金，创亚运历史最佳战绩！",
+          "captured_at": "2026-09-26T06:22:00+08:00",
+          "note": "羊城晚报金羊网9月25日报道：游泳收官日中国队斩获5金3银2铜，本届共获30金13银11铜刷新队史最佳"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-26-china-swimming-30-golds-record",
+      "story_identity": "china-swimming-30-golds-record-nagoya-2026",
+      "headline": "🏊 中国泳军30金收官创队史最佳，张展硕加冕“七金王”",
+      "summary": "9月25日名古屋亚运会游泳项目收官，中国队当日再获5金：张雨霏卫冕女子50米蝶泳，覃海洋卫冕男子50米蛙泳，李冰洁夺女子800米自由泳冠军，张展硕男子400米自由泳破赛会纪录夺冠、本届独揽七金，女子4×100米混合泳接力摘金。中国游泳队本届共获30金13银11铜，刷新队史亚运最佳战绩。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-25T22:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果事实报道，以央视与金羊网口径为限，表述限于赛果与奖牌数据"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://tv.cctv.com/2026/09/25/VIDEIl3FIqzDBy2ULVwVOcmp260925.shtml",
+          "title": "[亚运会]游泳项目25日收官张雨霏、覃海洋摘金",
+          "captured_at": "2026-09-26T06:21:00+08:00",
+          "note": "央视网9月25日报道：游泳项目收官日，张雨霏、覃海洋等摘金"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "金羊网",
+          "url": "https://sports.ycwb.com/ikimvkbtin/content_54306483.htm",
+          "title": "完美收官！中国泳军30金，创亚运历史最佳战绩！",
+          "captured_at": "2026-09-26T06:22:00+08:00",
+          "note": "金羊网9月25日报道：收官日中国队获5金3银2铜，本届游泳队30金13银11铜创队史亚运最佳，张展硕加冕七冠王"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-26-mid-autumn-day1-travel-peak",
+      "story_identity": "mid-autumn-holiday-day1-travel-peak-2026",
+      "headline": "🚄 中秋假期首日迎客流高峰，全国铁路预计发送2234万人次",
+      "summary": "9月25日中秋假期第一天，全国铁路迎来客流高峰，预计发送旅客2234万人次，计划加开旅客列车1218列；铁路上海站预计发送77万人次为假期最高峰，长三角铁路预计发送418万人次。据国新办发布会介绍，中秋假期全社会跨区域人员流动量预计达6.5亿人次，日均约2.2亿人次。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-25T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假期出行服务信息，以央视报道与国新办发布会口径为限，不预测拥堵与票价"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/25/ARTIXrJgNjsaMcMFhhQmxXxa260925.shtml",
+          "title": "6.5亿人次、2.2亿人次……假期出行热气腾腾 “流动的中国”尽显蓬勃生机",
+          "captured_at": "2026-09-26T06:19:00+08:00",
+          "note": "央视网9月25日报道：中秋假期首日全国铁路预计发送旅客2234万人次、加开1218列，假期全社会跨区域人员流动量预计6.5亿人次"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-09-25/doc-iniszmnc4515258.shtml",
+          "title": "预计发送旅客418万人次！2026年中秋节当天长三角铁路迎来客流高峰",
+          "captured_at": "2026-09-26T06:24:00+08:00",
+          "note": "9月25日长三角铁路预计发送旅客418万人次，同比增长116%，增开旅客列车242列"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-26-chen-yujie-womens-100m-gold",
+      "story_identity": "chen-yujie-womens-100m-asian-games-record-2026",
+      "headline": "🏃‍♀️ 17岁陈妤颉11秒06夺亚运女子百米冠军，刷新赛会纪录",
+      "summary": "9月25日晚，名古屋亚运会田径女子100米决赛，12月将满18岁的中国小将陈妤颉以11秒06夺得冠军并打破亚运会纪录。男子百米决赛中，泰国选手汶颂以9秒90夺冠同样打破赛会纪录，中国选手谢震业、曾克理分获第七、第六名。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 83,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 14
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-25T21:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果事实报道，以新华社口径为限，表述限于成绩与名次"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://xinhuanet.com/sports/20260925/4a3bf556faee462c8a423eea6d2f4c4e/c.html",
+          "title": "亚运会｜田径——女子100米决赛：陈妤颉夺冠",
+          "captured_at": "2026-09-26T06:20:00+08:00",
+          "note": "新华社9月25日报道：陈妤颉以11秒06夺得女子百米冠军并打破亚运会纪录"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "川观新闻",
+          "url": "https://cbgc.scol.com.cn/news/7997492",
+          "title": "中国选手陈妤颉获亚运会田径女子百米“飞人大战”金牌",
+          "captured_at": "2026-09-26T06:21:00+08:00",
+          "note": "川观新闻转新华社名古屋9月25日电：17岁小将陈妤颉女子100米决赛获得金牌"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-26-cmg-mid-autumn-gala-huainan",
+      "story_identity": "cmg-mid-autumn-gala-huainan-2026",
+      "headline": "🌕 总台2026中秋晚会淮南上演，三篇章近30个节目",
+      "summary": "9月25日中秋节当晚8点，《中央广播电视总台2026年中秋晚会》在安徽淮南播出。晚会以《巡月》《揽辰》《耀秋》三个篇章呈现近30个节目，在央视综合频道、综艺频道、中文国际频道等电视频道及央视频、央视网等新媒体平台同步播出。",
+      "category": "节日节气",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-25T20:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "节日晚会播出信息，以总台央视网节目单公告口径为限"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/25/ARTIVgLi8vT0ICxwZibD4cax260925.shtml",
+          "title": "官宣！《中央广播电视总台2026年中秋晚会》节目单发布",
+          "captured_at": "2026-09-26T06:20:00+08:00",
+          "note": "央视网9月25日发布：总台秋晚在安徽淮南举办，三篇章近30个节目，9月25日晚8点多平台同步播出"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6ab5e7ffe4b039a8e2f18fce.html",
+          "title": "官宣！《中央广播电视总台2026年中秋晚会》节目单发布",
+          "captured_at": "2026-09-26T06:21:00+08:00",
+          "note": "北京日报9月25日转载：总台2026年中秋晚会节目单发布，安徽淮南举办"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-26-china-women-basketball-semifinal",
+      "story_identity": "china-women-basketball-loss-korea-semifinal-2026",
+      "headline": "🏀 中国女篮80比85不敌韩国，无缘亚运会决赛",
+      "summary": "9月25日下午，名古屋亚运会女篮半决赛，卫冕冠军中国队80比85不敌韩国队，无缘决赛，全场三分球13投0中，张子宇得到22分7篮板。至此，中国篮球在本届亚运会男子、女子及三人篮球各项目均无缘决赛。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 11
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-25T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果事实报道，以央视与澎湃新闻口径为限，表述限于比分与数据"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网体育",
+          "url": "https://sports.cctv.com/2026/09/25/VIDEFiCnFaiytfxnTk6cOfaR260925.shtml",
+          "title": "[亚运会]女篮半决赛：中国VS韩国集锦",
+          "captured_at": "2026-09-26T06:20:00+08:00",
+          "note": "央视网9月25日消息：2026年亚运会女篮半决赛，中国女篮80比85不敌韩国队"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34149676",
+          "title": "中国女篮半决赛不敌韩国，本届亚运会中国篮球各项均无缘决赛",
+          "captured_at": "2026-09-26T06:21:00+08:00",
+          "note": "澎湃新闻记者9月25日发自名古屋：中国女篮80比85不敌韩国无缘决赛，本届亚运会中国篮球各队均未能闯进决赛"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-26-fast-telescope-10th-anniversary",
+      "story_identity": "fast-telescope-10th-anniversary-2026",
+      "headline": "📡 “中国天眼”落成十周年，累计发现脉冲星超1300颗",
+      "summary": "2026年9月25日，位于贵州平塘的500米口径球面射电望远镜“中国天眼”（FAST）迎来落成十周年。十年来，FAST累计发现脉冲星超1300颗，超过同期国际其他望远镜发现数量的总和；下一步将推进二期工程，构建混合口径射电干涉阵列。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 18,
+        "everyday_relevance": 16,
+        "evidence": 14
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-25T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "科技设施周年纪念报道，以新华社与北京日报口径为限，表述限于公开成果数据"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.news.cn/20260925/38c3b6f10c0b4f199db30e46bdb095d7/c.html",
+          "title": "十年一“镜” 凝望苍穹——数览“中国天眼”成长记",
+          "captured_at": "2026-09-26T06:24:00+08:00",
+          "note": "新华社9月25日报道：2026年9月25日中国天眼迎来落成十周年，累计发现脉冲星超1300颗"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6ab5da0fe4b0e42f8f00cecd.html",
+          "title": "“中国天眼”十岁了！二期工程也来了",
+          "captured_at": "2026-09-26T06:24:00+08:00",
+          "note": "北京日报客户端9月25日报道：中国天眼迎来10周岁生日，累计发现脉冲星超过1300颗，二期工程将推进"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
