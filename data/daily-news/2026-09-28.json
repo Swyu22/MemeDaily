@@ -1,0 +1,1038 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-28",
+  "generated_at": "2026-09-28T06:24:23+08:00",
+  "published_at": "2026-09-28T06:24:23+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 48,
+    "published": 5,
+    "dropped_safety": {
+      "geopolitics": 3,
+      "politics": 1,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 38,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 40,
+      "official_sources": 4,
+      "state_media_sources": 8,
+      "major_media_sources": 10,
+      "aggregator_sources": 2,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 8,
+        "relaxed_72h": 11
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 48,
+          "cumulative_unique_candidates": 48,
+          "source_scope": [
+            "央媒发布：新华社、央视网、央广网、中新网、中国天气网、中央气象台",
+            "持牌媒体原创：上观新闻、第一财经、北京日报、新京报、封面新闻、界面新闻",
+            "公共热榜：百度热搜、微博热搜（仅佐证热度）",
+            "财经媒体日刊汇总：财新mini财新闻"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-28-worldskills-china-gold-tally-top",
+          "story_identity": "worldskills-48th-shanghai-china-gold-tally-top-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-09-28-worldskills-china-gold-tally-top",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-28-table-tennis-womens-eighth-title",
+          "story_identity": "table-tennis-womens-singles-asian-games-eighth-title-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T20:40:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-28-table-tennis-womens-eighth-title",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-28-loan-intermediaries-marketing-rules",
+          "story_identity": "loan-intermediaries-quiet-before-online-marketing-rules-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-28-loan-intermediaries-marketing-rules",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-28-12306-debunks-waitlist-trick",
+          "story_identity": "railway-12306-debunks-waitlist-message-trick-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-09-28-12306-debunks-waitlist-trick",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-28-strongest-cold-air-national-day",
+          "story_identity": "strongest-cold-air-late-sept-national-day-cooling-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-09-28-strongest-cold-air-national-day",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "pandas-depart-atlanta",
+          "story_identity": "pandas-pingping-fushuang-depart-atlanta-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T02:55:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "启程发生于凌晨，事件时刻超出24小时严格时效层"
+        },
+        {
+          "candidate_key": "chess-olympiad-women-gold",
+          "story_identity": "chess-olympiad-china-women-undefeated-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 13,
+            "evidence": 10
+          },
+          "drop_reason": "当日体育题材已较集中，且日常关联有限"
+        },
+        {
+          "candidate_key": "national-football-nz-loss",
+          "story_identity": "china-football-friendly-0-3-new-zealand-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 10
+          },
+          "drop_reason": "热身赛失利，热度与日常关联有限"
+        },
+        {
+          "candidate_key": "mens-110mh-gold",
+          "story_identity": "chen-yuanjiang-asian-games-110mh-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "单项金牌，总分未达75分严格层"
+        },
+        {
+          "candidate_key": "wu-yanni-bronze",
+          "story_identity": "wu-yanni-100mh-bronze-slow-start-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "单项铜牌，日常关联有限"
+        },
+        {
+          "candidate_key": "artistic-swimming-duet",
+          "story_identity": "china-artistic-swimming-duet-title-defense-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "单项卫冕，总分未达75分严格层"
+        },
+        {
+          "candidate_key": "bmx-freestyle-first-gold",
+          "story_identity": "sun-sibei-bmx-park-first-asian-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "单项首金，总分未达75分严格层"
+        },
+        {
+          "candidate_key": "mens-tt-doubles-gold",
+          "story_identity": "huang-lin-mens-doubles-asian-games-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "单项金牌，总分未达75分严格层"
+        },
+        {
+          "candidate_key": "chen-yujie-200m-silver",
+          "story_identity": "chen-yujie-200m-silver-after-100m-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "单项银牌，日常关联有限"
+        },
+        {
+          "candidate_key": "huang-youwen-200m-silver",
+          "story_identity": "huang-youwen-asian-games-200m-silver-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "单项银牌，热度与关联有限"
+        },
+        {
+          "candidate_key": "worldskills-nurse-gold",
+          "story_identity": "worldskills-shanghai-male-nurse-first-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "同一赛事个人单项，已并入世赛闭幕主条目避免重复"
+        },
+        {
+          "candidate_key": "women-basketball-return",
+          "story_identity": "china-women-basketball-bronze-return-review-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "赛后返京动态，新闻增量弱"
+        },
+        {
+          "candidate_key": "golden-eagle-tribute",
+          "story_identity": "golden-eagle-festival-tribute-you-benchang-liu-huan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 11,
+            "evidence": 9
+          },
+          "drop_reason": "晚会致敬环节，新闻性有限"
+        },
+        {
+          "candidate_key": "mooncake-unsold",
+          "story_identity": "unsold-mooncake-inventory-digest-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "消费科普稿，事件性新闻增量弱"
+        },
+        {
+          "candidate_key": "holiday-travel-hack",
+          "story_identity": "mid-autumn-national-day-leave-stitching-travel-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "出行观察稿，非事件性新闻"
+        },
+        {
+          "candidate_key": "shanshenbu-warning",
+          "story_identity": "hospital-warns-shanshenbu-knee-injuries-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 20,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "院方提醒披露于26日，总分未达70分48小时层"
+        },
+        {
+          "candidate_key": "pension-420k",
+          "story_identity": "changde-scavenger-21-years-pension-claim-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "个案报道披露较早，总分66分仅达72小时层"
+        },
+        {
+          "candidate_key": "shiyan-hospital-response",
+          "story_identity": "shiyan-hospital-registration-fee-dispute-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 10
+          },
+          "drop_reason": "地方争议回应，日常关联与证据有限"
+        },
+        {
+          "candidate_key": "nandan-teacher-training",
+          "story_identity": "nandan-county-teacher-training-notice-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 11
+          },
+          "drop_reason": "县域争议通报，属地处置阶段"
+        },
+        {
+          "candidate_key": "luoyuan-landslide",
+          "story_identity": "luoyuan-bili-township-landslide-rescue-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T07:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "地方地质灾害救援进行中，总分未达75分严格层"
+        },
+        {
+          "candidate_key": "cba-tickets",
+          "story_identity": "cba-new-season-oct-16-opener-tickets-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T20:14:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "票务开售信息，日常关联有限"
+        },
+        {
+          "candidate_key": "textbook-guitar-girl",
+          "story_identity": "english-textbook-guitar-girl-viral-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 8
+          },
+          "drop_reason": "网络走红现象，公共新闻性弱"
+        },
+        {
+          "candidate_key": "cat-ebike-sound",
+          "story_identity": "cat-recognizes-owner-ebike-sound-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 9,
+            "evidence": 7
+          },
+          "drop_reason": "萌宠趣闻，非公共新闻"
+        },
+        {
+          "candidate_key": "xinjiang-saline-shrimp",
+          "story_identity": "xinjiang-saline-land-shrimp-farming-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "drop_reason": "产业深度报道，事件时效一般"
+        },
+        {
+          "candidate_key": "ai-doctor-selling-drugs",
+          "story_identity": "ai-doctor-livestream-drug-sales-accountability-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "调查报道，日常关联一般"
+        },
+        {
+          "candidate_key": "wuhan-river-beach-control",
+          "story_identity": "wuhan-river-beach-national-day-vehicle-control-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "drop_reason": "地方性管制通告，全国范围关联有限"
+        },
+        {
+          "candidate_key": "suzhou-water-notice",
+          "story_identity": "suzhou-planned-water-cut-notice-20260928",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 10,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "市政停水通知，过于属地"
+        },
+        {
+          "candidate_key": "india-up-rain",
+          "story_identity": "india-uttar-pradesh-rain-deaths-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T06:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 11,
+            "evidence": 11
+          },
+          "drop_reason": "外国地方灾害，属常规地方新闻"
+        },
+        {
+          "candidate_key": "indonesia-ferry",
+          "story_identity": "indonesia-ferry-capsize-death-toll-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T20:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 11,
+            "evidence": 11
+          },
+          "drop_reason": "外国地方事故，对中国读者日常关联低"
+        },
+        {
+          "candidate_key": "openai-pause",
+          "story_identity": "openai-pauses-frontier-model-training-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T05:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 10
+          },
+          "drop_reason": "海外行业动态，直接民生关联不足"
+        },
+        {
+          "candidate_key": "us-10y-treasury",
+          "story_identity": "us-10y-treasury-yield-near-2008-high-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T05:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 11,
+            "evidence": 12
+          },
+          "drop_reason": "海外市场波动，日常关联低"
+        },
+        {
+          "candidate_key": "south-africa-shootings",
+          "story_identity": "south-africa-johannesburg-shootings-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T04:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 9,
+            "evidence": 11
+          },
+          "drop_reason": "外国地方治安事件，日常关联低"
+        },
+        {
+          "candidate_key": "dji-insta360-price-war",
+          "story_identity": "dji-insta360-gimbal-camera-price-war-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 10
+          },
+          "drop_reason": "行业竞争动态，日常关联有限"
+        },
+        {
+          "candidate_key": "tencent-qclaw",
+          "story_identity": "tencent-qclaw-agent-app-shutdown-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "产品停运，影响用户面较窄"
+        },
+        {
+          "candidate_key": "offshore-rmb-brokers",
+          "story_identity": "offshore-rmb-platform-first-foreign-brokers-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 12
+          },
+          "drop_reason": "金融基建动态，日常关联低"
+        },
+        {
+          "candidate_key": "qinhuangdao-auto-fraud",
+          "story_identity": "qinhuangdao-auto-trade-loan-fraud-probe-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 10
+          },
+          "drop_reason": "个案调查，属地处置阶段"
+        },
+        {
+          "candidate_key": "house-occupied-court",
+          "story_identity": "full-payment-house-occupied-court-eviction-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "个案维权报道，总分68分仅达72小时层"
+        },
+        {
+          "candidate_key": "maye-musk-shanghai",
+          "story_identity": "maye-musk-shanghai-visit-posts-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T15:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 9,
+            "evidence": 9
+          },
+          "drop_reason": "名人游记，公共新闻性弱"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-28-worldskills-china-gold-tally-top",
+      "story_identity": "worldskills-48th-shanghai-china-gold-tally-top-2026",
+      "headline": "🛠️ 世界技能大赛上海闭幕，中国41金连续五届蝉联金牌榜榜首",
+      "summary": "第48届世界技能大赛9月27日晚在上海闭幕。中国代表团71名选手参加全部64个项目，获41枚金牌、11枚银牌、4枚铜牌和6个优胜奖，名列金牌榜、奖牌榜和团体总分第一，连续5届位居金牌榜榜首，创参赛以来最好成绩。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-27T21:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "职业技能赛事报道，信息积极实用"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/20260927/a93818f26d19493caf77ee366acf53ea/c.html",
+          "title": "新华社权威快报丨中国蝉联世界技能大赛金牌榜榜首",
+          "captured_at": "2026-09-28T06:08:00+08:00",
+          "note": "新华社记者从27日晚闭幕式获悉，中国连续5届位居金牌榜榜首"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "上观新闻",
+          "url": "https://www.jfdaily.com/sgh/detail?id=4065014",
+          "title": "中国蝉联金牌榜榜首，上海选手斩获6金2银，第48届世界技能大赛今晚闭幕",
+          "captured_at": "2026-09-28T06:09:00+08:00",
+          "note": "佐证41金11银4铜及上海选手成绩"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-28-table-tennis-womens-eighth-title",
+      "story_identity": "table-tennis-womens-singles-asian-games-eighth-title-2026",
+      "headline": "🏓 王曼昱亚运女单夺金、孙颖莎摘银，国乒实现八连冠",
+      "summary": "9月27日爱知·名古屋亚运会乒乓球女单决赛，王曼昱以4比2战胜队友孙颖莎夺得金牌，孙颖莎获银牌。国乒包揽女单冠亚军，实现在该项目上的亚运会八连冠；这是王曼昱时隔8年再夺亚运女单金牌。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-27T20:40:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事实事求是报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/newscenter/native/gd/kx/20260927/t20260927_527827094.shtml",
+          "title": "王曼昱摘金 国乒实现女单亚运会八连冠",
+          "captured_at": "2026-09-28T06:10:00+08:00",
+          "note": "据央视新闻客户端：王曼昱4比2胜孙颖莎，国乒女单八连冠"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-27/10704579.shtml",
+          "title": "王曼昱摘金 国乒实现女单亚运会八连冠",
+          "captured_at": "2026-09-28T06:10:00+08:00",
+          "note": "中新网报道决赛各局比分与八连冠"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-28-loan-intermediaries-marketing-rules",
+      "story_identity": "loan-intermediaries-quiet-before-online-marketing-rules-2026",
+      "headline": "💼 贷款中介集体“安静”了：金融产品网络营销新规9月30日实施",
+      "summary": "《金融产品网络营销管理办法》9月30日起正式实施，金融机构、第三方互联网平台之外的其他组织或个人不得开展或变相开展金融产品网络营销。临近新规落地，大量贷款中介解散客户群、修改微信名、删除朋友圈，助贷行业正经历系统性重构，消费者遇到的借贷营销套路将明显减少。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-27T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "金融监管新规与消费者保护报道，信息实用"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网财经",
+          "url": "https://finance.cctv.com/2026/09/27/ARTIgMOShnz0GZM5QFwpPXxq260927.shtml",
+          "title": "解散客户群、删除朋友圈……贷款中介这几天都集体安静了",
+          "captured_at": "2026-09-28T06:11:00+08:00",
+          "note": "央视网财经报道新规实施前助贷行业集体降存在感"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "第一财经",
+          "url": "https://www.yicai.com/news/103378741.html",
+          "title": "解散客户群、删除朋友圈……贷款中介这几天都集体安静了！",
+          "captured_at": "2026-09-28T06:12:00+08:00",
+          "note": "一财佐证新规核心条款与行业整顿"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-28-12306-debunks-waitlist-trick",
+      "story_identity": "railway-12306-debunks-waitlist-message-trick-2026",
+      "headline": "🚄 12306辟谣“给公众号发消息能抢到票”：候补购票没有捷径",
+      "summary": "近期有短视频博主宣称向12306公众号反复发消息即可快速候补成功，铁路12306辟谣：候补购票由系统按顺序自动兑现，人工无法干预，也未与任何第三方平台合作；通过第三方平台购票不仅不会提高成功率，反而可能更慢甚至失败。假期出行请认准铁路12306官方渠道。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 19,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-27T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "官方辟谣类出行服务信息"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "上观新闻",
+          "url": "https://www.jfdaily.com/news/detail?id=1185145",
+          "title": "12306辟谣“给12306微信公众号发信息就能抢到票”",
+          "captured_at": "2026-09-28T06:13:00+08:00",
+          "note": "上观新闻转引12306辟谣：从未与第三方合作"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/09/27/11975509.shtml",
+          "title": "“候补购票小妙招”真的靠谱吗？12306多次辟谣",
+          "captured_at": "2026-09-28T06:13:00+08:00",
+          "note": "北京日报梳理12306多次辟谣与官方候补规则"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-28-strongest-cold-air-national-day",
+      "story_identity": "strongest-cold-air-late-sept-national-day-cooling-2026",
+      "headline": "🌧️ 下半年来最强冷空气将至，国庆前后中东部明显降温",
+      "summary": "中央气象台预报：9月29日至10月1日，一股较强冷空气将影响我国，江南及其以北地区气温先后下降4～8℃，内蒙古部分地区降温可达10℃左右，长江中下游及其以北气温将大面积创立秋以来新低，南方持续多日的暑热结束。国庆假期出行注意添衣防雨。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 19,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-27T10:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "天气预警服务信息，措辞克制"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "https://www.nmc.cn/publish/bulletin/mid-range.htm",
+          "title": "中期天气预报",
+          "captured_at": "2026-09-28T06:14:00+08:00",
+          "note": "中央气象台中期预报：29日至10月1日较强冷空气影响"
+        },
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "http://news.weather.com.cn/2026/09/4805048.shtml",
+          "title": "下半年来最强冷空气月底来袭，南方秋老虎将变“纸老虎”",
+          "captured_at": "2026-09-28T06:14:00+08:00",
+          "note": "中国天气网解读冷空气强度与影响时段"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
