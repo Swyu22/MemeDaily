@@ -1,0 +1,1185 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-09-28",
+  "generated_at": "2026-09-28T07:44:51+08:00",
+  "published_at": "2026-09-28T07:44:51+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 62,
+    "published": 7,
+    "dropped_safety": {
+      "时事政治": 4,
+      "纯体育赛事结果": 8,
+      "涉及具体人物": 8,
+      "涉及未成年人": 2,
+      "明星争议": 2,
+      "社会事件/争议": 5,
+      "涉及具体品牌公司": 3
+    },
+    "dropped_low_confidence": 21,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "zhihu",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 28,
+      "platform_public_sources": 0,
+      "aggregator_sources": 14,
+      "search_media_sources": 2,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 8,
+        "relaxed_72h": 8
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-28-guoqing-zuihou-yitian-belike",
+          "canonical_phrase": "国庆前最后一天belike",
+          "outcome": "selected",
+          "item_id": "2026-09-28-guoqing-zuihou-yitian-belike",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-28-jintuikuan-chuidao-yingshijie",
+          "canonical_phrase": "仅退款的风终于吹到了影视界",
+          "outcome": "selected",
+          "item_id": "2026-09-28-jintuikuan-chuidao-yingshijie",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+            "observed_at": "2026-09-28T05:53:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-28-jiaqi-zhenyou-anpai",
+          "canonical_phrase": "我都说我假期真有安排了",
+          "outcome": "selected",
+          "item_id": "2026-09-28-jiaqi-zhenyou-anpai",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-28-ye-kaishi-kan-yueliang",
+          "canonical_phrase": "我也开始看月亮了",
+          "outcome": "selected",
+          "item_id": "2026-09-28-ye-kaishi-kan-yueliang",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-10-guoriziren",
+          "canonical_phrase": "过日子人",
+          "outcome": "selected",
+          "item_id": "2026-09-10-guoriziren",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-28-jianzhiqi-yudao-zhongqiu",
+          "canonical_phrase": "当你在减脂期遇到中秋",
+          "outcome": "selected",
+          "item_id": "2026-09-28-jianzhiqi-yudao-zhongqiu",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-28-ni-qilai-kaiyihuir",
+          "canonical_phrase": "你起来开一会儿吧我困得撑不住了",
+          "outcome": "selected",
+          "item_id": "2026-09-28-ni-qilai-kaiyihuir",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+            "observed_at": "2026-09-28T05:53:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhongqiu-jiaqi-ganzuoye-shilu",
+          "canonical_phrase": "中秋假期赶作业实录",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 28,
+            "reusability": 8,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "hunyin-gengxiang-hehuo-kangshenghuo",
+          "canonical_phrase": "婚姻更像合伙扛生活轮流当牛马",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+            "observed_at": "2026-09-28T05:53:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yaodengdao-yueliang-bianquan-nicaihuidao",
+          "canonical_phrase": "要等到月亮变全你才会回到我身边",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 28,
+            "reusability": 11,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "wo-de-zhongqiu-jiaqi-dayang-riji",
+          "canonical_phrase": "我的中秋假期打烊日记",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 9,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "mengchong-ban-kesou-shoushiwu",
+          "canonical_phrase": "萌宠版咳嗽手势舞来了",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 11,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "shiwu-de-yueliang-shiqi-yuan",
+          "canonical_phrase": "十五的月亮十七圆",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 26,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "guoqing-chuyou-chuanda-silu-youle",
+          "canonical_phrase": "国庆出游穿搭思路有了",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 9,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "hunshuang-yingle-guanjun-buganxiao",
+          "canonical_phrase": "混双赢了冠军都不敢笑也不敢庆祝",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 26,
+            "reusability": 8,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+            "observed_at": "2026-09-28T05:53:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhongqiu-tuziwu-chuangyi-taijuele",
+          "canonical_phrase": "中秋兔子舞创意太绝了",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 8,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "shaishai-ni-shi-zenme-guo-zhongqiu",
+          "canonical_phrase": "晒晒你是怎么过中秋的",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 26,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "kan-yueliang-pashanglai-shoushiwu",
+          "canonical_phrase": "我们一起看月亮爬上来手势舞挑战",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 26,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "hongchen-wu-cisheng-taiyou-ganjue",
+          "canonical_phrase": "红尘误此生太有感觉了",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 26,
+            "reusability": 9,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yiqi-pai-qiutian-fenweigan-zhaopian",
+          "canonical_phrase": "一起拍这个秋天氛围感照片吧",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 27,
+            "reusability": 9,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "qiutian-ziran-yao-zhe-guihua",
+          "canonical_phrase": "秋天自然要折桂花",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 26,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "pengyouquan-luanhui-zhufu-bei-wenhao",
+          "canonical_phrase": "朋友圈乱回祝福被同学问号",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 26,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+            "observed_at": "2026-09-28T05:53:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "shaichu-zhongqiujie-shouchaobao",
+          "canonical_phrase": "晒出你的中秋节手抄报",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 26,
+            "reusability": 9,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yalida-kan-28nian-laodongjie",
+          "canonical_phrase": "觉得压力大的可以看28年劳动节",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 26,
+            "reusability": 9,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+            "observed_at": "2026-09-28T05:53:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhongyu-dengdao-shuiqian-biexiangtaiduo",
+          "canonical_phrase": "终于等到这首睡前别想太多",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 26,
+            "reusability": 9,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+            "observed_at": "2026-09-28T05:01:53+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "he-qingxu-buwending-ren-xiangchu",
+          "canonical_phrase": "和情绪不稳定的人相处是折磨",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 26,
+            "reusability": 8,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+            "observed_at": "2026-09-28T05:53:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "daikuan-zhongjie-shanpu-pengyouquan",
+          "canonical_phrase": "贷款中介集体删除朋友圈",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 25,
+            "reusability": 2,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+            "observed_at": "2026-09-28T05:53:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "ligongke-daxue-wenke-peitao-sheshi",
+          "canonical_phrase": "理工科大学文科是配套设施",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 25,
+            "reusability": 4,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+            "observed_at": "2026-09-28T05:53:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "ninboda-de-yonghu-zhengzai-lvxingzhong",
+          "canonical_phrase": "您拨打的用户正在旅游中",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-22-zhanshi-xinxue-shanshenbu",
+          "canonical_phrase": "展示我新学的闪身步",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-7",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-8",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-9",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-10",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-11",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-12",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-13",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-14",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-15",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-16",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-17",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-18",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-19",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-20",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-21",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-22",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及未成年人",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-23",
+          "outcome": "dropped_safety",
+          "drop_reason": "明星争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "明星争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件/争议",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-31",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-32",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 62,
+          "cumulative_unique_candidates": 62,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "zhihu",
+            "bilibili",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-28-guoqing-zuihou-yitian-belike",
+      "title": "🏃 国庆前最后一天belike",
+      "aliases": [
+        "国庆前最后一天belike",
+        "9月30号国庆前最后一天belike",
+        "放假前最后一天belike"
+      ],
+      "canonical_phrase": "国庆前最后一天belike",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "「X前最后一天belike」节前状态模板刷屏：今日抖音热榜「9月30号国庆前最后一天belike」冲上第4位，全网晒放假前最后一天的心不在焉。",
+      "origin": "已验证：douyin-hot-hub抖音热榜归档2026-09-28 05:01快照「9月30号国庆前最后一天belike」列第4位；聚合站pulse全源聚合抖音分区同列第4位；抖音公开热榜落地页显示该词条热度超1131万。该梗今日首次上榜本站。",
+      "usage": "模板「X前最后一天belike」：配一张魂不守舍的图/视频，套到放假前、下班前、开学前、考试前最后一天；评论区互相鉴定「我本人belike」。",
+      "fun_point": "belike后缀一挂，任何摸鱼状态都成了纪录片；假期越近心越野，最后一天的分心状态全民共享，零门槛人人能拍一条。",
+      "why_spread": "已验证：今日抖音热榜第4位、热度破千万，多个聚合榜同步收录；推测：中秋国庆假期叠加，9月30日放假倒计时节点临近，节前综合征内容天然共鸣。",
+      "lifecycle": "peak",
+      "brand_usage": "内容账号可发「放假前最后一天belike」员工状态短剧；文旅、票务账号可做倒计时海报；避免渲染消极怠工。",
+      "risk": {
+        "level": "safe",
+        "note": "节前自嘲句式，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 88,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-28",
+          "observed_at": "2026-09-28T05:01:53+08:00",
+          "captured_at": "2026-09-28T07:21:30+08:00",
+          "note": "抖音热榜归档09-28 05:01快照：「9月30号国庆前最后一天belike」列第4位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://pulse.fuzh.space/app/hot",
+          "title": "pulse 全源聚合·抖音热榜",
+          "captured_at": "2026-09-28T07:27:00+08:00",
+          "note": "pulse全源聚合页09-28打开快照：抖音热榜分区「9月30号国庆前最后一天belike」列第4位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-28-jintuikuan-chuidao-yingshijie",
+      "title": "🌬️ 仅退款的风终于吹到了影视界",
+      "aliases": [
+        "仅退款的风终于吹到了影视界",
+        "X的风终于吹到了Y",
+        "剧粉仅退款"
+      ],
+      "canonical_phrase": "仅退款的风终于吹到了影视界",
+      "platform": [
+        "weibo"
+      ],
+      "type": "句式梗",
+      "summary": "「X的风终于吹到了Y」再填新词：某热播剧剧粉对18元收官礼包发起「仅退款」，「仅退款的风终于吹到了影视界」登微博热搜，电商售后梗完成跨界迁移。",
+      "origin": "已验证：微博热搜归档2026-09-28 05:53快照「仅退款的风终于吹到了影视界」在榜、热度167519；虎嗅09-27报道该话题09-27冲上微博热搜第一，大量剧粉在社交平台晒出对某剧集收官礼包的退款申请截图。该梗今日首次上榜本站。",
+      "usage": "句式「X的风终于吹到了Y」：套到任何行业规则跨界场景——双休的风终于吹到了我司、公摊的风吹到了菜市场；评论区晒「我无意购买此项目」式退款理由造句。",
+      "fun_point": "电商售后术语空降追剧圈，看完剧再申请退款的操作荒诞又丝滑；「XX的风终于吹到了XX」的迁徙句式自带新闻播报腔，套谁都成立。",
+      "why_spread": "已验证：今日微博热搜在榜，虎嗅等媒体09-27报道话题登顶热搜；推测：「仅退款」本身是电商高认知度词汇，与追剧付费场景碰撞出强烈违和感，句式可无限迁移行业。",
+      "lifecycle": "peak",
+      "brand_usage": "内容账号可借「X的风终于吹到了Y」做行业规则跨界调侃；电商、视频平台不宜借势炒作退款话题，避免鼓励恶意退款。",
+      "risk": {
+        "level": "medium",
+        "note": "源头是剧粉集体退款争议，借用时只玩句式、不站队粉丝行为，不点名剧集与人物。"
+      },
+      "days_on_list": 1,
+      "score": 82,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+          "title": "2026-09-28热门搜索（微博热搜归档）",
+          "observed_at": "2026-09-28T05:53:45+08:00",
+          "captured_at": "2026-09-28T07:21:45+08:00",
+          "note": "微博热搜归档09-28 05:53快照：「仅退款的风终于吹到了影视界」在榜、热度167519。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.huxiu.com/moment/1283905.html",
+          "title": "剧粉集体要求退款18元礼包，「仅退款」话题冲上热搜第一",
+          "captured_at": "2026-09-28T07:26:00+08:00",
+          "note": "虎嗅09-27：某热播剧剧粉对18元收官礼包发起「仅退款」，「仅退款的风终于吹到了影视界」09-27冲上微博热搜第一，大量网友晒退款截图玩梗。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-28-jiaqi-zhenyou-anpai",
+      "title": "📅 我都说我假期真有安排了",
+      "aliases": [
+        "我都说我假期真有安排了",
+        "我都说我X了",
+        "假期真有安排了"
+      ],
+      "canonical_phrase": "我都说我假期真有安排了",
+      "platform": [
+        "douyin"
+      ],
+      "type": "口头禅梗",
+      "summary": "假期嘴硬句式「我都说我假期真有安排了」走红：今日抖音热榜在榜，网友用它回击「你假期是不是又没安排」，实则安排的在家躺着。",
+      "origin": "已验证：douyin-hot-hub抖音热榜归档2026-09-28 05:01快照「我都说我假期真有安排了」在榜；聚合站pulse全源聚合抖音分区列第8位、热度约918万。该梗今日首次上榜本站。",
+      "usage": "嘴硬模板「我都说我X了」：被问假期安排、周末安排、下班安排时统一回这句；视频配文晒「安排」=睡觉点外卖刷剧；评论区接龙「我的安排是床-沙发-床」。",
+      "fun_point": "「真有安排」的理直气壮与「安排就是躺着」的真相形成反差，替所有没出门的人把嘴硬说得体面，假期社交防御万能盾。",
+      "why_spread": "已验证：今日抖音热榜在榜、聚合榜同步收录；推测：中秋国庆长假首日，「去哪玩」社交压力集中爆发，这句嘴硬回应给宅家党提供了标准答案，二创门槛低。",
+      "lifecycle": "peak",
+      "brand_usage": "家居、外卖、影音账号可接「假期真有安排」宅家场景内容；文旅账号可反向玩「没安排的看过来」；避免制造出行焦虑。",
+      "risk": {
+        "level": "safe",
+        "note": "假期自嘲口头禅，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 81,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 28,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-28",
+          "observed_at": "2026-09-28T05:01:53+08:00",
+          "captured_at": "2026-09-28T07:21:30+08:00",
+          "note": "抖音热榜归档09-28 05:01快照：「我都说我假期真有安排了」在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://pulse.fuzh.space/app/hot",
+          "title": "pulse 全源聚合·抖音热榜",
+          "captured_at": "2026-09-28T07:27:00+08:00",
+          "note": "pulse全源聚合页09-28打开快照：抖音热榜分区「我都说我假期真有安排了」列第8位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-28-ye-kaishi-kan-yueliang",
+      "title": "🌕 我也开始看月亮了",
+      "aliases": [
+        "我也开始看月亮了",
+        "我也开始抬头看月亮",
+        "我也开始X了"
+      ],
+      "canonical_phrase": "我也开始看月亮了",
+      "platform": [
+        "douyin"
+      ],
+      "type": "情绪梗",
+      "summary": "思念体「我也开始看月亮了」中秋持续发酵：今日抖音热榜在榜，舞狮、非遗、异地团圆视频集体用「直到相隔千里，我也开始抬头看月亮」作文案。",
+      "origin": "已验证：douyin-hot-hub抖音热榜归档2026-09-28 05:01快照「我也开始看月亮了」列第18位；tophub抖音体育榜一条舞狮视频以「从前觉得千里共婵娟太浮夸了，直到相隔千里我也开始抬头看月亮」为文案、播放超843万。该梗今日首次上榜本站。",
+      "usage": "思念/入坑模板「我也开始X了」：异地过节晒月亮配文；迁移造句「我也开始理解我妈了」「我也开始囤热水袋了」；评论区接力各自「开始」的瞬间。",
+      "fun_point": "一句「我也开始看月亮了」把说不出口的想念包装成抬头动作，中秋限定氛围拉满；谁都能借它承认一次心软，含蓄又百搭。",
+      "why_spread": "已验证：今日抖音热榜在榜，同文案视频单条播放超843万；推测：中秋十五月亮十七圆的罕见天象叠加假期思乡情绪，含蓄表达模板适配各类团圆/异地内容。",
+      "lifecycle": "rising",
+      "brand_usage": "文旅、影像、茶饮账号可借「我也开始看月亮了」做中秋情绪海报；句式「我也开始X了」适配品牌温柔向文案；避免过度煽情。",
+      "risk": {
+        "level": "safe",
+        "note": "节令思念表达，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 79,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 28,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-28",
+          "observed_at": "2026-09-28T05:01:53+08:00",
+          "captured_at": "2026-09-28T07:21:30+08:00",
+          "note": "抖音热榜归档09-28 05:01快照：「我也开始看月亮了」列第18位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "douyin",
+          "url": "https://tophub.today/n/3adqqzadng",
+          "title": "tophub 抖音榜",
+          "captured_at": "2026-09-28T07:22:30+08:00",
+          "note": "tophub抖音榜09-28打开快照：舞狮视频以「直到相隔千里我也开始抬头看月亮」为文案列第8位、播放超843万。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://pulse.fuzh.space/app/hot",
+          "title": "pulse 全源聚合·抖音热榜",
+          "captured_at": "2026-09-28T07:27:00+08:00",
+          "note": "pulse全源聚合页09-28打开快照：抖音热榜分区「我也开始看月亮了」列第20位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-10-guoriziren",
+      "title": "🛋️ 在假期做一个纯过日子人",
+      "aliases": [
+        "过日子人",
+        "纯过日子人",
+        "在假期做一个纯过日子人"
+      ],
+      "canonical_phrase": "过日子人",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "「纯过日子人」长假回归：今日抖音热榜「在假期做一个纯过日子人」在榜，不打卡不特种兵，把假期过成普通日子成为新主张。",
+      "origin": "已验证：douyin-hot-hub抖音热榜归档2026-09-28 05:01快照「在假期做一个纯过日子人」在榜；视觉志09-24长文《“纯过日子人”爆火：七夕没礼物，中秋无月饼，十一不旅行》梳理该身份走红路径。该身份09-10首次上榜本站，今日为第2次上榜。",
+      "usage": "自称「纯过日子人」：晒假期零安排日常——睡到自然醒、菜市场溜达、在家做饭；造句「我们过日子人不凑热闹」「在假期做一个纯过日子人」；反特种兵旅行站队话题。",
+      "fun_point": "别人卷行程我卷沙发，把「啥也没干」过成理直气壮的生活美学；假期朋友圈摄影大赛里最松弛的一股清流。",
+      "why_spread": "已验证：今日抖音热榜在榜，视觉志等媒体09月中下旬集中报道「纯过日子人」走红；推测：超长假期出行挤兑与消费疲劳叠加，低功耗过节主张给普通人一个体面身份。",
+      "lifecycle": "rising",
+      "brand_usage": "家居、速食、本地生活账号可接「纯过日子人的假期清单」；文旅账号可做反向「不赶路」路线；避免贩卖消费降级焦虑。",
+      "risk": {
+        "level": "low",
+        "note": "话题带消费降级叙事，避免渲染焦虑或拉踩出行人群。"
+      },
+      "days_on_list": 2,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-28",
+          "observed_at": "2026-09-28T05:01:53+08:00",
+          "captured_at": "2026-09-28T07:21:30+08:00",
+          "note": "抖音热榜归档09-28 05:01快照：「在假期做一个纯过日子人」在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://pulse.fuzh.space/app/hot",
+          "title": "pulse 全源聚合·抖音热榜",
+          "captured_at": "2026-09-28T07:27:00+08:00",
+          "note": "pulse全源聚合页09-28打开快照：抖音热榜分区「在假期做一个纯过日子人」列第19位。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "origin",
+          "platform": "other",
+          "url": "https://3g.163.com/news/article/L7IRPJO205188ATT.html",
+          "title": "“纯过日子人”爆火：七夕没礼物，中秋无月饼，十一不旅行",
+          "captured_at": "2026-09-28T07:28:00+08:00",
+          "note": "视觉志09-24长文：系统梳理「纯过日子人」身份走红，七夕不送礼、中秋不买礼盒、十一不旅行的生活态度。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-28-jianzhiqi-yudao-zhongqiu",
+      "title": "🥮 当你在减脂期遇到中秋",
+      "aliases": [
+        "当你在减脂期遇到中秋",
+        "当你在X遇到Y",
+        "减脂期遇到月饼"
+      ],
+      "canonical_phrase": "当你在减脂期遇到中秋",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "两难模板「当你在X遇到Y」节令版刷屏：今日抖音热榜「当你在减脂期遇到中秋」在榜，减脂人面对月饼的表情管理集体崩盘。",
+      "origin": "已验证：douyin-hot-hub抖音热榜归档2026-09-28 05:01快照「当你在减脂期遇到中秋」在榜；聚合站pulse全源聚合抖音分区同收录该词条。该梗今日首次上榜本站。",
+      "usage": "两难模板「当你在X遇到Y」：减脂期遇到中秋、攒钱期遇到双十一、早睡期遇到新剧开播；视频用表情/动作演绎破防瞬间；评论区晒各自「破戒」现场。",
+      "fun_point": "立了一个月的flag被一块月饼击穿，克制与馋的拉扯被具象成一个眼神；凡有坚持的人都照见了自己。",
+      "why_spread": "已验证：今日抖音热榜在榜、聚合榜同步收录；推测：中秋月饼季撞上全年减脂热潮，「坚持vs诱惑」是常青内容结构，句式可无限替换场景。",
+      "lifecycle": "rising",
+      "brand_usage": "健身、轻食账号可玩「减脂期遇到中秋」反向种草；月饼糕点账号可自黑「破戒现场」；避免身材焦虑营销。",
+      "risk": {
+        "level": "safe",
+        "note": "自律与美食的通用调侃，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 28,
+        "reusability": 16,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-09-28.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-09-28",
+          "observed_at": "2026-09-28T05:01:53+08:00",
+          "captured_at": "2026-09-28T07:21:30+08:00",
+          "note": "抖音热榜归档09-28 05:01快照：「当你在减脂期遇到中秋」在榜。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://pulse.fuzh.space/app/hot",
+          "title": "pulse 全源聚合·抖音热榜",
+          "captured_at": "2026-09-28T07:27:00+08:00",
+          "note": "pulse全源聚合页09-28打开快照：抖音热榜分区「当你在减脂期遇到中秋」列第48位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-28-ni-qilai-kaiyihuir",
+      "title": "🚗 你起来开一会儿吧我困得撑不住了",
+      "aliases": [
+        "你起来开一会儿吧我困得撑不住了",
+        "你起来X一会儿吧",
+        "我困得撑不住了"
+      ],
+      "canonical_phrase": "你起来开一会儿吧我困得撑不住了",
+      "platform": [
+        "weibo"
+      ],
+      "type": "口头禅梗",
+      "summary": "自驾出行对话梗「你起来开一会儿吧我困得撑不住了」登微博热搜：假期赶路副驾驶昏睡、主驾硬撑的场景引发全民共鸣。",
+      "origin": "已验证：微博热搜归档2026-09-28 05:53快照「你起来开一会儿吧我困得撑不住了」在榜、热度82305；聚合站pulse全源聚合微博分区同收录该词条。该梗今日首次上榜本站。",
+      "usage": "对话模板「你起来X一会儿吧我Y得撑不住了」：开夜车、带娃、赶工、排队场景互换台词；评论区晒自家副驾驶睡颜；夫妻/闺蜜轮流上岗自嘲。",
+      "fun_point": "一句硬撑中的请求把假期赶路的疲惫演活了，「换我睡会儿」是全国家庭出游的统一台词；真实到像在自己车里装了摄像头。",
+      "why_spread": "已验证：今日微博热搜在榜、聚合榜同步收录；推测：中秋国庆自驾出行高峰，长途赶路疲劳驾驶场景全民共享，一句台词即可唤起画面。",
+      "lifecycle": "rising",
+      "brand_usage": "汽车、出行、咖啡功能饮料账号可借「轮流撑住」做安全提醒向内容；需顺带提示疲劳驾驶风险、切勿玩梗美化硬撑。",
+      "risk": {
+        "level": "low",
+        "note": "涉及疲劳驾驶场景，借用时必须附安全提示，避免鼓励硬撑开车。"
+      },
+      "days_on_list": 1,
+      "score": 76,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 28,
+        "reusability": 16,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202609/2026-09-28.md",
+          "title": "2026-09-28热门搜索（微博热搜归档）",
+          "observed_at": "2026-09-28T05:53:45+08:00",
+          "captured_at": "2026-09-28T07:21:45+08:00",
+          "note": "微博热搜归档09-28 05:53快照：「你起来开一会儿吧我困得撑不住了」在榜、热度82305。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://pulse.fuzh.space/app/hot",
+          "title": "pulse 全源聚合·微博热搜",
+          "captured_at": "2026-09-28T07:27:00+08:00",
+          "note": "pulse全源聚合页09-28打开快照：微博热搜分区「你起来开一会儿吧我困得撑不住了」列第31位。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
