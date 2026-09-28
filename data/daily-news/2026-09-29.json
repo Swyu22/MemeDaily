@@ -1,0 +1,968 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29T06:30:14+08:00",
+  "published_at": "2026-09-29T06:30:14+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 39,
+    "published": 7,
+    "dropped_safety": {
+      "controversy": 1,
+      "geopolitics": 2,
+      "politics": 1,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 27,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 34,
+      "official_sources": 2,
+      "state_media_sources": 8,
+      "major_media_sources": 12,
+      "aggregator_sources": 3,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 7,
+        "relaxed_48h": 9,
+        "relaxed_72h": 10
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 39,
+          "cumulative_unique_candidates": 39,
+          "source_scope": [
+            "央媒发布：新华社、央视新闻、中国新闻网、经济日报、光明网",
+            "持牌媒体原创：每日经济新闻、新京报、证券时报、上观新闻、财联社",
+            "政府机构站点：深圳政府在线、湖北省文旅厅、中央气象台",
+            "公共热榜：百度热搜（仅佐证热度）",
+            "财经数据媒体：财新mini财新闻、灯塔专业版转引报道"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-29-asian-games-day9-13-golds",
+          "story_identity": "asian-games-day9-china-13-golds-132-total-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-29-asian-games-day9-13-golds",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-29-table-tennis-six-golds-wrap",
+          "story_identity": "table-tennis-six-golds-aichi-nagoya-wrap-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-29-table-tennis-six-golds-wrap",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-29-shanghai-homes-sellout",
+          "story_identity": "shanghai-new-homes-sellout-old-flat-bidding-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-29-shanghai-homes-sellout",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-29-job-training-loan-trap",
+          "story_identity": "job-seeker-training-loan-zhaozhuanpei-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-29-job-training-loan-trap",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-29-mid-autumn-tourism-tally",
+          "story_identity": "mid-autumn-holiday-tourism-tally-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-09-29-mid-autumn-tourism-tally",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-29-domestic-robot-architecture",
+          "story_identity": "first-fully-domestic-electronic-architecture-robot-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-29-domestic-robot-architecture",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 19,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-29-national-day-film-presale",
+          "story_identity": "national-day-film-presale-30-million-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-29-national-day-film-presale",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "huayou-team-gold",
+          "story_identity": "china-artistic-swimming-team-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "花样游泳集体单项金牌，已并入亚运第九日盘点主条目"
+        },
+        {
+          "candidate_key": "relay-4x100-double-gold",
+          "story_identity": "china-4x100m-relay-double-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T21:54:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 10
+          },
+          "drop_reason": "男女4×100米接力单项，已并入亚运第九日盘点主条目"
+        },
+        {
+          "candidate_key": "shooting-xiao-25m-pistol",
+          "story_identity": "xiao-jiaruixuan-25m-pistol-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T20:15:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 10
+          },
+          "drop_reason": "射击单项金牌，日常关联有限"
+        },
+        {
+          "candidate_key": "diving-linshan-1m",
+          "story_identity": "lin-shan-women-1m-springboard-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 10
+          },
+          "drop_reason": "跳水单项金牌，日常关联有限"
+        },
+        {
+          "candidate_key": "badminton-fenghuang-upset",
+          "story_identity": "feng-huang-mixed-doubles-semifinal-loss-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "混双爆冷止步半决赛，单项赛事且日常关联有限"
+        },
+        {
+          "candidate_key": "badminton-wangzhiyi-final",
+          "story_identity": "wang-zhiyi-womens-singles-final-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "晋级决赛为阶段性赛果，新闻增量有限"
+        },
+        {
+          "candidate_key": "football-semifinal-preview",
+          "story_identity": "china-u23-korea-semifinal-preview-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 10
+          },
+          "drop_reason": "男足半决赛9月30日才进行，属赛程预告"
+        },
+        {
+          "candidate_key": "long-yiping-1m-fourth",
+          "story_identity": "long-yiping-1m-board-fourth-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 19,
+            "everyday_relevance": 8,
+            "evidence": 8
+          },
+          "drop_reason": "单项第四名，公共新闻性弱"
+        },
+        {
+          "candidate_key": "cold-air-arrives-today",
+          "story_identity": "strongest-cold-air-late-sept-national-day-cooling-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "同一冷空气过程昨日已入选，避免重复"
+        },
+        {
+          "candidate_key": "huaxi-rain-continues",
+          "story_identity": "huaxi-jianghuai-rain-continues-late-sept-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T09:40:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "持续性阴雨模式，天气题材前日已覆盖"
+        },
+        {
+          "candidate_key": "night-trains-holiday",
+          "story_identity": "national-day-night-trains-sep29-oct1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-24T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 10,
+            "everyday_relevance": 22,
+            "evidence": 10
+          },
+          "drop_reason": "夜间高铁增开信息披露于24日，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "mooncake-offline-decline",
+          "story_identity": "offline-mooncake-sales-decline-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "drop_reason": "线下渠道盘点数据，中秋已过事件性弱"
+        },
+        {
+          "candidate_key": "subsidy-fraud-8-provinces",
+          "story_identity": "investment-subsidy-fraud-8-provinces-11-cities-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T18:24:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "招商骗局舆论监督评论题材，73分未达75分严格层"
+        },
+        {
+          "candidate_key": "state-council-meeting",
+          "story_identity": "state-council-executive-meeting-sep28-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 10
+          },
+          "drop_reason": "会议部署类框架，按活规则不作民生条目"
+        },
+        {
+          "candidate_key": "shandong-labor-dispute",
+          "story_identity": "shandong-industrial-chain-labor-dispute-path-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 10
+          },
+          "drop_reason": "地方劳动争议化解经验报道，事件性弱"
+        },
+        {
+          "candidate_key": "fuzhou-ablation-procurement",
+          "story_identity": "fuzhou-microwave-ablation-cme-procurement-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "地市医保集采公告，过于属地"
+        },
+        {
+          "candidate_key": "heilongjiang-yibao-notice",
+          "story_identity": "heilongjiang-medical-insurance-site-change-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 10,
+            "freshness": 15,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "省级医保定点变更公示，常规政务信息"
+        },
+        {
+          "candidate_key": "chengdu-import-carnival",
+          "story_identity": "chengdu-import-goods-county-carnival-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "地方消费促进活动，影响面有限"
+        },
+        {
+          "candidate_key": "shenlan-s07-launch",
+          "story_identity": "deepal-s07-ai-lidar-version-launch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "车企新版本上市，商业动态公共性弱"
+        },
+        {
+          "candidate_key": "bona-film-stock-limit",
+          "story_identity": "bona-film-national-day-stock-limit-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 10
+          },
+          "drop_reason": "个股异动，日常关联低"
+        },
+        {
+          "candidate_key": "beijing-holiday-traffic-control",
+          "story_identity": "beijing-mid-autumn-national-day-traffic-measures-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-20T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 10,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "地方假期交管措施，发布于20日时效弱且属地"
+        },
+        {
+          "candidate_key": "tongcheng-mid-autumn-report",
+          "story_identity": "tongcheng-mid-autumn-travel-report-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "平台商业盘点报告，权威性有限"
+        },
+        {
+          "candidate_key": "laos-railway-intercity",
+          "story_identity": "china-laos-railway-moding-vientiane-intercity-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T10:00:00+08:00",
+          "scope": "international",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 10,
+            "evidence": 10
+          },
+          "drop_reason": "老挝境内城际列车首发，对中国读者日常关联有限"
+        },
+        {
+          "candidate_key": "pandas-atlanta-arrival",
+          "story_identity": "pandas-pingping-fushuang-atlanta-arrival-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T08:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "大熊猫抵美后续动态，昨日已关注启程，增量弱"
+        },
+        {
+          "candidate_key": "hinton-ai-regulation",
+          "story_identity": "hinton-ai-drug-level-approval-call-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T14:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 10
+          },
+          "drop_reason": "海外专家观点访谈，直接民生关联不足"
+        },
+        {
+          "candidate_key": "us-tech-stocks-drop",
+          "story_identity": "us-large-tech-stocks-decline-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T05:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 10
+          },
+          "drop_reason": "海外市场波动，日常关联低"
+        },
+        {
+          "candidate_key": "openai-pause-develop",
+          "story_identity": "openai-brake-call-agent-escape-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T05:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 10
+          },
+          "drop_reason": "海外AI行业动态，直接民生关联不足"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-29-asian-games-day9-13-golds",
+      "story_identity": "asian-games-day9-china-13-golds-132-total-2026",
+      "headline": "🏅 亚运第九日中国队再添13金，132金继续领跑金牌榜",
+      "summary": "9月28日爱知·名古屋亚运会第九个比赛日决出24枚金牌，中国选手在跳水、花样游泳、射击、田径、乒乓球等项目收获13金。目前中国代表团以132金、53银、45铜继续高居金牌榜榜首，乒乓球项目当日收官。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-28T22:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事综合盘点报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://news.gmw.cn/2026-09/29/content_39025899.htm",
+          "title": "亚运会第九天中国军团再添13枚金牌",
+          "captured_at": "2026-09-29T06:18:00+08:00",
+          "note": "光明网报道第九日13金明细与132金领跑"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "川观新闻",
+          "url": "https://cbgc.scol.com.cn/news/8007328",
+          "title": "亚运会第九天中国军团再添13枚金牌",
+          "captured_at": "2026-09-29T06:18:00+08:00",
+          "note": "川观新闻佐证金牌分布与132金53银45铜总数"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-29-table-tennis-six-golds-wrap",
+      "story_identity": "table-tennis-six-golds-aichi-nagoya-wrap-2026",
+      "headline": "🏓 国乒6金收官名古屋：林诗栋男单登顶，王曼昱/蒯曼女双横扫",
+      "summary": "9月28日名古屋亚运会乒乓球项目收官，中国队当日包揽男单、女双两金：林诗栋4比0战胜王楚钦夺得男单冠军，王曼昱/蒯曼横扫日本组合夺得女双冠军。本届赛事中国队参加全部7个项目，最终以6枚金牌收官。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-28T21:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事实事求是报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-28/10705183.shtml",
+          "title": "综合消息：中国乒乓球队6金收官 中国队卫冕田径男、女4X100米接力",
+          "captured_at": "2026-09-29T06:19:00+08:00",
+          "note": "中新网综合：国乒包揽男单、女双当日两金，6金收官"
+        },
+        {
+          "tier": "official",
+          "outlet": "中国奥委会官网",
+          "url": "https://www.olympic.cn/zt/Aichi-Nagoya2026/china/",
+          "title": "中国军团——2026年爱知·名古屋亚运会",
+          "captured_at": "2026-09-29T06:19:00+08:00",
+          "note": "中国奥委会官网中国军团赛果汇总佐证"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-29-shanghai-homes-sellout",
+      "story_identity": "shanghai-new-homes-sellout-old-flat-bidding-2026",
+      "headline": "🏠 上海新房开盘频现“日光”，有购房者加价抢购“老破小”",
+      "summary": "每日经济新闻记者实地走访发现，进入9月上海楼市明显回暖：嘉定等区多个新盘首开即售罄、加推仍一房难求；部分“老破小”房源出现购房者连夜加价争抢，一套房源从230万元加至235万元成交，市场分化特征明显。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-28T10:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "楼市市场现象报道，客观陈述不引导购房决策"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-09-28/4593845.html",
+          "title": "新房开盘“日光”，购房者加价抢购上海“老破小”",
+          "captured_at": "2026-09-29T06:20:00+08:00",
+          "note": "每经记者实地走访：中介连夜敲门加价、235万元成交个案"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中华网",
+          "url": "https://news.china.com/socialgd/10000169/20260928/49769627.html",
+          "title": "购房者加价抢购上海“老破小” 市场分化明显",
+          "captured_at": "2026-09-29T06:20:00+08:00",
+          "note": "中华网佐证9月新盘售罄加推与市场分化"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-29-job-training-loan-trap",
+      "story_identity": "job-seeker-training-loan-zhaozhuanpei-2026",
+      "headline": "💼 面试被称“能力不足”，求职者因“岗前实训”背上近3万元贷款",
+      "summary": "中新经纬调查曝光“招转培”陷阱：有求职者面试时被称能力不足，被诱导参加4个月“岗前实训”并承诺结业分配至200多家合作企业、保底薪资本科6000元，结果背上近3万元培训贷款。提醒：凡是以招聘为名要求缴费培训的，均涉嫌“招转培”诈骗。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 19,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-28T09:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "求职防骗服务报道，信息实用"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/09-28/10704641.shtml",
+          "title": "面试被指“能力不足”，求职者因“培训”背上近3万元贷款",
+          "captured_at": "2026-09-29T06:21:00+08:00",
+          "note": "中新经纬调查：实训承诺、贷款金额与招转培定性"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国经济网",
+          "url": "http://www.ce.cn/xwzx/shgj/gdxw/202609/t20260928_3238998.shtml",
+          "title": "面试被指“能力不足”，求职者因“培训”背上近3万元贷款",
+          "captured_at": "2026-09-29T06:21:00+08:00",
+          "note": "中国经济网佐证招转培诈骗特征与识别提示"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-29-mid-autumn-tourism-tally",
+      "story_identity": "mid-autumn-holiday-tourism-tally-2026",
+      "headline": "🌕 中秋假期文旅收官：北京迎客878万人次，广东游客超2481万",
+      "summary": "各地9月28日陆续发布中秋假期文旅成绩单：北京市累计接待游客878.3万人次，实现旅游总花费115.4亿元；广东省接待游客2481.7万人次，按可比口径同比增长28.9%，实现旅游花费125.5亿元。假期文旅市场供需两旺，运行安全平稳。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-28T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假日文旅消费数据报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "http://www.bj.chinanews.com.cn/news/2026/0928/103620.html",
+          "title": "中秋假期北京接待游客超878万人次 旅游总花费逾115亿元",
+          "captured_at": "2026-09-29T06:22:00+08:00",
+          "note": "北京市文旅局数据：878.3万人次、115.4亿元"
+        },
+        {
+          "tier": "official",
+          "outlet": "深圳政府在线",
+          "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_13000567.html",
+          "title": "中秋假期广东文旅“供需两旺” 游客超2481万人次 旅游花费超125亿元",
+          "captured_at": "2026-09-29T06:22:00+08:00",
+          "note": "转引广东省文旅数据：2481.7万人次、125.5亿元、同比增28.9%"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-29-domestic-robot-architecture",
+      "story_identity": "first-fully-domestic-electronic-architecture-robot-2026",
+      "headline": "🤖 全球首台全国产化电子架构具身智能机器人在宜昌亮相",
+      "summary": "9月28日，国产化电子架构具身智能机器人发布会在湖北宜昌举行，全球首台搭载100%国产化电子架构的具身智能机器人正式亮相。电子架构相当于机器人的“智能神经系统”，包括操作系统、网络、工具软件和AI计算芯片，国产化架构可实现控制与AI智能的自主协同。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 19,
+        "everyday_relevance": 19,
+        "evidence": 13
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-28T15:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "科技产业发布报道，事实性信息"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "经济日报",
+          "url": "http://www.jingjiribao.cn/static/detail.jsp?id=686218",
+          "title": "首台国产化电子架构具身机器人正式发布",
+          "captured_at": "2026-09-29T06:23:00+08:00",
+          "note": "经济日报报道宜昌发布会与全球首台亮相"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "证券时报",
+          "url": "http://www.stcn.com/article/detail/4200568.html",
+          "title": "首台国产化电子架构具身机器人正式发布 为物理AI装上国产“神经”",
+          "captured_at": "2026-09-29T06:23:00+08:00",
+          "note": "证券时报佐证电子架构构成与技术意义"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-29-national-day-film-presale",
+      "story_identity": "national-day-film-presale-30-million-2026",
+      "headline": "🎬 国庆档新片预售票房破3000万，9部新片扎堆假期上映",
+      "summary": "据灯塔专业版数据，截至9月28日17时，2026年国庆档新片预售总票房（含点映）突破3000万元，《神探之痕迹》《小猪佩奇·完美假期》《什么意思夫妇》暂列预售票房榜前三位。今年国庆档共有9部新片定档，覆盖悬疑、动画、喜剧等类型。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-28T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假日观影消费服务信息"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "广西新闻网",
+          "url": "http://www.gxnews.com.cn/staticpages/20260928/newgx6ab9bc2f-21998931.shtml",
+          "title": "双节观影热度高！国庆档新片预售总票房破2000万",
+          "captured_at": "2026-09-29T06:24:00+08:00",
+          "note": "广西新闻网转引平台数据报道国庆档预售与前三影片"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "网易新闻",
+          "url": "https://www.163.com/dy/article/L7UD4KF60519QIKK.html",
+          "title": "2026年国庆档新片预售总票房破3000万",
+          "captured_at": "2026-09-29T06:24:00+08:00",
+          "note": "灯塔专业版：截至9月28日17时预售破3000万，热度佐证"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
