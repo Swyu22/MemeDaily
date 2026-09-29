@@ -1,0 +1,1029 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-09-30",
+  "generated_at": "2026-09-30T06:28:36+08:00",
+  "published_at": "2026-09-30T06:28:36+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 40,
+    "published": 8,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 1,
+      "geopolitics": 1,
+      "minors": 1,
+      "politics": 1
+    },
+    "dropped_low_confidence": 27,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 35,
+      "official_sources": 6,
+      "state_media_sources": 10,
+      "major_media_sources": 8,
+      "aggregator_sources": 3,
+      "dropped_insufficient_evidence": 0
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 8,
+        "relaxed_48h": 9,
+        "relaxed_72h": 12
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 40,
+          "cumulative_unique_candidates": 40,
+          "source_scope": [
+            "央媒发布：新华社、央视新闻/央视网、光明日报/光明网、中国新闻网、中国网",
+            "政府机构站点：财政部、文化和旅游部、中国天气网（中国气象局）",
+            "持牌媒体：北京日报、科技日报、财新、新京报、经济观察网",
+            "公共热榜：百度热搜（仅佐证热度，不单独成立）",
+            "体育资讯聚合：新浪体育、懂球帝、网易体育（佐证赛果与热度）"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-09-30-mortgage-interest-subsidy",
+          "story_identity": "housing-mortgage-interest-subsidy-policy-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-09-30-mortgage-interest-subsidy",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-30-asian-games-day10-143-golds",
+          "story_identity": "asian-games-day10-china-11-golds-143-total-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-30-asian-games-day10-143-golds",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-30-national-day-travel-weather",
+          "story_identity": "national-day-holiday-travel-weather-tips-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-09-30-national-day-travel-weather",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-30-li-wenwen-weightlifting-gold",
+          "story_identity": "li-wenwen-weightlifting-86kg-plus-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T17:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-30-li-wenwen-weightlifting-gold",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-30-golden-eagle-awards-33rd",
+          "story_identity": "golden-eagle-awards-33rd-changsha-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T23:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-30-golden-eagle-awards-33rd",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-30-badminton-wrap-liangwang-silver",
+          "story_identity": "badminton-wrap-liangwang-mens-doubles-silver-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-30-badminton-wrap-liangwang-silver",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-30-womens-football-semifinal-loss",
+          "story_identity": "womens-football-semifinal-loss-dprk-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T16:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-09-30-womens-football-semifinal-loss",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-09-30-cas-frontier-breakthrough-plan",
+          "story_identity": "cas-frontier-breakthrough-plan-launch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-09-30-cas-frontier-breakthrough-plan",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "pboc-easing-package-0929",
+          "story_identity": "pboc-psl-rate-cut-reloan-package-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 3
+          },
+          "drop_reason": "宏观货币政策组合与房贷贴息条目同质，对日常感受偏间接，合并报道不单独列出"
+        },
+        {
+          "candidate_key": "mixed-4x100-relay-gold",
+          "story_identity": "mixed-4x100-relay-chen-yujie-comeback-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T21:40:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "陈妤颉混合接力逆转夺金已并入亚运第十日盘点主条目"
+        },
+        {
+          "candidate_key": "chen-yuxi-10m-platform-gold",
+          "story_identity": "chen-yuxi-womens-10m-platform-second-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "陈芋汐女子10米台第二金已并入亚运第十日盘点主条目"
+        },
+        {
+          "candidate_key": "wang-zongyuan-3m-springboard-gold",
+          "story_identity": "wang-zongyuan-mens-3m-springboard-title-defense-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "王宗源男子3米板卫冕第三金已并入亚运第十日盘点主条目"
+        },
+        {
+          "candidate_key": "highway-free-travel-eve-peak",
+          "story_identity": "national-day-toll-free-eve-travel-peak-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "假期高速免费与出行高峰为周期性服务提醒，当日已有假期气象提示条目，每日保留一条"
+        },
+        {
+          "candidate_key": "mens-volleyball-korea-win",
+          "story_identity": "mens-volleyball-3-2-korea-group-topper-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "男排小组赛头名出线为阶段性赛果，热度与关注度有限"
+        },
+        {
+          "candidate_key": "esports-asian-games-rumor-denied",
+          "story_identity": "esports-asian-games-exit-rumor-denied-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "亚奥理事会辟谣电竞退出亚运会传闻，属澄清类消息，新增信息有限"
+        },
+        {
+          "candidate_key": "ding-junhui-shenzhen-open-exit",
+          "story_identity": "ding-junhui-shenzhen-snooker-open-first-round-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "斯诺克公开赛首轮出局，单项赛事热度与影响有限"
+        },
+        {
+          "candidate_key": "thailand-floods-wildlife-streets",
+          "story_identity": "thailand-floods-2026-wildlife-on-streets",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T18:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "泰国洪灾国际新闻，缺少权威双源佐证且与中国读者日常关联弱"
+        },
+        {
+          "candidate_key": "spacex-starship-splashdown",
+          "story_identity": "spacex-starship-orbital-flight-early-end-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T21:00:00+08:00",
+          "scope": "international",
+          "topic": "太空航天",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "星舰轨道飞行提前结束属国际航天事件，未满足国际条目双独立权威源要求"
+        },
+        {
+          "candidate_key": "typhoon-surigae-track-east",
+          "story_identity": "typhoon-surigae-2026-eastward-no-china-impact",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "第26号台风趋向日本以东海域，对我国无直接影响，服务价值低"
+        },
+        {
+          "candidate_key": "beijing-white-moth-catch-event",
+          "story_identity": "beijing-wildlife-park-fall-webworm-catch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "北京野生动物园防治美国白蛾活动，趣味性强但公共信息增量有限"
+        },
+        {
+          "candidate_key": "wuhan-elderly-cash-found",
+          "story_identity": "wuhan-elderly-230k-cash-found-by-police-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "暖心警民故事为“近日”个案，无明确当日时点与后续公共价值"
+        },
+        {
+          "candidate_key": "charger-fire-safety-warning",
+          "story_identity": "charger-left-plugged-fire-safety-cases-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "充电器火灾隐患为季节性安全提示，非当日新事件"
+        },
+        {
+          "candidate_key": "wang-jibing-suzhou-writers",
+          "story_identity": "delivery-poet-wang-jibing-suzhou-writers-vice-chair-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 16,
+            "evidence": 2
+          },
+          "drop_reason": "外卖诗人当选地方作协副主席，区域性文化新闻热度有限"
+        },
+        {
+          "candidate_key": "huawei-external-lens-patent",
+          "story_identity": "huawei-external-camera-lens-patent-published-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "华为外挂镜头专利公开属早期技术储备，距消费者可用产品较远"
+        },
+        {
+          "candidate_key": "baoshi-long-tart-refund",
+          "story_identity": "baoshi-extra-long-egg-tart-refund-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "超长蛋挞吐槽与商家退款回应属单一品牌消费纠纷，影响面有限"
+        },
+        {
+          "candidate_key": "zhengzhou-frugal-festival-decor",
+          "story_identity": "zhengzhou-frugal-festival-no-disposable-decor-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "地方节俭过节举措为城市管理常规信息，外溢关注度低"
+        },
+        {
+          "candidate_key": "pingyao-film-festival-awards",
+          "story_identity": "pingyao-film-festival-10th-awards-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "平遥影展获奖名单属行业影展，公众覆盖面小于金鹰奖"
+        },
+        {
+          "candidate_key": "teacher-space-projection-class",
+          "story_identity": "geography-teacher-space-projection-student-dream-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "课堂圆梦暖心个案，无明确当日时点"
+        },
+        {
+          "candidate_key": "foreign-teacher-no-smoking",
+          "story_identity": "foreign-teacher-megaphone-no-smoking-campus-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "校园禁烟走红视频为“近日”旧闻再热，无新增事实"
+        },
+        {
+          "candidate_key": "mid-autumn-tourism-tally-repeat",
+          "story_identity": "mid-autumn-holiday-tourism-tally-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "中秋假期文旅收官数据昨日已报道，避免重复"
+        },
+        {
+          "candidate_key": "national-day-film-presale-repeat",
+          "story_identity": "national-day-film-presale-box-office-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "国庆档预售票房昨日已报道，避免重复"
+        },
+        {
+          "candidate_key": "education-system-scale-briefing",
+          "story_identity": "world-largest-education-system-briefing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "发布会成就综述与9月24日教育条目题材重复，缺少新的服务信息"
+        },
+        {
+          "candidate_key": "changxin-investment-expansion",
+          "story_identity": "changxin-34-9b-yuan-new-project-investment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "存储企业扩产投资属产业新闻，与普通读者日常关联弱"
+        },
+        {
+          "candidate_key": "safe-bop-report-h1",
+          "story_identity": "safe-h1-balance-of-payments-report-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "国际收支报告为宏观数据发布，日常可读性有限"
+        },
+        {
+          "candidate_key": "fireworks-safety-supervision",
+          "story_identity": "fireworks-safety-supervision-arrangement-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "以安全监管工作安排为主，缺少面向公众的即时服务信息"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-09-30-mortgage-interest-subsidy",
+      "story_identity": "housing-mortgage-interest-subsidy-policy-2026",
+      "headline": "🏠 居民购房贷款贴息政策10月1日起实施，单户最高贴息贷款100万元",
+      "summary": "财政部、中国人民银行、金融监管总局9月29日联合印发通知，自10月1日起对居民新发放首套住房商业性个人住房贷款实施贴息，政策期暂定1年。所购住房建筑面积不超120平方米、价格不超150万元，按贷款本金给予年化1个百分点贴息，单户贴息贷款规模最高100万元。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 90,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-29T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "财政政策发布事实报道"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "财政部",
+          "url": "https://jrs.mof.gov.cn/zhengcefabu/phjr/202609/t20260929_3998312.htm",
+          "title": "关于实施居民购房贷款贴息政策的通知",
+          "captured_at": "2026-09-30T06:17:00+08:00",
+          "note": "财政部通知原文：10月1日起实施、贴息条件与年化1个百分点标准"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "http://www.xinhuanet.com/fortune/20260929/2872166ad4f3432faa68f2e0f645128b/c.html",
+          "title": "新华社权威快报丨居民房贷贴息政策10月1日起实施",
+          "captured_at": "2026-09-30T06:17:00+08:00",
+          "note": "新华社权威快报确认三部门联合发布与实施日期"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-30-asian-games-day10-143-golds",
+      "story_identity": "asian-games-day10-china-11-golds-143-total-2026",
+      "headline": "🥇 亚运第十日中国队再揽11金，143金继续领跑金牌榜",
+      "summary": "9月29日爱知·名古屋亚运会第十个比赛日产生32枚金牌，中国选手在举重、跳水、田径、射击等项目收获11金9银6铜。17岁陈妤颉在男女混合4×100米接力最后一棒逆转夺冠，拿下个人第三金。中国代表团以143金继续高居金牌榜榜首。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-29T22:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事综合盘点报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://news.gmw.cn/2026-09/30/content_39028264.htm",
+          "title": "亚运会第十个比赛日结束 中国军团金牌总数达143枚",
+          "captured_at": "2026-09-30T06:21:00+08:00",
+          "note": "光明日报电：第十日11金明细与143金总数"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6abbcc3fe4b039a8e2f1bd84.html",
+          "title": "田径队收官日再取佳绩 陈芋汐李雯雯首夺亚运金牌",
+          "captured_at": "2026-09-30T06:21:00+08:00",
+          "note": "北京日报佐证单日11金9银6铜与143金62银总成绩"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-30-national-day-travel-weather",
+      "story_identity": "national-day-holiday-travel-weather-tips-2026",
+      "headline": "🌦️ 两部门发布国庆假期旅游气象提示：北方晴好，华南有雨",
+      "summary": "文化和旅游部、中国气象局9月29日联合发布2026年国庆节假期旅游气象提示：10月1日至7日北方大部以晴到多云为主，除华南地区外全国大部多数时间气候舒适度为“较舒适”及以上。假期前期有冷空气自北向南影响，出行请关注目的地天气变化、适时添衣。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-29T16:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假期出行服务提示"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "文化和旅游部",
+          "url": "https://www.mct.gov.cn/whzx/whyw/202609/t20260929_967286.htm",
+          "title": "文化和旅游部 中国气象局联合发布2026年国庆节假期旅游气象提示",
+          "captured_at": "2026-09-30T06:20:00+08:00",
+          "note": "文旅部官网发布假期天气与舒适度提示全文"
+        },
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "https://m.weather.com.cn/news/2026/09/4806940.shtml",
+          "title": "文化和旅游部与中国气象局联合发布2026年国庆节假期旅游气象提示",
+          "captured_at": "2026-09-30T06:20:00+08:00",
+          "note": "中国气象局下属中国天气网同步发布提示"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-30-li-wenwen-weightlifting-gold",
+      "story_identity": "li-wenwen-weightlifting-86kg-plus-gold-2026",
+      "headline": "🏋️ 李雯雯举重女子86公斤以上级夺金，三刷亚运会纪录",
+      "summary": "9月29日名古屋亚运会举重女子86公斤以上级决赛，中国选手李雯雯以抓举140公斤、挺举170公斤、总成绩310公斤夺冠，多次刷新亚运会纪录，收获个人首枚亚运金牌、成就职业生涯“大满贯”。中国举重队本届以5金2银3铜收官。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-29T17:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事夺金报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/sports/20260929/db17ace944cc45269dd7e0c326312152/c.html",
+          "title": "亚运会| 举重——李雯雯获女子86公斤以上级冠军",
+          "captured_at": "2026-09-30T06:20:30+08:00",
+          "note": "新华社报道李雯雯夺冠"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-29/10705651.shtml",
+          "title": "李雯雯夺得亚运会举重女子86公斤以上级金牌",
+          "captured_at": "2026-09-30T06:20:30+08:00",
+          "note": "中新网佐证310公斤总成绩夺冠细节"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-30-golden-eagle-awards-33rd",
+      "story_identity": "golden-eagle-awards-33rd-changsha-2026",
+      "headline": "📺 第33届金鹰奖长沙揭晓：《生命树》获最佳电视剧，于和伟宋佳分获最佳男女主角",
+      "summary": "第33届中国电视金鹰奖颁奖典礼暨第16届中国金鹰电视艺术节闭幕式29日晚在湖南长沙举行。于和伟凭《沉默的荣耀》、宋佳凭《山花烂漫时》分获最佳男、女主角奖，《生命树》获最佳电视剧奖，朱亚文、梅婷分获最佳男、女配角奖。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 19,
+        "everyday_relevance": 15,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-29T23:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "正规电视奖项颁奖报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/cul/2026/09-29/10705945.shtml",
+          "title": "第33届金鹰奖揭晓 于和伟宋佳获最佳男女主角",
+          "captured_at": "2026-09-30T06:21:30+08:00",
+          "note": "中新社长沙电报道获奖名单"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国网",
+          "url": "http://www.china.com.cn/txt/2026-09/30/content_118718080.shtml",
+          "title": "第33届金鹰奖揭晓 于和伟宋佳获最佳男女主角",
+          "captured_at": "2026-09-30T06:21:30+08:00",
+          "note": "中国网佐证主要奖项归属"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-30-badminton-wrap-liangwang-silver",
+      "story_identity": "badminton-wrap-liangwang-mens-doubles-silver-2026",
+      "headline": "🏸 国羽2金3银3铜收官亚运，“梁王”组合男双摘银创36年最佳",
+      "summary": "9月29日名古屋亚运会羽毛球项目收官，中国队收获2金3银3铜。梁伟铿/王昶在男双决赛1比2不敌印度尼西亚组合马丁/卡尔南多获得亚军，这是国羽男双时隔36年再进亚运会决赛，创近年最佳战绩。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 19,
+        "everyday_relevance": 15,
+        "evidence": 11
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-09-29T21:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事收官报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://sports.cctv.com/2026/09/29/VIDEtuiPqQTLsWppMZdX3OIZ260929.shtml",
+          "title": "[亚运会]羽毛男双决赛：马丁/卡尔南多VS梁伟铿/王昶集锦",
+          "captured_at": "2026-09-30T06:19:00+08:00",
+          "note": "央视网体育报道男双决赛比分"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/20260930/dc22bef0b93f477881c8c7d12a7cf29e/c.html",
+          "title": "亚运综合｜陈妤颉接力“逆袭” 国羽女双“燃尽”",
+          "captured_at": "2026-09-30T06:19:00+08:00",
+          "note": "新华社亚运综合报道国羽收官日表现"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-30-womens-football-semifinal-loss",
+      "story_identity": "womens-football-semifinal-loss-dprk-2026",
+      "headline": "⚽ 中国女足0比2不敌朝鲜队，无缘亚运决赛将争铜牌",
+      "summary": "9月29日下午，中国女足在爱知·名古屋亚运会半决赛中0比2不敌朝鲜女足，无缘决赛。两队上半场互交白卷，朝鲜队下半场利用直接任意球打破僵局，中国队此后不慎自摆乌龙。中国女足将在铜牌争夺战中对阵日本队与韩国队之间的负者。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 19,
+        "everyday_relevance": 15,
+        "evidence": 9
+      },
+      "heat_rank": 7,
+      "occurred_at": "2026-09-29T16:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事赛果报道"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://news.bjd.com.cn/2026/09/29/11978092.shtml",
+          "title": "中国女足亚运会半决赛不敌朝鲜队，无缘决赛",
+          "captured_at": "2026-09-30T06:18:00+08:00",
+          "note": "北京日报报道半决赛赛果与比赛进程"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "新浪体育",
+          "url": "http://k.sina.com.cn/article_1797246290_m6b1fcd5203302uvlg.html",
+          "title": "中国女足0比2不敌朝鲜，无缘亚运决赛将争铜牌",
+          "captured_at": "2026-09-30T06:18:00+08:00",
+          "note": "新浪体育佐证0比2比分与铜牌战安排"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-30-cas-frontier-breakthrough-plan",
+      "story_identity": "cas-frontier-breakthrough-plan-launch-2026",
+      "headline": "🔬 中国科学院启动科学前沿极限突破计划，首批10个项目发布",
+      "summary": "中国科学院9月29日在北京举行新闻发布会，宣布启动实施科学前沿极限突破计划。首批10个项目聚焦新元素合成、暗物质暗能量本质、化学键微观测量、人工合成细胞等“四极”领域前沿问题，计划锚定2035年建成科技强国目标，并在科研管理与评价方式上推出改革举措。",
+      "category": "科技AI",
+      "scope": "domestic",
+      "topic": "科技AI",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 11
+      },
+      "heat_rank": 8,
+      "occurred_at": "2026-09-29T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "科研机构计划发布报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/tech/20260929/31753f15b08c4587b8d7dc3924e4aad0/c.html",
+          "title": "中国科学院启动实施科学前沿极限突破计划",
+          "captured_at": "2026-09-30T06:21:00+08:00",
+          "note": "新华社报道计划启动与首批项目方向"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "科技日报",
+          "url": "https://www.stdaily.com/web/gdxw/2026-09/29/content_590065.html",
+          "title": "瞄准“四极”前沿 中国科学院启动科学前沿极限突破计划",
+          "captured_at": "2026-09-30T06:21:00+08:00",
+          "note": "科技日报佐证发布会细节与项目方向"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
