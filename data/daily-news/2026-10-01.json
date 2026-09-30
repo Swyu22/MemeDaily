@@ -1,0 +1,843 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-01",
+  "generated_at": "2026-10-01T06:14:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 37,
+    "published": 5,
+    "dropped_safety": {
+      "geopolitics": 1,
+      "politics": 2
+    },
+    "dropped_low_confidence": 26,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 32,
+      "official_sources": 8,
+      "state_media_sources": 8,
+      "major_media_sources": 6,
+      "aggregator_sources": 5,
+      "dropped_insufficient_evidence": 3
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 7,
+        "relaxed_72h": 11
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 37,
+          "cumulative_unique_candidates": 37,
+          "source_scope": [
+            "央媒发布：新华社/新华网、中国新闻网、光明日报/光明网、央视网、经济日报",
+            "政府机构站点：北京市政府、国家统计局、中央气象台、地方政府站点",
+            "持牌媒体：新京报、财新、21世纪经济报道、北京日报、河北广播电视台、吉网",
+            "体育资讯：Olympics.com 中文站、新浪体育、直播吧（佐证赛果与热度）",
+            "公共热榜与聚合：百度热搜线索、同花顺/东方财富快讯（仅佐证热度，不单独成立）"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-01-diving-100-golds-milestone",
+          "story_identity": "china-diving-asian-games-100-golds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-01-diving-100-golds-milestone",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 37,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-01-beijing-oct1-travel-peak",
+          "story_identity": "beijing-oct1-inbound-outbound-flow-4991k-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-01-beijing-oct1-travel-peak",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-01-asian-games-day11-151-golds",
+          "story_identity": "asian-games-day11-china-8-golds-151-total-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-01-asian-games-day11-151-golds",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-01-u23-football-semifinal-loss",
+          "story_identity": "u23-football-semifinal-loss-korea-1-2-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-01-u23-football-semifinal-loss",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-01-manufacturing-pmi-expansion",
+          "story_identity": "china-manufacturing-pmi-501-expansion-sep-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-10-01-manufacturing-pmi-expansion",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "holiday-toll-free-oct1-reminder",
+          "story_identity": "holiday-toll-free-oct1-reminder-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 16,
+            "everyday_relevance": 19,
+            "evidence": 1
+          },
+          "drop_reason": "高速免费为周期性政策提醒，9月25日假期交通条目已覆盖，无新增信息"
+        },
+        {
+          "candidate_key": "mortgage-subsidy-effective-today",
+          "story_identity": "housing-mortgage-interest-subsidy-policy-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 15,
+            "everyday_relevance": 20,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "房贷贴息政策昨日已作为头条入选，同一政策不连续两日重复入选"
+        },
+        {
+          "candidate_key": "national-day-cold-air-morning",
+          "story_identity": "national-day-cold-air-morning-cooling-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 5
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "冷空气题材9月28日与9月30日已连续两次报道，避免三日重复"
+        },
+        {
+          "candidate_key": "tiananmen-oct1-flag-ceremony",
+          "story_identity": "tiananmen-oct1-flag-ceremony-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "国庆升旗为年度例行仪式，预告阶段无新增公共信息"
+        },
+        {
+          "candidate_key": "suzhou-maternity-insurance-oct1",
+          "story_identity": "suzhou-maternity-insurance-rules-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-19T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 8,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "drop_reason": "苏州生育保险新规8月已发布、今日生效，披露时点陈旧且属地方性调整"
+        },
+        {
+          "candidate_key": "motorcycle-management-rules-oct1",
+          "story_identity": "motorcycle-management-new-rules-oct2026",
+          "research_pass": 1,
+          "occurred_at": "2026-08-11T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "摩托车管理新规仅见行业自媒体转述，未取得部委权威原文佐证"
+        },
+        {
+          "candidate_key": "national-culture-tourism-consumption-month",
+          "story_identity": "national-culture-tourism-consumption-month-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-22T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 8,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "drop_reason": "全国国庆文化和旅游消费月9月22日已启动，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "qing3xiu13-travel-boom",
+          "story_identity": "qing3xiu13-travel-boom-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "请3休13拼假出游为趋势综述类报道，与当日出行条目信息增量有限"
+        },
+        {
+          "candidate_key": "yangtze-delta-rail-holiday-plan",
+          "story_identity": "yangtze-delta-rail-holiday-plan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 6,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "drop_reason": "长三角铁路运输方案9月10日发布，预测数据无当日新增"
+        },
+        {
+          "candidate_key": "nanchang-rail-holiday-forecast",
+          "story_identity": "nanchang-rail-holiday-forecast-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 9
+          },
+          "drop_reason": "南铁客流预测9月21日发布，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "national-rail-holiday-transport-plan",
+          "story_identity": "national-rail-holiday-transport-plan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-09T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 6,
+            "everyday_relevance": 19,
+            "evidence": 9
+          },
+          "drop_reason": "国铁集团假期运输方案9月9日发布，已被首日实际客流条目覆盖"
+        },
+        {
+          "candidate_key": "hebei-highway-holiday-flow",
+          "story_identity": "hebei-highway-holiday-flow-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 16,
+            "everyday_relevance": 17,
+            "evidence": 4
+          },
+          "drop_reason": "河北高速流量为省级预测数据，全国代表性有限"
+        },
+        {
+          "candidate_key": "shenzhen-rail-oct1-flow-forecast",
+          "story_identity": "shenzhen-rail-oct1-flow-forecast-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 7,
+            "everyday_relevance": 17,
+            "evidence": 9
+          },
+          "drop_reason": "深圳铁路客流预测9月18日发布，无当日新增数据"
+        },
+        {
+          "candidate_key": "national-day-film-releases-oct1",
+          "story_identity": "national-day-film-presale-box-office-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "国庆档预售与片单9月29日已入选报道，首日票房数据尚未产生"
+        },
+        {
+          "candidate_key": "esports-identity-v-china-champion",
+          "story_identity": "esports-identity-v-china-champion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "电竞第五人格单项赛事，公众关注度与影响面有限"
+        },
+        {
+          "candidate_key": "track-cycling-team-pursuit-golds",
+          "story_identity": "track-cycling-team-pursuit-golds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "场地自行车双金已并入亚运第十一日盘点主条目"
+        },
+        {
+          "candidate_key": "canoe-slalom-double-gold",
+          "story_identity": "canoe-slalom-double-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "皮划艇激流回旋双金已并入亚运第十一日盘点主条目"
+        },
+        {
+          "candidate_key": "chen-yiwen-3m-title-defense",
+          "story_identity": "chen-yiwen-3m-title-defense-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T15:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "陈艺文卫冕已并入跳水百金主条目"
+        },
+        {
+          "candidate_key": "womens-speed-climbing-final",
+          "story_identity": "womens-speed-climbing-final-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "女子速度攀岩决赛结果未取得权威赛果源确认"
+        },
+        {
+          "candidate_key": "womens-hockey-semifinal-china-japan",
+          "story_identity": "womens-hockey-semifinal-china-japan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T18:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "女曲半决赛结果未取得权威双源确认"
+        },
+        {
+          "candidate_key": "holiday-return-airfare-surge",
+          "story_identity": "holiday-return-airfare-surge-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 7,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "drop_reason": "机票返程涨价为9月21日预测性报道，时效陈旧"
+        },
+        {
+          "candidate_key": "liaocheng-national-day-events",
+          "story_identity": "liaocheng-national-day-events-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-24T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 9,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "聊城国庆文旅活动为地市预告，地域性过强"
+        },
+        {
+          "candidate_key": "jilin-national-day-events-roundup",
+          "story_identity": "jilin-national-day-events-roundup-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "吉林国庆活动汇总为地方资讯，公共信息增量有限"
+        },
+        {
+          "candidate_key": "guangzhou-real-estate-holiday-notice",
+          "story_identity": "guangzhou-real-estate-holiday-notice-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 12,
+            "freshness": 3,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "drop_reason": "不动产登记中心放假通知为例行安排，无公共信息增量"
+        },
+        {
+          "candidate_key": "dual-festival-consumption-trends",
+          "story_identity": "dual-festival-consumption-trends-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 16,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "双节消费趋势为盘点类稿件，缺少新的服务信息"
+        },
+        {
+          "candidate_key": "nanning-national-day-weather",
+          "story_identity": "nanning-national-day-weather-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "南宁假期天气为地市预报，全国性不足"
+        },
+        {
+          "candidate_key": "jiangsu-holiday-weather",
+          "story_identity": "jiangsu-holiday-weather-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "江苏假期天气展望为省级资讯，题材与全国气象条目重叠"
+        },
+        {
+          "candidate_key": "suzhou-holiday-rain-travel-advisory",
+          "story_identity": "suzhou-holiday-rain-travel-advisory-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 3
+          },
+          "drop_reason": "苏州降水出行提示为地市级信息，已有全国层面出行气象报道"
+        },
+        {
+          "candidate_key": "nanping-holiday-rain-cooling",
+          "story_identity": "nanping-holiday-rain-cooling-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T16:10:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 0
+          },
+          "drop_reason": "南平降雨降温为地市天气预报，影响面有限"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-01-diving-100-golds-milestone",
+      "story_identity": "china-diving-asian-games-100-golds-2026",
+      "headline": "🥇 中国跳水队达成亚运“百金”：练俊杰10米台夺金，陈艺文卫冕",
+      "summary": "9月30日爱知·名古屋亚运会跳水项目收官，练俊杰以501.25分夺得男子10米台金牌，陈艺文以358.05分卫冕女子3米板。中国跳水队包揽本届全部10枚金牌，自1974年首次参赛以来达成亚运会第100枚金牌，从未让亚运金牌旁落。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 37,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-09-30T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事收官与里程碑报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/sports/20260930/a4b8630a21d94a3ea3705748ee12cf5b/c.html",
+          "title": "亚运会丨练俊杰险胜收官 中国跳水队达成亚运“百金”",
+          "captured_at": "2026-10-01T06:10:00+08:00",
+          "note": "新华社东京电：跳水收官、练俊杰501.25分夺金与百金成就"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "http://www.hn.chinanews.com.cn/news/ylty/2026/0930/534491.html",
+          "title": "（爱知·名古屋亚运会）中国跳水队达成亚运“百金”",
+          "captured_at": "2026-10-01T06:10:00+08:00",
+          "note": "中新社电佐证跳水包揽10金与百金里程碑"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-01-beijing-oct1-travel-peak",
+      "story_identity": "beijing-oct1-inbound-outbound-flow-4991k-2026",
+      "headline": "🚄 北京国庆首日进出京客流预计达499.1万人次，有望创新高",
+      "summary": "北京市交通委预测，“十一”假期铁路、民航、省际客运、公路自驾进出京客流日均约440万人次，较2025年同期增长8%。客流最高峰为10月1日，预计达499.1万人次，有望创国庆假期单日客流新高。假期北京将运营22条假日通游公交线路，服务近40处景区。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-09-30T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假期交通出行服务信息"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "北京市政府",
+          "url": "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202609/t20260930_4886476.html",
+          "title": "国庆假期首日进出京客流预计达499.1万人次",
+          "captured_at": "2026-10-01T06:11:00+08:00",
+          "note": "北京市政府网站发布市交通委假期客流预测与保障措施"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-01-asian-games-day11-151-golds",
+      "story_identity": "asian-games-day11-china-8-golds-151-total-2026",
+      "headline": "🏅 亚运第11个比赛日中国队再添8金，151金继续领跑",
+      "summary": "9月30日第二十届亚运会第11个比赛日共决出22枚金牌，中国代表团当日摘得8金，以151枚金牌继续领跑奖牌榜。跳水队包揽全部10金收官，场地自行车男女团体追逐赛双破亚洲纪录夺冠，皮划艇激流回旋再添两金，电子竞技第五人格项目中国队夺冠。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-09-30T22:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事综合盘点报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://news.gmw.cn/2026-10/01/content_39030346.htm",
+          "title": "亚运会进入第11个比赛日 中国军团再获8金 金牌总数达到151枚",
+          "captured_at": "2026-10-01T06:12:00+08:00",
+          "note": "光明日报名古屋电：第11日8金明细与151金总数"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/10-01/10706578.shtml",
+          "title": "（爱知·名古屋亚运会）综合消息：中国跳水队达成“百金”成就 中国男足无缘决赛",
+          "captured_at": "2026-10-01T06:12:00+08:00",
+          "note": "中新社综合消息佐证当日22金分布与中国队表现"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-01-u23-football-semifinal-loss",
+      "story_identity": "u23-football-semifinal-loss-korea-1-2-2026",
+      "headline": "⚽ U23国足1比2遭韩国队逆转，无缘亚运男足决赛",
+      "summary": "9月30日在日本大阪长居体育场进行的爱知·名古屋亚运会男足半决赛中，中国队上半场由王钰栋率先破门，此后被韩国队连入两球，最终1比2遭逆转无缘决赛。中国队时隔28年重返亚运男足四强，创U23改制以来最佳战绩，10月3日将出战铜牌争夺战。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-09-30T16:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事赛果报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/09-30/10706280.shtml",
+          "title": "中国男足亚运队1:2遗憾遭韩国队逆转 无缘决赛",
+          "captured_at": "2026-10-01T06:13:00+08:00",
+          "note": "中新社大阪电报道半决赛比分与进球进程"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1790756148129143.html",
+          "title": "1比2遭韩国队逆转，中国男足无缘亚运会决赛",
+          "captured_at": "2026-10-01T06:13:00+08:00",
+          "note": "新京报佐证1比2赛果与10月3日铜牌战安排"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-01-manufacturing-pmi-expansion",
+      "story_identity": "china-manufacturing-pmi-501-expansion-sep-2026",
+      "headline": "📈 9月制造业PMI升至50.1%，时隔两月重回扩张区间",
+      "summary": "国家统计局9月30日公布，9月制造业采购经理指数为50.1%，比上月上升0.3个百分点，时隔两个月重回扩张区间；非制造业商务活动指数和综合PMI产出指数分别为50.2%和50.7%。在调查的21个行业中有12个行业PMI高于临界点，制造业景气面有所扩大。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-09-30T09:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "宏观经济数据发布事实报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/09/30/ARTI8OAQT94hSfPc63het3Ud260930.shtml",
+          "title": "国家统计局：9月份采购经理指数升至扩张区间",
+          "captured_at": "2026-10-01T06:13:00+08:00",
+          "note": "央视网转引国家统计局解读：三大指数与经济景气回升"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://economy.caixin.com/2026-09-30/102489888.html",
+          "title": "9月统计局制造业PMI升至50.1 时隔两月重回扩张",
+          "captured_at": "2026-10-01T06:13:00+08:00",
+          "note": "财新报道9月PMI时隔两月重回扩张区间"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
