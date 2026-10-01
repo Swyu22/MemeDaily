@@ -1,0 +1,934 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-02",
+  "generated_at": "2026-10-02T06:26:30+08:00",
+  "published_at": "2026-10-02T06:26:30+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 40,
+    "published": 6,
+    "dropped_safety": {
+      "controversy": 1,
+      "geopolitics": 2,
+      "propaganda": 1
+    },
+    "dropped_low_confidence": 27,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 33,
+      "official_sources": 5,
+      "state_media_sources": 8,
+      "major_media_sources": 9,
+      "aggregator_sources": 6,
+      "dropped_insufficient_evidence": 3
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 7,
+        "relaxed_72h": 12
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 40,
+          "cumulative_unique_candidates": 40,
+          "source_scope": [
+            "央媒发布：新华社/新华网、新华财经、中国新闻网、央视网、光明网、央广网",
+            "政府机构站点：交通运输部数据、中央气象台/中国天气网、自然资源部预警、国家药监局公告",
+            "持牌媒体：新京报、经济参考网、21世纪经济报道、封面新闻、川观新闻、北京日报",
+            "公共热榜与聚合：百度热搜（仅佐证热度，不单独成立）、新浪/网易转载快讯"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-02-holiday-day1-cross-region-flow",
+          "story_identity": "national-day-day1-cross-region-flow-33410w-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-02-holiday-day1-cross-region-flow",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-02-asian-games-tennis-climbing-golds",
+          "story_identity": "asian-games-day12-tennis-climbing-golds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-02-asian-games-tennis-climbing-golds",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-02-national-day-box-office-day1",
+          "story_identity": "national-day-box-office-day1-124m-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-02-national-day-box-office-day1",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-02-strongest-cold-air-southward",
+          "story_identity": "strongest-cold-air-second-half-oct1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-10-02-strongest-cold-air-southward",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-02-holiday-scenic-tickets-sold-out",
+          "story_identity": "holiday-scenic-tickets-sold-out-jiuzhaigou-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-10-02-holiday-scenic-tickets-sold-out",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 19,
+            "everyday_relevance": 19,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-02-hong-kong-national-day-fireworks",
+          "story_identity": "hk-national-day-fireworks-victoria-harbour-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-10-02-hong-kong-national-day-fireworks",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "rail-2480w-day1",
+          "story_identity": "national-rail-day1-2480w-passengers-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T17:30:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "铁路单日客运数据已并入跨区域人员流动量主条目，避免同题材重复"
+        },
+        {
+          "candidate_key": "highway-ev-1640w-forecast",
+          "story_identity": "highway-ev-daily-flow-1640w-holiday-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 5
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "高速路网研判为假期预测数据，与跨区域出行主条目题材重叠"
+        },
+        {
+          "candidate_key": "sichuan-a-scenic-5362k",
+          "story_identity": "sichuan-a-scenic-5362k-day1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 17,
+            "evidence": 5
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "四川A级景区客流为省级数据，全国代表性有限"
+        },
+        {
+          "candidate_key": "asian-games-shooting-16g-final",
+          "story_identity": "asian-games-shooting-16g-final-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "射击16金收官已并入亚运主条目报道"
+        },
+        {
+          "candidate_key": "china-men-volleyball-qf-win",
+          "story_identity": "china-men-volleyball-qf-thailand-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "男排晋级四强已并入亚运主条目报道"
+        },
+        {
+          "candidate_key": "sailing-49er-title-defense",
+          "story_identity": "sailing-49er-liu-wen-title-defense-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "帆船49人级卫冕已并入亚运主条目报道"
+        },
+        {
+          "candidate_key": "mortgage-subsidy-effective-oct1",
+          "story_identity": "housing-mortgage-interest-subsidy-policy-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 15,
+            "everyday_relevance": 20,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "居民购房贷款贴息政策9月30日已作为头条入选，同一政策不连续两日重复入选"
+        },
+        {
+          "candidate_key": "oct1-new-rules-roundup",
+          "story_identity": "oct1-new-rules-roundup-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 16,
+            "everyday_relevance": 17,
+            "evidence": 5
+          },
+          "drop_reason": "10月新规汇总类稿件，核心的购房贴息条目昨日已覆盖"
+        },
+        {
+          "candidate_key": "psychotropic-drug-catalog-adjust",
+          "story_identity": "psychotropic-drug-catalog-adjust-oct2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 5
+          },
+          "drop_reason": "药用类精神药品目录调整为行业监管实施事项，公众日常影响面较窄"
+        },
+        {
+          "candidate_key": "geohazard-yellow-warning",
+          "story_identity": "geohazard-yellow-warning-oct1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "地质灾害气象风险黄色预警为区域性提示，题材与冷空气主条目部分重叠"
+        },
+        {
+          "candidate_key": "wtt-china-smash-day1",
+          "story_identity": "wtt-china-smash-2026-day1",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "WTT中国大满贯开赛日属常规赛事进展，单日信息增量有限"
+        },
+        {
+          "candidate_key": "zheng-qinwen-china-open-r1",
+          "story_identity": "zheng-qinwen-china-open-r1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "中网女单首轮为常规赛事进展"
+        },
+        {
+          "candidate_key": "sun-xinran-china-open-debut",
+          "story_identity": "sun-xinran-china-open-debut-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "16岁小将中网首胜为单场赛事进展，影响面有限"
+        },
+        {
+          "candidate_key": "wu-yize-snooker-shenzhen-qf",
+          "story_identity": "wu-yize-snooker-shenzhen-qf-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 0
+          },
+          "drop_reason": "斯诺克深圳公开赛为单项赛事早期轮次，公众关注度有限"
+        },
+        {
+          "candidate_key": "largest-last-quarter-moon-oct3",
+          "story_identity": "largest-last-quarter-moon-oct3-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "年度最大下弦月为10月3日天象预告，非当日已发生事件"
+        },
+        {
+          "candidate_key": "beijing-parks-1371k-day1",
+          "story_identity": "beijing-parks-1371k-day1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "北京公园客流为地市数据，全国代表性有限"
+        },
+        {
+          "candidate_key": "shanghai-rail-850k-day1",
+          "story_identity": "shanghai-rail-850k-day1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 0
+          },
+          "drop_reason": "上海铁路发客量为地市数据，已并入全国出行主条目"
+        },
+        {
+          "candidate_key": "guangdong-highway-10m-daily",
+          "story_identity": "guangdong-highway-10m-daily-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "广东高速车流研判为省级预测数据"
+        },
+        {
+          "candidate_key": "sichuan-highway-30m-total",
+          "story_identity": "sichuan-highway-30m-total-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "四川交通预测报告9月28日发布，时效陈旧且无当日新增"
+        },
+        {
+          "candidate_key": "yangtze-delta-440w-forecast",
+          "story_identity": "yangtze-delta-rail-440w-forecast-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 2
+          },
+          "drop_reason": "长三角假期运输方案9月10日发布，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "fliggy-ticket-booking-30pct",
+          "story_identity": "fliggy-ticket-booking-30pct-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 1
+          },
+          "drop_reason": "飞猪门票预订数据为单一商业平台口径，公共性不足"
+        },
+        {
+          "candidate_key": "culture-tourism-vouchers",
+          "story_identity": "culture-tourism-consumption-vouchers-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "文旅消费券为近期汇总信息，无当日新增发放节点"
+        },
+        {
+          "candidate_key": "commodity-housing-presale-rules",
+          "story_identity": "commodity-housing-presale-rules-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "多地商品房预售新规出台时间不明确，时效偏旧"
+        },
+        {
+          "candidate_key": "huawei-seres-five-year-deal",
+          "story_identity": "huawei-seres-five-year-deal-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "华为与赛力斯续约为企业商业合作，与民生服务关联有限"
+        },
+        {
+          "candidate_key": "typhoon-caiyun-far-sea",
+          "story_identity": "typhoon-caiyun-far-sea-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-02T05:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 0
+          },
+          "drop_reason": "台风彩云位于西北太平洋远海，对我国暂无直接影响"
+        },
+        {
+          "candidate_key": "woman-blocking-high-speed-door",
+          "story_identity": "woman-blocking-high-speed-door-yangjiang-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 0
+          },
+          "drop_reason": "阳江站扒车门个案已处置完毕，无新增公共信息"
+        },
+        {
+          "candidate_key": "mianyang-yuewanglou-rumor-debunk",
+          "story_identity": "mianyang-yuewanglou-rumor-debunk-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 0
+          },
+          "drop_reason": "越王楼拆除辟谣为地方景区信息，地域性过强"
+        },
+        {
+          "candidate_key": "ev-charging-queue-service-areas",
+          "story_identity": "ev-charging-queue-service-areas-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "高速服务区充电排队现象仅见热搜与短视频转述，未取得权威运营数据佐证"
+        },
+        {
+          "candidate_key": "boy-handmade-patriotic-tv",
+          "story_identity": "boy-handmade-patriotic-tv-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "13岁男孩手工电视机仅见短视频平台内容，无持牌媒体报道"
+        },
+        {
+          "candidate_key": "pension-adjustment-self-media",
+          "story_identity": "pension-adjustment-self-media-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "养老金调整相关稿件为自媒体解读，无权威部门文告佐证"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-02-holiday-day1-cross-region-flow",
+      "story_identity": "national-day-day1-cross-region-flow-33410w-2026",
+      "headline": "🧳 国庆假期首日全社会跨区域人员流动量预计达3.34亿人次",
+      "summary": "交通运输部10月1日消息，国庆假期首日预计全社会跨区域人员流动量33410万人次，环比增长52.3%，比2025年同期下降0.5%。其中铁路客运量预计2480万人次，全国铁路计划加开旅客列车2324列，客流保持高位运行。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-10-01T14:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假期交通客流权威数据发布"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华财经",
+          "url": "https://www.cnfin.com/hg-lb/detail/20261001/4477124_1.html",
+          "title": "国庆假期首日全社会跨区域人员流动量预计超3.3亿人次",
+          "captured_at": "2026-10-02T06:19:00+08:00",
+          "note": "新华社承建国家金融信息平台，援引交通运输部首日分方式客流数据"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "经济观察网",
+          "url": "http://www.eeo.com.cn/2026/1001/1054690.shtml",
+          "title": "国庆假期首日全社会跨区域人员流动量预计超3.3亿人次",
+          "captured_at": "2026-10-02T06:09:00+08:00",
+          "note": "经济观察网转新华财经电，佐证33410万人次与环比数据"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-02-asian-games-tennis-climbing-golds",
+      "story_identity": "asian-games-day12-tennis-climbing-golds-2026",
+      "headline": "🎾 亚运网球女单中国队会师决赛包揽金银，攀岩队单日两金",
+      "summary": "10月1日爱知·名古屋亚运会赛场，网球女单半决赛张帅6:4、6:2战胜普丁塞娃，王曦雨逆转头号种子伊埃拉，两朵金花会师决赛，中国队提前包揽金银牌、实现该项目六连冠。攀岩赛场储守宏以4.71秒夺男子速度金牌，张悦彤摘得女子攀石冠军。新华社统计，目前中国代表团已获154枚金牌。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-10-01T22:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事赛果与里程碑报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "http://www.news.cn/sports/20261002/458ac39ba5854221a5a5c99f4ca2cf12/c.html",
+          "title": "亚运会丨“用一枚金牌，为祖国庆生”",
+          "captured_at": "2026-10-02T06:10:00+08:00",
+          "note": "新华社名古屋10月1日电：网球会师、攀岩双金与154金统计"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1790856180129803.html",
+          "title": "亚运会射击项目收官，中国队16金完成新周期“中考”任务",
+          "captured_at": "2026-10-02T06:10:00+08:00",
+          "note": "新京报佐证第12比赛日收官与中国队当日战绩"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-02-national-day-box-office-day1",
+      "story_identity": "national-day-box-office-day1-124m-2026",
+      "headline": "🎬 国庆档首日票房达1.24亿元，《神探之痕迹》领跑",
+      "summary": "据灯塔专业版数据，截至10月1日16时，2026年国庆档首日票房达1.24亿元，观影人次超342万，放映场次超47万场，平均票价约36.3元。《神探之痕迹》《什么意思夫妇》《小猪佩奇·完美假期》暂列档期前三，十余部新片覆盖犯罪、喜剧、动画等类型。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-10-01T16:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "电影市场档期数据报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/cul/2026/10-01/10706826.shtml",
+          "title": "2026年中国电影国庆档首日票房破亿元已呈“一超一强”格局",
+          "captured_at": "2026-10-02T06:09:00+08:00",
+          "note": "中新社报道首日16时票房1.24亿元与档期格局"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "经济参考网",
+          "url": "http://jjckb.xinhuanet.com/20261001/19617968f9f1412c993fb28be9595117/c.html",
+          "title": "国庆档首日票房突破1.5亿！《神探之痕迹》断层领跑",
+          "captured_at": "2026-10-02T06:19:00+08:00",
+          "note": "经济参考网佐证首日大盘、观影人次342万与场次票价数据"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-02-strongest-cold-air-southward",
+      "story_identity": "strongest-cold-air-second-half-oct1-2026",
+      "headline": "🌧️ 下半年来最强冷空气南下，假期南方多地气温将创新低",
+      "summary": "中国天气网10月1日消息，今年下半年来最强冷空气前锋已越过长江、推进至武夷山和南岭一带，贵州、湖南、湖北、浙江多地降温6至12℃。预计10月2日至4日新一股冷空气接踵而至，假期期间南方气温将大面积创下半年新低，公众出行需注意添衣防雨。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 10
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-10-01T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假期气象服务提示，不含灾情渲染"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中国天气网",
+          "url": "http://m.weather.com.cn/news/2026/10/4808649.shtml",
+          "title": "两股冷空气接连来袭，假期期间南方气温将大面积创新低",
+          "captured_at": "2026-10-02T06:12:00+08:00",
+          "note": "中国气象局主办平台发布冷空气前锋位置与降温实况"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "川观新闻",
+          "url": "https://cbgc.scol.com.cn/news/8017766",
+          "title": "两股冷空气接连来袭，假期期间南方气温将大面积创新低",
+          "captured_at": "2026-10-02T06:12:00+08:00",
+          "note": "川观新闻转发佐证降温幅度与后续冷空气安排"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-02-holiday-scenic-tickets-sold-out",
+      "story_identity": "holiday-scenic-tickets-sold-out-jiuzhaigou-2026",
+      "headline": "🎫 九寨沟等热门景区门票接连约满，假期出游宜提前预约",
+      "summary": "国庆假期首日各地景区迎开门红。九寨沟景区10月1日门票预订4.1万张、达最大承载量，10月2日至5日门票也已约满；四川全省A级景区截至15时接待游客536.2万人次。文旅部门提醒，热门景区普遍实行预约制，假期出行宜提前查询余票、错峰游览。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 19,
+        "everyday_relevance": 19,
+        "evidence": 10
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-10-01T15:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假期景区预约出行服务提示"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "21世纪经济报道",
+          "url": "https://www.21jingji.com/article/20261001/herald/7df55045e60c342d8fe7040ac542314b.html",
+          "title": "国庆假期首日各地景区迎开门红：拼假拉长出行半径",
+          "captured_at": "2026-10-02T06:13:00+08:00",
+          "note": "21世纪经济报道：九寨沟10月1日门票达最大承载量且后续多日约满"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "封面新闻",
+          "url": "https://www.thecover.cn/news/Tjhs8SGakqWH90qSdq8Jkw==",
+          "title": "国庆假期首日四川A级景区接待游客536.2万人次",
+          "captured_at": "2026-10-02T06:13:00+08:00",
+          "note": "封面新闻援引四川省文旅厅截至15时全省景区客流数据"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-02-hong-kong-national-day-fireworks",
+      "story_identity": "hk-national-day-fireworks-victoria-harbour-2026",
+      "headline": "🎆 香港国庆烟花汇演绽放维港，31888枚烟花历时约23分钟",
+      "summary": "10月1日晚8时，香港国庆烟花汇演在维多利亚港上空上演，庆祝中华人民共和国成立77周年。汇演以“永明烟花 绽放中华”为主题，由3艘趸船及6艘小浮船在九个发放点燃放烟花31888枚，历时约23分钟，众多市民与游客在维港两岸驻足观赏。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 16,
+        "evidence": 11
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-10-01T20:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "节庆活动事实报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/gangao/20260902/764557bfc5114a828571ed58b8c346cb/c.html",
+          "title": "香港将举办2026年国庆烟花汇演",
+          "captured_at": "2026-10-02T06:15:00+08:00",
+          "note": "新华社官宣汇演安排：10月1日晚8时、31888枚烟花、历时约23分钟"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "网易新闻",
+          "url": "https://www.163.com/news/article/L86EI7IH000189PS.html",
+          "title": "视频丨香港举行国庆烟花汇演 庆祝中华人民共和国成立77周年",
+          "captured_at": "2026-10-02T06:16:00+08:00",
+          "note": "转载总台央视记者当晚报道，佐证汇演已如期举行"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
