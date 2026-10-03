@@ -1,0 +1,782 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T06:22:20+08:00",
+  "published_at": "2026-10-04T06:22:20+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 31,
+    "published": 6,
+    "dropped_safety": {
+      "controversy": 1,
+      "geopolitics": 1,
+      "politics": 1,
+      "propaganda": 1,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 17,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 25,
+      "official_sources": 4,
+      "state_media_sources": 12,
+      "major_media_sources": 10,
+      "aggregator_sources": 2,
+      "dropped_insufficient_evidence": 3
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 8,
+        "relaxed_72h": 14
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 31,
+          "cumulative_unique_candidates": 31,
+          "source_scope": [
+            "央媒发布：新华社/新华网、央视网/央视新闻、央广网、中国新闻网、中国经济网",
+            "政府机构站点：交通运输部、国家能源局、中央气象台/中国天气网、国家医保局、中国足协、国家体育总局",
+            "持牌媒体：澎湃新闻、北京日报、证券时报、潮新闻、界面新闻、广州日报、封面新闻、川观新闻、联合早报",
+            "公共热榜与聚合：百度热搜、微博/播客热搜汇总（仅佐证热度，不单独成立）"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-04-holiday-day2-actual-flow",
+          "story_identity": "holiday-day2-cross-region-flow-30550w-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T15:20:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-04-holiday-day2-actual-flow",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-04-asian-games-169g-roundup",
+          "story_identity": "asian-games-final-169g-men-football-bronze-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T22:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-04-asian-games-169g-roundup",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-04-wu-yibing-tennis-silver",
+          "story_identity": "wu-yibing-asian-games-tennis-silver-coleman-wong-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-04-wu-yibing-tennis-silver",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-04-ev-charging-return-peak",
+          "story_identity": "holiday-ev-charging-return-peak-guidance-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-04-ev-charging-return-peak",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-04-national-day-box-office-500m",
+          "story_identity": "national-day-box-office-500m-oct3-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T17:01:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-04-national-day-box-office-500m",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-04-guo-pu-breaking-gold",
+          "story_identity": "guo-pu-breaking-gold-asian-games-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T16:40:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-04-guo-pu-breaking-gold",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "cma-weather-bulletin-oct3-evening",
+          "story_identity": "cma-weather-bulletin-oct3-18-south-rain-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "与昨日南方降雨及大风降温服务条目题材重叠，降水落区南压、服务增量有限"
+        },
+        {
+          "candidate_key": "two-day-highway-charging-5011w",
+          "story_identity": "holiday-two-day-highway-charging-5011w-kwh-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 19,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "假期前两日高速充电量5010.99万千瓦时已并入返程充电服务主条目"
+        },
+        {
+          "candidate_key": "china-women-softball-silver",
+          "story_identity": "china-women-softball-silver-japan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T15:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "女垒0比7负日本摘银已并入亚运收官综合条目"
+        },
+        {
+          "candidate_key": "equestrian-dressage-team-gold",
+          "story_identity": "equestrian-dressage-team-first-gold-china-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "马术盛装舞步团体首金已并入亚运收官综合条目"
+        },
+        {
+          "candidate_key": "women-golf-team-gold",
+          "story_identity": "women-golf-team-first-gold-china-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "女子高尔夫团体首金已并入亚运收官综合条目"
+        },
+        {
+          "candidate_key": "china-open-day5-china-players",
+          "story_identity": "china-open-day5-zheng-sun-advance-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "中网郑钦文孙心然晋级第三轮、商竣程出局为常规轮次进展"
+        },
+        {
+          "candidate_key": "hong-kexin-wrestling-gold",
+          "story_identity": "hong-kexin-wrestling-57kg-gold-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "洪可新摔跤女子57公斤级金牌已并入亚运收官综合条目"
+        },
+        {
+          "candidate_key": "railway-day3-1890w-forecast",
+          "story_identity": "railway-day3-1890w-extra-910-trains-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "假期第三日铁路预计发送1890万人次已并入跨区域人员流动量主条目"
+        },
+        {
+          "candidate_key": "china-men-volleyball-fourth",
+          "story_identity": "china-men-volleyball-fourth-pakistan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "男排铜牌赛0比3负巴基斯坦已并入亚运收官综合条目"
+        },
+        {
+          "candidate_key": "best-fusion-campus-delivered",
+          "story_identity": "best-fusion-campus-delivered-sep30-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T16:17:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 10,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "drop_reason": "BEST聚变装置园区交付节点发生于9月30日，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "ai-travel-guide-backlash",
+          "story_identity": "ai-travel-guide-holiday-backlash-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 4
+          },
+          "drop_reason": "AI规划出游被坑为网络现象汇总稿，个案叙述为主、公共信息增量有限"
+        },
+        {
+          "candidate_key": "medical-consumables-136-names",
+          "story_identity": "medical-consumables-136-insurance-names-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-18T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 8,
+            "everyday_relevance": 21,
+            "evidence": 11
+          },
+          "drop_reason": "医保耗材通用名文件9月18日发布，10月3日仅为财经媒体汇编提及，不作当日新增"
+        },
+        {
+          "candidate_key": "gz-rail-bureau-day3-forecast",
+          "story_identity": "gz-rail-bureau-day3-2494k-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 4
+          },
+          "drop_reason": "铁路局集团单日预测数据已并入全国跨区域流量条目"
+        },
+        {
+          "candidate_key": "wu-yize-shenzhen-snooker-sf",
+          "story_identity": "wu-yize-shenzhen-snooker-open-sf-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "斯诺克深圳公开赛半决赛为单项职业赛事进展，公共影响有限"
+        },
+        {
+          "candidate_key": "shenzhen-emergency-lane-fine",
+          "story_identity": "shenzhen-emergency-lane-fine-3000-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 3
+          },
+          "drop_reason": "深圳占用应急车道处罚标准为既有地方性法规的热搜重申，非新规"
+        },
+        {
+          "candidate_key": "shenzhen-port-day3-peak-forecast",
+          "story_identity": "shenzhen-port-day3-peak-9838k-forecast-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-16T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 9,
+            "everyday_relevance": 18,
+            "evidence": 5
+          },
+          "drop_reason": "深圳口岸10月3日客流高峰为9月中旬预测口径，无当日实测通报"
+        },
+        {
+          "candidate_key": "dubai-air-copilot-identity",
+          "story_identity": "dubai-air-copilot-identity-disclosed-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T06:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "外航驾驶舱纠纷个案后续，对中国读者无直接日常影响"
+        },
+        {
+          "candidate_key": "rhythmic-gymnastics-finals-oct3",
+          "story_identity": "rhythmic-gymnastics-finals-oct3-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "艺术体操个人与集体全能收官战截稿前未取得权威赛果通报"
+        },
+        {
+          "candidate_key": "archery-recurve-women-final",
+          "story_identity": "archery-recurve-women-individual-oct3-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "热搜所指射箭女子个人赛果未获新华社或央视权威原文确认"
+        },
+        {
+          "candidate_key": "china-open-other-cn-women-oct3",
+          "story_identity": "china-open-other-cn-women-oct3-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-03T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "王欣瑜朱琳等中网10月3日场次赛果未在截稿前取得权威通报"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-04-holiday-day2-actual-flow",
+      "story_identity": "holiday-day2-cross-region-flow-30550w-2026",
+      "headline": "🚗 假期次日跨区域人员流动量3.06亿人次，同比增长1.2%",
+      "summary": "交通运输部10月3日公布，国庆假期第2日（10月2日）全社会跨区域人员流动量30550.4万人次，环比下降7.3%，比2025年同期增长1.2%；其中铁路客运量2076.5万人次，同比增长7.7%。预计10月3日流动量30829万人次，假期出行持续高位。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-10-03T15:20:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "交通运输主管部门假期客流权威数据发布"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/10-03/10707485.shtml",
+          "title": "10月2日，全社会跨区域人员流动量30550.4万人次",
+          "captured_at": "2026-10-04T06:16:05+08:00",
+          "note": "中新网10月3日电：据交通运输部微信公众号消息，假期第2日实际值及分方式数据"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国经济网",
+          "url": "http://www.ce.cn/xwzx/gnsz/gdxw/202610/t20261003_3247524.shtml",
+          "title": "10月2日，全社会跨区域人员流动量30550.4万人次",
+          "captured_at": "2026-10-04T06:09:40+08:00",
+          "note": "中国经济网转中新网同组数据，独立转载佐证"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34195196",
+          "title": "10月3日全社会跨区域人员流动量预计3.08亿人次，同比增长1.2%",
+          "captured_at": "2026-10-04T06:09:55+08:00",
+          "note": "澎湃佐证第2日实际值与第3日30829万人次预测口径"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-04-asian-games-169g-roundup",
+      "story_identity": "asian-games-final-169g-men-football-bronze-2026",
+      "headline": "🥇 中国队169金收官创境外亚运最佳战绩，男足时隔28年摘铜",
+      "summary": "10月3日爱知·名古屋亚运会多数项目收官，中国队单日再添7金8银10铜，以169金89银83铜锁定金牌、奖牌榜首位，创境外参加亚运会最佳战绩。男足铜牌战2:2战平乌兹别克斯坦后经点球大战胜出，时隔28年再获亚运男足奖牌；女垒0:7负日本摘银。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-10-03T22:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事收官日综合战报"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/10-03/10707654.shtml",
+          "title": "综合消息：中国男足时隔28年再获亚运会铜牌 中国队创境外参加亚运会最佳战绩",
+          "captured_at": "2026-10-04T06:14:30+08:00",
+          "note": "中新社名古屋10月3日电：169金89银83铜收官与男足点球胜出"
+        },
+        {
+          "tier": "official",
+          "outlet": "中国足协",
+          "url": "https://www.thecfa.cn/mtzl/20261003/38253.html",
+          "title": "时隔28年，中国男足再获亚运铜牌！",
+          "captured_at": "2026-10-04T06:14:45+08:00",
+          "note": "中国足协官网10月3日发布：铜牌赛2:2战平后点球大战胜出"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-04-wu-yibing-tennis-silver",
+      "story_identity": "wu-yibing-asian-games-tennis-silver-coleman-wong-gold-2026",
+      "headline": "🎾 吴易昺亚运网球男单摘银，中国香港黄泽林夺金直通奥运",
+      "summary": "10月3日爱知·名古屋亚运会网球男单金牌赛，中国选手吴易昺0:2（2:6、4:6）不敌中国香港选手黄泽林，继2018年雅加达亚运会后再获男单亚军；黄泽林夺冠并锁定洛杉矶奥运会参赛席位。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-10-03T11:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事赛果报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/sports/20261003/0bba31ee5f07415a9148c28798b89325/c.html",
+          "title": "亚运会丨网球——男单金牌赛赛况",
+          "captured_at": "2026-10-04T06:11:20+08:00",
+          "note": "新华社：吴易昺0比2不敌中国香港选手黄泽林，获得银牌"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6ac08011e4b039a8e2f1e035.html",
+          "title": "吴易昺获网球男单亚军",
+          "captured_at": "2026-10-04T06:11:45+08:00",
+          "note": "北京日报客户端佐证男单决赛结果"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-04-ev-charging-return-peak",
+      "story_identity": "holiday-ev-charging-return-peak-guidance-2026",
+      "headline": "🔋 假日充电大考：返程充电高峰为5日11至21时、6日10至22时",
+      "summary": "交通部门提示，假期高速充电需求呈“出程分散、回程集中”特点，10月5日11时至21时、6日10时至22时返程充电车辆将大幅增加；秦滨高速乐亭服务区等9处列入全国充电特别繁忙清单。车主可用“e路畅通”小程序查询充电状态、错峰补能，建议充至80%及时离场。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-10-03T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "假期出行充电服务保障提示"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.cn/2026/10/03/ARTI4K8Rm2YrglQZumo4CCOx261003.shtml",
+          "title": "新能源车假日迎“充电大考” 如何应对？",
+          "captured_at": "2026-10-04T06:16:10+08:00",
+          "note": "央视网10月3日：返程高峰时段、特别繁忙服务区清单与错峰建议"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/sh/2026/10-03/10707356.shtml",
+          "title": "新能源车假日迎“充电大考” 如何应对？",
+          "captured_at": "2026-10-04T06:15:20+08:00",
+          "note": "中新网10月3日同主题报道：高峰时段与应对措施"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-04-national-day-box-office-500m",
+      "story_identity": "national-day-box-office-500m-oct3-2026",
+      "headline": "🎬 2026年国庆档总票房突破5亿元，《神探之痕迹》领跑",
+      "summary": "据灯塔专业版数据，截至10月3日17时01分，2026年国庆档（10月1日至7日）档期总票房（含预售）突破5亿元，《神探之痕迹》《什么意思夫妇》《欢迎来龙餐馆》暂列档期票房前三；猫眼专业版口径同日在17时08分确认破5亿。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 17,
+        "evidence": 11
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-10-03T17:01:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "档期票房数据报道，口径已注明"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "证券时报",
+          "url": "https://www.stcn.com/article/detail/4206106.html",
+          "title": "2026年国庆档总票房破5亿元",
+          "captured_at": "2026-10-04T06:13:30+08:00",
+          "note": "人民财讯10月3日电：灯塔专业版17时01分破5亿及前五影片"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "潮新闻",
+          "url": "https://tidenews.com.cn/news.html?id=3577176",
+          "title": "2026国庆档档期票房破5亿！",
+          "captured_at": "2026-10-04T06:13:45+08:00",
+          "note": "潮新闻引猫眼专业版：10月3日17时08分档期票房破5亿"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-04-guo-pu-breaking-gold",
+      "story_identity": "guo-pu-breaking-gold-asian-games-2026",
+      "headline": "💃 郭朴3比0完胜夺亚运霹雳舞女子金牌，中国队1金2铜收官",
+      "summary": "10月3日爱知·名古屋亚运会霹雳舞女子决赛，即将年满18岁的中国选手郭朴以3:0完胜日本选手福岛亚由美夺得金牌；卫冕冠军刘清漪收获女子铜牌，王瑞苗获男子铜牌，男子金牌由日本卫冕冠军获得，中国队霹雳舞项目以1金2铜收官。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-10-03T16:40:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "体育赛事赛果报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://www.news.cn/sports/20261003/93c3bbc30bbf4960872010a04fc8643c/c.html",
+          "title": "亚运会丨郭朴三轮满票夺得霹雳舞女子冠军",
+          "captured_at": "2026-10-04T06:14:05+08:00",
+          "note": "新华社：郭朴夺金、刘清漪铜牌、王瑞苗男子铜牌"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://news.cnr.cn/native/gd/kx/20261003/t20261003_527833154.shtml",
+          "title": "郭朴夺得亚运会女子霹雳舞金牌",
+          "captured_at": "2026-10-04T06:14:15+08:00",
+          "note": "央广网10月3日快讯佐证决赛结果"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
