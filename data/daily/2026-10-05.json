@@ -1,0 +1,1277 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T07:45:53+08:00",
+  "published_at": "2026-10-05T07:45:53+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 74,
+    "published": 8,
+    "dropped_safety": {
+      "时事政治": 5,
+      "社会事件灾难事故": 10,
+      "涉及具体人物": 12,
+      "纯体育赛事结果": 10,
+      "综艺影视内容": 6,
+      "涉及具体品牌公司": 5
+    },
+    "dropped_low_confidence": 14,
+    "dropped_capacity": 0,
+    "sources": [
+      "weibo",
+      "douyin",
+      "zhihu",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 22,
+      "platform_public_sources": 0,
+      "aggregator_sources": 14,
+      "search_media_sources": 7,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 4
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 8,
+        "relaxed_48h": 8,
+        "relaxed_72h": 8
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-05-yuanzhong-sanjiantao",
+          "canonical_phrase": "冤种三件套",
+          "outcome": "selected",
+          "item_id": "2026-10-05-yuanzhong-sanjiantao",
+          "score": 89,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202610/2026-10-05.md",
+            "observed_at": "2026-10-05T06:52:39+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-02-quanwang-jinru-bushaoxin-shidai",
+          "canonical_phrase": "全网进入不烧心时代",
+          "outcome": "selected",
+          "item_id": "2026-10-02-quanwang-jinru-bushaoxin-shidai",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 28,
+            "reusability": 19,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-05-yizhao-shoucuo-tianxiazhi",
+          "canonical_phrase": "一朝手搓天下知",
+          "outcome": "selected",
+          "item_id": "2026-10-05-yizhao-shoucuo-tianxiazhi",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-10-05T07:17:05+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-05-zijiadazi-jiti-chenmo",
+          "canonical_phrase": "自驾搭子集体陷入沉默",
+          "outcome": "selected",
+          "item_id": "2026-10-05-zijiadazi-jiti-chenmo",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 27,
+            "reusability": 16,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-05-tiaochengyou",
+          "canonical_phrase": "跳城游",
+          "outcome": "selected",
+          "item_id": "2026-10-05-tiaochengyou",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-10-05T07:17:05+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-05-yijiao-shuaidao-chuanxi",
+          "canonical_phrase": "怎么一跤就摔到川西了",
+          "outcome": "selected",
+          "item_id": "2026-10-05-yijiao-shuaidao-chuanxi",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 27,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.46.la/hot",
+            "observed_at": "2026-10-05T07:30:25+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-05-qiongyoufuyou-buru-shaonianyou",
+          "canonical_phrase": "穷游富游不如少年游",
+          "outcome": "selected",
+          "item_id": "2026-10-05-qiongyoufuyou-buru-shaonianyou",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-22-zhanshi-xinxue-shanshenbu",
+          "canonical_phrase": "展示我新学的闪身步",
+          "outcome": "selected",
+          "item_id": "2026-09-22-zhanshi-xinxue-shanshenbu",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202610/2026-10-05.md",
+            "observed_at": "2026-10-05T06:52:39+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "bajiaqi-tiaocheng-kuaile-moshi",
+          "canonical_phrase": "把假期调成快乐模式",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 27,
+            "reusability": 15,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://www.46.la/hot",
+            "observed_at": "2026-10-05T07:30:25+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "changchangchangjia-meishi-panguan",
+          "canonical_phrase": "长长长假美食判官",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 26,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "wode-guoqing-anpai-belike",
+          "canonical_phrase": "我的国庆安排belike",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 26,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "xiangdangdiren-yiyang-lvxing",
+          "canonical_phrase": "像当地人一样旅行",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 26,
+            "reusability": 14,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "kuaishikong-heying",
+          "canonical_phrase": "和老照片里的自己跨时空合影",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 12,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yinju-shanlin",
+          "canonical_phrase": "年轻人国庆旅游偏爱隐居山林",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 26,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-10-05T07:17:05+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "duochuqu-zouzou",
+          "canonical_phrase": "你说得对人是应该多出去走走",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 26,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "huijia-babaomi",
+          "canonical_phrase": "全世界的东北人都得回家扒苞米",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 13,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "jiaqi-guode-feikuai",
+          "canonical_phrase": "国庆假期过得飞快",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 10,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhaijia-wuliao",
+          "canonical_phrase": "国庆假期宅家无聊怎么办",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 10,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "xinglixiang-qiang",
+          "canonical_phrase": "武汉地铁站行李箱墙范围又扩大",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 25,
+            "reusability": 8,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://top.baidu.com/board?tab=realtime",
+            "observed_at": "2026-10-05T07:17:05+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "riben-xiaoliancang",
+          "canonical_phrase": "江苏惊现日本小镰仓",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 25,
+            "reusability": 11,
+            "evidence": 6
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202610/2026-10-05.md",
+            "observed_at": "2026-10-05T06:52:39+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "jiaqi-youwa-pei",
+          "canonical_phrase": "我的假期有娃陪",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 25,
+            "reusability": 9,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+            "observed_at": "2026-10-05T06:51:10+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "nansheng-miaoshu-xingge",
+          "canonical_phrase": "男生描述喜欢的女生很少提性格",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 25,
+            "reusability": 8,
+            "evidence": 5
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202610/2026-10-05.md",
+            "observed_at": "2026-10-05T06:52:39+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "soldout-chongqing",
+          "canonical_phrase": "是谁在重庆免费听了soldout",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "houzi-canger",
+          "canonical_phrase": "猴子帮女子摘苍耳一脸嫌弃",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "caishichang-dage-pianle-sannian",
+          "canonical_phrase": "我可能被菜市场的大哥给骗了三年",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "shangwuzuo-xiaohai",
+          "canonical_phrase": "带小孩不要坐商务座",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-7",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-8",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-9",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-10",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-11",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-12",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-13",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-14",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-15",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-16",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-17",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-18",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-19",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-20",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-21",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-22",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-23",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-31",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-32",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-33",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-34",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-35",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-36",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-37",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-38",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-39",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-40",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-41",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-42",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-43",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-44",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-45",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-46",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-47",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-48",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 74,
+          "cumulative_unique_candidates": 74,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "zhihu",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-05-yuanzhong-sanjiantao",
+      "title": "🛍️ 年轻人开始不买景区冤种三件套了",
+      "aliases": [
+        "冤种三件套",
+        "景区冤种三件套",
+        "只薅不买"
+      ],
+      "canonical_phrase": "冤种三件套",
+      "platform": [
+        "weibo",
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "「冤种三件套」登顶今日微博热搜：护手霜、冰箱贴、文创雪糕这景区伴手礼老三样被年轻人集体「只薅不买」，媒体跟进拆解套路，「冤种三件套」成了吐槽一切溢价套装的通用说法。",
+      "origin": "已验证：微博热搜归档2026-10-05 06:52快照「年轻人开始不买景区冤种三件套了」列第1位、热度约57.7万；今日热榜微博热搜榜07:19打开时同列第1位；网易新闻10-05报道详解三件套同质化溢价套路与年轻人的反向消费。",
+      "usage": "命名式吐槽「冤种三件套」：任何凑数又溢价的三样组合都能这么叫——健身三件套、直播间三件套、婚礼三件套；态度句「只薅不买」适配一切被套路场景；评论区晒各地景区三件套价格。",
+      "fun_point": "给全国景区千篇一律的伴手礼起了个灵魂外号，「冤种」二字把掏钱瞬间的心态写透；「只薅不买」四个字就是一份当代消费宣言。",
+      "why_spread": "已验证：今日微博热搜第1位，网易、新浪、搜狐等10-02起连续报道；推测：国庆出游高峰让景区消费话题自带流量，命名式吐槽门槛低，人人都能举出自己遇到的三件套。",
+      "lifecycle": "rising",
+      "brand_usage": "文旅与文创账号可借「不冤种的三件套」反向安利真本地限定；内容账号可发「你心中的冤种三件套」征集互动；避免直接贬低具体景区与商家。",
+      "risk": {
+        "level": "low",
+        "note": "消费吐槽话题，借用时避免点名贬低具体商家与地域。"
+      },
+      "days_on_list": 1,
+      "score": 89,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202610/2026-10-05.md",
+          "title": "weibo-trending-hot-search 微博热搜归档 2026-10-05",
+          "observed_at": "2026-10-05T06:52:39+08:00",
+          "captured_at": "2026-10-05T07:17:05+08:00",
+          "note": "微博热搜归档10-05 06:52快照：「年轻人开始不买景区冤种三件套了」列第1位、热度577703。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://tophub.today/n/KqndgxeLl9",
+          "title": "微博热搜榜 - 今日热榜",
+          "observed_at": "2026-10-05T07:19:35+08:00",
+          "captured_at": "2026-10-05T07:19:35+08:00",
+          "note": "今日热榜微博热搜榜07:19打开快照：同话题列第1位（约39万）。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://m.163.com/dy/article/L8EKSRBU0556C8SC.html",
+          "title": "逃不过景区“冤种三件套”，年轻人开始只薅不买了",
+          "observed_at": "2026-10-05T01:48:47+08:00",
+          "captured_at": "2026-10-05T07:29:10+08:00",
+          "note": "网易新闻10-05 01:48报道：拆解护手霜、冰箱贴、文创雪糕三件套套路，年轻人「只薅不买」。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-02-quanwang-jinru-bushaoxin-shidai",
+      "title": "🍜 这顿饭已严肃品鉴不烧心",
+      "aliases": [
+        "全网进入不烧心时代",
+        "不烧心文学",
+        "吃了不烧心"
+      ],
+      "canonical_phrase": "全网进入不烧心时代",
+      "platform": [
+        "douyin",
+        "weibo",
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "「不烧心」假期第五天热度不减：抖音热榜挂出「这顿饭已严肃品鉴不烧心」，央广网、新浪等跟进拆解这句短剧台词如何变成全网万能好评语。",
+      "origin": "已验证：抖音热榜归档2026-10-05 06:51快照「这顿饭已严肃品鉴不烧心」在列；46.la抖音热门视频榜07:30快照该词列第32位（828.2万）；央广网10-04报道「不烧心文学」成全网热梗，源自短剧中摊贩老板的固定台词。该梗本站10-02、10-03连续收录。",
+      "usage": "万能好评「（吃了）不烧心」：夸一切靠谱不坑人的东西；规矩体接龙「贵是贵点，但吃了不烧心」「宁可少挣点，规矩不能坏」；衍生「严肃品鉴不烧心」给正经评测内容当标题。",
+      "fun_point": "一句土味台词把「靠谱」夸出了养生广告的喜感，越严肃的场合用越抽象；全网对着流水线台词反向二创，梗比原剧还长寿。",
+      "why_spread": "已验证：今日抖音热榜在列，央广网、新浪10-04起多篇拆解；推测：台词模板识别成本极低，夸人夸物都能套，短视频评论区天然接龙。",
+      "lifecycle": "peak",
+      "brand_usage": "餐饮、食品、本地生活账号可用「贵是贵点，但吃了不烧心」做品质承诺体；评测类内容可借「严肃品鉴不烧心」做栏目名；避免暗示疗效与夸大宣传。",
+      "risk": {
+        "level": "low",
+        "note": "源自短剧台词，借用时避免影射具体剧目与演员。"
+      },
+      "days_on_list": 3,
+      "score": 88,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 28,
+        "reusability": 19,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-05",
+          "observed_at": "2026-10-05T06:51:10+08:00",
+          "captured_at": "2026-10-05T07:17:05+08:00",
+          "note": "抖音热榜归档10-05 06:51快照：「这顿饭已严肃品鉴不烧心」在列。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://www.46.la/hot",
+          "title": "今日全网热榜聚合平台 - 全网热搜实时排行榜",
+          "observed_at": "2026-10-05T07:30:25+08:00",
+          "captured_at": "2026-10-05T07:30:25+08:00",
+          "note": "46.la抖音热门视频榜07:30快照：该词列第32位（828.2万），页面标注43秒前更新。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.cnr.cn/newscenter/kdgc/20261004/t20261004_527834105.shtml",
+          "title": "换汤不换药的AI短剧，还能“吃了不烧心”吗？",
+          "observed_at": "2026-10-04T19:54:10+08:00",
+          "captured_at": "2026-10-05T07:29:10+08:00",
+          "note": "央广网10-04 19:54报道：「不烧心文学」火遍全网，源自短剧摊贩台词。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-05-yizhao-shoucuo-tianxiazhi",
+      "title": "🚉 一朝手搓天下知",
+      "aliases": [
+        "永州站手动翻牌",
+        "纯手搓检票牌",
+        "手搓"
+      ],
+      "canonical_phrase": "一朝手搓天下知",
+      "platform": [
+        "other"
+      ],
+      "type": "句式梗",
+      "summary": "「一朝手搓天下知」：永州火车站人工翻牌检票走红后，百度热搜用这句改写古诗给事件盖章，「纯手搓」成了形容复古人工操作的当红说法。",
+      "origin": "已验证：百度热搜实时榜2026-10-05 07:17打开快照「永州站手动翻牌火了：一朝手搓天下知」列第11位；极目新闻10-04实探报道走红后候车室检票屏已全部换成电子屏，车站仍在升级改造。",
+      "usage": "感叹句「一朝手搓天下知」：任何人靠笨办法、手工活意外出圈时的盖章句式；「纯手搓」形容一切不用自动化的复古操作——纯手搓咖啡、纯手搓账单；评论区玩「换慢一点车都开走了」同款着急。",
+      "fun_point": "十年寒窗无人问的古诗被改成手搓版，时代情绪一句封顶；全自动时代里的全人工画面，反差感自带笑点。",
+      "why_spread": "已验证：今日百度热搜在列，极目新闻、凤凰网10-04实探跟进；推测：「手搓」本是手工圈热词，与火车站场景碰撞出意外喜感，古诗改写体传播成本低。",
+      "lifecycle": "rising",
+      "brand_usage": "内容账号可发「你身边的一朝手搓天下知」征集手艺人故事；工具类账号可做「纯手搓VS全自动」对照内容；避免调侃基层工作人员。",
+      "risk": {
+        "level": "low",
+        "note": "公共设施话题，借用时聚焦梗本身，避免嘲讽车站与工作人员。"
+      },
+      "days_on_list": 1,
+      "score": 81,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜",
+          "observed_at": "2026-10-05T07:17:05+08:00",
+          "captured_at": "2026-10-05T07:17:05+08:00",
+          "note": "百度热搜实时榜10-05 07:17打开快照：「永州站手动翻牌火了：一朝手搓天下知」列第11位。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.ctdsb.net/c1716_202610/2872168.html",
+          "title": "实探“纯手动翻牌检票”走红后的永州火车站：候车室检票屏已全部换成电子屏",
+          "observed_at": "2026-10-04T19:07:36+08:00",
+          "captured_at": "2026-10-05T07:29:10+08:00",
+          "note": "极目新闻10-04 19:07实探：走红后候车室检票屏已全部换成电子屏，车站仍在升级改造。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-05-zijiadazi-jiti-chenmo",
+      "title": "🚗 自驾搭子集体陷入沉默",
+      "aliases": [
+        "国庆自驾搭子集体陷入沉默",
+        "集体陷入沉默"
+      ],
+      "canonical_phrase": "自驾搭子集体陷入沉默",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "情绪梗",
+      "summary": "「国庆自驾搭子集体陷入沉默」冲上抖音热榜：组团自驾到第二天全员无话、靠传话沟通，「集体陷入沉默」成了形容关系电量耗尽的通用画面。",
+      "origin": "已验证：抖音热榜归档2026-10-05 06:51快照「国庆自驾搭子集体陷入沉默」列第6位；46.la抖音热门视频榜07:30快照列第45位（769.3万）；网易视频10-04有账号蹭该话题发布同款内容。",
+      "usage": "画面句式「XX集体陷入沉默」：团建第三天、拼车五小时后、家庭群被催婚时都可套；「搭子」造词继续扩展——自驾搭子、饭搭子、看展搭子；评论区接龙各自的车内沉默时刻。",
+      "fun_point": "把长途自驾的人际关系变化拍成了默片，「靠传话沟通」六个字全是戏；出发时兄弟姐妹，半程各自看窗。",
+      "why_spread": "已验证：今日抖音热榜与46.la聚合榜双在列，多个账号跟拍同款；推测：长假自驾是全民场景，沉默反差极易对号入座，一句话就能拍完一条视频。",
+      "lifecycle": "rising",
+      "brand_usage": "汽车、出行、音乐电台账号可做「打破车内沉默」歌单与话题；内容账号可发「搭子电量测试」互动；避免渲染人际对立与地域标签。",
+      "risk": {
+        "level": "safe",
+        "note": "自嘲式社交话题，无敏感指向。"
+      },
+      "days_on_list": 1,
+      "score": 79,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 27,
+        "reusability": 16,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-05",
+          "observed_at": "2026-10-05T06:51:10+08:00",
+          "captured_at": "2026-10-05T07:17:05+08:00",
+          "note": "抖音热榜归档10-05 06:51快照：「国庆自驾搭子集体陷入沉默」列第6位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://www.46.la/hot",
+          "title": "今日全网热榜聚合平台 - 全网热搜实时排行榜",
+          "observed_at": "2026-10-05T07:30:25+08:00",
+          "captured_at": "2026-10-05T07:30:25+08:00",
+          "note": "46.la抖音热门视频榜07:30快照：该词列第45位（769.3万）。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://www.163.com/v/video/VE7FLBIIN.html",
+          "title": "国庆自驾搭子集体陷入沉默，那个带了吗？",
+          "captured_at": "2026-10-05T07:29:55+08:00",
+          "note": "网易视频10-04：账号蹭「国庆自驾搭子集体陷入沉默」话题发布同款视频，话题被跨账号套用。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-05-tiaochengyou",
+      "title": "🚄 跳城游",
+      "aliases": [
+        "多城串游",
+        "跳X游"
+      ],
+      "canonical_phrase": "跳城游",
+      "platform": [
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "「跳城游」成这个长假的旅行新词：一趟行程跳着玩两三座城，百度热搜在榜，媒体统计跨2城游客同比增七成，接棒「特种兵旅游」成出行新标签。",
+      "origin": "已验证：百度热搜实时榜2026-10-05 07:17打开快照「十一游客流行'跳城游'」在列；东方财富10-04报道双节期间预订2个及以上目的地机票的游客同比增加70%；凤凰网10-03报道年轻人「拼长假」「跳城游」火了，灵感来自跳岛游。",
+      "usage": "造词式标签「跳城游」：行程分享、攻略标题、vlog话题直接挂；「跳X游」结构可迁移——跳店游、跳展游；评论区晒自己的连跳路线。",
+      "fun_point": "把中转和赶路从旅行成本变成玩法本身，一个「跳」字让行程表听起来像游戏关卡。",
+      "why_spread": "已验证：今日百度热搜在榜，东方财富、凤凰网、什么值得买等10-03起多篇报道，百度百科词条已上线；推测：长假期加高铁网让多城串联可行，新词命名给既有行为一个传播抓手。",
+      "lifecycle": "rising",
+      "brand_usage": "文旅、交通、酒店账号可做「跳城路线」策划与联程内容；攻略账号可发「3天2城怎么跳」模板；避免鼓吹过度疲劳行程。",
+      "risk": {
+        "level": "safe",
+        "note": "出行方式话题，无争议指向。"
+      },
+      "days_on_list": 1,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "百度热搜",
+          "observed_at": "2026-10-05T07:17:05+08:00",
+          "captured_at": "2026-10-05T07:17:05+08:00",
+          "note": "百度热搜实时榜10-05 07:17打开快照：「十一游客流行'跳城游'」在列。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://wap.eastmoney.com/a/202610043888553555.html",
+          "title": "十一游客流行“跳城游”，“多城串游”火了",
+          "observed_at": "2026-10-04T17:36:00+08:00",
+          "captured_at": "2026-10-05T07:29:10+08:00",
+          "note": "东方财富10-04 17:36报道：双节预订2个及以上目的地机票的游客同比增加70%。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://feng.ifeng.com/c/8wvPY71jyHi",
+          "title": "中国年轻人“拼长假”“跳城游”火了",
+          "captured_at": "2026-10-05T07:29:55+08:00",
+          "note": "凤凰网10-03报道：年轻人「拼长假」「跳城游」火了，一城一站跳着游。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-05-yijiao-shuaidao-chuanxi",
+      "title": "🤕 怎么一跤就摔到川西了",
+      "aliases": [
+        "一跤摔到川西",
+        "怎么一X就X到XX了"
+      ],
+      "canonical_phrase": "怎么一跤就摔到川西了",
+      "platform": [
+        "douyin"
+      ],
+      "type": "短视频梗",
+      "summary": "「怎么一跤就摔到川西了」持续挂在抖音热榜：摔一跤转场到远方美景的视频模板假期再翻红，「怎么一X就X到XX了」成了晒旅行转场的通用句式。",
+      "origin": "已验证：抖音热榜归档2026-10-05 06:51快照该词在列；46.la抖音热门视频榜07:30快照列第26位（901.4万）。",
+      "usage": "转场句式「怎么一X就X到XX了」：摔一跤、睡一觉、眨个眼就能切到任何目的地；旅拍视频开头模板，配跌倒动作接风景大片；评论区接龙「怎么一睁眼就到公司了」打工人变体。",
+      "fun_point": "摔跤这种倒霉事被剪成传送门，前一秒趴地后一秒雪山草原，物理上不可能的事在剪辑里一秒达成。",
+      "why_spread": "已验证：今日抖音热榜与聚合榜在列，国庆期间大量同款转场视频；推测：动作简单、效果炸裂、零台词，假期旅行素材井喷直接喂饱这个模板。",
+      "lifecycle": "rising",
+      "brand_usage": "文旅账号可用「一跤摔进XX景区」做目的地安利；剪辑教程账号可出同款转场教学；提醒拍摄注意动作安全，避免危险模仿。",
+      "risk": {
+        "level": "low",
+        "note": "转场拍摄话题，借用时提醒注意动作安全。"
+      },
+      "days_on_list": 1,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 27,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-05",
+          "observed_at": "2026-10-05T06:51:10+08:00",
+          "captured_at": "2026-10-05T07:17:05+08:00",
+          "note": "抖音热榜归档10-05 06:51快照：「怎么一跤就摔到川西了」在列。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://www.46.la/hot",
+          "title": "今日全网热榜聚合平台 - 全网热搜实时排行榜",
+          "observed_at": "2026-10-05T07:30:25+08:00",
+          "captured_at": "2026-10-05T07:30:25+08:00",
+          "note": "46.la抖音热门视频榜07:30快照：该词列第26位（901.4万）。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-05-qiongyoufuyou-buru-shaonianyou",
+      "title": "🎒 穷游富游不如少年游",
+      "aliases": [
+        "不如少年游",
+        "穷游富游都不如少年游"
+      ],
+      "canonical_phrase": "穷游富游不如少年游",
+      "platform": [
+        "douyin"
+      ],
+      "type": "口头禅梗",
+      "summary": "「穷游富游不如少年游」再上抖音热榜：这句旅行金句在假期亲子与青春出游视频里被反复引用，成了给「趁年轻出发」盖章的万能文案。",
+      "origin": "已验证：抖音热榜归档2026-10-05 06:51快照「穷游富游不如少年游」在列；46.la抖音热门视频榜07:30快照列第33位（805.8万）；公开视频页显示10-02起多条亲子、青春出游视频以此为题，单条点赞过万。",
+      "usage": "金句文案「穷游富游不如少年游」：旅行vlog标题与结尾升华标配；「X游不如Y游」结构可造句——穷游富游不如结伴游；亲子、毕业旅行、老友重逢场景通吃。",
+      "fun_point": "一句话同时安慰了钱包和年纪，把「没钱」和「不再年轻」都包装成了出发的理由。",
+      "why_spread": "已验证：今日抖音热榜在列，相关视频假期持续产出；推测：金句自带对仗与情绪价值，长假出行内容井喷期天然被高频引用。",
+      "lifecycle": "rising",
+      "brand_usage": "文旅、青旅、户外账号可用该句做主题文案；教育亲子账号可做「少年游」主题策划；避免制造年龄焦虑。",
+      "risk": {
+        "level": "safe",
+        "note": "正向旅行话题，无争议指向。"
+      },
+      "days_on_list": 1,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/master/archives/2026-10-05.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-05",
+          "observed_at": "2026-10-05T06:51:10+08:00",
+          "captured_at": "2026-10-05T07:17:05+08:00",
+          "note": "抖音热榜归档10-05 06:51快照：「穷游富游不如少年游」在列。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://www.46.la/hot",
+          "title": "今日全网热榜聚合平台 - 全网热搜实时排行榜",
+          "observed_at": "2026-10-05T07:30:25+08:00",
+          "captured_at": "2026-10-05T07:30:25+08:00",
+          "note": "46.la抖音热门视频榜07:30快照：该词列第33位（805.8万）。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-zhanshi-xinxue-shanshenbu",
+      "title": "🕺 闪身步都火到国外了",
+      "aliases": [
+        "展示我新学的闪身步",
+        "闪身步",
+        "谁来了都得闪两步"
+      ],
+      "canonical_phrase": "展示我新学的闪身步",
+      "platform": [
+        "douyin",
+        "weibo",
+        "other"
+      ],
+      "type": "短视频梗",
+      "summary": "「闪身步」第12天仍有新波浪：微博话题「闪身步都火到国外了」今早登热搜，抖音体育榜「用闪身步打开国庆假期」同列第10位，海外模仿视频持续产出。",
+      "origin": "已验证：微博热搜归档2026-10-05 06:52快照「闪身步都火到国外了」在列；今日热榜抖音体育榜07:19打开快照「用闪身步打开国庆假期」列第10位、约654万次播放；澎湃新闻09-30报道闪身步走红并提示模仿风险。该梗本站9月22日起持续收录。",
+      "usage": "动作梗「闪身步」：躲闪、撤退、开溜场景的万能动作素材；「用闪身步打开XX」句式适配一切转场；评论区「谁来了都得闪两步」继续盖楼。",
+      "fun_point": "传统舞基本功变成全网躲闪暗号，从景区跳到海外，文化输出靠一个侧身完成。",
+      "why_spread": "已验证：今日微博热搜与抖音体育榜双在列，海外模仿内容增多；推测：动作门槛低、视觉反差强，假期人流量给足拍摄场景，海外二创打开第二波。",
+      "lifecycle": "peak",
+      "brand_usage": "运动、舞蹈、文旅账号可继续借「闪身步」做动作挑战；海外向内容可做反应合集；提醒量力而行，避免运动损伤。",
+      "risk": {
+        "level": "low",
+        "note": "媒体已提示盲目模仿或有损伤风险，借用时附安全提醒。"
+      },
+      "days_on_list": 12,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 27,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "weibo",
+          "url": "https://raw.githubusercontent.com/v5tech/weibo-trending-hot-search/master/archives/202610/2026-10-05.md",
+          "title": "weibo-trending-hot-search 微博热搜归档 2026-10-05",
+          "observed_at": "2026-10-05T06:52:39+08:00",
+          "captured_at": "2026-10-05T07:17:05+08:00",
+          "note": "微博热搜归档10-05 06:52快照：「闪身步都火到国外了」在列（热度48454）。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://tophub.today/n/3adqqzadng",
+          "title": "抖音体育榜 - 今日热榜",
+          "observed_at": "2026-10-05T07:19:35+08:00",
+          "captured_at": "2026-10-05T07:19:35+08:00",
+          "note": "今日热榜抖音体育榜07:19打开快照：「用闪身步打开国庆假期」列第10位、6540123次播放。"
+        },
+        {
+          "tier": "search_media",
+          "evidence_role": "usage_context",
+          "platform": "other",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34181046",
+          "title": "“闪身步”“狗熊哆嗦毛”走红网络，专家提醒：盲目模仿或有损健康",
+          "observed_at": "2026-09-30T21:10:00+08:00",
+          "captured_at": "2026-10-05T07:29:10+08:00",
+          "note": "澎湃新闻09-30 21:10报道：闪身步走红网络，专家提醒盲目模仿或有损健康。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
