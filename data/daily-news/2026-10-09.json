@@ -1,0 +1,729 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-09",
+  "generated_at": "2026-10-10T00:28:23+08:00",
+  "published_at": "2026-10-10T00:28:23+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 31,
+    "published": 5,
+    "dropped_safety": {
+      "politics": 2,
+      "geopolitics": 2,
+      "public_safety": 1,
+      "controversy": 1
+    },
+    "dropped_low_confidence": 19,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 25,
+      "official_sources": 0,
+      "state_media_sources": 5,
+      "major_media_sources": 5,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "evaluated_at": "2026-10-09T21:00:00+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 5,
+        "relaxed_48h": 6,
+        "relaxed_72h": 9
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 31,
+          "cumulative_unique_candidates": 31,
+          "source_scope": [
+            "央媒发布：新华社/新华网、央视网/央视新闻、人民网、光明网、中国网、央广网",
+            "政府机构站点：财政部、文化和旅游部、农业农村部、应急管理部、教育部研招网、深圳口岸办、中央气象台",
+            "持牌媒体：财新网、中国新闻网、澎湃新闻、新京报、新华报业网、观察者网、上观新闻、经济观察网",
+            "公共热榜与聚合：百度热搜、微博热点(仅佐证热度，不单独成立)"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-09-holiday-tourism-826m",
+          "story_identity": "national-day-holiday-tourism-826m-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-09-holiday-tourism-826m",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 34,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-09-mof-550b-local-debt",
+          "story_identity": "mof-550b-local-debt-limit-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-10-09-mof-550b-local-debt",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-09-yanzhao-2027-pre-registration",
+          "story_identity": "yanzhao-2027-pre-registration-start-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-10-09-yanzhao-2027-pre-registration",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-09-huanggang-port-opens-oct12",
+          "story_identity": "huanggang-port-opening-announcement-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-09-huanggang-port-opens-oct12",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-09-feitian-awards-yantai",
+          "story_identity": "35th-feitian-awards-results-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-09-feitian-awards-yantai",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "fuel-surcharge-up-oct10",
+          "story_identity": "domestic-fuel-surcharge-up-oct10-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "国内航线燃油附加费调整10月7日已由航司通知并经央视报道、10月10日生效，非9日新增披露"
+        },
+        {
+          "candidate_key": "mofcom-holiday-tradein-3348m",
+          "story_identity": "mofcom-holiday-tradein-3348m-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "商务部假期消费市场收官与10月8日已入选税收服务消费数据题材重叠，增量有限"
+        },
+        {
+          "candidate_key": "autumn-grain-harvest-40pct",
+          "story_identity": "autumn-grain-harvest-40pct-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 15,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "秋粮收获进度题材10月3日已覆盖过三成节点，本次为常规进度更新"
+        },
+        {
+          "candidate_key": "djokovic-shanghai-masters-debut",
+          "story_identity": "djokovic-shanghai-masters-2026-debut",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "上海大师赛题材10月8日已入选首轮赛果，单日球星首秀增量有限"
+        },
+        {
+          "candidate_key": "national-day-box-office-final",
+          "story_identity": "national-day-box-office-final-1164m-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "drop_reason": "国庆档收官票房题材10月7日已入选破11亿元节点，收官增量有限"
+        },
+        {
+          "candidate_key": "north-china-cold-air-oct9",
+          "story_identity": "north-china-cold-air-mid-oct-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "北方冷空气活动为常规天气过程，10月8日已入选寒露开工天气条目"
+        },
+        {
+          "candidate_key": "fifa-ranking-china-96",
+          "story_identity": "fifa-ranking-china-96-oct-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "国际足联排名10月7日公布，非9日事件，且权威解读来源有限"
+        },
+        {
+          "candidate_key": "china-open-womens-final-rounds",
+          "story_identity": "china-open-2026-womens-final-rounds",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "中网10月9日处女子赛程收尾阶段，单日进展公共信息增量有限"
+        },
+        {
+          "candidate_key": "health-rehab-nursing-plan",
+          "story_identity": "rehab-nursing-expansion-plan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "医疗康复护理扩容提升工程实施方案落款9月30日，地方转载为主，9日无新增权威进展"
+        },
+        {
+          "candidate_key": "wtt-china-smash-round16",
+          "story_identity": "wtt-china-smash-2026-round16",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "WTT中国大满贯仍处赛程中段，单日轮次结果信息增量有限"
+        },
+        {
+          "candidate_key": "russia-unexplained-pneumonia-who",
+          "story_identity": "russia-lab-staff-pneumonia-who-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T13:00:00+08:00",
+          "scope": "international",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "俄研究机构人员感染事件病因待权威结论，公共卫生不确定性较高，谨慎不选"
+        },
+        {
+          "candidate_key": "mid-autumn-13day-travel-trend",
+          "story_identity": "mid-autumn-13day-travel-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "拼假长线游多城串游为假期趋势综述稿，无单日新增权威数据"
+        },
+        {
+          "candidate_key": "guangdong-holiday-6278w-visitors",
+          "story_identity": "guangdong-holiday-6278w-visitors-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "广东假期接待游客6278.9万人次为省级文旅汇总，全国文旅部收官数据已入选"
+        },
+        {
+          "candidate_key": "mof-h1-policy-execution-report",
+          "story_identity": "mof-h1-2026-policy-execution-report",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 17,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "上半年财政政策执行情况报告为例行发布，与读者日常决策关联弱"
+        },
+        {
+          "candidate_key": "sse-photovoltaic-index-launch",
+          "story_identity": "sse-photovoltaic-star-index-launch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "上证光伏科创领先指数发布属金融市场例行事项，与日常生活关联弱"
+        },
+        {
+          "candidate_key": "mem-grassroots-disaster-reward",
+          "story_identity": "mem-grassroots-disaster-reward-notice-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 5
+          },
+          "drop_reason": "基层防灾避险拟奖励对象公示为程序性公告，公共信息增量有限"
+        },
+        {
+          "candidate_key": "huangba-shuttle-retirement",
+          "story_identity": "huangba-shuttle-bus-retirement-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "皇巴谢幕为皇岗口岸开通的衍生题材，已并入主条目"
+        },
+        {
+          "candidate_key": "holiday-camper-van-budget-travel",
+          "story_identity": "holiday-camper-van-budget-travel-viral-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "假期床车旅行为社交媒体话题性内容，缺乏权威报道支撑"
+        },
+        {
+          "candidate_key": "holiday-hiking-injury-hospital",
+          "story_identity": "holiday-hiking-injury-hospital-viral-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 14,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "假期暴走受伤话题仅见热搜与自媒体，普遍性未经权威核实"
+        },
+        {
+          "candidate_key": "medicine-price-surge-24-to-1200",
+          "story_identity": "medicine-price-surge-viral-claim-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "药品涨价说法仅见热搜聚合与自媒体转述，未见权威媒体核实，证据不足"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-09-holiday-tourism-826m",
+      "story_identity": "national-day-holiday-tourism-826m-2026",
+      "headline": "🧳 国庆假期国内出游8.26亿人次，总花费7383.75亿元",
+      "summary": "文化和旅游部10月9日公布2026年国庆节假期文化和旅游市场情况，经数据中心测算，假期7天全国国内出游8.26亿人次，国内出游总花费7383.75亿元，按可比口径日均同比分别增长6.3%、4.3%，假期文化和旅游市场平稳有序。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 34,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-10-09T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "文旅部假期市场权威测算收官数据，中国网与新华报业双源"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国网",
+          "url": "http://news.china.com.cn/2026-10/09/content_118726946.shtml",
+          "title": "2026年国庆节假期国内出游8.26亿人次",
+          "captured_at": "2026-10-10T00:14:20+08:00",
+          "note": "中国网10月9日：假期7天全国国内出游8.26亿人次，总花费7383.75亿元，日均同比分别增长6.3%、4.3%"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新华报业网",
+          "url": "https://www.xhby.net/content/s6ac891b0e4b04f0d75960323.html",
+          "title": "国庆节假期国内出游8.26亿人次",
+          "captured_at": "2026-10-10T00:14:26+08:00",
+          "note": "新华报业网10月9日报道文旅部数据中心测算结果，与中国网数据一致"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-09-mof-550b-local-debt",
+      "story_identity": "mof-550b-local-debt-limit-2026",
+      "headline": "🏦 财政部安排使用5500亿元地方政府债务结存限额",
+      "summary": "财政部10月9日消息，近日安排使用地方政府债务结存限额5500亿元，用于提高县区一般公共预算保障能力和支持地方扩大有效投资；其中一般债务结存限额3000亿元全部分配县区使用，专项债务结存限额2500亿元支持地方扩大有效投资。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 83,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-10-09T16:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "财政增量政策事实性报道，人民网与央视网双源，不涉及市场引导"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://finance.people.com.cn/n1/2026/1009/c1004-40811506.html",
+          "title": "财政部安排使用5500亿元地方政府债务结存限额",
+          "captured_at": "2026-10-10T00:15:02+08:00",
+          "note": "人民网10月9日：5500亿元中一般债务结存限额3000亿元全部分配县区使用"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/10/09/ARTIESJYPciC3bQSqzQoHzg8261009.shtml",
+          "title": "财政部安排使用5500亿元地方政府债务结存限额",
+          "captured_at": "2026-10-10T00:15:08+08:00",
+          "note": "央视网10月9日：用于提高县区一般公共预算保障能力和支持地方扩大有效投资"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-09-yanzhao-2027-pre-registration",
+      "story_identity": "yanzhao-2027-pre-registration-start-2026",
+      "headline": "📝 2027年研考网上预报名启动，报名确认一体化办理",
+      "summary": "2027年全国硕士研究生招生考试网上预报名10月9日启动，预报名时间为10月9日至12日每日9时至22时，正式报名10月15日至24日，初试12月19日至20日；中国研究生招生信息网报名系统升级，网上报名和确认一体化办理，照片采集模式进一步优化。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-10-09T09:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "研考报名节点性服务信息，央广网与中新社双源"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://news.cnr.cn/native/gd/kx/20261009/t20261009_527836792.shtml",
+          "title": "2027年研考生注意今起网上预报名启动",
+          "captured_at": "2026-10-10T00:16:11+08:00",
+          "note": "央广网10月9日：预报名10月9日至12日每日9时至22时，研招网报名系统升级"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/edu/2026/10-09/10709441.shtml",
+          "title": "2027年研考生注意今起网上预报名启动",
+          "captured_at": "2026-10-10T00:16:17+08:00",
+          "note": "中新社10月9日报道：报名与确认一体化办理，初试12月19日至20日"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-09-huanggang-port-opens-oct12",
+      "story_identity": "huanggang-port-opening-announcement-2026",
+      "headline": "🛃 皇岗口岸将于10月12日正式开通，提供24小时通关",
+      "summary": "香港特区政府保安局与深圳市人民政府口岸办公室10月9日联合公告：皇岗口岸新联检大楼已通过验收，将于10月12日6时30分正式开通运行，为旅客和客运车辆提供24小时通关服务，实施一地两检，成为香港首个采用合作查验、一次放行模式的陆路口岸。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-10-09T13:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "深港口岸开通便民信息，人民网与中新社双源"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://sz.people.com.cn/n2/2026/1009/c202846-41717437.html",
+          "title": "皇岗口岸将于10月12日正式开通",
+          "captured_at": "2026-10-10T00:17:03+08:00",
+          "note": "人民网深圳10月9日电：新联检大楼已通过验收，10月12日6时30分正式开通运行"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/dwq/2026/10-09/10709635.shtml",
+          "title": "皇岗口岸将于10月12日正式开通运行",
+          "captured_at": "2026-10-10T00:17:09+08:00",
+          "note": "中新社香港10月9日电：港深双方已完成系统测试、试运行及应急演练，提供24小时通关服务"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-09-feitian-awards-yantai",
+      "story_identity": "35th-feitian-awards-results-2026",
+      "headline": "🏆 第35届飞天奖烟台揭晓，王仁君宋佳获优秀男女演员",
+      "summary": "10月9日晚，第35届电视剧飞天奖、第29届电视文艺星光奖颁奖典礼在山东烟台举行。王仁君凭《浴血荣光》获优秀男演员奖，宋佳凭《山花烂漫时》张桂梅一角获优秀女演员奖，成为首位凭同一角色集齐飞天、金鹰、白玉兰三大电视剧奖项的女演员。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 10
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-10-09T20:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "政府奖项颁奖结果事实报道，澎湃与观察者网双源，不涉明星私生活"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34220423",
+          "title": "宋佳凭《山花烂漫时》获飞天奖优秀女演员奖",
+          "captured_at": "2026-10-10T00:18:24+08:00",
+          "note": "澎湃新闻10月9日：第35届飞天奖颁奖典礼烟台举行，宋佳获优秀女演员奖"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/ZhengZhi/2026_10_09_903708.shtml",
+          "title": "王仁君获飞天奖优秀男演员，宋佳获优秀女演员",
+          "captured_at": "2026-10-10T00:18:30+08:00",
+          "note": "观察者网10月9日：王仁君凭《浴血荣光》获优秀男演员奖，宋佳凭《山花烂漫时》获优秀女演员奖"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
