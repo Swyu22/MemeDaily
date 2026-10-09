@@ -1,0 +1,796 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-08",
+  "generated_at": "2026-10-09T23:31:56+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 33,
+    "published": 6,
+    "dropped_safety": {
+      "politics": 1,
+      "propaganda": 1,
+      "geopolitics": 1,
+      "controversy": 1,
+      "rumor": 1
+    },
+    "dropped_low_confidence": 18,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 28,
+      "official_sources": 2,
+      "state_media_sources": 7,
+      "major_media_sources": 4,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 4
+    },
+    "selection": {
+      "evaluated_at": "2026-10-08T21:00:00+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 10,
+        "relaxed_72h": 10
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 33,
+          "cumulative_unique_candidates": 33,
+          "source_scope": [
+            "央媒发布：新华社/新华网、央视网/央视新闻、人民网、光明网、中国新闻网、中国日报网",
+            "政府机构站点：交通运输部、国家税务总局、国家移民管理局、国家能源局、国家体育总局、中国地震台网",
+            "持牌媒体：财新网、新京报、北京日报网、南方日报、上观新闻、经济观察网、第一财经",
+            "公共热榜与聚合：百度热搜、微博热点、门户早新闻汇编(仅佐证热度，不单独成立)"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-08-holiday-flow-2142m",
+          "story_identity": "holiday-cross-region-flow-2142m-record-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-08-holiday-flow-2142m",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 36,
+            "freshness": 20,
+            "everyday_relevance": 21,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-08-tax-holiday-service-consumption",
+          "story_identity": "tax-data-holiday-service-consumption-195pct-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-10-08-tax-holiday-service-consumption",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-08-border-holiday-15462k",
+          "story_identity": "holiday-border-crossings-15462k-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-08-border-holiday-15462k",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-08-highway-ev-charging-51pct",
+          "story_identity": "holiday-highway-ev-charging-up-51pct-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-08-highway-ev-charging-51pct",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-08-cold-dew-back-to-work",
+          "story_identity": "cold-dew-solar-term-back-to-work-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T14:29:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-10-08-cold-dew-back-to-work",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-08-shanghai-masters-chinese-r1",
+          "story_identity": "shanghai-masters-2026-three-chinese-r1-winners",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-08-shanghai-masters-chinese-r1",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "national-day-box-office-final-1164m",
+          "story_identity": "national-day-box-office-final-1164m-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "国庆档收官票房11.64亿元与10月7日已入选档期票房破11亿为同一题材延续，收官增量有限"
+        },
+        {
+          "candidate_key": "beijing-holiday-2345w-visitors",
+          "story_identity": "beijing-holiday-2345w-visitors-2949m-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "北京假期接待2345万人次为城市级文旅汇总，全国层面流动量与消费条目已入选，题材代表性次之"
+        },
+        {
+          "candidate_key": "russia-unexplained-pneumonia-who",
+          "story_identity": "russia-lab-staff-pneumonia-who-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T13:00:00+08:00",
+          "scope": "international",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "俄研究机构人员感染事件病因待权威结论，俄方称当地防疫形势平稳，公共卫生不确定性较高，谨慎不选"
+        },
+        {
+          "candidate_key": "holiday-trade-in-3348m",
+          "story_identity": "holiday-trade-in-3348m-6392k-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 17,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "假期前6天以旧换新带动销售额334.8亿元为10月5日已入选半程数据的累计更新，题材重复"
+        },
+        {
+          "candidate_key": "caixin-13day-travel-trend",
+          "story_identity": "mid-autumn-national-day-13day-travel-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "拼假长线游多城串游为假期趋势综述稿，无单日新增权威数据"
+        },
+        {
+          "candidate_key": "chongqing-express-8958w",
+          "story_identity": "chongqing-holiday-express-8958w-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "重庆假期处理快递包裹8958.86万件为城市级邮政运行数据，全国代表性有限"
+        },
+        {
+          "candidate_key": "wtt-china-smash-oct8-rounds",
+          "story_identity": "wtt-china-smash-oct8-mid-rounds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "WTT中国大满贯10月8日仍处赛程中段，单日轮次进展公共信息增量有限"
+        },
+        {
+          "candidate_key": "shanxi-holiday-consumption-29646",
+          "story_identity": "shanxi-holiday-offline-consumption-29646m-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "山西假期线下消费296.46亿元为省级商务汇总，全国代表性有限"
+        },
+        {
+          "candidate_key": "flight-ticket-price-931",
+          "story_identity": "holiday-domestic-flight-ticket-avg-931-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "假期国内机票含机建燃油均价931元来自单一平台向媒体提供的数据，未见官方口径"
+        },
+        {
+          "candidate_key": "hainan-rain-back-to-work",
+          "story_identity": "hainan-heavy-rain-back-to-work-oct8-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "开工日海南雨势较强为区域性天气，已并入寒露开工天气服务条目"
+        },
+        {
+          "candidate_key": "tianjin-express-7300w",
+          "story_identity": "tianjin-holiday-express-7300w-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "天津假期处理快递包裹超7300万件为城市级邮政运行数据"
+        },
+        {
+          "candidate_key": "astock-medical-sector-volatile",
+          "story_identity": "astock-medical-sector-volatile-oct8-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 12,
+            "evidence": 6
+          },
+          "drop_reason": "A股医药板块单日冲高回落为市场行情波动，与读者日常生活决策关联弱"
+        },
+        {
+          "candidate_key": "guangdong-box-office-top-province",
+          "story_identity": "guangdong-national-day-box-office-top-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 11,
+            "evidence": 7
+          },
+          "drop_reason": "广东国庆档票房居全国第一为省级档期切面，收官题材整体未选"
+        },
+        {
+          "candidate_key": "sichuan-inbound-47903",
+          "story_identity": "sichuan-holiday-inbound-47903-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 11,
+            "evidence": 7
+          },
+          "drop_reason": "四川假期入境游客47903人次来自早间新闻汇编，全国出入境条目已覆盖口岸题材"
+        },
+        {
+          "candidate_key": "guo-jingjing-honorary-fellow",
+          "story_identity": "guo-jingjing-lingnan-honorary-fellow-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "香港高校荣誉院士颁授为仪式性动态，公共信息增量有限"
+        },
+        {
+          "candidate_key": "same-name-newlyweds",
+          "story_identity": "same-name-same-job-newlyweds-viral-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 15,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "同名同姓新人话题为社交媒体趣闻，公共价值有限"
+        },
+        {
+          "candidate_key": "vanuatu-m61-quake",
+          "story_identity": "vanuatu-islands-m61-quake-oct8-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T17:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 14,
+            "everyday_relevance": 5,
+            "evidence": 5
+          },
+          "drop_reason": "瓦努阿图群岛6.1级地震为常规海外震情速报，无中国读者直接影响"
+        },
+        {
+          "candidate_key": "typhoon-koguma-no-impact",
+          "story_identity": "typhoon-koguma-2629-far-east-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T05:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 38,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 14,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "台风小熊位于西北太平洋远洋海域，对我国无影响"
+        },
+        {
+          "candidate_key": "autumn-grain-purchase-350m",
+          "story_identity": "autumn-grain-peak-purchase-350m-tonnes-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "秋粮旺季收购预计3.5亿吨仅见财经自媒体转述人民日报报道，未获取人民日报原文及第二独立来源"
+        },
+        {
+          "candidate_key": "elderly-care-facility-standard",
+          "story_identity": "elderly-care-facility-design-standard-revision-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T07:30:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "老年人照料设施建筑设计标准局部修订仅见门户早间新闻汇编单源，未获取住房城乡建设部原文"
+        },
+        {
+          "candidate_key": "ev-charging-queue-5hours-selfmedia",
+          "story_identity": "highway-charging-queue-5hours-selfmedia-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-02T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "高速服务区充电排队5小时为自媒体体验稿，无权威来源佐证其普遍性"
+        },
+        {
+          "candidate_key": "charging-day1-record-28047mwh",
+          "story_identity": "holiday-day1-charging-record-28047mwh-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "假期首日高速充电量2804.69万千瓦时纪录仅见商业汽车媒体单源转述，且已被国家能源局假期汇总数据覆盖"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-08-holiday-flow-2142m",
+      "story_identity": "holiday-cross-region-flow-2142m-record-2026",
+      "headline": "🚄 国庆假期跨区域人员流动量21.42亿人次，创历史同期新高",
+      "summary": "交通运输部10月8日发布，国庆假期（10月1日至7日）全社会跨区域人员流动量累计21.42亿人次，日均3.06亿人次，同比增长0.6%，创历史同期新高；铁路客运量15187万人次、同比增长12.7%，公路人员流动量19.62亿人次，民航日均客运量242万人次。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 90,
+      "score_breakdown": {
+        "heat": 36,
+        "freshness": 20,
+        "everyday_relevance": 21,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-10-08T19:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "交通运输部假期客流权威汇总，央视网与财新双源独立报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "http://news.cctv.com/2026/10/08/ARTIWduBao9qtp0z0CPyNOAt261008.shtml",
+          "title": "国庆假期全社会跨区域人员流动量达21.42亿人次",
+          "captured_at": "2026-10-09T23:22:10+08:00",
+          "note": "央视网10月8日：10月1日至7日累计跨区域人员流动量21.42亿人次，日均3.06亿人次，同比增长0.6%"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://companies.caixin.com/2026-10-08/102491231.html",
+          "title": "国庆假期人流量同比微增0.6% 铁路大涨近13%、公路收缩",
+          "captured_at": "2026-10-09T23:22:14+08:00",
+          "note": "财新网10月8日报道：铁路客运量15187万人次同比增12.7%，公路196182万人次，民航日均242万人次"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-08-tax-holiday-service-consumption",
+      "story_identity": "tax-data-holiday-service-consumption-195pct-2026",
+      "headline": "🧾 税收数据：国庆假期服务消费日均销售收入同比增长19.5%",
+      "summary": "国家税务总局10月8日公布增值税发票数据：国庆假期全国服务消费旺盛，相关行业日均销售收入同比增长19.5%；旅游游览和娱乐服务销售收入同比增长23.6%，其中旅行社服务、游乐园分别增长26.2%和41.2%，餐饮服务销售收入同比增长9%。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 85,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-10-08T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "税务部门发票口径假期消费数据，新华社与北京日报双源"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.xinhuanet.com/20261008/d6aad1bbef104659b78c683e47de86bc/c.html",
+          "title": "新闻分析：从税收大数据看国庆假期服务消费四大亮点",
+          "captured_at": "2026-10-09T23:23:05+08:00",
+          "note": "新华社10月8日电：增值税发票数据显示假期服务消费日均销售收入同比增长19.5%，旅游游览和娱乐服务增长23.6%"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报网",
+          "url": "https://news.bjd.com.cn/2026/10/08/11987631.shtml",
+          "title": "从税收大数据看国庆假期服务消费四大亮点",
+          "captured_at": "2026-10-09T23:23:09+08:00",
+          "note": "北京日报10月8日20时40分刊发：旅行社服务、游乐园销售收入分别增长26.2%和41.2%，餐饮服务增长9%"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-08-border-holiday-15462k",
+      "story_identity": "holiday-border-crossings-15462k-2026",
+      "headline": "🛂 国庆假期1546.2万人次出入境，日均同比增长6.7%",
+      "summary": "国家移民管理局10月8日通报，今年国庆假期全国边检机关共保障1546.2万人次中外人员出入境，日均220.9万人次，较去年同期增长6.7%，10月4日为单日通关最高峰；内地居民出境444.4万人次、同比增长9.3%，外国人入境68.2万人次，其中免签入境50.5万人次。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-10-08T16:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "移民管理部门假期口岸通关权威通报，央视网与光明网双源"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/10/08/ARTIJIRMU1omfALChDVGImxs261008.shtml",
+          "title": "国庆假期1546.2万人次出入境 日均220.9万人次",
+          "captured_at": "2026-10-09T23:23:48+08:00",
+          "note": "央视网10月8日据国家移民管理局通报：假期保障1546.2万人次出入境，日均220.9万人次、同比增6.7%"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://news.gmw.cn/2026-10/09/content_39035799.htm",
+          "title": "国庆假期交通出行人数超21亿人次",
+          "captured_at": "2026-10-09T23:23:52+08:00",
+          "note": "光明网报道假期出行数据：内地居民出境444.4万人次增9.3%，外国人入境68.2万人次、免签入境50.5万人次"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-08-highway-ev-charging-51pct",
+      "story_identity": "holiday-highway-ev-charging-up-51pct-2026",
+      "headline": "🔋 假期高速新能源车日均充电量同比增长51.42%",
+      "summary": "国家能源局10月8日消息，10月1日0时至7日24时，纳入国家充电设施监测服务平台的6.27万个高速公路充电设施充电次数共计671.1万次，充电量达1.63亿千瓦时，日均充电量2325.66万千瓦时，日均同比增长51.42%，假期高速公路新能源汽车充电量持续保持高位。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 79,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-10-08T19:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "能源主管部门充电设施监测数据，央视新闻联播与中新社双源"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/10/08/ARTIn1qXQKX1EHR99d2nsB0i261008.shtml",
+          "title": "国庆假期高速公路新能源汽车日均充电量同比增长51.42%",
+          "captured_at": "2026-10-09T23:24:31+08:00",
+          "note": "央视网10月8日新闻联播消息：假期高速充电671.10万次、充电量1.63亿千瓦时，日均2325.66万千瓦时"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-08/10709071.shtml",
+          "title": "国庆假期中国高速公路新能源汽车日均充电量同比增逾51%",
+          "captured_at": "2026-10-09T23:24:35+08:00",
+          "note": "中新社10月8日电：国家能源局对6.27万个高速充电设施统计分析，日均充电量同比增长51.42%"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-08-cold-dew-back-to-work",
+      "story_identity": "cold-dew-solar-term-back-to-work-2026",
+      "headline": "🍂 寒露节气恰逢节后开工首日，中东部晴朗干燥温差大",
+      "summary": "10月8日14时29分迎来寒露节气，恰逢国庆假期后首个工作日。气象部门预报，10月8日至10日中东部降水稀少、以晴朗干燥天气为主，南北方昼夜温差较大，早晚出行注意添衣；海南等地雨势较强，返岗出行需留意天气变化。",
+      "category": "节日节气",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-10-08T14:29:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "节气与开工天气服务信息，无灾害伤亡渲染"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/10/07/ARTIHDcEOHVgFiUE0qX1vj4b261007.shtml",
+          "title": "中东部大部晴朗干燥持续 气温回升昼夜温差较大",
+          "captured_at": "2026-10-09T23:25:12+08:00",
+          "note": "央视网天气稿：10月8日至10日中东部降水稀少以晴朗干燥为主，海南雨势较强，南北方昼夜温差大"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报网",
+          "url": "https://news.bjd.com.cn/2026/10/08/11986594.shtml",
+          "title": "北京日报社区小板报｜节后十件事请记牢！“收心”方法看这里",
+          "captured_at": "2026-10-09T23:25:16+08:00",
+          "note": "北京日报10月8日：10月8日14时29分迎寒露节气，节后三个工作日京城以晴到多云为主"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-08-shanghai-masters-chinese-r1",
+      "story_identity": "shanghai-masters-2026-three-chinese-r1-winners",
+      "headline": "🎾 上海大师赛：布云朝克特等三位中国球员闯过首轮关",
+      "summary": "10月8日，2026上海网球大师赛继续男单正赛首轮争夺，布云朝克特直落两盘以7比6、6比3击败世界排名第45位的法国选手范阿舍，晋级第二轮；至此本届赛事已有三位中国球员闯过首轮关，布云朝克特连续第四年亮相上海大师赛正赛。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-10-08T20:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事首轮赛果，体育主管部门与光明网双源"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "国家体育总局",
+          "url": "https://www.sport.gov.cn/n20001280/n20067662/n20067613/c30096035/content.html",
+          "title": "上海网球大师赛 三位中国球员闯过首轮关",
+          "captured_at": "2026-10-09T23:26:02+08:00",
+          "note": "国家体育总局转载：10月8日大师赛首轮，布云朝克特两盘战胜范阿舍，三位中国球员闯过首轮关"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "光明网",
+          "url": "https://m.gmw.cn/2026-10/08/content_1304573287.htm",
+          "title": "布云朝克特上海大师赛开门红",
+          "captured_at": "2026-10-09T23:26:06+08:00",
+          "note": "光明网10月8日：ATP1000上海大师赛男单首轮，布云朝克特直落两盘击败法国选手范阿舍晋级第二轮"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
