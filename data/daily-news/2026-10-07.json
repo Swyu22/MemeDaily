@@ -1,0 +1,889 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-07",
+  "generated_at": "2026-10-09T23:02:36+08:00",
+  "published_at": "2026-10-09T23:02:36+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 42,
+    "published": 4,
+    "dropped_safety": {
+      "politics": 1,
+      "propaganda": 1,
+      "geopolitics": 1,
+      "controversy": 1,
+      "rumor": 1
+    },
+    "dropped_low_confidence": 31,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 37,
+      "official_sources": 0,
+      "state_media_sources": 6,
+      "major_media_sources": 4,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "evaluated_at": "2026-10-07T21:00:00+08:00",
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 4,
+        "relaxed_48h": 8,
+        "relaxed_72h": 10
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 42,
+          "cumulative_unique_candidates": 42,
+          "source_scope": [
+            "央媒发布：新华社/新华网、人民网、央视网、央广网、中国新闻网、中国日报网",
+            "政府机构站点：交通运输部、国铁集团(中国铁路)、公安部交通管理局、中国气象局/中国天气网",
+            "持牌媒体：第一财经、经济观察网、财新网、澎湃新闻、北京日报网、每经网、华声在线、证券时报",
+            "公共热榜与聚合：百度热搜、新浪/微博热点小时报(仅佐证热度，不单独成立)"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-07-railway-return-peak-2415w",
+          "story_identity": "railway-return-peak-2415w-2449trains-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T14:44:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-07-railway-return-peak-2415w",
+          "score": 90,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-07-day6-cross-region-flow",
+          "story_identity": "holiday-day6-cross-region-flow-30346w-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T19:41:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-07-day6-cross-region-flow",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-07-nobel-chemistry-kagan-soai",
+          "story_identity": "nobel-chemistry-2026-kagan-soai",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T17:45:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "selected",
+          "item_id": "2026-10-07-nobel-chemistry-kagan-soai",
+          "score": 79,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-07-national-day-box-office-11y",
+          "story_identity": "national-day-box-office-11yi-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T14:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-07-national-day-box-office-11y",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 17,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "djokovic-china-open-seventh-title",
+          "story_identity": "djokovic-china-open-seventh-title-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-06T20:50:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "中网男单决赛10月6日20:50许结束（德米纳尔第二盘伤退、德约科维奇七冠王），距评估时点超24小时，仅达relaxed_48h档；strict_24h档已满足4条"
+        },
+        {
+          "candidate_key": "holiday-return-weather-mostly-clear",
+          "story_identity": "holiday-return-weather-mostly-clear-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 20,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "中国气象局称7日全国大部晴好利于返程为常规假期天气服务信息，公共信息增量有限"
+        },
+        {
+          "candidate_key": "nobel-physics-halzen-icecube",
+          "story_identity": "nobel-physics-2026-halzen-icecube",
+          "research_pass": 1,
+          "occurred_at": "2026-10-06T17:45:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "诺贝尔物理学奖为10月6日奖项（哈尔岑/冰立方中微子天文台），时效超24小时且当日国际配额已由化学奖占用"
+        },
+        {
+          "candidate_key": "shanghai-masters-wu-zhou-r1",
+          "story_identity": "shanghai-masters-2026-wu-yibing-zhou-yi-r1",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 20,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "上海大师赛正赛开打、吴易昺周意闯过首轮为赛事首日赛果，赛程持续至10月18日，单日增量有限"
+        },
+        {
+          "candidate_key": "nobel-medicine-2026",
+          "story_identity": "nobel-medicine-2026-three-scientists",
+          "research_pass": 1,
+          "occurred_at": "2026-10-05T17:30:00+08:00",
+          "scope": "international",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "诺贝尔生理学或医学奖为10月5日奖项，距评估时点超48小时且国际配额已满"
+        },
+        {
+          "candidate_key": "traffic-police-day7-orderly",
+          "story_identity": "traffic-police-holiday-day7-roads-orderly-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 9
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "公安部交管局通报截至7日19时全国道路交通总体平稳有序为假期收官日常规运行通报，与返程主条目题材重叠"
+        },
+        {
+          "candidate_key": "yangtze-delta-railway-415w",
+          "story_identity": "yangtze-delta-railway-return-415w-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "长三角铁路7日预计发送415万人次为区域铁路局数据，已并入全国铁路返程最高峰主条目"
+        },
+        {
+          "candidate_key": "hainan-rainstorm-return-warning",
+          "story_identity": "hainan-heavy-rain-return-warning-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-06T19:03:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "海南岛7日至8日大到暴雨提示为区域性降雨预警，全国代表性有限"
+        },
+        {
+          "candidate_key": "holiday-day7-flow-forecast-29375w",
+          "story_identity": "holiday-day7-flow-forecast-29375w-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "10月7日全社会跨区域人员流动量预计29375万人次为预测口径，实绩数据条目已入选"
+        },
+        {
+          "candidate_key": "chengdu-border-129k",
+          "story_identity": "chengdu-air-port-holiday-129k-border-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T13:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "成都航空口岸假期查验出入境12.9万人次为区域性口岸数据"
+        },
+        {
+          "candidate_key": "hunan-wenlv-33m-visitors",
+          "story_identity": "hunan-holiday-wenlv-3321w-visitors-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "湖南省文旅厅7日晚公布假期接待3321.5万人次为省级汇总，全国代表性有限"
+        },
+        {
+          "candidate_key": "free-toll-window-ends-oct7",
+          "story_identity": "holiday-toll-free-window-ends-oct7-24h-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-06T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "7座以下小客车高速免费通行至10月7日24时结束为既定政策日程提醒，无新增权威信息"
+        },
+        {
+          "candidate_key": "wtt-china-smash-oct7-rounds",
+          "story_identity": "wtt-china-smash-oct7-mid-rounds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "WTT中国大满贯10月7日仍处赛程中段，单日轮次进展公共信息增量有限"
+        },
+        {
+          "candidate_key": "movie-plus-tourism-trend",
+          "story_identity": "movie-plus-tourism-holiday-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 14,
+            "evidence": 3
+          },
+          "drop_reason": "跟着电影去旅游成假日消费新风尚为趋势综述稿，无单日新增权威数据"
+        },
+        {
+          "candidate_key": "jiangsu-highway-return-conditions",
+          "story_identity": "jiangsu-highway-return-conditions-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 18,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "江苏高速10月7日路网运行简报为省级路况信息，部分路段车多缓行为常态"
+        },
+        {
+          "candidate_key": "zhengzhou-return-peak-warning",
+          "story_identity": "zhengzhou-traffic-return-peak-warning-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T18:03:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "郑州交警发布返程拥堵峰值预警为地市级常规出行提示"
+        },
+        {
+          "candidate_key": "oct10-saturday-work-reminder",
+          "story_identity": "oct10-saturday-work-day-reminder-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 3
+          },
+          "drop_reason": "10月10日（周六）调休上班提醒为年初既定放假安排常规提示"
+        },
+        {
+          "candidate_key": "shanxi-lifelong-education-draft",
+          "story_identity": "shanxi-lifelong-education-regulation-draft-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 10,
+            "everyday_relevance": 15,
+            "evidence": 8
+          },
+          "drop_reason": "山西省终身教育促进条例草案征求意见发布于9月30日，已超72小时时效窗且为地方立法程序"
+        },
+        {
+          "candidate_key": "harbin-return-peak-notice",
+          "story_identity": "harbin-return-peak-13-20h-notice-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-06T21:59:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "哈尔滨交管部门返程高峰提示为地市常规出行信息"
+        },
+        {
+          "candidate_key": "dalio-ai-bubble-remark",
+          "story_identity": "dalio-ai-bubble-forbes-ceo-remark-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T10:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "达利欧称AI领域存在泡沫为个人观点评论，与读者日常生活决策关联弱"
+        },
+        {
+          "candidate_key": "capital-airport-holiday-forecast",
+          "story_identity": "capital-airport-holiday-166w-forecast-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-28T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 8,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "首都机场假期运送旅客预测发布于9月28日，已超72小时时效窗"
+        },
+        {
+          "candidate_key": "hebi-return-notice",
+          "story_identity": "hebi-traffic-return-notice-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 3
+          },
+          "drop_reason": "鹤壁交警返程提示为地市常规出行提示"
+        },
+        {
+          "candidate_key": "changchun-airport-return-smooth",
+          "story_identity": "changchun-airport-return-smooth-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 3
+          },
+          "drop_reason": "长春龙嘉机场假期返程客流平稳有序为地方机场常规运行动态"
+        },
+        {
+          "candidate_key": "gold-price-high-volatile",
+          "story_identity": "gold-price-high-volatile-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "金价高位震荡为市场行情波动，与读者日常生活决策关联弱"
+        },
+        {
+          "candidate_key": "typhoon-caiyun-away-japan",
+          "story_identity": "typhoon-caiyun-northeast-away-japan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 3
+          },
+          "drop_reason": "台风彩云转向东北加速远离、对我国海域无影响，公共信息增量有限"
+        },
+        {
+          "candidate_key": "robot-wenlv-business-observation",
+          "story_identity": "robot-wenlv-business-eeo-observation-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 3
+          },
+          "drop_reason": "机器人厂商的文旅生意为假期商业观察稿，非公共事件"
+        },
+        {
+          "candidate_key": "sanan-executive-detention-lifted",
+          "story_identity": "sanan-optics-executive-detention-lifted-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T19:46:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "三安光电副董事长解除留置为单一上市公司公告，公共生活影响有限"
+        },
+        {
+          "candidate_key": "alaska-m55-quake",
+          "story_identity": "alaska-m55-quake-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T02:34:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 16,
+            "freshness": 15,
+            "everyday_relevance": 5,
+            "evidence": 4
+          },
+          "drop_reason": "美国阿拉斯加州5.5级地震为常规海外地震速报，无中国读者直接影响"
+        },
+        {
+          "candidate_key": "kuril-m61-quake",
+          "story_identity": "kuril-islands-m61-quake-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T03:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 38,
+          "score_breakdown": {
+            "heat": 15,
+            "freshness": 15,
+            "everyday_relevance": 4,
+            "evidence": 4
+          },
+          "drop_reason": "千岛群岛附近6.1级地震震中位于无人居住区域，无公共影响"
+        },
+        {
+          "candidate_key": "fukushima-m41-quake",
+          "story_identity": "fukushima-offshore-m41-quake-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T09:22:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 35,
+          "score_breakdown": {
+            "heat": 14,
+            "freshness": 15,
+            "everyday_relevance": 3,
+            "evidence": 3
+          },
+          "drop_reason": "福岛县沖4.1级地震为日本地方性轻微地震，属常规震情"
+        },
+        {
+          "candidate_key": "openai-math-research-release",
+          "story_identity": "openai-math-research-release-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T06:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "OpenAI发布内部模型数学成果为科技行业动态，无权威中文媒体证实其公共影响"
+        },
+        {
+          "candidate_key": "charging-58-service-areas-oct7",
+          "story_identity": "mot-58-busy-charging-service-areas-oct7-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "10月7日全国58个高速服务区预计充电特别繁忙仅获取省级媒体单源转述交通运输部动态研判，未获取官方原文或第二家持牌媒体独立报道"
+        },
+        {
+          "candidate_key": "hangzhou-port-400w-border",
+          "story_identity": "hangzhou-port-holiday-400w-border-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "杭州口岸假期出入境人员破400万仅见浙江在线单源报道，未获取边检部门官方发布或第二独立来源"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "rumor"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-07-railway-return-peak-2415w",
+      "story_identity": "railway-return-peak-2415w-2449trains-2026",
+      "headline": "🚄 假期收官日全国铁路迎返程客流最高峰，预计发送2415万人次",
+      "summary": "记者10月7日从中国国家铁路集团有限公司获悉，国庆假期最后一天全国铁路迎来返程客流最高峰，预计发送旅客2415万人次，计划加开旅客列车2449列；10月6日全国铁路发送旅客2160.5万人次，连续三天超2000万人次，运输安全平稳有序。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 90,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-10-07T14:44:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国铁集团假期返程客流权威发布，新华社/人民网双源"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20261007/0b55a7a12c914f3891cc821595577aa8/c.html",
+          "title": "全国铁路10月7日预计发送旅客2415万人次",
+          "captured_at": "2026-10-09T22:16:04+08:00",
+          "note": "新华社北京10月7日电：记者7日从国铁集团获悉，假期最后一天迎返程客流最高峰，预计发送2415万人次、计划加开2449列"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://society.people.com.cn/n1/2026/1007/c1008-40810199.html",
+          "title": "全国铁路迎来国庆假期返程客流最高峰",
+          "captured_at": "2026-10-09T22:16:08+08:00",
+          "note": "人民网10月7日转载新华社稿：12306预售热门出发到达城市名单，10月6日发送2160.5万人次"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-07-day6-cross-region-flow",
+      "story_identity": "holiday-day6-cross-region-flow-30346w-2026",
+      "headline": "📊 假期第6日跨区域人员流动量3.03亿人次，铁路客运量同比增11.8%",
+      "summary": "交通运输部10月7日通报，10月6日（国庆假期第6日）全社会跨区域人员流动量30346.0万人次，环比增长0.04%、比2025年同期下降1.9%；其中铁路客运量2160.5万人次、同比增长11.8%，公路人员流动量27799万人次，民航客运量248.7万人次、同比增长0.9%。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 20,
+        "evidence": 11
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-10-07T19:41:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "交通运输主管部门假期每日客流数据通报"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "第一财经",
+          "url": "https://www.yicai.com/brief/103385117.html",
+          "title": "10月6日全社会跨区域人员流动量30346万人次",
+          "captured_at": "2026-10-09T22:16:12+08:00",
+          "note": "第一财经10月7日19:44快讯：据交通运输部消息，假期第6日流动量30346.0万人次，铁路2160.5万同比增11.8%"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "经济观察网",
+          "url": "http://www.eeo.com.cn/2026/1007/1057008.shtml",
+          "title": "国庆假期第6天 全社会跨区域人员流动量30346万人次",
+          "captured_at": "2026-10-09T22:16:16+08:00",
+          "note": "经济观察网10月7日报道交通运输部公众号数据：环比增长0.04%，公路27799万、水路137.8万、民航248.7万分项佐证"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-07-nobel-chemistry-kagan-soai",
+      "story_identity": "nobel-chemistry-2026-kagan-soai",
+      "headline": "🧪 2026年诺贝尔化学奖揭晓，法日科学家分享奖项",
+      "summary": "瑞典皇家科学院10月7日宣布，将2026年诺贝尔化学奖授予法国科学家亨利·B·卡甘和日本科学家硖合宪三，表彰他们在不对称有机合成中发现非线性效应和自催化现象；两人将平分1200万瑞典克朗奖金，约合人民币802万元。",
+      "category": "科技AI",
+      "scope": "international",
+      "topic": "科技AI",
+      "primary_organization": "瑞典皇家科学院",
+      "audience_relevance": {
+        "basis": "global_major_event",
+        "impact_scale": "global_systemic",
+        "china_connection": "诺贝尔奖是全球科学界年度最高荣誉，中国公众、科教界和媒体持续关注奖项归属与获奖成果",
+        "everyday_impact": "不对称合成成果是医药、农药和材料工业的基础认知，属于读者需要了解的年度全球科学大事",
+        "score": 21
+      },
+      "score": 79,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 20,
+        "everyday_relevance": 15,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-10-07T17:45:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国际权威科学奖项公布，新华社与财新双源独立报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://app.xinhuanet.com/news/article.html?articleId=20261007bc45d43eab8b40adb042a6aa9da47007",
+          "title": "两名科学家获2026年诺贝尔化学奖",
+          "captured_at": "2026-10-09T22:16:20+08:00",
+          "note": "新华社斯德哥尔摩10月7日电：瑞典皇家科学院宣布卡甘与硖合宪三获奖，表彰发现非线性效应和自催化现象"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "财新网",
+          "url": "https://international.caixin.com/2026-10-07/102490992.html",
+          "title": "破解一个多世纪的化学谜题 法日化学家荣获2026诺贝尔化学奖",
+          "captured_at": "2026-10-09T22:16:24+08:00",
+          "note": "财新网10月7日报道：当地时间11点45分（北京时间17点45分）公布，获奖者平分1200万瑞典克朗"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-07-national-day-box-office-11y",
+      "story_identity": "national-day-box-office-11yi-oct7-2026",
+      "headline": "🎬 国庆档总票房突破11亿元，国产影片构成档期主力",
+      "summary": "央视网10月7日消息，据网络平台数据，2026年国庆档（10月1日至7日）总票房（含预售）突破11亿元，《神探之痕迹》《什么意思夫妇》《生化危机：爆发夜》暂列档期票房前三；档期影片涵盖悬疑、喜剧、动画等多元类型，多部影片官宣海外上映计划。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 17,
+        "evidence": 11
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-10-07T14:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "档期票房里程碑数据，含预售口径已注明"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/10/07/ARTI7TSL9r2VvEoARDx8XWYJ261007.shtml",
+          "title": "国庆档电影票房破11亿！多部影片官宣海外上映计划",
+          "captured_at": "2026-10-09T22:16:28+08:00",
+          "note": "央视网10月7日消息：网络平台数据显示国庆档总票房（含预售）突破11亿，国产影片构成档期主力"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "每经网",
+          "url": "https://www.nbd.com.cn/articles/2026-10-07/4597642.html",
+          "title": "国庆档电影票房破11亿",
+          "captured_at": "2026-10-09T22:16:32+08:00",
+          "note": "每日经济新闻10月7日快讯：2026年国庆档（10月1日—10月7日）电影总票房（含预售）突破11亿"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
