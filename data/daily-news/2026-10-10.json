@@ -1,0 +1,1033 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T06:36:55+08:00",
+  "published_at": "2026-10-10T06:36:55+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 50,
+    "published": 5,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 1,
+      "geopolitics": 1,
+      "politics": 1,
+      "privacy": 1,
+      "propaganda": 2,
+      "public_safety": 2
+    },
+    "dropped_low_confidence": 34,
+    "dropped_quota": 1,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 15,
+      "official_sources": 1,
+      "state_media_sources": 2,
+      "major_media_sources": 7,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 10,
+        "relaxed_72h": 12
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 50,
+          "cumulative_unique_candidates": 50,
+          "source_scope": [
+            "央媒与政府站点：新华社/新华网、央视网/央视财经、中国新闻网、中央气象台、证监会网站",
+            "持牌媒体：澎湃新闻、每日经济新闻、财联社、证券时报、北京日报、财新网、福州新闻网",
+            "国际机构与海外媒体：联合国新闻、挪威诺贝尔委员会、USGS、世界日报",
+            "公共热榜与聚合：百度热搜（仅佐证热度，不单独成立）"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-10-panama-strong-earthquake",
+          "story_identity": "panama-m77-earthquake-tsunami-alert-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T01:56:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-10-10-panama-strong-earthquake",
+          "score": 85,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 20,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-10-sams-club-family-card-rules",
+          "story_identity": "sams-club-family-card-365day-limit-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-10-10-sams-club-family-card-rules",
+          "score": 81,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 19,
+            "everyday_relevance": 21,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-10-djokovic-shanghai-upset",
+          "story_identity": "djokovic-shanghai-masters-r2-upset-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-10-djokovic-shanghai-upset",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-10-weekend-cold-air-north",
+          "story_identity": "cold-air-north-china-oct11-13-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-10-10-weekend-cold-air-north",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-10-public-fund-rules-overhaul",
+          "story_identity": "csrc-public-fund-rules-revision-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-10-10-public-fund-rules-overhaul",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 19,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "nobel-peace-prize-pillay",
+          "story_identity": "nobel-peace-prize-2026-navi-pillay",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T17:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_quota",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h",
+          "drop_reason": "国际条目受每日不超过25%配额约束，巴拿马强震分数更高，本条转入配额淘汰"
+        },
+        {
+          "candidate_key": "lithium-battery-oem-scam",
+          "story_identity": "cctv-lithium-battery-oem-deposit-scam-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T17:21:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 17,
+            "everyday_relevance": 23,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "央视财经10月8日傍晚首播曝光该加盟骗局，距候选打戳超过24小时落在48小时层，当日strict_24h层未选中"
+        },
+        {
+          "candidate_key": "huawei-xiaomi-price-hike",
+          "story_identity": "huawei-nova16-xiaomi-17ultra-price-hike-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "华为nova16与小米17Ultra调价自10月9日零时起生效，事件时点落在48小时层，未达当日严格时效层"
+        },
+        {
+          "candidate_key": "nobel-literature-anne-carson",
+          "story_identity": "nobel-literature-2026-anne-carson",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T19:00:00+08:00",
+          "scope": "international",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "诺贝尔文学奖10月8日晚揭晓，已超24小时严格时效窗，且当日国际名额有限"
+        },
+        {
+          "candidate_key": "holiday-housing-sales-rebound",
+          "story_identity": "national-day-holiday-housing-sales-25city-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "中指研究院等机构假期楼市成交数据于10月8日发布，落在48小时时效层"
+        },
+        {
+          "candidate_key": "nev-sept-wholesale-167w",
+          "story_identity": "nev-passenger-car-wholesale-sept-167w-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T17:57:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 11
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "乘联分会9月新能源乘用车批发销量167万辆为月度预估口径，行业向数据"
+        },
+        {
+          "candidate_key": "wtt-zhou-qihao-semifinal",
+          "story_identity": "wtt-china-smash-zhou-qihao-semifinal-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 19,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "周启豪晋级WTT中国大满贯四强为单项轮次进展，当日已选上海大师赛体育条目，控制体育集中度"
+        },
+        {
+          "candidate_key": "night-outpatient-suspensions",
+          "story_identity": "multi-region-hospital-night-clinic-pause-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "多地医院暂停夜间门诊为分散地方个案汇总，未见全国性权威统计与统一原因说明"
+        },
+        {
+          "candidate_key": "fiscal-policy-h1-report",
+          "story_identity": "mof-h1-fiscal-policy-execution-report-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 6
+          },
+          "drop_reason": "财政部上半年财政政策执行情况报告为宏观政策文件，对普通读者日常直接相关性有限"
+        },
+        {
+          "candidate_key": "wtt-team-lost-two-titles",
+          "story_identity": "wtt-china-smash-host-lost-md-xd-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "国乒男双混双出局为单日赛果汇总，负面情绪向且公共信息增量有限"
+        },
+        {
+          "candidate_key": "wtt-wang-manyu-straight-win",
+          "story_identity": "wtt-china-smash-wang-manyu-r16-win-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 19,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "王曼昱4比0晋级为单场轮次赛果，当日已选上海大师赛体育条目"
+        },
+        {
+          "candidate_key": "holiday-aviation-wrap-21b",
+          "story_identity": "national-day-holiday-transport-wrap-21b-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "国庆假期交通出行汇总数据已于10月8日信封覆盖，增量有限"
+        },
+        {
+          "candidate_key": "underground-pipeline-explainer",
+          "story_identity": "urban-underground-pipeline-trillion-explainer-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "地下管网改造规划内容源自6月发布，当日为科普解读稿，无新事件锚点"
+        },
+        {
+          "candidate_key": "rumor-list-september",
+          "story_identity": "beijing-internet-rumor-list-sept-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T17:42:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 6
+          },
+          "drop_reason": "9月网络辟谣榜为月度常规汇总，单日新闻增量有限"
+        },
+        {
+          "candidate_key": "guozu-fifa-ranking-low",
+          "story_identity": "china-mens-football-fifa-ranking-10y-low-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "国足FIFA排名创十年新低为周期性排名变动，负面情绪向且与假期赛事报道重复度高"
+        },
+        {
+          "candidate_key": "deposit-rate-small-banks",
+          "story_identity": "small-banks-cd-rate-up-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "中小银行大额存单利率上调为多家银行分散个案，无当日统一新规"
+        },
+        {
+          "candidate_key": "us-green-card-pause",
+          "story_identity": "us-tech-green-card-application-pause-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T09:25:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "美国技术移民政策变动细节未明，对中国读者日常影响间接"
+        },
+        {
+          "candidate_key": "electricity-retailers-appeal",
+          "story_identity": "gx-electricity-retailers-joint-appeal-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-30T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 10,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "广西售电公司联名请示文件为9月30日行业诉求流出，时点较早且待官方回应"
+        },
+        {
+          "candidate_key": "mall-new-trio-trend",
+          "story_identity": "beijing-mall-market-ip-first-store-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 4
+          },
+          "drop_reason": "商场主题市集首店为消费趋势观察稿，无具体当日事件"
+        },
+        {
+          "candidate_key": "starbucks-urumqi-queue",
+          "story_identity": "urumqi-first-starbucks-queue-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "乌鲁木齐首家星巴克排队为门店客流趣闻，时点接近72小时边界"
+        },
+        {
+          "candidate_key": "feitian-songjia-three-awards",
+          "story_identity": "feitian-awards-songjia-grand-slam-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 17,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "飞天奖主条目已于10月9日信封发布，个人获奖花絮不重复"
+        },
+        {
+          "candidate_key": "farrier-six-figure-salary",
+          "story_identity": "wuhan-farrier-six-figure-salary-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 5
+          },
+          "drop_reason": "钉蹄师高薪为小众职业个案，样本单一"
+        },
+        {
+          "candidate_key": "bige-founder-student-deal",
+          "story_identity": "bige-pizza-founder-student-deal-response-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "餐饮品牌创始人回应优惠活动为商家营销互动"
+        },
+        {
+          "candidate_key": "phd-into-system-trend",
+          "story_identity": "phd-graduates-public-sector-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 15,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "博士就业去向为趋势讨论稿，无当日具体事件"
+        },
+        {
+          "candidate_key": "humanoid-robot-5g-plan",
+          "story_identity": "leju-robot-5ga-sim-plan-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 5
+          },
+          "drop_reason": "人形机器人套餐为厂商合作动态，产业向且公共性有限"
+        },
+        {
+          "candidate_key": "xiyou-antifraud-animation",
+          "story_identity": "xiyou-themed-antifraud-psa-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 51,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "西游题材反诈宣传动画为公益内容创作，非当日新闻事件"
+        },
+        {
+          "candidate_key": "feitian-red-carpet-moments",
+          "story_identity": "feitian-red-carpet-ou-hao-moment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 3
+          },
+          "drop_reason": "红毯互动花絮无公共信息增量"
+        },
+        {
+          "candidate_key": "shi-wenbo-passing",
+          "story_identity": "hengan-founder-shi-wenbo-memorial-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-29T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 10,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "企业家去世追思仪式发生于9月底至10月6日，时点较早"
+        },
+        {
+          "candidate_key": "yu-hewei-walk-speculation",
+          "story_identity": "yu-hewei-red-carpet-walk-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "演员红毯状态引发的健康猜测为花絮内容，不宜放大"
+        },
+        {
+          "candidate_key": "long-egg-tart-fade",
+          "story_identity": "long-egg-tart-fad-decline-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 14,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "网红食品生命周期讨论为消费现象稿，无当日事件"
+        },
+        {
+          "candidate_key": "husband-left-on-highway",
+          "story_identity": "anhui-woman-left-husband-highway-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-02T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 49,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 11,
+            "everyday_relevance": 14,
+            "evidence": 5
+          },
+          "drop_reason": "国庆假期个案趣闻，发生于10月2日时点较早"
+        },
+        {
+          "candidate_key": "asphalt-record-high",
+          "story_identity": "asphalt-futures-record-high-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 14,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "沥青期货价格为品种行情动态，日常相关性弱"
+        },
+        {
+          "candidate_key": "zhou-shen-signature-moment",
+          "story_identity": "zhou-shen-feitian-signature-moment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T20:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 3
+          },
+          "drop_reason": "红毯签名趣闻为娱乐花絮"
+        },
+        {
+          "candidate_key": "guan-xiaotong-yanni-c-position",
+          "story_identity": "feitian-carpet-c-position-moment-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 3
+          },
+          "drop_reason": "红毯让位互动为花絮内容"
+        },
+        {
+          "candidate_key": "peppa-pig-side-face",
+          "story_identity": "peppa-pig-front-face-discussion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 13,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "动画形象讨论为趣闻，非新闻事件"
+        },
+        {
+          "candidate_key": "national-express-holiday-data",
+          "story_identity": "holiday-express-parcel-national-data-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见贵州、重庆等省级邮政管理局假期揽投数据，未获取国家邮政局全国汇总权威发布，不足以支撑全国性条目"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "privacy"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-9",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-10-panama-strong-earthquake",
+      "story_identity": "panama-m77-earthquake-tsunami-alert-2026",
+      "headline": "🌊 巴拿马发生70多年来最强地震，拉美部分地区发布海啸预警",
+      "summary": "北京时间10月10日凌晨，巴拿马南部近海发生强烈地震，美国地质调查局测定为7.6至7.7级，系当地1951年以来最强地震；首都巴拿马城及邻国哥斯达黎加震感强烈，部分地区建筑受损，当地已记录多次余震并发布海啸预警。中资机构和当地华侨华人暂无伤亡报告，巴拿马运河运营暂未受影响。",
+      "category": "民生社会",
+      "scope": "international",
+      "topic": "自然灾害",
+      "primary_organization": "巴拿马大学地球科学研究所",
+      "audience_relevance": {
+        "basis": "global_major_event",
+        "impact_scale": "global_systemic",
+        "china_connection": "巴拿马运河是全球航运要道，新华社报道当地中资机构和华侨华人暂无伤亡报告，与中国读者有直接关联",
+        "everyday_impact": "强震及海啸预警关系当地华侨华人安全与国际航运，属全球重大突发事件，普通读者需知悉",
+        "score": 21
+      },
+      "score": 85,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 20,
+        "everyday_relevance": 18,
+        "evidence": 14
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-10-10T01:56:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "海外强震事实报道，伤亡与损失以官方通报为准，标题不含具体伤亡数字"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.news.cn/world/20261010/e64193e4e46d45888314ff909bce1f22/c.html",
+          "title": "巴拿马发生多次余震",
+          "captured_at": "2026-10-10T06:26:20+08:00",
+          "note": "新华社巴拿马城10月9日电：强震后记录多次余震，其中一次6级，部分建筑受损"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "世界日报",
+          "url": "https://www.worldjournal.com/wj/story/121480/9805754",
+          "title": "巴拿马规模7.6强震 美预警：或引发海啸",
+          "captured_at": "2026-10-10T06:26:45+08:00",
+          "note": "世界日报10月10日：USGS测定7.6级（一度报7.7级），智利对复活节岛发布海啸预警"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-10-sams-club-family-card-rules",
+      "story_identity": "sams-club-family-card-365day-limit-2026",
+      "headline": "🛒 山姆拟收紧亲友卡：每365天最多绑定两名主卡，剑指黄牛倒卖",
+      "summary": "10月9日，山姆会员商店宣布拟更新《山姆会员商店会员章程》并公开征求意见，拟新增条款：自首次激活亲友卡之日起每365天，同一实名身份信息仅能用于激活两名个人主卡会员的亲友卡。专家解读此举旨在收窄亲友卡泛用与倒卖空间，治理“黄牛”代购乱象。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 81,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 19,
+        "everyday_relevance": 21,
+        "evidence": 11
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-10-09T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "企业会员规则调整报道，以征求意见原文为准"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://m.thepaper.cn/newsDetail_forward_34218985",
+          "title": "山姆拟收紧亲友卡绑定规则：同一身份一年内最多被绑定两次",
+          "captured_at": "2026-10-10T06:22:30+08:00",
+          "note": "澎湃新闻10月9日：山姆拟更新会员章程并公开征求意见，亲友卡绑定次数收紧"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "每日经济新闻",
+          "url": "https://www.nbd.com.cn/articles/2026-10-09/4599771.html",
+          "title": "山姆拟限制亲友卡绑定",
+          "captured_at": "2026-10-10T06:28:00+08:00",
+          "note": "每经10月9日独立报道：每365天同一实名信息仅能激活两名主卡的亲友卡"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-10-djokovic-shanghai-upset",
+      "story_identity": "djokovic-shanghai-masters-r2-upset-2026",
+      "headline": "🎾 上海大师赛：德约科维奇首秀0比2爆冷出局，创个人赛会最差战绩",
+      "summary": "10月9日晚，2026上海劳力士大师赛男单第二轮，四届赛会冠军德约科维奇以4比6、3比6不敌波兰选手胡尔卡奇，中网夺冠后首秀即遭淘汰，创个人上海大师赛最差战绩；同日吴易昺不敌兹维列夫，止步第二轮。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-10-09T20:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果事实报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/ty/2026/10-09/10709925.shtml",
+          "title": "上海网球大师赛：吴易昺不敌兹维列夫 德约科维奇爆冷出局",
+          "captured_at": "2026-10-10T06:24:10+08:00",
+          "note": "中新社10月9日：上海大师赛第二轮赛果，德约科维奇爆冷出局"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34220012",
+          "title": "上海大师赛遭遇一轮游，德约：有点累，好好休息备战巴黎",
+          "captured_at": "2026-10-10T06:24:35+08:00",
+          "note": "澎湃新闻10月9日：德约科维奇4比6、3比6负于胡尔卡奇及赛后表态"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-10-weekend-cold-air-north",
+      "story_identity": "cold-air-north-china-oct11-13-2026",
+      "headline": "🌬️ 11日至13日冷空气影响北方，局地降温8至10℃伴大风",
+      "summary": "中央气象台10月9日18时公报预计，11日至13日受冷空气影响，北方大部地区将有4至6℃降温，局地降温8至10℃，并伴有4至5级风、阵风6至8级；9日夜间至10日，西藏东南部、四川等地部分地区有降水。周末出行请注意添衣防风。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 77,
+      "score_breakdown": {
+        "heat": 26,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-10-09T18:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "气象预报服务信息"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "中央气象台",
+          "url": "https://www.nmc.cn/publish/weather-bulletin/index.htm",
+          "title": "天气预报_天气公报",
+          "captured_at": "2026-10-10T06:23:20+08:00",
+          "note": "中央气象台10月9日18时公报：11日至13日北方大部降温4至6℃、局地8至10℃"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "福州新闻网",
+          "url": "https://news.fznews.com.cn/gngj/20261009/17vF17RD69.shtml",
+          "title": "中东部大部天气晴好昼夜温差增大 11日起冷空气携降雨降温来袭",
+          "captured_at": "2026-10-10T06:23:45+08:00",
+          "note": "福州新闻网10月9日转中国天气网讯：冷空气过程与大风降温细节佐证"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-10-public-fund-rules-overhaul",
+      "story_identity": "csrc-public-fund-rules-revision-2026",
+      "headline": "💰 公募基金运作办法迎12年首次大修：权益类基金成立门槛拟降至5000万元",
+      "summary": "中国证监会10月9日就《公开募集证券投资基金运作管理办法（征求意见稿）》及配套规则公开征求意见，系该办法实施12年来首次系统性修订；拟将权益类基金成立门槛由2亿元降至5000万元，允许FOF投资ETF联接基金，非FOF基金投资其他基金比例上限由10%提高至30%，并加强投资风格稳定性管理。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 19,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-10-09T16:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "金融监管规则征求意见报道，关乎基金投资者"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "财联社",
+          "url": "https://www.cls.cn/detail/2500655",
+          "title": "证监会就《公开募集证券投资基金运作管理办法（征求意见稿）》及配套规则公开征求意见",
+          "captured_at": "2026-10-10T06:27:10+08:00",
+          "note": "财联社10月9日电：据证监会网站，运作办法及配套规则修订征求意见"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "证券时报",
+          "url": "https://stcn.com/article/detail/4210271.html",
+          "title": "权益类基金成立门槛拟降至5000万元",
+          "captured_at": "2026-10-10T06:27:35+08:00",
+          "note": "证券时报10月9日：权益类基金成立门槛拟由2亿元降至5000万元等修订要点"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
