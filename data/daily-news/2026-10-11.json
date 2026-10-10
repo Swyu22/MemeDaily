@@ -1,0 +1,866 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-11",
+  "generated_at": "2026-10-11T06:33:23+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 38,
+    "published": 6,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "geopolitics": 2,
+      "harassment": 1,
+      "minors": 1,
+      "politics": 1,
+      "propaganda": 2
+    },
+    "dropped_low_confidence": 23,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 22,
+      "official_sources": 0,
+      "state_media_sources": 6,
+      "major_media_sources": 6,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 6,
+        "relaxed_48h": 7,
+        "relaxed_72h": 9
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 38,
+          "cumulative_unique_candidates": 38,
+          "source_scope": [
+            "央媒与政府站点：新华社/新华网、央广网、中国新闻网、光明网、中央气象台",
+            "持牌媒体：上观新闻、新华报业网、紫牛新闻、齐鲁壹点、中新经纬、经济观察网",
+            "公共热榜与聚合：百度热搜（仅佐证热度，不单独成立）"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-11-ielts-cancelled-technical",
+          "story_identity": "ielts-mainland-cancel-oct10-11-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-10-11-ielts-cancelled-technical",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 19,
+            "everyday_relevance": 23,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-11-zheng-qinwen-china-open-final",
+          "story_identity": "zheng-qinwen-china-open-first-final-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T21:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-11-zheng-qinwen-china-open-final",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 20,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-11-urban-new-jobs-1052w",
+          "story_identity": "mohrss-jan-sept-employment-1052w-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-10-11-urban-new-jobs-1052w",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 18,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-11-food-safety-law-revision",
+          "story_identity": "food-safety-law-revision-consultation-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-10-11-food-safety-law-revision",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-11-auto-innovation-safety-rules",
+          "story_identity": "miit-auto-innovation-design-testing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-10-11-auto-innovation-safety-rules",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 20,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-11-railway-q4-diagram",
+          "story_identity": "railway-2026q4-diagram-oct11",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T00:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-11-railway-q4-diagram",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 22,
+            "evidence": 10
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "nobel-peace-prize-2026",
+          "story_identity": "nobel-peace-prize-2026-navi-pillay",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T17:00:00+08:00",
+          "scope": "international",
+          "topic": "重大事件",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h",
+          "drop_reason": "诺贝尔和平奖10月9日揭晓已超24小时严格时效窗，落在48小时层，当日strict_24h层未选中"
+        },
+        {
+          "candidate_key": "cold-air-north-refresh-oct11-13",
+          "story_identity": "cold-air-north-china-oct11-13-refresh",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "中央气象台10日18时公报冷空气预报与10月10日信封冷空气条目同源，实质增量有限"
+        },
+        {
+          "candidate_key": "panama-quake-china-response",
+          "story_identity": "panama-quake-mfa-response-day2-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T17:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "巴拿马强震主条目已于10月10日信封发布，外交部回应属同一事件进展，不重复入选"
+        },
+        {
+          "candidate_key": "u18-women-basketball-asia-bronze",
+          "story_identity": "u18-women-asia-cup-bronze-korea-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "U18女篮亚洲杯季军战为单项赛事结果，当日已选中网体育条目，控制体育集中度"
+        },
+        {
+          "candidate_key": "world-mental-health-day-2026",
+          "story_identity": "world-mental-health-day-beijing-event-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 14,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "世界精神卫生日主题宣传活动以出席致辞为主，属活动报道，公共信息增量有限"
+        },
+        {
+          "candidate_key": "moments-photo-privacy-tips",
+          "story_identity": "beijing-police-moments-photo-privacy-tips-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-05T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 12,
+            "everyday_relevance": 19,
+            "evidence": 5
+          },
+          "drop_reason": "朋友圈晒图风险提示为警方假期周期性安全提醒，无新事件"
+        },
+        {
+          "candidate_key": "concert-gymnasium-refund-apology",
+          "story_identity": "concert-gymnasium-mode-refund-apology-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 13,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "演出退票补偿公告为个案消费处理，公共性有限"
+        },
+        {
+          "candidate_key": "social-card-gold-scam-alert",
+          "story_identity": "beijing-social-card-gold-scam-alert-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 13,
+            "everyday_relevance": 16,
+            "evidence": 5
+          },
+          "drop_reason": "社保卡金卡骗局为反诈提醒，无当日新发案件与权威通报"
+        },
+        {
+          "candidate_key": "sichuan-shaanxi-local-heavy-rain",
+          "story_identity": "sichuan-shaanxi-local-heavy-rain-oct11-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 14,
+            "evidence": 5
+          },
+          "drop_reason": "四川陕西局地降水为区域性预报，未达到全国性条目强度"
+        },
+        {
+          "candidate_key": "pingpong-warring-states-analysis",
+          "story_identity": "china-table-tennis-warring-states-analysis-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 12,
+            "evidence": 4
+          },
+          "drop_reason": "乒坛格局变化为媒体评论分析稿，无当日具体事件锚点"
+        },
+        {
+          "candidate_key": "beijing-light-fog-weekend",
+          "story_identity": "beijing-light-fog-weekend-oct11-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T06:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "北京今晨轻雾与零星小雨为常规天气现象，增量有限"
+        },
+        {
+          "candidate_key": "refund-only-sweet-potato-dispute",
+          "story_identity": "cangzhou-refund-only-sweet-potato-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 11,
+            "everyday_relevance": 14,
+            "evidence": 5
+          },
+          "drop_reason": "网购仅退款个案发生于10月7日，超出72小时时效窗且为个案纠纷"
+        },
+        {
+          "candidate_key": "lotte-coolish-foreign-body",
+          "story_identity": "lotte-coolish-icecream-foreign-body-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T12:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 12,
+            "everyday_relevance": 12,
+            "evidence": 5
+          },
+          "drop_reason": "日本企业食品投诉属外国本地常规消费新闻，无中国读者直接影响"
+        },
+        {
+          "candidate_key": "hainan-heavy-rain-ends",
+          "story_identity": "hainan-heavy-rain-ends-oct10-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 13,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "海南强降雨趋于结束为天气过程收尾信息，增量有限"
+        },
+        {
+          "candidate_key": "wsbk-zhangxue-estoril-race1",
+          "story_identity": "zhangxue-wsbk-estoril-race1-p6-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 14,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "WSBK分站单场名次为小众赛事轮次成绩，公共关注度有限"
+        },
+        {
+          "candidate_key": "changsha-dad-self-funded-film",
+          "story_identity": "changsha-dad-self-funded-youth-film-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 13,
+            "evidence": 4
+          },
+          "drop_reason": "陪读父亲自筹资金拍电影为人物故事稿，时点模糊"
+        },
+        {
+          "candidate_key": "us-game-console-sales-record-low",
+          "story_identity": "us-game-hardware-sales-august-low-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T09:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 12,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "美国游戏硬件销量为海外市场月度数据，常规行业动态"
+        },
+        {
+          "candidate_key": "wang-manyu-final-preview-interview",
+          "story_identity": "wang-manyu-final-preview-sato-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 8,
+            "evidence": 3
+          },
+          "drop_reason": "王曼昱决赛展望为赛前采访花絮，非独立新闻事件"
+        },
+        {
+          "candidate_key": "low-sodium-salt-bp-guideline",
+          "story_identity": "low-sodium-salt-blood-pressure-guideline-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 12,
+            "everyday_relevance": 11,
+            "evidence": 3
+          },
+          "drop_reason": "低钠盐控血压依据2024年指南的健康科普，无新事件锚点"
+        },
+        {
+          "candidate_key": "shangqiu-wedding-hazing-case",
+          "story_identity": "shangqiu-wedding-hazing-eggs-soy-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 11,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "恶俗婚闹个案为负面花边，公共信息增量有限"
+        },
+        {
+          "candidate_key": "trash-72-five-yuan-notes",
+          "story_identity": "anqiu-trash-72-five-yuan-notes-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 43,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 11,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "拾钞个案趣闻发生于10月7日，时点较早"
+        },
+        {
+          "candidate_key": "osmanthus-non-newtonian-scent",
+          "story_identity": "hangzhou-osmanthus-non-newtonian-scent-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 12,
+            "everyday_relevance": 8,
+            "evidence": 3
+          },
+          "drop_reason": "桂花香气讨论为网络趣闻，非新闻事件"
+        },
+        {
+          "candidate_key": "liver-cancer-early-screening",
+          "story_identity": "liver-cancer-early-screening-explainer-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 40,
+          "score_breakdown": {
+            "heat": 17,
+            "freshness": 11,
+            "everyday_relevance": 9,
+            "evidence": 3
+          },
+          "drop_reason": "肝癌早筛科普为常规健康内容，无当日事件"
+        },
+        {
+          "candidate_key": "tanker-inspection-report-fraud",
+          "story_identity": "tanker-truck-inspection-report-fraud-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "仅见单一调查栏目报道，未见市场监管或交通运输主管部门通报，不足以支撑全国性条目"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "propaganda"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "harassment"
+        },
+        {
+          "candidate_key": "candidate-8",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-11-ielts-cancelled-technical",
+      "story_identity": "ielts-mainland-cancel-oct10-11-2026",
+      "headline": "📝 雅思10日至11日全国考试因技术原因取消，考试费全额退还",
+      "summary": "10月10日，雅思主办方确认因英国方面考试系统技术原因，10日至11日中国大陆雅思纸笔和机考全部取消，12日安排待定；考试费将全额退还至考生报名账户，已参加当天口语、听力考试的考生成绩无法发放。有申请截止压力的考生需留意后续考位。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 86,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 19,
+        "everyday_relevance": 23,
+        "evidence": 11
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-10-10T12:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "考试取消涉及考生权益，以主办方和教育部教育考试院通知为准，不渲染现场情绪"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央广网",
+          "url": "https://www.cnr.cn/newscenter/native/gd/20261010/t20261010_527838334.shtml",
+          "title": "多地考生反映雅思考试临时取消，官方：因技术原因取消，考试费用已全额退还",
+          "captured_at": "2026-10-11T06:29:30+08:00",
+          "note": "央广网10月10日：教育部教育考试院咨询中心确认当天雅思全部取消、费用退还、相关成绩无法发放"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "扬子晚报紫牛新闻",
+          "url": "https://www.yzwb.net/news/sh/202610/t20261010_401305.html",
+          "title": "多地考生称BC雅思考试临时取消，官方：技术原因，暂涉10—11日考试",
+          "captured_at": "2026-10-11T06:27:10+08:00",
+          "note": "紫牛新闻10月10日：BC客服确认10日、11日考试取消，12日待定，费用全额退还"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-11-zheng-qinwen-china-open-final",
+      "story_identity": "zheng-qinwen-china-open-first-final-2026",
+      "headline": "🎾 郑钦文首进中网女单决赛，成赛事20届以来首位本土决赛选手",
+      "summary": "10月10日晚，2026中国网球公开赛女单半决赛，郑钦文以7比5、6比2战胜比利时选手梅尔滕斯，成为赛事20届以来首位闯入女单决赛的中国球员。她在本届中网已六连胜，11日决赛将迎战法网冠军安德烈耶娃。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 20,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-10-10T21:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果事实报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/sports/20261010/64de5ca0ee854d3597fa802a5ea01c5a/c.html",
+          "title": "郑钦文创造历史成中网首位本土女单决赛选手",
+          "captured_at": "2026-10-11T06:29:00+08:00",
+          "note": "新华社10月10日电：郑钦文7:5、6:2胜梅尔滕斯，20届赛事以来首位本土决赛选手"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "上观新闻",
+          "url": "https://www.shobserver.com/news/detail?id=1191866",
+          "title": "郑钦文首进中网女单决赛 世界排名重返第28",
+          "captured_at": "2026-10-11T06:27:40+08:00",
+          "note": "上观新闻10月11日报道半决赛赛况及世界排名变化"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-11-urban-new-jobs-1052w",
+      "story_identity": "mohrss-jan-sept-employment-1052w-2026",
+      "headline": "💼 前9月城镇新增就业1052万人，将实施青年就业支持计划",
+      "summary": "国新办10月10日举行“十五五”推进就业和社会保障高质量发展发布会。人力资源社会保障部介绍：今年1至9月全国城镇新增就业1052万人，完成全年目标87.7%，前8个月调查失业率均值5.2%；将实施高校毕业生等青年就业支持计划，开展适应人工智能发展促就业行动。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 84,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 18,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-10-10T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "官方发布会数据报道，民生就业政策信息"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/gn/2026/10-10/10710090.shtml",
+          "title": "人社部：今年1至9月我国城镇新增就业1052万人",
+          "captured_at": "2026-10-11T06:28:20+08:00",
+          "note": "中新网10月10日电：国新办发布会，完成全年目标87.7%，前8个月调查失业率均值5.2%"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "光明网",
+          "url": "https://news.gmw.cn/2026-10/11/content_39039309.htm",
+          "title": "实施就业优先战略 织密社会保障网络",
+          "captured_at": "2026-10-11T06:26:30+08:00",
+          "note": "光明网10月11日报道“十五五”就业和社会保障工作安排"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-11-food-safety-law-revision",
+      "story_identity": "food-safety-law-revision-consultation-2026",
+      "headline": "🍚 食品安全法修订草案公开征求意见，强化校园食品与智慧监管",
+      "summary": "市场监管总局10月10日就《中华人民共和国食品安全法（修订草案征求意见稿）》公开征求意见，意见反馈截止11月10日。修订聚焦压实主体责任、增设学校食品安全与网络食品经营专节、强化“互联网+人工智能”智慧监管、完善法律责任体系。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 18,
+        "everyday_relevance": 21,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-10-10T10:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "法律修订征求意见报道，以正式公布文本为准"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.xinhuanet.com/20261010/c8a800e7b7ad42d5ad6fda3bef8ab6e4/c.html",
+          "title": "市场监管总局就食品安全法修订草案征求意见稿答记者问",
+          "captured_at": "2026-10-11T06:30:10+08:00",
+          "note": "新华社10月10日电：五方面修改含学校食品安全专节、“互联网+人工智能”智慧监管"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "齐鲁晚报·齐鲁壹点",
+          "url": "https://ql1d.com/general/28186483.html",
+          "title": "食品安全法修订草案公开征求意见，涉及AI监管",
+          "captured_at": "2026-10-11T06:27:50+08:00",
+          "note": "齐鲁晚报10月10日报道修订草案五方面主要内容"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-11-auto-innovation-safety-rules",
+      "story_identity": "miit-auto-innovation-design-testing-2026",
+      "headline": "🚗 四部门拟加强汽车创新设计安全验证，禁止全隐藏式门把手",
+      "summary": "工业和信息化部等四部门10月10日发布汽车产品创新设计和研发测试验证管理通知征求意见稿：拟禁止配备全隐藏式门把手及折叠、柔性显示屏；2027年1月1日起涉及创新设计的新申报产品须完成充分测试验证，未完成不得申报产品公告。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 78,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 18,
+        "everyday_relevance": 20,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-10-10T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "部门规章征求意见报道，关乎汽车消费者安全"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "http://www.news.cn/fortune/20261010/71408c21c4d847e78bcc191a58934d83/c.html",
+          "title": "进一步加强汽车产品创新设计等管理 四部门征求意见",
+          "captured_at": "2026-10-11T06:28:40+08:00",
+          "note": "新华社10月10日电：技术指南围绕虚拟操纵件、门把手、人机交互等提出测试验证要求"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "中新经纬",
+          "url": "https://www.jwview.com/jingwei/html/10-10/691879.shtml",
+          "title": "加强汽车产品创新设计等方面管理 四部门征意见：禁止配备全隐藏式门把手",
+          "captured_at": "2026-10-11T06:28:00+08:00",
+          "note": "中新经纬10月10日电：据工信部网站，拟自2027年1月1日起实施"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-11-railway-q4-diagram",
+      "story_identity": "railway-2026q4-diagram-oct11",
+      "headline": "🚄 全国铁路11日零时起实施第四季度列车运行图",
+      "summary": "10月11日零时起，全国铁路实施2026年第四季度列车运行图。长三角铁路旅客列车开行总数达1435.5对创历史新高，安徽多地首次实现高铁进京；粤港澳大湾区同步补强佛山站枢纽运力。旅客出行请留意12306最新时刻。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 20,
+        "everyday_relevance": 22,
+        "evidence": 10
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-10-11T00:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "铁路调图出行服务信息"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中国新闻网",
+          "url": "https://www.chinanews.com.cn/gn/2026/10-10/10710671.shtml",
+          "title": "新列车运行图11日启用 粤港澳大湾区铁路网络进一步织密",
+          "captured_at": "2026-10-11T06:31:20+08:00",
+          "note": "中新社10月10日电：国铁广州局11日零时起启用四季度运行图，佛山站停靠增至115列"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新华报业网",
+          "url": "http://www.xhby.net/content/s6ac9da56e4b0d8a8ad9a4d7c.html",
+          "title": "长三角铁路10月11日起实施新列车运行图",
+          "captured_at": "2026-10-11T06:31:00+08:00",
+          "note": "新华日报·交汇点10月10日：旅客列车1435.5对创新高，安徽多地首次高铁进京"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
