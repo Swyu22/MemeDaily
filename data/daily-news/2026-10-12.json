@@ -1,0 +1,852 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T06:31:16+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 40,
+    "published": 4,
+    "dropped_safety": {
+      "geopolitics": 3,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 30,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 15,
+      "official_sources": 1,
+      "state_media_sources": 5,
+      "major_media_sources": 2,
+      "aggregator_sources": 0,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "tier": "relaxed_48h",
+      "qualified": {
+        "strict_24h": 2,
+        "relaxed_48h": 4,
+        "relaxed_72h": 9
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 40,
+          "cumulative_unique_candidates": 40,
+          "source_scope": [
+            "央媒与政府站点：新华社/新华网、人民网、央视网、中新网、深圳政府在线",
+            "持牌媒体：观察者网、华龙网/极目新闻、上观新闻、财新、大众网",
+            "公共热榜与聚合：百度热搜（仅佐证热度，不单独成立）"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-12-zheng-qinwen-china-open-title",
+          "story_identity": "zheng-qinwen-2026-china-open-womens-title",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T21:10:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-12-zheng-qinwen-china-open-title",
+          "score": 92,
+          "score_breakdown": {
+            "heat": 38,
+            "freshness": 19,
+            "everyday_relevance": 22,
+            "evidence": 13
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-12-huanggang-port-24h-opening",
+          "story_identity": "huanggang-port-rebuilt-opening-oct12-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "selected",
+          "item_id": "2026-10-12-huanggang-port-24h-opening",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 18,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-12-xian-bbq-kitchen-hygiene-notice",
+          "story_identity": "xian-qujiang-bbq-kitchen-hygiene-rectify-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-10-12-xian-bbq-kitchen-hygiene-notice",
+          "score": 74,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 19,
+            "evidence": 10
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-10-12-yu-yiting-tashkent-three-golds",
+          "story_identity": "yu-yiting-tashkent-world-cup-three-golds-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-12-yu-yiting-tashkent-three-golds",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "minimum-wage-standards-oct2026",
+          "story_identity": "mohrss-minimum-wage-standards-oct1-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 15,
+            "everyday_relevance": 21,
+            "evidence": 10
+          },
+          "drop_reason": "人社部发布截至10月1日的各地最低工资标准，事件落在72小时层，当日48小时层未选中"
+        },
+        {
+          "candidate_key": "jiaolong-466th-dive",
+          "story_identity": "jiaolong-466th-dive-east-caroline-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T04:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 19,
+            "evidence": 11
+          },
+          "drop_reason": "蛟龙号第466次下潜发生于10日凌晨，距打戳超48小时，落72小时层",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "jiangxi-private-economy-regulation",
+          "story_identity": "jiangxi-private-economy-promotion-regulation-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 18,
+            "evidence": 11
+          },
+          "drop_reason": "江西省民营经济促进条例11月1日施行为省级立法预告，全国公共增量有限",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "shanghai-masters-chinese-singles-exit",
+          "story_identity": "shanghai-masters-2026-chinese-singles-exit",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 10
+          },
+          "drop_reason": "中国单打选手全部出局为负面赛果，当日已选中网夺冠与游泳条目，控制体育集中度",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "cold-air-north-oct11-13-day2",
+          "story_identity": "cold-air-north-china-oct11-13-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "drop_reason": "同一冷空气过程10月10日信封已入选，预报实质增量有限",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "hairy-crab-price-drop",
+          "story_identity": "hairy-crab-mass-supply-price-drop-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 9
+          },
+          "drop_reason": "大闸蟹集中上市价格回落为区域性市场行情，缺乏权威数据支撑全国性条目",
+          "qualification_tier": "relaxed_72h"
+        },
+        {
+          "candidate_key": "new-employment-form-rights-measures",
+          "story_identity": "new-employment-form-labor-rights-measures-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T15:47:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 15,
+            "everyday_relevance": 22,
+            "evidence": 10
+          },
+          "drop_reason": "新就业形态劳动者权益保障办法征求意见发布于10月8日，超48小时层，落72小时层未选中"
+        },
+        {
+          "candidate_key": "wtt-china-smash-lin-final",
+          "story_identity": "wtt-china-smash-2026-lin-yun-ju-final",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "WTT中国大满贯男单半决赛结果为单项赛事进程，体育条目已饱和"
+        },
+        {
+          "candidate_key": "nepal-landslide-flood-oct11",
+          "story_identity": "nepal-budhigandaki-landslide-flood-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T14:00:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 9
+          },
+          "drop_reason": "尼泊尔山洪为区域灾害，对中国读者直接影响有限，全球代表性不足"
+        },
+        {
+          "candidate_key": "panama-quake-followup-day2",
+          "story_identity": "panama-quake-2026-followup-day2",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T01:56:00+08:00",
+          "scope": "international",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 15,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "巴拿马强震主条目已于10月10日信封发布，不重复入选"
+        },
+        {
+          "candidate_key": "zhou-hongyi-climbing-injury",
+          "story_identity": "zhou-hongyi-bouldering-knee-injury-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 7
+          },
+          "drop_reason": "企业家个人运动受伤为人物花边，公共信息增量有限"
+        },
+        {
+          "candidate_key": "pangdonglai-construction-clean",
+          "story_identity": "pangdonglai-dream-city-construction-site-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 9,
+            "evidence": 7
+          },
+          "drop_reason": "企业施工现场整洁为网络趣闻，非新闻事件"
+        },
+        {
+          "candidate_key": "pan-weibo-weight-loss",
+          "story_identity": "pan-weibo-weight-loss-26jin-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 13,
+            "everyday_relevance": 7,
+            "evidence": 5
+          },
+          "drop_reason": "艺人减重为娱乐花边，不适合民生日报"
+        },
+        {
+          "candidate_key": "guan-xiaotong-concert-cameo",
+          "story_identity": "guan-xiaotong-song-yuqi-concert-cameo-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 13,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "演唱会嘉宾互动为娱乐花边"
+        },
+        {
+          "candidate_key": "lottery-500w-changsha",
+          "story_identity": "changsha-migrant-worker-lottery-500w-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 13,
+            "everyday_relevance": 9,
+            "evidence": 7
+          },
+          "drop_reason": "彩票中奖为个案趣闻，不引导购彩"
+        },
+        {
+          "candidate_key": "zhangxue-gas-station-search",
+          "story_identity": "zhangxue-gas-station-fall-owner-search-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 6
+          },
+          "drop_reason": "网络寻人寻责个案，事实与责任未定性"
+        },
+        {
+          "candidate_key": "safety-inspection-fishing-vessel",
+          "story_identity": "central-safety-inspection-fishing-port-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "安全生产考核巡查暗访为监管工作动态，事件性不足"
+        },
+        {
+          "candidate_key": "shandong-dialect-london-accent",
+          "story_identity": "shandong-juxian-dialect-london-accent-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 12,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "方言趣闻为网络谈资，非新闻事件"
+        },
+        {
+          "candidate_key": "hu-la-tang-london-shop",
+          "story_identity": "fangzhongshan-hulatang-london-first-shop-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-09-26T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 11,
+            "everyday_relevance": 12,
+            "evidence": 10
+          },
+          "drop_reason": "餐饮品牌出海开店为个案且时点较早，超出72小时时效窗"
+        },
+        {
+          "candidate_key": "livestream-clip-copyright-ruling",
+          "story_identity": "livestream-clip-infringement-ruling-6000-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "直播切片侵权判决为小额个案，代表性有限"
+        },
+        {
+          "candidate_key": "dine-dash-misunderstanding",
+          "story_identity": "guilin-dine-dash-misunderstanding-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "换支付方式被误会逃单为个案纠纷，已澄清和解"
+        },
+        {
+          "candidate_key": "clothing-tag-cut-ad-backlash",
+          "story_identity": "warrior-ad-tag-cut-backlash-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 11,
+            "evidence": 7
+          },
+          "drop_reason": "剪吊牌广告风波为营销个案，事实层面公共增量有限"
+        },
+        {
+          "candidate_key": "gas-station-navigation-mixup",
+          "story_identity": "shanxi-gas-station-navigation-confusion-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "导航站名混淆为个案，涉事加油站已回应"
+        },
+        {
+          "candidate_key": "weak-bricks-nanchang",
+          "story_identity": "nanchang-rural-selfbuild-fragile-bricks-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 15,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "农村自建房建材质量个案，尚待监管检测结论"
+        },
+        {
+          "candidate_key": "greenhouse-abandon-jilin",
+          "story_identity": "jilin-greenhouse-idle-cctv-report-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "蔬菜大棚撂荒为调查报道，需等待主管部门处置结论"
+        },
+        {
+          "candidate_key": "paternity-test-rumor-refuted",
+          "story_identity": "anhui-paternity-test-rumor-refuted-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 15,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "省级辟谣榜澄清旧传言，原事件已澄清无新增量"
+        },
+        {
+          "candidate_key": "fuel-surcharge-up-oct10",
+          "story_identity": "domestic-flight-fuel-surcharge-up-oct10-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 13,
+            "everyday_relevance": 17,
+            "evidence": 7
+          },
+          "drop_reason": "航线燃油附加费上调已于10日生效，时点较早且属例行联动"
+        },
+        {
+          "candidate_key": "national-football-fifa-low",
+          "story_identity": "china-football-fifa-ranking-decade-low-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-09T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 14,
+            "everyday_relevance": 13,
+            "evidence": 9
+          },
+          "drop_reason": "国足FIFA排名更新为周期性结果，负面赛果花边化"
+        },
+        {
+          "candidate_key": "concert-refund-gymnasium-mode",
+          "story_identity": "concert-gymnasium-mode-refund-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-07T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 12,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "演出退票补偿为个案消费处理，时点较早"
+        },
+        {
+          "candidate_key": "qin-haiyang-world-cup-streak",
+          "story_identity": "qin-haiyang-world-cup-win-streak-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 8
+          },
+          "drop_reason": "同赛事游泳条目已选余依婷，控制同赛事集中度"
+        },
+        {
+          "candidate_key": "guokao-2027-announcement-prediction",
+          "story_identity": "guokao-2027-announcement-timing-prediction",
+          "research_pass": 1,
+          "occurred_at": "2026-10-01T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "2027国考公告尚未发布，目前仅有培训机构时间预测，无官方公告可证"
+        },
+        {
+          "candidate_key": "crab-voucher-price-drop-claim",
+          "story_identity": "hangzhou-crab-voucher-price-drop-claim-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "蟹券降价说法仅见自媒体账号，无持牌媒体或市场管理方证实"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-12-zheng-qinwen-china-open-title",
+      "story_identity": "zheng-qinwen-2026-china-open-womens-title",
+      "headline": "🎾 郑钦文首夺中网女单冠军，成赛事20届首位本土得主",
+      "summary": "10月11日晚，2026中国网球公开赛女单决赛，持外卡出战的郑钦文以7比5、6比4战胜法网冠军安德烈耶娃，成为中网举办20届以来首位本土女单冠军，这也是她职业生涯首个WTA1000赛冠军、第六座单打冠军。接下来她将出战武汉网球公开赛。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 92,
+      "score_breakdown": {
+        "heat": 38,
+        "freshness": 19,
+        "everyday_relevance": 22,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-10-11T21:10:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果事实报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/20261011/516c76aca85c43b09f1ff6f3784aef58/c.html",
+          "title": "郑钦文成为中网首位本土女单冠军",
+          "captured_at": "2026-10-12T06:24:30+08:00",
+          "note": "新华社10月11日电：郑钦文2:0胜安德烈耶娃，20届赛事首位本土女单冠军，生涯首个WTA1000赛冠军"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://ent.people.com.cn/n1/2026/1011/c1012-40812403.html",
+          "title": "郑钦文成为中网首位本土女单冠军",
+          "captured_at": "2026-10-12T06:24:50+08:00",
+          "note": "人民网10月11日转载新华社稿，确认决赛比分与历史意义"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-12-huanggang-port-24h-opening",
+      "story_identity": "huanggang-port-rebuilt-opening-oct12-2026",
+      "headline": "🛃 新皇岗口岸今日6时30分开通，深港24小时通关",
+      "summary": "历时七年升级改造的新皇岗口岸10月11日落成，定于12日6时30分正式开通运行，为旅客和客运车辆提供24小时通关服务，旧口岸同步落闸停用。新口岸为全球最大陆路口岸单体建筑，实行“一地两检”“合作查验、一次放行”，设计日通关流量20万人次。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "交通出行",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 18,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-10-11T10:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "口岸开通出行服务信息，以深港双方公告为准"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/10/11/ARTIhX8HuoIk6YnNSIDzB5y3261011.shtml",
+          "title": "新皇岗口岸落成 10月12日开通运行",
+          "captured_at": "2026-10-12T06:25:20+08:00",
+          "note": "央视网10月11日新闻联播：新皇岗口岸落成，12日开通，24小时通关，一地两检"
+        },
+        {
+          "tier": "official",
+          "outlet": "深圳政府在线",
+          "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/tpxw/content/post_13014029.html",
+          "title": "皇岗口岸10月12日6时30分开通运行",
+          "captured_at": "2026-10-12T06:25:40+08:00",
+          "note": "深圳市政府门户10月10日：深港联合公告，12日6时30分开通，设计日通关20万人次"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-12-xian-bbq-kitchen-hygiene-notice",
+      "story_identity": "xian-qujiang-bbq-kitchen-hygiene-rectify-2026",
+      "headline": "🥢 西安通报烧烤店厨师吐漱口水属实，涉事门店停业整改",
+      "summary": "西安市市场监管局曲江新区分局10月11日通报：网友经外卖平台“明厨亮灶”直播发现合聚烧烤店后厨人员漱口、吐水，执法人员核查确认属实，已对该店作出警告行政处罚，约谈门店负责人并责令立即整改。涉事门店已停业并退出外卖平台。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 74,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 18,
+        "everyday_relevance": 19,
+        "evidence": 10
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-10-11T18:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "食品安全个案处置报道，以监管部门通报为准，不扩散涉事人员信息"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "观察者网",
+          "url": "https://www.guancha.cn/ZhengZhi/2026_10_11/903896.shtml",
+          "title": "厨师漱口水吐锅边，涉事门店被罚",
+          "captured_at": "2026-10-12T06:28:10+08:00",
+          "note": "观察者网10月11日：曲江新区市监局通报核查处置情况"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "华龙网",
+          "url": "https://www.cqnews.net/web/content_1558786390246637568.html",
+          "title": "涉事烧烤店停业后退出外卖平台，西安三级市监部门回应",
+          "captured_at": "2026-10-12T06:28:30+08:00",
+          "note": "华龙网转极目新闻10月11日：门店停业整改并退出外卖平台，市监部门依法依规处理"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-12-yu-yiting-tashkent-three-golds",
+      "story_identity": "yu-yiting-tashkent-world-cup-three-golds-2026",
+      "headline": "🏊 余依婷游泳世界杯三日连夺三金，中国队5金2银2铜收官",
+      "summary": "10月10日晚，世界泳联游泳世界杯塔什干站收官，余依婷夺得女子200米个人混合泳金牌，三个比赛日连续拿下200米蝶泳、400米混合泳、200米混合泳三枚金牌并摘一铜，刷新个人最佳。中国队本站共收获5金2银2铜。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 73,
+      "score_breakdown": {
+        "heat": 27,
+        "freshness": 17,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-10-10T21:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "赛事结果事实报道"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://tv.cctv.com/2026/10/11/VIDEEVISu8TZDOBAanBWFhrI261011.shtml",
+          "title": "[游泳]余依婷夺得塔什干站个人第三枚金牌",
+          "captured_at": "2026-10-12T06:30:10+08:00",
+          "note": "央视网10月11日：塔什干站收官，余依婷200米混合泳夺个人第三金"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网体育",
+          "url": "https://sports.cctv.com/2026/10/09/ARTIY10kq7b9NGXScpkWgDXG261009.shtml",
+          "title": "短池游泳世界杯：余依婷夺得400米混合泳金牌",
+          "captured_at": "2026-10-12T06:28:50+08:00",
+          "note": "央视网体育10月9日：余依婷400米混合泳夺冠，实现世界杯两连冠"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
