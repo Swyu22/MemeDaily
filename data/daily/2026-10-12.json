@@ -1,0 +1,1672 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v4-editorial-completeness",
+  "rubric_version": "v4-100-point-dynamic",
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T07:30:00+08:00",
+  "status": "published",
+  "run_report": {
+    "candidates_scanned": 94,
+    "published": 10,
+    "dropped_safety": {
+      "时事政治": 9,
+      "纯体育赛事结果": 11,
+      "涉及具体人物": 10,
+      "综艺影视内容": 5,
+      "涉及具体品牌公司": 4,
+      "社会事件灾难事故": 12
+    },
+    "dropped_low_confidence": 22,
+    "dropped_capacity": 1,
+    "sources": [
+      "weibo",
+      "douyin",
+      "zhihu",
+      "bilibili",
+      "other"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 33,
+      "platform_public_sources": 0,
+      "aggregator_sources": 27,
+      "search_media_sources": 0,
+      "spillover_sources": 0,
+      "dropped_insufficient_evidence": 10
+    },
+    "selection": {
+      "tier": "strict_24h",
+      "qualified": {
+        "strict_24h": 11,
+        "relaxed_48h": 11,
+        "relaxed_72h": 11
+      },
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-12-beifangren-diyici-wen-guihua",
+          "canonical_phrase": "当北方人第一次闻桂花香",
+          "outcome": "selected",
+          "item_id": "2026-10-12-beifangren-diyici-wen-guihua",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 29,
+            "reusability": 17,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-02-quanwang-jinru-bushaoxin-shidai",
+          "canonical_phrase": "全网进入不烧心时代",
+          "outcome": "selected",
+          "item_id": "2026-10-02-quanwang-jinru-bushaoxin-shidai",
+          "score": 86,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 9
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-22-zhanshi-xinxue-shanshenbu",
+          "canonical_phrase": "展示我新学的闪身步",
+          "outcome": "selected",
+          "item_id": "2026-09-22-zhanshi-xinxue-shanshenbu",
+          "score": 84,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-10-12",
+            "observed_at": "2026-10-12T00:04:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-10-guoriziren",
+          "canonical_phrase": "过日子人",
+          "outcome": "selected",
+          "item_id": "2026-09-10-guoriziren",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 29,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-10-yansu-pinjian-baofaye",
+          "canonical_phrase": "严肃品鉴生化危机爆发夜",
+          "outcome": "selected",
+          "item_id": "2026-10-10-yansu-pinjian-baofaye",
+          "score": 78,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-07-quanwang-jinru-dashui-shidai",
+          "canonical_phrase": "全网进入大水时代",
+          "outcome": "selected",
+          "item_id": "2026-10-07-quanwang-jinru-dashui-shidai",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 28,
+            "reusability": 18,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-10-12",
+            "observed_at": "2026-10-12T02:44:59+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-11-biexiangtaiduo-bieshuitaiwan",
+          "canonical_phrase": "别想太多别睡太晚别爱太满",
+          "outcome": "selected",
+          "item_id": "2026-10-11-biexiangtaiduo-bieshuitaiwan",
+          "score": 77,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 8
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-09-21-manchong-lvxing",
+          "canonical_phrase": "慢充旅行",
+          "outcome": "selected",
+          "item_id": "2026-09-21-manchong-lvxing",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-12-shijian-laibujixi-lengkongqi",
+          "canonical_phrase": "时间来不及细算直到冷空气袭来",
+          "outcome": "selected",
+          "item_id": "2026-10-12-shijian-laibujixi-lengkongqi",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 28,
+            "reusability": 16,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+            "observed_at": "2026-10-12T03:56:42+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-12-luying-zuixiaochengben-chutao",
+          "canonical_phrase": "露营是最小成本的出逃",
+          "outcome": "selected",
+          "item_id": "2026-10-12-luying-zuixiaochengben-chutao",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-10-12",
+            "observed_at": "2026-10-12T00:44:19+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "2026-10-11-wobuyao-shangban-yaoqu-pashan",
+          "canonical_phrase": "我不要上班 我要去爬山",
+          "outcome": "dropped_capacity",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 28,
+            "reusability": 17,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+            "observed_at": "2026-10-12T03:56:42+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "qinggan-dahuanxian-houjin-taida",
+          "canonical_phrase": "青甘大环线后劲太大了",
+          "outcome": "dropped_low_confidence",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 28,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "daziran-qiutian-jindu-gengxin",
+          "canonical_phrase": "大自然的秋天进度更新了",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 28,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+            "observed_at": "2026-10-12T03:56:42+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "lianai-yaozhao-dafang-nanpengyou",
+          "canonical_phrase": "恋爱要找大方的男朋友",
+          "outcome": "dropped_low_confidence",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 27,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-10-12",
+            "observed_at": "2026-10-12T07:01:51+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "ni-zai-tangli-fangle-shenme",
+          "canonical_phrase": "你在这碗汤里放了什么啊",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 27,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "xinyuan-hui-shixian-ma",
+          "canonical_phrase": "心愿会实现吗",
+          "outcome": "dropped_low_confidence",
+          "score": 70,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 28,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "guoqinghou-cuofeng-chuyou",
+          "canonical_phrase": "国庆后错峰出游太爽了",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 27,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+            "observed_at": "2026-10-12T03:56:42+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "jiejie-liubao-xianmian",
+          "canonical_phrase": "姐姐给老弟煮六包线面在外网火了",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 26,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-10-12",
+            "observed_at": "2026-10-12T02:01:52+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "chahua-kaile-gaihuijia",
+          "canonical_phrase": "茶花开了该回家了",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 27,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "maerfu-xingzhuan-chuquan",
+          "canonical_phrase": "马尔福性转出圈",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 26,
+            "reusability": 13,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-10-12",
+            "observed_at": "2026-10-12T00:04:45+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhongyu-shuachu-kaishidongle",
+          "canonical_phrase": "终于刷出了孙燕姿的开始懂了",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 27,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "shandong-daye-lundunqiang",
+          "canonical_phrase": "山东大爷一开口网友听出伦敦腔",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 26,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-10-12",
+            "observed_at": "2026-10-12T00:32:04+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "hunyin-bushi-nianlingdaole",
+          "canonical_phrase": "婚姻不是年龄到了就该结",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 26,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-10-12",
+            "observed_at": "2026-10-12T06:32:19+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "qiutian-guihuaxiang-zhiyu",
+          "canonical_phrase": "秋天的桂花香太治愈了",
+          "outcome": "dropped_low_confidence",
+          "score": 67,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 27,
+            "reusability": 11,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "shoucuo-benmingwa-tiaozhansai",
+          "canonical_phrase": "2026手搓本命娃挑战赛",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 26,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "sheihaiyong-gongjiao-guangcheng",
+          "canonical_phrase": "谁还没用公交逛过一座城",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 26,
+            "reusability": 12,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "sakesi-zhenggeren-tongtou",
+          "canonical_phrase": "听完一曲萨克斯整个人都通透了",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "liubianxing-zhanshi-nvyou",
+          "canonical_phrase": "印度男同事女友是六边形战士",
+          "outcome": "dropped_low_confidence",
+          "score": 65,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://hotflashnews.com/archive/2026-10-12",
+            "observed_at": "2026-10-12T06:32:19+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhengqishang-duiren-laoke",
+          "canonical_phrase": "蒸蒸日上怼人式唠嗑太好笑了",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 26,
+            "reusability": 11,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+            "observed_at": "2026-10-12T06:44:06+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "feichang-zhongguo-danding",
+          "canonical_phrase": "非常中国但丁",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 25,
+            "reusability": 11,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "cross_platform",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/bilibili/2026-10-12.md",
+            "observed_at": "2026-10-12T03:56:39+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "dang-linglinhou-dangle-laoshi",
+          "canonical_phrase": "当00后当了老师",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 25,
+            "reusability": 11,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/kuaishou/2026-10-12.md",
+            "observed_at": "2026-10-12T03:56:42+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "baoxiao-liyou-tailipu",
+          "canonical_phrase": "找老板报销理由太离谱",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 25,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/kuaishou/2026-10-12.md",
+            "observed_at": "2026-10-12T03:56:42+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zhongguowei-zhi-ren-beijing-shijian",
+          "canonical_phrase": "中国胃还是只认北京时间",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 25,
+            "reusability": 10,
+            "evidence": 7
+          },
+          "activity": {
+            "evidence_role": "popularity",
+            "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/kuaishou/2026-10-12.md",
+            "observed_at": "2026-10-12T03:56:42+08:00"
+          },
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "xinghao-shijie-zugou-liaokuo",
+          "canonical_phrase": "幸好这个世界足够辽阔",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "zongyouyitian-ni-hui-laidao-zheli",
+          "canonical_phrase": "总有一天你会来到这里",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "guihuaji-chumen-shenhuxi",
+          "canonical_phrase": "桂花季出门全员保持深呼吸",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "shaichu-minzufeng-jiaqi",
+          "canonical_phrase": "晒出我的民族风假期",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "xiaohaijie-dianhuashoubiao-pian",
+          "canonical_phrase": "小孩姐用电话手表拍大片",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "weihai-xiaohuangya-nainai",
+          "canonical_phrase": "威海小黄鸭奶奶太会拍照了",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yongai-huanyuan-xunren-gushi",
+          "canonical_phrase": "用AI还原抖音寻人真实故事",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "yunhe-titian-tankai-qiutian",
+          "canonical_phrase": "在云和梯田把秋天摊开给你看",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "bibenggou-xueshan-cailin",
+          "canonical_phrase": "我拍到了毕棚沟限时雪山彩林",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "diamonds-wudao-jiaocheng",
+          "canonical_phrase": "Diamonds舞蹈教程",
+          "outcome": "dropped_insufficient_evidence",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-1",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-2",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-3",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-4",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-5",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-6",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-7",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-8",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-9",
+          "outcome": "dropped_safety",
+          "drop_reason": "时事政治",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-10",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-11",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-12",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-13",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-14",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-15",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-16",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-17",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-18",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-19",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-20",
+          "outcome": "dropped_safety",
+          "drop_reason": "纯体育赛事结果",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-21",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-22",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-23",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-24",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-25",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-26",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-27",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-28",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-29",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-30",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体人物",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-31",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-32",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-33",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-34",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-35",
+          "outcome": "dropped_safety",
+          "drop_reason": "综艺影视内容",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-36",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-37",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-38",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-39",
+          "outcome": "dropped_safety",
+          "drop_reason": "涉及具体品牌公司",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-40",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-41",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-42",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-43",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-44",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-45",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-46",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-47",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-48",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-49",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-50",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        },
+        {
+          "candidate_key": "candidate-51",
+          "outcome": "dropped_safety",
+          "drop_reason": "社会事件灾难事故",
+          "research_pass": 1
+        }
+      ],
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 94,
+          "cumulative_unique_candidates": 94,
+          "sources_checked": [
+            "weibo",
+            "douyin",
+            "zhihu",
+            "bilibili",
+            "other"
+          ]
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-12-beifangren-diyici-wen-guihua",
+      "title": "🌼 当北方人第一次闻桂花香",
+      "aliases": [
+        "当北方人第一次闻桂花香",
+        "当X人第一次Y",
+        "北方人第一次闻桂花香"
+      ],
+      "canonical_phrase": "当北方人第一次闻桂花香",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "生活方式梗",
+      "summary": "「当北方人第一次闻桂花香」登顶抖音热榜：桂花香气北上，南北嗅觉差异再成全民玩梗现场，同城桂花浓度直接香上新闻。",
+      "origin": "已验证：抖音热榜归档2026-10-12 06:44快照该话题列第1位、03:56快照列第2位；hotflashnews全网归档00:04列抖音榜第1位；头条榜01:05「合肥全城飘香非常罕见」列第4位。该词今日首次上榜本站。",
+      "usage": "体验句式「当X人第一次Y」：当北方人第一次闻桂花香、当南方人第一次见暖气片；南北差异互相开眼界的固定开场；桂花季晒图配文「空气都是甜的」。",
+      "fun_point": "北方人第一次知道秋天可以是香的，南方人第一次知道这么香居然值得大惊小怪；一场桂花雨，把南北双方都闻出了没见过世面的样子。",
+      "why_spread": "已验证：今日抖音热榜第1位、多归档快照持续高位；推测：桂花花期集中、南北同频入秋，「第一次」体验句式门槛低、代入强，晒图晒视频零成本二创。",
+      "lifecycle": "peak",
+      "brand_usage": "香氛、茶饮、文旅账号可做「第一次闻桂花香」体场景内容；城市账号可推本地桂花地图；避免营销地域对立。",
+      "risk": {
+        "level": "low",
+        "note": "南北差异话题，借用时聚焦体验分享，避免地域攻击。"
+      },
+      "days_on_list": 1,
+      "score": 88,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 29,
+        "reusability": 17,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T06:44:06+08:00",
+          "captured_at": "2026-10-12T07:20:05+08:00",
+          "note": "抖音热榜归档10-12 06:44快照：「当北方人第一次闻桂花香」列第1位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+          "title": "website-hot-hub 抖音热点归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:42+08:00",
+          "captured_at": "2026-10-12T07:18:30+08:00",
+          "note": "website-hot-hub抖音榜10-12 03:56归档：该词列第2位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://hotflashnews.com/archive/2026-10-12",
+          "title": "2026年10月12日全网热搜汇总",
+          "observed_at": "2026-10-12T01:05:47+08:00",
+          "captured_at": "2026-10-12T07:22:45+08:00",
+          "note": "hotflashnews 2026-10-12归档：头条榜01:05「合肥全城飘香非常罕见」列第4位，同城桂花浓度成新闻。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-02-quanwang-jinru-bushaoxin-shidai",
+      "title": "🍜 这临沂炒鸡吃了不烧心",
+      "aliases": [
+        "全网进入不烧心时代",
+        "这临沂炒鸡吃了不烧心",
+        "我家萌宠养着不烧心",
+        "吃了不烧心"
+      ],
+      "canonical_phrase": "全网进入不烧心时代",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "口头禅梗",
+      "summary": "「不烧心」第10天上榜：抖音「这临沂炒鸡吃了不烧心」「我家萌宠养着不烧心」双话题在榜，B站「法国最近太烧心了」持续高热，烧心宇宙完成跨国跨物种双扩张。",
+      "origin": "已验证：抖音热榜归档2026-10-12 03:56快照「这临沂炒鸡吃了不烧心」列第9位、「我家萌宠养着不烧心」列第30位，06:44快照两词列第16/28位；B站日榜03:56「法国最近太烧心了」列第13位、「泰坦磨的面吃着不烧心」列第79位。该梗10月2日首登本站，此为第10天上榜。",
+      "usage": "安心句式「吃了不烧心」继续给良心食物盖章；宠物晒图「我家萌宠养着不烧心」；反向玩梗「X最近太烧心了」形容闹心；造时代句式「全员进入X时代」。",
+      "fun_point": "一只炒鸡把「不烧心」从养生暗号吃成了地方美食勋章；第十天，这个词从胃里舒服一路进化成跨国跨物种的情绪通行证。",
+      "why_spread": "已验证：今日抖音双话题在榜、B站玩梗视频两条在列；推测：词义向地方美食与宠物场景持续扩容，「X最近太烧心了」反向句式提供新接口，老梗靠变体保鲜。",
+      "lifecycle": "peak",
+      "brand_usage": "餐饮、宠物、家居账号可玩「吃了不烧心」「养着不烧心」；内容账号可做「X最近太烧心了」吐槽接龙；避免影射具体商家的食品安全。",
+      "risk": {
+        "level": "low",
+        "note": "涉及餐饮消费联想，借用时聚焦句式，勿影射具体商家。"
+      },
+      "days_on_list": 10,
+      "score": 86,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 9
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T06:44:06+08:00",
+          "captured_at": "2026-10-12T07:20:05+08:00",
+          "note": "抖音热榜归档10-12 06:44快照：「这临沂炒鸡吃了不烧心」列第16位、「我家萌宠养着不烧心」列第28位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+          "title": "website-hot-hub 抖音热点归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:42+08:00",
+          "captured_at": "2026-10-12T07:18:30+08:00",
+          "note": "website-hot-hub抖音榜10-12 03:56归档：两话题列第9/30位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/bilibili/2026-10-12.md",
+          "title": "website-hot-hub B站热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:39+08:00",
+          "captured_at": "2026-10-12T07:20:20+08:00",
+          "note": "B站日榜10-12 03:56快照：「法国最近太烧心了」列第13位、「泰坦磨的面吃着不烧心」列第79位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-22-zhanshi-xinxue-shanshenbu",
+      "title": "🕺 闪身步闪进体育解说",
+      "aliases": [
+        "展示我新学的闪身步",
+        "万物皆可闪身步",
+        "闪身步",
+        "决赛上演闪身步"
+      ],
+      "canonical_phrase": "展示我新学的闪身步",
+      "platform": [
+        "douyin",
+        "other"
+      ],
+      "type": "短视频梗",
+      "summary": "「闪身步」第17天上榜：网球决赛集锦被冠名「决赛上演闪身步」冲上百度热搜，抖音、快手二创持续输出，舞蹈基本功正式完成体育圈跨界。",
+      "origin": "已验证：hotflashnews归档2026-10-12 00:04「决赛上演闪身步」词条列百度榜第10位；抖音热榜06:44快照「纯手搓闪身步」相关词条列第37位；快手热榜03:56快照明星二创「浪子踢球闪身步」在列。该梗9月22日首登本站，此为第17天上榜。",
+      "usage": "一切灵巧闪避的动作都配叫「闪身步」：球场变向、地铁抢座、电梯关门瞬间侧身；解说体「上演闪身步」给高光操作盖章；二创模板「纯手搓闪身步」。",
+      "fun_point": "从舞蹈教室一路闪到网球决赛，观众看球看出了武侠片的感觉；第17天，这套脚步已经从基本功闪成了全民通用的走位形容词。",
+      "why_spread": "已验证：今日百度、抖音、快手三平台相关词条在列；推测：体育高光画面天然适配「闪身步」命名，解说与二创互相借势，词义继续向一切灵巧动作泛化。",
+      "lifecycle": "peak",
+      "brand_usage": "运动、户外账号可做「上演闪身步」体高光剪辑；内容账号可发「万物皆可闪身步」互动；避免使用无授权赛事画面。",
+      "risk": {
+        "level": "low",
+        "note": "通用动作梗，借用时聚焦动作本身，避免影射具体人物。"
+      },
+      "days_on_list": 17,
+      "score": 84,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://hotflashnews.com/archive/2026-10-12",
+          "title": "2026年10月12日全网热搜汇总",
+          "observed_at": "2026-10-12T00:04:45+08:00",
+          "captured_at": "2026-10-12T07:22:45+08:00",
+          "note": "hotflashnews 2026-10-12归档：百度榜00:04「决赛上演闪身步」相关词条列第10位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T06:44:06+08:00",
+          "captured_at": "2026-10-12T07:20:05+08:00",
+          "note": "抖音热榜归档10-12 06:44快照：「侯明昊纯手搓闪身步」列第37位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "other",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/kuaishou/2026-10-12.md",
+          "title": "website-hot-hub 快手热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:42+08:00",
+          "captured_at": "2026-10-12T07:20:35+08:00",
+          "note": "快手热榜10-12 03:56快照：「赵露思浪子踢球闪身步」在列。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-10-guoriziren",
+      "title": "🛋️ 纯过日子就是好好生活",
+      "aliases": [
+        "过日子人",
+        "纯过日子人",
+        "纯过日子就是好好生活",
+        "全员过日子时代"
+      ],
+      "canonical_phrase": "过日子人",
+      "platform": [
+        "douyin",
+        "bilibili"
+      ],
+      "type": "生活方式梗",
+      "summary": "「过日子人」第5天上榜：抖音「纯过日子就是好好生活」稳居热榜前列，B站「全员过日子时代」二创在列，好好生活正式成为过日子的官方注解。",
+      "origin": "已验证：抖音热榜归档2026-10-12 06:44快照该话题列第6位、03:56快照列第5位；B站日榜03:56「全员过日子时代」主题二创视频列第78位。该梗9月10日首登本站，此为第5天上榜。",
+      "usage": "生活宣言「纯过日子就是好好生活」；造句「纯X就是好好Y」；「全员进入X时代」句式持续接龙；晒日常配文「今天也在纯过日子」。",
+      "fun_point": "全网卷了大半年，最后发现顶配人生就是把日子过成日子本身；不内耗、不表演，好好生活四个字成了最奢侈的凡尔赛。",
+      "why_spread": "已验证：今日抖音热榜前列、B站二创视频在列；推测：节后返工情绪与「低欲望好好生活」叙事共振，词义从假期限定沉淀为日常态度，长尾生命力强。",
+      "lifecycle": "peak",
+      "brand_usage": "家居、食品、生活方式账号可做「纯过日子」体日常内容；内容账号可发「纯X就是好好Y」填空；避免贩卖焦虑式对比营销。",
+      "risk": {
+        "level": "safe",
+        "note": "通用生活态度，无争议点。"
+      },
+      "days_on_list": 5,
+      "score": 83,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 29,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T06:44:06+08:00",
+          "captured_at": "2026-10-12T07:20:05+08:00",
+          "note": "抖音热榜归档10-12 06:44快照：「纯过日子就是好好生活」列第6位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+          "title": "website-hot-hub 抖音热点归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:42+08:00",
+          "captured_at": "2026-10-12T07:18:30+08:00",
+          "note": "website-hot-hub抖音榜10-12 03:56归档：该词列第5位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "cross_platform",
+          "platform": "bilibili",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/bilibili/2026-10-12.md",
+          "title": "website-hot-hub B站热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:39+08:00",
+          "captured_at": "2026-10-12T07:20:20+08:00",
+          "note": "B站日榜10-12 03:56快照：「全员过日子时代」主题二创视频列第78位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-10-yansu-pinjian-baofaye",
+      "title": "🧟 生化危机爆发夜细节越扒越有",
+      "aliases": [
+        "严肃品鉴生化危机爆发夜",
+        "生化危机爆发夜细节越扒越有",
+        "X后劲太大了"
+      ],
+      "canonical_phrase": "严肃品鉴生化危机爆发夜",
+      "platform": [
+        "douyin"
+      ],
+      "type": "句式梗",
+      "summary": "「严肃品鉴」第3天上榜：抖音「生化危机爆发夜细节越扒越有」继续在榜，全网逐帧扒彩蛋，新片二创从观后感进入考据阶段。",
+      "origin": "已验证：抖音热榜归档2026-10-12 06:44快照该话题列第15位、03:56快照列第18位。该梗10月10日首登本站，此为连续第3天上榜。",
+      "usage": "考据句式「X细节越扒越有」；「严肃品鉴X」继续给新内容盖章；自嘲体「X后劲太大了」形容走不出来；评论区互甩新发现的细节截图。",
+      "fun_point": "第一天看剧情，第二天品细节，第三天开始给丧尸做户口调查；一部片的寿命被网友用显微镜无限续杯。",
+      "why_spread": "已验证：今日抖音热榜多快照在列；推测：影片细节密度高、考据型二创门槛低，「越扒越有」是已被反复验证的考据外壳，观影热度向细节讨论自然过渡。",
+      "lifecycle": "peak",
+      "brand_usage": "影娱账号可做「X细节越扒越有」考据内容；内容账号可发细节发现接龙；避免使用无授权影片素材。",
+      "risk": {
+        "level": "safe",
+        "note": "通用观影二创模板，无争议点。"
+      },
+      "days_on_list": 3,
+      "score": 78,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T06:44:06+08:00",
+          "captured_at": "2026-10-12T07:20:05+08:00",
+          "note": "抖音热榜归档10-12 06:44快照：「生化危机爆发夜细节越扒越有」列第15位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+          "title": "website-hot-hub 抖音热点归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:42+08:00",
+          "captured_at": "2026-10-12T07:18:30+08:00",
+          "note": "website-hot-hub抖音榜10-12 03:56归档：该词列第18位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-07-quanwang-jinru-dashui-shidai",
+      "title": "💧 大水时代是什么梗",
+      "aliases": [
+        "全网进入大水时代",
+        "大水时代",
+        "喝大水理论",
+        "弱者喝饮料强者喝大水"
+      ],
+      "canonical_phrase": "全网进入大水时代",
+      "platform": [
+        "douyin"
+      ],
+      "type": "生活方式梗",
+      "summary": "「大水时代」第4天上榜：抖音科普向词条「大水时代是什么梗」在榜，喝大水的饮食梗完成从刷屏到出圈答疑的标准路径。",
+      "origin": "已验证：抖音热榜归档2026-10-12 03:56快照「大水时代是什么梗」列第45位、06:44快照列第33位；hotflashnews归档02:44该词列抖音榜第29位。该梗10月7日首登本站，此为第4天上榜。",
+      "usage": "造时代句式「全网进入X时代」；「喝大水」给一切豪饮行为命名；「弱者喝饮料强者喝大水」段位梗；答疑体「X是什么梗」反向引流。",
+      "fun_point": "当一个喝水梗火到需要专门解释它是什么梗，说明它已经完成从圈内黑话到公共知识的惊险一跃；水杯还没放下，词典已经收录。",
+      "why_spread": "已验证：今日抖音答疑词条在榜、多归档快照可查；推测：「是什么梗」类科普视频是梗出圈中继站，答疑内容反哺原梗热度，传播链路自循环。",
+      "lifecycle": "rising",
+      "brand_usage": "饮品、水杯账号可顺势玩「喝大水」；内容账号可做「X是什么梗」体科普；避免影射地域饮食习惯。",
+      "risk": {
+        "level": "low",
+        "note": "涉及地域饮食梗，借用时聚焦句式，避免地域刻板印象。"
+      },
+      "days_on_list": 4,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 23,
+        "freshness": 28,
+        "reusability": 18,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://hotflashnews.com/archive/2026-10-12",
+          "title": "2026年10月12日全网热搜汇总",
+          "observed_at": "2026-10-12T02:44:59+08:00",
+          "captured_at": "2026-10-12T07:22:45+08:00",
+          "note": "hotflashnews 2026-10-12归档：「大水时代是什么梗」02:44列抖音榜第29位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T06:44:06+08:00",
+          "captured_at": "2026-10-12T07:20:05+08:00",
+          "note": "抖音热榜归档10-12 06:44快照：该词列第33位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+          "title": "website-hot-hub 抖音热点归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:42+08:00",
+          "captured_at": "2026-10-12T07:18:30+08:00",
+          "note": "website-hot-hub抖音榜10-12 03:56归档：该词列第45位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-11-biexiangtaiduo-bieshuitaiwan",
+      "title": "🌙 别想太多别睡太晚别爱太满",
+      "aliases": [
+        "别想太多别睡太晚别爱太满",
+        "别X太Y三连"
+      ],
+      "canonical_phrase": "别想太多别睡太晚别爱太满",
+      "platform": [
+        "douyin"
+      ],
+      "type": "口头禅梗",
+      "summary": "「别想太多别睡太晚别爱太满」连续第2天上榜：抖音热榜双快照稳居中上游，「别X太Y」三连劝诫体成了深夜签名档的统一格式。",
+      "origin": "已验证：抖音热榜归档2026-10-12 06:44快照该话题列第17位、03:56快照列第27位。该词昨日首登本站，此为连续第2天上榜。",
+      "usage": "排比句式「别X太Y」三连：别想太多别睡太晚别爱太满、别赚太少别管太宽别醒太早；深夜文案、签名档、视频结尾字幕；评论区接龙自定义三连。",
+      "fun_point": "九个字精准覆盖失眠、内耗、恋爱脑三大当代顽疾；劝别人的时候押韵，轮到自己全中，排比句才是成年人的绕口令。",
+      "why_spread": "已验证：今日抖音热榜多快照在列、排名稳中有升；推测：排比结构自带记忆点与节奏感，情绪覆盖面广、转发即自勉，深夜时段情绪流量持续释放。",
+      "lifecycle": "rising",
+      "brand_usage": "情感、生活方式账号可做「别X太Y」造句互动；助眠、香薰品类可借场景但避免贩卖焦虑；勿用于说教式营销。",
+      "risk": {
+        "level": "safe",
+        "note": "通用情绪文案，无争议点。"
+      },
+      "days_on_list": 2,
+      "score": 77,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 8
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T06:44:06+08:00",
+          "captured_at": "2026-10-12T07:20:05+08:00",
+          "note": "抖音热榜归档10-12 06:44快照：「别想太多别睡太晚别爱太满」列第17位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+          "title": "website-hot-hub 抖音热点归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:42+08:00",
+          "captured_at": "2026-10-12T07:18:30+08:00",
+          "note": "website-hot-hub抖音榜10-12 03:56归档：该词列第27位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-09-21-manchong-lvxing",
+      "title": "🔋 我的假日慢充宝藏城市",
+      "aliases": [
+        "慢充旅行",
+        "我的假日慢充宝藏城市",
+        "慢充宝藏城市",
+        "加入慢充旅行倡议慢慢开逛"
+      ],
+      "canonical_phrase": "慢充旅行",
+      "platform": [
+        "douyin"
+      ],
+      "type": "生活方式梗",
+      "summary": "「慢充旅行」第3天上榜：抖音「我的假日慢充宝藏城市」稳居热榜前十，低电量人群的慢节奏旅行有了官方认证的城市清单。",
+      "origin": "已验证：抖音热榜归档2026-10-12 06:44快照该话题列第8位、03:56快照列第20位。该梗9月21日以「慢充旅行」首登本站，此为第3天上榜。",
+      "usage": "自我定位「我是慢充型选手」；城市安利体「我的宝藏城市」；反特种兵宣言「不打卡只慢充」；「慢充」向周末、通勤、社交全场景迁移。",
+      "fun_point": "别人旅行是快充五分钟暴走两万步，慢充党是充一整天只够逛一条老街；电量低不是缺陷，是选择了一种可以随时关机的生活方式。",
+      "why_spread": "已验证：今日抖音热榜前十、多快照在列；推测：节后疲惫感与慢生活叙事共振，「慢充」从充电宝隐喻长成完整生活哲学，词义持续向新场景扩容。",
+      "lifecycle": "rising",
+      "brand_usage": "文旅、城市账号可做「慢充宝藏城市」清单内容；民宿、茶馆品类适配「慢充」场景；避免拉踩特种兵旅行制造对立。",
+      "risk": {
+        "level": "safe",
+        "note": "通用慢生活表达，无争议点。"
+      },
+      "days_on_list": 3,
+      "score": 76,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T06:44:06+08:00",
+          "captured_at": "2026-10-12T07:20:05+08:00",
+          "note": "抖音热榜归档10-12 06:44快照：「我的假日慢充宝藏城市」列第8位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+          "title": "website-hot-hub 抖音热点归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:42+08:00",
+          "captured_at": "2026-10-12T07:18:30+08:00",
+          "note": "website-hot-hub抖音榜10-12 03:56归档：该词列第20位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-12-shijian-laibujixi-lengkongqi",
+      "title": "🌬️ 时间来不及细算直到冷空气袭来",
+      "aliases": [
+        "时间来不及细算直到冷空气袭来",
+        "时间来不及细算",
+        "直到X袭来"
+      ],
+      "canonical_phrase": "时间来不及细算直到冷空气袭来",
+      "platform": [
+        "douyin"
+      ],
+      "type": "情绪梗",
+      "summary": "「时间来不及细算直到冷空气袭来」冲上抖音热榜：一句歌词体感慨成了全国降温的统一文案，打工人在冷空气里集体对账流逝的时间。",
+      "origin": "已验证：抖音热榜归档2026-10-12 03:56快照该话题列第8位、06:44快照列第45位；hotflashnews归档00:04该词列抖音榜第16位。该词昨日进入本站候选观察，今日证据达标首次上榜。",
+      "usage": "降温文案固定句式「时间来不及细算直到X袭来」：直到冷空气袭来、直到假期结束袭来；配落叶、厚外套、哈气视频；年末感慨通用开场。",
+      "fun_point": "还没来得及给今年做总结，冷空气先替你翻了篇；时间的账本没算清，季节的翻页从不等人签字。",
+      "why_spread": "已验证：今日抖音热榜多快照在列；推测：全国大范围降温与年末将近的时间焦虑叠加，歌词体长句自带氛围感，配景视频零门槛跟拍。",
+      "lifecycle": "rising",
+      "brand_usage": "服饰、保暖、热饮账号可借「冷空气袭来」场景；内容账号可做「直到X袭来」填空；避免渲染年末焦虑。",
+      "risk": {
+        "level": "safe",
+        "note": "通用季节情绪文案，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 76,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 28,
+        "reusability": 16,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+          "title": "website-hot-hub 抖音热点归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:42+08:00",
+          "captured_at": "2026-10-12T07:18:30+08:00",
+          "note": "website-hot-hub抖音榜10-12 03:56归档：「时间来不及细算直到冷空气袭来」列第8位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T06:44:06+08:00",
+          "captured_at": "2026-10-12T07:20:05+08:00",
+          "note": "抖音热榜归档10-12 06:44快照：该词列第45位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://hotflashnews.com/archive/2026-10-12",
+          "title": "2026年10月12日全网热搜汇总",
+          "observed_at": "2026-10-12T00:04:45+08:00",
+          "captured_at": "2026-10-12T07:22:45+08:00",
+          "note": "hotflashnews 2026-10-12归档：该词00:04列抖音榜第16位。"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-12-luying-zuixiaochengben-chutao",
+      "title": "🏕️ 露营是最小成本的出逃",
+      "aliases": [
+        "露营是最小成本的出逃",
+        "X是最小成本的出逃",
+        "最小成本的出逃"
+      ],
+      "canonical_phrase": "露营是最小成本的出逃",
+      "platform": [
+        "douyin"
+      ],
+      "type": "生活方式梗",
+      "summary": "「露营是最小成本的出逃」登抖音热榜：不能远行的人们把帐篷扎进城市边缘，用最低预算完成对日常的体面叛逃。",
+      "origin": "已验证：抖音热榜归档2026-10-12 03:56快照该话题列第28位、06:44快照列第26位；hotflashnews归档00:44该词列抖音榜第26位。该词今日首次上榜本站。",
+      "usage": "定义句式「X是最小成本的出逃」：露营是最小成本的出逃、散步是最小成本的旅行、发呆是最小成本的度假；周末出逃计划配文；给一切低成本放风行为命名。",
+      "fun_point": "成年人最大的浪漫，是花两百块钱买一张逃离工位的单程票，还要在周日晚上准时回来假装什么都没发生。",
+      "why_spread": "已验证：今日抖音热榜多快照在列；推测：节后钱包与精神双重亏空，「最小成本」精准击中预算有限的放风刚需，句式可平移到一切低成本爱好。",
+      "lifecycle": "rising",
+      "brand_usage": "户外、露营装备账号可顺势做「最小成本出逃」场景；城市近郊文旅可推平替目的地；避免鼓吹超额装备消费。",
+      "risk": {
+        "level": "safe",
+        "note": "通用周末出逃情绪，无争议点。"
+      },
+      "days_on_list": 1,
+      "score": 75,
+      "score_breakdown": {
+        "heat": 23,
+        "freshness": 28,
+        "reusability": 17,
+        "evidence": 7
+      },
+      "sources": [
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "other",
+          "url": "https://hotflashnews.com/archive/2026-10-12",
+          "title": "2026年10月12日全网热搜汇总",
+          "observed_at": "2026-10-12T00:44:19+08:00",
+          "captured_at": "2026-10-12T07:22:45+08:00",
+          "note": "hotflashnews 2026-10-12归档：「露营是最小成本的出逃」00:44列抖音榜第26位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/lonnyzhang423/douyin-hot-hub/main/archives/2026-10-12.md",
+          "title": "douyin-hot-hub 抖音热榜归档 2026-10-12",
+          "observed_at": "2026-10-12T06:44:06+08:00",
+          "captured_at": "2026-10-12T07:20:05+08:00",
+          "note": "抖音热榜归档10-12 06:44快照：该词列第26位。"
+        },
+        {
+          "tier": "aggregator",
+          "evidence_role": "popularity",
+          "platform": "douyin",
+          "url": "https://raw.githubusercontent.com/cxyfreedom/website-hot-hub/main/archives/douyin/2026-10-12.md",
+          "title": "website-hot-hub 抖音热点归档 2026-10-12",
+          "observed_at": "2026-10-12T03:56:42+08:00",
+          "captured_at": "2026-10-12T07:18:30+08:00",
+          "note": "website-hot-hub抖音榜10-12 03:56归档：该词列第28位。"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
