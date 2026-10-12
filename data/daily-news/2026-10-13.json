@@ -1,0 +1,890 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13T06:23:30+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 41,
+    "published": 5,
+    "dropped_safety": {
+      "controversy": 1,
+      "geopolitics": 1,
+      "minors": 1,
+      "politics": 1,
+      "public_safety": 2
+    },
+    "dropped_low_confidence": 28,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "official",
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 12,
+      "official_sources": 1,
+      "state_media_sources": 4,
+      "major_media_sources": 4,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 2
+    },
+    "selection": {
+      "tier": "relaxed_48h",
+      "qualified": {
+        "strict_24h": 2,
+        "relaxed_48h": 5,
+        "relaxed_72h": 7
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 41,
+          "cumulative_unique_candidates": 41,
+          "source_scope": [
+            "央媒与政府站点：新华社/新华网、人民网、央视网、中新网、生态环境部官网",
+            "持牌媒体：新京报、北京日报、金融界/中国商报、第一财经、界面新闻、时代财经",
+            "公共热榜与聚合：百度热搜（仅佐证热度，不单独成立）"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-13-egg-price-four-yuan-era",
+          "story_identity": "egg-price-drop-four-yuan-era-oct2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-10-13-egg-price-four-yuan-era",
+          "score": 87,
+          "score_breakdown": {
+            "heat": 35,
+            "freshness": 18,
+            "everyday_relevance": 23,
+            "evidence": 11
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-13-beijing-heating-fee-scam-debunk",
+          "story_identity": "beijing-heating-fee-proxy-scam-debunk-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T11:30:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-10-13-beijing-heating-fee-scam-debunk",
+          "score": 83,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 18,
+            "everyday_relevance": 22,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-13-liu-yujie-womens-golf-open-title",
+          "story_identity": "liu-yujie-womens-golf-open-amateur-title-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-13-liu-yujie-womens-golf-open-title",
+          "score": 75,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 16,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-10-13-south-rain-process-oct13-15",
+          "story_identity": "south-rain-process-oct13-15-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "selected",
+          "item_id": "2026-10-13-south-rain-process-oct13-15",
+          "score": 72,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-10-13-eco-inspection-round3-batch7",
+          "story_identity": "central-eco-inspection-round3-batch7-launch-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T10:30:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-10-13-eco-inspection-round3-batch7",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 18,
+            "everyday_relevance": 16,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "disability-prevention-plan-2026-2030",
+          "story_identity": "disability-prevention-action-plan-2026-2030",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 69,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 14,
+            "everyday_relevance": 21,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "国家残疾预防行动计划（2026—2030年）10月10日经新华社披露，距打戳约64小时，落72小时层未选中"
+        },
+        {
+          "candidate_key": "cctv-student-care-feature",
+          "story_identity": "student-care-pickup-services-feature-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T15:08:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 18,
+            "everyday_relevance": 20,
+            "evidence": 8
+          },
+          "qualification_tier": "relaxed_72h",
+          "drop_reason": "学生托管接送为央视专题综述，单一事件增量有限"
+        },
+        {
+          "candidate_key": "fuel-cars-sales-top10-sep",
+          "story_identity": "fuel-cars-back-sales-top10-sep-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "乘联分会9月数据经第一财经等转引报道，原始权威佐证链单一"
+        },
+        {
+          "candidate_key": "foreign-tourists-china-tech",
+          "story_identity": "foreign-tourists-china-tech-experience-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "入境游科技体验为趋势性报道，单一事件性不足"
+        },
+        {
+          "candidate_key": "shared-children-discussion",
+          "story_identity": "shared-children-elderly-companionship-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 6
+          },
+          "drop_reason": "“共享儿女”为话题讨论稿，缺乏权威事实增量"
+        },
+        {
+          "candidate_key": "diamond-stickers-overseas-fad",
+          "story_identity": "school-gate-diamond-stickers-overseas-fad",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "水钻贴纸外网走红为网络趣闻"
+        },
+        {
+          "candidate_key": "wedding-66-arches-caoxian",
+          "story_identity": "caoxian-wedding-66-inflatable-arches-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 15,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "婚礼拱门为地方个案趣闻"
+        },
+        {
+          "candidate_key": "restaurant-plate-smashing-case",
+          "story_identity": "zhejiang-restaurant-plate-smashing-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "餐厅纠纷个案，事实为单方叙述"
+        },
+        {
+          "candidate_key": "pet-chicken-boarding-story",
+          "story_identity": "pet-chicken-boarding-farm-holiday-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 44,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 3
+          },
+          "drop_reason": "宠物鸡寄养为生活趣闻"
+        },
+        {
+          "candidate_key": "mango-ai-artists-debut",
+          "story_identity": "mango-five-ai-artists-debut-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "AI艺人出道为娱乐营销事件"
+        },
+        {
+          "candidate_key": "li-na-pregnancy-reveal",
+          "story_identity": "li-na-retirement-pregnancy-interview-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 3
+          },
+          "drop_reason": "运动员家庭话题为娱乐花边"
+        },
+        {
+          "candidate_key": "zheng-qinwen-endorsement-income",
+          "story_identity": "zheng-qinwen-endorsement-income-share-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "郑钦文夺冠主条目已于10月12日信封发布，收入衍生话题不重复入选"
+        },
+        {
+          "candidate_key": "zheng-qinwen-news-lianbo",
+          "story_identity": "zheng-qinwen-xinwen-lianbo-mention-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T19:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 4
+          },
+          "drop_reason": "联播报道为夺冠衍生话题，不重复入选"
+        },
+        {
+          "candidate_key": "wuhan-open-2026-opening",
+          "story_identity": "wuhan-open-2026-opening-ceremony",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T19:30:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 5
+          },
+          "drop_reason": "武网开幕为赛事常规进程，嘉宾话题娱乐化"
+        },
+        {
+          "candidate_key": "chuu-livestream-incident",
+          "story_identity": "chuu-livestream-incident-oct12-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 21,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 3
+          },
+          "drop_reason": "直播事故为粉圈话题"
+        },
+        {
+          "candidate_key": "avengers5-china-release-date",
+          "story_identity": "avengers5-china-release-dec16-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "影片定档为娱乐资讯"
+        },
+        {
+          "candidate_key": "gold-jewelry-workmanship-fee",
+          "story_identity": "young-buyers-gold-workmanship-fee-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 61,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 14,
+            "evidence": 7
+          },
+          "drop_reason": "购金工费为区域性消费观察稿"
+        },
+        {
+          "candidate_key": "ai-weight-management-risks",
+          "story_identity": "ai-weight-management-tool-concerns-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "AI减重工具讨论为话题稿，无权威定性"
+        },
+        {
+          "candidate_key": "makeup-brush-cat-hair",
+          "story_identity": "makeup-brush-cat-hair-material-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "化妆刷材质讨论未见监管部门结论"
+        },
+        {
+          "candidate_key": "paid-internship-agency-chaos",
+          "story_identity": "pay-30k-internship-agency-chaos-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "付费实习乱象为综合讨论稿，个案证据不足"
+        },
+        {
+          "candidate_key": "daminghu-saxophone-grandpa",
+          "story_identity": "daminghu-saxophone-grandpa-yangshurong-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T16:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 42,
+          "score_breakdown": {
+            "heat": 18,
+            "freshness": 14,
+            "everyday_relevance": 7,
+            "evidence": 3
+          },
+          "drop_reason": "网红人物趣闻"
+        },
+        {
+          "candidate_key": "funeral-worker-story",
+          "story_identity": "female-funeral-worker-daily-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 47,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 9,
+            "evidence": 3
+          },
+          "drop_reason": "人物稿非新闻事件"
+        },
+        {
+          "candidate_key": "dog-only-refund-dispute",
+          "story_identity": "shanxi-dog-only-refund-600km-dispute-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "网购退款纠纷个案，调解中未定性"
+        },
+        {
+          "candidate_key": "hip-needle-case",
+          "story_identity": "zhejiang-woman-hip-needle-case-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "针头个案来源不明，无法核实"
+        },
+        {
+          "candidate_key": "beijing-jiesujiban-forum",
+          "story_identity": "beijing-jiesujiban-reform-forum-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "接诉即办论坛开幕为会议动态，直接民生增量有限"
+        },
+        {
+          "candidate_key": "services-digitalization-cctv",
+          "story_identity": "services-digital-transformation-cctv-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T20:22:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "服务业数智化为综述性报道"
+        },
+        {
+          "candidate_key": "fuel-price-window-oct15",
+          "story_identity": "fuel-price-adjustment-window-oct15-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 62,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 15,
+            "evidence": 5
+          },
+          "drop_reason": "下一轮调价窗口10月15日24时才落地，当前仅为预测"
+        },
+        {
+          "candidate_key": "smart-plug-fish-kill-dispute",
+          "story_identity": "volda-smart-plug-hack-fish-kill-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-08T21:00:00+08:00",
+          "scope": "domestic",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 14,
+            "everyday_relevance": 16,
+            "evidence": 8
+          },
+          "drop_reason": "智能插排断电致观赏鱼死亡事件发生于9月30日并持续发酵，主事件超出72小时时效窗"
+        },
+        {
+          "candidate_key": "guokao-2027-announcement-prediction",
+          "story_identity": "guokao-2027-announcement-timing-prediction",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "2027国考公告尚未发布，仅培训机构时间预测，无官方公告可证"
+        },
+        {
+          "candidate_key": "community-canteen-subsidy-rumor",
+          "story_identity": "community-canteen-subsidy-rumor-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "网传社区食堂补贴新政仅见自媒体账号，无官方文件佐证"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-13-egg-price-four-yuan-era",
+      "story_identity": "egg-price-drop-four-yuan-era-oct2026",
+      "headline": "🥚 全国蛋价跌回“4元时代”，较上月同期降超两成",
+      "summary": "据中国商报报道，大宗商品分析机构卓创资讯监测显示，截至10月9日全国主产区鸡蛋日均价跌至4.06元/斤，较9月高点累计回落约24%，较上月同期下降20.7%，跌回“4元时代”。业内预计，节后需求减少叠加产蛋率恢复，10月蛋价仍以震荡下行为主。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 87,
+      "score_breakdown": {
+        "heat": 35,
+        "freshness": 18,
+        "everyday_relevance": 23,
+        "evidence": 11
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-10-12T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "农产品价格行情报道，数据援引公开监测机构"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "金融界",
+          "url": "https://finance.jrj.com.cn/2026/10/12164858683440.shtml",
+          "title": "蛋价，终于降了！",
+          "captured_at": "2026-10-13T06:12:40+08:00",
+          "note": "中国商报10月12日报道：截至10月9日主产区鸡蛋日均价4.06元/斤，累计跌幅24.25%"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "百度热搜",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "蛋价跌回“4元时代”",
+          "captured_at": "2026-10-13T05:58:10+08:00",
+          "note": "百度热搜在榜，佐证公共关注度，不单独作为证据"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-13-beijing-heating-fee-scam-debunk",
+      "story_identity": "beijing-heating-fee-proxy-scam-debunk-2026",
+      "headline": "🔥 北京热力辟谣“打折代缴采暖费”，提醒认准官方缴费渠道",
+      "summary": "供暖季临近，网络平台出现自称“内部人员”可打折代缴采暖费的信息。北京热力10月12日辟谣：从未也不会授权个人代收代缴采暖费，提醒用户不要向个人微信、支付宝或私人银行卡转账缴费，凡私下代缴、打折的一律不要相信，可通过官方渠道办理缴费。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 83,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 18,
+        "everyday_relevance": 22,
+        "evidence": 12
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-10-12T11:30:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "防骗提示报道，以北京热力官方声明为准"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1791783057129839.html",
+          "title": "“内部人员”代缴采暖费有折扣？北京热力：系典型骗局",
+          "captured_at": "2026-10-13T06:05:20+08:00",
+          "note": "新京报10月12日：北京热力称从未授权个人代收代缴采暖费"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "北京日报",
+          "url": "https://xinwen.bjd.com.cn/content/s6acc47a1e4b0e42f8f0172d5.html",
+          "title": "“内部人员”代缴采暖费能打折？北京热力辟谣",
+          "captured_at": "2026-10-13T06:05:50+08:00",
+          "note": "北京日报客户端10月12日：提醒不要向个人账户转账，认准官方缴费渠道"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-13-liu-yujie-womens-golf-open-title",
+      "story_identity": "liu-yujie-womens-golf-open-amateur-title-2026",
+      "headline": "⛳ 16岁业余小将刘宇婕夺中国女子高尔夫球公开赛冠军",
+      "summary": "10月11日，2026中国女子高尔夫球公开赛在上海崇明岛收官。16岁业余小将刘宇婕决赛轮交出69杆，以三轮209杆、低于标准杆7杆的成绩领先4杆夺冠，成为赛事创办20年来首位业余冠军，这也是她个人女子中巡第三冠。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 75,
+      "score_breakdown": {
+        "heat": 30,
+        "freshness": 16,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-10-11T17:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "未成年运动员公开赛事成绩，以赛事官方与央媒报道为准，不扩展私人信息"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/ty/2026/10-12/10711822.shtml",
+          "title": "刘宇婕4杆大胜 中国女子高尔夫球公开赛首迎业余冠军",
+          "captured_at": "2026-10-13T06:14:30+08:00",
+          "note": "中新社10月12日：刘宇婕三轮209杆夺冠，赛事20年来首位业余冠军"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "央视网体育",
+          "url": "https://sports.cctv.com/2026/10/12/ARTIY6UukU02s0j3jlTcOShE261012.shtml",
+          "title": "刘宇婕4杆大胜 中国女子高尔夫球公开赛首迎业余冠军",
+          "captured_at": "2026-10-13T06:14:50+08:00",
+          "note": "央视网体育10月12日报道决赛轮逆转与夺冠细节"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-13-south-rain-process-oct13-15",
+      "story_identity": "south-rain-process-oct13-15-2026",
+      "headline": "🌧️ 冷空气继续影响北方，13日起南方迎较强降雨",
+      "summary": "中央气象台10月12日提示：今明两天内蒙古中东部、华北和东北地区有4至6℃降温，局地降幅8至12℃，华北西部等地有小到中雨或雨夹雪。13日至15日，西南地区东部、江汉东部、江南北部等地将迎来新一轮较强降雨过程，公众出行与农业生产需注意防范。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "自然灾害",
+      "score": 72,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 18,
+        "everyday_relevance": 18,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-10-12T08:00:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "气象服务信息，以中央气象台最新预报为准"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/10-12/10711186.shtml",
+          "title": "冷空气继续影响北方 明日起南方有较强降雨过程",
+          "captured_at": "2026-10-13T06:08:20+08:00",
+          "note": "中新网10月12日据中央气象台：北方降温4至6℃，13日起南方较强降雨"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1791766092129645.html",
+          "title": "中央气象台：冷空气继续影响北方 10月13日起南方有较强降雨过程",
+          "captured_at": "2026-10-13T06:08:40+08:00",
+          "note": "新京报10月12日转中央气象台每日天气提示，重庆、江南北部等有较强降雨"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-13-eco-inspection-round3-batch7",
+      "story_identity": "central-eco-inspection-round3-batch7-launch-2026",
+      "headline": "🌿 第三轮第七批中央生态环保督察启动，进驻两部委",
+      "summary": "据新华社报道，经批准，第三轮第七批中央生态环境保护督察10月12日全面启动。本批次组建2个例行督察组，分别对住房城乡建设部、农业农村部开展督察，重点关注生态环境保护责任落实与民生领域环境问题，督察进驻约1个月。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 71,
+      "score_breakdown": {
+        "heat": 24,
+        "freshness": 18,
+        "everyday_relevance": 16,
+        "evidence": 13
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-10-12T10:30:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "生态环保督察工作动态，以生态环境部发布为准"
+      },
+      "sources": [
+        {
+          "tier": "official",
+          "outlet": "生态环境部",
+          "url": "https://www.mee.gov.cn/ywgz/zysthjbhdc/dcjl/202610/t20261012_1182788.shtml",
+          "title": "第三轮第七批中央生态环境保护督察全面启动",
+          "captured_at": "2026-10-13T06:10:10+08:00",
+          "note": "生态环境部10月12日发布：组建2个督察组对住房城乡建设部、农业农村部开展例行督察"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://politics.people.com.cn/n1/2026/1012/c461001-40813153.html",
+          "title": "第三轮第七批中央生态环保督察启动",
+          "captured_at": "2026-10-13T06:10:30+08:00",
+          "note": "人民网10月12日转新华社电：记者12日从生态环境部获悉督察全面启动"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
