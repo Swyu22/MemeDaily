@@ -1,0 +1,953 @@
+{
+  "schema_version": "1.0",
+  "policy_version": "v3-domestic-majority",
+  "rubric_version": "v3-100point-domestic-majority",
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T12:45:47+08:00",
+  "published_at": "2026-10-14T12:45:47+08:00",
+  "status": "partial",
+  "run_report": {
+    "candidates_scanned": 42,
+    "published": 6,
+    "dropped_safety": {
+      "celebrity_dispute": 1,
+      "controversy": 1,
+      "geopolitics": 1,
+      "minors": 1,
+      "politics": 2,
+      "public_safety": 1
+    },
+    "dropped_low_confidence": 28,
+    "dropped_quota": 0,
+    "dropped_capacity": 0,
+    "sources": [
+      "state_media",
+      "major_media",
+      "aggregator"
+    ],
+    "evidence_summary": {
+      "candidates_with_urls": 13,
+      "official_sources": 0,
+      "state_media_sources": 7,
+      "major_media_sources": 5,
+      "aggregator_sources": 1,
+      "dropped_insufficient_evidence": 1
+    },
+    "selection": {
+      "tier": "relaxed_48h",
+      "qualified": {
+        "strict_24h": 1,
+        "relaxed_48h": 6,
+        "relaxed_72h": 6
+      },
+      "editorial_complete": true,
+      "research_passes": [
+        {
+          "pass": 1,
+          "candidates_added": 42,
+          "cumulative_unique_candidates": 42,
+          "source_scope": [
+            "央媒与政府站点：新华社/新华网、人民网、央视网、中国网、人民日报",
+            "持牌媒体：新京报、澎湃新闻、川观新闻、华龙网、21世纪经济报道、北京日报",
+            "公共热榜与聚合：百度热搜（仅佐证热度，不单独成立）",
+            "财经与科技媒体：财新、证券时报、IT之家"
+          ]
+        }
+      ],
+      "candidate_audit": [
+        {
+          "candidate_key": "2026-10-14-guokao-2027-registration",
+          "story_identity": "guokao-2027-registration-opens-oct14",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "selected",
+          "item_id": "2026-10-14-guokao-2027-registration",
+          "score": 88,
+          "score_breakdown": {
+            "heat": 33,
+            "freshness": 18,
+            "everyday_relevance": 24,
+            "evidence": 13
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-10-14-myanbang-wei-gang-verdict",
+          "story_identity": "myanmar-wei-crime-gang-verdict-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T11:30:00+08:00",
+          "scope": "domestic",
+          "topic": "重大事件",
+          "outcome": "selected",
+          "item_id": "2026-10-14-myanbang-wei-gang-verdict",
+          "score": 82,
+          "score_breakdown": {
+            "heat": 32,
+            "freshness": 18,
+            "everyday_relevance": 18,
+            "evidence": 14
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-10-14-visa-card-clearing-prep",
+          "story_identity": "visa-china-card-clearing-license-prep",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "selected",
+          "item_id": "2026-10-14-visa-card-clearing-prep",
+          "score": 80,
+          "score_breakdown": {
+            "heat": 31,
+            "freshness": 18,
+            "everyday_relevance": 19,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-10-14-social-insurance-arrears-penalty",
+          "story_identity": "social-insurance-arrears-penalty-3x-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T17:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-10-14-social-insurance-arrears-penalty",
+          "score": 76,
+          "score_breakdown": {
+            "heat": 29,
+            "freshness": 17,
+            "everyday_relevance": 18,
+            "evidence": 12
+          },
+          "qualification_tier": "strict_24h"
+        },
+        {
+          "candidate_key": "2026-10-14-guoan-acl-away-win",
+          "story_identity": "beijing-guoan-acl-two-wins-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T22:15:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "selected",
+          "item_id": "2026-10-14-guoan-acl-away-win",
+          "score": 73,
+          "score_breakdown": {
+            "heat": 28,
+            "freshness": 18,
+            "everyday_relevance": 15,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "2026-10-14-autumn-grain-harvest-progress",
+          "story_identity": "autumn-grain-harvest-60pct-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "selected",
+          "item_id": "2026-10-14-autumn-grain-harvest-progress",
+          "score": 71,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 17,
+            "everyday_relevance": 17,
+            "evidence": 12
+          },
+          "qualification_tier": "relaxed_48h"
+        },
+        {
+          "candidate_key": "ielts-resit-followup-arrangement",
+          "story_identity": "ielts-cancel-followup-arrangement-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 63,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 7
+          },
+          "drop_reason": "雅思停考后续安排为10月11日已发布事件的延续进展，不重复入选"
+        },
+        {
+          "candidate_key": "postgrad-exam-2027-registration-oct15",
+          "story_identity": "postgraduate-exam-2027-registration-window",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 18,
+            "everyday_relevance": 13,
+            "evidence": 6
+          },
+          "drop_reason": "研考正式报名10月15日才启动，预报名已于10月9日信封覆盖，属周期性考务提醒"
+        },
+        {
+          "candidate_key": "henan-adult-exam-ticket-print",
+          "story_identity": "henan-chengkao-admission-ticket-print-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-14T08:00:00+08:00",
+          "scope": "domestic",
+          "topic": "教育考试",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 11,
+            "evidence": 4
+          },
+          "drop_reason": "地方成考准考证打印为例行考务提醒"
+        },
+        {
+          "candidate_key": "apple-homeview-homepod-mini2-launch",
+          "story_identity": "apple-smart-home-products-launch-oct2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T21:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 17,
+            "everyday_relevance": 9,
+            "evidence": 7
+          },
+          "drop_reason": "苹果家居新品发布为商业产品动态，民生增量有限"
+        },
+        {
+          "candidate_key": "gemini-4-argon-global-rollout",
+          "story_identity": "gemini-4-argon-global-launch-oct2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-14T08:00:00+08:00",
+          "scope": "international",
+          "topic": "科技AI",
+          "outcome": "dropped_low_confidence",
+          "score": 58,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 18,
+            "everyday_relevance": 8,
+            "evidence": 6
+          },
+          "drop_reason": "大模型上线为产品动态，境内读者无法直接使用"
+        },
+        {
+          "candidate_key": "imf-2026-world-growth-forecast",
+          "story_identity": "imf-world-economic-outlook-oct2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T18:00:00+08:00",
+          "scope": "international",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 68,
+          "score_breakdown": {
+            "heat": 30,
+            "freshness": 17,
+            "everyday_relevance": 13,
+            "evidence": 8
+          },
+          "drop_reason": "全球宏观预期小幅上调0.1个百分点，对普通读者直接日常影响有限，未达所选48小时层级"
+        },
+        {
+          "candidate_key": "spacex-dragon-cargo-iss-resupply",
+          "story_identity": "dragon-cargo-iss-resupply-oct2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T10:00:00+08:00",
+          "scope": "international",
+          "topic": "太空航天",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 17,
+            "everyday_relevance": 6,
+            "evidence": 5
+          },
+          "drop_reason": "货运飞船为例行补给任务，代表性不足"
+        },
+        {
+          "candidate_key": "haitai-tunnel-cangyuan-milestone",
+          "story_identity": "haitai-yangtze-tunnel-cangyuan-milestone",
+          "research_pass": 1,
+          "occurred_at": "2026-09-21T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 8,
+            "everyday_relevance": 14,
+            "evidence": 9
+          },
+          "drop_reason": "沧渊号抵达江底最低点为9月21日节点，热榜稿件为回顾性内容，主事件超出72小时时效窗"
+        },
+        {
+          "candidate_key": "ditan-book-fair-2026-closing",
+          "story_identity": "ditan-book-fair-2026-closing-836k-visits",
+          "research_pass": 1,
+          "occurred_at": "2026-09-27T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 7,
+            "everyday_relevance": 15,
+            "evidence": 7
+          },
+          "drop_reason": "地坛书市9月27日已落幕，热榜讨论为余热，超出时效窗"
+        },
+        {
+          "candidate_key": "provident-fund-local-implementation-wave",
+          "story_identity": "housing-provident-fund-local-rollout-oct2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-10T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 64,
+          "score_breakdown": {
+            "heat": 27,
+            "freshness": 14,
+            "everyday_relevance": 16,
+            "evidence": 7
+          },
+          "drop_reason": "公积金新条例9月20日施行，各地落地为持续推进过程，主事件超出72小时时效窗"
+        },
+        {
+          "candidate_key": "cma-rainstorm-blue-warning-oct14",
+          "story_identity": "southwest-jiangnan-rain-blue-warning-oct14",
+          "research_pass": 1,
+          "occurred_at": "2026-10-14T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "自然灾害",
+          "outcome": "dropped_low_confidence",
+          "score": 66,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 20,
+            "everyday_relevance": 14,
+            "evidence": 8
+          },
+          "drop_reason": "南方降雨过程昨日已入选，今日暴雨蓝色预警为同一过程延续，避免重复"
+        },
+        {
+          "candidate_key": "byd-dahan-flagship-sedan-launch",
+          "story_identity": "byd-dahan-sedan-market-launch-oct2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T20:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 56,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "新车上市为商业发布，营销属性强"
+        },
+        {
+          "candidate_key": "zheng-yubo-snooker-900-changsha",
+          "story_identity": "zheng-yubo-snooker-900-changsha-title",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T22:00:00+08:00",
+          "scope": "domestic",
+          "topic": "文化体育",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "小众商业赛事冠军，公共关注度有限"
+        },
+        {
+          "candidate_key": "ashare-indexes-open-lower-oct14",
+          "story_identity": "ashare-four-indexes-open-lower-oct14",
+          "research_pass": 1,
+          "occurred_at": "2026-10-14T09:30:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 18,
+            "everyday_relevance": 6,
+            "evidence": 4
+          },
+          "drop_reason": "例行行情波动，无实质民生信息"
+        },
+        {
+          "candidate_key": "hotel-breakfast-monthly-card-trend",
+          "story_identity": "hotel-breakfast-monthly-card-trend-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 9,
+            "evidence": 4
+          },
+          "drop_reason": "酒店早餐月卡为消费趋势分析稿，无事件性"
+        },
+        {
+          "candidate_key": "electric-toothbrush-myth-debunk",
+          "story_identity": "electric-toothbrush-gum-myth-debunk-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "电动牙刷辟谣为常年性科普话题"
+        },
+        {
+          "candidate_key": "milk-vs-yogurt-breakfast-study",
+          "story_identity": "milk-yogurt-breakfast-health-study-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 52,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 9,
+            "evidence": 5
+          },
+          "drop_reason": "单一高校研究结论，普适性待证"
+        },
+        {
+          "candidate_key": "nail-lamp-uv-exposure-concern",
+          "story_identity": "nail-lamp-uv-dna-damage-concern-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T11:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 16,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "美甲灯紫外照射为境外细胞实验，对人体结论不确定"
+        },
+        {
+          "candidate_key": "elderly-15000-steps-knee-necrosis",
+          "story_identity": "elderly-brisk-walking-knee-necrosis-case",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "健康医疗",
+          "outcome": "dropped_low_confidence",
+          "score": 55,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 16,
+            "everyday_relevance": 10,
+            "evidence": 5
+          },
+          "drop_reason": "暴走致膝伤为个案医疗报道"
+        },
+        {
+          "candidate_key": "beijing-114-pocket-gardens",
+          "story_identity": "beijing-114-idle-plots-pocket-gardens-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 60,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 16,
+            "everyday_relevance": 12,
+            "evidence": 7
+          },
+          "drop_reason": "北京边角地微花园改造为地方长效工作动态"
+        },
+        {
+          "candidate_key": "bai-yansong-12345-forum-comment",
+          "story_identity": "baiyansong-12345-hotline-boundary-comment",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T14:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 53,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 4
+          },
+          "drop_reason": "论坛发言为观点评论，非政策变动"
+        },
+        {
+          "candidate_key": "pangdonglai-revenue-structure-analysis",
+          "story_identity": "pangdonglai-2025-sales-structure-analysis",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 45,
+          "score_breakdown": {
+            "heat": 19,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "胖东来营收结构为商业分析稿"
+        },
+        {
+          "candidate_key": "dengfeng-student-extra-rice-kindness",
+          "story_identity": "dengfeng-restaurant-owner-kindness-student",
+          "research_pass": 1,
+          "occurred_at": "2026-10-12T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 57,
+          "score_breakdown": {
+            "heat": 25,
+            "freshness": 16,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "饭店老板资助学生为暖心个案，公共增量有限"
+        },
+        {
+          "candidate_key": "wedding-photographer-gift-theft",
+          "story_identity": "wedding-photographer-gift-theft-case-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T10:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 48,
+          "score_breakdown": {
+            "heat": 22,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "婚礼礼金被盗为地方治安个案"
+        },
+        {
+          "candidate_key": "wenzhou-man-father-reunion",
+          "story_identity": "wenzhou-man-decade-estrangement-reunion-hukou",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T15:00:00+08:00",
+          "scope": "domestic",
+          "topic": "民生服务",
+          "outcome": "dropped_low_confidence",
+          "score": 46,
+          "score_breakdown": {
+            "heat": 20,
+            "freshness": 15,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "落户引发家庭团聚为个案"
+        },
+        {
+          "candidate_key": "laotoule-scooter-police-collision",
+          "story_identity": "yichun-laotoule-police-car-collision-report",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T18:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 54,
+          "score_breakdown": {
+            "heat": 24,
+            "freshness": 17,
+            "everyday_relevance": 8,
+            "evidence": 5
+          },
+          "drop_reason": "老头乐肇事为地方交通个案，警方已通报处置"
+        },
+        {
+          "candidate_key": "highspeed-rail-speakerphone-quarrel",
+          "story_identity": "highspeed-rail-speakerphone-dispute-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-11T12:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_low_confidence",
+          "score": 50,
+          "score_breakdown": {
+            "heat": 23,
+            "freshness": 16,
+            "everyday_relevance": 7,
+            "evidence": 4
+          },
+          "drop_reason": "高铁通话纠纷为个案，无处置结论"
+        },
+        {
+          "candidate_key": "employee-gastric-cancer-dismissal",
+          "story_identity": "employee-cancer-diagnosis-dismissal-arbitration",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "消费就业",
+          "outcome": "dropped_low_confidence",
+          "score": 59,
+          "score_breakdown": {
+            "heat": 26,
+            "freshness": 17,
+            "everyday_relevance": 11,
+            "evidence": 5
+          },
+          "drop_reason": "患病员工被辞退为劳动仲裁个案，企业已起诉尚未终审"
+        },
+        {
+          "candidate_key": "fuel-price-window-oct15-forecast",
+          "story_identity": "fuel-price-adjustment-window-oct15-2026",
+          "research_pass": 1,
+          "occurred_at": "2026-10-13T09:00:00+08:00",
+          "scope": "domestic",
+          "topic": "交通出行",
+          "outcome": "dropped_insufficient_evidence",
+          "drop_reason": "下一轮成品油调价窗口10月15日24时才开启，目前仅有机构预测，无主管部门正式通知"
+        },
+        {
+          "candidate_key": "candidate-1",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-2",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "politics"
+        },
+        {
+          "candidate_key": "candidate-3",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "geopolitics"
+        },
+        {
+          "candidate_key": "candidate-4",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "public_safety"
+        },
+        {
+          "candidate_key": "candidate-5",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "controversy"
+        },
+        {
+          "candidate_key": "candidate-6",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "celebrity_dispute"
+        },
+        {
+          "candidate_key": "candidate-7",
+          "research_pass": 1,
+          "outcome": "dropped_safety",
+          "drop_reason": "minors"
+        }
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "2026-10-14-guokao-2027-registration",
+      "story_identity": "guokao-2027-registration-opens-oct14",
+      "headline": "📝 2027年度国考今起报名，计划招录3.57万人",
+      "summary": "据新华社报道，国家公务员局10月13日公告：中央机关及其直属机构2027年度考试录用公务员今起网上报名，共计划招录3.57万人。考生可于10月24日18时前登录专题网站报名，注册认证截止10月23日18时，公共科目笔试11月29日举行，2.69万个计划补充到县区级及以下基层机构。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "教育考试",
+      "score": 88,
+      "score_breakdown": {
+        "heat": 33,
+        "freshness": 18,
+        "everyday_relevance": 24,
+        "evidence": 13
+      },
+      "heat_rank": 1,
+      "occurred_at": "2026-10-13T11:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "国家级考试招录公告，以国家公务员局发布为准"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华网",
+          "url": "https://www.news.cn/politics/20261013/0187230deca94baa8053060067412549/c.html",
+          "title": "中央机关及其直属机构2027年度考试录用公务员报名即将开始",
+          "captured_at": "2026-10-14T12:31:00+08:00",
+          "note": "新华社10月13日电：2027年度国考计划招录3.57万人，10月14日至24日报名，笔试11月29日"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民网",
+          "url": "http://edu.people.com.cn/n1/2026/1013/c1006-40813765.html",
+          "title": "2027年度国考计划招录3.57万人 10月14日起报名",
+          "captured_at": "2026-10-14T12:31:30+08:00",
+          "note": "人民网10月13日：记者从国家公务员局获悉，录用计划和政策继续向基层倾斜"
+        },
+        {
+          "tier": "aggregator",
+          "outlet": "百度热搜",
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "title": "国考报名",
+          "captured_at": "2026-10-14T12:30:00+08:00",
+          "note": "百度热搜在榜，佐证公共关注度，不单独作为证据"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-14-myanbang-wei-gang-verdict",
+      "story_identity": "myanmar-wei-crime-gang-verdict-2026",
+      "headline": "⚖️ 缅北魏家犯罪集团案一审宣判",
+      "summary": "10月13日，福建省泉州市中级人民法院和南安市人民法院一审公开宣判缅北魏家犯罪集团系列案，3名被告人被判死刑、3人无期徒刑，55人分别获刑。经审理查明，该集团在缅甸果敢设立犯罪园区，实施电信网络诈骗、开设赌场等犯罪，涉赌诈资金122亿余元，构成故意杀人罪、诈骗罪等7项罪名。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "重大事件",
+      "score": 82,
+      "score_breakdown": {
+        "heat": 32,
+        "freshness": 18,
+        "everyday_relevance": 18,
+        "evidence": 14
+      },
+      "heat_rank": 2,
+      "occurred_at": "2026-10-13T11:30:00+08:00",
+      "risk": {
+        "level": "medium",
+        "note": "刑事案件宣判报道，以法院与央媒通报为准，不渲染案件细节"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网",
+          "url": "https://news.cctv.com/2026/10/13/ARTIYBSLSvMpfy7bRL9FOmw6261013.shtml",
+          "title": "缅北魏家犯罪集团案一审宣判",
+          "captured_at": "2026-10-14T12:32:00+08:00",
+          "note": "央视网10月13日：泉州中院与南安法院一审公开宣判，3人死刑、3人无期、55人获刑"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "中国网",
+          "url": "http://www.china.com.cn/txt/2026-10/13/content_118731464.shtml",
+          "title": "魏怀仁、陈大卫、廖景芳被判死刑！缅北魏家犯罪集团案一审宣判",
+          "captured_at": "2026-10-14T12:32:30+08:00",
+          "note": "中国网10月13日报道判决结果与查明事实"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-14-visa-card-clearing-prep",
+      "story_identity": "visa-china-card-clearing-license-prep",
+      "headline": "💳 Visa获批在华筹备银行卡清算机构",
+      "summary": "中国人民银行10月13日公布，向Visa在境内独资设立的威士信息技术（北京）有限公司下发准予行政许可决定，批准其筹备银行卡清算机构。Visa成为继美国运通、万事达之后第三家获准在华筹建清算机构的国际卡组织，须在一年内完成筹备，之后可申请开业并发行人民币银行卡。",
+      "category": "文化数字经济",
+      "scope": "domestic",
+      "topic": "消费就业",
+      "score": 80,
+      "score_breakdown": {
+        "heat": 31,
+        "freshness": 18,
+        "everyday_relevance": 19,
+        "evidence": 12
+      },
+      "heat_rank": 3,
+      "occurred_at": "2026-10-13T12:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "金融行政许可信息，以中国人民银行公示为准"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "新华社",
+          "url": "https://app.xinhuanet.com/news/article.html?articleId=202610134d49328db993485591dc7f8d31297b39",
+          "title": "开放新进展，又一家国际卡组织获批“进场”",
+          "captured_at": "2026-10-14T12:33:00+08:00",
+          "note": "新华社10月13日：央行向威士公司下发准予行政许可决定，批准筹备银行卡清算机构"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "21世纪经济报道",
+          "url": "https://www.21jingji.com/article/20261013/herald/b2fb17a39a3867602427512019eaf2dd.html",
+          "title": "新玩家要来了！Visa中国获准筹备银行卡清算机构",
+          "captured_at": "2026-10-14T12:33:30+08:00",
+          "note": "21世纪经济报道10月13日：Visa为第三家获准在华筹建清算机构的国际卡组织"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-14-social-insurance-arrears-penalty",
+      "story_identity": "social-insurance-arrears-penalty-3x-2026",
+      "headline": "🧾 单位欠缴社保最高罚3倍，裁量基准11月起施行",
+      "summary": "国家税务总局近日发布《全国税务行政处罚裁量基准（2026年版）》，自2026年11月1日起施行，首次将用人单位经责令限期缴纳仍不缴或少缴社保费纳入全国统一税务行政处罚裁量事项，按欠缴金额和占比分三档处欠缴数额1至3倍罚款，进一步保障费款安全和职工权益。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 76,
+      "score_breakdown": {
+        "heat": 29,
+        "freshness": 17,
+        "everyday_relevance": 18,
+        "evidence": 12
+      },
+      "heat_rank": 4,
+      "occurred_at": "2026-10-13T17:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "税务处罚裁量基准政策报道，以国家税务总局公告原文为准"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "川观新闻",
+          "url": "https://cbgc.scol.com.cn/news/8052403",
+          "title": "用人单位欠缴社保，最高罚3倍，11月1日起施行",
+          "captured_at": "2026-10-14T12:34:00+08:00",
+          "note": "川观新闻10月13日：社保费纳入全国统一税务行政处罚裁量体系"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "华龙网",
+          "url": "https://www.cqnews.net/web/content_1559634568931794944.html",
+          "title": "社保纳入税务处罚范围，单位欠缴社保费，最高罚3倍",
+          "captured_at": "2026-10-14T12:34:30+08:00",
+          "note": "华龙网10月13日报道：新规2026年11月1日起施行，分三档罚款"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-14-guoan-acl-away-win",
+      "story_identity": "beijing-guoan-acl-two-wins-2026",
+      "headline": "⚽ 北京国安客场1比0胜武里南联，亚冠两连胜",
+      "summary": "10月13日晚，2026至2027赛季亚冠精英联赛第二轮，北京国安客场1比0击败泰国武里南联。替补登场的法比奥第79分钟接林良铭助攻头球破门，门将侯森多次救险力保球门不失。国安收获亚冠开局两连胜，各项赛事已连续18场不败。",
+      "category": "国家高光",
+      "scope": "domestic",
+      "topic": "文化体育",
+      "score": 73,
+      "score_breakdown": {
+        "heat": 28,
+        "freshness": 18,
+        "everyday_relevance": 15,
+        "evidence": 12
+      },
+      "heat_rank": 5,
+      "occurred_at": "2026-10-13T22:15:00+08:00",
+      "risk": {
+        "level": "low",
+        "note": "体育赛事结果报道，以亚足联与俱乐部官方信息为准"
+      },
+      "sources": [
+        {
+          "tier": "state_media",
+          "outlet": "央视网体育",
+          "url": "https://tv.cctv.com/2026/10/14/VIDEAmLO1ECItMTfiWiva5ET261014.shtml",
+          "title": "[亚冠]法比奥头球破门 国安客场小胜武里南联",
+          "captured_at": "2026-10-14T12:35:00+08:00",
+          "note": "央视网体坛晨报10月14日：北京国安1比0战胜武里南联"
+        },
+        {
+          "tier": "major_media",
+          "outlet": "新京报",
+          "url": "https://www.bjnews.com.cn/detail/1791883033129786.html",
+          "title": "亚冠精英联赛第2轮，北京国安客场1比0击败泰国武里南联",
+          "captured_at": "2026-10-14T12:35:30+08:00",
+          "note": "新京报10月13日据国安俱乐部消息：亚冠两连胜"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "2026-10-14-autumn-grain-harvest-progress",
+      "story_identity": "autumn-grain-harvest-60pct-2026",
+      "headline": "🌾 全国秋粮收获过六成，黄淮海和西北过七成",
+      "summary": "据央视新闻报道，农业农村部最新农情调度显示，目前全国秋粮收获已过六成，其中黄淮海和西北过七成，东北和长江中下游过半，华南近三成。当前正值“三秋”农业生产关键时节，农业农村部已派出6个工作组和科技小分队赴12个重点省份，指导精细整地与冬前田管，确保颗粒归仓。",
+      "category": "民生社会",
+      "scope": "domestic",
+      "topic": "民生服务",
+      "score": 71,
+      "score_breakdown": {
+        "heat": 25,
+        "freshness": 17,
+        "everyday_relevance": 17,
+        "evidence": 12
+      },
+      "heat_rank": 6,
+      "occurred_at": "2026-10-13T09:00:00+08:00",
+      "risk": {
+        "level": "safe",
+        "note": "农业生产进度信息，以农业农村部农情调度为准"
+      },
+      "sources": [
+        {
+          "tier": "major_media",
+          "outlet": "澎湃新闻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_34241217",
+          "title": "第1现场｜抢抓农时忙“三秋”，全国秋粮收获过六成",
+          "captured_at": "2026-10-14T12:36:00+08:00",
+          "note": "澎湃新闻10月13日据央视新闻：全国秋粮收获已过六成"
+        },
+        {
+          "tier": "state_media",
+          "outlet": "人民日报",
+          "url": "http://paper.people.com.cn/rmrb/pc/content/202610/11/content_30184927.html",
+          "title": "全国秋粮收获过半",
+          "captured_at": "2026-10-14T12:36:30+08:00",
+          "note": "人民日报10月11日据农业农村部农情调度：截至10月10日秋粮收获已过五成，此后进度持续推进"
+        }
+      ],
+      "published": true
+    }
+  ]
+}
